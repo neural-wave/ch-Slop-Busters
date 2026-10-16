@@ -1,0 +1,16 @@
+# External Kaggle datasets: too large for GitHub and not all redistributable.
+# Re-download with scripts/download_kaggle.sh; only the catalog is versioned.
+data/kaggle/*
+!data/kaggle/DATASETS.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
