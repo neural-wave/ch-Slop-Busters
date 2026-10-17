@@ -50,3 +50,14 @@ def test_run_name_carries_the_detector_model():
     from unified_harness.cli import _run_name
 
     assert _run_name("tune", "privacy", False, "llm", None, "F2", "qwen3.5:2b") == "tune_privacy_llm_F2_qwen3.5-2b"
+
+
+def test_unpinned_detector_model_needs_the_explicit_flag(monkeypatch):
+    import unified_harness.environment as env
+
+    monkeypatch.setattr(env, "ollama_models", lambda url: {"other-model:1b": "f" * 64})
+    assert not env.doctor("llm", detector_model="other-model:1b").ok
+    report = env.doctor("llm", detector_model="other-model:1b", allow_unpinned=True)
+    assert report.ok and "UNPINNED" in report.checks[-1].detail
+    missing = env.doctor("llm", detector_model="absent:1b", allow_unpinned=True)
+    assert not missing.ok and "not pulled" in missing.checks[-1].detail

@@ -96,7 +96,14 @@ def detector_digest(model: str) -> str | None:
     return load_manifest().get("detector_models", {}).get(model)
 
 
-def doctor(mode: str, *, root: Path | None = None, url: str | None = None, detector_model: str | None = None) -> Report:
+def doctor(
+    mode: str,
+    *,
+    root: Path | None = None,
+    url: str | None = None,
+    detector_model: str | None = None,
+    allow_unpinned: bool = False,
+) -> Report:
     """Check everything `mode` needs. Never downloads or starts anything."""
     if mode not in MODES:
         raise ValueError(f"mode must be one of {MODES}, got {mode!r}")
@@ -123,8 +130,20 @@ def doctor(mode: str, *, root: Path | None = None, url: str | None = None, detec
             report.checks.append(check_ollama_model(entry, available, url))
     if detector_model:
         pin = detector_digest(detector_model)
-        if pin is None:
-            report.checks.append(Check(detector_model, False, "not pinned in models.toml [detector_models]"))
+        if pin is None and allow_unpinned:
+            if available is None:
+                report.checks.append(Check(detector_model, False, f"Ollama is not reachable at {url}"))
+            elif detector_model not in available:
+                report.checks.append(
+                    Check(detector_model, False, f"not pulled on {url} (run: ollama pull {detector_model})")
+                )
+            else:
+                digest = available[detector_model]
+                report.checks.append(Check(detector_model, True, f"UNPINNED (experiment), digest {digest[:12]}"))
+        elif pin is None:
+            report.checks.append(
+                Check(detector_model, False, "not pinned in models.toml [detector_models] (or pass --allow-unpinned)")
+            )
         else:
             report.checks.append(check_ollama_model({"name": detector_model, "digest": pin}, available, url))
     return report

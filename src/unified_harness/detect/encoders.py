@@ -386,6 +386,12 @@ class OllamaLLM:
 
         self.url = f"{ollama_url()}/api/generate"
         self.calls, self.call_seconds = 0, 0.0
+        from ..environment import detector_digest, ollama_models
+
+        pin = detector_digest(self.model)
+        self.pinned = pin is not None
+        # an unpinned model (--allow-unpinned) is identified by its current digest, for the cache and the summary
+        self.digest = pin or ollama_models(ollama_url()).get(self.model) or self.model
         self.log_path = cfg.llm_log
         self.encounter_id = ""  # set by the pipeline before each record, for the call log
         self._call("ok", 8)  # load once and check the VRAM budget
@@ -414,6 +420,9 @@ class OllamaLLM:
             "cached": cached,
             "found": {k: len(v) for k, v in ans.items() if isinstance(v, list)},
         }
+        from pathlib import Path
+
+        Path(self.log_path).parent.mkdir(parents=True, exist_ok=True)
         with open(self.log_path, "a", encoding="utf-8") as fh:
             fh.write(json.dumps(row) + "\n")
 
@@ -545,9 +554,7 @@ class TargetedLLM(OllamaLLM):
     def __init__(self, cfg: Config):
         super().__init__(cfg)
         from .. import paths
-        from ..environment import detector_digest
 
-        self.digest = detector_digest(self.model) or self.model
         self.cache_path = paths.cache_dir() / "llm_replay.jsonl"
         self.cache: dict[str, dict] = {}
         if self.cache_path.exists():

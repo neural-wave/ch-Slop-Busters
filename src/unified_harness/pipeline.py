@@ -78,6 +78,7 @@ class Anonymizer:
             out["llm"] = {
                 "model": llm.model,
                 "digest": getattr(llm, "digest", None),
+                "pinned": getattr(llm, "pinned", None),
                 "calls": llm.calls,
                 "call_seconds": round(llm.call_seconds, 2),
                 "cache_hits": getattr(llm, "hits", 0),
