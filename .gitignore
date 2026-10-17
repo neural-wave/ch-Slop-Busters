@@ -2,6 +2,8 @@
 # Re-download with scripts/download_kaggle.sh; only the catalog is versioned.
 data/kaggle/*
 !data/kaggle/DATASETS.md
+# Converted copies of the above (scripts/convert/): derived data, same license limits.
+data/converted/
 
 # Python
 __pycache__/
