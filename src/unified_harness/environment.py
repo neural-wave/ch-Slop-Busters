@@ -17,7 +17,7 @@ from dataclasses import dataclass, field
 from importlib.resources import files
 from pathlib import Path
 
-MODES = ("rules", "full")
+MODES = ("rules", "llm", "full")  # llm: rules + one Ollama model, no PyTorch
 ML_PACKAGES = ("torch", "transformers", "gliner")
 REVISION_FILE = ".revision"
 DEFAULT_OLLAMA_URL = "http://127.0.0.1:11434"
@@ -91,7 +91,12 @@ def check_ollama_model(entry: dict, available: dict[str, str] | None, url: str) 
     return Check(name, True, f"{url} digest {available[name][:12]}")
 
 
-def doctor(mode: str, *, root: Path | None = None, url: str | None = None) -> Report:
+def detector_digest(model: str) -> str | None:
+    """The pinned digest of an allowed LLM detector model, or None when it is not pinned."""
+    return load_manifest().get("detector_models", {}).get(model)
+
+
+def doctor(mode: str, *, root: Path | None = None, url: str | None = None, detector_model: str | None = None) -> Report:
     """Check everything `mode` needs. Never downloads or starts anything."""
     if mode not in MODES:
         raise ValueError(f"mode must be one of {MODES}, got {mode!r}")
@@ -99,20 +104,27 @@ def doctor(mode: str, *, root: Path | None = None, url: str | None = None) -> Re
     report.checks.append(Check("python", True, f"{platform.python_version()} ({platform.machine()})"))
     if mode == "rules":
         return report
-    for pkg in ML_PACKAGES:
-        found = importlib.util.find_spec(pkg) is not None
-        report.checks.append(Check(pkg, found, "installed" if found else "missing (install the [ml] extra)"))
     manifest = load_manifest()
-    root = root or models_dir()
-    for entry in manifest["huggingface"].values():
-        if mode in entry["used_by"]:
-            report.checks.append(check_hf_model(entry, root))
+    if mode == "full":
+        for pkg in ML_PACKAGES:
+            found = importlib.util.find_spec(pkg) is not None
+            report.checks.append(Check(pkg, found, "installed" if found else "missing (install the [ml] extra)"))
+        root = root or models_dir()
+        for entry in manifest["huggingface"].values():
+            if mode in entry["used_by"]:
+                report.checks.append(check_hf_model(entry, root))
     url = url or ollama_url()
     try:
         available = ollama_models(url)
     except OSError:
         available = None
-    for entry in manifest["ollama"].values():
-        if mode in entry["used_by"]:
+    for key, entry in manifest["ollama"].items():
+        if mode in entry["used_by"] and not (key == "detector" and detector_model):
             report.checks.append(check_ollama_model(entry, available, url))
+    if detector_model:
+        pin = detector_digest(detector_model)
+        if pin is None:
+            report.checks.append(Check(detector_model, False, "not pinned in models.toml [detector_models]"))
+        else:
+            report.checks.append(check_ollama_model({"name": detector_model, "digest": pin}, available, url))
     return report

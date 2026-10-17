@@ -46,6 +46,7 @@ class Anonymizer:
         self._models: dict = {}
         self.vram_peak_mb = 0.0
         self.vram_events: list[str] = []
+        self.detector_seconds: dict[str, float] = {}
 
     # -- optional detectors -------------------------------------------------------------
     def _model_spans(self, docs: dict[str, Doc]) -> list[Span]:
@@ -59,9 +60,26 @@ class Anonymizer:
 
                 det = models.load(name, self.cfg)
                 self._models[name] = det
+            t0 = time.perf_counter()
             for doc in docs.values():
                 out += det.detect(doc)
+            self.detector_seconds[name] = self.detector_seconds.get(name, 0.0) + time.perf_counter() - t0
             self._vram_guard()
+        return out
+
+    def detector_stats(self) -> dict:
+        """Time per model detector and, for the LLM, calls, cache hits and its measured VRAM."""
+        out: dict = {"seconds": {k: round(v, 2) for k, v in self.detector_seconds.items()}}
+        llm = self._models.get("llm")
+        if llm is not None:
+            out["llm"] = {
+                "model": llm.model,
+                "digest": getattr(llm, "digest", None),
+                "calls": llm.calls,
+                "call_seconds": round(llm.call_seconds, 2),
+                "cache_hits": getattr(llm, "hits", 0),
+                "vram_mb": llm.vram_mb,
+            }
         return out
 
     def _vram_guard(self) -> None:

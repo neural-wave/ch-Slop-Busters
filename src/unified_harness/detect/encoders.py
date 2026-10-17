@@ -16,6 +16,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import time
 import urllib.request
 
 from .. import lexicons as L
@@ -384,6 +385,7 @@ class OllamaLLM:
         from ..environment import ollama_url
 
         self.url = f"{ollama_url()}/api/generate"
+        self.calls, self.call_seconds = 0, 0.0
         self._call("ok", 8)  # load once and check the VRAM budget
         from ..eval.resources import ollama_vram_mb
 
@@ -393,6 +395,14 @@ class OllamaLLM:
         self.vram_mb = used
 
     def _call(self, prompt: str, num_predict: int = 400) -> str:
+        t0 = time.perf_counter()
+        try:
+            return self._post(prompt, num_predict)
+        finally:
+            self.calls += 1
+            self.call_seconds += time.perf_counter() - t0
+
+    def _post(self, prompt: str, num_predict: int) -> str:
         body = {
             "model": self.model, "prompt": prompt, "stream": False, "think": False, "format": "json", "keep_alive": "10m",
             "options": {"temperature": 0, "num_ctx": self.num_ctx, "num_predict": num_predict, "seed": 0},
@@ -510,10 +520,9 @@ class TargetedLLM(OllamaLLM):
     def __init__(self, cfg: Config):
         super().__init__(cfg)
         from .. import paths
-        from ..environment import load_manifest
+        from ..environment import detector_digest
 
-        entry = load_manifest().get("ollama", {}).get("detector", {})
-        self.digest = entry["digest"] if entry.get("name") == self.model else self.model
+        self.digest = detector_digest(self.model) or self.model
         self.cache_path = paths.cache_dir() / "llm_replay.jsonl"
         self.cache: dict[str, dict] = {}
         if self.cache_path.exists():
@@ -521,7 +530,7 @@ class TargetedLLM(OllamaLLM):
                 if line.strip():
                     row = json.loads(line)
                     self.cache[row["key"]] = row["answer"]
-        self.calls = self.hits = 0
+        self.hits = 0
 
     def _answer(self, chunk: str) -> dict:
         import hashlib
@@ -536,7 +545,6 @@ class TargetedLLM(OllamaLLM):
         except json.JSONDecodeError as exc:
             raise RuntimeError(f"targeted LLM returned invalid JSON ({len(raw)} chars); run stopped") from exc
         ans = ans if isinstance(ans, dict) else {}
-        self.calls += 1
         self.cache[key] = ans
         self.cache_path.parent.mkdir(parents=True, exist_ok=True)
         with self.cache_path.open("a", encoding="utf-8") as fh:

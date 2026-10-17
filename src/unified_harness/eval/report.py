@@ -28,6 +28,9 @@ COLUMNS = [
     ("ICD F1 anon", "icd_f1_anonymized"),
     ("ICD agree", "icd_agreement_f1"),
     ("ms/enc", "ms_per_encounter"),
+    ("LLM", "llm_model"),
+    ("LLM calls", "llm_calls"),
+    ("LLM VRAM MB", "llm_vram_mb"),
     ("RAM MB", "peak_ram_mb"),
     ("VRAM MB", "peak_vram_mb"),
 ]
@@ -98,6 +101,8 @@ def evaluate(
         res["summary"] = summary
         for k in ("ms_per_encounter", "peak_ram_mb", "peak_vram_mb", "runtime_s"):
             res[k] = summary.get(k)
+        llm = (summary.get("detectors") or {}).get("llm") or {}
+        res["llm_model"], res["llm_calls"], res["llm_vram_mb"] = llm.get("model"), llm.get("calls"), llm.get("vram_mb")
     res["eval_seconds"] = round(time.perf_counter() - t0, 1)
     return res
 

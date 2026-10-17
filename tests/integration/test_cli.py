@@ -32,3 +32,21 @@ def test_doctor_json_report(monkeypatch, tmp_path, capsys):
     report = json.loads(capsys.readouterr().out)
     assert report["mode"] == "full" and report["ok"] is False
     assert main(["doctor", "--mode", "rules"]) == 0
+
+
+def test_llm_mode_needs_no_pytorch_and_a_pinned_model(monkeypatch):
+    import unified_harness.environment as env
+
+    monkeypatch.setattr(
+        env, "ollama_models", lambda url: {"qwen3.5:2b-q4_K_M": env.detector_digest("qwen3.5:2b-q4_K_M")}
+    )
+    report = env.doctor("llm")
+    assert report.ok and not any(c.name in env.ML_PACKAGES for c in report.checks)
+    unpinned = env.doctor("llm", detector_model="some-model:latest")
+    assert not unpinned.ok and "not pinned" in unpinned.checks[-1].detail
+
+
+def test_run_name_carries_the_detector_model():
+    from unified_harness.cli import _run_name
+
+    assert _run_name("tune", "privacy", False, "llm", None, "F2", "qwen3.5:2b") == "tune_privacy_llm_F2_qwen3.5-2b"

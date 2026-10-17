@@ -64,7 +64,7 @@ def test_f2_replay_cache_and_fail_closed(tmp_path):
     assert [(doc.raw[s.start : s.end], s.cat) for s in spans] == [("florist", "OCCUPATION")]
     det._call = lambda prompt, num_predict=600: pytest.fail("cached segment must not call the model")
     det.detect(doc)
-    assert (det.calls, det.hits) == (1, 1)
+    assert det.hits == 1
     assert "florist" in det.cache_path.read_text()
     broken = _bare_llm(tmp_path / "b", '{"jobs": ["flor')
     with pytest.raises(RuntimeError, match="invalid JSON"):

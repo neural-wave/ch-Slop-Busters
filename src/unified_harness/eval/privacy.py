@@ -192,17 +192,25 @@ def score(
     if decisions is not None:
         tp = fp = 0
         fps: list[dict] = []
+        family: dict[str, list[int]] = defaultdict(lambda: [0, 0])  # detector family -> [matching, not]
         for d in decisions:
             if d.get("action") in (None, "KEEP") or d["encounter_id"] not in gold:
                 continue
             occ = gold_occ.get((d["encounter_id"], d["field"]), [])
+            fam = str(d.get("source") or "?").split(":")[0]
             if any(s < d["end"] and d["start"] < e for s, e in occ):
                 tp += 1
+                family[fam][0] += 1
             else:
                 fp += 1
+                family[fam][1] += 1
                 fps.append({k: d.get(k) for k in ("encounter_id", "field", "category", "source", "text", "start")})
         res["edit_precision"] = _ratio(tp, tp + fp)
         res["edits_matching_gold"] = tp
         res["edits_not_in_gold"] = fp
         res["edits_not_in_gold_examples"] = fps
+        res["edits_by_family"] = {
+            k: {"matching_gold": v[0], "not_in_gold": v[1], "precision": _ratio(v[0], v[0] + v[1])}
+            for k, v in sorted(family.items())
+        }
     return res

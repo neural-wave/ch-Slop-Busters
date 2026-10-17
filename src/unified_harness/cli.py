@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 import sys
 import time
@@ -35,7 +36,7 @@ from .io import (
     validate_output,
 )
 
-MODE_DETECTORS = {"rules": ("rules",), "full": ("rules", "deid", "gliner", "llm")}
+MODE_DETECTORS = {"rules": ("rules",), "llm": ("rules", "llm"), "full": ("rules", "deid", "gliner", "llm")}
 PRESETS = ("conservative", "balanced", "aggressive", "privacy")
 
 
@@ -63,13 +64,15 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
     from .pipeline import Anonymizer
 
     detectors = _detectors(a.detectors) or MODE_DETECTORS[a.mode]
-    if a.mode == "full" and not a.detectors:
-        report = doctor("full")
+    if a.mode != "rules" and not a.detectors:
+        report = doctor(a.mode, detector_model=a.detector_model)
         if not report.ok:
             for c in report.checks:
                 if not c.ok:
                     print(f"error: {c.name}: {c.detail}", file=sys.stderr)
-            return _fail("full mode is not ready (see `unified-harness doctor --mode full`); nothing was anonymized")
+            return _fail(
+                f"{a.mode} mode is not ready (see `unified-harness doctor --mode {a.mode}`); nothing was anonymized"
+            )
 
     try:
         records = read_jsonl(a.input)
@@ -96,6 +99,7 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
         explain_text=a.explain_text,
         device=a.device,
         features=_features(a.features),
+        llm_model=a.detector_model,
     )
     t0 = time.perf_counter()
     an = Anonymizer(cfg)
@@ -145,6 +149,7 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
         "peak_vram_mb": round(max(vram_peak, torch_vram_mb() + (llm_vram if llm_vram == llm_vram else 0.0)), 1),
         "vram_budget_mb": 4096,
         "vram_events": an.vram_events,
+        "detectors": an.detector_stats(),
         "device_placement": place(cfg.detectors, cfg.device) if len(cfg.detectors) > 1 else {},
         "n_decisions": len(decisions),
         "n_edits": len(decisions) - n_keep,
@@ -227,6 +232,7 @@ def run_one(
     device: str = "auto",
     mode: str = "rules",
     features: str | None = None,
+    detector_model: str | None = None,
 ) -> dict:
     """Anonymize one split in a separate process (clean peak-RAM measurement), then evaluate it."""
     inp, gold_dir, ids = _split_paths(split)
@@ -243,6 +249,8 @@ def run_one(
         cmd += ["--detectors", detectors]
     if features:
         cmd += ["--features", features]
+    if detector_model:
+        cmd += ["--detector-model", detector_model]
     if ids:
         ids_file = run_root / "ids.json"
         ids_file.parent.mkdir(parents=True, exist_ok=True)
@@ -266,14 +274,23 @@ def run_one(
     return json.loads((paths.eval_dir() / f"{name}.json").read_text())
 
 
-def _run_name(split: str, preset: str, no_codes: bool, mode: str, detectors: str | None, features: str | None) -> str:
+def _run_name(
+    split: str,
+    preset: str,
+    no_codes: bool,
+    mode: str,
+    detectors: str | None,
+    features: str | None,
+    detector_model: str | None = None,
+) -> str:
     det = detectors.replace(",", "+") if detectors else mode
     feats = "".join(f"_{f}" for f in sorted(_features(features)))
-    return f"{split}_{preset}{'_nocodes' if no_codes else ''}_{det}{feats}"
+    model = "_" + re.sub(r"[^A-Za-z0-9.]+", "-", detector_model) if detector_model else ""
+    return f"{split}_{preset}{'_nocodes' if no_codes else ''}_{det}{feats}{model}"
 
 
 def cmd_run(a: argparse.Namespace) -> int:
-    name = a.name or _run_name(a.split, a.preset, a.no_codes, a.mode, a.detectors, a.features)
+    name = a.name or _run_name(a.split, a.preset, a.no_codes, a.mode, a.detectors, a.features, a.detector_model)
     run_one(
         a.split,
         name,
@@ -286,6 +303,7 @@ def cmd_run(a: argparse.Namespace) -> int:
         device=a.device,
         mode=a.mode,
         features=a.features,
+        detector_model=a.detector_model,
     )
     return 0
 
@@ -367,7 +385,7 @@ def cmd_show(a: argparse.Namespace) -> int:
 
 # --------------------------------------------------------------------------- environment and contract
 def cmd_doctor(a: argparse.Namespace) -> int:
-    report = doctor(a.mode)
+    report = doctor(a.mode, detector_model=a.detector_model)
     if a.json:
         print(json.dumps(report.as_dict(), indent=1))
     else:
@@ -406,6 +424,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--no-codes", action="store_true", help="do not use icd10_codes at inference (bonus mode)")
     p.add_argument("--detectors", help="ablation only: comma list of rules, deid, gliner, llm (overrides --mode)")
     p.add_argument("--features", help="M5 feature flags, comma list: " + ", ".join(FEATURES))
+    p.add_argument("--detector-model", help="Ollama model for the LLM detector (pinned in models.toml)")
     p.add_argument("--ids", help="JSON list of encounter ids to process")
     p.add_argument("--limit", type=int)
     p.add_argument("--device", default="auto", help="encoders: auto (GPU within the 4 GB budget) | cpu | mps | cuda")
@@ -434,6 +453,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--no-codes", action="store_true")
     p.add_argument("--detectors", help="ablation only (overrides --mode)")
     p.add_argument("--features", help="M5 feature flags, comma list: " + ", ".join(FEATURES))
+    p.add_argument("--detector-model", help="Ollama model for the LLM detector (pinned in models.toml)")
     p.add_argument("--icd", default="embed", choices=["none", "embed", "llm"])
     p.add_argument("--llm-model")
     p.add_argument("--gold")
@@ -476,6 +496,7 @@ def build_parser() -> argparse.ArgumentParser:
     p = sub.add_parser("doctor", help="check the environment for a run mode")
     p.add_argument("--mode", choices=MODES, default="full")
     p.add_argument("--json", action="store_true", help="machine-readable report")
+    p.add_argument("--detector-model", help="Ollama model for the LLM detector (pinned in models.toml)")
     p.set_defaults(func=cmd_doctor)
 
     p = sub.add_parser("gate", help="acceptance gate: compare a scored run with the current best on one split")
