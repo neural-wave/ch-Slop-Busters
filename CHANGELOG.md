@@ -17,6 +17,9 @@
 - `full` image (CPU torch), `compose.yaml`, `compose.gpu.yaml`, `docs/docker.md`.
 - `docs/solution.html`, generated from saved results by `scripts/build_solution_page.py`.
 
+### Removed
+- The GitHub Actions CI workflow (not needed for the final run; tests run locally with `uv run pytest`).
+
 ### Fixed (M6)
 - Ollama calls honour `UNIFIED_HARNESS_OLLAMA_URL` (they were hard-coded to localhost).
 - Fail-closed tests: unreachable LLM, malformed input, failure while publishing.
