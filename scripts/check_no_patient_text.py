@@ -71,9 +71,7 @@ SKIP_DIRS = ("data/",)  # the challenge dataset itself is tracked in this reposi
 
 def tracked_files(root: Path) -> list[Path]:
     out = subprocess.run(["git", "ls-files"], cwd=root, capture_output=True, text=True, check=True).stdout
-    return [
-        root / p for p in out.splitlines() if Path(p).suffix not in SKIP_SUFFIXES and not p.startswith(SKIP_DIRS)
-    ]
+    return [root / p for p in out.splitlines() if Path(p).suffix not in SKIP_SUFFIXES and not p.startswith(SKIP_DIRS)]
 
 
 def main() -> int:
