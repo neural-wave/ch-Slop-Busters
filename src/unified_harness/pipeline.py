@@ -27,6 +27,7 @@ from .spans import NAME_CATS, Span, resolve_overlaps
 from .text.normalize import Doc
 from .verify.leaks import find_leaks, repair_spans, shield_integrity
 
+IDENTIFIER_OVERRIDES = ("ID", "PHONE", "ADDRESS", "DOB", "EMAIL", "URL", "DATE")  # may cut number/drug shields
 LOW_RISK_CATS = frozenset(AGGRESSIVE_EXTRA)  # categories that only the agreement rule may remove (F4)
 
 
@@ -153,7 +154,19 @@ class Anonymizer:
             cands += new
 
         residual = find_leaks(applied, raw, anon)
-        integrity = shield_integrity(shields, edits, raw, anon)
+        # A number- or drug-looking shield inside an identifier does not protect the identifier (see
+        # _unshielded_pieces): those shields are overridden on purpose and reported, not counted as violations.
+        overridden = [
+            sh
+            for sh in shields
+            if sh.kind in ("clinical_number", "drug")
+            and any(
+                sp.field == sh.field and sp.cat in IDENTIFIER_OVERRIDES and sp.start <= sh.start and sh.end <= sp.end
+                for sp in applied
+            )
+        ]
+        integrity = shield_integrity([sh for sh in shields if sh not in overridden], edits, raw, anon)
+        integrity["overridden_by_identifier"] = len(overridden)
         for sp in applied:
             decisions.append(self._decision(eid, sp, sp.meta["action"], sp.meta["replacement"], None, raw))
 
@@ -252,7 +265,7 @@ class Anonymizer:
         if c.cat == "AGE":
             ns, ne = c.meta.get("num_start", c.start), c.meta.get("num_end", c.end)
             return None if any(s.start < ne and ns < s.end for s in overl) else [c]
-        if c.cat in ("ID", "PHONE", "ADDRESS", "DOB", "EMAIL", "URL", "DATE") and all(
+        if c.cat in IDENTIFIER_OVERRIDES and all(
             s.kind in ("clinical_number", "drug") and c.start <= s.start and s.end <= c.end for s in overl
         ):
             return [c]  # a number/drug-looking piece inside an identifier does not protect the identifier

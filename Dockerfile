@@ -1,7 +1,8 @@
 # syntax=docker/dockerfile:1
 #
 # Release images for unified-harness.
-#   rules  standard-library pipeline, no ML dependencies, no GPU     docker build --target rules -t unified-harness:rules .
+#   rules  standard-library pipeline, no PyTorch: modes rules and llm (the default; the LLM runs in a separate
+#          Ollama container, compose.yaml)                       docker build --target rules -t unified-harness:rules .
 #   full   + encoder detectors (CPU torch) and the local LLM client  docker build --target full -t unified-harness:full .
 #          weights are mounted at /models; the LLM runs in a separate Ollama container (compose.yaml)
 #
@@ -43,7 +44,7 @@ ENV PATH=/app/.venv/bin:$PATH \
 WORKDIR /outputs
 USER app
 LABEL org.opencontainers.image.title="unified-harness" \
-      org.opencontainers.image.description="Offline, ICD-aware anonymization of patient-doctor encounters (rules mode)"
+      org.opencontainers.image.description="Offline, ICD-aware anonymization of patient-doctor encounters (rules and llm modes)"
 ENTRYPOINT ["unified-harness"]
 CMD ["--help"]
 

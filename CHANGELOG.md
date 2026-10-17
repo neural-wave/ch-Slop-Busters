@@ -1,6 +1,27 @@
 # Changelog
 
-## Unreleased
+## 1.0.0 (18 October 2026)
+
+### Changed
+- Default run: mode `llm` (rules + `qwen3.5:2b-q4_K_M` via Ollama, no PyTorch), preset `privacy`,
+  features F0 and F2. Compose uses the 147 MB image; the PyTorch `full` mode stays available.
+
+### Added (M5–M8)
+- F0 code-evidence guard: activities are kept only when the sentence tells an injury mechanism, and then
+  in every mention. F2 targeted LLM detector on personal segments, with occupations and a replay cache.
+  `privacy` preset. F4 agreement rule (measured, opt-in).
+- `llm` mode, `--detector-model` with digests pinned in `models.toml`, per-detector time, LLM calls,
+  cache hits and VRAM in the summary, edits by detector family in the scorer.
+- Unified scorer (both teams' metrics), `scripts/crosscheck_scorers.py`, `gate`, `icd-judge` hook,
+  `scripts/error_analysis.py`, `docs/error_analysis.md`.
+- `full` image (CPU torch), `compose.yaml`, `compose.gpu.yaml`, `docs/docker.md`.
+- `docs/solution.html`, generated from saved results by `scripts/build_solution_page.py`.
+
+### Fixed (M6)
+- Ollama calls honour `UNIFIED_HARNESS_OLLAMA_URL` (they were hard-coded to localhost).
+- Fail-closed tests: unreachable LLM, malformed input, failure while publishing.
+
+## 0.1.0
 
 ### Added (M2)
 - Merged silver labels (`eval/labels.py`, `scripts/labels/merge.py`): union of the upstream and Ketai

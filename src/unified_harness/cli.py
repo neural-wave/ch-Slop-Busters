@@ -158,6 +158,7 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
         "explanations": {k: (dict(v.most_common()) if isinstance(v, Counter) else v) for k, v in expl.items()},
         "residual_leaks": sum(s["residual_leaks"] for s in stats),
         "shield_edit_overlaps": sum(s["shield"]["edit_overlaps"] for s in stats),
+        "shields_overridden_by_identifier": sum(s["shield"].get("overridden_by_identifier", 0) for s in stats),
         "shield_spans": sum(s["shield"]["shield_spans"] for s in stats),
         "per_encounter": stats,
     }

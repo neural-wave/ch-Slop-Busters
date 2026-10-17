@@ -1,6 +1,6 @@
 [project]
 name = "unified-harness"
-version = "0.1.0"
+version = "1.0.0"
 description = "Offline, ICD-aware anonymization of patient-doctor encounters with a privacy-first evaluation harness"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -59,3 +59,4 @@ select = ["E", "F", "W", "I", "B", "UP"]
 "src/unified_harness/shield/*.py" = ["E501"]
 "src/unified_harness/lexicons.py" = ["E501"]
 "src/unified_harness/eval/robustness.py" = ["E501"]
+"scripts/build_solution_page.py" = ["E501"]  # page prose and HTML

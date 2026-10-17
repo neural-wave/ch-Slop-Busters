@@ -120,3 +120,21 @@ def test_publish_failure_leaves_no_records_file(tmp_path, monkeypatch):
     with pytest.raises(OSError):
         _anonymize(tmp_path, "--mode", "rules")
     assert not output_paths(tmp_path, date.fromisoformat(DAY)).records.exists()
+
+
+def test_identifier_over_a_number_shield_is_removed_and_published(tmp_path):
+    rec = {
+        "encounter_id": "SYN0003",
+        "dataset": "synthetic",
+        "dialogue": "",
+        "note": "Lives at 4 Elm Row, Glasgow G11 6BQ. Seen on 10 Oct 2026. Sodium 140 mmol/L.",
+        "icd10_codes": [{"code": "E87.1", "description": "Hypo-osmolality and hyponatremia"}],
+    }
+    src = tmp_path / "in.jsonl"
+    src.write_text(json.dumps(rec) + "\n", encoding="utf-8")
+    code = main(["anonymize", "--input", str(src), "--out-root", str(tmp_path / "o"), "--date", DAY, "--mode", "rules"])
+    assert code == 0
+    out = output_paths(tmp_path / "o", date.fromisoformat(DAY))
+    note = read_jsonl(out.records)[0]["note"]
+    assert "G11 6BQ" not in note and "10 Oct 2026" not in note and "140 mmol/L" in note
+    assert json.loads(out.summary.read_text(encoding="utf-8"))["shield_edit_overlaps"] == 0

@@ -1,11 +1,12 @@
-# Offline full-mode run: the harness and a local Ollama server on an internal network without internet.
+# Offline run (default llm mode): the harness and a local Ollama server on an internal network without
+# internet.
 #
-#   docker compose run --rm harness doctor --mode full
-#   docker compose run --rm harness anonymize --input /data/eval_patient_doctor_encounters.jsonl --preset privacy --features F2
+#   docker compose run --rm harness doctor
+#   docker compose run --rm harness anonymize --input /data/eval_patient_doctor_encounters.jsonl
 #
-# Mounted, never baked in: ./data (read-only input), ./outputs (results), ./models (encoder weights from
-# scripts/download_models.py) and the host's Ollama model store (OLLAMA_MODELS_DIR, default ~/.ollama/models,
-# with qwen3.5:2b-q4_K_M already pulled). Nothing in this file downloads anything at run time.
+# Mounted, never baked in: ./data (read-only input), ./outputs (results) and the host's Ollama model store
+# (OLLAMA_MODELS_DIR, default ~/.ollama/models, with qwen3.5:2b-q4_K_M already pulled). Nothing in this file
+# downloads anything at run time. For full mode (PyTorch encoders) build target `full` and mount ./models.
 name: unified-harness
 
 services:
@@ -26,8 +27,8 @@ services:
   harness:
     build:
       context: .
-      target: full
-    image: unified-harness:full
+      target: rules
+    image: unified-harness:rules
     networks: [offline]
     depends_on:
       ollama:
@@ -37,7 +38,6 @@ services:
     volumes:
       - ./data:/data:ro
       - ./outputs:/outputs
-      - ./models:/models:ro
     command: ["--help"]
 
 networks:

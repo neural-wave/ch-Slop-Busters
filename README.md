@@ -82,6 +82,19 @@ Ollama with `bge-m3` is not running. Rows are appended to `outputs/eval/results.
 [docs/labeling_guidelines.md](docs/labeling_guidelines.md). The `dev` split ids are in
 [configs/splits.json](configs/splits.json).
 
+## Results
+
+Silver labels, shares of labeled occurrences (details and how they were measured: [docs/solution.html](docs/solution.html)):
+
+| Split | All PII removed | High risk | Keep traps | Concepts | VRAM |
+|---|---|---|---|---|---|
+| tune (140) | 92.1% | 99.2% | 100.0% | 99.7% | 1.6 GB |
+| validation (67) | 84.6% | 95.1% | 99.1% | 99.8% | 1.6 GB |
+| test, unseen ICU notes (24) | 85.7% | 89.7% | 95.3% | 95.6% | 1.6 GB |
+
+Limitations: silver labels only; the unseen ICU-note format scores clearly lower (above); some date forms are not targeted yet; a relative or clinician can get
+the [PATIENT] tag (the name is removed); VRAM measured on Apple unified memory, not on a CUDA card.
+
 ## Output
 
 `outputs/<YYYY-MM-DD>/anonymized-<YYYY-MM-DD>-unified-harness.jsonl`, plus a `.decisions.jsonl` sidecar
@@ -96,9 +109,9 @@ docker build --target rules -t unified-harness:rules .
 docker run --rm --network none -v "$PWD/data:/data:ro" -v "$PWD/outputs:/outputs" unified-harness:rules \
     anonymize --input /data/eval_patient_doctor_encounters.jsonl --mode rules
 
-# full mode: the harness and Ollama on an internal network without internet
-docker compose run --rm harness doctor --mode full
-docker compose run --rm harness anonymize --input /data/eval_patient_doctor_encounters.jsonl --preset privacy --features F2
+# default llm mode: the harness and Ollama on an internal network without internet
+docker compose run --rm harness doctor
+docker compose run --rm harness anonymize --input /data/eval_patient_doctor_encounters.jsonl
 ```
 
 Details, sizes and the GPU override: [docs/docker.md](docs/docker.md).
