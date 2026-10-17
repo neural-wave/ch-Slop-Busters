@@ -1,0 +1,75 @@
+# Model registry for `python3 -I eval run`. One table per model run configuration.
+#
+#   cmd          argv list; placeholders: {input} {output} {labels} {suite} {python} {here} {repo} {container}
+#                ({here} is eval/adapters, {python} the harness's interpreter)
+#   cwd          working directory (same placeholders)
+#   env          extra environment variables
+#   timeout      seconds before the run is killed with its whole process tree (default 3600); recorded as exit 124
+#                (a descendant that daemonized itself away from the tree is not found)
+#   fingerprint  path, directory or glob (or a list of them, same placeholders, relative ones from cwd) whose files
+#                are hashed with the command into the run's code_sha1: when the model's code changes, its runs are redone
+#   precomputed  instead of cmd: path to an already anonymized JSONL per suite, e.g. ".../{suite}.jsonl"
+#   blind_codes  true: the model gets icd10_codes = [] (bonus task "without ICD-10 codes"); the runner puts the
+#                original codes back before scoring, so the validity check only tests the text fields
+#   suites       only run on these suites (default: all)
+#   enabled      false: listed in the report as pending, never run
+#
+# {input} is the suite's encounters.jsonl (challenge schema only). A model must write {output} with the same
+# records, order and keys, and icd10_codes unchanged.
+
+[identity]
+description = "Reference: returns the input unchanged (privacy 0, utility 1). Sanity check for the metrics"
+cmd = ["{python}", "-I", "{here}/baselines.py", "identity", "{input}", "{output}"]
+fingerprint = ["{here}/baselines.py", "{here}/../common.py"]
+
+[oracle]
+description = "Reference: replaces every gold PII string with [CATEGORY]. Reads the suite's labels, so it is an upper bound, not a model"
+cmd = ["{python}", "-I", "{here}/baselines.py", "oracle", "{input}", "{output}", "--labels", "{labels}"]
+fingerprint = ["{here}/baselines.py", "{here}/../common.py", "{labels}"]
+
+[ad_rules]
+description = "A+D night model (neural_wave 93b5eea), balanced preset, rules only (CPU, no ML dependencies)"
+cwd = "{container}/models/ad-night/repo"
+env = { HF_HUB_OFFLINE = "1" }
+cmd = ["{container}/models/ad-night/repo/.venv/bin/neural-wave", "anonymize", "-i", "{input}", "-o", "{output}", "--preset", "balanced", "--detectors", "rules"]
+fingerprint = ["{container}/models/ad-night/repo/src/**/*.py", "{container}/models/ad-night/repo/src/**/*.gz"]
+
+[ad_night]
+description = "A+D night model, their submission config: balanced, rules + deid_roberta + GLiNER"
+cwd = "{container}/models/ad-night/repo"
+env = { HF_HUB_OFFLINE = "1" }
+cmd = ["{container}/models/ad-night/repo/.venv/bin/neural-wave", "anonymize", "-i", "{input}", "-o", "{output}", "--preset", "balanced", "--detectors", "rules,deid,gliner"]
+fingerprint = ["{container}/models/ad-night/repo/src/**/*.py", "{container}/models/ad-night/repo/src/**/*.gz"]
+
+[ad_night_nocodes]
+description = "A+D submission config without ICD-10 codes at inference (bonus task)"
+cwd = "{container}/models/ad-night/repo"
+env = { HF_HUB_OFFLINE = "1" }
+blind_codes = true
+cmd = ["{container}/models/ad-night/repo/.venv/bin/neural-wave", "anonymize", "-i", "{input}", "-o", "{output}", "--preset", "balanced", "--detectors", "rules,deid,gliner", "--no-codes"]
+fingerprint = ["{container}/models/ad-night/repo/src/**/*.py", "{container}/models/ad-night/repo/src/**/*.gz"]
+
+[ad_night_submitted]
+description = "A+D's own submission file (made on their Mac): checks our scorer against their 0.839 and our ad_night run against theirs"
+suites = ["aci_eval"]
+precomputed = "{container}/models/ad-night/repo/outputs/anonymized_eval_patient_doctor_encounters.jsonl"
+
+[fable_rules]
+description = "Fable model (VM backup): regex + structural name layers, every detected span -> [TYPE]"
+cwd = "{container}/vm-backup/neuralwave"
+cmd = ["{container}/models/fable-deps/.venv/bin/python", "-I", "{here}/fable_vm.py", "{input}", "{output}", "--layers", "regex,names", "--words", "{container}/models/fable-deps/american-english-large"]
+fingerprint = ["{here}/fable_vm.py", "{container}/vm-backup/neuralwave/detect/**/*.py", "{container}/vm-backup/neuralwave/common.py",
+               "{container}/models/fable-deps/american-english-large"]
+
+[fable]
+description = "Fable model (VM backup): regex + names + deid_roberta + GLiNER, every detected span -> [TYPE]"
+cwd = "{container}/vm-backup/neuralwave"
+env = { HF_HUB_OFFLINE = "1" }
+cmd = ["{container}/models/fable-deps/.venv/bin/python", "-I", "{here}/fable_vm.py", "{input}", "{output}", "--layers", "regex,names,deid,gliner", "--words", "{container}/models/fable-deps/american-english-large"]
+fingerprint = ["{here}/fable_vm.py", "{container}/vm-backup/neuralwave/detect/**/*.py", "{container}/vm-backup/neuralwave/common.py",
+               "{container}/models/fable-deps/american-english-large"]
+
+[ketai]
+description = "Ketai's model (work in progress). Point cmd or precomputed at it when it lands"
+enabled = false
+precomputed = "{container}/models/ketai/outputs/{suite}.jsonl"

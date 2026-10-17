@@ -4,10 +4,13 @@ data/kaggle/*
 !data/kaggle/DATASETS.md
 # Converted copies of the above (scripts/convert/): derived data, same license limits.
 data/converted/
+# Evaluation runs (eval/): anonymized copies of the same data, and leak lists that quote PII.
+data/eval/
 
 # Python
 __pycache__/
 *.py[cod]
+.pytest_cache/
 .venv/
 venv/
 .ipynb_checkpoints/

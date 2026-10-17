@@ -14,6 +14,8 @@ Neural Wave hackathon, "Anonymization of patient data" challenge. The task brief
 | `DATA_PREP.md` | Data preparation overview: the two phases, what each script does, which dataset serves which evaluation |
 | `scripts/convert/` | One converter per dataset into a common format (challenge schema + separate gold labels), plus `validate.py` and `export_gold.py`. See its `README.md` |
 | `data/converted/<name>/` | Converter output: `encounters.jsonl`, `labels.jsonl`, `manifest.json`, and `gold/` (harness format) after `export_gold.py`. **Not in git** |
+| `eval/` | Evaluation pipeline (Python package, standard library only): runs every team model (`eval/models.toml`) on fixed suites and scores privacy, utility and cost the same way. Run `python3 -I eval --help` from the repo root. See `eval/docs/README.md` |
+| `data/eval/` | Evaluation suites, runs, scores and `report.md`. **Not in git** |
 
 ## Setting up the Kaggle downloads
 

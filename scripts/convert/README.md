@@ -115,6 +115,17 @@ datasets only leak recall is meaningful.
 | `persuade_pii` | 2,218 | note (essay) | none | exhaustive (inserted PII, mostly names) | names in natural text |
 | `pii_gemini` | 3,779 | note (essay) | none | partial: upstream lists are unreliable | weak, recall only |
 | `pii_gpt` | 2,000 | note (essay) | none | partial: injected PII | generic PII layer |
+| `robust_discharge` | 166 (500 with `--layouts form letter dictation`) | note (devp records as lowercase dictation) | gold (5 codes) | exhaustive (incl. injected dates, age, physician, phone) | robustness R1 (bonus) |
+| `robust_medconv` | 80 | dialogue (cased web Q&A) | none | partial: injected patient PII; the posts' own PII is unlabelled | robustness R2 (bonus) |
+| `robust_synthetic` | 24 | note (4 with dialogue): six hospital document types | gold (hand-assigned) | exhaustive (team-written gold) | robustness R3 (bonus) |
+
+The three `robust_*` sets are the A+D team's robustness sets (bonus task "other types of input data"), ported from
+their builder: the records are identical to theirs. Unlike the other converters they inject synthetic PII (R1, R2:
+`label: "injected:<kind>"`, `stage: "inject"`) or copy team-written documents (R3, from
+`models/ad-night/repo/outputs/`). `robust_discharge` keeps only the dictation layout by default, because
+`devp_discharge` already renders the same records as a form and a letter. Their gold is A+D's text gold turned into
+spans longest item first, so an item that only occurs inside a longer one (`Daisy` in `Daisy Price`) has no span of
+its own. `python3 -I eval robustness` builds them when missing.
 
 The tabular Kaggle sets (`generaterealdata`, `sergionefedov`, `nudratabbas`) have no text to convert. They are seeds
 for generating synthetic encounters. The code lists, rare diseases, RxNorm and name lists are lookup resources for

@@ -74,6 +74,9 @@ Two properties of the official metrics decide this:
 | Bonus: adversarial attacks | `pmc_patients` (rare conditions + age + timeline), `medconv_corpus` (real names and places) | |
 | Training | Little usable as is | Medical text with complete PII labels exists only in `aci_bench`, which is our evaluation set. The essay sets label only the author's name, so a model trained on them learns to ignore other names. Phase 2 is what makes training data. Split by `meta.split` (ACI), `meta.scenario` (iMerit), `meta.patient` (devp) |
 
+The evaluation pipeline built on these conclusions is in [`eval/`](eval/docs/README.md): it samples fixed
+suites from `data/converted/`, runs every team model on them and scores privacy, utility and cost the same way.
+
 Weak or limited: `pii_gemini` (none of its listed e-mails appear in the text, and names are unlabelled), NBME text (lost
 `/` and `-`), `mtsamples` (unlabelled names and dates). `imerit_scribe` and `pmc_patients` are non-commercial
 (CC BY-NC-SA).

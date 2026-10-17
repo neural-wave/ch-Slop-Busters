@@ -31,6 +31,9 @@ CONVERTERS = [
     "persuade_pii",
     "pii_gemini",
     "pii_gpt",
+    "robust_discharge",
+    "robust_medconv",
+    "robust_synthetic",
 ]
 
 
