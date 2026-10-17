@@ -1,10 +1,3 @@
-# External Kaggle datasets: too large for GitHub and not all redistributable.
-# Re-download with scripts/download_kaggle.sh; only the catalog is versioned.
-data/kaggle/*
-!data/kaggle/DATASETS.md
-# Converted copies of the above (scripts/convert/): derived data, same license limits.
-data/converted/
-
 # unified-harness: silver labels, generated outputs, model weights and the robustness sets stay local.
 # The challenge files data/patient_doctor_encounters.jsonl and data/eval_patient_doctor_encounters.jsonl
 # are tracked by this repository on purpose.

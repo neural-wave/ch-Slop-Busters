@@ -50,7 +50,6 @@ markers = [
 [tool.ruff]
 line-length = 120
 target-version = "py312"
-extend-exclude = ["scripts/convert"]  # the team's dataset converters keep their own style
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP"]
