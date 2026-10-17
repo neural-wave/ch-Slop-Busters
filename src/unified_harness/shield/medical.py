@@ -283,16 +283,35 @@ def _activity_re() -> re.Pattern:
     return re.compile(r"\b(?:" + "|".join(re.escape(a) for a in acts) + r")\b")
 
 
-def activity_context(doc: Doc, injury_encounter: bool = False) -> list[Shield]:
+# F0: verbs that tell an injury mechanism. Pain and soreness words, "while" and "playing" alone, and the
+# noun "injury" are not enough ("my favorite is soccer and i've had a lot of injury").
+_MECHANISM = re.compile(
+    r"\b(?:hurt(?!s)|injured|injuring|sustained|fell|twist(?:ed|ing)|sprain(?:ed|ing)|pop(?:ped)?|landed|tore|"
+    r"broke|fractured|slipped|tripped|crash(?:ed)?|collided|caught|jammed|hyperextend\w*|rolled|struck|hit|bite|bitten|stung|sting)\b"
+)
+_SENTENCE_END = re.compile(r"[.?!\n]")
+
+
+def _sentence(t: str, s: int, e: int) -> str:
+    a = max((m.end() for m in _SENTENCE_END.finditer(t, 0, s)), default=0)
+    b = _SENTENCE_END.search(t, e)
+    return t[a : b.start() if b else len(t)]
+
+
+def activity_context(doc: Doc, injury_encounter: bool = False, sentence_level: bool = False) -> list[Shield]:
     """Keep activities told as the injury/exposure mechanism (`hurt my knee playing soccer`).
 
     In an encounter coded with an injury or external-cause code (chapters S-T, V-Y), every activity
-    mention may be the mechanism, so all are kept.
+    mention may be the mechanism, so all are kept. Otherwise an injury word within 150 characters is
+    enough; with `sentence_level` (feature F0) a mechanism verb must be in the same sentence.
     """
     out, t = [], doc.lower
     for m in _activity_re().finditer(t):
-        window = t[max(0, m.start() - 150) : m.end() + 150]
-        if injury_encounter or _INJURY.search(window):
+        if sentence_level:
+            told = bool(_MECHANISM.search(_sentence(t, m.start(), m.end())))
+        else:
+            told = bool(_INJURY.search(t[max(0, m.start() - 150) : m.end() + 150]))
+        if injury_encounter or told:
             _add(
                 out,
                 doc,
@@ -319,7 +338,26 @@ def occupational_exposure(doc: Doc, codes: list[dict]) -> list[Shield]:
     return out
 
 
-def build(doc: Doc, codes: list[dict] | None, injury_context: bool = True) -> list[Shield]:
+def evidence_consistency(docs: dict[str, Doc], shields: list[Shield]) -> list[Shield]:
+    """F0: every mention of an activity kept as injury evidence is kept, in both fields.
+
+    Generalizing one mention while the same word stays visible elsewhere in the record removes
+    nothing an attacker could not read, and it loses code evidence.
+    """
+    words = {docs[s.field].lower[s.start : s.end] for s in shields if s.kind == "activity_context"}
+    out: list[Shield] = []
+    for w in sorted(words):
+        rx = re.compile(r"\b" + re.escape(w) + r"\b")
+        for f, d in docs.items():
+            for m in rx.finditer(d.lower):
+                if not any(s.field == f and s.start <= m.start() and m.end() <= s.end for s in shields):
+                    _add(out, d, m.start(), m.end(), "activity_context", "same activity kept as injury evidence")
+    return out
+
+
+def build(
+    doc: Doc, codes: list[dict] | None, injury_context: bool = True, sentence_level: bool = False
+) -> list[Shield]:
     """All shields for one field. `codes=None` means the without-codes mode.
 
     Activities told as an injury mechanism are kept in both modes (the plan's policy: keep hobbies
@@ -332,7 +370,7 @@ def build(doc: Doc, codes: list[dict] | None, injury_context: bool = True) -> li
         injury_encounter = bool(codes) and any(
             isinstance(c, dict) and str(c.get("code") or "")[:1].upper() in INJURY_CHAPTERS for c in codes
         )
-        out += activity_context(doc, injury_encounter)
+        out += activity_context(doc, injury_encounter, sentence_level)
     return out
 
 

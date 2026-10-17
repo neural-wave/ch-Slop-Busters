@@ -432,6 +432,130 @@ class OllamaLLM:
         return out
 
 
+TARGETED_PROMPT_VERSION = "f2-v1"
+TARGETED_PROMPT = """You find details that could identify a patient in an excerpt of a medical encounter (a lowercase
+speech transcript or a clinical note). List, copied EXACTLY as written in the excerpt, every:
+- "names": first or last name of any real person (patient, doctor, relative, friend), including nicknames
+- "places": city, town, state, country, street, neighborhood, named facility or landmark
+- "orgs": employer, company, school, church, club, military unit, sports team or league
+- "jobs": occupation or job title of the patient or a relative (for example "mail carrier", "retired teacher")
+Do NOT list diseases, symptoms, drugs, body parts, tests, eponyms (lyme, parkinson's), medical staff roles
+(doctor, nurse, medical assistant), titles (dr, mr) or the words dax/dragon. Lists may be empty.
+Answer with JSON only: {"names": [], "places": [], "orgs": [], "jobs": []}
+
+EXCERPT:
+"""
+# Sentences that carry personal context (work, home, family, school, travel, community, hobbies).
+_PERSONAL_CUE = re.compile(
+    r"\b(?:work\w*|job|jobs|employ\w*|retir\w*|occupation|career|profession\w*|business|company|factory|office|"
+    r"school|college|university|student|teach\w*|team|league|coach\w*|church|live[sd]?|living|moved|from|"
+    r"grew up|born|hometown|travel\w*|trip|visit\w*|vacation|married|husband|wife|son|daughter|kids|grand\w*|"
+    r"military|army|navy|served|veteran|volunteer\w*|hobby|hobbies|enjoy\w*|i'm a|i am a|as a)\b"
+)
+_UNIT = re.compile(r"[^\n.?!]*[\n.?!]?")
+_TURN = re.compile(r"[^\n]*\n?")
+STAFF_ROLES = frozenset(
+    "doctor physician nurse surgeon medical assistant scribe resident attending pa np provider therapist".split()
+)
+
+
+def personal_segments(doc: Doc, max_chars: int = 1500) -> list[tuple[int, int]]:
+    """Offsets of the privacy-dense parts of a field (D3): sentences or turns with a personal-context
+    cue, the social-history section of a note, and the first and last two turns of a dialogue."""
+    t = doc.lower
+    unit_re = _TURN if doc.field == "dialogue" else _UNIT  # the dialogue is tokenized (" . "): use turns
+    units = [(m.start(), m.end()) for m in unit_re.finditer(t) if t[m.start() : m.end()].strip()]
+    social = [(s, e) for s, e, name in doc.sections if "SOCIAL" in name] if doc.field == "note" else []
+    edge = set(range(2)) | set(range(len(units) - 2, len(units))) if doc.field == "dialogue" else set()
+    picked = [
+        (s, e)
+        for i, (s, e) in enumerate(units)
+        if i in edge or _PERSONAL_CUE.search(t[s:e]) or any(a <= s < b for a, b in social)
+    ]
+    merged: list[tuple[int, int]] = []
+    for s, e in picked:
+        if merged and s - merged[-1][1] <= 1 and e - merged[-1][0] <= max_chars:
+            merged[-1] = (merged[-1][0], e)
+        else:
+            merged.append((s, e))
+    return merged
+
+
+class TargetedLLM(OllamaLLM):
+    """F2: the LLM reads only the privacy-dense segments and also returns occupations (D3, D4, D12).
+
+    Replies are cached by (model digest, prompt version, segment text) under outputs/cache, so policy
+    changes are re-measured without new model calls. A reply that is not valid JSON stops the run.
+    """
+
+    def __init__(self, cfg: Config):
+        super().__init__(cfg)
+        from .. import paths
+        from ..environment import load_manifest
+
+        entry = load_manifest().get("ollama", {}).get("detector", {})
+        self.digest = entry["digest"] if entry.get("name") == self.model else self.model
+        self.cache_path = paths.cache_dir() / "llm_replay.jsonl"
+        self.cache: dict[str, dict] = {}
+        if self.cache_path.exists():
+            for line in self.cache_path.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    row = json.loads(line)
+                    self.cache[row["key"]] = row["answer"]
+        self.calls = self.hits = 0
+
+    def _answer(self, chunk: str) -> dict:
+        import hashlib
+
+        key = hashlib.sha256(f"{self.digest}|{TARGETED_PROMPT_VERSION}|{chunk}".encode()).hexdigest()
+        if key in self.cache:
+            self.hits += 1
+            return self.cache[key]
+        raw = self._call(TARGETED_PROMPT + chunk, num_predict=600)
+        try:
+            ans = json.loads(raw)
+        except json.JSONDecodeError as exc:
+            raise RuntimeError(f"targeted LLM returned invalid JSON ({len(raw)} chars); run stopped") from exc
+        ans = ans if isinstance(ans, dict) else {}
+        self.calls += 1
+        self.cache[key] = ans
+        self.cache_path.parent.mkdir(parents=True, exist_ok=True)
+        with self.cache_path.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps({"key": key, "answer": ans}, ensure_ascii=False) + "\n")
+        return ans
+
+    def detect(self, doc: Doc) -> list[Span]:
+        text = doc.view.replace("\x00", " ")
+        out: list[Span] = []
+        for pos, end in personal_segments(doc):
+            chunk = text[pos:end]
+            ans = self._answer(chunk)
+            low = chunk.lower()
+            for key, cat in (
+                ("names", "PERSON"),
+                ("places", "LOCATION"),
+                ("orgs", "ORGANIZATION"),
+                ("jobs", "OCCUPATION"),
+            ):
+                items = ans.get(key)
+                for item in items if isinstance(items, list) else []:
+                    if not isinstance(item, str) or len(item.strip()) < 3:
+                        continue
+                    needle = item.strip().lower()
+                    if cat == "OCCUPATION" and (
+                        needle in STAFF_ROLES
+                        or all(w in L.medical_vocab() or w in STAFF_ROLES for w in re.findall(r"[a-z']+", needle))
+                    ):
+                        continue
+                    for m in re.finditer(r"(?<![a-z])" + re.escape(needle) + r"(?![a-z])", low):
+                        s, e = pos + m.start(), pos + m.end()
+                        if cat == "PERSON":
+                            out += _person_tokens(doc, s, e, 0.7, "llm:name")
+                        else:
+                            out += _generic(doc, s, e, cat, 0.65, f"llm:{key}")
+        return out
+
+
 def load(name: str, cfg: Config):
     dev = place(cfg.detectors, cfg.device).get(name, "cpu")
     if name == "deid":
@@ -439,5 +563,5 @@ def load(name: str, cfg: Config):
     if name == "gliner":
         return Gliner(_with_device(cfg, dev))
     if name == "llm":
-        return OllamaLLM(cfg)
+        return TargetedLLM(cfg) if "F2" in cfg.features else OllamaLLM(cfg)
     raise ValueError(f"unknown detector {name!r} (rules, deid, gliner, llm)")

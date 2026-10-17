@@ -87,7 +87,11 @@ class Anonymizer:
         raw = {f: d.raw for f, d in docs.items()}
         codes = rec.get("icd10_codes") if cfg.use_codes else None
 
-        shields = [sh for d in docs.values() for sh in shield.build(d, codes, cfg.injury_context_shield)]
+        injury_shield = cfg.injury_context_shield or "F0" in cfg.features
+        f0 = "F0" in cfg.features
+        shields = [sh for d in docs.values() for sh in shield.build(d, codes, injury_shield, sentence_level=f0)]
+        if f0:
+            shields += shield.evidence_consistency(docs, shields)
         cands: list[Span] = []
         for d in docs.values():
             cands += rules.detect(d) + quasi.detect(d) + formats.detect(d)

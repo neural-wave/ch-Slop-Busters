@@ -95,6 +95,7 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
         detectors=detectors,
         explain_text=a.explain_text,
         device=a.device,
+        features=_features(a.features),
     )
     t0 = time.perf_counter()
     an = Anonymizer(cfg)
@@ -202,6 +203,17 @@ def _split_paths(split: str) -> tuple[Path, Path | None, list[str] | None]:
     return Path(split), None, None
 
 
+FEATURES = ("F0", "F2")
+
+
+def _features(value: str | None) -> frozenset[str]:
+    feats = frozenset(f.strip().upper() for f in (value or "").split(",") if f.strip())
+    unknown = feats - set(FEATURES)
+    if unknown:
+        raise SystemExit(f"error: unknown feature(s) {sorted(unknown)}; available: {', '.join(FEATURES)}")
+    return feats
+
+
 def run_one(
     split: str,
     name: str,
@@ -214,6 +226,7 @@ def run_one(
     llm_model: str | None = None,
     device: str = "auto",
     mode: str = "rules",
+    features: str | None = None,
 ) -> dict:
     """Anonymize one split in a separate process (clean peak-RAM measurement), then evaluate it."""
     inp, gold_dir, ids = _split_paths(split)
@@ -228,6 +241,8 @@ def run_one(
         cmd.append("--no-codes")
     if detectors:
         cmd += ["--detectors", detectors]
+    if features:
+        cmd += ["--features", features]
     if ids:
         ids_file = run_root / "ids.json"
         ids_file.parent.mkdir(parents=True, exist_ok=True)
@@ -251,13 +266,14 @@ def run_one(
     return json.loads((paths.eval_dir() / f"{name}.json").read_text())
 
 
-def _run_name(split: str, preset: str, no_codes: bool, mode: str, detectors: str | None) -> str:
+def _run_name(split: str, preset: str, no_codes: bool, mode: str, detectors: str | None, features: str | None) -> str:
     det = detectors.replace(",", "+") if detectors else mode
-    return f"{split}_{preset}{'_nocodes' if no_codes else ''}_{det}"
+    feats = "".join(f"_{f}" for f in sorted(_features(features)))
+    return f"{split}_{preset}{'_nocodes' if no_codes else ''}_{det}{feats}"
 
 
 def cmd_run(a: argparse.Namespace) -> int:
-    name = a.name or _run_name(a.split, a.preset, a.no_codes, a.mode, a.detectors)
+    name = a.name or _run_name(a.split, a.preset, a.no_codes, a.mode, a.detectors, a.features)
     run_one(
         a.split,
         name,
@@ -269,6 +285,7 @@ def cmd_run(a: argparse.Namespace) -> int:
         llm_model=a.llm_model,
         device=a.device,
         mode=a.mode,
+        features=a.features,
     )
     return 0
 
@@ -281,7 +298,7 @@ def cmd_sweep(a: argparse.Namespace) -> int:
 
     rows = []
     for preset, no_codes in SWEEP:
-        name = "sweep_" + _run_name(a.split, preset, no_codes, a.mode, None)
+        name = "sweep_" + _run_name(a.split, preset, no_codes, a.mode, None, None)
         rows.append(run_one(a.split, name, preset, no_codes, None, a.icd, mode=a.mode))
     md = table(rows)
     out = paths.eval_dir() / f"sweep_{a.split}_{a.mode}.md"
@@ -388,6 +405,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--preset", default="balanced", choices=PRESETS)
     p.add_argument("--no-codes", action="store_true", help="do not use icd10_codes at inference (bonus mode)")
     p.add_argument("--detectors", help="ablation only: comma list of rules, deid, gliner, llm (overrides --mode)")
+    p.add_argument("--features", help="M5 feature flags, comma list: " + ", ".join(FEATURES))
     p.add_argument("--ids", help="JSON list of encounter ids to process")
     p.add_argument("--limit", type=int)
     p.add_argument("--device", default="auto", help="encoders: auto (GPU within the 4 GB budget) | cpu | mps | cuda")
@@ -415,6 +433,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--preset", default="balanced", choices=PRESETS)
     p.add_argument("--no-codes", action="store_true")
     p.add_argument("--detectors", help="ablation only (overrides --mode)")
+    p.add_argument("--features", help="M5 feature flags, comma list: " + ", ".join(FEATURES))
     p.add_argument("--icd", default="embed", choices=["none", "embed", "llm"])
     p.add_argument("--llm-model")
     p.add_argument("--gold")
