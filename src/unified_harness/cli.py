@@ -100,13 +100,16 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
         device=a.device,
         features=_features(a.features),
         llm_model=a.detector_model,
+        llm_log=a.llm_log,
     )
     t0 = time.perf_counter()
     an = Anonymizer(cfg)
     outs, stats, decisions = [], [], []
     expl = {"action": Counter(), "category": Counter(), "layer": Counter(), "keep_reason": Counter(), "with_reason": 0}
     vram_peak = 0.0
-    for rec in records:
+    for i, rec in enumerate(records, 1):
+        t_rec = time.perf_counter()
+        llm_before = getattr(an._models.get("llm"), "calls", 0), getattr(an._models.get("llm"), "hits", 0)
         try:
             if cfg.use_codes:
                 anon, dec, st = an.anonymize(rec)
@@ -124,6 +127,16 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
             if d["action"] == "KEEP":
                 expl["keep_reason"][d["policy_reason"].split(" (")[0]] += 1
         decisions += dec
+        if a.progress:
+            llm = an._models.get("llm")
+            calls = getattr(llm, "calls", 0) - llm_before[0]
+            hits = getattr(llm, "hits", 0) - llm_before[1]
+            print(
+                f"[{i}/{len(records)}] {rec['encounter_id']}: {time.perf_counter() - t_rec:.1f} s, "
+                f"{len(dec)} decisions, LLM {calls} calls + {hits} cached",
+                file=sys.stderr,
+                flush=True,
+            )
         outs.append(anon)
         stats.append(st)
         vram_peak = max(vram_peak, an.vram_peak_mb)
@@ -435,6 +448,8 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--limit", type=int)
     p.add_argument("--device", default="auto", help="encoders: auto (GPU within the 4 GB budget) | cpu | mps | cuda")
     p.add_argument("--overwrite", action="store_true", help="replace existing outputs of the same date")
+    p.add_argument("--llm-log", help="append one JSONL line per LLM call (timing, cache, counts; no text) to this file")
+    p.add_argument("--progress", action="store_true", help="print one line per encounter to stderr")
     p.add_argument(
         "--explain-text", action="store_true", help="debug only: copy original text into the sidecar (contains PII)"
     )

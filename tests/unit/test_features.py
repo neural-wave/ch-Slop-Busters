@@ -52,6 +52,7 @@ def test_f2_segments_keep_personal_context_only():
 def _bare_llm(tmp_path, reply):
     det = object.__new__(encoders.TargetedLLM)
     det.model, det.digest, det.cache, det.calls, det.hits = "m", "d", {}, 0, 0
+    det.log_path, det.encounter_id = None, ""
     det.cache_path = tmp_path / "replay.jsonl"
     det._call = lambda prompt, num_predict=600: reply
     return det
@@ -110,3 +111,16 @@ def test_f4_needs_two_independent_signals():
     assert "wedding" in with_f4[0]["note"]  # one rule signal, a common word: kept under F4
     assert any(d["policy_reason"] == "F4: one signal only (agreement rule)" for d in with_f4[1])
     assert "wedding" not in without[0]["note"]
+
+
+def test_llm_call_log_has_timing_and_counts_but_no_text(tmp_path):
+    import json
+
+    det = _bare_llm(tmp_path, '{"jobs": ["florist"], "names": [], "places": [], "orgs": []}')
+    det.log_path, det.encounter_id = str(tmp_path / "calls.jsonl"), "SYN9"
+    det.detect(Doc("note", "She works as a florist in town."))
+    det.detect(Doc("note", "She works as a florist in town."))
+    rows = [json.loads(line) for line in (tmp_path / "calls.jsonl").read_text().splitlines()]
+    assert [r["cached"] for r in rows] == [False, True]
+    assert rows[0]["encounter_id"] == "SYN9" and rows[0]["found"]["jobs"] == 1
+    assert "florist" not in (tmp_path / "calls.jsonl").read_text()

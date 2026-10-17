@@ -121,6 +121,28 @@ The input is JSONL with one encounter per line: `encounter_id`, `dataset`, `dial
 | `F2` | The LLM reads only privacy-dense segments (work, home, family, travel, rare names) and also finds occupations; replies are cached | yes |
 | `F4` | Low-risk details are removed only when two independent signals agree (higher precision, lower privacy) | no |
 
+**Using another Ollama model.** Any model can replace the default detector if it fits the 4 GB budget
+(the run measures its VRAM at load and stops above 4 GB). Small candidates in the Ollama library:
+`llama3.2:3b` (2.0 GB), `granite4:3b` (2.1 GB), `phi4-mini` (2.5 GB), `ministral-3:3b` (3.0 GB),
+`qwen3.5:4b` (3.3 GB), `gemma3:4b` (3.4 GB). Larger models such as `gemma4:latest` exceed the budget.
+
+```bash
+ollama pull llama3.2:3b
+curl -s http://127.0.0.1:11434/api/tags      # copy the model's "digest"
+# add a line under [detector_models] in src/unified_harness/models.toml:  "llama3.2:3b" = "<digest>"
+uv run unified-harness doctor --detector-model llama3.2:3b
+uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl \
+    --detector-model llama3.2:3b --out-root outputs/llama3.2 --progress --llm-log outputs/llama3.2/calls.jsonl
+```
+
+Each model keeps its own entries in the reply cache (the key includes the model digest). Compare models by
+evaluating each output with `evaluate` and comparing the rows, or with `gate`.
+
+**Monitoring a run.** `--progress` prints one line per encounter (time, decisions, LLM calls and cache
+hits). `--llm-log <file>` appends one JSON line per LLM call: time, encounter id, field, segment offsets,
+length, seconds, whether it came from the cache, and how many names, places, organizations and jobs the
+model returned. It contains no text from the records. Follow it live with `tail -f <file>`.
+
 **Environment variables**
 
 | Variable | Default | Use |

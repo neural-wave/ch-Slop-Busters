@@ -33,6 +33,7 @@ class Config:
     injury_context_shield: bool = True  # keep activities told as an injury mechanism (also with codes)
     llm_model: str = "qwen3.5:2b-q4_K_M"
     llm_num_ctx: int = 4096
+    llm_log: str | None = None  # JSONL file with one line per LLM call (no text), for monitoring a run
     features: frozenset[str] = frozenset()  # M5 feature flags e.g. {"F0", "F2"}
     device: str = "auto"  # transformer detectors: GPU only while the total VRAM estimate stays < 4 GB
 

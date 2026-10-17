@@ -61,6 +61,8 @@ class Anonymizer:
 
                 det = models.load(name, self.cfg)
                 self._models[name] = det
+            if hasattr(det, "encounter_id"):
+                det.encounter_id = getattr(self, "current_id", "")
             t0 = time.perf_counter()
             for doc in docs.values():
                 out += det.detect(doc)
@@ -116,6 +118,7 @@ class Anonymizer:
         cands: list[Span] = []
         for d in docs.values():
             cands += rules.detect(d) + quasi.detect(d) + formats.detect(d)
+        self.current_id = eid
         cands += self._model_spans(docs)
 
         anchors = [c for c in cands if c.cat in NAME_CATS]
