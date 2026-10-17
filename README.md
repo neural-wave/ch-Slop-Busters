@@ -97,7 +97,10 @@ The input is JSONL with one encounter per line: `encounter_id`, `dataset`, `dial
 | `--mode` | `llm` | `llm`: rules + the local Ollama model. `rules`: no model at all (fastest, CPU only). `full`: adds two PyTorch encoders (needs `uv sync --extra ml` and `scripts/download_models.py`) |
 | `--preset` | `privacy` | How much to remove: `conservative`, `balanced`, `aggressive`, `privacy` (see below) |
 | `--features` | from the preset | Extra feature flags, comma list: `F0`, `F2`, `F4` (see below) |
-| `--detector-model` | `qwen3.5:2b-q4_K_M` | Another Ollama model for the detector; it must be pinned by digest in `models.toml` |
+| `--detector-model` | `qwen3.5:2b-q4_K_M` | Another Ollama model for the detector; pinned by digest in `models.toml`, or use `--allow-unpinned` |
+| `--allow-unpinned` | off | Experiments only: accept a detector model that is not pinned (recorded as unpinned in the summary) |
+| `--progress` | off | Print one line per encounter (time, decisions, LLM calls and cache hits) |
+| `--llm-log` | none | Append one JSON line per LLM call to this file (no record text) |
 | `--no-codes` | off | Do not read `icd10_codes` at inference (bonus task) |
 | `--out-root` | `outputs` | Results go to `<out-root>/<date>/` |
 | `--date` | today | Date used in the output names (`YYYY-MM-DD`) |
@@ -124,15 +127,30 @@ The input is JSONL with one encounter per line: `encounter_id`, `dataset`, `dial
 **Using another Ollama model.** Any model can replace the default detector if it fits the 4 GB budget
 (the run measures its VRAM at load and stops above 4 GB). Small candidates in the Ollama library:
 `llama3.2:3b` (2.0 GB), `granite4:3b` (2.1 GB), `phi4-mini` (2.5 GB), `ministral-3:3b` (3.0 GB),
-`qwen3.5:4b` (3.3 GB), `gemma3:4b` (3.4 GB). Larger models such as `gemma4:latest` exceed the budget.
+`qwen3.5:4b` (3.3 GB), `gemma3:4b` (3.4 GB download, 2.2 GB measured VRAM). Larger models such as
+`gemma4:latest` exceed the budget.
+
+For a quick experiment, pass `--allow-unpinned`:
 
 ```bash
-ollama pull llama3.2:3b
-curl -s http://127.0.0.1:11434/api/tags      # copy the model's "digest"
-# add a line under [detector_models] in src/unified_harness/models.toml:  "llama3.2:3b" = "<digest>"
-uv run unified-harness doctor --detector-model llama3.2:3b
+ollama pull gemma3:4b
+uv run unified-harness doctor --detector-model gemma3:4b --allow-unpinned
 uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl \
-    --detector-model llama3.2:3b --out-root outputs/llama3.2 --progress --llm-log outputs/llama3.2/calls.jsonl
+    --detector-model gemma3:4b --allow-unpinned \
+    --out-root outputs/gemma3 --progress --llm-log outputs/gemma3/calls.jsonl
+```
+
+Why models are pinned: an Ollama tag such as `gemma3:4b` is only a name, and a later `ollama pull` can
+point it to different weights. Without the flag, the detector model must be listed with its digest under
+`[detector_models]` in `src/unified_harness/models.toml`; the run then refuses a model whose local digest
+differs. With `--allow-unpinned` the run uses the model's current digest for the reply cache and records
+`"pinned": false` with that digest in the summary, so the result stays traceable. All other checks,
+including the VRAM limit, stay active. To make a model official, pin it:
+
+```bash
+curl -s http://127.0.0.1:11434/api/tags      # copy the model's "digest"
+# then add under [detector_models] in src/unified_harness/models.toml:
+#   "gemma3:4b" = "<digest>"
 ```
 
 Each model keeps its own entries in the reply cache (the key includes the model digest). Compare models by
@@ -268,7 +286,8 @@ uv run python scripts/build_solution_page.py   # rebuild docs/solution.html from
 |---|---|
 | `doctor`: `Ollama is not reachable` | Start Ollama (`ollama serve` or the app), or set `UNIFIED_HARNESS_OLLAMA_URL` |
 | `doctor`: `not pulled` | `ollama pull qwen3.5:2b-q4_K_M` |
-| `doctor`: `not pinned in models.toml` | Add the model and its digest (`ollama list`) under `[detector_models]` |
+| `doctor`: `not pinned in models.toml` | Pass `--allow-unpinned` for an experiment, or add the model and its digest under `[detector_models]` |
+| `uses ... MB VRAM > budget` | The model is too large for 4 GB; choose a smaller one from the list above |
 | `... already exists` | Use another `--out-root` or `--date`, or `--overwrite` |
 | ICD columns empty in `evaluate` | `ollama pull bge-m3`, or pass `--icd none` |
 | Privacy columns missing in `evaluate` | The `labels/` folder is missing |

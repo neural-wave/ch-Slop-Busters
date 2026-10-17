@@ -65,7 +65,7 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
 
     detectors = _detectors(a.detectors) or MODE_DETECTORS[a.mode]
     if a.mode != "rules" and not a.detectors:
-        report = doctor(a.mode, detector_model=a.detector_model)
+        report = doctor(a.mode, detector_model=a.detector_model, allow_unpinned=a.allow_unpinned)
         if not report.ok:
             for c in report.checks:
                 if not c.ok:
@@ -247,6 +247,7 @@ def run_one(
     mode: str = "rules",
     features: str | None = None,
     detector_model: str | None = None,
+    allow_unpinned: bool = False,
 ) -> dict:
     """Anonymize one split in a separate process (clean peak-RAM measurement), then evaluate it."""
     inp, gold_dir, ids = _split_paths(split)
@@ -265,6 +266,8 @@ def run_one(
         cmd += ["--features", features]
     if detector_model:
         cmd += ["--detector-model", detector_model]
+    if allow_unpinned:
+        cmd.append("--allow-unpinned")
     if ids:
         ids_file = run_root / "ids.json"
         ids_file.parent.mkdir(parents=True, exist_ok=True)
@@ -318,6 +321,7 @@ def cmd_run(a: argparse.Namespace) -> int:
         mode=a.mode,
         features=a.features,
         detector_model=a.detector_model,
+        allow_unpinned=a.allow_unpinned,
     )
     return 0
 
@@ -399,7 +403,7 @@ def cmd_show(a: argparse.Namespace) -> int:
 
 # --------------------------------------------------------------------------- environment and contract
 def cmd_doctor(a: argparse.Namespace) -> int:
-    report = doctor(a.mode, detector_model=a.detector_model)
+    report = doctor(a.mode, detector_model=a.detector_model, allow_unpinned=a.allow_unpinned)
     if a.json:
         print(json.dumps(report.as_dict(), indent=1))
     else:
@@ -444,6 +448,11 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--detectors", help="ablation only: comma list of rules, deid, gliner, llm (overrides --mode)")
     p.add_argument("--features", help="M5 feature flags, comma list: " + ", ".join(FEATURES))
     p.add_argument("--detector-model", help="Ollama model for the LLM detector (pinned in models.toml)")
+    p.add_argument(
+        "--allow-unpinned",
+        action="store_true",
+        help="experiments only: allow a --detector-model that is not pinned in models.toml (recorded as unpinned)",
+    )
     p.add_argument("--ids", help="JSON list of encounter ids to process")
     p.add_argument("--limit", type=int)
     p.add_argument("--device", default="auto", help="encoders: auto (GPU within the 4 GB budget) | cpu | mps | cuda")
@@ -475,6 +484,11 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--detectors", help="ablation only (overrides --mode)")
     p.add_argument("--features", help="M5 feature flags, comma list: " + ", ".join(FEATURES))
     p.add_argument("--detector-model", help="Ollama model for the LLM detector (pinned in models.toml)")
+    p.add_argument(
+        "--allow-unpinned",
+        action="store_true",
+        help="experiments only: allow a --detector-model that is not pinned in models.toml (recorded as unpinned)",
+    )
     p.add_argument("--icd", default="embed", choices=["none", "embed", "llm"])
     p.add_argument("--llm-model")
     p.add_argument("--gold")
@@ -518,6 +532,11 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--mode", choices=MODES, default="llm")
     p.add_argument("--json", action="store_true", help="machine-readable report")
     p.add_argument("--detector-model", help="Ollama model for the LLM detector (pinned in models.toml)")
+    p.add_argument(
+        "--allow-unpinned",
+        action="store_true",
+        help="experiments only: allow a --detector-model that is not pinned in models.toml (recorded as unpinned)",
+    )
     p.set_defaults(func=cmd_doctor)
 
     p = sub.add_parser("gate", help="acceptance gate: compare a scored run with the current best on one split")
