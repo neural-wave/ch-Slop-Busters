@@ -1,0 +1,69 @@
+# ICD-10 coder registry for `python3 -I eval score --icd <name> ...`. One table per coder; the table name is the
+# coder's name in the scores (icd.<name>) and its cache folder (data/eval/cache/icd/<name>/).
+#
+#   kind         ollama | knn | lexical | command
+#   default      true: in the default --icd set (every enabled coder with default = true)
+#   enabled      false: listed but never run, even when named (default true)
+#   primary      true: the coder the report headlines (one of them)
+#   suites       only these suites (default: every suite whose records have gold codes)
+#   description  one line for the docs and the report
+#
+#   ollama       model (installed, never pulled), inputs ("note": the note only; "both": dialogue and note), context
+#                (num_ctx; a longer prompt is rejected, never truncated), max_output, seed, device ("auto": Ollama
+#                decides; "cpu": no GPU layers), timeout (s per request), retries. Unranked: the whole set is scored
+#   knn          k (neighbours). Ranked, cut at k = number of gold codes
+#   lexical      ranked, cut at k
+#   command      cmd: argv list with {input} {output} {python} {repo} {container} {here}; timeout; ranked (default
+#                true); inputs. Contract in eval/coders/command.py
+#
+# Ad hoc, without an entry: --icd "cmd:<command line with {input} {output}>".
+
+[llm_note]
+description = "Zero-shot ICD-10-CM coding of the note by a local LLM (daniel-eval's protocol: strict JSON schema, temperature 0)"
+kind = "ollama"
+primary = true
+default = true
+model = "qwen3.5:2b-q4_K_M"
+inputs = "note"
+context = 16384
+max_output = 512
+seed = 0
+device = "auto"
+timeout = 300
+retries = 1
+suites = ["aci_eval"]  # add "aci_dev", "devp_discharge" on a faster machine: ~90 originals + 90 per model, uncached
+
+[llm_both]
+description = "The same LLM on the dialogue and the note (ketai-eval's DIALOGUE / PHYSICIAN NOTE framing)"
+kind = "ollama"
+default = false  # opt in with --icd llm_both: ~376 uncached calls on aci_eval, longer prompts
+model = "qwen3.5:2b-q4_K_M"
+inputs = "both"
+context = 24576
+max_output = 512
+seed = 0
+device = "auto"
+timeout = 900
+retries = 1
+suites = ["aci_eval"]
+
+[knn]
+description = "TF-IDF k-nearest neighbours over the 140 ACI train encounters, clinical words only (supervised: ACI label space)"
+kind = "knn"
+default = true
+k = 7
+suites = ["aci_eval", "aci_dev"]
+
+[lexical]
+description = "Zero-shot: ranks the suite + ACI label space by idf-weighted description words found in the text"
+kind = "lexical"
+default = true
+
+[paper]
+description = "Slot for the full paper coder (candidate expansion and verification); point cmd at it, then enable"
+kind = "command"
+enabled = false
+default = false
+ranked = false
+cmd = ["{python}", "-I", "{container}/daniel-eval/scripts/paper_coder.py", "--input", "{input}", "--output", "{output}"]
+timeout = 7200
