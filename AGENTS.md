@@ -11,6 +11,9 @@ Neural Wave hackathon, "Anonymization of patient data" challenge. The task brief
 | `data/kaggle/DATASETS.md` | Catalog of 22 external Kaggle datasets (contents, ICD coverage, license, fit) |
 | `data/kaggle/<owner>__<slug>/` | The downloaded Kaggle datasets. **Not in git**: run `scripts/download_kaggle.sh` to get them |
 | `scripts/download_kaggle.sh` | Downloads every dataset in the catalog |
+| `DATA_PREP.md` | Data preparation overview: the two phases, what each script does, which dataset serves which evaluation |
+| `scripts/convert/` | One converter per dataset into a common format (challenge schema + separate gold labels), plus `validate.py` and `export_gold.py`. See its `README.md` |
+| `data/converted/<name>/` | Converter output: `encounters.jsonl`, `labels.jsonl`, `manifest.json`, and `gold/` (harness format) after `export_gold.py`. **Not in git** |
 
 ## Setting up the Kaggle downloads
 
