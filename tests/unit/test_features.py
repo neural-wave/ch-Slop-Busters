@@ -81,3 +81,32 @@ def test_unknown_feature_is_an_error():
     assert _features("f0, F2") == {"F0", "F2"}
     with pytest.raises(SystemExit):
         _features("F9")
+
+
+def test_privacy_preset_and_feature_union():
+    from unified_harness.config import make_config
+
+    cfg = make_config("privacy", features=frozenset({"F2"}))
+    assert cfg.features == {"F0", "F2"}  # flags add to the preset's own features
+    assert "OTHER_QI" in cfg.remove and "OTHER_QI" not in make_config("balanced").remove
+    assert cfg.weak_name_threshold == make_config("balanced").weak_name_threshold
+
+
+def test_f4_needs_two_independent_signals():
+    from dataclasses import replace
+
+    from unified_harness.config import make_config
+    from unified_harness.pipeline import Anonymizer
+
+    rec = {
+        "encounter_id": "SYN8",
+        "dataset": "synthetic",
+        "dialogue": "[patient] we went to the wedding last week .",
+        "note": "She has a wedding next month.",
+        "icd10_codes": [],
+    }
+    with_f4 = Anonymizer(replace(make_config("privacy"), features=frozenset({"F0", "F4"}))).anonymize(rec)
+    without = Anonymizer(make_config("privacy")).anonymize(rec)
+    assert "wedding" in with_f4[0]["note"]  # one rule signal, a common word: kept under F4
+    assert any(d["policy_reason"] == "F4: one signal only (agreement rule)" for d in with_f4[1])
+    assert "wedding" not in without[0]["note"]

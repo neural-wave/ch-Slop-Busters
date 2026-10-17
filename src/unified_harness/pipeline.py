@@ -17,7 +17,7 @@ import re
 import time
 from dataclasses import asdict
 
-from .config import Config
+from .config import AGGRESSIVE_EXTRA, Config
 from .detect import formats, quasi, rules
 from .io import TEXT_FIELDS
 from .link import identity
@@ -26,6 +26,8 @@ from .shield import medical as shield
 from .spans import NAME_CATS, Span, resolve_overlaps
 from .text.normalize import Doc
 from .verify.leaks import find_leaks, repair_spans, shield_integrity
+
+LOW_RISK_CATS = frozenset(AGGRESSIVE_EXTRA)  # categories that only the agreement rule may remove (F4)
 
 
 def _worth(sp: Span, text: str) -> bool:
@@ -162,6 +164,7 @@ class Anonymizer:
         `golf` shielded -> `Kierland` is still removed).
         """
         kept, active = [], []
+        agree = self._agreement(cands, raw) if "F4" in self.cfg.features else None
         for c in cands:
             overl = [s for s in shields if s.field == c.field and s.hard and s.start < c.end and c.start < s.end]
             if overl and not (c.cat in NAME_CATS and c.source.startswith("rule:title")):
@@ -196,8 +199,30 @@ class Anonymizer:
                         self._decision("", c, "KEEP", None, f"preset:{self.cfg.preset} keeps {c.cat}", None)
                     )
                 continue
+            if agree is not None and c.cat in LOW_RISK_CATS and agree(c) < 2:
+                kept.append(c)
+                if decisions is not None:
+                    decisions.append(self._decision("", c, "KEEP", None, "F4: one signal only (agreement rule)", None))
+                continue
             active.append(c)
         return kept, active
+
+    @staticmethod
+    def _agreement(cands: list[Span], raw: dict[str, str]):
+        """F4 (D7): number of independent signals for a candidate: its own detector family, any other
+        detector family with an overlapping candidate, and corpus rarity of its words."""
+        from .detect.encoders import _rare_word
+
+        def family(sp: Span) -> str:
+            return sp.source.split(":")[0]
+
+        def count(c: Span) -> int:
+            fams = {family(c)} | {
+                family(o) for o in cands if o.field == c.field and o.start < c.end and c.start < o.end
+            }
+            return len(fams) + int(_rare_word(raw[c.field][c.start : c.end].lower()))
+
+        return count
 
     @staticmethod
     def _unshielded_pieces(c: Span, overl, text: str) -> list[Span] | None:

@@ -36,7 +36,7 @@ from .io import (
 )
 
 MODE_DETECTORS = {"rules": ("rules",), "full": ("rules", "deid", "gliner", "llm")}
-PRESETS = ("conservative", "balanced", "aggressive")
+PRESETS = ("conservative", "balanced", "aggressive", "privacy")
 
 
 def _detectors(s: str | None) -> tuple[str, ...] | None:
@@ -203,7 +203,7 @@ def _split_paths(split: str) -> tuple[Path, Path | None, list[str] | None]:
     return Path(split), None, None
 
 
-FEATURES = ("F0", "F2")
+FEATURES = ("F0", "F2", "F4")
 
 
 def _features(value: str | None) -> frozenset[str]:

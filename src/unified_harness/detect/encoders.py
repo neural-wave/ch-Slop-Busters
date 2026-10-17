@@ -432,7 +432,7 @@ class OllamaLLM:
         return out
 
 
-TARGETED_PROMPT_VERSION = "f2-v1"
+TARGETED_PROMPT_VERSION = "f2-v1"  # the prompt text; segment selection changes do not invalidate the cache
 TARGETED_PROMPT = """You find details that could identify a patient in an excerpt of a medical encounter (a lowercase
 speech transcript or a clinical note). List, copied EXACTLY as written in the excerpt, every:
 - "names": first or last name of any real person (patient, doctor, relative, friend), including nicknames
@@ -450,8 +450,25 @@ _PERSONAL_CUE = re.compile(
     r"\b(?:work\w*|job|jobs|employ\w*|retir\w*|occupation|career|profession\w*|business|company|factory|office|"
     r"school|college|university|student|teach\w*|team|league|coach\w*|church|live[sd]?|living|moved|from|"
     r"grew up|born|hometown|travel\w*|trip|visit\w*|vacation|married|husband|wife|son|daughter|kids|grand\w*|"
-    r"military|army|navy|served|veteran|volunteer\w*|hobby|hobbies|enjoy\w*|i'm a|i am a|as a)\b"
+    r"military|army|navy|served|veteran|volunteer\w*|hobby|hobbies|enjoy\w*|i'm a|i am a|as a|"
+    r"family|brother|sister|mother|father|mom|dad|own|owns|shop|store|pharmacy|market|restaurant|fan|"
+    r"street|road|avenue|corner|downtown|town|city|neighborhood|going to|went to)\b"
 )
+_WORD = re.compile(r"[a-z][a-z']{3,}")
+
+
+def _rare_word(unit: str) -> bool:
+    """A word that is not ordinary English, not medical and not a drug: a likely proper name
+    ("walgreens", "colorado") in the lowercase transcript."""
+    return any(
+        not L.is_common_word(w, 30)
+        and w not in L.medical_vocab()
+        and w not in L.drug_tokens()
+        and w not in L.drug_names()
+        for w in _WORD.findall(unit)
+    )
+
+
 _UNIT = re.compile(r"[^\n.?!]*[\n.?!]?")
 _TURN = re.compile(r"[^\n]*\n?")
 STAFF_ROLES = frozenset(
@@ -461,7 +478,8 @@ STAFF_ROLES = frozenset(
 
 def personal_segments(doc: Doc, max_chars: int = 1500) -> list[tuple[int, int]]:
     """Offsets of the privacy-dense parts of a field (D3): sentences or turns with a personal-context
-    cue, the social-history section of a note, and the first and last two turns of a dialogue."""
+    cue or a rare non-medical word, the social-history section of a note, and the first and last two
+    turns of a dialogue."""
     t = doc.lower
     unit_re = _TURN if doc.field == "dialogue" else _UNIT  # the dialogue is tokenized (" . "): use turns
     units = [(m.start(), m.end()) for m in unit_re.finditer(t) if t[m.start() : m.end()].strip()]
@@ -470,7 +488,7 @@ def personal_segments(doc: Doc, max_chars: int = 1500) -> list[tuple[int, int]]:
     picked = [
         (s, e)
         for i, (s, e) in enumerate(units)
-        if i in edge or _PERSONAL_CUE.search(t[s:e]) or any(a <= s < b for a, b in social)
+        if i in edge or _PERSONAL_CUE.search(t[s:e]) or _rare_word(t[s:e]) or any(a <= s < b for a, b in social)
     ]
     merged: list[tuple[int, int]] = []
     for s, e in picked:

@@ -51,10 +51,21 @@ PRESETS: dict[str, Config] = {
         age_mode="coarse",
         injury_context_shield=False,  # with codes, only code evidence protects an activity
     ),
+    # Balanced settings (name threshold, decade ages) plus low-risk details, with the code-evidence guard
+    # (F0) that keeps traps intact. The agreement rule (F4, D7) was measured and not kept by default: on
+    # tune it lowered low-risk removal (0.517 -> 0.381) with no trap or concept gain; it stays a flag.
+    # Add F2 in full mode for the targeted LLM detector.
+    "privacy": Config(
+        preset="privacy",
+        remove=frozenset(DIRECT_CATS + BALANCED_EXTRA + AGGRESSIVE_EXTRA),
+        features=frozenset({"F0"}),
+    ),
 }
 
 
 def make_config(preset: str = "balanced", **overrides) -> Config:
     base = PRESETS[preset]
     overrides = {k: v for k, v in overrides.items() if v is not None}
+    if "features" in overrides:  # flags add to the preset's own features
+        overrides["features"] = base.features | frozenset(overrides["features"])
     return replace(base, **overrides)
