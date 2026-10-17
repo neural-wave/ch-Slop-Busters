@@ -386,6 +386,8 @@ class OllamaLLM:
 
         self.url = f"{ollama_url()}/api/generate"
         self.calls, self.call_seconds = 0, 0.0
+        self.log_path = cfg.llm_log
+        self.encounter_id = ""  # set by the pipeline before each record, for the call log
         self._call("ok", 8)  # load once and check the VRAM budget
         from ..eval.resources import ollama_vram_mb
 
@@ -393,6 +395,27 @@ class OllamaLLM:
         if used > VRAM_BUDGET_MB:
             raise RuntimeError(f"{self.model} uses {used} MB VRAM > budget {VRAM_BUDGET_MB} MB; lower llm_num_ctx")
         self.vram_mb = used
+
+    def log_call(self, field: str, start: int, end: int, seconds: float, cached: bool, ans: dict) -> None:
+        """One JSONL line per LLM call for monitoring: where, how long, cached or not, how much was found.
+        No text from the record is written."""
+        if not self.log_path:
+            return
+        from datetime import datetime
+
+        row = {
+            "time": datetime.now().isoformat(timespec="seconds"),
+            "encounter_id": self.encounter_id,
+            "model": self.model,
+            "field": field,
+            "segment": [start, end],
+            "chars": end - start,
+            "seconds": round(seconds, 3),
+            "cached": cached,
+            "found": {k: len(v) for k, v in ans.items() if isinstance(v, list)},
+        }
+        with open(self.log_path, "a", encoding="utf-8") as fh:
+            fh.write(json.dumps(row) + "\n")
 
     def _call(self, prompt: str, num_predict: int = 400) -> str:
         t0 = time.perf_counter()
@@ -423,10 +446,12 @@ class OllamaLLM:
                 nl = text.rfind("\n", pos + 1200, end)
                 end = nl if nl > 0 else end
             chunk = text[pos:end]
+            t0 = time.perf_counter()
             try:
                 ans = json.loads(self._call(LLM_PROMPT + chunk))
             except Exception:  # noqa: BLE001  (malformed JSON: the chunk keeps the rule decisions)
                 ans = {}
+            self.log_call(doc.field, pos, end, time.perf_counter() - t0, False, ans if isinstance(ans, dict) else {})
             low = chunk.lower()
             for key, cat in (("names", "PERSON"), ("places", "LOCATION"), ("orgs", "ORGANIZATION")):
                 for item in ans.get(key, []) if isinstance(ans.get(key), list) else []:
@@ -556,7 +581,9 @@ class TargetedLLM(OllamaLLM):
         out: list[Span] = []
         for pos, end in personal_segments(doc):
             chunk = text[pos:end]
+            t0, hits = time.perf_counter(), self.hits
             ans = self._answer(chunk)
+            self.log_call(doc.field, pos, end, time.perf_counter() - t0, self.hits > hits, ans)
             low = chunk.lower()
             for key, cat in (
                 ("names", "PERSON"),
