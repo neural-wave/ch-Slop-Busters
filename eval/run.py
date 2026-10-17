@@ -1,6 +1,6 @@
 """Run models on suites and record their cost: one fresh process per (model, suite).
 
-Usage: python3 -I eval run [--models ad_rules fable_rules ...] [--suites aci_eval ...] [--force]
+Usage: python3 -I eval run [--models ad_rules anonymous_rules ...] [--suites aci_eval ...] [--force]
 
 Defaults: every enabled model of models.toml on every suite. Writes `data/eval/runs/<model>/<suite>/`: output.jsonl
 (the anonymized records), run.json (command, code fingerprint, exit code, wall time, ms/encounter, peak RAM of the

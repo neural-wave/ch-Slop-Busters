@@ -6,7 +6,7 @@ from eval.bonus import nocodes as N
 
 REGISTRY = {
     "ad_night": {"cmd": ["x"]}, "ad_night_nocodes": {"cmd": ["x"], "blind_codes": True},
-    "fable": {"cmd": ["x"]}, "fable_blind": {"cmd": ["x"], "blind_codes": True, "base": "fable"},
+    "anonymous": {"cmd": ["x"]}, "anonymous_blind": {"cmd": ["x"], "blind_codes": True, "base": "anonymous"},
     "orphan_nocodes": {"cmd": ["x"], "blind_codes": True},          # no `orphan` entry
     "ketai_nocodes": {"cmd": ["x"]},                                # not blind: no pair
     "self": {"cmd": ["x"], "blind_codes": True, "base": "self"},    # its own base: no pair
@@ -24,7 +24,7 @@ def coder(f1):
 
 
 def test_pairs_by_suffix_and_base_key():
-    assert N.pairs(REGISTRY) == [("ad_night", "ad_night_nocodes"), ("fable", "fable_blind")]
+    assert N.pairs(REGISTRY) == [("ad_night", "ad_night_nocodes"), ("anonymous", "anonymous_blind")]
     assert N.pairs({}) == [] and N.pairs({"a_nocodes": {"blind_codes": True}}) == []
 
 
@@ -34,7 +34,7 @@ def test_rows_values_and_deltas():
         "ad_night_nocodes": {"aci_eval": score(0.8428, 0.9981, 0.9935, 0.999, 1.0, {"llm_note": coder(0.45), "lexical": {"f1_anonymized": 0.16}})},
     }
     rows = N.rows(scores, REGISTRY)
-    assert [(r["base"], r["nocodes"], r["suite"]) for r in rows] == [("ad_night", "ad_night_nocodes", "aci_eval"), ("fable", "fable_blind", "aci_eval")]
+    assert [(r["base"], r["nocodes"], r["suite"]) for r in rows] == [("ad_night", "ad_night_nocodes", "aci_eval"), ("anonymous", "anonymous_blind", "aci_eval")]
     m = rows[0]["metrics"]
     assert list(m) == ["privacy", "privacy_high", "keep", "concepts", "icd_concepts", "icd_f1:llm_note", "icd_f1:lexical"]  # no row for a failed coder
     assert m["privacy"] == {"base": 0.8388, "nocodes": 0.8428, "delta": 0.004}

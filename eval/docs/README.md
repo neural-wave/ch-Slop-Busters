@@ -8,8 +8,8 @@ Run everything from the repo root (`neuralwave/`):
 
 ```bash
 python3 -I eval all                                   # every enabled model x every suite, then the report
-python3 -I eval all --models ad_night fable --suites aci_eval
-python3 -I eval score --icd llm_note knn "cmd:python3 coder.py --input {input} --output {output}"
+python3 -I eval all --models ad_night anonymous --suites aci_eval
+python3 -I eval score --icd llm_judge knn "cmd:python3 coder.py --input {input} --output {output}"
 python3 -I eval report                                # data/eval/report.md, report.json, results.csv, tradeoff.svg, ...
 python3 -I eval --help                                # every command; `python3 -I eval <command> --help` for its options
 ```
@@ -45,12 +45,15 @@ third ACI gold and the VM gold and tools were vendored or merged from them, and 
 | `suites` | `suites.py` | `data/converted/*`, VM annotations, `data/eval/gold/` | `data/eval/suites/<suite>/` | Fixed, seeded subsets: `encounters.jsonl` (model input), `labels.jsonl` (gold), `suite.json`. Rebuilds every selected suite; `--if-stale` only the missing or stale ones (what `run` and `all` do) |
 | `run` | `run.py` | `models.toml`, suites | `data/eval/runs/<model>/<suite>/` | Runs each model in its own process: output, wall time, peak RAM and VRAM of the process tree. Cached. Builds missing or stale suites first |
 | `score` | `score.py` | runs, labels | `data/eval/scores/<model>/<suite>.json` | Every metric, plus leak and loss lists (these quote PII) |
-| `report` | `report.py` | scores, `runs/*/*/run.json`, attacks, `drift.json`, `suite.json`, merged gold stats, `models.toml`, `coders.toml` | `data/eval/report.md`, `report.json`, `results.csv`, `results_headline.csv`, `tradeoff.svg`, `report_discord.md` | Comparison tables, tradeoff and CSV exports, aggregate numbers only. See [Report and exports](#report-and-exports) |
+| `report` | `report.py` | scores, `runs/*/*/run.json`, attacks, `phi/`, `drift.json`, `suite.json`, converter manifests, merged gold stats, `models.toml`, `coders.toml` | `data/eval/report.md`, `report.json`, `results.csv`, `results_headline.csv`, `tradeoff.svg`, `tradeoff_adversarial.svg`, `report_discord.md` | Comparison tables, tradeoffs, glossary, sources and CSV exports, aggregate numbers only. See [Report and exports](#report-and-exports) |
 | `all` | `__main__.py` | | | The steps in order: `suites`, `run`, `score`, `report`, plus the optional `gold`, `attack` and `drift` once they exist |
 | `gold` | `gold/merge_aci_gold.py` | the harness, VM and ketai ACI golds | `data/eval/gold/aci_eval/` | Merges the three ACI-eval golds into one with votes (`merged.jsonl`, `merged_stats.json`, `merged_review.md`); `--audit` also writes `audit.md`/`audit.json` (`gold/audit_gold.py`, also runnable alone). Deterministic, so `all` runs it first every time. See [ACI gold and privacy levels](#aci-gold-and-privacy-levels) |
 | `attack` | `bonus/attack.py` | runs, suites | `data/eval/attacks/<model>/<suite>.json` | Re-identification attacks A1–A5 on each output, with the original text as positive control. See [Adversarial attacks](#adversarial-attacks-bonus) |
 | `robustness` | `bonus/robustness.py` | `data/converted/robust_*`, scores, `drift.json` | the robust sets and suites | Builds the three robust suites when missing and prints the per-model robustness table. See [Robustness](#robustness-bonus) |
 | `drift` | `bonus/drift.py` | suites, `data/converted/aci_bench` | `data/eval/drift.json` | Lexical, style and structural drift of every suite from the 140 ACI train encounters, and the `complexity_rank` of the suites. See [Corpus drift](#corpus-drift-bonus) |
+| `judge` | `coders/agent.py` | runs, suites | `<container>/judge/<suite>/` (export), `data/eval/judge/<suite>/key.json`, the `llm_judge` ICD cache (import) | The LLM judge by agents: `export` writes the notes in batches with a coding prompt, `import` caches the agents' codes. See [LLM judge by agents](#llm-judge-by-agents) |
+| `adversary` | `bonus/adversary.py` | runs, suites | `<container>/adversary/<suite>/` (export), `data/eval/adversary/<suite>/key.json`, attack A6 (import) | The LLM agent adversary: `export` writes blinded sets and one prompt per set for agents, `import` scores their answers as attack A6. See [Agent adversary](#agent-adversary-a6) |
+| `phi` | `bonus/phi_privacy.py` | runs, suites | `data/eval/phi/<model>/<suite>.json` | Privacy before/after by an independent PII detector (Phi-3 PII), per category. Not part of `all`: run it last, alone in memory. See [Independent privacy check](#independent-privacy-check-phi) |
 
 `run` and `all` default to every enabled model and every suite. `all` hands `--models`, `--suites`, `--icd` and
 `--force` to the steps that take them (and `--if-stale` to `suites`), keeps going when a step fails or crashes, and
@@ -73,7 +76,7 @@ exits 1 if any did. A new step is a module with `main(argv: list[str] | None = N
   `--vm-annotations` is given; `eval suites --no-merged` likewise records `merged_gold: false` until `--merged`.
 - **Runs**: reused when `run.json` has the same `input_sha1`, command, `code_sha1` and exit code 0, and the output
   exists (`--force` reruns). `code_sha1` hashes the resolved command and the files of the model's `fingerprint`, so a
-  changed model reruns even when its command is the same, and a gold change reruns `oracle`. While a model runs, its
+  changed model reruns even when its command is the same. While a model runs, its
   `run.json` has `exit_code: null`, so an interrupted run is scored as failed and rerun next time.
 - **ICD predictions**: `data/eval/cache/icd/<coder>/<sha1>.json`, keyed by the coder's `config` (for the LLM coders:
   model, digest, prompt, schema and options), the encounter id and the text fields the coder reads. The original text
@@ -88,15 +91,16 @@ files hold aggregate numbers only (no leak lists), so they are safe to paste int
 
 | File | Contents |
 |---|---|
-| `report.md` | Headline on `aci_eval` (privacy at the consensus, direct and entity level, privacy on the harness gold alone, concepts and ICD concepts kept, the primary coder's ICD F1 anon / retained / agreement, ms/enc, peak RAM, VRAM within 4 GB, explained share, max attack recovery; `identity` and `oracle` last, as bounds), then: privacy vs utility with a Pareto flag, privacy levels, votes and sources, ICD coders (one row per model and coder of `coders.toml` or the scores; `!` = not valid for comparison), the main suites, no-codes pairs, attacks, robustness with the complexity rank, suite drift by JSD unigram, the Kaggle tables, `aci_eval` privacy by category and field, efficiency, and how to read it |
-| `report.json` | The same numbers (`headline`, `tradeoff`, `icd`, `nocodes`, `attacks`, `robustness`, `efficiency`, ...) and `exports`, the paths of the four files below |
-| `results.csv` | Long format, one number per row: `model, suite, category, metric, value, n, ci_low, ci_high, coder, level, notes`. `category` is one of `privacy`, `privacy_by_category`, `privacy_by_field`, `privacy_by_language`, `keep`, `concepts`, `edits`, `terms`, `icd`, `attack`, `robustness`, `drift`, `efficiency`, `explain`, `validity`. `level` is the privacy level (`consensus` = the headline `privacy.removed`, `union`, `direct`, `gold:<source>` for one gold alone, `union` also for `votes:N`/`src:X`) or an attack's `cat:<category>`. ICD metrics are `<arm>.<code or category>.<stat>` (arms `original`, `anonymized`, `agreement`), `f1_delta` and `f1_retention`. Every number of `report.md` is a row (also the breakdowns it leaves out), at full stored precision; suite-level rows (drift, gold counts) have an empty model. UTF-8 with BOM and commas, so Excel and LibreOffice open it without prompts |
+| `report.md` | Two dataset blocks. **ACI** (`aci_eval`): the headline (privacy at the consensus, direct and entity level and on the harness gold alone, medical concept recall, F1-Score ICD-10 code prediction with the LLM judge and the decision tree, each with Δ F1 (anonymized minus original), the LLM judge's agreement, proportion of recovered information by the LLM adversary and the max over attacks, explained share, runtime, peak RAM, VRAM within 4 GB; `identity` last, as the reference), the gold-privacy and the adversarial-privacy Pareto fronts, privacy levels, votes and sources, privacy by category and field, the Phi before/after check, F1 of every coder (ACI only; `!` = not valid for comparison), the main suites, attacks, and the with/without-codes ablation. **Kaggle**: privacy and ICD-10-CM terms per suite, ICD agreement per coder (no F1), utility with gold, privacy by language, Phi. Then robustness, suite drift and efficiency, a **Glossary** of every column (definition and task criterion) and the **Sources** (datasets with origin and license, coders, adversary, detector). Column names follow the task PDF and come from one registry (`report.COLUMNS`), so a metric has the same header in every table |
+| `report.json` | The same numbers (`headline`, `tradeoff`, `tradeoff_adversarial`, `icd`, `nocodes`, `attacks`, `phi`, `robustness`, `efficiency`, `columns`, ...) and `exports`, the paths of the five files below |
+| `results.csv` | Long format, one number per row: `model, suite, category, metric, value, n, ci_low, ci_high, coder, level, notes`. `category` is one of `privacy`, `privacy_by_category`, `privacy_by_field`, `privacy_by_language`, `keep`, `concepts`, `edits`, `terms`, `icd`, `attack`, `robustness`, `drift`, `efficiency`, `explain`, `validity`. `level` is the privacy level (`consensus` = the headline `privacy.removed`, `union`, `direct`, `gold:<source>` for one gold alone, `union` also for `votes:N`/`src:X`) or an attack's `cat:<category>`. ICD metrics are `<arm>.<code or category>.<stat>` (arms `original`, `anonymized`, `agreement`), `f1_delta` and `category.f1_delta`. Every number of `report.md` is a row (also the breakdowns it leaves out), at full stored precision; suite-level rows (drift, gold counts) have an empty model. UTF-8 with BOM and commas, so Excel and LibreOffice open it without prompts |
 | `results_headline.csv` | One row per model, one column per headline metric (keys of `report.HEADLINE`), plus `reference` and `pareto` (1/0) |
-| `tradeoff.svg` | Consensus privacy (x) vs ICD F1 retained of the primary coder (y; ICD concepts kept, said so in the axis title, while no real model has a primary-coder result). Filled = Pareto-optimal, hollow = dominated, squares = `identity`/`oracle`. Explicit background, light and dark colors, no external fonts |
+| `tradeoff.svg` | Consensus privacy (x) vs the primary coder's ICD F1 on the anonymized text (y; ICD concepts kept, said so in the axis title, while no real model has a primary-coder result). Filled = Pareto-optimal, hollow = dominated, square = `identity`. Explicit background, light and dark colors, no external fonts |
+| `tradeoff_adversarial.svg` | The same front with x = 1 − the LLM adversary's proportion of recovered information (attack A4): privacy measured by what an attacker gets back instead of by the gold |
 | `report_discord.md` | The headline in one short table plus a few bullets, for a chat |
 
 A model is Pareto-optimal when no other real model (references excluded) is at least as good on both consensus privacy
-and ICD F1 retained and better on one; there is no combined score, because the organizers weigh the criteria
+and ICD F1 on the anonymized text and better on one; there is no combined score, because the organizers weigh the criteria
 separately.
 
 ## Suites
@@ -123,7 +127,7 @@ suites. On `partial` gold only leak recall is meaningful.
 ### ACI gold and privacy levels
 
 `python3 -I eval gold` (`gold/`) merges the three ACI-eval golds: the harness gold (`data/converted/aci_bench`, made by
-the A+D team's annotators), the VM teacher gold (`vm-backup/neuralwave/annotations/eval`, made for the fable model)
+the A+D team's annotators), the VM teacher gold (`vm-backup/neuralwave/annotations/eval`, made for the anonymous model)
 and ketai's gold (`ketai-eval/gold/eval_gold.jsonl`). Labels map to the harness categories plus `CONTACT`; per
 encounter and field the longest span is canonical and a shorter item inside it adds a nested vote; each item carries
 its `votes` (1–3), `sources` and `direct` (names, DOB, dates, IDs, contacts). `aci_eval`'s `labels.jsonl` then holds
@@ -146,7 +150,7 @@ so the old numbers stay reproducible: `by_source.harness.removed` is the old `ac
 `ad_night` 0.8388) and `by_source.vm.removed` the old VM-gold privacy (0.5398). The breakdown also has `level:*`,
 `entity:*`, and `votes:*` and `src:*` over the union items. On the other suites the items carry no votes, so the
 three levels coincide and `by_source` is empty. `python3 -I eval gold --audit` checks the golds (verbatim spans,
-contradictions, regex candidates no item covers, single votes) and that the oracle removes 1.0 at every level.
+contradictions, regex candidates no item covers, single votes).
 
 ## Metrics
 
@@ -163,7 +167,7 @@ it answers. The drift metrics are in [CORPUS-DRIFT.md](CORPUS-DRIFT.md).
 | non-PII kept, edit precision | Token alignment (difflib) of input vs output on exhaustive gold: share of non-PII tokens untouched, and share of changed tokens that were gold PII |
 | concepts, ICD concepts | Share of gold medical-concept occurrences kept (all, and those flagged relevant to the encounter's codes) |
 | terms | Share of ICD-10-CM description words kept (independent vocabulary, for suites without concept gold) |
-| ICD F1, agreement | Local stand-in coders (`coders.toml`): micro F1 vs the gold codes on the original and the anonymized text, at the code and the 3-character category level, the paired-bootstrap F1 change and retention, and anonymized-vs-original agreement (the damage done by anonymization alone). See [ICD coders](#icd-coders) |
+| ICD F1, agreement | Local stand-in coders (`coders.toml`): micro F1 vs the gold codes on the original and the anonymized text, at the code and the 3-character category level, the paired-bootstrap F1 change Δ F1 (no ratio: a ratio of two small F1s exaggerates noise and can exceed 1), and anonymized-vs-original agreement (the damage done by anonymization alone). See [ICD coders](#icd-coders) |
 | ms/enc, RAM, VRAM | Wall time per record (process start included), peak RSS and nvidia-smi memory of the whole process tree. Budget: 4 GB VRAM |
 | explained | Share of changed original tokens (the same token alignment as edit precision, on every suite) covered by a logged decision with a non-empty reason. See [Explainability](#explainability-and-no-codes-bonus) |
 
@@ -175,13 +179,13 @@ codes, and both are scored against the gold. A coder never sees the gold codes.
 
 | Coder | What | Reads | Output | Suites |
 |---|---|---|---|---|
-| `llm_note` (**primary**) | Ollama `qwen3.5:2b-q4_K_M`, daniel-eval's prompt and protocol: JSON schema as `format` (ICD-10-CM syntax only, at most 32 codes), temperature 0, seed 0, thinking off, `num_ctx` 16384 | note | set | `aci_eval` (add `aci_dev`, `devp_discharge` in `coders.toml` on a faster machine) |
-| `llm_both` | The same model and instruction over ketai-eval's `DIALOGUE:` / `PHYSICIAN NOTE:` framing, `num_ctx` 24576 | dialogue + note | set | `aci_eval` |
+| `llm_judge` (**primary**, the LLM judge) | Claude Sonnet 5.5 agents, from a prompt: `kind = "agent"`, its predictions come only from `eval judge import` (see [LLM judge by agents](#llm-judge-by-agents)) | note | set | `aci_eval` |
+| `tree` | The decision-tree coder of `../decision-models` (`icd_rules.py`, scorer `tree`: ICD-10 lexicon candidates, a depth-2 tree fit on the 140 ACI train encounters), through `adapters/tree_coder.py` (`kind = "command"`, numpy, about 1 s per suite). Its own headline is the 3-character category F1 (0.689 on the original `aci_eval`, the package's number), so the report reads its category level | dialogue + note | set | `aci_eval` (F1); the Kaggle medical suites (agreement only) |
 | `knn` | TF-IDF k-nearest neighbours (k = 7) over the 140 ACI train encounters, clinical words only. Supervised: only the ACI train codes | dialogue + note | ranked | `aci_eval`, `aci_dev` |
 | `lexical` | Zero-shot: the suite + ACI label space ranked by idf-weighted description words found in the text | dialogue + note | ranked | every suite with codes |
 | `paper` | Disabled slot (`kind = "command"`) for the full paper coder | | | |
 
-`score --icd` takes these names (default: every enabled coder with `default = true`: `llm_note knn lexical`; `llm_both` is opt-in, `--icd llm_both`)
+`score --icd` takes these names (default: every enabled coder with `default = true`: `llm_judge tree knn lexical`)
 or an ad-hoc `"cmd:<command>"`. A command coder gets `{input}` (challenge schema with `icd10_codes: []`) and writes
 `{output}`, one `{"encounter_id", "codes": [...]}` per line, ranked unless its entry says `ranked = false`. To add a
 coder, add a table to `coders.toml` (keys documented in its header).
@@ -198,8 +202,11 @@ How a coder is scored (`icd.<coder>` in the score file):
   predictions taken as gold: the damage done by the anonymization alone). Each at the `code` and the 3-character
   `category` level, with micro `precision`, `recall`, `f1`, the mean per-note F1 (`mean_f1`) and the bootstrap
   `ci95` of the micro F1.
+- On a suite without any gold code an unranked coder (`tree`, the LLM coders) is scored on the `agreement` arm alone
+  (`icd.agreement_only`), over every record: that is the Kaggle ICD table. A ranked coder has no k there and is skipped.
 - `f1_delta`: anonymized minus original code-level micro F1 with a paired bootstrap CI (1000 resamples of the
-  encounters, seed 0; daniel-eval's procedure, which it reproduces exactly). `f1_retention`: anonymized / original.
+  encounters, seed 0; daniel-eval's procedure, which it reproduces exactly). `f1_delta_category`: the same at the
+  category level.
 - A failed prediction (timeout, unfinished generation, malformed answer, prompt over the context budget) counts as an
   empty set, is counted in `errors` and is never cached; `valid_for_comparison` is then false. When the whole coder
   fails (Ollama unreachable, three consecutive failed predictions) its entry is `{"error": ...}` and scoring goes on.
@@ -208,6 +215,37 @@ The LLM coders talk to `OLLAMA_HOST` (default `127.0.0.1:11434`) with proxies an
 is not on this machine is allowed but recorded as `endpoint`. A prompt over the budget (UTF-8 bytes + 512 output
 tokens + 1024 reserved ≤ `num_ctx`) is rejected, never truncated. `run` unloads every loaded Ollama model before it
 measures the models, so a coder left loaded by `score` does not inflate their RAM or VRAM.
+
+### LLM judge by agents
+
+The LLM judge (`llm_judge`, `kind = "agent"`) is Claude Sonnet 5.5 run as agents from a prompt, not through an API.
+`coders/agent.py`:
+
+1. `python3 -I eval judge export` collects every note still to code on `aci_eval` (the originals and every finished
+   run's output, each distinct text once) and writes batches of about 40 to `<container>/judge/aci_eval/`, outside the
+   repo: `batch_XX.jsonl` with only `record_id` and `note`, shuffled, never two versions of one encounter in a batch
+   (an agent cannot carry codes over from an original to its anonymized version). `PROMPT.md` is the prompt,
+   `prompts/batch_XX.md` the one for each batch, `agents/batch_XX.md` what each agent reads (`AGENT.md`, how to read
+   the notes one at a time up to an `=== END` marker, then the prompt) and `ORDER.md` the message that starts it.
+   The key stays in `data/eval/judge/aci_eval/key.json`.
+2. One Sonnet agent per batch, started with `ORDER.md`, writes `answers/batch_XX.jsonl`: one
+   `{"record_id", "codes": [...]}` per line, and returns the last words of each note so the runner can check that it
+   read every note to the end. `python3 -I eval judge status` counts the answers.
+3. `python3 -I eval judge import` writes each answer into the coder's ICD cache (`data/eval/cache/icd/llm_judge/`),
+   keyed like every prediction by the coder config, the encounter and the note; then `python3 -I eval score` scores it
+   like any coder (F1 original and anonymized, Δ F1, agreement).
+
+**Repeat passes** cut the agents' own variance: two agents coding the same note disagree on part of its codes.
+`python3 -I eval judge export --pass 2 --batch-size 10` writes every note again, cached or not, in new batches (seed =
+pass − 1) to `<container>/judge/aci_eval_pass2/` (key `key_pass2.json`); pass 3 likewise. `import` reads every pass
+and caches, per note, the codes that more than half of the passes that answered it gave (2 of 3; with two passes,
+both), and writes `data/eval/judge/aci_eval/passes.json`: the agreement of every two passes (micro F1 of one pass's
+codes against the other's, code and category level), a direct measure of the agent variance.
+
+A note without an answer is a failed prediction (`no_agent_answer`, counted in `errors`, never cached); while nothing
+is imported the coder's entry is an error. The next `export` skips notes already cached, so a new model only adds its
+own new notes. A new export refuses to run over existing answers unless `--force`. Keep every pass's folder and key:
+`import` recomputes the vote from all of them.
 
 ### Explainability and no-codes (bonus)
 
@@ -226,12 +264,12 @@ the score counts text: `explained` is the share of original word tokens that the
 the one behind edit precision) marks as changed and that a decision other than `keep` with a non-empty reason
 covers. `decisions` and `with_reason` give the literal decision ratio beside it, `unaligned` the rows that could not
 be placed in the original or are not valid UTF-8 JSON, and `source` says where the rows came from (`sidecar`, `inline`, `none`). `explained` is
-empty when nothing changed (`identity`) and 0 when text changed without any log (`oracle`).
+empty when nothing changed (`identity`) and 0 when text changed without any log.
 
 | Producer | Sidecar |
 |---|---|
 | A+D (`ad_*`) | Written by the model as `<output stem>.decisions.jsonl`: `action` REPLACE/GENERALIZE/KEEP and `explanation`, no `text` (offsets index the original). `explain.py` normalizes it. `ad_night_submitted` gets the sidecar delivered beside the precomputed file, which `run` copies along |
-| fable (`fable_rules`, `fable`) | Written by `adapters/fable_vm.py`: one `remove` row per replaced merged span, the reason joins each member's detector reason, layer and confidence, `source` the layers |
+| anonymous (`anonymous_rules`, `anonymous`) | Written by `adapters/anonymous_vm.py`: one `remove` row per replaced merged span, the reason joins each member's detector reason, layer and confidence, `source` the layers |
 | Ketai's generalize log | Rows with `text`, `type`, `removed`/`generalized`/`retained` and a reason but no offsets: each covers every occurrence of its text |
 
 Run `python3 -I eval/bonus/explain.py [--models ...] [--suites ...]` to print the scores of finished runs.
@@ -239,7 +277,11 @@ Run `python3 -I eval/bonus/explain.py [--models ...] [--suites ...]` to print th
 **No ICD-10 codes at inference** (`bonus/nocodes.py`). A `blind_codes = true` entry is paired with its base model:
 the entry named in its `base` key, else its name without `_nocodes` (`ad_night_nocodes` with `ad_night`).
 `nocodes.rows(scores, registry, suite)` gives per pair the base and no-codes values and the delta of privacy,
-high-risk, keep traps, concepts, ICD concepts and each coder's ICD F1 on the anonymized text; the report renders them.
+high-risk, keep traps, concepts, ICD concepts and each coder's ICD F1 on the anonymized text (also rows of
+`results.csv`). The report's ablation table puts every pair side by side over the main-task metrics of the headline
+(privacy, direct, concept recall, F1 of the LLM judge and the tree, the LLM adversary's recovery) and
+names the models without a twin. Pairs now: `ad_night`, `term_generalizer` (its delivered `_noicd_ablation` file).
+`zeroshot` and `anonymous` never read the codes, so a twin would be identical.
 `python3 -I eval/bonus/nocodes.py [--suite aci_eval]` prints them.
 
 ### Corpus drift (bonus)
@@ -271,32 +313,68 @@ share over the attacks that ran, A5 left out.
 
 | Attack | Attacker | Recovered = |
 |---|---|---|
-| A1 NER residual scan | Independent detectors: deid_roberta (i2b2), GLiNER multi-PII and the VM regex layer, run by `bonus/_ner_worker.py` with the fable venv | gold items (not low risk) covered by a detected span; spans holding a placeholder don't count |
+| A1 NER residual scan | Independent detectors: deid_roberta (i2b2), GLiNER multi-PII and the VM regex layer, run by `bonus/_ner_worker.py` with the anonymous venv | gold items (not low risk) covered by a detected span; spans holding a placeholder don't count |
 | A2 roster dictionary | Knows every person name of the suite's gold plus the first names of `nam_dict.txt` (Kaggle `krist0phersmith/pii-real-names-dataset`) | name tokens of gold names still present in their field, more often than the token occurs outside the name |
 | A3 rare words | Encounter-unique tokens that are not clinical (ICD-10-CM words, RxNorm), not ordinary English, not calendar words, and are a proper noun of the word list or a known first name | such tokens still present in their encounter (gold-free: `by_category` is the gold category holding the token, or `UNLABELLED`) |
-| A4 LLM inference | Ollama `qwen3.5:2b-q4_K_M` (`coders/ollama.py`, schema-constrained JSON) guesses the patient's name, age, place, employer or job | guesses matching the record's gold (any name token, age ±1 year, gold place or job inside the guess) |
+| A4 LLM inference | Ollama `qwen3.5:2b-q4_K_M` (the default `--llm`, schema-constrained JSON) guesses the patient's name, age, place, employer or job. `--llm claude-sonnet-5-5` runs it through `bonus/_claude_worker.py` instead (official SDK via `uv run --with anthropic`, structured output, needs `ANTHROPIC_API_KEY`, sends the record text to the API) | guesses matching the record's gold (any name token, age ±1 year, gold place or job inside the guess); a refusal counts in `errors` and as no guess |
+| A6 LLM agent adversary | LLM agents, one per blinded model output, prompted as red-team auditors (`eval adversary`, below). The report's headline adversary | the same rule as A4 |
 | A5 record linkage | Holds the original records; TF-IDF nearest neighbour (scikit-learn's `sublinear_tf` formula, standard library) | records linked to their own original |
 
 Gold is the suite's `pii` at the consensus level (direct identifiers or 2+ votes) when the items carry votes (the
 merged ACI gold), else all items; the file records `gold_level`. A5 is an upper bound by design: clinical content is
 kept, so whoever holds the originals re-links almost every record. It bounds the threat model (anonymization hides
 who the patient is, not which record it was) and is excluded from `max_recovered`. A1's detectors are the ones the
-fable models use, so for them A1 is not independent: what their detectors miss, A1 misses too (on `aci_eval` A1
-recovers 1.8% from `fable` and 13.6% from `ad_night`, whose own detectors differ).
+anonymous models use, so for them A1 is not independent: what their detectors miss, A1 misses too (on `aci_eval` A1
+recovers 1.8% from `anonymous` and 13.6% from `ad_night`, whose own detectors differ).
 
 Cost (measured on `aci_eval`, 67 encounters, RTX 4050):
 
 | Attack | Runs by default | Cost |
 |---|---|---|
 | A2, A3, A5 | yes (what `all` runs) | standard library, CPU only: about 2.5 s per model (20 s for the 8 models with a run) |
-| A1 | only when named | loads two transformer models in the fable venv and scans about one text (a dialogue or a note) per second: ~10 min for 4 models (`--device auto` uses the GPU when 2.5 GB are free, else the CPU with 4 threads, an order of magnitude slower) |
-| A4 | only when named | one LLM call per record and version: 67 calls for the control (shared by every model; `identity` reuses it) plus 67 per model. 1.4 s per call on an idle GPU (1.5 min per model), ~6 s while the ICD coder shares the GPU (6 to 7 min per model) |
+| A1 | only when named | loads two transformer models in the anonymous venv and scans about one text (a dialogue or a note) per second: ~10 min for 4 models (`--device auto` uses the GPU when 2.5 GB are free, else the CPU with 4 threads, an order of magnitude slower) |
+| A4 | only when named | one LLM call per record and version: 67 calls for the control (shared by every model; `identity` reuses it) plus 67 per model, sent as one batch per model. With Sonnet about 3,500 input tokens per call (roughly $0.6 per model at $2 / $10 per million tokens). Locally (Ollama) 1.4 s per call on an idle GPU |
 
 A1 and A4 cache each result by text in `data/eval/cache/attacks/` (`ner/`, `llm/`; written through a temporary file,
 so a killed run loses nothing and the next run resumes where it stopped). The control and unchanged outputs are
 computed once, and a later run without A1 or A4 keeps their earlier results while the model output, the suite and
 `--limit` are unchanged. A model without a run, a failed run, an unbuilt suite or one without PII gold is skipped with
 a one-line reason.
+
+### Agent adversary (A6)
+
+The headline adversary runs as a prompt, not as an API call: LLM agents attack the outputs and the harness scores
+their guesses. `bonus/adversary.py`:
+
+1. `python3 -I eval adversary export [--models ...]` writes the package to `<container>/adversary/<suite>/`, outside
+   the repo, so an agent working there never sits next to the gold: one `set_XX.jsonl` per distinct model output
+   plus the original text (the positive control), each holding only `record_id`, `dialogue` and `note`, records
+   shuffled and renamed per set and the sets numbered at random (identical outputs share a set: `ad_night_submitted`
+   with `ad_night`, `identity` with the control). `PROMPT.md` is the prompt, `prompts/set_XX.md` the one to give each
+   agent. The key (which set is which model, which record is which encounter) stays in
+   `data/eval/adversary/<suite>/key.json`.
+2. Run one agent per set with its working directory set to the package and access to that folder only (an agent that
+   reads two sets, the key or the gold breaks the blinding). Each writes `answers/set_XX.jsonl`, one line per record:
+   `record_id`, `first_name`, `last_name`, `age`, `city_or_state`, `employer_or_job`, `evidence`.
+   `python3 -I eval adversary status` counts the answers per set.
+3. `python3 -I eval adversary import --attacker <agent model>` scores every answered set like A4 against the gold
+   (consensus level on `aci_eval`), with the control set's score as `control`, and writes attack A6 into each
+   model's attack file. A missing or malformed answer counts as no guess (`missing`, `malformed`). A model whose
+   output changed since the export is skipped. `eval attack` never runs or overwrites A6. A new export renumbers the
+   sets, so it refuses to run over existing answers unless `--force` (which deletes them).
+
+### Independent privacy check (Phi)
+
+`python3 -I eval phi [--models ...] [--suites aci_eval ...] [--model OLLAMA_MODEL] [--limit N]`
+(`bonus/phi_privacy.py`) measures privacy without the gold: the fine-tuned `ab-ai/PII-Model-Phi3-Mini` (Phi-3-mini
+PII extractor, MIT; Q4_K_M GGUF of `mradermacher/PII-Model-Phi3-Mini-GGUF`, 2.4 GB:
+`ollama pull hf.co/mradermacher/PII-Model-Phi3-Mini-GGUF:Q4_K_M`) reads the original text (**before**) and the
+model's output (**after**) in chunks of 2,000 characters with the model card's prompt. Its labels map to the gold
+categories (`LABELS`; sex, gender, height, amounts and title prefixes are dropped, placeholders ignored), and
+`removed` = 1 − after / before, in total and per category. It is evaluation only, never a model row. It unloads every
+other Ollama model first and the detector at the end, so it runs alone in memory: run it **last**. Answers are cached
+by chunk text (`data/eval/cache/phi/`), so the originals are scanned once. About 400 calls for the `aci_eval`
+originals and up to 400 per model.
 
 ### Robustness (bonus)
 
@@ -326,7 +404,8 @@ scores them too once their converted data exists.
 | `timeout` | Seconds before the run is killed with its whole process tree (default 3600). Recorded as exit code 124 and `timed_out: true`. A descendant that daemonized itself (double fork, `setsid -f`) has left the tree and survives |
 | `fingerprint` | Path, directory or glob, or a list of them (same placeholders; relative ones are taken from `cwd`), hashed into `code_sha1`. Files are hashed with their paths relative to the pattern's fixed prefix |
 | `precomputed` | An already anonymized JSONL instead of `cmd`; a new delivery (another sha1) invalidates the cached run. A `<stem>.decisions.jsonl` beside it is copied as the run's explainability sidecar (and part of the cache key) |
-| `blind_codes` | `true` hides `icd10_codes` from the model (bonus task) and restores them before scoring |
+| `blind_codes` | `true` hides `icd10_codes` from the model (bonus task) and restores them before scoring; `base` names the model it is compared with (default: the name without `_nocodes`) |
+| `reads_codes` | `false`: the model never reads `icd10_codes` (`anonymous_rules`, `anonymous`, `zeroshot`), so the ablation says a twin would be identical instead of listing it as missing |
 | `suites`, `enabled` | Only these suites; `false` lists the model as pending and never runs it |
 
 A model runs in its own session, so the harness kills its tree itself on Ctrl-C, SIGTERM and SIGHUP (a SIGKILLed
@@ -336,12 +415,16 @@ other models still run.
 | Entry | What runs | Setup |
 |---|---|---|
 | `ad_rules`, `ad_night`, `ad_night_nocodes` | A+D night model (`neural_wave` 93b5eea, Davide's latest zip) in `../models/ad-night/repo`: rules only, and their submission config (rules + deid_roberta + GLiNER), with and without codes. Fingerprint: its `src/` code and lexicons | `uv sync --all-extras` there, then download `obi/deid_roberta_i2b2` and `knowledgator/gliner-pii-base-v1.0` (runs offline) |
-| `fable_rules`, `fable` | Fable model (`../vm-backup/neuralwave`) through `adapters/fable_vm.py`: its regex and name layers (+ deid_roberta, GLiNER), every span replaced by `[TYPE]` and logged with its reason in `output.decisions.jsonl`. The VM code has no replacement step, so the adapter adds only that. Fingerprint: the adapter, the VM's `detect/` and `common.py`, and the word list | Own venv in `../models/fable-deps/.venv` with the VM's versions (`transformers==5.16.1 gliner==0.2.29 regex protobuf sentencepiece spacy torch`; spaCy gives the name layer its stop words). HF: `obi/deid_roberta_i2b2`, `urchade/gliner_multi_pii-v1` and the tokenizer files of `microsoft/mdeberta-v3-base`. The name layer's word list is Debian's `wamerican-large` (`../models/fable-deps/american-english-large`) |
+| `anonymous_rules`, `anonymous` | Anonymous model (`../vm-backup/neuralwave`) through `adapters/anonymous_vm.py`: its regex and name layers (+ deid_roberta, GLiNER), every span replaced by `[TYPE]` and logged with its reason in `output.decisions.jsonl`. The VM code has no replacement step, so the adapter adds only that. Fingerprint: the adapter, the VM's `detect/` and `common.py`, and the word list | Own venv in `../models/anonymous-deps/.venv` with the VM's versions (`transformers==5.16.1 gliner==0.2.29 regex protobuf sentencepiece spacy torch`; spaCy gives the name layer its stop words). HF: `obi/deid_roberta_i2b2`, `urchade/gliner_multi_pii-v1` and the tokenizer files of `microsoft/mdeberta-v3-base`. The name layer's word list is Debian's `wamerican-large` (`../models/anonymous-deps/american-english-large`) |
+| `term_generalizer`, `term_generalizer_nocodes` | The term-generalizer's delivered `aci_eval` outputs (`../vllm4gb-pilot-ppo_generalize.jsonl` and its `_noicd_ablation` twin, made without the codes): `precomputed`, so the harness scores them without running the model | none |
+| `zeroshot` | Zero-shot baseline: `../zeroshot/anonymize.py --mode extract` through `adapters/zeroshot_llm.py`. Ollama `qwen3.5:2b-q4_K_M` returns the PII spans of each 2,000-character chunk as JSON (task definition and label set, no examples), each span becomes `[TYPE]`. It never reads the codes. The adapter keeps the work folder next to the output, so an interrupted run resumes, and fails rather than deliver missing records | Ollama with the model (see the ICD coders) |
 | `ketai` | Disabled until it lands | Set `cmd` or `precomputed`, then `enabled = true` |
-| `identity`, `oracle` | References: input unchanged (privacy 0, utility 1), and gold PII replaced by `[CATEGORY]` (reads the gold, so its fingerprint includes `{labels}`) | none |
+| `identity` | Reference: input unchanged (privacy 0, utility 1) | none |
 
 To add a model, add a table to `models.toml` (with a `fingerprint` for its code) and run
-`python3 -I eval all --models <name>`.
+`python3 -I eval all --models <name>`. To score a delivered JSONL without running anything, give it a `precomputed`
+entry (`{suite}` in the path for one file per suite, `suites = ["aci_eval"]` for one file) and run
+`python3 -I eval run --models <name> --suites aci_eval`, then `score` and `report`.
 
 ## Layout
 
@@ -349,7 +432,7 @@ To add a model, add a table to `models.toml` (with a `fingerprint` for its code)
 eval/
   __main__.py  CLI            common.py  paths, JSONL, matching    models.toml  model registry
   suites.py  run.py  score.py  report.py  metrics.py  icd.py
-  adapters/    baselines.py (identity, oracle), fable_vm.py
+  adapters/    baselines.py (identity), anonymous_vm.py, zeroshot_llm.py, tree_coder.py (ICD coder)
   coders.toml  ICD coder registry   coders/  base, codes, bootstrap, ollama (LLM coders), knn, lexical, command
   bonus/       bonus tasks
   gold/        taxonomy.py (labels, levels), merge_aci_gold.py (`eval gold`), audit_gold.py
@@ -363,7 +446,7 @@ pytest is the one development dependency (the harness itself is standard library
 root, without installing anything into the system Python:
 
 ```bash
-uv run --no-project --with pytest python3 -I -m pytest eval/tests -q                  # all 287, about 10 s
+uv run --no-project --with pytest python3 -I -m pytest eval/tests -q                  # all 306, about 10 s
 uv run --no-project --with pytest python3 -I -m pytest eval/tests/test_gold.py -q     # one file
 uv run --no-project --with pytest python3 -I -m pytest eval/tests -q -k privacy       # by name
 ```
@@ -377,17 +460,21 @@ vocabulary with fixed ones. A few tests use real data and skip when it is missin
 |---|---:|---|
 | `test_validity.py` | 12 | The hard output contract: same records, ids, order and keys; `icd10_codes` byte-identical (reordering counts as a change); text fields are strings; `explanations` (a list) is the only extra key allowed |
 | `test_metrics.py` | 24 | Privacy on the 3-record suite: full removal, identity, partial leaks, a surviving distinctive token leaking a name (`[PATIENT] Campbell`), tokens under 4 characters not distinctive (`[PATIENT] Li`), the number boundary (`59` not inside `120/59`), tokens that also occur outside the item. Keep and concept survival, edits (exact, over- and under-redaction, exhaustive gold only), clinical terms, placeholder rate |
-| `test_gold.py` | 20 | The merged ACI gold: label mapping to common categories, DATE → DOB/YEAR rules, majority vote and tie priority, longest span canonical with nested votes, nested items surviving only with standalone occurrences, keep/PII conflicts, concept union, union/consensus/direct filters, privacy levels and per-source scores, oracle = 1.0 on merged labels, deterministic output, the audit, the suite built from the merged gold. With data: `ad_night` harness gold = 0.8388 and the real oracle = 1.0 |
+| `test_gold.py` | 18 | The merged ACI gold: label mapping to common categories, DATE → DOB/YEAR rules, majority vote and tie priority, longest span canonical with nested votes, nested items surviving only with standalone occurrences, keep/PII conflicts, concept union, union/consensus/direct filters, privacy levels and per-source scores, deterministic output, the audit, the suite built from the merged gold. With data: `ad_night` harness gold = 0.8388 |
 | `test_codes.py` | 30 | ICD-10-CM normalization (ported from daniel-eval): one canonical spelling per code, invalid codes rejected, exact (not hierarchical) matching, first-seen order, 3-character categories, gold codes undotted or as dicts |
 | `test_bootstrap.py` | 8 | Set scoring and the paired bootstrap (ported from daniel-eval): empty denominators, micro vs mean-per-note F1 with hallucinated codes, failed predictions scored as empty, identical arms giving Δ = 0 with CI [0, 0], numbers pinned to daniel-eval's own output on the same fixture |
 | `test_coders.py` | 47 | The coders against a mocked HTTP layer: request body identical to daniel-eval's, context guard, malformed and unexpected answers, transport failures, loopback guard, no proxy or redirect, retries, three consecutive failures failing the coder, unreachable server, model not installed, unload; the kNN, lexical and command coders (contract, missing records, timeout, cannot start) |
-| `test_icd.py` | 13 | `icd.score`: the exact JSON shape, ranked coders cut at k = number of gold codes, unranked sets scored whole, category level, identical arms, failed predictions counted and never cached, invalid codes counted, coder-level failure as an `error` entry, cache compatible with the old plain lists and robust to a corrupt file, the `coders.toml` registry and defaults, an end-to-end LLM coder with a fake server |
-| `test_attack.py` | 19 | The attacks on the 3-record fixture: identity output recovers exactly what the original-text control recovers, oracle output leaves A2 nothing, hand-computed A3 (rare tokens) and A5 (record linkage), A1 with a fake NER worker, A4 with a fake LLM (age within ±1), the consensus gold level, A5 left out of the max, skips, the per-record cache surviving a cut file |
+| `test_icd.py` | 14 | `icd.score`: the exact JSON shape, ranked coders cut at k = number of gold codes, unranked sets scored whole, category level, identical arms, failed predictions counted and never cached, invalid codes counted, coder-level failure as an `error` entry, cache compatible with the old plain lists and robust to a corrupt file, the `coders.toml` registry and defaults, an end-to-end LLM coder with a fake server, agreement alone on a suite without gold codes |
+| `test_attack.py` | 21 | The attacks on the 3-record fixture: identity output recovers exactly what the original-text control recovers, a fully cleaned output leaves A2 nothing, hand-computed A3 (rare tokens) and A5 (record linkage), A1 with a fake NER worker, A4 with a fake LLM (age within ±1) and with a fake Claude batch (one batch, cached guesses, refusals counted, no key), the worker's closed schema, the consensus gold level, A5 left out of the max, skips, the per-record cache surviving a cut file |
 | `test_robustness.py` | 6 | The robust-set converters on tiny inputs (discharge layouts and gold, seeding per row, PII injected into medconv with labels, synthetic documents with nested items folded) and the robustness table with drift ranks |
 | `test_drift.py` | 32 | Corpus drift: zero on identical corpora, saturated on disjoint vocabularies, known small-case values for JSD, MTLD, Yule's K, entropy, Distinct-n, repetition, the syllable heuristic and Flesch-Kincaid, sentence splitting, structural ratios (bullets, key-value lines, line breaks), the `drift.json` contract |
-| `test_explain.py` | 18 | Explainability: token alignment, full and partial coverage of changed tokens, decisions with an empty reason not counted, keep decisions, no sidecar vs inline `explanations`, A+D sidecar normalization and scores, offsets checked against the original text, a sidecar with a bad encoding, the fable adapter's decisions, the sidecar copied for precomputed models |
+| `test_explain.py` | 18 | Explainability: token alignment, full and partial coverage of changed tokens, decisions with an empty reason not counted, keep decisions, no sidecar vs inline `explanations`, A+D sidecar normalization and scores, offsets checked against the original text, a sidecar with a bad encoding, the anonymous adapter's decisions, the sidecar copied for precomputed models |
 | `test_nocodes.py` | 3 | No-codes pairing (by `_nocodes` suffix or `base` key) and the paired values and deltas |
-| `test_report.py` | 8 | Report on a synthetic `data/eval` tree: every headline cell is also a row in `results.csv`, Pareto flags, missing data and errors shown as `–`/markers without crashing, CSV BOM and header, well-formed SVG, the Discord summary |
+| `test_report.py` | 9 | Report on a synthetic `data/eval` tree: every headline cell is also a row in `results.csv` (the tree at its category level), Pareto flags of both fronts, missing data and errors shown as `–`/markers without crashing, the ablation table, CSV BOM and header, well-formed SVG, the Discord summary, the glossary (every column) and the sources |
+| `test_judge.py` | 5 | The LLM judge by agents: the export (each distinct note once, never two versions of an encounter in a batch, failed runs ignored, the key kept outside the package, each agent's file = reading protocol + prompt), nothing imported = a coder error, the import into the cache scored by `icd.score`, a missing answer = a failed prediction, cached notes not exported again; repeat passes (every note re-exported in new batches, majority of 3, both of 2, pass agreement in `passes.json`) |
+| `test_adversary.py` | 4 | The agent adversary: the blinded export (only record ids and text, shared sets, the key kept outside the package, filled prompts), the refusal to overwrite answers, the import scored like A4 with the original-text set as control (missing and malformed answers), A6 kept by automated attack runs, a changed output skipped |
+| `test_phi.py` | 8 | The Phi check: chunking at line breaks, the detector's dict answers (JSON or Python literal), the label map, before/after counts with a fake detector, the cache, unparseable answers counted as errors |
+| `test_adapters.py` | 2 | The zero-shot runner (copies a complete output, refuses a partial one) and the decision-tree coder's output contract (skipped without `../decision-models` or numpy) |
 | `test_run.py` | 15 | The run cache's code fingerprint (globs, renames, location independence, relative paths) and the process runner: timeout and SIGTERM/SIGHUP to the harness kill the model's whole process tree, a command that cannot start is a failed run, an exit at the deadline is not a timeout, wall time ends at the model's exit, an interrupted run is never cached |
 | `test_suites.py` | 9 | Suite caching: built once and reused, rebuilt when the source, the definition, the build code or a suite file changes, byte-identical rebuilds, a missing source keeps the old suite, `--if-stale`, the VM annotation dir kept across rebuilds |
 | `test_main.py` | 8 | The command line: every command listed in `--help`, a missing module exits 2, every `all` step is a command, a crashing step does not stop `all`, stage modules also run as files |

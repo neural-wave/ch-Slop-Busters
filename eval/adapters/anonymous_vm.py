@@ -1,6 +1,6 @@
-"""Adapter for the fable model (vm-backup/neuralwave): run its detection layers and replace what they find.
+"""Adapter for the anonymous model (vm-backup/neuralwave): run its detection layers and replace what they find.
 
-Usage: python -I eval/adapters/fable_vm.py INPUT OUTPUT [--layers regex,names,deid,gliner] [--tiers 1,2] [--device auto]
+Usage: python -I eval/adapters/anonymous_vm.py INPUT OUTPUT [--layers regex,names,deid,gliner] [--tiers 1,2] [--device auto]
                                                       [--root VM_DIR] [--words FILE]
 
 The VM code stops at detection: its policy/ and guard/ folders are empty and the Qwen fine-tune never finished,

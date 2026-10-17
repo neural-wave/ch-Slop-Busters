@@ -71,7 +71,7 @@ def validity(original: list[dict], anonymized: list[dict]) -> dict:
 
 
 NAME_CATS = {"PATIENT_NAME", "PERSON_NAME"}
-WORDLISTS = (CONTAINER / "models" / "fable-deps" / "american-english-large", Path("/usr/share/dict/american-english-large"), Path("/usr/share/dict/words"))
+WORDLISTS = (CONTAINER / "models" / "anonymous-deps" / "american-english-large", Path("/usr/share/dict/american-english-large"), Path("/usr/share/dict/words"))
 
 
 @cache

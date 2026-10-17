@@ -1,5 +1,5 @@
-"""Merged ACI gold: taxonomy rules, the nesting rule, keep and concept merging, levels in metrics.privacy, the oracle at
-1.0 on merged labels, deterministic output, the suite built from it, and (when data/ is there) the A+D cross-check."""
+"""Merged ACI gold: taxonomy rules, the nesting rule, keep and concept merging, levels in metrics.privacy, deterministic
+output, the suite built from it, and (when data/ is there) the A+D cross-check."""
 
 from __future__ import annotations
 
@@ -9,7 +9,6 @@ import pytest
 
 from eval import metrics as M
 from eval import suites as S
-from eval.adapters.baselines import oracle
 from eval.common import CATEGORY_RISK, REPO, load_jsonl
 from eval.gold import audit_gold as A
 from eval.gold import merge_aci_gold as G
@@ -186,14 +185,6 @@ def test_levels_coincide_without_metadata(original, clean, labels):
     assert p["by_source"] == {} and p["entity_removed"] == p["breakdown"]["items_fully_removed"] == 0.8889
 
 
-def test_oracle_removes_everything_on_merged_labels(merged):
-    row, _ = merged
-    labels = labels_of(row)
-    p = M.privacy([REC], [oracle(REC, labels["e1"])], labels)
-    assert all(v["removed"] == 1.0 and v["entity_removed"] == 1.0 for v in p["levels"].values()) and p["entity_removed"] == 1.0
-    assert p["by_source"]["harness"]["removed"] == 1.0 and p["by_source"]["vm"]["removed"] < 1.0  # VM's `golf` lost to keep
-
-
 # files: merge, audit, suite --------------------------------------------------------------------------------------------
 
 
@@ -251,7 +242,7 @@ def test_audit(sources, monkeypatch):
     assert A.main([]) == 1  # no merged gold yet
     assert G.main(["--audit"]) == 0
     res = json.loads((out / "audit.json").read_text())["summary"]
-    assert res["oracle"]["ok"] and res["verbatim"]["vm"] == {"items": 9, "not_whole_word": 0, "not_substring": 0}
+    assert res["verbatim"]["vm"] == {"items": 9, "not_whole_word": 0, "not_substring": 0}
     assert res["single_votes"]["items"] == 3 and res["possibly_missed"] == {} and res["diff"] is None
     assert "## Possibly missed (0)" in (out / "audit.md").read_text()
     assert [k for k, _, _ in A.candidates("aged 53, 03/03/1970, Dr. Lee, 555-123-4567, mrn 1234567, 2000 IU, may 2020")] == [
@@ -312,9 +303,3 @@ def test_ad_night_harness_gold_cross_check(monkeypatch):
     p = M.privacy(original, load_jsonl(RUN), labels)
     assert p["by_source"]["harness"]["removed"] == pytest.approx(0.8388, abs=1e-4) and p["by_source"]["vm"]["removed"] == pytest.approx(0.5398, abs=1e-4)
 
-
-def test_real_oracle_is_one(monkeypatch):
-    original, labels = real_suite()
-    monkeypatch.setattr(M, "common_words", REAL_COMMON_WORDS)
-    p = M.privacy(original, [oracle(r, labels[r["encounter_id"]]) for r in original], labels)
-    assert all(v["removed"] == 1.0 and v["entity_removed"] == 1.0 for v in p["levels"].values())

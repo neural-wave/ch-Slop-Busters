@@ -11,6 +11,9 @@
 #   precomputed  instead of cmd: path to an already anonymized JSONL per suite, e.g. ".../{suite}.jsonl"
 #   blind_codes  true: the model gets icd10_codes = [] (bonus task "without ICD-10 codes"); the runner puts the
 #                original codes back before scoring, so the validity check only tests the text fields
+#   base         the model a blind_codes entry is compared with (default: its name without "_nocodes")
+#   reads_codes  false: the model never reads icd10_codes, so a blind_codes twin would be identical (the report's
+#                ablation says so instead of listing it as missing)
 #   suites       only run on these suites (default: all)
 #   enabled      false: listed in the report as pending, never run
 #
@@ -21,11 +24,6 @@
 description = "Reference: returns the input unchanged (privacy 0, utility 1). Sanity check for the metrics"
 cmd = ["{python}", "-I", "{here}/baselines.py", "identity", "{input}", "{output}"]
 fingerprint = ["{here}/baselines.py", "{here}/../common.py"]
-
-[oracle]
-description = "Reference: replaces every gold PII string with [CATEGORY]. Reads the suite's labels, so it is an upper bound, not a model"
-cmd = ["{python}", "-I", "{here}/baselines.py", "oracle", "{input}", "{output}", "--labels", "{labels}"]
-fingerprint = ["{here}/baselines.py", "{here}/../common.py", "{labels}"]
 
 [ad_rules]
 description = "A+D night model (neural_wave 93b5eea), balanced preset, rules only (CPU, no ML dependencies)"
@@ -54,20 +52,41 @@ description = "A+D's own submission file (made on their Mac): checks our scorer 
 suites = ["aci_eval"]
 precomputed = "{container}/models/ad-night/repo/outputs/anonymized_eval_patient_doctor_encounters.jsonl"
 
-[fable_rules]
-description = "Fable model (VM backup): regex + structural name layers, every detected span -> [TYPE]"
+[anonymous_rules]
+reads_codes = false
+description = "Anonymous model (VM backup): regex + structural name layers, every detected span -> [TYPE]"
 cwd = "{container}/vm-backup/neuralwave"
-cmd = ["{container}/models/fable-deps/.venv/bin/python", "-I", "{here}/fable_vm.py", "{input}", "{output}", "--layers", "regex,names", "--words", "{container}/models/fable-deps/american-english-large"]
-fingerprint = ["{here}/fable_vm.py", "{container}/vm-backup/neuralwave/detect/**/*.py", "{container}/vm-backup/neuralwave/common.py",
-               "{container}/models/fable-deps/american-english-large"]
+cmd = ["{container}/models/anonymous-deps/.venv/bin/python", "-I", "{here}/anonymous_vm.py", "{input}", "{output}", "--layers", "regex,names", "--words", "{container}/models/anonymous-deps/american-english-large"]
+fingerprint = ["{here}/anonymous_vm.py", "{container}/vm-backup/neuralwave/detect/**/*.py", "{container}/vm-backup/neuralwave/common.py",
+               "{container}/models/anonymous-deps/american-english-large"]
 
-[fable]
-description = "Fable model (VM backup): regex + names + deid_roberta + GLiNER, every detected span -> [TYPE]"
+[anonymous]
+reads_codes = false
+description = "Anonymous model (VM backup): regex + names + deid_roberta + GLiNER, every detected span -> [TYPE]"
 cwd = "{container}/vm-backup/neuralwave"
 env = { HF_HUB_OFFLINE = "1" }
-cmd = ["{container}/models/fable-deps/.venv/bin/python", "-I", "{here}/fable_vm.py", "{input}", "{output}", "--layers", "regex,names,deid,gliner", "--words", "{container}/models/fable-deps/american-english-large"]
-fingerprint = ["{here}/fable_vm.py", "{container}/vm-backup/neuralwave/detect/**/*.py", "{container}/vm-backup/neuralwave/common.py",
-               "{container}/models/fable-deps/american-english-large"]
+cmd = ["{container}/models/anonymous-deps/.venv/bin/python", "-I", "{here}/anonymous_vm.py", "{input}", "{output}", "--layers", "regex,names,deid,gliner", "--words", "{container}/models/anonymous-deps/american-english-large"]
+fingerprint = ["{here}/anonymous_vm.py", "{container}/vm-backup/neuralwave/detect/**/*.py", "{container}/vm-backup/neuralwave/common.py",
+               "{container}/models/anonymous-deps/american-english-large"]
+
+[term_generalizer]
+description = "Term-generalizer: PPO pilot of the zero-shot LLM, generalize mode (ages and dates as ranges), vLLM in 4 GB; delivered JSONL"
+suites = ["aci_eval"]
+precomputed = "{container}/vllm4gb-pilot-ppo_generalize.jsonl"
+
+[term_generalizer_nocodes]
+description = "Term-generalizer without ICD-10 codes at inference (bonus task); delivered JSONL"
+suites = ["aci_eval"]
+blind_codes = true
+precomputed = "{container}/vllm4gb-pilot-ppo_generalize_noicd_ablation.jsonl"
+
+[zeroshot]
+reads_codes = false
+description = "Zero-shot baseline: qwen3.5:2b (Ollama) returns the PII spans of each chunk as JSON, each span -> [TYPE]. Never reads the codes"
+suites = ["aci_eval"]
+timeout = 14400
+cmd = ["{python}", "-I", "{here}/zeroshot_llm.py", "{input}", "{output}", "--mode", "extract", "--model", "qwen3.5:2b-q4_K_M", "--workers", "1"]
+fingerprint = ["{here}/zeroshot_llm.py", "{container}/zeroshot/anonymize.py", "{container}/zeroshot/common.py"]
 
 [ketai]
 description = "Ketai's model (work in progress). Point cmd or precomputed at it when it lands"

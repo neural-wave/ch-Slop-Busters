@@ -13,14 +13,14 @@ python3 -I eval suites --only aci_eval --no-merged  # the old labels: harness `p
 ```
 
 `eval all` runs `gold` first. The merge is deterministic: the same inputs give byte-identical files, so an unchanged
-gold does not rebuild the suite or rerun `oracle`.
+gold does not rebuild the suite.
 
 ## Sources
 
 | Gold | Path (under `neuralwave-container/`) | Made by | Eval split | Label set |
 |---|---|---|---|---|
 | `harness` | `neuralwave/data/converted/aci_bench/labels.jsonl` (imported by `scripts/convert/aci_bench.py`) | A+D team's annotators | 532 PII items, 194 keep items | the harness's 11 categories, per-item risk |
-| `vm` | `vm-backup/neuralwave/annotations/eval/<id>.json` (`GUIDELINES.md` there) | VM teacher annotation for the fable model | 815 PHI items (tier 1/2), 5,211 concepts | 15 PHI types, 6 concept types |
+| `vm` | `vm-backup/neuralwave/annotations/eval/<id>.json` (`GUIDELINES.md` there) | VM teacher annotation for the anonymous model | 815 PHI items (tier 1/2), 5,211 concepts | 15 PHI types, 6 concept types |
 | `ketai` | `ketai-eval/gold/eval_gold.jsonl` (`build_gold.py` there) | ketai's reference annotation | 484 PII items, 4,334 concepts, 125 non-PII ambiguous terms | 11 PII categories, 7 concept types |
 
 Item counts are distinct (field, lowercased text) pairs with at least two alphanumeric characters, the unit the suites
@@ -136,7 +136,7 @@ the union items (`src:vm`: the merged items VM supports). Leaks list every union
 An item without vote metadata belongs to every level, so on the other suites the levels coincide and `by_source` is
 empty.
 
-Re-scored `aci_eval` (runs unchanged, `identity` and `oracle` rerun on the merged labels):
+Re-scored `aci_eval` (runs unchanged):
 
 | model | consensus | high-risk | entity | direct | union | union entity | harness | VM | ketai |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -144,20 +144,18 @@ Re-scored `aci_eval` (runs unchanged, `identity` and `oracle` rerun on the merge
 | `ad_night_submitted` | 0.7738 | 0.9404 | 0.7472 | 0.9262 | 0.5615 | 0.5165 | 0.8388 | 0.5398 | 0.8211 |
 | `ad_night_nocodes` | 0.7793 | 0.9404 | 0.7509 | 0.9262 | 0.5664 | 0.5204 | 0.8428 | 0.5452 | 0.8257 |
 | `ad_rules` | 0.7586 | 0.9384 | 0.7286 | 0.9237 | 0.5506 | 0.5038 | 0.8279 | 0.5316 | 0.8058 |
-| `fable` | 0.9310 | 0.9821 | 0.9126 | 0.9822 | 0.8368 | 0.8041 | 0.9444 | 0.8391 | 0.9465 |
-| `fable_rules` | 0.6097 | 0.8310 | 0.5558 | 0.8041 | 0.4562 | 0.4059 | 0.6355 | 0.4458 | 0.6651 |
+| `anonymous` | 0.9310 | 0.9821 | 0.9126 | 0.9822 | 0.8368 | 0.8041 | 0.9444 | 0.8391 | 0.9465 |
+| `anonymous_rules` | 0.6097 | 0.8310 | 0.5558 | 0.8041 | 0.4562 | 0.4059 | 0.6355 | 0.4458 | 0.6651 |
 | `identity` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `oracle` | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0.9503 | 1.0 |
 
-For every model whose output did not change (all but `oracle`), the `harness` and `VM` columns equal the old
-`aci_eval` privacy and VM-gold privacy to the fourth decimal (`ad_night` 0.8388 and 0.5398). The oracle replaces every union item, so it removes 1.0 at every level; it misses 5% of VM's own list (the
-VM items that lost to keep), and keeps 0.944 of the keep strings because 16 of them sit inside a longer PII item
-(`hay` inside `unloading a lot of hay`; the audit lists them).
+For every model the `harness` and `VM` columns equal the old `aci_eval` privacy and VM-gold privacy to the fourth
+decimal (`ad_night` 0.8388 and 0.5398). 16 keep strings sit inside a longer PII item (`hay` inside
+`unloading a lot of hay`; the audit lists them), so removing exactly the gold also removes them.
 
 ## Audit (`gold/audit_gold.py`)
 
 Joins ketai's `audit_gold.py` and VM's `check_annotations.py`; writes `audit.md` and `audit.json` next to the merged
-gold and exits 1 when the oracle self-check fails. Current eval split:
+gold and exits 1 when `merged.jsonl` is missing. Current eval split:
 
 - verbatim: every PII and keep string of the three golds occurs as a whole word in its field; one VM concept (`SPO2`)
   occurs only as part of a longer token.
@@ -166,9 +164,8 @@ gold and exits 1 when the oracle self-check fails. Current eval split:
   encounter's ICD-10 description words.
 - regex candidates (ages, dates, title + name, e-mails, phones, digit runs of 6+) that no union or keep item covers:
   none.
-- single-vote items, the vote histogram per category, the oracle self-check (1.0 at every level and at the entity
-  level), and the diff against the previous `merged.jsonl` (`merged.prev.jsonl`, kept by the merge when the content
-  changes).
+- single-vote items, the vote histogram per category, and the diff against the previous `merged.jsonl`
+  (`merged.prev.jsonl`, kept by the merge when the content changes).
 
 ## Caveats
 

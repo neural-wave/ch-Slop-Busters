@@ -9,7 +9,7 @@ import pytest
 
 from eval import metrics as M
 from eval import run as R
-from eval.adapters import fable_vm
+from eval.adapters import anonymous_vm
 from eval.bonus import explain as X
 
 DIALOGUE, NOTE = "Hello Andrew Campbell how are you", "Andrew Campbell is 59 and has a cough"
@@ -123,23 +123,23 @@ def test_sidecar_bad_encoding(tmp_path):
     assert x["covered_tokens"] == 4 and x["decisions"] == 4 and x["unaligned"] == 2 and x["source"] == "sidecar"
 
 
-# producers of decisions: the fable adapter and precomputed runs ------------------------------------------------------
+# producers of decisions: the anonymous adapter and precomputed runs ------------------------------------------------------
 
 
 def span(start, end, typ, tier, conf, source, reason=""):
     return SimpleNamespace(field="note", start=start, end=end, type=typ, tier=tier, confidence=conf, source=source, reason=reason)
 
 
-def test_fable_decisions():
+def test_anonymous_decisions():
     members = [span(0, 6, "NAME_PATIENT", 1, 0.95, "names", "name 'andrew'"), span(0, 15, "NAME_PATIENT", 1, 0.99, "ner"),
                span(19, 21, "AGE", 1, 0.97, "regex", "regex: age")]  # fmt: skip
-    merged = fable_vm.merge(members)
+    merged = anonymous_vm.merge(members)
     assert [m[:4] for m in merged] == [(0, 15, "NAME_PATIENT", 1), (19, 21, "AGE", 1)] and merged[0][4] == [members[1], members[0]]
-    d = fable_vm.decision("x", "note", NOTE, merged[0], True)
+    d = anonymous_vm.decision("x", "note", NOTE, merged[0], True)
     assert d == {"encounter_id": "x", "field": "note", "start": 0, "end": 15, "text": "Andrew Campbell", "action": "remove", "category": "NAME_PATIENT",
                  "reason": "tier 1 NAME_PATIENT -> [NAME_PATIENT]: ner found NAME_PATIENT [ner, conf 0.99]; name 'andrew' [names, conf 0.95]",
                  "source": "names+ner"}  # fmt: skip
-    assert fable_vm.decision("x", "note", NOTE, merged[1], False)["action"] == "keep"
+    assert anonymous_vm.decision("x", "note", NOTE, merged[1], False)["action"] == "keep"
 
 
 def test_precomputed_sidecar_is_copied(tmp_path, monkeypatch):

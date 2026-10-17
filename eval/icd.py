@@ -7,14 +7,16 @@ on the original and on the anonymized text of the same records, against the gold
     anonymized   the same on the anonymized text: the organizer-style number
     agreement    anonymized predictions against original predictions taken as gold: the damage done by
                  anonymization alone, whatever the coder's own errors
-    f1_delta     anonymized minus original micro F1, with a paired bootstrap CI over encounters
-    f1_retention anonymized F1 / original F1
+    f1_delta     anonymized minus original code-level micro F1, with a paired bootstrap CI over encounters
+    f1_delta_category  the same at the category level (the decision tree's own level)
 
 Each arm is scored at the code level (exact canonical codes, eval/coders/codes.py) and at the category level (first
 3 characters), as micro precision/recall/F1, the mean per-note F1 and a bootstrap CI of the micro F1 (1000 resamples,
 seed 0). Gold codes are normalized like predictions. A ranked coder (knn, lexical, command) is cut at k = the
 record's number of gold codes, so it needs no threshold; an unranked one (the LLM coders) is scored on its whole set.
-Only records with gold codes are scored. A coder never sees the gold codes.
+Only records with gold codes are scored. A coder never sees the gold codes. On a suite without any gold code an
+unranked coder is still scored on the agreement arm alone (`agreement_only`: the Kaggle suites); a ranked one has no k
+to cut at and is skipped.
 
 A failed prediction counts as an empty set, is counted in `errors` (then `valid_for_comparison` is false) and is
 never cached. A failure of the whole coder (Ollama unreachable, three consecutive failed predictions) gives
@@ -47,7 +49,7 @@ from eval.coders.text import aci
 from eval.common import CACHE_DIR, HERE, sha1_text
 
 REGISTRY = HERE / "coders.toml"
-KINDS = ("ollama", "knn", "lexical", "command")
+KINDS = ("ollama", "knn", "lexical", "command", "agent")
 ARMS = ("original", "anonymized", "agreement")
 LEVELS = ("code", "category")
 
@@ -90,6 +92,10 @@ def make(name: str, suite_records: list[dict], registry: dict | None = None) -> 
         return Knn(k=spec.get("k", 7), name=name)
     if kind == "lexical":
         return Lexical(label_space(suite_records, aci()[1]), name=name)
+    if kind == "agent":
+        from eval.coders.agent import AgentCoder
+
+        return AgentCoder(name, spec["model"], spec.get("inputs", "note"))
     if kind == "command":
         return Command(spec["cmd"], name=name, timeout=spec.get("timeout", 3600), ranked=spec.get("ranked", True), inputs=spec.get("inputs", "both"))
     from eval.coders.ollama import DEFAULT_MODEL, LlmCoder
@@ -169,7 +175,7 @@ def score(coder: Coder, original: list[dict], anonymized: list[dict], resamples:
     by_id = {r["encounter_id"]: r for r in anonymized}
     recs = [r for r in original if r.get("icd10_codes") and r["encounter_id"] in by_id]
     if not recs:
-        return None
+        return None if coder.ranked else agreement_only(coder, original, anonymized, resamples, seed)
     try:
         preds = {"original": cached_predict(coder, recs), "anonymized": cached_predict(coder, [by_id[r["encounter_id"]] for r in recs])}
     except CoderError as e:
@@ -189,22 +195,58 @@ def score(coder: Coder, original: list[dict], anonymized: list[dict], resamples:
             rows[f"{arm}.category"].append(counts({category(c) for c in pred}, {category(c) for c in ref}))
         if o != a:
             changed.append({"encounter_id": r["encounter_id"], "gold": sorted(g), "original": sorted(o), "anonymized": sorted(a)})
-    ci, delta = paired(rows, [("anonymized.code", "original.code")], resamples, seed)
+    ci, delta = paired(rows, [("anonymized.code", "original.code"), ("anonymized.category", "original.category")], resamples, seed)
     res = {"coder": coder.name, "config": coder.config, "ranked": coder.ranked, "inputs": coder.inputs}
     if coder.endpoint:
         res["endpoint"] = coder.endpoint
     res |= {"n_records": len(recs), "n_codes": n_codes}
     res |= {arm: {lv: _level(rows[f"{arm}.{lv}"], ci[f"{arm}.{lv}"]) for lv in LEVELS} for arm in ARMS}
-    f1o, f1a = (rates(*(sum(x[i] for x in rows[f"{arm}.code"]) for i in range(3)))["f1"] for arm in ("original", "anonymized"))
+    def f1(arm: str, level: str) -> float:
+        return rates(*(sum(x[i] for x in rows[f"{arm}.{level}"]) for i in range(3)))["f1"]
+
+    def change(level: str) -> dict:
+        return {"value": round(f1("anonymized", level) - f1("original", level), 4),
+                "ci95": [round(x, 4) for x in delta[(f"anonymized.{level}", f"original.{level}")]]}  # fmt: skip
+
     errors = {arm: sum(p.error is not None for p in preds[arm].values()) for arm in preds}
     res |= {
-        "f1_delta": {"value": round(f1a - f1o, 4), "ci95": [round(x, 4) for x in delta[("anonymized.code", "original.code")]]},
-        "f1_retention": round(f1a / f1o, 4) if f1o else None,
+        "f1_delta": change("code"),
+        "f1_delta_category": change("category"),
         "errors": errors,
         "invalid_codes": {arm: sum(p.raw_invalid + count_invalid(p.codes) for p in preds[arm].values()) for arm in preds},
         "valid_for_comparison": not any(errors.values()),
         "changed_predictions": changed,
     }
+    return res
+
+
+def agreement_only(coder: Coder, original: list[dict], anonymized: list[dict], resamples: int = 1000, seed: int = 0) -> dict | None:
+    """Without gold codes: the agreement arm alone (anonymized-text predictions scored against original-text
+    predictions), over every record, for an unranked coder. None when no record has an output."""
+    by_id = {r["encounter_id"]: r for r in anonymized}
+    recs = [r for r in original if r["encounter_id"] in by_id]
+    if not recs:
+        return None
+    try:
+        preds = {"original": cached_predict(coder, recs), "anonymized": cached_predict(coder, [by_id[r["encounter_id"]] for r in recs])}
+    except CoderError as e:
+        return {"error": str(e)}
+    rows: dict[str, list] = {f"agreement.{lv}": [] for lv in LEVELS}
+    changed = []
+    for r in recs:
+        o, a = (set(normalize_set(preds[arm][r["encounter_id"]].codes)) for arm in ("original", "anonymized"))
+        rows["agreement.code"].append(counts(a, o))
+        rows["agreement.category"].append(counts({category(c) for c in a}, {category(c) for c in o}))
+        if o != a:
+            changed.append({"encounter_id": r["encounter_id"], "original": sorted(o), "anonymized": sorted(a)})
+    ci, _ = paired(rows, [], resamples, seed)
+    res = {"coder": coder.name, "config": coder.config, "ranked": coder.ranked, "inputs": coder.inputs}
+    if coder.endpoint:
+        res["endpoint"] = coder.endpoint
+    errors = {arm: sum(p.error is not None for p in preds[arm].values()) for arm in preds}
+    res |= {"n_records": len(recs), "n_codes": 0, "agreement": {lv: _level(rows[f"agreement.{lv}"], ci[f"agreement.{lv}"]) for lv in LEVELS},
+            "errors": errors, "invalid_codes": {arm: sum(p.raw_invalid + count_invalid(p.codes) for p in preds[arm].values()) for arm in preds},
+            "valid_for_comparison": not any(errors.values()), "changed_predictions": changed}  # fmt: skip
     return res
 
 
