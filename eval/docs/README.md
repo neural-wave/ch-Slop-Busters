@@ -359,7 +359,36 @@ pytest is the one development dependency (the harness itself is standard library
 root, without installing anything into the system Python:
 
 ```bash
-uv run --no-project --with pytest python3 -I -m pytest eval/tests -q
+uv run --no-project --with pytest python3 -I -m pytest eval/tests -q                  # all 287, about 10 s
+uv run --no-project --with pytest python3 -I -m pytest eval/tests/test_gold.py -q     # one file
+uv run --no-project --with pytest python3 -I -m pytest eval/tests -q -k privacy       # by name
 ```
 
-The run tests start and kill small processes and read `/proc`, so they are skipped outside Linux.
+The tests use hand-made fixtures with answers worked out by hand, so they need neither `data/` nor `models/` nor a
+running Ollama. `conftest.py` holds the shared 3-record suite and replaces the English word list and the ICD-10-CM
+vocabulary with fixed ones. A few tests use real data and skip when it is missing: the two A+D cross-checks in
+`test_gold.py`. `test_run.py` starts and kills small processes and reads `/proc`, so it is skipped outside Linux.
+
+| File | Tests | What it checks |
+|---|---:|---|
+| `test_validity.py` | 12 | The hard output contract: same records, ids, order and keys; `icd10_codes` byte-identical (reordering counts as a change); text fields are strings; `explanations` (a list) is the only extra key allowed |
+| `test_metrics.py` | 24 | Privacy on the 3-record suite: full removal, identity, partial leaks, a surviving distinctive token leaking a name (`[PATIENT] Campbell`), tokens under 4 characters not distinctive (`[PATIENT] Li`), the number boundary (`59` not inside `120/59`), tokens that also occur outside the item. Keep and concept survival, edits (exact, over- and under-redaction, exhaustive gold only), clinical terms, placeholder rate |
+| `test_gold.py` | 20 | The merged ACI gold: label mapping to common categories, DATE → DOB/YEAR rules, majority vote and tie priority, longest span canonical with nested votes, nested items surviving only with standalone occurrences, keep/PII conflicts, concept union, union/consensus/direct filters, privacy levels and per-source scores, oracle = 1.0 on merged labels, deterministic output, the audit, the suite built from the merged gold. With data: `ad_night` harness gold = 0.8388 and the real oracle = 1.0 |
+| `test_codes.py` | 30 | ICD-10-CM normalization (ported from daniel-eval): one canonical spelling per code, invalid codes rejected, exact (not hierarchical) matching, first-seen order, 3-character categories, gold codes undotted or as dicts |
+| `test_bootstrap.py` | 8 | Set scoring and the paired bootstrap (ported from daniel-eval): empty denominators, micro vs mean-per-note F1 with hallucinated codes, failed predictions scored as empty, identical arms giving Δ = 0 with CI [0, 0], numbers pinned to daniel-eval's own output on the same fixture |
+| `test_coders.py` | 47 | The coders against a mocked HTTP layer: request body identical to daniel-eval's, context guard, malformed and unexpected answers, transport failures, loopback guard, no proxy or redirect, retries, three consecutive failures failing the coder, unreachable server, model not installed, unload; the kNN, lexical and command coders (contract, missing records, timeout, cannot start) |
+| `test_icd.py` | 13 | `icd.score`: the exact JSON shape, ranked coders cut at k = number of gold codes, unranked sets scored whole, category level, identical arms, failed predictions counted and never cached, invalid codes counted, coder-level failure as an `error` entry, cache compatible with the old plain lists and robust to a corrupt file, the `coders.toml` registry and defaults, an end-to-end LLM coder with a fake server |
+| `test_attack.py` | 19 | The attacks on the 3-record fixture: identity output recovers exactly what the original-text control recovers, oracle output leaves A2 nothing, hand-computed A3 (rare tokens) and A5 (record linkage), A1 with a fake NER worker, A4 with a fake LLM (age within ±1), the consensus gold level, A5 left out of the max, skips, the per-record cache surviving a cut file |
+| `test_robustness.py` | 6 | The robust-set converters on tiny inputs (discharge layouts and gold, seeding per row, PII injected into medconv with labels, synthetic documents with nested items folded) and the robustness table with drift ranks |
+| `test_drift.py` | 32 | Corpus drift: zero on identical corpora, saturated on disjoint vocabularies, known small-case values for JSD, MTLD, Yule's K, entropy, Distinct-n, repetition, the syllable heuristic and Flesch-Kincaid, sentence splitting, structural ratios (bullets, key-value lines, line breaks), the `drift.json` contract |
+| `test_explain.py` | 18 | Explainability: token alignment, full and partial coverage of changed tokens, decisions with an empty reason not counted, keep decisions, no sidecar vs inline `explanations`, A+D sidecar normalization and scores, offsets checked against the original text, a sidecar with a bad encoding, the fable adapter's decisions, the sidecar copied for precomputed models |
+| `test_nocodes.py` | 3 | No-codes pairing (by `_nocodes` suffix or `base` key) and the paired values and deltas |
+| `test_report.py` | 8 | Report on a synthetic `data/eval` tree: every headline cell is also a row in `results.csv`, Pareto flags, missing data and errors shown as `–`/markers without crashing, CSV BOM and header, well-formed SVG, the Discord summary |
+| `test_run.py` | 15 | The run cache's code fingerprint (globs, renames, location independence, relative paths) and the process runner: timeout and SIGTERM/SIGHUP to the harness kill the model's whole process tree, a command that cannot start is a failed run, an exit at the deadline is not a timeout, wall time ends at the model's exit, an interrupted run is never cached |
+| `test_suites.py` | 9 | Suite caching: built once and reused, rebuilt when the source, the definition, the build code or a suite file changes, byte-identical rebuilds, a missing source keeps the old suite, `--if-stale`, the VM annotation dir kept across rebuilds |
+| `test_main.py` | 8 | The command line: every command listed in `--help`, a missing module exits 2, every `all` step is a command, a crashing step does not stop `all`, stage modules also run as files |
+| `test_common.py` | 15 | Package paths and `OLLAMA_HOST` parsing (host, host:port, URLs, IPv6, empty host, bad port) |
+
+Not covered by the tests, checked by hand instead and recorded in `EVAL_MERGE_LOG.md`: real model runs (byte-identical
+to the old harness), the live Ollama coder (identical to daniel-eval's CLI on the `identity` pair), and the real NER
+worker of attack A1.
