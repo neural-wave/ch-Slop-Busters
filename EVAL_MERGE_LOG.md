@@ -6,10 +6,10 @@
 
 - Moved `scripts/eval/*` into the package `eval/`, with absolute imports (`from eval import ...`, `from eval.common import ...`):
   `__init__.py`, `__main__.py`, `common.py`, `suites.py`, `run.py`, `score.py`, `report.py`, `metrics.py`, `icd.py`,
-  `models.toml`, `adapters/{__init__,baselines,fable_vm}.py`, `docs/README.md`, `tests/`, and empty packages `bonus/`,
+  `models.toml`, `adapters/{__init__,baselines,anonymous_vm}.py`, `docs/README.md`, `tests/`, and empty packages `bonus/`,
   `gold/`, `coders/`. `evaluate.py` became the `all` command. `scripts/eval/` is deleted. The only `sys.path`
   changes left are the bootstrap in `__main__.py` (repo root replaces `eval/`), the one in `adapters/baselines.py`
-  (it runs as a standalone script), and `fable_vm.py`'s VM import.
+  (it runs as a standalone script), and `anonymous_vm.py`'s VM import.
 - `common.py`: `HERE` = `eval/`, `REPO` = `neuralwave/`, `CONTAINER` = its parent, `ADAPTERS`, and
   `OLLAMA_URL` from `OLLAMA_HOST`, parsed like ollama's `envconfig.Host`: unset → `http://127.0.0.1:11434`;
   `host`, `host:port`, `:port` (empty host → `127.0.0.1`), a bare or bracketed IPv6 address (→ `[addr]`), or a URL.
@@ -45,12 +45,11 @@
 - `models.toml`: `{here}` is now `eval/adapters`. The header documents `timeout` and `fingerprint`. The
   fingerprints are:
   - `identity`: `baselines.py` and `common.py`
-  - `oracle`: `baselines.py`, `common.py` and `{labels}`
-  - `fable`, `fable_rules`: `fable_vm.py`, the VM's `detect/**/*.py` and `common.py` (`Span`, `TIER`, `NEVER_PHI`),
-    and the `--words` list `models/fable-deps/american-english-large`
+  - `anonymous`, `anonymous_rules`: `anonymous_vm.py`, the VM's `detect/**/*.py` and `common.py` (`Span`, `TIER`, `NEVER_PHI`),
+    and the `--words` list `models/anonymous-deps/american-english-large`
   - `ad_*`: the A+D repo's `src/**/*.py` and `src/**/*.gz`
 
-  `fable_vm.py`'s `DEFAULT_ROOT` now uses `parents[3]`.
+  `anonymous_vm.py`'s `DEFAULT_ROOT` now uses `parents[3]`.
 - `suites.py`: `suite.json` records `source_sha1`. This is the sha1 over the converted source's `encounters.jsonl`,
   `labels.jsonl` and `manifest.json`, plus, for `aci_bench` suites, the VM annotation files of the suite's records
   in sorted order. It also records `labels_sha1` (beside `input_sha1`) and `code_sha1`, the sha1 of the build code
@@ -101,7 +100,7 @@
 - `all` lives in `__main__.py` (`STEPS`), not in a separate module. The optional steps are registered already, so
   later WPs only add their modules. They must accept the options listed above, or edit their `STEPS` entry.
 - Fingerprints go slightly beyond the brief:
-  - `identity` and `oracle` also hash `eval/common.py`, because `load_jsonl`/`write_jsonl`/`pattern` shape their
+  - `identity` also hash `eval/common.py`, because `load_jsonl`/`write_jsonl`/`pattern` shape their
     output.
   - `ad_*` also hash `src/**/*.gz`, because the A+D lexicons live in `src/neural_wave/data/`.
   - Relative fingerprint paths resolve from the model's `cwd`.
@@ -132,21 +131,20 @@
   | `ad_night_submitted` | 0.8388 | 0.5398 |
   | `ad_night_nocodes` | 0.8428 | 0.5452 |
   | `ad_rules` | 0.8279 | 0.5316 |
-  | `fable` | 0.9444 | 0.8391 |
-  | `fable_rules` | 0.6355 | 0.4458 |
+  | `anonymous` | 0.9444 | 0.8391 |
+  | `anonymous_rules` | 0.6355 | 0.4458 |
   | `identity` | 0.0 | 0.0 |
-  | `oracle` | 1.0 | 0.6338 |
 - Suite rebuild: in all 10 suites, `encounters.jsonl` and `labels.jsonl` are byte-identical to the pre-change
   copies. `suite.json` differs only by the new `source_sha1`, `labels_sha1` and `code_sha1` (and the `nbme_notes`
   description). A second `eval suites --if-stale` rebuilds nothing.
-- Reruns through `python3 -I eval run`: the `aci_eval` `output.jsonl` of `identity`, `oracle`, `ad_rules` and
-  `fable_rules` is byte-identical to `data/eval/runs_baseline/`. `identity` on `sadiqguru` through `eval all` is too.
+- Reruns through `python3 -I eval run`: the `aci_eval` `output.jsonl` of `identity`, `ad_rules` and
+  `anonymous_rules` is byte-identical to `data/eval/runs_baseline/`. `identity` on `sadiqguru` through `eval all` is too.
   A second `run` reuses the cache. After re-scoring, all 71 files still match the baseline when the `run` block is
   ignored. The report differs only in the timings and RAM of the rerun models.
 - Timeout: a throwaway spec with a 2 s timeout spawned `sleep` and a `setsid` `sleep`. The run ended after 2.09 s
   with exit 124, `timed_out: true` and no surviving process. The throwaway run dir was removed.
 - After the review fixes, verified again: all suites rebuilt once (build code changed) with byte-identical files;
-  `identity`, `oracle`, `ad_rules` and `fable_rules` rerun with `--force` on `aci_eval`, outputs byte-identical to
+  `identity`, `ad_rules` and `anonymous_rules` rerun with `--force` on `aci_eval`, outputs byte-identical to
   `runs_baseline/`; `data/eval/scores/` deleted and every run re-scored: **71 of 71** files equal to
   `scores_baseline/`, 66 including the `run` block and 5 (the re-executed runs) apart from its timings, the new
   `code_sha1`/`timed_out` keys and the `scripts/eval/` → `eval/` adapter path. The headline numbers above are
@@ -156,9 +154,9 @@
 ### Left for later
 
 - Every other cached run will rerun once on the next `eval run`/`eval all`, because its command path changed and
-  `code_sha1` is new: `ad_night*` and `fable` on all suites, and the four models above on the suites other than
-  `aci_eval` (`identity` and `oracle` also because `common.py` changed, `fable_rules` and `fable` because their
-  fingerprint grew). `ad_night`, `ad_night_nocodes` and `fable` need the GPU.
+  `code_sha1` is new: `ad_night*` and `anonymous` on all suites, and the four models above on the suites other than
+  `aci_eval` (`identity` also because `common.py` changed, `anonymous_rules` and `anonymous` because their
+  fingerprint grew). `ad_night`, `ad_night_nocodes` and `anonymous` need the GPU.
 - WP2 must add the merged gold file to `source_sha1` (or as `merged_sha1`) so that `aci_eval` rebuilds when it changes.
 
 ## WP6: Explainability and no-codes coverage
@@ -189,7 +187,7 @@
   - A precomputed model also copies `<precomputed stem>.decisions.jsonl` to `output.decisions.jsonl` when it exists.
     Its path and sha1 join the cached `cmd`, so a new sidecar reruns the copy.
   - Every (re)run first deletes the old `output.decisions.jsonl`, so a model that stops writing one leaves none.
-- `eval/adapters/fable_vm.py`:
+- `eval/adapters/anonymous_vm.py`:
   - `merge()` also returns the members of each merged span.
   - `decision()` writes one row per merged span to `<output stem>.decisions.jsonl`: offsets and text in the original
     field, `remove` (or `keep` for a tier left out by `--tiers`), the span type, a reason joining each member's detector
@@ -205,12 +203,12 @@
 - Tests: `eval/tests/test_explain.py` (18) and `test_nocodes.py` (3), all passing.
   - `test_explain.py` covers: `align`, full and partial coverage, no sidecar, identity, an empty reason, a keep
     decision, inline explanations, sidecar over inline, A+D normalization and scoring, Ketai rows without offsets,
-    placement checks, unaligned rows, a sidecar with a BOM and non-UTF-8 lines, the fable `merge`/`decision` rows, and the precomputed sidecar copy (cache
+    placement checks, unaligned rows, a sidecar with a BOM and non-UTF-8 lines, the anonymous `merge`/`decision` rows, and the precomputed sidecar copy (cache
     invalidation, no stale sidecar).
 - `eval/docs/README.md`:
   - an `explained` row in the metrics table;
   - a section "Explainability and no-codes (bonus)" with the sidecar schema, the producers and both tools;
-  - the sidecar notes in the `precomputed` row and the fable row.
+  - the sidecar notes in the `precomputed` row and the anonymous row.
 
 ### Deviations
 
@@ -223,10 +221,10 @@
 
 ### Reference numbers reproduced
 
-- `fable_rules` and `fable` reran on `aci_eval` with `python3 -I eval run --models fable_rules fable --suites aci_eval`.
-  `fable` used the GPU, 2716 MB VRAM. Both `output.jsonl` files are byte-identical (`cmp`) to
+- `anonymous_rules` and `anonymous` reran on `aci_eval` with `python3 -I eval run --models anonymous_rules anonymous --suites aci_eval`.
+  `anonymous` used the GPU, 2716 MB VRAM. Both `output.jsonl` files are byte-identical (`cmp`) to
   `data/eval/runs_baseline/<model>/aci_eval/output.jsonl`.
-  - The new sidecars have 485 rows (`fable_rules`) and 1836 rows (`fable`).
+  - The new sidecars have 485 rows (`anonymous_rules`) and 1836 rows (`anonymous`).
   - `text == original[field][start:end]` on 485/485 and 1836/1836 rows.
 - A+D sidecars:
   - Both `data/eval/runs/ad_night/aci_eval/output.decisions.jsonl` and the delivered
@@ -251,15 +249,12 @@
   | `ad_night_submitted` | 1.0 | 810 | 775 (775) | sidecar |
   | `ad_night_nocodes` | 1.0 | 817 | 773 (773) | sidecar |
   | `ad_rules` | 1.0 | 788 | 763 (763) | sidecar |
-  | `fable` | 1.0 | 2910 | 1836 (1836) | sidecar |
-  | `fable_rules` | 1.0 | 843 | 485 (485) | sidecar |
+  | `anonymous` | 1.0 | 2910 | 1836 (1836) | sidecar |
+  | `anonymous_rules` | 1.0 | 843 | 485 (485) | sidecar |
   | `identity` | null | 0 | 0 | none |
-  | `oracle` | 0.0 | 2206 | 0 | none |
 
-  Re-checked after the review fix, with WP2's merged gold in place: the same values, except `oracle` (1286 changed
-  tokens before; it now removes every merged item).
 
-  On the other suites, every `ad_*` run is explained 1.0. `fable`/`fable_rules` show 0.0 there until their next run:
+  On the other suites, every `ad_*` run is explained 1.0. `anonymous`/`anonymous_rules` show 0.0 there until their next run:
   their fingerprint changed, so the next `eval run` redoes them and writes the sidecars.
 - `edits()` regression:
   - Before WP2 landed, re-scoring all 8 models on `aci_eval` gave `edits` blocks equal to `data/eval/scores_baseline/`,
@@ -368,8 +363,8 @@
 - `eval/gold/audit_gold.py` (alone or via `gold --audit`): `audit.md` + `audit.json` next to the merged gold:
   verbatim whole-word check per source and list, contradictions (PII ∩ keep, PII ∩ concepts, PII made of ICD-10
   description words, keep strings inside a longer PII item), regex candidates no union/keep item covers (ages, dates,
-  title + name, e-mails, phones, digit runs ≥ 6), single-vote table, votes per category, oracle self-check at every
-  level and the entity level, diff vs `merged.prev.jsonl`. Exit 1 when the oracle check fails or merged.jsonl is missing.
+  title + name, e-mails, phones, digit runs ≥ 6), single-vote table, votes per category, diff vs
+  `merged.prev.jsonl`. Exit 1 when merged.jsonl is missing.
 - `metrics.privacy` (shared): classic keys on the consensus level, plus `entity_removed`, `levels.{union,consensus,
   direct}` = `{removed, removed_high_risk, entity_removed, items, occurrences}`, `by_source.<gold>` on each gold's own
   `pii_by_source` list, breakdown/counts keys `level:*`, `entity:*`, `votes:*`, `src:*`. Token-leak semantics
@@ -385,9 +380,9 @@
   by rendering the report into a scratch dir (no crash).
 - Tests: `eval/tests/test_gold.py`, 20 tests (taxonomy and DATE rules, majority, nesting and survival on a synthetic
   encounter, keep conflicts and rejected votes, concepts, level filters, privacy levels/by_source/breakdown, levels
-  coinciding without metadata, oracle = 1.0 on merged labels, deterministic main + prev file, missing sources, audit,
+  coinciding without metadata, deterministic main + prev file, missing sources, audit,
   the suite built from the merged gold and `--no-merged`/`--merged`, plus two data tests that skip without data:
-  `ad_night` `by_source.harness` 0.8388 / `vm` 0.5398 with the real word list, and the real oracle at 1.0).
+  `ad_night` `by_source.harness` 0.8388 / `vm` 0.5398 with the real word list).
 - Docs: `eval/docs/GOLD.md` (sources, harmonization table, merge rules, item schema, counts, levels, results, audit,
   caveats incl. LLM-assisted golds); README: `gold` command row, suites caching bullet, `aci_eval` row, new section
   "ACI gold and privacy levels", privacy/high-risk metric rows, layout and tests lines.
@@ -411,9 +406,8 @@
 - Breakdown `votes:*` and `src:*` are over the union items (`src:vm` = merged items VM supports); the other classic
   keys are consensus. `levels` and `by_source` carry `items` and `occurrences` beside the contract keys. Leaks list
   every union item, with `votes`/`direct` when present.
-- `direct` does not saturate: `ad_night` 0.926, `fable` 0.982, because VM and ketai annotate bare month names as DATE.
-- The oracle keeps 0.944 of the keep strings (16 keep strings sit inside union PII items, e.g. `hay` in `moving hay`)
-  and removes 0.9503 of VM's own list (exactly the 31 VM items that lost to keep).
+- `direct` does not saturate: `ad_night` 0.926, `anonymous` 0.982, because VM and ketai annotate bare month names as DATE.
+- 16 keep strings sit inside union PII items (e.g. `hay` in `moving hay`), and 31 VM items lost to keep.
 - A DOB cue before any occurrence makes a VM/ketai DATE a DOB, also for a nested survivor whose standalone occurrence
   has no cue (`january` in D2N021); both are direct and high risk.
 - `merged.prev.jsonl` is how the audit diffs against the previous merge (deleted once after development, so the
@@ -427,10 +421,10 @@
   three-vote items vs 289 exact); occurrences 1,017 / 725 / 393. Keep 267, concepts 6,607 (none dropped as direct PII).
 - `python3 -I eval suites --only aci_eval`: `encounters.jsonl` byte-identical, `input_sha1` a141a148e6b7 unchanged,
   so every model run stays cached; labels_sha1 808563adf82e, merged_sha1 d6f7f8ce4b73. Rebuilt again after the later
-  `suites.py` edits: both files byte-identical. `run --models identity oracle --suites aci_eval`: oracle rerun (its
-  `{labels}` fingerprint), identity rerun (common.py in its fingerprint).
+  `suites.py` edits: both files byte-identical. `run --models identity --suites aci_eval`: identity rerun (common.py in
+  its fingerprint).
 - Audit: 0 verbatim failures for PII and keep strings in all three golds (1 VM concept, `SPO2`, is not a whole
-  word); 0 regex gaps; 18 PII-and-concept, 16 keep-inside-PII; oracle ok.
+  word); 0 regex gaps; 18 PII-and-concept, 16 keep-inside-PII.
 - Re-scored every model on aci_eval (`score --suites aci_eval --icd knn lexical`), final run at 18:10:
 
   | model | consensus | high-risk | entity | direct | union | harness | VM | ketai |
@@ -439,14 +433,13 @@
   | `ad_night_submitted` | 0.7738 | 0.9404 | 0.7472 | 0.9262 | 0.5615 | **0.8388** | 0.5398 | 0.8211 |
   | `ad_night_nocodes` | 0.7793 | 0.9404 | 0.7509 | 0.9262 | 0.5664 | 0.8428 | 0.5452 | 0.8257 |
   | `ad_rules` | 0.7586 | 0.9384 | 0.7286 | 0.9237 | 0.5506 | 0.8279 | 0.5316 | 0.8058 |
-  | `fable` | 0.9310 | 0.9821 | 0.9126 | 0.9822 | 0.8368 | 0.9444 | 0.8391 | 0.9465 |
-  | `fable_rules` | 0.6097 | 0.8310 | 0.5558 | 0.8041 | 0.4562 | 0.6355 | 0.4458 | 0.6651 |
+  | `anonymous` | 0.9310 | 0.9821 | 0.9126 | 0.9822 | 0.8368 | 0.9444 | 0.8391 | 0.9465 |
+  | `anonymous_rules` | 0.6097 | 0.8310 | 0.5558 | 0.8041 | 0.4562 | 0.6355 | 0.4458 | 0.6651 |
   | `identity` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-  | `oracle` | 1.0 | 1.0 | 1.0 (all levels) | 1.0 | 1.0 | 1.0 | 0.9503 | 1.0 |
 
   `by_source.harness` and `by_source.vm` equal the WP0 baseline privacy and VM-gold privacy of all six real models to
   the fourth decimal. Utility moved with the new labels too: e.g. `ad_night` keep 1.0 → 0.9933, concepts 1.0 →
-  0.9989, edit precision 0.9605 → 0.9852; `fable` keep 0.7452 → 0.7623, concepts 0.9509 → 0.9458.
+  0.9989, edit precision 0.9605 → 0.9852; `anonymous` keep 0.7452 → 0.7623, concepts 0.9509 → 0.9458.
 - Tests: `test_gold.py` 20 passed; full suite `uv run --no-project --with pytest python3 -I -m pytest eval/tests -q`:
   274 passed (final run, other packages' tests included). `uvx --offline ruff check --line-length 160 eval`: clean.
   The 12 other suites rebuilt into a scratch dir give byte-identical `encounters.jsonl` and `labels.jsonl`.
@@ -481,7 +474,7 @@
   - unreadable or half-written JSON is skipped with a warning on stderr
   - a missing `coders.toml` or `models.toml` gives empty columns
   - a `run.json` with `exit_code: null` (a run in progress) is ignored
-- Headline (`aci_eval`), with `identity`/`oracle` last as bounds. Columns:
+- Headline (`aci_eval`), with `identity` last as bounds. Columns:
   - privacy at the consensus, direct and entity level
   - privacy (harness gold) = `by_source.harness.removed`
   - concepts kept and ICD concepts kept
@@ -521,7 +514,7 @@
 - `tradeoff.svg` (standard library):
   - x = consensus privacy on 0–1; y = primary-coder ICD F1 retained
   - y falls back to ICD concepts kept while no real model has a primary-coder result, and the axis title says so
-  - filled markers are Pareto-optimal, hollow ones dominated, squares are `identity`/`oracle`; identical points share one
+  - filled markers are Pareto-optimal, hollow ones dominated, squares are `identity`; identical points share one
     label
   - labels are placed greedily (free of markers and other labels, with leader lines)
   - explicit background; light colors as attributes, dark ones in a `prefers-color-scheme` block; system font stack;
@@ -572,16 +565,15 @@
   | Check | Value |
   |---|---|
   | `ad_night` `gold:harness` removed | 0.8388 |
-  | `oracle` consensus | 1.0 |
   | `identity` consensus | 0.0 |
-  | `fable` direct | 0.9822 |
+  | `anonymous` direct | 0.9822 |
   | `ad_night` lexical `f1_delta` | -0.0065 [-0.0213, 0.0] |
   | `ad_night` attack `max_recovered` | 0.1549 |
-  | `fable` `aci_eval` ms/enc | 2256.1 |
+  | `anonymous` `aci_eval` ms/enc | 2256.1 |
 - A heuristic pass over every numeric table cell of the real `report.md` found a matching CSV value or CI for that model
   for all 1,265 numeric tokens.
-- Tradeoff without `llm_note` results (the fallback, ICD concepts kept): Pareto-optimal `fable`, `ad_night`,
-  `ad_night_nocodes`, `ad_night_submitted`; `ad_rules` and `fable_rules` dominated.
+- Tradeoff without `llm_note` results (the fallback, ICD concepts kept): Pareto-optimal `anonymous`, `ad_night`,
+  `ad_night_nocodes`, `ad_night_submitted`; `ad_rules` and `anonymous_rules` dominated.
 - Tests: `test_report.py` 8 passed; full suite `uv run --no-project --with pytest python3 -I -m pytest eval/tests -q`
   286 passed; `uvx --offline ruff check --line-length 160 eval` clean.
 
@@ -591,7 +583,7 @@
   the fallback axis. The next `eval report` after the LLM warm-up picks them up with no code change. Models without the
   coder then show `–` and are listed under "not plotted" in the SVG.
 - A4 appears as a column once any attack file has it. An `error` without arms renders as `error`.
-- The GPU models (`ad_night`, `ad_night_nocodes`, `fable`) have no attack or robust-suite rows for most suites until
+- The GPU models (`ad_night`, `ad_night_nocodes`, `anonymous`) have no attack or robust-suite rows for most suites until
   their reruns.
 
 ## WP3: Adversarial attacks and robustness
@@ -604,12 +596,12 @@
   each arm `{recovered, hits, total, by_category}`; `max_recovered` leaves A5 out. All 29 attack files checked against this
   contract (no missing keys, `max_recovered` consistent, no `error`). An arm whose total is 0 (A3 on `robust_discharge` and
   `devp_discharge`, A2 on `nbme_notes` and `pmc_patients`) has `recovered: null`.
-- A1 (NER residual scan) runs `bonus/_ner_worker.py` with the fable venv; A4 (LLM inference) goes through
+- A1 (NER residual scan) runs `bonus/_ner_worker.py` with the anonymous venv; A4 (LLM inference) goes through
   `eval.coders.ollama.generate_json` with a strict JSON schema. Both cache per text under `data/eval/cache/attacks/{ner,llm}/`
   (A4 keyed by model, digest, schema and prompt). The cache is now written through a temporary file and an atomic rename, and an
   unreadable entry is recomputed, so a run killed mid-write resumes cleanly (`cache_read`/`cache_write`, test added).
   A4 prints progress every 20 new calls and records `new_calls`.
-- A4 run on `aci_eval` for `identity`, `oracle`, `ad_night`, `fable` (266 cached LLM calls in total).
+- A4 run on `aci_eval` for `identity`, `ad_night`, `anonymous` (266 cached LLM calls in total).
 - `eval/bonus/robustness.py` + `scripts/convert/robust_{discharge,medconv,synthetic}.py`: suites `robust_discharge` (166),
   `robust_medconv` (80), `robust_synthetic` (24), role `robust`, with WP4's complexity rank. `python3 -I eval robustness`
   prints its table.
@@ -620,18 +612,16 @@
 
 ### Deviations
 
-- Scope cut for time: A4 ran only for `identity`, `oracle`, `ad_night`, `fable`. Deferred for every other model
-  (`ad_night_nocodes`, `ad_night_submitted`, `ad_rules`, `fable_rules`); with an idle GPU it takes ~1.5 min per model:
-  `python3 -I eval attack --models ad_night_nocodes ad_night_submitted ad_rules fable_rules --suites aci_eval --attacks A4`
+- Scope cut for time: A4 ran only for `identity`, `ad_night`, `anonymous`. Deferred for every other model
+  (`ad_night_nocodes`, `ad_night_submitted`, `ad_rules`, `anonymous_rules`); with an idle GPU it takes ~1.5 min per model:
+  `python3 -I eval attack --models ad_night_nocodes ad_night_submitted ad_rules anonymous_rules --suites aci_eval --attacks A4`
   (the control is already cached; earlier A2/A3/A5 results are kept).
-- No new A1 runs: A1 exists for `identity`, `oracle`, `ad_night`, `fable` on `aci_eval` only. Deferred:
-  `python3 -I eval attack --models ad_night_nocodes ad_night_submitted ad_rules fable_rules --suites aci_eval --attacks A1`
+- No new A1 runs: A1 exists for `identity`, `ad_night`, `anonymous` on `aci_eval` only. Deferred:
+  `python3 -I eval attack --models ad_night_nocodes ad_night_submitted ad_rules anonymous_rules --suites aci_eval --attacks A1`
   (never together with an A4 or ICD job on the GPU).
 - A4 measured 1.4 s per call on an idle GPU and ~6 s per call while WP1's ICD coder shared Ollama (6 to 7 min per model).
-- A1 is not independent for the fable models: it uses the same detectors (stated in the notes and the README).
-- A3 on `oracle` is 0.141, not 0: A3 needs no gold, and the hits are tokens no gold labels (`UNLABELLED` 0.833, every gold
-  category 0.0).
-- The robust suites have runs only for `ad_rules`, `fable_rules`, `identity`, `oracle`; `ad_night` and `fable` were not run
+- A1 is not independent for the anonymous models: it uses the same detectors (stated in the notes and the README).
+- The robust suites have runs only for `ad_rules`, `anonymous_rules`, `identity`; `ad_night` and `anonymous` were not run
   on them (`python3 -I eval robustness --run`).
 
 ### Reference numbers reproduced
@@ -644,24 +634,22 @@ Attacks on `aci_eval` (67 encounters, consensus gold), anonymized / control reco
 | ad_night_nocodes | – | 0.017 / 1.000 | 0.155 / 1.000 | – | 1.000 / 1.000 | 0.155 |
 | ad_night_submitted | – | 0.017 / 1.000 | 0.155 / 1.000 | – | 1.000 / 1.000 | 0.155 |
 | ad_rules | – | 0.017 / 1.000 | 0.197 / 1.000 | – | 1.000 / 1.000 | 0.197 |
-| fable | 0.018 / 0.942 | 0.021 / 1.000 | 0.155 / 1.000 | 0.007 / 0.803 | 1.000 / 1.000 | 0.155 |
-| fable_rules | – | 0.262 / 1.000 | 0.437 / 1.000 | – | 1.000 / 1.000 | 0.437 |
+| anonymous | 0.018 / 0.942 | 0.021 / 1.000 | 0.155 / 1.000 | 0.007 / 0.803 | 1.000 / 1.000 | 0.155 |
+| anonymous_rules | – | 0.262 / 1.000 | 0.437 / 1.000 | – | 1.000 / 1.000 | 0.437 |
 | identity | 0.942 / 0.942 | 1.000 / 1.000 | 1.000 / 1.000 | 0.803 / 0.803 | 1.000 / 1.000 | 1.000 |
-| oracle | 0.009 / 0.942 | 0.000 / 1.000 | 0.141 / 1.000 | 0.000 / 0.803 | 1.000 / 1.000 | 0.141 |
 
 - Checked: control > anonymized for every real model and every attack that ran (A5 excepted: an upper bound by design, 1.0 on
-  both arms); `identity` anonymized = control for every attack; `oracle` A2 = 0 (and A4 = 0).
+  both arms); `identity` anonymized = control for every attack.
 - A4 by attribute (name / age / place / employer or job): control 0.968 / 0.963 / 0.182 / 0.292; `ad_night` 0 / 0.185 / 0 / 0.25;
-  `fable` 0 / 0.019 / 0 / 0; `oracle` all 0.
+  `anonymous` 0 / 0.019 / 0 / 0.
 
 Robustness (`python3 -I eval robustness`), privacy / high-risk privacy / terms kept:
 
 | model | robust_discharge (rank 11) | robust_medconv (rank 5) | robust_synthetic (rank 9) |
 |---|---|---|---|
 | ad_rules | 0.985 / 1.000 / 1.000 | 0.968 / 1.000 / 0.999 | 0.954 / 0.983 / 0.998 |
-| fable_rules | 0.672 / 0.733 / 1.000 | 0.467 / 0.724 / 1.000 | 0.450 / 0.575 / 0.999 |
+| anonymous_rules | 0.672 / 0.733 / 1.000 | 0.467 / 0.724 / 1.000 | 0.450 / 0.575 / 0.999 |
 | identity | 0 / 0 / 1.000 | 0 / 0 / 1.000 | 0 / 0 / 1.000 |
-| oracle | 1.000 / 1.000 / 1.000 | 1.000 / 1.000 / 1.000 | 1.000 / 1.000 / 1.000 |
 
 ## WP1: ICD coders
 
@@ -685,8 +673,8 @@ Robustness (`python3 -I eval robustness`), privacy / high-risk privacy / terms k
 - This session: the score block now has exactly the agreed shape. The `backend` key was dropped from
   `icd.<coder>`; it stays in each cache file. `test_icd.py` asserts the full key set of the block, its arms and levels.
 - Cache warmed for `llm_note` on `aci_eval`, every model with a run: 309 predictions (67 originals, shared by
-  `identity`; then 56 `ad_night`, 0 `ad_night_submitted`, 3 `ad_night_nocodes`, 9 `ad_rules`, 64 `fable`,
-  51 `fable_rules`, 59 `oracle`), 0 errors. Wall time about 26 min in four commands
+  `identity`; then 56 `ad_night`, 0 `ad_night_submitted`, 3 `ad_night_nocodes`, 9 `ad_rules`, 64 `anonymous`,
+  51 `anonymous_rules`), 0 errors. Wall time about 26 min in four commands
   (`python3 -I eval score --suites aci_eval --icd llm_note knn lexical --models ...`), mean 4.7 s per call: the GPU
   was shared with WP3's Ollama calls (2.3 to 6 s per call).
 - `aci_dev` and `devp_discharge` re-scored with `--icd knn lexical` (no LLM), so every score file has the new shape.
@@ -723,7 +711,6 @@ Robustness (`python3 -I eval robustness`), privacy / high-risk privacy / terms k
   | Model | orig F1 | anon F1 | f1_delta [CI95] | retention | agreement F1 |
   |---|---:|---:|---:|---:|---:|
   | `ad_night`, `ad_night_submitted`, `ad_night_nocodes`, `ad_rules` | 0.0962 | 0.0915 | -0.0047 [-0.0198, +0.0039] | 0.9515 | 0.855 |
-  | `fable` | 0.0962 | 0.0915 | -0.0047 [-0.0199, +0.0043] | 0.9515 | 0.6617 |
-  | `fable_rules` | 0.0962 | 0.0903 | -0.0059 [-0.0208, +0.0024] | 0.9382 | 0.8278 |
+  | `anonymous` | 0.0962 | 0.0915 | -0.0047 [-0.0199, +0.0043] | 0.9515 | 0.6617 |
+  | `anonymous_rules` | 0.0962 | 0.0903 | -0.0059 [-0.0208, +0.0024] | 0.9382 | 0.8278 |
   | `identity` | 0.0962 | 0.0962 | +0.0000 [0, 0] | 1.0 | 1.0 |
-  | `oracle` | 0.0962 | 0.0982 | +0.0020 [+0.0000, +0.0045] | 1.0211 | 0.7556 |

@@ -46,8 +46,11 @@ COMMANDS: dict[str, tuple[str | None, str]] = {
     "score": ("eval.score", "score finished runs: validity, privacy, utility, ICD"),
     "report": ("eval.report", "write data/eval/report.md and report.json"),
     "attack": ("eval.bonus.attack", "adversarial re-identification attacks (bonus)"),
+    "judge": ("eval.coders.agent", "LLM judge by agents: export the notes and prompts, import the agents' ICD-10 codes into the coder cache"),
+    "adversary": ("eval.bonus.adversary", "LLM agent adversary (A6): export blinded sets and prompts, import the agents' guesses"),
     "robustness": ("eval.bonus.robustness", "robustness on unseen document formats (bonus)"),
     "drift": ("eval.bonus.drift", "corpus drift of every suite from ACI train"),
+    "phi": ("eval.bonus.phi_privacy", "privacy before/after by an independent PII detector (Phi-3); run last, alone in memory"),
     "gold": ("eval.gold.merge_aci_gold", "merge the three ACI golds into data/eval/gold/"),
     "all": (None, "every step in order: " + " ".join(f"[{c}]" if opt else c for c, _, opt in STEPS) + " ([ ] = optional)"),
 }  # fmt: skip

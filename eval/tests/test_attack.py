@@ -1,4 +1,4 @@
-"""bonus/attack.py on the 3-record fixture: identity output recovers what the control recovers, the oracle output leaves
+"""bonus/attack.py on the 3-record fixture: identity output recovers what the control recovers, the cleaned output leaves
 A2 nothing, A3 and A5 have hand-computed answers, A1 and A4 run with a fake worker and a fake LLM."""
 
 from __future__ import annotations
@@ -28,7 +28,7 @@ def golds(labels: dict, level: str = "all") -> dict[str, list[dict]]:
     return {eid: A.gold_items(g, level) for eid, g in labels.items()}
 
 
-def test_identity_recovers_the_control_and_oracle_nothing_a2(original, labels, clean):
+def test_identity_recovers_the_control_and_clean_nothing_a2(original, labels, clean):
     gold = golds(labels)
     ident = A.a2(original, original, gold)
     assert ident["anonymized"] == ident["control"]
@@ -87,7 +87,7 @@ def test_a1_with_a_fake_worker(original, labels, clean):
     assert ident["anonymized"] == ident["control"] and ident["control"]["recovered"] == 1.0 and ident["control"]["total"] == 9
     assert A.a1(original, clean, gold, spans)["anonymized"]["recovered"] == 0.0  # only placeholders are detected
     assert A.a1(original, clean, gold, {})["error"].startswith("12 texts were not scanned")
-    assert A.attack({"original": original, "anonymized": clean, "gold": gold}, ["A1"], "fable venv not found")["A1"]["error"] == "fable venv not found"
+    assert A.attack({"original": original, "anonymized": clean, "gold": gold}, ["A1"], "anonymous venv not found")["A1"]["error"] == "anonymous venv not found"
 
 
 def fake_llm(fail: bool = False):
@@ -119,6 +119,38 @@ def test_a4_with_a_fake_llm(original, labels, clean):
     assert A.a4(original, clean, gold, "toy2", fake_llm(fail=True))["error"].startswith("3 consecutive failures")
 
 
+def test_a4_claude_batches_prompts_and_caches_guesses(original, labels, clean, monkeypatch):
+    gold, one = golds(labels), fake_llm()
+    asked = []
+
+    def many(model, prompts):
+        asked.append(len(prompts))
+        return [one(model, p, A.GUESS_SCHEMA) if "Boston" not in p else "refusal:general_harms" for p in prompts]
+
+    monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+    monkeypatch.delenv("ANTHROPIC_AUTH_TOKEN", raising=False)
+    assert A.a4(original, clean, gold, "claude-x", generate_many=many)["anonymized"]["recovered"] == 0.0
+    assert asked == [6]  # one batch: 3 anonymized + 3 original prompts
+    res = A.a4(original, clean, gold, "claude-x", generate_many=many)
+    assert asked == [6, 2] and res["errors"] == {"refusal:general_harms": 2}  # cached guesses are not asked again; the 2 refusals (Boston) are retried
+    assert A.a4(original, clean, gold, "claude-x")["error"] == "ANTHROPIC_API_KEY not set"
+    assert A.a4(original, clean, gold, "claude-y", generate_many=lambda m, ps: ["api:401"] * len(ps))["error"].startswith("every claude-y call failed")
+
+
+def test_claude_worker_closes_the_schema():
+    import importlib.util
+    import sys
+    import types
+
+    sys.modules.setdefault("anthropic", types.ModuleType("anthropic"))  # the worker's SDK is not in the harness interpreter
+    spec = importlib.util.spec_from_file_location("_claude_worker", A.CLAUDE_WORKER)
+    worker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(worker)
+    closed = worker.closed(A.GUESS_SCHEMA)
+    assert closed["additionalProperties"] is False and closed["required"] == A.GUESS_SCHEMA["required"]
+    assert "additionalProperties" not in A.GUESS_SCHEMA
+
+
 @pytest.mark.parametrize(("text", "age"), [("52-year-old", 52), ("fifty two", 52), ("twenty-one years old", 21), ("6 months old", None), ("old", None)])
 def test_age_of(text, age):
     assert A.age_of(text) == age
@@ -139,13 +171,13 @@ def test_max_recovered_leaves_out_a5():
 
 @pytest.fixture
 def harness(tmp_path, monkeypatch, original, labels, clean):
-    """A suite and two runs (identity, oracle) on disk."""
+    """A suite and two runs (identity, clean: every gold string replaced) on disk."""
     sdir, runs = tmp_path / "suites" / "aci_eval", tmp_path / "runs"
     sdir.mkdir(parents=True)
     (sdir / "encounters.jsonl").write_text("".join(json.dumps(r) + "\n" for r in original))
     (sdir / "labels.jsonl").write_text("".join(json.dumps(g) + "\n" for g in labels.values()))
     (sdir / "suite.json").write_text(json.dumps({"input_sha1": "i", "labels_sha1": "l"}))
-    for model, recs in (("identity", original), ("oracle", clean)):
+    for model, recs in (("identity", original), ("clean", clean)):
         (runs / model / "aci_eval").mkdir(parents=True)
         (runs / model / "aci_eval" / "output.jsonl").write_text("".join(json.dumps(r) + "\n" for r in recs))
         (runs / model / "aci_eval" / "run.json").write_text('{"exit_code": 0}')
@@ -166,20 +198,20 @@ def test_main_writes_the_contract_and_skips_what_it_cannot_attack(harness, capsy
     assert ident["n_records"] == 3 and ident["gold_level"] == "all" and list(ident["attacks"]) == A.DEFAULT_ATTACKS
     for r in ident["attacks"].values():
         assert set(r) >= {"name", "anonymized", "control", "notes"} and r["anonymized"] == r["control"]
-    oracle = json.loads((harness / "oracle" / "aci_eval.json").read_text())
-    assert oracle["attacks"]["A2"]["anonymized"]["recovered"] == 0.0 and oracle["max_recovered"] == 0.0
+    clean = json.loads((harness / "clean" / "aci_eval.json").read_text())
+    assert clean["attacks"]["A2"]["anonymized"]["recovered"] == 0.0 and clean["max_recovered"] == 0.0
 
 
 def test_results_of_attacks_not_rerun_are_kept_while_the_output_is_unchanged(harness, monkeypatch, clean):
-    monkeypatch.setattr(A, "a4", lambda o, a, g, model: A.result("A4", {"recovered": 0.5}, {"recovered": 1.0}, "fake"))
-    A.main(["--models", "oracle", "--attacks", "A4"])
-    A.main(["--models", "oracle"])
-    path = harness / "oracle" / "aci_eval.json"
+    monkeypatch.setattr(A, "a4", lambda o, a, g, model: A.result("A4", {"recovered": 0.5}, {"recovered": 1.0}, "fake"))  # never the API
+    A.main(["--models", "clean", "--attacks", "A4"])
+    A.main(["--models", "clean"])
+    path = harness / "clean" / "aci_eval.json"
     res = json.loads(path.read_text())
     assert list(res["attacks"]) == ["A2", "A3", "A4", "A5"] and res["max_recovered"] == 0.5
-    out = A.RUNS_DIR / "oracle" / "aci_eval" / "output.jsonl"
+    out = A.RUNS_DIR / "clean" / "aci_eval" / "output.jsonl"
     out.write_text("".join(json.dumps(dict(r, note=r["note"] + " ok")) + "\n" for r in clean))
-    A.main(["--models", "oracle"])
+    A.main(["--models", "clean"])
     assert list(json.loads(path.read_text())["attacks"]) == A.DEFAULT_ATTACKS
 
 
@@ -199,12 +231,12 @@ sys.exit(0 if len(rows) <= 2 else 1)
 
 def test_run_worker_reads_what_the_worker_wrote(tmp_path, monkeypatch):
     (tmp_path / "worker.py").write_text(FAKE_WORKER)
-    monkeypatch.setattr(A, "FABLE_PYTHON", Path(sys.executable))
+    monkeypatch.setattr(A, "ANONYMOUS_PYTHON", Path(sys.executable))
     monkeypatch.setattr(A, "WORKER", tmp_path / "worker.py")
     assert A.run_worker(["abc d", "xyz w"], "cpu") == {"abc d": [[0, 3, "abc", "X", "fake", 1.0]], "xyz w": [[0, 3, "xyz", "X", "fake", 1.0]]}
     assert list(A.run_worker(["a1x", "b2y", "c3z"], "cpu")) == ["a1x", "b2y"]  # it failed after two texts: those are kept
-    monkeypatch.setattr(A, "FABLE_PYTHON", tmp_path / "missing")
-    with pytest.raises(RuntimeError, match="fable venv not found"):
+    monkeypatch.setattr(A, "ANONYMOUS_PYTHON", tmp_path / "missing")
+    with pytest.raises(RuntimeError, match="anonymous venv not found"):
         A.run_worker(["x"], "cpu")
 
 

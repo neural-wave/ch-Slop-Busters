@@ -15,7 +15,7 @@ original says nothing about the anonymization. Writes `data/eval/attacks/<model>
 `max_recovered` is the largest anonymized `recovered` over the attacks that ran, A5 left out (an upper bound by design).
 
 A1  NER residual scan: independent detectors (deid_roberta i2b2, GLiNER multi-PII and the regex layer of the VM code,
-    run by bonus/_ner_worker.py with the fable venv) scan each field; recovered = gold items (not low risk) covered by a
+    run by bonus/_ner_worker.py with the anonymous venv) scan each field; recovered = gold items (not low risk) covered by a
     detected span: the span contains the item, or is whole words of it (3+ characters, not only titles and cue words
     such as `Ms.`). Spans with a placeholder (`[NAME]`) don't count.
 A2  roster dictionary: the attacker knows every person name of the suite's gold and a public first-name list (Kaggle
@@ -25,9 +25,13 @@ A3  rare words: tokens of 4+ letters that occur in one encounter only, are not c
     names), not ordinary English words, not months or weekdays, and look like identifiers (a proper noun of the English
     word list or a known first name); recovered = such tokens still present in their encounter. It needs no gold:
     by_category is the category of the gold item that holds the token, or UNLABELLED.
-A4  LLM inference: a local LLM (Ollama, default qwen3.5:2b-q4_K_M) reads the record and guesses the patient's name,
-    age, place and employer or job; scored against the gold values (any name token, age within 1 year, a gold place or
-    job inside the guess).
+A4  LLM inference: an LLM reads the record and guesses the patient's name, age, place and employer or job; scored
+    against the gold values (any name token, age within 1 year, a gold place or job inside the guess). Default
+    attacker: the local Ollama qwen3.5:2b-q4_K_M. `--llm claude-*` runs it through bonus/_claude_worker.py
+    (`uv run --with anthropic`, 8 requests at a time, ANTHROPIC_API_KEY) and sends the record text to the API.
+A6  LLM agent adversary: the same guesses made by LLM agents from a prompt, one agent per blinded model output, and
+    scored by the same rule (bonus/adversary.py: `eval adversary export`, the agents, `eval adversary import`). This
+    command never runs it and keeps its results.
 A5  record linkage: TF-IDF nearest neighbour from each anonymized record to the original records (placeholders
     removed). Clinical content is kept by design, so text similarity re-links nearly every record: this bounds the
     threat model (anonymization hides who the patient is, not which record it was from someone who holds the originals).
@@ -37,8 +41,9 @@ identifiers or 2+ votes), recorded as `gold_level`. Defaults: every model with a
 (standard library, about 2.5 s per model and suite). A1 and A4 run only when asked (`--attacks all`): A1 loads two
 transformer models and scans about one text (a dialogue or a note) per second on the RTX 4050, ~10 min for 4 models on
 aci_eval (`--device auto` takes the GPU when 2.5 GB are free, else the CPU with 4 threads, an order of magnitude
-slower); A4 makes one LLM call per record and version (1.4 s each on an idle GPU, ~6 s when the GPU is shared; the
-control is shared by every model). Both cache by text under data/eval/cache/attacks/ (atomic writes, so a killed run
+slower); A4 makes one LLM call per record and version (the control is shared by every model; about 3,500 input
+tokens per call with Sonnet, so 67 records cost roughly $0.6 per model; an Ollama model takes 1.4 s per call on an idle
+GPU). Both cache by text under data/eval/cache/attacks/ (atomic writes, so a killed run
 resumes), the control and unchanged outputs are computed once, and a later run without them keeps their results while
 the model output, the suite and `--limit` are unchanged. A suite without a run or without PII gold is skipped.
 """
@@ -61,15 +66,20 @@ from pathlib import Path
 
 from eval import metrics as M
 from eval import suites as S
-from eval.common import CACHE_DIR, CONTAINER, DATA, FIELDS, OUT, RUNS_DIR, SUITES_DIR, count, load_jsonl, pattern, ratio, sha1_file, sha1_text, words, write_json
+from eval.common import (CACHE_DIR, CONTAINER, DATA, FIELDS, OUT, RUNS_DIR, SUITES_DIR, count, load_jsonl, pattern, ratio, sha1_file, sha1_text,
+                         words, write_json, write_jsonl)  # fmt: skip
 
 ATTACKS_DIR = OUT / "attacks"
 ACACHE = CACHE_DIR / "attacks"
-NAMES = {"A1": "NER residual scan", "A2": "roster dictionary", "A3": "rare words", "A4": "LLM inference", "A5": "record linkage"}
+NAMES = {"A1": "NER residual scan", "A2": "roster dictionary", "A3": "rare words", "A4": "LLM inference", "A5": "record linkage",
+         "A6": "LLM agent adversary"}  # fmt: skip
+AUTOMATED = ["A1", "A2", "A3", "A4", "A5"]  # A6 comes from `eval adversary import`, never from this command, which keeps it
 DEFAULT_ATTACKS = ["A2", "A3", "A5"]
-FABLE_PYTHON = CONTAINER / "models" / "fable-deps" / ".venv" / "bin" / "python"
+ANONYMOUS_PYTHON = CONTAINER / "models" / "anonymous-deps" / ".venv" / "bin" / "python"
 VM_ROOT = CONTAINER / "vm-backup" / "neuralwave"
 WORKER = Path(__file__).with_name("_ner_worker.py")
+CLAUDE_WORKER = Path(__file__).with_name("_claude_worker.py")
+DEFAULT_LLM = "qwen3.5:2b-q4_K_M"  # the coders' Ollama model; `--llm claude-sonnet-5-5` sends the records to the API instead
 NER_LAYERS = "regex,deid,gliner"
 GPU_MIN_FREE_MB = 2500
 WORKER_TIMEOUT_S = 7200
@@ -189,9 +199,9 @@ def gpu_free_mb() -> float | None:
 
 
 def run_worker(texts: list[str], device: str) -> dict[str, list]:
-    """Spans per text from the NER worker (the fable venv); raises RuntimeError when it cannot run or fails."""
-    if not FABLE_PYTHON.exists():
-        raise RuntimeError(f"fable venv not found: {FABLE_PYTHON}")
+    """Spans per text from the NER worker (the anonymous venv); raises RuntimeError when it cannot run or fails."""
+    if not ANONYMOUS_PYTHON.exists():
+        raise RuntimeError(f"anonymous venv not found: {ANONYMOUS_PYTHON}")
     if device == "auto":
         device = "cuda" if (gpu_free_mb() or 0) >= GPU_MIN_FREE_MB else "cpu"
     with tempfile.TemporaryDirectory(prefix="nw-attack-") as tmp:
@@ -199,7 +209,7 @@ def run_worker(texts: list[str], device: str) -> dict[str, list]:
         inp.write_text("".join(json.dumps({"key": i, "text": t}, ensure_ascii=False) + "\n" for i, t in enumerate(texts)), encoding="utf-8")
         print(f"A1: scanning {len(texts)} texts on {device}", flush=True)
         try:
-            proc = subprocess.run([str(FABLE_PYTHON), "-I", "-B", str(WORKER), str(inp), str(outp), "--layers", NER_LAYERS, "--device", device,
+            proc = subprocess.run([str(ANONYMOUS_PYTHON), "-I", "-B", str(WORKER), str(inp), str(outp), "--layers", NER_LAYERS, "--device", device,
                                    "--root", str(VM_ROOT)], cwd=tmp, env={**os.environ, "HF_HUB_OFFLINE": "1", "TOKENIZERS_PARALLELISM": "false"},
                                   capture_output=True, text=True, timeout=WORKER_TIMEOUT_S)  # fmt: skip
             rc, err = proc.returncode, proc.stderr or ""
@@ -263,7 +273,7 @@ def a1(original: list[dict], anonymized: list[dict], gold: dict[str, list[dict]]
     if missing:
         return failed("A1", f"{missing} texts were not scanned (NER worker incomplete)")
     anon, found = a1_arm(original, anonymized, gold, spans)
-    notes = f"detectors: {NER_LAYERS} (VM code, fable venv); low-risk items excluded. fable uses the same detectors, so for it A1 is not independent"
+    notes = f"detectors: {NER_LAYERS} (VM code, anonymous venv); low-risk items excluded. anonymous uses the same detectors, so for it A1 is not independent"
     return result("A1", anon, a1_arm(original, original, gold, spans)[0], notes, found=found[:50])
 
 
@@ -393,10 +403,34 @@ def guess_hits(guess: dict, items: list[dict]) -> tuple[Counter, Counter]:
     return hits, total
 
 
-def a4(original: list[dict], anonymized: list[dict], gold: dict[str, list[dict]], model: str, generate: Callable | None = None) -> dict:
+def claude_many(model: str, prompts: list[str]) -> list[dict | str]:
+    """One guess (dict) or error code (str) per prompt, from bonus/_claude_worker.py."""
+    with tempfile.TemporaryDirectory() as tmp:
+        inp, outp = Path(tmp) / "prompts.jsonl", Path(tmp) / "guesses.jsonl"
+        write_jsonl(inp, ({"key": i, "prompt": p} for i, p in enumerate(prompts)))
+        cmd = ["uv", "run", "--quiet", "--no-project", "--with", "anthropic", "python3", "-I", str(CLAUDE_WORKER), "--model", model,
+               "--schema", json.dumps(GUESS_SCHEMA), str(inp), str(outp)]  # fmt: skip
+        try:
+            rc = subprocess.run(cmd, check=False, stdin=subprocess.DEVNULL, timeout=WORKER_TIMEOUT_S).returncode
+        except (OSError, subprocess.TimeoutExpired) as e:
+            return [f"worker:{type(e).__name__}"] * len(prompts)
+        rows = {r["key"]: r for r in load_jsonl(outp)} if outp.exists() else {}
+    return [rows[i].get("guess") or rows[i].get("error", "invalid_output") if i in rows else f"worker:exit_{rc}" for i in range(len(prompts))]
+
+
+def a4(original: list[dict], anonymized: list[dict], gold: dict[str, list[dict]], model: str, generate: Callable | None = None,
+       generate_many: Callable | None = None) -> dict:  # fmt: skip
+    """`generate(model, prompt, schema, ...)`: one Ollama call; `generate_many(model, prompts)`: a Claude batch (one guess or
+    error code per prompt). A claude-* model uses claude_many unless a test passes generate_many."""
     from eval.coders import ollama
 
-    if generate is None:
+    if model.startswith("claude-"):
+        digest = "api"  # Claude model ids name a fixed snapshot
+        if generate_many is None:
+            if not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
+                return failed("A4", "ANTHROPIC_API_KEY not set")
+            generate_many = claude_many
+    elif generate is None:
         if not ollama.available():
             return failed("A4", f"Ollama not reachable at {ollama.URL}")
         try:
@@ -408,13 +442,34 @@ def a4(original: list[dict], anonymized: list[dict], gold: dict[str, list[dict]]
         digest = "test"
     errors, streak, calls = Counter(), 0, Counter()
 
+    def path_of(p: str) -> Path:
+        return ACACHE / "llm" / f"{sha1_text(model, digest, json.dumps(GUESS_SCHEMA, sort_keys=True), p)}.json"
+
+    batch_errors: dict[str, str] = {}
+    if generate_many is not None:  # every prompt this job needs, in one batch; the cache makes reruns free
+        needed = {path_of(p): p for o, r in [*zip(original, anonymized), *zip(original, original)] if gold.get(o["encounter_id"]) for p in [prompt(r)]}
+        todo = {path: p for path, p in needed.items() if not isinstance(cache_read(path), dict)}
+        if todo:
+            print(f"A4: {len(todo)} new {model} calls", flush=True)
+            for (path, p), g in zip(todo.items(), generate_many(model, list(todo.values()))):
+                if isinstance(g, dict):
+                    cache_write(path, g)
+                    calls["new"] += 1
+                else:
+                    batch_errors[p] = g
+            if batch_errors and len(batch_errors) == len(needed):
+                return failed("A4", f"every {model} call failed ({', '.join(sorted(set(batch_errors.values())))})")
+
     def guess(r: dict) -> dict:
         nonlocal streak
         p = prompt(r)
-        path = ACACHE / "llm" / f"{sha1_text(model, digest, json.dumps(GUESS_SCHEMA, sort_keys=True), p)}.json"
+        path = path_of(p)
         cached = cache_read(path)
         if isinstance(cached, dict):
             return cached
+        if generate_many is not None:
+            errors[batch_errors.get(p, "missing")] += 1
+            return {}
         try:
             g = generate(model, p, GUESS_SCHEMA, seed=0, context=LLM_CONTEXT, max_output=LLM_OUTPUT)
         except ValueError as e:  # ollama.PredictionError
@@ -542,9 +597,7 @@ def attack(job: dict, attacks: list[str], spans: dict[str, list] | str | None = 
             elif key == "A3":
                 res[key] = a3(o, a, g)
             elif key == "A4":
-                from eval.coders import ollama
-
-                res[key] = a4(o, a, g, llm or ollama.DEFAULT_MODEL)
+                res[key] = a4(o, a, g, llm or DEFAULT_LLM)
             elif key == "A5":
                 res[key] = a5(o, a)
         except Exception as e:  # one broken attack must not lose the others
@@ -581,12 +634,12 @@ def main(argv: list[str] | None = None) -> int:
                                 formatter_class=argparse.RawDescriptionHelpFormatter)  # fmt: skip
     p.add_argument("--models", nargs="+", help="default: every model with a run")
     p.add_argument("--suites", nargs="+", default=["aci_eval"], choices=list(S.SUITES))
-    p.add_argument("--attacks", nargs="+", default=DEFAULT_ATTACKS, choices=[*NAMES, "all"], help="default: A2 A3 A5 (all = A1..A5)")
+    p.add_argument("--attacks", nargs="+", default=DEFAULT_ATTACKS, choices=[*AUTOMATED, "all"], help="default: A2 A3 A5 (all = A1..A5)")
     p.add_argument("--limit", type=int, default=0, help="only the first N records of each suite (development)")
     p.add_argument("--device", default="auto", choices=["auto", "cpu", "cuda"], help="A1 detectors (auto: the GPU when 2.5 GB are free)")
-    p.add_argument("--llm", help="A4 Ollama model (default: the coders' qwen3.5:2b-q4_K_M)")
+    p.add_argument("--llm", default=DEFAULT_LLM, help=f"A4 attacker: an Ollama model (default {DEFAULT_LLM}) or a claude-* model (API)")
     a = p.parse_args(argv)
-    attacks = list(NAMES) if "all" in a.attacks else [k for k in NAMES if k in a.attacks]
+    attacks = list(AUTOMATED) if "all" in a.attacks else [k for k in AUTOMATED if k in a.attacks]
     models = a.models or (sorted(d.name for d in RUNS_DIR.iterdir() if d.is_dir()) if RUNS_DIR.is_dir() else [])
     jobs = []
     for s in a.suites:

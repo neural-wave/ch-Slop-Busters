@@ -2,20 +2,25 @@
 
 Usage: python3 -I eval report
 
-Reads only data/eval/scores/<model>/<suite>.json, runs/*/*/run.json, attacks/<model>/<suite>.json, drift.json,
-suites/*/suite.json, gold/aci_eval/merged_stats.json, eval/models.toml and eval/coders.toml. Data may be partial: a
+Reads only data/eval/scores/<model>/<suite>.json, runs/*/*/run.json, attacks/<model>/<suite>.json, phi/<model>/<suite>.json,
+drift.json, suites/*/suite.json, gold/aci_eval/merged_stats.json, data/converted/*/manifest.json (dataset origins),
+eval/models.toml and eval/coders.toml. Data may be partial: a
 missing value renders as "–", a failed run as "failed", a failed coder or attack as "error", and nothing crashes.
 
 Writes into data/eval/ (aggregate numbers only, no leaked strings, so every file is safe to paste into a chat or a PR):
 
-  report.md             every table; the headline is aci_eval, identity and oracle at the bottom as bounds
+  report.md             every table; the headline is aci_eval, identity at the bottom as the reference
   report.json           the same numbers, plus "exports" (the files below)
   results.csv           long format, one number per row: model, suite, category, metric, value, n, ci_low, ci_high,
                         coder, level, notes (UTF-8 with BOM, comma). Every number of report.md is a row, plus the
                         per-category/field/language breakdowns the markdown leaves out. Full stored precision.
   results_headline.csv  wide: one row per model, one column per headline metric
-  tradeoff.svg          consensus privacy vs ICD F1 retained (primary coder of coders.toml; ICD concepts kept while
-                        no model has a result from it), Pareto-optimal models filled, identity and oracle as squares
+  tradeoff.svg          consensus privacy vs ICD F1 on the anonymized text (primary coder of coders.toml; ICD concepts kept
+                        while no model has a result from it), Pareto-optimal models filled, identity as a square
+  tradeoff_adversarial.svg  the same with x = 1 − the LLM agent adversary's proportion of recovered information (attack A6)
+
+report.md has two dataset blocks (ACI, then Kaggle), then robustness, drift and efficiency, a glossary of every
+column (COLUMNS: header, definition, task criterion; every table takes its headers from it) and the sources.
   report_discord.md     the headline only, short enough for a chat message
 
 results.csv rows: `category` is the result family (privacy, privacy_by_category, privacy_by_field,
@@ -42,12 +47,12 @@ if not __package__:  # run as a file: the repo root makes the package importable
 from eval import icd
 from eval import suites as S
 from eval.bonus import nocodes
-from eval.common import CATEGORY_RISK, HERE, OUT, REPO, write_json
+from eval.common import CATEGORY_RISK, DATA, HERE, OUT, REPO, write_json
 from eval.run import VRAM_BUDGET_MB, load_models
 
 MODELS_TOML = HERE / "models.toml"
 CODERS_TOML = HERE / "coders.toml"
-REFERENCE = ("identity", "oracle")
+REFERENCE = ("identity",)
 HEAD = "aci_eval"  # the headline suite
 MAIN = ("aci_eval", "aci_dev")
 DASH = "–"
@@ -55,31 +60,109 @@ CSV_FIELDS = ("model", "suite", "category", "metric", "value", "n", "ci_low", "c
 CONSENSUS = "consensus"
 
 
+class Column(NamedTuple):
+    """One report column: its header everywhere, its glossary definition and the task criterion it answers."""
+
+    header: str
+    definition: str
+    criterion: str = ""
+
+
+TREE = "tree"  # the decision-tree coder; its own headline is the category (3-character) level
+ATTACKER = "A6"  # the LLM agent adversary (bonus/adversary.py)
+COLUMNS: dict[str, Column] = {
+    "privacy": Column("Proportion of removed privacy-related information",
+                      "Share of gold PII occurrences no longer in the output (case-insensitive whole words; a multi-word item also "
+                      "leaks when one of its distinctive tokens survives). On aci_eval: the consensus level of the merged gold "
+                      "(direct identifiers or items listed by 2+ of the 3 golds); elsewhere every gold item", "i.a"),
+    "direct": Column("removed: direct identifiers", "The same over direct identifiers only (names, DOB, dates, IDs, contacts): a gate", "i.a"),
+    "high_risk": Column("removed: high-risk", "The same over high-risk categories (names, DOB, dates, ages, IDs, contacts)", "i.a"),
+    "entity": Column("removed: entity-level", "Share of gold items with no occurrence and no distinctive token left (strict entity matching)", "i.a"),
+    "union": Column("removed: union", "Occurrence removal over every item any gold lists, single-vote quasi-identifiers included (pessimistic)", "i.a"),
+    "privacy_harness": Column("removed: harness gold", "Occurrence removal on the A+D team's own gold alone (reproduces their 0.839 for ad_night)", "i.a"),
+    "concepts": Column("Medical concept recall", "Share of gold medical-concept occurrences kept in the output", "ii.b"),
+    "icd_concepts": Column("Medical concept recall (ICD-relevant)", "The same over concepts relevant to the encounter's gold codes", "ii.b"),
+    "keep": Column("keep traps kept", "Share of must-survive strings kept (eponyms such as Parkinson's, clinical numbers, code evidence)", "ii.b"),
+    "terms": Column("ICD-10-CM terms kept", "ICD-10-CM description words outside gold PII kept in the output: a medical vocabulary for suites "
+                    "without concept gold", "ii.b"),
+    "non_pii_kept": Column("non-PII tokens kept", "Share of word tokens outside gold PII that a difflib alignment keeps (exhaustive golds only)", "ii"),
+    "edit_precision": Column("edit precision", "Changed tokens that were gold PII / all changed tokens (low = harmless text removed)", "ii"),
+    "placeholders": Column("placeholders /1k words", "[UPPER_CASE] tags per 1,000 output words: over-redaction without gold", ""),
+    "valid": Column("valid", "Share of records whose output keeps the schema, ids, order and icd10_codes byte-identical (must be 1)", ""),
+    "icd_f1_anon": Column("F1-Score ICD-10 code prediction (LLM judge)",
+                          "Micro F1 of the LLM judge's codes (llm_judge: Claude Sonnet 5.5 agents coding each note from a prompt) on the "
+                          "anonymized text vs the gold codes, exact code level", "ii.a"),
+    "icd_f1_delta": Column("Δ F1 (LLM judge)", "LLM judge: anonymized minus original micro F1 (exact codes); 0 = no loss. Its paired-bootstrap "
+                           "CI95 is in the ICD table", "ii.a"),
+    "icd_agree": Column("ICD agreement (LLM judge)", "LLM judge: anonymized-text codes scored against original-text codes as gold: the change "
+                        "anonymization alone causes", "ii.a"),
+    "tree_f1_anon": Column("F1-Score ICD-10 code prediction (decision tree)",
+                           "Micro F1 of the decision-tree coder (decision-models, fit on the 140 ACI train encounters) on the "
+                           "anonymized text vs the gold codes, at its own 3-character category level", "ii.a"),
+    "tree_f1_delta": Column("Δ F1 (decision tree)", "Decision tree: anonymized minus original category-level micro F1; 0 = no loss", "ii.a"),
+    "tree_agree": Column("ICD agreement (decision tree)", "Decision tree: anonymized-text categories scored against original-text categories", "ii.a"),
+    "f1_orig": Column("F1 original", "The coder's micro F1 on the original text: its own quality, the ceiling", "ii.a"),
+    "f1_delta": Column("Δ F1 [CI95]", "Anonymized minus original micro F1, paired bootstrap CI95 (1,000 resamples of the encounters)", "ii.a"),
+    "cat_f1": Column("category F1 (anonymized)", "Anonymized-text micro F1 with codes cut to their 3-character category", "ii.a"),
+    "cat_f1_delta": Column("category Δ F1 [CI95]", "The same change at the category level (the decision tree's own level), paired bootstrap CI95", "ii.a"),
+    "icd_errors": Column("errors", "Predictions that failed after retries (scored as empty sets)", ""),
+    "recovered": Column("Proportion of recovered information",
+                        "Share of gold items (or name tokens, rare words) an attack recovers from the output; beside it, the same "
+                        "attack on the original text (positive control)", "iv.a.ii"),
+    "recovered_llm": Column("Proportion of recovered information (LLM adversary)",
+                            "Attack A6: an LLM agent, prompted as a red-team auditor, reads one model's blinded output and guesses each "
+                            "patient's name, age, place and job; share of gold values hit (any name token, age within 1 year, a gold place "
+                            "or job inside the guess). Beside it the same agent prompt on the original text (control)", "iv.a.ii"),
+    "attack_max": Column("Proportion of recovered information (max)", "Largest recovered share over the attacks run, A5 record linkage "
+                         "excluded (an upper bound by design)", "iv.a.ii"),
+    "explained": Column("changed tokens explained", "Share of changed tokens covered by a logged decision with a reason", "iv.b.i"),
+    "ms_per_encounter": Column("Runtime (ms/encounter)", "Wall time of the model process / records, model loading included", "iv.c.i"),
+    "peak_ram_mb": Column("Peak RAM (MB)", "Peak summed RSS of the model's process tree", "iv.c.ii"),
+    "peak_vram_mb": Column("Peak VRAM (MB)", "Peak summed nvidia-smi memory of the process tree, CUDA context included", "iv.c.iii"),
+    "vram_ok": Column(f"Peak VRAM ≤ {VRAM_BUDGET_MB} MB", "Whether peak VRAM stays within the challenge's 4 GB budget", "iv.c.iii"),
+    "pareto": Column("Pareto", "No other real model is at least as good on both axes and better on one (identity, the unchanged input, is a reference)", ""),
+    "phi_before": Column("PII before (Phi)", "PII entities the fine-tuned Phi-3 PII model (ab-ai/PII-Model-Phi3-Mini) finds in the original "
+                         "text, an independent detector", "i.a"),
+    "phi_after": Column("PII after (Phi)", "PII entities the same detector finds in the anonymized text (placeholders ignored)", "i.a"),
+    "phi_removed": Column("removed (Phi)", "1 − after / before: privacy measured by an independent detector instead of the gold", "i.a"),
+}
+
+
+def H(key: str) -> str:
+    return COLUMNS[key].header
+
+
 class Col(NamedTuple):
     key: str
-    header: str
     category: str
     metric: str
     level: str = ""
-    primary: bool = False  # the metric of the primary ICD coder
-    digits: int | str = 3  # "bool": a yes/no cell (1/0 in the CSV)
+    coder: str = ""  # "*": the primary ICD coder of coders.toml; else a coder name
+    digits: int | str = 3  # "bool": a yes/no cell (1/0 in the CSV); "signed": a change, +0.000
+
+    @property
+    def header(self) -> str:
+        return H(self.key)
 
 
 HEADLINE = (
-    Col("privacy", "privacy (consensus)", "privacy", "removed", CONSENSUS),
-    Col("direct", "direct", "privacy", "removed", "direct"),
-    Col("entity", "entity-level", "privacy", "entity_removed", CONSENSUS),
-    Col("privacy_harness", "privacy (harness gold)", "privacy", "removed", "gold:harness"),
-    Col("concepts", "concepts kept", "concepts", "kept"),
-    Col("icd_concepts", "ICD concepts kept", "concepts", "icd_relevant"),
-    Col("icd_f1_anon", "ICD F1 anon", "icd", "anonymized.code.f1", primary=True),
-    Col("icd_f1_retained", "ICD F1 retained", "icd", "f1_retention", primary=True),
-    Col("icd_agree", "ICD agree", "icd", "agreement.code.f1", primary=True),
-    Col("ms_per_encounter", "ms/enc", "efficiency", "ms_per_encounter", digits=1),
-    Col("peak_ram_mb", "peak RAM MB", "efficiency", "peak_ram_mb", digits=1),
-    Col("vram_ok", f"peak VRAM ≤ {VRAM_BUDGET_MB} MB", "efficiency", "within_vram_budget", digits="bool"),
-    Col("explained", "explained", "explain", "explained"),
-    Col("attack_max", "attack recovered (max)", "attack", "max_recovered"),
+    Col("privacy", "privacy", "removed", CONSENSUS),
+    Col("direct", "privacy", "removed", "direct"),
+    Col("entity", "privacy", "entity_removed", CONSENSUS),
+    Col("privacy_harness", "privacy", "removed", "gold:harness"),
+    Col("concepts", "concepts", "kept"),
+    Col("icd_concepts", "concepts", "icd_relevant"),
+    Col("icd_f1_anon", "icd", "anonymized.code.f1", coder="*"),
+    Col("icd_f1_delta", "icd", "f1_delta", coder="*", digits="signed"),
+    Col("icd_agree", "icd", "agreement.code.f1", coder="*"),
+    Col("tree_f1_anon", "icd", "anonymized.category.f1", coder=TREE),
+    Col("tree_f1_delta", "icd", "category.f1_delta", coder=TREE, digits="signed"),
+    Col("recovered_llm", "attack", f"{ATTACKER}.anonymized.recovered"),
+    Col("attack_max", "attack", "max_recovered"),
+    Col("explained", "explain", "explained"),
+    Col("ms_per_encounter", "efficiency", "ms_per_encounter", digits=1),
+    Col("peak_ram_mb", "efficiency", "peak_ram_mb", digits=1),
+    Col("vram_ok", "efficiency", "within_vram_budget", digits="bool"),
 )
 
 
@@ -156,6 +239,11 @@ class Data:
                 self.info[p.parent.name] = i
         gold = read_json(OUT / "gold" / "aci_eval" / "merged_stats.json")
         self.gold: dict = gold if isinstance(gold, dict) else {}
+        self.phi = load_tree(OUT / "phi")  # bonus/phi_privacy.py: PII found by an independent detector before and after
+        self.manifest: dict[str, dict] = {}  # the converter manifest behind each suite (its origin, for the sources)
+        for s_, i in self.info.items():
+            if i.get("source") and isinstance(mf := read_json(DATA / "converted" / i["source"] / "manifest.json"), dict):
+                self.manifest[s_] = mf
         present = set(self.info) | {s for per in (self.scores, self.attacks, self.runs) for m in per.values() for s in m}
         self.suites = [s for s in S.SUITES if s in present] + sorted(present - set(S.SUITES))
         seen = set(self.scores) | set(self.runs) | set(self.attacks)
@@ -265,7 +353,8 @@ def icd_rows(R: Results, m: str, s: str, coder: str, res) -> None:
             R.add(m, s, "icd", new, res[old], n=n, coder=coder, notes="old score format")
     R.add(m, s, "icd", "f1_delta", g(res, "f1_delta", "value"), n=n, ci=g(res, "f1_delta", "ci95"), coder=coder,
           notes="anonymized minus original, paired bootstrap CI95")  # fmt: skip
-    R.add(m, s, "icd", "f1_retention", res.get("f1_retention"), n=n, coder=coder)
+    R.add(m, s, "icd", "category.f1_delta", g(res, "f1_delta_category", "value"), n=n, ci=g(res, "f1_delta_category", "ci95"), coder=coder,
+          notes="anonymized minus original category F1, paired bootstrap CI95")  # fmt: skip
     errs = [num(g(res, "errors", a)) for a in ("original", "anonymized")]
     for a, e in zip(("original", "anonymized"), errs, strict=True):
         R.add(m, s, "icd", f"errors.{a}", e, coder=coder)
@@ -409,6 +498,8 @@ def fmt(x, digits: int | str | None = 3) -> str:
         return DASH
     if digits == "bool" or isinstance(x, bool):
         return "yes" if x else "**no**"
+    if digits == "signed":
+        return signed(x)
     if not isinstance(x, (int, float)):
         return str(x)
     if digits is None:
@@ -434,12 +525,17 @@ def section(md: list[str], title: str, *lines: str) -> None:
     md += [f"## {title}", ""] + [ln for ln in lines] + ([""] if lines else [])
 
 
+def coder_of(d: Data, c: Col) -> str:
+    return (d.primary or "") if c.coder == "*" else c.coder
+
+
+def value(d: Data, R: Results, m: str, c: Col, suite: str = HEAD):
+    v = R.get(m, suite, c.category, c.metric, coder=coder_of(d, c), level=c.level)
+    return (bool(v) if v is not None else None) if c.digits == "bool" else v
+
+
 def headline(d: Data, R: Results, m: str) -> dict:
-    out = {}
-    for c in HEADLINE:
-        v = R.get(m, HEAD, c.category, c.metric, coder=d.primary if c.primary else "", level=c.level)
-        out[c.key] = (bool(v) if v is not None else None) if c.digits == "bool" else v
-    return out
+    return {c.key: value(d, R, m, c) for c in HEADLINE}
 
 
 def headline_cell(d: Data, m: str, c: Col, v) -> str:
@@ -447,7 +543,7 @@ def headline_cell(d: Data, m: str, c: Col, v) -> str:
         return fmt(v, c.digits)
     if d.failed(m, HEAD):
         return "failed"
-    if c.primary and g(d.score(m, HEAD), "icd", d.primary or "", "error"):
+    if c.coder and g(d.score(m, HEAD), "icd", coder_of(d, c), "error"):
         return "error"
     return DASH
 
@@ -463,19 +559,28 @@ def pareto(points: dict[str, tuple]) -> dict[str, bool | None]:
     return out
 
 
-def tradeoff(d: Data, R: Results) -> dict:
-    """x = consensus privacy, y = primary-coder ICD F1 retained, or ICD concepts kept when no real model has the coder."""
+def tradeoff(d: Data, R: Results, adversarial: bool = False) -> dict:
+    """x = consensus privacy (or, `adversarial`, 1 − the LLM adversary's proportion of recovered information), y = the primary
+    coder's ICD F1 on the anonymized text, or ICD concepts kept when no real model has the coder."""
     real = [m for m in d.models if m not in REFERENCE]
-    has = bool(d.primary) and any(R.get(m, HEAD, "icd", "f1_retention", coder=d.primary) is not None for m in real)
+    has = bool(d.primary) and any(R.get(m, HEAD, "icd", "anonymized.code.f1", coder=d.primary) is not None for m in real)
     if has:
-        ykey, ylabel = ("icd", "f1_retention", d.primary), f"ICD F1 retained ({d.primary}: anonymized F1 / original F1)"
+        ykey, ylabel = ("icd", "anonymized.code.f1", d.primary), f"F1-Score ICD-10 code prediction (LLM judge {d.primary}, anonymized text)"
     else:
         ykey = ("concepts", "icd_relevant", "")
         ylabel = f"ICD concepts kept (fallback: no {d.primary or 'primary'} coder result yet)"
-    pts = {m: (R.get(m, HEAD, "privacy", "removed", level=CONSENSUS), R.get(m, HEAD, ykey[0], ykey[1], coder=ykey[2])) for m in d.models}
+    if adversarial:
+        xs = {m: None if (v := R.get(m, HEAD, "attack", f"{ATTACKER}.anonymized.recovered")) is None else round(1 - v, 6) for m in d.models}
+        xname, xtitle = "1 − recovered (LLM adversary)", f"privacy against the LLM adversary (1 − proportion of recovered information, attack {ATTACKER})"
+        title = f"Adversarial privacy vs ICD utility on {HEAD}"
+    else:
+        xs = {m: R.get(m, HEAD, "privacy", "removed", level=CONSENSUS) for m in d.models}
+        xname, xtitle = "privacy (consensus)", "privacy, consensus gold level (share of PII occurrences removed)"
+        title = f"Privacy vs ICD utility on {HEAD}"
+    pts = {m: (xs[m], R.get(m, HEAD, ykey[0], ykey[1], coder=ykey[2])) for m in d.models}
     flags = pareto({m: p for m, p in pts.items() if m not in REFERENCE})
-    return {"x": "privacy (consensus)", "y": ylabel, "y_metric": {"category": ykey[0], "metric": ykey[1], "coder": ykey[2]}, "fallback": not has,
-            "points": {m: {"x": x, "y": y, "reference": m in REFERENCE, "pareto": flags.get(m)} for m, (x, y) in pts.items()}}  # fmt: skip
+    return {"x": xname, "x_title": xtitle, "title": title, "y": ylabel, "y_metric": {"category": ykey[0], "metric": ykey[1], "coder": ykey[2]},
+            "fallback": not has, "points": {m: {"x": x, "y": y, "reference": m in REFERENCE, "pareto": flags.get(m)} for m, (x, y) in pts.items()}}  # fmt: skip
 
 
 # --- SVG -----------------------------------------------------------------------------------------------------------
@@ -523,13 +628,13 @@ def svg(t: dict, generated: str) -> str:
     css = "".join(f".{k}{{{'stroke' if k in ('grid', 'lead') else 'fill'}:{v}}}" for k, v in DARK.items())
     css += f".ring{{stroke:{DARK['bg']}}}.hollow{{stroke:{DARK['series']};fill:{DARK['bg']}}}.refm{{fill:{DARK['ref']}}}"
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="system-ui, -apple-system, \'Segoe UI\', sans-serif" role="img" aria-labelledby="title">',
-         "<title id=\"title\">Privacy vs utility on aci_eval</title>",
+         f"<title id=\"title\">{escape(t.get('title', 'Privacy vs utility'))}</title>",
          f"<style>@media (prefers-color-scheme: dark){{{css}}}</style>",
          f'<rect class="bg" width="{W}" height="{H}" fill="{LIGHT["bg"]}"/>',
-         f'<text class="ink" x="{L}" y="28" font-size="15" font-weight="600" fill="{LIGHT["ink"]}">Privacy vs utility on aci_eval</text>',
-         f'<text class="ink2" x="{L}" y="47" font-size="11.5" fill="{LIGHT["ink2"]}">Filled: Pareto-optimal among the real models. identity and oracle are bounds, not competitors. No combined score.</text>']  # fmt: skip
+         f'<text class="ink" x="{L}" y="28" font-size="15" font-weight="600" fill="{LIGHT["ink"]}">{escape(t.get("title", "Privacy vs utility"))}</text>',
+         f'<text class="ink2" x="{L}" y="47" font-size="11.5" fill="{LIGHT["ink2"]}">Filled: Pareto-optimal among the real models. identity (input unchanged) is a reference, not a competitor. No combined score.</text>']  # fmt: skip
     lx = L  # legend
-    for kind, label in (("pareto", "Pareto-optimal"), ("dominated", "dominated"), ("reference", "reference (identity, oracle)")):
+    for kind, label in (("pareto", "Pareto-optimal"), ("dominated", "dominated"), ("reference", "reference (identity)")):
         cy = 70
         if kind == "pareto":
             o.append(f'<circle class="series" cx="{lx + 6}" cy="{cy}" r="6" fill="{LIGHT["series"]}"/>')
@@ -550,7 +655,7 @@ def svg(t: dict, generated: str) -> str:
         o.append(f'<text class="ink2" x="{L - 8}" y="{py(v) + 4:.1f}" font-size="11" text-anchor="end" fill="{LIGHT["ink2"]}">{tick_label(v, ys)}</text>')
         k += 1
     o.append(f'<text class="ink" x="{L + pw / 2:.1f}" y="{T + ph + 40}" font-size="12" text-anchor="middle" fill="{LIGHT["ink"]}">'
-             "privacy, consensus gold level (share of PII occurrences removed)</text>")  # fmt: skip
+             f"{escape(t.get('x_title', t['x']))}</text>")  # fmt: skip
     o.append(f'<text class="ink" transform="translate(18 {T + ph / 2:.1f}) rotate(-90)" font-size="12" text-anchor="middle" fill="{LIGHT["ink"]}">'
              f"{escape(t['y'])}</text>")  # fmt: skip
     groups: dict[tuple, dict] = {}  # identical points share a marker and a label
@@ -609,7 +714,9 @@ def svg(t: dict, generated: str) -> str:
         o.append(f'<text class="{cls}" x="{tx:.1f}" y="{ty:.1f}" font-size="11" text-anchor="{anchor}" fill="{fill}">{escape(label)}</text>')
     o.append(f'<text class="ink2" x="{W - 8}" y="{H - 10}" font-size="10" text-anchor="end" fill="{LIGHT["ink2"]}">{escape(generated)}</text>')
     if missing:
-        o.append(f'<text class="ink2" x="{L}" y="{H - 10}" font-size="11" fill="{LIGHT["ink2"]}">not plotted (no value): {escape(", ".join(missing))}</text>')
+        note, room = f"not plotted (no value): {', '.join(missing)}", int((W - L - 130) / 6.2)  # leave the timestamp its corner
+        note = note if len(note) <= room else note[: room - 1] + "…"
+        o.append(f'<text class="ink2" x="{L}" y="{H - 10}" font-size="11" fill="{LIGHT["ink2"]}">{escape(note)}<title>{escape(", ".join(missing))}</title></text>')
     o.append("</svg>")
     return "\n".join(o) + "\n"
 
@@ -617,7 +724,35 @@ def svg(t: dict, generated: str) -> str:
 # --- the report ----------------------------------------------------------------------------------------------------
 
 
-def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[str], dict, dict, list[str]]:
+def pareto_table(d: Data, R: Results, t: dict, xcol: str) -> list[str]:
+    pts, prim = t["points"], d.primary
+    order_ = sorted(d.models, key=lambda m: (m in REFERENCE, -(pts[m]["x"] if pts[m]["x"] is not None else -1), m))
+    rows = []
+    for m in order_:
+        p = pts[m]
+        flag = "ref" if p["reference"] else ("**yes**" if p["pareto"] else (DASH if p["pareto"] is None else "no"))
+        rows.append([name(m), fmt(p["x"]), fmt(p["y"]), signed(R.get(m, HEAD, "icd", "f1_delta", coder=d.primary or "")),
+                     fmt(R.get(m, HEAD, "icd", "anonymized.category.f1", coder=TREE)), fmt(R.get(m, HEAD, "concepts", "kept")), flag])  # fmt: skip
+    ycol = H("icd_f1_anon") if not t["fallback"] else H("icd_concepts")
+    return table(["model", xcol, ycol, H("icd_f1_delta"), H("tree_f1_anon"), H("concepts"), H("pareto")], rows)
+
+
+def phi_rows(d: Data, suite: str) -> tuple[list[str], list[list[str]]]:
+    """Header and rows of the independent Phi check on one suite: totals, then removed per category."""
+    files = {m: d.phi.get(m, {}).get(suite) for m in d.models}
+    cats_found = {c for f in files.values() if isinstance(f, dict) for c in (f.get("by_category") or {})}
+    cats = [c for c in CATEGORY_RISK if c in cats_found] + sorted(cats_found - set(CATEGORY_RISK))
+    rows = []
+    for m, f in files.items():
+        if not isinstance(f, dict):
+            continue
+        tot, bc = f.get("total") or {}, f.get("by_category") or {}
+        rows.append([name(m), fmt(tot.get("before"), None), fmt(tot.get("after"), None), fmt(tot.get("removed"))]
+                    + [fmt(g(bc, c, "removed")) for c in cats])  # fmt: skip
+    return ["model", H("phi_before"), H("phi_after"), H("phi_removed")] + [f"{c}" for c in cats], rows
+
+
+def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[str], dict, dict, dict, list[str]]:
     models, prim = d.models, d.primary
     md = [f"# Anonymization evaluation ({generated})", ""]
     md += [f"- {name(m)}: {d.registry.get(m, {}).get('description', '')}" for m in models] + [""]
@@ -625,14 +760,17 @@ def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[st
         md += ["Pending (disabled in `models.toml`, no data): " + ", ".join(f"`{m}`" for m in d.pending), ""]
     status = []
     if prim:
-        without = [m for m in models if R.get(m, HEAD, "icd", "f1_retention", coder=prim) is None]
+        without = [m for m in models if R.get(m, HEAD, "icd", "anonymized.code.f1", coder=prim) is None]
         if without:
-            status.append(f"- ICD primary coder `{prim}`: no `{HEAD}` result yet for " + ", ".join(f"`{m}`" for m in without) + " (cells show –).")
+            status.append(f"- LLM judge `{prim}`: no `{HEAD}` result yet for " + ", ".join(f"`{m}`" for m in without) + " (cells show –).")
     else:
-        status.append("- No primary ICD coder in `coders.toml`: the ICD headline columns are empty.")
+        status.append("- No primary ICD coder in `coders.toml`: the LLM-judge columns are empty.")
     no_score = [m for m in models if d.score(m, HEAD) is None]
     if no_score:
         status.append(f"- No `{HEAD}` score yet: " + ", ".join(f"`{m}`" for m in no_score) + ".")
+    no_adv = [m for m in models if d.score(m, HEAD) is not None and R.get(m, HEAD, "attack", f"{ATTACKER}.anonymized.recovered") is None]
+    if no_adv:
+        status.append(f"- No LLM-adversary ({ATTACKER}) result yet: " + ", ".join(f"`{m}`" for m in no_adv) + ".")
     failed = sorted({f"`{m}` on `{s}`" for m in models for s in d.suites if d.failed(m, s)})
     if failed:
         status.append("- Failed runs (scored as failed): " + ", ".join(failed) + ".")
@@ -640,33 +778,33 @@ def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[st
         status.append("- No `drift.json` yet (`python3 -I eval drift`): complexity ranks are empty.")
     if status:
         md += ["Data status:", ""] + status + [""]
+    md += ["Two datasets: **ACI** (the challenge's own data, `aci_eval`: privacy, ICD-10 F1, attacks, ablation) first, then the **Kaggle** "
+           "complement (privacy and ICD agreement; no F1, most Kaggle suites have no gold codes). Column names follow the task PDF "
+           "(criteria in the [Glossary](#glossary)); data origins and licenses are under [Sources](#sources).", ""]  # fmt: skip
 
+    # ============================================================== ACI
+    md += [f"# ACI (`{HEAD}`)", ""]
     heads = {m: headline(d, R, m) for m in models}
-    hdr = ["model"] + [f"{c.header} ({prim})" if c.primary and prim else c.header for c in HEADLINE]
-    section(md, f"Headline (`{HEAD}`)")
-    md += table(hdr, [[name(m)] + [headline_cell(d, m, c, heads[m][c.key]) for c in HEADLINE] for m in models])
-    md += ["Privacy, concepts and ICD columns are shares (1 = everything removed, or everything kept). ms/enc, RAM and VRAM are from the "
-           f"`{HEAD}` run; explained = share of changed tokens with a logged reason; attack = the largest share an attack recovers "
-           "from the output (A5 excluded). `identity` and `oracle` are bounds, not competitors.", ""]  # fmt: skip
+    section(md, "Headline")
+    md += table(["model"] + [c.header for c in HEADLINE], [[name(m)] + [headline_cell(d, m, c, heads[m][c.key]) for c in HEADLINE] for m in models])
+    md += ["Shares: 1 = everything removed, kept or recovered. LLM judge = the primary coder `" + (prim or DASH) + "`; the decision tree is "
+           "scored at its own 3-character category level. Runtime, RAM and VRAM are from the `" + HEAD + "` run (– for a delivered JSONL). "
+           "`identity` (input unchanged) is a reference, not a competitor.", ""]  # fmt: skip
 
     t = tradeoff(d, R)
-    pts = t["points"]
-    order_ = sorted(models, key=lambda m: (m in REFERENCE, -(pts[m]["x"] if pts[m]["x"] is not None else -1), m))
-    rows = []
-    for m in order_:
-        p = pts[m]
-        flag = "ref" if p["reference"] else ("**yes**" if p["pareto"] else (DASH if p["pareto"] is None else "no"))
-        rows.append([name(m), fmt(p["x"]), fmt(R.get(m, HEAD, "privacy", "removed", level="direct")), fmt(p["y"])]
-                    + ([] if t["fallback"] else [fmt(R.get(m, HEAD, "concepts", "icd_relevant"))]) + [fmt(R.get(m, HEAD, "concepts", "kept")), flag])  # fmt: skip
-    ycol = f"ICD F1 retained ({prim})" if not t["fallback"] else "ICD concepts kept"
-    section(md, "Privacy vs utility (tradeoff)",
-            f"Sorted by consensus privacy. Pareto-optimal: no other real model is at least as good on both consensus privacy and {ycol}, and "
-            "better on one. No combined score: the organizers weigh the criteria separately."
-            + (f" No model has a `{prim}` result yet, so the utility axis is ICD concepts kept." if t["fallback"] else ""),
+    section(md, "Privacy vs ICD utility (Pareto front)",
+            f"x = {t['x_title']}; y = {t['y']}. Pareto-optimal: no other real model is at least as good on both axes and better on one. "
+            "No combined score: the organizers weigh the criteria separately."
+            + (f" No model has a `{prim}` result yet, so the utility axis is {H('icd_concepts')}." if t["fallback"] else ""),
             "![privacy vs utility](tradeoff.svg)")  # fmt: skip
-    md += table(["model", "privacy (consensus)", "direct", ycol] + ([] if t["fallback"] else ["ICD concepts kept"]) + ["concepts kept", "Pareto"], rows)
+    md += pareto_table(d, R, t, H("privacy"))
+    ta = tradeoff(d, R, adversarial=True)
+    section(md, "Adversarial privacy vs ICD utility (Pareto front)",
+            f"x = {ta['x_title']}; y = {ta['y']}. The same front with privacy measured by what the LLM adversary recovers instead of "
+            "the gold.", "![adversarial privacy vs utility](tradeoff_adversarial.svg)")  # fmt: skip
+    md += pareto_table(d, R, ta, f"1 − {H('recovered_llm')}")
 
-    # privacy levels on the headline suite
+    # privacy levels and categories
     lv_rows, src_rows = [], []
     for m in models:
         if d.score(m, HEAD) is None:
@@ -683,62 +821,74 @@ def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[st
         occ = [f"{lv} {fmt(R.get('', HEAD, 'privacy', 'gold_occurrences', level=lv), None)}" for lv in ("union", CONSENSUS, "direct")]
         votes = "/".join(fmt(R.get("", HEAD, "privacy", "gold_items", level=f"votes:{v}"), None) for v in (1, 2, 3))
         gl = [f"Merged gold: items {', '.join(items)}; occurrences {', '.join(occ)}; items with 1/2/3 votes {votes}."]
-    section(md, f"Privacy levels (`{HEAD}`, merged gold)",
+    section(md, f"{H('privacy')} by gold level",
             "Occurrence-level removal per gold level (union: any gold; consensus: direct identifiers or 2+ votes, the headline; direct: "
             "names, dates, DOB, IDs, contacts), the high-risk share, and entity-level removal (an item counts only when every "
             "occurrence is gone).", *gl)  # fmt: skip
-    md += table(["model", "union", "consensus", "direct", "high-risk", "entity union", "entity consensus", "entity direct"], lv_rows)
+    md += table(["model", H("union"), f"{H('privacy')} (consensus)", H("direct"), H("high_risk"), "entity: union", "entity: consensus", "entity: direct"],
+                lv_rows)  # fmt: skip
     md += ["Votes and sources: `votes:N` = union items listed by N golds; `src:X` = union items gold X supports; `gold X` = gold X scored "
            "alone on its own list (`gold harness` is the A+D team's cross-check value).", ""]  # fmt: skip
     md += table(["model", "votes:1", "votes:2", "votes:3", "src:harness", "src:vm", "src:ketai", "gold harness", "gold vm", "gold ketai"], src_rows)
+    cats_found = {r["metric"] for r in R.rows if r["suite"] == HEAD and r["category"] == "privacy_by_category"}
+    cats = [c for c in CATEGORY_RISK if c in cats_found] + sorted(cats_found - set(CATEGORY_RISK))
+    rows = []
+    for m in models:
+        cells = [fmt(R.get(m, HEAD, "privacy_by_category", c, level=CONSENSUS)) for c in cats]
+        cells += [fmt(R.get(m, HEAD, "privacy_by_field", f, level=CONSENSUS)) for f in ("dialogue", "note")]
+        if any(c != DASH for c in cells):
+            rows.append([name(m)] + cells)
+    if rows:
+        section(md, f"{H('privacy')} by category and field (consensus level)")
+        md += table(["model"] + cats + ["dialogue", "note"], rows)
+    hdr, rows = phi_rows(d, HEAD)
+    if rows:
+        section(md, "Independent privacy check (Phi-3 PII model), before and after anonymization",
+                "PII entities the fine-tuned `ab-ai/PII-Model-Phi3-Mini` finds in the original text (before) and in the output (after), "
+                "per category mapped to the gold taxonomy; removed = 1 − after / before. Needs no gold, so it also catches PII the golds "
+                "missed, and counts what the detector itself misses as kept.")  # fmt: skip
+        md += table(hdr, rows)
 
-    # ICD coders
-    def icd_table(suites: list[str], with_suite: bool) -> list[str]:
+    # ICD coders, F1 on ACI only
+    def icd_table(suite: str) -> list[str]:
         rows, errs = [], {}
-        for s in suites:
-            for m in models:
-                block = g(d.score(m, s), "icd") or {}
-                for c in d.coder_names + [c for c in block if c not in d.coder_names]:
-                    res = block.get(c)
-                    if not isinstance(res, dict):
-                        continue
-                    lead = ([f"`{s}`"] if with_suite else []) + [name(m), f"`{c}`" + (" !" if res.get("valid_for_comparison") is False else "")]
-                    if res.get("error"):
-                        errs.setdefault(short(res["error"]), set()).add(c)
-                        rows.append(lead + ["error"] + [""] * 7)
-                        continue
+        for m in models:
+            block = g(d.score(m, suite), "icd") or {}
+            for c in d.coder_names + [c for c in block if c not in d.coder_names]:
+                res = block.get(c)
+                if not isinstance(res, dict):
+                    continue
+                lead = [name(m), f"`{c}`" + (" !" if res.get("valid_for_comparison") is False else "")]
+                if res.get("error"):
+                    errs.setdefault(short(res["error"]), set()).add(c)
+                    rows.append(lead + ["error"] + [""] * 6)
+                    continue
 
-                    def v(metric: str, s=s, m=m, c=c):
-                        return R.get(m, s, "icd", metric, coder=c)
+                def v(metric: str, m=m, c=c):
+                    return R.get(m, suite, "icd", metric, coder=c)
 
-                    dr = R.row(m, s, "icd", "f1_delta", coder=c)
-                    delta = fmt(dr["value"]) + (f" [{fmt(dr['ci_low'])}, {fmt(dr['ci_high'])}]" if dr and dr["ci_low"] is not None else "") if dr else DASH
-                    rows.append(lead + [fmt(v("original.code.f1")), fmt(v("anonymized.code.f1")), delta, fmt(v("f1_retention")), fmt(v("agreement.code.f1")),
-                                        fmt(v("anonymized.category.f1")), fmt(v("errors"), None)])  # fmt: skip
-        out = table(
-            (["suite"] if with_suite else []) + ["model", "coder", "F1 orig", "F1 anon", "Δ F1 [CI95]", "retained", "agree", "cat-F1 anon", "errors"],
-            rows,
-            left=3 if with_suite else 2,
-        )
+                def change(metric: str, m=m, c=c) -> str:
+                    dr = R.row(m, suite, "icd", metric, coder=c)
+                    return signed(dr["value"]) + (f" [{signed(dr['ci_low'])}, {signed(dr['ci_high'])}]" if dr["ci_low"] is not None else "") if dr else DASH
+
+                rows.append(lead + [fmt(v("original.code.f1")), fmt(v("anonymized.code.f1")), change("f1_delta"), fmt(v("agreement.code.f1")),
+                                    fmt(v("anonymized.category.f1")), change("category.f1_delta"), fmt(v("errors"), None)])  # fmt: skip
+        out = table(["model", "coder", H("f1_orig"), "F1 anonymized", H("f1_delta"), "agreement", H("cat_f1"), H("cat_f1_delta"), H("icd_errors")], rows, left=2)
         return out + [f"- error ({', '.join(f'`{c}`' for c in sorted(cs))}): {msg}" for msg, cs in errs.items()] + ([""] if errs else [])
 
-    icd_suites = [s for s in d.suites if any(g(d.score(m, s), "icd") for m in models)]
-    section(md, f"ICD coders (`{HEAD}`)",
-            "Micro F1 of each coder's codes vs the gold codes on the original and the anonymized text (code level; cat-F1 = 3-character "
-            "category), the paired-bootstrap change with its CI95, retained = anonymized F1 / original F1, agree = anonymized vs original "
-            "predictions (the damage done by anonymization alone). `!` = not valid for comparison (a prediction failed: counted as "
-            f"empty, see errors). The primary coder (`coders.toml`) is `{prim or DASH}`.")  # fmt: skip
-    md += icd_table([HEAD], False) if HEAD in icd_suites else ["No ICD results yet.", ""]
-    others = [s for s in icd_suites if s != HEAD]
-    if others:
-        section(md, "ICD coders on the other suites")
-        md += icd_table(others, True)
+    section(md, "F1-Score ICD-10 code prediction, every coder",
+            "Micro F1 of each coder's codes vs the gold codes on the original and the anonymized text (code level; category = 3 "
+            "characters), the paired-bootstrap change Δ = anonymized minus original with its CI95, agreement = anonymized vs "
+            f"original predictions (the damage done by anonymization alone). LLM judge: `{prim or DASH}`; decision tree: `{TREE}` (read "
+            "its category column). `!` = not valid for comparison (a prediction failed: counted as empty, see errors). F1 is reported on "
+            f"`{HEAD}` only.")  # fmt: skip
+    md += icd_table(HEAD) if any(g(d.score(m, HEAD), "icd") for m in models) else ["No ICD results yet.", ""]
 
     # main suites, utility and edits
-    cols = [("valid", "validity", "valid_rate", ""), ("privacy", "privacy", "removed", CONSENSUS), ("high-risk", "privacy", "removed_high_risk", CONSENSUS),
-            ("keep traps", "keep", "kept", ""), ("non-PII kept", "edits", "non_pii_tokens_kept", ""), ("edit prec.", "edits", "edit_precision", ""),
-            ("concepts", "concepts", "kept", ""), ("ICD concepts", "concepts", "icd_relevant", ""), ("terms", "terms", "kept", ""),
-            ("placeholders /1k words", "edits", "placeholders_per_1k_words", ""), ("explained", "explain", "explained", "")]  # fmt: skip
+    cols = [("valid", "validity", "valid_rate", ""), ("privacy", "privacy", "removed", CONSENSUS), ("high_risk", "privacy", "removed_high_risk", CONSENSUS),
+            ("keep", "keep", "kept", ""), ("non_pii_kept", "edits", "non_pii_tokens_kept", ""), ("edit_precision", "edits", "edit_precision", ""),
+            ("concepts", "concepts", "kept", ""), ("icd_concepts", "concepts", "icd_relevant", ""), ("terms", "terms", "kept", ""),
+            ("placeholders", "edits", "placeholders_per_1k_words", ""), ("explained", "explain", "explained", "")]  # fmt: skip
     for s in [s for s in MAIN if s in d.suites]:
         rows = []
         for m in models:
@@ -751,30 +901,19 @@ def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[st
         if rows:
             info = d.info.get(s, {})
             section(md, f"`{s}`: {info.get('about', '')} ({fmt(info.get('records'), None)} records)")
-            md += table(["model"] + [h for h, *_ in cols], rows)
-
-    if nc:
-        section(
-            md,
-            "Without ICD-10 codes at inference (bonus)",
-            f"Each model run with `blind_codes` beside its base model on `{HEAD}` (Δ = without codes minus with codes).",
-        )
-        for row in nc:
-            rows = []
-            for k, v in row["metrics"].items():
-                label = f"ICD F1 anon (`{k.partition(':')[2]}`)" if k.startswith("icd_f1:") else NOCODES_LABEL.get(k, k)
-                rows.append([label, fmt(v["base"]), fmt(v["nocodes"]), signed(v["delta"])])
-            md += table(["metric", f"`{row['base']}`", f"`{row['nocodes']}`", "Δ"], rows)
+            md += table(["model"] + [H(k) for k, *_ in cols], rows)
 
     # attacks
     at_suites = [s for s in d.suites if any(s in d.attacks.get(m, {}) for m in models)]
     if HEAD in at_suites:
         keys = sorted({k for m in models for k in (g(d.attacks.get(m, {}).get(HEAD), "attacks") or {})})
-        names_ = {}
+        names_, llms = {}, set()
         for m in models:
             for k, a in (g(d.attacks.get(m, {}).get(HEAD), "attacks") or {}).items():
                 if isinstance(a, dict) and a.get("name"):
                     names_.setdefault(k, a["name"])
+                if k == ATTACKER and isinstance(a, dict) and a.get("llm"):
+                    llms.add(a["llm"])
         rows = []
         for m in models:
             at = d.attacks.get(m, {}).get(HEAD)
@@ -789,19 +928,94 @@ def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[st
                     cells.append("error")
                 else:
                     an, co = R.get(m, HEAD, "attack", f"{k}.anonymized.recovered"), R.get(m, HEAD, "attack", f"{k}.control.recovered")
-                    cells.append(f"{fmt(an)} / {fmt(co)}")
+                    cells.append(f"{fmt(an)} / {fmt(co)}" + (f" ({a['llm']})" if k == ATTACKER and len(llms) > 1 and a.get("llm") else ""))
             rows.append([name(m)] + cells + [fmt(R.get(m, HEAD, "attack", "max_recovered"))])
-        section(md, f"Adversarial attacks (`{HEAD}`, bonus)",
-                "Share recovered from the output / from the original text (the positive control). Lower is better on the left; an "
-                "attack that recovers little from the original says little. A5 links records with the originals in hand, an upper "
-                "bound by design, so the max leaves it out. – = not run.")  # fmt: skip
-        md += table(["model"] + [f"{k} {names_.get(k, '')}".strip() for k in keys] + ["max (A5 excluded)"], rows)
-    at_more = [s for s in at_suites if any(s in d.attacks.get(m, {}) for m in models if m not in REFERENCE)]  # suites a real model was attacked on
+        section(md, f"{H('recovered')} (adversarial attacks, bonus iv.a)",
+                "Each cell: proportion recovered from the output / from the original text (the positive control). Lower is better on "
+                f"the left; an attack that recovers little from the original says little. {ATTACKER} adversary: "
+                + (", ".join(f"`{x}`" for x in sorted(llms)) or DASH) + ". A5 links records with the originals in hand, an upper bound "
+                "by design, so the max leaves it out. – = not run.")  # fmt: skip
+        md += table(["model"] + [f"{k} {names_.get(k, '')}".strip() for k in keys] + [H("attack_max")], rows)
+
+    # ablation: with and without ICD-10 codes at inference
+    abl = [c for c in HEADLINE if c.key in ("privacy", "direct", "concepts", "icd_concepts", "icd_f1_anon", "tree_f1_anon", "recovered_llm")]
+    prs = [(b, n) for b, n in nocodes.pairs(d.registry) if d.score(b, HEAD) is not None or d.score(n, HEAD) is not None]
+    if prs:
+        rows = []
+        for c in abl:
+            cells = []
+            for b, n in prs:
+                vb, vn = value(d, R, b, c), value(d, R, n, c)
+                cells += [fmt(vb), fmt(vn), signed(None if vb is None or vn is None else round(vn - vb, 4))]
+            rows.append([c.header] + cells)
+        lone = [m for m in models if m not in REFERENCE and not any(m in pr for pr in prs)]
+        blind = [m for m in lone if d.registry.get(m, {}).get("reads_codes") is False]
+        missing = [m for m in lone if m not in blind]
+        section(md, "Without ICD-10 codes at inference (ablation, bonus iv.d)",
+                f"Each model run with `blind_codes` (the codes hidden at inference, restored before scoring) beside the same model with "
+                f"codes, on `{HEAD}`; Δ = without minus with. The task asks for the same metrics as the main task."
+                + (" Never read the codes, so identical without them: " + ", ".join(f"`{m}`" for m in blind) + "." if blind else "")
+                + (" No twin run: " + ", ".join(f"`{m}`" for m in missing) + "." if missing else ""))  # fmt: skip
+        md += table(["metric"] + [h for b, n in prs for h in (f"`{b}`", f"`{n}`", "Δ")], rows)
+
+    # ============================================================== Kaggle
+    ks, medical = d.suites_of("kaggle", "generic"), d.suites_of("kaggle")
+    if ks:
+        md += ["# Kaggle complement", "",
+               "Kaggle datasets converted to the challenge schema (`DATA_PREP.md`); their golds are partial or single-source, so they "
+               "complement the ACI headline. `generic` suites are not medical; the mean is over the medical ones.", ""]  # fmt: skip
+        for title, fam, key, lv in ((H("privacy"), "privacy", "removed", CONSENSUS), (f"{H('terms')} (clinical vocabulary)", "terms", "kept", "")):
+            rows = []
+            for m in models:
+                cells = [("failed" if d.failed(m, s) else fmt(R.get(m, s, fam, key, level=lv))) for s in ks]
+                if any(c != DASH for c in cells):
+                    rows.append([name(m)] + cells + [fmt(R.get(m, "kaggle_medical_mean", fam, key, level=lv))])
+            section(md, title)
+            md += table(["model"] + [f"`{s}`" for s in ks] + ["mean (medical)"], rows)
+        for c in d.coder_names:
+            level = "category" if c == TREE else "code"
+            cols_ = [s for s in medical if any(R.get(m, s, "icd", f"agreement.{level}.f1", coder=c) is not None for m in models)]
+            rows = []
+            for m in models:
+                cells = [fmt(R.get(m, s, "icd", f"agreement.{level}.f1", coder=c)) for s in cols_]
+                if any(x != DASH for x in cells):
+                    rows.append([name(m)] + cells)
+            if rows:
+                section(md, f"ICD agreement, `{c}` ({level} level)",
+                        "Codes predicted on the anonymized text scored against the codes predicted on the original text (no gold codes "
+                        "needed): 1 = anonymization changed no prediction.")  # fmt: skip
+                md += table(["model"] + [f"`{s}`" for s in cols_], rows)
+        ucols = [("NBME graded findings kept", "nbme_notes", "keep", "kept", ""), ("devp code evidence kept", "devp_discharge", "keep", "kept", ""),
+                 (f"devp {H('high_risk')}", "devp_discharge", "privacy", "removed_high_risk", CONSENSUS)]  # fmt: skip
+        rows = [[name(m)] + [fmt(R.get(m, s, fam, key, level=lv)) for _, s, fam, key, lv in ucols] for m in models]
+        rows = [r for r in rows if any(c != DASH for c in r[1:])]
+        if rows:
+            section(md, "Utility with gold")
+            md += table(["model"] + [h for h, *_ in ucols], rows)
+        langs = sorted({r["metric"] for r in R.rows if r["suite"] == "imerit_multi" and r["category"] == "privacy_by_language"})
+        rows = []
+        for m in models:
+            cells = [fmt(R.get(m, "imerit_en", "privacy", "removed", level=CONSENSUS))] + [
+                fmt(R.get(m, "imerit_multi", "privacy_by_language", x, level=CONSENSUS)) for x in langs
+            ]
+            if any(c != DASH for c in cells):
+                rows.append([name(m)] + cells)
+        if rows:
+            section(md, f"{H('privacy')} by language (iMerit scribe: patient, physician, DOB)")
+            md += table(["model", "en"] + langs, rows)
+        for s in ks:
+            hdr, rows = phi_rows(d, s)
+            if rows:
+                section(md, f"Independent privacy check (Phi-3 PII model), `{s}`")
+                md += table(hdr, rows)
+    at_more = [s for s in at_suites if any(s in d.attacks.get(m, {}) for m in models if m not in REFERENCE)]
     if [s for s in at_more if s != HEAD]:
         rows = [[name(m)] + [fmt(R.get(m, s, "attack", "max_recovered")) for s in at_more] for m in models if any(s in d.attacks.get(m, {}) for s in at_more)]
-        section(md, "Adversarial attacks, max recovered per suite")
+        section(md, f"{H('attack_max')} per suite")
         md += table(["model"] + [f"`{s}`" for s in at_more], rows)
 
+    # ============================================================== bonus and context
+    md += ["# Robustness, complexity and efficiency", ""]
     ranks = d.drift.get("complexity_rank") or {}
     robust = d.suites_of("robust")
     if robust:
@@ -813,8 +1027,8 @@ def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[st
         hdr = ["model"] + [
             f"`{s}` {k}" + (f" (rank {ranks[s]})" if k == "privacy" and s in ranks else "") for s in robust for k in ("privacy", "high-risk", "terms")
         ]
-        section(md, "Robustness to unseen formats (bonus)",
-                "Privacy (consensus), high-risk privacy and ICD-10-CM terms kept on the robust suites. Rank = complexity rank from "
+        section(md, "Robustness to unseen formats (bonus iv.e)",
+                f"{H('privacy')} (consensus), {H('high_risk')} and {H('terms')} on the robust suites. Rank = complexity rank from "
                 f"`drift.json` (1 = closest to ACI train by unigram JSD, of {len(ranks) or DASH} suites).")  # fmt: skip
         md += table(hdr, rows)
 
@@ -833,49 +1047,6 @@ def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[st
                 "Definitions: `eval/docs/CORPUS-DRIFT.md`.")  # fmt: skip
         md += table(["suite", "rank", "role", "records", "tokens"] + [h for h, _ in dcols], rows, left=1)
 
-    # Kaggle complement
-    ks = d.suites_of("kaggle", "generic")
-    for title, fam, key, lv in (("privacy (share of gold PII occurrences removed)", "privacy", "removed", CONSENSUS),
-                                ("clinical terms kept (ICD-10-CM vocabulary)", "terms", "kept", "")):  # fmt: skip
-        rows = []
-        for m in models:
-            cells = [("failed" if d.failed(m, s) else fmt(R.get(m, s, fam, key, level=lv))) for s in ks]
-            if any(c != DASH for c in cells):
-                rows.append([name(m)] + cells + [fmt(R.get(m, "kaggle_medical_mean", fam, key, level=lv))])
-        if ks:
-            section(md, f"Kaggle complement, {title}")
-            md += table(["model"] + [f"`{s}`" for s in ks] + ["mean (medical)"], rows)
-    ucols = [("NBME graded findings kept", "nbme_notes", "keep", "kept", ""), ("devp code evidence kept", "devp_discharge", "keep", "kept", ""),
-             ("devp high-risk removed", "devp_discharge", "privacy", "removed_high_risk", CONSENSUS)]  # fmt: skip
-    rows = [[name(m)] + [fmt(R.get(m, s, fam, key, level=lv)) for _, s, fam, key, lv in ucols] for m in models]
-    rows = [r for r in rows if any(c != DASH for c in r[1:])]
-    if rows:
-        section(md, "Kaggle complement, utility with gold")
-        md += table(["model"] + [h for h, *_ in ucols], rows)
-    langs = sorted({r["metric"] for r in R.rows if r["suite"] == "imerit_multi" and r["category"] == "privacy_by_language"})
-    rows = []
-    for m in models:
-        cells = [fmt(R.get(m, "imerit_en", "privacy", "removed", level=CONSENSUS))] + [
-            fmt(R.get(m, "imerit_multi", "privacy_by_language", x, level=CONSENSUS)) for x in langs
-        ]
-        if any(c != DASH for c in cells):
-            rows.append([name(m)] + cells)
-    if rows:
-        section(md, "Kaggle complement, privacy by language (iMerit scribe: patient, physician, DOB)")
-        md += table(["model", "en"] + langs, rows)
-
-    cats_found = {r["metric"] for r in R.rows if r["suite"] == HEAD and r["category"] == "privacy_by_category"}
-    cats = [c for c in CATEGORY_RISK if c in cats_found] + sorted(cats_found - set(CATEGORY_RISK))
-    rows = []
-    for m in models:
-        cells = [fmt(R.get(m, HEAD, "privacy_by_category", c, level=CONSENSUS)) for c in cats]
-        cells += [fmt(R.get(m, HEAD, "privacy_by_field", f, level=CONSENSUS)) for f in ("dialogue", "note")]
-        if any(c != DASH for c in cells):
-            rows.append([name(m)] + cells)
-    if rows:
-        section(md, f"`{HEAD}` privacy by category and field (consensus level)")
-        md += table(["model"] + cats + ["dialogue", "note"], rows)
-
     rows = []
     for m in models:
         if R.get(m, "all", "efficiency", "suites") is None:
@@ -884,45 +1055,27 @@ def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[st
                                  (("suites", None), ("n_records", None), ("wall_s", 1), ("ms_per_encounter", 1), ("peak_ram_mb", 1), ("peak_vram_mb", 1),
                                   ("within_vram_budget", "bool"))])  # fmt: skip
     if rows:
-        section(md, "Efficiency over all suites run")
-        md += table(["model", "suites", "records", "wall s", "ms/enc", "peak RAM MB", "peak VRAM MB", f"≤ {VRAM_BUDGET_MB} MB VRAM"], rows)
+        section(md, "Efficiency over all suites run (bonus iv.c)")
+        md += table(["model", "suites", "records", "wall s", H("ms_per_encounter"), H("peak_ram_mb"), H("peak_vram_mb"), H("vram_ok")], rows)
 
-    md += [
-        "## How to read this",
-        "",
-        "- **privacy**: share of gold PII occurrences no longer in the output (case-insensitive whole words; a multi-word item also leaks",
-        "  when one of its distinctive tokens survives). On `aci_eval` the gold merges three golds (harness, VM, ketai) with votes:",
-        "  **consensus** (direct identifiers or 2+ votes) is the headline, **direct** (names, dates, DOB, IDs, contacts) the gate,",
-        "  **union** the pessimistic bound. **entity-level** counts an item only when every occurrence is gone (the paper's strict",
-        "  matching). **privacy (harness gold)** scores the A+D team's gold alone, so their own number stays comparable. All three golds",
-        "  are LLM-assisted, so votes are less independent than they look. **high-risk**: names, dates, ages, DOB, IDs, contacts.",
-        "- **concepts / ICD concepts**: share of gold medical-concept occurrences kept (all, and those relevant to the codes).",
-        "  **keep traps**: must-survive strings (eponyms, clinical numbers, code evidence). **terms**: ICD-10-CM description words kept.",
-        "- **ICD F1**: the coders of `coders.toml` stand in for the organizers' hidden coder. F1 anon is micro F1 vs the gold codes on",
-        "  the anonymized text; **retained** = anonymized F1 / original F1; **agree** = anonymized vs original predictions. The headline",
-        f"  uses the primary coder (`{prim or DASH}`); the weak local coders (kNN, lexical) are best read through agreement.",
-        "- **explained**: share of changed tokens covered by a logged decision with a reason (the explainability bonus).",
-        "- **attacks**: re-identification attempts on the output, each beside the same attack on the original text (positive control).",
-        "- **Pareto**: no other real model is at least as good on both consensus privacy and ICD F1 retained, and better on one. No",
-        "  combined score: the organizers weigh the criteria separately.",
-        "- **RAM/VRAM**: peaks of the whole process tree (VRAM from nvidia-smi, includes the CUDA context). Budget: 4 GB VRAM.",
-        "- `identity` (input unchanged) and `oracle` (gold PII replaced, reads the gold) are references, not models.",
-        "- Every number here is also a row of `results.csv` (with the per-category breakdowns); `results_headline.csv` is the headline.",
-        "",
-    ]
+    md += glossary(d) + sources(d)
 
+    icd_suites = [s for s in d.suites if any(g(d.score(m, s), "icd") for m in models)]
     report = {
         "generated": generated, "headline_suite": HEAD, "primary_coder": prim,
         "models": {m: d.registry.get(m, {}).get("description", "") for m in models}, "pending": d.pending, "suites": d.info,
-        "headline": heads, "tradeoff": t,
-        "icd": {s: {m: {c: {k: R.get(m, s, "icd", k, coder=c) for k in ("original.code.f1", "anonymized.code.f1", "f1_delta", "f1_retention",
-                                                                          "agreement.code.f1", "anonymized.category.f1", "errors", "valid_for_comparison")}
+        "columns": {k: c._asdict() for k, c in COLUMNS.items()},
+        "headline": heads, "tradeoff": t, "tradeoff_adversarial": ta,
+        "icd": {s: {m: {c: {k: R.get(m, s, "icd", k, coder=c) for k in ("original.code.f1", "anonymized.code.f1", "f1_delta", "category.f1_delta",
+                                                                          "agreement.code.f1", "anonymized.category.f1", "agreement.category.f1",
+                                                                          "original.category.f1", "errors", "valid_for_comparison")}
                         for c in (g(d.score(m, s), "icd") or {}) if not g(d.score(m, s), "icd", c, "error")} for m in models if g(d.score(m, s), "icd")}
                 for s in icd_suites},
         "nocodes": nc,
         "attacks": {s: {m: {"max_recovered": R.get(m, s, "attack", "max_recovered"),
                             **{k: {"anonymized": R.get(m, s, "attack", f"{k}.anonymized.recovered"), "control": R.get(m, s, "attack", f"{k}.control.recovered")}
                                for k in (g(d.attacks.get(m, {}).get(s), "attacks") or {})}} for m in models if s in d.attacks.get(m, {})} for s in at_suites},
+        "phi": {s: {m: d.phi[m][s].get("total") for m in models if s in d.phi.get(m, {})} for s in d.suites if any(s in d.phi.get(m, {}) for m in models)},
         "robustness": {s: {"complexity_rank": ranks.get(s), "models": {m: {k: R.get(m, s, "robustness", k) for k in ("privacy", "high_risk", "terms")} for m in models}}
                        for s in robust},
         "complexity_rank": ranks,
@@ -931,14 +1084,56 @@ def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[st
     }  # fmt: skip
 
     disc = discord(d, heads, t, generated)
-    return md, report, t, disc
+    return md, report, t, ta, disc
+
+
+ACI_CITATION = ("Yuan, Moy, et al. \"Toward reliable clinical coding with language models: verification and lightweight adaptation.\" "
+                "EMNLP 2025 Industry Track (the ACI-Bench encounters with ICD-10 codes; entries unmodified)")  # fmt: skip
+
+
+def glossary(d: Data) -> list[str]:
+    rows = [[c.header, c.definition, c.criterion or DASH] for c in COLUMNS.values()]
+    md = ["# Glossary", "",
+          "Every column of this report: what it measures and the task criterion it answers (task PDF, *Evaluation*: i privacy, "
+          "ii medical information, iv bonus tasks). Full computation rules: `eval/docs/METRICS.md`. Every number is also a row of "
+          "`results.csv`; `results_headline.csv` is the headline.", ""]  # fmt: skip
+    md += table(["column", "definition", "criterion"], rows, left=3)
+    md += ["- `identity` (input unchanged: privacy 0, utility 1) is a reference that calibrates the scale, not a model.",
+           "- All three ACI golds are LLM-assisted, so their votes are less independent than they look.", ""]  # fmt: skip
+    return md
+
+
+def sources(d: Data) -> list[str]:
+    rows = []
+    for s in d.suites:
+        info, mf = d.info.get(s) or {}, d.manifest.get(s) or {}
+        origin = str(mf.get("source") or info.get("source") or DASH)
+        if origin.startswith("kaggle:"):
+            slug = origin.split()[0].removeprefix("kaggle:")
+            origin = f"[{slug}](https://www.kaggle.com/datasets/{slug})" + origin[len("kaggle:") + len(slug):]
+        elif info.get("source") == "aci_bench":
+            origin = ACI_CITATION
+        rows.append([f"`{s}`", d.role(s) or DASH, fmt(info.get("records"), None), origin.replace("|", "/"), str(info.get("license") or DASH),
+                     ", ".join(info.get("gold_sources") or []) or DASH])  # fmt: skip
+    md = ["# Sources", "", "## Datasets", ""]
+    md += table(["suite", "role", "records", "origin", "license", "gold"], rows, left=6)
+    used = {c for per in d.scores.values() for sc in per.values() for c in (g(sc, "icd") or {})}
+    tools = [[f"`{c}`", (d.coders.get(c) or {}).get("description", "")] for c in d.coder_names if c in d.coders and c in used]
+    llms = sorted({a["llm"] for per in d.attacks.values() for at in per.values() for a in [g(at, "attacks", ATTACKER)] if isinstance(a, dict) and a.get("llm")})
+    tools += [[f"`{x}` ({ATTACKER})", "LLM agent adversary: prompted to guess name, age, place and job from one blinded model output"] for x in llms]
+    phi = sorted({f.get("phi_model") for per in d.phi.values() for f in per.values() if isinstance(f, dict) and f.get("phi_model")})
+    tools += [[f"`{x}`", "Independent PII detector of the before/after privacy check (evaluation only)"] for x in phi]
+    md += ["## Coders, adversary and detectors", ""] + table(["name", "what it is"], tools, left=2)
+    md += ["- Gold: `harness` = the A+D team's annotation, `vm` = the anonymous VM's, `ketai` = Ketai's; merged by vote on `aci_eval` "
+           "(`eval/docs/GOLD.md`).", "- Kaggle catalog with measured contents and licenses: `data/kaggle/DATASETS.md`.", ""]  # fmt: skip
+    return md
 
 
 def discord(d: Data, heads: dict, t: dict, generated: str) -> list[str]:
     prim, models = d.primary, d.models
     cols = [("privacy", "privacy"), ("direct", "direct"), ("privacy_harness", "harness gold"), ("icd_concepts", "ICD concepts"),
-            ("icd_f1_retained", f"ICD F1 ret. ({prim})" if prim else "ICD F1 ret."), ("icd_agree", "ICD agree"), ("ms_per_encounter", "ms/enc"),
-            ("vram_ok", "VRAM ≤ 4 GB"), ("attack_max", "attack max")]  # fmt: skip
+            ("icd_f1_anon", "F1 (LLM judge)"), ("icd_f1_delta", "Δ F1 (LLM judge)"), ("tree_f1_anon", "F1 (tree)"), ("recovered_llm", "recovered (LLM adv.)"),
+            ("ms_per_encounter", "ms/enc"), ("vram_ok", "VRAM ≤ 4 GB")]  # fmt: skip
     digits = {c.key: c.digits for c in HEADLINE}
     rows = [[name(m)] + [fmt(heads[m][k], digits[k]) for k, _ in cols] for m in models]
     md = [f"**Anonymization eval, `{HEAD}`, same pipeline for every model** ({generated})", ""]
@@ -946,14 +1141,16 @@ def discord(d: Data, heads: dict, t: dict, generated: str) -> list[str]:
     real = [m for m in models if m not in REFERENCE]
     best = max((m for m in real if heads[m]["privacy"] is not None), key=lambda m: heads[m]["privacy"], default=None)
     opt = [m for m in real if t["points"][m]["pareto"]]
-    ylab = "ICD concepts kept" if t["fallback"] else f"ICD F1 retained ({prim})"
+    ylab = "ICD concepts kept" if t["fallback"] else f"ICD F1 on the anonymized text ({prim})"
     md += [f"- Pareto-optimal on consensus privacy vs {ylab}: " + (", ".join(f"`{m}`" for m in opt) or DASH) + "."]
     if best:
-        md += [f"- Highest consensus privacy: `{best}` {fmt(heads[best]['privacy'])}; `oracle` and `identity` bound the scale (1 and 0)."]
+        md += [f"- Highest consensus privacy: `{best}` {fmt(heads[best]['privacy'])}; `identity` (input unchanged) scores 0."]
     md += ["- privacy = share of gold PII occurrences removed at the consensus level of the merged ACI gold (direct = names, dates, DOB, "
            "IDs, contacts; harness gold = the A+D team's gold alone, their own cross-check)."]  # fmt: skip
     md += [f"- ICD: no `{prim}` results yet, utility shown as ICD concepts kept." if t["fallback"] else
-           f"- ICD F1 ret. = anonymized / original F1 of the `{prim}` coder; agree = anonymized vs original predictions. Full tables: `report.md`."]  # fmt: skip
+           f"- F1 = ICD-10 code prediction on the anonymized text (LLM judge `{prim}`, decision tree at category level); Δ F1 = anonymized minus "
+           "original (0 = no loss); recovered = share the LLM adversary "
+           "re-identifies. Full tables: `report.md`."]  # fmt: skip
     return md + [""]
 
 
@@ -980,10 +1177,10 @@ def main(argv: list[str] | None = None) -> int:
     d = Data()
     R, nc = collect(d)
     generated = time.strftime("%Y-%m-%d %H:%M")
-    md, report, t, disc = render(d, R, nc, generated)
+    md, report, t, ta, disc = render(d, R, nc, generated)
     OUT.mkdir(parents=True, exist_ok=True)
     files = {"results_csv": OUT / "results.csv", "results_headline_csv": OUT / "results_headline.csv", "tradeoff_svg": OUT / "tradeoff.svg",
-             "report_discord_md": OUT / "report_discord.md"}  # fmt: skip
+             "tradeoff_adversarial_svg": OUT / "tradeoff_adversarial.svg", "report_discord_md": OUT / "report_discord.md"}  # fmt: skip
     report["exports"] = {k: rel(v) for k, v in files.items()}
     write_csv(files["results_csv"], list(CSV_FIELDS), R.rows)
     wide = [{"model": m, "reference": int(m in REFERENCE), **report["headline"][m],
@@ -992,10 +1189,12 @@ def main(argv: list[str] | None = None) -> int:
         row["vram_ok"] = None if row["vram_ok"] is None else int(row["vram_ok"])
     write_csv(files["results_headline_csv"], ["model", "reference"] + [c.key for c in HEADLINE] + ["pareto"], wide)
     files["tradeoff_svg"].write_text(svg(t, generated), encoding="utf-8")
+    files["tradeoff_adversarial_svg"].write_text(svg(ta, generated), encoding="utf-8")
     files["report_discord_md"].write_text("\n".join(disc), encoding="utf-8")
     (OUT / "report.md").write_text("\n".join(md), encoding="utf-8")
     write_json(OUT / "report.json", report)
-    print(f"wrote {OUT / 'report.md'}, report.json, results.csv ({len(R.rows)} rows), results_headline.csv, tradeoff.svg, report_discord.md "
+    print(f"wrote {OUT / 'report.md'}, report.json, results.csv ({len(R.rows)} rows), results_headline.csv, tradeoff.svg, tradeoff_adversarial.svg, "
+          "report_discord.md "
           f"({len(d.models)} models)")  # fmt: skip
     return 0
 

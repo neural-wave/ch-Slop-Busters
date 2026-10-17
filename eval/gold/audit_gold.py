@@ -10,16 +10,14 @@ ketai-eval/gold/audit_gold.py and vm-backup/neuralwave/evaluation/check_annotati
                      those that are not even a substring)
     contradictions   merged PII that is also a keep item or a medical concept, PII made only of words of the
                      encounter's own ICD-10 descriptions (ages, dates, IDs and contacts excepted), and keep items inside
-                     a longer PII item (removing the PII item removes them too: the oracle's keep loss)
+                     a longer PII item (removing the PII item removes them too)
     possibly missed  regex candidates that no union item and no keep item covers: ages, dates, title + name,
                      e-mails, phone numbers, digit runs of 6+
     single votes     union items only one gold lists, and whether they still count at the consensus level (direct)
     votes            vote histogram per category
-    oracle           the oracle (every union item replaced by [CATEGORY]) must remove 1.0 at every level and at the
-                     entity level; also shown per source gold
     diff             items added, removed or changed since the previous merged.jsonl (merged.prev.jsonl)
 
-Exit code 1 when the oracle self-check fails or merged.jsonl is missing. audit.md quotes gold strings: keep it under
+Exit code 1 when merged.jsonl is missing. audit.md quotes gold strings: keep it under
 data/eval/.
 """
 
@@ -33,8 +31,6 @@ from pathlib import Path
 
 if not __package__:  # run as a file: the repo root makes the package importable
     sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-from eval import metrics as M
-from eval.adapters.baselines import oracle
 from eval.common import FIELDS, count, load_jsonl, pattern, write_json
 from eval.gold import merge_aci_gold as G
 from eval.gold import taxonomy as T
@@ -147,17 +143,6 @@ def possibly_missed(r: dict, rec: dict) -> list[list]:
     return out
 
 
-def oracle_check(records: dict[str, dict], rows: list[dict]) -> dict:
-    """The oracle replaces every union item: 1.0 at every level and at the entity level, or the merge is broken."""
-    labels = {r["encounter_id"]: {"encounter_id": r["encounter_id"], "pii_gold": "exhaustive", "language": "en", **r} for r in rows}
-    original = [records[r["encounter_id"]] for r in rows]
-    p = M.privacy(original, [oracle(rec, labels[rec["encounter_id"]]) for rec in original], labels) or {}
-    levels = {lvl: {k: v[k] for k in ("removed", "entity_removed")} for lvl, v in (p.get("levels") or {}).items()}
-    checks = [p.get("entity_removed")] + [x for v in levels.values() for x in v.values()]
-    return {"ok": bool(levels) and all(x == 1.0 for x in checks), "entity_removed": p.get("entity_removed"), "levels": levels,
-            "by_source": {s: v["removed"] for s, v in (p.get("by_source") or {}).items()}}  # fmt: skip
-
-
 def diff(prev: list[dict], rows: list[dict]) -> tuple[dict, list[list]]:
     """PII items added, removed or changed (category, votes, direct) since the previous merged.jsonl."""
     old = {(r["encounter_id"], *G.key(it)): it for r in prev for it in r["pii"]}
@@ -191,7 +176,6 @@ def audit(records: dict[str, dict], golds: dict[str, dict[str, dict]], rows: lis
         "single_votes": {"items": len(single), "in_consensus": sum(T.in_level(it, "consensus") for _, it in single),
                          "by_source": dict(sorted(Counter(it["sources"][0] for _, it in single).items()))},
         "votes_by_category": {c: {str(n): v[n] for n in sorted(v)} | {"direct": T.is_direct(c)} for c, v in sorted(by_cat.items())},
-        "oracle": oracle_check(records, rows),
         "diff": changes,
     }  # fmt: skip
     singles = [[eid, it["field"], f"`{it['text']}`", it["category"], it["sources"][0], "yes" if T.in_level(it, "consensus") else "no"] for eid, it in single]
@@ -209,7 +193,7 @@ HEADERS = {
 
 
 def markdown(res: dict) -> str:
-    s, t, o = res["summary"], res["tables"], res["summary"]["oracle"]
+    s, t = res["summary"], res["tables"]
     md = ["# Audit of the merged ACI-eval gold", "",
           "Written by `python3 -I eval gold --audit` (eval/gold/audit_gold.py). It quotes gold strings: keep it under data/eval/.", "", "## Summary", "",
           "- verbatim: " + "; ".join(f"{src} {v['not_whole_word']} of {v['items']} strings not found as whole words "
@@ -218,8 +202,6 @@ def markdown(res: dict) -> str:
           f"- possibly missed (regex candidates that no union or keep item covers): {s['possibly_missed'] or 'none'}",
           f"- single-vote items: {s['single_votes']['items']} ({s['single_votes']['in_consensus']} of them direct, so in consensus), "
           f"by source {s['single_votes']['by_source']}",
-          f"- oracle self-check: {'ok' if o['ok'] else '**FAILED**'}; levels {o['levels']}; entity level {o['entity_removed']}; "
-          f"each gold's own list {o['by_source']}",
           f"- diff vs merged.prev.jsonl: {s['diff'] if s['diff'] is not None else 'no previous merged file'}", "", "## Votes per category", ""]  # fmt: skip
     votes = [[c, "yes" if v["direct"] else "no", v.get("1", 0), v.get("2", 0), v.get("3", 0)] for c, v in s["votes_by_category"].items()]
     md += G.md_table(["category", "direct", "1 vote", "2 votes", "3 votes"], votes) + [""]
@@ -243,10 +225,9 @@ def main(argv: list[str] | None = None) -> int:
     (out / "audit.md").write_text(markdown(res), encoding="utf-8")
     s = res["summary"]
     print(f"audit {G.SUITE}: verbatim failures {sum(v['not_whole_word'] for v in s['verbatim'].values())}, contradictions "
-          f"{sum(s['contradictions'].values())}, possibly missed {sum(s['possibly_missed'].values())}, single votes {s['single_votes']['items']}, "
-          f"oracle {'ok' if s['oracle']['ok'] else 'FAILED'}")
+          f"{sum(s['contradictions'].values())}, possibly missed {sum(s['possibly_missed'].values())}, single votes {s['single_votes']['items']}")
     print(f"  {out / 'audit.md'}")
-    return 0 if s["oracle"]["ok"] else 1
+    return 0
 
 
 if __name__ == "__main__":

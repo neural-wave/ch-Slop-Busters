@@ -1,13 +1,13 @@
 """Worker of attack A1: run independent PII detectors on texts and print the spans they find.
 
-Usage: <container>/models/fable-deps/.venv/bin/python -I -B eval/bonus/_ner_worker.py INPUT OUTPUT [--layers regex,deid,gliner]
+Usage: <container>/models/anonymous-deps/.venv/bin/python -I -B eval/bonus/_ner_worker.py INPUT OUTPUT [--layers regex,deid,gliner]
                                                                                     [--device cpu|cuda] [--threads N] [--root VM_DIR]
 
 INPUT is JSONL `{"key", "text"}`; OUTPUT gets one JSONL line per input line, written as it goes:
 `{"key", "spans": [[start, end, text, type, layer, confidence], ...]}`. The detectors are the VM's (vm-backup/
 neuralwave/detect): obi/deid_roberta_i2b2, GLiNER urchade/gliner_multi_pii-v1 and the regex layer (dates, ages, IDs,
 contacts), loaded once, offline. It needs torch, transformers, gliner and regex, so the harness (standard library only)
-runs it with the fable venv's interpreter and `-B`, which keeps the VM folder free of bytecode files.
+runs it with the anonymous venv's interpreter and `-B`, which keeps the VM folder free of bytecode files.
 """
 
 from __future__ import annotations

@@ -1,6 +1,6 @@
 """Score finished runs: every metric for every (model, suite) that has an output.
 
-Usage: python3 -I eval score [--models ...] [--suites ...] [--icd llm_note knn ... "cmd:<command>"]
+Usage: python3 -I eval score [--models ...] [--suites ...] [--icd llm_judge tree ... "cmd:<command>"]
 
 `--icd` takes coder names from eval/coders.toml (default: every enabled coder with default = true) or an ad-hoc
 "cmd:<command>". The LLM coders need a running Ollama server; their predictions are cached by text, so a re-score
