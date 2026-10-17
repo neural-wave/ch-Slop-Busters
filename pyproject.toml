@@ -3,6 +3,8 @@ name = "unified-harness"
 version = "1.0.0"
 description = "Offline, ICD-aware anonymization of patient-doctor encounters with a privacy-first evaluation harness"
 readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 requires-python = ">=3.12"
 authors = [{ name = "Daniel Travaglia" }]
 # The core pipeline uses the Python standard library only.

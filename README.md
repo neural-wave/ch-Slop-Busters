@@ -131,4 +131,8 @@ uv run pytest -q
 
 Built on the work of Alind Xhyra and Davide Molinelli (shield-first pipeline, gold-label guidelines,
 attacks and robustness sets) and Ketai (zero-shot LLM extraction, age and date generalization, entity
-replay). License: to be decided before publication.
+replay).
+
+## License
+
+Apache License 2.0; see [LICENSE](LICENSE).

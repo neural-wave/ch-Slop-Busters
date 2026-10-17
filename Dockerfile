@@ -27,7 +27,7 @@ ENV UV_COMPILE_BYTECODE=1 \
     UV_PYTHON_DOWNLOADS=never \
     UV_PROJECT_ENVIRONMENT=/app/.venv
 WORKDIR /src
-COPY pyproject.toml uv.lock README.md .python-version ./
+COPY pyproject.toml uv.lock README.md LICENSE .python-version ./
 COPY src ./src
 RUN uv sync --frozen --no-dev --no-editable --python /usr/local/bin/python3
 
