@@ -1,7 +1,7 @@
 # ICD-10 coder registry for `python3 -I eval score --icd <name> ...`. One table per coder; the table name is the
 # coder's name in the scores (icd.<name>) and its cache folder (data/eval/cache/icd/<name>/).
 #
-#   kind         ollama | knn | lexical | command
+#   kind         ollama | knn | lexical | command | agent
 #   default      true: in the default --icd set (every enabled coder with default = true)
 #   enabled      false: listed but never run, even when named (default true)
 #   primary      true: the coder the report headlines (one of them)
@@ -13,39 +13,31 @@
 #                decides; "cpu": no GPU layers), timeout (s per request), retries. Unranked: the whole set is scored
 #   knn          k (neighbours). Ranked, cut at k = number of gold codes
 #   lexical      ranked, cut at k
+#   agent        model (the agents' model, recorded in the cache key), inputs ("note"): predictions come only from
+#                `python3 -I eval judge import` (agents run from a prompt package, eval/coders/agent.py). Unranked
 #   command      cmd: argv list with {input} {output} {python} {repo} {container} {here}; timeout; ranked (default
 #                true); inputs. Contract in eval/coders/command.py
 #
 # Ad hoc, without an entry: --icd "cmd:<command line with {input} {output}>".
 
-[llm_note]
-description = "Zero-shot ICD-10-CM coding of the note by a local LLM (daniel-eval's protocol: strict JSON schema, temperature 0)"
-kind = "ollama"
+[llm_judge]
+description = "LLM judge: Claude Sonnet 5.5 agents code each note (ICD-10-CM, note only) from a prompt, every version of a note in a different batch; repeat passes combined by majority vote per note"
+kind = "agent"
 primary = true
 default = true
-model = "qwen3.5:2b-q4_K_M"
+model = "claude-sonnet-5-5"
 inputs = "note"
-context = 16384
-max_output = 512
-seed = 0
-device = "auto"
-timeout = 300
-retries = 1
-suites = ["aci_eval"]  # add "aci_dev", "devp_discharge" on a faster machine: ~90 originals + 90 per model, uncached
-
-[llm_both]
-description = "The same LLM on the dialogue and the note (ketai-eval's DIALOGUE / PHYSICIAN NOTE framing)"
-kind = "ollama"
-default = false  # opt in with --icd llm_both: ~376 uncached calls on aci_eval, longer prompts
-model = "qwen3.5:2b-q4_K_M"
-inputs = "both"
-context = 24576
-max_output = 512
-seed = 0
-device = "auto"
-timeout = 900
-retries = 1
 suites = ["aci_eval"]
+
+[tree]
+description = "Decision tree over ICD-10 lexicon candidates (decision-models, fit on the 140 ACI train encounters; CPU, numpy). Its headline is the category (3-char) level"
+kind = "command"
+default = true
+ranked = false
+cmd = ["{python}", "-I", "{here}/tree_coder.py", "--input", "{input}", "--output", "{output}"]
+timeout = 600
+# F1 on aci_eval; agreement only on the Kaggle medical suites (no gold codes, except devp's 5): CPU, about 1 s per suite
+suites = ["aci_eval", "devp_discharge", "imerit_en", "imerit_multi", "sadiqguru", "nbme_notes", "pmc_patients"]
 
 [knn]
 description = "TF-IDF k-nearest neighbours over the 140 ACI train encounters, clinical words only (supervised: ACI label space)"

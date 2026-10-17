@@ -25,7 +25,7 @@ A suite with a merged gold (data/eval/gold/<name>/merged.jsonl, written by `eval
 `pii_by_source` holds each gold's own list (eval/docs/GOLD.md). The merged file is part of `source_sha1`, so the suite
 rebuilds when the gold changes. `--no-merged` falls back to the old ACI labels: `pii` is the harness gold (made by the
 A+D team's annotators, imported by scripts/convert/aci_bench.py), `pii_alt` the VM teacher annotation
-(vm-backup/neuralwave/annotations/eval, made for the fable model) and `concepts` its medical concepts. suite.json
+(vm-backup/neuralwave/annotations/eval, made for the anonymous model) and `concepts` its medical concepts. suite.json
 records `--no-merged` (`merged_gold: false`) and keeps it until `--merged` is given. A suite built with
 `--vm-annotations DIR` likewise records DIR (`vm_annotations`) and keeps it on every rebuild until another
 `--vm-annotations` is given.

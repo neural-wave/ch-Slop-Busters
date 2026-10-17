@@ -13,13 +13,13 @@ number (`59` is not found in `120/59`, `5.9` or `1,590`). A gold string is count
 
 | Task criterion (task PDF, p. 3) | Headline metric | Section |
 |---|---|---|
-| (i) proportion of removed privacy-related information | privacy (consensus) | [Privacy](#privacy) |
-| (ii) F1 of ICD-10 code prediction, anonymized vs original | ICD F1 anon, ICD F1 retained, ICD agree (`llm_note`) | [ICD-10 utility](#icd-10-utility) |
+| (i) proportion of removed privacy-related information | privacy (consensus); without gold: removed (Phi) | [Privacy](#privacy), [Phi check](#independent-privacy-check-phi) |
+| (ii) F1 of ICD-10 code prediction, anonymized vs original | F1 on the anonymized text and Δ F1 (anonymized minus original) of the LLM judge (`llm_judge`, code level) and the decision tree (`tree`, category level), the LLM judge's agreement; Kaggle: agreement only | [ICD-10 utility](#icd-10-utility) |
 | (iii) recall of medical concepts | concepts kept, ICD concepts kept | [Text utility](#text-utility) |
 | Scalability: runtime, peak RAM, peak VRAM (≤ 4 GB) | ms/enc, peak RAM MB, peak VRAM ≤ 4096 MB | [Efficiency](#efficiency) |
-| Bonus (a) adversarial attacks | attack recovered (max), A1-A5 | [Attacks](#adversarial-attacks-bonus-a) |
+| Bonus (a) adversarial attacks, proportion of recovered information | recovered by the LLM agent adversary (A6), max over A1-A4 and A6 | [Attacks](#adversarial-attacks-bonus-a) |
 | Bonus: explainability share | explained | [Explainability](#explainability-bonus) |
-| Bonus: no ICD-10 codes at inference | no-codes deltas | [No-codes](#no-codes-bonus) |
+| Bonus (d): no ICD-10 codes at inference | ablation: every headline metric with and without codes, Δ | [No-codes](#no-codes-bonus) |
 | Bonus (e) robustness, "complexity of additional data" | robust-suite privacy, complexity rank | [Robustness](#robustness-bonus-e) |
 
 ## Validity
@@ -74,8 +74,11 @@ outside name categories, not ordinary English words (Debian `wamerican-large`). 
 ## ICD-10 utility
 
 Coders (`eval/coders.toml`) predict codes from the original and from the anonymized text of the same records; only
-records with gold codes are scored. `llm_note` is the primary coder: Ollama `qwen3.5:2b-q4_K_M` with daniel-eval's
-protocol (note only, JSON schema, temperature 0, seed 0). Codes are normalized to one canonical ICD-10-CM spelling,
+records with gold codes are scored. `llm_judge` is the primary coder, the report's **LLM judge**: Claude Sonnet 5.5
+agents code each note from a prompt (`eval judge`, below the table; note only, every version of a note in a different
+batch; with repeat passes, the codes most passes give per note). `tree` is the
+**decision tree** of `../decision-models` (ICD-10 lexicon candidates scored by a depth-2 tree fit on the 140 ACI train
+encounters); its own metric is the 3-character category F1, so the report reads it at the category level. Codes are normalized to one canonical ICD-10-CM spelling,
 gold codes too, and matched exactly. A *ranked* coder (`knn`, `lexical`, command) is cut at k = the record's number of
 gold codes; an *unranked* one (the LLM coders) is scored on its whole set. Per coder in `icd.<coder>`:
 
@@ -87,8 +90,9 @@ gold codes; an *unranked* one (the LLM coders) is scored on its whole set. Per c
 | CI95 | `icd.<c>.<arm>.code.ci95` | 2.5 and 97.5 percentiles (linear interpolation) of the micro F1 over 1,000 bootstrap resamples of the records, seed 0 | – |
 | category level | `icd.<c>.<arm>.category.*` | The same with every code cut to its 3-character category (`E11.9` → `E11`) | 0-1 |
 | ICD agree | `icd.<c>.agreement.code.f1` | Anonymized-text predictions scored against original-text predictions as if those were gold: the change anonymization alone causes, whatever the coder's own errors. 1 = identical predictions | 0-1, higher better |
+| category Δ F1 [CI95] | `icd.<c>.f1_delta_category` | Anonymized minus original category-level micro F1 with the paired bootstrap CI: the decision tree's Δ F1 | −1-1, 0 = no loss |
+| agreement only | `icd.<c>.agreement` without `original`/`anonymized` | On a suite without gold codes (Kaggle), an unranked coder is scored on the agreement arm alone, over every record | 0-1 |
 | F1 Δ [CI95] | `icd.<c>.f1_delta` | Anonymized minus original micro F1, with a paired bootstrap CI: both arms scored on the same 1,000 resamples | −1-1, 0 = no loss |
-| ICD F1 retained | `icd.<c>.f1_retention` | Anonymized F1 / original F1. Above 1 when anonymization happens to help the coder | ≥ 0, 1 = no loss |
 | errors | `icd.<c>.errors.{original,anonymized}` | Predictions that failed (bad JSON, cut generation, timeout) after retries; scored as empty sets, never cached | count |
 | invalid codes | `icd.<c>.invalid_codes` | Predicted strings that are not valid ICD-10-CM syntax, dropped before scoring | count |
 | valid for comparison | `icd.<c>.valid_for_comparison` | False when any prediction failed; the report marks such cells with `!` | bool |
@@ -129,10 +133,26 @@ removed). Gold on `aci_eval`: the consensus level. `recovered` = hits / total.
 | A1 NER residual scan | `attacks.A1.<arm>.recovered` | Independent detectors (deid_roberta i2b2, GLiNER multi-PII, the VM regex layer) scan each field; a hit = a non-low-risk gold item covered by a detected span (the span contains the item, or is whole words of it, 3+ characters, not only titles or cue words). Spans with a placeholder do not count | 0-1, lower better |
 | A2 roster dictionary | `attacks.A2.<arm>.recovered` | The attacker knows every person name in the suite's gold plus a public first-name list and greps for them; a hit = a name token of a gold name still present (whole word) in its own encounter field | 0-1 |
 | A3 rare words | `attacks.A3.<arm>.recovered` | Identifier-like tokens (4+ letters, proper noun or known first name, not clinical, not ordinary English, not a month or weekday) that occur in only one encounter; a hit = still present in that encounter. Needs no gold | 0-1 |
-| A4 LLM inference | `attacks.A4.<arm>.recovered` | A local LLM reads the record and guesses the patient's name, age, place and employer or job; hits against the gold values (any name token, age within ±1 year, a gold place or job inside the guess) | 0-1 |
+| A4 LLM inference | `attacks.A4.<arm>.recovered` | A local LLM (Ollama qwen3.5:2b by default, `attacks.A4.llm`) reads the record and guesses the patient's name, age, place and employer or job; hits against the gold values (any name token, age within ±1 year, a gold place or job inside the guess). A refusal or failed call counts in `attacks.A4.errors` and as no guess | 0-1 |
+| A6 LLM agent adversary | `attacks.A6.<arm>.recovered` | The same guesses made by LLM agents from a prompt, one agent per blinded model output (`eval adversary`); `control` = the agent run on the original text, `llm` = the agent's model, `missing`/`malformed` = records without a usable answer (no guess). The report's "Proportion of recovered information (LLM adversary)" and the x axis of the adversarial Pareto front | 0-1 |
 | A5 record linkage | `attacks.A5.<arm>.recovered` | TF-IDF nearest neighbour from each output record to the original records (placeholders removed); a hit = it links to its own original. Near 1 by design (clinical content is kept): bounds the threat model, excluded from the max | 0-1 |
 | by category | `attacks.<A>.<arm>.by_category` | The same share per gold category | 0-1 |
-| attack recovered (max) | `max_recovered` | Largest anonymized `recovered` over the attacks that ran, A5 excluded | 0-1, lower better |
+| recovered (max) | `max_recovered` | Largest anonymized `recovered` over the attacks that ran, A5 excluded | 0-1, lower better |
+
+## Independent privacy check (Phi)
+
+From `bonus/phi_privacy.py`, in `data/eval/phi/<model>/<suite>.json`. The fine-tuned `ab-ai/PII-Model-Phi3-Mini`
+(Q4_K_M GGUF, Ollama) scans each field in chunks of at most 2,000 characters with the model card's prompt; its labels
+map to the gold categories (sex, gender, height, amounts, currencies and title prefixes dropped; placeholder values
+ignored). It needs no gold, so it also sees PII the golds missed, and it counts what it misses itself as kept.
+
+| Metric | `code` | How it is computed | Range |
+|---|---|---|---|
+| PII before (Phi) | `total.before` | Distinct (category, value) mentions the detector lists per chunk of the original text, summed over chunks | count |
+| PII after (Phi) | `total.after` | The same on the model's output | count |
+| removed (Phi) | `total.removed` | 1 − after / before, clipped at 0; null without mentions before. A generalized value (`fifty-something`) still counts after when the detector reads it as an age. The detector's false positives in untouched text (`Chief Complaint` read as a job) count before and after, so this is a lower bound, best compared between models | 0-1, higher better |
+| by category | `by_category.<cat>` | The same per gold category | – |
+| errors | `errors` | Chunks whose answer could not be parsed: counted as no mention | count |
 
 ## No-codes (bonus)
 
@@ -141,7 +161,8 @@ paired with its base model (`base` key, else the name without `_nocodes`).
 
 | Metric | How it is computed |
 |---|---|
-| base, no-codes, Δ | For privacy (consensus), high-risk, keep traps, concepts, ICD concepts and each coder's anonymized ICD F1: the base model's value, the no-codes model's value, and no-codes minus base |
+| base, no-codes, Δ | For privacy (consensus), high-risk, keep traps, concepts, ICD concepts and each coder's anonymized ICD F1: the base model's value, the no-codes model's value, and no-codes minus base (`results.csv` rows `delta_vs_base:*`) |
+| ablation table | The report: every pair side by side over the main-task headline metrics (privacy, direct, concept recall and its ICD-relevant part, F1 of the LLM judge and the tree, the LLM adversary's recovery), with Δ = without minus with codes |
 
 ## Robustness (bonus e)
 
@@ -156,14 +177,14 @@ From `bonus/robustness.py`, over the three robust suites (`robust_discharge`, `r
 
 | Metric | How it is computed |
 |---|---|
-| Pareto | A model is Pareto-optimal when no other non-reference model is ≥ on both consensus privacy and ICD F1 retained (primary coder) and > on one. `identity` and `oracle` are bounds and never compete. While no model has a primary-coder result, ICD concepts kept stands in for ICD F1 retained (the axis title says so) |
-| `tradeoff.svg` | x = consensus privacy, y = ICD F1 retained; Pareto-optimal models filled, references as squares |
+| Pareto | A model is Pareto-optimal when no other non-reference model is ≥ on both consensus privacy and ICD F1 on the anonymized text (primary coder) and > on one. `identity` is a reference and never competes. While no model has a primary-coder result, ICD concepts kept stands in (the axis title says so). No F1 ratio: anonymized ÷ original F1 of a weak coder exaggerates noise and can exceed 1 |
+| `tradeoff.svg` | x = consensus privacy, y = ICD F1 on the anonymized text (primary coder); Pareto-optimal models filled, references as squares |
+| `tradeoff_adversarial.svg` | x = 1 − the LLM agent adversary's proportion of recovered information (A6), y = ICD F1 on the anonymized text (LLM judge); the same Pareto rule |
 
 No combined score: the organizers weigh the criteria separately.
 
-## Reference rows
+## Reference row
 
 | Row | What it is | What it shows |
 |---|---|---|
 | `identity` | The input copied unchanged | Privacy 0, every utility metric at its ceiling; the ICD coder's own quality |
-| `oracle` | Every gold PII string replaced by `[CATEGORY]` (reads the gold) | Privacy 1.0 at every level; what removing exactly the gold costs in utility |

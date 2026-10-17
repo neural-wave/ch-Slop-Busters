@@ -25,8 +25,6 @@ blind_codes = true
 cmd = ["x"]
 [identity]
 cmd = ["x"]
-[oracle]
-cmd = ["x"]
 [later]
 cmd = ["x"]
 enabled = false
@@ -51,7 +49,7 @@ def arm(f1: float) -> dict:
 
 def coder(orig: float, anon: float, agree: float, failed: int = 0) -> dict:
     return {"coder": "c", "n_records": 3, "n_codes": 5, "original": arm(orig), "anonymized": arm(anon), "agreement": arm(agree),
-            "f1_delta": {"value": round(anon - orig, 4), "ci95": [-0.1, 0.02]}, "f1_retention": round(anon / orig, 4),
+            "f1_delta": {"value": round(anon - orig, 4), "ci95": [-0.1, 0.02]}, "f1_delta_category": {"value": round(anon - orig, 4), "ci95": [-0.1, 0.02]},
             "errors": {"original": 0, "anonymized": failed}, "invalid_codes": {"original": 0, "anonymized": 0},
             "valid_for_comparison": not failed, "changed_predictions": [{"encounter_id": "e1", "gold": [SECRET]}]}  # fmt: skip
 
@@ -85,13 +83,15 @@ def score(p: float, icd: dict | None = None, rn: dict | None = None, explained: 
     return sc
 
 
-def attack(a2: float, a3: float, a4_error: bool = False) -> dict:
+def attack(a2: float, a3: float, a4_error: bool = False, a4: float | None = None) -> dict:
     arm_ = lambda r: {"recovered": r, "hits": 1, "total": 10, "by_category": {"PATIENT_NAME": r}}  # noqa: E731
     at = {"A2": {"name": "roster dictionary", "anonymized": arm_(a2), "control": arm_(1.0), "found": [{"token": SECRET}]},
           "A3": {"name": "rare words", "anonymized": arm_(a3), "control": arm_(1.0)},
           "A5": {"name": "record linkage", "anonymized": arm_(1.0), "control": arm_(1.0)}}  # fmt: skip
     if a4_error:
         at["A4"] = {"name": "LLM inference", "anonymized": None, "control": None, "error": "Ollama unreachable"}
+    elif a4 is not None:
+        at["A6"] = {"name": "LLM agent adversary", "anonymized": arm_(a4), "control": arm_(0.8), "llm": "claude-x"}
     return {"model": "m", "suite": "aci_eval", "attacks": at, "max_recovered": max(a2, a3)}
 
 
@@ -102,7 +102,7 @@ def write(path, obj) -> None:
 
 @pytest.fixture
 def tree(tmp_path, monkeypatch):
-    """alpha (0.9 / retained 0.95), beta (0.8 / 0.99), gamma (0.7 / 0.9): alpha and beta Pareto-optimal, gamma dominated by alpha."""
+    """alpha (0.9 / F1 0.38), beta (0.8 / 0.396), gamma (0.7 / 0.36): alpha and beta Pareto-optimal, gamma dominated by alpha."""
     out = tmp_path / "data" / "eval"
     write(tmp_path / "models.toml", MODELS)
     write(tmp_path / "coders.toml", CODERS)
@@ -110,19 +110,20 @@ def tree(tmp_path, monkeypatch):
     monkeypatch.setattr(R, "MODELS_TOML", tmp_path / "models.toml")
     monkeypatch.setattr(R, "CODERS_TOML", tmp_path / "coders.toml")
     sc = out / "scores"
-    write(sc / "alpha" / "aci_eval.json", score(0.9, {"llm_note": coder(0.4, 0.38, 0.9), "knn": coder(0.3, 0.3, 1.0)}, run(512.25, 1234.5, 1500.0)))
+    write(sc / "alpha" / "aci_eval.json", score(0.9, {"llm_note": coder(0.4, 0.38, 0.9), "tree": coder(0.7, 0.63, 0.95), "knn": coder(0.3, 0.3, 1.0)},
+                                                run(512.25, 1234.5, 1500.0)))  # fmt: skip
     write(sc / "beta" / "aci_eval.json", score(0.8, {"llm_note": coder(0.4, 0.396, 0.97), "knn": {"error": "knn index missing"}}, run(90.0, 80.0, 5000.0)))
     write(sc / "gamma" / "aci_eval.json", score(0.7, {"llm_note": coder(0.4, 0.36, 0.8, failed=2)}, run(30.0, 50.0, 0.0), explained=0.5))
     write(sc / "alpha_nocodes" / "aci_eval.json", score(0.91, {"knn": coder(0.3, 0.29, 0.99)}, explained=None))
     write(sc / "broken" / "aci_eval.json", {"model": "broken", "suite": "aci_eval", "error": "run failed (exit 1)"})
     write(sc / "identity" / "aci_eval.json", score(0.0, {"llm_note": coder(0.4, 0.4, 1.0)}, run(5.0, 30.0, 0.0), explained=None))
-    write(sc / "oracle" / "aci_eval.json", score(1.0, {"llm_note": coder(0.4, 0.39, 0.95)}, run(6.0, 30.0, 0.0), explained=0.0))
     write(sc / "alpha" / "robust_synthetic.json", score(0.6))
     write(out / "runs" / "alpha_nocodes" / "aci_eval" / "run.json", run(700.0, 2000.0, 1000.0))  # a run.json without a run block in the score
     write(out / "runs" / "beta" / "pmc_patients" / "run.json", {**run(10.0, 10.0, 0.0), "exit_code": None})  # still running: ignored
     write(out / "attacks" / "alpha" / "aci_eval.json", attack(0.1, 0.2, a4_error=True))
-    write(out / "attacks" / "beta" / "aci_eval.json", attack(0.3, 0.05))
-    write(out / "attacks" / "identity" / "aci_eval.json", attack(1.0, 1.0))
+    write(out / "attacks" / "beta" / "aci_eval.json", attack(0.3, 0.05, a4=0.2))
+    write(out / "attacks" / "gamma" / "aci_eval.json", attack(0.3, 0.05, a4=0.1))
+    write(out / "attacks" / "identity" / "aci_eval.json", attack(1.0, 1.0, a4=0.8))
     write(out / "suites" / "aci_eval" / "suite.json", {"name": "aci_eval", "role": "main", "about": "toy eval", "records": 3})
     write(out / "suites" / "robust_synthetic" / "suite.json", {"name": "robust_synthetic", "role": "robust", "about": "toy robust", "records": 2})
     write(out / "drift.json", {"reference": {"name": "aci_train", "records": 140, "tokens": 1000, "values": {"mtld": 60.0}},
@@ -140,7 +141,7 @@ def md_table(md: str, heading: str) -> tuple[list[str], list[list[str]]]:
     i = next(k for k, ln in enumerate(lines) if ln.startswith("## ") and heading in ln)
     rows = []
     for ln in lines[i + 1 :]:
-        if ln.startswith("## "):
+        if ln.startswith("#"):
             break
         if ln.startswith("|"):
             rows.append([c.strip() for c in ln.strip().strip("|").split("|")])
@@ -158,7 +159,7 @@ def model_of(cell: str) -> str:
 
 def test_every_headline_cell_is_a_csv_row(tree):
     header, rows = md_table((tree / "report.md").read_text(encoding="utf-8"), "Headline")
-    assert len(header) == 1 + len(R.HEADLINE) and header[7] == "ICD F1 anon (llm_note)"
+    assert len(header) == 1 + len(R.HEADLINE) and header[1:] == [c.header for c in R.HEADLINE] and header[7] == R.H("icd_f1_anon")
     csv_rows = read_csv(tree / "results.csv")
     index = {(r["model"], r["suite"], r["category"], r["metric"], r["coder"], r["level"]): r for r in csv_rows}
     checked = 0
@@ -167,7 +168,7 @@ def test_every_headline_cell_is_a_csv_row(tree):
         for col, cell in zip(R.HEADLINE, row[1:], strict=True):
             if cell in (R.DASH, "failed", "error"):
                 continue
-            r = index[(m, "aci_eval", col.category, col.metric, "llm_note" if col.primary else "", col.level)]
+            r = index[(m, "aci_eval", col.category, col.metric, "llm_note" if col.coder == "*" else col.coder, col.level)]
             v = float(r["value"])
             expected = ("yes" if v else "**no**") if col.digits == "bool" else R.fmt(v, col.digits)
             assert cell == expected, (m, col.key, cell, r["value"])
@@ -181,7 +182,11 @@ def test_every_headline_cell_is_a_csv_row(tree):
     beta = next(r for r in rows if model_of(r[0]) == "beta")
     assert beta[[c.key for c in R.HEADLINE].index("vram_ok") + 1] == "**no**"
     wide = {r["model"]: r for r in read_csv(tree / "results_headline.csv")}
-    assert float(wide["alpha"]["icd_f1_retained"]) == 0.95 and wide["beta"]["vram_ok"] == "0" and wide["identity"]["reference"] == "1"
+    assert float(wide["alpha"]["icd_f1_delta"]) == -0.02 and wide["beta"]["vram_ok"] == "0" and wide["identity"]["reference"] == "1"
+    assert alpha["icd_f1_delta"] == "-0.020" and alpha["icd_f1_anon"] == "0.380"  # a change is signed; no ratio anywhere
+    assert "retention" not in (tree / "results.csv").read_text(encoding="utf-8-sig")
+    assert alpha["tree_f1_anon"] == "0.630" and alpha["tree_f1_delta"] == "-0.070"  # the tree at its category level
+    assert alpha["recovered_llm"] == R.DASH and beta[[c.key for c in R.HEADLINE].index("recovered_llm") + 1] == "0.200"
 
 
 def test_pareto_flags(tree):
@@ -189,13 +194,18 @@ def test_pareto_flags(tree):
     assert not t["fallback"] and "llm_note" in t["y"]
     flags = {m: p["pareto"] for m, p in t["points"].items()}
     assert flags["alpha"] is True and flags["beta"] is True and flags["gamma"] is False
-    assert flags["alpha_nocodes"] is None and flags["broken"] is None  # no ICD F1 retained / no score
-    assert t["points"]["oracle"]["reference"] and flags["oracle"] is None  # references are bounds, never in the comparison
-    _, rows = md_table((tree / "report.md").read_text(encoding="utf-8"), "Privacy vs utility")
+    assert flags["alpha_nocodes"] is None and flags["broken"] is None  # no LLM-judge F1 / no score
+    assert t["points"]["alpha"]["y"] == 0.38  # plain F1 on the anonymized text
+    assert t["points"]["identity"]["reference"] and flags["identity"] is None  # the reference is never in the comparison
+    _, rows = md_table((tree / "report.md").read_text(encoding="utf-8"), "Privacy vs ICD utility")
     order = [model_of(r[0]) for r in rows]
-    assert order[:3] == ["alpha_nocodes", "alpha", "beta"] and order[-2:] == ["oracle", "identity"]  # by consensus privacy, refs last
+    assert order[:3] == ["alpha_nocodes", "alpha", "beta"] and order[-1] == "identity"  # by privacy, the reference last
     pareto = {model_of(r[0]): r[-1] for r in rows}
     assert pareto["alpha"] == "**yes**" and pareto["gamma"] == "no" and pareto["identity"] == "ref" and pareto["alpha_nocodes"] == R.DASH
+    ta = json.loads((tree / "report.json").read_text(encoding="utf-8"))["tradeoff_adversarial"]
+    assert ta["points"]["beta"]["x"] == 0.8 and ta["points"]["gamma"]["x"] == 0.9 and ta["points"]["alpha"]["x"] is None  # 1 − A4 recovered
+    assert ta["points"]["gamma"]["pareto"] and ta["points"]["beta"]["pareto"] and ta["points"]["alpha"]["pareto"] is None
+    assert any("LLM adversary" in (x.text or "") for x in ET.parse(tree / "tradeoff_adversarial.svg").getroot().iter("{http://www.w3.org/2000/svg}text"))
 
 
 def test_pareto_function():
@@ -213,21 +223,22 @@ def test_missing_data_and_errors(tree):
     assert cells["alpha_nocodes"]["explained"] == R.DASH
     assert cells["broken"]["privacy"] == "failed" and cells["broken"]["concepts"] == "failed"
     assert "later" not in cells and "`later`" in md  # disabled, no data: listed as pending
-    _, icd_rows = md_table(md, "ICD coders (`aci_eval`)")
+    _, icd_rows = md_table(md, "F1-Score ICD-10 code prediction, every coder")
     by = {(model_of(r[0]), model_of(r[1])): r for r in icd_rows}
     assert by[("beta", "knn")][2] == "error" and "knn index missing" in md
     assert by[("gamma", "llm_note")][1] == "`llm_note` !" and by[("gamma", "llm_note")][-1] == "2"  # not valid for comparison
-    assert by[("alpha", "llm_note")][4] == "-0.020 [-0.100, 0.020]"
-    _, at_rows = md_table(md, "Adversarial attacks (`aci_eval`")
+    assert by[("alpha", "llm_note")][4] == "-0.020 [-0.100, +0.020]" and by[("alpha", "llm_note")][7] == "-0.020 [-0.100, +0.020]"  # code, category
+    _, at_rows = md_table(md, "(adversarial attacks, bonus iv.a)")
     at = {model_of(r[0]): r for r in at_rows}
-    assert at["alpha"][3] == "error" and at["beta"][3] == R.DASH and at["alpha"][1] == "0.100 / 1.000"  # A2 A3 A4 A5 max
+    assert at["alpha"][3] == "error" and at["beta"][3] == R.DASH and at["alpha"][1] == "0.100 / 1.000"  # A2 A3 A4 A5 A6 max
+    assert at["beta"][5] == "0.200 / 0.800" and at["alpha"][5] == R.DASH  # the agent adversary
     _, nc_rows = md_table(md, "Without ICD-10 codes")
-    assert ["privacy (consensus)", "0.900", "0.910", "+0.010"] in nc_rows
+    assert [R.H("privacy"), "0.900", "0.910", "+0.010"] in nc_rows  # rows = metrics; columns = with codes, without, Δ per pair
     _, rb = md_table(md, "Robustness")
     assert rb[0][:2] == ["`alpha`", "0.600"]
     csv_rows = read_csv(tree / "results.csv")
     assert any(r["metric"] == "error" and r["coder"] == "knn" and r["model"] == "beta" and r["value"] == "" for r in csv_rows)
-    for name in ("report.md", "report.json", "report_discord.md", "results.csv", "results_headline.csv", "tradeoff.svg"):
+    for name in ("report.md", "report.json", "report_discord.md", "results.csv", "results_headline.csv", "tradeoff.svg", "tradeoff_adversarial.svg"):
         assert SECRET not in (tree / name).read_text(encoding="utf-8-sig"), name
 
 
@@ -259,7 +270,7 @@ def test_csv_bom_and_header(tree):
     f1 = next(r for r in rows if r["model"] == "alpha" and r["coder"] == "llm_note" and r["metric"] == "anonymized.code.f1")
     assert (f1["value"], f1["ci_low"], f1["ci_high"], f1["n"]) == ("0.38", "0.33", "0.43", "3")
     exports = json.loads((tree / "report.json").read_text(encoding="utf-8"))["exports"]
-    assert sorted(exports) == ["report_discord_md", "results_csv", "results_headline_csv", "tradeoff_svg"]
+    assert sorted(exports) == ["report_discord_md", "results_csv", "results_headline_csv", "tradeoff_adversarial_svg", "tradeoff_svg"]
     assert all((tree / p.rsplit("/", 1)[-1]).exists() for p in exports.values())
 
 
@@ -268,11 +279,23 @@ def test_svg_is_well_formed(tree):
     ns = "{http://www.w3.org/2000/svg}"
     assert root.tag == f"{ns}svg" and root.find(f"{ns}rect").get("fill")  # explicit background
     labels = {t.text for t in root.iter(f"{ns}text")}
-    assert {"alpha", "beta", "gamma", "identity", "oracle"} <= labels
+    assert {"alpha", "beta", "gamma", "identity"} <= labels
     assert any("alpha_nocodes" in (t.text or "") and "not plotted" in t.text for t in root.iter(f"{ns}text"))
-    assert len(root.findall(f"{ns}rect[@class='refm']")) == 2 + 1  # identity, oracle and the legend
+    assert len(root.findall(f"{ns}rect[@class='refm']")) == 1 + 1  # identity and the legend
 
 
 def test_discord(tree):
     text = (tree / "report_discord.md").read_text(encoding="utf-8")
     assert text.count("\n|") >= 8 and "`alpha`, `beta`" in text and text.count("\n- ") >= 3
+
+
+def test_glossary_and_sources(tree):
+    md = (tree / "report.md").read_text(encoding="utf-8")
+    assert md.index("# ACI (`aci_eval`)") < md.index("# Glossary") < md.index("# Sources")
+    _, rows = md_table(md.replace("# Glossary", "## Glossary"), "Glossary")
+    assert [r[0] for r in rows] == [c.header for c in R.COLUMNS.values()] and all(r[1] for r in rows)
+    assert {r[2] for r in rows} >= {"i.a", "ii.a", "ii.b", "iv.a.ii"}
+    _, src = md_table(md, "Datasets")
+    assert {"`aci_eval`", "`robust_synthetic`"} <= {r[0] for r in src}
+    _, tools = md_table(md, "Coders, adversary and detectors")
+    assert ["`claude-x` (A6)"] == [r[0] for r in tools if "A6" in r[0]]

@@ -14,7 +14,7 @@ from eval.coders import ollama
 from eval.coders.base import Coder, CoderError, Prediction
 
 LEVEL = {"precision", "recall", "f1", "mean_f1", "ci95"}
-KEYS = ["coder", "config", "ranked", "inputs", "n_records", "n_codes", "original", "anonymized", "agreement", "f1_delta", "f1_retention", "errors",
+KEYS = ["coder", "config", "ranked", "inputs", "n_records", "n_codes", "original", "anonymized", "agreement", "f1_delta", "f1_delta_category", "errors",
         "invalid_codes", "valid_for_comparison", "changed_predictions"]  # fmt: skip
 
 
@@ -64,7 +64,7 @@ def test_shape_and_ranked_cut_at_k():
     assert res["anonymized"]["code"] == {"precision": 0.6667, "recall": 0.6667, "f1": 0.6667, "mean_f1": 0.75, "ci95": res["anonymized"]["code"]["ci95"]}
     assert res["agreement"]["code"]["f1"] == 0.6667  # anonymized vs original predictions as gold
     assert res["anonymized"]["category"]["f1"] == 0.6667
-    assert res["f1_delta"]["value"] == -0.3333 and res["f1_retention"] == 0.6667
+    assert res["f1_delta"]["value"] == -0.3333 and res["f1_delta_category"]["value"] == -0.3333
     assert res["changed_predictions"] == [{"encounter_id": "b", "gold": ["E11.9", "J45.909"], "original": ["E11.9", "J45.909"], "anonymized": ["E11.9", "I10"]}]
     assert res["errors"] == {"original": 0, "anonymized": 0} and res["valid_for_comparison"] and res["invalid_codes"] == {"original": 0, "anonymized": 0}
 
@@ -80,7 +80,7 @@ def test_unranked_set_is_scored_whole_and_category_level():
 def test_identical_arms_delta_zero():
     coder = Fake({"hypertension": ["I10"], "diabetes and asthma": ["E11.9"]})
     res = icd.score(coder, ORIGINAL, ORIGINAL, resamples=50)
-    assert res["f1_delta"] == {"value": 0.0, "ci95": [0.0, 0.0]} and res["f1_retention"] == 1.0
+    assert res["f1_delta"] == res["f1_delta_category"] == {"value": 0.0, "ci95": [0.0, 0.0]}
     assert res["agreement"]["code"]["f1"] == 1.0 and res["changed_predictions"] == []
 
 
@@ -108,7 +108,20 @@ def test_coder_level_failure_gives_an_error_entry():
 
 
 def test_no_record_with_gold_codes():
-    assert icd.score(Fake({}), [ORIGINAL[2]], [ANONYMIZED[2]]) is None
+    assert icd.score(Fake({}), [ORIGINAL[2]], [ANONYMIZED[2]]) is None  # ranked: no k to cut at
+
+
+def test_unranked_coder_without_gold_scores_agreement_only():
+    nocode = [rec("x", "hypertension", []), rec("y", "diabetes and asthma", [])]
+    anon = [rec("x", "hypertension", []), rec("y", "[NAME] diabetes", [])]
+    coder = Fake({"hypertension": ["I10"], "diabetes and asthma": ["E11.9", "J45.909"], "[NAME] diabetes": ["E11.9"]}, ranked=False)
+    res = icd.score(coder, nocode, anon, resamples=50)
+    assert list(res) == ["coder", "config", "ranked", "inputs", "n_records", "n_codes", "agreement", "errors", "invalid_codes",
+                         "valid_for_comparison", "changed_predictions"]  # fmt: skip
+    assert res["n_records"] == 2 and res["n_codes"] == 0 and "original" not in res
+    assert res["agreement"]["code"]["f1"] == 0.8  # tp 2, fn 1: 4 / 5
+    assert res["agreement"]["category"]["precision"] == 1.0
+    assert res["changed_predictions"] == [{"encounter_id": "y", "original": ["E11.9", "J45.909"], "anonymized": ["E11.9"]}]
 
 
 def test_cache_reads_old_plain_lists_and_writes_the_new_format(cache):
@@ -135,12 +148,12 @@ def test_a_corrupt_cache_file_is_recomputed(cache):
 
 def test_registry_defaults_and_suites():
     reg = icd.load_registry()
-    assert icd.default_names(reg) == ["llm_note", "knn", "lexical"]  # llm_both is opt-in
-    assert icd.primary(reg) == "llm_note" and not reg["paper"].get("enabled", True)
-    assert "aci_eval" in reg["llm_note"]["suites"] and "aci_eval" in reg["llm_both"]["suites"]
+    assert icd.default_names(reg) == ["llm_judge", "tree", "knn", "lexical"]
+    assert icd.primary(reg) == "llm_judge" and reg["llm_judge"]["kind"] == "agent" and not reg["paper"].get("enabled", True)
+    assert "aci_eval" in reg["llm_judge"]["suites"] and not {"llm_note", "llm_both"} & set(reg)  # no qwen judge
     assert icd.applies("knn", "aci_dev", reg) and not icd.applies("knn", "devp_discharge", reg) and icd.applies("lexical", "pii_gpt", reg)
     assert icd.applies("cmd:x {input} {output}", "pii_gpt", reg)
-    assert SC.DEFAULT_ICD == ["llm_note", "knn", "lexical"]
+    assert SC.DEFAULT_ICD == ["llm_judge", "tree", "knn", "lexical"]
     with pytest.raises(argparse.ArgumentTypeError):
         SC.coder_name("nope")
     assert SC.coder_name("cmd:x") == "cmd:x" and SC.coder_name("knn") == "knn"
@@ -185,7 +198,7 @@ def test_evaluate_llm_coder_end_to_end(monkeypatch, cache):
     assert res["original"]["code"]["f1"] == 0.8 and res["anonymized"]["code"]["f1"] == 0.8 and not res["ranked"]
     assert "endpoint" not in res and res["config"].startswith("ollama:qwen3.5:2b-q4_K_M@dddddddddddd:inputs=note:ctx=16384")
     assert {json.loads(f.read_text())["backend"] for f in (cache / "icd" / "llm_note").glob("*.json")} == {"gpu"}
-    shape = {"coder", "config", "ranked", "inputs", "n_records", "n_codes", "original", "anonymized", "agreement", "f1_delta", "f1_retention",
+    shape = {"coder", "config", "ranked", "inputs", "n_records", "n_codes", "original", "anonymized", "agreement", "f1_delta", "f1_delta_category",
              "errors", "invalid_codes", "valid_for_comparison", "changed_predictions"}  # fmt: skip
     assert set(res) == shape and set(res["f1_delta"]) == {"value", "ci95"} and set(res["errors"]) == {"original", "anonymized"}
     for arm in ("original", "anonymized", "agreement"):
