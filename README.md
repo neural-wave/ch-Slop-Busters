@@ -1,140 +1,285 @@
-# unified-harness
+# ch-Slop-Busters: anonymization of patient data
 
-Offline, ICD-aware anonymization of patient-doctor encounters, with an evaluation harness built to
-measure privacy and clinical utility honestly. It merges two earlier team solutions: the shield-first
-rule pipeline by Alind Xhyra and Davide Molinelli and the LLM extraction harness by Ketai.
+Neural Wave hackathon, challenge “Anonymization of patient data” (brief in [`task/`](task/)).
 
-> **Version 1.0.0.** The design, the pipeline and all measured results are described in
-> [docs/solution.html](docs/solution.html); labels, splits and metrics in [docs/evaluation.md](docs/evaluation.md).
+This repository holds **unified-harness**, an offline, diagnosis-aware anonymizer for patient–doctor
+encounters, together with its evaluation harness and the team's data-preparation tools. The anonymizer
+removes or generalizes what identifies a person in the `dialogue` and `note` of each encounter and keeps
+what a clinical coder needs for the ICD-10 codes. It runs on a laptop: rules plus one small local
+language model through Ollama, about 1.6 GB of GPU memory, no cloud service.
 
-## What it does
+> The full description of the design, the pipeline and every measured result is
+> [`docs/solution.html`](docs/solution.html) (open it in a browser). Labels, splits and metrics are in
+> [`docs/evaluation.md`](docs/evaluation.md).
 
-Each encounter has a `dialogue` and a `note`. The tool rewrites only those two fields: it removes or
-generalizes what identifies the patient and keeps what supports the encounter's ICD-10 codes. Every
-other field, the record order and `icd10_codes` stay byte-identical. Inference runs on-premises, on CPU
-or within 4 GB of VRAM.
+## Contents
 
-## Install
+- [Results at a glance](#results-at-a-glance)
+- [Repository layout](#repository-layout)
+- [Requirements](#requirements)
+- [Quickstart](#quickstart)
+- [Running the anonymizer](#running-the-anonymizer)
+- [Output files](#output-files)
+- [Evaluating a run](#evaluating-a-run)
+- [Docker](#docker)
+- [How it works](#how-it-works)
+- [Data preparation (Kaggle datasets)](#data-preparation-kaggle-datasets)
+- [Data and privacy rules](#data-and-privacy-rules)
+- [Development](#development)
+- [Troubleshooting](#troubleshooting)
+- [Limitations](#limitations)
+- [Credits and license](#credits-and-license)
 
-Requires Python 3.12+ and [uv](https://docs.astral.sh/uv/).
+## Results at a glance
+
+Default configuration (mode `llm`, preset `privacy`). Silver labels: shares of labeled occurrences that
+were removed (privacy) or kept (keep traps, medical concepts).
+
+| Split | All PII removed | High-risk removed | Keep traps kept | Medical concepts kept | Peak VRAM |
+|---|---|---|---|---|---|
+| tune (140 train encounters, used for design decisions) | 92.1% | 99.2% | 100.0% | 99.7% | 1.6 GB |
+| validation (the 67 eval encounters) | 84.6% | 95.1% | 99.1% | 99.8% | 1.6 GB |
+| test (24 held-out ICU notes, unseen format, scored once) | 85.7% | 89.7% | 95.3% | 95.6% | 1.6 GB |
+
+On the validation split, with the same labels and scorer, the two earlier team harnesses reach 77.1%
+(Ketai) and 81.5% (Alind and Davide) of PII removed, and keep 79.6% and 99.4% of keep traps. The
+`icd10_codes` and every field other than `dialogue` and `note` are byte-identical in every output.
+
+## Repository layout
+
+| Path | Contents |
+|---|---|
+| `task/` | The challenge brief (PDF) |
+| `data/patient_doctor_encounters.jsonl` | 140 training encounters (tracked) |
+| `data/eval_patient_doctor_encounters.jsonl` | 67 evaluation encounters (tracked) |
+| `data/kaggle/`, `data/converted/` | External datasets and their converted copies; not in git, see [Data preparation](#data-preparation-kaggle-datasets) |
+| `src/unified_harness/` | The anonymizer and the evaluation code (Python package, CLI `unified-harness`) |
+| `src/unified_harness/models.toml` | Pinned models: the Ollama detector models (by digest) and, for `full` mode, the encoder weights |
+| `src/unified_harness/data/` | Public lexicons (ICD-10-CM, drugs, names, places, word frequencies), compressed |
+| `tests/` | Unit and integration tests on synthetic fixtures; data tests that run when `data/` and `labels/` exist |
+| `docs/` | `solution.html` (the solution page), `evaluation.md`, `error_analysis.md`, `labeling_guidelines.md`, `docker.md` |
+| `configs/` | `splits.json` (split ids) and the release-guard allowlist |
+| `scripts/` | Model download, solution-page builder, release guard, scorer cross-check, error analysis, label tools (`labels/`) |
+| `scripts/convert/`, `scripts/download_kaggle.sh` | The team's dataset converters and Kaggle downloader ([`DATA_PREP.md`](DATA_PREP.md)) |
+| `Dockerfile`, `compose.yaml`, `compose.gpu.yaml` | Container images and the offline Compose setup |
+| `AGENTS.md` | Repository rules and Kaggle setup |
+| Local only (git-ignored) | `labels/` (silver labels), `outputs/` (results, LLM cache), `models/` (encoder weights), `data/robustness/` (held-out sets) |
+
+## Requirements
+
+- **Python 3.12+** and [**uv**](https://docs.astral.sh/uv/).
+- [**Ollama**](https://ollama.com) running locally with the detector model:
+  `ollama pull qwen3.5:2b-q4_K_M` (1.9 GB download, about 1.6 GB of VRAM in use).
+- Optional: `bge-m3` in Ollama (`ollama pull bge-m3`) for the ICD utility proxy in evaluations.
+- Optional: **Docker Desktop** for the container run.
+- No GPU is required; Ollama uses the GPU when one is available, within the 4 GB budget.
+
+## Quickstart
 
 ```bash
-uv sync                                   # rules mode: standard library only
-uv sync --extra ml                        # full mode: encoder detectors
-uv run --extra download python scripts/download_models.py    # pinned weights into ./models
-ollama pull qwen3.5:2b-q4_K_M             # local LLM used by full mode
-```
-
-## Quickstart (local, no PyTorch)
-
-```bash
-ollama pull qwen3.5:2b-q4_K_M          # once; the local LLM detector (1.9 GB, about 1.6 GB VRAM)
-uv sync                                # once
-uv run unified-harness doctor          # must say "mode llm: ready"
+ollama pull qwen3.5:2b-q4_K_M
+uv sync
+uv run unified-harness doctor
 uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl
 uv run unified-harness validate --original data/eval_patient_doctor_encounters.jsonl \
     --anonymized outputs/<date>/anonymized-<date>-unified-harness.jsonl
 ```
 
-Defaults: mode `llm` (rules + `qwen3.5:2b-q4_K_M` via Ollama), preset `privacy`, features F0 and F2. On
-new text expect about 10–14 s per encounter (LLM calls); a re-run of the same text reads the replay
-cache in `outputs/cache/`. An existing output of the same date is never overwritten (`--overwrite`).
+`doctor` must end with `mode llm: ready`. The anonymized file appears in `outputs/<date>/`; `validate`
+must report `0 contract violation(s)`.
 
-
-The challenge files are in `data/` (tracked in this repository, see `AGENTS.md`); then:
+## Running the anonymizer
 
 ```bash
-uv run unified-harness doctor --mode full                     # full mode: extras, pinned weights, Ollama model
-uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl --mode full
-uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl --mode rules
-uv run unified-harness validate --original data/eval_patient_doctor_encounters.jsonl \
-    --anonymized outputs/<date>/anonymized-<date>-unified-harness.jsonl
+uv run unified-harness anonymize --input <file.jsonl> [options]
 ```
 
-Modes: `rules` uses no ML and no GPU; `full` adds the deid_roberta and GLiNER-PII encoders and the local
-Qwen 3.5 2B (Q4) model through Ollama. If anything `full` needs is missing, the run stops with an error;
-it never falls back to `rules`. Presets: `conservative`, `balanced` (default), `aggressive`, `privacy`
-(balanced settings plus low-risk details, with the code-evidence guard). `--no-codes` runs without
-reading `icd10_codes`.
+The input is JSONL with one encounter per line: `encounter_id`, `dataset`, `dialogue`, `note`,
+`icd10_codes` (a list of `{code, description}`). Any file in this schema works, including the converted
+datasets in `data/converted/<name>/encounters.jsonl`.
 
-Feature flags (`--features`, comma list; each was gated on the tune split):
-
-| Flag | What it does | Default in |
+| Option | Default | Meaning |
 |---|---|---|
-| `F0` | An activity is kept as injury evidence only when the sentence tells the mechanism; then every mention of it is kept | `privacy` |
-| `F2` | The local LLM reads only privacy-dense segments and also finds occupations; replies are cached in `outputs/cache/` | full mode, opt-in |
-| `F4` | Low-risk details are removed only when two independent signals agree (measured: lower privacy, higher precision) | opt-in |
+| `--mode` | `llm` | `llm`: rules + the local Ollama model. `rules`: no model at all (fastest, CPU only). `full`: adds two PyTorch encoders (needs `uv sync --extra ml` and `scripts/download_models.py`) |
+| `--preset` | `privacy` | How much to remove: `conservative`, `balanced`, `aggressive`, `privacy` (see below) |
+| `--features` | from the preset | Extra feature flags, comma list: `F0`, `F2`, `F4` (see below) |
+| `--detector-model` | `qwen3.5:2b-q4_K_M` | Another Ollama model for the detector; it must be pinned by digest in `models.toml` |
+| `--no-codes` | off | Do not read `icd10_codes` at inference (bonus task) |
+| `--out-root` | `outputs` | Results go to `<out-root>/<date>/` |
+| `--date` | today | Date used in the output names (`YYYY-MM-DD`) |
+| `--overwrite` | off | Replace an existing output of the same date (otherwise the run refuses) |
+| `--ids`, `--limit` | all | Process only some encounters (a JSON list of ids, or the first N) |
 
-### Evaluation harness
+**Presets**
+
+| Preset | Removes | Typical use |
+|---|---|---|
+| `conservative` | Direct identifiers (names, dates of birth, IDs, contact data, dates; exact ages become bands) and years | Maximum utility |
+| `balanced` | + places, organizations, occupations, facilities, teams, holidays, hobbies | Earlier default |
+| `aggressive` | + low-risk personal details, coarser ages, no injury-activity protection | Maximum removal; loses some clinical keep traps |
+| `privacy` | Everything aggressive removes, with balanced name and age settings and the F0 guard | **Default** |
+
+**Feature flags**
+
+| Flag | Effect | In the default |
+|---|---|---|
+| `F0` | An activity is kept as clinical evidence only when its sentence tells an injury mechanism (“hurt my knee skiing”), and then in every mention | yes |
+| `F2` | The LLM reads only privacy-dense segments (work, home, family, travel, rare names) and also finds occupations; replies are cached | yes |
+| `F4` | Low-risk details are removed only when two independent signals agree (higher precision, lower privacy) | no |
+
+**Environment variables**
+
+| Variable | Default | Use |
+|---|---|---|
+| `UNIFIED_HARNESS_OLLAMA_URL` | `http://127.0.0.1:11434` | Where the Ollama server is |
+| `UNIFIED_HARNESS_HOME` | current folder | Root for `outputs/`, `labels/`, `configs/` |
+| `UNIFIED_HARNESS_MODELS` | `models` | Encoder weights for `full` mode |
+
+**Safety behavior.** The run checks its requirements first and stops with an error if anything is
+missing; it never falls back to a weaker mode. If any record fails, nothing is published. Output files
+are written atomically, only after every record has passed the output contract.
+
+## Output files
+
+For a run on date `D`, in `<out-root>/D/`:
+
+| File | Contents |
+|---|---|
+| `anonymized-D-unified-harness.jsonl` | The input records in the same order; only `dialogue` and `note` changed |
+| `anonymized-D-unified-harness.decisions.jsonl` | One line per decision: position, category, action (replace, generalize, keep), detector and reason. No original text |
+| `anonymized-D-unified-harness.summary.json` | Settings, model digests, record count, runtime, peak RAM and VRAM, LLM calls and cache hits, checks |
+
+Replacements are tags such as `[PATIENT]`, `[CLINICIAN]`, `[DATE]`, `[LOCATION]`, `[OCCUPATION]` or
+`[DETAIL]`; exact ages become decade bands such as `[50s]`.
+
+## Evaluating a run
+
+Scoring needs the silver labels in `labels/` (local only, not in git). Ask a teammate for the folder.
 
 ```bash
-uv run --extra eval unified-harness run --split tune --mode rules --preset privacy    # one results row
-uv run --extra eval unified-harness run --split tune --mode full --preset privacy --features F2
-uv run --extra eval unified-harness sweep --split tune --mode full                     # presets x codes
-uv run unified-harness gate outputs/eval/<new>.json outputs/eval/<current best>.json  # acceptance gate
-uv run unified-harness show --id D2N071 --mode rules                                  # debug view (prints text)
+uv run --extra eval unified-harness evaluate \
+    --original data/eval_patient_doctor_encounters.jsonl \
+    --anonymized outputs/<date>/anonymized-<date>-unified-harness.jsonl \
+    --decisions outputs/<date>/anonymized-<date>-unified-harness.decisions.jsonl \
+    --summary outputs/<date>/anonymized-<date>-unified-harness.summary.json \
+    --gold labels/merged/validation --name my_run
 ```
 
-Splits: `tune` (140 train encounters, for development), `validation` (the 67 eval encounters, for
-checks only), `test` (24 held-out documents, scored once). Use `--icd none` to skip the ICD proxy when
-Ollama with `bge-m3` is not running. Rows are appended to `outputs/eval/results.md`. Silver labels live in `labels/` (git-ignored); see
-[docs/labeling_guidelines.md](docs/labeling_guidelines.md). The `dev` split ids are in
-[configs/splits.json](configs/splits.json).
+It prints one row and saves `outputs/eval/my_run.json`. Add `--icd none` when `bge-m3` is not in Ollama.
 
-## Results
+| Column | Meaning |
+|---|---|
+| privacy, high, high+med, low | Share of labeled PII occurrences removed: all, and by risk tier |
+| direct, quasi | Removal of direct identifiers and of quasi-identifiers |
+| name tok | Removal of each name token (a surname left behind counts as a leak) |
+| keep | Share of clinical keep traps still present (eponyms, code evidence, look-alike numbers) |
+| prec | Share of edits that hit a labeled PII string |
+| concepts | Medical concept recall |
+| ICD F1 / agree | Local ICD-10 retrieval proxy on original vs anonymized text, and their agreement |
+| ms/enc, RAM, VRAM | Speed and memory of the anonymization run |
 
-Silver labels, shares of labeled occurrences (details and how they were measured: [docs/solution.html](docs/solution.html)):
+Other commands:
 
-| Split | All PII removed | High risk | Keep traps | Concepts | VRAM |
-|---|---|---|---|---|---|
-| tune (140) | 92.1% | 99.2% | 100.0% | 99.7% | 1.6 GB |
-| validation (67) | 84.6% | 95.1% | 99.1% | 99.8% | 1.6 GB |
-| test, unseen ICU notes (24) | 85.7% | 89.7% | 95.3% | 95.6% | 1.6 GB |
+```bash
+uv run --extra eval unified-harness run --split tune --mode llm --preset privacy   # anonymize a split and score it
+uv run unified-harness gate outputs/eval/<new>.json outputs/eval/<old>.json   # acceptance gate
+uv run --extra eval unified-harness attack --original <in.jsonl> --anonymized <out.jsonl> \
+    --gold labels/merged/tune --skip-ner                        # re-identification attacks
+uv run unified-harness show --id <encounter_id> --mode rules    # one encounter with every decision (prints text)
+```
 
-Limitations: silver labels only; the unseen ICU-note format scores clearly lower (above); some date forms are not targeted yet; a relative or clinician can get
-the [PATIENT] tag (the name is removed); VRAM measured on Apple unified memory, not on a CUDA card.
-
-## Output
-
-`outputs/<YYYY-MM-DD>/anonymized-<YYYY-MM-DD>-unified-harness.jsonl`, plus a `.decisions.jsonl` sidecar
-(one explanation per decision, without original text) and a `.summary.json` (runtime, memory, checks).
-Files are published atomically and only after the output contract passes.
+Splits for `--split`: `tune` (140 train encounters), `validation` (the 67 eval encounters), `test`
+(24 held-out documents in `data/robustness/`). Converted datasets can be scored too: export their gold
+with `scripts/convert/export_gold.py` and pass `--gold data/converted/<name>/gold`.
 
 ## Docker
 
-```bash
-# rules mode: one container, no network
-docker build --target rules -t unified-harness:rules .
-docker run --rm --network none -v "$PWD/data:/data:ro" -v "$PWD/outputs:/outputs" unified-harness:rules \
-    anonymize --input /data/eval_patient_doctor_encounters.jsonl --mode rules
+The harness image is small (147 MB, no PyTorch); Ollama runs in its own container. Both sit on an
+internal network without internet access, and the host's Ollama models are mounted read-only.
 
-# default llm mode: the harness and Ollama on an internal network without internet
+```bash
+docker compose build harness
 docker compose run --rm harness doctor
-docker compose run --rm harness anonymize --input /data/eval_patient_doctor_encounters.jsonl
+docker compose run --rm -e TZ=Europe/Zurich harness anonymize \
+    --input /data/eval_patient_doctor_encounters.jsonl --out-root /outputs/docker
+docker compose run --rm harness validate --original /data/eval_patient_doctor_encounters.jsonl \
+    --anonymized /outputs/docker/<date>/anonymized-<date>-unified-harness.jsonl
+docker compose down
 ```
 
-Details, sizes and the GPU override: [docs/docker.md](docs/docker.md).
+Inside the container `/data` is `./data` (read-only) and `/outputs` is `./outputs`. Pass `TZ`, or the
+date in the output names is UTC. More, including the GPU override and the `full` image:
+[`docs/docker.md`](docs/docker.md).
 
-## Data and privacy
+## How it works
 
-Silver labels, outputs, model weights and the robustness sets are never committed: `labels/`, `outputs/`,
-`models/` and `data/robustness/` are git-ignored. The challenge files in `data/` are tracked by this
-repository (see `AGENTS.md`). Nothing under `data/`, `labels/`, `outputs/` or `models/` goes into a
-Docker image. Tests use synthetic fixtures.
+1. **Normalize** the text with a one-to-one character view, so every detector reports positions in the
+   original.
+2. **Shield** what a coder needs: clinical numbers with units, drug names, eponyms, words that support
+   the encounter's own ICD-10 codes, and activities told as an injury mechanism. Nothing may edit them.
+3. **Detect** identifiers with rules and gazetteers, and with the local model on privacy-dense segments.
+4. **Link** the mentions of each person across turns and fields, so a surname cannot survive elsewhere.
+5. **Apply the policy**: replace, generalize or keep each category according to the preset.
+6. **Verify**: search for any removed string still in the text and repair it; check the output contract.
+7. **Publish** atomically, with the decisions file and the summary.
+
+The design merges the two earlier team harnesses: the shield-first rules, identity graph and leak repair
+of Alind and Davide, and the LLM extraction, age generalization and replay cache of Ketai.
+
+## Data preparation (Kaggle datasets)
+
+The team's converters turn external datasets into the challenge schema plus separate gold labels, so the
+anonymizer and the scorer run on them unchanged.
+
+- Kaggle setup and download: [`AGENTS.md`](AGENTS.md) (`scripts/download_kaggle.sh`, about 2.7 GB).
+- Conversion, formats and which dataset serves which evaluation: [`DATA_PREP.md`](DATA_PREP.md) and
+  [`scripts/convert/README.md`](scripts/convert/README.md).
+
+## Data and privacy rules
+
+- Never commit `labels/`, `outputs/`, `models/`, `data/robustness/` or anything under `data/kaggle/` except
+  `DATASETS.md`; all are git-ignored. The challenge files in `data/` are tracked on purpose.
+- Docker images contain no data, labels, outputs or weights; they are mounted at run time.
+- The decisions file never contains original text (`--explain-text` is a debug option that does).
+- Before publishing, run the release guard, which searches every tracked file for labeled identifiers:
+  `uv run python scripts/check_no_patient_text.py`.
+- Inference stays on-premises: no cloud models, at most 4 GB of VRAM.
 
 ## Development
 
 ```bash
+uv sync --all-extras          # every optional dependency (ml, eval, download)
 uv run ruff check . && uv run ruff format --check .
 uv run pytest -q
+uv run python scripts/build_solution_page.py   # rebuild docs/solution.html from outputs/eval/
 ```
 
-## Credits
+Ruff skips `scripts/convert/`, which keeps its own style.
+
+## Troubleshooting
+
+| Symptom | Fix |
+|---|---|
+| `doctor`: `Ollama is not reachable` | Start Ollama (`ollama serve` or the app), or set `UNIFIED_HARNESS_OLLAMA_URL` |
+| `doctor`: `not pulled` | `ollama pull qwen3.5:2b-q4_K_M` |
+| `doctor`: `not pinned in models.toml` | Add the model and its digest (`ollama list`) under `[detector_models]` |
+| `... already exists` | Use another `--out-root` or `--date`, or `--overwrite` |
+| ICD columns empty in `evaluate` | `ollama pull bge-m3`, or pass `--icd none` |
+| Privacy columns missing in `evaluate` | The `labels/` folder is missing |
+| A run on new text is slow | Expected: about 10–14 s per encounter for the LLM; reruns of the same text read `outputs/cache/` |
+
+## Limitations
+
+- All labels are silver (made by LLM agents and checked by script, not reviewed by a human).
+- The unseen ICU-note format scores clearly lower than the training format (see the test row above).
+- Some date forms are not targeted yet; they are the main high-risk gap on validation.
+- A relative or clinician sometimes gets the `[PATIENT]` tag; the name itself is removed.
+- VRAM was measured on Apple unified memory; a 4 GB CUDA card was not tested.
+
+## Credits and license
 
 Built on the work of Alind Xhyra and Davide Molinelli (shield-first pipeline, gold-label guidelines,
 attacks and robustness sets) and Ketai (zero-shot LLM extraction, age and date generalization, entity
-replay).
+replay), and on the team's data-preparation tools.
 
-## License
-
-Apache License 2.0; see [LICENSE](LICENSE).
+Licensed under the Apache License 2.0; see [`LICENSE`](LICENSE).
