@@ -354,7 +354,7 @@ eval/
   bonus/       bonus tasks
   gold/        taxonomy.py (labels, levels), merge_aci_gold.py (`eval gold`), audit_gold.py
   tests/       pytest suite (hand-made fixtures; test_gold.py's two cross-checks read data/eval and skip without it)
-  docs/        this file, CORPUS-DRIFT.md, GOLD.md
+  docs/        this file, METRICS.md, CORPUS-DRIFT.md, GOLD.md
 ```
 
 ## Tests
