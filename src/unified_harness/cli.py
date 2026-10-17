@@ -419,8 +419,13 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("-i", "--input", required=True)
     p.add_argument("--out-root", default=str(paths.outputs_dir()), help="results go to <out-root>/<date>/")
     p.add_argument("--date", help="run date for the output names (YYYY-MM-DD, default: today)")
-    p.add_argument("--mode", choices=MODES, default="full", help="rules: no ML; full: rules + encoders + local LLM")
-    p.add_argument("--preset", default="balanced", choices=PRESETS)
+    p.add_argument(
+        "--mode",
+        choices=MODES,
+        default="llm",
+        help="llm (default): rules + local Ollama model; rules: no ML; full: + PyTorch encoders",
+    )
+    p.add_argument("--preset", default="privacy", choices=PRESETS)
     p.add_argument("--no-codes", action="store_true", help="do not use icd10_codes at inference (bonus mode)")
     p.add_argument("--detectors", help="ablation only: comma list of rules, deid, gliner, llm (overrides --mode)")
     p.add_argument("--features", help="M5 feature flags, comma list: " + ", ".join(FEATURES))
@@ -494,7 +499,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.set_defaults(func=cmd_show)
 
     p = sub.add_parser("doctor", help="check the environment for a run mode")
-    p.add_argument("--mode", choices=MODES, default="full")
+    p.add_argument("--mode", choices=MODES, default="llm")
     p.add_argument("--json", action="store_true", help="machine-readable report")
     p.add_argument("--detector-model", help="Ollama model for the LLM detector (pinned in models.toml)")
     p.set_defaults(func=cmd_doctor)

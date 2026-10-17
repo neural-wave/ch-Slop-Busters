@@ -26,13 +26,27 @@ uv run --extra download python scripts/download_models.py    # pinned weights in
 ollama pull qwen3.5:2b-q4_K_M             # local LLM used by full mode
 ```
 
-## Usage
+## Quickstart (local, no PyTorch)
+
+```bash
+ollama pull qwen3.5:2b-q4_K_M          # once; the local LLM detector (1.9 GB, about 1.6 GB VRAM)
+uv sync                                # once
+uv run unified-harness doctor          # must say "mode llm: ready"
+uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl
+uv run unified-harness validate --original data/eval_patient_doctor_encounters.jsonl \
+    --anonymized outputs/<date>/anonymized-<date>-unified-harness.jsonl
+```
+
+Defaults: mode `llm` (rules + `qwen3.5:2b-q4_K_M` via Ollama), preset `privacy`, features F0 and F2. On
+new text expect about 10–14 s per encounter (LLM calls); a re-run of the same text reads the replay
+cache in `outputs/cache/`. An existing output of the same date is never overwritten (`--overwrite`).
+
 
 Put the challenge files in `data/` (git-ignored), then:
 
 ```bash
-uv run unified-harness doctor --mode full                     # extras, pinned weights, Ollama model
-uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl --preset privacy --features F2
+uv run unified-harness doctor --mode full                     # full mode: extras, pinned weights, Ollama model
+uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl --mode full
 uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl --mode rules
 uv run unified-harness validate --original data/eval_patient_doctor_encounters.jsonl \
     --anonymized outputs/<date>/anonymized-<date>-unified-harness.jsonl

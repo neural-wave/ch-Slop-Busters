@@ -54,11 +54,10 @@ PRESETS: dict[str, Config] = {
     # Balanced settings (name threshold, decade ages) plus low-risk details, with the code-evidence guard
     # (F0) that keeps traps intact. The agreement rule (F4, D7) was measured and not kept by default: on
     # tune it lowered low-risk removal (0.517 -> 0.381) with no trap or concept gain; it stays a flag.
-    # Add F2 in full mode for the targeted LLM detector.
     "privacy": Config(
         preset="privacy",
         remove=frozenset(DIRECT_CATS + BALANCED_EXTRA + AGGRESSIVE_EXTRA),
-        features=frozenset({"F0"}),
+        features=frozenset({"F0", "F2"}),  # F2 only changes the LLM detector (modes llm and full)
     ),
 }
 
