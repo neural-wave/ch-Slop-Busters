@@ -4,9 +4,8 @@ Offline, ICD-aware anonymization of patient-doctor encounters, with an evaluatio
 measure privacy and clinical utility honestly. It merges two earlier team solutions: the shield-first
 rule pipeline by Alind Xhyra and Davide Molinelli and the LLM extraction harness by Ketai.
 
-> **Status: milestone M1 (baseline ported).** The pipeline is the shield-first baseline; the privacy
-> features of the plan come next. See [PLAN.md](PLAN.md) for the design and milestones and
-> [STATUS.md](STATUS.md) for progress and measured results.
+> **Version 1.0.0.** The design, the pipeline and all measured results are described in
+> [docs/solution.html](docs/solution.html); labels, splits and metrics in [docs/evaluation.md](docs/evaluation.md).
 
 ## What it does
 

@@ -11,6 +11,10 @@
 !src/unified_harness/data/
 !tests/data/
 
+# Local working notes: never published
+/PLAN.md
+/STATUS.md
+
 # Python and tooling
 .venv/
 __pycache__/
