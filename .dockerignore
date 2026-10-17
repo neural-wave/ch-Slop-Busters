@@ -1,0 +1,16 @@
+# Keep patient data, labels, outputs, weights and local environments out of the build context.
+data/
+labels/
+outputs/
+models/
+**/*.jsonl
+!tests/fixtures/*.jsonl
+.venv/
+**/__pycache__/
+.pytest_cache/
+.ruff_cache/
+.git/
+.github/
+docs/
+*.md
+!README.md
