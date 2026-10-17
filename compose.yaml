@@ -1,0 +1,45 @@
+# Offline run (default llm mode): the harness and a local Ollama server on an internal network without
+# internet.
+#
+#   docker compose run --rm harness doctor
+#   docker compose run --rm harness anonymize --input /data/eval_patient_doctor_encounters.jsonl
+#
+# Mounted, never baked in: ./data (read-only input), ./outputs (results) and the host's Ollama model store
+# (OLLAMA_MODELS_DIR, default ~/.ollama/models, with qwen3.5:2b-q4_K_M already pulled). Nothing in this file
+# downloads anything at run time. For full mode (PyTorch encoders) build target `full` and mount ./models.
+name: unified-harness
+
+services:
+  ollama:
+    # same version as the Ollama used for the measured runs; multi-arch index pinned by digest
+    image: ollama/ollama:0.40.6@sha256:265409e1d931028a8f7d5a32bcbafddd7bffbc6cc629d77efe9560adf692a5e7
+    networks: [offline]
+    volumes:
+      - ${OLLAMA_MODELS_DIR:-~/.ollama/models}:/root/.ollama/models:ro
+    environment:
+      OLLAMA_KEEP_ALIVE: 10m
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 5s
+      timeout: 5s
+      retries: 24
+
+  harness:
+    build:
+      context: .
+      target: rules
+    image: unified-harness:rules
+    networks: [offline]
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      UNIFIED_HARNESS_OLLAMA_URL: http://ollama:11434
+    volumes:
+      - ./data:/data:ro
+      - ./outputs:/outputs
+    command: ["--help"]
+
+networks:
+  offline:
+    internal: true  # no route to the internet for either container
