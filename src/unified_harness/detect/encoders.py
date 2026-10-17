@@ -30,7 +30,6 @@ os.environ["HF_HUB_OFFLINE"] = "1"
 os.environ["TRANSFORMERS_OFFLINE"] = "1"
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 LOCAL_HTTP = urllib.request.build_opener(urllib.request.ProxyHandler({}))
-OLLAMA_URL = "http://127.0.0.1:11434"
 
 VRAM_BUDGET_MB = 4096
 # Measured peaks on Apple M4 Max (fp16, cache released after every call): obi/deid_roberta_i2b2 1033 MB,
@@ -382,7 +381,9 @@ class OllamaLLM:
     def __init__(self, cfg: Config):
         self.model = cfg.llm_model
         self.num_ctx = cfg.llm_num_ctx
-        self.url = f"{OLLAMA_URL}/api/generate"
+        from ..environment import ollama_url
+
+        self.url = f"{ollama_url()}/api/generate"
         self._call("ok", 8)  # load once and check the VRAM budget
         from ..eval.resources import ollama_vram_mb
 

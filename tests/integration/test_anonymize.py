@@ -72,6 +72,51 @@ def test_a_failing_record_stops_the_run_and_publishes_nothing(tmp_path, monkeypa
     assert not (tmp_path / DAY).exists()
 
 
-@pytest.mark.parametrize("preset", ["conservative", "balanced", "aggressive"])
+@pytest.mark.parametrize("preset", ["conservative", "balanced", "aggressive", "privacy"])
 def test_every_preset_keeps_the_contract(tmp_path, preset):
     assert _anonymize(tmp_path, "--mode", "rules", "--preset", preset) == 0
+
+
+def test_llm_detector_unreachable_stops_the_run(tmp_path, monkeypatch, capsys):
+    # explicit detectors skip the doctor check: the run itself must still fail closed
+    monkeypatch.setenv("UNIFIED_HARNESS_OLLAMA_URL", "http://127.0.0.1:9")
+    assert _anonymize(tmp_path, "--detectors", "rules,llm") == 1
+    assert "nothing was published" in capsys.readouterr().err
+    assert not (tmp_path / DAY).exists()
+
+
+@pytest.mark.parametrize(
+    "line",
+    [
+        '{"encounter_id": "X1", "dataset": "s", "dialogue": "hi"',
+        '{"encounter_id": "X1", "dataset": "s", "dialogue": "hi"}',
+    ],
+    ids=["broken-json", "missing-note"],
+)
+def test_malformed_input_publishes_nothing(tmp_path, line):
+    bad = tmp_path / "bad.jsonl"
+    bad.write_text(FIXTURE.read_text(encoding="utf-8") + line + "\n", encoding="utf-8")
+    try:
+        code = main(
+            ["anonymize", "--input", str(bad), "--out-root", str(tmp_path / "out"), "--date", DAY, "--mode", "rules"]
+        )
+    except Exception:  # noqa: BLE001  (an input error may surface as an exception or an exit code)
+        code = 1
+    assert code != 0
+    assert not (tmp_path / "out" / DAY).exists()
+
+
+def test_publish_failure_leaves_no_records_file(tmp_path, monkeypatch):
+    import os
+
+    real = os.replace
+
+    def failing(src, dst):
+        if str(dst).endswith("-unified-harness.jsonl"):
+            raise OSError("simulated disk failure")
+        return real(src, dst)
+
+    monkeypatch.setattr(os, "replace", failing)
+    with pytest.raises(OSError):
+        _anonymize(tmp_path, "--mode", "rules")
+    assert not output_paths(tmp_path, date.fromisoformat(DAY)).records.exists()

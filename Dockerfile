@@ -2,7 +2,8 @@
 #
 # Release images for unified-harness.
 #   rules  standard-library pipeline, no ML dependencies, no GPU     docker build --target rules -t unified-harness:rules .
-#   full   + encoder detectors and the local LLM client (milestone M6, see PLAN.md)
+#   full   + encoder detectors (CPU torch) and the local LLM client  docker build --target full -t unified-harness:full .
+#          weights are mounted at /models; the LLM runs in a separate Ollama container (compose.yaml)
 #
 # No patient data, labels, outputs or model weights are copied into an image (.dockerignore); they are
 # mounted at run time: /data (read-only input), /outputs (results), /models (weights, full only).
@@ -45,3 +46,26 @@ LABEL org.opencontainers.image.title="unified-harness" \
       org.opencontainers.image.description="Offline, ICD-aware anonymization of patient-doctor encounters (rules mode)"
 ENTRYPOINT ["unified-harness"]
 CMD ["--help"]
+
+# --- full: rules + deid_roberta + GLiNER-PII (CPU torch) + the Ollama client ------------------------------
+# The lockfile pins torch 2.14.1 from PyPI, whose Linux wheels pull several GB of CUDA libraries. The image
+# installs everything else from the frozen lock and the same torch version from PyTorch's CPU-only index.
+FROM builder-rules AS builder-full
+ARG TORCH_VERSION=2.14.1
+RUN uv sync --frozen --no-dev --no-editable --extra ml --python /usr/local/bin/python3 \
+        --no-install-package torch --no-install-package triton \
+        --no-install-package cuda-bindings --no-install-package cuda-pathfinder --no-install-package cuda-toolkit \
+        --no-install-package nvidia-cublas --no-install-package nvidia-cuda-cupti \
+        --no-install-package nvidia-cuda-nvrtc --no-install-package nvidia-cuda-runtime \
+        --no-install-package nvidia-cudnn-cu13 --no-install-package nvidia-cufft --no-install-package nvidia-cufile \
+        --no-install-package nvidia-curand --no-install-package nvidia-cusolver --no-install-package nvidia-cusparse \
+        --no-install-package nvidia-cusparselt-cu13 --no-install-package nvidia-nccl-cu13 \
+        --no-install-package nvidia-nvjitlink --no-install-package nvidia-nvshmem-cu13 --no-install-package nvidia-nvtx \
+    && uv pip install --python /app/.venv/bin/python --no-deps \
+        --index-url https://download.pytorch.org/whl/cpu "torch==${TORCH_VERSION}"
+
+FROM rules AS full
+USER root
+COPY --from=builder-full /app/.venv /app/.venv
+USER app
+LABEL org.opencontainers.image.description="Offline, ICD-aware anonymization of patient-doctor encounters (full mode, CPU)"

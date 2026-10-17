@@ -7,6 +7,8 @@ import resource
 import sys
 import urllib.request
 
+from ..environment import ollama_url
+
 
 def peak_rss_mb() -> float:
     """Peak resident set size of this process (macOS reports bytes, Linux kilobytes)."""
@@ -18,7 +20,7 @@ def ollama_vram_mb(model: str | None = None) -> float:
     """VRAM currently held by Ollama models (all loaded models when `model` is None)."""
     opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
     try:
-        with opener.open("http://127.0.0.1:11434/api/ps", timeout=5) as resp:
+        with opener.open(f"{ollama_url()}/api/ps", timeout=5) as resp:
             ps = json.loads(resp.read())
     except Exception:  # noqa: BLE001
         return float("nan")  # unknown: callers must not read this as 0 MB

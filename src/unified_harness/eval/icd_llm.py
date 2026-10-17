@@ -15,6 +15,7 @@ from pathlib import Path
 
 import numpy as np
 
+from ..environment import ollama_url
 from .utility import EmbedCache, chunk_text, code_text
 
 PROMPT = """You are a certified medical coder. Read the clinical encounter and select the ICD-10-CM codes from the
@@ -33,7 +34,7 @@ def _ask(model: str, prompt: str) -> list[str]:
     body = {"model": model, "prompt": prompt, "stream": False, "think": False, "format": "json",
             "options": {"temperature": 0, "num_ctx": 8192, "num_predict": 150, "seed": 0}}  # fmt: skip
     req = urllib.request.Request(
-        "http://localhost:11434/api/generate",
+        f"{ollama_url()}/api/generate",
         data=json.dumps(body).encode(),
         headers={"Content-Type": "application/json"},
     )

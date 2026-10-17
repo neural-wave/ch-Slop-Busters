@@ -26,6 +26,7 @@ from pathlib import Path
 
 from .. import lexicons as L
 from .. import paths
+from ..environment import ollama_url
 from ..io import read_jsonl
 from ..text.normalize import Doc
 from .privacy import load_gold
@@ -196,7 +197,7 @@ def _llm(model: str, prompt: str, num_ctx: int = 8192) -> dict:
     body = {"model": model, "prompt": prompt, "stream": False, "think": False, "format": "json",
             "options": {"temperature": 0, "num_ctx": num_ctx, "num_predict": 120, "seed": 0}}  # fmt: skip
     req = urllib.request.Request(
-        "http://localhost:11434/api/generate",
+        f"{ollama_url()}/api/generate",
         data=json.dumps(body).encode(),
         headers={"Content-Type": "application/json"},
     )

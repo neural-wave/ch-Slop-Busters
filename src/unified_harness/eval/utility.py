@@ -26,6 +26,7 @@ from functools import cache
 from pathlib import Path
 
 from .. import lexicons as L
+from ..environment import ollama_url
 from ..shield.medical import code_evidence_terms
 
 ANATOMY = frozenset(
@@ -145,8 +146,6 @@ def evidence_retention(original: list[dict], anonymized: list[dict]) -> dict:
 
 # --------------------------------------------------------------------------- embedding ICD proxy
 
-OLLAMA = "http://localhost:11434"
-
 
 class EmbedCache:
     def __init__(self, path: Path, model: str):
@@ -178,7 +177,7 @@ class EmbedCache:
 
 def _ollama_embed(model: str, texts: list[str]) -> list[list[float]]:
     req = urllib.request.Request(
-        f"{OLLAMA}/api/embed",
+        f"{ollama_url()}/api/embed",
         data=json.dumps({"model": model, "input": texts}).encode(),
         headers={"Content-Type": "application/json"},
     )

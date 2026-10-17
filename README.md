@@ -32,7 +32,7 @@ Put the challenge files in `data/` (git-ignored), then:
 
 ```bash
 uv run unified-harness doctor --mode full                     # extras, pinned weights, Ollama model
-uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl            # full mode
+uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl --preset privacy --features F2
 uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl --mode rules
 uv run unified-harness validate --original data/eval_patient_doctor_encounters.jsonl \
     --anonymized outputs/<date>/anonymized-<date>-unified-harness.jsonl
@@ -40,18 +40,31 @@ uv run unified-harness validate --original data/eval_patient_doctor_encounters.j
 
 Modes: `rules` uses no ML and no GPU; `full` adds the deid_roberta and GLiNER-PII encoders and the local
 Qwen 3.5 2B (Q4) model through Ollama. If anything `full` needs is missing, the run stops with an error;
-it never falls back to `rules`. Presets: `conservative`, `balanced` (default), `aggressive`.
-`--no-codes` runs without reading `icd10_codes`.
+it never falls back to `rules`. Presets: `conservative`, `balanced` (default), `aggressive`, `privacy`
+(balanced settings plus low-risk details, with the code-evidence guard). `--no-codes` runs without
+reading `icd10_codes`.
+
+Feature flags (`--features`, comma list; each was gated on the tune split):
+
+| Flag | What it does | Default in |
+|---|---|---|
+| `F0` | An activity is kept as injury evidence only when the sentence tells the mechanism; then every mention of it is kept | `privacy` |
+| `F2` | The local LLM reads only privacy-dense segments and also finds occupations; replies are cached in `outputs/cache/` | full mode, opt-in |
+| `F4` | Low-risk details are removed only when two independent signals agree (measured: lower privacy, higher precision) | opt-in |
 
 ### Evaluation harness
 
 ```bash
-uv run --extra eval unified-harness run --split dev --mode rules --preset balanced    # one results row
-uv run --extra eval unified-harness sweep --split dev --mode full                      # presets x codes
+uv run --extra eval unified-harness run --split tune --mode rules --preset privacy    # one results row
+uv run --extra eval unified-harness run --split tune --mode full --preset privacy --features F2
+uv run --extra eval unified-harness sweep --split tune --mode full                     # presets x codes
+uv run unified-harness gate outputs/eval/<new>.json outputs/eval/<current best>.json  # acceptance gate
 uv run unified-harness show --id D2N071 --mode rules                                  # debug view (prints text)
 ```
 
-Rows are appended to `outputs/eval/results.md`. Silver labels live in `labels/` (git-ignored); see
+Splits: `tune` (140 train encounters, for development), `validation` (the 67 eval encounters, for
+checks only), `test` (24 held-out documents, scored once). Use `--icd none` to skip the ICD proxy when
+Ollama with `bge-m3` is not running. Rows are appended to `outputs/eval/results.md`. Silver labels live in `labels/` (git-ignored); see
 [docs/labeling_guidelines.md](docs/labeling_guidelines.md). The `dev` split ids are in
 [configs/splits.json](configs/splits.json).
 
@@ -64,11 +77,17 @@ Files are published atomically and only after the output contract passes.
 ## Docker
 
 ```bash
+# rules mode: one container, no network
 docker build --target rules -t unified-harness:rules .
-docker run --rm --network none -v "$PWD/data:/data:ro" -v "$PWD/outputs:/outputs" unified-harness:rules doctor --mode rules
+docker run --rm --network none -v "$PWD/data:/data:ro" -v "$PWD/outputs:/outputs" unified-harness:rules \
+    anonymize --input /data/eval_patient_doctor_encounters.jsonl --mode rules
+
+# full mode: the harness and Ollama on an internal network without internet
+docker compose run --rm harness doctor --mode full
+docker compose run --rm harness anonymize --input /data/eval_patient_doctor_encounters.jsonl --preset privacy --features F2
 ```
 
-The `full` image and a Compose setup with a local Ollama service follow in milestone M6.
+Details, sizes and the GPU override: [docs/docker.md](docs/docker.md).
 
 ## Data and privacy
 
