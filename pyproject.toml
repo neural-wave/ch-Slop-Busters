@@ -1,0 +1,65 @@
+[project]
+name = "unified-harness"
+version = "1.0.0"
+description = "Offline, ICD-aware anonymization of patient-doctor encounters with a privacy-first evaluation harness"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+authors = [{ name = "Daniel Travaglia" }]
+# The core pipeline uses the Python standard library only.
+dependencies = []
+
+[project.optional-dependencies]
+# Encoder detectors for `--mode full` (deid_roberta_i2b2, GLiNER-PII). Weights are downloaded once
+# with scripts/download_models.py and loaded offline.
+ml = [
+    "gliner==0.2.29",
+    "torch==2.14.1",
+    "transformers==5.16.1",
+]
+# Development-time evaluation (ICD proxy, attacks); never imported by the anonymization path.
+eval = [
+    "numpy==2.5.4",
+    "scikit-learn==1.9.1",
+]
+# Model download script only.
+download = ["huggingface-hub==1.33.0"]
+
+[project.scripts]
+unified-harness = "unified_harness.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+    "ruff==0.17.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.12,<0.13"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"
+markers = [
+    "data: needs the challenge data in data/ (skipped when absent)",
+    "models: needs downloaded model weights in models/ (skipped when absent)",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = ["scripts/convert"]  # the team's dataset converters keep their own style
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+# Ported detector, lexicon and data-builder modules hold long regular expressions and word lists;
+# breaking them across lines would make the patterns harder to review.
+"src/unified_harness/detect/*.py" = ["E501"]
+"src/unified_harness/shield/*.py" = ["E501"]
+"src/unified_harness/lexicons.py" = ["E501"]
+"src/unified_harness/eval/robustness.py" = ["E501"]
+"scripts/build_solution_page.py" = ["E501"]  # page prose and HTML
