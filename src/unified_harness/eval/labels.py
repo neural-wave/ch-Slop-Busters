@@ -274,3 +274,16 @@ def write_merged(folder: Path, merged: Iterable[dict]) -> int:
         (folder / f"{m['encounter_id']}.json").write_text(json.dumps(m, indent=1, ensure_ascii=False), encoding="utf-8")
         n += 1
     return n
+
+
+def ketai_as_gold(rec: dict) -> dict:
+    """A raw Ketai label record in scorer form, keeping its own categories and tiers (cross-checks)."""
+    return {
+        "encounter_id": rec["encounter_id"],
+        "pii": [
+            {**p, "risk": DEFAULT_RISK[KETAI_CATEGORY[p["category"]]], "tier": p.get("tier") or "direct"}
+            for p in rec.get("pii", [])
+        ],
+        "keep": [],
+        "concepts": rec.get("medical_concepts", []),
+    }

@@ -292,6 +292,31 @@ def cmd_sweep(a: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_gate(a: argparse.Namespace) -> int:
+    from .eval import gate
+
+    cand, base = (json.loads(Path(f).read_text(encoding="utf-8")) for f in (a.candidate, a.baseline))
+    checks = gate.compare(cand, base, floor=a.floor, icd_noise=a.icd_noise)
+    print(gate.table(checks, cand.get("name", "candidate"), base.get("name", "baseline")))
+    ok = all(c.passed for c in checks)
+    print("\nGATE PASS" if ok else "\nGATE FAIL")
+    return 0 if ok else 1
+
+
+def cmd_icd_judge(a: argparse.Namespace) -> int:
+    from .eval import icd_judge
+
+    if a.step == "export":
+        runs = dict(r.split("=", 1) for r in a.run)
+        print(json.dumps(icd_judge.export(Path(a.original), {k: Path(v) for k, v in runs.items()}, Path(a.out_dir))))
+    else:
+        res = icd_judge.score(Path(a.out_dir), Path(a.rerun) if a.rerun else None)
+        for k, v in res["arms"].items():
+            change = f"  change {v['delta']} {v['delta_ci95']}" if "delta" in v else ""
+            print(f"{k}: micro-F1 {v['micro_f1']} {v['f1_ci95']}{change}")
+    return 0
+
+
 def cmd_attack(a: argparse.Namespace) -> int:
     from .eval import attack
 
@@ -433,6 +458,21 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--mode", choices=MODES, default="full")
     p.add_argument("--json", action="store_true", help="machine-readable report")
     p.set_defaults(func=cmd_doctor)
+
+    p = sub.add_parser("gate", help="acceptance gate: compare a scored run with the current best on one split")
+    p.add_argument("candidate", help="result file of the new run (outputs/eval/<name>.json)")
+    p.add_argument("baseline", help="result file of the current best run on the same split")
+    p.add_argument("--floor", type=float, default=0.995, help="minimum keep-trap and concept recall")
+    p.add_argument("--icd-noise", type=float, default=0.01, help="tolerated drop of ICD proxy agreement")
+    p.set_defaults(func=cmd_gate)
+
+    p = sub.add_parser("icd-judge", help="external ICD judge hook: blinded export, then score its predictions")
+    p.add_argument("step", choices=("export", "score"))
+    p.add_argument("--out-dir", required=True, help="a new folder under outputs/")
+    p.add_argument("--original", help="export: the input split file")
+    p.add_argument("--run", action="append", default=[], metavar="NAME=PATH", help="export: an anonymized file")
+    p.add_argument("--rerun", help="score: an export of the original notes coded again (noise control)")
+    p.set_defaults(func=cmd_icd_judge)
 
     p = sub.add_parser("validate", help="check an anonymized file against its input")
     p.add_argument("--original", required=True)

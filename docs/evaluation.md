@@ -53,7 +53,10 @@ Computed by `unified-harness evaluate` (and `run`, which anonymizes first in a c
 
 | Metric | Definition |
 |---|---|
-| privacy | Share of silver-label PII occurrences no longer present (whole word, case-insensitive), overall and by risk tier, category, field and source dataset |
+| privacy | Share of silver-label PII occurrences no longer present (whole word, case-insensitive), overall and by risk tier (high / medium / low), identifier tier (direct / quasi), category, field and source dataset |
+| entity removal | Share of labeled PII strings with no occurrence left |
+| name tokens | Removal of each name token of 3+ letters (titles excluded): "[PATIENT] Orlov" leaks "Orlov" even when the full name is gone |
+| labeled concepts | Share of labeled medical concepts still present (validation only; Ketai's concept annotation) |
 | keep | Share of keep-trap occurrences still present (over-removal check) |
 | edit precision | Share of applied edits that overlap a labeled PII occurrence |
 | concepts | Medical concept recall with a lexicon extractor independent of the pipeline's shield |
@@ -61,8 +64,32 @@ Computed by `unified-harness evaluate` (and `run`, which anonymizes first in a c
 | ICD proxy | bge-m3 retrieval over the code space on original and anonymized text: F1 against the gold codes and agreement between the two |
 | ms/enc, RAM, VRAM | Measured in the anonymization process |
 
+### One scorer for both teams' definitions
+
+`eval/privacy.py` combines the Alind+Davide scorer (risk tiers, keep traps, edit precision) and the Ketai
+scorer (direct / quasi tiers, entity removal, name tokens, labeled concepts). Two matching rules:
+`word` (default, raw text) and `normalized` (Ketai: lower case, hyphens and slashes as spaces, spaced
+punctuation). `scripts/crosscheck_scorers.py` runs both original scorers next to the unified one on the
+same outputs; on the nine saved eval-split runs of the cross-evaluation (Ketai's delivered file, seven
+Alind+Davide runs and an identity copy) every metric agrees to the fourth decimal.
+
+### Attacks and the external ICD judge
+
+`unified-harness attack` runs A2 (roster dictionary), A3 (rare words), A5 (record linkage) and, unless
+skipped, A1 (independent NER) and A4 (local-LLM inference), each also on the original text as a positive
+control. `unified-harness icd-judge export` writes the distinct note texts of the original and of each
+run once, shuffled under surrogate case ids (no encounter ids, codes or run names), for a frozen external
+coder such as a separate LLM; `icd-judge score` maps the predictions back and reports micro-F1
+per run with a paired bootstrap interval of the change, plus an optional re-run of the original notes as
+the judge's noise control. It is used at milestone checkpoints only.
+
 ## Acceptance gate
 
 A change is kept only when, on `tune`: direct / high-risk removal does not drop; quasi or low-risk
 removal rises; keep traps and medical concepts stay at or above 99.5%; ICD proxy agreement does not drop
 beyond its run-to-run noise; all tests pass and `icd10_codes` stay byte-identical (acceptance gate above).
+
+    unified-harness gate outputs/eval/<candidate>.json outputs/eval/<current best>.json
+
+prints one row per criterion and exits 1 on any failure. The floor is absolute: a candidate below 99.5%
+keep-trap survival fails even when the current best is lower too.

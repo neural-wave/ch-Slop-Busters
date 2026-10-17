@@ -15,9 +15,14 @@ COLUMNS = [
     ("privacy", "privacy_removed"),
     ("high", "privacy_high"),
     ("high+med", "privacy_high_medium"),
+    ("low", "privacy_low"),
+    ("direct", "privacy_direct"),
+    ("quasi", "privacy_quasi"),
+    ("name tok", "name_token_removed"),
     ("keep", "keep_survival"),
     ("prec", "edit_precision"),
     ("concepts", "concept_recall"),
+    ("lab concepts", "labeled_concept_recall"),
     ("evidence", "evidence_retention"),
     ("ICD F1 orig", "icd_f1_original"),
     ("ICD F1 anon", "icd_f1_anonymized"),
@@ -61,6 +66,11 @@ def evaluate(
         res["privacy_removed"] = p["removed"].get("ALL")
         res["privacy_high"] = p["removed"].get("risk:high")
         res["privacy_high_medium"] = p["removed"].get("risk:high+medium")
+        res["privacy_low"] = p["removed"].get("risk:low")
+        res["privacy_direct"] = p["removed"].get("tier:direct")
+        res["privacy_quasi"] = p["removed"].get("tier:quasi")
+        res["name_token_removed"] = p["name_token_removed"]
+        res["labeled_concept_recall"] = p["labeled_concept_recall"].get("ALL")
         res["keep_survival"] = p["keep_survival"].get("ALL")
         res["edit_precision"] = p.get("edit_precision")
     cr = utility.concept_recall(original, anonymized)
