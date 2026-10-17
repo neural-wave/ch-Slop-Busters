@@ -2,7 +2,32 @@
 
 ## Unreleased
 
-### Added
+### Added (M2)
+- Merged silver labels (`eval/labels.py`, `scripts/labels/merge.py`): union of the upstream and Ketai
+  eval labels with overlap-based agreement, conflict listing and adjudication.
+- Splits tune / validation / test in `configs/splits.json`; scoring uses `labels/merged/<split>/`.
+- `docs/evaluation.md` (labels, splits, metrics, gate).
+- Release guard `scripts/check_no_patient_text.py` with a reviewed allowlist.
+
+### Fixed (M2)
+- Ignore rules anchored to the project root; lexicons, label scripts and data tests are now tracked.
+- Hard-case expectations that quote encounter text moved to the git-ignored `labels/` folder; examples
+  from the challenge data in comments, docs and tests replaced with invented ones.
+
+### Added (M1)
+- Baseline pipeline ported from Alind+Davide's `neural_wave` (shield, rules, quasi-identifiers, formats,
+  identity graph, policy, verification, encoders) into `text/`, `shield/`, `detect/`, `link/`, `policy/`,
+  `verify/`; output byte-identical to upstream in rules mode.
+- `anonymize` with explicit `rules` / `full` modes, fail-closed checks and the output contract;
+  `evaluate`, `run`, `sweep`, `attack`, `robustness`, `show` commands.
+- Evaluation modules (privacy, utility, ICD proxies, attacks, robustness, efficiency), label scripts,
+  labeling guidelines, lexicon builder; 185 upstream tests ported (data tests skip without `data/`).
+- Container smoke test that anonymizes the synthetic fixture.
+
+### Fixed (M1)
+- Encoders load from the pinned `models/` folder instead of the Hugging Face cache.
+
+### Added (M0)
 - Project scaffold: package `unified_harness`, `pyproject.toml` with locked dependencies, Python 3.12.
 - Output contract: strict JSONL reading, input and output validation, dated output names
   (`anonymized-<YYYY-MM-DD>-unified-harness.*`), atomic publishing that refuses contract violations and

@@ -4,8 +4,9 @@ Offline, ICD-aware anonymization of patient-doctor encounters, with an evaluatio
 measure privacy and clinical utility honestly. It merges two earlier team solutions: the shield-first
 rule pipeline by Alind Xhyra and Davide Molinelli and the LLM extraction harness by Ketai.
 
-> **Status: milestone M0 (scaffold).** The anonymization pipeline arrives in M1. See [PLAN.md](PLAN.md)
-> for the design and milestones and [STATUS.md](STATUS.md) for progress.
+> **Status: milestone M1 (baseline ported).** The pipeline is the shield-first baseline; the privacy
+> features of the plan come next. See [PLAN.md](PLAN.md) for the design and milestones and
+> [STATUS.md](STATUS.md) for progress and measured results.
 
 ## What it does
 
@@ -25,13 +26,34 @@ uv run --extra download python scripts/download_models.py    # pinned weights in
 ollama pull qwen3.5:2b-q4_K_M             # local LLM used by full mode
 ```
 
-## Usage (available now)
+## Usage
+
+Put the challenge files in `data/` (git-ignored), then:
 
 ```bash
-uv run unified-harness doctor --mode full       # checks extras, pinned weights and the Ollama model
+uv run unified-harness doctor --mode full                     # extras, pinned weights, Ollama model
+uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl            # full mode
+uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl --mode rules
 uv run unified-harness validate --original data/eval_patient_doctor_encounters.jsonl \
     --anonymized outputs/<date>/anonymized-<date>-unified-harness.jsonl
 ```
+
+Modes: `rules` uses no ML and no GPU; `full` adds the deid_roberta and GLiNER-PII encoders and the local
+Qwen 3.5 2B (Q4) model through Ollama. If anything `full` needs is missing, the run stops with an error;
+it never falls back to `rules`. Presets: `conservative`, `balanced` (default), `aggressive`.
+`--no-codes` runs without reading `icd10_codes`.
+
+### Evaluation harness
+
+```bash
+uv run --extra eval unified-harness run --split dev --mode rules --preset balanced    # one results row
+uv run --extra eval unified-harness sweep --split dev --mode full                      # presets x codes
+uv run unified-harness show --id D2N071 --mode rules                                  # debug view (prints text)
+```
+
+Rows are appended to `outputs/eval/results.md`. Silver labels live in `labels/` (git-ignored); see
+[docs/labeling_guidelines.md](docs/labeling_guidelines.md). The `dev` split ids are in
+[configs/splits.json](configs/splits.json).
 
 ## Output
 

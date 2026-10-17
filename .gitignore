@@ -1,10 +1,15 @@
 # Patient data, silver labels, generated outputs and model weights never go into Git.
-data/
-labels/
-outputs/
-models/
+# Anchored to the project root, so src/unified_harness/data/ (public lexicons), scripts/labels/ and
+# tests/data/ (tests that read local data) are tracked.
+/data/
+/labels/
+/outputs/
+/models/
 *.jsonl
 !tests/fixtures/*.jsonl
+# When this project sits inside another repository whose .gitignore ignores data/ anywhere:
+!src/unified_harness/data/
+!tests/data/
 
 # Python and tooling
 .venv/

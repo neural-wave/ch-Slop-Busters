@@ -51,3 +51,11 @@ target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+# Ported detector, lexicon and data-builder modules hold long regular expressions and word lists;
+# breaking them across lines would make the patterns harder to review.
+"src/unified_harness/detect/*.py" = ["E501"]
+"src/unified_harness/shield/*.py" = ["E501"]
+"src/unified_harness/lexicons.py" = ["E501"]
+"src/unified_harness/eval/robustness.py" = ["E501"]

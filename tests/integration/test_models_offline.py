@@ -51,3 +51,16 @@ def test_gliner_pii_loads_offline(offline):
     model = GLiNER.from_pretrained(str(path), map_location="cpu", local_files_only=True)
     spans = model.predict_entities("Marta Lindqvist works as a mail carrier in Oakridge.", ["person", "location"])
     assert any(s["label"] == "person" for s in spans)
+
+
+@pytest.mark.skipif(
+    not (_ready("deid_roberta") and _ready("gliner_pii") and importlib.util.find_spec("gliner")),
+    reason="encoder weights or [ml] extra missing",
+)
+def test_pipeline_loaders_use_the_pinned_local_models(offline):
+    from unified_harness.config import make_config
+    from unified_harness.detect.encoders import load
+
+    cfg = make_config("balanced", detectors=("rules", "deid", "gliner"), device="cpu")
+    for name in ("deid", "gliner"):
+        assert load(name, cfg) is not None

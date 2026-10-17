@@ -51,6 +51,17 @@ def read_jsonl(path: str | Path) -> list[dict]:
     return records
 
 
+def write_jsonl(path: str | Path, records: Iterable[dict]) -> int:
+    """Write records in the input files' style (development files; deliverables go through publish_run)."""
+    Path(path).parent.mkdir(parents=True, exist_ok=True)
+    n = 0
+    with open(path, "w", encoding="utf-8") as fh:
+        for r in records:
+            fh.write(dumps_record(r) + "\n")
+            n += 1
+    return n
+
+
 def validate_input(records: Sequence[dict]) -> list[str]:
     """Schema problems of challenge records (empty list when valid)."""
     errors: list[str] = []

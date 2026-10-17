@@ -35,6 +35,7 @@ RUN useradd --create-home --uid 10001 --shell /usr/sbin/nologin app \
     && chown app:app /outputs
 COPY --from=builder-rules /app/.venv /app/.venv
 ENV PATH=/app/.venv/bin:$PATH \
+    UNIFIED_HARNESS_HOME=/ \
     UNIFIED_HARNESS_MODELS=/models \
     HF_HUB_OFFLINE=1 \
     TRANSFORMERS_OFFLINE=1

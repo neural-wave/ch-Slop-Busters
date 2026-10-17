@@ -33,3 +33,9 @@ jobs:
           docker run --rm --network none unified-harness:rules doctor --mode rules
           docker run --rm --network none -v "$PWD/tests/fixtures:/data:ro" unified-harness:rules \
             validate --original /data/encounters.jsonl --anonymized /data/encounters.jsonl
+          mkdir -p out && chmod 777 out
+          docker run --rm --network none -v "$PWD/tests/fixtures:/data:ro" -v "$PWD/out:/outputs" unified-harness:rules \
+            anonymize --mode rules --input /data/encounters.jsonl --out-root /outputs --date 2026-01-01
+          docker run --rm --network none -v "$PWD/tests/fixtures:/data:ro" -v "$PWD/out:/outputs" unified-harness:rules \
+            validate --original /data/encounters.jsonl \
+            --anonymized /outputs/2026-01-01/anonymized-2026-01-01-unified-harness.jsonl
