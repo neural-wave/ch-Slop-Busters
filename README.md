@@ -1,9 +1,9 @@
 # ch-Slop-Busters: anonymization of patient data
 
-Neural Wave hackathon, challenge “Anonymization of patient data” (brief in [`task/`](task/)).
+Neural Wave hackathon, challenge “Anonymization of patient data”.
 
 This repository holds **unified-harness**, an offline, diagnosis-aware anonymizer for patient–doctor
-encounters, together with its evaluation harness and the team's data-preparation tools. The anonymizer
+encounters, together with its evaluation harness. The anonymizer
 removes or generalizes what identifies a person in the `dialogue` and `note` of each encounter and keeps
 what a clinical coder needs for the ICD-10 codes. It runs on a laptop: rules plus one small local
 language model through Ollama, about 1.6 GB of GPU memory, no cloud service.
@@ -23,7 +23,6 @@ language model through Ollama, about 1.6 GB of GPU memory, no cloud service.
 - [Evaluating a run](#evaluating-a-run)
 - [Docker](#docker)
 - [How it works](#how-it-works)
-- [Data preparation (Kaggle datasets)](#data-preparation-kaggle-datasets)
 - [Data and privacy rules](#data-and-privacy-rules)
 - [Development](#development)
 - [Troubleshooting](#troubleshooting)
@@ -49,10 +48,8 @@ On the validation split, with the same labels and scorer, the two earlier team h
 
 | Path | Contents |
 |---|---|
-| `task/` | The challenge brief (PDF) |
 | `data/patient_doctor_encounters.jsonl` | 140 training encounters (tracked) |
 | `data/eval_patient_doctor_encounters.jsonl` | 67 evaluation encounters (tracked) |
-| `data/kaggle/`, `data/converted/` | External datasets and their converted copies; not in git, see [Data preparation](#data-preparation-kaggle-datasets) |
 | `src/unified_harness/` | The anonymizer and the evaluation code (Python package, CLI `unified-harness`) |
 | `src/unified_harness/models.toml` | Pinned models: the Ollama detector models (by digest) and, for `full` mode, the encoder weights |
 | `src/unified_harness/data/` | Public lexicons (ICD-10-CM, drugs, names, places, word frequencies), compressed |
@@ -60,9 +57,7 @@ On the validation split, with the same labels and scorer, the two earlier team h
 | `docs/` | `solution.html` (the solution page), `evaluation.md`, `error_analysis.md`, `labeling_guidelines.md`, `docker.md` |
 | `configs/` | `splits.json` (split ids) and the release-guard allowlist |
 | `scripts/` | Model download, solution-page builder, release guard, scorer cross-check, error analysis, label tools (`labels/`) |
-| `scripts/convert/`, `scripts/download_kaggle.sh` | The team's dataset converters and Kaggle downloader ([`DATA_PREP.md`](DATA_PREP.md)) |
 | `Dockerfile`, `compose.yaml`, `compose.gpu.yaml` | Container images and the offline Compose setup |
-| `AGENTS.md` | Repository rules and Kaggle setup |
 | Local only (git-ignored) | `labels/` (silver labels), `outputs/` (results, LLM cache), `models/` (encoder weights), `data/robustness/` (held-out sets) |
 
 ## Requirements
@@ -95,8 +90,7 @@ uv run unified-harness anonymize --input <file.jsonl> [options]
 ```
 
 The input is JSONL with one encounter per line: `encounter_id`, `dataset`, `dialogue`, `note`,
-`icd10_codes` (a list of `{code, description}`). Any file in this schema works, including the converted
-datasets in `data/converted/<name>/encounters.jsonl`.
+`icd10_codes` (a list of `{code, description}`). Any file in this schema works.
 
 | Option | Default | Meaning |
 |---|---|---|
@@ -189,8 +183,8 @@ uv run unified-harness show --id <encounter_id> --mode rules    # one encounter 
 ```
 
 Splits for `--split`: `tune` (140 train encounters), `validation` (the 67 eval encounters), `test`
-(24 held-out documents in `data/robustness/`). Converted datasets can be scored too: export their gold
-with `scripts/convert/export_gold.py` and pass `--gold data/converted/<name>/gold`.
+(24 held-out documents in `data/robustness/`). Any other set can be scored with `--gold <folder>`, one
+`<encounter_id>.json` per encounter in the label format of [`docs/labeling_guidelines.md`](docs/labeling_guidelines.md).
 
 ## Docker
 
@@ -226,19 +220,10 @@ date in the output names is UTC. More, including the GPU override and the `full`
 The design merges the two earlier team harnesses: the shield-first rules, identity graph and leak repair
 of Alind and Davide, and the LLM extraction, age generalization and replay cache of Ketai.
 
-## Data preparation (Kaggle datasets)
-
-The team's converters turn external datasets into the challenge schema plus separate gold labels, so the
-anonymizer and the scorer run on them unchanged.
-
-- Kaggle setup and download: [`AGENTS.md`](AGENTS.md) (`scripts/download_kaggle.sh`, about 2.7 GB).
-- Conversion, formats and which dataset serves which evaluation: [`DATA_PREP.md`](DATA_PREP.md) and
-  [`scripts/convert/README.md`](scripts/convert/README.md).
-
 ## Data and privacy rules
 
-- Never commit `labels/`, `outputs/`, `models/`, `data/robustness/` or anything under `data/kaggle/` except
-  `DATASETS.md`; all are git-ignored. The challenge files in `data/` are tracked on purpose.
+- Never commit `labels/`, `outputs/`, `models/` or `data/robustness/`; all are git-ignored. The two
+  challenge files in `data/` are tracked on purpose.
 - Docker images contain no data, labels, outputs or weights; they are mounted at run time.
 - The decisions file never contains original text (`--explain-text` is a debug option that does).
 - Before publishing, run the release guard, which searches every tracked file for labeled identifiers:
@@ -254,7 +239,6 @@ uv run pytest -q
 uv run python scripts/build_solution_page.py   # rebuild docs/solution.html from outputs/eval/
 ```
 
-Ruff skips `scripts/convert/`, which keeps its own style.
 
 ## Troubleshooting
 
@@ -280,6 +264,6 @@ Ruff skips `scripts/convert/`, which keeps its own style.
 
 Built on the work of Alind Xhyra and Davide Molinelli (shield-first pipeline, gold-label guidelines,
 attacks and robustness sets) and Ketai (zero-shot LLM extraction, age and date generalization, entity
-replay), and on the team's data-preparation tools.
+replay).
 
 Licensed under the Apache License 2.0; see [`LICENSE`](LICENSE).
