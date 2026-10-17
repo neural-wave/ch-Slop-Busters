@@ -1,6 +1,7 @@
 """External ICD-10 judge hook (milestone checkpoints only; the local proxy covers every other run).
 
-The judge is a frozen, blinded coder outside the pipeline, for example an LLM coder run by thedevelopment agent. Two steps:
+The judge is a frozen, blinded coder outside the pipeline, for example a separate LLM run by the
+development team. Two steps:
 
     export  write every distinct note text once, shuffled, under surrogate case ids, in batches. No
             encounter ids, gold codes or run names are written to the batches.
