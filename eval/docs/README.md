@@ -150,6 +150,10 @@ contradictions, regex candidates no item covers, single votes) and that the orac
 
 ## Metrics
 
+Summary below; **[METRICS.md](METRICS.md) has one row per reported number** (privacy levels, ICD sub-metrics, attacks,
+efficiency, bonus metrics, Pareto), how each is computed, its key in the score files, and which organizer criterion
+it answers. The drift metrics are in [CORPUS-DRIFT.md](CORPUS-DRIFT.md).
+
 | Metric | Definition |
 |---|---|
 | valid | Same records, ids, order and keys, and `icd10_codes` byte-identical (hard constraint). One extra key is allowed: `explanations`, which must be a list |
