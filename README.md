@@ -12,22 +12,6 @@ language model through Ollama, about 2.8 GB of GPU memory on an NVIDIA card (mea
 > [`docs/solution.html`](docs/solution.html) (open it in a browser). Labels, splits and metrics are in
 > [`docs/evaluation.md`](docs/evaluation.md).
 
-## Contents
-
-- [Results at a glance](#results-at-a-glance)
-- [Repository layout](#repository-layout)
-- [Requirements](#requirements)
-- [Quickstart](#quickstart)
-- [Running the anonymizer](#running-the-anonymizer)
-- [Output files](#output-files)
-- [Evaluating a run](#evaluating-a-run)
-- [Docker](#docker)
-- [How it works](#how-it-works)
-- [Data and privacy rules](#data-and-privacy-rules)
-- [Development](#development)
-- [Troubleshooting](#troubleshooting)
-- [Limitations](#limitations)
-- [Credits and license](#credits-and-license)
 
 ## Results at a glance
 
@@ -52,22 +36,6 @@ The 4 GB guard uses `nvidia-smi` whenever it is available, so on NVIDIA it check
 On the validation split, with the same labels and scorer, the two earlier team harnesses reach 77.1%
 (Ketai) and 81.5% (Alind and Davide) of PII removed, and keep 79.6% and 99.4% of keep traps. The
 `icd10_codes` and every field other than `dialogue` and `note` are byte-identical in every output.
-
-## Repository layout
-
-| Path | Contents |
-|---|---|
-| `data/patient_doctor_encounters.jsonl` | 140 training encounters (tracked) |
-| `data/eval_patient_doctor_encounters.jsonl` | 67 evaluation encounters (tracked) |
-| `src/unified_harness/` | The anonymizer and the evaluation code (Python package, CLI `unified-harness`) |
-| `src/unified_harness/models.toml` | Pinned models: the Ollama detector models (by digest) and, for `full` mode, the encoder weights |
-| `src/unified_harness/data/` | Public lexicons (ICD-10-CM, drugs, names, places, word frequencies), compressed |
-| `tests/` | Unit and integration tests on synthetic fixtures; data tests that run when `data/` and `labels/` exist |
-| `docs/` | `solution.html` (the solution page), `evaluation.md`, `error_analysis.md`, `labeling_guidelines.md`, `docker.md` |
-| `configs/` | `splits.json` (split ids) and the release-guard allowlist |
-| `scripts/` | Model download, solution-page builder, release guard, scorer cross-check, error analysis, label tools (`labels/`) |
-| `Dockerfile`, `compose.yaml`, `compose.gpu.yaml` | Container images and the offline Compose setup |
-| Local only (git-ignored) | `labels/` (silver labels), `outputs/` (results, LLM cache), `models/` (encoder weights), `data/robustness/` (held-out sets) |
 
 ## Requirements
 
@@ -167,8 +135,6 @@ The input is JSONL with one encounter per line: `encounter_id`, `dataset`, `dial
 | Model | Download | Peak GPU memory (CUDA) | Fits 4 GB |
 |---|---|---|---|
 | `qwen3.5:2b-q4_K_M` (default) | 1.9 GB | 2.82–2.86 GB | yes |
-| `llama3.2:3b` | 2.0 GB | 3.10 GB | yes |
-| `gemma3:4b` | 3.4 GB | 4.27–4.30 GB | **no**: the run stops |
 
 Other small candidates in the Ollama library, not measured yet: `granite4:3b` (2.1 GB download),
 `phi4-mini` (2.5 GB), `ministral-3:3b` (3.0 GB), `qwen3.5:4b` (3.3 GB). On CUDA a model needs roughly
@@ -327,6 +293,23 @@ uv run python scripts/build_solution_page.py   # rebuild docs/solution.html from
 - Some date forms are not targeted yet; they are the main high-risk gap on validation.
 - A relative or clinician sometimes gets the `[PATIENT]` tag; the name itself is removed.
 - GPU memory was measured on a large NVIDIA card (2.8 GB used) and on Apple unified memory; a card with exactly 4 GB was not tested.
+
+
+## Repository layout
+
+| Path | Contents |
+|---|---|
+| `data/patient_doctor_encounters.jsonl` | 140 training encounters (tracked) |
+| `data/eval_patient_doctor_encounters.jsonl` | 67 evaluation encounters (tracked) |
+| `src/unified_harness/` | The anonymizer and the evaluation code (Python package, CLI `unified-harness`) |
+| `src/unified_harness/models.toml` | Pinned models: the Ollama detector models (by digest) and, for `full` mode, the encoder weights |
+| `src/unified_harness/data/` | Public lexicons (ICD-10-CM, drugs, names, places, word frequencies), compressed |
+| `tests/` | Unit and integration tests on synthetic fixtures; data tests that run when `data/` and `labels/` exist |
+| `docs/` | `solution.html` (the solution page), `evaluation.md`, `error_analysis.md`, `labeling_guidelines.md`, `docker.md` |
+| `configs/` | `splits.json` (split ids) and the release-guard allowlist |
+| `scripts/` | Model download, solution-page builder, release guard, scorer cross-check, error analysis, label tools (`labels/`) |
+| `Dockerfile`, `compose.yaml`, `compose.gpu.yaml` | Container images and the offline Compose setup |
+| Local only (git-ignored) | `labels/` (silver labels), `outputs/` (results, LLM cache), `models/` (encoder weights), `data/robustness/` (held-out sets) |
 
 ## Credits and license
 
