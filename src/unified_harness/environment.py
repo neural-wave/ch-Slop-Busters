@@ -79,6 +79,65 @@ def ollama_models(url: str, timeout: float = 5.0) -> dict[str, str]:
     return {m.get("name", ""): m.get("digest", "") for m in tags.get("models", [])}
 
 
+def default_detector_model() -> str:
+    return load_manifest()["ollama"]["detector"]["name"]
+
+
+def pull_model(name: str, url: str, say=print, timeout: float = 3600.0) -> None:
+    """Download `name` through the Ollama server at `url`, reporting progress. Only model weights travel:
+    no record text is sent. Raises RuntimeError with a readable message when the pull fails."""
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    req = urllib.request.Request(
+        f"{url}/api/pull",
+        data=json.dumps({"model": name, "stream": True}).encode(),
+        headers={"Content-Type": "application/json"},
+    )
+    last_note, last_pct = "", -100.0
+    try:
+        with opener.open(req, timeout=timeout) as resp:
+            for line in resp:
+                if not line.strip():
+                    continue
+                msg = json.loads(line)
+                if msg.get("error"):
+                    raise RuntimeError(msg["error"])
+                status, total, done = msg.get("status", ""), msg.get("total"), msg.get("completed")
+                if total and done is not None:
+                    pct = 100 * done / total
+                    if pct - last_pct < 5 and done < total:
+                        continue  # one progress line per 5%
+                    last_pct = pct
+                    note = f"downloading {name}: {pct:.0f}% of {total / 1e9:.1f} GB"
+                else:
+                    note = f"{name}: {status}"
+                if note != last_note:
+                    say(note)
+                    last_note = note
+    except OSError as exc:
+        raise RuntimeError(f"could not reach Ollama at {url} to download {name}: {exc}") from exc
+    except RuntimeError as exc:
+        raise RuntimeError(
+            f"Ollama could not download {name}: {exc}. If Ollama has no internet access (for example the "
+            "offline Docker network), download the model first: locally with `ollama pull`, in Docker with "
+            "DETECTOR_MODEL=<model> so the ollama-pull service fetches it"
+        ) from exc
+
+
+def ensure_model(name: str, url: str, say=print) -> bool:
+    """Make sure `name` is available in Ollama, downloading it when missing. True when a download happened.
+    Unreachable Ollama is left to `doctor`, which reports it."""
+    try:
+        available = ollama_models(url)
+    except OSError:
+        return False
+    if name in available:
+        return False
+    say(f"{name} is not downloaded yet: downloading it through Ollama (one time only)...")
+    pull_model(name, url, say)
+    say(f"{name} downloaded")
+    return True
+
+
 def check_ollama_model(entry: dict, available: dict[str, str] | None, url: str) -> Check:
     name = entry["name"]
     if available is None:

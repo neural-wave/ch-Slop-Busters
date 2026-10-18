@@ -63,16 +63,15 @@ On the validation split, with the same labels and scorer, the two earlier team h
 ## Requirements
 
 - **Python 3.12+** and [**uv**](https://docs.astral.sh/uv/).
-- [**Ollama**](https://ollama.com) running locally with the detector model:
-  `ollama pull qwen3.5:2b-q4_K_M` (1.9 GB download, about 1.6 GB of VRAM in use).
-- Optional: `bge-m3` in Ollama (`ollama pull bge-m3`) for the ICD utility proxy in evaluations.
+- [**Ollama**](https://ollama.com) installed and running. The harness downloads the models it needs
+  through Ollama on first use, with progress shown: the detector `qwen3.5:2b-q4_K_M` (1.9 GB, about
+  1.6 GB of VRAM in use) and, for evaluations, `bge-m3` (1.2 GB). `--no-pull` turns this off.
 - Optional: **Docker Desktop** for the container run.
 - No GPU is required; Ollama uses the GPU when one is available, within the 4 GB budget.
 
 ## Quickstart
 
 ```bash
-ollama pull qwen3.5:2b-q4_K_M
 uv sync
 uv run unified-harness doctor
 uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl
@@ -80,8 +79,9 @@ uv run unified-harness validate --original data/eval_patient_doctor_encounters.j
     --anonymized outputs/<date>/anonymized-<date>-unified-harness.jsonl
 ```
 
-`doctor` must end with `mode llm: ready`. The anonymized file appears in `outputs/<date>/`; `validate`
-must report `0 contract violation(s)`.
+The first `anonymize` downloads the detector model if it is missing (shown with progress), so `doctor`
+may report it as not pulled before that. The anonymized file appears in `outputs/<date>/`; `validate` must
+report `0 contract violation(s)`.
 
 ## Running the anonymizer
 
@@ -99,6 +99,7 @@ The input is JSONL with one encounter per line: `encounter_id`, `dataset`, `dial
 | `--features` | from the preset | Extra feature flags, comma list: `F0`, `F2`, `F4` (see below) |
 | `--detector-model` | `qwen3.5:2b-q4_K_M` | Another Ollama model for the detector; pinned by digest in `models.toml`, or use `--allow-unpinned` |
 | `--allow-unpinned` | off | Experiments only: accept a detector model that is not pinned (recorded as unpinned in the summary) |
+| `--no-pull` | off | Never download a missing model; stop with an error instead |
 | `--quiet` | off | No progress messages (by default every step and every encounter is reported on stderr) |
 | `--llm-log` | none | Append one JSON line per LLM call to this file (no record text) |
 | `--no-codes` | off | Do not read `icd10_codes` at inference (bonus task) |
@@ -130,11 +131,9 @@ The input is JSONL with one encounter per line: `encounter_id`, `dataset`, `dial
 `qwen3.5:4b` (3.3 GB), `gemma3:4b` (3.4 GB download, 2.2 GB measured VRAM). Larger models such as
 `gemma4:latest` exceed the budget.
 
-For a quick experiment, pass `--allow-unpinned`:
+For a quick experiment, pass `--allow-unpinned`; the model is downloaded on first use:
 
 ```bash
-ollama pull gemma3:4b
-uv run unified-harness doctor --detector-model gemma3:4b --allow-unpinned
 uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl \
     --detector-model gemma3:4b --allow-unpinned \
     --out-root outputs/gemma3 --llm-log outputs/gemma3/calls.jsonl
@@ -160,8 +159,8 @@ evaluating each output with `evaluate` and comparing the rows, or with `gate`.
 check, reading the input, loading the model into Ollama (the first load can take up to a minute), one line
 per encounter (time, decisions, LLM calls and cache hits, time left), the output checks and publishing.
 `evaluate` reports each scoring stage, including the bge-m3 embeddings. `--quiet` silences these messages.
-The harness never downloads a model: a missing model stops the run at the first step and names the
-`ollama pull` command to run. `--llm-log <file>` appends one JSON line per LLM call: time, encounter id, field, segment offsets,
+A missing model is downloaded through Ollama first, with progress; with
+`--no-pull` the run stops instead and names the `ollama pull` command. `--llm-log <file>` appends one JSON line per LLM call: time, encounter id, field, segment offsets,
 length, seconds, whether it came from the cache, and how many names, places, organizations and jobs the
 model returned. It contains no text from the records. Follow it live with `tail -f <file>`.
 
@@ -232,11 +231,14 @@ Splits for `--split`: `tune` (140 train encounters), `validation` (the 67 eval e
 
 ## Docker
 
-The harness image is small (147 MB, no PyTorch); Ollama runs in its own container. Both sit on an
-internal network without internet access, and the host's Ollama models are mounted read-only.
+The harness image is small (147 MB, no PyTorch); Ollama runs in its own container. The containers that read
+the data sit on an internal network without internet access. A one-shot `ollama-pull` service, the only one
+with internet access, downloads the model weights into a Docker volume; it runs automatically before Ollama
+starts and skips models that are already there.
 
 ```bash
 docker compose build harness
+docker compose up ollama-pull          # first time: downloads the model with progress (later: a few seconds)
 docker compose run --rm harness doctor
 docker compose run --rm -e TZ=Europe/Zurich harness anonymize \
     --input /data/eval_patient_doctor_encounters.jsonl --out-root /outputs/docker
@@ -245,9 +247,13 @@ docker compose run --rm harness validate --original /data/eval_patient_doctor_en
 docker compose down
 ```
 
+Another model: set `DETECTOR_MODEL` for every command, for example
+`DETECTOR_MODEL=llama3.2:3b docker compose up ollama-pull`, then
+`DETECTOR_MODEL=llama3.2:3b docker compose run --rm harness anonymize --allow-unpinned ...`.
+
 Inside the container `/data` is `./data` (read-only) and `/outputs` is `./outputs`. Pass `TZ`, or the
-date in the output names is UTC. More, including the GPU override and the `full` image:
-[`docs/docker.md`](docs/docker.md).
+date in the output names is UTC. `docker compose down -v` also deletes the downloaded models. More,
+including the GPU override and the `full` image: [`docs/docker.md`](docs/docker.md).
 
 ## How it works
 
@@ -289,11 +295,12 @@ uv run python scripts/build_solution_page.py   # rebuild docs/solution.html from
 | Symptom | Fix |
 |---|---|
 | `doctor`: `Ollama is not reachable` | Start Ollama (`ollama serve` or the app), or set `UNIFIED_HARNESS_OLLAMA_URL` |
-| `doctor`: `not pulled` | `ollama pull qwen3.5:2b-q4_K_M` |
+| `doctor`: `not pulled` | Run `anonymize` (it downloads the model), or `ollama pull <model>` |
+| Download fails in Docker | Run `docker compose up ollama-pull` (with `DETECTOR_MODEL` for another model) |
 | `doctor`: `not pinned in models.toml` | Pass `--allow-unpinned` for an experiment, or add the model and its digest under `[detector_models]` |
 | `uses ... MB VRAM > budget` | The model is too large for 4 GB; choose a smaller one from the list above |
 | `... already exists` | Use another `--out-root` or `--date`, or `--overwrite` |
-| ICD columns empty in `evaluate` | `ollama pull bge-m3`, or pass `--icd none` |
+| ICD columns empty in `evaluate` | The bge-m3 download failed (see the messages), or pass `--icd none` |
 | Privacy columns missing in `evaluate` | The `labels/` folder is missing |
 | A run on new text is slow | Expected: about 10–14 s per encounter for the LLM; reruns of the same text read `outputs/cache/` |
 

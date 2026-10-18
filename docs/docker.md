@@ -22,26 +22,30 @@ docker run --rm --network none -v "$PWD/data:/data:ro" -v "$PWD/outputs:/outputs
 
 ## Default (llm mode) with Compose
 
-Prerequisite on the host, once: `ollama pull qwen3.5:2b-q4_K_M`. Compose mounts the host's Ollama store
-read-only into the Ollama container (`OLLAMA_MODELS_DIR`, default `~/.ollama/models`), so the containers
-never download anything.
-
 ```bash
 docker compose build harness
+docker compose up ollama-pull      # downloads the detector model into the `ollama-models` volume
 docker compose run --rm harness doctor
 docker compose run --rm harness anonymize --input /data/eval_patient_doctor_encounters.jsonl
 ```
 
+Three services:
+
+| Service | Network | Role |
+|---|---|---|
+| `ollama-pull` | `fetch` (internet) | One-shot: starts Ollama, pulls `DETECTOR_MODEL` (default `qwen3.5:2b-q4_K_M`) into the volume, exits. Handles model weights only |
+| `ollama` | `offline` (internal) | Serves the model to the harness; starts after `ollama-pull` succeeds |
+| `harness` | `offline` (internal) | Reads `/data`, writes `/outputs`; cannot reach the internet |
+
+`docker compose run` starts the two Ollama services automatically, but it does not show the download
+progress of `ollama-pull`; `docker compose up ollama-pull` does, so run it once first. The volume keeps the
+models between runs; `docker compose down -v` removes them. Another model: prefix every command with
+`DETECTOR_MODEL=<model>` and pass `--allow-unpinned` to the harness when the model is not pinned in
+`models.toml`.
+
 Full mode (PyTorch encoders) uses the `full` image: build it with `docker build --target full -t
 unified-harness:full .`, download the encoder weights with `scripts/download_models.py`, set the harness
 service's image to `unified-harness:full`, mount `./models:/models:ro` and pass `--mode full`.
-
-Both services are on the `offline` network (`internal: true`): they reach each other but not the internet.
-The Ollama image is the version used for the measured runs (0.40.6), pinned by digest.
-
-GPU (Linux with the NVIDIA container toolkit) for the LLM:
-`docker compose -f compose.yaml -f compose.gpu.yaml run --rm harness ...`. Not tested here (no CUDA
-hardware); VRAM on a 4 GB card is unverified.
 
 The output folder and file names use the container's date, which is UTC unless you pass `TZ`
 (`docker compose run --rm -e TZ=Europe/Zurich harness ...`).
@@ -54,3 +58,4 @@ The output folder and file names use the container's date, which is UTC unless y
 | `doctor --mode full` in Compose | ready: weights at the pinned revisions, Qwen digest matches |
 | Full-mode anonymize in Compose (`privacy`, `F2`), synthetic fixture | published, contract valid |
 | HTTP request to the internet from the harness container | fails (no name resolution) |
+| Fresh volume: `ollama-pull` downloads the default model, `doctor` ready (digest matches the pin) | done |
