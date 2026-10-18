@@ -191,6 +191,7 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
         "peak_ram_mb": peak_rss_mb(),
         "peak_vram_mb": round(max(vram_peak, torch_vram_mb() + (llm_vram if llm_vram == llm_vram else 0.0)), 1),
         "vram_budget_mb": 4096,
+        "vram_source": (an._models["llm"].vram_source if "llm" in an._models else "torch"),
         "vram_events": an.vram_events,
         "detectors": an.detector_stats(),
         "device_placement": place(cfg.detectors, cfg.device) if len(cfg.detectors) > 1 else {},

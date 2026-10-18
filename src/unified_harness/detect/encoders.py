@@ -395,11 +395,15 @@ class OllamaLLM:
         self.log_path = cfg.llm_log
         self.encounter_id = ""  # set by the pipeline before each record, for the call log
         self._call("ok", 8)  # load once and check the VRAM budget
-        from ..eval.resources import ollama_vram_mb
+        from ..eval.resources import ollama_vram_mb, vram_source
 
         used = ollama_vram_mb(self.model)
+        self.vram_source = vram_source()
         if used > VRAM_BUDGET_MB:
-            raise RuntimeError(f"{self.model} uses {used} MB VRAM > budget {VRAM_BUDGET_MB} MB; lower llm_num_ctx")
+            raise RuntimeError(
+                f"{self.model} uses {used:,.0f} MB of VRAM (measured with {self.vram_source}), over the "
+                f"{VRAM_BUDGET_MB} MB budget: choose a smaller model (see the README) or lower llm_num_ctx"
+            )
         self.vram_mb = used
 
     def log_call(self, field: str, start: int, end: int, seconds: float, cached: bool, ans: dict) -> None:
