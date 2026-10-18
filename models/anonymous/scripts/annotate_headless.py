@@ -1,6 +1,6 @@
 """Resumable teacher/ground-truth annotation with headless, tool-scoped Claude Code runs.
 
-Survives SSH loss and VM reboots when run from the nw-annotate systemd service: every pass re-checks which
+Survives SSH loss and VM reboots when run under a process supervisor: every pass re-checks which
 encounters still lack a valid annotation file and only (re)annotates those.
 """
 import json
