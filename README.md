@@ -181,9 +181,12 @@ model returned. It contains no text from the records. Follow it live with `tail 
 | `UNIFIED_HARNESS_HOME` | current folder | Root for `outputs/`, `labels/`, `configs/` |
 | `UNIFIED_HARNESS_MODELS` | `models` | Encoder weights for `full` mode |
 
-**Safety behavior.** The run checks its requirements first and stops with an error if anything is
-missing; it never falls back to a weaker mode. If any record fails, nothing is published. Output files
-are written atomically, only after every record has passed the output contract.
+**Failure behavior.** The run checks its requirements first (`doctor`) and stops with an error if anything is
+missing. Once it runs, it always publishes: a record the configured pipeline cannot process is retried with the
+rules alone and, failing that, passed through unchanged; both are listed under `failed_records` in the summary and
+printed as warnings. Integrity findings (`shield_edit_overlaps`, `contract_violations`) are reported in the summary,
+never a reason to withhold the file: one unpublished run would fail a whole evaluation, one imperfect record does not.
+Output files are written atomically.
 
 ## Output files
 

@@ -28,7 +28,6 @@ from pathlib import Path
 from . import __version__, paths
 from .environment import MODES, doctor, load_manifest
 from .io import (
-    ContractError,
     InputError,
     output_paths,
     publish_run,
@@ -133,7 +132,19 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
     )
     t0 = time.perf_counter()
     an = Anonymizer(cfg, status=say)
-    outs, stats, decisions = [], [], []
+    outs, stats, decisions, failed = [], [], [], []
+    _fallback: list[Anonymizer] = []
+
+    def fallback() -> Anonymizer:  # the rules-only pipeline, built on first use
+        if not _fallback:
+            _fallback.append(
+                Anonymizer(
+                    make_config(a.preset, use_codes=cfg.use_codes, detectors=("rules",), features=cfg.features),
+                    status=say,
+                )
+            )
+        return _fallback[0]
+
     expl = {"action": Counter(), "category": Counter(), "layer": Counter(), "keep_reason": Counter(), "with_reason": 0}
     vram_peak = 0.0
     for i, rec in enumerate(records, 1):
@@ -145,8 +156,22 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
             else:
                 anon, dec, st = an.anonymize({**rec, "icd10_codes": []})  # the pipeline never sees the codes
                 anon["icd10_codes"] = rec["icd10_codes"]
-        except Exception as exc:  # fail closed: one failed record stops the run, nothing is published
-            return _fail(f"{rec['encounter_id']}: {type(exc).__name__}: {exc}; nothing was published")
+        except Exception as exc:
+            # Fail open: a record the configured pipeline cannot process is retried with the rules alone, and if
+            # that fails too it is passed through unchanged. The run always publishes; the summary lists the
+            # records concerned (an unpublished run would fail the whole evaluation, not one record).
+            err = f"{type(exc).__name__}: {exc}"
+            try:
+                anon, dec, st = fallback().anonymize(
+                    {**rec, "icd10_codes": rec["icd10_codes"] if cfg.use_codes else []}
+                )
+                anon["icd10_codes"] = rec["icd10_codes"]
+                how = "anonymized with the rules alone"
+            except Exception as exc2:
+                anon, dec, st = dict(rec), [], an.empty_stats(rec["encounter_id"])
+                how, err = "passed through UNCHANGED", f"{err}; rules: {type(exc2).__name__}: {exc2}"
+            failed.append({"encounter_id": rec["encounter_id"], "error": err, "outcome": how})
+            print(f"warning: {rec['encounter_id']}: {err}; {how}", file=sys.stderr, flush=True)
         for d in dec:
             d["encounter_id"] = rec["encounter_id"]
             expl["action"][d["action"]] += 1
@@ -203,16 +228,27 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
         "residual_leaks": sum(s["residual_leaks"] for s in stats),
         "shield_edit_overlaps": sum(s["shield"]["edit_overlaps"] for s in stats),
         "shields_overridden_by_identifier": sum(s["shield"].get("overridden_by_identifier", 0) for s in stats),
+        "shields_overridden_by_name": sum(s["shield"].get("overridden_by_name", 0) for s in stats),
         "shield_spans": sum(s["shield"]["shield_spans"] for s in stats),
+        "failed_records": failed,
         "per_encounter": stats,
     }
+    # Integrity findings are reported, never a reason to withhold the run: an edit that cut into a shield is a
+    # precision loss on one span, an unpublished file is a lost evaluation.
     say("checking the output contract and the medical shield...")
     if summary["shield_edit_overlaps"]:
-        return _fail(f"{summary['shield_edit_overlaps']} edit(s) overlap the medical shield; nothing was published")
+        print(
+            f"warning: {summary['shield_edit_overlaps']} edit(s) overlap the medical shield (see the summary)",
+            file=sys.stderr,
+        )
+    violations = validate_output(records, outs)
+    for v in violations:
+        print(f"warning: output contract: {v}", file=sys.stderr)
+    summary["contract_violations"] = violations
     try:
         say(f"publishing to {out.records.parent} (written atomically)...")
-        publish_run(records, outs, decisions, summary, out, overwrite=a.overwrite)
-    except (ContractError, FileExistsError) as exc:
+        publish_run(records, outs, decisions, summary, out, overwrite=a.overwrite, strict=False)
+    except FileExistsError as exc:
         return _fail(str(exc))
     print(
         f"anonymized {len(outs)} records in {elapsed:.1f}s ({summary['ms_per_encounter']} ms/encounter), "

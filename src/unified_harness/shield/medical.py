@@ -202,7 +202,9 @@ def code_evidence_terms(codes: list[dict]) -> dict[str, str]:
         code, desc = str(c.get("code") or ""), str(c.get("description") or "")
         texts = [desc]
         base = _base_code(code)
-        desc_low = desc.lower()
+        # A bracketed eponym qualifier (`Synovial cyst of popliteal space [Baker]`) is not description text: the
+        # eponym shield keeps `Baker's cyst` by its syntax, and the bare word must stay free to be a surname.
+        desc_low = re.sub(r"\[[^\]]*\]", " ", desc.lower())
         keys = {base}
         if code.upper().startswith(("V", "W", "X")):  # mechanism codes: category-level index words too
             keys.add(code.split(".")[0])

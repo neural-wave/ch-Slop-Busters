@@ -17,6 +17,7 @@ import re
 import time
 from dataclasses import asdict
 
+from . import lexicons
 from .config import AGGRESSIVE_EXTRA, Config
 from .detect import formats, quasi, rules
 from .io import TEXT_FIELDS
@@ -28,6 +29,8 @@ from .text.normalize import Doc
 from .verify.leaks import find_leaks, repair_spans, shield_integrity
 
 IDENTIFIER_OVERRIDES = ("ID", "PHONE", "ADDRESS", "DOB", "EMAIL", "URL", "DATE")  # may cut number/drug shields
+# What follows an eponym used as a medical term (`baker's cyst`, `bell's palsy`); same wording as the eponym shield.
+_MEDICAL_NEXT = re.compile(r"(?:'|’)?" + lexicons.EPONYM_NEXT.replace("(?:'s|s'|’s)?", "(?:'s|s'|’s|')?"))
 LOW_RISK_CATS = frozenset(AGGRESSIVE_EXTRA)  # categories that only the agreement rule may remove (F4)
 
 
@@ -112,6 +115,26 @@ class Anonymizer:
                     det.to_cpu()
                     self.vram_events.append(f"{name} moved to CPU: measured {total:.0f} MB > {VRAM_BUDGET_MB} MB")
 
+    @staticmethod
+    def empty_stats(eid: str) -> dict:
+        """The per-encounter stats of a record that was not anonymized (passed through after a failure)."""
+        shield = {
+            "shield_spans": 0,
+            "edit_overlaps": 0,
+            "missing_strings": 0,
+            "overridden_by_identifier": 0,
+            "overridden_by_name": 0,
+        }
+        return {
+            "encounter_id": eid,
+            "runtime_s": 0.0,
+            "n_edits": 0,
+            "n_entities": 0,
+            "entities": [],
+            "residual_leaks": 0,
+            "shield": shield,
+        }
+
     # -- main ---------------------------------------------------------------------------
     def anonymize(self, rec: dict) -> tuple[dict, list[dict], dict]:
         t0 = time.perf_counter()
@@ -148,7 +171,8 @@ class Anonymizer:
         decisions: list[dict] = []
         applied: list[Span] = []
         for rnd in range(cfg.repair_rounds + 1):
-            kept, active = self._filter(cands, shields, decisions if rnd == 0 else None, raw)
+            log = decisions if rnd == 0 else None
+            kept, active, name_overrides = self._filter(cands, shields, log, raw, ent_by_key)
             chosen = resolve_overlaps(active)
             edits: dict[str, list[tuple[int, int, str]]] = {f: [] for f in docs}
             applied = []
@@ -179,8 +203,12 @@ class Anonymizer:
                 for sp in applied
             )
         ]
+        # A code-evidence shield on a word that a linked person entity uses as a name (`Dr. Nathan Baker` with
+        # `Baker's cyst` coded) is overridden by the name edit (see _filter) and reported the same way.
+        overridden += [sh for sh in name_overrides if sh not in overridden]
         integrity = shield_integrity([sh for sh in shields if sh not in overridden], edits, raw, anon)
-        integrity["overridden_by_identifier"] = len(overridden)
+        integrity["overridden_by_identifier"] = len(overridden) - len(name_overrides)
+        integrity["overridden_by_name"] = len(name_overrides)
         for sp in applied:
             decisions.append(self._decision(eid, sp, sp.meta["action"], sp.meta["replacement"], None, raw))
 
@@ -199,20 +227,30 @@ class Anonymizer:
         return out, decisions, stats
 
     def _filter(
-        self, cands: list[Span], shields, decisions: list[dict] | None, raw: dict[str, str]
-    ) -> tuple[list[Span], list[Span]]:
-        """Split candidates into kept (shielded / preset) and active (to anonymize).
+        self, cands: list[Span], shields, decisions: list[dict] | None, raw: dict[str, str], ent_by_key=None
+    ) -> tuple[list[Span], list[Span], list]:
+        """Split candidates into kept (shielded / preset) and active (to anonymize); third value: the shields
+        that a name edit overrides.
 
         A candidate is kept verbatim only when a hard shield covers it entirely (or, for an age, covers its
         number). Partial overlaps never keep private text: a direct identifier with a clinical number inside
         stays active, and other candidates are split around the shielded words (`Kierland Golf Club` with
         `golf` shielded -> `Kierland` is still removed).
+
+        A name wins over a code-evidence shield when the name detector has more context than the shield
+        builder: the mention follows a title, or belongs to a person entity linked from a first and a last name
+        (`Nathan Baker` ... `Dr. Baker` with `Baker's cyst` among the codes). It never wins over an eponym shield,
+        nor when the mention itself is in medical syntax (`Baker's cyst`).
         """
-        kept, active = [], []
+        kept, active, overridden = [], [], []
         agree = self._agreement(cands, raw) if "F4" in self.cfg.features else None
+        names = [c for c in cands if c.cat in NAME_CATS and c.entity]
         for c in cands:
             overl = [s for s in shields if s.field == c.field and s.hard and s.start < c.end and c.start < s.end]
-            if overl and not (c.cat in NAME_CATS and c.source.startswith("rule:title")):
+            if overl and c.cat in NAME_CATS and self._name_wins(c, overl, raw, ent_by_key, names):
+                overridden += [s for s in overl if s not in overridden]
+                overl = []
+            if overl:
                 pieces = self._unshielded_pieces(c, overl, raw[c.field])
                 if pieces is None or not pieces:
                     kept.append(c)
@@ -250,7 +288,30 @@ class Anonymizer:
                     decisions.append(self._decision("", c, "KEEP", None, "F4: one signal only (agreement rule)", None))
                 continue
             active.append(c)
-        return kept, active
+        return kept, active, overridden
+
+    @staticmethod
+    def _name_wins(c: Span, overl, raw: dict[str, str], ent_by_key, names: list[Span]) -> bool:
+        if c.source.startswith("rule:title"):
+            return True  # the shield builders skip a word after a title themselves; a titled name is a name
+        if not all(s.kind == "code_evidence" for s in overl):
+            return False
+        if _MEDICAL_NEXT.match(raw[c.field][c.end : c.end + 40].lower()):
+            return False
+        ent = (ent_by_key or {}).get(c.entity) if c.entity else None
+        if ent is not None and len(ent.tokens) >= 2:
+            return True  # first and last name linked somewhere in the record
+        # or written side by side with another name (`Dr. Oliver Hodgkin`), the way the linker joins anchors
+        text = raw[c.field]
+        return any(
+            o.field == c.field
+            and o.entity != c.entity
+            and (
+                (0 < c.start - o.end <= 3 and not text[o.end : c.start].strip())
+                or (0 < o.start - c.end <= 3 and not text[c.end : o.start].strip())
+            )
+            for o in names
+        )
 
     @staticmethod
     def _agreement(cands: list[Span], raw: dict[str, str]):
