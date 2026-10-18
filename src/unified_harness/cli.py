@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import subprocess
 import sys
@@ -51,6 +52,16 @@ def _sha256(path: str | Path) -> str:
     return h.hexdigest()
 
 
+def _status_printer(quiet: bool):
+    """Progress messages for the user on stderr (stdout stays for results); silent with --quiet."""
+
+    def say(message: str) -> None:
+        if not quiet:
+            print(f"[{time.strftime('%H:%M:%S')}] {message}", file=sys.stderr, flush=True)
+
+    return say
+
+
 def _fail(message: str) -> int:
     print(f"error: {message}", file=sys.stderr)
     return 1
@@ -62,9 +73,21 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
     from .eval.resources import ollama_vram_mb, peak_rss_mb, torch_vram_mb
     from .pipeline import Anonymizer
 
+    say = _status_printer(a.quiet)
     detectors = _detectors(a.detectors) or MODE_DETECTORS[a.mode]
+    if "llm" in detectors and not a.no_pull:
+        from .environment import default_detector_model, ensure_model, ollama_url
+
+        try:
+            ensure_model(a.detector_model or default_detector_model(), ollama_url(), say)
+        except RuntimeError as exc:
+            return _fail(f"{exc}; nothing was anonymized")
     if a.mode != "rules" and not a.detectors:
+        say(f"checking the environment for mode {a.mode} (Ollama, detector model, installed packages)...")
         report = doctor(a.mode, detector_model=a.detector_model, allow_unpinned=a.allow_unpinned)
+        for c in report.checks:
+            if c.ok and c.name != "python":
+                say(f"  ok  {c.name}: {c.detail}")
         if not report.ok:
             for c in report.checks:
                 if not c.ok:
@@ -73,6 +96,7 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
                 f"{a.mode} mode is not ready (see `unified-harness doctor --mode {a.mode}`); nothing was anonymized"
             )
 
+    say(f"reading {a.input}...")
     try:
         records = read_jsonl(a.input)
     except InputError as exc:
@@ -101,15 +125,23 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
         llm_model=a.detector_model,
         llm_log=a.llm_log,
     )
+    say(
+        f"anonymizing {len(records)} encounters: mode {a.mode}, detectors {'+'.join(cfg.detectors)}, "
+        f"preset {cfg.preset}, features {','.join(sorted(cfg.features)) or 'none'}"
+        + (f", LLM {cfg.llm_model}" if "llm" in cfg.detectors else "")
+    )
     t0 = time.perf_counter()
-    an = Anonymizer(cfg)
+    an = Anonymizer(cfg, status=say)
     outs, stats, decisions, failed = [], [], [], []
     _fallback: list[Anonymizer] = []
 
     def fallback() -> Anonymizer:  # the rules-only pipeline, built on first use
         if not _fallback:
             _fallback.append(
-                Anonymizer(make_config(a.preset, use_codes=cfg.use_codes, detectors=("rules",), features=cfg.features))
+                Anonymizer(
+                    make_config(a.preset, use_codes=cfg.use_codes, detectors=("rules",), features=cfg.features),
+                    status=say,
+                )
             )
         return _fallback[0]
 
@@ -149,15 +181,16 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
             if d["action"] == "KEEP":
                 expl["keep_reason"][d["policy_reason"].split(" (")[0]] += 1
         decisions += dec
-        if a.progress:
+        if not a.quiet:
             llm = an._models.get("llm")
             calls = getattr(llm, "calls", 0) - llm_before[0]
             hits = getattr(llm, "hits", 0) - llm_before[1]
-            print(
+            eta = (time.perf_counter() - t0) / i * (len(records) - i)
+            say(
                 f"[{i}/{len(records)}] {rec['encounter_id']}: {time.perf_counter() - t_rec:.1f} s, "
-                f"{len(dec)} decisions, LLM {calls} calls + {hits} cached",
-                file=sys.stderr,
-                flush=True,
+                f"{len(dec)} decisions"
+                + (f", LLM {calls} calls + {hits} cached" if llm is not None else "")
+                + (f", about {eta / 60:.1f} min left" if i < len(records) else "")
             )
         outs.append(anon)
         stats.append(st)
@@ -183,6 +216,7 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
         "peak_ram_mb": peak_rss_mb(),
         "peak_vram_mb": round(max(vram_peak, torch_vram_mb() + (llm_vram if llm_vram == llm_vram else 0.0)), 1),
         "vram_budget_mb": 4096,
+        "vram_source": (an._models["llm"].vram_source if "llm" in an._models else "torch"),
         "vram_events": an.vram_events,
         "detectors": an.detector_stats(),
         "device_placement": place(cfg.detectors, cfg.device) if len(cfg.detectors) > 1 else {},
@@ -201,6 +235,7 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
     }
     # Integrity findings are reported, never a reason to withhold the run: an edit that cut into a shield is a
     # precision loss on one span, an unpublished file is a lost evaluation.
+    say("checking the output contract and the medical shield...")
     if summary["shield_edit_overlaps"]:
         print(
             f"warning: {summary['shield_edit_overlaps']} edit(s) overlap the medical shield (see the summary)",
@@ -211,6 +246,7 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
         print(f"warning: output contract: {v}", file=sys.stderr)
     summary["contract_violations"] = violations
     try:
+        say(f"publishing to {out.records.parent} (written atomically)...")
         publish_run(records, outs, decisions, summary, out, overwrite=a.overwrite, strict=False)
     except FileExistsError as exc:
         return _fail(str(exc))
@@ -227,14 +263,32 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
 def cmd_evaluate(a: argparse.Namespace) -> int:
     from .eval import report
 
+    say = _status_printer(getattr(a, "quiet", False))
+    if a.icd == "embed" and not getattr(a, "no_pull", False):
+        from .environment import ensure_model, load_manifest, ollama_url
+
+        try:
+            ensure_model(load_manifest()["ollama"]["icd_proxy"]["name"], ollama_url(), say)
+        except RuntimeError as exc:
+            say(f"ICD proxy model unavailable ({exc}); the ICD columns will be empty")
+    say(f"reading {a.anonymized} and {a.original}...")
     anon = read_jsonl(a.anonymized)
     ids = {r["encounter_id"] for r in anon}
     orig = [r for r in read_jsonl(a.original) if r["encounter_id"] in ids]
     dec = read_jsonl(a.decisions) if a.decisions and Path(a.decisions).exists() else None
     summ = json.loads(Path(a.summary).read_text()) if a.summary and Path(a.summary).exists() else None
     res = report.evaluate(
-        orig, anon, Path(a.gold) if a.gold else None, dec, summ, icd=a.icd, name=a.name, llm_model=a.llm_model
+        orig,
+        anon,
+        Path(a.gold) if a.gold else None,
+        dec,
+        summ,
+        icd=a.icd,
+        name=a.name,
+        llm_model=a.llm_model,
+        status=say,
     )
+    say(f"saving {Path(a.out_dir) / (a.name + '.json')}")
     report.save(res, Path(a.out_dir))
     print(report.table([res]))
     if res.get("schema_errors"):
@@ -319,6 +373,8 @@ def run_one(
         name=name,
         out_dir=str(paths.eval_dir()),
         llm_model=llm_model,
+        quiet=False,
+        no_pull=False,
     )
     cmd_evaluate(ns)
     return json.loads((paths.eval_dir() / f"{name}.json").read_text())
@@ -480,7 +536,11 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--no-codes", action="store_true", help="do not use icd10_codes at inference (bonus mode)")
     p.add_argument("--detectors", help="ablation only: comma list of rules, deid, gliner, llm (overrides --mode)")
     p.add_argument("--features", help="M5 feature flags, comma list: " + ", ".join(FEATURES))
-    p.add_argument("--detector-model", help="Ollama model for the LLM detector (pinned in models.toml)")
+    p.add_argument(
+        "--detector-model",
+        default=os.environ.get("UNIFIED_HARNESS_DETECTOR_MODEL"),
+        help="Ollama model for the LLM detector (pinned in models.toml; env UNIFIED_HARNESS_DETECTOR_MODEL)",
+    )
     p.add_argument(
         "--allow-unpinned",
         action="store_true",
@@ -491,7 +551,9 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--device", default="auto", help="encoders: auto (GPU within the 4 GB budget) | cpu | mps | cuda")
     p.add_argument("--overwrite", action="store_true", help="replace existing outputs of the same date")
     p.add_argument("--llm-log", help="append one JSONL line per LLM call (timing, cache, counts; no text) to this file")
-    p.add_argument("--progress", action="store_true", help="print one line per encounter to stderr")
+    p.add_argument("--progress", action="store_true", help="kept for compatibility: progress is shown by default")
+    p.add_argument("--quiet", action="store_true", help="no progress messages (errors and the result are still shown)")
+    p.add_argument("--no-pull", action="store_true", help="never download a missing Ollama model (fail instead)")
     p.add_argument(
         "--explain-text", action="store_true", help="debug only: copy original text into the sidecar (contains PII)"
     )
@@ -507,6 +569,8 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--llm-model")
     p.add_argument("--name", default="run")
     p.add_argument("--out-dir", default=str(paths.eval_dir()))
+    p.add_argument("--quiet", action="store_true", help="no progress messages")
+    p.add_argument("--no-pull", action="store_true", help="never download a missing Ollama model (fail instead)")
     p.set_defaults(func=cmd_evaluate)
 
     p = sub.add_parser("run", help="anonymize a split and evaluate it (one row in outputs/eval/results.md)")
@@ -516,7 +580,11 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--no-codes", action="store_true")
     p.add_argument("--detectors", help="ablation only (overrides --mode)")
     p.add_argument("--features", help="M5 feature flags, comma list: " + ", ".join(FEATURES))
-    p.add_argument("--detector-model", help="Ollama model for the LLM detector (pinned in models.toml)")
+    p.add_argument(
+        "--detector-model",
+        default=os.environ.get("UNIFIED_HARNESS_DETECTOR_MODEL"),
+        help="Ollama model for the LLM detector (pinned in models.toml; env UNIFIED_HARNESS_DETECTOR_MODEL)",
+    )
     p.add_argument(
         "--allow-unpinned",
         action="store_true",
@@ -564,7 +632,11 @@ def build_parser() -> argparse.ArgumentParser:
     p = sub.add_parser("doctor", help="check the environment for a run mode")
     p.add_argument("--mode", choices=MODES, default="llm")
     p.add_argument("--json", action="store_true", help="machine-readable report")
-    p.add_argument("--detector-model", help="Ollama model for the LLM detector (pinned in models.toml)")
+    p.add_argument(
+        "--detector-model",
+        default=os.environ.get("UNIFIED_HARNESS_DETECTOR_MODEL"),
+        help="Ollama model for the LLM detector (pinned in models.toml; env UNIFIED_HARNESS_DETECTOR_MODEL)",
+    )
     p.add_argument(
         "--allow-unpinned",
         action="store_true",
