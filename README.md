@@ -10,7 +10,7 @@
 
 ## Quickstart (Docker)
 
-Install Docker[link](https://docs.docker.com/engine/install/)
+[Install Docker](https://docs.docker.com/engine/install/)
 
 ```bash
 mkdir -p outputs
