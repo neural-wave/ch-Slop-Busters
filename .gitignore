@@ -37,3 +37,6 @@ build/
 .idea/
 .vscode/
 .DS_Store
+
+# Cloud credentials: never committed
+/ovh.conf

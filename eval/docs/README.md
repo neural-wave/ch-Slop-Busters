@@ -500,6 +500,6 @@ vocabulary with fixed ones. A few tests use real data and skip when it is missin
 | `test_main.py` | 8 | The command line: every command listed in `--help`, a missing module exits 2, every `all` step is a command, a crashing step does not stop `all`, stage modules also run as files |
 | `test_common.py` | 15 | Package paths and `OLLAMA_HOST` parsing (host, host:port, URLs, IPv6, empty host, bad port) |
 
-Not covered by the tests, checked by hand instead and recorded in `EVAL_MERGE_LOG.md`: real model runs (byte-identical
+Not covered by the tests, checked by hand instead: real model runs (byte-identical
 to the old harness), the live Ollama coder (identical to daniel-eval's CLI on the `identity` pair), and the real NER
 worker of attack A1.

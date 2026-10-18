@@ -3,8 +3,8 @@
 Target: Bosch / Neural Wave task (`task/NeuralWaveTask_Anonymization of_patient_data_public.pdf`).
 Hardware: 1x L40S (46 GB). Budgets: **pilot ≤ 1 h GPU time** on `data/`, then **4-5 h** on the larger datasets.
 
-This version merges the first plan, its revision (`plans/why-2k-char-chunk-tranquil-firefly.md`) and the review
-(`train/ppo-training-plan.md`). Both of those are now superseded; §13 lists what changed.
+This version merges the first plan, its revision and the review
+and supersedes them; §13 lists what changed.
 
 ## 0. Input and output
 
