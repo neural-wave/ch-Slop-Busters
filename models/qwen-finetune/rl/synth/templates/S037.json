@@ -1,0 +1,918 @@
+{
+ "id": "S037",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S39.012A",
+   "description": "Strain of muscle, fascia and tendon of lower back, initial encounter"
+  },
+  {
+   "code": "X50.0XXA",
+   "description": "Overexertion from strenuous movement or load, initial encounter"
+  },
+  {
+   "code": "Y92.230",
+   "description": "Patient room in hospital as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.F2",
+   "description": "Activity, caregiving, lifting"
+  },
+  {
+   "code": "Y99.0",
+   "description": "Civilian activity done for income or pay"
+  }
+ ],
+ "dialogue": "[doctor] good morning , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} with employee health . how are you feeling ?\n[patient] honestly , not good . my back is really bad .\n[doctor] i'm sorry to hear that . tell me what happened .\n[patient] so i'm an rn on the night shift on four west , the med-surg floor here at {ORG} . last night around three in the morning , i was in a patient's room , and we had a gentleman who had slid way down in the bed . he's a big guy , probably two eighty , and he could n't help much . the lift was being used in another room , so me and a tech tried to pull him up in bed using the draw sheet .\n[doctor] okay .\n[patient] and as we pulled , i was kind of bent over the bed and twisted , and i felt this sharp pull in my lower back , on the right side . like something grabbed .\n[doctor] okay . did you finish your shift ?\n[patient] i tried . i finished my charting but i could n't do any more lifting , and by the time i got home at seven thirty , i could barely get out of the car .\n[doctor] okay . where exactly is the pain ?\n[patient] right here , the low back , mostly on the right , just above my belt line .\n[doctor] does it go down into your buttock or your leg ?\n[patient] no , it stays in my back .\n[doctor] any numbness or tingling in your legs or feet ?\n[patient] no .\n[doctor] any weakness in your legs ? any trouble controlling your bladder or bowels ?\n[patient] no , none of that .\n[doctor] okay , good . how bad is the pain ?\n[patient] it's like a seven when i move , maybe a four if i lie still . bending forward is the worst . and getting up from sitting .\n[doctor] have you taken anything for it ?\n[patient] i took ibuprofen , four hundred , when i got home , and i used a heating pad . it helped a little .\n[doctor] okay . have you ever hurt your back before ?\n[patient] i had some back pain years ago after my second pregnancy , but nothing like this , and nothing at work .\n[doctor] okay . any other medical problems ?\n[patient] just migraines , but they've been quiet . i take sumatriptan if i need it .\n[doctor] okay . let's take a look . can you stand up for me ? okay . i can see you're kind of guarding and leaning a little to the left . i'm going to press along your spine . any pain in the middle here ?\n[patient] no , not on the bones .\n[doctor] okay . and here , to the right ?\n[patient] ow , yes , that's it .\n[doctor] okay . so you have tenderness and spasm in the right lumbar paraspinal muscles , no midline tenderness . can you bend forward ? okay , you're limited to about forty degrees and it hurts . bending back hurts a little , and side bending to the left pulls on the right side . now lie down for me . i'm going to lift your leg straight . any pain shooting down the leg ?\n[patient] no , just in my back .\n[doctor] okay , so negative straight leg raise on both sides . your strength in your legs is five out of five , reflexes are normal and equal , and sensation is normal .\n[patient] okay .\n[doctor] so , based on how this happened and your exam , this is a strain of the muscles of your lower back , a lumbar strain , from overexertion while lifting and repositioning a patient . i do n't see any signs of a disc problem or a nerve being pinched , and since there was no fall and no red flags , we do n't need x-rays today .\n[patient] okay , that's good .\n[doctor] most of these get better in two to four weeks . the most important thing is to stay gently active , do n't stay in bed . you can use ice or heat , whichever feels better . i'm going to give you naproxen , five hundred milligrams twice a day with food , and cyclobenzaprine , five milligrams at bedtime for muscle spasm . since you work nights , be careful , it can make you drowsy .\n[patient] okay .\n[doctor] i'm also going to refer you to physical therapy , twice a week for four weeks .\n[patient] okay . and work ?\n[doctor] i'm going to put you on modified duty for two weeks . no lifting over fifteen pounds , no patient transfers or repositioning . you can do charting , med pass , things like that . and when you go back to full duty , please use the lift or call the lift team for heavier patients .\n[patient] i know , i know . we were just short staffed .\n[doctor] i understand . we'll file this as a work injury , and i'll send the paperwork to workers' comp . come back and see me in one week , or sooner if you get numbness , weakness , or any bladder or bowel changes .\n[patient] okay . thank you .",
+ "note": "CHIEF COMPLAINT\n\nLow back pain after work injury.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female registered nurse employed at {ORG} who presents to employee health with acute low back pain following a work injury on {DATE_NUM}.\n\nAt approximately 3:00 AM during her night shift on the medical-surgical unit, she was in a patient room attempting to reposition a large, minimally mobile patient (approximately 280 pounds) who had slid down in bed. The mechanical lift was unavailable, so she and a coworker pulled the patient up using a draw sheet. While bent over the bed with a twisting motion, she felt a sharp pulling sensation in the right lower back. She completed charting but was unable to perform further lifting. Pain is 7/10 with movement and 4/10 at rest, worse with forward flexion and rising from a seated position. Pain does not radiate. She denies lower extremity numbness, tingling, or weakness, and denies bowel or bladder dysfunction. She took ibuprofen 400 mg and used a heating pad with mild relief. Remote history of postpartum back pain. Past medical history significant for migraine, managed with sumatriptan as needed.\n\nPHYSICAL EXAM\n\nMusculoskeletal: Antalgic posture with lean to the left. No midline lumbar tenderness. Tenderness and palpable spasm of the right lumbar paraspinal muscles. Lumbar flexion limited to 40 degrees with pain. Mild pain with extension. Negative straight leg raise bilaterally.\nNeurological: Strength 5/5 in bilateral lower extremities. Reflexes 2+ and symmetric. Sensation intact.\n\nASSESSMENT AND PLAN\n\n1. Strain of muscle, fascia and tendon of the lower back.\n• Medical Reasoning: Acute lumbar strain from overexertion while lifting and repositioning a patient in a hospital patient room at work. No radicular signs or red flags; imaging not indicated.\n• Medical Treatment: Naproxen 500 mg twice daily with food. Cyclobenzaprine 5 mg at bedtime; cautioned about drowsiness given night shift work. Ice or heat as preferred. Remain active.\n• Specialist Referrals: Physical therapy twice weekly for 4 weeks.\n• Work: Modified duty for 2 weeks; no lifting over 15 pounds, no patient transfers or repositioning. Use of mechanical lift or lift team advised. Workers' compensation report filed.\n• Patient Education and Counseling: Return precautions for numbness, weakness, or bowel or bladder changes.\n\nPatient Agreements: The patient understands and agrees with the recommended medical treatment plan.\n\nFollow up in 1 week.",
+ "medical_concepts": [
+  {
+   "text": "my back is really bad",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "night shift",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the med-surg floor",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was in a patient's room",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "slid way down in the bed",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "two eighty",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the lift was being used in another room",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tried to pull him up in bed using the draw sheet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "as we pulled , i was kind of bent over the bed and twisted",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "sharp pull in my lower back , on the right side",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "did you finish your shift",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i could n't do any more lifting",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "could barely get out of the car",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the low back , mostly on the right",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "buttock",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "weakness in your legs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "trouble controlling your bladder or bowels",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "it's like a seven when i move",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "maybe a four if i lie still",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "bending forward is the worst",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "getting up from sitting",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen , four hundred",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "heating pad",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "back pain years ago",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "migraines",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "sumatriptan",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "guarding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "leaning a little to the left",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "not on the bones",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tenderness and spasm in the right lumbar paraspinal muscles",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no midline tenderness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "limited to about forty degrees",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bending back hurts a little",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "side bending to the left pulls on the right side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain shooting down the leg",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "negative straight leg raise on both sides",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "strength in your legs is five out of five",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "reflexes are normal and equal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "strain of the muscles of your lower back",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "lumbar strain",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "overexertion while lifting and repositioning a patient",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "disc problem",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "nerve being pinched",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "no fall",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "red flags",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice or heat",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "naproxen , five hundred milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cyclobenzaprine , five milligrams at bedtime",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "muscle spasm",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "drowsy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "modified duty",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "no patient transfers or repositioning",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "use the lift or call the lift team",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "work injury",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "workers' comp",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "weakness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "bladder or bowel changes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Low back pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "after work injury",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "acute low back pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "following a work injury",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "during her night shift",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "in a patient room",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "medical-surgical unit",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "attempting to reposition a large, minimally mobile patient",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "approximately 280 pounds",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "The mechanical lift was unavailable",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pulled the patient up using a draw sheet",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "While bent over the bed with a twisting motion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "sharp pulling sensation in the right lower back",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "unable to perform further lifting",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Pain is 7/10 with movement and 4/10 at rest",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "worse with forward flexion",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "rising from a seated position",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pain does not radiate",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lower extremity numbness, tingling, or weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "bowel or bladder dysfunction",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen 400 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "heating pad",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "postpartum back pain",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "migraine",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "sumatriptan",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Antalgic posture with lean to the left",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No midline lumbar tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness and palpable spasm of the right lumbar paraspinal muscles",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lumbar flexion limited to 40 degrees with pain",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild pain with extension",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Negative straight leg raise bilaterally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Strength 5/5 in bilateral lower extremities",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Reflexes 2+ and symmetric",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Strain of muscle, fascia and tendon of the lower back",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Acute lumbar strain",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "overexertion while lifting and repositioning a patient",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hospital patient room",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "at work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No radicular signs",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "red flags",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "imaging not indicated",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Naproxen 500 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cyclobenzaprine 5 mg at bedtime",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "drowsiness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ice or heat",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Modified duty",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "no patient transfers or repositioning",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "mechanical lift or lift team",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Workers' compensation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "bowel or bladder changes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "a tech",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic co-worker role (patient care technician)"
+  },
+  {
+   "text": "employee health",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "department of the employer, not a named organization by itself"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S39.012A",
+   "spans": [
+    {
+     "text": "lumbar strain",
+     "field": "dialogue"
+    },
+    {
+     "text": "strain of the muscles of your lower back",
+     "field": "dialogue"
+    },
+    {
+     "text": "tenderness and spasm in the right lumbar paraspinal muscles",
+     "field": "dialogue"
+    },
+    {
+     "text": "sharp pull in my lower back , on the right side",
+     "field": "dialogue"
+    },
+    {
+     "text": "negative straight leg raise on both sides",
+     "field": "dialogue"
+    },
+    {
+     "text": "Strain of muscle, fascia and tendon of the lower back",
+     "field": "note"
+    },
+    {
+     "text": "Acute lumbar strain",
+     "field": "note"
+    },
+    {
+     "text": "Tenderness and palpable spasm of the right lumbar paraspinal muscles",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "X50.0XXA",
+   "spans": [
+    {
+     "text": "overexertion while lifting and repositioning a patient",
+     "field": "dialogue"
+    },
+    {
+     "text": "as we pulled , i was kind of bent over the bed and twisted",
+     "field": "dialogue"
+    },
+    {
+     "text": "two eighty",
+     "field": "dialogue"
+    },
+    {
+     "text": "overexertion while lifting and repositioning a patient",
+     "field": "note"
+    },
+    {
+     "text": "While bent over the bed with a twisting motion",
+     "field": "note"
+    },
+    {
+     "text": "approximately 280 pounds",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.230",
+   "spans": [
+    {
+     "text": "i was in a patient's room",
+     "field": "dialogue"
+    },
+    {
+     "text": "the med-surg floor",
+     "field": "dialogue"
+    },
+    {
+     "text": "medical-surgical unit",
+     "field": "note"
+    },
+    {
+     "text": "in a patient room",
+     "field": "note"
+    },
+    {
+     "text": "hospital patient room",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.F2",
+   "spans": [
+    {
+     "text": "tried to pull him up in bed using the draw sheet",
+     "field": "dialogue"
+    },
+    {
+     "text": "overexertion while lifting and repositioning a patient",
+     "field": "dialogue"
+    },
+    {
+     "text": "attempting to reposition a large, minimally mobile patient",
+     "field": "note"
+    },
+    {
+     "text": "pulled the patient up using a draw sheet",
+     "field": "note"
+    },
+    {
+     "text": "overexertion while lifting and repositioning a patient",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.0",
+   "spans": [
+    {
+     "text": "night shift",
+     "field": "dialogue"
+    },
+    {
+     "text": "work injury",
+     "field": "dialogue"
+    },
+    {
+     "text": "workers' comp",
+     "field": "dialogue"
+    },
+    {
+     "text": "following a work injury",
+     "field": "note"
+    },
+    {
+     "text": "during her night shift",
+     "field": "note"
+    },
+    {
+     "text": "at work",
+     "field": "note"
+    },
+    {
+     "text": "Workers' compensation",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm an rn",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's job (registered nurse); the hospital room and lifting spans carry the code evidence"
+  },
+  {
+   "text": "registered nurse",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "four west",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "specific hospital unit name"
+  },
+  {
+   "text": "after my second pregnancy",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "number of pregnancies / children"
+  }
+ ]
+}

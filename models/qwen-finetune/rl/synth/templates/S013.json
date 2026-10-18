@@ -1,0 +1,710 @@
+{
+ "id": "S013",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S22.31XA",
+   "description": "Fracture of one rib, right side, initial encounter for closed fracture"
+  },
+  {
+   "code": "W51.XXXA",
+   "description": "Accidental striking against or bumped into by another person, initial encounter"
+  },
+  {
+   "code": "Y92.322",
+   "description": "Soccer field as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.66",
+   "description": "Activity, soccer"
+  },
+  {
+   "code": "J45.20",
+   "description": "Mild intermittent asthma, uncomplicated"
+  }
+ ],
+ "dialogue": "[doctor] hey dragon , i'm seeing {PATIENT_FIRST} {PATIENT_LAST} . he's a {AGE} year old male here with right sided chest pain . hi , {PATIENT_FIRST} , nice to meet you .\n[patient] hi , nice to meet you too .\n[doctor] so tell me what's going on .\n[patient] so on sunday i was playing soccer , it's an adult league , we play on the turf field behind the community center . and i was going for a header on a corner kick , and a guy from the other team came in at the same time and his shoulder slammed right into my ribs on the right side .\n[doctor] ouch . so it was a collision with another player .\n[patient] yeah , he basically ran right through me . full speed . i went down and i could n't catch my breath for a second .\n[doctor] okay . did you hit your head at all ?\n[patient] no , the head was fine , it was all ribs .\n[doctor] okay . and since then , how has the pain been ?\n[patient] it's pretty bad . it's right here , on the side , kind of under my arm and toward the front . it hurts when i take a deep breath , and coughing is the worst . i ca n't sleep on that side .\n[doctor] okay . on a scale of zero to ten , how bad is it ?\n[patient] when i'm just sitting , maybe a four . when i cough or laugh it's like an eight .\n[doctor] okay . any shortness of breath ?\n[patient] not really short of breath , it's more that it hurts to breathe deep , so i take shallow breaths .\n[doctor] okay . any coughing up blood ?\n[patient] no .\n[doctor] any fever or chills ?\n[patient] no .\n[doctor] any pain in your belly ?\n[patient] no , my stomach is fine .\n[doctor] okay . now i see on your chart you have asthma . how has that been ?\n[patient] it's mostly under control . i use my albuterol inhaler maybe once a week , usually before a game , and that's it . i have n't needed any steroids in years .\n[doctor] okay . any wheezing since the injury ?\n[patient] no , no wheezing . i used my inhaler once on sunday night because i was nervous about my breathing , but it was fine .\n[doctor] okay , that's good . and you're not on any daily controller inhaler ?\n[patient] no , just the rescue one .\n[doctor] okay . and what do you do for work ?\n[patient] i do payroll for {ORG} , so mostly i'm at a desk .\n[doctor] okay , that's good . have you been able to work ?\n[patient] i went in monday , but sitting up straight all day was tough .\n[doctor] okay . what have you been taking for the pain ?\n[patient] just some tylenol and an ice pack .\n[doctor] okay . let's take a look . i'm going to listen to your lungs first . take some deep breaths for me .\n[patient] okay .\n[doctor] okay . your lungs are clear on both sides . i do n't hear any wheezing , and your breath sounds are equal . your oxygen level is ninety eight percent . now i'm going to press on your ribs .\n[patient] okay .\n[doctor] does it hurt here ?\n[patient] yes , right there .\n[doctor] okay . so you have point tenderness over the right sixth rib , right along the side of the chest . there's a small bruise there . i do n't feel any crepitus , which would be a crunching under the skin , and there's no deformity . your belly is soft and not tender .\n[patient] okay .\n[doctor] so we went ahead and did a chest x-ray . hey dragon , show me the chest x-ray . so , looking at this , you have a nondisplaced fracture of the right sixth rib along the side . there's no pneumothorax , meaning your lung has not collapsed , and there's no fluid in the chest .\n[patient] so it is broken .\n[doctor] it is broken , but it's one rib and it's not out of place , which is good news .\n[patient] okay .\n[doctor] so let's talk about the plan . for the right sixth rib fracture , these heal on their own in about four to six weeks . we do n't wrap ribs anymore , because that makes you breathe shallow and can lead to pneumonia . the most important thing is to keep your lungs open . i'm going to give you an incentive spirometer , and i want you to use it ten times an hour while you're awake .\n[patient] okay .\n[doctor] for pain , i want you to take ibuprofen six hundred milligrams every eight hours with food , and you can alternate with tylenol . i'm also going to give you a lidocaine patch you can put over the spot for twelve hours a day .\n[patient] okay , that sounds good .\n[doctor] no soccer or contact sports for at least six weeks .\n[patient] ugh . okay .\n[doctor] now , for your asthma , it sounds like it's mild and intermittent and well controlled . i want you to keep your albuterol inhaler handy . because the rib fracture makes it harder to take deep breaths , if you notice wheezing or that you need your inhaler more than a couple of times a week , i want you to call me . and if you get a fever , a cough with mucus , or trouble breathing , you need to be seen right away .\n[patient] okay .\n[doctor] i'd like to see you back in two weeks .\n[patient] sounds good . thanks , doc .",
+ "note": "CHIEF COMPLAINT\n\nRight-sided chest wall pain.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with a history of mild intermittent asthma who presents with right-sided chest wall pain. On Sunday, he was playing soccer in an adult league on a soccer field when an opposing player collided with him at full speed, striking his right lateral ribs with his shoulder. He had transient difficulty catching his breath. He did not hit his head. He reports pain with deep inspiration and coughing, rated 4/10 at rest and 8/10 with coughing, and he is unable to lie on the right side. He denies dyspnea at rest, hemoptysis, fever, chills or abdominal pain.\n\nHis asthma is well controlled with albuterol as needed, used approximately once weekly before games. No recent oral steroids. No wheezing since the injury.\n\nSOCIAL HISTORY\n\nWorks in payroll at a desk job.\n\nPHYSICAL EXAM\n\nOxygen saturation 98% on room air.\n\nRespiratory: Lungs clear to auscultation bilaterally. Breath sounds equal. No wheezes.\nChest wall: Point tenderness over the right sixth rib at the lateral chest wall with a small overlying contusion. No crepitus or deformity.\nAbdomen: Soft and nontender.\n\nRESULTS\n\nChest x-ray demonstrates a nondisplaced fracture of the right lateral sixth rib. No pneumothorax or pleural effusion.\n\nASSESSMENT AND PLAN\n\n1. Closed nondisplaced fracture of the right sixth rib, due to collision with another player while playing soccer.\n- Medical Reasoning: Single nondisplaced rib fracture without pneumothorax.\n- Medical Treatment: Incentive spirometer 10 times per hour while awake. Ibuprofen 600 mg every 8 hours with food, alternating with Tylenol. Lidocaine patch 12 hours on, 12 hours off. No rib binding.\n- Patient Education and Counseling: No soccer or contact sports for at least 6 weeks. Return precautions for fever, productive cough or dyspnea.\n\n2. Mild intermittent asthma, uncomplicated.\n- Medical Reasoning: Well controlled on as-needed albuterol.\n- Medical Treatment: Continue albuterol as needed. Call if increased rescue inhaler use or wheezing.\n\nFollow up in 2 weeks.",
+ "medical_concepts": [
+  {
+   "text": "right sided chest pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was playing soccer",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "turf field",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "going for a header on a corner kick",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "his shoulder slammed right into my ribs on the right side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a collision with another player",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "he basically ran right through me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "could n't catch my breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "it hurts when i take a deep breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "coughing is the worst",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "short of breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "coughing up blood",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever or chills",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain in your belly",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "asthma",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol inhaler",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "steroids",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "wheezing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "rescue one",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "your lungs are clear on both sides",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your breath sounds are equal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your oxygen level is ninety eight percent",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "point tenderness over the right sixth rib",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "small bruise",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "crepitus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no deformity",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your belly is soft and not tender",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "nondisplaced fracture of the right sixth rib",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "no pneumothorax",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "no fluid in the chest",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "right sixth rib fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "pneumonia",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "incentive spirometer",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen six hundred milligrams every eight hours",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "lidocaine patch",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "soccer or contact sports",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild and intermittent and well controlled",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "cough with mucus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "trouble breathing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right-sided chest wall pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild intermittent asthma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "right-sided chest wall pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "playing soccer",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "soccer field",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "an opposing player collided with him at full speed, striking his right lateral ribs with his shoulder",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "transient difficulty catching his breath",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain with deep inspiration and coughing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "4/10",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "8/10",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "dyspnea at rest",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hemoptysis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chills",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "abdominal pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "asthma is well controlled",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol as needed",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "oral steroids",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "No wheezing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Oxygen saturation 98% on room air",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lungs clear to auscultation bilaterally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Breath sounds equal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No wheezes",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Point tenderness over the right sixth rib at the lateral chest wall",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "small overlying contusion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No crepitus or deformity",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Soft and nontender",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Chest x-ray",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "nondisplaced fracture of the right lateral sixth rib",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "No pneumothorax",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "pleural effusion",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Closed nondisplaced fracture of the right sixth rib",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "collision with another player",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Single nondisplaced rib fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Incentive spirometer",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen 600 mg every 8 hours",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lidocaine patch",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "rib binding",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "productive cough",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dyspnea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild intermittent asthma, uncomplicated",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "as-needed albuterol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "rescue inhaler",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software"
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "is_pii": false,
+   "comment": "drug brand name"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S22.31XA",
+   "spans": [
+    {
+     "text": "nondisplaced fracture of the right sixth rib",
+     "field": "dialogue"
+    },
+    {
+     "text": "right sixth rib fracture",
+     "field": "dialogue"
+    },
+    {
+     "text": "point tenderness over the right sixth rib",
+     "field": "dialogue"
+    },
+    {
+     "text": "chest x-ray",
+     "field": "dialogue"
+    },
+    {
+     "text": "Closed nondisplaced fracture of the right sixth rib",
+     "field": "note"
+    },
+    {
+     "text": "nondisplaced fracture of the right lateral sixth rib",
+     "field": "note"
+    },
+    {
+     "text": "Single nondisplaced rib fracture",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W51.XXXA",
+   "spans": [
+    {
+     "text": "his shoulder slammed right into my ribs on the right side",
+     "field": "dialogue"
+    },
+    {
+     "text": "a collision with another player",
+     "field": "dialogue"
+    },
+    {
+     "text": "he basically ran right through me",
+     "field": "dialogue"
+    },
+    {
+     "text": "an opposing player collided with him at full speed, striking his right lateral ribs with his shoulder",
+     "field": "note"
+    },
+    {
+     "text": "collision with another player",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.322",
+   "spans": [
+    {
+     "text": "turf field",
+     "field": "dialogue"
+    },
+    {
+     "text": "soccer field",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.66",
+   "spans": [
+    {
+     "text": "i was playing soccer",
+     "field": "dialogue"
+    },
+    {
+     "text": "going for a header on a corner kick",
+     "field": "dialogue"
+    },
+    {
+     "text": "playing soccer",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "J45.20",
+   "spans": [
+    {
+     "text": "asthma",
+     "field": "dialogue"
+    },
+    {
+     "text": "mild and intermittent and well controlled",
+     "field": "dialogue"
+    },
+    {
+     "text": "albuterol inhaler",
+     "field": "dialogue"
+    },
+    {
+     "text": "Mild intermittent asthma, uncomplicated",
+     "field": "note"
+    },
+    {
+     "text": "mild intermittent asthma",
+     "field": "note"
+    },
+    {
+     "text": "asthma is well controlled",
+     "field": "note"
+    },
+    {
+     "text": "No wheezing",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i do payroll",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "payroll work"
+  },
+  {
+   "text": "it's an adult league",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "league membership"
+  },
+  {
+   "text": "behind the community center",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "locates the specific field"
+  },
+  {
+   "text": "Works in payroll",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "adult league",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "league membership"
+  }
+ ]
+}

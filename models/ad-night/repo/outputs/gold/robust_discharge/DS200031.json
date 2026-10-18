@@ -1,0 +1,115 @@
+{
+ "encounter_id": "DS200031",
+ "pii": [
+  {
+   "field": "note",
+   "text": "Pooja",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Joshi",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "22 January 1980",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "06/07/2025",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "11/07/2025",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Nisha",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Krishnan",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "+91 9767734325",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Christian Medical College (CMC)",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "MRN-8492018",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Age: 45",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "ICICI Lombard General Insurance",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "1958473029",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Ida Scudder Road",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Vellore",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Tamil Nadu",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "632004",
+   "category": "LOCATION",
+   "risk": "medium"
+  }
+ ],
+ "keep": [
+  {
+   "field": "note",
+   "text": "Type 2 Diabetes Mellitus",
+   "category": "CODE_EVIDENCE",
+   "why": "E11.9"
+  }
+ ]
+}

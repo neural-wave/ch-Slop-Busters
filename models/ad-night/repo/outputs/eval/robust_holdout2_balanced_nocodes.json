@@ -1,0 +1,4257 @@
+{
+ "name": "robust_holdout2_balanced_nocodes",
+ "n_records": 16,
+ "schema_errors": [],
+ "privacy": {
+  "n_encounters": 16,
+  "removed": {
+   "ALL": 0.7141,
+   "cat:AGE": 0.8438,
+   "cat:DATE": 0.9691,
+   "cat:DOB": 0.9444,
+   "cat:ID": 0.7639,
+   "cat:LOCATION": 0.6618,
+   "cat:OCCUPATION": 0.3077,
+   "cat:ORGANIZATION": 0.3333,
+   "cat:OTHER_QI": 0.0833,
+   "cat:PATIENT_NAME": 0.8491,
+   "cat:PERSON_NAME": 0.6426,
+   "cat:YEAR": 1.0,
+   "dataset:antenatal_visit": 0.6829,
+   "dataset:dental_record": 0.67,
+   "dataset:ed_discharge_instructions": 0.76,
+   "dataset:occupational_health": 0.7627,
+   "dataset:oncology_letter": 0.771,
+   "dataset:palliative_meeting": 0.6601,
+   "dataset:sleep_study": 0.69,
+   "dataset:teledermatology_referral": 0.7248,
+   "field:dialogue": 0.5806,
+   "field:note": 0.7289,
+   "items_fully_removed": 0.7012,
+   "risk:high": 0.7769,
+   "risk:high+medium": 0.7231,
+   "risk:low": 0.0769,
+   "risk:medium": 0.6
+  },
+  "counts": {
+   "ALL": [
+    667,
+    934
+   ],
+   "cat:AGE": [
+    27,
+    32
+   ],
+   "cat:DATE": [
+    94,
+    97
+   ],
+   "cat:DOB": [
+    17,
+    18
+   ],
+   "cat:ID": [
+    110,
+    144
+   ],
+   "cat:LOCATION": [
+    137,
+    207
+   ],
+   "cat:OCCUPATION": [
+    8,
+    26
+   ],
+   "cat:ORGANIZATION": [
+    10,
+    30
+   ],
+   "cat:OTHER_QI": [
+    1,
+    12
+   ],
+   "cat:PATIENT_NAME": [
+    90,
+    106
+   ],
+   "cat:PERSON_NAME": [
+    160,
+    249
+   ],
+   "cat:YEAR": [
+    13,
+    13
+   ],
+   "dataset:antenatal_visit": [
+    84,
+    123
+   ],
+   "dataset:dental_record": [
+    67,
+    100
+   ],
+   "dataset:ed_discharge_instructions": [
+    76,
+    100
+   ],
+   "dataset:occupational_health": [
+    90,
+    118
+   ],
+   "dataset:oncology_letter": [
+    101,
+    131
+   ],
+   "dataset:palliative_meeting": [
+    101,
+    153
+   ],
+   "dataset:sleep_study": [
+    69,
+    100
+   ],
+   "dataset:teledermatology_referral": [
+    79,
+    109
+   ],
+   "field:dialogue": [
+    54,
+    93
+   ],
+   "field:note": [
+    613,
+    841
+   ],
+   "items_fully_removed": [
+    575,
+    820
+   ],
+   "risk:high": [
+    498,
+    641
+   ],
+   "risk:high+medium": [
+    666,
+    921
+   ],
+   "risk:low": [
+    1,
+    13
+   ],
+   "risk:medium": [
+    168,
+    280
+   ]
+  },
+  "keep_survival": {
+   "ALL": 0.9211,
+   "cat:CLINICAL_NUMBER": 0.9579,
+   "cat:CODE_EVIDENCE": 0.9714,
+   "cat:EPONYM": 0.8039,
+   "cat:NOT_A_NAME": 1.0
+  },
+  "leaks": [
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "Mrs M.",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "teaching assistant",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "St Aldhelm's C of E Primary School",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "Wrenfold",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "at 44",
+    "category": "AGE",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "Mr O.",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "Siobhán",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "Ní Bhriain",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "R. K.",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "Venkataraghavan",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "RKV/SNB",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "HEART-SAFE",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "00-418-662",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "RB3/BLK/0057",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "who is 94",
+    "category": "AGE",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "Ó Dálaigh",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "Bridie",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "Bridie Hope",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "B. Hope",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "4471839K",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "BALLAROOK HEALTH",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "Ballarook",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 4
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "03 5550 4127",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "03 5550 4199",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "PO Box 218",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "RE-BREATHE",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "main carer for his mother",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "text": "Level 3",
+    "category": "LOCATION",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT003",
+    "field": "note",
+    "text": "Hôpital Saint-Rémi",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT003",
+    "field": "note",
+    "text": "midwife: Hope",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT003",
+    "field": "note",
+    "text": "Graves, RM",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT003",
+    "field": "note",
+    "text": "H. Graves",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT003",
+    "field": "note",
+    "text": "H.G.",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT003",
+    "field": "note",
+    "text": "Lucien",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT003",
+    "field": "note",
+    "text": "Beauchesne",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT003",
+    "field": "note",
+    "text": "Ngata",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT003",
+    "field": "note",
+    "text": "L.B.-N.",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT003",
+    "field": "note",
+    "text": "lineman",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT003",
+    "field": "note",
+    "text": "Bytown Electric Co-op",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT003",
+    "field": "note",
+    "text": "Grade 4 French-immersion teacher",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT003",
+    "field": "note",
+    "text": "École élémentaire Sainte-Odile",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "dialogue",
+    "text": "sister mercy",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "dialogue",
+    "text": "aarav",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "dialogue",
+    "text": "sunny",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "dialogue",
+    "text": "year-end audits",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "dialogue",
+    "text": "deccan matru seva",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "dialogue",
+    "text": "vedanta infosoft",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "dialogue",
+    "text": "hinjewadi phase two",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "dialogue",
+    "text": "d-m-s-h zero one five eight eight",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "Kothrud",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "DMSH/ANC/2026/01588",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "7730-4412-09",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "91-4432-8810-2275",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "Sunny",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "chartered accountant",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "Mercy",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "Aarav",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "3 yrs",
+    "category": "AGE",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "QA tester",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "Vedanta Infosoft",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "Hinjewadi Phase 2",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "Leela",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "92 yrs",
+    "category": "AGE",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "020-2545 8899",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "Marathi",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "Joint family",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "text": "CEDAR VALLEY FAMILY & PEDIATRIC DENTISTRY",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "text": "Summer",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "text": "Okafor",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "text": "Badger Mutual Dental PPO",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "text": "50316",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "text": "Cedar Ridge High School",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "text": "Coach Price",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "text": "NICU nurse",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "text": "S.O.",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "text": "R.",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "dialogue",
+    "text": "Hanni",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "dialogue",
+    "text": "At 91",
+    "category": "AGE",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "dialogue",
+    "text": "taught Latin",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "dialogue",
+    "text": "Gymnasium Feldmoching",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "dialogue",
+    "text": "Ayşe",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "Zahnarztpraxis am Nordbad",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "Jörg",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "Schleißheimer Str. 214",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "80809 München",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "Munich",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "Seniorenstift St. Benno",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "Pelkovenstraße 58",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "80992 München",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "Vereinigte Isartal BKK",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "H482117093",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "IK 103 772 418",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "Rheinland Zahn-Plus",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "Dachauer Str. 41",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "80335 München",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "Ayşe",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "Demirtaş",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "16/10",
+    "category": "DATE",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "UK",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "Rose (",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "AMcD",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "COH/26/1182",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "7215538KA",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "Atlantic Dairy Ingredients DAC",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "Galway",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 4,
+    "of": 4
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "H91 K2T7",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "Athenry",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "3 Cnoc na Gréine",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "Oranmore",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "H91 R6W2",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "University Hospital Galway",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "Quality Control Laboratory Technician",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "laboratory technician",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "widowed father",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT008",
+    "field": "dialogue",
+    "text": "olentangy ortho",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT008",
+    "field": "dialogue",
+    "text": "9-22",
+    "category": "DATE",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT008",
+    "field": "dialogue",
+    "text": "inventory control associate",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT008",
+    "field": "dialogue",
+    "text": "tamika",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT008",
+    "field": "note",
+    "text": "Bldg C",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT008",
+    "field": "note",
+    "text": "Inventory Control Associate",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT008",
+    "field": "note",
+    "text": "Midstate Mutual Casualty",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT008",
+    "field": "note",
+    "text": "Lindqvist",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT008",
+    "field": "note",
+    "text": "Tamika",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT008",
+    "field": "note",
+    "text": "Oyelaran-Brooks",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT009",
+    "field": "note",
+    "text": "PSG-26-10417",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT009",
+    "field": "note",
+    "text": "C.",
+    "category": "PERSON_NAME",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT009",
+    "field": "note",
+    "text": "Ruiz",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT009",
+    "field": "note",
+    "text": "Priya",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT009",
+    "field": "note",
+    "text": "Venkataraman",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT009",
+    "field": "note",
+    "text": "Prairie Mutual Health",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT009",
+    "field": "note",
+    "text": "Tri-County Ready-Mix",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT009",
+    "field": "note",
+    "text": "dispatcher",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "Bill",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "ZRT4471",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "SASC-26-0918",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "03 365 0841",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "03 365 0848",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "M.",
+    "category": "PERSON_NAME",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "Kiri",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "Parkinson, RPSGT",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "KP",
+    "category": "PERSON_NAME",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "AD",
+    "category": "PERSON_NAME",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "Sione",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "Fifita",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "Sydenham",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "8023",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "Cashmere",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "8022",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "Rata Grove",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "Halswell",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "text": "orchardist",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "text": "Dr O.",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "text": "Bryony",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "text": "Keast",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "text": "Iwan",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "text": "Gruffydd",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "text": "Desmond",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "text": "Siobhán",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "text": "Bhriain",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "text": "teaches",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "text": "volunteered in the charity shop",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "text": "Ackroyd",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "dialogue",
+    "text": "dube",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "dialogue",
+    "text": "botha",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "dialogue",
+    "text": "uniting reformed church",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "dialogue",
+    "text": "lu",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 3,
+    "of": 3
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "dialogue",
+    "text": "forty-one years",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "dialogue",
+    "text": "joburg",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "dialogue",
+    "text": "in august",
+    "category": "DOB",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "dialogue",
+    "text": "bellville",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "dialogue",
+    "text": "qumanco",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "dialogue",
+    "text": "ngcobo",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "dialogue",
+    "text": "eastern cape",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Ward C3",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Lwazi",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Nkosana",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Lu",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "VRH 22-19834",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Protea Health",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "30 4471 229",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Bellville",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "7530",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Dr R.",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Nomvula",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Dube",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Gerrit",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Botha",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 3,
+    "of": 3
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Atlantic Commuter Lines",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Qumanco",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Ngcobo",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "text": "Eastern Cape",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 2,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT013",
+    "field": "note",
+    "text": "J.",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT013",
+    "field": "note",
+    "text": "\"Tad\"",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT013",
+    "field": "note",
+    "text": "Tad, you",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT013",
+    "field": "note",
+    "text": "Wendell",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT013",
+    "field": "note",
+    "text": "Ji-woo",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT013",
+    "field": "note",
+    "text": "Park, PA-C",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT013",
+    "field": "note",
+    "text": "Gem City Orthopaedics",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT013",
+    "field": "note",
+    "text": "K7QX-29PL-M4",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "Hôpital général de la Vallée-Rideau",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "Ontario",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "J.-F.",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "Fiona",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "Clinique Familiale Beechwood",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "Résidence Les Jardins Beauséjour",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "apt 314",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "Gloucester ON",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "teaching piano",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "your 41 years",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "École de musique Sainte-Cécile",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "Pharmacie Beausoleil",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "St-Laurent",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "Solange",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "Picard-Ndiaye",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT014",
+    "field": "note",
+    "text": "613-555-0190, poste 4412",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT015",
+    "field": "note",
+    "text": "Rowie",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT015",
+    "field": "note",
+    "text": "GCUH",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT015",
+    "field": "note",
+    "text": "2426173J",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT015",
+    "field": "note",
+    "text": "Mar-2024",
+    "category": "DATE",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT015",
+    "field": "note",
+    "text": "Currumbin Alley",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT015",
+    "field": "note",
+    "text": "IMG_4471.HEIC",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT015",
+    "field": "note",
+    "text": "IMG_4472.HEIC",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT015",
+    "field": "note",
+    "text": "iPhone 13",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT015",
+    "field": "note",
+    "text": "DL4-2209-57731",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "dialogue",
+    "text": "Ó",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "dialogue",
+    "text": "Dálaigh",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "dialogue",
+    "text": "Drogheda",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "dialogue",
+    "text": "I taught",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "dialogue",
+    "text": "Scoil Mhuire",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "dialogue",
+    "text": "Termonfeckin",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "dialogue",
+    "text": "Aoife",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "Drogheda",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "7834192TA",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "0912337K",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "Bríd",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "Clogherhead",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "Co. Louth",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "A92 X7T4",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "RGN",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "IMG_20260921_101544.jpg",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "IMG_20260921_101602.jpg",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "DS_0921_03.png",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "DS_0921_04.png",
+    "category": "ID",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "Ó",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "Dálaigh",
+    "category": "PERSON_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   }
+  ],
+  "over_removed_keep_items": [
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "Nottingham grade",
+    "category": "EPONYM",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "text": "Allred",
+    "category": "EPONYM",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "dialogue",
+    "text": "shirodkar stitch",
+    "category": "EPONYM",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "text": "Shirodkar cerclage",
+    "category": "EPONYM",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "text": "Ellis class III",
+    "category": "EPONYM",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "text": "Ellis class II",
+    "category": "EPONYM",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "text": "Ludwig's angina",
+    "category": "EPONYM",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "text": "5/10",
+    "category": "CLINICAL_NUMBER",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "text": "Ann Arbor",
+    "category": "EPONYM",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "text": "3/7",
+    "category": "CLINICAL_NUMBER",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT013",
+    "field": "note",
+    "text": "8/10",
+    "category": "CLINICAL_NUMBER",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT015",
+    "field": "note",
+    "text": "surfing",
+    "category": "CODE_EVIDENCE",
+    "kept": 1,
+    "of": 2
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "dialogue",
+    "text": "Bowen's disease",
+    "category": "EPONYM",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "Bowen's disease",
+    "category": "EPONYM",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "text": "6/12",
+    "category": "CLINICAL_NUMBER",
+    "kept": 0,
+    "of": 1
+   }
+  ],
+  "edit_precision": 0.9513,
+  "edits_matching_gold": 645,
+  "edits_not_in_gold": 33,
+  "edits_not_in_gold_examples": [
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "category": "PERSON_NAME",
+    "source": "rule:cap_name",
+    "text": "Nottingham",
+    "start": 559
+   },
+   {
+    "encounter_id": "HT001",
+    "field": "note",
+    "category": "PERSON_NAME",
+    "source": "rule:cap_name",
+    "text": "Allred",
+    "start": 582
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "category": "INSURER",
+    "source": "gazetteer:insurer",
+    "text": "Medicare",
+    "start": 380
+   },
+   {
+    "encounter_id": "HT002",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "format:staff_role",
+    "text": "Coordinator",
+    "start": 2162
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "dialogue",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "shirodkar",
+    "start": 535
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "Shirodkar",
+    "start": 801
+   },
+   {
+    "encounter_id": "HT004",
+    "field": "note",
+    "category": "RELATIVE_NAME",
+    "source": "format:relative_cased",
+    "text": "Smt",
+    "start": 1329
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "Ellis",
+    "start": 1073
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "Ellis",
+    "start": 1161
+   },
+   {
+    "encounter_id": "HT005",
+    "field": "note",
+    "category": "PERSON_NAME",
+    "source": "format:nickname",
+    "text": "CDT",
+    "start": 1469
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "dialogue",
+    "category": "PERSON_NAME",
+    "source": "rule:cap_name",
+    "text": "Herr",
+    "start": 840
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "rule:title_name",
+    "text": "med",
+    "start": 582
+   },
+   {
+    "encounter_id": "HT006",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "Ludwig",
+    "start": 998
+   },
+   {
+    "encounter_id": "HT007",
+    "field": "note",
+    "category": "DATE",
+    "source": "rule:date_month_day_numeric",
+    "text": "5/10",
+    "start": 1540
+   },
+   {
+    "encounter_id": "HT008",
+    "field": "note",
+    "category": "ID",
+    "source": "format:pager",
+    "text": "55",
+    "start": 1098
+   },
+   {
+    "encounter_id": "HT009",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "format:staff_field",
+    "text": "RPSGT",
+    "start": 647
+   },
+   {
+    "encounter_id": "HT009",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "RPSGT",
+    "start": 676
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "category": "FACILITY",
+    "source": "rule:facility",
+    "text": "CPAP clinic",
+    "start": 2177
+   },
+   {
+    "encounter_id": "HT010",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "FRACP",
+    "start": 2633
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "category": "LOCATION",
+    "source": "gazetteer:place_city",
+    "text": "Ann Arbor",
+    "start": 830
+   },
+   {
+    "encounter_id": "HT011",
+    "field": "note",
+    "category": "DATE",
+    "source": "rule:date_month_day_numeric",
+    "text": "3/7",
+    "start": 1105
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "dialogue",
+    "category": "PATIENT_NAME",
+    "source": "identity:sweep",
+    "text": "pastor",
+    "start": 134
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "dialogue",
+    "category": "PATIENT_NAME",
+    "source": "identity:sweep",
+    "text": "pastor",
+    "start": 1497
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "category": "PATIENT_NAME",
+    "source": "identity:sweep",
+    "text": "Pastor",
+    "start": 352
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "category": "LOCATION",
+    "source": "gazetteer:place_city",
+    "text": "homestead",
+    "start": 958
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "category": "PATIENT_NAME",
+    "source": "identity:sweep",
+    "text": "Pastor",
+    "start": 1145
+   },
+   {
+    "encounter_id": "HT012",
+    "field": "note",
+    "category": "PATIENT_NAME",
+    "source": "identity:sweep",
+    "text": "Pastor",
+    "start": 1245
+   },
+   {
+    "encounter_id": "HT013",
+    "field": "note",
+    "category": "DATE",
+    "source": "rule:date_month_day_numeric",
+    "text": "8/10",
+    "start": 1039
+   },
+   {
+    "encounter_id": "HT015",
+    "field": "note",
+    "category": "INSURER",
+    "source": "gazetteer:insurer",
+    "text": "Medicare",
+    "start": 226
+   },
+   {
+    "encounter_id": "HT015",
+    "field": "note",
+    "category": "ACTIVITY",
+    "source": "gazetteer:activity",
+    "text": "surfing",
+    "start": 2449
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "dialogue",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "Bowen",
+    "start": 954
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "Bowen",
+    "start": 1068
+   },
+   {
+    "encounter_id": "HT016",
+    "field": "note",
+    "category": "DATE",
+    "source": "rule:date_month_day_numeric",
+    "text": "6/12",
+    "start": 1310
+   }
+  ]
+ },
+ "privacy_removed": 0.7141,
+ "privacy_high": 0.7769,
+ "privacy_high_medium": 0.7231,
+ "keep_survival": 0.9211,
+ "edit_precision": 0.9513,
+ "concepts": {
+  "concept_recall": 0.9953,
+  "by_field": {
+   "dialogue": 0.9865,
+   "note": 0.9964
+  },
+  "n_concepts": 634,
+  "top_lost": [
+   [
+    "bowen's",
+    2
+   ],
+   [
+    "delivery",
+    1
+   ]
+  ]
+ },
+ "concept_recall": 0.9953,
+ "evidence_retention": 0.9062,
+ "external_cause_evidence_retention": 0.9655,
+ "n_evidence_occurrences": 192,
+ "icd": {
+  "icd_f1_original": 0.2979,
+  "icd_f1_anonymized": 0.3191,
+  "icd_agreement_f1": 0.7234,
+  "k": "oracle",
+  "label_space": 265,
+  "model": "bge-m3",
+  "rows": [
+   {
+    "encounter_id": "HT001",
+    "gold": [
+     "C50.412",
+     "Z85.71",
+     "Z92.3"
+    ],
+    "orig": [
+     "C43.59",
+     "Z09",
+     "Z85.71"
+    ],
+    "anon": [
+     "C50.412",
+     "D05.1",
+     "Z09"
+    ]
+   },
+   {
+    "encounter_id": "HT002",
+    "gold": [
+     "C34.11",
+     "W11.XXXD",
+     "Y93.H2"
+    ],
+    "orig": [
+     "I50.1",
+     "M25.521",
+     "M79.602"
+    ],
+    "anon": [
+     "I50.1",
+     "M25.521",
+     "Z09"
+    ]
+   },
+   {
+    "encounter_id": "HT003",
+    "gold": [
+     "O9A.213",
+     "W00.0XXA",
+     "Z3A.28"
+    ],
+    "orig": [
+     "S80.11XA",
+     "W00.0XXA",
+     "W00.9XXA"
+    ],
+    "anon": [
+     "S80.11XA",
+     "W00.0XXA",
+     "W00.9XXA"
+    ]
+   },
+   {
+    "encounter_id": "HT004",
+    "gold": [
+     "O24.410",
+     "O34.33",
+     "Z3A.32"
+    ],
+    "orig": [
+     "O34.33",
+     "R87.619",
+     "Z98.49"
+    ],
+    "anon": [
+     "O34.33",
+     "R87.619",
+     "Z11.3"
+    ]
+   },
+   {
+    "encounter_id": "HT005",
+    "gold": [
+     "S02.5XXA",
+     "W50.0XXA",
+     "Y93.67"
+    ],
+    "orig": [
+     "M77.11",
+     "S02.5XXA",
+     "S52.541D"
+    ],
+    "anon": [
+     "S02.5XXA",
+     "S50.01XA",
+     "Z09"
+    ]
+   },
+   {
+    "encounter_id": "HT006",
+    "gold": [
+     "I48.91",
+     "K04.7",
+     "Z79.01"
+    ],
+    "orig": [
+     "I48.91",
+     "M25.522",
+     "M79.602"
+    ],
+    "anon": [
+     "I48.91",
+     "K04.7",
+     "M79.602"
+    ]
+   },
+   {
+    "encounter_id": "HT007",
+    "gold": [
+     "E89.0",
+     "K50.00"
+    ],
+    "orig": [
+     "X50.1XXA",
+     "Z01.810"
+    ],
+    "anon": [
+     "E89.0",
+     "X50.1XXA"
+    ]
+   },
+   {
+    "encounter_id": "HT008",
+    "gold": [
+     "S52.541D",
+     "W11.XXXD",
+     "Y99.0"
+    ],
+    "orig": [
+     "M25.511",
+     "M79.602",
+     "S52.541D"
+    ],
+    "anon": [
+     "M25.511",
+     "M79.602",
+     "S52.541D"
+    ]
+   },
+   {
+    "encounter_id": "HT009",
+    "gold": [
+     "G47.33",
+     "V47.5XXD",
+     "Z68.41"
+    ],
+    "orig": [
+     "G47.33",
+     "J06.9",
+     "J45.909"
+    ],
+    "anon": [
+     "G47.00",
+     "G47.33",
+     "J45.909"
+    ]
+   },
+   {
+    "encounter_id": "HT010",
+    "gold": [
+     "G47.33",
+     "G47.52",
+     "W06.XXXD"
+    ],
+    "orig": [
+     "G47.00",
+     "G47.33",
+     "G47.52"
+    ],
+    "anon": [
+     "G47.00",
+     "G47.33",
+     "G47.52"
+    ]
+   },
+   {
+    "encounter_id": "HT011",
+    "gold": [
+     "C81.90",
+     "Z51.5",
+     "Z66"
+    ],
+    "orig": [
+     "C81.90",
+     "Z51.5",
+     "Z85.71"
+    ],
+    "anon": [
+     "Z09",
+     "Z51.5",
+     "Z85.71"
+    ]
+   },
+   {
+    "encounter_id": "HT012",
+    "gold": [
+     "C34.11",
+     "S22.41XA",
+     "W18.2XXA"
+    ],
+    "orig": [
+     "M25.511",
+     "M25.521",
+     "M79.602"
+    ],
+    "anon": [
+     "M25.521",
+     "M79.602",
+     "Z51.5"
+    ]
+   },
+   {
+    "encounter_id": "HT013",
+    "gold": [
+     "S52.531A",
+     "W11.XXXA",
+     "Y93.H9"
+    ],
+    "orig": [
+     "M79.602",
+     "S52.531D",
+     "S63.501A"
+    ],
+    "anon": [
+     "M79.602",
+     "S52.531D",
+     "S63.501A"
+    ]
+   },
+   {
+    "encounter_id": "HT014",
+    "gold": [
+     "E86.0",
+     "N39.0",
+     "Z85.71"
+    ],
+    "orig": [
+     "I13.0",
+     "N39.0",
+     "Z85.71"
+    ],
+    "anon": [
+     "I13.0",
+     "N39.0",
+     "Z09"
+    ]
+   },
+   {
+    "encounter_id": "HT015",
+    "gold": [
+     "D48.5",
+     "L57.0",
+     "Y93.18"
+    ],
+    "orig": [
+     "C43.59",
+     "Z09",
+     "Z85.828"
+    ],
+    "anon": [
+     "C43.59",
+     "Z09",
+     "Z85.828"
+    ]
+   },
+   {
+    "encounter_id": "HT016",
+    "gold": [
+     "D04.72",
+     "L82.1",
+     "Z85.828"
+    ],
+    "orig": [
+     "D48.5",
+     "L82.1",
+     "S13.9XXD"
+    ],
+    "anon": [
+     "D04.72",
+     "L82.1",
+     "S13.9XXD"
+    ]
+   }
+  ]
+ },
+ "icd_f1_original": 0.2979,
+ "icd_f1_anonymized": 0.3191,
+ "icd_agreement_f1": 0.7234,
+ "summary": {
+  "input": "/Users/usi/neural wave/neural_wave/outputs/robustness/holdout2.jsonl",
+  "output": "/Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced_nocodes/anonymized.jsonl",
+  "config": {
+   "preset": "balanced",
+   "use_codes": false,
+   "detectors": [
+    "rules"
+   ],
+   "remove": [
+    "ACTIVITY",
+    "ADDRESS",
+    "AGE",
+    "CLINICIAN_NAME",
+    "DATE",
+    "DOB",
+    "EMAIL",
+    "FACILITY",
+    "HOLIDAY",
+    "ID",
+    "INSURER",
+    "LOCATION",
+    "OCCUPATION",
+    "ORGANIZATION",
+    "PATIENT_NAME",
+    "PERSON_NAME",
+    "PHONE",
+    "RELATIVE_NAME",
+    "SPORTS_TEAM",
+    "STAFF_NAME",
+    "URL",
+    "YEAR"
+   ],
+   "weak_name_threshold": 0.6,
+   "age_mode": "decade",
+   "explain_text": true,
+   "repair_rounds": 2,
+   "injury_context_shield": true,
+   "llm_model": "qwen3.5:2b-q4_K_M",
+   "llm_num_ctx": 4096,
+   "device": "auto"
+  },
+  "n_records": 16,
+  "runtime_s": 0.57,
+  "ms_per_encounter": 35.9,
+  "peak_ram_mb": 82.7,
+  "peak_vram_mb": 0.0,
+  "vram_budget_mb": 4096,
+  "vram_events": [],
+  "device_placement": {
+   "rules": "cpu"
+  },
+  "n_decisions": 701,
+  "n_edits": 678,
+  "n_kept_with_reason": 23,
+  "explained_decisions": 1.0,
+  "explanations": {
+   "action": {
+    "REPLACE": 552,
+    "GENERALIZE": 126,
+    "KEEP": 23
+   },
+   "category": {
+    "CLINICIAN_NAME": 117,
+    "DATE": 102,
+    "PATIENT_NAME": 84,
+    "PERSON_NAME": 57,
+    "ADDRESS": 51,
+    "ID": 41,
+    "PHONE": 39,
+    "LOCATION": 37,
+    "RELATIVE_NAME": 31,
+    "FACILITY": 30,
+    "AGE": 29,
+    "EMAIL": 22,
+    "DOB": 13,
+    "YEAR": 13,
+    "URL": 13,
+    "ORGANIZATION": 9,
+    "OCCUPATION": 7,
+    "ACTIVITY": 3,
+    "INSURER": 2,
+    "OTHER_QI": 1
+   },
+   "layer": {
+    "rule": 385,
+    "identity": 151,
+    "format": 149,
+    "gazetteer": 16
+   },
+   "keep_reason": {
+    "shield:eponym": 17,
+    "shield:clinical_number": 3,
+    "shield:activity_context": 2,
+    "preset:balanced keeps OTHER_QI": 1
+   },
+   "with_reason": 701
+  },
+  "residual_leaks": 11,
+  "shield_edit_overlaps": 2,
+  "shield_spans": 365,
+  "schema_errors": [],
+  "per_encounter": [
+   {
+    "encounter_id": "HT001",
+    "runtime_s": 0.2261,
+    "n_edits": 46,
+    "n_entities": 12,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E11",
+      "role": "relative",
+      "label": "[RELATIVE_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E12",
+      "role": "relative",
+      "label": "[RELATIVE_2]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 1,
+    "shield": {
+     "shield_spans": 20,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "HT002",
+    "runtime_s": 0.0244,
+    "n_edits": 51,
+    "n_entities": 14,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "clinician",
+      "label": "[CLINICIAN_5]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "relative",
+      "label": "[RELATIVE_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_5]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E11",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E12",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E13",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E14",
+      "role": "relative",
+      "label": "[RELATIVE_1]",
+      "n_tokens": 2
+     }
+    ],
+    "residual_leaks": 1,
+    "shield": {
+     "shield_spans": 22,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "HT003",
+    "runtime_s": 0.0216,
+    "n_edits": 37,
+    "n_entities": 7,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "person",
+      "label": "[PERSON]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "relative",
+      "label": "[RELATIVE_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "relative",
+      "label": "[RELATIVE_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E6",
+      "role": "relative",
+      "label": "[RELATIVE_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "relative",
+      "label": "[RELATIVE_4]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 22,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "HT004",
+    "runtime_s": 0.0214,
+    "n_edits": 45,
+    "n_entities": 6,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 27,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "HT005",
+    "runtime_s": 0.0186,
+    "n_edits": 33,
+    "n_entities": 9,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_5]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 24,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "HT006",
+    "runtime_s": 0.0279,
+    "n_edits": 41,
+    "n_entities": 9,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E7",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E8",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 2
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 29,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "HT007",
+    "runtime_s": 0.0235,
+    "n_edits": 43,
+    "n_entities": 8,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E7",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E8",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 17,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "HT008",
+    "runtime_s": 0.0247,
+    "n_edits": 51,
+    "n_entities": 7,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 2,
+    "shield": {
+     "shield_spans": 19,
+     "edit_overlaps": 1,
+     "missing_strings": 1
+    }
+   },
+   {
+    "encounter_id": "HT009",
+    "runtime_s": 0.0216,
+    "n_edits": 40,
+    "n_entities": 9,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E8",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 2
+     }
+    ],
+    "residual_leaks": 1,
+    "shield": {
+     "shield_spans": 64,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "HT010",
+    "runtime_s": 0.023,
+    "n_edits": 33,
+    "n_entities": 7,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E3",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E7",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 34,
+     "edit_overlaps": 1,
+     "missing_strings": 1
+    }
+   },
+   {
+    "encounter_id": "HT011",
+    "runtime_s": 0.0241,
+    "n_edits": 52,
+    "n_entities": 11,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_5]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_6]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E11",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 1,
+    "shield": {
+     "shield_spans": 12,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "HT012",
+    "runtime_s": 0.0214,
+    "n_edits": 51,
+    "n_entities": 8,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E4",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "relative",
+      "label": "[RELATIVE_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "relative",
+      "label": "[RELATIVE_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "relative",
+      "label": "[RELATIVE_3]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 1,
+    "shield": {
+     "shield_spans": 14,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "HT013",
+    "runtime_s": 0.0209,
+    "n_edits": 37,
+    "n_entities": 10,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 1,
+    "shield": {
+     "shield_spans": 18,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "HT014",
+    "runtime_s": 0.0267,
+    "n_edits": 36,
+    "n_entities": 9,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 1,
+    "shield": {
+     "shield_spans": 18,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "HT015",
+    "runtime_s": 0.0179,
+    "n_edits": 36,
+    "n_entities": 7,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 13,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "HT016",
+    "runtime_s": 0.0241,
+    "n_edits": 46,
+    "n_entities": 8,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 2,
+    "shield": {
+     "shield_spans": 12,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   }
+  ]
+ },
+ "ms_per_encounter": 35.9,
+ "peak_ram_mb": 82.7,
+ "peak_vram_mb": 0.0,
+ "runtime_s": 0.57,
+ "eval_seconds": 0.7
+}

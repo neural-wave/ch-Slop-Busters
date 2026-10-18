@@ -1,0 +1,10 @@
+{
+  "encounter_id": "D2N123",
+  "phi": [
+    {"text": "tyler", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "56 -year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "Tyler Green", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "56-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

@@ -1,0 +1,60 @@
+{
+ "encounter_id": "MC0013",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "I'm Max",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "79 y/o",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "19/06/1946",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Raleigh",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "(755) 564-6654",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Boeing",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "nurse",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Ava",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Rivera",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": []
+}

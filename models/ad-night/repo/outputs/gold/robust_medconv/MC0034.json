@@ -1,0 +1,66 @@
+{
+ "encounter_id": "MC0034",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "Lily",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Brooks",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "84 years old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Madison",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Wisconsin",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "(962) 818-1946",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Boeing",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "software engineer",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Suresh",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Rao",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": []
+}

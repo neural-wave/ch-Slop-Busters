@@ -1,0 +1,307 @@
+{
+ "encounter_id": "HT015",
+ "pii": [
+  {
+   "field": "note",
+   "text": "TD-26-004417",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "15 September 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "BANKS",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Rowan",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "James",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Rowie",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "03/11/1987",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Age: 38",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "38-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2953 61847 1/2",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "GCUH",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "0774512",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "14 Pandanus Court",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Currumbin Waters",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "QLD 4223",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "0412 557 903",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "rowie.banks87@outlook.com.au",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "postal delivery officer",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Australia Post",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Burleigh Heads",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Priya",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Hutchinson-Rao",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Tallebudgera Valley Family Practice",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "2426173J",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "(07) 5534 2198",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "(07) 5534 2199",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "partner Summer",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "13/9",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Mar-2024",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2019",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Currumbin Alley",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "03/2025",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "IMG_4471.HEIC",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "IMG_4472.HEIC",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "iPhone 13",
+   "category": "OTHER_QI",
+   "risk": "low"
+  },
+  {
+   "field": "note",
+   "text": "DERM-0914-03.jpg",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "DERM-0914-04.jpg",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "DL4-2209-57731",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2026-09-14",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "https://skinrefer.tele.example.au/c/7Hq2XZ",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Mai",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Nguyen-Tran",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Gold Coast University Hospital",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "16/09/26",
+   "category": "DATE",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "note",
+   "text": "surfing",
+   "category": "CODE_EVIDENCE",
+   "why": "supports Y93.18 activity code (surfing)"
+  },
+  {
+   "field": "note",
+   "text": "Fitzpatrick II",
+   "category": "EPONYM",
+   "why": "skin phototype scale, not a person"
+  },
+  {
+   "field": "note",
+   "text": "Hutchinson's sign",
+   "category": "EPONYM",
+   "why": "clinical sign for subungual melanoma; differs from referrer Dr Hutchinson-Rao"
+  },
+  {
+   "field": "note",
+   "text": "this summer",
+   "category": "NOT_A_NAME",
+   "why": "season, while the partner is named Summer"
+  },
+  {
+   "field": "note",
+   "text": "3/7",
+   "category": "CLINICAL_NUMBER",
+   "why": "7-point checklist score, not a date"
+  },
+  {
+   "field": "note",
+   "text": "2 o'clock",
+   "category": "CLINICAL_NUMBER",
+   "why": "lesion clock position"
+  }
+ ]
+}

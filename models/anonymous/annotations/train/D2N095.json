@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N095",
+  "phi": [
+    {"text": "cheryl", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "34-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "deadlifts", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "lifting exercises"},
+    {"text": "Ramirez", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "34-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "weightlifting", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "strength training"},
+    {"text": "deadlifts", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "lifting exercises"},
+    {"text": "lifting weights", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "doing strength training"}
+  ],
+  "medical_concepts": []
+}

@@ -1,0 +1,14 @@
+I wrote all five annotation files, and the validator reports 0 problems.
+
+- D2N205: 10 PHI
+- D2N206: 6 PHI
+- D2N207: 14 PHI
+- D2N068: 14 PHI
+- D2N069: 7 PHI
+
+Some labels involved a judgement call:
+- **D2N206:** the doctor says "brenda" while reading the chart, but the patient is Joshua. I couldn't tell who Brenda is, so I labelled the name as `NAME_OTHER`.
+- **D2N207:** the transcript garbles basketball team names ("self expand", "nuts", "cell fix", probably Celtics fan / Nets / Celtics). I labelled them as `ORGANIZATION`, the same way an earlier training file (D2N189) handles the same garbled phrases. I also labelled the players "jason tatum" and "jaylen brown" as `NAME_OTHER`.
+- **D2N069:** I labelled "change a light bulb" as an `ACTIVITY` but left "ladder" in the text, because how the injury happened matters clinically. I treated "nose job" / "Rhinoplasty" as medical, not PHI.
+
+--- stderr ---

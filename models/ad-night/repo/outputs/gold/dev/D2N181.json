@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N181",
+  "pii": [
+    {"field": "dialogue", "text": "michelle", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "king", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "01/05/1986", "category": "DOB", "risk": "high"},
+    {"field": "dialogue", "text": "mrnq27631", "category": "ID", "risk": "high"},
+    {"field": "dialogue", "text": "phillips", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "scott", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "paralegal", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "Michelle", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "King", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "35 y.o.", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Scott", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "paralegal", "category": "OCCUPATION", "risk": "medium"}
+  ],
+  "keep": []
+}

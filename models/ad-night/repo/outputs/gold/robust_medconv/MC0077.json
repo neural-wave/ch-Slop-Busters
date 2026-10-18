@@ -1,0 +1,78 @@
+{
+ "encounter_id": "MC0077",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "Mark Price",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "87-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Tampa",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Florida",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "(988) 843-8305",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "mark.price57@gmail.com",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Costco",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "electrician",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Lakeside Clinic",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "September 10, 2024",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Sanjay",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Gupta",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": []
+}

@@ -1,0 +1,995 @@
+########## ENCOUNTER D2N022
+ICD-10 codes: M65.841 Other synovitis and tenosynovitis, right hand
+=== FIELD: dialogue
+[doctor] this is philip gutierrez , date of birth 1/12/71 . he is a 50-year-old male here for a second opinion regarding the index finger on the right hand . he had a hyperextension injury of that index finger during a motor vehicle accident in march of this year . he was offered an injection of the a1 polyregion , but did not want any steroid because of the reaction to dexamethasone , which causes his heart to race . he was scheduled to see dr. alice davis , which it does n't appear he did . he had an mri of that finger , because there was concern about a capsular strain plus or minus rupture of , quote , " fds tendon , " end quote . he has been seen at point may orthopedics largely by the physical therapy staff and a pr , pa at that institution .
+[doctor] at that practice , an mri was obtained on 4/24/2021 , which showed just focal soft tissue swelling over the right index mcp joint , partial-thickness tear of the right fds , and fluid consistent with tenosynovitis around the fdp and fds tendons . radial and ulnar collateral ligaments of the index mcp joint were intact , as the mcp joint capsule . extensor tendons also deemed intact .
+[doctor] his x-rays , four views of the right hand today , show no bony abnormalities , joint congruency throughout all lesser digits on the right hand , no soft tissue shadows of concern , no arthritis . hi , how are you , mr . gutierrez ?
+[patient] i'm good , how about you ?
+[doctor] well , how can i help you today ?
+[patient] so i was a passenger in , uh , a car that was rear-ended , and we were hit multiple times . i felt two bumps , which slung me forward and caused me to stretch out my right index finger .
+[doctor] so hitting the car in front of you all made that finger go backwards ?
+[patient] um , i do n't really know . i just felt , like , it felt like i laid on my finger , and so , i felt like it went back , and it's been hurting since about march . and it's been like that ever , ever since the wreck happened . so i , and i ca n't make a fist , but sometimes the pain's unbearable . and , like , even driving hurts .
+[doctor] okay , so this was march of this year , so maybe about three months ago ?
+[patient] yeah , and it's still swollen . so i was seeing , uh , an orthopedist , and they sent me to an occupational therapist . and i've been doing therapy with them , and then they sent me to go back and get an mri . so i went and got the mri . uh , then they told me that the mri came back , and it said i had a tear in my finger , but he was n't gon na give me an injection , because the injection was going to make the tear worse .
+[doctor] mm-hmm .
+[patient] and then , after he got the mri , he said that i have , uh , a tear in my finger , and that he did n't wan na do surgery , but he would do an injection . then i'm thinking that you told me you would n't do an injection in there , and then the oper- , occupational therapy says it's because of the tear . and then , they do n't want me to keep rubbing the thing , and doing things with my hand . so i feel like i'm not getting medical care , really .
+[doctor] yeah , i see that .
+[patient] so i came to see if you could do anything for this hand , because i am right-handed , and i kinda need that hand .
+[doctor] what do you do for a living ?
+[patient] uh , i'm an x-ray tech .
+[doctor] well , um , so do you have any diabetes or rheumatoid arthritis ?
+[patient] nope .
+[doctor] uh , do you take any chronic medications of su- , significance ?
+[patient] uh , i do take a blood pressure pill , and that's it .
+[doctor] okay , and it looks like you suffer from itching with the methylprednisolone ?
+[patient] uh , that's correct .
+[doctor] all right , well , i'm gon na scoot up closer and just take a quick look at your hand . all right , so , lean over here . all right , so on this exam today , we have a very pleasant , cooperative , healthy male , no distress . his heart rate is regular rate , rhythm , 2+ radial pulse , no swelling or bruise , bruising in the palm over the volar surface of his index finger , normal creases , slightly diminished over the pip of the index finger compared to the middle finger .
+[doctor] his index finger rests in a 10-degree pip-flexed , uh , position . all right , is that uncomfortable to correct that , and is it uncomfortable now here ?
+[patient] yeah , uh , when you push on it , yeah .
+[doctor] all right , how about here ?
+[patient] um , there , it's not .
+[doctor] okay , not as bad ?
+[patient] yeah , it feels , uh , a little numb .
+[doctor] gotcha , all right . bend , bend the tip of this finger . bend it as hard as you can . keep bending . keep bending . all right , straighten it out . all right , and now , bend it for me as best you can .
+[patient] my goodness . it feels like it's , it's tearing in there .
+[doctor] okay , okay . well , bend the tip of this finger , and bend it as hard as you can . keep bending . all right , straighten that out , and now , bend it for me as best you can . all right , good . now , bend that finger , and i'm going to pull , put it down like this . and then bend that finger for me . okay , sorry , can you bend it for me ? all right . now , make a fist . great , so relax the finger . all right , so just keep it , keep , when i bend the finger , we're just going to bend that finger where it meets the hand . is that okay there ?
+[patient] ow , .
+[doctor] okay , okay . so all the hurt , it seems , is stretching , because you have n't been doing this for so long . so , you know what i mean ? so , um , you're going to have to start really doing that .
+[patient] well , i've tried . i even bought myself a splint .
+[doctor] well , but a splint does n't help move you . it actually immobilizes you .
+[patient] okay . i thought it would straighten it out .
+[doctor] no , no . so , so you really need to start bending the finger right here for me , as hard as you can , and keep going , going . all right , so , so you're okay . all right , so i would say the following , that there is a partial tear in one of the two flexor tendons . there is the fdp and the fds , and the fds is the least important of the two . so the mri shows that it's the fds , the flexor digitorum superficialis , which is the least important of the two .
+[patient] okay .
+[doctor] uh , now , there's two halves of it . so it's a partial tear of one half of a whole tendon . that's not that important , and the other one is just fine .
+[patient] so the good one is good ?
+[doctor] yes , correct . so the one that goes all the way to the tip is good .
+[patient] okay , good .
+[doctor] yeah , so you know , i think what you have got so much scar tissue and inflammation around the fds tendon blocking excursion of these other tendons , that they ca n't get through to the pulley .
+[patient] okay , all right .
+[doctor] so what i would recommend what we try is a cortisone injection , and i would avoid the dexamethasone , because i saw you have a little reaction to that . but we could use the betamethasone , which is a celestone .
+[patient] i've gotten another , uh , methylprednisolone , and that itched me like crazy .
+[doctor] did it ? yeah , this one is water-soluble , and i think it's fairly low toxicity , but high benefit , and i think decreasing the pain will encourage you to move that finger .
+[patient] all right , we'll give it a try .
+[doctor] good . so , you do the shot , and it's going to take about three to five days before it starts feeling better . and then probably over the next couple of weeks , it'll start feeling even better .
+[patient] perfect .
+[doctor] all right , so take advantage of that . you've got ta start moving the finger . you're not going to tear anything or break a bone , uh , because your intensors , extensors are intact . but your collateral ligaments are intact , so you've got a stiff , sore finger . i'm going to try to help as much as i can with this soreness part , and then you have to do all the stiff part .
+[patient] the lady in occupational therapy tried some maneuvers to straighten the finger out , but it even hurt after i left . the whole thing just swelled up .
+[doctor] hmm . okay , so it was injured , and you had scar tissue . and then , you had post-traumatic inflammation . and so , this will help some with all of that . it's not going to make it to where your finger is like , , my finger does n't hurt at all , but it will make it to where at least tolerable , to where you can make some gains . and we actually might need to repeat this as well .
+[patient] will i be able to drive ? i drove myself here today , so ...
+[doctor] yeah , it may feel a little weird , but it's totally safe for you to drive .
+[patient] okay , good .
+[doctor] so for mr . gutierrez , just put that he has a post-traumatic rather severe stenosing tenosynovitis of his right index finger , and the plan is steroid injection today , do a trigger injection , but i'm using a cc of betamethasone . so , mr . gutierrez , do you have , um , therapy scheduled or set up ?
+[patient] uh , not at the moment .
+[doctor] all right , well , i mean , you know that you need to move that finger , and i think to the degree that they can help you do that . so i want you to move that finger , finger , but i think it would be , uh , beneficial for you to have an accountability , um , so at least you know to check in with them once a week with somebody .
+[patient] um , okay . that's kinda why i'm here , for you to tell me what needs to be done , you know ?
+[doctor] yeah , so i'll write you out , um , an outpatient prescription . i think if you go back to the same people where you were before , i'm hoping that after this injection , you're going to be able to do a whole lot more with them . so let's do outpatient once a week for six weeks , um , and then full active and passive range of motion is the goal with no restrictions .
+[patient] all right , sounds like a plan .
+[doctor] all right , well , i will have the nurse set up the injection procedure , and we'll , and i'll be back shortly .
+[patient] thanks , doc .
+[doctor] right trigger finger injection template . attempted to inject one cc of celestone with f- , a half a cc of lidocaine . however , the patient had a dramatic and violent painful reaction to the introduction of the needle , with contortions of the hand , and with dangerously withdrawing the hand with concerns for secondary needle stick . needle was withdrawn . the patient was counseled as to the importance of attempting to get some therapeutic steroid in the flexor tendon sheath . we attempted a second time for a similar injection using the same technique with one cc of celestone and half a cc of lidocaine . a small parma- , uh , palmar vein bled a scant amount , which was cleaned up and band-aid applied . reassured on multiple occasions that no harm was done to his finger . recommended icing in it this evening , and taking ibuprofen .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right index finger hyperextension injury.
+
+HISTORY OF PRESENT ILLNESS
+
+Ms. Philip Gutierrez is a pleasant 50-year-old right-hand-dominant male here today for a 2nd opinion regarding evaluation of the right index finger hyperextension injury sustained during a motor vehicle accident in 03/2021.
+
+In summary, the patient was the passenger in a vehicle that was rear-ended. He reports they were hit multiple times as he felt 2 bumps which caused his to sling forward hyperextending his right index finger. He was offered an injection of the A1 pulley region, but he did not want any steroid due to a reaction to dexamethasone that causes his heart to race. The patient was scheduled to see Dr. Alice Davis, but he has not seen his yet. The patient has been seen at Point May Orthopedics, by the physical therapy staff and a physician assistant at that practice. He underwent an MRI of the right index finger because they were concerned about a capsular strain plus or minus a rupture of the "FDS tendon."
+
+The patient states that he is unable to make a fist secondary to pain and swelling in the right index finger. He describes a pulling, tearing sensation in the right index finger. The pain is exacerbated by driving. He notes that he has been wearing a right index finger splint.
+
+The patient denies any history of diabetes or rheumatoid arthritis. He reports only taking medication for hypertension and denies taking any other chronic medications of significance. He also notes methylprednisolone causes his to itch.
+
+Ms. Gutierrez is employed as an x-ray technician.
+
+PAST HISTORY
+
+Medical
+Hypertension.
+
+SOCIAL HISTORY
+
+Employed as x-ray technician.
+
+ALLERGIES
+
+Methylprednisolone causes itching.
+Dexamethasone causes palpitations.
+
+REVIEW OF SYSTEMS
+
+• Musculoskeletal: Right index finger pain.
+• Endocrine: Denies diabetes.
+
+PHYSICAL EXAM
+
+Constitutional
+Very pleasant, healthy appearing, cooperative male in no distress.
+
+Neurological
+Grossly intact. Slightly diminished sensation to light touch over the right PIP joint of the index finger compared to the middle finger.
+
+Cardiovascular
+Regular rate and rhythm.
+
+Musculoskeletal
+Exam of the right hand, there is no swelling or ecchymosis in the palm on the volar surface of his index finger. Normal creases are noted. Index finger rests in a 10 degree PIP joint flexed position with discomfort upon correction. Bilateral extremities 2+ radial pulses.
+
+RESULTS
+
+X-rays today, 4 views of the right hand, show no bony abnormalities. Joint congruency throughout all lesser digits on the right hand. No soft tissue shadows of concern. No arthritis.
+
+MRI of the right index finger performed on 04/24/2021. Independent review of the images shows focal soft tissue swelling over the right index MCP joint, partial-thickness tear of the right FDS, and fluid consistent with tenosynovitis around the FDP and FDS tendons. Radial and ulnar collateral ligaments of the index MCP joint were intact as was the MCP joint capsule. The extensor tendons were also deemed intact.
+
+ASSESSMENT
+
+• Stenosing tenosynovitis of right index finger.
+
+Ms. Philip Gutierrez is a pleasant 50-year-old right-hand-dominant male here today for a 2nd opinion of his right index finger hyperextension injury sustained during a motor vehicle accident in March of this year. The findings of his examination are consistent with rather severe post-traumatic stenosing tenosynovitis.
+
+PLAN
+
+The patient and I had a lengthy discussion regarding his history, symptoms, and radiographic findings. We discussed the pathophysiology and natural history of stenosing tenosynovitis and the anatomy of the flexor tendons and pulley system in the hand. I explained to the patient that the flexor digitorum superficialis tendon was clearly intact and that He is suffering from post-traumatic inflammation around the flexor digitorum superficialis tendon blocking excursion of the flexor tendons to the A1 pulley.
+
+Treatment options were discussed including conservative management with corticosteroid injections and their statistical effectiveness. Surgical correction was also briefly discussed, although I recommend exhausting non-operative measures with a minimum of 2 injections before proceeding with surgery. I recommended a right index trigger finger cortisone injection today, and the patient elected to proceed. I also recommend that the patient report to occupational therapy once a week for the next 6 weeks to work on full active and passive right index finger range of motion with no restrictions.
+
+The patient verbalizes understanding with the treatment plan and agrees. All questions were answered to the patient's satisfaction today.
+
+PROCEDURE
+
+Right index trigger finger injection.
+The patient understands the risks and benefits and elected to proceed, signed consent obtained. An attempt was made to inject 1.0 cc of Celestone with 0.5 cc of lidocaine. However, the patient had a dramatic and violent painful reaction to the introduction of the needle with contortions of the hand and with dangerously withdrawing the hand with concerns for secondary needle stick. Therefore, the needle was withdrawn. The patient was counseled as to the importance of attempting to get some therapeutic steroid in the flexor tendon sheath. We attempted a 2nd time for a similar injection using the same technique with 1.0 cc of Celestone and 0.5 cc of lidocaine. There was a small palmar vein that bled a scant amount, which was cleaned up off the back of the patient's hand. A Band-Aid was applied. He was reassured on multiple occasions that no harm was done to his finger. I recommended icing it this evening and taking ibuprofen.
+
+INSTRUCTIONS
+
+Occupational therapy as prescribed.
+
+
+########## ENCOUNTER D2N023
+ICD-10 codes: E29.1 Testicular hypofunction
+=== FIELD: dialogue
+[doctor] next patient is paul edwards , date of birth is january 15th 1962 . so he's a 59 year old hiv positive gentleman here for hypogonadism . patient was last seen on november 24th 2020 . his notable things are number one , he is on 1 milliliter every 10 days , uh , his levels were less than 300 to begin with . he's on finasteride currently . he also takes cialis daily so he takes all his pills just from me . um , patient's other area of concern is gynecomastia which is ... which we will discuss with him today . his last psa was 0.66 and his last testosterone was greater than 1,500 .
+[doctor] hey , how are you today ?
+[patient] all right , how have you been ?
+[doctor] i'm good .
+[patient] good , good .
+[doctor] have you lost some weight or are you at least putting on some muscle ? you look trim .
+[patient] no , i think i'm pretty much the same as i've always been .
+[doctor] really ? okay , maybe it's just your black shirt . makes you look thin .
+[patient] yeah , i guess that's it .
+[doctor] so health wise , how is everything going ?
+[patient] good , the testosterone's going well .
+[doctor] that's great .
+[patient] uh , it helped me out . i feel good , more vigorous , sleeping well and i think it's having some positive effects . not so much physically because like i said i've- i've been this way my whole life , but i'm seeing some good improvements in my bloodwork .
+[doctor] okay , well that's good .
+[patient] so the finasteride i'm only taking half a pill , it's the 5 milligram one .
+[doctor] yeah , i remember you telling me that .
+[patient] and cialis , on the days i work out i take 5 milligrams otherwise i take two and a half milligram pills , but , uh , i have been out of it .
+[doctor] okay .
+[patient] but overall i'm doing well , i'm actually taking the correct steps to get my life together .
+[doctor] good . it's always great to hear . well let's take a look . uhm , i'm gon na listen to your heart and lungs .
+[patient] okay .
+[doctor] please use my general exam template , all right . just take a few breaths .
+[patient] okay .
+[doctor] in and out .
+[patient] okay .
+[doctor] all right , everything sounds good , no concerns there .
+[patient] great . so i wanted to show you something .
+[doctor] sure .
+[patient] look at this .
+[doctor] okay , this is your cholesterol ?
+[patient] yeah , my cholesterol and triglycerides . uh , i used to have high triglycerides , you see they were 265 milligrams per deciliter , and i took my first dose of the testosterone on the 28th .
+[doctor] right .
+[patient] now 5 months later look at my numbers .
+[doctor] wow , that's remarkable .
+[patient] is it the test ? it's the only change .
+[doctor] i do n't know , i have n't honestly seen many guys over the years that have cholesterol problems and this . i mean there's a big correlation between diabetic control and testosterone replacement , meaning those who get good levels of their test see their diabetic control improve .
+[patient] yeah .
+[doctor] but i have n't seen a lot of data on the impact on cholesterol . regardless , we will take it .
+[patient] i agree . i was very impressed with my triglycerides and was just wondering if the test may be what's helping .
+[doctor] yeah , that's an unbelievable difference .
+[patient] 145 milligrams per deciliter from 265 milligrams per deciliter is awesome . i also read that it- it's cardioprotective .
+[doctor] absolutely .
+[patient] my red blood cell count has increased .
+[doctor] yeah , i saw that . it's fine though .
+[patient] stable .
+[doctor] your psa today is also , uh , is good also . it's , uh , .6 i think .
+[patient] yeah . , is it ?
+[doctor] yeah , it was .5 last year and anything under 4 is good .
+[patient] nice , that's good news .
+[doctor] so it just needs to be checked every year or so .
+[patient] so in terms of , uh , estrogen control i've been hearing that indole-3-carbinol , or broccoli extract , supposedly can improve my estrogen levels . have you ever heard of it ?
+[doctor] yeah , i've heard of it but i have n't had anybody consistently use it . i mean , your levels are fine and we checked your estra- estradiol and it was not elevated , so .
+[patient] okay .
+[doctor] i would argue that we could test that in the fall if you want , but we do n't need to do , uh , do any more tests ... any more than test once a year , excuse me .
+[patient] okay , what about increasing my testosterone to 175 milligrams ? i'm at 140 now .
+[doctor] well , your levels are high .
+[patient] are they right now ?
+[doctor] well , i mean they were last time .
+[patient] yeah but i just- just injected though , or i had right before that was taken .
+[doctor] i know . i know you had then , uh , when did you inject this time ?
+[patient] i figure i'm on my eighth day today .
+[doctor] okay .
+[patient] so i'm due to dose on thursday or friday .
+[doctor] all right .
+[patient] i have a little med calendar and i put checks and ts on it . that helps me .
+[doctor] that's a great idea . so look , the biggest issue i've seen , even if your levels today are around 700 , is that your peaks are getting greater than 1,500 , putting you at a higher chance of needing to come off due to blood thickness . and your risk will only astronomically go up the higher the dose that we go on .
+[patient] okay .
+[doctor] you look well , your levels are good and you're feeling well .
+[patient] yeah , i'm feeling good .
+[doctor] i'm going to be blunt . unfortunately this happens often where you're feeling good but you want to feel really good . i mean , i get it and this is why people get into problems with this stuff , right ? it's like , back in the day when it was n't prescribed by doctors and people would get it at gyms and stuff and they would take huge doses . and then they would have a heart attack at 50 .
+[patient] yeah , they have to be taking a lot .
+[doctor] likely they are taking more than testosterone , but still .
+[patient] and they are taking stuff for a long time .
+[doctor] true . but right now i would not change your dose .
+[patient] okay .
+[doctor] make sense ?
+[patient] it does , i appreciate the discussion .
+[doctor] no problem . what pharmacy are you using ? have you changed it or anything ?
+[patient] no changes , i use walmart pharmacy . i do need more cialis and finasteride .
+[doctor] okay .
+[patient] i would prefer the paper prescription .
+[doctor] for all of them ?
+[patient] sure .
+[doctor] all right , will do . i'm gon na get your prescriptions .
+[patient] okay , thank you .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Hypogonadism.
+
+HISTORY OF PRESENT ILLNESS
+
+Mr. Paul Edwards is a 59-year-old male, an established patient, who presents to the clinic today for hypogonadism. He was last seen on 11/24/2020. The patient’s history includes positive for HIV, and today he is concerned with gynecomastia.
+
+The patient is doing well, overall, and feels the testosterone is helping. He reports weight stability, feels lively, good, more vigorous, and he is sleeping well. He also thinks the testosterone is having a positive effect on his blood work. He endorses that his triglycerides have always been elevated and adds that they were as high as 265 mg/dL. The patient presented a copy of his bloodwork, showing a significant decrease in his cholesterol after 5 months. Mr. Edwards questioned if the changes in his blood work were due to the testosterone. He also noted that his red blood cell count has not increased. The patient inquired about possible benefits of Indole-3-carbinol, which is a broccoli extract for estrogen control.
+
+Currently, the patient is dosing 140 ng/dL of testosterone per week and inquired if his dose could be increased to 175 ng/dL. He recalled that he had recently injected testosterone before his last testosterone blood work was performed; last testosterone levels were greater than 1500 ng/dL. The patient confirms continued daily use of Finasteride and Cialis, prescribed by me, and stated he needs a refill for both.
+
+Mr. Edwards mentioned he is taking correct steps to get his life "together." He also uses a med calendar to help with medication compliance.
+
+PAST HISTORY
+
+Medical
+HIV
+
+SOCIAL HISTORY
+
+Utilizes med calendar to support medication compliance.
+Actively trying to get his life together.
+
+CURRENT MEDICATIONS
+
+Cialis 5 mg tablet by mouth on days he exercises, 2.5 mg tablet by mouth on days without exercise.
+Finasteride 5 mg half tablet daily.
+Testosterone cypionate 140 mg.
+
+RESULTS
+
+PSA 0.6 ng/mL.
+Triglycerides 145 mg/dL.
+Total testosterone 1500 ng/dL, 11/24/2021.
+
+ASSESSMENT
+
+• Hypogonadism.
+
+PLAN
+
+I recommend maintaining current management. The patient’s last testosterone levels were greater than 1500 ng/dL, although this level was likely related to his recent injection. He requested an increase to his testosterone cypionate from 140 mg to 175 mg, which I denied due to his already high testosterone levels. I counseled the patient on the risks associated with high testosterone levels and Indole-3-carbinol and it’s lacking evidence to support his estrogen levels. The last time his estradiol levels were checked, they were normal; recommend annual screening.
+
+I provided paper prescription refills for Cialis and Finasteride.
+
+
+########## ENCOUNTER D2N024
+ICD-10 codes: Z90.13 Acquired absence of bilateral breasts and nipples; L90.5 Scar conditions and fibrosis of skin
+=== FIELD: dialogue
+[doctor] patient is pamela cook . medical record number is 123546 . she's a 36-year-old female post bilateral reduction mammoplasty on 10-10 20-20 .
+[doctor] hey , how are you ?
+[patient] good . how are you ?
+[doctor] i'm doing well . it's good to see you . how have you been ?
+[patient] i've been doing good .
+[doctor] great . how about your breasts , are they doing all right ?
+[patient] great .
+[doctor] are you having any chills , fever , nausea , or vomiting ?
+[patient] no .
+[doctor] good . all right . let's take a peek real quick .
+[patient] sure .
+[doctor] how's life otherwise ? pretty good ? nothing new ?
+[patient] no , just enjoying summertime .
+[doctor] okay . how's your family ?
+[patient] they're good .
+[doctor] good . all right . i'm going to take a look at your breast now . if you would just open up your gown for me .
+[doctor] everything looks good .
+[patient] yeah .
+[doctor] how's your back pain ?
+[patient] i'm not really having any more .
+[doctor] any hard spots , lumps , or bumps that you've noticed ?
+[patient] i did when i came in last time when i saw your pa , ruth sanchez in march . she said i , she said she found a lump right here under my left breast , but i have n't felt it since then . but i did the massages .
+[doctor] okay , well . that that's good . uh , it's probably just the scar tissue , but everything looks good and you're healing wonderful , so .
+[patient] i told her that the scars here was kind of bothering me and i got scar gel . i was using it everyday , but i do n't think i need it now .
+[doctor] yeah , that scar did widen a little bit . let me take a closer look , hang on . this one widened a little too , ? the incisions are well healed though with no signs of infection or any redness on either breast , so i'm not concerned .
+[patient] yeah , but this one just bothered me a little bit more .
+[doctor] i understand . um , you can close your gown now .
+[doctor] the only thing that is really going to help out that is to uh , to cut it out and re-close it .
+[patient]
+[doctor] and you do n't want that , ?
+[patient] i mean , not right now .
+[doctor] um , you want to come back and revisit um , maybe six months ?
+[patient] yeah , i will do that . i still have n't , i still have some more of the gel and i can try using that again .
+[doctor] okay . keep doing that twice a day . the gel is going to lighten the color a little bit , which is already pretty light . um , but , just in that area , and it's high tension , so it's going to rub a little bit .
+[patient] yeah , but it kind of bothers me a little bit .
+[doctor] uh , i do see that . like i said , the only way to really fix that is to cut it out .
+[patient] uh- .
+[doctor] um , let's take a look in six months and then we'll go from there . sound like a plan ?
+[patient] but we have n't hit a full year yet .
+[doctor] i know . um , i would n't do any revisions anyway for scar tissue until we're at least a year out anyway .
+[patient] okay .
+[doctor] so let's wait those six months . you can keep using uh , the mederma scar gel twice a day . massage and scar gel will help for the scars . um , you can put it on other scars too , if you need .
+[patient] okay .
+[doctor] um , so that's what i would do . let's just get some pictures today so we can keep up um , with them . and keep an eye on these scars and then we'll go from there .
+[patient] sounds good .
+[doctor] all right , well it's good to see you . i'm glad you're doing well .
+[patient] yeah , same here .
+[doctor] all right . well , i'm going to tell the front desk six months and we'll revisit those scars .
+[patient] all right .
+[doctor] thank you . they're gon na come get your photos now , okay ?
+[patient] okay .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow up bilateral reduction mammoplasty.
+
+HISTORY OF PRESENT ILLNESS
+
+Pamela Cook is a 36-year-old female who is returning for a postoperative visit. Status post bilateral reduction mammaplasty 10/10/2020.
+
+The patient was last seen in clinic by Ruth Sanchez, PA in 03/2021 at which time there was a lump along the left breast, and she was advised to perform massages.
+
+Today, Ms. Cook reports she is doing well and that her breasts feel great. She is no longer suffering from back pain. The left breast lower incisional lump from last visit has resolved with massaging and use of scar gel. She reports that the scar on her breast has been bothersome. The patient denies fever, chills, nausea, or vomiting.
+
+CURRENT MEDICATIONS
+
+Mederma scar gel to incision.
+
+PHYSICAL EXAM
+
+Breast
+Bilateral breast incisions well healed with widening of the scar tissue. No signs of infection or erythema.
+
+ASSESSMENT
+
+• Status post bilateral reduction mammoplasty.
+
+Pamela Cook is a 36-year-old female who is status post bilateral reduction mammaplasty on 10/10/2020. There is some widening of the scar tissue bilaterally.
+
+PLAN
+
+- Obtain bilateral breast photos today to monitor scarring.
+- Continue Mederma scar gel and incisional scar massage twice daily.
+
+INSTRUCTIONS
+
+Follow up in 6 months to reevaluate scars.
+
+
+########## ENCOUNTER D2N025
+ICD-10 codes: I50.42 Chronic combined systolic (congestive) and diastolic (congestive) heart failure; Z01.810 Encounter for preprocedural cardiovascular examination; E11.9 Type 2 diabetes mellitus without complications
+=== FIELD: dialogue
+[doctor] next patient is nicole miller . date of birth is 09/18/1949 . patient was called for a follow-up with me for chronic congestive heart failure with diastolic dysfunction . bmp's been , uh , 3,000 in march , and is about six- was up to 6,000 in april . she was increasingly dyspneic . we changed her furosemide and torsemide 20 milligrams by mouth daily . uh to note , the patient is not currently on potassium supplement . her lisinopril had- has also been increased up to 10 milligrams daily in march . also did when i saw her last april . she reported being interested in having her right knee replaced this summer at east metro . it was recommended that we work to control her cardiovascular status before surgery .
+[doctor] hey , miss miller , how are you today ?
+[patient] i'm doing okay , thank you .
+[doctor] i asked you to come in today because we want to keep- we want you to have this knee surgery this summer but we want to keep a close eye on you to make sure a week before your surgery you do n't suddenly go into congestive heart failure and it gets postponed .
+[patient] yeah , that would not be good .
+[doctor] i see you're scheduled on the 24th for surgery .
+[patient] yeah , that's right .
+[doctor] okay , good . well it looks like you have lost about 3 , 3 and a half pounds since i saw you last in april . some of that might be water weight , but still , this is positive .
+[patient] yeah , i noticed that too . i think the oxyglutinine is helping as well . my urgency to use the bathroom is much better .
+[doctor] well that's great .
+[patient] yeah , i , i'm pleased about it too .
+[doctor] you ever get leg or finger cramps or anything like that ?
+[patient] yeah , i had leg cramps the other day , but i thought it might , was maybe just because i was cold as i had my ceiling fan on and fell asleep . i had cramps when i woke up in both legs right here . um i drank pickle juice and it went right away .
+[doctor] well do n't , do n't get crazy with the pickle juice because all of the salt in it .
+[patient] haha , i know , i only drink about 4 ounces or so .
+[doctor] okay good .
+[patient] um it went away so i did n't drink anymore . i find it works a lot better than trying to put some cream on my leg .
+[doctor] sure just , just keep it in moderation .
+[patient] okay .
+[doctor] and then are you still on an iron supplement ? and are you using the bathroom okay ?
+[patient] uh yes , everything is good .
+[doctor] good . how is your heart burn doing ? any problems with that ?
+[patient] no , it did get bad for a while so i tried to take some prilosec and then stopped that other one .
+[doctor] okay .
+[patient] um i did that for like , gosh , i think it was two weeks back in january and have n't had any problems since .
+[doctor] great .
+[patient] um and after i stopped taking that um i went back to the stomach one , so i'm doing good now .
+[doctor] okay and you're still due for a colonoscopy , correct ?
+[patient] uh yeah , that's right .
+[doctor] all right , let's review your blood work real quick . i checked your hemoglobin level because you have had some anemia in the past but that is still doing great .
+[patient] good , that's a relief to hear .
+[doctor] your potassium is 3.9 so it's holding steady on the torsemide . your creatinine was .7 not .8 so you're doing well with kidney numbers . your bun may be a tiny bit elevated at 23 which is the number we look for for dehydration sometimes the kidneys , but it's not terrible . um so when i look at your numbers as a whole i think you're tolerating the torsemide okay at the current dose . i also sent out to look at the heart failure number- i sent to look at your heart failure number . there is a test called a bmp that i was monitoring and in march it was up to 3,000 and then went up to 6,000 in april before i made the change . i'm still waiting for those results .
+[patient] okay .
+[doctor] all in all i think you're doing good on paper though .
+[patient] what about , um what's it called , a1c ? does that show up ?
+[doctor] um i do n't think i ordered it but i could . your last a1c was 5.5 in march .
+[patient] all righty .
+[doctor] so your blood sugar is a little bit high , it was 169 today but that kind of depends on what you ate and you were n't fasting for the blood check so i might have to repeat that test for pre-op , but i do n't think we need to do it today .
+[patient] all righty that sounds good .
+[doctor] i checked your magnesium level because sometimes you uh urinate out magnesium with the water pills but it was normal at 1.7 and your blood pressure is also looking good .
+[patient] okay great . that all sounds awesome .
+[doctor] all right let's take a quick listen .
+[doctor] use my general physical exam template .
+[doctor] and take a couple of deep breaths for me .
+[doctor] your lungs sound pretty good to me so keep doing what you're doing . um uh , like i said , i think you're doing good overall but let's just talk about a few things .
+[patient] all righty .
+[doctor] so we often like to keep people with heart problems on magnesium and get their levels up to around the 2-ish range . yours is a little bit less than 2 and we want that 2-ish range because it can help stabilize the heart muscle . so i might recommend putting you on magnesium supplement . it's supposed to be twice a day so that's kind of annoying , but i know you're on other medicines twice a day too , so i think you'll do fine .
+[patient] yeah , that'll be okay .
+[doctor] great . now before surgery we'll have to get you off your clopidogrel for a week beforehand .
+[patient] yes , okay , i have everything written down on my phone , and i have a letter taped to the side of my bed to remind me .
+[doctor] perfect ! we will give you a reminder as well . we will also need to complete a pre-op check within two weeks of your surgery during the first or second week of june .
+[patient] okay , i'll put that down .
+[doctor] you might also have to repeat an ekg before surgery which we could do today . i know i'm sure it feels like you're doing , you're always doing ekgs . um we do n't need to any x-rays of your chest because you had one recently , and we do n't need any more blood work because we did that today .
+[patient] yeah , i do a lot of ekgs . i'm basically a regular . but i'm happy to do one today , no problem .
+[doctor] lastly , once we get your knee surgery , um we , we should think about getting you a colonoscopy . we can do it here locally because you have medicare . do you have private insurance also ?
+[patient] yeah , i have both .
+[doctor] okay so yes , you can get it , your colonoscopy , wherever you'd like .
+[patient] okay , well my husband's insurance may be running out . might we be able to get the procedure done sooner ? maybe in the next 30 days ? is that okay ?
+[doctor] um i can put it in right now for , uh , for county for the next 30 days , and they might be able to get you in within the next few weeks . it should not take , it should not make you ineligible for the surgery . in other words completing a colonoscopy would not delay your surgery .
+[patient] okay , good .
+[doctor] so let me see . i've been doing one of two things at every one , and everyone is great so it depends more on timing availability of their or for the colonoscopy . we can send you to dr. martin for the surgery who is at county surgical services down here or the other option is valley medical , and they do it at springfield .
+[patient] okay , that sounds good .
+[doctor] i think either direction they're good technicians of the colon .
+[patient] okay , yeah whatever you can get me in , that works great .
+[doctor] so i'll call around . now if you get that done and they tell you 10 years then you'll be good to go .
+[patient] great , thank you .
+[doctor] you're welcome . have a great day . let us know if you need anything else , okay ?
+[patient] sounds good .
+[doctor] all right , assessment and plan .
+[doctor] chronic chf . mixed presentation . had a exacerbation of cf , chf earlier in the spring . we switched her from a furosemide to torsemide and symptomatically she is doing a lot better . she's about 3 , 3 and a half pounds down in weight . breathing is non-labored . going to repeat ekg today but otherwise continue with her current regimen . labs checked and creatinine is appropriate .
+[doctor] uh number 2 , pre-op examination . she is , she's having a right knee replacement end of june . also , she would like to have a colonoscopy performed which we'll try to have done at uh bartley regional , rightley regional hospital in the next month , uh , prior to a change in her insurance . this is just a screening colonoscopy that she is overdue for . no family history of colon cancer .
+[doctor] uh the next one is diabetes . a1c is 5.1 on the last check so no need for further a1c today . she may need another one prior to her surgery next month though . thanks .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow-up.
+
+HISTORY OF PRESENT ILLNESS
+
+Nicole Miller is a 71-year-old female who presents for follow-up. The patient was called in for a follow up with me for chronic congestive heart failure with diastolic dysfunction. Her BNP had been 3000 in 03/2021, up to 6000 in 04/2021. She was increasingly dyspneic. We had changed her furosemide to torsemide at 20 mg by mouth daily. The patient is not on a potassium supplement currently. Her lisinopril had also been increased up to 10 mg daily in 03/2021.
+
+I last saw her in 04/2021, and she had reported being interested in having her right knee replaced this summer at East Metropolitan Hospital, so it was recommended that we work to control her cardiovascular status prior to surgery. She is currently scheduled to have surgery on 06/24/2021. She plans to discontinue clopidogrel a week before her surgery.
+
+The patient states that she has lost approximately 3 to 3.5 pounds since her last visit in 04/2021. Some of which may be water weight decreasing. She did report experiencing bilateral leg cramps which she treated with consumption of pickle juice, which did resolve the cramps. She thought the cramps were related to her being cold.
+
+She is still taking iron supplementation. She denies any concerns with defecation.
+
+Regarding her prior symptoms of heartburn, she denies any recent gastrointestinal issues. She notes that her heartburn was severe at one point but resolved after trying Prilosec for 2 weeks in 01/2021. She denies any issues with heartburn since that time and has stopped taking Prilosec altogether. She has since transitioned back to her original "stomach medication".
+
+The patient is due for a colonoscopy. She is currently double covered with Medicare and private insurance.
+
+PAST HISTORY
+
+Medical
+Chronic Congestive Heart Failure.
+Iron deficiency Anemia.
+
+Medications
+Prilosec.
+
+FAMILY HISTORY
+
+No family history of colon cancer.
+
+CURRENT MEDICATIONS
+
+Torsemide 20 mg by mouth daily.
+Lisinopril 10 mg daily.
+
+RESULTS
+
+Magnesium 1.7, hemoglobin WNL, potassium 3.9, creatinine 0.7, BUN 23.
+03/2020 Hgb A1c 5.5.
+
+ASSESSMENT
+
+• Chronic congestive heart failure with mixed presentation.
+• Preop examination.
+• Diabetes mellitus.
+• Colonoscopy
+
+PLAN
+
+Chronic congestive heart failure with mixed presentation.
+She had an exacerbation of CHF earlier in the spring. We switched her from furosemide to torsemide and symptomatically, she is doing a lot better. She is about 1.5 kg down in weight. Her breathing is nonlabored. We are going to repeat an EKG today. Otherwise, continue her current regimen. Labs were checked and creatinine is appropriate. Her magnesium is below the preferred 2 at 1.7, with some occurrence of bilateral leg cramping, therefore we will start her on magnesium supplement.
+
+Preop examination.
+She is going to be having a right knee replacement at the end of 06/2021. We will schedule a preop check the first week or two of June prior to the surgery. She will discontinue clopidogrel for one week prior to knee replacement surgery; we will provide a reminder to patient of this as well.
+
+Diabetes mellitus.
+A1c is 5.5 on last check, so there is no need for a further A1c today. She may need another one prior to her surgery next month.
+
+Colonoscopy.
+The patient is overdue for a colonoscopy, which we will try to have done at County Hospital in the next month, prior to a change in her insurance. This is just a screening colonoscopy that she is overdue for. No family history of colon cancer.
+
+The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+Complete EKG today. Schedule a preop checkup 1st or 2nd week of June. Start magnesium supplement. Call the clinic with any questions or new symptoms.
+
+
+########## ENCOUNTER D2N026
+ICD-10 codes: M50.30 Other cervical disc degeneration, unspecified cervical region; M79.602 Pain in left arm
+=== FIELD: dialogue
+[doctor] dictating on donald clark . date of birth , 03/04/1937 . chief complaint is left arm pain . hello , how are you ?
+[patient] good morning .
+[doctor] it's nice to meet you . i'm dr. miller .
+[patient] it's nice to meet you as well .
+[doctor] so , i hear you are having pain this arm . is that correct ?
+[patient] that's correct .
+[doctor] okay . and it seems like it's worse at night ?
+[patient] well , right now the hand is .
+[doctor] mm-hmm .
+[patient] and the thing started about two weeks ago . i woke up about two o'clock in the morning and it was just hurting something awful .
+[doctor] uh- .
+[patient] and then i laid some ice on it and it finally did ease up .
+[doctor] okay , that's good .
+[patient] so i got up , i sat on the side of the bed and held my arm down , thinking it would , like , help the circulation , but it did n't .
+[doctor] okay , i see .
+[patient] and so , after a while , when it eased off , maybe about four , five am , i laid back down and it did n't start up again .
+[doctor] mm-hmm , okay .
+[patient] um . i went back to sleep but for several nights this happened , like , over and over . so , i finally went to see the doctor , and i do n't really recall her name .
+[doctor] okay . yeah , i think i know who you're talking about , though .
+[patient] um , she's the one who sent me to you , so , i , i would , i would think so . but when i went to her after the third time it happened and she checked me out , she said it was most likely coming from a pinched nerve .
+[doctor] probably . uh , do you notice that moving your neck or turning your head seems to bother your arm ?
+[patient] uh , no .
+[doctor] okay . is moving your shoulder uncomfortable at all ?
+[patient] no .
+[doctor] and do you notice it at other times besides during the night ?
+[patient] um , some days . if it bothers me at night , then the day following , it usually will bother me some .
+[doctor] okay . and do you just notice it in the hand , or does it seem to be going down the whole arm ?
+[patient] well , it starts there and goes all the way down the arm .
+[doctor] okay . have you noticed any weakness in your hand at all ?
+[patient] uh , yes .
+[doctor] okay . like , in terms of gripping things ?
+[patient] yeah .
+[doctor] okay .
+[patient] uh , this finger , i hurt it some time ago as well .
+[doctor] really ?
+[patient] yeah . it does n't work properly . or , it works very rarely .
+[doctor] gotcha . and did i hear that she gave you some prednisone and some oral steroids , or ?
+[patient] uh , well , she gave me some numbing medicine . it helped a little bit . the other two were a neck pill and gabapentin . uh , you should have my full list in your notes , though . since then it has n't really bothered me at night . also , just so you know , i am a va and i'm one percent disabled from this leg , um , issues from my knees down to my feet .
+[doctor] okay . is it neuropathy ?
+[patient] uh , yep .
+[doctor] gotcha . that is good to know . all right , well , let's go ahead and take a look .
+[patient] okay .
+[doctor] all right . so , to start , i'm gon na have you do something for me . uh , just go ahead and tilt your chin as far as you can down to your chest . okay , good . and now , go the other way , tilting your chin up as far as you can . now , does that seem to bother you at all ? okay . and now , come back to normal , just look and turn your head as far as you can that way . great . and now , as far as you can towards that wall . uh , does that seem to bother you at all ?
+[patient] no . well , actually , i do feel a little strain .
+[doctor] okay . so , you feel it in the neck a little bit ?
+[patient] yeah , just a little strain .
+[doctor] okay . uh , now squeeze my fingers as hard as you can with both hands . great . now , hold your arms like this .
+[patient] okay .
+[doctor] and i'm going to try to strain your arms and try to keep them as stiff as you can . do n't let me strain it . okay , good . good . now , when i , i'm just touching your hands like this . does it seem to feel about the same in both hands ?
+[patient] uh , yes .
+[doctor] okay . all right . so , i do agree with betty . uh , more than likely , this seems like it would be coming from your neck . that's the most common reason that causes what , what you're experiencing . and i looked at an x-ray of your neck , and you do seem to have a lot of arthritis there , and there does seem to be potential for a disc to be pushing on a nerve . and now , what i do n't have is an mri , which would show me , uh , kind of exactly where the nerve roots are getting pinched off .
+[patient] i see .
+[doctor] so , gabapentin can help a little bit with the nerve pain , and what i would like to do is potentially set you up for an epidural . and what that is is it , it's a focused anti-inflammatory medicine , excuse me , that works behind the nerve roops that , nerve roots that we are thinking might be getting squished off . it can often help alleviate your symptoms , and i do need to get an mri of your neck . um , i know we have had one of your lower back , but i need one of your neck to see exactly where the roots are getting pinched off . so , what i can do is tentatively set you up for an epidural , but before you do that , we do need to get that mri so i can see right where i need to put the medicine for your epidural . uh , what do you think of that ?
+[patient] i think that sounds good to me .
+[doctor] okay , good . and just to confirm , do you take any blood thinners ? i do n't think i saw any on your medicine list .
+[patient] uh , no , i do n't .
+[doctor] okay , good . and what i would have you do is continue with the gabapentin . um , are you taking 300 or 100 ?
+[patient] um , not sure . my lady friend helps me handle this stuff .
+[doctor] okay .
+[patient] i am taking eliquis , though .
+[doctor] okay . um , so whatever you are doing you can just keep doing it , and i'm going to set you up for the epidural and imaging study , um , just so i know right where to put the medicine . and i will follow up with you after s- um , that's in . we can do the shot , just to make sure your arm is feeling better . sound good ?
+[patient] sounds good . for the last couple of nights , though , my neck has not been bothering me .
+[doctor] okay . s- um , so , presumably what's happening , then , is when you're sleeping your neck is kind of gets off-tilt , uh , kilter , and it compresses the nerve roots there . now , if you think you're doing fine , we could hold off , but at the very la- least , i'd like to update that mri of yours and see what's going on , because probably this is something that will likely flare up again .
+[patient] yeah , it , it has been for the last week , so , i understand .
+[doctor] okay . all right . well , do you want to do that work-up and do the epidural , or do you think you're doing fine and you want to wait ?
+[patient] well , my hand is still bothering me .
+[doctor] okay . so , you're saying your neck is not bothering you but the hand is . okay . so then , let's just stick with the plan . mri of the neck , so we can see where the nerve roots may be compressed , that's giving your hand the issue . and then , we're going to set you up with the epidural .
+[patient] okay . sounds good .
+[doctor] all right . so , keep going with the gabapentin . i will order the imaging of your neck , and the shot will hopefully help some with those symptoms in your hand , and then we'll follow up afterwards .
+[patient] all right . is the mri today ?
+[doctor] um , you probably ca n't do it today , but let me talk with roy and see how soon we can get it done . just give me a quick minute , and then roy will come in and get things scheduled as soon as we can .
+[patient] all right .
+[doctor] all right . well , it was nice meeting you , my friend .
+[patient] you as well . thank you .
+[doctor] physical exam , elderly white gentleman presents in a wheelchair . no apparent distress . per the template , down through neuro- neurologic . one plus bilateral biceps . triceps brachioradialis . reflexes bilateral all negative . follow up and take out the lower extremities . gait not assessed today . strength and sensation is per the template . uh , upper and lower extremities . musculoskeletal , he is non-tender over his cervical spine . he does have mildly restricted cervical exte- extension . right and left lateral rotation which is symmetric , which gives him mild lateral neck pain but no radi- radicular pain . spurling's maneuver is benign .
+[doctor] paragraph , diagnostics . cervical x-ray 6421 . cervical x-ray reveals significant disc degeneration at c56 , and to a lower extent c45 and c34 . significant lower lumbar facet arthropathy c67 and c7-t1 is difficult to visualize in the current x-rays .
+[doctor] paragraph , impression . number one , left upper extremity neuropathy suspicious for cervical radicularopathy . possible contribution of peripheral neuropathy . number two , neck pain in the setting of arthritis disc degeneration .
+[doctor] paragraph , plan . i suspect that this is a flare of cervical radicularopathy . i'm going to set him up for a cervical mri , and we'll tentatively plan for a left c7-t1 epidural afterwards , although the exact location will be pending the mri results . he'll continue his home exercise program as well as twice a day gabapentin . we'll follow up with him afterwards to determine his level of relief . he denies any blood thinners .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Left arm pain.
+
+HISTORY OF PRESENT ILLNESS
+
+He reports that his left arm pain began approximately 2 weeks ago. He woke around 2:00 am with intense pain in his left arm and hand. He applied ice and after 2-3 hours, the pain improved and he was able to go back to sleep, the pain did not return until that evening. After several nights of experiencing the left arm and hand pain, he was seen by Betty Ross, PA-C. She suspected a pinched nerve and completed x-rays of the cervical spine, prescribed gabapentin and prednisone, and referred the patient to us. The patient has benefited from the gabapentin and prednisone, reporting improvement of pain at night.
+
+The pain initially was encountered at night, but the patient notes that the symptoms carry into the next day. He denies pain when moving his neck, turning his head, and moving his shoulder.
+
+Mr. Clark does report a history of a left finger injury, stating “it rarely works”, and neuropathy in one leg from his knee to his foot which he receives 1% disability for. The patient is a veteran.
+
+PAST HISTORY
+
+Medical
+Peripheral neuropathy.
+
+SOCIAL HISTORY
+
+The patient is a veteran and receives 1% disability.
+
+CURRENT MEDICATIONS
+
+Gabapentin tablet.
+Prednisone tablet.
+
+PHYSICAL EXAM
+
+Constitutional
+Elderly Caucasian male in no apparent distress. Presents in wheelchair.
+
+Neurologic
+Upper extremities: 1+ bilateral biceps, triceps, brachioradialis, reflexes bilaterally, negative. Negative Hoffman's
+Gait: Not assessed today.
+
+Strength
+Upper extremities: Normal throughout the biceps, triceps, deltoid, grip strength, and finger abduction, bilaterally.
+Sensation: Intact to light touch throughout the upper and lower extremities.
+
+Musculoskeletal
+Cervical: Nontender over cervical spine. Mildly restricted cervical extension and right and left lateral rotation, which is symmetric, which gives him mild lateral neck pain, but no radicular pain. Spurling's maneuver is benign.
+
+RESULTS
+
+X-ray Cervical Spine, 06/04/2021.
+Impression: Significant disc degeneration at C5-6 and to a lesser extent C4-5 and C3-4. Significant lower facet arthropathy. C6-7 and C7-T1 are difficult to visualize in the current x-rays.
+
+ASSESSMENT
+
+• Left upper extremity neuropathy, suspicious for cervical radiculopathy, possible contribution of peripheral neuropathy
+• Neck pain in the setting of arthritis and disc generation
+
+PLAN
+
+I suspect that this is a flare of cervical radiculopathy. I am going to set him up for a cervical MRI. We will tentatively plan for a left C7-T1 epidural afterwards, although the exact level will be pending the MRI results. He will continue his home exercise program as well as twice daily gabapentin. We will follow up with him afterwards to determine his level of relief. He denies any blood thinners.
+
+This plan was discussed in detail with the patient who is in agreement.
+
+INSTRUCTIONS
+
+Continue home exercise program and twice daily gabapentin. Schedule MRI and epidural injection. Follow-up after epidural.
+
+########## ENCOUNTER D2N027
+ICD-10 codes: Z09 Encounter for follow-up examination after completed treatment for conditions other than malignant neoplasm; R74.8 Abnormal levels of other serum enzymes; N50.89 Other specified disorders of the male genital organs; R91.8 Other nonspecific abnormal finding of lung field
+=== FIELD: dialogue
+[doctor] eugene walker , n- date of birth 4/14/1960 . he's a 61-year-old male who presents today , uh , for a routine follow-up with chronic medical conditions .
+[doctor] of note , the patient underwent an aortic valve replacement and ascending aortic aneurysm repair on 1/22/2013 . regarding his blood work from 4/10/2021 , the patient's alkaline phosphatate- phosphatase , excuse me , was elevated to 156 . his lipid panel showed elevated total cholesterol of 247 , hdl of 66 , ldl of 166 , and triglycerides at 74 . the patient's tsh was normal at 2.68 . his cbc was unremarkable . his most recent vitamin d level was at the high end of normal at 94 .
+[doctor] good morning , mr. walker . how are you doing ? i mean , it's been a crazy year .
+[patient] i'm doing fine , for the most part , but there are a few things i want to cover today .
+[doctor] sure . go right ahead .
+[patient] uh , well , i'm having more fatigue , but i do n't know if it's age or if it's just , you know , drained at the end of the day . but i still ride my bike . i ca n't go as fast as i used to . i'm still riding , and , you know , after a long bike ride , i'll sit down and then boom . i'm out , you know ?
+[doctor] yeah . what's a long bike ride to you ?
+[patient] uh , 20 to 30 miles .
+[doctor] 20 to 30 miles on a road bike ?
+[patient] yeah , road bike . i think it's a time thing . if i had more time , i would try to do my 40 miles , but i have n't done that . obviously , we're too early in the season so my typical ride is , like , 20 , 30 . in years back , i could do 40 on a good day . i can still do 20 but , you know , i'm tired and have to take a break when i get home .
+[doctor] yeah , i understand .
+[patient] and tyler's my buddy . he's always nice and waits for me , but i used to be able to beat him . but now , he waits for me all the time . he's older than me and it- it kills me .
+[doctor] yeah , i can imagine that would upset me too .
+[patient] well , the last time , you know , you found a heart thing , then . just making sure that the valve is holding out , you know ?
+[doctor] right . so , when was your last stress test ?
+[patient] it was september 9th , 2019 , because i'm eight years out from surgery , and back then , they said , you know , it's going to last eight years . and i'm at that year , so i just want to make sure . i asked dr. lewis for an echocardiogram to see how i'm doing .
+[doctor] yeah .
+[patient] but it's not ... like , nothing has changed drastically since i saw you .
+[doctor] okay , good . do you still go down to hopkins at all ?
+[patient] no , not at all . i just get follow-ups intermittently , here . going there is just ... it's too much stress .
+[doctor] okay .
+[patient] one more thing , i want to make sure i do n't forget . my wife and friends tell me that when i walk , i purse my lips when i'm breathing . other doctors have said , " did you notice your pursed lips breathing ? " i do n't know if that's a bad habit or what .
+[doctor] okay . is there any wheezing associated with that ?
+[patient] no , no wheezing .
+[doctor] and you're able to bike 30 miles and mostly keep up with your friend , tyler , correct ?
+[patient] yeah . the only other thing i want to mention is it's not like i do routine testicular exams , but i know i have this little nodule on my right testicle .
+[doctor] on the testicle or the epididymis ?
+[patient] epididymis . uh , i really do n't know . i'm not super concerned . i read a little online . just wanted to ask you .
+[doctor] and did you have a vasectomy ?
+[patient] no . let me pull my notes out and make sure i mentioned everything i wanted to tell you . those were the only things and it's not like my tiredness is depression or anything . i'm a pretty happy guy overall , you know ? i just know you would ask those questions .
+[doctor] what time are you going to sleep , and about how many hours do you sleep a night ?
+[patient] um , it varies . usually , i get six to seven hours of sleep . i get out of bed some days to be at work by 7:00 , lecture , and i try to work out in the morning . i- i do n't ... i'm not ... i'm not always successful , and now what i do is i- i do make reservations twice a week for a 5:45 swim in the morning .
+[doctor] okay , so you're getting six to seven hours of sleep , and has your wife ever mentioned if you snore or stop breathing at any time ?
+[patient] i believe i snore a little bit , but she's never said anything about me not breathing .
+[doctor] okay . so , you're currently taking vitamin d3 , around 5000 units on sundays , and two thous ... or 50,000 units on sundays , excuse me , and 2000s on the other six days , and then clindamycin prior to dental procedures , correct ?
+[patient] yeah , that's right .
+[doctor] have you had a covid-19 shot yet ?
+[patient] i've received both . my first dose on january 15th , '21 and my second on february 5th , '21 .
+[doctor] good . if you'd hop up here on the table , we're just going to do a physical exam .
+[doctor] well , mr. walker , overall you're doing well . i'm going to order an echocardiogram and a stress test . i also recommend that you follow up with cardiology , i think dr. vincent sanchez would be a great fit for you .
+[patient] all right .
+[doctor] also your recent labs showed an elevated alkaline phosphatase level at 156 . now this could be related to your liver but most likely related to your bone health . we're going to check a few labs today .
+[patient] you're going to have them done today ?
+[doctor] yes , sir , and we will send the results through your patient portal unless something is way off then we'll give you a call .
+[patient] sounds good .
+[doctor] now as far as your breathing , i observed the pursed lip breathing and your exhalation is low . i think you should do a pulmonary function test to further evaluate , and i'll order that as well .
+[doctor] now the nodule in your right testicle should be evaluated by urology , and we will place that referral today , also .
+[patient] sounds like i'm going to be busy getting this all checked out .
+[doctor] yes , sir . now you are due for your mmr and i'm recommend you get the shingles vaccine as well . you have completed your covid-19 , so that's good .
+[doctor] now i'm going to have , uh ... have you return in about a year for your wellness visit . we'll see you back sooner if needed after i review all those labs and those other studies .
+[doctor] do you have any other questions for me ?
+[patient] no , doc . i think you covered it all .
+[doctor] great . okay , the nurse will , uh , be back in a minute to give you mmr today , and the front desk will line up a time to do the shingles vaccine next month .
+[patient] thanks , doc . have a great day .
+[doctor] all right , i used my general physical exam template for respiratory notate : pursed lip breathing , low exhalation phase , clear to oscillation , no wheezing . uh , genitalia notate : right testicle with two to three millimeters palpable nodule does not feel as if it will ... does not feel as if with the epididymis or variococele ; left testicle , normal ; no hernia . all other portions of the physical exam are normal default .
+[doctor] assessment history of the aortic aneurysm repair : the patient underwent and aortic valve replacement and ascending aortic aneurysm repair on 1/20/2013 . he is doing well overall and currently asymptomatic . he is currently not seen by cardiology routinely . suggest the following up and suggested vincent sanchez as his physician . we will perform an echocardiogram , eh , slash , stress test .
+[doctor] elevated alkaline phosphatase level . most recent cmd showed elevation at 156 . this could be related to his liver but most likely re- related to his bone health . i've ordered an alkaline phosphatase and again a gt .
+[doctor] lung field abnormal finding on exona ... excuse me , on examination . the patient has been noted to purse his lips while breathing . he was found himself ... he has found himself feeling more fatigued at the end of the day . he does bicycle around 20 to 30 miles at a time . his exhal- exhalation phase is low on exam , and i've ordered pfts today to further ... for further evaluation .
+[doctor] the right testicular nodule is about two to three millimeters , i've noted on the exam . there's no hernia palpable , and i have suggested reaching out to ro ... urology for a possible ultrasound .
+[doctor] preventative health : the most recent blood work was reviewed with no significant abnormalaries ... abnormalities other than the cmv . uh , we will perform mmr titer today . i have suggested the shingles vaccine and he is fully vaccinated against covid-19 .
+[doctor] patient will return , uh , for a follow-up in one year for a wellness visit , sooner if needed . he is to call with any questions or concerns .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Routine follow up of chronic medical conditions.
+
+HISTORY OF PRESENT ILLNESS
+
+Mr. Eugene Walker is a 61-year-old male who presents today for a routine follow-up of his chronic medical conditions.
+
+Today, the patient reports feeling more fatigued as of late. He notes that he usually rides his bike for about 20 to 30 miles and by the end of his ride he is tired enough that he will immediately fall asleep. The patient adds that he can fall asleep easily and gets about 6 or 7 hours of sleep per night. He believes he snores a bit but denies any signs of apnea.
+
+Of note, the patient underwent an aortic valve replacement and ascending aortic aneurysm repair on 01/22/2013. As he is now 8 years post-op, he has requested an echocardiogram from Dr. Lewis to review how he is doing currently. His last stress test was performed on 09/09/2019.
+
+Mr. Walker reports that his wife and friends have told him that he has pursed lips when he walks. This has also been noticed by his other providers. He denies any wheezing.
+
+Furthermore, the patient has noticed a 2 to 3 mm nodule in his right testicle, possibly with the epididymis but he is unsure. He has not had a vasectomy.
+
+His current medication list only consists of clindamycin prior to dental procedures and vitamin D3 (50,000 IU on Sundays and 2000 IU the other 6 days).
+
+From a preventative standpoint, the patient is due for the shingles vaccine and an MMR titer. He is fully vaccinated for COVID-19 with his first dose on 01/15/2021 and his second dose on 02/05/2021.
+
+PHYSICAL EXAM
+
+Respiratory
+Pursed lip breathing noted. The exhalation phase is low. Lungs are clear to auscultation, no wheezing.
+
+Genitourinary
+No hernia noted. Left testicle normal.
+
+RESULTS
+
+Regarding his blood work from 04/10/2021, the patient's alkaline phosphatase was elevated at 156. His lipid panel showed elevated total cholesterol of 247, HDL 66, LDL 166, and triglycerides 74. The patient's TSH was normal at 2.68. His CBC was unremarkable. His most recent vitamin D level was at the high end of normal at 94.
+
+ASSESSMENT
+
+• History of aortic aneurysm repair.
+• Elevated alkaline phosphate level.
+• Lung field abnormal finding on examination.
+• Right testicular nodule.
+• Preventative health.
+
+PLAN
+
+Mr. Eugene Walker is a 61-year-old male who presents today for a routine follow-up of his chronic medical conditions.
+
+History of aortic aneurysm repair.
+- Overall, he is doing well and currently asymptomatic.
+- Currently he is not seen by cardiology routinely and I have suggested he follow up with Dr. Tyler Sanchez.
+- Ordered echocardiogram and stress test.
+
+Elevated alkaline phosphate level.
+- Most recent CMP showed elevation at 156 IU/L.
+- This could be related to his liver but most likely related to his bone health.
+- Ordered an alkaline phosphatase and gamma GT.
+
+Lung field abnormal finding on examination.
+- The patient has been noted to purse his lips while breathing.
+- He had found himself feeling more fatigued at the end of the day.
+- He does cycle 20 to 30 miles at a time.
+- His exhalation phase was low on exam.
+- Ordered pulmonary function testing for further evaluation.
+
+Right testicular nodule.
+- 2 to 3 mm nodule noted on exam. There is no palpable hernia.
+- Referral placed to urology for possible ultrasound.
+
+Preventative health.
+- Most recent blood work reviewed with no significant abnormalities.
+- He is fully vaccinated against COVID-19.
+- Recommend shingles vaccine next month.
+- MMR titer performed today.
+
+INSTRUCTIONS
+
+- Return in 1 year for routine wellness visit, sooner if needed.
+- Call with any questions or concerns.
+
+
+########## ENCOUNTER D2N028
+ICD-10 codes: K59.00 Constipation, unspecified; R16.0 Hepatomegaly, not elsewhere classified
+=== FIELD: dialogue
+[doctor] patrick allen . date of birth : 7/7/1977 . new patient visit . past medical history includes gerd , anxiety , depression . here for chronic abdominal pain . he had an abdominal ct on 1/23/2020 . impression is a normal ct of the ab- abdomen .
+[doctor] hello , are you mr. allen ?
+[patient] yes , i am .
+[doctor] hi . my name is dr. edwards . nice to meet you .
+[patient] nice to meet you .
+[doctor] welcome to the gi specialty clinic .
+[patient] thank you .
+[doctor] did you have any problems finding us ?
+[patient] no , i've been here with my sister once before .
+[doctor] good . so how can i help you today ? uh , the referral i have is for abdominal pain and diarrhea .
+[patient] right . so i've had ... i've been having this pain right here in my stomach , like right around here .
+[doctor] so in the area of your mid abdomen , just below the belly button ?
+[patient] correct . i've had the pain on and off for about two years . i finally went to the er and a ... a few months ago and they did a ct scan .
+[doctor] i saw that .
+[patient] yeah . they said they did n't really see anything on the scan .
+[doctor] yes , i agree . it looked normal .
+[patient] the problem is i'm either constipated or have explosive diarrhea .
+[doctor] is the pain there all the time ?
+[patient] it's a nagging feeling and it just depends . sometimes it bothers me , sometimes it does n't .
+[doctor] has this been the case over the past two years as well ?
+[patient] more recently in the past couple months , at least with the constipation and diarrhea .
+[doctor] and before that , how are your bowel movements ?
+[patient] they were normal .
+[doctor] uh , okay . so any blood in your stool ?
+[patient] nope .
+[doctor] do you feel like you have more constipation or diarrhea ?
+[patient] probably more constipation .
+[doctor] okay , so when you're constipated , do you not have a bowel movement or is the stool hard ?
+[patient] i usually do n't go , but when i do , it's hard .
+[doctor] and how often do you have a bowel movement when you are constipated ?
+[patient] about three to four times a week . it's like when i need to go to the bathroom , if i can massage it , it feels like it's moving some and i can eventually go .
+[doctor] okay . and when you have a bowel movement , does the pain change ?
+[patient] yeah , it gets a little better .
+[doctor] and are you eating and drinking okay ? any nausea or vomiting , heartburn or indigestion ?
+[patient] none of that .
+[doctor] okay . so tell me about the diarrhea , how often do you get it ?
+[patient] it kinda just depends on what i eat . i think i have a very sensitive stomach . if i eat pasta with a creamy sauce , i'm probably gon na have diarrhea .
+[doctor] okay . and it does n't happen for multiple days in a row or is it just one time ?
+[patient] it's usually just one time and then it's over .
+[doctor] and how's your weight been ? any fluctuation ?
+[patient] nice and pretty stable , although i could stand to lose about 25 pounds .
+[doctor] okay . and is there any family history of gi issues that you know of ?
+[patient] not that i can think of . well , actually my sister does have problems with her stomach too . she has irritable bowel syndrome and that is kind of what i always thought i had even thought i've never been diagnosed with it .
+[doctor] okay . and is there any family history of gi cancer or liver disease ?
+[patient] nope .
+[doctor] have you ever had any surgeries on your abdomen ?
+[patient] i've never had any surgery .
+[doctor] okay , so your gallbladder , appendix , all those are still intact ?
+[patient] yup .
+[doctor] and have you ever had a colonoscopy ?
+[patient] no . i thought that happen when you turn 50 .
+[doctor] well , that's for colon cancer screening , but there are other reasons to have a colonoscopy , like unexplained abdominal pain and changes in bowel habits .
+[patient] okay .
+[doctor] well , come have a seat here and lay back so i can examine you .
+[patient] okay .
+[doctor] i'm gon na start by listening to your belly with my steth- stethoscope . and i hear bowel sounds in all four quadrants .
+[patient] what does that mean ? is everything okay ?
+[doctor] it just means that i can hear little noises in all areas of your belly , which means your bowels are active and working .
+[patient] okay , good .
+[doctor] so now , i'm going to push on your upper and lower abdomen . let me know if you have any pain .
+[patient] it hurts a little when you push right there on the left side , near my belly button .
+[doctor] okay . i do feel stool in your lower colon , which would coincide with constipation , but i also feel a slight enlargement of your liver here on the upper right side . have you had any lab work done recently ?
+[patient] yes , i have a physical about four months ago and they ... i had blood drawn then .
+[doctor] okay . and did your primary care physician say anything about the lab results ?
+[patient] he said i had some very slightly elevated liver enzymes , but we would recheck them in about six months .
+[doctor] and you remember what enzymes were elevated , alt , ast , alp ?
+[patient] he said the alt and the ast were elevated .
+[doctor] and do you take any medications , either prescription or over-the-counter ?
+[patient] i take crestor and olmesartan daily and then tylenol for occasion- occasional pain .
+[doctor] and how frequently do you take the tylenol ?
+[patient] hardly ever . maybe once a month .
+[doctor] and do you consume alcohol ?
+[patient] uh , yes , but only a couple of beers after working in the yard on saturdays .
+[doctor] okay . and no previous history of heavy alcohol or drug use ?
+[patient] nope .
+[doctor] and have you had any recent issues with excessive bruising or bleeding ?
+[patient] nope .
+[doctor] and how about any issues with your ankles or feet swelling ?
+[patient] no .
+[doctor] okay . i'm gon na take a look at your eyes and skin . i do n't see any jaundice .
+[patient] what would cause that ?
+[doctor] issues with your liver . let me take a quick listen to your heart and lungs .
+[patient] okay .
+[doctor] lungs are clear , bilateral heart sounds are normal , no murmurs , gallops , or rubs noted .
+[patient] that's good .
+[doctor] yes . the rest of your physical exam is normal other than what seems to be an increased stool burden in your colon and a slight hepatomegaly .
+[patient] what's that ?
+[doctor] increase stool burden means that there's a lot of stool sitting in your colon .
+[patient] and that's the constipation , right ? but what about the other thing ?
+[doctor] the hepatomegaly means the liver is enlarged .
+[patient] but you said mine was slightly enlarged ?
+[doctor] correct .
+[patient] so what does that mean ?
+[doctor] well , let's talk about what we found and then some possible next steps if you're in agreement .
+[patient] okay .
+[doctor] so as i said , the hepatomegaly means your liver is enlarged .
+[patient] could that be why my stomach is hurting and i'm having issues with the constipation and diarrhea ?
+[doctor] no , i think you're constipated and have occasional bouts of diarrhea because of certain foods you eat . and we can get you started right away on a fiber supplement that should help with that .
+[patient] so what about my liver ? why is it enlarged ?
+[doctor] well , there are many reasons why people can have an elevated liver enzymes and also enlarged liver . some possible causes are certain medications that can be toxic to liver , alcohol abuse , fatty liver disease , hepatitis , cirrhosis , and other liver diseases like wilson's disease .
+[patient] so what do i need to do ?
+[doctor] well , i think since it's been about four months since your blood work was done , we should check your liver enzymes in addition to a few other labs .
+[patient] okay . and then what ?
+[doctor] we will get those drawn today and then depending upon the results you may need an ultrasound of your liver . i think we need to talk about your medications too .
+[patient] which medications ?
+[doctor] crestor , how long have you been taking that ?
+[patient] about 18 months .
+[doctor] okay . well , crestor is one of the medications that can cause liver toxicity so it may be a good idea to discuss other alternatives .
+[patient] should i talk to my primary care or can you change it ?
+[doctor] i would recommend calling your primary care and discuss that with him since he follows you for your blood pressure and cholesterol .
+[patient] okay . i'll call him this afternoon .
+[doctor] great . i also think we should go ahead and get you scheduled for a liver ultrasound . if your blood work looks good , then we can always cancel that .
+[patient] okay . when do you think i'll be able to get the ultrasound done ?
+[doctor] hopefully , within the next two weeks . you will receive a call from the radiology scheduling this afternoon to get it set up .
+[patient] okay . and then what happens ?
+[doctor] when i get the results from the test , i will contact you . and depending upon what we find , we'll come up with our next steps .
+[patient] and when should i see you again ?
+[doctor] uh , let's schedule an appointment when you check out to return in four weeks . we'll discuss how you're doing with the fiber supplement and your constipation and review test results to determine if we need to do further testing on your liver .
+[patient] okay . is there anything else i can do to help with these issues ?
+[doctor] definitely refrain from drinking any alcohol , increase your water intake to at least 48 ounces a day in addition to taking the fiber supplement to help with your constipation . and be mindful of eating foods that you were sensitive to so you can avoid the bouts of diarrhea .
+[patient] okay . and i'll talk to my primary care about my crestor .
+[doctor] excellent . and do you have any other questions for me ?
+[patient] i do n't think so .
+[doctor] great . so remember when you check out the front desk , schedule follow-up appointment with me for four weeks and then go to the lab to get your blood work drawn .
+[patient] okay . sounds good .
+[doctor] and expect a call from radiology scheduling about setting up your ultrasound .
+[patient] all right . thanks , dr. edwards .
+[doctor] thank you , mr. allen .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Abdominal pain and diarrhea.
+
+HISTORY OF PRESENT ILLNESS
+
+Patrick Allen is a 42-year-old male who presents for a new patient visit for chronic abdominal pain, constipation, and diarrhea.
+
+Mr. Allen reports experiencing intermittent mid-abdominal pain for approximately 2 years. The pain is localized just inferior to the umbilicus and he describes it as a “nagging feeling” when it is present. The pain sometimes improves following a bowel movement. Unfortunately, Mr. Allen reports that the pain has been present more often in the past 2 months. In 01/2020, the patient presented to the emergency room due to the pain and underwent a CT scan.
+
+In addition to the abdominal pain, Mr. Allen complains of constipation and episodic severe diarrhea for the past 2 months; however, he estimates that the constipation is more frequent than the diarrhea. When he is constipated, he has a bowel movement 3-4 times a week and the stools are hard. Regarding his diarrhea, he has noticed that it seems to be associated with certain foods. In particular, he notes that pasta with a creamy sauce is likely to prompt an episode of diarrhea. When this occurs, he usually has just 1 bowel movement of diarrhea and then it resolves. The patient states that, prior to 2 months ago, his bowel movements were normal. Mr. Allen notes that massaging his abdomen has sometimes been helpful in producing a bowel movement.
+
+The patient’s last physical was 4 months ago, and he confirms that he did have bloodwork that day. Mr. Allen reports that his primary care provider notified him that his AST and ALT were mildly elevated and advised that they would need to recheck his liver enzymes in 6 months. The patient’s medication list includes Crestor and olmesartan daily and he estimates that he has been taking the Crestor for approximately 18 months. He also takes Tylenol as needed for pain, approximately once a month. The patient states that he drinks 2 beers once a week and denies a history of heavy alcohol or drug use. He also denies excessive bruising or bleeding and any lower extremity edema.
+
+The patient denies blood in his stools, nausea, vomiting, heartburn, and indigestion. He confirms that he is eating and drinking normally, and his weight has been stable. He does acknowledge that he would like to lose 25 pounds, however. He has no family history of gastrointestinal cancer or liver disease; however, his sister has irritable bowel syndrome (IBS). The patient has not had any prior abdominal surgeries and he has never had a colonoscopy.
+
+PHYSICAL EXAM
+
+Respiratory
+Lungs clear to auscultation bilaterally.
+
+Cardiovascular
+No murmurs, gallops, or rubs.
+
+Abdomen
+Normoactive bowel sounds in all 4 quadrants. There is mild left periumbilical tenderness to palpation, mild hepatomegaly, and increased stool burden in colon.
+
+RESULTS
+
+CT of Abdomen, 01/23/2020.
+Impression: Normal CT of abdomen.
+
+ASSESSMENT
+
+• Constipation
+• Mild hepatomegaly
+
+PLAN
+
+Patrick Allen is a 42-year-old male who presents for a new patient visit for chronic abdominal pain, constipation, and diarrhea. The most likely etiology of his abdominal pain is constipation given his history, exam with increased stool burden, and normal abdominal CT. Mild hepatomegaly was also noted on exam today and the patient reportedly had elevated liver enzymes on labs with his primary care provider 4 months ago. The patient is currently on Crestor which may be contributing to his elevated liver enzymes. We discussed findings, diagnosis, and next steps at length.
+
+Constipation
+• Start daily fiber supplement and increase water consumption to at least 48 ounces daily to help with bowel regularity.
+• Avoid trigger foods that may cause episodes of diarrhea.
+
+Mild Hepatomegaly
+• Repeat liver enzyme labs today.
+• Schedule a liver ultrasound pending lab results.
+• Encouraged to cease alcohol consumption.
+• Patient to contact his PCP to discuss alternative medications.
+
+INSTRUCTIONS
+
+Return to clinic in 4 weeks.
+

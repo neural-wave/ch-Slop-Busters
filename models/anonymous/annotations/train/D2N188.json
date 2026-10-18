@@ -1,0 +1,15 @@
+{
+  "encounter_id": "D2N188",
+  "phi": [
+    {"text": "jaqueline", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "jacqueline", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "mountain biking", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "cycling"},
+    {"text": "north point", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a local trail"},
+    {"text": "colorado", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "another state"},
+    {"text": "Jacqueline Price", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Price", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "28-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "mountain biking", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "cycling"}
+  ],
+  "medical_concepts": []
+}

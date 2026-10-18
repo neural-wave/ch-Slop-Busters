@@ -1,0 +1,7 @@
+{
+  "encounter_id": "D2N113",
+  "phi": [
+    {"text": "jacqueline", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

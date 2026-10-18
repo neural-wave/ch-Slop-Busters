@@ -1,0 +1,713 @@
+{
+ "encounter_id": "D2N025",
+ "pii": [
+  {
+   "text": "nicole miller",
+   "field": "dialogue",
+   "category": "PATIENT_NAME",
+   "tier": "direct",
+   "comment": "patient full name"
+  },
+  {
+   "text": "miss miller",
+   "field": "dialogue",
+   "category": "PATIENT_NAME",
+   "tier": "direct",
+   "comment": "patient surname with title"
+  },
+  {
+   "text": "09/18/1949",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "date of birth"
+  },
+  {
+   "text": "march",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "month of BNP/lab values and medication change"
+  },
+  {
+   "text": "april",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "month of BNP and last visit"
+  },
+  {
+   "text": "east metro",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "tier": "quasi",
+   "comment": "hospital for planned knee surgery"
+  },
+  {
+   "text": "the 24th",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "surgery date"
+  },
+  {
+   "text": "january",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "month of prilosec use"
+  },
+  {
+   "text": "june",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "month of planned surgery/pre-op"
+  },
+  {
+   "text": "dr. martin",
+   "field": "dialogue",
+   "category": "CLINICIAN_NAME",
+   "tier": "direct",
+   "comment": "named surgeon"
+  },
+  {
+   "text": "county surgical services",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "tier": "quasi",
+   "comment": "named surgical service"
+  },
+  {
+   "text": "valley medical",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "tier": "quasi",
+   "comment": "named medical facility"
+  },
+  {
+   "text": "springfield",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "tier": "quasi",
+   "comment": "city/location of facility"
+  },
+  {
+   "text": "bartley regional",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "tier": "quasi",
+   "comment": "named hospital"
+  },
+  {
+   "text": "rightley regional hospital",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "tier": "quasi",
+   "comment": "named hospital"
+  },
+  {
+   "text": "Nicole Miller",
+   "field": "note",
+   "category": "PATIENT_NAME",
+   "tier": "direct",
+   "comment": "patient full name"
+  },
+  {
+   "text": "71-year-old",
+   "field": "note",
+   "category": "AGE",
+   "tier": "quasi",
+   "comment": "patient age"
+  },
+  {
+   "text": "03/2021",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "month/year of BNP and medication change"
+  },
+  {
+   "text": "04/2021",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "month/year of BNP and last visit"
+  },
+  {
+   "text": "East Metropolitan Hospital",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "tier": "quasi",
+   "comment": "hospital for planned knee surgery"
+  },
+  {
+   "text": "06/24/2021",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "surgery date"
+  },
+  {
+   "text": "01/2021",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "month/year of Prilosec use"
+  },
+  {
+   "text": "03/2020",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "A1c date"
+  },
+  {
+   "text": "06/2021",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "month/year of planned surgery"
+  },
+  {
+   "text": "June",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "month of pre-op check"
+  },
+  {
+   "text": "County Hospital",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "tier": "quasi",
+   "comment": "named hospital for colonoscopy"
+  }
+ ],
+ "medical_concepts": [
+  {
+   "text": "chronic congestive heart failure with diastolic dysfunction",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "bmp",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "dyspneic",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "furosemide",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "torsemide 20 milligrams by mouth daily",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "potassium supplement",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "10 milligrams daily",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "right knee replaced",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "cardiovascular status before surgery",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "congestive heart failure",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "oxyglutinine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "urgency to use the bathroom",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "leg cramps",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "iron supplement",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart burn",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "prilosec",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "colonoscopy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "hemoglobin level",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "anemia",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "potassium is 3.9",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "creatinine was .7",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "bun may be a tiny bit elevated at 23",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "a1c was 5.5",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood sugar",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "it was 169 today",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "magnesium level",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "normal at 1.7",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "magnesium supplement",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "clopidogrel",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "ekg",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "pre-op check",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "chronic chf",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "mixed presentation",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "exacerbation of cf , chf",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "breathing is non-labored",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pre-op examination",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "right knee replacement",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "screening colonoscopy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "colon cancer",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "diabetes",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a1c is 5.1",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "chronic congestive heart failure with diastolic dysfunction",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "BNP",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "dyspneic",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "furosemide",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "torsemide at 20 mg by mouth daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "potassium supplement",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "right knee replaced",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "clopidogrel",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "bilateral leg cramps",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "iron supplementation",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "heartburn",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Prilosec",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "colonoscopy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Chronic Congestive Heart Failure",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Iron deficiency Anemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "colon cancer",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Torsemide 20 mg by mouth daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lisinopril 10 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Magnesium 1.7",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "hemoglobin WNL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "potassium 3.9",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "creatinine 0.7",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "BUN 23",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hgb A1c 5.5",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Chronic congestive heart failure with mixed presentation",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Preop examination",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Diabetes mellitus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "exacerbation of CHF",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Her breathing is nonlabored",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "EKG",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "magnesium supplement",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "right knee replacement",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "preop check",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "A1c is 5.5",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "screening colonoscopy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a1c",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "bilateral leg cramping",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "magnesium is below the preferred 2 at 1.7",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "increasingly dyspneic",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "A1c",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "county",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic reference to county facility for colonoscopy order; no specific name"
+  },
+  {
+   "text": "medicare",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "insurance program type, not an identifier"
+  },
+  {
+   "text": "dr. martin",
+   "field": "dialogue",
+   "is_pii": true,
+   "comment": "surgeon surname; also a common first name"
+  },
+  {
+   "text": "miller",
+   "field": "dialogue",
+   "is_pii": true,
+   "comment": "patient surname; same surname appears as clinician in other encounters"
+  }
+ ]
+}

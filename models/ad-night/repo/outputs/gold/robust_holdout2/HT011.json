@@ -1,0 +1,367 @@
+{
+ "encounter_id": "HT011",
+ "pii": [
+  {
+   "field": "note",
+   "text": "Winifred",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Winnie",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Ashworth",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Lyle",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "21.06.1933",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "93-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "485 777 3456",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "RXH-0049217",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Flat 3",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "17 Chapel Row",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Harrogate",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "HG2 7QE",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "14/10/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "St Aldhelm's Community Hospital",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Lavender Ward",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Oluwaseun",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Adeyemi",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Clarke",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Dr O.",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Bryony",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Keast",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Iwan",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Gruffydd",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Desmond",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Des",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "07700 900412",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "des.ashworth@fastmail.co.uk",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Hilary",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Wood",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Siobhán",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Bhriain",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "teaches",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Rossett Acre Primary School",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Dr Hodgkin",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Beechwood Surgery",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "March 2019",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Sept 2025",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2nd October",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "05/10/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Sept 2024",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "7000-4412-0938",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Wharfedale Light Hospice",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "volunteered in the charity shop",
+   "category": "OTHER_QI",
+   "risk": "low"
+  },
+  {
+   "field": "note",
+   "text": "Kingsbridge Lane",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "seamstress",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "www.wharfedalelight.org.uk/refer",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "15/10/26",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "01423 555 0274",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Grove Road Methodist Church",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Pauline",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Ackroyd",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "felicity.hodgkin@nhs.net",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "7741206",
+   "category": "ID",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "note",
+   "text": "Hodgkin lymphoma",
+   "category": "EPONYM",
+   "why": "disease name (ICD C81.90), not the GP Dr Hodgkin"
+  },
+  {
+   "field": "note",
+   "text": "Ann Arbor",
+   "category": "EPONYM",
+   "why": "lymphoma staging system, not a person or place of the patient"
+  },
+  {
+   "field": "note",
+   "text": "Reed-Sternberg",
+   "category": "EPONYM",
+   "why": "pathology cell type"
+  },
+  {
+   "field": "note",
+   "text": "Pel-Ebstein",
+   "category": "EPONYM",
+   "why": "fever pattern in Hodgkin lymphoma"
+  },
+  {
+   "field": "note",
+   "text": "3/7",
+   "category": "CLINICAL_NUMBER",
+   "why": "UK shorthand for 3 days, not a date"
+  },
+  {
+   "field": "note",
+   "text": "1/52",
+   "category": "CLINICAL_NUMBER",
+   "why": "UK shorthand for 1 week, not a date"
+  },
+  {
+   "field": "note",
+   "text": "96/58",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure"
+  }
+ ]
+}

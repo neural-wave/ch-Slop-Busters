@@ -1,0 +1,66 @@
+{
+ "encounter_id": "MC0079",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "Ava",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Parker",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "65 years old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "May 18, 1960",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Denver",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Colorado",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Riverside Medical Center",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "April 11, 2024",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Will Mehta",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Mehta",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": []
+}

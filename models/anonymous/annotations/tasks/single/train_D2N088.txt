@@ -1,0 +1,150 @@
+########## ENCOUNTER D2N088
+=== FIELD: dialogue
+[doctor] hi , andrew . how are you ?
+[patient] hey , good to see you .
+[doctor] i'm doing well , i'm doing well .
+[patient] good .
+[doctor] so , i know the nurse told you about dax . i'd like to tell dax a little bit about you .
+[patient] sure .
+[doctor] uh , so , andrew is a 59-year-old male with a past medical history , significant for depression , type two diabetes , and hypertension who presents today with an upper respiratory infection . so , andrew , what's going on ?
+[patient] yeah . we were doing a bit of work out in the yard in the last week or so and i started to feel really tired , was short of breath . um , we- we're not wearing masks as much at the end of the summer and i think i caught my first cold and i think it just got worse .
+[doctor] okay . all right . um , now , have you had your covid vaccines ?
+[patient] yeah , both .
+[doctor] okay . all right . and , um , do you have any history of any seasonal allergies at all ?
+[patient] none whatsoever .
+[doctor] okay . all right . and when you say you're having some shortness of breath , did you feel short of breath walking around or at rest ?
+[patient] uh , usually , it was lifting or carrying something . we were doing some landscaping , so i was carrying some heavy bags of soil and i , i got really winded . it really surprised me .
+[doctor] okay . and are you coughing up anything ?
+[patient] not yet , but i feel like that's next .
+[doctor] okay . and fevers ?
+[patient] uh , i felt a little warm , but i , i just thought it was because i was exerting myself .
+[doctor] okay . all right . and any other symptoms like muscle aches , joint pain , fatigue ?
+[patient] my elbows hurt quite a bit and my knees were pretty tired . l- like i said , i really felt some tension around my knees , but , uh , i think that was a lot to do with , uh , lifting the bags .
+[doctor] okay . all right . um , so , you know , how about , how are you doing in terms of your other medical problems , like your depression ? how are you doing with that ? i know we've , you know , talked about not putting you on medication for it because you're on medication for other things . what's going on ?
+[patient] i- it's been kind of a crazy year and a half . i was a little concerned about that but , for the most part , i've been , been doing well with it . my , my wife got me into barre classes , to help me relax and i think it's working .
+[doctor] okay . all right , great . and , and in terms of your diabetes , how are you doing watching your , your diet and your sugar intake ?
+[patient] uh , i've been monitoring my sugar levels while i am going to work during the week . uh , not so , uh , if its saturday or sunday i usually don't remember . uh , the diet's been pretty good for the most part , except for , you know , some house parties and things like that . but , uh , been good for the most part .
+[doctor] okay and have they been elevated at all since this episode of your-
+[patient] no .
+[doctor] okay . and then , how , lastly , for your high blood pressure , have you been monitoring your blood pressures at home ? did you buy the cuff like i suggested ?
+[patient] uh , same thing . during the while i'm going to work, i'm regular about monitoring it, but if its a saturday or sunday, not so much . but , uh , it's , it's been under control .
+[doctor] but you're taking your medication ?
+[patient] yes .
+[doctor] okay . all right . well , you know , i know that , you know , you've endorsed , you know , the shortness of breath and some joint pain . um , how about any other symptoms ? nausea or vomiting ? diarrhea ?
+[patient] no .
+[doctor] anything like that ?
+[patient] no .
+[doctor] okay . all right . well , i wan na go ahead and do a quick physical exam , all right ? hey , dragon , show me the vital signs . so , your vital signs here in the office look quite good .
+[patient] mm-hmm .
+[doctor] you know , everything's looking normal , you do n't have a fever , which is really good . um , i'm just gon na go ahead and listen to your heart and your lungs and , kind of , i'll let you know what i hear , okay ?
+[patient] sure .
+[doctor] okay . so , on your physical exam , you know , your heart sounds nice and strong . your lungs , you do have scattered ronchi bilaterally on your lung exam . uh , it clears with cough . um , i do notice a little bit of , um , some edema of your lower extremities and you do have some pain to palpation of your elbows bilaterally . um , so , let's go ahead , i want to look at some of your results , okay ?
+[patient] mm-hmm .
+[doctor] hey , dragon . show me the chest x-ray .
+[doctor] so , i reviewed the results of your chest x-ray and everything looks good . there's no airspace disease , there's no pneumonia , so that's all very , very good , okay ?
+[patient] good .
+[doctor] hey , dragon . show me the diabetic labs .
+[doctor] and here , looking at your diabetic labs , you know , your hemoglobin a1c is a little elevated at eight .
+[patient] mm-hmm .
+[doctor] i'd like to see that a little bit better , around six or seven , if possible .
+[patient] mm-hmm .
+[doctor] um , so let's talk a little bit about my assessment and my plan for you .
+[patient] mm-hmm .
+[doctor] so , for your first problem , this upper respiratory infection , i believe you , you have a viral syndrome , okay ? we'll go ahead and we'll send a covid test , just to make sure that you do n't have covid .
+[patient] mm-hmm .
+[doctor] uh , but overall , i think that , um , you know , this will resolve in a couple of days . i do n't think you have covid , you do n't have any exposures , that type of thing .
+[patient] mm-hmm .
+[doctor] so , i think that this will improve . i'll give you some robitussin for your cough and i would encourage you take some ibuprofen , tylenol for any fever , okay ?
+[patient] you got it .
+[doctor] for your next problem , your depression , you know , it sounds like you're doing well with that , but again , i'm happy to start on a med- , a medical regiment or ...
+[patient] mm-hmm .
+[doctor] . refer you to psychotherapy , if you think that that would be helpful .
+[patient] mm-hmm .
+[doctor] would you like that ?
+[patient] u- u- um , maybe not necessarily . maybe in a , uh , few months we'll check on that .
+[doctor] okay . all right .
+[doctor] for your third problem , your type two diabetes , i want to go ahead and increase your metformin to 1000 milligrams , twice daily .
+[patient] mm-hmm .
+[doctor] and i'm gon na get an- another hemoglobin a1c in four months , okay ?
+[patient] okay , sure .
+[doctor] hey , dragon . order a hemoglobin a1c .
+[doctor] and lastly , for your high blood pressure , it looks like you're doing a really good job managing that . i want to go ahead and continue you on the , um , lisinopril , 20 milligrams a day .
+[patient] mm-hmm .
+[doctor] and i'm gon na go ahead and order a lipid panel , okay ?
+[patient] sure .
+[doctor] do you need a refill of the lisinopril ?
+[patient] actually , i do .
+[doctor] okay . hey , dragon . order lisinopril , 20 milligrams daily .
+[doctor] so , the nurse will be in , she'll help you , uh , make a follow-up appointment with me . i want to see you again in about four months .
+[patient] okay .
+[doctor] let me know if your symptoms worsen and we can talk more about it , okay ?
+[patient] you got it .
+[doctor] all right . hey , dragon . finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Upper respiratory infection.
+
+HISTORY OF PRESENT ILLNESS
+
+Andrew Campbell is a 59-year-old male with a past medical history significant for depression, type 2 diabetes, and hypertension. He presents today with an upper respiratory infection.
+
+The patient reports that he has been doing a bit of work out in the yard in the last week or so. He started to feel really tired and short of breath. The patient denies coughing up anything, but he feels like he will soon be coughing up phlegm. He denies having a fever, but he felt a little warm. He attributed this to exerting himself. He reports that his elbows hurt quite a bit. He notes his knees were pretty tired and he felt some tension around his knees. The patient attributes these symptoms to lifting heavy bags. He has not been wearing a mask as much recently. He believes that he caught his first cold and his symptoms have worsened. He has had both of his COVID vaccinations.
+
+He denies any history of seasonal allergies.
+
+Regarding his depression, he states it has been a crazy year and a half. He was a little concerned about that, but for the most part, he has been doing well with it. His wife got him into barre classes and this has been relaxing.
+
+Regarding his diabetes, he has been monitoring his sugar levels while he is at work, but is not as consistent on Saturdays and Sundays. His diet has been pretty good for the most part, except for some house parties. They have not been elevated since his respiratory symptoms began.
+
+The patient has been monitoring his blood pressure at home. He reports that he is very regular with monitoring his blood pressure during the week, though less consistently on weekends. He reports his blood pressure has been under control. He has continued to utilize lisinopril 20 mg, daily.
+
+The patient denies nausea, vomiting, diarrhea.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: Denies fever.
+• Cardiovascular: Endorses dyspnea on exertion.
+• Respiratory: Endorses shortness of breath and cough.
+• Gastrointestinal: Denies nausea or diarrhea.
+• Musculoskeletal: Endorses bilateral elbow and knee pain.
+• Psychiatric: Endorses depression.
+
+PHYSICAL EXAMINATION
+
+• Respiratory: Scattered rhonchi bilaterally, clears with cough.
+• Cardiovascular: No murmurs, gallops, or rubs. No extra heart sounds.
+• Musculoskeletal: Edema in the bilateral lower extremities. Pain to palpation of the bilateral elbows.
+
+RESULTS
+
+X-ray of the chest is unremarkable. No airspace disease. No signs of pneumonia.
+
+Hemoglobin A1c is elevated at 8.
+
+ASSESSMENT AND PLAN
+
+Andrew Campbell is a 59-year-old male with a past medical history significant for depression, type 2 diabetes, and hypertension. He presents today with an upper respiratory infection.
+
+Upper respiratory infection.
+• Medical Reasoning: I believe he has contracted a viral syndrome. His chest x-ray was unremarkable and he has received both doses of the COVID-19 vaccination.
+• Additional Testing: We will obtain a COVID-19 test to rule this out.
+• Medical Treatment: I recommend he use Robitussin for cough, as well as ibuprofen or Tylenol if he develops a fever.
+
+Depression.
+• Medical Reasoning: He has been practicing barre classes and is doing well overall.
+• Medical Treatment: I offered medication or psychotherapy, but the patient opted to defer at this time.
+
+Diabetes type 2.
+• Medical Reasoning: His blood glucose levels have been well controlled based on home monitoring, but his recent hemoglobin A1c was elevated.
+• Additional Testing: We will repeat a hemoglobin A1c in 4 months.
+• Medical Treatment: We will increase his metformin to 1000 mg twice daily.
+
+Hypertension.
+• Medical Reasoning: He has been compliant with lisinopril and his blood pressures have been well controlled based on home monitoring.
+• Additional Testing: We will order a lipid panel.
+• Medical Treatment: He will continue on lisinopril 20 mg once daily. This was refilled today.
+
+Follow up: I would like to see him back in approximately 4 months.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.

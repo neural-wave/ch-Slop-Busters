@@ -1,0 +1,361 @@
+{
+ "encounter_id": "HT005",
+ "pii": [
+  {
+   "field": "note",
+   "text": "CEDAR VALLEY FAMILY & PEDIATRIC DENTISTRY",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "2140 Larkspur Ave",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Suite 3B",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Madison",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "WI 53704",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "(608) 555-0147",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "www.cedarvalleysmiles.com",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Whitfield",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Theodore",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Teddy",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "01/09/2010",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "CV-0048817",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "March 14, 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Rachel",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Ellis, DDS",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Summer",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Okafor",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Grace",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "608.555.0193",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "gwhit.mom82@gmail.com",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Badger Mutual Dental PPO",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "WI-PPO-2207",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "BMD772041389-01",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "50316",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "16-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Cedar Ridge High School",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Coach Price",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "08/2021",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Delgado-Ruiz",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "NICU nurse",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Lakeview Regional",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "03/28/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2026-03-15",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "03/14/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "1497730258",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "S.O.",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "R.",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "note",
+   "text": "playing basketball",
+   "category": "CODE_EVIDENCE",
+   "why": "supports Y93.67 Activity, basketball"
+  },
+  {
+   "field": "note",
+   "text": "varsity scrimmage",
+   "category": "CODE_EVIDENCE",
+   "why": "basketball activity context for Y93.67"
+  },
+  {
+   "field": "note",
+   "text": "struck in the mouth by another player's elbow",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism for W50.0XXA hit by another person"
+  },
+  {
+   "field": "note",
+   "text": "rebound",
+   "category": "CODE_EVIDENCE",
+   "why": "basketball activity detail"
+  },
+  {
+   "field": "note",
+   "text": "Ellis class III",
+   "category": "EPONYM",
+   "why": "Ellis tooth-fracture classification, not the dentist"
+  },
+  {
+   "field": "note",
+   "text": "Ellis class II",
+   "category": "EPONYM",
+   "why": "Ellis tooth-fracture classification, not the dentist"
+  },
+  {
+   "field": "note",
+   "text": "Cvek",
+   "category": "EPONYM",
+   "why": "Cvek partial pulpotomy technique"
+  },
+  {
+   "field": "note",
+   "text": "Angle Class I",
+   "category": "EPONYM",
+   "why": "Angle occlusion classification"
+  },
+  {
+   "field": "note",
+   "text": "price of a custom guard",
+   "category": "NOT_A_NAME",
+   "why": "ordinary word price, not Coach Price"
+  },
+  {
+   "field": "note",
+   "text": "D0140",
+   "category": "CLINICAL_NUMBER",
+   "why": "CDT procedure code"
+  },
+  {
+   "field": "note",
+   "text": "D0220/D0230",
+   "category": "CLINICAL_NUMBER",
+   "why": "CDT procedure codes"
+  },
+  {
+   "field": "note",
+   "text": "D0240",
+   "category": "CLINICAL_NUMBER",
+   "why": "CDT procedure code"
+  },
+  {
+   "field": "note",
+   "text": "D3220",
+   "category": "CLINICAL_NUMBER",
+   "why": "CDT procedure code"
+  },
+  {
+   "field": "note",
+   "text": "D2335",
+   "category": "CLINICAL_NUMBER",
+   "why": "CDT procedure code"
+  },
+  {
+   "field": "note",
+   "text": "D2331",
+   "category": "CLINICAL_NUMBER",
+   "why": "CDT procedure code"
+  },
+  {
+   "field": "note",
+   "text": "D7910",
+   "category": "CLINICAL_NUMBER",
+   "why": "CDT procedure code"
+  },
+  {
+   "field": "note",
+   "text": "5-0",
+   "category": "CLINICAL_NUMBER",
+   "why": "suture size"
+  },
+  {
+   "field": "note",
+   "text": "1:100,000",
+   "category": "CLINICAL_NUMBER",
+   "why": "epinephrine concentration"
+  },
+  {
+   "field": "note",
+   "text": "#6-#11",
+   "category": "CLINICAL_NUMBER",
+   "why": "tooth range for splint"
+  },
+  {
+   "field": "note",
+   "text": "#7-#10",
+   "category": "CLINICAL_NUMBER",
+   "why": "tooth range for radiographs"
+  },
+  {
+   "field": "note",
+   "text": "#7/#10",
+   "category": "CLINICAL_NUMBER",
+   "why": "tooth numbers"
+  },
+  {
+   "field": "note",
+   "text": "3/10",
+   "category": "CLINICAL_NUMBER",
+   "why": "pain score"
+  }
+ ]
+}

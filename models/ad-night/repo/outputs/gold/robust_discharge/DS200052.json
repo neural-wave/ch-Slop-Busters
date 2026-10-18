@@ -1,0 +1,115 @@
+{
+ "encounter_id": "DS200052",
+ "pii": [
+  {
+   "field": "note",
+   "text": "Anjali",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Desai",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "February 17, 1965",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "06/09/2024",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "09/09/2024",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Meera",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Verma",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "+91 9348463332",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Manipal Hospital",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "MRN-5829103",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Age: 59",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "HDFC ERGO General Insurance",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "1728394051",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Old Airport Road",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Bengaluru",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Karnataka",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "560017",
+   "category": "LOCATION",
+   "risk": "medium"
+  }
+ ],
+ "keep": [
+  {
+   "field": "note",
+   "text": "Hyperlipidemia",
+   "category": "CODE_EVIDENCE",
+   "why": "E78.5"
+  }
+ ]
+}

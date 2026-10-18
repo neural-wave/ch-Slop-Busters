@@ -1,0 +1,850 @@
+{
+ "id": "S028",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S22.42XA",
+   "description": "Multiple fractures of ribs, left side, initial encounter for closed fracture"
+  },
+  {
+   "code": "V86.55XA",
+   "description": "Driver of 3- or 4- wheeled all-terrain vehicle (ATV) injured in nontraffic accident, initial encounter"
+  },
+  {
+   "code": "Y92.73",
+   "description": "Farm field as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y99.0",
+   "description": "Civilian activity done for income or pay"
+  },
+  {
+   "code": "E78.5",
+   "description": "Hyperlipidemia, unspecified"
+  }
+ ],
+ "dialogue": "[doctor] {PATIENT_FIRST} , how you doing ?\n[patient] been better , doc . been better .\n[doctor] i bet . so your wife {OTHER_FIRST} brought you in , she said you rolled your four-wheeler ?\n[patient] yeah . i did . pretty dumb .\n[doctor] well , tell me what happened .\n[patient] so this was {DATE_SPOKEN} . we run cattle on our place , about two hundred head , out past {CITY} , and i was out in the back pasture on the four-wheeler , the atv , checking fence line . part of the farm is real hilly . i was going across the side of a hill , and the front tire dropped into a hole , like a washout , and the whole thing just tipped over on me .\n[doctor] okay . so it rolled on top of you ?\n[patient] it rolled once , and it kind of came down on my left side . i was pinned under it for a minute , and then i got it pushed off .\n[doctor] okay . this was out in the field , not on a road ?\n[patient] no , no road . out in the middle of the hay field .\n[doctor] okay . and this is your farm , you work it full time ?\n[patient] yes sir , that's my living . been farming it my whole life , my dad did before me .\n[doctor] were you wearing a helmet ?\n[patient] no . nobody wears a helmet out there .\n[doctor] okay . did you hit your head , or lose consciousness ?\n[patient] no , i do n't think so . i remember everything . it just knocked the wind out of me .\n[doctor] okay . and where are you hurting ?\n[patient] my left ribs . right along here , on the side and kind of the back . it hurts real bad to take a breath , and coughing , oh , forget it . sneezing about killed me yesterday .\n[doctor] how would you rate it ?\n[patient] when i'm still , a five , maybe . when i breathe in deep or move , a nine .\n[doctor] okay . any shortness of breath ?\n[patient] a little bit , mostly because it hurts to breathe .\n[doctor] any coughing up blood ?\n[patient] no .\n[doctor] any pain in your belly , like on the left side , up under the ribs ?\n[patient] no , not the belly .\n[doctor] any blood in your urine ?\n[patient] no .\n[doctor] okay . and you waited two days to come in .\n[patient] yeah , i figured it was just bruised . but {OTHER_FIRST} made me come in after i could n't sleep last night .\n[doctor] she was right . what have you been taking ?\n[patient] some advil .\n[doctor] okay . now , you're also on a cholesterol medicine , right ? the atorvastatin ?\n[patient] yeah , 20 milligrams .\n[doctor] taking that every day ?\n[patient] most days . i forget it sometimes when i'm up early for chores .\n[doctor] okay . any muscle aches from it ?\n[patient] no .\n[doctor] okay . let me take a look at you . i'm gonna listen to your lungs first . take a breath in . and out . okay , breath sounds are present on both sides , a little decreased at the left base because you're not taking a full breath . i'm gonna press gently along the ribs .\n[patient] ah , yeah , that's it .\n[doctor] okay . you've got a big bruise along the left side , and tenderness over about the sixth through ninth ribs , on the side and back . i do n't feel any crunching or anything moving abnormally . your belly is soft , no tenderness on the left side up under the ribs . oxygen level is 96 % on room air .\n[doctor] so we got a chest x-ray and a ct here this morning . you have fractures of the left sixth , seventh and eighth ribs . they're nondisplaced , meaning the bones are still lined up . there's no collapsed lung and no blood around the lung . and your spleen looks fine on the ct , which i was worried about with left-sided rib fractures .\n[patient] three broken ribs . huh .\n[doctor] yeah . so , multiple rib fractures on the left side . the main thing with rib fractures is we need to keep your lungs open so you do n't get pneumonia . i'm gonna give you an incentive spirometer . you breathe in on that ten times an hour while you're awake .\n[patient] okay .\n[doctor] for pain , i'm gonna have you take tylenol 1000 milligrams every eight hours on a schedule , and you can keep using the advil , 600 milligrams with food . i'll also give you lidocaine patches for the ribs , and a small number of oxycodone 5 milligram tablets for the worst pain at night .\n[patient] okay .\n[doctor] no riding the atv , no lifting hay bales , no heavy work for at least four to six weeks . can somebody help with the chores ?\n[patient] my nephew can help out .\n[doctor] good . and if you get more short of breath , a fever , or cough up blood , come straight back .\n[patient] all right .\n[doctor] for your cholesterol , we'll continue the atorvastatin 20 milligrams . try to take it at night , so you do n't miss it in the morning rush . we'll check your lipids at your next visit .\n[patient] sounds good .",
+ "note": "CHIEF COMPLAINT\n\nLeft-sided chest wall pain after ATV rollover.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with hyperlipidemia who presents with left rib pain after an all-terrain vehicle accident 2 days ago.\n\nThe patient was driving an ATV in a hilly hay field on his cattle farm, checking fence line, when the front tire dropped into a washout and the vehicle rolled over, landing on his left side. He was briefly pinned before freeing himself. The accident occurred off-road. He was working on his farm at the time, which is his livelihood. He was not wearing a helmet. He denies head injury or loss of consciousness. He reports left lateral and posterior rib pain, 5/10 at rest and 9/10 with deep inspiration, coughing, sneezing, and movement. He reports mild dyspnea due to pain. He denies hemoptysis, abdominal pain, or hematuria. He has been taking Advil.\n\nRegarding his hyperlipidemia, he takes atorvastatin 20 mg daily, with occasional missed doses. He denies myalgias.\n\nPHYSICAL EXAM\n\nVitals: Oxygen saturation 96% on room air.\nLungs: Breath sounds present bilaterally, mildly decreased at the left base due to splinting.\nChest: Large ecchymosis along the left lateral chest wall. Tenderness over the left 6th through 9th ribs laterally and posteriorly. No crepitus. No paradoxical motion.\nAbdomen: Soft. No left upper quadrant tenderness.\n\nRESULTS\n\nChest x-ray and CT chest: Nondisplaced fractures of the left 6th, 7th, and 8th ribs. No pneumothorax or hemothorax. Spleen intact.\n\nASSESSMENT AND PLAN\n\n1. Multiple fractures of ribs, left side, closed.\n- ATV rollover in a farm field while working.\n- Incentive spirometer 10 times per hour while awake.\n- Scheduled Tylenol 1000 mg every 8 hours, Advil 600 mg with food, lidocaine patches, and oxycodone 5 mg as needed for severe nighttime pain.\n- No ATV use, lifting, or heavy farm work for 4 to 6 weeks.\n- Return precautions for worsening shortness of breath, fever, or hemoptysis.\n\n2. Hyperlipidemia.\n- Continue atorvastatin 20 mg daily, take in the evening to improve adherence.\n- Lipid panel at next visit.",
+ "medical_concepts": [
+  {
+   "text": "you rolled your four-wheeler",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "we run cattle on our place",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "out in the back pasture",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "on the four-wheeler , the atv",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "checking fence line",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "part of the farm is real hilly",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the front tire dropped into a hole",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the whole thing just tipped over on me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it rolled once",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "came down on my left side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was pinned under it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no road",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "out in the middle of the hay field",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "this is your farm , you work it full time",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "that's my living",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a big bruise along the left side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tenderness over about the sixth through ninth ribs",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "they're nondisplaced",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no riding the atv",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "breath sounds are present on both sides",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little decreased at the left base",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i do n't feel any crunching",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your belly is soft",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no collapsed lung",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no blood around the lung",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your spleen looks fine",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxygen level is 96 % on room air",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "my left ribs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it hurts real bad to take a breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lose consciousness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "knocked the wind out of me",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shortness of breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "coughing up blood",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain in your belly",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood in your urine",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "muscle aches",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "short of breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fractures of the left sixth , seventh and eighth ribs",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "three broken ribs",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "multiple rib fractures on the left side",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "left-sided rib fractures",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "cholesterol",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "pneumonia",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "spleen",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "lungs",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "ct",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "lipids",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "advil",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol 1000 milligrams every eight hours",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "600 milligrams with food",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "lidocaine patches",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxycodone 5 milligram tablets",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "atorvastatin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "atorvastatin 20 milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "cholesterol medicine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "incentive spirometer",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ATV rollover",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "all-terrain vehicle accident",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "driving an ATV",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "in a hilly hay field on his cattle farm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "checking fence line",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the vehicle rolled over",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landing on his left side",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "He was briefly pinned",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "The accident occurred off-road",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "He was working on his farm at the time, which is his livelihood",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Large ecchymosis along the left lateral chest wall",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness over the left 6th through 9th ribs",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ATV rollover in a farm field while working",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heavy farm work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Oxygen saturation 96% on room air",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Breath sounds present bilaterally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mildly decreased at the left base due to splinting",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No crepitus",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No paradoxical motion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No left upper quadrant tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No pneumothorax or hemothorax",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Spleen intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Left-sided chest wall pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "left rib pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "left lateral and posterior rib pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "head injury",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild dyspnea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hemoptysis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "abdominal pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hematuria",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "myalgias",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "worsening shortness of breath",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Nondisplaced fractures of the left 6th, 7th, and 8th ribs",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Multiple fractures of ribs, left side, closed",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "hyperlipidemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hyperlipidemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Chest x-ray",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "CT chest",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lipid panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Advil",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol 1000 mg every 8 hours",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Advil 600 mg with food",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "lidocaine patches",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxycodone 5 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "atorvastatin 20 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Incentive spirometer",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "four-wheeler",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "vehicle type (ATV), mechanism of injury"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S22.42XA",
+   "spans": [
+    {
+     "text": "fractures of the left sixth , seventh and eighth ribs",
+     "field": "dialogue"
+    },
+    {
+     "text": "multiple rib fractures on the left side",
+     "field": "dialogue"
+    },
+    {
+     "text": "three broken ribs",
+     "field": "dialogue"
+    },
+    {
+     "text": "Multiple fractures of ribs, left side, closed",
+     "field": "note"
+    },
+    {
+     "text": "Nondisplaced fractures of the left 6th, 7th, and 8th ribs",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V86.55XA",
+   "spans": [
+    {
+     "text": "you rolled your four-wheeler",
+     "field": "dialogue"
+    },
+    {
+     "text": "on the four-wheeler , the atv",
+     "field": "dialogue"
+    },
+    {
+     "text": "the whole thing just tipped over on me",
+     "field": "dialogue"
+    },
+    {
+     "text": "no road",
+     "field": "dialogue"
+    },
+    {
+     "text": "ATV rollover",
+     "field": "note"
+    },
+    {
+     "text": "driving an ATV",
+     "field": "note"
+    },
+    {
+     "text": "the vehicle rolled over",
+     "field": "note"
+    },
+    {
+     "text": "The accident occurred off-road",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.73",
+   "spans": [
+    {
+     "text": "out in the middle of the hay field",
+     "field": "dialogue"
+    },
+    {
+     "text": "out in the back pasture",
+     "field": "dialogue"
+    },
+    {
+     "text": "in a hilly hay field on his cattle farm",
+     "field": "note"
+    },
+    {
+     "text": "ATV rollover in a farm field while working",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.0",
+   "spans": [
+    {
+     "text": "this is your farm , you work it full time",
+     "field": "dialogue"
+    },
+    {
+     "text": "that's my living",
+     "field": "dialogue"
+    },
+    {
+     "text": "checking fence line",
+     "field": "dialogue"
+    },
+    {
+     "text": "He was working on his farm at the time, which is his livelihood",
+     "field": "note"
+    },
+    {
+     "text": "checking fence line",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E78.5",
+   "spans": [
+    {
+     "text": "cholesterol",
+     "field": "dialogue"
+    },
+    {
+     "text": "atorvastatin 20 milligrams",
+     "field": "dialogue"
+    },
+    {
+     "text": "lipids",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hyperlipidemia",
+     "field": "note"
+    },
+    {
+     "text": "hyperlipidemia",
+     "field": "note"
+    },
+    {
+     "text": "atorvastatin 20 mg daily",
+     "field": "note"
+    },
+    {
+     "text": "Lipid panel",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "been farming it my whole life , my dad did before me",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "family farming history"
+  },
+  {
+   "text": "about two hundred head",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "herd size narrows down the farm"
+  }
+ ]
+}

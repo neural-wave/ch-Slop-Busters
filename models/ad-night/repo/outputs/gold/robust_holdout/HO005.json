@@ -1,0 +1,397 @@
+{
+  "encounter_id": "HO005",
+  "pii": [
+    {
+      "field": "note",
+      "text": "St Ciarán's University Hospital",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Dublin Road",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Kilbeggan",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Co. Westmeath",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "N91 X2K7",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "+353 44 935 2210",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "(044) 935 2299",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "orthosec@stciarans-uh.ie",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Murchú",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Saoirse",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Sersh",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "1992-07-19",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "34 yrs",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "34-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "SCU-00418827",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "7104 3329 8150",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "8812345TA",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "4 Ard na Gréine",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Moate",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "N37 F6P2",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "087 614 2093",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "sersh.omurchu92@eirmail.ie",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "11/10/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "13-OCT-2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Surgeon: BRADY",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Cathal",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Mr Brady",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "C. Brady",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "421337",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Aoife",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Long (SpR)",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Dr Long",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Tomás",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Búrca",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Siobhán",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Kavanagh-Ryan",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "secondary school teacher",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Scoil Mhuire",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "11th October",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Horseleap",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Biscuit",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "H. Weber",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "12/10/26",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "6H44120",
+      "category": "ID",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "7J10933",
+      "category": "ID",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "2Z77815",
+      "category": "ID",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Pádraig",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Nolan",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Main Street",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "13.10.2026",
+      "category": "DATE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "thrown from her horse",
+      "category": "CODE_EVIDENCE",
+      "why": "mechanism supporting V80.010A"
+    },
+    {
+      "field": "note",
+      "text": "hacking out",
+      "category": "CODE_EVIDENCE",
+      "why": "horseback riding activity supporting Y93.52"
+    },
+    {
+      "field": "note",
+      "text": "the mare",
+      "category": "CODE_EVIDENCE",
+      "why": "the horse being ridden; supports V80.010A / Y93.52 (only the name Biscuit is PII)"
+    },
+    {
+      "field": "note",
+      "text": "Weber B",
+      "category": "EPONYM",
+      "why": "Danis-Weber ankle fracture classification, not the radiologist Dr Weber"
+    },
+    {
+      "field": "note",
+      "text": "Volkmann",
+      "category": "EPONYM",
+      "why": "Volkmann (posterior malleolar) fragment"
+    },
+    {
+      "field": "note",
+      "text": "Cotton test",
+      "category": "EPONYM",
+      "why": "syndesmosis stress test"
+    },
+    {
+      "field": "note",
+      "text": "Transient brady",
+      "category": "NOT_A_NAME",
+      "why": "abbreviation for bradycardia, not the surgeon Mr Brady"
+    },
+    {
+      "field": "note",
+      "text": "long-term post-traumatic arthritis",
+      "category": "NOT_A_NAME",
+      "why": "clinical risk discussed at consent (ordinary word long-term), not Dr Long"
+    },
+    {
+      "field": "note",
+      "text": "15/15",
+      "category": "CLINICAL_NUMBER",
+      "why": "GCS"
+    },
+    {
+      "field": "note",
+      "text": "8/10",
+      "category": "CLINICAL_NUMBER",
+      "why": "pain score"
+    },
+    {
+      "field": "note",
+      "text": "3/10",
+      "category": "CLINICAL_NUMBER",
+      "why": "pain score"
+    },
+    {
+      "field": "note",
+      "text": "450/5",
+      "category": "CLINICAL_NUMBER",
+      "why": "ventilator tidal volume / PEEP"
+    },
+    {
+      "field": "note",
+      "text": "1/3 tubular",
+      "category": "CLINICAL_NUMBER",
+      "why": "plate type"
+    },
+    {
+      "field": "note",
+      "text": "2/52",
+      "category": "CLINICAL_NUMBER",
+      "why": "two weeks"
+    },
+    {
+      "field": "note",
+      "text": "6/52",
+      "category": "CLINICAL_NUMBER",
+      "why": "six weeks"
+    }
+  ]
+}

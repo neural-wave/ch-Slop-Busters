@@ -1,0 +1,73 @@
+{
+ "encounter_id": "DS200369",
+ "pii": [
+  {
+   "field": "note",
+   "text": "Priya",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Patel",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "1990-08-25",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "03/05/2025",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "04/05/2025",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Nair",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "+91 9910740987",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Manipal Hospital",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "4 9 2 0 1 8 4",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "34 year old",
+   "category": "AGE",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "note",
+   "text": "Osteoarthritis of Knee",
+   "category": "CODE_EVIDENCE",
+   "why": "M17.9"
+  }
+ ]
+}

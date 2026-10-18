@@ -1,0 +1,54 @@
+{
+ "encounter_id": "MC0012",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "Ava",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "66 y/o",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "1959-07-22",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Madison",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Riverside Medical Center",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "February 2, 2024",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Chase Parker",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Parker",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": []
+}

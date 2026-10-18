@@ -1,0 +1,12 @@
+{
+  "encounter_id": "D2N108",
+  "pii": [
+    {"field": "dialogue", "text": "gregory", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "dewey beach", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "in my ambulance", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Gregory", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Hernandez", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "40-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": []
+}

@@ -1,0 +1,9 @@
+{
+  "encounter_id": "D2N053",
+  "pii": [
+    {"field": "dialogue", "text": "barbara", "category": "PATIENT_NAME", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "note", "text": "130/68", "category": "CLINICAL_NUMBER", "why": "blood pressure, not a date"}
+  ]
+}

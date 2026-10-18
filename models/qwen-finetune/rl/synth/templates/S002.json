@@ -1,0 +1,737 @@
+{
+ "id": "S002",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S92.002A",
+   "description": "Unspecified fracture of left calcaneus, initial encounter for closed fracture"
+  },
+  {
+   "code": "W11.XXXA",
+   "description": "Fall on and from ladder, initial encounter"
+  },
+  {
+   "code": "Y92.017",
+   "description": "Garden or yard in single-family (private) house as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.H9",
+   "description": "Activity, other involving exterior property and land maintenance, building and construction"
+  },
+  {
+   "code": "E78.5",
+   "description": "Hyperlipidemia, unspecified"
+  }
+ ],
+ "dialogue": "[doctor] good afternoon , mr . {PATIENT_LAST} . i'm doctor {DOCTOR_LAST} .\n[patient] hey , doc . call me {PATIENT_FIRST} .\n[doctor] alright , {PATIENT_FIRST} . i see you came in on crutches . what happened ?\n[patient] so , i'm kind of embarrassed . on {DATE_SPOKEN} i was up on a ladder cleaning the gutters on the back of the house , and the ladder just kind of slid out sideways . i fell off the ladder and landed on my left heel on the patio stones in the backyard .\n[doctor] ouch . how high up were you ?\n[patient] maybe ten , twelve feet . i was on the second to last rung , which i know you're not supposed to do .\n[doctor] did you land on both feet or just the left ?\n[patient] mostly the left . the right one kind of touched down after . then i fell over onto my side .\n[doctor] did you hit your head or black out ?\n[patient] no , my wife {OTHER_FIRST} came running out and i was awake the whole time . i just could n't put any weight on the left foot .\n[doctor] okay . any pain in your back or neck ?\n[patient] my lower back was a little sore that night but it's fine now . it's really the heel .\n[doctor] alright . and how has the pain been ?\n[patient] it's bad . like an eight out of ten when i try to stand on it . the whole heel swelled up and it's purple on both sides now .\n[doctor] what have you been taking for it ?\n[patient] ibuprofen , like six hundred milligrams a couple times a day , and keeping it up on pillows .\n[doctor] any numbness or tingling in your foot or toes ?\n[patient] no , i can feel everything .\n[doctor] okay , good . let me ask you about your other stuff . i see you have high cholesterol . are you still taking the atorvastatin ?\n[patient] yeah , forty milligrams at night . i have n't missed any .\n[doctor] any muscle aches from it ?\n[patient] no , nothing like that .\n[doctor] good . your last lipid panel was a few months ago and your ldl was one twenty two , which is better than before but still a bit above where we want it .\n[patient] yeah , i've been trying to cut back on the fried stuff .\n[doctor] alright , we'll keep working on that . what do you do for work ?\n[patient] i teach chemistry at the high school here in {CITY} . so i'm on my feet all day .\n[doctor] that's going to be a challenge for a while . let me take a look . go ahead and lie back . okay , i'm looking at the left foot . there's marked swelling around the heel , and there's ecchymosis on both the medial and lateral sides of the hindfoot . does it hurt when i squeeze here ?\n[patient] yes ! yes , that hurts .\n[doctor] sorry . so you have a positive heel squeeze test , tenderness over the calcaneus . how about over the ankle bones here ?\n[patient] a little , but not like the heel .\n[doctor] okay . can you move your toes ?\n[patient] yes .\n[doctor] good . your dorsalis pedis pulse is strong and your sensation is intact on the top and bottom of the foot . the skin is intact , no blisters yet . i'm going to press on your lower back now .\n[patient] no , that does n't really hurt .\n[doctor] okay , no midline tenderness of the spine . and the right foot looks normal .\n[doctor] so we got x-rays of the left foot and an axial view of the heel . the x-rays show a fracture through the calcaneus , which is your heel bone . it looks like there's some loss of height in the bone , but i do n't see it going into the subtalar joint on these pictures , although that can be hard to tell on x-ray .\n[patient] so it's broken .\n[doctor] yes , you have a fracture of the left calcaneus . this is a very common injury when someone falls from a height and lands on their feet . because of that , i'm also going to get a ct scan of the heel to look at the joint in more detail , and i'm going to get an x-ray of your lumbar spine since these injuries sometimes go together .\n[patient] okay .\n[doctor] for now we'll put you in a well-padded splint , and you'll be completely non-weight bearing on the left foot . keep using the crutches . keep it elevated above your heart as much as you can to bring the swelling down .\n[patient] how long am i going to be off it ?\n[doctor] it depends on what the ct scan shows . if the joint is n't involved , usually six to eight weeks of no weight on it and then a boot . if the joint is involved , the foot and ankle surgeon may want to fix it . i'm placing a referral to orthopedics either way .\n[patient] alright .\n[doctor] for pain , you can continue the ibuprofen , but take it with food , and i'll add acetaminophen five hundred milligrams , two tablets every eight hours . i'm also going to give you a few tablets of oxycodone five milligrams for the nighttime pain .\n[patient] okay .\n[doctor] for the cholesterol , let's continue the atorvastatin forty milligrams and recheck a lipid panel in three months .\n[patient] sounds good .\n[doctor] and maybe hire someone for the gutters next time .\n[patient] {OTHER_FIRST} already told me the same thing .",
+ "note": "CHIEF COMPLAINT\n\nLeft heel pain after a fall from a ladder.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with a history of hyperlipidemia who presents for evaluation of left heel pain. On {DATE_SPOKEN}, he was cleaning the gutters at his home when the ladder slid out from under him. He fell approximately 10 to 12 feet off the ladder and landed primarily on his left heel on the patio in his backyard. He denies head injury or loss of consciousness. He was unable to bear weight afterward. He reports transient low back soreness that has resolved. He rates the heel pain as 8/10 with attempted weight bearing. He has been taking ibuprofen 600 mg twice daily and elevating the extremity. He denies numbness or tingling.\n\nHe takes atorvastatin 40 mg nightly for hyperlipidemia without myalgias. Most recent LDL was 122 mg/dL.\n\nSOCIAL HISTORY\n\nHe is a high school chemistry teacher.\n\nPHYSICAL EXAM\n\nLeft Foot: Marked swelling of the heel with medial and lateral hindfoot ecchymosis. Positive heel squeeze test with tenderness over the calcaneus. Mild tenderness over the malleoli. Toe motion intact. Dorsalis pedis pulse 2+. Sensation intact. Skin intact without fracture blisters.\nSpine: No midline tenderness.\nRight Foot: Normal.\n\nRESULTS\n\nX-rays of the left foot, including axial view of the calcaneus, demonstrate a fracture of the calcaneus with loss of height. No definite intra-articular extension.\n\nASSESSMENT AND PLAN\n\n1. Closed fracture of the left calcaneus.\n- CT scan of the left calcaneus to evaluate subtalar joint involvement.\n- Lumbar spine x-ray to rule out associated compression fracture.\n- Well-padded posterior splint. Strict non-weight bearing on the left lower extremity with crutches. Elevation.\n- Ibuprofen with food, acetaminophen 1000 mg every 8 hours, oxycodone 5 mg at night as needed.\n- Referral to orthopedics, foot and ankle.\n\n2. Hyperlipidemia.\n- Continue atorvastatin 40 mg nightly.\n- Repeat lipid panel in 3 months.\n",
+ "medical_concepts": [
+  {
+   "text": "crutches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "up on a ladder cleaning the gutters",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell off the ladder",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landed on my left heel",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "backyard",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ten , twelve feet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "black out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "could n't put any weight on the left foot",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain in your back or neck",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lower back was a little sore",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "heel swelled up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "purple on both sides",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "high cholesterol",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "atorvastatin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "muscle aches",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lipid panel",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "ldl",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "left foot",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "marked swelling around the heel",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ecchymosis on both the medial and lateral sides of the hindfoot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "positive heel squeeze test",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tenderness over the calcaneus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ankle bones",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "dorsalis pedis pulse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no blisters",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no midline tenderness of the spine",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays of the left foot",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "axial view of the heel",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "fracture through the calcaneus",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "loss of height",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "subtalar joint",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "fracture of the left calcaneus",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ct scan of the heel",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "x-ray of your lumbar spine",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "splint",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "non-weight bearing",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "boot",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "orthopedics",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen five hundred milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxycodone five milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "atorvastatin forty milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Left heel pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fall from a ladder",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hyperlipidemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "left heel pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "cleaning the gutters at his home",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ladder slid out from under him",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell approximately 10 to 12 feet off the ladder",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landed primarily on his left heel",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "backyard",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "head injury",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "unable to bear weight",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "transient low back soreness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "heel pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen 600 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "atorvastatin 40 mg nightly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "myalgias",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "LDL was 122 mg/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Left Foot",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Marked swelling of the heel",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "medial and lateral hindfoot ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Positive heel squeeze test",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tenderness over the calcaneus",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild tenderness over the malleoli",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Dorsalis pedis pulse 2+",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Skin intact without fracture blisters",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No midline tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-rays of the left foot",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "axial view of the calcaneus",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "fracture of the calcaneus with loss of height",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "No definite intra-articular extension",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Closed fracture of the left calcaneus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "CT scan of the left calcaneus",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "subtalar joint",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lumbar spine x-ray",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "compression fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Well-padded posterior splint",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Strict non-weight bearing",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "left lower extremity",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "crutches",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Elevation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen 1000 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxycodone 5 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "orthopedics, foot and ankle",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hyperlipidemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Repeat lipid panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [],
+ "evidence": [
+  {
+   "code": "S92.002A",
+   "spans": [
+    {
+     "text": "fracture of the left calcaneus",
+     "field": "dialogue"
+    },
+    {
+     "text": "fracture through the calcaneus",
+     "field": "dialogue"
+    },
+    {
+     "text": "positive heel squeeze test",
+     "field": "dialogue"
+    },
+    {
+     "text": "x-rays of the left foot",
+     "field": "dialogue"
+    },
+    {
+     "text": "Closed fracture of the left calcaneus",
+     "field": "note"
+    },
+    {
+     "text": "fracture of the calcaneus with loss of height",
+     "field": "note"
+    },
+    {
+     "text": "Skin intact without fracture blisters",
+     "field": "note"
+    },
+    {
+     "text": "Left heel pain",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W11.XXXA",
+   "spans": [
+    {
+     "text": "fell off the ladder",
+     "field": "dialogue"
+    },
+    {
+     "text": "up on a ladder cleaning the gutters",
+     "field": "dialogue"
+    },
+    {
+     "text": "fall from a ladder",
+     "field": "note"
+    },
+    {
+     "text": "fell approximately 10 to 12 feet off the ladder",
+     "field": "note"
+    },
+    {
+     "text": "ladder slid out from under him",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.017",
+   "spans": [
+    {
+     "text": "backyard",
+     "field": "dialogue"
+    },
+    {
+     "text": "backyard",
+     "field": "note"
+    },
+    {
+     "text": "cleaning the gutters at his home",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.H9",
+   "spans": [
+    {
+     "text": "up on a ladder cleaning the gutters",
+     "field": "dialogue"
+    },
+    {
+     "text": "cleaning the gutters at his home",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E78.5",
+   "spans": [
+    {
+     "text": "high cholesterol",
+     "field": "dialogue"
+    },
+    {
+     "text": "atorvastatin forty milligrams",
+     "field": "dialogue"
+    },
+    {
+     "text": "ldl",
+     "field": "dialogue"
+    },
+    {
+     "text": "hyperlipidemia",
+     "field": "note"
+    },
+    {
+     "text": "Hyperlipidemia",
+     "field": "note"
+    },
+    {
+     "text": "atorvastatin 40 mg nightly",
+     "field": "note"
+    },
+    {
+     "text": "LDL was 122 mg/dL",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i teach chemistry at the high school",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "occupation and workplace"
+  },
+  {
+   "text": "high school chemistry teacher",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  }
+ ]
+}

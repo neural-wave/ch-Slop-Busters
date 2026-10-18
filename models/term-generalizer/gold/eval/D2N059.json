@@ -1,0 +1,358 @@
+{
+ "encounter_id": "D2N059",
+ "pii": [
+  {
+   "text": "doctor cooper",
+   "field": "dialogue",
+   "category": "CLINICIAN_NAME",
+   "tier": "direct",
+   "comment": "treating physician name"
+  },
+  {
+   "text": "water polo",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "uncommon competitive sport played by patient"
+  },
+  {
+   "text": "ap classes",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "indicates high-school student taking AP courses"
+  },
+  {
+   "text": "sats",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "preparing for SATs; indicates high-school student"
+  },
+  {
+   "text": "student",
+   "field": "note",
+   "category": "OCCUPATION",
+   "tier": "quasi",
+   "comment": "patient is a student"
+  },
+  {
+   "text": "water polo",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "uncommon competitive sport played by patient"
+  },
+  {
+   "text": "saps",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "ASR of SATs; indicates high-school student"
+  }
+ ],
+ "medical_concepts": [
+  {
+   "text": "asthma",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "difficulty breathing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol inhaler",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "inhaler",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "smoke",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "coughing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "phlegm",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest gets tight",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "wheezing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lightheaded",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shaky",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "two puffs",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "singulair",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "mood",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "stressed out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "really down",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sadness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "really tired",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart and lungs",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "seasonal allergies",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "fluid in the ears",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no tonsils",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "reflexes",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "therapist",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "screening questionnaires",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Asthma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "tonsillectomy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "seasonal allergies",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "albuterol inhaler, 2 puffs as needed",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "fatigue",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "shortness of breath",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mood changes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild fluid in ears",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tonsils have been previously removed",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Bowel sounds normal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No rash or lesions",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No enlarged lymph nodes",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "daily asthma medication",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Singulair",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mood",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "stress",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "therapist",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "screening questionnaire",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "aerobic workout",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "allergies",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "daily medication",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tonsils",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "doctor cooper",
+   "field": "dialogue",
+   "is_pii": true,
+   "comment": "\"cooper\" is the clinician surname"
+  },
+  {
+   "text": "saps",
+   "field": "dialogue",
+   "is_pii": true,
+   "comment": "ASR error for \"SATs\" exam (quasi: high-school student), not a person name"
+  }
+ ]
+}

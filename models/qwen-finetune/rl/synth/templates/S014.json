@@ -1,0 +1,718 @@
+{
+ "id": "S014",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S42.021A",
+   "description": "Displaced fracture of shaft of right clavicle, initial encounter for closed fracture"
+  },
+  {
+   "code": "V18.0XXA",
+   "description": "Pedal cycle driver injured in noncollision transport accident in nontraffic accident, initial encounter"
+  },
+  {
+   "code": "Y92.482",
+   "description": "Bike path as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.55",
+   "description": "Activity, bike riding"
+  },
+  {
+   "code": "E03.9",
+   "description": "Hypothyroidism, unspecified"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . how are you doing ?\n[patient] hi , doctor {DOCTOR_LAST} . i've been better .\n[doctor] i can see you're holding your arm there . what happened ?\n[patient] so , on {DATE_SPOKEN} , that was saturday , i was out riding my bike on the bike path out by {PLACE} . i usually do about sixty miles a week , mostly on that path because there are no cars .\n[doctor] okay .\n[patient] and i was going downhill , maybe fifteen or eighteen miles an hour , and there was a big branch across the path in the shade , and i did n't see it until the last second . my front wheel hit it and the bike just stopped and i went over the handlebars .\n[doctor] oh , wow .\n[patient] yeah . i landed right on my right shoulder on the pavement .\n[doctor] okay . were you wearing a helmet ?\n[patient] yes , always . the helmet got scraped up but i did n't hit my head hard . i did n't pass out or anything .\n[doctor] okay , good . were there any cars or other bikes involved ?\n[patient] no , it was just me . nobody else was around . my husband {OTHER_FIRST} had to come pick me up in the car .\n[doctor] okay . and what did you notice right away ?\n[patient] right away my shoulder hurt like crazy , and i could feel kind of a bump on my collarbone . i could n't lift my arm .\n[doctor] okay . and how is it now ?\n[patient] it's still really sore . i've been keeping it in a sling that i had from an old injury . moving it hurts , and there's a lump there .\n[doctor] okay . any numbness or tingling down your arm or in your fingers ?\n[patient] no , my fingers feel fine .\n[doctor] any shortness of breath or pain when you take a deep breath ?\n[patient] no .\n[doctor] any other injuries ?\n[patient] some road rash on my right knee and my elbow , but that's just scrapes . i cleaned them up .\n[doctor] okay . now i also want to check in on your thyroid . you're on levothyroxine ?\n[patient] yes , seventy five micrograms every morning .\n[doctor] okay . any symptoms , like feeling tired , cold , weight changes ?\n[patient] no , i feel pretty normal . my energy is good .\n[doctor] okay . we did a tsh about six months ago and it was normal . we'll recheck that today since you're due .\n[patient] okay .\n[doctor] so what do you do for work ?\n[patient] i'm a dental hygienist , so i use my right hand all day .\n[doctor] that's going to be a problem for a few weeks . let me examine you . so , on your right shoulder , there's swelling and an obvious bump over the middle of your collarbone , and there's some bruising . the skin is intact , it's not tented , meaning the bone is not pushing up against the skin . does it hurt when i press here ?\n[patient] yes , that's the spot .\n[doctor] okay . and out here at the end of the shoulder ?\n[patient] not really .\n[doctor] okay . your radial pulse is strong , your grip is strong , and you can feel me touching all your fingers . you have healing abrasions on your right elbow and right knee with no signs of infection . your lungs are clear on both sides .\n[patient] okay .\n[doctor] so we got x-rays of your right clavicle when you came in . hey dragon , show me the right clavicle x-ray . so you have a fracture through the middle part of your right collarbone , the shaft of the clavicle . it is displaced , the ends are shifted about one bone width , but they're not overlapping very much , and it's not in a lot of pieces .\n[patient] okay . does that need surgery ?\n[doctor] so for most mid shaft clavicle fractures like this , we treat them without surgery , in a sling , and they heal well . there are some cases where we would think about surgery , if it's shortened a lot , or the skin is at risk , or for some athletes . i'd like you to see orthopedics this week to talk through that , especially since you need your arm for work .\n[patient] okay .\n[doctor] in the meantime , i want you in a sling for comfort . you can take the sling off to gently move your elbow , wrist and hand so they do n't get stiff . no lifting anything heavier than a coffee cup with that arm .\n[patient] okay .\n[doctor] for pain , you can take ibuprofen six hundred milligrams three times a day with food and tylenol in between . ice twenty minutes at a time .\n[patient] okay .\n[doctor] no riding for at least six weeks , and we'll get another x-ray in two weeks to make sure it's not slipping .\n[patient] okay .\n[doctor] and for your hypothyroidism , continue the levothyroxine seventy five micrograms every morning , and we'll check your tsh today .\n[patient] sounds good .\n[doctor] i'll write a note for work too . any questions ?\n[patient] no , that's it . thank you .",
+ "note": "CHIEF COMPLAINT\n\nRight shoulder pain after a bicycle accident.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with a history of hypothyroidism who presents with right shoulder pain after a bicycle crash on {DATE_SPOKEN}. She was riding her bicycle on a bike path when her front wheel struck a branch lying across the path, and she was thrown over the handlebars, landing on her right shoulder on the pavement. No other vehicles or riders were involved. She was wearing a helmet and denies head injury or loss of consciousness. She noted immediate pain, a bump over the right clavicle and inability to raise the arm. She has been using a sling. She denies numbness, tingling, dyspnea or pleuritic pain. She has minor abrasions on the right elbow and knee.\n\nHer hypothyroidism is treated with levothyroxine 75 mcg daily. She denies fatigue, cold intolerance or weight changes. TSH 6 months ago was normal.\n\nSOCIAL HISTORY\n\nDental hygienist; right-hand dominant.\n\nPHYSICAL EXAM\n\nRight shoulder: Swelling, ecchymosis and a palpable deformity over the midshaft of the right clavicle with focal tenderness. Skin intact without tenting. No tenderness at the acromioclavicular joint.\nNeurovascular: Radial pulse 2+. Grip strength 5/5. Sensation intact in all fingers.\nSkin: Healing abrasions of the right elbow and right knee without signs of infection.\nRespiratory: Lungs clear bilaterally.\n\nRESULTS\n\nX-ray of the right clavicle demonstrates a displaced midshaft clavicle fracture with approximately 1 shaft width of displacement and minimal shortening. No comminution.\n\nASSESSMENT AND PLAN\n\n1. Displaced fracture of the shaft of the right clavicle, closed, after going over the handlebars on a bike path.\n- Medical Treatment: Sling for comfort with gentle elbow, wrist and hand range of motion. No lifting with the right arm. Ibuprofen 600 mg 3 times daily with food, alternating with Tylenol. Ice.\n- Referral: Orthopedics this week to discuss operative versus nonoperative management given occupational demands.\n- Patient Education and Counseling: No cycling for at least 6 weeks. Repeat x-ray in 2 weeks. Work note provided.\n\n2. Hypothyroidism.\n- Medical Treatment: Continue levothyroxine 75 mcg daily. TSH ordered today.",
+ "medical_concepts": [
+  {
+   "text": "riding my bike",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bike path",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my front wheel hit it and the bike just stopped and i went over the handlebars",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "big branch across the path",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i landed right on my right shoulder on the pavement",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i did n't pass out",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "any cars or other bikes involved",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it was just me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my shoulder hurt like crazy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bump on my collarbone",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i could n't lift my arm",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sling",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shortness of breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "road rash on my right knee and my elbow",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "thyroid",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "levothyroxine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "seventy five micrograms every morning",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "feeling tired",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tsh",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "swelling and an obvious bump over the middle of your collarbone",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "some bruising",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the skin is intact , it's not tented",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your radial pulse is strong",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your grip is strong",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "healing abrasions on your right elbow and right knee",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your lungs are clear on both sides",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "right clavicle x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "fracture through the middle part of your right collarbone",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "shaft of the clavicle",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "it is displaced",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "not in a lot of pieces",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mid shaft clavicle fractures",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen six hundred milligrams three times a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "another x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "hypothyroidism",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "levothyroxine seventy five micrograms every morning",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right shoulder pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bicycle accident",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hypothyroidism",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "right shoulder pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bicycle crash",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "riding her bicycle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bike path",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "her front wheel struck a branch lying across the path, and she was thrown over the handlebars",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landing on her right shoulder on the pavement",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No other vehicles or riders were involved",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "head injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "bump over the right clavicle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "inability to raise the arm",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tingling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dyspnea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pleuritic pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "minor abrasions on the right elbow and knee",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "levothyroxine 75 mcg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "fatigue",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "cold intolerance",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "weight changes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "TSH 6 months ago was normal",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Swelling, ecchymosis and a palpable deformity over the midshaft of the right clavicle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "focal tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Skin intact without tenting",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No tenderness at the acromioclavicular joint",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Radial pulse 2+",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Grip strength 5/5",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact in all fingers",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Healing abrasions of the right elbow and right knee",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lungs clear bilaterally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-ray of the right clavicle",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "displaced midshaft clavicle fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "approximately 1 shaft width of displacement",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "minimal shortening",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No comminution",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Displaced fracture of the shaft of the right clavicle, closed",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "going over the handlebars on a bike path",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Ibuprofen 600 mg 3 times daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cycling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Repeat x-ray",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hypothyroidism",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "TSH ordered today",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software"
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "drug brand name"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S42.021A",
+   "spans": [
+    {
+     "text": "fracture through the middle part of your right collarbone",
+     "field": "dialogue"
+    },
+    {
+     "text": "shaft of the clavicle",
+     "field": "dialogue"
+    },
+    {
+     "text": "it is displaced",
+     "field": "dialogue"
+    },
+    {
+     "text": "right clavicle x-ray",
+     "field": "dialogue"
+    },
+    {
+     "text": "Displaced fracture of the shaft of the right clavicle, closed",
+     "field": "note"
+    },
+    {
+     "text": "displaced midshaft clavicle fracture",
+     "field": "note"
+    },
+    {
+     "text": "Skin intact without tenting",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V18.0XXA",
+   "spans": [
+    {
+     "text": "my front wheel hit it and the bike just stopped and i went over the handlebars",
+     "field": "dialogue"
+    },
+    {
+     "text": "it was just me",
+     "field": "dialogue"
+    },
+    {
+     "text": "any cars or other bikes involved",
+     "field": "dialogue"
+    },
+    {
+     "text": "her front wheel struck a branch lying across the path, and she was thrown over the handlebars",
+     "field": "note"
+    },
+    {
+     "text": "No other vehicles or riders were involved",
+     "field": "note"
+    },
+    {
+     "text": "bicycle crash",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.482",
+   "spans": [
+    {
+     "text": "bike path",
+     "field": "dialogue"
+    },
+    {
+     "text": "bike path",
+     "field": "note"
+    },
+    {
+     "text": "going over the handlebars on a bike path",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.55",
+   "spans": [
+    {
+     "text": "riding my bike",
+     "field": "dialogue"
+    },
+    {
+     "text": "riding her bicycle",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E03.9",
+   "spans": [
+    {
+     "text": "hypothyroidism",
+     "field": "dialogue"
+    },
+    {
+     "text": "levothyroxine seventy five micrograms every morning",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypothyroidism",
+     "field": "note"
+    },
+    {
+     "text": "hypothyroidism",
+     "field": "note"
+    },
+    {
+     "text": "levothyroxine 75 mcg daily",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm a dental hygienist",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "i usually do about sixty miles a week",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive training volume"
+  },
+  {
+   "text": "a sling that i had from an old injury",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "personal history detail"
+  },
+  {
+   "text": "Dental hygienist",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  }
+ ]
+}

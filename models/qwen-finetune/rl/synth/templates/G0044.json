@@ -1,0 +1,597 @@
+{
+ "id": "G0044",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "age_range": [
+  19,
+  30
+ ],
+ "icd10_codes": [
+  {
+   "code": "S83.511A",
+   "description": "Sprain of anterior cruciate ligament of right knee, initial encounter"
+  },
+  {
+   "code": "S80.211A",
+   "description": "Abrasion, right knee, initial encounter"
+  },
+  {
+   "code": "W01.0XXA",
+   "description": "Fall on same level from slipping, tripping and stumbling without subsequent striking against object, initial encounter"
+  },
+  {
+   "code": "Y92.480",
+   "description": "Sidewalk as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y99.8",
+   "description": "Other external cause status"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . what happened to your knee ?\n[patient] hi . okay , so on {DATE_SPOKEN} it was raining pretty hard in the morning , but i still walked over to the courts at {PLACE} to play pickleball with my team . the sidewalk was soaking wet .\n[doctor] okay . tell me what happened on the way .\n[patient] i was almost at the courts when i stepped on a wet patch of concrete and my foot just shot out from under me . i went down hard on my right side . my knee twisted when i landed , and i heard a loud pop .\n[doctor] oh no . did you hit your head ?\n[patient] no , i put my hands out first . my palms are scraped up too , but my head is fine .\n[doctor] did you pass out or feel dizzy at all ?\n[patient] no . i was awake the whole time .\n[doctor] okay . where is the pain now ?\n[patient] inside the knee , mostly . it's really swollen . i could barely walk back to my car , and my friend had to drive me home .\n[doctor] were you able to put weight on it after the fall ?\n[patient] a little , but it felt like the knee was going to give out . it buckled a couple times when i went down the stairs at home .\n[doctor] that's a classic sign . which knee is it ?\n[patient] the right one . i've never had anything wrong with this knee before .\n[doctor] okay . let me look at your chart . your medical record number is {MRN} , correct ?\n[patient] yes .\n[doctor] good . i'll examine you now . your blood pressure is one eighteen over seventy and your pulse is seventy two .\n[patient] okay .\n[doctor] the knee is swollen with fluid , and there's a scrape on the front of your knee and on both palms . bend your knee for me . does it hurt ?\n[patient] yes , it hurts a lot .\n[doctor] okay . i'm going to press on the front of your shin and see if it slides forward .\n[patient] ouch . yes , it moves .\n[doctor] that's the anterior drawer test , and it's positive , which means the anterior cruciate ligament is likely torn . the lachman test is also positive .\n[patient] the acl ? is that serious ?\n[doctor] it's a significant injury , but it's very treatable . we'll get an mri and an orthopedic consult .\n[patient] will i need surgery ?\n[doctor] possibly . if you want to return to pivoting sports like pickleball , a reconstruction is often recommended . but first we want the swelling down , and i'd like to see the mri .\n[patient] okay . i'm supposed to play in the tournament in aldervale next month .\n[doctor] you'll need to skip that one . let's focus on getting you healthy .\n[patient] ugh , okay .\n[doctor] for pain you can use tylenol , one thousand milligrams up to three times a day . ice it twenty minutes at a time and keep it elevated .\n[patient] will the crutches help ?\n[doctor] yes , use crutches until you can walk without a limp . i'd also like you to wear a knee brace whenever you're on your feet .\n[patient] okay . i grew up in aldervale and i still go back there to visit my parents every month . that's just down the road . could the mri be done there ?\n[doctor] the mri can be done here in our imaging center , so you don't need to drive back there . i'll place the order today .\n[patient] thank you . i'm also taking the bus from {CITY} to work , so the crutches are going to be a pain .\n[doctor] i understand . i can give you a work note for two weeks , and we'll check your range of motion at the follow-up .\n[patient] okay . thanks , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nRight knee pain and swelling after a slip on a wet sidewalk.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents with right knee pain and swelling after a fall on {DATE_SPOKEN}. She was walking to the courts at {PLACE} to play recreational pickleball when she slipped on a wet sidewalk. She landed on her right side and felt her knee twist with an audible pop. She did not strike her head and denies loss of consciousness. She sustained abrasions to both palms. She was able to bear weight only partially and reports a sense of giving way, with two episodes of buckling on stairs at home.\n\nShe plays pickleball regularly, several times per week, and has no prior knee injuries.\n\nPAST MEDICAL HISTORY\n\nNo prior knee injuries or surgeries. No chronic medical conditions.\n\nMEDICATIONS\n\nAcetaminophen as needed. Oral contraceptive.\n\nSOCIAL HISTORY\n\nGrew up in Aldervale and returns to visit her parents monthly. Commutes by bus from {CITY} to work.\n\nIDENTIFICATION\n\nMedical record number: {MRN}\n\nPHYSICAL EXAM\n\nVitals: BP 118/70, HR 72, afebrile. Right knee with moderate effusion and abrasion over the anterior knee. Bilateral palm abrasions. Positive anterior drawer and Lachman tests on the right; no varus or valgus instability. Posterior drawer negative. Distal neurovascular status intact. Pain with flexion.\n\nRESULTS\n\nPlain radiographs of the right knee ordered to exclude fracture. MRI of the right knee ordered.\n\nASSESSMENT AND PLAN\n\n1. Suspected complete anterior cruciate ligament tear of the right knee from a slip-and-fall on a wet sidewalk. Abrasions of the right knee and both palms, cleansed and dressed.\n2. MRI of the right knee and radiographs. Orthopedic sports medicine consultation after imaging.\n3. Pain management with acetaminophen 1000 mg up to three times daily, ice, and elevation. Hinged knee brace and crutches until gait normalizes.\n4. Work note for two weeks. Advised to avoid pickleball and pivoting activities pending evaluation.\n5. Tetanus status to be confirmed given palm abrasions.\n\nReturn in one week for MRI review.",
+ "medical_concepts": [
+  {
+   "text": "play pickleball",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the sidewalk was soaking wet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "wet patch of concrete",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my foot just shot out from under me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "went down hard on my right side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my knee twisted when i landed",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heard a loud pop",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my palms are scraped up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "put my hands out first",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pass out or feel dizzy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "inside the knee",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "really swollen",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "could barely walk back to my car",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the knee was going to give out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "buckled a couple times",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood pressure is one eighteen over seventy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse is seventy two",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the knee is swollen with fluid",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a scrape on the front of your knee",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "anterior drawer test",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "the anterior cruciate ligament is likely torn",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "the lachman test is also positive",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "acl",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "mri",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "reconstruction",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "pivoting sports",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice it twenty minutes at a time",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "crutches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a knee brace",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a limp",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "right knee pain and swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "slipped on a wet sidewalk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "to play recreational pickleball",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landed on her right side",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "felt her knee twist with an audible pop",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "denies loss of consciousness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "abrasions to both palms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bear weight only partially",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a sense of giving way",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "buckling on stairs",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "plays pickleball regularly",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No prior knee injuries or surgeries",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No chronic medical conditions",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Acetaminophen as needed",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Oral contraceptive",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 118/70",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "HR 72",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "afebrile",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "moderate effusion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "abrasion over the anterior knee",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Bilateral palm abrasions",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Positive anterior drawer and Lachman tests",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no varus or valgus instability",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Posterior drawer negative",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Distal neurovascular status intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pain with flexion",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Plain radiographs",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "exclude fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "MRI of the right knee",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Suspected complete anterior cruciate ligament tear",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Abrasions of the right knee and both palms",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Orthopedic sports medicine consultation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen 1000 mg up to three times daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice, and elevation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hinged knee brace and crutches",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Work note",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "pickleball and pivoting activities",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tetanus status",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of acetaminophen"
+  },
+  {
+   "text": "Lachman",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponym for the Lachman test, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S83.511A",
+   "spans": [
+    {
+     "text": "my knee twisted when i landed",
+     "field": "dialogue"
+    },
+    {
+     "text": "the anterior cruciate ligament is likely torn",
+     "field": "dialogue"
+    },
+    {
+     "text": "acl",
+     "field": "dialogue"
+    },
+    {
+     "text": "Suspected complete anterior cruciate ligament tear",
+     "field": "note"
+    },
+    {
+     "text": "Positive anterior drawer and Lachman tests",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "S80.211A",
+   "spans": [
+    {
+     "text": "my palms are scraped up",
+     "field": "dialogue"
+    },
+    {
+     "text": "a scrape on the front of your knee",
+     "field": "dialogue"
+    },
+    {
+     "text": "abrasion over the anterior knee",
+     "field": "note"
+    },
+    {
+     "text": "Abrasions of the right knee and both palms",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W01.0XXA",
+   "spans": [
+    {
+     "text": "my foot just shot out from under me",
+     "field": "dialogue"
+    },
+    {
+     "text": "wet patch of concrete",
+     "field": "dialogue"
+    },
+    {
+     "text": "slipped on a wet sidewalk",
+     "field": "note"
+    },
+    {
+     "text": "landed on her right side",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.480",
+   "spans": [
+    {
+     "text": "the sidewalk was soaking wet",
+     "field": "dialogue"
+    },
+    {
+     "text": "wet patch of concrete",
+     "field": "dialogue"
+    },
+    {
+     "text": "slipped on a wet sidewalk",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.8",
+   "spans": [
+    {
+     "text": "play pickleball",
+     "field": "dialogue"
+    },
+    {
+     "text": "to play recreational pickleball",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "aldervale",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "hometown"
+  },
+  {
+   "text": "i still go back there to visit my parents every month",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive family routine"
+  },
+  {
+   "text": "Aldervale",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "hometown"
+  },
+  {
+   "text": "returns to visit her parents monthly",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive family routine"
+  }
+ ],
+ "scenario": {
+  "specialty": "sports medicine",
+  "visit": "injury",
+  "length": "medium",
+  "focus": [
+   "ID",
+   "LOCATION"
+  ]
+ }
+}

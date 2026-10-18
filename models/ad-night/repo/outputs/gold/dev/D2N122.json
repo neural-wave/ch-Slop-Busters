@@ -1,0 +1,31 @@
+{
+  "encounter_id": "D2N122",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "kyle",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "i have horses",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "dialogue",
+      "text": "track seventy one hundred hybrid",
+      "category": "OTHER_QI",
+      "risk": "low"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "124/76",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure reading"
+    }
+  ]
+}

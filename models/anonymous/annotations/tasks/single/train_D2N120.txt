@@ -1,0 +1,93 @@
+########## ENCOUNTER D2N120
+=== FIELD: dialogue
+[doctor] hello larry how are you doing today
+[patient] i've been better my primary care doctor wanted me to see you for this back pain that i've been having for a couple of years now
+[doctor] okay
+[patient] and i have tried so many things and just nothing seems to work
+[doctor] i'm sorry to hear that now do you remember what caused the pain initially
+[patient] you know i never fell or was in an accident but i do remember it all happened like i started having back pain after i was moving furniture one weekend
+[doctor] okay and now can you describe the pain for me
+[patient] yeah it feels like a sharp stabbing pain in my back and it does go down even down to my right leg sometimes all the way down to my toe it feels like my big toe
+[doctor] okay
+[patient] and i also feel like i just ca n't get comfortable which is worse when i sit down okay yeah
+[doctor] okay now with that do you have any numbness or tingling associated with your back pain
+[patient] yeah i do get some numbness and tingling especially to my right leg that goes down to my foot
+[doctor] okay
+[patient] let me separate these
+[doctor] and how about a loss of sensation in the genital or the rectal area
+[patient] no nothing like that
+[doctor] okay now do you have any weakness
+[patient] i would n't say i have any weakness no
+[doctor] okay do you experience like any loss of control of your bladder or your bowels
+[patient] no
+[doctor] okay now you mentioned earlier that you you have some tried tried some things in the past so tell me what were they
+[patient] so i've tried some physical therapy before and so when it gets really bad they've even had to prescribe some strong pain medications for me but that was only temporary and they even mentioned surgery to me in the past but i really would like to avoid surgery
+[doctor] okay sure so tell me what is your day like
+[patient] my day so i try to be as active as i can but of course it's been difficult with my back pain and so because of that i have gained some weight over the past years
+[doctor] okay alright well i'm sorry to hear that i know that you used to like playing golf
+[patient] yeah i and you know golf is relatively new for me i've been trying to get into it but this has definitely set me back
+[doctor] yeah i'm sorry yep probably now at the peak of you know just learning it and being able to do more with it this comes and this happens right
+[patient] exactly
+[doctor] well let's see what we can do for you here so you can go out into the you know the golf course again now do you tell me do you have any family members with spine conditions
+[patient] no i ca n't recall any family members
+[doctor] okay alright and do you smoke
+[patient] not now i i quit about twenty years ago
+[doctor] okay alright well alright well i like to do a quick physical exam on you here
+[patient] okay
+[doctor] i'm gon na go ahead here i reviewed your vitals and they overall look pretty good so that's a good sign now on your musculoskeletal back exam there is no overlying erythema and that just means redness or ecchymosis and that just means bruising of the skin now there is midline tenderness at l4 l5 disk space with right-sided lumbar paravertebral tenderness so do me a favor and i'm gon na just have you you know bend forward and straighten up a bit
+[patient] okay that's painful
+[doctor] sorry so definitely some pain with lumbar flexion and supine straight leg test is positive so on your neurological examination there is decreased sensation to light touch at the right lateral thigh at l4 dermatome okay and i'm just gon na take a look at your knees here real quick and then your your ankles so patellar and achilles reflexes are symmetrical so good now i reviewed the results of your mri and it shows disk herniation with nerve impingement so let me tell you about my assessment and plan here larry so for your problem of chronic lumbar back pain so based on your symptoms your exam and reviewing your mri results your symptoms are consistent with an l4 l5 herniated disk with radicul radiculopathy so this means that one of your disks that sits between your spinal vertebrae is bulging out and this bulge is pinching on some nerves and that's why you feel that tingling in your leg so yeah yeah so i am recommending a spinal injection with a strong inflammatory medication called a corticosteroid and what i do is i will inject the corticosteroid into that lumbar spine under fluoroscopy which you can think of you know an x-ray to help localize to the exact area of your pain now this should this should help the inflammation that is causing the pain so what do you think about that
+[patient] is there something i'm gon na have to do all the time
+[doctor] well you know patients are different so what we do is we will monitor you and we see how you respond to the injection and the patient's intervals can be different as well but we usually do not do more than four times a year
+[patient] okay okay
+[doctor] alright and it's not a long procedure it's it's relatively quick and common and you should be out of the office within an hour
+[patient] okay
+[doctor] okay
+[patient] alright sounds good
+[doctor] alright well let's go ahead and get you started on the first one today if that works for you if not we'll get you scheduled to start your first injection
+[patient] alright thank you
+[doctor] alright thank you
+[patient] bye
+=== FIELD: note
+HISTORY OF PRESENT ILLNESS
+
+Larry Garcia is a pleasant 41-year-old male who presents to the clinic today for the evaluation of back pain.
+
+The onset of his pain began 2 years ago, after moving furniture. He denies any specific injury. The patient describes his pain as sharp and stabbing. He locates his pain to his lower back, which radiates distally into his right leg and occasionally into his great toe. Sitting will increase his pain and he notes he is unable to get comfortable. The patient also reports numbness and tingling, especially in his right leg that radiates distally to his foot. He adds that he tries to be as active as he can, however it has been difficult with his back pain. The patient adds that he has gained weight over the past year. He denies any loss of sensation in his genital or rectal area, weakness, or loss of bladder or bowel control.
+
+In the past, he has attended physical therapy. The patient has also been prescribed pain medications, however they only provided temporary relief. He would like to avoid any surgical procedure at this time.
+
+SOCIAL HISTORY
+
+He quit smoking 20 years ago.
+
+FAMILY HISTORY
+
+The patient denies any family history of spine conditions.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Reports weight gain.
+Musculoskeletal: Reports lower back pain.
+Neurological: Positive for numbness and tingling in the right leg and foot. Denies loss of bowl or bladder control, or loss of sensation in the genital or rectal area.
+
+VITALS
+
+Vitals are within normal limits.
+
+PHYSICAL EXAM
+
+NEURO: Decreased sensation to light touch at the right lateral thigh at the L4 dermatome. Patellar and Achilles reflexes are symmetrical.
+MSK: Examination of the lumbar spine: No overlying erythema or ecchymosis. Midline tenderness at L4-5 disc space with right-sided lumbar paravertebral tenderness. Pain with lumbar flexion. Supine straight leg test is positive.
+
+RESULTS
+
+The MRI of the lumbar spine was reviewed today. This revealed a disc herniation with nerve impingement.
+
+ASSESSMENT
+
+L4-5 herniated disc with radiculopathy.
+
+PLAN
+
+After reviewing the patient's examination and MRI findings today, I have discussed with the patient that his symptoms are consistent with an L4-5 herniated disc with radiculopathy. I have recommended that we treat the patient conservatively with a corticosteroid injection under fluoroscopy. With the patient's consent, we will proceed with a cortisone injection into the lumbar spine today.

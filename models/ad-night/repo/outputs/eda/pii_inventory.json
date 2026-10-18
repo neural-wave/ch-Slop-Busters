@@ -1,0 +1,3320 @@
+{
+ "patient_first_name_greeting": {
+  "patterns": [
+   "\\b(?:hi|hello|hey|good morning|good afternoon|good evening|morning|welcome)\\b\\s?,?\\s(?:(?:mr|mrs|ms|miss|mister|missus|dr|doctor)\\s?\\.?\\s)?(?P<name>[a-z]+(?:-[a-z]+)?)\\b"
+  ],
+  "hits": 164,
+  "by_field": {
+   "dialogue": 159,
+   "note": 5
+  },
+  "by_dataset": {
+   "virtassist": 59,
+   "virtscribe": 27,
+   "aci": 78
+  },
+  "by_split": {
+   "eval": 52,
+   "train": 112
+  },
+  "encounters": 151,
+  "pct_encounters": 72.9,
+  "encounters_by_dataset": {
+   "aci": "76/112",
+   "virtassist": "52/55",
+   "virtscribe": "23/40"
+  },
+  "dialogue_hits_in_first3_lines": "156/159",
+  "dialogue_line_median": 0,
+  "note_sections_top": [
+   [
+    "PLAN",
+    2
+   ],
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    2
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    1
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "hey matthew",
+    3
+   ],
+   [
+    "hi , andrew",
+    2
+   ],
+   [
+    "hi , john",
+    2
+   ],
+   [
+    "hi , james",
+    2
+   ],
+   [
+    "hi , anna",
+    2
+   ],
+   [
+    "hi virginia",
+    2
+   ],
+   [
+    "morning aldosterone",
+    2
+   ],
+   [
+    "good morning julie",
+    2
+   ],
+   [
+    "hi billy",
+    2
+   ],
+   [
+    "hi jeremy",
+    2
+   ],
+   [
+    "hi logan",
+    2
+   ],
+   [
+    "hi wayne",
+    2
+   ],
+   [
+    "hi andrea",
+    2
+   ],
+   [
+    "hey lawrence",
+    2
+   ],
+   [
+    "hey betty",
+    2
+   ],
+   [
+    "hey kyle",
+    2
+   ],
+   [
+    "hi , michelle",
+    2
+   ],
+   [
+    "hi gregory",
+    2
+   ],
+   [
+    "morning, tretinoin",
+    2
+   ],
+   [
+    "hi , martha",
+    1
+   ]
+  ],
+  "distinct_forms": 144,
+  "examples": [
+   [
+    "D2N001",
+    "dialogue",
+    "[doctor] «hi , martha» . how are you ? ⏎ [patient] i'm"
+   ],
+   [
+    "D2N002",
+    "dialogue",
+    "[doctor] «hi , andrew» , how are you ? ⏎ [patient] hi "
+   ],
+   [
+    "D2N003",
+    "dialogue",
+    "[doctor] «hi , john» . how are you ? ⏎ [patient] hey"
+   ]
+  ]
+ },
+ "patient_name_intro": {
+  "patterns": [
+   "\\b(?P<first>[a-z]+)(?: (?P<last>[a-z]+))? is an? (?:very )?(?:pleasant )?(?:\\d+|[a-z]+(?: [a-z]+)?) ?-? ?(?:year|month|week|day)s? ?-? ?old",
+   "\\b(?:next patient is|patient's name is|patient is|patient name is|i am seeing|i'm seeing|today i am seeing|here with|this is|seeing) (?P<first>[a-z]+) (?P<last>[a-z]+)(?= ?[,.]| who| she| he| mrn| medical| date| a | is | today)",
+   "^(?:\\[doctor\\] )?(?:okay \\. |all right \\. |um , |uh , )?(?P<first>[a-z]+) (?P<last>[a-z]+) ?[,.] (?:date of birth|dob|medical record|mrn)",
+   "(?:\\b(?P<title>Mr|Mrs|Ms|Miss|Mister)\\.? )?(?P<first>[A-Z][a-z]+(?:-[A-Z][a-z]+)?)(?: (?P<last>[A-Z][a-z]+(?:-[A-Z][a-z]+)?))? is an? (?:very )?(?:pleasant |lovely |delightful )?(?:\\d+|[a-z]+)[- ](?:year|month|week|day)"
+  ],
+  "hits": 314,
+  "by_field": {
+   "dialogue": 102,
+   "note": 212
+  },
+  "by_dataset": {
+   "virtassist": 133,
+   "virtscribe": 97,
+   "aci": 84
+  },
+  "by_split": {
+   "eval": 100,
+   "train": 214
+  },
+  "encounters": 173,
+  "pct_encounters": 83.6,
+  "encounters_by_dataset": {
+   "aci": "80/112",
+   "virtassist": "55/55",
+   "virtscribe": "38/40"
+  },
+  "dialogue_hits_in_first3_lines": "49/102",
+  "dialogue_line_median": 4.0,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    138
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    36
+   ],
+   [
+    "ASSESSMENT",
+    20
+   ],
+   [
+    "HPI",
+    10
+   ],
+   [
+    "PLAN",
+    7
+   ],
+   [
+    "SUBJECTIVE",
+    1
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "martha collins is a 50-year-old",
+    2
+   ],
+   [
+    "patient is due for",
+    2
+   ],
+   [
+    "andrew perez is a 62-year-old",
+    2
+   ],
+   [
+    "mr. john perry is a 61-year",
+    2
+   ],
+   [
+    "james allen is a 57-year-old",
+    2
+   ],
+   [
+    "anna mitchell is a 44-year-old",
+    2
+   ],
+   [
+    "ms. stephanie diaz is a 49-year",
+    2
+   ],
+   [
+    "bryan smith is a 55-year-old",
+    2
+   ],
+   [
+    "john brooks is a 55-year-old",
+    2
+   ],
+   [
+    "edward butler is a 59-year-old",
+    2
+   ],
+   [
+    "ms. hernandez is a 48-year",
+    2
+   ],
+   [
+    "ms. philip gutierrez is a pleasant 50-year",
+    2
+   ],
+   [
+    "pamela cook is a 36-year-old",
+    2
+   ],
+   [
+    "mr. eugene walker is a 61-year",
+    2
+   ],
+   [
+    "patrick allen is a 42-year-old",
+    2
+   ],
+   [
+    "brian white is a 58-year-old",
+    2
+   ],
+   [
+    "mr. logan walker is a 58-year",
+    2
+   ],
+   [
+    "katherine is a 22-month-old",
+    2
+   ],
+   [
+    "andrew campbell is a 59-year-old",
+    2
+   ],
+   [
+    "andrea roberts is a 52-year-old",
+    2
+   ]
+  ],
+  "distinct_forms": 266,
+  "examples": [
+   [
+    "D2N001",
+    "dialogue",
+    "y ? ⏎ [patient] okay . ⏎ [doctor] «martha is a 50-year-old» female with a past medical hi"
+   ],
+   [
+    "D2N001",
+    "note",
+    " ⏎  ⏎ HISTORY OF PRESENT ILLNESS ⏎  ⏎ «Martha Collins is a 50-year-old» female with a past medical hi"
+   ],
+   [
+    "D2N001",
+    "note",
+    "sterol. ⏎  ⏎ ASSESSMENT AND PLAN ⏎  ⏎ «Martha Collins is a 50-year-old» female with a past medical hi"
+   ]
+  ]
+ },
+ "title_plus_name": {
+  "patterns": [
+   "\\b(?P<title>(?:mr|mrs|ms|miss|mister|missus|dr|doctor))\\s?\\.?\\s(?P<n>[a-z]+(?:-[a-z]+)?)\\b",
+   "\\b(?P<title>Mr|Mrs|Ms|Miss|Mister)\\.? (?P<n>[A-Z][a-z]+(?:-[A-Z][a-z]+)?)"
+  ],
+  "hits": 288,
+  "by_field": {
+   "dialogue": 156,
+   "note": 132
+  },
+  "by_dataset": {
+   "virtassist": 81,
+   "virtscribe": 169,
+   "aci": 38
+  },
+  "by_split": {
+   "eval": 89,
+   "train": 199
+  },
+  "encounters": 84,
+  "pct_encounters": 40.6,
+  "encounters_by_dataset": {
+   "aci": "22/112",
+   "virtassist": "26/55",
+   "virtscribe": "36/40"
+  },
+  "dialogue_hits_in_first3_lines": "79/156",
+  "dialogue_line_median": 2.0,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    85
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    13
+   ],
+   [
+    "ASSESSMENT",
+    13
+   ],
+   [
+    "HPI",
+    10
+   ],
+   [
+    "PLAN",
+    6
+   ],
+   [
+    "SURGICAL HISTORY",
+    2
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "mr . watson",
+    9
+   ],
+   [
+    "mr. allen",
+    8
+   ],
+   [
+    "ms. ross",
+    7
+   ],
+   [
+    "mr. walker",
+    6
+   ],
+   [
+    "ms. thompson",
+    6
+   ],
+   [
+    "mr. roberts",
+    6
+   ],
+   [
+    "mr. watson",
+    6
+   ],
+   [
+    "mr . james",
+    5
+   ],
+   [
+    "mrs. wood",
+    5
+   ],
+   [
+    "ms. stephanie",
+    4
+   ],
+   [
+    "dr. reyes",
+    4
+   ],
+   [
+    "ms. sanchez",
+    4
+   ],
+   [
+    "ms. hill",
+    3
+   ],
+   [
+    "ms. diaz",
+    3
+   ],
+   [
+    "mr. fisher",
+    3
+   ],
+   [
+    "ms. hernandez",
+    3
+   ],
+   [
+    "mrs. hernandez",
+    3
+   ],
+   [
+    "mr . gutierrez",
+    3
+   ],
+   [
+    "ms. reyes",
+    3
+   ],
+   [
+    "dr. moore",
+    3
+   ]
+  ],
+  "distinct_forms": 152,
+  "examples": [
+   [
+    "D2N002",
+    "dialogue",
+    "h that ? i know that you told «dr. gutierrez»- ⏎ [patient] mm . ⏎ [doctor] . a "
+   ],
+   [
+    "D2N002",
+    "note",
+    "kidneys. He notes that he saw «Dr. Gutierrez» a couple of weeks ago, and ev"
+   ],
+   [
+    "D2N003",
+    "note",
+    " ⏎  ⏎ HISTORY OF PRESENT ILLNESS ⏎  ⏎ «Mr. John» Perry is a 61-year-old male w"
+   ]
+  ]
+ },
+ "doctor_staff_name": {
+  "patterns": [
+   "\\b(?:dr|doctor)\\s?\\.?\\s(?!(?:a|about|actually|after|again|all|already|also|am|an|and|another|any|apparently|appointment|are|arthrogram|as|ask|asked|asks|at|back|basically|be|because|been|before|believe|both|but|by|call|called|calls|came|can|certainly|checked|come|comes|could|day|definitely|did|do|does|doing|done|down|either|every|feel|few|first|for|from|gave|get|gets|give|going|good|got|had|has|have|he|her|here|herself|him|himself|his|hopefully|how|i|if|in|is|it|just|know|last|let|like|little|look|looked|looks|many|may|maybe|me|mentioned|might|month|more|most|much|my|myself|need|needs|neither|new|next|no|not|nurse|obviously|of|office|okay|old|on|once|or|order|ordered|orders|other|our|out|over|please|prescribed|pretty|probably|put|really|recommend|recommended|recommends|referred|right|said|saw|say|says|see|seen|sees|sent|she|should|since|so|some|sorry|still|tell|tells|than|that|the|their|them|then|there|they|think|thinks|this|thought|time|to|today|told|too|uh|um|up|us|very|visit|visits|want|wanted|wants|was|we|week|well|were|what|when|where|which|while|white\\ coat|who|whom|whose|why|will|with|would|write|writes|wrote|yeah|year|yes|yet|you|your|yourself)\\b)(?P<n>[a-z]+)\\b",
+   "\\bDr\\.? (?P<n>[A-Z][a-z]+)",
+   "\\b(?:nurse|medical assistant|my assistant|the assistant|front desk|receptionist|scheduler|therapist|pharmacist|dietitian|my pa|my np)\\s?,?\\s(?:named )?(?P<n>[a-z]+)\\b(?= will| is| can| here| come| has| to| and|'ll| who| ,| \\.)",
+   "\\b(?:with|and|have|ask|see|tell|told|talk to|talked to|spoke with|speak with|call|called|update(?:d)? it with|went through with|go over with|sat down with) (?P<n>aaron|abigail|adam|alan|albert|alex|alexander|alexis|alice|amanda|amber|amy|andrea|andrew|andy|angel|angela|ann|anna|annie|anthony|april|aria|arthur|ashley|audrey|aurora|austin|autumn|ava|barb|barbara|bella|ben|benjamin|beth|betsy|betty|beverly|bill|billy|bob|bobby|bonnie|bradley|brandon|brenda|brian|brittany|brooklyn|bruce|bryan|candy|carl|carlos|carol|carolyn|catherine|cathy|cesar|charles|charlotte|cheryl|chloe|chris|christian|christina|christine|christopher|cindy|connie|cynthia|daisy|dakota|dan|dana|daniel|danielle|danny|dave|david|dawn|deb|deborah|debra|denise|dennis|diana|diane|diego|donald|donna|doris|dorothy|douglas|dylan|ed|eddie|eduardo|edward|elaine|elijah|elizabeth|ella|ellie|emily|emma|eric|ethan|eugene|eva|evelyn|faith|frances|frank|fred|freddie|gabriel|gary|george|gerald|ginger|gloria|grace|greg|gregory|hannah|harold|harry|hazel|heather|hector|helen|henry|holly|hope|howard|irene|isabel|isabella|ivan|ivy|jack|jacob|jacqueline|jake|james|jamie|jane|janet|janice|jason|javier|jean|jeff|jeffrey|jen|jennifer|jenny|jeremy|jerry|jess|jesse|jessica|jesus|jim|jimmy|joan|joe|john|johnny|jon|jonathan|jordan|jose|joseph|josh|joshua|joy|joyce|juan|judith|judy|julia|julie|julio|june|justin|karen|kate|katherine|kathleen|kathryn|kathy|katie|kayla|keith|kelly|ken|kenneth|kevin|kim|kimberly|kyle|larry|laura|lauren|lawrence|leah|leslie|lily|linda|lisa|liz|logan|lori|louis|louise|lucy|luis|luna|lynda|lynn|madison|maggie|mandy|margaret|maria|marie|marilyn|mark|marsha|martha|martin|mary|mason|mateo|matt|matthew|may|megan|melissa|mia|michael|michelle|miguel|mike|mila|mildred|molly|monica|nancy|natalie|nathan|ned|nicholas|nick|nicole|noah|nora|olivia|oscar|pam|pamela|pat|patricia|patrick|paul|peggy|peter|philip|polly|rachel|rafael|ralph|ramon|randy|ray|raymond|rebecca|renee|rhonda|ricardo|rich|richard|rick|rob|robert|robin|roger|ron|ronald|ronnie|rose|roy|russell|ruth|ryan|sally|sam|samantha|samuel|sandra|sandy|sara|sarah|savannah|scott|sean|sharon|sheila|shirley|skye|sofia|sophia|stacy|stella|stephanie|stephen|steve|steven|sue|summer|sunny|susan|tammy|ted|teresa|terry|theresa|thomas|tiffany|tim|timothy|tom|tommy|tony|tonya|tracy|tyler|vera|vicki|victoria|vincent|violet|virginia|walter|wanda|wayne|william|willie|zachary|zoe) (?:come in|will|'ll|is going to|can|at the front|up front|in the front|in the back|the nurse|our nurse|my nurse|the ma|our ma|my ma|the assistant|our assistant|my assistant|the receptionist|our receptionist)\\b"
+  ],
+  "hits": 85,
+  "by_field": {
+   "dialogue": 66,
+   "note": 19
+  },
+  "by_dataset": {
+   "virtassist": 17,
+   "virtscribe": 43,
+   "aci": 25
+  },
+  "by_split": {
+   "eval": 26,
+   "train": 59
+  },
+  "encounters": 46,
+  "pct_encounters": 22.2,
+  "encounters_by_dataset": {
+   "aci": "14/112",
+   "virtassist": "10/55",
+   "virtscribe": "22/40"
+  },
+  "dialogue_hits_in_first3_lines": "31/66",
+  "dialogue_line_median": 3.0,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    11
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    4
+   ],
+   [
+    "SURGICAL HISTORY",
+    2
+   ],
+   [
+    "PLAN",
+    1
+   ],
+   [
+    "INSTRUCTIONS",
+    1
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "dr. reyes",
+    4
+   ],
+   [
+    "dr. moore",
+    3
+   ],
+   [
+    "dr. howard",
+    3
+   ],
+   [
+    "dr. white",
+    3
+   ],
+   [
+    "dr. gutierrez",
+    2
+   ],
+   [
+    "dr. fisher",
+    2
+   ],
+   [
+    "dr. alice",
+    2
+   ],
+   [
+    "dr. miller",
+    2
+   ],
+   [
+    "dr. lewis",
+    2
+   ],
+   [
+    "dr. edwards",
+    2
+   ],
+   [
+    "dr. brown",
+    2
+   ],
+   [
+    "dr. baker",
+    2
+   ],
+   [
+    "dr. flores",
+    2
+   ],
+   [
+    "dr. henry",
+    2
+   ],
+   [
+    "dr. hughes",
+    2
+   ],
+   [
+    "doctor white",
+    2
+   ],
+   [
+    "doctor harris",
+    2
+   ],
+   [
+    "doctor miller",
+    2
+   ],
+   [
+    "dr. sanchez",
+    2
+   ],
+   [
+    "dr. scott",
+    2
+   ]
+  ],
+  "distinct_forms": 59,
+  "examples": [
+   [
+    "D2N002",
+    "dialogue",
+    "h that ? i know that you told «dr. gutierrez»- ⏎ [patient] mm . ⏎ [doctor] . a "
+   ],
+   [
+    "D2N002",
+    "note",
+    "kidneys. He notes that he saw «Dr. Gutierrez» a couple of weeks ago, and ev"
+   ],
+   [
+    "D2N005",
+    "dialogue",
+    "e to see you . ⏎ [patient] hi , «dr. james» , good to see you . ⏎ [doctor] "
+   ]
+  ]
+ },
+ "relative_or_friend": {
+  "patterns": [
+   "\\b(?:daughter\\-in\\-law|mother\\-in\\-law|father\\-in\\-law|granddaughter|grandchildren|stepdaughter|grandparents|grandfather|grandmother|son\\-in\\-law|girlfriend|stepfather|ex\\-husband|stepmother|boyfriend|coworkers|godfather|neighbors|godmother|grandkids|caregiver|colleague|brothers|siblings|grandson|children|coworker|neighbor|roommate|daughter|friends|fiancee|sibling|grandpa|husband|in\\-laws|stepson|ex\\-wife|brother|partner|grandma|parents|sisters|fiance|cousin|mother|friend|sister|father|nephew|spouse|uncle|mommy|child|twins|daddy|buddy|niece|mama|wife|aunt|boss|baby|kids|papa|twin|dad|son|kid|mom)\\b"
+  ],
+  "hits": 462,
+  "by_field": {
+   "dialogue": 328,
+   "note": 134
+  },
+  "by_dataset": {
+   "virtassist": 49,
+   "virtscribe": 178,
+   "aci": 235
+  },
+  "by_split": {
+   "eval": 151,
+   "train": 311
+  },
+  "encounters": 112,
+  "pct_encounters": 54.1,
+  "encounters_by_dataset": {
+   "aci": "69/112",
+   "virtassist": "18/55",
+   "virtscribe": "25/40"
+  },
+  "dialogue_hits_in_first3_lines": "20/328",
+  "dialogue_line_median": 24.0,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    62
+   ],
+   [
+    "FAMILY HISTORY",
+    28
+   ],
+   [
+    "SOCIAL HISTORY",
+    22
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    11
+   ],
+   [
+    "PLAN",
+    8
+   ],
+   [
+    "BIRTH HISTORY",
+    1
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "wife",
+    44
+   ],
+   [
+    "kids",
+    28
+   ],
+   [
+    "dad",
+    28
+   ],
+   [
+    "sister",
+    27
+   ],
+   [
+    "children",
+    25
+   ],
+   [
+    "friends",
+    23
+   ],
+   [
+    "mom",
+    23
+   ],
+   [
+    "mother",
+    22
+   ],
+   [
+    "father",
+    21
+   ],
+   [
+    "baby",
+    19
+   ],
+   [
+    "brother",
+    19
+   ],
+   [
+    "daughter",
+    18
+   ],
+   [
+    "husband",
+    16
+   ],
+   [
+    "son",
+    16
+   ],
+   [
+    "partner",
+    12
+   ],
+   [
+    "friend",
+    11
+   ],
+   [
+    "parents",
+    11
+   ],
+   [
+    "cousin",
+    10
+   ],
+   [
+    "twin",
+    9
+   ],
+   [
+    "aunt",
+    8
+   ]
+  ],
+  "distinct_forms": 42,
+  "examples": [
+   [
+    "D2N007",
+    "dialogue",
+    "ongenital artery when i was a «baby» , so , um , they had to do a "
+   ],
+   [
+    "D2N007",
+    "note",
+    "genital artery when she was a «baby» and they had to do a CABG on "
+   ],
+   [
+    "D2N009",
+    "dialogue",
+    "r back ? ⏎ [patient] you ... my «wife» made me push a , uh , refrige"
+   ]
+  ]
+ },
+ "named_relative_or_friend": {
+  "patterns": [
+   "\\b(?:my|his|her|their|your|our) (?:aunt|baby|boss|boyfriend|brother|brothers|buddy|caregiver|child|children|colleague|cousin|coworker|coworkers|dad|daddy|daughter|daughter-in-law|ex-husband|ex-wife|father|father-in-law|fiance|fiancee|friend|friends|girlfriend|godfather|godmother|grandchildren|granddaughter|grandfather|grandkids|grandma|grandmother|grandpa|grandparents|grandson|husband|in-laws|kid|kids|mama|mom|mommy|mother|mother-in-law|neighbor|neighbors|nephew|niece|papa|parents|partner|roommate|sibling|siblings|sister|sisters|son|son-in-law|spouse|stepdaughter|stepfather|stepmother|stepson|twin|twins|uncle|wife)\\s?,?\\s(?:named )?(?P<n>[a-z]+)\\b(?= (?:is|was|has|had|who|and|said|told|got|does|did|came|lives|works|,|\\.))",
+   "\\b(?:my|his|her|their|your|our) (?:aunt|baby|boss|boyfriend|brother|brothers|buddy|caregiver|child|children|colleague|cousin|coworker|coworkers|dad|daddy|daughter|daughter-in-law|ex-husband|ex-wife|father|father-in-law|fiance|fiancee|friend|friends|girlfriend|godfather|godmother|grandchildren|granddaughter|grandfather|grandkids|grandma|grandmother|grandpa|grandparents|grandson|husband|in-laws|kid|kids|mama|mom|mommy|mother|mother-in-law|neighbor|neighbors|nephew|niece|papa|parents|partner|roommate|sibling|siblings|sister|sisters|son|son-in-law|spouse|stepdaughter|stepfather|stepmother|stepson|twin|twins|uncle|wife)\\s?,?\\s(?P<n>aaron|abigail|adam|alan|albert|alex|alexander|alexis|alice|amanda|amber|amy|andrea|andrew|andy|angel|angela|ann|anna|annie|anthony|april|aria|arthur|ashley|audrey|aurora|austin|autumn|ava|barb|barbara|bella|ben|benjamin|beth|betsy|betty|beverly|bill|billy|bob|bobby|bonnie|bradley|brandon|brenda|brian|brittany|brooklyn|bruce|bryan|candy|carl|carlos|carol|carolyn|catherine|cathy|cesar|charles|charlotte|cheryl|chloe|chris|christian|christina|christine|christopher|cindy|connie|cynthia|daisy|dakota|dan|dana|daniel|danielle|danny|dave|david|dawn|deb|deborah|debra|denise|dennis|diana|diane|diego|donald|donna|doris|dorothy|douglas|dylan|ed|eddie|eduardo|edward|elaine|elijah|elizabeth|ella|ellie|emily|emma|eric|ethan|eugene|eva|evelyn|faith|frances|frank|fred|freddie|gabriel|gary|george|gerald|ginger|gloria|grace|greg|gregory|hannah|harold|harry|hazel|heather|hector|helen|henry|holly|hope|howard|irene|isabel|isabella|ivan|ivy|jack|jacob|jacqueline|jake|james|jamie|jane|janet|janice|jason|javier|jean|jeff|jeffrey|jen|jennifer|jenny|jeremy|jerry|jess|jesse|jessica|jesus|jim|jimmy|joan|joe|john|johnny|jon|jonathan|jordan|jose|joseph|josh|joshua|joy|joyce|juan|judith|judy|julia|julie|julio|june|justin|karen|kate|katherine|kathleen|kathryn|kathy|katie|kayla|keith|kelly|ken|kenneth|kevin|kim|kimberly|kyle|larry|laura|lauren|lawrence|leah|leslie|lily|linda|lisa|liz|logan|lori|louis|louise|lucy|luis|luna|lynda|lynn|madison|maggie|mandy|margaret|maria|marie|marilyn|mark|marsha|martha|martin|mary|mason|mateo|matt|matthew|may|megan|melissa|mia|michael|michelle|miguel|mike|mila|mildred|molly|monica|nancy|natalie|nathan|ned|nicholas|nick|nicole|noah|nora|olivia|oscar|pam|pamela|pat|patricia|patrick|paul|peggy|peter|philip|polly|rachel|rafael|ralph|ramon|randy|ray|raymond|rebecca|renee|rhonda|ricardo|rich|richard|rick|rob|robert|robin|roger|ron|ronald|ronnie|rose|roy|russell|ruth|ryan|sally|sam|samantha|samuel|sandra|sandy|sara|sarah|savannah|scott|sean|sharon|sheila|shirley|skye|sofia|sophia|stacy|stella|stephanie|stephen|steve|steven|sue|summer|sunny|susan|tammy|ted|teresa|terry|theresa|thomas|tiffany|tim|timothy|tom|tommy|tony|tonya|tracy|tyler|vera|vicki|victoria|vincent|violet|virginia|walter|wanda|wayne|william|willie|zachary|zoe)\\b"
+  ],
+  "hits": 9,
+  "by_field": {
+   "dialogue": 7,
+   "note": 2
+  },
+  "by_dataset": {
+   "virtscribe": 7,
+   "aci": 2
+  },
+  "by_split": {
+   "eval": 2,
+   "train": 7
+  },
+  "encounters": 7,
+  "pct_encounters": 3.4,
+  "encounters_by_dataset": {
+   "aci": "2/112",
+   "virtassist": "0/55",
+   "virtscribe": "5/40"
+  },
+  "dialogue_hits_in_first3_lines": "2/7",
+  "dialogue_line_median": 17,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    2
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "your friend , tyler",
+    1
+   ],
+   [
+    "my friend diane",
+    1
+   ],
+   [
+    "her twin sister",
+    1
+   ],
+   [
+    "my son sean",
+    1
+   ],
+   [
+    "my daughter , theresa",
+    1
+   ],
+   [
+    "my sister , hannah",
+    1
+   ],
+   [
+    "his daughter, theresa",
+    1
+   ],
+   [
+    "my kids vaccinated",
+    1
+   ],
+   [
+    "my dad , aunt",
+    1
+   ]
+  ],
+  "distinct_forms": 9,
+  "examples": [
+   [
+    "D2N027",
+    "dialogue",
+    "miles and mostly keep up with «your friend , tyler» , correct ? ⏎ [patient] yeah . "
+   ],
+   [
+    "D2N035",
+    "dialogue",
+    "y got to feeling bad i called «my friend diane» and she said i probably ought"
+   ],
+   [
+    "D2N076",
+    "note",
+    "with a small amount of juice. «Her twin sister» is approximately the same siz"
+   ]
+  ]
+ },
+ "dob": {
+  "patterns": [
+   "\\b(?:date of birth|dob|d\\.o\\.b\\.|birth ?date|born on|born in|birthday is)\\b"
+  ],
+  "hits": 33,
+  "by_field": {
+   "dialogue": 33
+  },
+  "by_dataset": {
+   "virtscribe": 33
+  },
+  "by_split": {
+   "eval": 9,
+   "train": 24
+  },
+  "encounters": 33,
+  "pct_encounters": 15.9,
+  "encounters_by_dataset": {
+   "aci": "0/112",
+   "virtassist": "0/55",
+   "virtscribe": "33/40"
+  },
+  "dialogue_hits_in_first3_lines": "33/33",
+  "dialogue_line_median": 0,
+  "note_sections_top": [],
+  "surface_forms_top": [
+   [
+    "date of birth",
+    32
+   ],
+   [
+    "birth date",
+    1
+   ]
+  ],
+  "distinct_forms": 2,
+  "examples": [
+   [
+    "D2N021",
+    "dialogue",
+    "is christine hernandez , uh , «date of birth» is january 13th , 1982 . ⏎ [doc"
+   ],
+   [
+    "D2N022",
+    "dialogue",
+    "r] this is philip gutierrez , «date of birth» 1/12/71 . he is a 50-year-old"
+   ],
+   [
+    "D2N023",
+    "dialogue",
+    "ext patient is paul edwards , «date of birth» is january 15th 1962 . so he'"
+   ]
+  ]
+ },
+ "birthday_mention": {
+  "patterns": [
+   "\\bbirthday\\b"
+  ],
+  "hits": 9,
+  "by_field": {
+   "dialogue": 6,
+   "note": 3
+  },
+  "by_dataset": {
+   "aci": 4,
+   "virtassist": 5
+  },
+  "by_split": {
+   "eval": 3,
+   "train": 6
+  },
+  "encounters": 4,
+  "pct_encounters": 1.9,
+  "encounters_by_dataset": {
+   "aci": "2/112",
+   "virtassist": "2/55",
+   "virtscribe": "0/40"
+  },
+  "dialogue_hits_in_first3_lines": "0/6",
+  "dialogue_line_median": 15.0,
+  "note_sections_top": [
+   [
+    "ASSESSMENT AND PLAN",
+    1
+   ],
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    1
+   ],
+   [
+    "HPI",
+    1
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "birthday",
+    9
+   ]
+  ],
+  "distinct_forms": 1,
+  "examples": [
+   [
+    "D2N043",
+    "dialogue",
+    "ow next monday is actually my «birthday» so i think that's a good day ⏎ "
+   ],
+   [
+    "D2N043",
+    "dialogue",
+    "t's a fantastic day and happy «birthday» coming up on monday ⏎ [patient]"
+   ],
+   [
+    "D2N043",
+    "note",
+    "t: The patient has chosen his «birthday», as a quit date. On that day,"
+   ]
+  ]
+ },
+ "exact_age": {
+  "patterns": [
+   "\\b(?:\\d{1,3}|(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|a hundred)(?:[ -](?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|a hundred))?)\\s?-?\\s?(?:year|month|week|day)s?\\s?-?\\s?old\\b",
+   "\\b(?:age|aged|at age|at the age of|turning|turned|i'm|i am|he's|she's|you are|you're) (?:\\d{1,3}|(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|a hundred)(?:[ -](?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|a hundred))?)\\b(?! (?:mg|milligrams?|mcg|percent|%|pounds?|lbs|units?|minutes?|hours?|days?|weeks?|months?|years?|times?|puffs?|tablets?|pills?|cm|mm|inches?|feet|foot|degrees?|refills?|out of|over|to|and|or|more|less|point))",
+   "\\bin (?:his|her|their|my) (?:early |late |mid[- ])?(?:\\d0s|twenties|thirties|forties|fifties|sixties|seventies|eighties|nineties)\\b",
+   "\\b(?:\\d{1,3}|(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|a hundred))[- ]?(?:yo|y/o|y\\.o\\.)\\b"
+  ],
+  "hits": 343,
+  "by_field": {
+   "dialogue": 114,
+   "note": 229
+  },
+  "by_dataset": {
+   "virtassist": 154,
+   "virtscribe": 97,
+   "aci": 92
+  },
+  "by_split": {
+   "eval": 103,
+   "train": 240
+  },
+  "encounters": 171,
+  "pct_encounters": 82.6,
+  "encounters_by_dataset": {
+   "aci": "79/112",
+   "virtassist": "55/55",
+   "virtscribe": "37/40"
+  },
+  "dialogue_hits_in_first3_lines": "41/114",
+  "dialogue_line_median": 4.0,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    143
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    38
+   ],
+   [
+    "ASSESSMENT",
+    23
+   ],
+   [
+    "HPI",
+    10
+   ],
+   [
+    "PLAN",
+    5
+   ],
+   [
+    "FAMILY HISTORY",
+    3
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "62-year-old",
+    17
+   ],
+   [
+    "58-year-old",
+    14
+   ],
+   [
+    "50-year-old",
+    12
+   ],
+   [
+    "57-year-old",
+    12
+   ],
+   [
+    "61-year-old",
+    11
+   ],
+   [
+    "56-year-old",
+    10
+   ],
+   [
+    "52-year-old",
+    10
+   ],
+   [
+    "44-year-old",
+    9
+   ],
+   [
+    "39-year-old",
+    9
+   ],
+   [
+    "59-year-old",
+    8
+   ],
+   [
+    "40-year-old",
+    8
+   ],
+   [
+    "49-year-old",
+    7
+   ],
+   [
+    "60-year-old",
+    7
+   ],
+   [
+    "33-year-old",
+    7
+   ],
+   [
+    "55-year-old",
+    6
+   ],
+   [
+    "43-year-old",
+    6
+   ],
+   [
+    "42-year-old",
+    6
+   ],
+   [
+    "45-year-old",
+    6
+   ],
+   [
+    "26-year-old",
+    6
+   ],
+   [
+    "27-year-old",
+    5
+   ]
+  ],
+  "distinct_forms": 124,
+  "examples": [
+   [
+    "D2N001",
+    "dialogue",
+    "] okay . ⏎ [doctor] martha is a «50-year-old» female with a past medical hi"
+   ],
+   [
+    "D2N001",
+    "note",
+    " ILLNESS ⏎  ⏎ Martha Collins is a «50-year-old» female with a past medical hi"
+   ],
+   [
+    "D2N001",
+    "note",
+    "AND PLAN ⏎  ⏎ Martha Collins is a «50-year-old» female with a past medical hi"
+   ]
+  ]
+ },
+ "absolute_date": {
+  "patterns": [
+   "\\b\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}\\b",
+   "\\b(?:19|20)\\d{2}-\\d{2}-\\d{2}\\b",
+   "\\b(?:january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sept?|oct|nov|dec)\\.? \\d{1,2}(?:st|nd|rd|th)?(?: ?,? ?(?:19|20)\\d{2})?\\b(?! ?(?:mg|mcg|ml|percent|%|days|weeks|months|years|times|puffs|tablets))",
+   "\\b\\d{1,2}(?:st|nd|rd|th)? (?:of )?(?:january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sept?|oct|nov|dec)\\b(?: ?,? ?(?:19|20)\\d{2})?",
+   "\\b(?:january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sept?|oct|nov|dec)\\.? ?,? ?(?:of )?(?:19|20)\\d{2}\\b",
+   "\\b\\d{1,2}/(?:19|20)\\d{2}\\b",
+   "\\b(?:in|since|of|back in|until|from|through|by|around|about) (?:19|20)\\d{2}\\b",
+   "\\b(?:19|20)\\d{2}\\b(?! ?(?:mg|mcg|ml|units?|milligrams?|calories|steps|pounds?|lbs|dollars|\\$))",
+   "\\b(?:nineteen|two thousand) (?:(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|a hundred)|and)(?: (?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|a hundred))?\\b",
+   "\\b(?:on|since|until|from) the \\d{1,2}(?:st|nd|rd|th)\\b"
+  ],
+  "hits": 202,
+  "by_field": {
+   "dialogue": 91,
+   "note": 111
+  },
+  "by_dataset": {
+   "virtscribe": 181,
+   "aci": 21
+  },
+  "by_split": {
+   "eval": 89,
+   "train": 113
+  },
+  "encounters": 50,
+  "pct_encounters": 24.2,
+  "encounters_by_dataset": {
+   "aci": "13/112",
+   "virtassist": "0/55",
+   "virtscribe": "37/40"
+  },
+  "dialogue_hits_in_first3_lines": "56/91",
+  "dialogue_line_median": 0,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    60
+   ],
+   [
+    "RESULTS",
+    18
+   ],
+   [
+    "PLAN",
+    7
+   ],
+   [
+    "ASSESSMENT",
+    7
+   ],
+   [
+    "SURGICAL HISTORY",
+    6
+   ],
+   [
+    "PAST HISTORY",
+    3
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "in 2018",
+    11
+   ],
+   [
+    "03/2021",
+    4
+   ],
+   [
+    "in 2019",
+    4
+   ],
+   [
+    "10/2020",
+    4
+   ],
+   [
+    "2000",
+    3
+   ],
+   [
+    "04/2021",
+    3
+   ],
+   [
+    "01/2021",
+    3
+   ],
+   [
+    "12/2019",
+    3
+   ],
+   [
+    "08/03/2020",
+    3
+   ],
+   [
+    "03/22/2021",
+    3
+   ],
+   [
+    "10/10/2020",
+    2
+   ],
+   [
+    "02/05/2021",
+    2
+   ],
+   [
+    "01/2020",
+    2
+   ],
+   [
+    "2019",
+    2
+   ],
+   [
+    "january 20th , 2020",
+    2
+   ],
+   [
+    "01/20/2020",
+    2
+   ],
+   [
+    "04/2022",
+    2
+   ],
+   [
+    "in 1996",
+    2
+   ],
+   [
+    "3/3/21",
+    2
+   ],
+   [
+    "03/01/2021",
+    2
+   ]
+  ],
+  "distinct_forms": 145,
+  "examples": [
+   [
+    "D2N021",
+    "dialogue",
+    "andez , uh , date of birth is «january 13th , 1982» . ⏎ [doctor] hey , miss christi"
+   ],
+   [
+    "D2N021",
+    "dialogue",
+    "m , i'll be on vacation after «july 8th» . ⏎ [doctor] okay , good . ⏎ [pat"
+   ],
+   [
+    "D2N021",
+    "note",
+    " applied topically. ⏎ Vitamin D «2000» IU daily. ⏎ Unithroid. ⏎ MiraLAX."
+   ]
+  ]
+ },
+ "month_or_season_or_holiday": {
+  "patterns": [
+   "\\b(?:january|february|march|april|june|july|august|september|october|november|december)\\b",
+   "\\b(?:in|last|this|next|early|late|of|since|around|during) may\\b",
+   "\\b(?:spring|summer|winter|autumn)\\b|\\b(?:in the|this|last|next|every|the) fall\\b|\\bfall of\\b",
+   "\\b(?:holiday\\ season|fourth\\ of\\ july|thanksgiving|mother's\\ day|spring\\ break|father's\\ day|memorial\\ day|the\\ holidays|valentine's|4th\\ of\\ july|new\\ year's|valentines|super\\ bowl|halloween|labor\\ day|new\\ years|christmas|new\\ year|easter)\\b"
+  ],
+  "hits": 212,
+  "by_field": {
+   "dialogue": 163,
+   "note": 49
+  },
+  "by_dataset": {
+   "virtassist": 52,
+   "virtscribe": 112,
+   "aci": 48
+  },
+  "by_split": {
+   "eval": 78,
+   "train": 134
+  },
+  "encounters": 71,
+  "pct_encounters": 34.3,
+  "encounters_by_dataset": {
+   "aci": "30/112",
+   "virtassist": "15/55",
+   "virtscribe": "26/40"
+  },
+  "dialogue_hits_in_first3_lines": "26/163",
+  "dialogue_line_median": 18,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    35
+   ],
+   [
+    "PLAN",
+    5
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    2
+   ],
+   [
+    "ASSESSMENT",
+    2
+   ],
+   [
+    "INSTRUCTIONS",
+    2
+   ],
+   [
+    "SOCIAL HISTORY",
+    2
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "summer",
+    43
+   ],
+   [
+    "spring",
+    23
+   ],
+   [
+    "march",
+    15
+   ],
+   [
+    "april",
+    12
+   ],
+   [
+    "june",
+    12
+   ],
+   [
+    "january",
+    10
+   ],
+   [
+    "december",
+    10
+   ],
+   [
+    "winter",
+    9
+   ],
+   [
+    "the holidays",
+    9
+   ],
+   [
+    "november",
+    8
+   ],
+   [
+    "february",
+    8
+   ],
+   [
+    "in the fall",
+    7
+   ],
+   [
+    "easter",
+    7
+   ],
+   [
+    "july",
+    5
+   ],
+   [
+    "august",
+    5
+   ],
+   [
+    "the fall",
+    4
+   ],
+   [
+    "october",
+    4
+   ],
+   [
+    "super bowl",
+    4
+   ],
+   [
+    "thanksgiving",
+    4
+   ],
+   [
+    "labor day",
+    3
+   ]
+  ],
+  "distinct_forms": 26,
+  "examples": [
+   [
+    "D2N001",
+    "dialogue",
+    "is weather . i'm so happy the «summer» is over . i'm definitely more"
+   ],
+   [
+    "D2N001",
+    "dialogue",
+    "nasal congestion from some of «the fall» pollen and allergies . any ot"
+   ],
+   [
+    "D2N001",
+    "note",
+    "nasal congestion from some of «the fall» allergies. She denies any oth"
+   ]
+  ]
+ },
+ "weekday": {
+  "patterns": [
+   "\\b(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)s?\\b"
+  ],
+  "hits": 59,
+  "by_field": {
+   "dialogue": 43,
+   "note": 16
+  },
+  "by_dataset": {
+   "virtassist": 30,
+   "virtscribe": 16,
+   "aci": 13
+  },
+  "by_split": {
+   "eval": 28,
+   "train": 31
+  },
+  "encounters": 23,
+  "pct_encounters": 11.1,
+  "encounters_by_dataset": {
+   "aci": "7/112",
+   "virtassist": "9/55",
+   "virtscribe": "7/40"
+  },
+  "dialogue_hits_in_first3_lines": "0/43",
+  "dialogue_line_median": 21,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    12
+   ],
+   [
+    "SOCIAL HISTORY",
+    1
+   ],
+   [
+    "INSTRUCTIONS",
+    1
+   ],
+   [
+    "REVIEW OF SYSTEMS",
+    1
+   ],
+   [
+    "HPI",
+    1
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "saturday",
+    18
+   ],
+   [
+    "monday",
+    12
+   ],
+   [
+    "sunday",
+    9
+   ],
+   [
+    "sundays",
+    5
+   ],
+   [
+    "thursday",
+    4
+   ],
+   [
+    "friday",
+    4
+   ],
+   [
+    "saturdays",
+    4
+   ],
+   [
+    "fridays",
+    1
+   ],
+   [
+    "tuesday",
+    1
+   ],
+   [
+    "wednesday",
+    1
+   ]
+  ],
+  "distinct_forms": 10,
+  "examples": [
+   [
+    "D2N002",
+    "dialogue",
+    "gs like that ? ⏎ [patient] uh , «saturday» night it actually kept me up "
+   ],
+   [
+    "D2N002",
+    "note",
+    "ing. By the end of the day on «Saturday», his knee soreness interrupte"
+   ],
+   [
+    "D2N004",
+    "dialogue",
+    "s happen ? ⏎ [patient] this was «saturday» morning . ⏎ [doctor] okay . so "
+   ]
+  ]
+ },
+ "relative_date": {
+  "patterns": [
+   "\\b(?:\\w+[- ])?(?:\\w+ )?(?:days?|weeks?|months?|years?|decades?|hours?|minutes?|nights?) ago\\b",
+   "\\b(?:last|this past|past|next|this coming|the other|previous|prior|following|coming|upcoming) (?:week|month|year|spring|summer|fall|winter|night|morning|evening|weekend|visit|appointment|monday|tuesday|wednesday|thursday|friday|saturday|sunday|few (?:days|weeks|months|years)|couple (?:of )?(?:days|weeks|months|years)|\\d+ (?:days|weeks|months|years))\\b",
+   "\\b(?:yesterday|tomorrow|tonight|last night|this morning|this afternoon|this evening|earlier today|later today|the weekend|over the weekend|a while ago|a while back|recently|lately|a few (?:days|weeks|months|years) (?:ago|back))\\b",
+   "\\b(?:in|within|for|over|after|about|around|almost|nearly|roughly) (?:the (?:last|past|next) )?(?:\\d+|a|an|(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|a hundred)|a couple(?: of)?|a few|several|many|\\d+ to \\d+|\\d+-\\d+|\\d+ or \\d+) (?:more )?(?:days?|weeks?|months?|years?|hours?|minutes?)\\b",
+   "\\b(?:since|during|before|after|with|through|post|pre|around|when|at the start of|at the beginning of|at the end of|in the middle of) (?:the )?(?:covid|pandemic|lockdown|quarantine|the shutdown|the holidays|college|high school|the surgery|the accident|the fall|my (?:surgery|accident|fall|injury|divorce|wedding|retirement|deployment|pregnancy)|her (?:surgery|pregnancy)|his (?:surgery|accident))\\b",
+   "\\b(?:when i was|since i was|when she was|when he was|since he was|since she was|as a|since) (?:a )?(?:kid|child|teenager|teen|young|little|baby|in (?:high school|college|school|the military|the army|the navy)|\\d+|(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|a hundred)(?: (?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|a hundred))?)\\b"
+  ],
+  "hits": 1519,
+  "by_field": {
+   "dialogue": 948,
+   "note": 571
+  },
+  "by_dataset": {
+   "virtassist": 404,
+   "virtscribe": 330,
+   "aci": 785
+  },
+  "by_split": {
+   "eval": 478,
+   "train": 1041
+  },
+  "encounters": 204,
+  "pct_encounters": 98.6,
+  "encounters_by_dataset": {
+   "aci": "109/112",
+   "virtassist": "55/55",
+   "virtscribe": "40/40"
+  },
+  "dialogue_hits_in_first3_lines": "65/948",
+  "dialogue_line_median": 24.0,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    279
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    86
+   ],
+   [
+    "INSTRUCTIONS",
+    80
+   ],
+   [
+    "PLAN",
+    69
+   ],
+   [
+    "SOCIAL HISTORY",
+    24
+   ],
+   [
+    "RESULTS",
+    6
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "recently",
+    87
+   ],
+   [
+    "lately",
+    57
+   ],
+   [
+    "last year",
+    49
+   ],
+   [
+    "in two weeks",
+    37
+   ],
+   [
+    "last week",
+    37
+   ],
+   [
+    "yesterday",
+    37
+   ],
+   [
+    "in 2 weeks",
+    33
+   ],
+   [
+    "last visit",
+    29
+   ],
+   [
+    "this morning",
+    24
+   ],
+   [
+    "last night",
+    23
+   ],
+   [
+    "past year",
+    20
+   ],
+   [
+    "next week",
+    19
+   ],
+   [
+    "over the weekend",
+    17
+   ],
+   [
+    "about a week",
+    16
+   ],
+   [
+    "next visit",
+    15
+   ],
+   [
+    "next couple of weeks",
+    15
+   ],
+   [
+    "last month",
+    15
+   ],
+   [
+    "about a week ago",
+    14
+   ],
+   [
+    "in three months",
+    13
+   ],
+   [
+    "about a month",
+    13
+   ]
+  ],
+  "distinct_forms": 523,
+  "examples": [
+   [
+    "D2N001",
+    "dialogue",
+    "l . i've been traveling a lot «recently» since things have , have gott"
+   ],
+   [
+    "D2N001",
+    "dialogue",
+    "ing . uh , went to washington «last weekend» to hike in northern cascades,"
+   ],
+   [
+    "D2N001",
+    "dialogue",
+    "ing every week , um , for the «past year» since my last annual exam . a"
+   ]
+  ]
+ },
+ "clock_time": {
+  "patterns": [
+   "\\b\\d{1,2}:\\d{2}(?::\\d{2})?\\s?(?:[ap]\\.?m\\.?)?\\b",
+   "\\b\\d{1,2}\\s?(?:[ap]\\.?m\\.?)\\b",
+   "\\b\\d{1,2} o'?clock\\b"
+  ],
+  "hits": 6,
+  "by_field": {
+   "note": 2,
+   "dialogue": 4
+  },
+  "by_dataset": {
+   "virtscribe": 4,
+   "virtassist": 2
+  },
+  "by_split": {
+   "eval": 3,
+   "train": 3
+  },
+  "encounters": 4,
+  "pct_encounters": 1.9,
+  "encounters_by_dataset": {
+   "aci": "0/112",
+   "virtassist": "1/55",
+   "virtscribe": "3/40"
+  },
+  "dialogue_hits_in_first3_lines": "0/4",
+  "dialogue_line_median": 31.0,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    2
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "2:00 am",
+    1
+   ],
+   [
+    "7:00",
+    1
+   ],
+   [
+    "5:45 ",
+    1
+   ],
+   [
+    "00:09:25",
+    1
+   ],
+   [
+    "5:00 ",
+    1
+   ],
+   [
+    "5 a.m",
+    1
+   ]
+  ],
+  "distinct_forms": 6,
+  "examples": [
+   [
+    "D2N026",
+    "note",
+    "y 2 weeks ago. He woke around «2:00 am» with intense pain in his left"
+   ],
+   [
+    "D2N027",
+    "dialogue",
+    "ed some days to be at work by «7:00» , lecture , and i try to work"
+   ],
+   [
+    "D2N027",
+    "dialogue",
+    "servations twice a week for a «5:45 »swim in the morning . ⏎ [doctor]"
+   ]
+  ]
+ },
+ "time_of_day_phrase": {
+  "patterns": [
+   "\\b(?:noon|midnight|at night|in the morning|in the afternoon|in the evening|bedtime|at bedtime|supper time|dinner ?time|lunch ?time|breakfast)\\b"
+  ],
+  "hits": 187,
+  "by_field": {
+   "dialogue": 130,
+   "note": 57
+  },
+  "by_dataset": {
+   "virtassist": 34,
+   "virtscribe": 56,
+   "aci": 97
+  },
+  "by_split": {
+   "eval": 52,
+   "train": 135
+  },
+  "encounters": 65,
+  "pct_encounters": 31.4,
+  "encounters_by_dataset": {
+   "aci": "36/112",
+   "virtassist": "13/55",
+   "virtscribe": "16/40"
+  },
+  "dialogue_hits_in_first3_lines": "1/130",
+  "dialogue_line_median": 20.5,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    36
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    13
+   ],
+   [
+    "CURRENT MEDICATIONS",
+    4
+   ],
+   [
+    "PLAN",
+    3
+   ],
+   [
+    "MEDICATIONS",
+    1
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "in the morning",
+    76
+   ],
+   [
+    "at night",
+    76
+   ],
+   [
+    "in the evening",
+    16
+   ],
+   [
+    "in the afternoon",
+    6
+   ],
+   [
+    "breakfast",
+    4
+   ],
+   [
+    "at bedtime",
+    3
+   ],
+   [
+    "lunchtime",
+    2
+   ],
+   [
+    "supper time",
+    1
+   ],
+   [
+    "dinnertime",
+    1
+   ],
+   [
+    "bedtime",
+    1
+   ],
+   [
+    "dinner time",
+    1
+   ]
+  ],
+  "distinct_forms": 11,
+  "examples": [
+   [
+    "D2N006",
+    "dialogue",
+    ". ⏎ [doctor] you're throwing up «in the morning» ? ⏎ [patient] yup . ⏎ [doctor] li"
+   ],
+   [
+    "D2N006",
+    "note",
+    " reports episodes of vomiting «in the morning». The patient also has abdomin"
+   ],
+   [
+    "D2N006",
+    "note",
+    " reports episodes of vomiting «in the morning», as well as abdominal pain an"
+   ]
+  ]
+ },
+ "location": {
+  "patterns": [
+   "\\b(?:out\\ of\\ the\\ country|south\\ carolina|the\\ rex\\ center|north\\ carolina|the\\ rec\\ center|massachusetts|west\\ virginia|new\\ hampshire|san\\ francisco|the\\ mountains|out\\ of\\ state|the\\ driveway|north\\ dakota|the\\ bay\\ area|pennsylvania|rhode\\ island|indianapolis|jacksonville|philadelphia|south\\ dakota|connecticut|mississippi|the\\ suburbs|main\\ street|new\\ england|philippines|minneapolis|los\\ angeles|san\\ antonio|albuquerque|out\\ of\\ town|the\\ trails|east\\ coast|west\\ coast|the\\ desert|california|louisville|new\\ jersey|sacramento|pittsburgh|cul\\-de\\-sac|down\\ south|cincinnati|new\\ mexico|baltimore|back\\ east|anchorage|the\\ cabin|cleveland|the\\ beach|minnesota|the\\ coast|the\\ bronx|australia|charlotte|caribbean|wisconsin|louisiana|nashville|the\\ shore|manhattan|the\\ woods|milwaukee|las\\ vegas|san\\ diego|tennessee|colorado|honolulu|brooklyn|virginia|nebraska|oklahoma|out\\ west|san\\ jose|portland|kentucky|the\\ lake|culdesac|illinois|missouri|downtown|broadway|the\\ park|michigan|columbus|maryland|up\\ north|scotland|new\\ york|delaware|thailand|arkansas|the\\ city|overseas|raleigh|bahamas|oakland|indiana|montana|ireland|germany|vermont|seattle|georgia|alabama|florida|england|detroit|arizona|chicago|jamaica|wichita|vietnam|atlanta|midwest|phoenix|houston|orlando|wyoming|memphis|dallas|london|mexico|france|brazil|europe|hawaii|africa|tucson|canada|nevada|denver|abroad|oregon|kansas|fresno|queens|austin|boston|alaska|italy|paris|tampa|tulsa|japan|idaho|omaha|korea|miami|maine|china|texas|spain|india|cuba|ohio|asia|iowa|utah)\\b",
+   "\\b(?:moved|moving|relocated|trip|vacation|flew|drove|travel(?:ed|ing|led|ling)?|lives?|living|visit(?:ed|ing)?) (?:to|from|in|down to|up to|out to|over to|here from|back from) (?P<n>[a-z][a-z\\-']+(?: [a-z][a-z\\-']+)?)\\b(?= ,| \\.| and| for| with| last| this| next| where| which| a | the | in | on |$)",
+   "\\b(?P<n>[a-z][a-z\\-']+(?: [a-z][a-z\\-']+)?) (?:hospital|medical center|university|church|county|neighborhood|village|island|beach|lake|mountain|river|street|avenue|road|boulevard)\\b",
+   "\\b(?:in|from|to) (?P<n>[a-z]+ , (?:georgia|texas|florida|california|ohio|virginia|carolina|york|jersey|michigan|colorado|arizona|nevada|oregon|washington|tennessee|kentucky|indiana|illinois|wisconsin|minnesota|missouri|alabama|louisiana|oklahoma|kansas|iowa|utah|maine|vermont|maryland|delaware|connecticut|massachusetts|pennsylvania|idaho|montana|wyoming|dakota|nebraska|arkansas|mississippi|hawaii|alaska|mexico|hampshire))\\b"
+  ],
+  "hits": 107,
+  "by_field": {
+   "dialogue": 78,
+   "note": 29
+  },
+  "by_dataset": {
+   "virtassist": 6,
+   "virtscribe": 26,
+   "aci": 75
+  },
+  "by_split": {
+   "eval": 25,
+   "train": 82
+  },
+  "encounters": 45,
+  "pct_encounters": 21.7,
+  "encounters_by_dataset": {
+   "aci": "33/112",
+   "virtassist": "3/55",
+   "virtscribe": "9/40"
+  },
+  "dialogue_hits_in_first3_lines": "5/78",
+  "dialogue_line_median": 21.0,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    17
+   ],
+   [
+    "SOCIAL HISTORY",
+    9
+   ],
+   [
+    "PLAN",
+    3
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "the trails",
+    7
+   ],
+   [
+    "georgia",
+    6
+   ],
+   [
+    "the woods",
+    6
+   ],
+   [
+    "main street",
+    4
+   ],
+   [
+    "west coast",
+    4
+   ],
+   [
+    "the beach",
+    4
+   ],
+   [
+    "denver",
+    4
+   ],
+   [
+    "vermont",
+    3
+   ],
+   [
+    "virginia",
+    3
+   ],
+   [
+    "the rex center",
+    3
+   ],
+   [
+    "dallas",
+    3
+   ],
+   [
+    "the driveway",
+    3
+   ],
+   [
+    "san francisco",
+    3
+   ],
+   [
+    "alabama",
+    2
+   ],
+   [
+    "the park",
+    2
+   ],
+   [
+    "east coast",
+    2
+   ],
+   [
+    "columbus",
+    2
+   ],
+   [
+    "detroit",
+    2
+   ],
+   [
+    "boston",
+    2
+   ],
+   [
+    "district regional hospital",
+    2
+   ]
+  ],
+  "distinct_forms": 57,
+  "examples": [
+   [
+    "D2N008",
+    "dialogue",
+    "raveling a lot . i went up to «vermont» , um , to go , um , explore t"
+   ],
+   [
+    "D2N008",
+    "dialogue",
+    "t , um , to go , um , explore «the mountains» . and along the way i stopped"
+   ],
+   [
+    "D2N025",
+    "dialogue",
+    "done at uh bartley regional , «rightley regional hospital» in the next month , uh , prio"
+   ]
+  ]
+ },
+ "employer_occupation_school": {
+  "patterns": [
+   "\\b(?:heavy\\ lifting\\ at\\ work|construction\\ worker|software\\ developer|on\\ my\\ feet\\ all\\ day|elementary\\ school|nursing\\ assistant|stay\\ at\\ home\\ mom|home\\ health\\ aide|auto\\ repair\\ shop|flight\\ attendant|personal\\ trainer|delivery\\ driver|overnight\\ shift|works\\ from\\ home|insurance\\ agent|work\\ from\\ home|police\\ officer|nursing\\ school|car\\ dealership|national\\ guard|eleventh\\ grade|security\\ guard|business\\ owner|middle\\ school|grocery\\ store|twelfth\\ grade|social\\ worker|postal\\ worker|administrator|self\\-employed|seventh\\ grade|cosmetologist|eighth\\ grade|entrepreneur|stay\\-at\\-home|second\\ grade|receptionist|mail\\ carrier|manual\\ labor|construction|kindergarten|truck\\ driver|fourth\\ grade|photographer|landscaping|grad\\ school|tenth\\ grade|night\\ shift|housekeeper|uber\\ driver|ninth\\ grade|coast\\ guard|high\\ school|salesperson|electrician|hairdresser|remote\\ work|taxi\\ driver|fifth\\ grade|sixth\\ grade|first\\ grade|third\\ grade|firefighter|bus\\ driver|10th\\ grade|landscaper|12th\\ grade|dishwasher|unemployed|accountant|supervisor|university|med\\ school|contractor|bookkeeper|law\\ school|office\\ job|programmer|shift\\ work|missionary|11th\\ grade|deployment|researcher|caseworker|journalist|consultant|babysitter|architect|lifeguard|secretary|warehouse|the\\ plant|professor|executive|boot\\ camp|auto\\ shop|7th\\ grade|day\\ shift|scientist|body\\ shop|sophomore|assembler|fast\\ food|8th\\ grade|machinist|housewife|homemaker|9th\\ grade|custodian|paralegal|librarian|line\\ cook|bartender|carpenter|paramedic|air\\ force|caregiver|salesman|she\\ owns|freshman|minister|desk\\ job|engineer|waitress|military|deployed|enlisted|musician|chaplain|designer|mechanic|attorney|college|he\\ owns|retired|foreman|barista|analyst|factory|janitor|actress|rancher|cashier|teacher|i\\ own\\ a|retiree|courier|veteran|plumber|mailman|marines|trucker|student|athlete|soldier|realtor|auditor|stylist|bouncer|artist|enlist|farmer|author|priest|retail|lawyer|welder|singer|barber|owns\\ a|broker|editor|server|writer|banker|pastor|waiter|actor|coach|pilot|rabbi|nanny|judge|clerk|chef|maid|navy|army|ceo|cop|emt|cna)\\b",
+   "\\bwork(?:s|ed|ing)? (?:at|as|for) (?:a |an |the )?(?P<n>[a-z][a-z\\-']+(?: [a-z][a-z\\-']+){0,2})\\b",
+   "\\b(?:i'?m|i am|he'?s|she'?s|he is|she is) (?:a |an )?(?:retired |former )?(?P<n>[a-z]+ ?(?:teacher|nurse|driver|officer|worker|engineer|manager|assistant|technician|therapist|student|farmer|mechanic|lawyer|attorney|accountant|chef|cook|clerk|cashier|professor|coach|contractor|landscaper|electrician|plumber|carpenter|painter|pilot|firefighter|paramedic|secretary|receptionist|realtor|consultant|analyst|programmer|designer|writer|photographer|artist|musician|hairdresser|barber|waitress|waiter|bartender|salesman|pastor|minister|veteran|retired))\\b",
+   "\\b(?:my|his|her) (?:job|boss|coworkers?|shop|business|company|store|restaurant|farm|classroom|students|clients|customers|employer|career|profession)\\b",
+   "\\b(?:at|from|with) work\\b|\\bgo(?:ing|es)? (?:back )?to work\\b|\\bstress at work\\b|\\bwork(?:ed|s|ing)? outside\\b"
+  ],
+  "hits": 137,
+  "by_field": {
+   "dialogue": 87,
+   "note": 50
+  },
+  "by_dataset": {
+   "virtassist": 27,
+   "virtscribe": 39,
+   "aci": 71
+  },
+  "by_split": {
+   "eval": 54,
+   "train": 83
+  },
+  "encounters": 61,
+  "pct_encounters": 29.5,
+  "encounters_by_dataset": {
+   "aci": "32/112",
+   "virtassist": "14/55",
+   "virtscribe": "15/40"
+  },
+  "dialogue_hits_in_first3_lines": "3/87",
+  "dialogue_line_median": 20,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    22
+   ],
+   [
+    "SOCIAL HISTORY",
+    22
+   ],
+   [
+    "PLAN",
+    3
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    2
+   ],
+   [
+    "ASSESSMENT",
+    1
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "at work",
+    12
+   ],
+   [
+    "high school",
+    10
+   ],
+   [
+    "college",
+    9
+   ],
+   [
+    "landscaping",
+    8
+   ],
+   [
+    "military",
+    6
+   ],
+   [
+    "fast food",
+    5
+   ],
+   [
+    "going to work",
+    4
+   ],
+   [
+    "farmer",
+    4
+   ],
+   [
+    "construction",
+    4
+   ],
+   [
+    "lawyer",
+    4
+   ],
+   [
+    "work from home",
+    3
+   ],
+   [
+    "works from home",
+    3
+   ],
+   [
+    "go to work",
+    3
+   ],
+   [
+    "my job",
+    3
+   ],
+   [
+    "veteran",
+    2
+   ],
+   [
+    "auto repair shop",
+    2
+   ],
+   [
+    "working at the computer",
+    2
+   ],
+   [
+    "student",
+    2
+   ],
+   [
+    "her job",
+    2
+   ],
+   [
+    "retired",
+    2
+   ]
+  ],
+  "distinct_forms": 59,
+  "examples": [
+   [
+    "D2N003",
+    "dialogue",
+    "rdering a lot of take-out and «fast food» that can be delivered to my d"
+   ],
+   [
+    "D2N003",
+    "note",
+    "pain, he has been eating more «fast food» and takeout since these optio"
+   ],
+   [
+    "D2N007",
+    "dialogue",
+    "riods of time at , at my desk «at work» . so i have ... it helps when"
+   ]
+  ]
+ },
+ "hobby": {
+  "patterns": [
+   "\\b(?:walking\\ the\\ trails|horseback\\ riding|lifting\\ weights|weight\\ lifting|trail\\ running|half\\ marathon|weightlifting|cross\\ country|rock\\ climbing|bird\\ watching|scuba\\ diving|scrapbooking|church\\ choir|birdwatching|volunteering|snowboarding|cheerleading|lift\\ weights|landscaping|bridge\\ club|bench\\ press|dance\\ class|photography|woodworking|video\\ games|the\\ trails|elliptical|volleyball|crocheting|play\\ catch|bouldering|gymnastics|motorcycle|snorkeling|pickleball|spin\\ class|basketball|lawn\\ work|wrestling|book\\ club|triathlon|taekwondo|yard\\ work|deadlifts|shoveling|treadmill|volunteer|gardening|knitting|marathon|football|softball|kayaking|swimming|climbing|baseball|painting|lacrosse|coaching|deadlift|crossfit|canoeing|ceramics|quilting|jogging|dancing|jet\\ ski|singing|fishing|sailing|archery|pottery|cooking|theater|gardens|camping|puzzles|bowling|drawing|pilates|peloton|cycling|surfing|boating|skating|hunting|golfing|racing|rowing|baking|tennis|soccer|mowing|hiking|biking|skiing|violin|sewing|garden|karate|gaming|crafts|hockey|squats|boxing|guitar|horses|rugby|drums|poker|barre|bingo|zumba|chess|choir|piano|yoga|judo|golf|10k|5k)\\b",
+   "\\b(?:play(?:s|ed|ing)?|enjoy(?:s|ed)?|love(?:s|d)?|like(?:s|d)? to|got into|into|hobby|hobbies|avid) (?P<n>(?:a |an |some |the )?[a-z\\-']+(?: [a-z\\-']+){0,2})\\b"
+  ],
+  "hits": 457,
+  "by_field": {
+   "dialogue": 309,
+   "note": 148
+  },
+  "by_dataset": {
+   "virtassist": 80,
+   "virtscribe": 33,
+   "aci": 344
+  },
+  "by_split": {
+   "eval": 158,
+   "train": 299
+  },
+  "encounters": 117,
+  "pct_encounters": 56.5,
+  "encounters_by_dataset": {
+   "aci": "74/112",
+   "virtassist": "27/55",
+   "virtscribe": "16/40"
+  },
+  "dialogue_hits_in_first3_lines": "22/309",
+  "dialogue_line_median": 18,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    59
+   ],
+   [
+    "SOCIAL HISTORY",
+    46
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    18
+   ],
+   [
+    "PLAN",
+    13
+   ],
+   [
+    "HPI",
+    6
+   ],
+   [
+    "COPD.",
+    2
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "skiing",
+    24
+   ],
+   [
+    "soccer",
+    22
+   ],
+   [
+    "swimming",
+    19
+   ],
+   [
+    "hiking",
+    14
+   ],
+   [
+    "pottery",
+    14
+   ],
+   [
+    "yoga",
+    12
+   ],
+   [
+    "football",
+    12
+   ],
+   [
+    "tennis",
+    12
+   ],
+   [
+    "yard work",
+    11
+   ],
+   [
+    "biking",
+    10
+   ],
+   [
+    "basketball",
+    9
+   ],
+   [
+    "landscaping",
+    8
+   ],
+   [
+    "golfing",
+    7
+   ],
+   [
+    "baseball",
+    7
+   ],
+   [
+    "hunting",
+    7
+   ],
+   [
+    "the trails",
+    6
+   ],
+   [
+    "playing basketball",
+    5
+   ],
+   [
+    "treadmill",
+    5
+   ],
+   [
+    "hockey",
+    5
+   ],
+   [
+    "pilates",
+    4
+   ]
+  ],
+  "distinct_forms": 200,
+  "examples": [
+   [
+    "D2N001",
+    "dialogue",
+    "ng . i've been doing a lot of «hiking» . uh , went to washington las"
+   ],
+   [
+    "D2N001",
+    "note",
+    ". She has been doing a lot of «hiking». ⏎  ⏎ She reports that she is sta"
+   ],
+   [
+    "D2N003",
+    "dialogue",
+    ", like exerting myself , like «climbing» the three flights of stairs t"
+   ]
+  ]
+ },
+ "event": {
+  "patterns": [
+   "\\b(?:retirement\\ party|graduation\\ party|memorial\\ service|funeral\\ service|fourth\\ of\\ july|family\\ reunion|bridal\\ shower|house\\ parties|thanksgiving|mother's\\ day|world\\ series|camping\\ trip|father's\\ day|memorial\\ day|bar\\ mitzvah|on\\ a\\ cruise|valentine's|baby\\ shower|cruise\\ ship|4th\\ of\\ july|anniversary|house\\ party|moved\\ here|new\\ year's|graduation|valentines|super\\ bowl|tournament|just\\ moved|game\\ night|date\\ night|homecoming|retirement|road\\ trip|christmas|halloween|labor\\ day|moving\\ to|new\\ years|honeymoon|birthday|retiring|holidays|marathon|new\\ year|divorced|olympics|a\\ cruise|playoffs|election|barbecue|moved\\ to|vacation|festival|concert|baptism|cookout|divorce|holiday|reunion|funeral|parties|wedding|parade|easter|party|trip|prom|race|bbq)\\b"
+  ],
+  "hits": 102,
+  "by_field": {
+   "dialogue": 81,
+   "note": 21
+  },
+  "by_dataset": {
+   "virtassist": 39,
+   "virtscribe": 6,
+   "aci": 57
+  },
+  "by_split": {
+   "eval": 20,
+   "train": 82
+  },
+  "encounters": 43,
+  "pct_encounters": 20.8,
+  "encounters_by_dataset": {
+   "aci": "31/112",
+   "virtassist": "9/55",
+   "virtscribe": "3/40"
+  },
+  "dialogue_hits_in_first3_lines": "3/81",
+  "dialogue_line_median": 21,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    14
+   ],
+   [
+    "PLAN",
+    2
+   ],
+   [
+    "SOCIAL HISTORY",
+    2
+   ],
+   [
+    "HPI",
+    2
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    1
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "vacation",
+    17
+   ],
+   [
+    "trip",
+    10
+   ],
+   [
+    "birthday",
+    9
+   ],
+   [
+    "holidays",
+    9
+   ],
+   [
+    "party",
+    7
+   ],
+   [
+    "easter",
+    7
+   ],
+   [
+    "parties",
+    6
+   ],
+   [
+    "holiday",
+    6
+   ],
+   [
+    "tournament",
+    4
+   ],
+   [
+    "house parties",
+    4
+   ],
+   [
+    "super bowl",
+    4
+   ],
+   [
+    "thanksgiving",
+    4
+   ],
+   [
+    "race",
+    3
+   ],
+   [
+    "labor day",
+    3
+   ],
+   [
+    "marathon",
+    2
+   ],
+   [
+    "halloween",
+    2
+   ],
+   [
+    "playoffs",
+    2
+   ],
+   [
+    "moving to",
+    1
+   ],
+   [
+    "retiring",
+    1
+   ],
+   [
+    "new year",
+    1
+   ]
+  ],
+  "distinct_forms": 20,
+  "examples": [
+   [
+    "D2N019",
+    "dialogue",
+    "[patient] well , i was , um , «moving to» a new home- ⏎ [doctor] okay . ⏎ ["
+   ],
+   [
+    "D2N021",
+    "dialogue",
+    "freer since , um , i'll be on «vacation» after july 8th . ⏎ [doctor] oka"
+   ],
+   [
+    "D2N021",
+    "note",
+    "hip in July as she will be on «vacation». She inquired about the impac"
+   ]
+  ]
+ },
+ "sports_team": {
+  "patterns": [
+   "\\b(?:the\\ eagles\\ game|the\\ giants\\ game|alabama\\ crimson|the\\ lions\\ game|fighting\\ irish|golden\\ knights|the\\ bears\\ game|trail\\ blazers|timberwolves|crimson\\ tide|blue\\ devils|maple\\ leafs|blackhawks|wolverines|ohio\\ state|buccaneers|red\\ wings|islanders|longhorns|avalanche|mavericks|tar\\ heels|grizzlies|predators|cavaliers|canadiens|phillies|warriors|patriots|buckeyes|penguins|clippers|pelicans|steelers|seahawks|capitals|raiders|celtics|cowboys|pistons|bengals|brewers|canucks|yankees|vikings|packers|dodgers|red\\ sox|jaguars|raptors|nuggets|broncos|sooners|orioles|braves|knicks|lakers|bruins|pacers|sabres|kraken|oilers|ravens|flyers|chiefs|astros|49ers|bulls|cubs)\\b"
+  ],
+  "hits": 10,
+  "by_field": {
+   "dialogue": 8,
+   "note": 2
+  },
+  "by_dataset": {
+   "aci": 10
+  },
+  "by_split": {
+   "train": 10
+  },
+  "encounters": 6,
+  "pct_encounters": 2.9,
+  "encounters_by_dataset": {
+   "aci": "6/112",
+   "virtassist": "0/55",
+   "virtscribe": "0/40"
+  },
+  "dialogue_hits_in_first3_lines": "0/8",
+  "dialogue_line_median": 24.0,
+  "note_sections_top": [
+   [
+    "SOCIAL HISTORY",
+    2
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "nuggets",
+    3
+   ],
+   [
+    "cowboys",
+    2
+   ],
+   [
+    "red wings",
+    1
+   ],
+   [
+    "49ers",
+    1
+   ],
+   [
+    "chiefs",
+    1
+   ],
+   [
+    "bulls",
+    1
+   ],
+   [
+    "packers",
+    1
+   ]
+  ],
+  "distinct_forms": 7,
+  "examples": [
+   [
+    "D2N154",
+    "dialogue",
+    "oit is a hockey town yeah the «red wings» okay well i'm gon na go ahead"
+   ],
+   [
+    "D2N157",
+    "note",
+    " coast and is a San Francisco «49ers» fan. He lives with his dog. ⏎  ⏎ "
+   ],
+   [
+    "D2N161",
+    "dialogue",
+    "ut i do love them with dallas «cowboys» not so much the cheese but ev"
+   ]
+  ]
+ },
+ "religion_ethnicity_nationality": {
+  "patterns": [
+   "\\b(?:african\\-american|african\\ american|caucasian\\ female|american\\ indian|native\\ language|native\\ american|hispanic\\ female|speaks\\ spanish|middle\\ eastern|caucasian\\ male|english\\ is\\ not|speaks\\ english|sunday\\ school|hispanic\\ male|speak\\ spanish|white\\ female|presbyterian|puerto\\ rican|asian\\ female|black\\ female|congregation|evangelical|interpreter|white\\ woman|pentecostal|citizenship|black\\ woman|salvadoran|protestant|guatemalan|green\\ card|vietnamese|white\\ male|asian\\ male|black\\ male|immigrated|translator|caucasian|colombian|christian|methodist|black\\ man|white\\ man|immigrant|brazilian|ethiopian|synagogue|episcopal|pakistani|dominican|honduran|hispanic|catholic|japanese|buddhist|filipino|peruvian|lutheran|jamaican|nigerian|haitian|praying|baptist|italian|refugee|russian|atheist|chinese|mexican|judaism|persian|mosque|priest|korean|german|prayer|mormon|pastor|somali|muslim|latina|polish|jewish|latino|church|cuban|islam|rabbi|hindu|greek|irish|koran|asian|bible|quran|imam|sikh|arab)\\b"
+  ],
+  "hits": 3,
+  "by_field": {
+   "note": 2,
+   "dialogue": 1
+  },
+  "by_dataset": {
+   "virtscribe": 1,
+   "aci": 2
+  },
+  "by_split": {
+   "eval": 2,
+   "train": 1
+  },
+  "encounters": 3,
+  "pct_encounters": 1.4,
+  "encounters_by_dataset": {
+   "aci": "2/112",
+   "virtassist": "0/55",
+   "virtscribe": "1/40"
+  },
+  "dialogue_hits_in_first3_lines": "0/1",
+  "dialogue_line_median": 51,
+  "note_sections_top": [
+   [
+    "PHYSICAL EXAM",
+    1
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    1
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "caucasian male",
+    1
+   ],
+   [
+    "mexican",
+    1
+   ],
+   [
+    "asian",
+    1
+   ]
+  ],
+  "distinct_forms": 3,
+  "examples": [
+   [
+    "D2N026",
+    "note",
+    " EXAM ⏎  ⏎ Constitutional ⏎ Elderly «Caucasian male» in no apparent distress. Pres"
+   ],
+   [
+    "D2N057",
+    "dialogue",
+    "stomach i love the i love the «mexican»'s food the hotter the better "
+   ],
+   [
+    "D2N125",
+    "note",
+    "c reactions in people of East «Asian» descent. We also briefly disc"
+   ]
+  ]
+ },
+ "phone_email_mrn_id_insurance": {
+  "patterns": [
+   "\\b\\d{3}[-. ]\\d{3}[-. ]\\d{4}\\b",
+   "\\(\\d{3}\\) ?\\d{3}-\\d{4}",
+   "\\S+@\\S+\\.\\S+",
+   "\\b(?:www\\.|http)\\S+",
+   "\\bmrn\\w*\\b",
+   "\\b(?:medical record|record number|chart number|account number|member id|policy number|social security|ssn|driver'?s license|license number|passport)\\b",
+   "\\b\\d{5,}\\b",
+   "\\b\\d(?:-\\d){4,}\\b",
+   "\\b(?:\\d{3}-\\d{2}-\\d{4})\\b",
+   "\\b(?:blue\\ cross\\ blue\\ shield|medicare\\ advantage|united\\ healthcare|kaiser\\ permanente|unitedhealthcare|marketplace\\ plan|united\\ health|blue\\ shield|va\\ benefits|blue\\ cross|bluecross|obamacare|medicare|medicaid|ambetter|wellcare|tricare|champva|centene|kaiser|anthem|humana|molina|the\\ va|aetna|cigna|hmo|ppo)\\b",
+   "\\b(?:insurance|insurer|co-?pay|deductible|premium|out of pocket|prior auth\\w*|preapprov\\w*|pharmacy benefit)\\b"
+  ],
+  "hits": 65,
+  "by_field": {
+   "dialogue": 50,
+   "note": 15
+  },
+  "by_dataset": {
+   "virtscribe": 54,
+   "aci": 11
+  },
+  "by_split": {
+   "eval": 14,
+   "train": 51
+  },
+  "encounters": 21,
+  "pct_encounters": 10.1,
+  "encounters_by_dataset": {
+   "aci": "6/112",
+   "virtassist": "0/55",
+   "virtscribe": "15/40"
+  },
+  "dialogue_hits_in_first3_lines": "19/50",
+  "dialogue_line_median": 15.5,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    8
+   ],
+   [
+    "PLAN",
+    7
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "insurance",
+    35
+   ],
+   [
+    "mrn",
+    6
+   ],
+   [
+    "medical record",
+    2
+   ],
+   [
+    "medicare",
+    2
+   ],
+   [
+    "blue cross blue shield",
+    2
+   ],
+   [
+    "kaiser",
+    2
+   ],
+   [
+    "123546",
+    1
+   ],
+   [
+    "mrnr472348",
+    1
+   ],
+   [
+    "co-pay",
+    1
+   ],
+   [
+    "3-8-4-9-2-0",
+    1
+   ],
+   [
+    "blue cross",
+    1
+   ],
+   [
+    "5484367",
+    1
+   ],
+   [
+    "869723",
+    1
+   ],
+   [
+    "preapproval",
+    1
+   ],
+   [
+    "preapproved",
+    1
+   ],
+   [
+    "kaiser permanente",
+    1
+   ],
+   [
+    "385729",
+    1
+   ],
+   [
+    "mrn49282721",
+    1
+   ],
+   [
+    "0000123",
+    1
+   ],
+   [
+    "mrnq27631",
+    1
+   ]
+  ],
+  "distinct_forms": 22,
+  "examples": [
+   [
+    "D2N021",
+    "dialogue",
+    "edications are not covered by «insurance» . ⏎ [patient] okay . ⏎ [doctor] s"
+   ],
+   [
+    "D2N021",
+    "dialogue",
+    " card , and then you use your «insurance» ... then , show them this , a"
+   ],
+   [
+    "D2N024",
+    "dialogue",
+    "tor] patient is pamela cook . «medical record» number is 123546 . she's a 36"
+   ]
+  ]
+ },
+ "vehicle": {
+  "patterns": [
+   "\\b(?:riding\\ my\\ bike|mountain\\ bike|four\\-wheeler|four\\ wheeler|pickup\\ truck|ride\\ my\\ bike|bike\\ riding|motorcycle|semi\\ truck|golf\\ cart|bike\\ ride|road\\ bike|her\\ bike|his\\ bike|tractor|trailer|jet\\ ski|scooter|bicycle|my\\ bike|minivan|camper|pickup|moped|truck|boat|atv|car|suv|van|rv)\\b"
+  ],
+  "hits": 60,
+  "by_field": {
+   "dialogue": 47,
+   "note": 13
+  },
+  "by_dataset": {
+   "virtassist": 11,
+   "virtscribe": 16,
+   "aci": 33
+  },
+  "by_split": {
+   "eval": 20,
+   "train": 40
+  },
+  "encounters": 25,
+  "pct_encounters": 12.1,
+  "encounters_by_dataset": {
+   "aci": "14/112",
+   "virtassist": "5/55",
+   "virtscribe": "6/40"
+  },
+  "dialogue_hits_in_first3_lines": "6/47",
+  "dialogue_line_median": 8,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    9
+   ],
+   [
+    "SOCIAL HISTORY",
+    3
+   ],
+   [
+    "HPI",
+    1
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "car",
+    28
+   ],
+   [
+    "bike ride",
+    9
+   ],
+   [
+    "bicycle",
+    5
+   ],
+   [
+    "boat",
+    4
+   ],
+   [
+    "pickup",
+    3
+   ],
+   [
+    "truck",
+    2
+   ],
+   [
+    "road bike",
+    2
+   ],
+   [
+    "his bike",
+    2
+   ],
+   [
+    "bike riding",
+    2
+   ],
+   [
+    "ride my bike",
+    1
+   ],
+   [
+    "riding my bike",
+    1
+   ],
+   [
+    "her bike",
+    1
+   ]
+  ],
+  "distinct_forms": 12,
+  "examples": [
+   [
+    "D2N005",
+    "dialogue",
+    " and i hit the ceiling of the «car» . ⏎ [doctor] okay . when did th"
+   ],
+   [
+    "D2N005",
+    "dialogue",
+    "ctor] how much damage to your «car» ? ⏎ [patient] uh , not too much"
+   ],
+   [
+    "D2N010",
+    "dialogue",
+    " was sitting in the back of a «car» . i hate that . ⏎ [doctor] okay"
+   ]
+  ]
+ },
+ "pet": {
+  "patterns": [
+   "\\b(?:walking\\ the\\ dog|walking\\ my\\ dog|walks\\ the\\ dog|walk\\ the\\ dog|our\\ chickens|cat\\ scratch|my\\ chickens|dog\\ walking|walk\\ my\\ dog|my\\ rabbit|new\\ puppy|my\\ horses|my\\ kitten|my\\ parrot|the\\ puppy|my\\ turtle|my\\ horse|my\\ bunny|my\\ goats|my\\ puppy|dog\\ bite|cat\\ bite|our\\ pets|our\\ dog|her\\ cat|our\\ cat|my\\ pets|his\\ cat|pet\\ cat|my\\ bird|her\\ dog|dog\\ bit|his\\ dog|pet\\ dog|my\\ cows|the\\ dog|my\\ cat|my\\ pet|my\\ dog|a\\ dog|a\\ cat)\\b",
+   "\\b(?:my|our|his|her) (?:dog|cat|puppy|kitten|horse|pet|bird)\\s?,?\\s(?:named )?(?P<n>[a-z]+)\\b"
+  ],
+  "hits": 33,
+  "by_field": {
+   "dialogue": 29,
+   "note": 4
+  },
+  "by_dataset": {
+   "aci": 28,
+   "virtassist": 2,
+   "virtscribe": 3
+  },
+  "by_split": {
+   "eval": 6,
+   "train": 27
+  },
+  "encounters": 23,
+  "pct_encounters": 11.1,
+  "encounters_by_dataset": {
+   "aci": "20/112",
+   "virtassist": "1/55",
+   "virtscribe": "2/40"
+  },
+  "dialogue_hits_in_first3_lines": "6/29",
+  "dialogue_line_median": 25,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    2
+   ],
+   [
+    "SOCIAL HISTORY",
+    2
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "a cat",
+    11
+   ],
+   [
+    "walk my dog",
+    4
+   ],
+   [
+    "a dog",
+    4
+   ],
+   [
+    "my dog and",
+    2
+   ],
+   [
+    "my dog is",
+    2
+   ],
+   [
+    "my dog was",
+    1
+   ],
+   [
+    "my dog to",
+    1
+   ],
+   [
+    "her dog for",
+    1
+   ],
+   [
+    "her cat so",
+    1
+   ],
+   [
+    "my dog or",
+    1
+   ],
+   [
+    "walking my dog",
+    1
+   ],
+   [
+    "his dog",
+    1
+   ],
+   [
+    "my dog",
+    1
+   ],
+   [
+    "walking the dog",
+    1
+   ],
+   [
+    "the dog",
+    1
+   ]
+  ],
+  "distinct_forms": 15,
+  "examples": [
+   [
+    "D2N046",
+    "dialogue",
+    "so when i start talking about «my dog and» my three cats and all that th"
+   ],
+   [
+    "D2N050",
+    "dialogue",
+    " saw my doctor and he ordered «a cat» scan and said that i had a ki"
+   ],
+   [
+    "D2N056",
+    "dialogue",
+    "lungs i will also be ordering «a cat» scan of your lungs which will"
+   ]
+  ]
+ },
+ "product_brand": {
+  "patterns": [
+   "\\b(?:enterprise\\ rent\\-a\\-car|gold's\\ orangetheory|head\\ and\\ shoulders|honey\\ nut\\ cheerios|head\\ \\&\\ shoulder's|weight\\ watchers|planet\\ fitness|under\\ armour|selsun\\ blue|nutrisystem|new\\ balance|jenny\\ craig|burger\\ king|apple\\ watch|la\\ fitness|enterprise|neutrogena|rex\\ center|rec\\ center|home\\ depot|mcdonald's|starbucks|walgreens|instagram|tumor\\ guy|mcdonalds|taco\\ bell|lululemon|chevrolet|doordash|cheerios|facebook|skechers|cetaphil|chipotle|zarbee's|mercedes|gatorade|red\\ bull|rite\\ aid|youtube|wendy's|walmart|android|grubhub|netflix|peloton|panoxyl|nizoral|hyundai|samsung|saucony|safeway|dragon|publix|google|nissan|subaru|fitbit|iphone|tiktok|lowe's|aveeno|toyota|dunkin|harley|amazon|vick's|kroger|adidas|brooks|reebok|costco|aveno|fedex|pepsi|dodge|lowes|tesla|lexus|hertz|vicks|asics|chevy|honda|ford|oreo|avis|nike|ikea|coke|usps|hoka|ymca|jeep|zoom|lyft|uber|ipad|noom|cvs|dax|bmw|kia)\\b"
+  ],
+  "hits": 429,
+  "by_field": {
+   "dialogue": 408,
+   "note": 21
+  },
+  "by_dataset": {
+   "virtassist": 358,
+   "virtscribe": 35,
+   "aci": 36
+  },
+  "by_split": {
+   "eval": 146,
+   "train": 283
+  },
+  "encounters": 85,
+  "pct_encounters": 41.1,
+  "encounters_by_dataset": {
+   "aci": "21/112",
+   "virtassist": "55/55",
+   "virtscribe": "9/40"
+  },
+  "dialogue_hits_in_first3_lines": "61/408",
+  "dialogue_line_median": 34.5,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    14
+   ],
+   [
+    "PLAN",
+    5
+   ],
+   [
+    "ASSESSMENT AND PLAN",
+    1
+   ],
+   [
+    "HPI",
+    1
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "dragon",
+    280
+   ],
+   [
+    "dax",
+    72
+   ],
+   [
+    "mcdonald's",
+    6
+   ],
+   [
+    "brooks",
+    6
+   ],
+   [
+    "cvs",
+    4
+   ],
+   [
+    "rex center",
+    4
+   ],
+   [
+    "panoxyl",
+    4
+   ],
+   [
+    "weight watchers",
+    3
+   ],
+   [
+    "zarbee's",
+    3
+   ],
+   [
+    "asics",
+    3
+   ],
+   [
+    "walmart",
+    2
+   ],
+   [
+    "head and shoulders",
+    2
+   ],
+   [
+    "red bull",
+    2
+   ],
+   [
+    "vick's",
+    2
+   ],
+   [
+    "selsun blue",
+    2
+   ],
+   [
+    "nizoral",
+    2
+   ],
+   [
+    "new balance",
+    2
+   ],
+   [
+    "nike",
+    2
+   ],
+   [
+    "iphone",
+    2
+   ],
+   [
+    "cetaphil",
+    2
+   ]
+  ],
+  "distinct_forms": 39,
+  "examples": [
+   [
+    "D2N001",
+    "dialogue",
+    "know the nurse told you about «dax» . i'd like to tell dax a litt"
+   ],
+   [
+    "D2N001",
+    "dialogue",
+    " about dax . i'd like to tell «dax» a little bit about you , okay"
+   ],
+   [
+    "D2N001",
+    "dialogue",
+    "atient] okay . ⏎ [doctor] hey , «dragon» , show me the blood pressure "
+   ]
+  ]
+ },
+ "other_quasi_identifier": {
+  "patterns": [
+   "\\b(?:twins?|triplets?|adopt\\w*|foster (?:kid|child|care|parent)|widow\\w*|divorc\\w*|homeless|shelter|prison|jail|incarcerat\\w*|parole|probation|arrest\\w*|dui|lawsuit|custody|food stamps|section 8|welfare|tattoo\\w*|piercing\\w*|vegan|vegetarian|kosher|halal|sober|aa meetings|methadone|suboxone|celebrit\\w+|famous|lottery|million\\w*|wealthy|bankrupt\\w*)\\b",
+   "\\b(?:lives? alone|live with|lives with|living with|stays with|moved in with|roommates?|apartment|condo|trailer|mobile home|farm|ranch|basement|upstairs|downstairs|stairs at home|two[- ]story|cul-?de-?sac|culdesac|driveway)\\b",
+   "\\b(?:speak|speaks|speaking) (?:spanish|english|french|chinese|mandarin|cantonese|tagalog|vietnamese|arabic|russian|portuguese|korean|german|italian|polish|hindi|urdu)\\b|\\binterpreter\\b|\\btranslat\\w+\\b"
+  ],
+  "hits": 64,
+  "by_field": {
+   "note": 25,
+   "dialogue": 39
+  },
+  "by_dataset": {
+   "virtassist": 6,
+   "virtscribe": 25,
+   "aci": 33
+  },
+  "by_split": {
+   "eval": 24,
+   "train": 40
+  },
+  "encounters": 24,
+  "pct_encounters": 11.6,
+  "encounters_by_dataset": {
+   "aci": "14/112",
+   "virtassist": "4/55",
+   "virtscribe": "6/40"
+  },
+  "dialogue_hits_in_first3_lines": "1/39",
+  "dialogue_line_median": 18,
+  "note_sections_top": [
+   [
+    "HISTORY OF PRESENT ILLNESS",
+    10
+   ],
+   [
+    "SOCIAL HISTORY",
+    9
+   ],
+   [
+    "FAMILY HISTORY",
+    3
+   ],
+   [
+    "PLAN",
+    1
+   ],
+   [
+    "BIRTH HISTORY",
+    1
+   ],
+   [
+    "ASSESSMENT",
+    1
+   ]
+  ],
+  "surface_forms_top": [
+   [
+    "basement",
+    13
+   ],
+   [
+    "twin",
+    9
+   ],
+   [
+    "downstairs",
+    8
+   ],
+   [
+    "lives with",
+    5
+   ],
+   [
+    "driveway",
+    4
+   ],
+   [
+    "live with",
+    4
+   ],
+   [
+    "adopted",
+    4
+   ],
+   [
+    "apartment",
+    3
+   ],
+   [
+    "living with",
+    3
+   ],
+   [
+    "twins",
+    3
+   ],
+   [
+    "upstairs",
+    2
+   ],
+   [
+    "roommate",
+    2
+   ],
+   [
+    "farm",
+    2
+   ],
+   [
+    "culdesac",
+    1
+   ],
+   [
+    "cul-de-sac",
+    1
+   ]
+  ],
+  "distinct_forms": 15,
+  "examples": [
+   [
+    "D2N002",
+    "note",
+    " moving boxes up and down the «basement» stairs. By the end of the day"
+   ],
+   [
+    "D2N003",
+    "dialogue",
+    "three flights of stairs to my «apartment» or running to catch the bus ,"
+   ],
+   [
+    "D2N003",
+    "note",
+    "f or climbs the stairs to his «apartment» or runs to catch the bus. He "
+   ]
+  ]
+ }
+}

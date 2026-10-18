@@ -1,0 +1,561 @@
+{
+ "id": "G0024",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "age_range": [
+  19,
+  30
+ ],
+ "icd10_codes": [
+  {
+   "code": "S93.491A",
+   "description": "Sprain of other ligament of right ankle, initial encounter"
+  },
+  {
+   "code": "W18.30XA",
+   "description": "Fall on same level, unspecified, initial encounter"
+  },
+  {
+   "code": "Y92.480",
+   "description": "Sidewalk as the place of occurrence of the external cause"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . what happened to your ankle ?\n[patient] hi doctor {DOCTOR_LAST} . i rolled it on the sidewalk last tuesday . it's swollen and i can barely put weight on it .\n[patient] this is my mom , {OTHER_FIRST} . she drove me because i ca n't drive stick with this foot .\n[doctor] hi , {OTHER_FIRST} . nice to meet you . tell me exactly what happened , {PATIENT_FIRST} .\n[patient] i was walking my dog in {PLACE} after work . the sidewalk is all cracked up near the fountain , and i stepped in a hole and went right over on my ankle .\n[patient] she came home limping , and i almost called an ambulance . i thought she broke it .\n[doctor] okay . did you fall all the way down , or did you catch yourself ?\n[patient] i went down on my right side . i tried to catch myself with my hand , and my wrist is fine .\n[doctor] did you hit your head or pass out ?\n[patient] no , nothing like that . i was completely alert . it was just the ankle .\n[doctor] okay . are you on any blood thinners or taking anything for pain ?\n[patient] just tylenol . i took two when i got home , and i sat with an ice pack on it .\n[doctor] okay . when did it happen , exactly ?\n[patient] last tuesday around six in the evening . it was still light out .\n[doctor] okay . let's look at it . can you point to where it hurts most ?\n[patient] right here on the outside , below the bone . and it hurts when i push on the inside too .\n[doctor] i see significant swelling and bruising on the lateral side . there's tenderness over the anterior talofibular area . can you wiggle your toes for me ?\n[patient] yes , i can wiggle them .\n[doctor] good . your toes are pink , and the sensation is normal . ankle pulses are strong .\n[patient] okay , good .\n[doctor] what do you do for work ?\n[patient] i'm a dental hygienist , so i'm on my feet all day , bending over patients . i'm going to be useless for a week , which is a nightmare .\n[doctor] can you do your job sitting down ?\n[patient] not really . i'd have to take time off , and i just came back from a long leave .\n[patient] she has been doing that job for six years and she never takes time off , so this is a big deal for her .\n[doctor] i understand . i'm going to take an x-ray to make sure there's no fracture .\n[patient] {OTHER_FIRST} thinks it's broken .\n[doctor] let's see what the picture says . tell me about your dog . is it a big dog ?\n[patient] it's a greyhound , one of the four i foster . i foster greyhounds for a shelter , so we're rescue people .\n[doctor] it sounds like a busy household . how many people live with you ?\n[patient] just me and the dogs right now , but i'm the youngest of seven kids , so there's always somebody calling .\n[doctor] good . any problems with that ankle before ?\n[patient] yes , i sprained the same ankle two years ago playing volleyball , same side . it healed fine .\n[doctor] okay . now with the x-ray , i see no fracture . this is a grade two sprain of the ligament on the outside of your ankle .\n[patient] so no cast ?\n[doctor] right , no cast . you'll need a brace and crutches for about a week , then we'll start physical therapy .\n[patient] okay . can i still work with a brace ?\n[doctor] i'd recommend you take a week off from work and then return with the brace in place . it's up to you and your employer about light duty after that .\n[patient] my fitbit said i walked eight thousand steps yesterday , so maybe that's why it's so swollen .\n[doctor] that's very likely part of it . keep the ankle elevated above your heart , ice it twenty minutes at a time , and use a compression wrap .\n[patient] okay .\n[doctor] for pain you can continue tylenol , no more than three grams a day . i'd avoid ibuprofen for the first few days because of the swelling .\n[patient] okay .\n[doctor] i want you to come back for a 3-month follow-up after your physical therapy starts , so we can check your range of motion .\n[patient] a 3-month follow-up , got it .\n[doctor] good . if your toes get cold , numb , or turn blue , or you can't put any weight on the foot after a few days , come back sooner .\n[patient] got it . thank you , doctor {DOCTOR_LAST} .\n[patient] thanks , doctor . we'll see you soon .",
+ "note": "CHIEF COMPLAINT\n\nRight ankle pain and swelling after a fall.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents with right ankle pain and swelling after a trip and fall on a cracked sidewalk in {PLACE} last Tuesday around six in the evening while walking her dog. She went down onto her right side and attempted to break her fall with her hand; her wrist is not injured. She denies head strike or loss of consciousness. Her mother, {OTHER_FIRST}, accompanied her and noticed limping after she got home. She has been taking acetaminophen and applying ice. She reports pain localized to the lateral ankle. She had a prior right ankle sprain two years ago during volleyball that healed fully.\n\nShe works as a dental hygienist and is on her feet and bending over patients for most of the day. She is currently off work and states she has not had a leave of this length before.\n\nSOCIAL HISTORY: She fosters rescue greyhounds, currently has four, and is the youngest of seven siblings. She lives alone. Her fitness tracker recorded approximately 8,000 steps the day prior to the injury.\n\nPHYSICAL EXAM\n\nRight ankle with moderate lateral swelling and ecchymosis. Tenderness over the anterior talofibular ligament. No tenderness over the base of the fifth metatarsal. Pain 6/10 at rest. Distal sensation intact, toes pink, capillary refill brisk. Dorsalis pedis and posterior tibial pulses are 2+.\n\nRESULTS\n\nX-ray of right ankle and foot: no fracture or dislocation. Findings consistent with lateral ligament sprain.\n\nASSESSMENT AND PLAN\n\n1. Right ankle sprain, lateral ligament, grade II, closed, initial encounter, following a trip and fall on a sidewalk. Weight bearing as tolerated with lace-up brace and crutches for one week. RICE protocol. Acetaminophen up to 3 g daily; avoid NSAIDs for the first few days. Physical therapy referral. Return to work after one week off, with brace.\n\n2. Follow-up in a 3-month period after physical therapy begins to assess range of motion. Return precautions reviewed for cold, numb, or blue toes and inability to bear weight.",
+ "medical_concepts": [
+  {
+   "text": "it's swollen",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i can barely put weight on it",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the sidewalk is all cracked up",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "stepped in a hole",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "went right over on my ankle",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "she came home limping",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i thought she broke it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "went down on my right side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tried to catch myself with my hand",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "my wrist is fine",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "an ice pack",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "right here on the outside , below the bone",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it hurts when i push on the inside too",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "significant swelling and bruising",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tenderness over the anterior talofibular area",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your toes are pink",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the sensation is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ankle pulses are strong",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i'm on my feet all day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "bending over patients",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "an x-ray",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "no fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "sprained the same ankle two years ago",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "grade two sprain of the ligament on the outside of your ankle",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a brace and crutches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "walked eight thousand steps",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice it twenty minutes at a time",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a compression wrap",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "range of motion",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "toes get cold",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "can't put any weight on the foot",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "right ankle pain and swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "trip and fall on a cracked sidewalk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "cracked sidewalk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "walking her dog",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "went down onto her right side",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "attempted to break her fall with her hand",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "head strike",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "limping",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "acetaminophen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "applying ice",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "lateral ankle",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "prior right ankle sprain two years ago",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "on her feet and bending over patients",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "approximately 8,000 steps",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "moderate lateral swelling and ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness over the anterior talofibular ligament",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No tenderness over the base of the fifth metatarsal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pain 6/10 at rest",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Distal sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "toes pink",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Dorsalis pedis and posterior tibial pulses are 2+",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-ray of right ankle and foot",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "no fracture or dislocation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lateral ligament sprain",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right ankle sprain, lateral ligament, grade II, closed",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Weight bearing as tolerated",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lace-up brace",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "crutches",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "RICE protocol",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Acetaminophen up to 3 g daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "avoid NSAIDs",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Physical therapy referral",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "range of motion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "cold, numb, or blue toes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "inability to bear weight",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for acetaminophen, not a person"
+  },
+  {
+   "text": "fitbit",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "wearable device brand, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S93.491A",
+   "spans": [
+    {
+     "text": "tenderness over the anterior talofibular area",
+     "field": "dialogue"
+    },
+    {
+     "text": "significant swelling and bruising",
+     "field": "dialogue"
+    },
+    {
+     "text": "Tenderness over the anterior talofibular ligament",
+     "field": "note"
+    },
+    {
+     "text": "lateral ligament sprain",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W18.30XA",
+   "spans": [
+    {
+     "text": "stepped in a hole",
+     "field": "dialogue"
+    },
+    {
+     "text": "went down on my right side",
+     "field": "dialogue"
+    },
+    {
+     "text": "trip and fall on a cracked sidewalk",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.480",
+   "spans": [
+    {
+     "text": "the sidewalk is all cracked up",
+     "field": "dialogue"
+    },
+    {
+     "text": "cracked sidewalk",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm a dental hygienist",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "i foster greyhounds for a shelter",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "unusual volunteer routine with specifics"
+  },
+  {
+   "text": "i'm the youngest of seven kids",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "family size"
+  },
+  {
+   "text": "works as a dental hygienist",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "fosters rescue greyhounds",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "unusual volunteer routine with specifics"
+  },
+  {
+   "text": "the youngest of seven siblings",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "family size"
+  }
+ ],
+ "scenario": {
+  "specialty": "internal medicine",
+  "visit": "injury",
+  "length": "short",
+  "focus": [
+   "OCCUPATION",
+   "OTHER_QUASI"
+  ]
+ }
+}

@@ -1,0 +1,37 @@
+{
+  "encounter_id": "D2N158",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "barbara",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "31 -year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "starbucks",
+      "category": "OTHER_QI",
+      "risk": "low"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "3/6",
+      "category": "CLINICAL_NUMBER",
+      "why": "murmur grade, not a date"
+    },
+    {
+      "field": "dialogue",
+      "text": "achilles heel",
+      "category": "EPONYM",
+      "why": "idiom, not a person"
+    }
+  ]
+}

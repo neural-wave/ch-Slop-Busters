@@ -1,0 +1,688 @@
+{
+ "id": "G0034",
+ "dataset": "synthetic_acute",
+ "sex": "female",
+ "age_range": [
+  45,
+  60
+ ],
+ "icd10_codes": [
+  {
+   "code": "A09",
+   "description": "Infectious gastroenteritis and colitis, unspecified"
+  },
+  {
+   "code": "R50.9",
+   "description": "Fever, unspecified"
+  },
+  {
+   "code": "R11.2",
+   "description": "Nausea with vomiting, unspecified"
+  },
+  {
+   "code": "Z20.828",
+   "description": "Contact with and (suspected) exposure to other viral communicable diseases"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i 'm doctor {DOCTOR_LAST} . you came in with a fever and stomach trouble ?\n[patient] yes , doctor {DOCTOR_LAST} . i 've been sick since we got back from mexico . i feel awful .\n[patient] hi , i 'm her daughter , {OTHER_FIRST} . i drove her in because she could n't stand up this morning .\n[doctor] hi , {OTHER_FIRST} . thanks for bringing her in . {PATIENT_FIRST} , tell me what happened .\n[patient] we flew back on {DATE_NUM} , and by the next night i had the chills . then the diarrhea started . i 've been throwing up too , everything i eat comes back up .\n[doctor] how many times have you had diarrhea in the last day ?\n[patient] maybe eight or nine . watery , no blood that i could see .\n[doctor] okay . and the fever , did you take your temperature ?\n[patient] yes , it was a hundred and two last night . i took tylenol and it came down a bit .\n[doctor] any rash on your skin , or the joints hurting ?\n[patient] a little ache in my knees . no rash .\n[doctor] okay . what did you eat on the trip ? any street food ?\n[patient] oh , all of it . we ate at the little stands by the market . the tamales , the tacos , the fresh juice . i love eating everything . i 'm a pastry chef , so i 'm always tasting things at work .\n[doctor] that makes sense . you work as a pastry chef ?\n[patient] yes , at a bakery downtown . i get up at four every morning , so i 'm exhausted anyway . then this hit me on the flight home .\n[patient] mom , tell her about the ice in the drinks .\n[doctor] the ice ?\n[patient] yeah , the ice at the beach bar . she had three drinks with ice .\n[doctor] okay . that could be the source , we 'll see . do you have any history of stomach problems ? bowel disease like crohn 's ?\n[patient] no . my aunt has crohn 's disease , but i 've never had that . my colonoscopy was clear .\n[doctor] when was your colonoscopy ?\n[patient] on {DATE_SPOKEN} , maybe a few years ago . they said screening starts at forty five and i was in the right age .\n[doctor] okay . let 's check your medicines . what do you take regularly ?\n[patient] just levothyroxine every morning and a multivitamin . i 'm also on a blood pressure pill , amlodipine .\n[doctor] okay . allergies ?\n[patient] penicillin . i get hives .\n[doctor] good to know . let me examine you . your temperature is one oh two . i feel your belly . it 's tender on the right side and a little bloated , but no rebound . your heart rate is one ten . your lips look dry and the skin on your hand is slow to bounce back .\n[patient] that 's what i feel like .\n[doctor] i think you have a gastroenteritis , most likely a bacterial or viral infection from the food or the water . the stool test will tell us more . i want a blood test too , to check your electrolytes and kidneys .\n[patient] okay . do i need antibiotics ?\n[doctor] possibly , depending on the stool test . i 'd like to give you some fluids in the clinic today , and an antinausea pill .\n[patient] and the work ? i ca n't stand for long in the kitchen like this .\n[doctor] you need to stay home from the bakery until you 've had no diarrhea for at least forty eight hours . i 'll write you a note .\n[patient] okay . i 'll call the head chef .\n[doctor] good . come back in two days . if you get blood in the stool , or a fever above one oh four , or you can't keep fluids down , go to the emergency room .\n[patient] okay .\n[doctor] and {OTHER_FIRST} , keep her drinking clear fluids . small sips .\n[patient] i will . i 'll make her the rice water .\n[doctor] perfect . any other questions ?\n[patient] no , thank you , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nFever, nausea with vomiting, and watery diarrhea after returning from travel.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents with her daughter, {OTHER_FIRST}, after returning from Mexico on {DATE_NUM}. Symptoms began the following evening with chills, followed by diarrhea eight to nine times per day without visible blood. She reports repeated vomiting and is unable to keep food down. Maximum temperature 102 F last night, treated with acetaminophen with partial response. She reports a mild ache in both knees without rash.\n\nShe ate from street vendors during the trip, including tamales, tacos, and fresh juice, and drank beverages with ice at a beach bar. Family history is notable for Crohn's disease in an aunt. Her last colonoscopy on {DATE_SPOKEN} was clear, and she notes that screening starts at 45.\n\nSOCIAL HISTORY\n\nWorks as a pastry chef at a downtown bakery. She gets up at 4 AM every morning for early shifts. She is handling food at work and is concerned about returning to the kitchen.\n\nMEDICATIONS\n\nLevothyroxine daily, amlodipine, and a multivitamin.\n\nALLERGIES\n\nPenicillin (hives).\n\nPHYSICAL EXAM\n\nTemperature 38.9 C, heart rate 110. Dry mucous membranes with decreased skin turgor. Abdomen with mild tenderness on the right side, no rebound or guarding.\n\nRESULTS\n\nStool studies and basic metabolic panel ordered.\n\nASSESSMENT AND PLAN\n\n1. Acute infectious gastroenteritis, presumed foodborne or waterborne, after travel. Stool studies ordered. Oral rehydration and IV fluids given in clinic. Ondansetron for nausea. Antibiotics deferred pending stool results.\n\n2. Fever with mild volume depletion, improved after fluids.\n\n3. Nausea with vomiting, treated with an antiemetic.\n\n4. Possible exposure to a communicable pathogen during travel to Mexico. Results pending.\n\n5. Work restriction from food handling until no diarrhea for 48 hours.\n\nReturn precautions reviewed, including blood in the stool, fever above 104 F, and inability to keep fluids down.",
+ "medical_concepts": [
+  {
+   "text": "fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "stomach trouble",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chills",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "diarrhea",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "throwing up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "everything i eat comes back up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "watery",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "no blood that i could see",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a hundred and two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little ache in my knees",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "no rash",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "street food",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the little stands by the market",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "exhausted",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the ice in the drinks",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "stomach problems",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "crohn 's disease",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "colonoscopy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "screening starts at forty five",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "levothyroxine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "amlodipine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "penicillin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "hives",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "one oh two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "tender on the right side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a little bloated",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "no rebound",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart rate is one ten",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "lips look dry",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "slow to bounce back",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "gastroenteritis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "bacterial or viral infection",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "stool test",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood test",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "electrolytes and kidneys",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "antibiotics",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "some fluids",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "antinausea pill",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "no diarrhea",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood in the stool",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever above one oh four",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "clear fluids",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "nausea with vomiting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "watery diarrhea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "chills",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "diarrhea eight to nine times per day",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "without visible blood",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "repeated vomiting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "unable to keep food down",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Maximum temperature 102 F",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "acetaminophen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild ache in both knees",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "street vendors",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "beverages with ice",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Crohn's disease",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "colonoscopy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Levothyroxine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "amlodipine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Penicillin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "hives",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Temperature 38.9 C",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart rate 110",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Dry mucous membranes",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "decreased skin turgor",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild tenderness on the right side",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no rebound or guarding",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Stool studies",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "basic metabolic panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Acute infectious gastroenteritis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "foodborne or waterborne",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Oral rehydration",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "IV fluids",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ondansetron",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Antibiotics",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "volume depletion",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "antiemetic",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "exposure to a communicable pathogen",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood in the stool",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever above 104 F",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "early shifts",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of acetaminophen"
+  },
+  {
+   "text": "crohn 's",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponymous inflammatory bowel disease"
+  },
+  {
+   "text": "Crohn's",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponymous inflammatory bowel disease"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "A09",
+   "spans": [
+    {
+     "text": "gastroenteritis",
+     "field": "dialogue"
+    },
+    {
+     "text": "watery",
+     "field": "dialogue"
+    },
+    {
+     "text": "Acute infectious gastroenteritis",
+     "field": "note"
+    },
+    {
+     "text": "watery diarrhea",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "R50.9",
+   "spans": [
+    {
+     "text": "fever",
+     "field": "dialogue"
+    },
+    {
+     "text": "a hundred and two",
+     "field": "dialogue"
+    },
+    {
+     "text": "fever",
+     "field": "note"
+    },
+    {
+     "text": "Maximum temperature 102 F",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "R11.2",
+   "spans": [
+    {
+     "text": "throwing up",
+     "field": "dialogue"
+    },
+    {
+     "text": "everything i eat comes back up",
+     "field": "dialogue"
+    },
+    {
+     "text": "nausea with vomiting",
+     "field": "note"
+    },
+    {
+     "text": "repeated vomiting",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z20.828",
+   "spans": [
+    {
+     "text": "street food",
+     "field": "dialogue"
+    },
+    {
+     "text": "the little stands by the market",
+     "field": "dialogue"
+    },
+    {
+     "text": "street vendors",
+     "field": "note"
+    },
+    {
+     "text": "exposure to a communicable pathogen",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "pastry chef",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job, linked to food exposure"
+  },
+  {
+   "text": "a bakery downtown",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "employer location"
+  },
+  {
+   "text": "i get up at four every morning",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive routine"
+  },
+  {
+   "text": "mexico",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "travel destination"
+  },
+  {
+   "text": "pastry chef",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "downtown bakery",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "comment": "employer location"
+  },
+  {
+   "text": "gets up at 4 AM every morning",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive routine"
+  },
+  {
+   "text": "Mexico",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "travel destination"
+  }
+ ],
+ "scenario": {
+  "specialty": "travel medicine",
+  "visit": "acute",
+  "length": "medium",
+  "focus": [
+   "DATE",
+   "OCCUPATION"
+  ]
+ }
+}

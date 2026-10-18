@@ -1,0 +1,12 @@
+{
+  "encounter_id": "D2N155",
+  "phi": [
+    {"text": "christina", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "thursday", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a weekday"},
+    {"text": "weekend", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "break"},
+    {"text": "zoo", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "park"},
+    {"text": "Christina Cooper", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "77-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

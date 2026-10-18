@@ -1,0 +1,17 @@
+{
+  "encounter_id": "D2N017",
+  "pii": [
+    {"field": "dialogue", "text": "peterson", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "taylor", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "43-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Peterson", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "43-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "bowling", "category": "CODE_EVIDENCE", "why": "supports Y93.54 (activity, bowling)"},
+    {"field": "dialogue", "text": "bowling ball", "category": "CODE_EVIDENCE", "why": "supports W21.09XA (struck by thrown ball)"},
+    {"field": "dialogue", "text": "dragon", "category": "NOT_A_NAME", "why": "dictation software, not a person"},
+    {"field": "note", "text": "bowling", "category": "CODE_EVIDENCE", "why": "supports Y93.54 (activity, bowling)"},
+    {"field": "note", "text": "hit her leg with the ball", "category": "CODE_EVIDENCE", "why": "supports W21.09XA (struck by thrown ball)"}
+  ]
+}

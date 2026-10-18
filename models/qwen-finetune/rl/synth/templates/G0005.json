@@ -1,0 +1,550 @@
+{
+ "id": "G0005",
+ "dataset": "synthetic_telehealth",
+ "sex": "male",
+ "age_range": [
+  45,
+  60
+ ],
+ "icd10_codes": [
+  {
+   "code": "M48.062",
+   "description": "Spinal stenosis, lumbar region with neurogenic claudication"
+  },
+  {
+   "code": "Z96.652",
+   "description": "Presence of left artificial knee joint"
+  },
+  {
+   "code": "E11.9",
+   "description": "Type 2 diabetes mellitus without complications"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} , can you hear me okay ?\n[patient] yes , i can hear you . the picture is a little frozen though .\n[doctor] let me know if it freezes again . i'll try to speak slowly . how have you been since we last met ?\n[patient] pretty much the same . my back is the main thing . the leg goes numb when i walk too far .\n[doctor] tell me about the walking . how far can you go before the leg symptoms start ?\n[patient] about two blocks , and then i have to sit on a bench . when i lean forward on the shopping cart it gets better . i use the cart at the store like a walker now .\n[doctor] that's a common pattern . is the numbness in both legs or just one ?\n[patient] mostly the left , down the back of the thigh and into the calf . sometimes both feet tingle at night .\n[doctor] okay . are you doing the stretches from the physical therapy program ?\n[patient] most days . my wife watches me do them , and she says i'm doing them wrong .\n[doctor] we'll have a look at that . how is the left knee doing since the replacement ?\n[patient] the knee is great , honestly . i had the surgery on {DATE_SPOKEN} last year , and i'm back to bowling on thursdays .\n[doctor] wonderful . and the diabetes ?\n[patient] the metformin , yes , i take it with dinner . my last a one c was seven point one , which my doctor says is not too bad .\n[doctor] okay . the medicine for the nerve pain in the leg , the gabapentin , how is that working ?\n[patient] it takes the edge off . i'm on three hundred at night and i sleep better . but it makes me groggy in the morning .\n[doctor] that's common . we can adjust it . are you getting the refill on time ?\n[patient] i pick it up at the pharmacy on fifth street , and they had a delay with it last month , so i was out for a couple of days .\n[doctor] i'm sorry about that . i'll send a new prescription with extra refills .\n[patient] thank you .\n[doctor] now , your camera is on , so i can see your legs . can you walk to the window for me ?\n[patient] okay , hold on , the connection is slow , let me move the laptop . ok , i'm going .\n[doctor] good . stop there . look at your posture . your back is bent forward a little .\n[patient] yeah , i'm leaning on the table . it's easier .\n[doctor] let's do some strength checks at home . can you stand on your toes for me ?\n[patient] yes , on the toes , then on the heels . i can do the heels fine .\n[doctor] good . your reflexes from the last visit were fine . what's your blood pressure at home ?\n[patient] one twenty eight over seventy six this morning , and my sugars are around one forty fasting .\n[doctor] okay . the mri from {DATE_NUM} showed narrowing in the lower back at two levels . that's what is pinching the nerve , so surgery is on the table if the conservative measures stop working .\n[patient] i'd rather not have another surgery . my brother had two on his back and it was a mess .\n[doctor] i understand . we'll try injections first , and i'll refer you to a spine specialist at {ORG} to talk about the options .\n[patient] {ORG} , okay . how soon can i get in ?\n[doctor] our scheduling team will call you within two weeks . the callback number on your chart is {PHONE} .\n[patient] i'll write that down . i'm up at my cabin on sawmill lake most weekends , so i might miss the call . can you leave a message ?\n[doctor] of course . and since your mri was from {DATE_NUM} , we'll compare it with a repeat scan in the fall . {MRN} is your chart number , i'll put that on the referral .\n[patient] thanks . how do i avoid the leg pain ?\n[doctor] keep walking in short bouts , use the cart , sit when you need to , and avoid leaning backward .\n[patient] alright .\n[doctor] your follow-up is in four weeks , with the same video link . if your leg gets weaker or you lose control of your bladder , go to the emergency room right away .\n[patient] i will . thank you , doctor .",
+ "note": "MRN: {MRN}\n\nCHIEF COMPLAINT\n\nTelehealth follow-up for low back pain with left leg symptoms.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male seen by video today. He reports low back pain with left posterior thigh and calf numbness on walking, limited to approximately two blocks before he must rest. Symptoms improve when leaning forward on a shopping cart, which he now uses as a walker. He notes occasional bilateral foot tingling at night. Gabapentin 300 mg nightly provides partial relief with morning sedation. Home stretching is inconsistent. Video connection quality limited the examination portion of the visit.\n\nHe underwent left total knee arthroplasty on {DATE_SPOKEN} last year and is recovering well, bowling weekly. Type 2 diabetes is managed with metformin taken with dinner; most recent A1c was 7.1%. A gabapentin refill was delayed last month at the pharmacy on Fifth Street, leaving him without medication for a few days.\n\nPAST MEDICAL HISTORY\n\nLumbar spinal stenosis, type 2 diabetes mellitus, status post left knee replacement.\n\nSOCIAL HISTORY\n\nLives with his wife, who observes his home exercises. Weekend cabin at Sawmill Lake. Brother has had two prior spine operations.\n\nVIRTUAL EXAM\n\nGait observed with forward-flexed posture during ambulation. Able to walk on toes and heels. Home blood pressure 128/76 this morning; fasting glucose approximately 140. Reflexes documented as normal at last in-person visit.\n\nRESULTS\n\nMRI dated {DATE_NUM} shows narrowing at two levels of the lumbar spine.\n\nASSESSMENT AND PLAN\n\n1. Lumbar spinal stenosis with neurogenic claudication. Continue gabapentin with dose adjustment for morning sedation. Referral to spine specialist at {ORG} for epidural injection evaluation. Surgical options discussed as a later step if conservative care fails.\n2. Status post left total knee arthroplasty, recovering well.\n3. Type 2 diabetes mellitus without complications on metformin; A1c 7.1%.\n4. Return by video in four weeks. Red-flag symptoms, including bladder control changes or progressive weakness, reviewed with emergency precautions.",
+ "medical_concepts": [
+  {
+   "text": "the picture is a little frozen",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "my back is the main thing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the leg goes numb when i walk too far",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "about two blocks",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "sit on a bench",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "when i lean forward on the shopping cart it gets better",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "use the cart at the store like a walker",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the numbness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "down the back of the thigh and into the calf",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "both feet tingle at night",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the stretches from the physical therapy program",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "the left knee",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "the replacement",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "the knee is great",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "back to bowling on thursdays",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the diabetes",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "the metformin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "my last a one c was seven point one",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the gabapentin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "the nerve pain in the leg",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i'm on three hundred at night",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "it makes me groggy in the morning",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a delay with it last month",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i was out for a couple of days",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the connection is slow",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your back is bent forward a little",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i'm leaning on the table",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "stand on your toes",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "your reflexes from the last visit were fine",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "one twenty eight over seventy six this morning",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "my sugars are around one forty fasting",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "showed narrowing in the lower back at two levels",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "that's what is pinching the nerve",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "surgery is on the table",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "injections first",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "my brother had two on his back",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lose control of your bladder",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "low back pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "low back pain with left leg symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "left posterior thigh and calf numbness on walking",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "limited to approximately two blocks before he must rest",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "leaning forward on a shopping cart",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bilateral foot tingling at night",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Gabapentin 300 mg nightly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "morning sedation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Home stretching is inconsistent",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "left total knee arthroplasty",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Type 2 diabetes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "A1c was 7.1%",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lumbar spinal stenosis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "status post left knee replacement",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "weekly",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Gait observed with forward-flexed posture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "walk on toes and heels",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Home blood pressure 128/76",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "fasting glucose approximately 140",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Reflexes documented as normal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "MRI dated",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "narrowing at two levels of the lumbar spine",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "neurogenic claudication",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "epidural injection evaluation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Surgical options",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Continue gabapentin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Type 2 diabetes mellitus without complications",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "bladder control changes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "progressive weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "gabapentin",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic drug name, not a person"
+  },
+  {
+   "text": "bowling",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "recreational activity, not a place"
+  },
+  {
+   "text": "Sawmill Lake",
+   "field": "note",
+   "is_pii": true,
+   "comment": "place name, could be read as a generic lake name"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "M48.062",
+   "spans": [
+    {
+     "text": "the leg goes numb when i walk too far",
+     "field": "dialogue"
+    },
+    {
+     "text": "that's what is pinching the nerve",
+     "field": "dialogue"
+    },
+    {
+     "text": "Lumbar spinal stenosis",
+     "field": "note"
+    },
+    {
+     "text": "neurogenic claudication",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z96.652",
+   "spans": [
+    {
+     "text": "the left knee",
+     "field": "dialogue"
+    },
+    {
+     "text": "the replacement",
+     "field": "dialogue"
+    },
+    {
+     "text": "left total knee arthroplasty",
+     "field": "note"
+    },
+    {
+     "text": "status post left knee replacement",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E11.9",
+   "spans": [
+    {
+     "text": "the metformin",
+     "field": "dialogue"
+    },
+    {
+     "text": "my last a one c was seven point one",
+     "field": "dialogue"
+    },
+    {
+     "text": "Type 2 diabetes",
+     "field": "note"
+    },
+    {
+     "text": "Type 2 diabetes mellitus without complications",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "sawmill lake",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "named lake where weekend cabin is"
+  },
+  {
+   "text": "fifth street",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "street of the pharmacy"
+  },
+  {
+   "text": "Sawmill Lake",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "named lake where weekend cabin is"
+  },
+  {
+   "text": "Fifth Street",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "street of the pharmacy"
+  }
+ ],
+ "scenario": {
+  "specialty": "physical medicine and rehabilitation",
+  "visit": "telehealth",
+  "length": "short",
+  "focus": [
+   "LOCATION",
+   "ID",
+   "DATE"
+  ]
+ }
+}

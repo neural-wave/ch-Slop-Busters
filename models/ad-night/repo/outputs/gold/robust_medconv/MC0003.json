@@ -1,0 +1,48 @@
+{
+ "encounter_id": "MC0003",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "Lily",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "79 y/o",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "September 21, 1946",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Denver",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Mercy General Hospital",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "July 26, 2024",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Grace Walker",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": []
+}

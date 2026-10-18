@@ -1,0 +1,54 @@
+{
+ "encounter_id": "MC0060",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "Dale",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "92 y/o",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "1933-06-25",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Portland",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Lakeside Clinic",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "November 12, 2024",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Lily",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Reddy",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": []
+}

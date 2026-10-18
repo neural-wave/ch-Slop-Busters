@@ -1,0 +1,86 @@
+########## ENCOUNTER D2N172
+=== FIELD: dialogue
+[doctor] morning roy , how are you doing ?
+[patient] hey , good to see you .
+[doctor] so , my nurse told you a little bit about dax ? so , if you do n't mind , i'm going to tell dax a little bit about you today .
+[patient] perfect .
+[doctor] great , great . so , roy is a 50-year-old male patient who comes in with a history of depression , you had some , um , high blood pressure and some hypertension .
+[doctor] so , tell me how have you been doing?
+[patient] sure . so it's been a , a pretty stressful winter and spring . and , uh , we've been onboarding a couple new employees and we have been pretty short-staffed in the meantime .
+[doctor] um , any changes in , um , weight gain or anything like that ?
+[patient] probably for the last month or so , we've been hosting some friends over vacation , and on ... you know , at the beach in the summer , so the diet is off the charts .
+[doctor] okay . okay . gotcha , gotcha .
+[patient] out the window .
+[doctor] out the window . okay . and , um , now i know you've had a history of depression . you're on zoloft , uh , 50 milligrams a day . have you been doing okay with that ?
+[patient] uh , for the most part . again , it's been kind of a challenging year-and-a-half or so .
+[doctor] sure .
+[patient] so i have my bouts . but i- it- it's under control .
+[doctor] okay . uh , sleeping okay at night ?
+[patient] mm-
+[doctor] occasionally ?
+[patient] i , i could use more sleep like everybody .
+[doctor] okay .
+[patient] but, uh, i'll, i'll usually wake up at about 5:00 in the morning .
+[doctor] okay .
+[patient] which is a little early .
+[doctor] uh , no feelings of , uh , you want to hurt yourself or anybody ?
+[patient] no , no .
+[doctor] okay , good , good . and , um , your high blood pressure , um , that's been under relatively good control recently . have you found that ? your blood pressures have been okay ?
+[patient] yes . that's why this is a little concerning to me , because of the , uh , recent , the recent readings .
+[doctor] okay , gotcha . gotcha . okay . so , um , if you do n't mind , i'm going to do a quick exam . okay ?
+[patient] sure .
+[doctor] okay . so , um , on my physical exam , your lungs are clear . your heart is , is regular . you do have a grade two systolic ejection murmur . we've had that before , so nothing new-
+[patient] mm-hmm .
+[doctor] . there . um , and not clinically relevant at all . um , your extremities are normal , no edema . um , you have put on a c- a , a little bit of weight .
+[patient] okay .
+[doctor] i want you to get back on that diet .
+[patient] okay .
+[doctor] because that's the key . right ?
+[patient] okay .
+[doctor] as far as your high blood pressure , not going to change anything there . okay ? we'll just leave you on your lisinopril 5 milligrams a day , that's good .
+[patient] okay .
+[doctor] that's also good for your kidneys , so everything , everything good ... is good there . your third problem is your depression . been a rough year . some of that's just normal reactive stuff . so i think we'll just keep you where you are at . not going to change the zoloft . do you need a refill on your zoloft ?
+[patient] uh , actually i do .
+[doctor] okay . hey dragon , order a zoloft 50 milligrams daily . we'll get that refilled for you . okay ? so , um , i'd like to see you back in about a month , an- and then in about , uh , three months
+[doctor] okay .
+[patient] a1c , if everything's getting back on track . okay ? anything else i can do for you today ?
+[doctor] no . that should do it .
+[patient] okay . come with me , we'll get you checked out . hey dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+History of depression.
+
+HISTORY OF PRESENT ILLNESS
+
+Roy Sanchez is a 50-year-old male who comes in with a history of depressionand high blood pressure. He presents today for abnormal labs.
+
+He states it has been a pretty stressful winter and spring, as they have been very short-staffed at work. The patient admits to recent weight gain. He has been hosting friends over vacation and at the beach this summer so the diet is off the charts out the window.
+
+The patient has a history of depression and is doing well. He has been consistent with utilizing his Zoloft 50 mg a day. The patient states this has been a challenging year and a half. He is sleeping okay at night, occasionally waking up at 5 a.m. Denies thoughts of self-harm or suicidal ideation
+
+His high blood pressure has been under good control recently
+
+REVIEW OF SYSTEMS
+
+• Constitutional: Endorses weight gain.
+• Psychiatric:   Endorses stress.
+
+PHYSICAL EXAMINATION
+
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: Regular rate. Grade 2 systolic ejection murmur. No gallops or rubs. No extra heart sounds.
+
+ASSESSMENT AND PLAN
+
+Roy Sanchez is a 50-year-old male who comes in with a history of depression and high blood pressure. He presents today for abnormal labs.
+
+Hypertension.
+• Medical Reasoning: Blood pressure is well controlled at this time.
+• Medical Treatment: He will continue lisinopril 5 mg daily.
+
+Depression.
+• Medical Reasoning: He is doing well with Zoloft 50 mg daily.
+• Medical Treatment: He will continue Zoloft 50 mg daily. This was refilled today.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.

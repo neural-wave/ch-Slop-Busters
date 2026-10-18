@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N150",
+  "phi": [
+    {"text": "scott", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "pickup soccer games", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "recreational sports games"},
+    {"text": "over the weekend", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "recently"},
+    {"text": "sit behind a desk", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "work seated"},
+    {"text": "jog", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "jogging", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"},
+    {"text": "dog", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pet"},
+    {"text": "Scott Miller", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "36-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "pickup soccer games", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "recreational sports games"},
+    {"text": "works at a desk", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "has a sedentary job"},
+    {"text": "jogging", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "high-impact exercise"}
+  ],
+  "medical_concepts": []
+}

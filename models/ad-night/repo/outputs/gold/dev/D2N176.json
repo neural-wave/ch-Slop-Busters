@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N176",
+  "pii": [
+    {"field": "dialogue", "text": "alexander", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "62-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Alexander", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Myers", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "62-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "dax", "category": "NOT_A_NAME", "why": "dictation software, not a person"},
+    {"field": "dialogue", "text": "dragon", "category": "NOT_A_NAME", "why": "dictation software, not a person"},
+    {"field": "dialogue", "text": "green tea", "category": "NOT_A_NAME", "why": "beverage; 'green' is a surname elsewhere"},
+    {"field": "dialogue", "text": "2/6", "category": "CLINICAL_NUMBER", "why": "murmur grade, not a date"},
+    {"field": "note", "text": "green tea", "category": "NOT_A_NAME", "why": "beverage; 'green' is a surname elsewhere"},
+    {"field": "note", "text": "2/6", "category": "CLINICAL_NUMBER", "why": "murmur grade, not a date"}
+  ]
+}

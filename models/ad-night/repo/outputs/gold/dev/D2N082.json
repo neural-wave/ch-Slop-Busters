@@ -1,0 +1,15 @@
+{
+  "encounter_id": "D2N082",
+  "pii": [
+    {"field": "dialogue", "text": "kyle", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "zambia", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "donut shop", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "dialogue", "text": "end of the street", "category": "LOCATION", "risk": "low"},
+    {"field": "note", "text": "Kyle", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Lee", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "46-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Zambia", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "doughnut shop", "category": "OCCUPATION", "risk": "medium"}
+  ],
+  "keep": []
+}

@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N018",
+  "pii": [
+    {"field": "dialogue", "text": "russell", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "gutierrez", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "39-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Russell", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "39-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "playing volleyball", "category": "CODE_EVIDENCE", "why": "Y93.68 activity, volleyball"},
+    {"field": "dialogue", "text": "kicked my legs from under me", "category": "CODE_EVIDENCE", "why": "W01.0XXA fall on same level from tripping"},
+    {"field": "dialogue", "text": "i fell and landed on my arm", "category": "CODE_EVIDENCE", "why": "W01.0XXA fall on same level"},
+    {"field": "note", "text": "playing volleyball", "category": "CODE_EVIDENCE", "why": "Y93.68 activity, volleyball"},
+    {"field": "note", "text": "fell and landed on her arm", "category": "CODE_EVIDENCE", "why": "W01.0XXA fall on same level"},
+    {"field": "note", "text": "9/10", "category": "CLINICAL_NUMBER", "why": "pain score, not a date"}
+  ]
+}

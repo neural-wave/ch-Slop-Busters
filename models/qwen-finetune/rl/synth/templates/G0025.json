@@ -1,0 +1,565 @@
+{
+ "id": "G0025",
+ "dataset": "synthetic_followup",
+ "sex": "female",
+ "age_range": [
+  30,
+  45
+ ],
+ "icd10_codes": [
+  {
+   "code": "E03.9",
+   "description": "Hypothyroidism, unspecified"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  },
+  {
+   "code": "E78.5",
+   "description": "Hyperlipidemia, unspecified"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . good to see you again . how have you been since last spring ?\n[patient] hi doctor {DOCTOR_LAST} . busy , honestly . i've been tired a lot .\n[doctor] okay . let's go through your thyroid first . are you taking the levothyroxine every morning ?\n[patient] yes , eighty eight micrograms on an empty stomach , with my coffee an hour later . i'm pretty good about it .\n[doctor] good . your last thyroid level from {DATE_NUM} was a little high at four point nine .\n[patient] i remember . that's why i feel sluggish , i think .\n[doctor] possibly . are you having constipation , dry skin , or feeling cold ?\n[patient] all of that a bit . my hair is falling out more in the shower .\n[doctor] that's a common complaint with hypothyroidism . we'll recheck the level today .\n[patient] okay .\n[doctor] now your blood pressure . you're on lisinopril ten milligrams . how's it been at home ?\n[patient] mostly fine . my readings are around one twenty five over seventy . i check it on the machine in the morning .\n[doctor] good . any headaches ?\n[patient] a headache last week , a seven out of ten . i took a tylenol and it went away by the afternoon .\n[doctor] okay . let's note that and watch it . do you ever get the headaches with the pressure spiking ?\n[patient] no , not usually . it was after a long day at my desk with no lunch .\n[doctor] okay . now your cholesterol . you're on atorvastatin twenty milligrams at night ?\n[patient] yes , every night . my husband teases me that i set an alarm for it .\n[doctor] that's good . any muscle aches ?\n[patient] a little in my calves after i walk the dogs . nothing terrible .\n[doctor] okay . let's look at the labs we drew in the spring . your ldl was one twenty eight , which is better than before .\n[patient] good . i've been cutting back on cheese .\n[doctor] that's working . tell me about your life lately . i'm always curious what you're up to .\n[patient] well , i sew costumes for a community theater company on weekends . right now we're doing a musical , so i've been up till midnight with a sewing machine .\n[doctor] that sounds fun but stressful . how's your energy after that ?\n[patient] i crash on sundays . and the house is loud . we have three goats in the backyard and a parrot that only talks in french . it's a lot .\n[doctor] i can imagine . how is your sleep ?\n[patient] i wake up around three every night for about an hour . i think it's my mind going over the costume schedule .\n[doctor] okay . are you stressed or feeling down at all ?\n[patient] stressed , not down . i still enjoy the theater .\n[doctor] good . let's check your vitals and do a quick exam . pulse seventy two , weight is up a little , blood pressure one twenty eight over eighty .\n[patient] okay .\n[doctor] your thyroid feels a bit enlarged , but there are no nodules . your heart rhythm sounds regular . your ankles don't have swelling .\n[patient] good .\n[doctor] i'd like to add a blood test for ferritin , because your hair loss could also be iron related . and i'll order a fasting lipid panel and a thyroid level .\n[patient] okay . should i fast ?\n[doctor] yes , twelve hours before the blood draw please .\n[patient] i can do that on a tuesday morning .\n[doctor] perfect . for the thyroid , i'd like to increase the levothyroxine to one hundred micrograms if the level comes back high again , but we'll wait for the result .\n[patient] okay . i'd rather not have a bigger dose right away .\n[doctor] that's fine . we'll decide after the lab comes back . keep taking your current dose for now .\n[patient] yes .\n[doctor] good . your lisinopril stays the same , and we'll check your potassium with the labs too .\n[patient] great . my pharmacy keeps sending me reminders anyway .\n[doctor] that's helpful . let's set up the next visit . how's your schedule ?\n[patient] i'm free in the afternoons after school drop off . my number changed recently , so the best number to reach me is {PHONE} .\n[doctor] got it , i'll update your chart . the nurse will call you if the labs need follow up .\n[patient] thank you . and tell the nurse i'm the one who kept calling about the costumes .\n[doctor] i'll pass that along . see you in three months , and sooner if you feel worse .\n[patient] thanks , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nFollow-up of hypothyroidism, hypertension, and hyperlipidemia; ongoing fatigue and hair shedding.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with hypothyroidism on levothyroxine 88 mcg daily, hypertension, and hyperlipidemia, here for routine follow-up. She reports ongoing fatigue, cold intolerance, dry skin, constipation, and increased hair shedding in the shower. Her thyroid level on {DATE_NUM} was TSH 4.9. She takes levothyroxine each morning on an empty stomach.\n\nHome blood pressure readings are approximately 125/70 on lisinopril 10 mg daily. She had one headache last week rated 7/10, which resolved after acetaminophen; she notes it followed a long workday without lunch. She takes atorvastatin 20 mg nightly and reports mild calf discomfort with walking.\n\nSocial history: She sews costumes for a community theater company on weekends and has been working late during a current production. She reports fatigue on Sundays. She keeps three goats and a parrot at home. She wakes around 3 AM most nights for about an hour and attributes this to planning. She describes stress without depressed mood.\n\nPHYSICAL EXAM\n\nBP 128/80, pulse 72, weight up slightly from last visit. Thyroid is mildly enlarged without discrete nodules. Heart rhythm regular. No peripheral edema.\n\nRESULTS\n\nLDL 128 mg/dL from the spring panel, improved from prior.\n\nASSESSMENT AND PLAN\n\n1. Hypothyroidism with persistent symptoms at TSH 4.9. Recheck thyroid function today. Continue the current levothyroxine dose; increase to 100 mcg if TSH remains elevated. Evaluate hair loss with ferritin.\n\n2. Essential hypertension, near goal on lisinopril. Potassium with labs. Continue home blood pressure monitoring.\n\n3. Hyperlipidemia, improved on atorvastatin 20 mg. Fasting lipid panel ordered. Dietary counseling reinforced.\n\n4. Insomnia with early awakening, likely stress-related. Sleep hygiene discussed.\n\nContact callback number on file: {PHONE}. Nurse to call with lab follow-up.",
+ "medical_concepts": [
+  {
+   "text": "i've been tired a lot",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "levothyroxine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "eighty eight micrograms",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "a little high at four point nine",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "i feel sluggish",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "constipation",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dry skin",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my hair is falling out more in the shower",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril ten milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "my readings are around one twenty five over seventy",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "a headache last week",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "after a long day at my desk with no lunch",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "atorvastatin twenty milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "a little in my calves after i walk the dogs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "your ldl was one twenty eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the labs we drew in the spring",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "cutting back on cheese",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i crash on sundays",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i wake up around three every night",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "stressed",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse seventy two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "weight is up a little",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure one twenty eight over eighty",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "thyroid feels a bit enlarged",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no nodules",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart rhythm sounds regular",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your ankles don't have swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ferritin",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "hair loss",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a fasting lipid panel",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "a thyroid level",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "increase the levothyroxine to one hundred micrograms",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "your potassium",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "hypothyroidism",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "levothyroxine 88 mcg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "hyperlipidemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ongoing fatigue",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "cold intolerance",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dry skin",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "constipation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "increased hair shedding",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "TSH 4.9",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "readings are approximately 125/70",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril 10 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "one headache last week rated 7/10",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "long workday without lunch",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "atorvastatin 20 mg nightly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild calf discomfort with walking",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fatigue on Sundays",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "wakes around 3 AM most nights",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "stress without depressed mood",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 128/80",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "pulse 72",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "weight up slightly from last visit",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Thyroid is mildly enlarged",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "without discrete nodules",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Heart rhythm regular",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No peripheral edema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "LDL 128 mg/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "ferritin",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Fasting lipid panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Insomnia with early awakening",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sleep hygiene",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "increase to 100 mcg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Continue the current levothyroxine dose",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Potassium",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Dietary counseling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Essential hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hyperlipidemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "atorvastatin 20 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for acetaminophen, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "E03.9",
+   "spans": [
+    {
+     "text": "i feel sluggish",
+     "field": "dialogue"
+    },
+    {
+     "text": "a little high at four point nine",
+     "field": "dialogue"
+    },
+    {
+     "text": "cold intolerance",
+     "field": "note"
+    },
+    {
+     "text": "TSH 4.9",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "my readings are around one twenty five over seventy",
+     "field": "dialogue"
+    },
+    {
+     "text": "lisinopril ten milligrams",
+     "field": "dialogue"
+    },
+    {
+     "text": "Essential hypertension",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E78.5",
+   "spans": [
+    {
+     "text": "your ldl was one twenty eight",
+     "field": "dialogue"
+    },
+    {
+     "text": "atorvastatin twenty milligrams",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hyperlipidemia",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i sew costumes for a community theater company",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "unusual weekend activity with specifics"
+  },
+  {
+   "text": "a parrot that only talks in french",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive pet description"
+  },
+  {
+   "text": "sews costumes for a community theater company",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "unusual weekend activity with specifics"
+  },
+  {
+   "text": "keeps three goats and a parrot",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "household pets, distinctive description"
+  }
+ ],
+ "scenario": {
+  "specialty": "family medicine",
+  "visit": "followup",
+  "length": "medium",
+  "focus": [
+   "OTHER_QUASI",
+   "CONTACT"
+  ]
+ }
+}

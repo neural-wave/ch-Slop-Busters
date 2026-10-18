@@ -1,0 +1,433 @@
+{
+ "encounter_id": "HO018",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "tess",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "214-b",
+   "category": "ID",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "dufresne-okafor",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "lise",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "october 11th",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "dr . walker",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "she's 91",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "colette",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "eau claire",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Maple Crest Health & Rehabilitation",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "815 Linden Terrace",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Chippewa Falls, WI",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "54729",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "214-B",
+   "category": "ID",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "DUFRESNE-OKAFOR",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "HÉLOÏSE",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Lise",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "1935-02-07",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Age: 91",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "91-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "MC-55821",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "4TR7-KD2-HX58",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Lionel",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Walker, MD",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "1659304872",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "(715) 555-0162",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Colette",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Brandt",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "715-555-0139",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Priya",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Natarajan",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Northwoods Consultant Pharmacy",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "pnatarajan@northwoodsrx.com",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "15 Oct 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "French teacher",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "St. Bernadette Academy",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "2022",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Oct 11, 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Dr. Walker",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "US-26-0048817",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "10/12/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Tess",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Baker, RN",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "https://portal.maplecresthealth.org",
+   "category": "ID",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "dialogue",
+   "text": "tripped over the garden hose",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism for W01.0XXA"
+  },
+  {
+   "field": "dialogue",
+   "text": "watering the tomato planters",
+   "category": "CODE_EVIDENCE",
+   "why": "activity at time of fall"
+  },
+  {
+   "field": "dialogue",
+   "text": "no head strike",
+   "category": "CODE_EVIDENCE",
+   "why": "without striking against object (W01.0XXA)"
+  },
+  {
+   "field": "dialogue",
+   "text": "landed on the right knee",
+   "category": "CODE_EVIDENCE",
+   "why": "supports S80.01XA"
+  },
+  {
+   "field": "dialogue",
+   "text": "big bruise on the knee",
+   "category": "CODE_EVIDENCE",
+   "why": "contusion of knee, supports S80.01XA"
+  },
+  {
+   "field": "dialogue",
+   "text": "her walker",
+   "category": "NOT_A_NAME",
+   "why": "mobility device, not Dr. Walker"
+  },
+  {
+   "field": "dialogue",
+   "text": "the walker",
+   "category": "NOT_A_NAME",
+   "why": "mobility device, not Dr. Walker"
+  },
+  {
+   "field": "dialogue",
+   "text": "baker's cyst",
+   "category": "EPONYM",
+   "why": "popliteal cyst, not nurse Baker"
+  },
+  {
+   "field": "dialogue",
+   "text": "morse fall scale",
+   "category": "EPONYM",
+   "why": "fall-risk scale"
+  },
+  {
+   "field": "dialogue",
+   "text": "apixaban 2.5",
+   "category": "CLINICAL_NUMBER",
+   "why": "anticoagulant dose"
+  },
+  {
+   "field": "note",
+   "text": "tripped over the garden hose",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism for W01.0XXA"
+  },
+  {
+   "field": "note",
+   "text": "watering tomato planters",
+   "category": "CODE_EVIDENCE",
+   "why": "activity at time of fall"
+  },
+  {
+   "field": "note",
+   "text": "no head strike",
+   "category": "CODE_EVIDENCE",
+   "why": "without striking against object (W01.0XXA)"
+  },
+  {
+   "field": "note",
+   "text": "fell onto the right knee",
+   "category": "CODE_EVIDENCE",
+   "why": "supports S80.01XA"
+  },
+  {
+   "field": "note",
+   "text": "Right knee contusion",
+   "category": "CODE_EVIDENCE",
+   "why": "supports S80.01XA"
+  },
+  {
+   "field": "note",
+   "text": "atrial fibrillation",
+   "category": "CODE_EVIDENCE",
+   "why": "supports I48.91"
+  },
+  {
+   "field": "note",
+   "text": "Front-wheeled walker",
+   "category": "NOT_A_NAME",
+   "why": "mobility device, not Dr. Walker"
+  },
+  {
+   "field": "note",
+   "text": "walker within reach",
+   "category": "NOT_A_NAME",
+   "why": "mobility device, not Dr. Walker"
+  },
+  {
+   "field": "note",
+   "text": "Baker's cyst",
+   "category": "EPONYM",
+   "why": "popliteal cyst, not nurse Baker"
+  },
+  {
+   "field": "note",
+   "text": "Morse Fall Scale",
+   "category": "EPONYM",
+   "why": "fall-risk scale"
+  },
+  {
+   "field": "note",
+   "text": "AGS Beers Criteria",
+   "category": "EPONYM",
+   "why": "geriatric prescribing criteria"
+  },
+  {
+   "field": "note",
+   "text": "Beers list",
+   "category": "EPONYM",
+   "why": "geriatric prescribing criteria"
+  },
+  {
+   "field": "note",
+   "text": "2023 AGS",
+   "category": "CLINICAL_NUMBER",
+   "why": "guideline edition year, not a patient date"
+  },
+  {
+   "field": "note",
+   "text": "CHA2DS2-VASc 5",
+   "category": "CLINICAL_NUMBER",
+   "why": "stroke risk score"
+  },
+  {
+   "field": "note",
+   "text": "132/70",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure"
+  },
+  {
+   "field": "note",
+   "text": "24/30",
+   "category": "CLINICAL_NUMBER",
+   "why": "MMSE score"
+  },
+  {
+   "field": "note",
+   "text": "age >= 80",
+   "category": "CLINICAL_NUMBER",
+   "why": "apixaban dose-reduction criterion, not the patient's age"
+  }
+ ]
+}

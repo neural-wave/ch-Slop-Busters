@@ -1,0 +1,337 @@
+{
+ "encounter_id": "HT007",
+ "pii": [
+  {
+   "field": "note",
+   "text": "Ó Súilleabháin",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Rose (",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Rosie",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "father, Frank",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Bríd",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Ní Fhaoláin",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Lucía",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Fernández-Hart",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Dr Hope",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Achterberg",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Ciarán",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Graves MB",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "AMcD",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "14/03/1971",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2 October 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "22nd September",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "18-Aug-2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "26/10/26",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "4 Dec 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2009",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "2015",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "55-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "93 years old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "COH/26/1182",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "ADI-04417",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "7215538KA",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "+353 91 774 210",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "091 845 3312",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "www.corribohs.ie",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "brid.nifhaolain@atlanticdairy.ie",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "c.graves@corribohs.ie",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "412873",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Corrib Occupational Health Ltd",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Atlantic Dairy Ingredients DAC",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Unit 4",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Ballybrit Business Park",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Galway",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "H91 K2T7",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Kiltullagh Road",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Athenry",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "3 Cnoc na Gréine",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Oranmore",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "H91 R6W2",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "University Hospital Galway",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Claregalway Medical Centre",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Quality Control Laboratory Technician",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "laboratory technician",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "widowed father",
+   "category": "OTHER_QI",
+   "risk": "low"
+  }
+ ],
+ "keep": [
+  {
+   "field": "note",
+   "text": "Crohn's disease",
+   "category": "EPONYM",
+   "why": "disease name, not a person"
+  },
+  {
+   "field": "note",
+   "text": "Graves' disease",
+   "category": "EPONYM",
+   "why": "disease name; Dr Graves the author is listed as Ciarán Graves"
+  },
+  {
+   "field": "note",
+   "text": "Harvey-Bradshaw Index",
+   "category": "EPONYM",
+   "why": "Crohn's activity score, not people"
+  },
+  {
+   "field": "note",
+   "text": "frank rectal bleeding",
+   "category": "NOT_A_NAME",
+   "why": "clinical adjective 'frank', not the father's name"
+  },
+  {
+   "field": "note",
+   "text": "CRP rose",
+   "category": "NOT_A_NAME",
+   "why": "verb 'rose', not the patient's first name"
+  },
+  {
+   "field": "note",
+   "text": "128/76",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure, looks like a date"
+  },
+  {
+   "field": "note",
+   "text": "5/10",
+   "category": "CLINICAL_NUMBER",
+   "why": "fatigue score, looks like a date"
+  }
+ ]
+}

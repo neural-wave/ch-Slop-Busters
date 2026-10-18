@@ -1,0 +1,79 @@
+{
+ "encounter_id": "DS200474",
+ "pii": [
+  {
+   "field": "note",
+   "text": "Neha",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Gupta",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "20/05/1995",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "10/12/2024",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "16/12/2024",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Priya",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Krishnan",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "+91 9500140243",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Manipal Hospital",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "2 0 1 9 3 8 4",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "29 year old",
+   "category": "AGE",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "note",
+   "text": "Hyperlipidemia",
+   "category": "CODE_EVIDENCE",
+   "why": "E78.5"
+  }
+ ]
+}

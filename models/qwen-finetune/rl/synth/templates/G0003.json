@@ -1,0 +1,635 @@
+{
+ "id": "G0003",
+ "dataset": "synthetic_followup",
+ "sex": "female",
+ "age_range": [
+  19,
+  30
+ ],
+ "icd10_codes": [
+  {
+   "code": "B18.1",
+   "description": "Chronic viral hepatitis B without delta-agent"
+  },
+  {
+   "code": "Z79.899",
+   "description": "Other long term (current) drug therapy"
+  },
+  {
+   "code": "F17.210",
+   "description": "Nicotine dependence, cigarettes, uncomplicated"
+  },
+  {
+   "code": "Z71.6",
+   "description": "Tobacco abuse counseling"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . come on in . how have you been since we saw you in the spring ?\n[patient] pretty good , doctor {DOCTOR_LAST} . i've been on the new pill every day , i have n't missed one .\n[doctor] that's great . any side effects ? stomach trouble , headaches , anything like that ?\n[patient] a little nausea the first two weeks , but that's gone . my sleep is better , honestly .\n[doctor] good . your liver numbers from last month came back . tell me what you noticed when you got them .\n[patient] i saw the enzymes were a little high , the alt was like sixty two ? i was worried it meant the medicine was bad .\n[doctor] the alt is a little elevated , but it's not dangerous . we'll repeat it today . is there anything new going on , any alcohol or supplements ?\n[patient] i have maybe one glass of wine on weekends . no supplements except a multivitamin . oh , and i started taking turmeric gummies because my roommate swears by them .\n[doctor] that might be worth stopping for now , since turmeric can affect the liver . are you still smoking ?\n[patient] yes , about half a pack a day . i'm trying to quit . i've got the patch on my arm right now . i had one cigarette this morning on the back step .\n[doctor] that's okay , that's progress . the patch is a good start . how many days since your last cigarette ?\n[patient] like four days , which is a record for me . the first two were awful . i kept chewing the gum at work .\n[doctor] where do you work ?\n[patient] i'm a dental assistant at {ORG} . i take the bus down maple street , and then i'm on my feet all day . the break room is the only place i can really step outside to think .\n[doctor] that's a hard setting to quit in . what triggers you most ?\n[patient] coffee in the morning and my lunch break , when i'm standing outside the back door . my roommate {OTHER_FIRST} smokes too sometimes , so it's easy to just take one from her .\n[doctor] okay . does {OTHER_FIRST} know about your hepatitis ?\n[patient] yes , she knows . she got tested last year , and she's negative , thank god . she got the vaccine too . i made sure of that .\n[doctor] that's very good . hepatitis b spreads through blood and sexual contact , so as long as you're taking your medicine and your viral load stays down , the risk is very low . but the vaccine is the best protection for her .\n[patient] i'll tell her to keep up on it .\n[doctor] let's look at your vitals . your temperature is ninety eight point six , your blood pressure is one hundred and eight over seventy , and your pulse is seventy two . let me feel your belly .\n[patient] okay .\n[doctor] your liver edge is just barely palpable , and it's not tender . no yellow in your eyes , and no swelling in your legs . good .\n[patient] that's a relief .\n[doctor] the viral load from last month was undetectable , which is what we want . so the medication is working . the enzymes being a little up can happen from many things , including the turmeric , so we'll see if it settles .\n[patient] what's the plan with the medication ?\n[doctor] keep taking the tenofovir alafenamide , twenty five milligrams once a day . we want to keep you on it long term . i'll also order an ultrasound of your liver to look at the scarring , and a fibroscan to measure the stiffness .\n[patient] an ultrasound and a scan . will those hurt ?\n[doctor] no , the fibroscan is a little probe pressed on your ribs for about ten minutes . there's no needle .\n[patient] okay . i can do that on a day off .\n[doctor] good . now , the nicotine patch : we'll keep the fourteen milligram patch for six weeks , then taper . and let's add gum for cravings .\n[patient] will the patch and the gum together be okay ?\n[doctor] yes , that's common and safe . i'd like you to call the quitline too . they will call you back within a day or two .\n[patient] can i just do it online ?\n[doctor] you can do both . i'll write the referral , and the nurse will walk you through the quitline sign-up before you leave .\n[patient] the nurse is so nice . last time she helped me get my refill sorted out .\n[doctor] i'm glad . what about your weekends ? are you getting outside at all ?\n[patient] yes , i hike the trail along the lake at {PLACE} when the weather's good . i used to go with my brother , but he moved to {CITY} last month . so it's just me and my dog now .\n[doctor] that's nice exercise . how's your energy been ?\n[patient] pretty good , honestly . i can do the full hike again without stopping , which i could n't do last year .\n[doctor] wonderful . so the plan is : continue the tenofovir , repeat the liver labs in six weeks , ultrasound and fibroscan next month , and the quit plan with the patch and gum .\n[patient] okay . and if the enzymes go up again ?\n[doctor] then we'll look at other causes and maybe get a specialist to weigh in . but i'm not too worried right now .\n[patient] thank you , doctor . i'll see you in six weeks .",
+ "note": "CHIEF COMPLAINT\n\nFollow-up for chronic hepatitis B on tenofovir alafenamide and tobacco cessation.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with chronic hepatitis B infection on tenofovir alafenamide who returns for follow-up. She reports good adherence without missed doses. She had mild nausea during the first two weeks of therapy, which has resolved. Sleep has improved. Recent liver enzymes showed mild elevation of ALT, approximately 62 U/L. She started turmeric gummies recommended by a roommate and reports one glass of wine on weekends.\n\nShe currently smokes about half a pack of cigarettes daily and is using a nicotine patch. She smoked one cigarette this morning. She has been abstinent for four days, the longest period so far, and reports cravings during morning coffee and at her lunch break.\n\nHer roommate, {OTHER_FIRST}, is hepatitis B negative and has been vaccinated. She works as a dental assistant at {ORG}, a job involving prolonged standing. She commutes along Maple Street. She hikes the lakeside trail at {PLACE} when weather permits and reports she can now complete a full hike without stopping, which was not possible last year.\n\nPAST MEDICAL HISTORY\n\nChronic hepatitis B infection. Tobacco use disorder.\n\nMEDICATIONS\n\nTenofovir alafenamide 25 mg by mouth once daily. Nicotine patch 14 mg per 24 hours and nicotine gum as needed. Multivitamin daily. Turmeric supplement.\n\nPHYSICAL EXAM\n\nVitals: temperature 98.6 F, BP 108/70, pulse 72. Liver edge palpable just below the costal margin, nontender. No scleral icterus. No lower extremity edema.\n\nRESULTS\n\nHBV DNA undetectable on most recent assessment. ALT mildly elevated on prior panel. Repeat hepatic function panel drawn today. Liver ultrasound and transient elastography (FibroScan) ordered.\n\nASSESSMENT AND PLAN\n\n1. Chronic hepatitis B, virologically suppressed on tenofovir alafenamide. Mild transaminase elevation, likely multifactorial, possibly related to turmeric supplement; discontinue turmeric. Repeat hepatic panel in six weeks. Liver ultrasound and elastography to assess fibrosis.\n2. Nicotine dependence, cigarettes: continue nicotine patch 14 mg for six weeks then taper; add nicotine gum for cravings. Referral to state quitline placed. Counseling provided on smoking cessation and relapse triggers.\n3. Household contact: roommate should maintain hepatitis B vaccination; she is hepatitis B negative.\n4. Follow-up in six weeks.",
+ "medical_concepts": [
+  {
+   "text": "the new pill",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "a little nausea the first two weeks",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the enzymes were a little high",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the alt was like sixty two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the alt is a little elevated",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "turmeric gummies",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "about half a pack a day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the patch on my arm",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "one cigarette this morning",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the first two were awful",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chewing the gum",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "coffee in the morning",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "standing outside the back door",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "on my feet all day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "smokes too sometimes",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "she's negative",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "the vaccine is the best protection",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "your hepatitis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "viral load stays down",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "your temperature is ninety eight point six",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your blood pressure is one hundred and eight over seventy",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your pulse is seventy two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your liver edge is just barely palpable",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no yellow in your eyes",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no swelling in your legs",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the viral load from last month was undetectable",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "continue the tenofovir",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "an ultrasound of your liver",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "the scarring",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a fibroscan",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "a little probe pressed on your ribs",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "fourteen milligram patch",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "gum for cravings",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "the quitline",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the liver labs",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "hike the trail along the lake",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the enzymes go up again",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild nausea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild elevation of ALT",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "approximately 62 U/L",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "turmeric gummies",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "one glass of wine on weekends",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "half a pack of cigarettes daily",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "nicotine patch",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "smoked one cigarette this morning",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "abstinent for four days",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "cravings during morning coffee and at her lunch break",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hepatitis B negative",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "prolonged standing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hikes the lakeside trail",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "complete a full hike without stopping",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Chronic hepatitis B infection",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tobacco use disorder",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenofovir alafenamide 25 mg by mouth once daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Nicotine patch 14 mg per 24 hours",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "nicotine gum as needed",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Turmeric supplement",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "temperature 98.6 F",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 108/70",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse 72",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Liver edge palpable just below the costal margin",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No scleral icterus",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No lower extremity edema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "HBV DNA undetectable",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "ALT mildly elevated",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Repeat hepatic function panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Liver ultrasound",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "transient elastography (FibroScan)",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Chronic hepatitis B, virologically suppressed",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild transaminase elevation",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "discontinue turmeric",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Repeat hepatic panel in six weeks",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "elastography to assess fibrosis",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Nicotine dependence, cigarettes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "continue nicotine patch 14 mg for six weeks then taper",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "nicotine gum for cravings",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Referral to state quitline",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Counseling provided on smoking cessation and relapse triggers",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "maintain hepatitis B vaccination",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "fibroscan",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of elastography device, not a person"
+  },
+  {
+   "text": "FibroScan",
+   "field": "note",
+   "is_pii": false,
+   "comment": "brand name of elastography device, not a person"
+  },
+  {
+   "text": "Maple Street",
+   "field": "note",
+   "is_pii": true,
+   "comment": "street name, could also be read as a generic street"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "B18.1",
+   "spans": [
+    {
+     "text": "your hepatitis",
+     "field": "dialogue"
+    },
+    {
+     "text": "the alt is a little elevated",
+     "field": "dialogue"
+    },
+    {
+     "text": "Chronic hepatitis B infection",
+     "field": "note"
+    },
+    {
+     "text": "HBV DNA undetectable",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "F17.210",
+   "spans": [
+    {
+     "text": "about half a pack a day",
+     "field": "dialogue"
+    },
+    {
+     "text": "the patch on my arm",
+     "field": "dialogue"
+    },
+    {
+     "text": "half a pack of cigarettes daily",
+     "field": "note"
+    },
+    {
+     "text": "Nicotine dependence, cigarettes",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z79.899",
+   "spans": [
+    {
+     "text": "the new pill",
+     "field": "dialogue"
+    },
+    {
+     "text": "continue the tenofovir",
+     "field": "dialogue"
+    },
+    {
+     "text": "Tenofovir alafenamide 25 mg by mouth once daily",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z71.6",
+   "spans": [
+    {
+     "text": "Referral to state quitline",
+     "field": "note"
+    },
+    {
+     "text": "Counseling provided on smoking cessation and relapse triggers",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "dental assistant",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "maple street",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "street on her commute"
+  },
+  {
+   "text": "dental assistant",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "Maple Street",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "street on her commute"
+  }
+ ],
+ "scenario": {
+  "specialty": "infectious disease",
+  "visit": "followup",
+  "length": "medium",
+  "focus": [
+   "OTHER_PERSON_NAME",
+   "ORGANIZATION",
+   "LOCATION"
+  ]
+ }
+}

@@ -1,0 +1,762 @@
+{
+ "id": "S027",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S42.211A",
+   "description": "Unspecified displaced fracture of surgical neck of right humerus, initial encounter for closed fracture"
+  },
+  {
+   "code": "V78.6XXA",
+   "description": "Passenger on bus injured in noncollision transport accident in traffic accident, initial encounter"
+  },
+  {
+   "code": "Y92.414",
+   "description": "Local residential or business street as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y99.8",
+   "description": "Other external cause status"
+  },
+  {
+   "code": "M81.0",
+   "description": "Age-related osteoporosis without current pathological fracture"
+  }
+ ],
+ "dialogue": "[doctor] hello , mrs. {PATIENT_LAST} . i'm doctor {DOCTOR_FIRST} {DOCTOR_LAST} , i'm one of the orthopedic doctors .\n[patient] hello , doctor . excuse me if i do n't shake your hand .\n[doctor] no , of course not . i can see that arm is in a sling . so tell me how this happened .\n[patient] well , i was on the bus , going to my book club at the library like i do on thursdays . and it was crowded , so i was standing , holding onto the pole .\n[doctor] okay .\n[patient] and somebody pulled out in front of the bus , i think , and the driver slammed on the brakes . really hard . and i just went flying . i lost my grip and i fell forward and landed on my right shoulder on the floor of the bus .\n[doctor] oh my . so the bus did n't actually hit anything ? it was just the sudden stop ?\n[patient] no , he did n't hit anybody . he stopped in time . it was just the braking . we were going down the main avenue in {CITY} , right in the middle of traffic .\n[doctor] okay . did you hit your head ?\n[patient] no , i do n't think so . my shoulder took all of it .\n[doctor] did you black out ?\n[patient] no .\n[doctor] okay . and then what happened ?\n[patient] well , the driver called an ambulance and they took me to the emergency room . they did x-rays and said i broke the top of my arm bone , and they gave me this sling and told me to see you .\n[doctor] okay . how's the pain now ?\n[patient] oh , it's bad , especially at night . i ca n't lie down , i've been sleeping in my recliner . maybe a seven .\n[doctor] okay . any numbness or tingling down your arm or in your fingers ?\n[patient] no , my fingers feel okay .\n[doctor] okay . and what are you taking for the pain ?\n[patient] they gave me some tramadol , but it makes me dizzy , so i've just been taking tylenol .\n[doctor] okay . now i see in your chart you have osteoporosis .\n[patient] yes . they found that on my bone density scan about three years ago .\n[doctor] okay . and what are you taking for it ?\n[patient] i take the alendronate once a week , on sundays , and calcium and vitamin d every day .\n[doctor] good . and have you had any other fractures ?\n[patient] i broke my wrist about five years ago when i slipped on some ice .\n[doctor] okay . so this kind of fracture , from a fall like that , is what we call a fragility fracture . it tells us your bones are still pretty fragile .\n[patient] i was afraid of that .\n[doctor] okay . let me take a look . i'll be gentle . so there's a lot of bruising here , going down the upper arm , and it's swollen around the shoulder . i'm gonna press very gently here at the top of the arm .\n[patient] ooh , yes .\n[doctor] okay . i'm not gonna try to move the shoulder because it'll hurt . can you bend your elbow ? and make a fist ? and spread your fingers ?\n[patient] yes .\n[doctor] good . and can you feel me touching here on the outside of your shoulder ?\n[patient] yes .\n[doctor] okay . that's good , that tells me the nerve there is working . and your pulse at the wrist is strong .\n[doctor] so i looked at your x-rays from the emergency room . you have a fracture of the upper end of the right humerus , right at the part we call the surgical neck . the ball part is shifted a little bit compared to the shaft , so it is displaced , but it's in two main pieces and the ball is still sitting in the socket .\n[patient] do i need an operation ?\n[doctor] so for women your age with this kind of break , most of the time we treat it without surgery , and people do very well . the alignment is acceptable . so i'd recommend we keep you in the sling , and start gentle pendulum exercises in about two weeks , and then physical therapy .\n[patient] okay . that's a relief .\n[doctor] i'll give you a handout with the pendulum exercises . for pain , keep taking tylenol , 1000 milligrams three times a day , and ice . i'd like to get another x-ray in one week to make sure it has n't moved .\n[patient] okay .\n[doctor] for your osteoporosis , continue the alendronate once a week , and your calcium and vitamin d . i'm gonna send a note to your primary care doctor , because with a second fracture , they may want to talk about a stronger medicine .\n[patient] okay .\n[doctor] and are you still working at all ?\n[patient] oh , no . i'm retired . i taught third grade for thirty five years .\n[doctor] do you have help at home ?\n[patient] my son {OTHER_FIRST} has been coming by every day .\n[doctor] good . and when you ride the bus again , try to get a seat , and if you ca n't , ask someone .\n[patient] oh , believe me , i will .",
+ "note": "CHIEF COMPLAINT\n\nRight shoulder pain.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with osteoporosis who presents for evaluation of a right proximal humerus fracture sustained on {DATE_NUM}.\n\nThe patient was a standing passenger on a city bus in traffic, on her way to a book club, when the driver braked suddenly to avoid a vehicle. There was no collision. She lost her grip on the pole, fell forward, and landed on her right shoulder on the floor of the bus. She denies head injury or loss of consciousness. She was transported by ambulance to the emergency department, where x-rays demonstrated a proximal humerus fracture, and she was placed in a sling. She reports pain rated 7/10, worse at night; she has been sleeping in a recliner. She denies numbness or tingling. Tramadol caused dizziness, so she has been taking Tylenol.\n\nOsteoporosis was diagnosed on DEXA scan 3 years ago. She takes alendronate weekly plus calcium and vitamin D. Prior distal radius fracture 5 years ago after a fall on ice.\n\nSOCIAL HISTORY\n\nShe is a retired elementary school teacher. Her son assists her daily.\n\nPHYSICAL EXAM\n\nRight shoulder: Ecchymosis extending down the upper arm. Swelling about the shoulder. Tender to palpation over the proximal humerus. Range of motion of the shoulder deferred due to pain.\nNeurovascular: Elbow flexion, grip, and finger abduction intact. Sensation intact over the lateral shoulder (axillary nerve distribution). Radial pulse 2+.\n\nRESULTS\n\nX-rays of the right shoulder: Two-part displaced fracture of the surgical neck of the right humerus. Humeral head located within the glenoid. Alignment acceptable for nonoperative management.\n\nASSESSMENT AND PLAN\n\n1. Displaced fracture of the surgical neck of the right humerus, closed.\n- Injury occurred as a standing bus passenger thrown forward during sudden braking.\n- Nonoperative management. Continue sling.\n- Begin pendulum exercises at 2 weeks, then physical therapy.\n- Tylenol 1000 mg three times daily. Ice.\n- Repeat x-ray in 1 week.\n\n2. Age-related osteoporosis.\n- Fragility fracture.\n- Continue alendronate weekly, calcium, and vitamin D.\n- Communicated with primary care regarding consideration of anabolic therapy given second fracture.",
+ "medical_concepts": [
+  {
+   "text": "i was on the bus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was standing , holding onto the pole",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the driver slammed on the brakes",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i just went flying",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i lost my grip and i fell forward and landed on my right shoulder on the floor of the bus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the bus did n't actually hit anything",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it was just the sudden stop",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it was just the braking",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the main avenue",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "going to my book club",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "in the middle of traffic",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a lot of bruising here , going down the upper arm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's swollen around the shoulder",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the ball part is shifted a little bit compared to the shaft",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the ball is still sitting in the socket",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fragility fracture",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your bones are still pretty fragile",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your pulse at the wrist is strong",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the nerve there is working",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "it's bad , especially at night",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "black out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dizzy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i broke the top of my arm bone",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "fracture of the upper end of the right humerus",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "surgical neck",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "displaced",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "osteoporosis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "i broke my wrist",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "right shoulder",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "upper arm",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "elbow",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "fingers",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "another x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "bone density scan",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "tramadol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol , 1000 milligrams three times a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "alendronate",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "calcium and vitamin d",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "a stronger medicine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "sling",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "pendulum exercises",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "operation",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "standing passenger on a city bus in traffic",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the driver braked suddenly to avoid a vehicle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "There was no collision",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "on her way to a book club",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "She lost her grip on the pole, fell forward, and landed on her right shoulder on the floor of the bus",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "standing bus passenger thrown forward during sudden braking",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Ecchymosis extending down the upper arm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Swelling about the shoulder",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tender to palpation over the proximal humerus",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Two-part displaced fracture of the surgical neck of the right humerus",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Humeral head located within the glenoid",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Fragility fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Range of motion of the shoulder deferred due to pain",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Elbow flexion, grip, and finger abduction intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact over the lateral shoulder (axillary nerve distribution)",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Radial pulse 2+",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right shoulder pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "worse at night",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "head injury",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dizziness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "right proximal humerus fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "proximal humerus fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Displaced fracture of the surgical neck of the right humerus, closed",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "osteoporosis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Osteoporosis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Age-related osteoporosis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Prior distal radius fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-rays of the right shoulder",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Repeat x-ray",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "DEXA scan",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tramadol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol 1000 mg three times daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "alendronate weekly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "calcium and vitamin D",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "calcium",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "vitamin D",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "anabolic therapy",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "sling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Nonoperative management",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "pendulum exercises",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ice",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "surgical neck",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "anatomic part of the humerus, not a procedure"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S42.211A",
+   "spans": [
+    {
+     "text": "fracture of the upper end of the right humerus",
+     "field": "dialogue"
+    },
+    {
+     "text": "surgical neck",
+     "field": "dialogue"
+    },
+    {
+     "text": "displaced",
+     "field": "dialogue"
+    },
+    {
+     "text": "the ball part is shifted a little bit compared to the shaft",
+     "field": "dialogue"
+    },
+    {
+     "text": "Displaced fracture of the surgical neck of the right humerus, closed",
+     "field": "note"
+    },
+    {
+     "text": "Two-part displaced fracture of the surgical neck of the right humerus",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V78.6XXA",
+   "spans": [
+    {
+     "text": "i was on the bus",
+     "field": "dialogue"
+    },
+    {
+     "text": "the driver slammed on the brakes",
+     "field": "dialogue"
+    },
+    {
+     "text": "the bus did n't actually hit anything",
+     "field": "dialogue"
+    },
+    {
+     "text": "i lost my grip and i fell forward and landed on my right shoulder on the floor of the bus",
+     "field": "dialogue"
+    },
+    {
+     "text": "standing passenger on a city bus in traffic",
+     "field": "note"
+    },
+    {
+     "text": "the driver braked suddenly to avoid a vehicle",
+     "field": "note"
+    },
+    {
+     "text": "There was no collision",
+     "field": "note"
+    },
+    {
+     "text": "standing bus passenger thrown forward during sudden braking",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.414",
+   "spans": [
+    {
+     "text": "the main avenue",
+     "field": "dialogue"
+    },
+    {
+     "text": "in the middle of traffic",
+     "field": "dialogue"
+    },
+    {
+     "text": "standing passenger on a city bus in traffic",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.8",
+   "spans": [
+    {
+     "text": "going to my book club",
+     "field": "dialogue"
+    },
+    {
+     "text": "on her way to a book club",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "M81.0",
+   "spans": [
+    {
+     "text": "osteoporosis",
+     "field": "dialogue"
+    },
+    {
+     "text": "alendronate",
+     "field": "dialogue"
+    },
+    {
+     "text": "bone density scan",
+     "field": "dialogue"
+    },
+    {
+     "text": "fragility fracture",
+     "field": "dialogue"
+    },
+    {
+     "text": "Age-related osteoporosis",
+     "field": "note"
+    },
+    {
+     "text": "Osteoporosis",
+     "field": "note"
+    },
+    {
+     "text": "alendronate weekly",
+     "field": "note"
+    },
+    {
+     "text": "DEXA scan",
+     "field": "note"
+    },
+    {
+     "text": "Fragility fracture",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "going to my book club at the library like i do on thursdays",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive routine"
+  },
+  {
+   "text": "i've been sleeping in my recliner",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "living detail"
+  }
+ ]
+}

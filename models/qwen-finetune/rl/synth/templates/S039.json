@@ -1,0 +1,906 @@
+{
+ "id": "S039",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "T15.01XA",
+   "description": "Foreign body in cornea, right eye, initial encounter"
+  },
+  {
+   "code": "W29.8XXA",
+   "description": "Contact with other powered hand tools and household machinery, initial encounter"
+  },
+  {
+   "code": "Y92.015",
+   "description": "Private garage of single-family (private) house as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.D9",
+   "description": "Activity, other involving arts and handcrafts"
+  },
+  {
+   "code": "Y99.8",
+   "description": "Other external cause status"
+  }
+ ],
+ "dialogue": "[doctor] hi there , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . i understand something got into your eye ?\n[patient] yeah , my right eye . it feels like there's sand in it and i ca n't stop tearing up .\n[doctor] okay . when did this start ?\n[patient] saturday afternoon . so about two days ago .\n[doctor] and what were you doing when it happened ?\n[patient] so i do metal sculptures as a hobby , kind of garden art , out of scrap steel . i was out in my garage at home , cleaning up a weld with my angle grinder . i had my safety glasses on , but they're the old kind without the side shields , and i felt something hit my eye from the side . like a little sting .\n[doctor] okay . so a piece of metal from the grinder ?\n[patient] i think so . sparks were flying everywhere , like they always do . i flushed it with water from the utility sink right away and it felt a little better , so i figured i got it out .\n[doctor] okay .\n[patient] but yesterday it got worse . it's red , it's watering all the time , and the light really bothers me . and every time i blink it feels like something's scratching .\n[doctor] okay . any change in your vision ?\n[patient] it's a little blurry on that side , mostly because it's so watery .\n[doctor] okay . any pain when you move your eye , or a headache ?\n[patient] no , just the scratchy feeling . it's like a four , maybe a five when i'm in the light .\n[doctor] okay . do you wear contacts ?\n[patient] no , just reading glasses .\n[doctor] okay . any eye problems in the past ? surgery ?\n[patient] no .\n[doctor] any medical problems ?\n[patient] no , i'm pretty healthy . i'm an accountant , so i sit at a desk all week , and on weekends i play golf and do my sculptures . that's about it .\n[doctor] okay . any allergies ?\n[patient] sulfa .\n[doctor] okay . let's take a look . first we'll check your vision . cover your left eye and read the lowest line you can .\n[patient] okay . e , f , p ... t , o , z ... that's about it .\n[doctor] okay , so you're twenty forty in the right eye , and twenty twenty in the left . now i'm going to put in a numbing drop . this will sting for a second .\n[patient] oh , that feels so much better .\n[doctor] yeah , that's the anesthetic . okay , now some fluorescein dye , and i'm going to look with the slit lamp . look straight ahead at my ear . okay . so i can see a small metallic foreign body embedded in the cornea of your right eye , at about the four o'clock position , outside of the center of your vision . there's a rust ring around it , which happens when a piece of iron sits in the cornea for a day or two . there's a small area of staining around it , and the front chamber of the eye is quiet , i do n't see any cells . the pupil is round and reacts normally . i'm going to flip your upper eyelid to make sure there's nothing else under there . okay , that's clean .\n[patient] so it's still in there ?\n[doctor] it is . it's not deep though , and there's no sign that anything went all the way through the eye . with high speed grinding that's always the thing we worry about , but your eye pressure is normal and the seidel test is negative , meaning nothing is leaking .\n[patient] okay , good .\n[doctor] so you have a foreign body in the cornea of the right eye . i'm going to remove it now here under the slit lamp with a small needle , and then use a little burr to clear out the rust ring . it should n't hurt with the numbing drops .\n[patient] okay .\n[doctor] all done . it came out in one piece , and i got most of the rust ring . there's a small corneal abrasion left where it was , and that will heal in a few days .\n[patient] that's a relief .\n[doctor] i'm going to give you erythromycin ointment to put in the right eye four times a day for five days , to prevent infection . you can use tylenol or ibuprofen for discomfort . do n't rub the eye . i'm not going to give you the numbing drops to take home , because using them repeatedly can damage the cornea .\n[patient] okay .\n[doctor] and i want you to come back in two days so i can check that it's healing and look at the rust ring again . if your vision gets worse , the pain gets much worse , or you see any white spot on the eye , come back right away .\n[patient] okay .\n[doctor] and for the sculpture work , please get wraparound safety glasses or a full face shield , rated for grinding . the side is exactly where this came from .\n[patient] yeah , i'm ordering a face shield tonight .\n[doctor] good . any questions ?\n[patient] no , thank you . this was really helpful .",
+ "note": "CHIEF COMPLAINT\n\nRight eye foreign body sensation.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male who presents with right eye pain and foreign body sensation for 2 days.\n\nOn {DATE_SPOKEN}, while using an angle grinder to clean a weld on a metal sculpture, a hobby, in the garage of his home, he felt something strike his right eye from the side. He was wearing safety glasses without side shields. He irrigated the eye with tap water with transient relief. Since then he reports worsening redness, tearing, photophobia, scratchy sensation with blinking, and mildly blurred vision. Pain 4-5/10. Denies headache or pain with eye movement. No contact lens use. No prior ocular history. Allergy to sulfa.\n\nPHYSICAL EXAM\n\nVisual acuity: OD 20/40, OS 20/20.\nRight eye: After topical proparacaine and fluorescein, slit lamp examination reveals a small metallic corneal foreign body at the 4 o'clock position, outside the visual axis, with surrounding rust ring and focal fluorescein uptake. Anterior chamber deep and quiet, no cells. Pupil round and reactive. Upper lid eversion without additional foreign body. Seidel test negative. Intraocular pressure normal.\n\nPROCEDURE\n\nRemoval of corneal foreign body with a 25-gauge needle under slit lamp, followed by rust ring removal with an ophthalmic burr. Small residual corneal epithelial defect.\n\nASSESSMENT AND PLAN\n\n1. Foreign body in cornea, right eye.\n• Medical Reasoning: Metallic corneal foreign body with rust ring from grinder use while doing metal sculpture in his home garage, no evidence of open globe.\n• Medical Treatment: Foreign body and rust ring removed. Erythromycin ophthalmic ointment four times daily for 5 days. Tylenol or ibuprofen as needed. No topical anesthetic prescribed.\n• Patient Education and Counseling: Avoid rubbing the eye. Use wraparound safety glasses or a full face shield when grinding. Return immediately for worsening vision, worsening pain, or corneal opacity.\n\nPatient Agreements: The patient understands and agrees with the recommended medical treatment plan.\n\nFollow up in 2 days for recheck of the epithelial defect and residual rust.",
+ "medical_concepts": [
+  {
+   "text": "something got into your eye",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my right eye",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "it feels like there's sand in it",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tearing up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i do metal sculptures as a hobby",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "garden art , out of scrap steel",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was out in my garage at home",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "cleaning up a weld with my angle grinder",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "safety glasses",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "without the side shields",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i felt something hit my eye from the side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a piece of metal from the grinder",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "sparks were flying everywhere",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "flushed it with water",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "it's red",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "watering",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the light really bothers me",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "feels like something's scratching",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "change in your vision",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little blurry",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain when you move your eye",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "headache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "scratchy feeling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a four , maybe a five",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "contacts",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "reading glasses",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "eye problems",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "sulfa",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "check your vision",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "twenty forty in the right eye",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "twenty twenty in the left",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbing drop",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "anesthetic",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "fluorescein dye",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "slit lamp",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "small metallic foreign body embedded in the cornea of your right eye",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "four o'clock position",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "outside of the center of your vision",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "rust ring",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "small area of staining",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the front chamber of the eye is quiet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i do n't see any cells",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pupil is round and reacts normally",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "flip your upper eyelid",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "no sign that anything went all the way through the eye",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "high speed grinding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "eye pressure is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "seidel test is negative",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "foreign body in the cornea of the right eye",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "remove it",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "small needle",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "burr",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "small corneal abrasion",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "erythromycin ointment",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "four times a day for five days",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "infection",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "do n't rub the eye",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "damage the cornea",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "vision gets worse",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "white spot on the eye",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the sculpture work",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "do my sculptures",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "wraparound safety glasses",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "full face shield",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "rated for grinding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right eye foreign body sensation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "right eye pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "foreign body sensation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "while using an angle grinder to clean a weld on a metal sculpture, a hobby",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "in the garage of his home",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "he felt something strike his right eye from the side",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "safety glasses without side shields",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "irrigated the eye with tap water",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "worsening redness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tearing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "photophobia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "scratchy sensation with blinking",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mildly blurred vision",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Pain 4-5/10",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain with eye movement",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "contact lens use",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "prior ocular history",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Allergy to sulfa",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Visual acuity: OD 20/40, OS 20/20",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right eye",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "topical proparacaine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "fluorescein",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "slit lamp examination",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "small metallic corneal foreign body",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "4 o'clock position",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "outside the visual axis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "surrounding rust ring",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "focal fluorescein uptake",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Anterior chamber deep and quiet",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no cells",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pupil round and reactive",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Upper lid eversion without additional foreign body",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Seidel test negative",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Intraocular pressure normal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Removal of corneal foreign body with a 25-gauge needle under slit lamp",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "rust ring removal with an ophthalmic burr",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Small residual corneal epithelial defect",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Foreign body in cornea, right eye",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Metallic corneal foreign body with rust ring",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "from grinder use while doing metal sculpture in his home garage",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no evidence of open globe",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Foreign body and rust ring removed",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Erythromycin ophthalmic ointment four times daily for 5 days",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "topical anesthetic",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Avoid rubbing the eye",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "wraparound safety glasses or a full face shield when grinding",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "worsening vision",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "worsening pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "corneal opacity",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "epithelial defect",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "residual rust",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "i do metal sculptures as a hobby",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "hobby is the activity supporting Y93.D9/Y99.8, so medical context per SPEC"
+  },
+  {
+   "text": "seidel test",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponymous ophthalmic test, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "T15.01XA",
+   "spans": [
+    {
+     "text": "foreign body in the cornea of the right eye",
+     "field": "dialogue"
+    },
+    {
+     "text": "small metallic foreign body embedded in the cornea of your right eye",
+     "field": "dialogue"
+    },
+    {
+     "text": "rust ring",
+     "field": "dialogue"
+    },
+    {
+     "text": "no sign that anything went all the way through the eye",
+     "field": "dialogue"
+    },
+    {
+     "text": "Foreign body in cornea, right eye",
+     "field": "note"
+    },
+    {
+     "text": "small metallic corneal foreign body",
+     "field": "note"
+    },
+    {
+     "text": "Metallic corneal foreign body with rust ring",
+     "field": "note"
+    },
+    {
+     "text": "no evidence of open globe",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W29.8XXA",
+   "spans": [
+    {
+     "text": "cleaning up a weld with my angle grinder",
+     "field": "dialogue"
+    },
+    {
+     "text": "a piece of metal from the grinder",
+     "field": "dialogue"
+    },
+    {
+     "text": "while using an angle grinder to clean a weld on a metal sculpture, a hobby",
+     "field": "note"
+    },
+    {
+     "text": "from grinder use while doing metal sculpture in his home garage",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.015",
+   "spans": [
+    {
+     "text": "i was out in my garage at home",
+     "field": "dialogue"
+    },
+    {
+     "text": "in the garage of his home",
+     "field": "note"
+    },
+    {
+     "text": "from grinder use while doing metal sculpture in his home garage",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.D9",
+   "spans": [
+    {
+     "text": "i do metal sculptures as a hobby",
+     "field": "dialogue"
+    },
+    {
+     "text": "garden art , out of scrap steel",
+     "field": "dialogue"
+    },
+    {
+     "text": "the sculpture work",
+     "field": "dialogue"
+    },
+    {
+     "text": "while using an angle grinder to clean a weld on a metal sculpture, a hobby",
+     "field": "note"
+    },
+    {
+     "text": "from grinder use while doing metal sculpture in his home garage",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.8",
+   "spans": [
+    {
+     "text": "i do metal sculptures as a hobby",
+     "field": "dialogue"
+    },
+    {
+     "text": "while using an angle grinder to clean a weld on a metal sculpture, a hobby",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm an accountant",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "play golf",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "personal hobby unrelated to any code"
+  }
+ ]
+}

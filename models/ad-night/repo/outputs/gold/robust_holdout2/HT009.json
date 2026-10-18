@@ -1,0 +1,349 @@
+{
+ "encounter_id": "HT009",
+ "pii": [
+  {
+   "field": "note",
+   "text": "Castellanos",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Reyes",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "José",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Luis",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Pepe",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "03/14/1979",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Age: 47",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "47-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "00-4471-298",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "PSG-26-10417",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "XPM772011840",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "312-555-0148",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "(847) 555-0193",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "(847) 555-0194",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "847-555-0127",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "scheduling@lakeshoresleep.org",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "www.lakeshoresleep.org/portal",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "10/02/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Sept. 3rd, 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2026-10-05",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2011",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Lena",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Hodgkin, MD",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Dr. Hodgkin",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Hunter",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Wade",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "C.",
+   "category": "PERSON_NAME",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Ruiz",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Priya",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Venkataraman",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Marisol",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Lakeshore Sleep Disorders Center",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "4410 Merriweather Ave",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Suite 210",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Evanston",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "IL 60201",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "1187 W. Catalpa Ave",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Apt 3R",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Chicago",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "IL 60640",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Northbrook Family Medicine",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Prairie Mutual Health",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Tri-County Ready-Mix",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "dispatcher",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  }
+ ],
+ "keep": [
+  {
+   "field": "note",
+   "text": "95811",
+   "category": "CLINICAL_NUMBER",
+   "why": "CPT procedure code, looks like a ZIP code"
+  },
+  {
+   "field": "note",
+   "text": "17/24",
+   "category": "CLINICAL_NUMBER",
+   "why": "Epworth score, looks like a date"
+  },
+  {
+   "field": "note",
+   "text": "148/92",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure"
+  },
+  {
+   "field": "note",
+   "text": "10-15 cm H2O",
+   "category": "CLINICAL_NUMBER",
+   "why": "APAP pressure range, looks like a date"
+  },
+  {
+   "field": "note",
+   "text": "Epworth",
+   "category": "EPONYM",
+   "why": "Epworth Sleepiness Scale, not a person or place of the patient"
+  },
+  {
+   "field": "note",
+   "text": "Hodgkin lymphoma",
+   "category": "EPONYM",
+   "why": "disease name; same surname as referring physician"
+  },
+  {
+   "field": "note",
+   "text": "Mallampati IV",
+   "category": "EPONYM",
+   "why": "airway classification"
+  },
+  {
+   "field": "note",
+   "text": "Cheyne-Stokes respiration",
+   "category": "EPONYM",
+   "why": "breathing pattern"
+  },
+  {
+   "field": "note",
+   "text": "fell asleep at the wheel",
+   "category": "CODE_EVIDENCE",
+   "why": "supports V47.5XXD car driver collision"
+  },
+  {
+   "field": "note",
+   "text": "his car struck a utility pole",
+   "category": "CODE_EVIDENCE",
+   "why": "supports V47.5XXD collision with fixed object"
+  },
+  {
+   "field": "note",
+   "text": "driving home",
+   "category": "CODE_EVIDENCE",
+   "why": "supports V47.5XXD traffic accident while driving"
+  },
+  {
+   "field": "note",
+   "text": "drowsy-driving collision",
+   "category": "CODE_EVIDENCE",
+   "why": "supports V47.5XXD"
+  },
+  {
+   "field": "note",
+   "text": "BMI 41.3 kg/m2",
+   "category": "CODE_EVIDENCE",
+   "why": "supports Z68.41 BMI 40.0-44.9, adult"
+  }
+ ]
+}

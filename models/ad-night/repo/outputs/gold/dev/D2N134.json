@@ -1,0 +1,19 @@
+{
+  "encounter_id": "D2N134",
+  "pii": [
+    {"field": "dialogue", "text": "michelle", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "31-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "31-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "lyme titer", "category": "EPONYM", "why": "disease test, not a person"},
+    {"field": "dialogue", "text": "lyme disease", "category": "EPONYM", "why": "diagnosis A69.20"},
+    {"field": "dialogue", "text": "white blood cell", "category": "NOT_A_NAME", "why": "lab term"},
+    {"field": "dialogue", "text": "hiking in the woods", "category": "CODE_EVIDENCE", "why": "tick exposure context for Lyme disease"},
+    {"field": "dialogue", "text": "dax", "category": "NOT_A_NAME", "why": "dictation software"},
+    {"field": "dialogue", "text": "dragon", "category": "NOT_A_NAME", "why": "dictation software"},
+    {"field": "note", "text": "Lyme titer", "category": "EPONYM", "why": "disease test, not a person"},
+    {"field": "note", "text": "Lyme disease", "category": "EPONYM", "why": "diagnosis A69.20"},
+    {"field": "note", "text": "hiking in the woods", "category": "CODE_EVIDENCE", "why": "tick exposure context for Lyme disease"}
+  ]
+}

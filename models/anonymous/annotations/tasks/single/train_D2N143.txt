@@ -1,0 +1,60 @@
+########## ENCOUNTER D2N143
+=== FIELD: dialogue
+[doctor] next patient is grace ross . date of birth 8-23-97 . ms. ross is a new patient . she's here today for a full spectrum std testing . the patient states that she's having symptoms of discomfort , a change in discharge , and odor in her vaginal region . she says that the right side of her vagina is starting to become painful . she denies any fevers or chills . she reports , that she recently learned , her partner has been in sexual encounters with other people , and she wants to be evaluated for all stds .
+[doctor] hello , ms. ross . i'm dr. diaz . it's good to meet you .
+[patient] hi . yes . nice to meet you , too .
+[doctor] so , how are you doing today ? i hear that you're here for std testing . is that correct ?
+[patient] yeah . actually , i found out earlier this week , that my boyfriend has been cheating on me , for some time . i'm really worried , that i could have caught something , you know ?
+[doctor] mm-hmm .
+[patient] i wanted to make sure i do n't have anything .
+[doctor] yeah . i'm sorry to hear that . of course , we can do that today . um . well , let's see . how do you feel ? do you have any symptoms ?
+[patient] well , um , i started noticing some weird discharge last week .
+[doctor] mm-hmm .
+[patient] uh , it smells different . it's not the same color , or consistency , as usually , it is .
+[doctor] right .
+[patient] um . that part did n't even phase me , until i noticed that the right side of my vagina was hurting . just sore , you know , but that has n't gone away .
+[doctor] yep . nah , that does sound like a cause for concern . how long have you been with him ?
+[patient] hmm , we've been dating for three years .
+[doctor] mm-hmm .
+[patient] as far as , i can figure , he started cheating on me , i think , about three months ago .
+[doctor] uh- . um , okay . do you ... have you ever had an irregular pap smear ?
+[patient] well , yeah , i did , but it was back whenever i was 20 or so . it has n't ... and i have n't had one since .
+[doctor] okay . and when was your last pap smear ?
+[patient] uh , about six months ago . it came back normal , though .
+[doctor] okay . good , okay . well , let's see ... let's take a look at you , and then , we'll get some samples for std testing . okay ?
+[patient] all right .
+[doctor] you'll hear me talk through your exam , so that i can get it all documented . uh- ?
+[doctor] use my general physical exam template . pelvic exam demonstrates no external lesions . normal labia majora and labia minora . normal physiological discharge , with normal color and smell .
+[doctor] ms. ross , i'm going to touch you , now . you'll feel my fingers , and the speculum in your vagina . you'll feel some pressure , now .
+[doctor] cervix is normal . vaginal wall is normal . no cervical motion tenderness and no adnexal tenderness or masses noted . swabs were done for std testing .
+[doctor] okay , ms. ross . everything looks good from a visual standpoint . i'm going to send off std testing for , uh , gonorrhea , chlamydia , trichomoniasis , and i'll have you give some blood for syphilis , hiv and hepatitis c. some of these tests will take longer than others . we will call you , if we see anything , but if you have n't heard anything , you can call us in three days for results .
+[patient] okay . sounds good . thank you , so much .
+[doctor] of course , my pleasure . and , if everything is normal , i'll see you again , at your next annual checkup .
+[doctor] assessment : is screen for std .
+[doctor] plan : discussed with patient , and please add that she is high risk due to an abnormal pap smear in the past , and the recent discovery of her sexual partner having multiple partners , for some period of time .
+[doctor] end of recording .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Full-spectrum sexually transmitted disease testing.
+
+HISTORY OF PRESENT ILLNESS
+
+Ms. Ross is a 23-year-old female who presents today as a new patient for full-spectrum STD testing.
+
+The patient states that she is having symptoms of discomfort, a change in discharge, and an odor in her vaginal region. She says that the right side of her vagina is starting to become painful but denies any fever or chills. She states that she recently learned her partner of 3 years has been engaging in sexual encounters with other people for quite some time, and she wants to be evaluated for all sexually transmitted diseases.
+
+Ms. Ross reports noticing a change in the odor, color, and consistency of her vaginal discharge last week. She notes that this did not alarm her until the right side of her vagina became painful and sore, which has not subsided. She states that she had an abnormal Pap Smear around the age of 20, but all her Pap Smears since then, including her most recent one approximately 6 months ago, have all been normal.
+
+PHYSICAL EXAM
+
+Genitourinary
+Pelvic exam: No external lesions, normal labia majora and labia minora. Normal physiological discharge with normal color and odor. Cervix is normal, vaginal wall is normal, no cervical motion tenderness or masses noted. Swabs were obtained for sexual transmitted disease testing.
+
+ASSESSMENT
+
+• Screening for sexually transmitted disease.
+
+PLAN
+
+Ms. Ross is a 23-year-old female who presents today as a new patient for full-spectrum STD testing. We will screen her today for gonorrhea, chlamydia, trichomoniasis, syphilis, HIV, and hepatitis C. Patient is high risk due to an abnormal pap smear in the past and the recent discovery of her sexual partner having multiple partners for some period of time. We will call the patient with the results of the laboratory testing.

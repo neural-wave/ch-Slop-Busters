@@ -1,0 +1,17 @@
+{
+  "encounter_id": "D2N075",
+  "phi": [
+    {"text": "betty hill", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "hill", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "2/21/1968", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "sanders", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "october", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "2020", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "job transition", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "life change"},
+    {"text": "Betty Hill", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "53 y.o.", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "10/2020", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "job transition", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "life change"}
+  ],
+  "medical_concepts": []
+}

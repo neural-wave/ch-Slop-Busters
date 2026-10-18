@@ -1,0 +1,24 @@
+{
+  "encounter_id": "D2N140",
+  "phi": [
+    {"text": "brittany edwards", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "edwards", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "07 , 1898", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "32-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "august of 2019", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "friday nights", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "weekend nights"},
+    {"text": "saturday nights", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "weekend nights"},
+    {"text": "friday", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a night out"},
+    {"text": "saturday", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the next night"},
+    {"text": "friday's", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "a chain"},
+    {"text": "patron", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "a tequila brand"},
+    {"text": "mychart", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "the patient portal"},
+    {"text": "Brittany Edwards", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Edwards", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "32-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "August 2019", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "Monday through Thursday", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "during the week"},
+    {"text": "MyChart", "field": "note", "type": "ORGANIZATION", "tier": 1, "generalized": "patient portal"}
+  ],
+  "medical_concepts": []
+}

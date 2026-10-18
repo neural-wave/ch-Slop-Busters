@@ -1,0 +1,42 @@
+{
+  "encounter_id": "D2N034",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "alan",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "new ceiling",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Alan",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Mitchell",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "69-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "new ceiling",
+      "category": "OTHER_QI",
+      "risk": "low"
+    }
+  ],
+  "keep": []
+}

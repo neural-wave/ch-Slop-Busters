@@ -1,0 +1,66 @@
+{
+ "encounter_id": "MC0033",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "Max Hill",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "48 years old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Columbus",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Ohio",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "(755) 571-3045",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "max.hill93@gmail.com",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Lakeside Clinic",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "January 23, 2024",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Vikram",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Pillai",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": []
+}

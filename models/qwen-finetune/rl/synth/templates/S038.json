@@ -1,0 +1,954 @@
+{
+ "id": "S038",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S91.311A",
+   "description": "Laceration without foreign body, right foot, initial encounter"
+  },
+  {
+   "code": "W28.XXXA",
+   "description": "Contact with powered lawn mower, initial encounter"
+  },
+  {
+   "code": "Y92.017",
+   "description": "Garden or yard in single-family (private) house as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.H2",
+   "description": "Activity, gardening and landscaping"
+  },
+  {
+   "code": "E11.9",
+   "description": "Type 2 diabetes mellitus without complications"
+  }
+ ],
+ "dialogue": "[doctor] hello , mr. {PATIENT_LAST} . i'm doctor {DOCTOR_LAST} . what brings you in today ?\n[patient] well , doc , i got into a fight with my lawn mower and the lawn mower won .\n[doctor] uh oh . tell me about it .\n[patient] so yesterday afternoon i was doing yard work at my house , mowing the backyard . i've got a slope back there by the flower beds , and i was pushing the mower across the hill , and it had rained in the morning , so the grass was wet . my right foot slid out from under me and went right under the edge of the mower deck .\n[doctor] oh boy . was it a push mower ?\n[patient] yeah , a gas push mower . self-propelled .\n[doctor] and what were you wearing on your feet ?\n[patient] old sneakers . i know , i know . my wife already gave me the lecture .\n[doctor] okay . so the blade caught your foot through the shoe ?\n[patient] yeah , it cut right through the side of the sneaker . it got the outside of my foot , kind of along the side here , toward the little toe .\n[doctor] okay . did you go anywhere yesterday ?\n[patient] my wife wanted me to go to the er , but it was n't bleeding that bad once i got the shoe off , so i washed it out with the hose and then in the tub , and wrapped it up . but this morning it was throbbing and she made me come in .\n[doctor] okay , good that you came . how's the pain ?\n[patient] about a five . it hurts more when i walk on it .\n[doctor] any numbness in the toes ?\n[patient] no , i can feel them .\n[doctor] okay . can you move all your toes ?\n[patient] yeah .\n[doctor] and you have diabetes , right ? how's that going ?\n[patient] yeah , type 2 . i take metformin , a thousand twice a day . my sugars run about one twenty in the morning .\n[doctor] okay . your last a1c in the chart was six point eight , which is good . any problems with feeling in your feet from the diabetes ?\n[patient] no , my feet have always been fine . the podiatrist checks them every year .\n[doctor] okay , good . and when was your last tetanus ?\n[patient] probably when i retired from the post office , so maybe eight years ago ?\n[doctor] okay , so we'll give you a booster today since this was a dirty wound .\n[patient] okay .\n[doctor] let me take a look . go ahead and put your foot up here . okay . so on the lateral aspect of your right foot , over the fifth metatarsal , you've got a laceration that's about four centimeters long . the edges are a little ragged and there's some grass and dirt in it . it goes through the skin into the fat . i do n't see any tendon or bone . there's some mild swelling and a little redness right at the edges , but no spreading redness and no pus . can you push your foot out to the side against my hand ? good . your pulses in the foot are good , capillary refill is brisk . i'm going to check your sensation with this monofilament . can you feel that ? and that ?\n[patient] yep , yep .\n[doctor] okay , sensation is intact . we got an x-ray of the foot to make sure the blade did n't chip the bone or leave anything in there . that was normal , no fracture and no foreign body .\n[patient] good .\n[doctor] so you have a laceration of the right foot from the lawn mower blade . because it's a dirty wound and it's been almost twenty four hours , and you have diabetes , i'm a little more worried about infection than usual .\n[patient] okay .\n[doctor] here's what we'll do . i'll numb it up , scrub out all the grass and dirt , and irrigate it really well . i'll trim the ragged edges . then i'm going to close it loosely with a few stitches , leaving some space to drain .\n[patient] okay .\n[doctor] i'll start you on an antibiotic , cephalexin , five hundred milligrams four times a day for seven days . and you'll get the tetanus booster today .\n[patient] okay .\n[doctor] for your diabetes , keep taking the metformin . keep a close eye on your sugars , because infections can push them up , and if they're running over two hundred , call me . i'd like you to stay off the foot as much as you can for a few days , keep it elevated , and keep the dressing clean and dry .\n[patient] okay . and the lawn ?\n[doctor] the lawn can wait , or someone else can mow it . and when you go back to it , wear boots , and mow side to side across a slope , not up and down , and not when it's wet .\n[patient] yeah , lesson learned .\n[doctor] i want to see you back in three days for a wound check , and the stitches will come out in about ten to fourteen days . if you see any spreading redness , pus , fever , or your sugars go way up , come in sooner .\n[patient] thank you , doc .",
+ "note": "PATIENT NAME: {PATIENT_FIRST} {PATIENT_LAST}\nDATE OF VISIT: {DATE_NUM}\n\nCHIEF COMPLAINT\n\nRight foot laceration.\n\nHISTORY OF PRESENT ILLNESS\n\nMr. {PATIENT_LAST} is a {AGE}-year-old male with a past medical history significant for type 2 diabetes mellitus, who presents with a laceration to the right foot from a lawn mower.\n\nYesterday afternoon, the patient was mowing the backyard of his home with a gas-powered self-propelled push mower. While mowing across a wet slope near the flower beds, his right foot slipped under the edge of the mower deck and the blade cut through his sneaker into the lateral aspect of the foot. Bleeding was controlled at home; he irrigated the wound with a garden hose and in the tub and applied a wrap. He presents today due to throbbing pain, rated 5/10, worse with weight bearing. He denies numbness of the toes.\n\nRegarding his type 2 diabetes, he takes metformin 1000 mg twice daily. Fasting glucose around 120. Most recent hemoglobin A1c 6.8%. No known peripheral neuropathy; annual podiatry exams. Last tetanus approximately 8 years ago.\n\nPHYSICAL EXAM\n\nRight foot: 4 cm laceration over the lateral foot at the level of the fifth metatarsal with ragged edges, contaminated with grass and soil. Extends to the subcutaneous tissue. No exposed tendon or bone. Mild edema and erythema limited to the wound margins. No purulence or lymphangitic streaking. Eversion strength intact. Dorsalis pedis and posterior tibial pulses 2+. Capillary refill brisk. Monofilament sensation intact.\n\nRESULTS\n\nX-ray of the right foot: No fracture. No radiopaque foreign body.\n\nASSESSMENT AND PLAN\n\n1. Laceration without foreign body of the right foot.\n• Medical Reasoning: Contaminated laceration from a powered lawn mower blade while mowing his yard. Delayed presentation at approximately 24 hours in a patient with diabetes increases infection risk.\n• Medical Treatment: Local anesthesia, mechanical debridement of debris, high-volume irrigation, and trimming of devitalized wound edges. Loose closure with simple interrupted sutures. Cephalexin 500 mg four times daily for 7 days. Tdap administered.\n• Patient Education and Counseling: Elevation, limited weight bearing, keep dressing clean and dry. Lawn mower safety reviewed, including protective footwear.\n\n2. Type 2 diabetes mellitus.\n• Medical Reasoning: Well controlled. No neuropathy on exam.\n• Medical Treatment: Continue metformin 1000 mg twice daily. Monitor glucose closely during wound healing; call if above 200.\n\nPatient Agreements: The patient understands and agrees with the recommended medical treatment plan.\n\nWound check in 3 days. Suture removal in 10 to 14 days.",
+ "medical_concepts": [
+  {
+   "text": "i got into a fight with my lawn mower",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "doing yard work at my house , mowing the backyard",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "flower beds",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pushing the mower across the hill",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the grass was wet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "my right foot slid out from under me and went right under the edge of the mower deck",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a gas push mower",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "self-propelled",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "old sneakers",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the blade caught your foot through the shoe",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it cut right through the side of the sneaker",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the outside of my foot",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "toward the little toe",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "bleeding",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "washed it out with the hose",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "throbbing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "about a five",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "it hurts more when i walk on it",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness in the toes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "move all your toes",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "diabetes",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "type 2",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin , a thousand twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "sugars",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "one twenty",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "a1c",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "six point eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "feeling in your feet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "podiatrist",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "tetanus",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "dirty wound",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lateral aspect of your right foot",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "over the fifth metatarsal",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "a laceration that's about four centimeters long",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the edges are a little ragged",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "grass and dirt in it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it goes through the skin into the fat",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i do n't see any tendon or bone",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little redness right at the edges",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no spreading redness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no pus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulses in the foot are good",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "capillary refill is brisk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "monofilament",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "sensation is intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "x-ray of the foot",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "no fracture and no foreign body",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "laceration of the right foot from the lawn mower blade",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "infection",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "numb it up",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "scrub out all the grass and dirt",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "irrigate it really well",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "trim the ragged edges",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "close it loosely with a few stitches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "antibiotic",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cephalexin , five hundred milligrams four times a day for seven days",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus booster",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "over two hundred",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "elevated",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "dressing",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "mow it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "wear boots",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "wound check",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "stitches will come out",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "spreading redness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pus , fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right foot laceration",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "type 2 diabetes mellitus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "laceration to the right foot from a lawn mower",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "mowing the backyard of his home",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "gas-powered self-propelled push mower",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "While mowing across a wet slope near the flower beds",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "his right foot slipped under the edge of the mower deck",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the blade cut through his sneaker into the lateral aspect of the foot",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Bleeding was controlled",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "irrigated the wound with a garden hose",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "throbbing pain, rated 5/10",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "worse with weight bearing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness of the toes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "type 2 diabetes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin 1000 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Fasting glucose around 120",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "hemoglobin A1c 6.8%",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "No known peripheral neuropathy",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "annual podiatry exams",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Last tetanus",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right foot",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "4 cm laceration over the lateral foot",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fifth metatarsal",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "ragged edges",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "contaminated with grass and soil",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Extends to the subcutaneous tissue",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No exposed tendon or bone",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild edema and erythema limited to the wound margins",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No purulence or lymphangitic streaking",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Eversion strength intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Dorsalis pedis and posterior tibial pulses 2+",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Capillary refill brisk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Monofilament sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "X-ray of the right foot",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "No fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No radiopaque foreign body",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Laceration without foreign body of the right foot",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Contaminated laceration from a powered lawn mower blade",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "while mowing his yard",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "patient with diabetes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "infection risk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Local anesthesia",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "mechanical debridement of debris",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "high-volume irrigation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "trimming of devitalized wound edges",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Loose closure with simple interrupted sutures",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cephalexin 500 mg four times daily for 7 days",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tdap",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Elevation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "limited weight bearing",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lawn mower safety",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "protective footwear",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Type 2 diabetes mellitus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "No neuropathy on exam",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Continue metformin 1000 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Monitor glucose",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Wound check",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Suture removal",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "my wife",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic family role, not named"
+  },
+  {
+   "text": "the podiatrist",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic clinician role, not named"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S91.311A",
+   "spans": [
+    {
+     "text": "laceration of the right foot from the lawn mower blade",
+     "field": "dialogue"
+    },
+    {
+     "text": "a laceration that's about four centimeters long",
+     "field": "dialogue"
+    },
+    {
+     "text": "lateral aspect of your right foot",
+     "field": "dialogue"
+    },
+    {
+     "text": "no fracture and no foreign body",
+     "field": "dialogue"
+    },
+    {
+     "text": "Laceration without foreign body of the right foot",
+     "field": "note"
+    },
+    {
+     "text": "Right foot laceration",
+     "field": "note"
+    },
+    {
+     "text": "No radiopaque foreign body",
+     "field": "note"
+    },
+    {
+     "text": "4 cm laceration over the lateral foot",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W28.XXXA",
+   "spans": [
+    {
+     "text": "i got into a fight with my lawn mower",
+     "field": "dialogue"
+    },
+    {
+     "text": "a gas push mower",
+     "field": "dialogue"
+    },
+    {
+     "text": "my right foot slid out from under me and went right under the edge of the mower deck",
+     "field": "dialogue"
+    },
+    {
+     "text": "laceration of the right foot from the lawn mower blade",
+     "field": "dialogue"
+    },
+    {
+     "text": "gas-powered self-propelled push mower",
+     "field": "note"
+    },
+    {
+     "text": "Contaminated laceration from a powered lawn mower blade",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.017",
+   "spans": [
+    {
+     "text": "doing yard work at my house , mowing the backyard",
+     "field": "dialogue"
+    },
+    {
+     "text": "flower beds",
+     "field": "dialogue"
+    },
+    {
+     "text": "mowing the backyard of his home",
+     "field": "note"
+    },
+    {
+     "text": "while mowing his yard",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.H2",
+   "spans": [
+    {
+     "text": "doing yard work at my house , mowing the backyard",
+     "field": "dialogue"
+    },
+    {
+     "text": "pushing the mower across the hill",
+     "field": "dialogue"
+    },
+    {
+     "text": "mowing the backyard of his home",
+     "field": "note"
+    },
+    {
+     "text": "While mowing across a wet slope near the flower beds",
+     "field": "note"
+    },
+    {
+     "text": "while mowing his yard",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E11.9",
+   "spans": [
+    {
+     "text": "diabetes",
+     "field": "dialogue"
+    },
+    {
+     "text": "type 2",
+     "field": "dialogue"
+    },
+    {
+     "text": "metformin , a thousand twice a day",
+     "field": "dialogue"
+    },
+    {
+     "text": "a1c",
+     "field": "dialogue"
+    },
+    {
+     "text": "Type 2 diabetes mellitus",
+     "field": "note"
+    },
+    {
+     "text": "type 2 diabetes mellitus",
+     "field": "note"
+    },
+    {
+     "text": "hemoglobin A1c 6.8%",
+     "field": "note"
+    },
+    {
+     "text": "No neuropathy on exam",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "when i retired from the post office",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "former job (retired postal worker)"
+  }
+ ]
+}

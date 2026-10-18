@@ -1,0 +1,12 @@
+{
+  "encounter_id": "D2N077",
+  "phi": [
+    {"text": "diana", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "vacation", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "a trip"},
+    {"text": "Diana Scott", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "61-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "05/12/2022", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "vacation", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "trip"}
+  ],
+  "medical_concepts": []
+}

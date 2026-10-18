@@ -1,0 +1,21 @@
+{
+  "encounter_id": "D2N114",
+  "phi": [
+    {"text": "Julie", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "jog", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "run", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "running", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "new balance", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "running shoe"},
+    {"text": "asics", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "running shoes"},
+    {"text": "nike", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "another brand"},
+    {"text": "tumor guy", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "another brand"},
+    {"text": "white", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "Julie Jenkins", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "33-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "White", "field": "note", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "running", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "New Balance", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "running"},
+    {"text": "Asics", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "athletic"}
+  ],
+  "medical_concepts": []
+}

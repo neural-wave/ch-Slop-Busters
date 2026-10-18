@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N054",
+  "pii": [
+    {"field": "dialogue", "text": "elijah", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "landscapes warehouse", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "Elijah", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Reyes", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "45-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "dropped a landscape brick on your foot", "category": "CODE_EVIDENCE", "why": "W20.8XXA strike by falling object"},
+    {"field": "dialogue", "text": "yard work", "category": "CODE_EVIDENCE", "why": "context of W20.8XXA injury"},
+    {"field": "dialogue", "text": "lisfranc fracture", "category": "EPONYM", "why": "fracture type, not a person"},
+    {"field": "note", "text": "dropped a landscape brick on his right foot", "category": "CODE_EVIDENCE", "why": "W20.8XXA strike by falling object"},
+    {"field": "note", "text": "yard work", "category": "CODE_EVIDENCE", "why": "context of W20.8XXA injury"},
+    {"field": "note", "text": "Lisfranc fracture", "category": "EPONYM", "why": "fracture type, not a person"}
+  ]
+}

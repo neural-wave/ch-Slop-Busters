@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N072",
+  "phi": [
+    {"text": "brooks", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "sharon brooks", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "baker", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "48 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "skiing", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "doing a winter sport"},
+    {"text": "over the weekend", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "recently"},
+    {"text": "moguls", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "jumps"},
+    {"text": "mogul", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a bump"},
+    {"text": "sunday", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a weekend day"},
+    {"text": "18", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "Brooks", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "48-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "skiing", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "doing a winter sport"},
+    {"text": "Sunday", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "a weekend day"}
+  ],
+  "medical_concepts": []
+}

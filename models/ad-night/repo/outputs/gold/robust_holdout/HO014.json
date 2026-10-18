@@ -1,0 +1,409 @@
+{
+ "encounter_id": "HO014",
+ "pii": [
+  {
+   "field": "note",
+   "text": "Rietvallei District EMS",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Rietvallei comms",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "RV-2026-118734",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "EMC-0773-4410",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2026/10/17",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "RV-ILS-07",
+   "category": "ID",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Elsiesvlei",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Thandiwe",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Thandi",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Mahlangu",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "PEC 0098231",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Pieter-Jan",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "van der Merwe",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "BAA 0412776",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "MOKOENA",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Lucky",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Sipho",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "6911035123086",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "1969-11-03",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "56 yrs",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "14 Bloekom Ave",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Siyaphila Ext 3",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "7646",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Ubuntu Health Medical Scheme",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "UH 4471 0928 03",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Nomvula",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "082 555 0147",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Sentinel",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "security officer",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "night shift",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Gift",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Baloyi",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "021 555 0190",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Voortrekker Rd",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Sonderend St",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Mzansi Cash & Carry",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Hélène",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "du Toit",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "CAS 211/10/2026",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Precious",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Arendse",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "072 555 8820",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Tygerkloof Regional Hospital",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Jacobus",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Kobus",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "le Roux",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "MP 0661347",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Sr. M.",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Abrahams",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "55/2026",
+   "category": "ID",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "17 Oct 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "ops.rietvallei@rvems.co.za",
+   "category": "ID",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "note",
+   "text": "pedestrian",
+   "category": "CODE_EVIDENCE",
+   "why": "supports V03.10XA pedestrian injured in traffic"
+  },
+  {
+   "field": "note",
+   "text": "struck by a minibus taxi",
+   "category": "CODE_EVIDENCE",
+   "why": "supports V03.10XA collision with van in traffic"
+  },
+  {
+   "field": "note",
+   "text": "crossing the road on foot",
+   "category": "CODE_EVIDENCE",
+   "why": "supports V03.10XA pedestrian on foot"
+  },
+  {
+   "field": "note",
+   "text": "Battle's sign",
+   "category": "EPONYM",
+   "why": "clinical sign, not a name"
+  },
+  {
+   "field": "note",
+   "text": "Ringer's lactate",
+   "category": "EPONYM",
+   "why": "IV fluid"
+  },
+  {
+   "field": "note",
+   "text": "142/88",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure"
+  },
+  {
+   "field": "note",
+   "text": "13/15",
+   "category": "CLINICAL_NUMBER",
+   "why": "GCS"
+  },
+  {
+   "field": "note",
+   "text": "14/15",
+   "category": "CLINICAL_NUMBER",
+   "why": "GCS"
+  },
+  {
+   "field": "note",
+   "text": "9/10",
+   "category": "CLINICAL_NUMBER",
+   "why": "pain score"
+  },
+  {
+   "field": "note",
+   "text": "5/10",
+   "category": "CLINICAL_NUMBER",
+   "why": "pain score"
+  },
+  {
+   "field": "note",
+   "text": "15 L/min",
+   "category": "CLINICAL_NUMBER",
+   "why": "oxygen flow"
+  },
+  {
+   "field": "note",
+   "text": "walking home",
+   "category": "CODE_EVIDENCE",
+   "why": "supports V03.10XA pedestrian on foot"
+  },
+  {
+   "field": "note",
+   "text": "lay still for about a minute",
+   "category": "CODE_EVIDENCE",
+   "why": "supports S06.0X1A concussion with brief loss of consciousness"
+  },
+  {
+   "field": "note",
+   "text": "PEARL 3 mm",
+   "category": "NOT_A_NAME",
+   "why": "pupils equal and reactive to light, not the name Pearl"
+  },
+  {
+   "field": "note",
+   "text": "NEXUS positive",
+   "category": "NOT_A_NAME",
+   "why": "NEXUS C-spine criteria, not an organisation"
+  }
+ ]
+}

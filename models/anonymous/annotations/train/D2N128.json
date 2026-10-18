@@ -1,0 +1,12 @@
+{
+  "encounter_id": "D2N128",
+  "phi": [
+    {"text": "carolyn", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "49-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "in the office", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "at work"},
+    {"text": "Carolyn Garcia", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "49-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "in the office", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "at work"}
+  ],
+  "medical_concepts": []
+}

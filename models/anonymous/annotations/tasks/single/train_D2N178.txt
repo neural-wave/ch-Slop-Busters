@@ -1,0 +1,211 @@
+########## ENCOUNTER D2N178
+=== FIELD: dialogue
+[doctor] okay . maria martin , date of birth 03/05/1946 , has been informed and consents to have this visit recorded . the patient is here for follow-up .
+[doctor] hi , maria . how have you been doing ?
+[patient] same i guess . pretty good .
+[doctor] okay , so you got my letter last time on the results . your sugars are not very well controlled .
+[patient] yeah , i got them .
+[doctor] okay . so did you increase your glimepiride ?
+[patient] did i increase it ?
+[doctor] yeah .
+[patient] i'm still taking the two milligrams .
+[doctor] yeah . so we want you to , as the letter said , from the last time , when your a1c was 9.9 , we wanted you to increase it to four milligrams twice a day , so let's start that .
+[patient] okay , sure . so you want me to take two of the pills , now twice a day ?
+[doctor] yes . uh , how much of it do you have ?
+[patient] well , i just filled it .
+[doctor] okay , good . so yeah , you can take two of them twice a day , of what you have . the new prescription will be for four milligrams twice a day .
+[patient] okay .
+[doctor] great . and are you trying to eat healthier : less sugars , less carbohydrates ?
+[patient] uh , well ...
+[doctor] not really ?
+[patient] . well , i have n't had any pasta ; i just do n't really like it , so we do n't have any in the house . we do n't often have bread , and if we do , we buy wheat bread .
+[doctor] okay . but even the wheat bread , try to cut down on the number of slices you eat per day .
+[patient] i just usually have two in the morning . i do n't care for sandwiches much ; maybe peanut butter sandwiches once in a while .
+[doctor] yeah .
+[patient] i hardly drink , drink any sodas .
+[doctor] well , that's great .
+[patient] i drink club soda .
+[doctor] okay .
+[patient] seltzer water , that's what i prefer , so that's my water . i do n't drink regular water .
+[doctor] okay , that's fine . how about your eye exams ? are they up-to-date ?
+[patient] yep . i just got new glasses .
+[doctor] okay . who do you go see ?
+[patient] i go to liberty road , the group up there .
+[doctor] okay . the , um , the optimum optometrists , right ?
+[patient] they keep changing doctors each time i go .
+[doctor] a new doc each time ?
+[patient] yeah . i got a really nice one i used to see a year ago .
+[doctor] was that dr. sanchez ?
+[patient] yeah .
+[doctor] okay . and you saw him not too long ago ?
+[patient] yeah . i just got my prescription from him . well , see , i had the iodine for my eyes .
+[doctor] cataracts , yep , okay .
+[patient] so he did that and then i had to wait for a month to get healed up and then he wrote my prescription .
+[doctor] perfect . and then you've got the high blood pressure .
+[patient] yeah . a couple of weeks ago , it was 116 on the dot .
+[doctor] okay . well , we will recheck it . you're on a combination of medications . you are on the met- met- uh , metoprolol , 50 milligrams once a day , you're on the lisinopril with hydrochlorothiazide , at 20 , with 25 milligrams once a day , and you're on the amlodipine , 10 milligram once a day . are you taking all of those ?
+[patient] well , yeah .
+[doctor] perfect . and then you've got the high cholesterol and the vascular disease in your legs . you're on atorvastatin . are you tolerating it okay ?
+[patient] yeah , but honestly , my feet feel like hell .
+[doctor] yeah .
+[patient] all the time , my legs are bugging me ; i ca n't do much walking .
+[doctor] okay . yeah , the feet i think is what we call peripheral neuropathy .
+[patient] also , i have the pain up to my hip .
+[doctor] okay . you have pain in the hips and upper legs ?
+[patient] yeah , all of it .
+[doctor] okay . so those do seem relatively stable , right ? and are you trying to get the walking in ?
+[patient] yeah .
+[doctor] okay . and you are smoking still ?
+[patient] yeah , still smoking .
+[doctor] not ready to quit ?
+[patient] no , not really .
+[doctor] it's a bad combination .
+[patient] i know . i'll think about it .
+[doctor] okay . now , let's do my review of systems . you're not having any headaches or dizziness ?
+[patient] headaches or dizziness , no .
+[doctor] okay .
+[patient] nothing , feeling totally normal .
+[doctor] good , good . and the vision is better with the cataract surgery ? that's been good ?
+[patient] yeah . not happy with this lens ; it's kinda funny . the other one is good .
+[doctor] hmm , sometimes they can go in and clean up the eye with laser , but we'll see what they say .
+[patient] okay .
+[doctor] okay . no shortness of breath or coughing ?
+[patient] i've been coughing here lately because i've been congested .
+[doctor] what does it look like when it comes up ?
+[patient] it's relatively clear .
+[doctor] no fever , chills , no shortness of breath ?
+[patient] no .
+[doctor] okay . no chest pains or pressure or tightness ?
+[patient] no .
+[doctor] nausea , vomiting , gi symptoms ?
+[patient] no .
+[doctor] okay . peeing okay ?
+[patient] not good . it's , you know , i'm old ; it takes me a little more time .
+[doctor] slower stream but stable ?
+[patient] yes , but i do pee ...
+[doctor] okay .
+[patient] . several times per day .
+[doctor] mm-hmm . how many times do you have to get up at night ?
+[patient] not too bad , just once in a while .
+[doctor] okay .
+[patient] then i have to pee by morning . i do tend to drink my drinks in the evening .
+[doctor] okay . all right , let's have a look at you .
+[patient] okay .
+[doctor] physical exam : carotids are normal , pulse is no buits . heart exam : rhythm is regular , normal rate , s1 and s2 are crisp . i do not hear any murmurs today , okay . have you lean forward for me . take some deep breaths , in and out . okay , lungs are clear . i do n't hear any rasps or wheezing today .
+[patient] my coughing got better this morning .
+[doctor] you cleared out the lungs ? all right , let me take a look at your feet .
+[patient] okay .
+[doctor] okay . extremities are without edema . pulses are palpable on the dorsalis pedis posterial tibial . she has thickened nails .
+[patient] yeah .
+[doctor] yeah . mildly dry skin , no skin breakdown . l- let me know if you can feel this .
+[patient] okay . i closed my eyes . yeah , yeah , okay .
+[doctor] mildly decreased sensation in the tips of the first and second toes . okay , we're done with your exam .
+[patient] okay .
+[doctor] okay . so again , try to keep the feet moisturized .
+[patient] yeah .
+[doctor] you do have a little bit of periphe- peripheral neuropathy . um , there is a medication we can use if they get really bad , but you're already on so many medications .
+[patient] my girl that i talk to and stuff , she uses on her feet ; she really likes it . it's , like , a foot scrub or some type of cream . i put it on when i think of it after the shower . so i could get my own instead .
+[doctor] that sounds good . so for now , your sugars , we're gon na check your ... we're going to recheck your blood work today , but the sugars last time we checked , the a1c , your blood sugar average was above nine . i really want you to increase the glimepiride . so the ones you have at home , the two milligram , take two of them twice a day .
+[patient] okay .
+[doctor] okay . watch for low sugars , weak , shaky , sweaty . if that happens , let us know , and i do n't expect it to .
+[patient] okay .
+[doctor] okay . the new prescription that i'm going to write is gon na be for the , uh , four milligram pill . so when you get the new one , just one pill twice a day . also , continue the metformin , okay ? blood pressure , when i rechecked it , i got 140 over 60 s- so the numbers at home are better , so we're gon na continue the combination of medications . we'll check kidney function today .
+[doctor] for your cholesterol though , you're on the high dose of atorvastatin or lipitor to protect the arteries , so we really wan na keep you on that .
+[patient] yeah , no problem .
+[doctor] i want you to quit smoking , but we've had this battle before .
+[patient] yeah .
+[doctor] hmm . and then , we will leave everything else the same . we'll get the labs today and we'll see you back here in four months . sound good ?
+[patient] okay .
+[doctor] great . have a good day , ma'am . take care of yourself .
+[patient] thank you . you too .
+[doctor] bye .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow-up for diabetes management, hypertension, hyperlipidemia, peripheral vascular disease.
+
+HISTORY OF PRESENT ILLNESS
+
+Maria Martin is a 75-year-old female who presents today for follow-up for diabetes.
+
+The patient’s blood glucose levels are poorly controlled and her most recent hemoglobin A1C is 9.9%. She denies increasing glimepiride to 4 mg twice a day as advised but confirms she is compliant with 2 mg twice a day. She mostly denies reducing sugar and carbohydrate intake, although she opts for wheat bread, she does not have pasta at home, and she does not drink much soda and instead drinks club soda or seltzer water. She reports that her diabetic eye exams are up to date and she follows with Dr. Sanchez at Optimum Optometrists. She recently underwent cataract surgery and received a new prescription for her glasses, noting improvement in her vision to one eye and displeasure with the lens in her other eye.
+
+She confirms compliancy with her blood pressure medications of metoprolol 50 mg daily, lisinopril/hydrochlorothiazide 20/25 mg daily, and amlodipine 10 mg daily. The patient intermittently completes at home blood pressure checks and reported seeing a systolic BP of 116 a few weeks ago. She is also compliant with her atorvastatin for hyperlipidemia and reports tolerating it well.
+
+The patient is still experiencing bilateral hip, thigh, and foot pain related to peripheral neuropathy, noting her mobility is limited but she is walking as tolerated.
+
+Ms. Martin does continue to smoke cigarettes and denies interest in cessation, although she agreed to begin thinking about it.
+
+She is currently experiencing a productive cough with clear sputum that she attributes to her recent congestion.
+
+The patient is also experiencing a slower urine stream, but it appears stable, and she contributes her urinary symptoms to aging. She also has nocturia on occasion which she contributes to her increased fluid intake in the evenings.
+
+PAST HISTORY
+
+Medical
+Type 2 diabetes mellitus.
+Hypertension.
+Hyperlipidemia.
+Peripheral vascular disease with neuropathy.
+
+SOCIAL HISTORY
+
+Current tobacco smoker.
+
+CURRENT MEDICATIONS
+
+Metoprolol 50 mg tablet. Take 1 tablet daily.
+Lisinopril/hydrochlorothiazide 20/25 mg tablet. Take 1 tablet daily.
+Amlodipine 10 mg tablet. Take 1 tablet daily.
+Atorvastatin tablet.
+Metformin.
+Glimepiride 4mg tablet. Take 2 tablets by oral route 2 times per day.
+
+VITALS
+
+Blood pressure 140/60.
+
+PHYSICAL EXAM
+
+Respiratory
+No rasping, wheezing.
+
+Cardiovascular
+Normal heart rate and regular rhythm. Carotids and pulses are normal. S1 and S2 are crisp. No murmurs.
+
+Gastrointestinal
+No nausea or vomiting.
+
+Extremities
+Bilateral Diabetic Foot Exam: No edema with palpable dorsalis pedis and posterior tibial pulses bilaterally. No skin breakdown. Thickened nails.
+Sensory Examination: Mildly decreased sensation in the tips of the first and second toes bilaterally.
+
+RESULTS
+
+Hemoglobin A1C 9.9%.
+
+ASSESSMENT
+
+• Type 2 diabetes mellitus.
+• Hypertension.
+• Hyperlipidemia.
+• Peripheral vascular disease.
+
+PLAN
+
+Type 2 diabetes mellitus
+Increase glimepiride to 4 mg tablets two times per day. I counselled patient on the signs and symptoms of hypoglycemia, although I don’t think she is at a great risk of hypoglycemia. There will be no change to her metformin dose. I counselled the patient on limiting her carbohydrate intake to support improved glycemia. We will recheck her Hemoglobin A1c and complete a kidney function test today.
+
+Peripheral vascular disease
+I counselled patient on improving frequency of moisturizing her feet. Improved glycemia would also benefit her neuropathy. If symptoms worsen, we will consider medication to control symptoms, but not at this time due to the patient has already reached polypharmacy.
+
+Hypertension
+Blood pressure appears to be well controlled based on checks completed at home. The patient will continue with amlodipine, metoprolol, and lisinopril/hydrochlorothiazide.
+
+Hyperlipidemia
+I will continue with atorvastatin as previously prescribed. If patient were to improve her diet, this would likely be beneficial as well.
+
+INSTRUCTIONS
+
+Finish current prescription of glimepiride 2 mg, 2 tablets 2 times per day. Refill will be 4 mg tablet, 1 tablet 2 times per day. Reduce carbohydrate intake overall to improve glycemia. Call the office with questions or any signs or symptoms of hypoglycemia.
+

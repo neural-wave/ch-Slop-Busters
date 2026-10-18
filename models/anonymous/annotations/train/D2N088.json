@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N088",
+  "phi": [
+    {"text": "andrew", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "59-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "work out in the yard", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "physical work"},
+    {"text": "summer", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "season"},
+    {"text": "landscaping", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "yard work"},
+    {"text": "barre classes", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise classes"},
+    {"text": "saturday or sunday", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "weekend"},
+    {"text": "house parties", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "social gatherings"},
+    {"text": "Andrew Campbell", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "59-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "work out in the yard", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "physical work"},
+    {"text": "barre classes", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercise classes"},
+    {"text": "Saturdays and Sundays", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "weekends"},
+    {"text": "house parties", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "social gatherings"}
+  ],
+  "medical_concepts": []
+}

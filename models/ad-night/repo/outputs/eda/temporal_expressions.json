@@ -1,0 +1,3481 @@
+{
+ "inventory": {
+  "absolute_date_numeric": {
+   "hits": 194,
+   "dialogue": 75,
+   "note": 119,
+   "encounters": 38,
+   "by_dataset": {
+    "virtscribe": 183,
+    "aci": 11
+   },
+   "distinct_forms": 132,
+   "top_forms": [
+    [
+     "10/2020",
+     7
+    ],
+    [
+     "03/2021",
+     7
+    ],
+    [
+     "04/2021",
+     6
+    ],
+    [
+     "01/2021",
+     5
+    ],
+    [
+     "03/2020",
+     4
+    ],
+    [
+     "01/2020",
+     4
+    ],
+    [
+     "24/2021",
+     4
+    ],
+    [
+     "08/03/2020",
+     3
+    ],
+    [
+     "12/2019",
+     3
+    ],
+    [
+     "03/22/2021",
+     3
+    ],
+    [
+     "22/2021",
+     3
+    ],
+    [
+     "07/2021",
+     2
+    ]
+   ],
+   "examples": [
+    [
+     "D2N098",
+     "dialogue",
+     "mes . uh , date of birth «9/29/1957» . mr . james is a new pa"
+    ],
+    [
+     "D2N098",
+     "dialogue",
+     "s . uh , date of birth 9/«29/1957» . mr . james is a new pa"
+    ],
+    [
+     "D2N099",
+     "dialogue",
+     "ierrez . date of birth , «8/10/2020» . please use review of s"
+    ],
+    [
+     "D2N099",
+     "dialogue",
+     "rrez . date of birth , 8/«10/2020» . please use review of s"
+    ]
+   ]
+  },
+  "absolute_date_month_day_year": {
+   "hits": 18,
+   "dialogue": 18,
+   "note": 0,
+   "encounters": 11,
+   "by_dataset": {
+    "virtscribe": 18
+   },
+   "distinct_forms": 16,
+   "top_forms": [
+    [
+     "august 1st , 2020",
+     2
+    ],
+    [
+     "january 20th , 2020",
+     2
+    ],
+    [
+     "february 15th , 1979",
+     1
+    ],
+    [
+     "march 26 2001",
+     1
+    ],
+    [
+     "march 1st , 2021",
+     1
+    ],
+    [
+     "october 31st 1949",
+     1
+    ],
+    [
+     "january 1st , 1960",
+     1
+    ],
+    [
+     "january 13th , 1982",
+     1
+    ],
+    [
+     "january 15th 1962",
+     1
+    ],
+    [
+     "november 24th 2020",
+     1
+    ],
+    [
+     "september 9th , 2019",
+     1
+    ],
+    [
+     "january 15th , '21",
+     1
+    ]
+   ],
+   "examples": [
+    [
+     "D2N102",
+     "dialogue",
+     "y wood . date of birth , «february 15th , 1979» . established patient he"
+    ],
+    [
+     "D2N138",
+     "dialogue",
+     "nandez . date of birth , «march 26 2001» . this is a 20 year old "
+    ],
+    [
+     "D2N139",
+     "dialogue",
+     "his thyroid profile from «march 1st , 2021» . ⏎ [doctor] hello mr. rob"
+    ],
+    [
+     "D2N141",
+     "dialogue",
+     "surgery , excuse me , on «august 1st , 2020» . ⏎ [doctor] i have follow"
+    ]
+   ]
+  },
+  "absolute_month_day": {
+   "hits": 14,
+   "dialogue": 9,
+   "note": 5,
+   "encounters": 4,
+   "by_dataset": {
+    "virtscribe": 14
+   },
+   "distinct_forms": 11,
+   "top_forms": [
+    [
+     "may 17th",
+     2
+    ],
+    [
+     "june 14th",
+     2
+    ],
+    [
+     "april 16",
+     2
+    ],
+    [
+     "april 16th",
+     1
+    ],
+    [
+     "february 9th",
+     1
+    ],
+    [
+     "may 17",
+     1
+    ],
+    [
+     "june 14",
+     1
+    ],
+    [
+     "july 8th",
+     1
+    ],
+    [
+     "january 15th",
+     1
+    ],
+    [
+     "february 5th",
+     1
+    ],
+    [
+     "april 10th",
+     1
+    ]
+   ],
+   "examples": [
+    [
+     "D2N142",
+     "dialogue",
+     "lemia . at last visit on «april 16th» her blood pressure was 1"
+    ],
+    [
+     "D2N142",
+     "dialogue",
+     "ine ? ⏎ [patient] yes , on «february 9th» . ⏎ [doctor] okay , great "
+    ],
+    [
+     "D2N142",
+     "dialogue",
+     "ve you coming back in on «may 17th» for your first shot , do"
+    ],
+    [
+     "D2N142",
+     "dialogue",
+     "ctable form and start on «may 17th» . we reviewed side effec"
+    ]
+   ]
+  },
+  "absolute_month_year": {
+   "hits": 12,
+   "dialogue": 9,
+   "note": 3,
+   "encounters": 5,
+   "by_dataset": {
+    "virtscribe": 12
+   },
+   "distinct_forms": 11,
+   "top_forms": [
+    [
+     "june 2020",
+     2
+    ],
+    [
+     "april 2020",
+     1
+    ],
+    [
+     "august of 2019",
+     1
+    ],
+    [
+     "august 2019",
+     1
+    ],
+    [
+     "may of 2020",
+     1
+    ],
+    [
+     "may 2020",
+     1
+    ],
+    [
+     "october 2019",
+     1
+    ],
+    [
+     "january 2021",
+     1
+    ],
+    [
+     "january , 2021",
+     1
+    ],
+    [
+     "april of 2022",
+     1
+    ],
+    [
+     "february 2020",
+     1
+    ]
+   ],
+   "examples": [
+    [
+     "D2N138",
+     "dialogue",
+     "st office appointment in «april 2020» , she was switched from "
+    ],
+    [
+     "D2N140",
+     "dialogue",
+     "ale who was last seen in «august of 2019» with flares of abdominal"
+    ],
+    [
+     "D2N140",
+     "note",
+     "Edwards was last seen in «August 2019» with flares of abdominal"
+    ],
+    [
+     "D2N141",
+     "dialogue",
+     "llowed mr . watson since «may of 2020» when he first presented "
+    ]
+   ]
+  },
+  "year_only": {
+   "hits": 99,
+   "dialogue": 57,
+   "note": 42,
+   "encounters": 25,
+   "by_dataset": {
+    "virtscribe": 70,
+    "aci": 29
+   },
+   "distinct_forms": 35,
+   "top_forms": [
+    [
+     "2020",
+     14
+    ],
+    [
+     "2018",
+     12
+    ],
+    [
+     "2019",
+     11
+    ],
+    [
+     "in 2018",
+     11
+    ],
+    [
+     "in 2019",
+     4
+    ],
+    [
+     "2021",
+     4
+    ],
+    [
+     "2000",
+     4
+    ],
+    [
+     "2022",
+     3
+    ],
+    [
+     "1996",
+     3
+    ],
+    [
+     "2009",
+     3
+    ],
+    [
+     "spring of 2022",
+     2
+    ],
+    [
+     "of 2020",
+     2
+    ]
+   ],
+   "examples": [
+    [
+     "D2N102",
+     "dialogue",
+     " birth , february 15th , «1979» . established patient he"
+    ],
+    [
+     "D2N104",
+     "dialogue",
+     " date of birth , 5 , 7 , «1961» . she's in office today "
+    ],
+    [
+     "D2N138",
+     "dialogue",
+     "ing to be enlisted early «spring of 2022» . so that gives me about"
+    ],
+    [
+     "D2N138",
+     "dialogue",
+     " last completed the test «in 2019» , uh , do you recall if "
+    ]
+   ]
+  },
+  "month_only": {
+   "hits": 48,
+   "dialogue": 41,
+   "note": 7,
+   "encounters": 22,
+   "by_dataset": {
+    "virtscribe": 39,
+    "aci": 9
+   },
+   "distinct_forms": 18,
+   "top_forms": [
+    [
+     "in march",
+     10
+    ],
+    [
+     "in april",
+     6
+    ],
+    [
+     "of june",
+     5
+    ],
+    [
+     "in november",
+     5
+    ],
+    [
+     "in february",
+     3
+    ],
+    [
+     "last december",
+     3
+    ],
+    [
+     "in january",
+     3
+    ],
+    [
+     "this may",
+     2
+    ],
+    [
+     "in july",
+     2
+    ],
+    [
+     "until july",
+     1
+    ],
+    [
+     "in august",
+     1
+    ],
+    [
+     "since may",
+     1
+    ]
+   ],
+   "examples": [
+    [
+     "D2N101",
+     "dialogue",
+     "ay . so we may just wait «until july» to submit for approval a"
+    ],
+    [
+     "D2N124",
+     "dialogue",
+     "xt season that starts in «in april» and we were at the court"
+    ],
+    [
+     "D2N124",
+     "dialogue",
+     "great ⏎ [patient] starting «in april» so ⏎ [doctor] alright well"
+    ],
+    [
+     "D2N127",
+     "dialogue",
+     "y back hurt but that was «in february» ⏎ [doctor] okay alright so"
+    ]
+   ]
+  },
+  "season_holiday": {
+   "hits": 117,
+   "dialogue": 83,
+   "note": 34,
+   "encounters": 44,
+   "by_dataset": {
+    "virtassist": 50,
+    "virtscribe": 30,
+    "aci": 37
+   },
+   "distinct_forms": 13,
+   "top_forms": [
+    [
+     "summer",
+     43
+    ],
+    [
+     "spring",
+     23
+    ],
+    [
+     "the holidays",
+     9
+    ],
+    [
+     "winter",
+     9
+    ],
+    [
+     "in the fall",
+     7
+    ],
+    [
+     "easter",
+     7
+    ],
+    [
+     "super bowl",
+     4
+    ],
+    [
+     "thanksgiving",
+     4
+    ],
+    [
+     "the fall",
+     4
+    ],
+    [
+     "labor day",
+     3
+    ],
+    [
+     "halloween",
+     2
+    ],
+    [
+     "holiday weekend",
+     1
+    ]
+   ],
+   "examples": [
+    [
+     "D2N088",
+     "dialogue",
+     "s much at the end of the «summer» and i think i caught my "
+    ],
+    [
+     "D2N091",
+     "dialogue",
+     "been kind of a stressful «summer» . kinda adjusting to eve"
+    ],
+    [
+     "D2N091",
+     "dialogue",
+     " adjusting to everything «in the fall» and so far it's been goo"
+    ],
+    [
+     "D2N091",
+     "note",
+     " it has been a stressful «summer» and adjusting to everyth"
+    ]
+   ]
+  },
+  "weekday": {
+   "hits": 59,
+   "dialogue": 43,
+   "note": 16,
+   "encounters": 23,
+   "by_dataset": {
+    "virtassist": 30,
+    "virtscribe": 16,
+    "aci": 13
+   },
+   "distinct_forms": 10,
+   "top_forms": [
+    [
+     "saturday",
+     18
+    ],
+    [
+     "monday",
+     12
+    ],
+    [
+     "sunday",
+     9
+    ],
+    [
+     "sundays",
+     5
+    ],
+    [
+     "saturdays",
+     4
+    ],
+    [
+     "friday",
+     4
+    ],
+    [
+     "thursday",
+     4
+    ],
+    [
+     "wednesday",
+     1
+    ],
+    [
+     "tuesday",
+     1
+    ],
+    [
+     "fridays",
+     1
+    ]
+   ],
+   "examples": [
+    [
+     "D2N088",
+     "dialogue",
+     "h , not so , uh , if its «saturday» or sunday i usually don'"
+    ],
+    [
+     "D2N088",
+     "dialogue",
+     " uh , if its saturday or «sunday» i usually don't remember"
+    ],
+    [
+     "D2N088",
+     "dialogue",
+     "itoring it, but if its a «saturday» or sunday, not so much ."
+    ],
+    [
+     "D2N088",
+     "dialogue",
+     "but if its a saturday or «sunday», not so much . but , uh "
+    ]
+   ]
+  },
+  "clock_time": {
+   "hits": 7,
+   "dialogue": 4,
+   "note": 3,
+   "encounters": 4,
+   "by_dataset": {
+    "virtscribe": 5,
+    "virtassist": 2
+   },
+   "distinct_forms": 7,
+   "top_forms": [
+    [
+     "00:09:25",
+     1
+    ],
+    [
+     "5:00 ",
+     1
+    ],
+    [
+     "5 a.m",
+     1
+    ],
+    [
+     "2:00 am",
+     1
+    ],
+    [
+     "00 am",
+     1
+    ],
+    [
+     "7:00",
+     1
+    ],
+    [
+     "5:45 ",
+     1
+    ]
+   ],
+   "examples": [
+    [
+     "D2N138",
+     "dialogue",
+     "u're getting ⏎ [ inaudible «00:09:25» ] sick having issues eve"
+    ],
+    [
+     "D2N172",
+     "dialogue",
+     "usually wake up at about «5:00 »in the morning . ⏎ [doctor]"
+    ],
+    [
+     "D2N172",
+     "note",
+     "ccasionally waking up at «5 a.m». Denies thoughts of self"
+    ],
+    [
+     "D2N026",
+     "note",
+     "eeks ago. He woke around «2:00 am» with intense pain in his"
+    ]
+   ]
+  },
+  "time_of_day": {
+   "hits": 264,
+   "dialogue": 196,
+   "note": 68,
+   "encounters": 86,
+   "by_dataset": {
+    "virtassist": 38,
+    "virtscribe": 78,
+    "aci": 148
+   },
+   "distinct_forms": 18,
+   "top_forms": [
+    [
+     "at night",
+     76
+    ],
+    [
+     "in the morning",
+     76
+    ],
+    [
+     "this morning",
+     24
+    ],
+    [
+     "last night",
+     23
+    ],
+    [
+     "in the evening",
+     16
+    ],
+    [
+     "first thing",
+     16
+    ],
+    [
+     "overnight",
+     7
+    ],
+    [
+     "in the afternoon",
+     6
+    ],
+    [
+     "breakfast",
+     4
+    ],
+    [
+     "this afternoon",
+     4
+    ],
+    [
+     "at bedtime",
+     3
+    ],
+    [
+     "lunchtime",
+     2
+    ]
+   ],
+   "examples": [
+    [
+     "D2N090",
+     "dialogue",
+     "time to relax , at least «in the afternoon» , then , then it seems t"
+    ],
+    [
+     "D2N090",
+     "dialogue",
+     " your lantus to 20 units «at night» . okay ? i want you to c"
+    ],
+    [
+     "D2N090",
+     "note",
+     "continues Lantus insulin «at bedtime». ⏎  ⏎ Regarding his kidney t"
+    ],
+    [
+     "D2N090",
+     "note",
+     "finds some time to relax «in the afternoon» and then it seems to wor"
+    ]
+   ]
+  },
+  "relative_ago": {
+   "hits": 284,
+   "dialogue": 172,
+   "note": 112,
+   "encounters": 118,
+   "by_dataset": {
+    "virtassist": 102,
+    "virtscribe": 45,
+    "aci": 137
+   },
+   "distinct_forms": 87,
+   "top_forms": [
+    [
+     "a week ago",
+     16
+    ],
+    [
+     "two years ago",
+     11
+    ],
+    [
+     "three months ago",
+     11
+    ],
+    [
+     "six months ago",
+     10
+    ],
+    [
+     "a year ago",
+     10
+    ],
+    [
+     "2 years ago",
+     9
+    ],
+    [
+     "a few years ago",
+     9
+    ],
+    [
+     "years ago",
+     8
+    ],
+    [
+     "a couple of weeks ago",
+     8
+    ],
+    [
+     "1 week ago",
+     7
+    ],
+    [
+     "6 months ago",
+     7
+    ],
+    [
+     "2 months ago",
+     5
+    ]
+   ],
+   "examples": [
+    [
+     "D2N089",
+     "dialogue",
+     "last one i had was about «a week ago» . i've noticed that when"
+    ],
+    [
+     "D2N089",
+     "note",
+     "pisode she had was about «1 week ago». She has noticed that wh"
+    ],
+    [
+     "D2N089",
+     "note",
+     "recent episode was about «1 week ago». She is in normal sinus "
+    ],
+    [
+     "D2N090",
+     "dialogue",
+     "aw dr. reyes , was about «three weeks ago» , and everything seemed "
+    ]
+   ]
+  },
+  "relative_last_next": {
+   "hits": 2501,
+   "dialogue": 1698,
+   "note": 803,
+   "encounters": 206,
+   "by_dataset": {
+    "virtassist": 503,
+    "virtscribe": 559,
+    "aci": 1439
+   },
+   "distinct_forms": 87,
+   "top_forms": [
+    [
+     "now",
+     852
+    ],
+    [
+     "today",
+     748
+    ],
+    [
+     "at this time",
+     111
+    ],
+    [
+     "recently",
+     87
+    ],
+    [
+     "currently",
+     86
+    ],
+    [
+     "lately",
+     57
+    ],
+    [
+     "last time",
+     53
+    ],
+    [
+     "last year",
+     49
+    ],
+    [
+     "at this point",
+     42
+    ],
+    [
+     "last week",
+     37
+    ],
+    [
+     "yesterday",
+     37
+    ],
+    [
+     "last visit",
+     29
+    ]
+   ],
+   "examples": [
+    [
+     "D2N088",
+     "dialogue",
+     "k out in the yard in the «last week» or so and i started to f"
+    ],
+    [
+     "D2N088",
+     "dialogue",
+     "ypertension who presents «today» with an upper respirator"
+    ],
+    [
+     "D2N088",
+     "dialogue",
+     " okay . all right . um , «now» , have you had your covi"
+    ],
+    [
+     "D2N088",
+     "note",
+     "k out in the yard in the «last week» or so. He started to fee"
+    ]
+   ]
+  },
+  "duration": {
+   "hits": 897,
+   "dialogue": 573,
+   "note": 324,
+   "encounters": 192,
+   "by_dataset": {
+    "virtassist": 186,
+    "virtscribe": 202,
+    "aci": 509
+   },
+   "distinct_forms": 386,
+   "top_forms": [
+    [
+     "in two weeks",
+     37
+    ],
+    [
+     "in 2 weeks",
+     33
+    ],
+    [
+     "about a week",
+     30
+    ],
+    [
+     "about a month",
+     17
+    ],
+    [
+     "about six months",
+     13
+    ],
+    [
+     "in three months",
+     13
+    ],
+    [
+     "every 6 hours",
+     13
+    ],
+    [
+     "every six hours",
+     12
+    ],
+    [
+     "in 1 month",
+     11
+    ],
+    [
+     "about two years",
+     11
+    ],
+    [
+     "about an hour",
+     11
+    ],
+    [
+     "about a year",
+     10
+    ]
+   ],
+   "examples": [
+    [
+     "D2N088",
+     "dialogue",
+     "know , this will resolve «in a couple of days» . i do n't think you hav"
+    ],
+    [
+     "D2N088",
+     "dialogue",
+     "- another hemoglobin a1c «in four months» , okay ? ⏎ [patient] okay "
+    ],
+    [
+     "D2N088",
+     "dialogue",
+     "want to see you again in «about four months» . ⏎ [patient] okay . ⏎ [doct"
+    ],
+    [
+     "D2N088",
+     "note",
+     " repeat a hemoglobin A1c «in 4 months». ⏎ • Medical Treatment: We"
+    ]
+   ]
+  },
+  "frequency": {
+   "hits": 1389,
+   "dialogue": 729,
+   "note": 660,
+   "encounters": 196,
+   "by_dataset": {
+    "virtassist": 344,
+    "virtscribe": 324,
+    "aci": 721
+   },
+   "distinct_forms": 74,
+   "top_forms": [
+    [
+     "daily",
+     198
+    ],
+    [
+     "once ",
+     163
+    ],
+    [
+     "daily ",
+     157
+    ],
+    [
+     "twice a day",
+     137
+    ],
+    [
+     "once a day",
+     122
+    ],
+    [
+     "every ",
+     115
+    ],
+    [
+     "as needed ",
+     63
+    ],
+    [
+     "twice ",
+     59
+    ],
+    [
+     "as needed",
+     42
+    ],
+    [
+     "everyday",
+     35
+    ],
+    [
+     "every day",
+     33
+    ],
+    [
+     "once a week",
+     22
+    ]
+   ],
+   "examples": [
+    [
+     "D2N088",
+     "dialogue",
+     "min to 1000 milligrams , «twice »daily . ⏎ [patient] mm-hmm "
+    ],
+    [
+     "D2N088",
+     "dialogue",
+     " 1000 milligrams , twice «daily» . ⏎ [patient] mm-hmm . ⏎ [do"
+    ],
+    [
+     "D2N088",
+     "dialogue",
+     "sinopril , 20 milligrams «daily» . ⏎ [doctor] so , the nurs"
+    ],
+    [
+     "D2N088",
+     "note",
+     "tilize lisinopril 20 mg, «daily». ⏎  ⏎ The patient denies nau"
+    ]
+   ]
+  },
+  "age_exact": {
+   "hits": 367,
+   "dialogue": 129,
+   "note": 238,
+   "encounters": 174,
+   "by_dataset": {
+    "virtassist": 155,
+    "virtscribe": 104,
+    "aci": 108
+   },
+   "distinct_forms": 143,
+   "top_forms": [
+    [
+     "62-year-old",
+     17
+    ],
+    [
+     "58-year-old",
+     14
+    ],
+    [
+     "57-year-old",
+     12
+    ],
+    [
+     "50-year-old",
+     12
+    ],
+    [
+     "61-year-old",
+     11
+    ],
+    [
+     "52-year-old",
+     10
+    ],
+    [
+     "56-year-old",
+     10
+    ],
+    [
+     "44-year-old",
+     9
+    ],
+    [
+     "39-year-old",
+     9
+    ],
+    [
+     "59-year-old",
+     8
+    ],
+    [
+     "40-year-old",
+     8
+    ],
+    [
+     "33-year-old",
+     7
+    ]
+   ],
+   "examples": [
+    [
+     "D2N088",
+     "dialogue",
+     "r] uh , so , andrew is a «59-year-old» male with a past medical"
+    ],
+    [
+     "D2N088",
+     "note",
+     "SS ⏎  ⏎ Andrew Campbell is a «59-year-old» male with a past medical"
+    ],
+    [
+     "D2N088",
+     "note",
+     "AN ⏎  ⏎ Andrew Campbell is a «59-year-old» male with a past medical"
+    ],
+    [
+     "D2N089",
+     "dialogue",
+     "doctor] so , andrea is a «52-year-old» female with a past medic"
+    ]
+   ]
+  },
+  "age_bucket_or_lifestage": {
+   "hits": 32,
+   "dialogue": 19,
+   "note": 13,
+   "encounters": 17,
+   "by_dataset": {
+    "virtscribe": 15,
+    "aci": 16,
+    "virtassist": 1
+   },
+   "distinct_forms": 19,
+   "top_forms": [
+    [
+     "elderly",
+     4
+    ],
+    [
+     "when i was younger",
+     4
+    ],
+    [
+     "when he was younger",
+     3
+    ],
+    [
+     "in his 40s",
+     3
+    ],
+    [
+     "as a child",
+     2
+    ],
+    [
+     "newborn",
+     2
+    ],
+    [
+     "menopause",
+     2
+    ],
+    [
+     "teenager",
+     1
+    ],
+    [
+     "when she was a teenager",
+     1
+    ],
+    [
+     "since high school",
+     1
+    ],
+    [
+     "when i was young",
+     1
+    ],
+    [
+     "in their mid-twenties",
+     1
+    ]
+   ],
+   "examples": [
+    [
+     "D2N105",
+     "dialogue",
+     "al exam , constitutional «elderly» otherwise no acute distr"
+    ],
+    [
+     "D2N105",
+     "note",
+     "CAL EXAM ⏎  ⏎ Constitutional ⏎ «Elderly», no acute distress. ⏎  ⏎ Car"
+    ],
+    [
+     "D2N114",
+     "dialogue",
+     "s now ever since i was a «teenager» and they used to be arou"
+    ],
+    [
+     "D2N114",
+     "note",
+     "t of her headaches began «when she was a teenager». Initially, her headache"
+    ]
+   ]
+  },
+  "pregnancy_timing": {
+   "hits": 0,
+   "dialogue": 0,
+   "note": 0,
+   "encounters": 0,
+   "by_dataset": {},
+   "distinct_forms": 0,
+   "top_forms": [],
+   "examples": []
+  },
+  "era_anchor": {
+   "hits": 12,
+   "dialogue": 10,
+   "note": 2,
+   "encounters": 10,
+   "by_dataset": {
+    "virtscribe": 3,
+    "aci": 9
+   },
+   "distinct_forms": 8,
+   "top_forms": [
+    [
+     "during the pandemic",
+     3
+    ],
+    [
+     "with covid",
+     2
+    ],
+    [
+     "during the covid-19",
+     2
+    ],
+    [
+     "during smoke season",
+     1
+    ],
+    [
+     "with the pandemic",
+     1
+    ],
+    [
+     "after the pandemic",
+     1
+    ],
+    [
+     "since the pandemic",
+     1
+    ],
+    [
+     "during covid",
+     1
+    ]
+   ],
+   "examples": [
+    [
+     "D2N138",
+     "dialogue",
+     "when you're ill , or say «during smoke season» . so minimizing their us"
+    ],
+    [
+     "D2N160",
+     "dialogue",
+     "efore and you said kinda «during the pandemic» you fell off a little bi"
+    ],
+    [
+     "D2N160",
+     "dialogue",
+     "h i know a lot of people «during the pandemic» it was you know sitting "
+    ],
+    [
+     "D2N182",
+     "dialogue",
+     "t's what's gon na happen «with covid» . that's what's mo- most"
+    ]
+   ]
+  }
+ },
+ "code_dependencies": {
+  "severity / stage / acuity (needs timing or numbers)": [
+   [
+    "J06.9",
+    "Acute upper respiratory infection, unspecified",
+    [
+     "D2N088"
+    ]
+   ],
+   [
+    "J45.909",
+    "Unspecified asthma, uncomplicated",
+    [
+     "D2N106",
+     "D2N158",
+     "D2N059"
+    ]
+   ],
+   [
+    "J45.21",
+    "Mild intermittent asthma with (acute) exacerbation",
+    [
+     "D2N117"
+    ]
+   ],
+   [
+    "J45.20",
+    "Mild intermittent asthma, uncomplicated",
+    [
+     "D2N119"
+    ]
+   ],
+   [
+    "K27.9",
+    "Peptic ulcer, site unspecified, unspecified as acute or chronic, without hemorrhage or perforation",
+    [
+     "D2N130"
+    ]
+   ],
+   [
+    "G89.29",
+    "Other chronic pain",
+    [
+     "D2N133",
+     "D2N007",
+     "D2N015"
+    ]
+   ],
+   [
+    "J45.40",
+    "Moderate persistent asthma, uncomplicated",
+    [
+     "D2N138"
+    ]
+   ],
+   [
+    "G31.84",
+    "Mild cognitive impairment of uncertain or unknown etiology",
+    [
+     "D2N141"
+    ]
+   ],
+   [
+    "F10.90",
+    "Alcohol use, unspecified, uncomplicated",
+    [
+     "D2N142"
+    ]
+   ],
+   [
+    "K80.00",
+    "Calculus of gallbladder with acute cholecystitis without obstruction",
+    [
+     "D2N146"
+    ]
+   ],
+   [
+    "I50.21",
+    "Acute systolic (congestive) heart failure",
+    [
+     "D2N156",
+     "D2N068"
+    ]
+   ],
+   [
+    "N18.30",
+    "Chronic kidney disease, stage 3 unspecified",
+    [
+     "D2N157",
+     "D2N161",
+     "D2N207"
+    ]
+   ],
+   [
+    "E11.22",
+    "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+    [
+     "D2N157"
+    ]
+   ],
+   [
+    "I13.0",
+    "Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+    [
+     "D2N161"
+    ]
+   ],
+   [
+    "J44.9",
+    "Chronic obstructive pulmonary disease, unspecified",
+    [
+     "D2N170",
+     "D2N015"
+    ]
+   ],
+   [
+    "J70.0",
+    "Acute pulmonary manifestations due to radiation",
+    [
+     "D2N205",
+     "D2N081"
+    ]
+   ],
+   [
+    "L97.419",
+    "Non-pressure chronic ulcer of right heel and midfoot with unspecified severity",
+    [
+     "D2N086"
+    ]
+   ],
+   [
+    "J45.901",
+    "Unspecified asthma with (acute) exacerbation",
+    [
+     "D2N012"
+    ]
+   ],
+   [
+    "I50.42",
+    "Chronic combined systolic (congestive) and diastolic (congestive) heart failure",
+    [
+     "D2N025"
+    ]
+   ],
+   [
+    "B17.1",
+    "Acute hepatitis C",
+    [
+     "D2N038"
+    ]
+   ],
+   [
+    "J02.9",
+    "Acute pharyngitis, unspecified",
+    [
+     "D2N041"
+    ]
+   ],
+   [
+    "F17.200",
+    "Nicotine dependence, unspecified, uncomplicated",
+    [
+     "D2N043"
+    ]
+   ],
+   [
+    "L97.519",
+    "Non-pressure chronic ulcer of other part of right foot with unspecified severity",
+    [
+     "D2N051"
+    ]
+   ]
+  ],
+  "unspecified (laterality/severity not needed)": [
+   [
+    "J06.9",
+    "Acute upper respiratory infection, unspecified",
+    [
+     "D2N088"
+    ]
+   ],
+   [
+    "F32.A",
+    "Depression, unspecified",
+    [
+     "D2N088",
+     "D2N090",
+     "D2N093",
+     "D2N097",
+     "D2N130",
+     "D2N133",
+     "D2N137",
+     "D2N157",
+     "D2N168",
+     "D2N172",
+     "D2N177",
+     "D2N071",
+     "D2N001",
+     "D2N007",
+     "D2N012",
+     "D2N015",
+     "D2N016"
+    ]
+   ],
+   [
+    "M06.9",
+    "Rheumatoid arthritis, unspecified",
+    [
+     "D2N089",
+     "D2N122",
+     "D2N144"
+    ]
+   ],
+   [
+    "I48.91",
+    "Unspecified atrial fibrillation",
+    [
+     "D2N089",
+     "D2N135"
+    ]
+   ],
+   [
+    "S63.501A",
+    "Unspecified sprain of right wrist, initial encounter",
+    [
+     "D2N092"
+    ]
+   ],
+   [
+    "I50.9",
+    "Heart failure, unspecified",
+    [
+     "D2N093",
+     "D2N161",
+     "D2N170",
+     "D2N207",
+     "D2N084",
+     "D2N001",
+     "D2N004",
+     "D2N008",
+     "D2N014",
+     "D2N035"
+    ]
+   ],
+   [
+    "M54.9",
+    "Dorsalgia, unspecified",
+    [
+     "D2N095",
+     "D2N007"
+    ]
+   ],
+   [
+    "B34.9",
+    "Viral infection, unspecified",
+    [
+     "D2N099"
+    ]
+   ],
+   [
+    "R31.9",
+    "Hematuria, unspecified",
+    [
+     "D2N102"
+    ]
+   ],
+   [
+    "L40.50",
+    "Arthropathic psoriasis, unspecified",
+    [
+     "D2N104"
+    ]
+   ],
+   [
+    "R01.1",
+    "Cardiac murmur, unspecified",
+    [
+     "D2N105",
+     "D2N084"
+    ]
+   ],
+   [
+    "E78.5",
+    "Hyperlipidemia, unspecified",
+    [
+     "D2N105",
+     "D2N178",
+     "D2N196"
+    ]
+   ],
+   [
+    "E03.9",
+    "Hypothyroidism, unspecified",
+    [
+     "D2N105",
+     "D2N002",
+     "D2N021"
+    ]
+   ],
+   [
+    "J45.909",
+    "Unspecified asthma, uncomplicated",
+    [
+     "D2N106",
+     "D2N158",
+     "D2N059"
+    ]
+   ],
+   [
+    "B19.20",
+    "Unspecified viral hepatitis C without hepatic coma",
+    [
+     "D2N113"
+    ]
+   ],
+   [
+    "R51.9",
+    "Headache, unspecified",
+    [
+     "D2N114"
+    ]
+   ],
+   [
+    "G47.00",
+    "Insomnia, unspecified",
+    [
+     "D2N118"
+    ]
+   ],
+   [
+    "R13.10",
+    "Dysphagia, unspecified",
+    [
+     "D2N123",
+     "D2N205",
+     "D2N081"
+    ]
+   ],
+   [
+    "S13.9XXD",
+    "Sprain of joints and ligaments of unspecified parts of neck, subsequent encounter",
+    [
+     "D2N127"
+    ]
+   ],
+   [
+    "M10.9",
+    "Gout, unspecified",
+    [
+     "D2N128",
+     "D2N006"
+    ]
+   ],
+   [
+    "L40.9",
+    "Psoriasis, unspecified",
+    [
+     "D2N128"
+    ]
+   ],
+   [
+    "G40.909",
+    "Epilepsy, unspecified, not intractable, without status epilepticus",
+    [
+     "D2N130",
+     "D2N013"
+    ]
+   ],
+   [
+    "K27.9",
+    "Peptic ulcer, site unspecified, unspecified as acute or chronic, without hemorrhage or perforation",
+    [
+     "D2N130"
+    ]
+   ],
+   [
+    "G56.00",
+    "Carpal tunnel syndrome, unspecified upper limb",
+    [
+     "D2N133"
+    ]
+   ],
+   [
+    "A69.20",
+    "Lyme disease, unspecified",
+    [
+     "D2N134"
+    ]
+   ],
+   [
+    "S83.92XA",
+    "Sprain of unspecified site of left knee, initial encounter",
+    [
+     "D2N136"
+    ]
+   ],
+   [
+    "J30.9",
+    "Allergic rhinitis, unspecified",
+    [
+     "D2N138"
+    ]
+   ],
+   [
+    "K58.9",
+    "Irritable bowel syndrome, unspecified",
+    [
+     "D2N140"
+    ]
+   ],
+   [
+    "G91.9",
+    "Hydrocephalus, unspecified",
+    [
+     "D2N141"
+    ]
+   ],
+   [
+    "F10.90",
+    "Alcohol use, unspecified, uncomplicated",
+    [
+     "D2N142"
+    ]
+   ],
+   [
+    "E78.00",
+    "Pure hypercholesterolemia, unspecified",
+    [
+     "D2N142",
+     "D2N163",
+     "D2N173"
+    ]
+   ],
+   [
+    "M54.50",
+    "Low back pain, unspecified",
+    [
+     "D2N148",
+     "D2N152",
+     "D2N186",
+     "D2N015",
+     "D2N063",
+     "D2N066"
+    ]
+   ],
+   [
+    "N18.30",
+    "Chronic kidney disease, stage 3 unspecified",
+    [
+     "D2N157",
+     "D2N161",
+     "D2N207"
+    ]
+   ],
+   [
+    "R10.9",
+    "Unspecified abdominal pain",
+    [
+     "D2N158"
+    ]
+   ],
+   [
+    "I13.0",
+    "Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+    [
+     "D2N161"
+    ]
+   ],
+   [
+    "S93.401A",
+    "Sprain of unspecified ligament of right ankle, initial encounter",
+    [
+     "D2N162",
+     "D2N188",
+     "D2N065"
+    ]
+   ],
+   [
+    "R07.9",
+    "Chest pain, unspecified",
+    [
+     "D2N164",
+     "D2N011"
+    ]
+   ],
+   [
+    "G43.909",
+    "Migraine, unspecified, not intractable, without status migrainosus",
+    [
+     "D2N169",
+     "D2N192",
+     "D2N003"
+    ]
+   ],
+   [
+    "R79.9",
+    "Abnormal finding of blood chemistry, unspecified",
+    [
+     "D2N170"
+    ]
+   ],
+   [
+    "J44.9",
+    "Chronic obstructive pulmonary disease, unspecified",
+    [
+     "D2N170",
+     "D2N015"
+    ]
+   ],
+   [
+    "M51.9",
+    "Unspecified thoracic, thoracolumbar and lumbosacral intervertebral disc disorder",
+    [
+     "D2N171"
+    ]
+   ],
+   [
+    "M32.9",
+    "Systemic lupus erythematosus, unspecified",
+    [
+     "D2N174"
+    ]
+   ],
+   [
+    "I73.9",
+    "Peripheral vascular disease, unspecified",
+    [
+     "D2N178"
+    ]
+   ],
+   [
+    "R05.9",
+    "Cough, unspecified",
+    [
+     "D2N193",
+     "D2N199"
+    ]
+   ],
+   [
+    "M19.90",
+    "Unspecified osteoarthritis, unspecified site",
+    [
+     "D2N196",
+     "D2N070",
+     "D2N006"
+    ]
+   ],
+   [
+    "N05.9",
+    "Unspecified nephritic syndrome with unspecified morphologic changes",
+    [
+     "D2N198"
+    ]
+   ],
+   [
+    "C34.90",
+    "Malignant neoplasm of unspecified part of unspecified bronchus or lung",
+    [
+     "D2N205",
+     "D2N081"
+    ]
+   ],
+   [
+    "D50.9",
+    "Iron deficiency anemia, unspecified",
+    [
+     "D2N073"
+    ]
+   ],
+   [
+    "L97.419",
+    "Non-pressure chronic ulcer of right heel and midfoot with unspecified severity",
+    [
+     "D2N086"
+    ]
+   ],
+   [
+    "V89.2XXA",
+    "Person injured in unspecified motor-vehicle accident, traffic, initial encounter",
+    [
+     "D2N005"
+    ]
+   ],
+   [
+    "D64.9",
+    "Anemia, unspecified",
+    [
+     "D2N008",
+     "D2N020"
+    ]
+   ],
+   [
+    "R73.9",
+    "Hyperglycemia, unspecified",
+    [
+     "D2N010"
+    ]
+   ],
+   [
+    "J45.901",
+    "Unspecified asthma with (acute) exacerbation",
+    [
+     "D2N012"
+    ]
+   ],
+   [
+    "Z98.49",
+    "Cataract extraction status, unspecified eye",
+    [
+     "D2N014"
+    ]
+   ],
+   [
+    "S42.201A",
+    "Unspecified fracture of upper end of right humerus, initial encounter for closed fracture",
+    [
+     "D2N018"
+    ]
+   ],
+   [
+    "E55.9",
+    "Vitamin D deficiency, unspecified",
+    [
+     "D2N021"
+    ]
+   ],
+   [
+    "M50.30",
+    "Other cervical disc degeneration, unspecified cervical region",
+    [
+     "D2N026"
+    ]
+   ],
+   [
+    "K59.00",
+    "Constipation, unspecified",
+    [
+     "D2N028"
+    ]
+   ],
+   [
+    "R87.619",
+    "Unspecified abnormal cytological findings in specimens from cervix uteri",
+    [
+     "D2N030"
+    ]
+   ],
+   [
+    "R32",
+    "Unspecified urinary incontinence",
+    [
+     "D2N035"
+    ]
+   ],
+   [
+    "J02.9",
+    "Acute pharyngitis, unspecified",
+    [
+     "D2N041"
+    ]
+   ],
+   [
+    "W00.9XXA",
+    "Unspecified fall due to ice and snow, initial encounter",
+    [
+     "D2N042"
+    ]
+   ],
+   [
+    "F17.200",
+    "Nicotine dependence, unspecified, uncomplicated",
+    [
+     "D2N043"
+    ]
+   ],
+   [
+    "S83.91XA",
+    "Sprain of unspecified site of right knee, initial encounter",
+    [
+     "D2N045"
+    ]
+   ],
+   [
+    "W19.XXXA",
+    "Unspecified fall, initial encounter",
+    [
+     "D2N048"
+    ]
+   ],
+   [
+    "L97.519",
+    "Non-pressure chronic ulcer of other part of right foot with unspecified severity",
+    [
+     "D2N051"
+    ]
+   ],
+   [
+    "J67.9",
+    "Hypersensitivity pneumonitis due to unspecified organic dust",
+    [
+     "D2N056"
+    ]
+   ],
+   [
+    "I50.1",
+    "Left ventricular failure, unspecified",
+    [
+     "D2N058"
+    ]
+   ],
+   [
+    "F39",
+    "Unspecified mood [affective] disorder",
+    [
+     "D2N059"
+    ]
+   ],
+   [
+    "K20.90",
+    "Esophagitis, unspecified without bleeding",
+    [
+     "D2N062"
+    ]
+   ],
+   [
+    "Y92.009",
+    "Unspecified place in unspecified non-institutional (private) residence as the place of occurrence of the external cause",
+    [
+     "D2N065"
+    ]
+   ]
+  ],
+  "with/without modifier (numeric or clinical threshold)": [
+   [
+    "E11.9",
+    "Type 2 diabetes mellitus without complications",
+    [
+     "D2N088",
+     "D2N109",
+     "D2N111",
+     "D2N117",
+     "D2N118",
+     "D2N123",
+     "D2N129",
+     "D2N134",
+     "D2N135",
+     "D2N136",
+     "D2N146",
+     "D2N149",
+     "D2N151",
+     "D2N152",
+     "D2N156",
+     "D2N158",
+     "D2N160",
+     "D2N164",
+     "D2N175",
+     "D2N177",
+     "D2N191",
+     "D2N193",
+     "D2N195",
+     "D2N197",
+     "D2N199",
+     "D2N200",
+     "D2N070",
+     "D2N080",
+     "D2N087",
+     "D2N004",
+     "D2N012",
+     "D2N013",
+     "D2N025",
+     "D2N033",
+     "D2N040",
+     "D2N041",
+     "D2N043",
+     "D2N047",
+     "D2N049",
+     "D2N063",
+     "D2N066"
+    ]
+   ],
+   [
+    "K21.9",
+    "Gastro-esophageal reflux disease without esophagitis",
+    [
+     "D2N089",
+     "D2N093",
+     "D2N135",
+     "D2N169",
+     "D2N176",
+     "D2N181",
+     "D2N003",
+     "D2N006"
+    ]
+   ],
+   [
+    "E11.65",
+    "Type 2 diabetes mellitus with hyperglycemia",
+    [
+     "D2N090"
+    ]
+   ],
+   [
+    "E10.9",
+    "Type 1 diabetes mellitus without complications",
+    [
+     "D2N093"
+    ]
+   ],
+   [
+    "E11.621",
+    "Type 2 diabetes mellitus with foot ulcer",
+    [
+     "D2N108",
+     "D2N110",
+     "D2N155",
+     "D2N086",
+     "D2N051"
+    ]
+   ],
+   [
+    "G40.909",
+    "Epilepsy, unspecified, not intractable, without status epilepticus",
+    [
+     "D2N130",
+     "D2N013"
+    ]
+   ],
+   [
+    "K80.00",
+    "Calculus of gallbladder with acute cholecystitis without obstruction",
+    [
+     "D2N146"
+    ]
+   ],
+   [
+    "I25.10",
+    "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+    [
+     "D2N156",
+     "D2N157",
+     "D2N171",
+     "D2N174",
+     "D2N207",
+     "D2N047",
+     "D2N051",
+     "D2N058"
+    ]
+   ],
+   [
+    "I11.0",
+    "Hypertensive heart disease with heart failure",
+    [
+     "D2N156",
+     "D2N068",
+     "D2N084",
+     "D2N001",
+     "D2N035"
+    ]
+   ],
+   [
+    "E11.22",
+    "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+    [
+     "D2N157"
+    ]
+   ],
+   [
+    "I13.0",
+    "Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+    [
+     "D2N161"
+    ]
+   ],
+   [
+    "G43.909",
+    "Migraine, unspecified, not intractable, without status migrainosus",
+    [
+     "D2N169",
+     "D2N192",
+     "D2N003"
+    ]
+   ],
+   [
+    "E11.51",
+    "Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene",
+    [
+     "D2N178"
+    ]
+   ],
+   [
+    "K20.90",
+    "Esophagitis, unspecified without bleeding",
+    [
+     "D2N062"
+    ]
+   ]
+  ],
+  "diabetes type": [
+   [
+    "E11.9",
+    "Type 2 diabetes mellitus without complications",
+    [
+     "D2N088",
+     "D2N109",
+     "D2N111",
+     "D2N117",
+     "D2N118",
+     "D2N123",
+     "D2N129",
+     "D2N134",
+     "D2N135",
+     "D2N136",
+     "D2N146",
+     "D2N149",
+     "D2N151",
+     "D2N152",
+     "D2N156",
+     "D2N158",
+     "D2N160",
+     "D2N164",
+     "D2N175",
+     "D2N177",
+     "D2N191",
+     "D2N193",
+     "D2N195",
+     "D2N197",
+     "D2N199",
+     "D2N200",
+     "D2N070",
+     "D2N080",
+     "D2N087",
+     "D2N004",
+     "D2N012",
+     "D2N013",
+     "D2N025",
+     "D2N033",
+     "D2N040",
+     "D2N041",
+     "D2N043",
+     "D2N047",
+     "D2N049",
+     "D2N063",
+     "D2N066"
+    ]
+   ],
+   [
+    "E11.65",
+    "Type 2 diabetes mellitus with hyperglycemia",
+    [
+     "D2N090"
+    ]
+   ],
+   [
+    "E10.9",
+    "Type 1 diabetes mellitus without complications",
+    [
+     "D2N093"
+    ]
+   ],
+   [
+    "E11.621",
+    "Type 2 diabetes mellitus with foot ulcer",
+    [
+     "D2N108",
+     "D2N110",
+     "D2N155",
+     "D2N086",
+     "D2N051"
+    ]
+   ],
+   [
+    "E11.22",
+    "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+    [
+     "D2N157"
+    ]
+   ],
+   [
+    "E11.51",
+    "Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene",
+    [
+     "D2N178"
+    ]
+   ]
+  ],
+  "lab/vital threshold": [
+   [
+    "E11.65",
+    "Type 2 diabetes mellitus with hyperglycemia",
+    [
+     "D2N090"
+    ]
+   ],
+   [
+    "N18.30",
+    "Chronic kidney disease, stage 3 unspecified",
+    [
+     "D2N157",
+     "D2N161",
+     "D2N207"
+    ]
+   ],
+   [
+    "E11.22",
+    "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+    [
+     "D2N157"
+    ]
+   ],
+   [
+    "I13.0",
+    "Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+    [
+     "D2N161"
+    ]
+   ],
+   [
+    "D50.9",
+    "Iron deficiency anemia, unspecified",
+    [
+     "D2N073"
+    ]
+   ],
+   [
+    "D64.9",
+    "Anemia, unspecified",
+    [
+     "D2N008",
+     "D2N020"
+    ]
+   ],
+   [
+    "R73.9",
+    "Hyperglycemia, unspecified",
+    [
+     "D2N010"
+    ]
+   ]
+  ],
+  "age-dependent": [
+   [
+    "M81.0",
+    "Age-related osteoporosis without current pathological fracture",
+    [
+     "D2N091"
+    ]
+   ],
+   [
+    "I49.3",
+    "Ventricular premature depolarization",
+    [
+     "D2N105"
+    ]
+   ],
+   [
+    "H35.3231",
+    "Exudative age-related macular degeneration, bilateral, with active choroidal neovascularization",
+    [
+     "D2N187"
+    ]
+   ],
+   [
+    "H35.3211",
+    "Exudative age-related macular degeneration, right eye, with active choroidal neovascularization",
+    [
+     "D2N203"
+    ]
+   ]
+  ],
+  "laterality": [
+   [
+    "M17.11",
+    "Unilateral primary osteoarthritis, right knee",
+    [
+     "D2N091"
+    ]
+   ],
+   [
+    "S63.501A",
+    "Unspecified sprain of right wrist, initial encounter",
+    [
+     "D2N092"
+    ]
+   ],
+   [
+    "S63.630A",
+    "Sprain of interphalangeal joint of right index finger, initial encounter",
+    [
+     "D2N094"
+    ]
+   ],
+   [
+    "M25.512",
+    "Pain in left shoulder",
+    [
+     "D2N096",
+     "D2N194",
+     "D2N079"
+    ]
+   ],
+   [
+    "M75.42",
+    "Impingement syndrome of left shoulder",
+    [
+     "D2N098"
+    ]
+   ],
+   [
+    "M25.572",
+    "Pain in left ankle and joints of left foot",
+    [
+     "D2N109"
+    ]
+   ],
+   [
+    "S83.421A",
+    "Sprain of lateral collateral ligament of right knee, initial encounter",
+    [
+     "D2N111",
+     "D2N153"
+    ]
+   ],
+   [
+    "M67.813",
+    "Other specified disorders of tendon, right shoulder",
+    [
+     "D2N116"
+    ]
+   ],
+   [
+    "M79.671",
+    "Pain in right foot",
+    [
+     "D2N116"
+    ]
+   ],
+   [
+    "M77.11",
+    "Lateral epicondylitis, right elbow",
+    [
+     "D2N117",
+     "D2N019"
+    ]
+   ],
+   [
+    "M25.561",
+    "Pain in right knee",
+    [
+     "D2N121",
+     "D2N126",
+     "D2N144",
+     "D2N150",
+     "D2N190",
+     "D2N199",
+     "D2N033",
+     "D2N061"
+    ]
+   ],
+   [
+    "S82.61XA",
+    "Displaced fracture of lateral malleolus of right fibula, initial encounter for closed fracture",
+    [
+     "D2N124"
+    ]
+   ],
+   [
+    "M19.021",
+    "Primary osteoarthritis, right elbow",
+    [
+     "D2N128"
+    ]
+   ],
+   [
+    "M25.522",
+    "Pain in left elbow",
+    [
+     "D2N130"
+    ]
+   ],
+   [
+    "M22.41",
+    "Chondromalacia patellae, right knee",
+    [
+     "D2N133"
+    ]
+   ],
+   [
+    "S83.92XA",
+    "Sprain of unspecified site of left knee, initial encounter",
+    [
+     "D2N136"
+    ]
+   ],
+   [
+    "S43.81XA",
+    "Sprain of other specified parts of right shoulder girdle, initial encounter",
+    [
+     "D2N147"
+    ]
+   ],
+   [
+    "M25.521",
+    "Pain in right elbow",
+    [
+     "D2N151"
+    ]
+   ],
+   [
+    "M76.61",
+    "Achilles tendinitis, right leg",
+    [
+     "D2N154"
+    ]
+   ],
+   [
+    "G56.01",
+    "Carpal tunnel syndrome, right upper limb",
+    [
+     "D2N159"
+    ]
+   ],
+   [
+    "S50.01XA",
+    "Contusion of right elbow, initial encounter",
+    [
+     "D2N160"
+    ]
+   ],
+   [
+    "S93.401A",
+    "Sprain of unspecified ligament of right ankle, initial encounter",
+    [
+     "D2N162",
+     "D2N188",
+     "D2N065"
+    ]
+   ],
+   [
+    "M22.2X1",
+    "Patellofemoral disorders, right knee",
+    [
+     "D2N165",
+     "D2N044"
+    ]
+   ],
+   [
+    "M25.562",
+    "Pain in left knee",
+    [
+     "D2N167",
+     "D2N080"
+    ]
+   ],
+   [
+    "G56.03",
+    "Carpal tunnel syndrome, bilateral upper limbs",
+    [
+     "D2N179",
+     "D2N180",
+     "D2N036"
+    ]
+   ],
+   [
+    "Q60.3",
+    "Renal hypoplasia, unilateral",
+    [
+     "D2N185"
+    ]
+   ],
+   [
+    "H35.3231",
+    "Exudative age-related macular degeneration, bilateral, with active choroidal neovascularization",
+    [
+     "D2N187"
+    ]
+   ],
+   [
+    "I21.11",
+    "ST elevation (STEMI) myocardial infarction involving right coronary artery",
+    [
+     "D2N189"
+    ]
+   ],
+   [
+    "M79.602",
+    "Pain in left arm",
+    [
+     "D2N191",
+     "D2N026"
+    ]
+   ],
+   [
+    "R10.811",
+    "Right upper quadrant abdominal tenderness",
+    [
+     "D2N192"
+    ]
+   ],
+   [
+    "S83.411A",
+    "Sprain of medial collateral ligament of right knee, initial encounter",
+    [
+     "D2N195",
+     "D2N078"
+    ]
+   ],
+   [
+    "M75.31",
+    "Calcific tendinitis of right shoulder",
+    [
+     "D2N202"
+    ]
+   ],
+   [
+    "H35.3211",
+    "Exudative age-related macular degeneration, right eye, with active choroidal neovascularization",
+    [
+     "D2N203"
+    ]
+   ],
+   [
+    "S80.01XA",
+    "Contusion of right knee, initial encounter",
+    [
+     "D2N204"
+    ]
+   ],
+   [
+    "M25.511",
+    "Pain in right shoulder",
+    [
+     "D2N204"
+    ]
+   ],
+   [
+    "S83.241A",
+    "Other tear of medial meniscus, current injury, right knee, initial encounter",
+    [
+     "D2N069"
+    ]
+   ],
+   [
+    "S60.021A",
+    "Contusion of right index finger without damage to nail, initial encounter",
+    [
+     "D2N072"
+    ]
+   ],
+   [
+    "H53.47",
+    "Heteronymous bilateral field defects",
+    [
+     "D2N074"
+    ]
+   ],
+   [
+    "S52.531D",
+    "Colles' fracture of right radius, subsequent encounter for closed fracture with routine healing",
+    [
+     "D2N077"
+    ]
+   ],
+   [
+    "M77.01",
+    "Medial epicondylitis, right elbow",
+    [
+     "D2N083",
+     "D2N037"
+    ]
+   ],
+   [
+    "L97.419",
+    "Non-pressure chronic ulcer of right heel and midfoot with unspecified severity",
+    [
+     "D2N086"
+    ]
+   ],
+   [
+    "S80.261A",
+    "Insect bite (nonvenomous), right knee, initial encounter",
+    [
+     "D2N087"
+    ]
+   ],
+   [
+    "M17.0",
+    "Bilateral primary osteoarthritis of knee",
+    [
+     "D2N002"
+    ]
+   ],
+   [
+    "S62.662A",
+    "Nondisplaced fracture of distal phalanx of right middle finger, initial encounter for closed fracture",
+    [
+     "D2N005"
+    ]
+   ],
+   [
+    "S80.11XA",
+    "Contusion of right lower leg, initial encounter",
+    [
+     "D2N017"
+    ]
+   ],
+   [
+    "S42.201A",
+    "Unspecified fracture of upper end of right humerus, initial encounter for closed fracture",
+    [
+     "D2N018"
+    ]
+   ],
+   [
+    "M65.841",
+    "Other synovitis and tenosynovitis, right hand",
+    [
+     "D2N022"
+    ]
+   ],
+   [
+    "Z90.13",
+    "Acquired absence of bilateral breasts and nipples",
+    [
+     "D2N024"
+    ]
+   ],
+   [
+    "N60.01",
+    "Solitary cyst of right breast",
+    [
+     "D2N030"
+    ]
+   ],
+   [
+    "N60.02",
+    "Solitary cyst of left breast",
+    [
+     "D2N030"
+    ]
+   ],
+   [
+    "M16.11",
+    "Unilateral primary osteoarthritis, right hip",
+    [
+     "D2N032"
+    ]
+   ],
+   [
+    "M25.412",
+    "Effusion, left shoulder",
+    [
+     "D2N034"
+    ]
+   ],
+   [
+    "M77.02",
+    "Medial epicondylitis, left elbow",
+    [
+     "D2N037"
+    ]
+   ],
+   [
+    "S93.431A",
+    "Sprain of tibiofibular ligament of right ankle, initial encounter",
+    [
+     "D2N042"
+    ]
+   ],
+   [
+    "M22.2X2",
+    "Patellofemoral disorders, left knee",
+    [
+     "D2N044"
+    ]
+   ],
+   [
+    "S83.91XA",
+    "Sprain of unspecified site of right knee, initial encounter",
+    [
+     "D2N045"
+    ]
+   ],
+   [
+    "C56.2",
+    "Malignant neoplasm of left ovary",
+    [
+     "D2N046"
+    ]
+   ],
+   [
+    "S93.324A",
+    "Dislocation of tarsometatarsal joint of right foot, initial encounter",
+    [
+     "D2N048",
+     "D2N054"
+    ]
+   ],
+   [
+    "L97.519",
+    "Non-pressure chronic ulcer of other part of right foot with unspecified severity",
+    [
+     "D2N051"
+    ]
+   ],
+   [
+    "M20.21",
+    "Hallux rigidus, right foot",
+    [
+     "D2N057"
+    ]
+   ],
+   [
+    "I50.1",
+    "Left ventricular failure, unspecified",
+    [
+     "D2N058"
+    ]
+   ],
+   [
+    "S93.325A",
+    "Dislocation of tarsometatarsal joint of left foot, initial encounter",
+    [
+     "D2N060"
+    ]
+   ],
+   [
+    "S93.492A",
+    "Sprain of other ligament of left ankle, initial encounter",
+    [
+     "D2N064"
+    ]
+   ],
+   [
+    "S83.521A",
+    "Sprain of posterior cruciate ligament of right knee, initial encounter",
+    [
+     "D2N067"
+    ]
+   ]
+  ],
+  "encounter_type (initial/subsequent)": [
+   [
+    "S63.501A",
+    "Unspecified sprain of right wrist, initial encounter",
+    [
+     "D2N092"
+    ]
+   ],
+   [
+    "S63.630A",
+    "Sprain of interphalangeal joint of right index finger, initial encounter",
+    [
+     "D2N094"
+    ]
+   ],
+   [
+    "S33.5XXA",
+    "Sprain of ligaments of lumbar spine, initial encounter",
+    [
+     "D2N107",
+     "D2N132",
+     "D2N009"
+    ]
+   ],
+   [
+    "S83.421A",
+    "Sprain of lateral collateral ligament of right knee, initial encounter",
+    [
+     "D2N111",
+     "D2N153"
+    ]
+   ],
+   [
+    "S16.1XXA",
+    "Strain of muscle, fascia and tendon at neck level, initial encounter",
+    [
+     "D2N115"
+    ]
+   ],
+   [
+    "S82.61XA",
+    "Displaced fracture of lateral malleolus of right fibula, initial encounter for closed fracture",
+    [
+     "D2N124"
+    ]
+   ],
+   [
+    "S13.9XXD",
+    "Sprain of joints and ligaments of unspecified parts of neck, subsequent encounter",
+    [
+     "D2N127"
+    ]
+   ],
+   [
+    "S83.92XA",
+    "Sprain of unspecified site of left knee, initial encounter",
+    [
+     "D2N136"
+    ]
+   ],
+   [
+    "T78.01XA",
+    "Anaphylactic reaction due to peanuts, initial encounter",
+    [
+     "D2N138"
+    ]
+   ],
+   [
+    "S43.81XA",
+    "Sprain of other specified parts of right shoulder girdle, initial encounter",
+    [
+     "D2N147"
+    ]
+   ],
+   [
+    "S50.01XA",
+    "Contusion of right elbow, initial encounter",
+    [
+     "D2N160"
+    ]
+   ],
+   [
+    "S93.401A",
+    "Sprain of unspecified ligament of right ankle, initial encounter",
+    [
+     "D2N162",
+     "D2N188",
+     "D2N065"
+    ]
+   ],
+   [
+    "S83.411A",
+    "Sprain of medial collateral ligament of right knee, initial encounter",
+    [
+     "D2N195",
+     "D2N078"
+    ]
+   ],
+   [
+    "S80.01XA",
+    "Contusion of right knee, initial encounter",
+    [
+     "D2N204"
+    ]
+   ],
+   [
+    "S83.241A",
+    "Other tear of medial meniscus, current injury, right knee, initial encounter",
+    [
+     "D2N069"
+    ]
+   ],
+   [
+    "S39.012A",
+    "Strain of muscle, fascia and tendon of lower back, initial encounter",
+    [
+     "D2N070",
+     "D2N004"
+    ]
+   ],
+   [
+    "S60.021A",
+    "Contusion of right index finger without damage to nail, initial encounter",
+    [
+     "D2N072"
+    ]
+   ],
+   [
+    "S52.531D",
+    "Colles' fracture of right radius, subsequent encounter for closed fracture with routine healing",
+    [
+     "D2N077"
+    ]
+   ],
+   [
+    "S80.261A",
+    "Insect bite (nonvenomous), right knee, initial encounter",
+    [
+     "D2N087"
+    ]
+   ],
+   [
+    "W18.49XA",
+    "Other slipping, tripping and stumbling without falling, initial encounter",
+    [
+     "D2N004",
+     "D2N064"
+    ]
+   ],
+   [
+    "S62.662A",
+    "Nondisplaced fracture of distal phalanx of right middle finger, initial encounter for closed fracture",
+    [
+     "D2N005"
+    ]
+   ],
+   [
+    "V89.2XXA",
+    "Person injured in unspecified motor-vehicle accident, traffic, initial encounter",
+    [
+     "D2N005"
+    ]
+   ],
+   [
+    "X50.0XXA",
+    "Overexertion from strenuous movement or load, initial encounter",
+    [
+     "D2N009"
+    ]
+   ],
+   [
+    "S80.11XA",
+    "Contusion of right lower leg, initial encounter",
+    [
+     "D2N017"
+    ]
+   ],
+   [
+    "W21.09XA",
+    "Struck by other hit or thrown ball, initial encounter",
+    [
+     "D2N017"
+    ]
+   ],
+   [
+    "S42.201A",
+    "Unspecified fracture of upper end of right humerus, initial encounter for closed fracture",
+    [
+     "D2N018"
+    ]
+   ],
+   [
+    "W01.0XXA",
+    "Fall on same level from slipping, tripping and stumbling without subsequent striking against object, initial encounter",
+    [
+     "D2N018"
+    ]
+   ],
+   [
+    "S93.431A",
+    "Sprain of tibiofibular ligament of right ankle, initial encounter",
+    [
+     "D2N042"
+    ]
+   ],
+   [
+    "W00.9XXA",
+    "Unspecified fall due to ice and snow, initial encounter",
+    [
+     "D2N042"
+    ]
+   ],
+   [
+    "S83.91XA",
+    "Sprain of unspecified site of right knee, initial encounter",
+    [
+     "D2N045"
+    ]
+   ],
+   [
+    "X50.1XXA",
+    "Overexertion from prolonged static or awkward postures, initial encounter",
+    [
+     "D2N045"
+    ]
+   ],
+   [
+    "S93.324A",
+    "Dislocation of tarsometatarsal joint of right foot, initial encounter",
+    [
+     "D2N048",
+     "D2N054"
+    ]
+   ],
+   [
+    "W19.XXXA",
+    "Unspecified fall, initial encounter",
+    [
+     "D2N048"
+    ]
+   ],
+   [
+    "Y30.XXXA",
+    "Falling, jumping or pushed from a high place, undetermined intent, initial encounter",
+    [
+     "D2N048"
+    ]
+   ],
+   [
+    "W20.8XXA",
+    "Other cause of strike by thrown, projected or falling object, initial encounter",
+    [
+     "D2N054"
+    ]
+   ],
+   [
+    "S93.325A",
+    "Dislocation of tarsometatarsal joint of left foot, initial encounter",
+    [
+     "D2N060"
+    ]
+   ],
+   [
+    "W21.02XA",
+    "Struck by soccer ball, initial encounter",
+    [
+     "D2N060"
+    ]
+   ],
+   [
+    "S93.492A",
+    "Sprain of other ligament of left ankle, initial encounter",
+    [
+     "D2N064"
+    ]
+   ],
+   [
+    "W10.1XXA",
+    "Fall (on)(from) sidewalk curb, initial encounter",
+    [
+     "D2N064"
+    ]
+   ],
+   [
+    "W00.0XXA",
+    "Fall on same level due to ice and snow, initial encounter",
+    [
+     "D2N065"
+    ]
+   ],
+   [
+    "S83.521A",
+    "Sprain of posterior cruciate ligament of right knee, initial encounter",
+    [
+     "D2N067"
+    ]
+   ],
+   [
+    "W22.8XXA",
+    "Striking against or struck by other objects, initial encounter",
+    [
+     "D2N067"
+    ]
+   ]
+  ],
+  "sex-dependent": [
+   [
+    "N62",
+    "Hypertrophy of breast",
+    [
+     "D2N101"
+    ]
+   ],
+   [
+    "N50.89",
+    "Other specified disorders of the male genital organs",
+    [
+     "D2N027"
+    ]
+   ],
+   [
+    "N60.01",
+    "Solitary cyst of right breast",
+    [
+     "D2N030"
+    ]
+   ],
+   [
+    "N60.02",
+    "Solitary cyst of left breast",
+    [
+     "D2N030"
+    ]
+   ],
+   [
+    "D05.1",
+    "Intraductal carcinoma in situ of breast",
+    [
+     "D2N031"
+    ]
+   ]
+  ],
+  "substance use (sensitive)": [
+   [
+    "Z79.899",
+    "Other long term (current) drug therapy",
+    [
+     "D2N104"
+    ]
+   ],
+   [
+    "F10.90",
+    "Alcohol use, unspecified, uncomplicated",
+    [
+     "D2N142"
+    ]
+   ],
+   [
+    "F17.200",
+    "Nicotine dependence, unspecified, uncomplicated",
+    [
+     "D2N043"
+    ]
+   ]
+  ],
+  "HIV/STI/hepatitis (sensitive)": [
+   [
+    "B19.20",
+    "Unspecified viral hepatitis C without hepatic coma",
+    [
+     "D2N113"
+    ]
+   ],
+   [
+    "B17.1",
+    "Acute hepatitis C",
+    [
+     "D2N038"
+    ]
+   ]
+  ],
+  "mental health (sensitive)": [
+   [
+    "G47.00",
+    "Insomnia, unspecified",
+    [
+     "D2N118"
+    ]
+   ],
+   [
+    "G31.84",
+    "Mild cognitive impairment of uncertain or unknown etiology",
+    [
+     "D2N141"
+    ]
+   ]
+  ],
+  "external cause / activity / place (quasi-identifier!)": [
+   [
+    "W18.49XA",
+    "Other slipping, tripping and stumbling without falling, initial encounter",
+    [
+     "D2N004",
+     "D2N064"
+    ]
+   ],
+   [
+    "Y93.53",
+    "Activity, golf",
+    [
+     "D2N004"
+    ]
+   ],
+   [
+    "V89.2XXA",
+    "Person injured in unspecified motor-vehicle accident, traffic, initial encounter",
+    [
+     "D2N005"
+    ]
+   ],
+   [
+    "X50.0XXA",
+    "Overexertion from strenuous movement or load, initial encounter",
+    [
+     "D2N009"
+    ]
+   ],
+   [
+    "W21.09XA",
+    "Struck by other hit or thrown ball, initial encounter",
+    [
+     "D2N017"
+    ]
+   ],
+   [
+    "Y93.54",
+    "Activity, bowling",
+    [
+     "D2N017"
+    ]
+   ],
+   [
+    "W01.0XXA",
+    "Fall on same level from slipping, tripping and stumbling without subsequent striking against object, initial encounter",
+    [
+     "D2N018"
+    ]
+   ],
+   [
+    "Y93.68",
+    "Activity, volleyball (beach) (court)",
+    [
+     "D2N018"
+    ]
+   ],
+   [
+    "W00.9XXA",
+    "Unspecified fall due to ice and snow, initial encounter",
+    [
+     "D2N042"
+    ]
+   ],
+   [
+    "X50.1XXA",
+    "Overexertion from prolonged static or awkward postures, initial encounter",
+    [
+     "D2N045"
+    ]
+   ],
+   [
+    "Y93.02",
+    "Activity, running",
+    [
+     "D2N045"
+    ]
+   ],
+   [
+    "W19.XXXA",
+    "Unspecified fall, initial encounter",
+    [
+     "D2N048"
+    ]
+   ],
+   [
+    "Y30.XXXA",
+    "Falling, jumping or pushed from a high place, undetermined intent, initial encounter",
+    [
+     "D2N048"
+    ]
+   ],
+   [
+    "W20.8XXA",
+    "Other cause of strike by thrown, projected or falling object, initial encounter",
+    [
+     "D2N054"
+    ]
+   ],
+   [
+    "W21.02XA",
+    "Struck by soccer ball, initial encounter",
+    [
+     "D2N060"
+    ]
+   ],
+   [
+    "Y93.66",
+    "Activity, soccer",
+    [
+     "D2N060"
+    ]
+   ],
+   [
+    "W10.1XXA",
+    "Fall (on)(from) sidewalk curb, initial encounter",
+    [
+     "D2N064"
+    ]
+   ],
+   [
+    "Y92.480",
+    "Sidewalk as the place of occurrence of the external cause",
+    [
+     "D2N064"
+    ]
+   ],
+   [
+    "W00.0XXA",
+    "Fall on same level due to ice and snow, initial encounter",
+    [
+     "D2N065"
+    ]
+   ],
+   [
+    "Y93.E9",
+    "Activity, other interior property and clothing maintenance",
+    [
+     "D2N065"
+    ]
+   ],
+   [
+    "Y92.009",
+    "Unspecified place in unspecified non-institutional (private) residence as the place of occurrence of the external cause",
+    [
+     "D2N065"
+    ]
+   ],
+   [
+    "W22.8XXA",
+    "Striking against or struck by other objects, initial encounter",
+    [
+     "D2N067"
+    ]
+   ],
+   [
+    "Y93.23",
+    "Activity, snow (alpine) (downhill) skiing, snowboarding, sledding, tobogganing and snow tubing",
+    [
+     "D2N067"
+    ]
+   ]
+  ]
+ }
+}

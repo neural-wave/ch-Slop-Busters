@@ -1,0 +1,722 @@
+{
+ "id": "G0042",
+ "dataset": "synthetic_acute",
+ "sex": "female",
+ "age_range": [
+  45,
+  60
+ ],
+ "icd10_codes": [
+  {
+   "code": "N93.9",
+   "description": "Abnormal uterine and vaginal bleeding, unspecified"
+  },
+  {
+   "code": "D25.9",
+   "description": "Leiomyoma of uterus, unspecified"
+  },
+  {
+   "code": "N95.1",
+   "description": "Menopausal and female climacteric states"
+  }
+ ],
+ "dialogue": "[doctor] good morning , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . what brings you in today ?\n[patient] morning , doctor {DOCTOR_LAST} . i've been bleeding between my periods for about three weeks now , and there's this heavy pressure low in my belly .\n[doctor] okay . is your daughter here with you today ?\n[patient] yes , this is {OTHER_FIRST} . she's home from college for the weekend and she insisted on driving me .\n[patient] hi . she made me come , honestly . she's been reading about this stuff online and she was scared .\n[doctor] i'm glad you did . tell me more about the bleeding .\n[patient] well , i still get my period , but now i'm spotting in the middle of the month too . last tuesday i soaked through a pad in about two hours . that was new .\n[doctor] that sounds frightening . how long does each period last ?\n[patient] usually four or five days . this month it went on for almost ten days , and it's been on and off since .\n[doctor] are you using any pads or liners to measure it ?\n[patient] pads , yes . i go through a super pad every few hours on the heavy days .\n[doctor] okay . any clots , big ones like grapes ?\n[patient] a few , yes . some the size of a quarter .\n[doctor] that's helpful . and the pressure low in your belly , when did that start ?\n[patient] about two weeks ago . it feels like someone is sitting on me . it's worse when i stand up for a long time .\n[doctor] and you work standing up , right ?\n[patient] i'm a pastry chef at a bakery downtown . i work the overnight shift , so i'm on my feet for about ten hours and i lift fifty pound sacks of flour all night . my back and my pelvis have been killing me .\n[doctor] okay . i'd like to ask you about your history . are you still having hot flashes ?\n[patient] oh yes , every night . i wake up soaked . that's been going on for almost three years now .\n[doctor] that's common around this time . any other medical problems ?\n[patient] i had a thyroid problem that was diagnosed in {YEAR} , a goiter , and they put me on a pill for it . and my mother had graves' disease , so my doctor always watches my thyroid .\n[doctor] okay . are you taking anything for the hot flashes ?\n[patient] no , i tried one of those black cohosh things and it upset my stomach .\n[doctor] got it . have you had a pap smear or a mammogram recently ?\n[patient] my last pap was on {DATE_SPOKEN} at the clinic , and it was normal . i had a mammogram about a year ago , also normal .\n[doctor] good . and what medicines do you take every day ?\n[patient] just the levothyroxine in the morning . and a calcium pill with my lunch .\n[doctor] okay , let's check your vitals . your blood pressure is one twenty eight over seventy eight . your pulse is ninety six . your temperature is ninety eight point four .\n[patient] okay .\n[doctor] i'm going to examine your abdomen now . does it hurt when i press here ?\n[patient] a little , it's a dull ache . it's not sharp .\n[doctor] okay . i'm going to do a pelvic exam . i'll be gentle .\n[patient] okay .\n[doctor] the uterus feels enlarged , about the size of a twelve week pregnancy , and it's a bit firm on this side . there's no tenderness when i move the cervix .\n[patient] what does that mean ?\n[doctor] i'd like to get an ultrasound of your pelvis , and we'll check your blood count . i'm also going to order a hemoglobin level , because you've been losing a lot of blood . i want to make sure you are not anemic .\n[patient] okay , yes . i'm tired all the time anyway .\n[doctor] i know . the ultrasound will tell us whether there's a fibroid or a polyp in the lining . if it's a fibroid , they are usually benign .\n[patient] what is a fibroid exactly ?\n[doctor] it's a noncancerous growth in the muscle wall of the uterus . many women have them and never know . but they can cause heavy bleeding and pressure like you're describing .\n[patient] okay . and the hot flashes ?\n[doctor] for the hot flashes , we can talk about options after the ultrasound . for now i don't want you on any hormones until we know what's going on .\n[patient] fine . when can i get the ultrasound ?\n[doctor] our imaging team can see you on november fourth , which is early next week . the front desk will call you .\n[patient] i'm on the overnight shift until then . can they call me during the day ?\n[doctor] of course . what's the best number to reach you at ?\n[patient] it's {PHONE} . that's my cell . please leave a message if i do n't pick up , because i sleep during the day .\n[doctor] got it . i'll also ask the nurse to write that down . and i want you to keep a bleeding diary , writing down how many pads you change each day .\n[patient] i can do that . my daughter has an app for it .\n[patient] mom , just write it on your phone , it's easier .\n[doctor] that works . and if you soak through a pad every hour for two hours in a row , or you feel dizzy or faint , go straight to the emergency room .\n[patient] okay . should i take anything to slow the bleeding ?\n[doctor] i'd rather not start anything until the ultrasound is back . tylenol is fine for the pelvic ache , up to one thousand milligrams three times a day .\n[patient] okay .\n[doctor] we'll see you back in two weeks , or sooner if the bleeding gets worse . and please ask your manager about lifting less during the next few weeks .\n[patient] i'll try . the bakery is short staffed right now , so it's hard to say no .\n[doctor] i understand . take care of yourself , {PATIENT_FIRST} .\n[patient] thank you , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nAbnormal uterine bleeding with pelvic pressure.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents with approximately three weeks of intermenstrual spotting and heavier menstrual bleeding. She is accompanied by her daughter, {OTHER_FIRST}, who expressed concern.\n\nHer most recent menses lasted nearly ten days, with bleeding soaking a pad in roughly two hours on one occasion last Tuesday. She changes a super pad every few hours on heavy days. She passes clots up to a quarter in size. She reports dull lower pelvic pressure for approximately two weeks, worse with prolonged standing. She works as a pastry chef on an overnight shift, standing for about ten hours per shift with frequent lifting of 50-pound flour sacks, which she believes aggravates her pelvic discomfort.\n\nShe has ongoing vasomotor symptoms with nightly drenching sweats for nearly three years. She has not started any therapy. She tried black cohosh, which caused gastrointestinal upset.\n\nPAST MEDICAL HISTORY\n\nGoiter, diagnosed in {YEAR}, treated with levothyroxine. Family history of Graves' disease in her mother.\n\nSOCIAL HISTORY\n\nAccompanied today by her daughter, who is home from college for the weekend. Reports occasional alcohol use. Non-smoker. Callback number: {PHONE}.\n\nMEDICATIONS\n\nLevothyroxine daily. Calcium supplement with lunch.\n\nHEALTH MAINTENANCE\n\nLast Pap smear on {DATE_SPOKEN}, normal. Screening mammogram approximately one year ago, normal.\n\nPHYSICAL EXAM\n\nVitals: BP 128/78, HR 96, T 98.4 F. Abdomen soft with mild lower abdominal tenderness, dull. Pelvic exam: uterus enlarged to approximately 12-week size and firm on the left, nontender with cervical motion. No adnexal mass palpated.\n\nRESULTS\n\nPelvic ultrasound and hemoglobin ordered. Hemoglobin pending.\n\nASSESSMENT AND PLAN\n\n1. Abnormal uterine bleeding with pelvic pressure, suspected uterine leiomyoma versus endometrial polyp. Pelvic ultrasound scheduled for November fourth. CBC and hemoglobin level ordered to evaluate for anemia. Bleeding diary provided. Return precautions reviewed: go to the emergency department for soaking one pad per hour for two hours or for lightheadedness.\n2. Vasomotor symptoms. Hormone therapy deferred pending ultrasound. Nonhormonal options to be discussed at follow-up.\n3. Goiter on levothyroxine, continue.\n4. Lifting and prolonged standing at work likely contributing to pelvic discomfort; advised to discuss reduced lifting with her manager.\n\nFollow-up in two weeks, or sooner if bleeding worsens. Front desk to call patient at {PHONE} to confirm imaging.",
+ "medical_concepts": [
+  {
+   "text": "bleeding between my periods",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "heavy pressure low in my belly",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "spotting in the middle of the month",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "soaked through a pad in about two hours",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "usually four or five days",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "went on for almost ten days",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "on and off",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a super pad every few hours",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "clots",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "some the size of a quarter",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "someone is sitting on me",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dull ache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my back and my pelvis have been killing me",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pastry chef",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "overnight shift",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "on my feet for about ten hours",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lift fifty pound sacks of flour",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hot flashes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i wake up soaked",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "thyroid problem",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "goiter",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "graves' disease",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "black cohosh",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "upset my stomach",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pap smear",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "mammogram",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "levothyroxine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "a calcium pill",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure is one twenty eight over seventy eight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse is ninety six",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "temperature is ninety eight point four",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pelvic exam",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "the uterus feels enlarged",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a bit firm on this side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no tenderness when i move the cervix",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hemoglobin level",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "losing a lot of blood",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "anemic",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "tired all the time",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ultrasound",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "a fibroid or a polyp",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "noncancerous growth in the muscle wall of the uterus",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "heavy bleeding",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bleeding gets worse",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "soak through a pad every hour for two hours",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "dizzy or faint",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "any hormones",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "pelvic ache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lifting less",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "intermenstrual spotting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "heavier menstrual bleeding",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dull lower pelvic pressure",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "menses lasted nearly ten days",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "soaking a pad in roughly two hours",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "passes clots up to a quarter in size",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "prolonged standing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pastry chef",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "overnight shift",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "standing for about ten hours per shift",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "frequent lifting of 50-pound flour sacks",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pelvic discomfort",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vasomotor symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "nightly drenching sweats",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "black cohosh",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "gastrointestinal upset",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Goiter",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Graves' disease",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "levothyroxine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Calcium supplement",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pap smear",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "mammogram",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 128/78",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "HR 96",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "T 98.4 F",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild lower abdominal tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pelvic exam",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "uterus enlarged to approximately 12-week size",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "firm on the left",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "nontender with cervical motion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "adnexal mass",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pelvic ultrasound",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "hemoglobin",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Abnormal uterine bleeding",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "pelvic pressure",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "uterine leiomyoma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "endometrial polyp",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "CBC",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "anemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "emergency department",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "lightheadedness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hormone therapy",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lifting and prolonged standing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "black cohosh",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "herbal supplement, not a place or person"
+  },
+  {
+   "text": "graves' disease",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponym for an autoimmune thyroid disorder, not a person"
+  },
+  {
+   "text": "Graves' disease",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponym for an autoimmune thyroid disorder, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "N93.9",
+   "spans": [
+    {
+     "text": "bleeding between my periods",
+     "field": "dialogue"
+    },
+    {
+     "text": "soaked through a pad in about two hours",
+     "field": "dialogue"
+    },
+    {
+     "text": "intermenstrual spotting",
+     "field": "note"
+    },
+    {
+     "text": "heavier menstrual bleeding",
+     "field": "note"
+    },
+    {
+     "text": "soaking a pad in roughly two hours",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "D25.9",
+   "spans": [
+    {
+     "text": "the uterus feels enlarged",
+     "field": "dialogue"
+    },
+    {
+     "text": "a fibroid or a polyp",
+     "field": "dialogue"
+    },
+    {
+     "text": "uterine leiomyoma",
+     "field": "note"
+    },
+    {
+     "text": "uterus enlarged to approximately 12-week size",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "N95.1",
+   "spans": [
+    {
+     "text": "hot flashes",
+     "field": "dialogue"
+    },
+    {
+     "text": "i wake up soaked",
+     "field": "dialogue"
+    },
+    {
+     "text": "vasomotor symptoms",
+     "field": "note"
+    },
+    {
+     "text": "nightly drenching sweats",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "pastry chef",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "overnight shift",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive overnight work routine"
+  },
+  {
+   "text": "november fourth",
+   "field": "dialogue",
+   "category": "DATE",
+   "comment": "scheduled imaging date"
+  },
+  {
+   "text": "pastry chef",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "overnight shift",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive overnight work routine"
+  },
+  {
+   "text": "November fourth",
+   "field": "note",
+   "category": "DATE",
+   "comment": "scheduled imaging date"
+  }
+ ],
+ "scenario": {
+  "specialty": "gynecology",
+  "visit": "acute",
+  "length": "medium",
+  "focus": [
+   "OCCUPATION",
+   "OTHER_PERSON_NAME",
+   "CONTACT"
+  ]
+ }
+}

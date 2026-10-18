@@ -1,0 +1,686 @@
+{
+ "id": "G0036",
+ "dataset": "synthetic_new",
+ "sex": "male",
+ "age_range": [
+  60,
+  75
+ ],
+ "icd10_codes": [
+  {
+   "code": "A69.20",
+   "description": "Lyme disease, unspecified"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i 'm doctor {DOCTOR_LAST} , an infectious disease doctor . the urgent care sent you over . how are you feeling today ?\n[patient] hi , doctor {DOCTOR_LAST} . honestly , i 'm tired and my leg still has a red spot . the urgent care doctor said it might be lyme .\n[doctor] okay . tell me when this started .\n[patient] about two weeks ago . we had a weekend up at the cabin in the hills , the one by the lake , and i went out walking in the woods every morning .\n[doctor] did you notice a tick ?\n[patient] not at first . a few days later i found a little dark spot on my left thigh , like a tick bite . i pulled it off with tweezers , my wife made me do it .\n[doctor] good . and the red spot ?\n[patient] it showed up about a week after the bite . it 's a big red circle , bigger than my hand now , and the middle is clearer . it 's not really itchy , it 's just warm .\n[doctor] that 's a classic pattern . any fever or chills ?\n[patient] a low fever , maybe one hundred . i sweat at night . my wife said i was talking nonsense one night , but i think that was the cold medicine .\n[doctor] okay . tell me about the joints .\n[patient] my knees ache , and the right wrist too . the left one is fine . it 's a dull ache , worse in the morning , but it loosens up after i move around .\n[doctor] any stiffness or swelling in the knees ?\n[patient] a little stiffness in the mornings . no swelling i can see .\n[doctor] okay . let me look at the rash . i see an erythematous expanding lesion on the left thigh , about fifteen centimeters , with central clearing . there is no drainage and no open skin .\n[patient] okay .\n[doctor] do you have any numbness , tingling , or weakness anywhere ? your face , your arms ?\n[patient] no . my face is fine . my hands are fine . my right leg feels a bit heavy , but i think that 's the fatigue .\n[doctor] okay . let me check your strength . push against my hands . good . now smile for me . your face is symmetric . no neck stiffness ?\n[patient] no , my neck is fine .\n[doctor] good . what do you do for a living , by the way ? it may matter for exposures .\n[patient] i drive a forklift on the night shift at the distribution warehouse out on route nine . i 've done that for nineteen years . i also do the inventory counts when the boss is out .\n[doctor] that sounds physically demanding . are there other exposures at work ? you mentioned the woods .\n[patient] no , the woods are my time off . the warehouse is all concrete . i do n't go in the woods for work .\n[doctor] okay . tell me about your hobbies . what do you do when you 're not at the warehouse ?\n[patient] i play pickleball at the rec center three mornings a week . i 'm not very good . and i still fix up old clocks at the kitchen table .\n[doctor] that 's a good mix of activity . have you served in the military ?\n[patient] i did two tours in the army in the nineties . i got an honorable discharge . my back is what the va treats now .\n[doctor] thank you for your service . any history of heart problems or high blood pressure ?\n[patient] high blood pressure , yes . i take amlodipine every morning , ten milligrams .\n[doctor] good . what about other medicines , or allergies ?\n[patient] i 'm allergic to sulfa , it made me break out . and the cold medicine i took , the one for the cough , had some ibuprofen in it .\n[doctor] okay . now , the urgent care gave you antibiotics . which one ?\n[patient] doxycycline , one hundred milligrams , twice a day . i 've taken it for four days now . i missed one dose the first night .\n[doctor] that 's fine . doxycycline is the usual choice for lyme in adults . we 'll confirm the diagnosis , but the rash alone is enough to treat .\n[patient] okay . do i have to keep taking it ?\n[doctor] yes . we 'll complete the full course , which is usually fourteen to twenty one days depending on how you respond . i want to order some lab tests too .\n[patient] like what ?\n[doctor] a lyme antibody test , though it can be negative early on , and a complete blood count and a liver panel because of the doxycycline . i 'd also like a blood test for other tick infections .\n[patient] that 's a lot of tests . my sister had a bad reaction to a test once .\n[doctor] i understand . these are routine . the lab will draw them today .\n[patient] okay .\n[doctor] i also want to talk about the sun . doxycycline makes you sensitive to sunlight , so wear sunscreen and a hat on the pickleball courts .\n[patient] i 'll wear a hat . the courts are outdoors , so that 's a problem in the summer .\n[doctor] yes , that 's why the hat matters . take the doxycycline with a full glass of water , and not right before lying down .\n[patient] okay .\n[doctor] and for your blood pressure , amlodipine is fine , so continue that .\n[patient] good . the nurse said the pressure was one forty over eighty .\n[doctor] yes , a little high today . we 'll recheck it at your next visit .\n[patient] i 'll mention it to my primary doctor too .\n[doctor] good . someone sent me a news story about the washington guidelines for a lyme vaccine . is that something you 've looked at ?\n[patient] i read something about it , but my neighbor said it 's not approved yet . i 'll wait .\n[doctor] that 's right . there is no approved lyme vaccine for people right now . we 'll focus on treatment and prevention .\n[patient] okay . one more thing . should i stop going to the woods ?\n[doctor] not necessarily . just check your skin after every walk , wear long pants tucked into your socks , and use an insect repellent .\n[patient] okay . i 'll do that . my wife is going to check me like a child .\n[doctor] that 's a good idea . come back in two weeks with your results , and let me know if the rash spreads or if you develop any new symptoms .\n[patient] yes , doctor {DOCTOR_LAST} . thanks for taking the time .\n[doctor] of course . we 'll see you soon , {PATIENT_FIRST} .",
+ "note": "CHIEF COMPLAINT\n\nErythema migrans rash and fatigue following a tick bite, with arthralgia. Referred from urgent care.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male referred by urgent care for evaluation of a suspected tick-borne illness. Approximately two weeks ago, during a weekend at a cabin, he walked daily in wooded areas. He found and removed an engorged tick from the left thigh several days later. About one week after the bite he noticed an expanding erythematous annular rash on the left thigh, now larger than his hand, with central clearing. The rash is nonpruritic and warm to the touch.\n\nHe reports low-grade fevers to approximately 100 F with night sweats and fatigue. He reports morning arthralgia of the knees and right wrist with stiffness lasting less than one hour, and heaviness in the right leg. He denies numbness, tingling, facial weakness, or neck stiffness. He has been taking doxycycline 100 mg twice daily for four days, with one missed dose.\n\nPAST MEDICAL HISTORY\n\nHypertension. Chronic low back pain managed through the VA.\n\nSOCIAL HISTORY\n\nWorks as a forklift operator on the night shift at a distribution warehouse, performing inventory counts. He has held this job for nineteen years. He served two tours in the Army in the 1990s with an honorable discharge. He plays pickleball three mornings a week at a recreation center and restores antique clocks at home. He spends weekends at a cabin with wooded trails.\n\nMEDICATIONS\n\nDoxycycline 100 mg twice daily. Amlodipine 10 mg daily. Recent over-the-counter cold medication containing ibuprofen.\n\nALLERGIES\n\nSulfa antibiotics (rash).\n\nPHYSICAL EXAM\n\nBlood pressure 140/80. Temperature 99.8 F. Expanding erythema migrans on the left thigh, approximately 15 cm with central clearing and no drainage. Strength 5/5 in all extremities, with the right leg subjectively heavy. Facial muscles symmetric. Neck supple without meningismus. Knees with mild stiffness and no effusion.\n\nRESULTS\n\nLyme serology, complete blood count, hepatic panel, and tick-borne co-infection panel ordered.\n\nASSESSMENT AND PLAN\n\n1. Erythema migrans with systemic symptoms, consistent with early Lyme disease. Continue doxycycline to complete a 14 to 21 day course. Diagnosis is clinical; serology pending.\n\n2. Lyme arthralgia of the knees and right wrist. Monitor for progression to arthritis.\n\n3. Hypertension, mildly elevated today. Continue amlodipine and recheck at primary care follow-up.\n\n4. Photosensitivity risk on doxycycline. Counseled on sun protection.\n\n5. Tick exposure prevention. Full-body skin checks after outdoor activity, long pants tucked into socks, and insect repellent.\n\n6. Lyme vaccine is not currently approved; no vaccine recommended.\n\nReturn in two weeks, or sooner for a spreading rash, new neurologic symptoms, or facial weakness.",
+ "medical_concepts": [
+  {
+   "text": "tired",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "red spot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lyme",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "tick bite",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dark spot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "big red circle",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the middle is clearer",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "not really itchy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "just warm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "low fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i sweat at night",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "talking nonsense",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the cold medicine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "my knees ache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the right wrist",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "a dull ache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "worse in the morning",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness , tingling , or weakness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "erythematous expanding lesion",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "central clearing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no drainage",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "right leg feels a bit heavy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "neck stiffness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "walking in the woods",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "distribution warehouse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "play pickleball",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "high blood pressure",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "amlodipine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "sulfa",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "break out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "doxycycline",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "missed one dose",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lyme antibody test",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "liver panel",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "tick infections",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensitive to sunlight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "one forty over eighty",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "lyme vaccine",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "insect repellent",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the rash spreads",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Erythema migrans",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "tick bite",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "arthralgia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fatigue",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "wooded areas",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "an engorged tick",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "expanding erythematous annular rash",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "central clearing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "nonpruritic",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "low-grade fevers",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "night sweats",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "morning arthralgia of the knees and right wrist",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "stiffness lasting less than one hour",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "heaviness in the right leg",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness, tingling, facial weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "doxycycline 100 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Chronic low back pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "distribution warehouse",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "wooded trails",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pickleball",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Amlodipine 10 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "cold medication containing ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sulfa antibiotics",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Blood pressure 140/80",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Temperature 99.8 F",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "approximately 15 cm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no drainage",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Strength 5/5",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "right leg subjectively heavy",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Facial muscles symmetric",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Neck supple",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "meningismus",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no effusion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lyme serology",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "complete blood count",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "hepatic panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "tick-borne co-infection panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "early Lyme disease",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lyme arthralgia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Continue doxycycline",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Photosensitivity risk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "insect repellent",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lyme vaccine",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "new neurologic symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "facial weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "spreading rash",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "lyme",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "disease named after a town, not a location of the patient"
+  },
+  {
+   "text": "washington",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "guideline or place word, not a person"
+  },
+  {
+   "text": "Lyme",
+   "field": "note",
+   "is_pii": false,
+   "comment": "disease named after a town"
+  },
+  {
+   "text": "VA",
+   "field": "note",
+   "is_pii": false,
+   "comment": "Veterans Affairs health system acronym"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "A69.20",
+   "spans": [
+    {
+     "text": "tick bite",
+     "field": "dialogue"
+    },
+    {
+     "text": "big red circle",
+     "field": "dialogue"
+    },
+    {
+     "text": "Erythema migrans",
+     "field": "note"
+    },
+    {
+     "text": "Lyme arthralgia",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "high blood pressure",
+     "field": "dialogue"
+    },
+    {
+     "text": "amlodipine",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypertension",
+     "field": "note"
+    },
+    {
+     "text": "Amlodipine 10 mg daily",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i drive a forklift on the night shift",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job and shift"
+  },
+  {
+   "text": "do the inventory counts",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "additional duty of the job"
+  },
+  {
+   "text": "route nine",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "road near workplace"
+  },
+  {
+   "text": "i still fix up old clocks at the kitchen table",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "rare hobby with specifics"
+  },
+  {
+   "text": "i did two tours in the army in the nineties",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "veteran status"
+  },
+  {
+   "text": "forklift operator",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "inventory counts",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "additional duty of the job"
+  },
+  {
+   "text": "restores antique clocks at home",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "rare hobby with specifics"
+  },
+  {
+   "text": "served two tours in the Army in the 1990s",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "veteran status"
+  }
+ ],
+ "scenario": {
+  "specialty": "infectious disease",
+  "visit": "new",
+  "length": "long",
+  "focus": [
+   "OTHER_QUASI",
+   "OCCUPATION"
+  ]
+ }
+}

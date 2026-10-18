@@ -1,0 +1,475 @@
+{
+  "encounter_id": "HO012",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "Ortiz-Bermúdez",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "Ortiz",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "Bermúdez",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "Rowan",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "Kayla",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "seven months old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "Elias",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "Elias Young",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "March 2nd, 2026",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "Nevaeh",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "Sunny Patch",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "Walt",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "Walt Parkinson",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "He's 91",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "Mr. Parkinson",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "Mesa Vista Children's",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "October 12th",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "915-555-0119",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "RIO GRANDE FAMILY PEDIATRICS",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "6150 N Mesa St",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Ste 210",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "El Paso",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "TX 79912",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "915-555-0119",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "915-555-0120",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "10/09/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "YOUNG, Rowan",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Rowan",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Elias",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "2026-03-02",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "7-month-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "7 mo",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "RGFP-118204",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Texas",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "523987104",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "A. L.",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Ortiz-Bermúdez",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Ortiz",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Bermúdez",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "1285736490",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Kayla",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Kayla Young",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "915-555-0186",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Nevaeh",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "3 y",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Sunny Patch Child Care",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Mesa Vista Children's",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Walter",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Walter Parkinson",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "91 y/o",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "CNA",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "night shift",
+      "category": "OCCUPATION",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Sierra Vista Nursing Home",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Lupe",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Arredondo",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "09/04/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "26-RSV-04417",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "in Spanish",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Mr. Parkinson",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "10/12/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Ana",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Lucía",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "JR",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "Parkinson's",
+      "category": "EPONYM",
+      "why": "disease of the great-grandfather, not the person"
+    },
+    {
+      "field": "dialogue",
+      "text": "Young babies",
+      "category": "NOT_A_NAME",
+      "why": "'young' is an adjective here, not the surname"
+    },
+    {
+      "field": "dialogue",
+      "text": "smokes his pipe",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Z77.22 environmental tobacco smoke exposure"
+    },
+    {
+      "field": "dialogue",
+      "text": "pipe smoke",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Z77.22"
+    },
+    {
+      "field": "dialogue",
+      "text": "93%",
+      "category": "CLINICAL_NUMBER",
+      "why": "oxygen saturation"
+    },
+    {
+      "field": "note",
+      "text": "Parkinson's disease",
+      "category": "EPONYM",
+      "why": "disease, not the person Mr. Parkinson"
+    },
+    {
+      "field": "note",
+      "text": "young infants",
+      "category": "NOT_A_NAME",
+      "why": "adjective, not the surname Young"
+    },
+    {
+      "field": "note",
+      "text": "smokes a pipe indoors",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Z77.22"
+    },
+    {
+      "field": "note",
+      "text": "environmental tobacco smoke",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Z77.22"
+    },
+    {
+      "field": "note",
+      "text": "Apgars",
+      "category": "EPONYM",
+      "why": "Apgar score, named after Virginia Apgar"
+    },
+    {
+      "field": "note",
+      "text": "8/9",
+      "category": "CLINICAL_NUMBER",
+      "why": "Apgar scores, not a date"
+    },
+    {
+      "field": "note",
+      "text": "24 h",
+      "category": "CLINICAL_NUMBER",
+      "why": "time window for urine output"
+    },
+    {
+      "field": "note",
+      "text": "3-5",
+      "category": "CLINICAL_NUMBER",
+      "why": "illness day range, not an ID"
+    },
+    {
+      "field": "note",
+      "text": "Ex-38 wk",
+      "category": "CLINICAL_NUMBER",
+      "why": "gestational age at birth"
+    },
+    {
+      "field": "note",
+      "text": "great-grandfather's pipe",
+      "category": "CODE_EVIDENCE",
+      "why": "source of environmental tobacco smoke supports Z77.22"
+    }
+  ]
+}

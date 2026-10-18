@@ -1,0 +1,73 @@
+{
+  "encounter_id": "D2N036",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "george",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "yard work",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "landscaping",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "landscaper",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "other employes",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "George",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Lewis",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "57-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "landscaping",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "tinel's sign",
+      "category": "EPONYM",
+      "why": "clinical sign, not a person"
+    },
+    {
+      "field": "note",
+      "text": "Tinel sign",
+      "category": "EPONYM",
+      "why": "clinical sign, not a person"
+    }
+  ]
+}

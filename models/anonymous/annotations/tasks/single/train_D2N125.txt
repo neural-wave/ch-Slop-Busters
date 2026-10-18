@@ -1,0 +1,91 @@
+########## ENCOUNTER D2N125
+=== FIELD: dialogue
+[patient] miss edwards is here for evaluation of facial pain this is a 54 -year-old male
+[doctor] how're you doing doctor cruz nice to see you today
+[patient] good to see you mister edwards i'm doctor
+[doctor] tell me what's been going on yeah so i've got this stabbing shooting pain i've had for a while you know and it it especially right here in my right face right in that cheek bone area it's sometimes it gets super hot i've had it for i think a couple of months now and i went to my family doctor and they said i should come see you
+[patient] okay great i would like to ask you a little bit more about that
+[doctor] had in your face do you remember how long that you had it probably for about two or three months just just came on slowly i started noticing it but now it's i have episodes where just shooting stabbing kind of a pain in my right cheek bone right face area
+[patient] mm-hmm do you have any sensory loss meaning like numbness or tingling in that part of your face
+[doctor] not that i've noticed no okay do you have any symptoms like this anywhere else on your face including the other side of your face
+[patient] no it's just on the right side mostly not on the left side just on the right side of my face
+[doctor] have you noticed any weakness on that side of the face like when you smile or while you're doing other things any weakness there not really i mean i've i've i've tried to you know when i smile my smile seems equal on both sides my eyes i do n't have any weakness there my vision seems to be unchanged but just this stabbing severe pain it's just like excruciating pain that i get sometimes does it happen on its own or there are certain things that trigger it
+[patient] sometimes if i'm if certain temperatures seem to trigger it sometimes or if it's super where it's cold i get a trigger sometimes
+[doctor] sometimes certain kind of sensory outside of the wind sometimes that seems to trigger it but that's about it
+[patient] okay and anything that you've done to to that helps for a little bit when you
+[doctor] pain excess
+[patient] you know i've tried ibuprofen and motrin that had really has n't helped it just comes on suddenly and then it's kinda stabbing excruciating pain i've tried rubbing some you know some tiger balm on it that did n't work
+[doctor] but that's you know so i i went to my family doctor and he said you know i really need to see a neurosurgeon
+[patient] got it how long do these episodes last these pain
+[doctor] you know it can last for anywhere from a few minutes to sometimes about an hour but generally generally a few minutes
+[patient] any history of something like multiple sclerosis or any brain tumors that you know
+[doctor] no nothing like that alright any other kinda headache symptoms that have anything like you had migraines or anything related to the headaches i mean i get occasional headaches but not really i do n't have a history of migraines but i occasionally get headaches like everybody else i take some tylenol that usually goes away but this is different
+[patient] how severe is the pain on a scale of one to ten
+[doctor] when it comes on it's like a ten it's like somebody is stabbing you with an ice pick and but usually you know after a few minutes usually it goes away but sometimes it can last up to an hour great so mister i would like to do a physical exam if that's okay with you
+[patient] sure
+[doctor] i would like you to follow my finger here and i see that you're following my finger in in both directions can you show me your teeth
+[patient] that looks nice and symmetric i'm gon na rub my fingers next to your ear can you hear that
+[doctor] yep
+[patient] you can hear it on the other side as well
+[doctor] yep
+[patient] okay
+[doctor] i'm gon na take this cotton tape and run it along the side of your face can you feel that okay
+[patient] yeah it's a little bit numb on my right side not so much on my left side
+[doctor] okay alright i'm gon na use this little needle here and i'm gon na poke here and i wan na see if you feel like it's being sharp or dull on that part of your face does that feel different or normal
+[patient] it feels a little bit dull on my left on my right side my left side it feels sharp
+[doctor] alright good well i had a chance to look at your mri
+[patient] okay
+[doctor] and i looked at your mri and it appears to have small blood vessel that is abutting and perhaps even pinching the trigeminal nerve the trigeminal nerve is nerve that comes from the brainstem that goes out to the face and provides the sensory inflammation from the face and you may have a condition called trigeminal neuralgia
+[patient] okay
+[doctor] where the nerve compression causes this kind of shooting electrical pain in the face how do we treat it
+[patient] well the first line would be to try some medications usually we start with medications that are called gabapentin
+[doctor] or tegretol these are medications that really help reduce the excitability of the nerve
+[patient] okay
+[doctor] most people can get the pain control with that but there are some people where the medications are n't gon na be enough and in that situation we would consider surgery i would n't i would n't recommend that now we usually try the medications first
+[patient] for considering a surgery to decompress the nerve the root cause of the problem is the compression of the blood vessel against the nerve
+[doctor] okay so we should be tried which one would you recommend the tegretol or yeah i think we could start with the tegretol to start with i just want to make sure that you understand some of the potential side effects that you can have with this
+[patient] sure
+[doctor] it's always a little bit of trial and error to figure out what the right dosing that would work for you but some common side effects can include you know memory loss tingling imbalance some people can actually have like dermatologic
+[patient] skin reaction to this medication and particularly people who have eustachian descent so that we may do some genetic testing just to make sure that it will be safe for you
+[doctor] okay sounds good let's do it
+[patient] okay so i will prescribe that for you and then we will see how that goes and if your pain continues we can talk about different surgical options to treat the pain
+[doctor] yeah i think i would like to try the tegretol first and if that does n't work then i can come back and so once should i come back and just to kinda check back with you and see if you know if it's had enough time for a fact or not
+[patient] i think one month would be a great time to follow up
+[doctor] okay sounds good so if you want to send that prescription over to my pharmacy that would be fine and then why do n't i come back in about a month and we'll go from there
+[patient] great i'll see you then
+[doctor] alright
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right-sided facial pain.
+
+REVIEW OF SYSTEMS
+
+Eyes: Denies vision changes or weakness in right eye.
+HENT: Reports right sided facial pain. Denies left sided facial pain. Neurological: Reports headaches. Denies sensory loss, numbness, or tingling in the right cheek. Denies right sided facial weakness.
+
+PHYSICAL EXAM
+
+Neurological
+- Orientation: Light touch testing of the right side of the face reveals numbness when compared to the contralateral side. Pinprick testing is sharp on the left side of the face; dull on the right side of the face.
+
+Ears, Nose, Mouth, and Throat
+Bilateral finger rub test is negative.
+- Examination of Mouth: Teeth are symmetric.
+
+RESULTS
+
+MRI of the head is reviewed today. This demonstrates a small blood vessel that is abutting, and perhaps even pinching, the right trigeminal nerve.
+
+ASSESSMENT AND PLAN
+
+1. Trigeminal neuralgia.
+- Medical Reasoning: The patient has been experiencing facial pain for 2 to 3 months. A recent MRI revealed a small blood vessel abutting, or perhaps even pinching, the right trigeminal nerve. The root cause of his facial pain is the compression of the blood vessel against this nerve.
+- Patient Education and Counseling: The patient and I discussed treatment options including medicating with gabapentin or Tegretol. I explained the common side effects associated with these medications can include memory loss, tingling, and imbalance. We discussed the need for genetic testing due to the possible side effect of dermatologic reactions in people of East Asian descent. We also briefly discussed surgical treatment to decompress the nerve, but this is not recommended at this time.
+- Medical Treatment: A prescription for Tegretol will be sent to the patient’s pharmacy.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+The patient will follow up with me in 1 month. If at that time his facial pain persists, we may further discuss surgical options.

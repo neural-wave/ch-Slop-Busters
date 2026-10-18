@@ -1,0 +1,15 @@
+{
+  "encounter_id": "D2N129",
+  "pii": [
+    {"field": "dialogue", "text": "beverly", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "24 year old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "working in a bakery", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "Beverly", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Ortiz", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "24-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "working at a bakery", "category": "OCCUPATION", "risk": "medium"}
+  ],
+  "keep": [
+    {"field": "note", "text": "2/6", "category": "CLINICAL_NUMBER", "why": "murmur grade"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "encounter_id": "D2N035",
+  "pii": [
+    {"field": "dialogue", "text": "christina", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "diane", "category": "PERSON_NAME", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "salt and vinegar potato chips", "category": "CODE_EVIDENCE", "why": "dietary indiscretion (salt intake) supports heart failure / hypertension reasoning"},
+    {"field": "note", "text": "128/72", "category": "CLINICAL_NUMBER", "why": "blood pressure reading, not a date"},
+    {"field": "note", "text": "2/6", "category": "CLINICAL_NUMBER", "why": "murmur grade, not a date"}
+  ]
+}

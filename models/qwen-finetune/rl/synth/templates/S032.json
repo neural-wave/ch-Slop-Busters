@@ -1,0 +1,1040 @@
+{
+ "id": "S032",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S06.0X0A",
+   "description": "Concussion without loss of consciousness, initial encounter"
+  },
+  {
+   "code": "W20.8XXA",
+   "description": "Other cause of strike by thrown, projected or falling object, initial encounter"
+  },
+  {
+   "code": "Y92.59",
+   "description": "Other trade areas as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y99.0",
+   "description": "Civilian activity done for income or pay"
+  },
+  {
+   "code": "E78.5",
+   "description": "Hyperlipidemia, unspecified"
+  }
+ ],
+ "dialogue": "[doctor] good afternoon , {PATIENT_FIRST} . come on in and have a seat .\n[patient] thanks .\n[doctor] so i understand you got hit on the head yesterday . can you walk me through what happened ?\n[patient] yeah . so i work at the {ORG} warehouse over on the east side . i'm an order picker , i pull stuff off the racks for shipping .\n[doctor] okay .\n[patient] and yesterday afternoon i was down one of the aisles pulling an order , and somebody on a forklift was putting a pallet up on the top rack in the next aisle over . and i guess it bumped a box loose , and it came off the top shelf and fell right on my head .\n[doctor] oh , no . do you know how heavy the box was ?\n[patient] they said about twenty pounds . it was a case of printer paper .\n[doctor] okay . and how high up was the shelf ?\n[patient] the top rack , so like twelve , fourteen feet .\n[doctor] were you wearing any kind of helmet or hard hat ?\n[patient] no , we just wear vests and safety shoes .\n[doctor] okay . did you get knocked out at all ?\n[patient] no , i do n't think so . i went down on one knee , but i remember the whole thing . my supervisor {OTHER_FIRST} came running over and i was talking to her right away .\n[doctor] okay , good . and what symptoms did you have afterwards ?\n[patient] right away i was really dizzy and i had a bad headache , right on the top of my head . i felt kind of foggy , like i could n't think straight . and last night i felt sick to my stomach .\n[doctor] did you throw up ?\n[patient] no , just nauseous .\n[doctor] okay . how about now ?\n[patient] the headache is still there , maybe a five out of ten . the lights in here are bothering me a little . and i'm still kind of slow , like i'm in a fog .\n[doctor] any blurry vision or double vision ?\n[patient] no .\n[doctor] any weakness or numbness in your arms or legs ? trouble talking ?\n[patient] no , nothing like that .\n[doctor] any neck pain ?\n[patient] a little bit stiff , but not bad .\n[doctor] okay . did you sleep okay ?\n[patient] i slept a lot actually . my husband woke me up a couple times like they told us to .\n[doctor] okay , good . have you taken anything for the headache ?\n[patient] just tylenol .\n[doctor] good , that's the right choice . try to avoid ibuprofen and aspirin for the first couple of days . now , you're also on a cholesterol medicine , right ?\n[patient] yes , the atorvastatin . twenty milligrams .\n[doctor] and are you taking it every day ?\n[patient] yes , every night .\n[doctor] any muscle aches with it ?\n[patient] no .\n[doctor] okay . your last lipid panel from the spring showed your ldl at one twenty , which is better than it was . we'll keep going with that .\n[patient] okay .\n[doctor] all right , let me examine you . follow my finger with your eyes . good . any dizziness when you do that ?\n[patient] a little .\n[doctor] okay . so on exam , there's a small bump on the top of your scalp , about two centimeters , and it's tender , but there's no cut and no step-off that i can feel . your pupils are equal and reactive . extraocular movements are intact , though they make you a bit dizzy . your strength is five out of five everywhere , sensation is normal , and your reflexes are symmetric . finger to nose is normal . you're a little unsteady when you stand with your feet together and eyes closed . your neck has some mild muscle tenderness but no midline tenderness .\n[patient] okay .\n[doctor] because you were struck from that height and you're still symptomatic , we got a ct of your head this morning , and that came back normal . there's no bleeding and no skull fracture .\n[patient] that's a relief .\n[doctor] it is . so what i think you have is a concussion , without loss of consciousness . that's a mild traumatic brain injury . it usually gets better over one to two weeks , but you need to give your brain some rest .\n[patient] okay , what does that mean for work ?\n[doctor] i'm going to keep you off work for the rest of this week , and then we'll see how you're doing . when you go back i'd like you on light duty , no heights , no driving the equipment , and limited screen time at first .\n[patient] okay .\n[doctor] for now , limit screens , no alcohol , and use tylenol , up to one thousand milligrams every eight hours , for the headache . if you get worsening headache , repeated vomiting , confusion , weakness , or you're really hard to wake up , go to the emergency room right away .\n[patient] i will .\n[doctor] i'll fill out the workers' compensation forms since this happened on the job . and continue the atorvastatin twenty milligrams at night .\n[patient] sounds good .\n[doctor] let's see you back in one week . okay ?\n[patient] okay . thank you .",
+ "note": "CHIEF COMPLAINT\n\nHead injury.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with a past medical history significant for hyperlipidemia, who presents with a head injury sustained at work on {DATE_SPOKEN}.\n\nThe patient works at the {ORG} warehouse as an order picker. Yesterday afternoon, while pulling an order in an aisle, a forklift loading an adjacent rack dislodged a box of approximately 20 pounds, which fell from a top shelf approximately 12 to 14 feet high and struck her on the top of the head. She was not wearing head protection. She went down on one knee but denies loss of consciousness and recalls the entire event. Immediately afterward she experienced dizziness, headache, and mental fogginess. She had nausea last night without vomiting. Currently she reports a 5/10 vertex headache, mild photosensitivity, and slowed thinking. She denies visual changes, focal weakness, numbness, or speech difficulty. Mild neck stiffness. She has taken Tylenol.\n\nHyperlipidemia: She takes atorvastatin 20 mg nightly without myalgias. LDL 120 this spring.\n\nPHYSICAL EXAM\n\nHead: 2 cm tender hematoma over the vertex scalp. No laceration. No palpable step-off.\nNeurological: Pupils equal and reactive. Extraocular movements intact, provoking mild dizziness. Strength 5/5 throughout. Sensation intact. Reflexes symmetric. Finger-to-nose normal. Mild sway on Romberg.\nNeck: Mild paraspinal muscle tenderness. No midline tenderness.\n\nRESULTS\n\nCT head without contrast: No intracranial hemorrhage. No skull fracture.\n\nASSESSMENT AND PLAN\n\n1. Concussion without loss of consciousness.\n• Medical Reasoning: Struck on the head by a falling box at work in a warehouse. Persistent headache, dizziness, nausea, and cognitive fogginess with normal CT.\n• Medical Treatment: Cognitive and physical rest, limit screen time, avoid alcohol. Tylenol up to 1000 mg every 8 hours. Avoid NSAIDs for the first 48 hours.\n• Patient Education and Counseling: Return precautions for worsening headache, repeated vomiting, confusion, weakness, or difficulty arousing.\n• Work: Off work for the remainder of the week, then light duty with no heights or equipment operation. Workers' compensation forms completed.\n\n2. Hyperlipidemia.\n• Medical Treatment: Continue atorvastatin 20 mg nightly.\n\nPatient Agreements: The patient understands and agrees with the recommended medical treatment plan.\n\nFollow up in 1 week.",
+ "medical_concepts": [
+  {
+   "text": "hit on the head",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "warehouse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pull stuff off the racks",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "down one of the aisles pulling an order",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "forklift",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bumped a box loose",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it came off the top shelf and fell right on my head",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "twenty pounds",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "twelve , fourteen feet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hard hat",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "knocked out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i remember the whole thing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dizzy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bad headache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "top of my head",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "foggy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "could n't think straight",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sick to my stomach",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "throw up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nauseous",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "five out of ten",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lights in here are bothering me",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "in a fog",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "blurry vision",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "double vision",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "weakness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "trouble talking",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "neck pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "stiff",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "aspirin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cholesterol medicine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "atorvastatin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "twenty milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "muscle aches",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lipid panel",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "ldl",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "one twenty",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "dizziness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "small bump on the top of your scalp",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "two centimeters",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tender",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no cut",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no step-off",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pupils are equal and reactive",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "extraocular movements are intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "strength is five out of five",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "reflexes are symmetric",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "finger to nose is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "unsteady when you stand with your feet together and eyes closed",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild muscle tenderness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no midline tenderness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "struck from that height",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ct of your head",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "no bleeding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no skull fracture",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "concussion , without loss of consciousness",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild traumatic brain injury",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "off work",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "light duty",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "limit screens",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "alcohol",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "one thousand milligrams every eight hours",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "worsening headache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "repeated vomiting",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "confusion",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hard to wake up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "emergency room",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "workers' compensation",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "on the job",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "twenty milligrams at night",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Head injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "hyperlipidemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "head injury sustained at work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "warehouse",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "while pulling an order in an aisle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "forklift loading an adjacent rack dislodged a box",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "20 pounds",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell from a top shelf approximately 12 to 14 feet high and struck her on the top of the head",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "head protection",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "denies loss of consciousness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "recalls the entire event",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dizziness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mental fogginess",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "nausea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "without vomiting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "5/10 vertex headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild photosensitivity",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "slowed thinking",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "visual changes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "focal weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "speech difficulty",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild neck stiffness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hyperlipidemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "atorvastatin 20 mg nightly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "myalgias",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "LDL 120",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "2 cm tender hematoma over the vertex scalp",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No laceration",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No palpable step-off",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pupils equal and reactive",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Extraocular movements intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Strength 5/5 throughout",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Reflexes symmetric",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Finger-to-nose normal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild sway on Romberg",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild paraspinal muscle tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No midline tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "CT head without contrast",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "No intracranial hemorrhage",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No skull fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Concussion without loss of consciousness",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Struck on the head by a falling box",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "at work in a warehouse",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Persistent headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "cognitive fogginess",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "normal CT",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Cognitive and physical rest",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "limit screen time",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "avoid alcohol",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol up to 1000 mg every 8 hours",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "NSAIDs",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "worsening headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "repeated vomiting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "confusion",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "difficulty arousing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Off work",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "light duty",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Workers' compensation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "my supervisor",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic role; the supervisor's name is the {OTHER_FIRST} slot"
+  },
+  {
+   "text": "my husband",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic family role"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S06.0X0A",
+   "spans": [
+    {
+     "text": "concussion , without loss of consciousness",
+     "field": "dialogue"
+    },
+    {
+     "text": "knocked out",
+     "field": "dialogue"
+    },
+    {
+     "text": "dizzy",
+     "field": "dialogue"
+    },
+    {
+     "text": "bad headache",
+     "field": "dialogue"
+    },
+    {
+     "text": "foggy",
+     "field": "dialogue"
+    },
+    {
+     "text": "no bleeding",
+     "field": "dialogue"
+    },
+    {
+     "text": "Concussion without loss of consciousness",
+     "field": "note"
+    },
+    {
+     "text": "denies loss of consciousness",
+     "field": "note"
+    },
+    {
+     "text": "No intracranial hemorrhage",
+     "field": "note"
+    },
+    {
+     "text": "mental fogginess",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W20.8XXA",
+   "spans": [
+    {
+     "text": "it came off the top shelf and fell right on my head",
+     "field": "dialogue"
+    },
+    {
+     "text": "bumped a box loose",
+     "field": "dialogue"
+    },
+    {
+     "text": "fell from a top shelf approximately 12 to 14 feet high and struck her on the top of the head",
+     "field": "note"
+    },
+    {
+     "text": "Struck on the head by a falling box",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.59",
+   "spans": [
+    {
+     "text": "warehouse",
+     "field": "dialogue"
+    },
+    {
+     "text": "warehouse",
+     "field": "note"
+    },
+    {
+     "text": "at work in a warehouse",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.0",
+   "spans": [
+    {
+     "text": "on the job",
+     "field": "dialogue"
+    },
+    {
+     "text": "workers' compensation",
+     "field": "dialogue"
+    },
+    {
+     "text": "down one of the aisles pulling an order",
+     "field": "dialogue"
+    },
+    {
+     "text": "head injury sustained at work",
+     "field": "note"
+    },
+    {
+     "text": "while pulling an order in an aisle",
+     "field": "note"
+    },
+    {
+     "text": "Workers' compensation",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E78.5",
+   "spans": [
+    {
+     "text": "cholesterol medicine",
+     "field": "dialogue"
+    },
+    {
+     "text": "atorvastatin",
+     "field": "dialogue"
+    },
+    {
+     "text": "ldl",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hyperlipidemia",
+     "field": "note"
+    },
+    {
+     "text": "hyperlipidemia",
+     "field": "note"
+    },
+    {
+     "text": "atorvastatin 20 mg nightly",
+     "field": "note"
+    },
+    {
+     "text": "LDL 120",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm an order picker",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's job; the warehouse/work context is separate medical evidence"
+  },
+  {
+   "text": "order picker",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "over on the east side",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "part of town of the employer site"
+  },
+  {
+   "text": "a case of printer paper",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "specific product handled at the employer"
+  }
+ ]
+}

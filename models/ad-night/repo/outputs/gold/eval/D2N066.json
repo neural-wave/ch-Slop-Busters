@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N066",
+  "pii": [
+    {"field": "dialogue", "text": "gabriel", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "scott", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "43 -year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "homans sign", "category": "EPONYM", "why": "clinical sign for DVT, not a person"},
+    {"field": "note", "text": "Homan's sign", "category": "EPONYM", "why": "clinical sign for DVT, not a person"},
+    {"field": "note", "text": "2/6", "category": "CLINICAL_NUMBER", "why": "murmur grade"},
+    {"field": "note", "text": "120-140", "category": "CLINICAL_NUMBER", "why": "blood glucose range"}
+  ]
+}

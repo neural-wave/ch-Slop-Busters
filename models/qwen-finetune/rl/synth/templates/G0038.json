@@ -1,0 +1,610 @@
+{
+ "id": "G0038",
+ "dataset": "synthetic_acute",
+ "sex": "female",
+ "age_range": [
+  45,
+  60
+ ],
+ "icd10_codes": [
+  {
+   "code": "M54.31",
+   "description": "Sciatica, right side"
+  },
+  {
+   "code": "M62.830",
+   "description": "Muscle spasm of back"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  },
+  {
+   "code": "E78.5",
+   "description": "Hyperlipidemia, unspecified"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i 'm doctor {DOCTOR_LAST} . the nurse said your back has been bothering you . what happened ?\n[patient] hi , doctor {DOCTOR_LAST} . it 's my lower back , and now a shooting pain down the back of my right leg . it started about five days ago .\n[doctor] okay . did anything happen that set it off ?\n[patient] i think it was the weekend we spent at the lake house in port aransas . i was bent over the kayak for an hour pulling it up on the sand . that night my back locked up .\n[doctor] that sounds like a big strain . where exactly does the pain go in the leg ?\n[patient] from my buttock down the back of the thigh , to just below the knee . my toes feel numb sometimes , mostly on the outside .\n[doctor] okay . any weakness in your foot , like trouble lifting the toes or the foot dropping ?\n[patient] no , i can still lift my foot . but it 's hard to walk for long . the nurse said my leg reflexes will be checked .\n[doctor] right . any bladder or bowel changes , or numbness in the groin ?\n[patient] no . nothing like that . thank goodness .\n[doctor] good . what helps the pain ?\n[patient] heat helps a bit . the ibuprofen helps a little , and i lie on the floor with my knees up . sitting makes it worse .\n[doctor] how long can you sit ?\n[patient] maybe ten minutes . i 'm fifty four , and the nurse says screening for bone density starts at 65 , so i 'm not there yet .\n[doctor] okay . tell me about your history . any back problems before this ?\n[patient] i had a bulging disc about two years ago , but it healed with physical therapy . i 'm a competitive ballroom dancer , i do it three nights a week , so the back has been sore on and off .\n[doctor] ballroom dancing is great exercise . which moves hurt the most ?\n[patient] the lifts are where i feel it . my partner is always careful , though .\n[doctor] okay . let me examine you . please stand up and bend forward slowly . stop if it hurts too much .\n[patient] okay . ow . that 's the spot .\n[doctor] i see the muscles in the low back are tight , and there is spasm on the right side . your straight leg raise is positive at about forty degrees on the right . your reflexes in the knee are normal . the ankle reflex is a little weaker on the right .\n[patient] so is it the disc again ?\n[doctor] it could be . the disc may be pressing on the nerve root . let 's get an mri if the pain does not improve in two weeks .\n[patient] will you do a scan now ?\n[doctor] i 'd rather try conservative treatment first , unless you get worse . i 'm going to start a short course of prednisone and a muscle relaxer at night .\n[patient] i have high blood pressure and i take my lisinopril . is the prednisone a problem ?\n[doctor] the blood pressure is one forty over eighty eight today . prednisone can raise it , so we 'll monitor you while you take it .\n[patient] okay .\n[doctor] your cholesterol was high at the last check . are you still taking the statin ?\n[patient] yes , the atorvastatin every night . i 'm trying to keep it up .\n[doctor] good . keep it up . now , for the physical therapy , i 'll set you up to start twice a week .\n[patient] okay . how long do i need to do it ?\n[doctor] usually four to six weeks . most back pain gets better within six weeks , so we 'll see where you are . i 'd like you to keep moving and not stay in bed .\n[patient] i 'll try . my husband says i should not dance for a while .\n[doctor] i agree for now . no lifts for two weeks . after that , we can talk about easing back in .\n[patient] okay . that 's going to be hard .\n[doctor] i know . heat for twenty minutes , and walk short distances several times a day . call us if the numbness spreads , or if you lose control of your bladder or bowels . go to the emergency room in that case .\n[patient] got it . thank you , doctor {DOCTOR_LAST} .\n[doctor] you 're welcome , {PATIENT_FIRST} . see you in two weeks .",
+ "note": "CHIEF COMPLAINT\n\nAcute low back pain with right-sided radicular symptoms for five days.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents with five days of low back pain radiating down the posterior right thigh to just below the knee. Symptoms began after bending over and pulling a kayak up on the sand during a weekend at a lake house in Port Aransas. She reports intermittent numbness of the lateral right toes. She denies new foot drop, bowel or bladder dysfunction, and saddle anesthesia. Heat and ibuprofen provide partial relief. Prolonged sitting worsens symptoms; she can tolerate about ten minutes.\n\nShe reports a lumbar disc bulge about two years ago that resolved with physical therapy. She has intermittent back soreness related to competitive ballroom dancing, which she performs three evenings per week.\n\nMEDICATIONS\n\nLisinopril daily. Atorvastatin nightly. Ibuprofen as needed.\n\nPHYSICAL EXAM\n\nBlood pressure 140/88. Lumbar paraspinal muscle spasm on the right. Forward flexion limited by pain at approximately 40 degrees. Positive straight leg raise on the right at approximately 40 degrees. Patellar reflex normal bilaterally. Ankle reflex diminished on the right. Strength 5/5 in dorsiflexion and plantarflexion.\n\nRESULTS\n\nLumbar MRI not obtained at this visit. No recent imaging available for review.\n\nASSESSMENT AND PLAN\n\n1. Right-sided sciatica, likely from lumbar disc herniation, with diminished right ankle reflex. Short course of oral prednisone and a nightly muscle relaxant. Lumbar MRI if no improvement in two weeks.\n\n2. Muscle spasm of the lumbar back. Heat, walking, and home stretching.\n\n3. Hypertension, elevated today. Monitor blood pressure while on prednisone. Continue lisinopril.\n\n4. Hyperlipidemia. Continue atorvastatin.\n\n5. Referral to physical therapy, twice weekly for four to six weeks. No lifts or dance for two weeks.\n\nReturn precautions reviewed, including progressive numbness, foot weakness, or bowel or bladder dysfunction.",
+ "medical_concepts": [
+  {
+   "text": "shooting pain down the back of my right leg",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my back locked up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a big strain",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bent over the kayak",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "from my buttock down the back of the thigh",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my toes feel numb",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the foot dropping",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hard to walk for long",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "leg reflexes",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "bladder or bowel changes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness in the groin",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "heat helps a bit",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "sitting makes it worse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "screening for bone density starts at 65",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a bulging disc",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "the back has been sore on and off",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the lifts are where i feel it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the muscles in the low back are tight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "spasm on the right side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your straight leg raise is positive",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your reflexes in the knee are normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the ankle reflex is a little weaker on the right",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the disc may be pressing on the nerve root",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "an mri",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "conservative treatment",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "prednisone",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "a muscle relaxer",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "high blood pressure",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "one forty over eighty eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "cholesterol was high",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the atorvastatin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "heat for twenty minutes",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "the numbness spreads",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lose control of your bladder or bowels",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Acute low back pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "right-sided radicular symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "radiating down the posterior right thigh",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness of the lateral right toes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "new foot drop",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "bowel or bladder dysfunction",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "saddle anesthesia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Heat and ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Prolonged sitting",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lumbar disc bulge",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "competitive ballroom dancing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "intermittent back soreness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lisinopril daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Atorvastatin nightly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen as needed",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lumbar paraspinal muscle spasm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Forward flexion limited by pain",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Positive straight leg raise",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Patellar reflex normal bilaterally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ankle reflex diminished",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Strength 5/5",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Blood pressure 140/88",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lumbar MRI",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right-sided sciatica",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "lumbar disc herniation",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "oral prednisone",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "nightly muscle relaxant",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Muscle spasm of the lumbar back",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Heat, walking, and home stretching",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hypertension, elevated today",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Continue lisinopril",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hyperlipidemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Continue atorvastatin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Referral to physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "No lifts or dance for two weeks",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "progressive numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "foot weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "lifts",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dance moves, not a physical lift device"
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "drug name, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "M54.31",
+   "spans": [
+    {
+     "text": "from my buttock down the back of the thigh",
+     "field": "dialogue"
+    },
+    {
+     "text": "my toes feel numb",
+     "field": "dialogue"
+    },
+    {
+     "text": "Right-sided sciatica",
+     "field": "note"
+    },
+    {
+     "text": "radiating down the posterior right thigh",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "M62.830",
+   "spans": [
+    {
+     "text": "spasm on the right side",
+     "field": "dialogue"
+    },
+    {
+     "text": "the muscles in the low back are tight",
+     "field": "dialogue"
+    },
+    {
+     "text": "Muscle spasm of the lumbar back",
+     "field": "note"
+    },
+    {
+     "text": "Lumbar paraspinal muscle spasm",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "high blood pressure",
+     "field": "dialogue"
+    },
+    {
+     "text": "one forty over eighty eight",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypertension, elevated today",
+     "field": "note"
+    },
+    {
+     "text": "Blood pressure 140/88",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E78.5",
+   "spans": [
+    {
+     "text": "cholesterol was high",
+     "field": "dialogue"
+    },
+    {
+     "text": "the atorvastatin",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hyperlipidemia",
+     "field": "note"
+    },
+    {
+     "text": "Continue atorvastatin",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "port aransas",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "named coastal town of a weekend trip"
+  },
+  {
+   "text": "i 'm a competitive ballroom dancer , i do it three nights a week",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "rare hobby with specifics"
+  },
+  {
+   "text": "Port Aransas",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "named coastal town of a weekend trip"
+  },
+  {
+   "text": "competitive ballroom dancing, which she performs three evenings per week",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "rare hobby with specifics"
+  }
+ ],
+ "scenario": {
+  "specialty": "physical medicine and rehabilitation",
+  "visit": "acute",
+  "length": "medium",
+  "focus": [
+   "LOCATION",
+   "OTHER_QUASI"
+  ]
+ }
+}

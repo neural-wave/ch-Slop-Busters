@@ -1,0 +1,469 @@
+{
+  "encounter_id": "HO009",
+  "pii": [
+    {
+      "field": "note",
+      "text": "MESILLA VALLEY REGIONAL MEDICAL CENTER",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "2750 Arroyo Seco Dr",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Las Cruces",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "NM",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "88011",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "575-555-0142",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "575-555-0143",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "clpsych@mvrmc-health.org",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "October 14, 2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Benjamin",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Okafor",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "RE: WINTER",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Ruth",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Ann",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Feb. 2, 1935",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "7731-0045-2",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Medicare",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "4TG7-HN2-QK58",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Mrs. Winter",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "91-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Ruthie",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "10/12/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Priya",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Raman",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "10/15",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Gordon",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "June 2, 2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "66 years of marriage",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Hatch",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "youngest of seven",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Rio Grande Normal College",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "1956",
+      "category": "YEAR",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "taught fourth grade",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Doña Ana Heights Elementary",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "for 34 years",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "1209 Calle del Sol",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Mesilla",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "88046",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Michael",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Michael Winter",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Tucson",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "(520) 555-0187",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "01/2025",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Lorraine",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Whitfield-Baca",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Albuquerque",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Isla",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "age 4",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Mesilla Valley Presbyterian Church",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "sang alto",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "NM MVD",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "2024",
+      "category": "YEAR",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "March 2025",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "$14,000",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "phone scam",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Las Cruces Police",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "25-031877",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Elaine",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Kowalczyk",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Casa de Paz",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "575-555-0199",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Elena",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Vásquez-Holm",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "1730584296",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Daniel",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Archuleta",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Organ Mesa Family Clinic",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "575-555-0276",
+      "category": "ID",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "step-ladder",
+      "category": "CODE_EVIDENCE",
+      "why": "mechanism for W11.XXXA (fall from ladder)"
+    },
+    {
+      "field": "note",
+      "text": "changing a smoke detector battery",
+      "category": "CODE_EVIDENCE",
+      "why": "activity at time of the fall"
+    },
+    {
+      "field": "note",
+      "text": "last winter",
+      "category": "NOT_A_NAME",
+      "why": "season, not the surname Winter"
+    },
+    {
+      "field": "note",
+      "text": "Lewy body",
+      "category": "EPONYM",
+      "why": "disease name"
+    },
+    {
+      "field": "note",
+      "text": "Beers criteria",
+      "category": "EPONYM",
+      "why": "prescribing criteria"
+    },
+    {
+      "field": "note",
+      "text": "parkinsonism",
+      "category": "EPONYM",
+      "why": "clinical sign"
+    },
+    {
+      "field": "note",
+      "text": "24/30",
+      "category": "CLINICAL_NUMBER",
+      "why": "MoCA score"
+    },
+    {
+      "field": "note",
+      "text": "11/15",
+      "category": "CLINICAL_NUMBER",
+      "why": "GDS-15 score (looks like a date)"
+    },
+    {
+      "field": "note",
+      "text": "132/78",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure"
+    }
+  ]
+}

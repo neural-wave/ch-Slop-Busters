@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N068",
+  "phi": [
+    {"text": "brian", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "58 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "projects around the house", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "household tasks"},
+    {"text": "construction on our own", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "repairs on our own"},
+    {"text": "labor day", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a holiday"},
+    {"text": "construction on our kitchen", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "home repairs"},
+    {"text": "halloween", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the holiday"},
+    {"text": "home renovations", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "home projects"},
+    {"text": "Brian White", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "58-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "lots of projects", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "lots of tasks"},
+    {"text": "construction on his home", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "home repairs"},
+    {"text": "construction on their kitchen", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "home repairs"},
+    {"text": "Labor Day", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "a holiday"}
+  ],
+  "medical_concepts": []
+}

@@ -1,0 +1,286 @@
+{
+  "encounter_id": "D2N053",
+  "pii": [
+    {
+      "text": "barbara",
+      "field": "dialogue",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient first name"
+    }
+  ],
+  "medical_concepts": [
+    {
+      "text": "scalp psoriasis",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "itchy scalp pain",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "dandruff",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "itching",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "itchy and scaly",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "rashes",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "joint pain fever weight loss",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "dry scalp",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "white dander",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "demarcated scaly erythematous plaques",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "diffusely present across the back of your skull",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "one thirty over sixty eight",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "heart rate was ninety eight",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "respiratory rate was eighteen",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "ninety seven . seven",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "t gel",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "head and shoulders",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "castor oil",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "clobetasol",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "zero . zero five percent solution",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "t-gel shampoo",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "steroids",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "scalp",
+      "field": "dialogue",
+      "type": "anatomy",
+      "icd_relevant": true
+    },
+    {
+      "text": "Scalp psoriasis",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "scalp psoriasis",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Itchy scalp pain",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "scalp pain",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "itchy scalp",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "joint pain",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "fever or weight loss",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "rashes",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "BP: 130/68",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "HR: 98",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "RR:18",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "97.7",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "demarcated scaly, erythematous plaques",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "diffusely present across the back of the skull",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "clobetasol 0.05% solution twice daily",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "clobetasol 0.05%",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "T/Gel shampoo",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "steroids",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "flare ups",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "flare ups",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    }
+  ],
+  "ambiguous_terms": [
+    {
+      "text": "head and shoulders",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "shampoo brand, not anatomy or PII"
+    },
+    {
+      "text": "my sister",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "unnamed relative"
+    }
+  ]
+}

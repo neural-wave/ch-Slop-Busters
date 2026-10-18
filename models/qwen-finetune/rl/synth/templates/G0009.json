@@ -1,0 +1,620 @@
+{
+ "id": "G0009",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "age_range": [
+  19,
+  30
+ ],
+ "icd10_codes": [
+  {
+   "code": "S02.2XXA",
+   "description": "Fracture of nasal bones, initial encounter for closed fracture"
+  },
+  {
+   "code": "W18.30XA",
+   "description": "Fall on same level, unspecified, initial encounter"
+  },
+  {
+   "code": "Y93.66",
+   "description": "Activity, soccer"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . what happened to your nose ?\n[patient] i took a fall during a pickup game on tuesday night . my nose hit the floor pretty hard , and it's been bleeding on and off since .\n[doctor] okay . where were you playing ?\n[patient] at saint mark's church gym on the east side . the floor was wet from somebody's water bottle , and i slipped going up for a rebound .\n[doctor] any loss of consciousness or headache ?\n[patient] no , i stayed up . i was dizzy for a minute . my brother {OTHER_FIRST} drove me to urgent care .\n[doctor] good . what did they do there ?\n[patient] they took an x-ray and said to come see an ear nose and throat doctor . so here i am .\n[doctor] okay . let's look . any trouble breathing through your nose ?\n[patient] it's totally blocked . i ca n't breathe through either side .\n[doctor] i'm going to look inside with a light . the nose is swollen and there's dried blood in both nostrils . the septum looks pushed to the left , and i see a small clot on the right side . there's no bulging of the wall , so it's not a septal hematoma . good .\n[patient] that's good news , right ?\n[doctor] yes . the x-ray shows a nasal bone fracture , which is what we expected . it's displaced a little to one side .\n[patient] will i need surgery ?\n[doctor] possibly , but we usually wait five to seven days until the swelling goes down , and then we can do a closed reduction in the office .\n[patient] like putting it back in place ?\n[doctor] exactly . we'd numb the inside of the nose and gently realign the bones . it's usually quick and not too bad .\n[patient] okay . i'm a tow truck driver , so i need my breathing to be right .\n[doctor] that's important . how do you manage the work with a blocked nose ?\n[patient] i'm on the road a lot , and i sleep in the truck sometimes . the dust from the highway does n't help .\n[doctor] let's make sure you avoid heavy lifting for two weeks , and use a saline spray . no blowing your nose for at least a week .\n[patient] i sneeze and it's terrible . my wife says i'll have to keep a box of tissues in the truck .\n[doctor] that's fine , just sneeze with your mouth open . ice packs for twenty minutes at a time in the first two days .\n[patient] and no ibuprofen ? i usually take it for everything .\n[doctor] ibuprofen is okay for pain , but it can increase bleeding , so acetaminophen is better for the first few days . how much bleeding is there today ?\n[patient] just a little bit this morning . it's mostly stopped now .\n[doctor] okay . your blood pressure is one twenty four over seventy , and your pulse is seventy eight . let me check your eyes too .\n[patient] okay .\n[doctor] your eyes are fine , with no bruising under them besides the swelling . no bruise behind the ears either . good .\n[patient] my dad had bell's palsy years ago . he could not close one eye for months . i'm glad mine is fine .\n[doctor] that's reassuring . your facial movement looks normal on both sides . i'll put your mrn {MRN} on the referral for the ent surgeon .\n[patient] thanks . do i need a tetanus shot ?\n[doctor] your record shows your last tetanus booster was four years ago , so you're still up to date .\n[patient] good . i'll come back in one week for the reduction .\n[doctor] perfect . come back sooner if you have a fever , severe pain , bleeding that won't stop , or any changes in your vision .\n[patient] got it . thank you , doctor .",
+ "note": "MRN: {MRN}\n\nCHIEF COMPLAINT\n\nNasal injury after a fall during a basketball game, with nasal obstruction.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male who presents for evaluation of a nasal injury sustained on {DATE_SPOKEN}. He slipped on a wet floor at Saint Mark's Church gymnasium while going up for a rebound during a pickup basketball game, and his face struck the floor with immediate epistaxis. He had transient dizziness without loss of consciousness and denies headache. He was evaluated at urgent care, where radiographs were obtained. He reports intermittent nosebleeds and complete bilateral nasal obstruction. He sneezes frequently. He works as a tow truck driver and spends long periods in his truck, where highway dust worsens his symptoms. He has been using ibuprofen for pain.\n\nPAST MEDICAL HISTORY\n\nNo prior nasal surgery. Tetanus booster four years ago. Family history notable for his father's Bell's palsy.\n\nPHYSICAL EXAM\n\nVitals: BP 124/70, pulse 78.\nNasal: diffuse edema, dried blood in both nasal vestibules, leftward septal deviation, small clot in the right nasal cavity. No septal hematoma. Facial movement symmetric. Periorbital swelling without ecchymosis of the orbital rim; no postauricular bruising.\n\nRESULTS\n\nPlain radiographs of the nasal bones show a displaced nasal bone fracture.\n\nASSESSMENT AND PLAN\n\n1. Closed nasal bone fracture with septal deviation and nasal obstruction, sustained from a slip on a wet gymnasium floor during basketball. Ice, head elevation, and saline irrigation. Avoid nose blowing for one week and heavy exertion for two weeks. Acetaminophen preferred over NSAIDs for analgesia given recent epistaxis.\n2. Closed reduction planned in five to seven days once edema subsides. Septal hematoma excluded on exam.\n3. Return precautions reviewed: fever, severe pain, persistent bleeding, or visual changes.",
+ "medical_concepts": [
+  {
+   "text": "took a fall",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my nose hit the floor pretty hard",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's been bleeding on and off since",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a pickup game",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the floor was wet from somebody's water bottle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i slipped going up for a rebound",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "any loss of consciousness or headache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i was dizzy for a minute",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "they took an x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's totally blocked",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i ca n't breathe through either side",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the nose is swollen",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dried blood in both nostrils",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the septum looks pushed to the left",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a small clot on the right side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "there's no bulging of the wall",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "not a septal hematoma",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "the x-ray shows a nasal bone fracture",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's displaced a little to one side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a closed reduction in the office",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "numb the inside of the nose",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "realign the bones",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "my breathing to be right",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the dust from the highway",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heavy lifting for two weeks",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a saline spray",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "no blowing your nose",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i sneeze and it's terrible",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice packs for twenty minutes",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen is better",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "it can increase bleeding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "just a little bit this morning",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "your blood pressure is one twenty four over seventy",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your pulse is seventy eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "no bruising under them besides the swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no bruise behind the ears",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "bell's palsy",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "he could not close one eye",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "your facial movement looks normal on both sides",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your last tetanus booster was four years ago",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "any changes in your vision",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Closed nasal bone fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "fall during a basketball game",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "nasal injury",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "He slipped on a wet floor",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "his face struck the floor",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "immediate epistaxis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "transient dizziness without loss of consciousness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "denies headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "radiographs were obtained",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "intermittent nosebleeds",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "complete bilateral nasal obstruction",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "He sneezes frequently",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "highway dust worsens his symptoms",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "using ibuprofen for pain",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tetanus booster four years ago",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Bell's palsy",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 124/70",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse 78",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "diffuse edema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dried blood in both nasal vestibules",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "leftward septal deviation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "small clot in the right nasal cavity",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No septal hematoma",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Facial movement symmetric",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Periorbital swelling without ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Plain radiographs of the nasal bones",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "displaced nasal bone fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "septal deviation and nasal obstruction",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a slip on a wet gymnasium floor",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Ice, head elevation, and saline irrigation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Avoid nose blowing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Acetaminophen preferred over NSAIDs",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "recent epistaxis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Closed reduction planned in five to seven days",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Septal hematoma excluded",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever, severe pain, persistent bleeding, or visual changes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "bell's palsy",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponym for facial nerve palsy, not a person"
+  },
+  {
+   "text": "Bell's palsy",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponym for facial nerve palsy, not a person"
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic drug name"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S02.2XXA",
+   "spans": [
+    {
+     "text": "the x-ray shows a nasal bone fracture",
+     "field": "dialogue"
+    },
+    {
+     "text": "it's displaced a little to one side",
+     "field": "dialogue"
+    },
+    {
+     "text": "Closed nasal bone fracture",
+     "field": "note"
+    },
+    {
+     "text": "displaced nasal bone fracture",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W18.30XA",
+   "spans": [
+    {
+     "text": "i slipped going up for a rebound",
+     "field": "dialogue"
+    },
+    {
+     "text": "the floor was wet from somebody's water bottle",
+     "field": "dialogue"
+    },
+    {
+     "text": "He slipped on a wet floor",
+     "field": "note"
+    },
+    {
+     "text": "a slip on a wet gymnasium floor",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.66",
+   "spans": [
+    {
+     "text": "a pickup game",
+     "field": "dialogue"
+    },
+    {
+     "text": "fall during a basketball game",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "saint mark's church gym",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "named church gymnasium where he played"
+  },
+  {
+   "text": "on the east side",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "neighborhood of the gym"
+  },
+  {
+   "text": "tow truck driver",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "Saint Mark's Church gymnasium",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "comment": "named church gymnasium where he played"
+  },
+  {
+   "text": "tow truck driver",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  }
+ ],
+ "scenario": {
+  "specialty": "ENT",
+  "visit": "injury",
+  "length": "short",
+  "focus": [
+   "ID",
+   "OTHER_PERSON_NAME",
+   "OCCUPATION"
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+{
+  "encounter_id": "D2N081",
+  "phi": [
+    {"text": "beverly", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "53 -year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

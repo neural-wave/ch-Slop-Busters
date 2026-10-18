@@ -1,0 +1,21 @@
+{
+  "encounter_id": "D2N182",
+  "phi": [
+    {"text": "michelle king", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "michelle", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "05/07/1982", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "district regional hospital", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "a local hospital"},
+    {"text": "06/29/2021", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "07/02/2021", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "39-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "june", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "somewhat homeopathic", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "inclined toward alternative remedies"},
+    {"text": "Michelle King", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "39-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "District Regional Hospital", "field": "note", "type": "ORGANIZATION", "tier": 1, "generalized": "a local hospital"},
+    {"text": "06/29/2021", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "07/02/2021", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "somewhat homeopathic", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "inclined toward alternative remedies"}
+  ],
+  "medical_concepts": []
+}

@@ -1,0 +1,654 @@
+{
+ "id": "G0021",
+ "dataset": "synthetic_acute",
+ "sex": "male",
+ "age_range": [
+  19,
+  30
+ ],
+ "icd10_codes": [
+  {
+   "code": "G43.109",
+   "description": "Migraine with aura, not intractable, without status migrainosus"
+  },
+  {
+   "code": "R20.2",
+   "description": "Paresthesia of skin"
+  },
+  {
+   "code": "R51.9",
+   "description": "Headache, unspecified"
+  },
+  {
+   "code": "Z82.3",
+   "description": "Family history of stroke"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . have a seat . what brings you in today ?\n[patient] hey doctor {DOCTOR_LAST} . honestly i'm not sure what's going on . my left hand keeps going numb and tingly , like it fell asleep , and it's happened about four times this month .\n[doctor] okay . when did it first start ?\n[patient] i think the first one was around {DATE_SPOKEN} . i was at work , i drive a forklift on the night shift at the warehouse , and my hand just went dead on the controls .\n[doctor] that sounds scary when you're running heavy equipment . what did you do ?\n[patient] i pulled over , shook it out , and it came back after maybe ten minutes . i kept working because we were short staffed , which i know was dumb .\n[doctor] it's understandable . tell me about the episodes . do they come with anything else ? headache , vision changes , trouble talking ?\n[patient] the headaches , yeah . i've been getting them since i was a teenager . it's one side of my head , throbbing , and i need to lie down in a dark room . but the numbness is new .\n[doctor] okay . before the numbness started , did you get any warning ? like zigzag lights or blind spots ?\n[patient] yes , actually . i see these wavy lines in the left side of my vision for about twenty minutes , then the hand goes numb , then the headache comes .\n[doctor] that pattern is important . the wavy lines before the headache sound like an aura . how often are the headaches ?\n[patient] maybe two or three times a month . i take ibuprofen and sometimes i take sumatriptan . i picked the sumatriptan up at the pharmacy a while back .\n[doctor] how often are you taking the sumatriptan ?\n[patient] like twice a month when it's bad .\n[doctor] okay . any weakness in your face or your arm when the numbness happens ? is your speech ever slurred ?\n[patient] no , my speech is fine . my hand is just tingly and dead feeling . i can still grip stuff but it's weak .\n[doctor] when did the headaches first start ?\n[patient] {YEAR} , i think . i got my first ever migraine diagnosis that summer after a bad week at work .\n[doctor] okay . any family history of strokes or migraines ?\n[patient] my grandmother had a stroke when she was about seventy . my mom gets migraines too .\n[doctor] okay . and what about smoking , alcohol , any drugs ?\n[patient] i quit smoking last year . i have maybe two beers on weekends . nothing else .\n[doctor] good . how's your sleep on night shift ?\n[patient] terrible . i sleep in the morning with blackout curtains and i get maybe five hours . i think that's part of it .\n[doctor] that could definitely contribute . how about caffeine ?\n[patient] i drink like four energy drinks on shift . i know .\n[doctor] okay . let me do a quick neuro exam . can you follow my finger with your eyes ?\n[patient] yes .\n[doctor] squeeze my hands . push against me . strength looks normal on both sides . touch here , tell me where you feel it .\n[patient] the left hand feels duller . the fingers especially .\n[doctor] okay . your reflexes look symmetric . gait is normal . blood pressure is one twenty six over seventy eight , pulse seventy two .\n[patient] that's good .\n[doctor] i'd like to get an mri of your brain with contrast to be safe , plus blood work and an ecg , since you're young but you're having new sensory symptoms .\n[patient] okay . will i need to stop driving the forklift ?\n[doctor] for now i'd hold off on operating heavy equipment until we know what's causing the numbness . i'll write you a note for your supervisor .\n[patient] my supervisor is going to be so annoyed . i'm already on the schedule through the holidays . and i can't afford to miss shifts as a forklift operator .\n[doctor] i understand . that's why i want to get this done quickly . can you come in for the mri this week ?\n[patient] yeah , i can do thursday morning . my last physical was on {DATE_NUM} and everything was fine .\n[doctor] great . for the headaches , keep a headache diary with dates and triggers . i don't want you taking sumatriptan more than two days a week because overusing it can cause rebound headaches .\n[patient] okay . so no more ibuprofen every day either ?\n[doctor] right , limit the ibuprofen too . do you have any questions ?\n[patient] no , not really . i'm just worried it's something serious like a stroke .\n[doctor] at your age that's unlikely , but the mri will tell us . if you get weakness in your face or your arm that doesn't go away , slurred speech , or the worst headache of your life , call 911 right away .\n[patient] got it . thank you , doctor {DOCTOR_LAST} .\n[doctor] you're welcome . we'll see you thursday .",
+ "note": "CHIEF COMPLAINT\n\nIntermittent left hand numbness and recurrent headaches.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with a long-standing history of migraine who presents with about four episodes of left hand numbness over the past month. He works as a forklift operator on the night shift at the warehouse. The first episode occurred around {DATE_SPOKEN} while he was operating equipment; he pulled over and symptoms resolved in about ten minutes. He continued working that night.\n\nMigraine diagnosis was made in {YEAR}. Each episode is preceded by approximately twenty minutes of visual aura described as wavy lines in the left visual field, followed by numbness of the left fingers and then a unilateral throbbing headache lasting several hours. He denies facial droop, dysarthria, or focal weakness of the leg. He takes sumatriptan roughly twice a month and ibuprofen intermittently. He reports five hours of sleep on his night shift schedule and drinks approximately four energy drinks per shift. He quit smoking last year and drinks two beers on weekends.\n\nFamily history is notable for a grandmother with stroke in her seventies and a mother with migraine. His last physical was on {DATE_NUM}.\n\nPHYSICAL EXAM\n\nBP 126/78, pulse 72. Neurological examination shows full extraocular movements, symmetric strength, and intact speech. Sensation to light touch is mildly decreased in the left fingers. Reflexes are symmetric and gait is normal.\n\nRESULTS\n\nMRI brain with contrast scheduled. Basic labs and ECG ordered.\n\nASSESSMENT AND PLAN\n\n1. Migraine with aura with transient left hand paresthesia. Differential includes migraine aura versus transient ischemic event given family history, though the age and aura pattern favor migraine. Imaging was selected in line with the Washington guidelines for new-onset headache with focal symptoms. MRI brain with and without contrast, ECG, and basic labs ordered. Advised to hold operation of heavy equipment until workup is complete; work note provided.\n\n2. Recurrent headache with frequent acute medication use. Limit sumatriptan to no more than two days per week and ibuprofen to avoid medication overuse headache. Start headache diary tracking dates and triggers.\n\n3. Sleep disruption and caffeine use on night shift. Counseled on sleep hygiene and reducing energy drink intake.\n\nReturn precautions reviewed, including persistent arm weakness, slurred speech, or a sudden worst headache, with instruction to call 911.",
+ "medical_concepts": [
+  {
+   "text": "left hand keeps going numb and tingly",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my hand just went dead",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the headaches",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "one side of my head , throbbing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lie down in a dark room",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the numbness is new",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "wavy lines in the left side of my vision",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the hand goes numb",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "zigzag lights",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "blind spots",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "an aura",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "migraine diagnosis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "my mom gets migraines",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my grandmother had a stroke",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the left hand feels duller",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "new sensory symptoms",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sumatriptan",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "speech ever slurred",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my speech is fine",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "weakness in your face or your arm",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the worst headache of your life",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "rebound headaches",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "a stroke",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "quit smoking last year",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "two beers on weekends",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "night shift",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "get maybe five hours",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "energy drinks",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "drive a forklift",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "warehouse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "heavy equipment",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "strength looks normal on both sides",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your reflexes look symmetric",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "gait is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure is one twenty six over seventy eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse seventy two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "mri of your brain with contrast",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood work",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "an ecg",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "headache diary",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "left hand numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "recurrent headaches",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "migraine",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Migraine diagnosis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "visual aura",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "wavy lines in the left visual field",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness of the left fingers",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "unilateral throbbing headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "facial droop",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dysarthria",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "focal weakness of the leg",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "sumatriptan",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "five hours of sleep",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "energy drinks",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "quit smoking",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "two beers on weekends",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "grandmother with stroke in her seventies",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mother with migraine",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "forklift operator on the night shift",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "warehouse",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "heavy equipment",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 126/78",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse 72",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "full extraocular movements",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "symmetric strength",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "intact speech",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mildly decreased in the left fingers",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Reflexes are symmetric",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "gait is normal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "MRI brain with contrast",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "MRI brain with and without contrast",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ECG",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "basic labs",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "migraine aura",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "transient left hand paresthesia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "transient ischemic event",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "medication overuse headache",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "headache diary",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sleep disruption",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "caffeine use",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sleep hygiene",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "slurred speech",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "sudden worst headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "Washington guidelines",
+   "field": "note",
+   "is_pii": false,
+   "comment": "Washington is a surname and a place; here it names guidelines, not a person"
+  },
+  {
+   "text": "sumatriptan",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "medication name, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "G43.109",
+   "spans": [
+    {
+     "text": "migraine diagnosis",
+     "field": "dialogue"
+    },
+    {
+     "text": "migraine",
+     "field": "note"
+    },
+    {
+     "text": "wavy lines in the left side of my vision",
+     "field": "dialogue"
+    },
+    {
+     "text": "wavy lines in the left visual field",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "R20.2",
+   "spans": [
+    {
+     "text": "left hand keeps going numb and tingly",
+     "field": "dialogue"
+    },
+    {
+     "text": "left hand numbness",
+     "field": "note"
+    },
+    {
+     "text": "mildly decreased in the left fingers",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "R51.9",
+   "spans": [
+    {
+     "text": "the headaches",
+     "field": "dialogue"
+    },
+    {
+     "text": "unilateral throbbing headache",
+     "field": "note"
+    },
+    {
+     "text": "recurrent headaches",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z82.3",
+   "spans": [
+    {
+     "text": "my grandmother had a stroke",
+     "field": "dialogue"
+    },
+    {
+     "text": "grandmother with stroke in her seventies",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i drive a forklift on the night shift",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's job and shift"
+  },
+  {
+   "text": "as a forklift operator",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "job restated when discussing missed shifts"
+  },
+  {
+   "text": "forklift operator on the night shift",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient's job and shift"
+  }
+ ],
+ "scenario": {
+  "specialty": "neurology",
+  "visit": "acute",
+  "length": "short",
+  "focus": [
+   "DATE",
+   "OCCUPATION"
+  ]
+ }
+}

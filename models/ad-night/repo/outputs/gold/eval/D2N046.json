@@ -1,0 +1,49 @@
+{
+  "encounter_id": "D2N046",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "my dog and my three cats",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "dialogue",
+      "text": "adopted",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "adopted",
+      "category": "OTHER_QI",
+      "risk": "low"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "ca-125",
+      "category": "CLINICAL_NUMBER",
+      "why": "tumor marker, not an ID"
+    },
+    {
+      "field": "note",
+      "text": "CA-125",
+      "category": "CLINICAL_NUMBER",
+      "why": "tumor marker, not an ID"
+    },
+    {
+      "field": "dialogue",
+      "text": "thirteen for my period",
+      "category": "CLINICAL_NUMBER",
+      "why": "age at menarche, reproductive history (not current age)"
+    },
+    {
+      "field": "dialogue",
+      "text": "twenty eighth for menopause",
+      "category": "CLINICAL_NUMBER",
+      "why": "age at menopause, reproductive history (not current age)"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[Unit]
+Description=Neuralwave resumable Qwen3.5-2B fine-tune + GGUF export
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=86400
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/neuralwave
+Environment=HOME=/home/ubuntu
+Environment=PATH=/home/ubuntu/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/home/ubuntu/neuralwave/train/run_pipeline.sh
+StandardOutput=append:/home/ubuntu/neuralwave/outputs/logs/train_service.log
+StandardError=append:/home/ubuntu/neuralwave/outputs/logs/train_service.log
+Restart=on-failure
+RestartSec=120
+
+[Install]
+WantedBy=multi-user.target

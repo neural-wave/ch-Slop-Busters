@@ -1,0 +1,17 @@
+{
+  "encounter_id": "D2N189",
+  "phi": [
+    {"text": "betty", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "weekends", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "days off"},
+    {"text": "denver nuggets", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "home team"},
+    {"text": "nba playoffs", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the playoffs"},
+    {"text": "self expand", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "fan of another team"},
+    {"text": "brooklyn net", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "another team"},
+    {"text": "nuts", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "that team"},
+    {"text": "swim", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "swimming", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"},
+    {"text": "Denver Nuggets", "field": "note", "type": "ORGANIZATION", "tier": 1, "generalized": "local"},
+    {"text": "swimming", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"}
+  ],
+  "medical_concepts": []
+}

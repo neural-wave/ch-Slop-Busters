@@ -1,0 +1,592 @@
+{
+ "train": {
+  "n": 140,
+  "dataset_mix": {
+   "virtassist": 35,
+   "virtscribe": 28,
+   "aci": 77
+  },
+  "dialogue_chars_median": 6196.0,
+  "note_chars_median": 2648.0,
+  "dialogue_words_median": 1240.0,
+  "note_words_median": 419.5,
+  "codes_per_encounter_mean": 2.04,
+  "headers": {
+   "CHIEF COMPLAINT": 123,
+   "HISTORY OF PRESENT ILLNESS": 98,
+   "REVIEW OF SYSTEMS": 105,
+   "PHYSICAL EXAMINATION": 29,
+   "RESULTS": 106,
+   "ASSESSMENT AND PLAN": 59,
+   "GERD.": 1,
+   "ASSESSMENT": 74,
+   "PLAN": 81,
+   "HPI": 6,
+   "EXAM": 6,
+   "IMPRESSION": 5,
+   "CURRENT MEDICATIONS": 20,
+   "PAST MEDICAL HISTORY": 5,
+   "PAST SURGICAL HISTORY": 4,
+   "SOCIAL HISTORY": 54,
+   "PHYSICAL EXAM": 101,
+   "INSTRUCTIONS": 75,
+   "FAMILY HISTORY": 21,
+   "PAST HISTORY": 15,
+   "VITALS": 54,
+   "BSA 2.65": 1,
+   "ALLERGIES": 8,
+   "ECG, 12/26/2020.": 1,
+   "EKG": 1,
+   "MEDICAL HISTORY": 39,
+   "MEDICATIONS": 35,
+   "RESPIRATORY": 1,
+   "SURGICAL HISTORY": 9,
+   "SUBJECTIVE": 1,
+   "VITALS REVIEWED": 5,
+   "REVIEW OF SYMPTOMS": 2,
+   "PROCEDURE": 1,
+   "CMP, 03/22/2021.": 1,
+   "MSK": 2,
+   "ORDERS": 1,
+   "OTC": 1,
+   "BIRTH HISTORY": 1
+  }
+ },
+ "eval": {
+  "n": 67,
+  "dataset_mix": {
+   "virtassist": 20,
+   "virtscribe": 12,
+   "aci": 35
+  },
+  "dialogue_chars_median": 6247,
+  "note_chars_median": 2537,
+  "dialogue_words_median": 1240,
+  "note_words_median": 404,
+  "codes_per_encounter_mean": 2.28,
+  "headers": {
+   "CHIEF COMPLAINT": 59,
+   "HISTORY OF PRESENT ILLNESS": 45,
+   "REVIEW OF SYSTEMS": 50,
+   "PHYSICAL EXAMINATION": 16,
+   "VITALS REVIEWED": 3,
+   "RESULTS": 52,
+   "ASSESSMENT AND PLAN": 34,
+   "INSTRUCTIONS": 32,
+   "HPI": 4,
+   "CURRENT MEDICATIONS": 9,
+   "PAST MEDICAL HISTORY": 1,
+   "EXAM": 4,
+   "IMPRESSION": 4,
+   "PLAN": 32,
+   "ASSESSMENT": 29,
+   "COPD.": 1,
+   "PAST HISTORY": 9,
+   "ALLERGIES": 7,
+   "SOCIAL HISTORY": 28,
+   "PHYSICAL EXAM": 44,
+   "PROCEDURE": 1,
+   "HIV": 1,
+   "FAMILY HISTORY": 10,
+   "MEDICATIONS": 19,
+   "PCOS.": 1,
+   "VITALS": 23,
+   "MEDICAL HISTORY": 18,
+   "MSK": 2,
+   "SURGICAL HISTORY": 7
+  }
+ },
+ "codes": {
+  "train_distinct": 146,
+  "eval_distinct": 112,
+  "eval_unseen_distinct": 79,
+  "eval_unseen_slots": 82,
+  "chapters_train": {
+   "J": 10,
+   "F": 13,
+   "E": 44,
+   "I": 60,
+   "M": 44,
+   "K": 10,
+   "Z": 15,
+   "G": 13,
+   "S": 22,
+   "B": 2,
+   "L": 8,
+   "D": 4,
+   "N": 10,
+   "R": 20,
+   "A": 1,
+   "T": 1,
+   "U": 1,
+   "Q": 2,
+   "H": 3,
+   "C": 2
+  },
+  "chapters_eval": {
+   "I": 20,
+   "F": 8,
+   "M": 20,
+   "E": 17,
+   "Z": 7,
+   "N": 8,
+   "G": 5,
+   "K": 4,
+   "S": 13,
+   "W": 11,
+   "Y": 10,
+   "V": 1,
+   "D": 3,
+   "X": 2,
+   "R": 12,
+   "J": 5,
+   "L": 4,
+   "C": 2,
+   "B": 1
+  }
+ },
+ "pii_density": {
+  "patient_first_name_greeting": {
+   "train/aci": {
+    "per_1k_words": 0.41,
+    "pct_encounters": 70
+   },
+   "train/virtassist": {
+    "per_1k_words": 0.68,
+    "pct_encounters": 94
+   },
+   "train/virtscribe": {
+    "per_1k_words": 0.37,
+    "pct_encounters": 61
+   },
+   "train/all": {
+    "per_1k_words": 0.46,
+    "pct_encounters": 74
+   },
+   "eval/aci": {
+    "per_1k_words": 0.43,
+    "pct_encounters": 63
+   },
+   "eval/virtassist": {
+    "per_1k_words": 0.71,
+    "pct_encounters": 95
+   },
+   "eval/virtscribe": {
+    "per_1k_words": 0.21,
+    "pct_encounters": 50
+   },
+   "eval/all": {
+    "per_1k_words": 0.45,
+    "pct_encounters": 70
+   }
+  },
+  "patient_name_intro": {
+   "train/aci": {
+    "per_1k_words": 0.77,
+    "pct_encounters": 73
+   },
+   "train/virtassist": {
+    "per_1k_words": 3.08,
+    "pct_encounters": 100
+   },
+   "train/virtscribe": {
+    "per_1k_words": 2.01,
+    "pct_encounters": 93
+   },
+   "train/all": {
+    "per_1k_words": 1.57,
+    "pct_encounters": 84
+   },
+   "eval/aci": {
+    "per_1k_words": 0.73,
+    "pct_encounters": 69
+   },
+   "eval/virtassist": {
+    "per_1k_words": 3.01,
+    "pct_encounters": 100
+   },
+   "eval/virtscribe": {
+    "per_1k_words": 1.53,
+    "pct_encounters": 100
+   },
+   "eval/all": {
+    "per_1k_words": 1.53,
+    "pct_encounters": 84
+   }
+  },
+  "title_plus_name": {
+   "train/aci": {
+    "per_1k_words": 0.3,
+    "pct_encounters": 22
+   },
+   "train/virtassist": {
+    "per_1k_words": 1.62,
+    "pct_encounters": 46
+   },
+   "train/virtscribe": {
+    "per_1k_words": 3.42,
+    "pct_encounters": 86
+   },
+   "train/all": {
+    "per_1k_words": 1.32,
+    "pct_encounters": 41
+   },
+   "eval/aci": {
+    "per_1k_words": 0.16,
+    "pct_encounters": 14
+   },
+   "eval/virtassist": {
+    "per_1k_words": 1.72,
+    "pct_encounters": 50
+   },
+   "eval/virtscribe": {
+    "per_1k_words": 2.99,
+    "pct_encounters": 100
+   },
+   "eval/all": {
+    "per_1k_words": 1.27,
+    "pct_encounters": 40
+   }
+  },
+  "doctor_staff_name": {
+   "train/aci": {
+    "per_1k_words": 0.2,
+    "pct_encounters": 14
+   },
+   "train/virtassist": {
+    "per_1k_words": 0.35,
+    "pct_encounters": 14
+   },
+   "train/virtscribe": {
+    "per_1k_words": 0.93,
+    "pct_encounters": 54
+   },
+   "train/all": {
+    "per_1k_words": 0.4,
+    "pct_encounters": 22
+   },
+   "eval/aci": {
+    "per_1k_words": 0.11,
+    "pct_encounters": 9
+   },
+   "eval/virtassist": {
+    "per_1k_words": 0.39,
+    "pct_encounters": 25
+   },
+   "eval/virtscribe": {
+    "per_1k_words": 0.96,
+    "pct_encounters": 58
+   },
+   "eval/all": {
+    "per_1k_words": 0.39,
+    "pct_encounters": 22
+   }
+  },
+  "dob": {
+   "train/aci": {
+    "per_1k_words": 0.0,
+    "pct_encounters": 0
+   },
+   "train/virtassist": {
+    "per_1k_words": 0.0,
+    "pct_encounters": 0
+   },
+   "train/virtscribe": {
+    "per_1k_words": 0.43,
+    "pct_encounters": 86
+   },
+   "train/all": {
+    "per_1k_words": 0.1,
+    "pct_encounters": 17
+   },
+   "eval/aci": {
+    "per_1k_words": 0.0,
+    "pct_encounters": 0
+   },
+   "eval/virtassist": {
+    "per_1k_words": 0.0,
+    "pct_encounters": 0
+   },
+   "eval/virtscribe": {
+    "per_1k_words": 0.32,
+    "pct_encounters": 75
+   },
+   "eval/all": {
+    "per_1k_words": 0.08,
+    "pct_encounters": 13
+   }
+  },
+  "exact_age": {
+   "train/aci": {
+    "per_1k_words": 0.49,
+    "pct_encounters": 73
+   },
+   "train/virtassist": {
+    "per_1k_words": 1.83,
+    "pct_encounters": 100
+   },
+   "train/virtscribe": {
+    "per_1k_words": 1.35,
+    "pct_encounters": 96
+   },
+   "train/all": {
+    "per_1k_words": 0.99,
+    "pct_encounters": 84
+   },
+   "eval/aci": {
+    "per_1k_words": 0.48,
+    "pct_encounters": 66
+   },
+   "eval/virtassist": {
+    "per_1k_words": 1.78,
+    "pct_encounters": 100
+   },
+   "eval/virtscribe": {
+    "per_1k_words": 0.75,
+    "pct_encounters": 83
+   },
+   "eval/all": {
+    "per_1k_words": 0.89,
+    "pct_encounters": 79
+   }
+  },
+  "absolute_date": {
+   "train/aci": {
+    "per_1k_words": 0.2,
+    "pct_encounters": 12
+   },
+   "train/virtassist": {
+    "per_1k_words": 0.0,
+    "pct_encounters": 0
+   },
+   "train/virtscribe": {
+    "per_1k_words": 3.83,
+    "pct_encounters": 89
+   },
+   "train/all": {
+    "per_1k_words": 0.99,
+    "pct_encounters": 24
+   },
+   "eval/aci": {
+    "per_1k_words": 0.21,
+    "pct_encounters": 11
+   },
+   "eval/virtassist": {
+    "per_1k_words": 0.0,
+    "pct_encounters": 0
+   },
+   "eval/virtscribe": {
+    "per_1k_words": 6.44,
+    "pct_encounters": 100
+   },
+   "eval/all": {
+    "per_1k_words": 1.67,
+    "pct_encounters": 24
+   }
+  },
+  "location": {
+   "train/aci": {
+    "per_1k_words": 0.42,
+    "pct_encounters": 32
+   },
+   "train/virtassist": {
+    "per_1k_words": 0.07,
+    "pct_encounters": 6
+   },
+   "train/virtscribe": {
+    "per_1k_words": 0.46,
+    "pct_encounters": 29
+   },
+   "train/all": {
+    "per_1k_words": 0.35,
+    "pct_encounters": 25
+   },
+   "eval/aci": {
+    "per_1k_words": 0.35,
+    "pct_encounters": 23
+   },
+   "eval/virtassist": {
+    "per_1k_words": 0.06,
+    "pct_encounters": 5
+   },
+   "eval/virtscribe": {
+    "per_1k_words": 0.11,
+    "pct_encounters": 8
+   },
+   "eval/all": {
+    "per_1k_words": 0.22,
+    "pct_encounters": 15
+   }
+  },
+  "employer_occupation_school": {
+   "train/aci": {
+    "per_1k_words": 0.25,
+    "pct_encounters": 17
+   },
+   "train/virtassist": {
+    "per_1k_words": 0.39,
+    "pct_encounters": 31
+   },
+   "train/virtscribe": {
+    "per_1k_words": 0.59,
+    "pct_encounters": 36
+   },
+   "train/all": {
+    "per_1k_words": 0.36,
+    "pct_encounters": 24
+   },
+   "eval/aci": {
+    "per_1k_words": 0.73,
+    "pct_encounters": 54
+   },
+   "eval/virtassist": {
+    "per_1k_words": 0.19,
+    "pct_encounters": 15
+   },
+   "eval/virtscribe": {
+    "per_1k_words": 0.32,
+    "pct_encounters": 42
+   },
+   "eval/all": {
+    "per_1k_words": 0.49,
+    "pct_encounters": 40
+   }
+  },
+  "hobby": {
+   "train/aci": {
+    "per_1k_words": 2.04,
+    "pct_encounters": 65
+   },
+   "train/virtassist": {
+    "per_1k_words": 0.9,
+    "pct_encounters": 46
+   },
+   "train/virtscribe": {
+    "per_1k_words": 0.53,
+    "pct_encounters": 43
+   },
+   "train/all": {
+    "per_1k_words": 1.44,
+    "pct_encounters": 56
+   },
+   "eval/aci": {
+    "per_1k_words": 2.47,
+    "pct_encounters": 69
+   },
+   "eval/virtassist": {
+    "per_1k_words": 1.26,
+    "pct_encounters": 55
+   },
+   "eval/virtscribe": {
+    "per_1k_words": 0.21,
+    "pct_encounters": 33
+   },
+   "eval/all": {
+    "per_1k_words": 1.59,
+    "pct_encounters": 58
+   }
+  },
+  "phone_email_mrn_id_insurance": {
+   "train/aci": {
+    "per_1k_words": 0.07,
+    "pct_encounters": 6
+   },
+   "train/virtassist": {
+    "per_1k_words": 0.0,
+    "pct_encounters": 0
+   },
+   "train/virtscribe": {
+    "per_1k_words": 0.75,
+    "pct_encounters": 39
+   },
+   "train/all": {
+    "per_1k_words": 0.21,
+    "pct_encounters": 11
+   },
+   "eval/aci": {
+    "per_1k_words": 0.04,
+    "pct_encounters": 3
+   },
+   "eval/virtassist": {
+    "per_1k_words": 0.0,
+    "pct_encounters": 0
+   },
+   "eval/virtscribe": {
+    "per_1k_words": 0.43,
+    "pct_encounters": 33
+   },
+   "eval/all": {
+    "per_1k_words": 0.12,
+    "pct_encounters": 7
+   }
+  },
+  "named_relative_or_friend": {
+   "train/aci": {
+    "per_1k_words": 0.01,
+    "pct_encounters": 1
+   },
+   "train/virtassist": {
+    "per_1k_words": 0.0,
+    "pct_encounters": 0
+   },
+   "train/virtscribe": {
+    "per_1k_words": 0.14,
+    "pct_encounters": 14
+   },
+   "train/all": {
+    "per_1k_words": 0.04,
+    "pct_encounters": 4
+   },
+   "eval/aci": {
+    "per_1k_words": 0.04,
+    "pct_encounters": 3
+   },
+   "eval/virtassist": {
+    "per_1k_words": 0.0,
+    "pct_encounters": 0
+   },
+   "eval/virtscribe": {
+    "per_1k_words": 0.07,
+    "pct_encounters": 8
+   },
+   "eval/all": {
+    "per_1k_words": 0.03,
+    "pct_encounters": 3
+   }
+  },
+  "product_brand": {
+   "train/aci": {
+    "per_1k_words": 0.21,
+    "pct_encounters": 18
+   },
+   "train/virtassist": {
+    "per_1k_words": 4.19,
+    "pct_encounters": 100
+   },
+   "train/virtscribe": {
+    "per_1k_words": 0.5,
+    "pct_encounters": 18
+   },
+   "train/all": {
+    "per_1k_words": 1.17,
+    "pct_encounters": 39
+   },
+   "eval/aci": {
+    "per_1k_words": 0.14,
+    "pct_encounters": 20
+   },
+   "eval/virtassist": {
+    "per_1k_words": 4.24,
+    "pct_encounters": 100
+   },
+   "eval/virtscribe": {
+    "per_1k_words": 0.25,
+    "pct_encounters": 33
+   },
+   "eval/all": {
+    "per_1k_words": 1.27,
+    "pct_encounters": 46
+   }
+  }
+ }
+}

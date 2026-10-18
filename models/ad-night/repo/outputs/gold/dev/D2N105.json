@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N105",
+  "pii": [
+    {"field": "dialogue", "text": "diana", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "scott", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "12/8/1920", "category": "DOB", "risk": "high"},
+    {"field": "dialogue", "text": "7/9/2021", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "you are 100", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "madison", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Diana", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Scott", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "100-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "4/6", "category": "CLINICAL_NUMBER", "why": "murmur grade, not a date"},
+    {"field": "note", "text": "4/6", "category": "CLINICAL_NUMBER", "why": "murmur grade, not a date"},
+    {"field": "dialogue", "text": "a walker", "category": "NOT_A_NAME", "why": "mobility device"},
+    {"field": "note", "text": "a walker", "category": "NOT_A_NAME", "why": "mobility device"}
+  ]
+}

@@ -1,0 +1,560 @@
+{
+ "id": "G0006",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "age_range": [
+  30,
+  45
+ ],
+ "icd10_codes": [
+  {
+   "code": "S93.402A",
+   "description": "Sprain of unspecified ligament of left ankle, initial encounter"
+  },
+  {
+   "code": "W18.30XA",
+   "description": "Fall on same level, unspecified, initial encounter"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . what brings you in today ?\n[patient] i twisted my ankle pretty bad on monday morning . it's the left one . it's swollen like a balloon .\n[doctor] i'm sorry to hear that . tell me how it happened .\n[patient] i drive a forklift on the night shift , and i'd come off a bad low . my sugar was like fifty two , and i was dizzy , so i got off the forklift to grab some juice from the break room . i stepped down off the dock and my foot just rolled under me .\n[doctor] okay . so you were low on sugar at the time . did you pass out or hit your head when you fell ?\n[patient] no , i did n't black out . i was just dizzy and shaky . i did n't hit my head , i caught myself on the railing .\n[doctor] good . what did you do after you fell ?\n[patient] i sat down on the dock , ate two glucose tabs , and then a coworker drove me home . i iced it that night .\n[doctor] which coworker was that ?\n[patient] {OTHER_FIRST} . he's always looking out for me .\n[doctor] okay . how has your diabetes been overall ?\n[patient] i've had type two for about nine years . i take glipizide every morning and i check my sugars four times a day . but the night shifts mess everything up , i eat at weird hours .\n[doctor] i understand . how often are you having lows ?\n[patient] maybe twice a month , more lately since they moved me to nights . i'd say one of them is really bad .\n[doctor] i see . let's look at the ankle . is there pain on the outer side ?\n[patient] yes , right here , on the outside . it hurts when i put weight on it .\n[doctor] let me check . there's swelling and bruising over the lateral malleolus . can you wiggle your toes ?\n[patient] yes . the toes move , but it hurts when i point my foot down .\n[doctor] okay . your sensation is intact and your pulses are strong . there's no tenderness at the base of the fifth metatarsal . the drawer test is limited by the pain .\n[patient] okay .\n[doctor] we'll get an x-ray today . it's most likely a sprain , but i want to make sure there's no fracture .\n[patient] okay .\n[doctor] the x-ray shows no fracture , and the ankle is in good alignment . so i'm diagnosing a sprain of the ligaments on the outside of your ankle . here's the wrap and a walking boot for two weeks .\n[patient] two weeks , and then i can go back to work ?\n[doctor] i'd rather you not drive a forklift until you can bear full weight without pain . can your supervisor move you to light duty ?\n[patient] maybe . i'll ask . i don't want to lose the night differential .\n[doctor] the lows matter more right now . your last a one c was eight point four . you're taking the glipizide , and i want to add a continuous glucose monitor .\n[patient] like a sensor on the arm ? my cousin has one .\n[doctor] yes , it alerts you before the sugar drops . also , keep a glucose tab in your pocket on shift , and eat a snack at the start of your break .\n[patient] okay . the washington guidelines say the sugar target is different for people like me ?\n[doctor] that's a good question . the general target for most adults is an a one c under seven , but we can talk about something a bit looser given your lows .\n[patient] okay , i'd like that .\n[doctor] i'm also going to reduce your glipizide dose to five milligrams . and i'll check your kidney function today .\n[patient] any side effects with the lower dose ?\n[doctor] possibly more sugar swings , but the sensor should help . let's come back in four weeks to look at the sensor data .\n[patient] will do . my wife will be happy about the sensor .\n[doctor] good . any questions ?\n[patient] just one . can i take a shower in the boot ?\n[doctor] no , keep the boot dry and use a plastic bag . the wrap can come off at night .\n[patient] okay . thanks , doctor .\n[doctor] see you in four weeks . if your foot turns numb or cold , or the swelling gets worse , come in right away .",
+ "note": "CHIEF COMPLAINT\n\nLeft ankle pain and swelling after a fall during a hypoglycemic episode.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with type 2 diabetes mellitus on glipizide who presents with left ankle pain and swelling following an inversion injury on {DATE_SPOKEN}. He works as a forklift operator on the night shift at a distribution center. He developed symptomatic hypoglycemia with a reported glucose of 52 mg/dL and dizziness, stepped down from the loading dock, and his left foot rolled under him. He caught himself on a railing and did not lose consciousness or strike his head. He sat, ingested glucose tablets, and was driven home by a coworker. He applied ice that evening.\n\nHe reports recurrent hypoglycemia about twice monthly, worse since transitioning to night shifts with irregular meals.\n\nPAST MEDICAL HISTORY\n\nType 2 diabetes mellitus, diagnosed in {YEAR}.\n\nPHYSICAL EXAM\n\nLeft ankle: swelling and ecchymosis over the lateral malleolus with tenderness to palpation. Able to move toes; pain with plantarflexion. Neurovascularly intact distally. No tenderness over the base of the fifth metatarsal. Anterior drawer limited by pain.\n\nRESULTS\n\nRadiographs of the left ankle show no fracture and an intact mortise.\n\nASSESSMENT AND PLAN\n\n1. Sprain of the lateral ligaments of the left ankle, initial encounter, following a fall on the same level. No fracture. RICE protocol, lace-up ankle wrap, walking boot for two weeks, weight-bearing as tolerated. Advised against operating a forklift until he can bear full weight without pain; discussed light duty with supervisor.\n2. Type 2 diabetes mellitus with recurrent hypoglycemia, most recent A1c 8.4%. Reduce glipizide to 5 mg daily. Start continuous glucose monitor. Glucose tablets to be carried on shift. Individualized A1c target discussed given hypoglycemia risk. Renal function to be checked.\n3. Follow-up in four weeks for review of continuous glucose monitor data.",
+ "medical_concepts": [
+  {
+   "text": "twisted my ankle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "swollen like a balloon",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a bad low",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "my sugar was like fifty two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "i was dizzy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "got off the forklift",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "stepped down off the dock",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my foot just rolled under me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pass out or hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i was just dizzy and shaky",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "caught myself on the railing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ate two glucose tabs",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "i iced it that night",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "type two",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "glipizide every morning",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "the night shifts",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i eat at weird hours",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "twice a month",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the outer side",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "it hurts when i put weight on it",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "swelling and bruising over the lateral malleolus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it hurts when i point my foot down",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "your sensation is intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your pulses are strong",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no tenderness at the base of the fifth metatarsal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the drawer test is limited by the pain",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "an x-ray today",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's most likely a sprain",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "the x-ray shows no fracture",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the ankle is in good alignment",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a sprain of the ligaments on the outside of your ankle",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a walking boot for two weeks",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "drive a forklift until you can bear full weight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your last a one c was eight point four",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "a continuous glucose monitor",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "glucose tab in your pocket on shift",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "reduce your glipizide dose to five milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "check your kidney function today",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "more sugar swings",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "if your foot turns numb or cold",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the swelling gets worse",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "inversion injury",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "left ankle pain and swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "type 2 diabetes mellitus on glipizide",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "symptomatic hypoglycemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "glucose of 52 mg/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "dizziness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "stepped down from the loading dock",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "his left foot rolled under him",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "did not lose consciousness or strike his head",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "glucose tablets",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "He applied ice that evening",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "recurrent hypoglycemia about twice monthly",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "irregular meals",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Type 2 diabetes mellitus, diagnosed in",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "swelling and ecchymosis over the lateral malleolus",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tenderness to palpation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Able to move toes",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain with plantarflexion",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Neurovascularly intact distally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fifth metatarsal",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "Anterior drawer limited by pain",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Radiographs of the left ankle",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "no fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "an intact mortise",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sprain of the lateral ligaments of the left ankle",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a fall on the same level",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lace-up ankle wrap",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "walking boot for two weeks",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "operating a forklift",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Type 2 diabetes mellitus with recurrent hypoglycemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "most recent A1c 8.4%",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Reduce glipizide to 5 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "continuous glucose monitor",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Renal function to be checked",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "washington guidelines",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "clinical guideline name; washington is a surname and a place but not identifying here"
+  },
+  {
+   "text": "RICE protocol",
+   "field": "note",
+   "is_pii": false,
+   "comment": "acronym for rest ice compression elevation, not a person"
+  },
+  {
+   "text": "glipizide",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic drug name"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S93.402A",
+   "spans": [
+    {
+     "text": "twisted my ankle",
+     "field": "dialogue"
+    },
+    {
+     "text": "swelling and bruising over the lateral malleolus",
+     "field": "dialogue"
+    },
+    {
+     "text": "Sprain of the lateral ligaments of the left ankle",
+     "field": "note"
+    },
+    {
+     "text": "swelling and ecchymosis over the lateral malleolus",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W18.30XA",
+   "spans": [
+    {
+     "text": "stepped down off the dock",
+     "field": "dialogue"
+    },
+    {
+     "text": "my foot just rolled under me",
+     "field": "dialogue"
+    },
+    {
+     "text": "stepped down from the loading dock",
+     "field": "note"
+    },
+    {
+     "text": "a fall on the same level",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i drive a forklift on the night shift",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job and shift"
+  },
+  {
+   "text": "forklift operator on the night shift",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job and shift"
+  }
+ ],
+ "scenario": {
+  "specialty": "endocrinology",
+  "visit": "injury",
+  "length": "medium",
+  "focus": [
+   "OCCUPATION",
+   "DATE"
+  ]
+ }
+}

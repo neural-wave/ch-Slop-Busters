@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N079",
+  "phi": [
+    {"text": "wayne", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "work in our basement", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "home projects"},
+    {"text": "renovating the basement", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "home renovation"},
+    {"text": "man cave", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "recreation room"},
+    {"text": "Wayne Taylor", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "66-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "renovating his basement", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "doing home projects"}
+  ],
+  "medical_concepts": []
+}

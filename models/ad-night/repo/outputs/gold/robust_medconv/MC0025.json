@@ -1,0 +1,66 @@
+{
+ "encounter_id": "MC0025",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "Emma",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Emma Price",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "23-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Tampa",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Florida",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "(742) 309-2157",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "FedEx",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "software engineer",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Rose Pillai",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Pillai",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": []
+}

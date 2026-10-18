@@ -1,0 +1,16 @@
+All five files are written to `annotations/train/`, and the validator reports 0 problems.
+
+- D2N185: 27 PHI
+- D2N186: 7 PHI
+- D2N187: 4 PHI
+- D2N188: 9 PHI
+- D2N189: 11 PHI
+
+Judgment calls a reviewer may want to check:
+- **D2N189, garbled team references:** "self expand" is probably the doctor saying "celtics fan", and "nuts" is a mistranscription of "nets". I labelled both as ORGANIZATION even though they are speech-recognition errors. "self expand" is about the doctor, not the patient.
+- **D2N189, pizza:** I left "pizza" out as too common to identify anyone. I did label "weekends" as weekday timing.
+- **D2N185:** I labelled the primary doctor's "vacation" as a LIFE_EVENT and "47", the grandfather's age at death, as AGE. I didn't label "in his 40s", because it isn't an exact age.
+- **D2N186:** I labelled "va" as an ORGANIZATION. In the note, I listed both "11/2020" and the standalone "2020".
+- **D2N187:** The note has no PHI at all. It contains no name, place or personal detail.
+
+--- stderr ---

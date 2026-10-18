@@ -1,0 +1,821 @@
+########## ENCOUNTER D2N015
+ICD-10 codes: J44.9 Chronic obstructive pulmonary disease, unspecified; F32.A Depression, unspecified; G89.29 Other chronic pain; M54.50 Low back pain, unspecified
+=== FIELD: dialogue
+[doctor] thanks , rachel . nice , nice to meet you .
+[patient] yeah .
+[doctor] um , as my nurse told you , we're using dax . so i'm just gon na tell dax a little bit about you .
+[patient] mm-hmm .
+[doctor] so rachel is a 48-year-old female here for shortness of breath . she has a history of depression , smoking , and chronic back pain . so tell me about this shortness of breath .
+[patient] okay . so there are times when i'm either doing very , very mild exercises or just walking , even if i'm just walking up , you know , my driveway , i find myself palpitating a lot , and there's a little bit of shortness of breath .
+[doctor] mm-hmm .
+[patient] i do n't know if it's got to do with the back pain , you know , whether that gets triggered as well at the same time .
+[doctor] right .
+[patient] but definitely i feel it happens more often lately .
+[doctor] okay . and anything else change recently ? like , have you changed lifestyle , like you're exercising more than you used to , having any allergies , anything like that ?
+[patient] probably exercising more to get rid of the covid 15 .
+[doctor] the covid 15 . yeah . now last time i saw you , you were smoking two packs a day . how much are you smoking now ?
+[patient] um , it's gone down quite a bit because , yeah , we said we have to make some , you know , changes as you get older .
+[doctor] yeah .
+[patient] so i would say it's probably , um , maybe , maybe a couple ... probably a coup- i do n't know . probably once or day or something .
+[doctor] just couple cigarettes a day ?
+[patient] probably once a day , yeah .
+[doctor] we're getting close .
+[patient] yeah .
+[doctor] that's awesome .
+[patient] mm-hmm .
+[doctor] that's great news . um , and then how's your depression doing ?
+[patient] i have my moments .
+[doctor] yeah .
+[patient] there are some days when i feel , you know , i wake up and everything was great .
+[doctor] uh- .
+[patient] and then there are times , i do n't , i do n't know whether it's got to do with the weather or what else kind of triggers it .
+[doctor] yeah .
+[patient] there are some days when i feel extremely low .
+[doctor] okay . and you had been taking the effexor for your depression . are you still taking that ?
+[patient] yes , i am .
+[doctor] okay , great . and then , um the chronic back pain , we've been giving you the gabapentin neurontin for that . is that helping control the pain ?
+[patient] i think it is .
+[doctor] yeah .
+[patient] it is ... it's definitely , um , i feel better .
+[doctor] uh- .
+[patient] but it does come every now and then .
+[doctor] right . what do you do when it's really bad ?
+[patient] um , i try to just get as much rest as i can .
+[doctor] okay . and you had talked about doing yoga . are you doing yoga anymore ?
+[patient] i wish i said yes , but i have n't really made it a habit .
+[doctor] okay . okay . well , um , you know , said ... you said you were coming in with shortness of breath , so we sent you to get some pulmonary function tests .
+[patient] mm-hmm .
+[doctor] so let's just look at those . hey , dragon , show me the pulmonary function tests . okay , so it looks like ... , it's interesting . it says that you might be having a little bit of asthma or , uh , copd . and if you are , we'll talk about that .
+[patient] mm-hmm .
+[doctor] let's look at our x-ray . hey , dragon , show me the most recent x-ray . okay , i said it wrong . hey , dragon , show me the most recent chest x-ray . okay , this is interesting . your ... kind of your diaphragm is a little bit flatter , and we'll see that in some , uh , copd , which happens with smokers often . so let's just do a quick physical exam . i know my nurse did the review of systems with you . is there anything else bothering you that we need to talk about today ?
+[patient] no other issues .
+[doctor] okay . great . let's do the exam . all right , so your physical exam looks pretty normal other than you've got kind of these mild wheezes in all your lung fields . and so i think you do have copd from your pulmonary function tests , your x-ray , and that . so i'm gon na diagnose you with copd . chronic obstructive pulmonary disease . it means you're not able to exhale appropriately .
+[patient] mm-hmm .
+[doctor] so we're gon na put you on a medicine called combivent . okay , you're gon na do two puffs twice a day . it's gon na help open up your lungs . it's an inhaler .
+[patient] mm-hmm .
+[doctor] i'm also gon na prescribe albuterol , which you use when you get really short of breath . it's like a rescue thing .
+[patient] mm-hmm .
+[doctor] um , and then i'm gon na prescribe some steroids to help , also some prednisone . so let me just order those .
+[patient] okay .
+[doctor] hey , dragon , order combivent , uh , two puffs twice a day . order albuterol , two puffs as needed . and order , uh , prednisone uh taper pack . okay , so and then it sounds like your depression's stable , so we're not gon na change anything . you're gon na keep taking the effexor . um , do yoga for depression and your back pain , so for your back pain , stay on the neurontin , and we just wo n't do anything different . any questions for me .
+[patient] no , i think this is good . thank you .
+[doctor] perfect . hey , dragon , finalize the note . why do n't you ...
+=== FIELD: note
+CHIEF COMPLAINT
+
+Shortness of breath.
+
+HISTORY OF PRESENT ILLNESS
+
+The patient is a 48-year-old female who presents for shortness of breath. She has a history of depression, smoking and chronic back pain.
+
+The patient reports shortness of breath with mild exercise and walking. She also notes some palpitations at times. She is not sure if it is due to her back pain or not. The patient states she has been exercising more. She continues to smoke but has decreased from two packs a day down to a couple of cigarettes daily.
+
+Regarding her depression, the patient feels that it is well managed on Effexor.
+
+Regarding her chronic back pain, the patient has been taking Neurontin, which she states is helping control her pain. She states she tries to get as much rest as she can. She is no longer doing yoga as she has not made it a habit.
+
+REVIEW OF SYSTEMS
+
+• Cardiovascular: Endorses dyspnea on exertion. Endorses palpitations.
+• Respiratory: Endorses shortness of breath.
+• Musculoskeletal: Endorses back pain.
+• Integumentary:
+• Psychiatric: Endorses depression.
+
+PHYSICAL EXAMINATION
+
+• Respiratory: Mild wheezes bilaterally.
+
+RESULTS
+
+Pulmonary function test demonstrates mild asthma and the appearance of COPD.
+
+X-ray of the chest demonstrates flattening of the diaphragm which is consistent with COPD.
+
+ASSESSMENT AND PLAN
+
+COPD.
+• Medical Reasoning: The patient presents today with shortness of breath with exertion. Her pulmonary function tests suggest asthma or COPD and her most recent chest x-ray and physical examination today are also consistent with COPD.
+• Patient Education and Counseling: I counseled the patient on the importance of smoking cessation.
+• Medical Treatment: We will start the patient on Combivent, 2 puffs twice a day. I will also prescribe an albuterol inhaler, 2 puffs as needed, and a prednisone taper pack.
+
+Depression.
+• Medical Reasoning: It sounds like her depression is stable, so we will not change anything at this time.
+• Patient Education and Counseling: She will keep taking the Effexor. I encouraged her to practice yoga for depression relief as well as her back pain.
+
+Chronic back pain.
+• Medical Reasoning: The patient says she is doing well on Neurontin with only occasional exacerbation of the pain.
+• Medical Treatment: She can continue Neurontin as is. I also encouraged her to practice yoga for her back pain.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+########## ENCOUNTER D2N016
+ICD-10 codes: F32.A Depression, unspecified; I10 Essential (primary) hypertension
+=== FIELD: dialogue
+[doctor] hi , edward , how are you ?
+[patient] i'm doing well , yourself ?
+[doctor] i'm doing okay .
+[patient] good .
+[doctor] so , i know the nurse told you about dax . i'd like to tell dax a little bit about you .
+[patient] absolutely .
+[doctor] edward is a 59 year old male with a past medical history significant for depression , hypertension and prior rotator cuff repair who presents for followup of his chronic problems . so , edward , it's been a little while since i saw you .
+[patient] mm-hmm .
+[doctor] how are you doing ?
+[patient] i'm doing pretty well , actually . it's been a good , uh , good six months .
+[doctor] good . okay . so , you know , the last time we spoke , you know , you were trying to think of some new strategies to manage your depression . you did n't wan na go on medication because you're already on a bunch of meds .
+[patient] absolutely .
+[doctor] so , how are you doing with that ?
+[patient] i'm doing well . i see a counselor , uh , once a week . uh , and i've been out swimming at the pool a lot this , this , uh , summer , and , uh , fall . so , things have been well , going well with my depression .
+[doctor] okay , so , you do n't wan na , you do n't feel the need to start any medications at this time ?
+[patient] no , no , no . but , i know i can call you if i do .
+[doctor] yeah , absolutely .
+[patient] okay .
+[doctor] yeah . all right . and then , in terms of your high blood pressure , how are you doing with that ? i know we , we were kind of struggling with it la- six months ago . how are you doing ?
+[patient] i still have my good days and my bad days . i do take my medicine daily . uh , but , you know that burger and wine , every once in a while , sneaks in there , and that salt be ... we know what that does .
+[doctor] yeah . so , i love burgers and wine too .
+[patient] okay .
+[doctor] so , i get it . um , okay , so , and you're taking the norvasc ?
+[patient] norvasc , yep .
+[doctor] okay . um , and , you're checking your blood pressures at home , it sounds like ?
+[patient] i , i do . well , i go to cvs pharmacy . they , they have a , uh , machine that i can sit down at quickly and get my , uh , blood pressure taken . and , i go there about once a week .
+[doctor] okay . all right . and then , i know that you had that rotator cuff repaired about eight months ago . how are you doing ?
+[patient] um , it's doing well . i , i'm , i'm , been stretching with a yoga ball .
+[doctor] uh- .
+[patient] and , uh , i'm getting stronger each time . and , i can continue that once a week also .
+[doctor] okay . are you still seeing the physical therapist in the center , or are you just doing exercises at home ?
+[patient] i'm just , i progressed to exercises at home .
+[doctor] okay . all right . great . all right . well , i know you did a review of systems sheet when you checked in .
+[patient] mm-hmm .
+[doctor] and , you know , it seems like you're doing well . any symptoms at all ? any nasal congestion or chest pain , shortness of breath , anything ?
+[patient] no . none of those . i do , do notice that i get a little bit of a de- , uh , swelling in my ankles .
+[doctor] okay .
+[patient] uh , mainly near the end of the day .
+[doctor] okay .
+[patient] um , it seems to go away by the next morning .
+[doctor] okay . all right . all right . maybe that has to do with some of the salt intake you're , you're eating .
+[patient] okay .
+[doctor] all right . well , i wan na go ahead and do a quick physical exam , okay ?
+[patient] mm-hmm .
+[doctor] hey , dragon ? show me the blood pressure . yeah , so , your blood pressure's a little elevated today , 156 over 94 .
+[patient] okay .
+[doctor] you know , you could be a little happy to see me . i do n't know .
+
+[doctor] um , but let's look at some of the readings . hey , dragon ? show me the blood pressure readings . yeah , so , they've been a , running a little high over the past couple months .
+[patient] okay .
+[doctor] so , we'll have to just kinda talk about that , okay ?
+[patient] okay .
+[doctor] i'm gon na go ahead and listen to your heart and lungs , and i'll let you know what i find , okay ?
+[patient] okay .
+[doctor] okay . all right . so , on physical exam , you know , everything looks good . on your heart exam , i do appreciate a slight three out of six systolic ejection murmur , but we've heard that in the past .
+[patient] okay .
+[doctor] so , that seems stable to me . um , on your lung exam , everything sounds nice and clear , and on your lower extremity exam , i do appreciate , you know , 1 to 2+ pitting edema in your legs , okay ? so , we'll have to just talk a little bit about your diet and decreasing the salt intake , okay ?
+[patient] okay .
+[doctor] so , let me just look at some of your results , okay ? hey , dragon ? show me the labs . so , looking here at your lab results , everything looks really good . you know , your creatinine , that's your kidney function , that looks stable . everything looks good from that standpoint . hey , dragon ? show me the ekg . and , looking here at your ekg , everything , you know , looks fine . there's no evidence of any coronary artery disease . it's a nice , normal ekg , which is good .
+[patient] okay .
+[doctor] okay ?
+[patient] good .
+[doctor] so , let me just talk a little bit about my assessment and my plan for you . okay ? so , from a depression standpoint , it's , you know , your first problem , i think that that sounds like you're doing really well managing it . you know , you have good strategies . it sounds like you have a good support system , um , and i agree . i do n't think you need to start on any medication at this time , but you said before , you know you can call me , okay ?
+[patient] yes .
+[doctor] for your second problem , your hypertension , i , i do n't believe it's well controlled at this time . so , i wan na go ahead and , you know , increase the norvasc up to 10 mg a day , and i wan na go ahead and order an echocardiogram and a lipid panel , okay ?
+[patient] okay .
+[doctor] hey , dragon ? order an echocardiogram . and , for your third problem , your rotator cuff repair , i , i think you're doing really well with that . i would just continue with the exercises and , uh , i do n't think we need to intervene upon that anymore . it sounds like that's pretty much resolved , okay ?
+[patient] good . good .
+[doctor] do you have any questions about anything ?
+[patient] no questions .
+[doctor] okay , great . hey , dragon ? finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow-up of chronic problems.
+
+HISTORY OF PRESENT ILLNESS
+
+Edward Butler is a 59-year-old male with a past medical history significant for depression, hypertension, and prior rotator cuff repair. He presents for a follow-up of his chronic problems.
+
+Regarding his depression, he has been doing pretty well over the last 6 months. The patient notes that he sees a counselor once a week. He states that he has been swimming at the pool a lot this summer and fall. The patient has preferred to avoid medications to treat this.
+
+Regarding his hypertension, he states that he has good days and bad days. He adds that he takes his Norvasc daily. The patient states that he checks his blood pressure at CVS about once weekly. He does admit to occasionally drinking wine and eating burgers.
+
+The patient had his rotator cuff repaired about 8 months ago. He states that he is doing well. He states that he is no longer seeing a physical therapist in this center, however, he is progressing to exercises at home. The patient notes that he stretches with a yoga ball and is getting stronger.
+
+He notes that he experiences mild swelling in his ankles, mainly near the end of the day. He states that the swelling resolves by the next morning. The patient denies nasal congestion, chest pain, or shortness of breath.
+
+REVIEW OF SYSTEMS
+
+• Ears, Nose, Mouth and Throat: Denies nasal congestion.
+• Cardiovascular: Denies chest pain or dyspnea on exertion.
+• Respiratory: Denies shortness of breath
+• Musculoskeletal: Bilateral ankle swelling.
+• Psychiatric: Endorses depression.
+
+PHYSICAL EXAMINATION
+
+• Neurological/Psychological: Appropriate mood and affect.
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: Slight 3/6 systolic ejection murmur, stable.
+• Musculoskeletal: 1-2+ pitting edema in the bilateral lower extremities.
+
+VITALS REVIEWED
+
+• Blood Pressure: Elevated at 156/94 mmHg.
+
+RESULTS
+
+Labs: Creatinine is within normal limits.
+Electrocardiogram is normal. No evidence of coronary artery disease.
+
+ASSESSMENT AND PLAN
+
+Edward Butler is a 59-year-old male with a past medical history significant for depression, hypertension, and prior rotator cuff repair. He presents for a follow-up of his chronic problems.
+
+Depression.
+• Medical Reasoning: He is doing well with therapy and physical activity. He continues to decline medication for this.
+• Medical Treatment: Continue current management strategies.
+• Patient Education and Counseling: I encouraged him to contact me should he want to try medication.
+
+Hypertension.
+• Medical Reasoning: This is uncontrolled at this time. He is compliant with Norvasc, but admits to occasional dietary indiscretion.
+• Additional Testing: We will order a lipid panel and an echocardiogram.
+• Medical Treatment: Increase Norvasc to 10 mg daily.
+
+8 months status post rotator cuff repair.
+• Medical Reasoning: He is doing well postoperatively. He has progressed from formal physical therapy to solely home exercise.
+• Medical Treatment: Continue with home exercise.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+########## ENCOUNTER D2N017
+ICD-10 codes: S80.11XA Contusion of right lower leg, initial encounter; W21.09XA Struck by other hit or thrown ball, initial encounter; Y93.54 Activity, bowling
+=== FIELD: dialogue
+[doctor] hello , mrs . peterson .
+[patient] hi , doctor taylor . good to see you .
+[doctor] you're here for your hip today , or your- your leg today ?
+[patient] yes . i hurt my- the- my- top part of my right leg here .
+[doctor] hey , dragon . i'm seeing mrs . peterson , here , she's a 43-year-old patient . she's here for left leg pain . right leg pain , right leg pain ?
+[patient] yes .
+[doctor] um so , what happened to you ?
+[patient] i was bowling and as i was running up to the lane , i had my bowling ball all the way back , and when i slung it forward , i hit it right into my leg instead of the lane and so then i fell but- yeah-
+[doctor] did you get a strike ?
+[patient] no . in fact , i actually dropped the ball and it jumped two lanes over and landed in the other people's gutter .
+[doctor] terrific , terrific . so , did it swell up on you ?
+[patient] it- not- did n't seem like it swelled that much .
+[doctor] what about bruising ?
+[patient] um , a little bit on the back- back end , that side .
+[doctor] have- have you been able to walk on it ?
+[patient] just a little bit . very carefully .
+[doctor] sore to walk on ?
+[patient] yes . it's very sore .
+[doctor] um , and going upstairs or downstairs , does that bother you at all ?
+[patient] yeah , well , i do n't have stairs , but um , i would avoid that at all costs .
+[doctor] okay . um , it looks like you had a history of atopic eczema in your past ?
+[patient] yes . yes , i have eczema .
+[doctor] okay . and you take uh- uh , fluocinonide for that ?
+[patient] yes , when it gets really itchy , i'll- i'll use that and it usually takes care of it .
+[doctor] okay . and , it looks like you have a pre- previous surgical history of a colectomy ? what happened there ?
+[patient] yes , i had a- um , some diverticulosis and then um , i actually went into diverticulitis and they ended up going in and having to remove a little bit of my colon .
+[doctor] okay , let me examine you . does it hurt when i push on your leg like that ?
+[patient] yes , it does .
+[doctor] okay . if i lift your leg up like this , does that hurt ?
+[patient] no .
+[doctor] so , on my exam , you have some significant tenderness to the lateral aspect of your um right upper leg . you do n't seem to have any pain or tenderness with flexion or extension of your um your lower leg . um , are you taking anything for it right now ?
+[patient] i've been going back and forth between taking ibuprofen and tylenol .
+[doctor] okay . well , my impression is that you- you probably have a contusion , but let's take a look at your x-ray first . hey , dragon . show me the x-ray . yeah , so if you look at this , this is a normal femur . um , really do n't see any evidence of a fracture or any swelling , so it's essentially , a normal x-ray . so , what we're going to do is , i'm going to start you on um an anti-inflammatory . it's going to be mobic 15 milligrams uh , once a day . i want you to use some ice for the pain , um , and it should , honestly , just being a contusion , get better in the next week or so . if it's not getting better , of course , come on back and- and see me .
+[patient] okay , sounds good .
+[doctor] hey , dragon . go ahead and um , pres- do the orders and um , procedures uh , as described . come with me , and uh , i'll get you checked out . dragon , go ahead and finish off the note .
+=== FIELD: note
+CC:
+
+Right leg pain.
+
+HPI:
+
+Ms. Peterson is a 43-year-old female who presents today for an evaluation of right leg pain. She states she was bowling and hit her leg with the ball and fell. She developed mild bruising. She denies swelling. She has been walking very carefully. She is alternating Tylenol and ibuprofen. She has a history of atopic eczema and takes Fluocinonide topical cream for it. She has a history of colectomy following diverticulosis.
+
+EXAM
+
+Examination of the right leg shows significant tenderness to the lateral aspect of the right upper leg. No pain or tenderness with flexion or extension of the lower leg.
+
+RESULTS
+
+X-rays of the right lower extremity is normal, no fractures or dislocations.
+
+IMPRESSION
+
+Right leg contusion.
+
+PLAN
+
+At this point, I discussed the diagnosis and treatment options with the patient. I have recommended Mobic 15 mg once a day. She will use ice for pain. She will follow up as needed.
+
+
+########## ENCOUNTER D2N018
+ICD-10 codes: S42.201A Unspecified fracture of upper end of right humerus, initial encounter for closed fracture; W01.0XXA Fall on same level from slipping, tripping and stumbling without subsequent striking against object, initial encounter; Y93.68 Activity, volleyball (beach) (court)
+=== FIELD: dialogue
+[doctor] hi miss russell .
+[patient] hi-
+[doctor] nice to meet you-
+[patient] doctor gutierrez . how are you ?
+[doctor] i'm well .
+[patient] good .
+[doctor] hey dragon . i'm seeing miss russell . she's a 39-year-old female here for , what are you here for ?
+[patient] it's my right upper arm . it hurts really , really bad .
+[doctor] so severe right upper arm pain .
+[patient] yeah , uh yes .
+[doctor] and how did this happen ?
+[patient] i was playing volleyball yesterday , uh last night . um and i went to spike the ball , and the team we were playing , they're dirty . so um , somebody right across from me kinda kicked my legs from under me as i was going up , and i fell and landed on my arm .
+[doctor] mm-hmm , like right on your shoulder .
+[patient] yeah .
+[doctor] ow .
+[patient] yes .
+[doctor] that sounds like it hurt .
+[patient] it was nasty .
+[doctor] um , so this happened , what ? like 12 hours ago now ?
+[patient] uh , seven o'clock last night , so a little more than that .
+[doctor] okay .
+[patient] eighteen hours .
+[doctor] so less than a day .
+[patient] yeah .
+[doctor] in severe pain .
+[patient] yes .
+[doctor] have you taken anything for the pain ?
+[patient] i've been taking ibuprofen every six hours i think , but it's really not helping at all .
+[doctor] okay , what would you rate your pain ?
+[patient] it's like a nine .
+[doctor] nine out of 10 ?
+[patient] yeah .
+[doctor] so like really severe ?
+[patient] yes .
+[doctor] have you used any ice ?
+[patient] no , i have n't .
+[doctor] okay . and do you have any medical problems ?
+[patient] i have gallstones .
+[doctor] okay . do you take any medicine for it ?
+[patient] pepcid .
+[doctor] okay . and any surgeries in the past ?
+[patient] yes , i had a lumbar fusion about six years ago .
+[doctor] okay .
+[patient] um , yeah .
+[doctor] all right . let's uh , let's look at your x-ray .
+[doctor] hey dragon . show me the last radiograph . so this is looking at your right arm , and what i see is a proximal humerus fracture . so you kinda think of your humerus as a snow cone , and you knocked the-
+[patient] the top of the snow cone ?
+[doctor] the top off the snow cone . um , so i'll be gentle but i want to examine your arm .
+[patient] all right .
+[doctor] okay .
+[patient] all right . all right .
+[doctor] all right . are you able to straighten your arm ?
+[patient] yeah , i can just straighten the elbow as long as i do n't move up here .
+[doctor] as long as you do n't move your shoulder .
+[patient] yeah .
+[doctor] go ahead and bend . okay . so your exam is generally normal , meaning that the rest of your body is normal
+[patient]
+[doctor] but you've got some swelling and erythema-
+[patient] yeah .
+[doctor] . on that right shoulder . you've got uh , tenderness over your right shoulder . you've got normal pulses , and everything else is normal . any numbness or tingling in that right arm ?
+[patient] no .
+[doctor] okay . um , so what we're going to have to do- the good thing about um , these kinds of fractures is generally , they will heal up without surgery . um , but we have to put you in a sling that weighs your arm down and pulls it down . so we're going to put you in a long arm cast and a sling , and then we're gon na check you in two weeks to see if those bones have realigned and if they have n't , then we're gon na have to talk about doing surgery at that time .
+[patient] okay .
+[doctor] i'm going to prescribe you some pain medicine . we'll do lortab 500- lortab 5 milligram .
+
+[doctor] um , you can take one to two tablets every uh , six hours as needed for pain . i'll give you 20 of those .
+[patient] all right .
+[doctor] and um , do you have any allergies to medicines ? i did n't ask .
+[patient] no , i do n't have no allergies .
+[doctor] okay . um , hey dragon , go ahead and order any medications or procedures discussed . um , do you have any questions for me ?
+[patient] no , i do n't .
+[doctor] okay , great . why do n't you come with me , we'll get the tech to put the cast on .
+[patient] okay .
+[doctor] and we'll get you checked out .
+[patient] thank you .
+[doctor] hey dragon , finalize the report .
+=== FIELD: note
+CC:
+
+Right upper arm pain.
+
+HPI:
+
+Ms. Russell is a 39-year-old female who presents today for an evaluation of severe right upper arm pain. She states she was playing volleyball yesterday and fell and landed on her arm. She has been taking ibuprofen every 6 hours but it does not help. She rates her pain 9/10. She denies any numbness or tingling in her arm. She has a history of gallstones and takes Pepcid. She has a past surgical history of a lumbar fusion 6 years ago. She denies any allergies.
+
+EXAM
+
+Examination of the right upper extremity shows swelling and erythema of the right shoulder. Tenderness over the right shoulder. Normal pulses.
+
+RESULTS
+
+X-rays of the right humerus, 2 views, obtained on today's visit show a proximal humerus fracture.
+
+IMPRESSION
+
+Right proximal humerus fracture.
+
+PLAN
+
+At this point, I discussed the diagnosis and treatment options with the patient. I have recommended we place her into a long arm cast and sling. She will follow up in 2 weeks for repeat imaging. At that point, we may need to discuss surigical options. I will prescribe Lortab, 5 mg, #20 (twenty) to take every 6 hours as needed for pain.
+
+All questions were answered.
+
+
+########## ENCOUNTER D2N019
+ICD-10 codes: M77.11 Lateral epicondylitis, right elbow
+=== FIELD: dialogue
+[doctor] hi ms. hernandez , dr. fisher , how are you ?
+[patient] hi dr. fisher . i'm doing okay except for my elbow here .
+[doctor] all right . so it's your right elbow ?
+[patient] it's my right elbow , yes .
+[doctor] okay . hey dragon , ms. hernandez is a 48-year-old female here for a right elbow . so , tell me what happened .
+[patient] well , i was , um , moving to a new home-
+[doctor] okay .
+[patient] and i was , um , moving boxes from the truck into the house and i lifted a box up and then i felt like this popping-
+[doctor] hmm .
+[patient] and this strain as i was lifting it up onto the shelf .
+[doctor] okay . and when- when did this happen ?
+[patient] this was just yesterday .
+[doctor] all right . and have you tried anything for it ? i mean ...
+[patient] i put ice on it . and i've been taking ibuprofen , but it still hurts at lot .
+[doctor] okay , what makes it better or worse ?
+[patient] the ice , when i have it on , is better .
+[doctor] okay .
+[patient] but , um , as soon as , you know , i take it off then it starts throbbing and hurting again .
+[doctor] all right . uh , let's review your past medical history . uh ... looks like you've got a history of anaphylaxis , is that correct ?
+[patient] yes . yes , i do . yeah .
+[doctor] do you take any medications for it ?
+[patient] um , ep- ... just an epipen .
+[doctor] just epipen for anaphylaxis when you need it . um , and what surgeries have you had before ?
+[patient] yeah , so carotid . yeah-
+[doctor] . yeah , no , uh , your , uh , neck surgery .
+all right . well let's , uh , examine you here for a second .
+so it's your , uh , this elbow right here ?
+[patient] yeah .
+[doctor] and is it hurt- ... tender right around that area ?
+[patient] yes , it is .
+[doctor] okay . can you flex it or can you bend it ?
+[patient] it hurts when i do that , yeah .
+[doctor] all right . and go ahead and straighten out as much as you can .
+[patient] that's about it .
+[doctor] all right .
+[patient] yeah .
+[doctor] so there's some swelling there . and how about , uh , can you move your fingers okay ? does that hurt ?
+[patient] no , that's fine .
+[doctor] how about right over here ?
+[patient] uh , no that's fine . yeah .
+[doctor] okay . so on exam you've got some tenderness over your lateral epicondyle . uh , you have some swelling there and some redness . uh , you have some pain with flexion , extension of your elbow as well . uh , and you have some pain on the dorsal aspect of your- of your forearm as well . okay ? so let's look at your x-rays . hey dragon , show me the x-rays . all right . your x-ray of your elbow-
+it looks like , i mean , the bones are lined up properly . there's no fracture-
+[doctor] . it , uh , there's a little bit of swelling there on the lateral elbow but i do n't see any fracture , so that's good . so , looking at the x-ray and looking at your exam , uh , my diagnosis here would be lateral epicondylitis , and this is basically inflammation of this area where this tendon in- inserts . and probably that happened when you were moving those boxes . so we'll try some motrin , uh , about 800 milligrams every six hours . uh , i'll give you a sling for comfort , just so you can use it if- if it's causing a lot of pain .
+[patient] hmm .
+[doctor] and it should get better , uh , in about , you know , in a couple of days it should be improved . and if it does n't get better , give us a call and we'll see you some time next week . okay ? so we'll give you a sling , we'll give you the motrin , i'll give you about , uh , 30 , uh , uh , 30 , uh , uh , medications for that . uh , do you have any questions ?
+[patient] no , no . thank you .
+[doctor] hey dragon , order the medications and the procedures . all right , why do n't you come with me and we'll get you signed out ?
+[patient] okay , sounds good .
+[doctor] hey dragon , finalize the report .
+=== FIELD: note
+CC:
+
+Right elbow pain.
+
+HPI:
+
+Ms. Hernandez is a 48-year-old female who presents today for an evaluation of right elbow pain. She states she was moving boxes from the truck into the house yesterday and felt a pop in her elbow. She has tried applying ice and taking Ibuprofen, but it does not help. She has a history of anaphylaxis and has an EpiPen. Her past surgical history is significant for neck surgery.
+
+EXAM
+
+Examination of the right elbow shows tenderness over the lateral epicondyle. Swelling and redness are noted. Pain with flexion and extension of the elbow. Pain over the dorsal aspect of the forearm.
+
+RESULTS
+
+X-rays of the right elbow shows no obvious signs of acute fracture. Mild effusion about the lateral aspect.
+
+IMPRESSION
+
+Right elbow lateral epicondylitis.
+
+PLAN
+
+At this point, I discussed the diagnosis and treatment options with the patient. I have recommended a sling for comfort. We discussed ice and anti-inflammatory medications. I will prescribe Motrin, 800 mg to take every 6 hours. She will follow up with me as needed if she continues to have pain. All questions were answered.
+
+
+########## ENCOUNTER D2N020
+ICD-10 codes: D64.9 Anemia, unspecified
+=== FIELD: dialogue
+[doctor] hi , vincent . how are you ?
+[patient] i'm good . how about you ?
+[doctor] i'm good . so le- are you ready to get started ?
+[patient] i am .
+[doctor] okay . vincent is a 56-year-old male here with abnormal lab findings . so , i've heard you were in the er , vincent , and they found that you had a low hemoglobin .
+[patient] yup .
+[doctor] were you having some dizziness and some lightheadedness ?
+[patient] i was very lightheaded . i- i do n't know . very lightheaded .
+[doctor] okay . and have you noticed bleeding from anywhere ?
+[patient] i have not . i have n't hurt myself in quite a while . maybe a slight nick from a knife while chopping some onions , but nothing more than that .
+[doctor] but no blood in your stools or-
+[patient] no .
+[doctor] . anything like that ?
+[patient] no .
+[doctor] okay . and any type of weight loss or decreased appetite or night sweats ? coughs ?
+[patient] uh , s- slightly decreased appetite , but i wish i had some weight loss .
+[doctor] um , okay . and how about any abdominal pain ? fever , chills ?
+[patient] uh , none of that .
+[doctor] okay . all right . um , any nausea or vomiting ?
+[patient] not really . yeah . maybe a bit of nausea .
+[doctor] okay .
+[patient] i- sitting at the back of a car , that makes me nauseous at times .
+[doctor] okay . all right . um , well , how are you doing in terms of your knee replacement . i know you had that done last year . that's going okay ?
+[patient] mm , it seems okay . yeah .
+[doctor] okay . you're walking around without a problem ?
+[patient] yup , yup . just not good enough to run yet , but everything else works just fine .
+[doctor] all right .
+um , and i know a few years ago , you had , had that scare with the possible lung cancer , but then they did the biopsy and , and you've been fine .
+[patient] yup , yup . all good .
+[doctor] turned out to be benign .
+[patient] yup .
+[doctor] okay . great . all right . well , let's go ahead and do a quick physical exam . so looking at you , you do n't appear in any distress . your heart is regular . your lungs sound nice and clear . you have some tenderness to the right lower quadrant to palpation of your abdomen . your lower extremities have no edema .
+[doctor] um , all right . well , let's go ahead and look at your labs , okay ?
+[patient] yup .
+[doctor] hey , dragon , show me the hemoglobin . yeah , so your hemoglobin is 8.2 , which is quite low for somebody of your height and weight , so we'll have to look into that a , a little bit further . i know that they did the endoscopy in the emergency room . hey , dragon , show me the endoscope results .
+[doctor] good . so it looks like you had some gastritis , which is just inflammation of your stomach and they also found a slight polyp , which i know that they biopsied and the results are pending at this time . um , so , you may have had some bleeding from the gastritis . it's not usual for people to have bleeding from that .
+[doctor] um , okay , well , hey , dragon , show me the anemia panel . okay .
+[doctor] anyway , okay . well , vincent , i think , you know , in terms of , my impression of you is that you've had this newfound anemia and for that , i think that we should go ahead and put you on protonix , 40 milligrams , once a day to help with the gastritis . does that sound okay to you ?
+[patient] it does . you're the doctor . i do n't know what it is .
+[doctor] so that's just , uh , what we call a proton pump inhibitor which , uh , helps decrease the amount of acid secreted within your stomach .
+[patient] got it . makes sense .
+[doctor] hey , hey , dragon , order protonix , 40 milligrams , once a day .
+[doctor] and i'd like you to try to cut down on your caffeine 'cause that can also irritate your stomach . try not to take any ibuprofen and try to cut down on any alcohol intake , okay ?
+[patient] yup , yup . the coffee's the hard part .
+[doctor] yeah . it always is . how about one , one , one eight-ounce cup a day ? okay ?
+[patient] sure .
+[doctor] um , and we'll go ahead and we'll see you in a couple weeks , okay ?
+[patient] sure thing .
+[doctor] i'm going through , uh , i'll also order another , uh , cbc on you . hey , dragon , order a complete blood count .
+[doctor] all right . the nurse will be in soon . it's , you know , settle all that . i'll see you soon .
+[patient] see you .
+[doctor] hey , dragon , finalize the note .
+
+=== FIELD: note
+CHIEF COMPLAINT
+
+Abnormal labs.
+
+HISTORY OF PRESENT ILLNESS
+
+Mr. Vincent Young is a 56-year-old male who presents to the clinic today for evaluation of abnormal labs.
+
+The patient was seen in the emergency room where he was found to have low hemoglobin. He notes that he has been very lightheaded. He denies any hematochezia. The patient does note some decrease in appetite. The patient reports some nausea when he is sitting in the back of the car. He denies any abdominal pain, fever, chills, vomiting, or recent weight loss. The patient also denies night sweats, or a cough.
+
+The patient notes that he is doing well status post knee arthroplasty. He is walking around without any problems.
+
+The patient had a biopsy a few years ago for potential lung cancer, however the nodule was benign. He is doing well.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: No fevers, chills, or weight loss.
+• Gastrointestinal: Endorses decreased appetite and mild nausea. Denies hematochezia.
+• Neurological: Endorse lightheadedness.
+
+PHYSICAL EXAMINATION
+
+• Constitutional: in no apparent distress.
+• Neck: Supple without thyromegaly or lymphadenopathy.
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: Regular rate and rhythm. No murmurs, gallops, or rubs. No extra heart sounds.
+• Gastrointestinal: Right lower quadrant tender to palpation.
+• Musculoskeletal: No lower extremity edema
+
+RESULTS
+
+Hemoglobin- 8.2, which is low for his height and weight.
+
+Endoscopy from the emergency room showed gastritis and a slight polyp. The biopsy results are still pending.
+
+ASSESSMENT AND PLAN
+
+Vincent Young is a 56-year-old male who presents today for lab review.
+
+New found anemia.
+• Medical Reasoning: His hemoglobin was 8.2, which is low for his height and weight. Endoscopy from the hospital showed gastritis which could be the source of bleeding. The endoscopy also showed a polyp and a polypectomy was performed. The pathology is still pending.
+• Patient Education and Counseling: I encouraged the patient to reduce his caffeine consumption avoid NSAIDs and alcohol.
+• Additional Testing: Repeat CBC was ordered.
+• Medical Treatment: I prescribed Protonix 40 mg once a day for gastritis.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+
+########## ENCOUNTER D2N021
+ICD-10 codes: E03.9 Hypothyroidism, unspecified; R94.5 Abnormal results of liver function studies; R63.5 Abnormal weight gain; L70.0 Acne vulgaris; E55.9 Vitamin D deficiency, unspecified
+=== FIELD: dialogue
+[doctor] next patient is christine hernandez , uh , date of birth is january 13th , 1982 .
+[doctor] hey , miss christine , how are you doing today ?
+[patient] i'm good , thanks . how are you ?
+[doctor] i'm pretty good . so it looks like you've completed the covid vaccine , that's great .
+[patient] yes , i did .
+[doctor] anything new since your last visit ?
+[patient] no , i did all the tests that you had recommended me to take . i have n't been able to take the thyroid medicine , the one that you prescribed , as i'm still taking my old one . um , the price was a little high on the new one .
+[doctor] okay , so did ... did you try the coupon that i gave you ?
+[patient] i did not try the coupon , uh , there was a charge of $ 75 .
+[doctor] okay , well , next time that ... that coupon should help , and it should only be about $ 3 .
+[patient] okay , um ... i do n't have it , do you happen to have another one you can give me ?
+[doctor] yep , right here .
+[patient] wonderful , thank you so much , and ... and then the gel , they are charging me $ 100 for it . so , i do n't know if this is because it's a ... it's wal-mart , or if i should try somewhere else , or ... maybe you know how or where i can get it cheaper .
+[doctor] yeah , let's try something else , um ... sometimes it can be cheaper if we just prescribe you the individual ingredients of a medication , rather than the , the combined medication itself .
+[patient] that would be great .
+[doctor] so , that's clindamycin gel and benzoyl peroxide , uh , maybe by doing them separately , they could be a lot cheaper . so , that we can do . the unithroid , with the discount code , should only be about $ 9 for 90 days .
+[patient] okay , that would be great . yeah , they were charging me $ 75 , and i just could n't pay that .
+[doctor] maybe we'll try different pharmacy , as well .
+[patient] okay . so , do you think that my weight gain could have been the birth control that i was taking before that caused it ?
+[doctor] maybe . i do n't really see an endocrine cause for it , at least , so i would need to see the , the hyperandrogynism or high testosterone . or , a high dhea , to cause acne , or hair growth , or any of that stuff . but , the numbers are n't showing up out of range .
+[patient] okay .
+[doctor] i really do n't see any endocrine cause for it , like i said . your growth hormone was fine , but we definitely want to and need to treat it . um , i do n't know if we talked about maybe a little weight loss study .
+[patient] you mentioned the weight loss study , and you mentioned that i have some meal plans , um , that you had given me . i still have those , too .
+[doctor] have you tried to make any changes in the diet since the last time we spoke ?
+[patient] i've been trying to get better . i will start back at the gym in july , because of my contract , i had to put a hold on it until then .
+[doctor] okay .
+[patient] so , i do want to start doing that . i will be a little freer since , um , i'll be on vacation after july 8th .
+[doctor] okay , good .
+[patient] and then my cousin was telling me to ask you about cla , because it's supposed to help your metabolism . is that okay to take ?
+[doctor] um , i'm not sure . what is c , cla ?
+[patient] i'm not sure what it is , either .
+[doctor] okay , well , i'm unfamiliar with it , so ...
+[patient] okay . i also have a coworker who has a thyroid issue too , and she suggested to try chromium for weight loss .
+[doctor] so , that likely will not help too much . you can try either , if you really want to , but then ... it will not accept you into the weight loss study if you try those two .
+[patient] okay .
+[doctor] chromium is just a supplement and it wo n't help that much .
+[patient] it wo n't , okay , thank you .
+[doctor] it wo n't hurt ... okay , i should n't say that it wo n't hurt , but , it also wo n't help that much . so , it's up to you .
+[patient] okay . and so , my cousin also suggested amino acids , and that i might find them in certain foods , i guess , for my workout .
+[doctor] yeah . amino acids are fine , they wo n't , wo n't really help with weight loss either , but it might help , uh , you replenish , and just kind of , feel hydrated .
+[patient] okay . are they proteins ? um , my cousin said she had lost some weight , and has been working out every day , but she does n't work , so ... i do n't know .
+[doctor] yes , amino acids are what make up the protein , which is in any food you eat , with any protein . so , meats , dairy , nuts , any of that sort of thing .
+[patient] okay , thank you . got it .
+[doctor] all right . um , are you allergic to any medications ?
+[patient] no , not that i know of .
+[doctor] okay . is your s- skin pretty sensitive ?
+[patient] yes .
+[doctor] all right .
+[patient] um , yeah , my size , i will start getting rashes , with different products .
+[doctor] and have you ever tried clindamycin topical , as an antibiotic for your acne ?
+[patient] no , i've never tried anything for it .
+[doctor] okay . we might give you some of that .
+[patient] okay . and i also want to mention that my feet do swell up a lot .
+[doctor] okay . i'm ... let me take a look at that for just a moment . um , any constipation ?
+[patient] yes , i also do have that problem .
+[doctor] all right . mira- miralax will definitely help with that .
+[patient] okay , yes , my doctor did also recommend that .
+[doctor] great . all right , let's do an exam real quick . please have a seat on this table and i'll listen to your lungs and heart .
+[patient] okay .
+[doctor] all right , deep breath . all right , again .
+[patient] okay .
+[doctor] all right , sounds good .
+[patient] great .
+[doctor] let me take a look at your feet and ankles .
+[patient] okay .
+[doctor] all right , they look okay right now , certainly let your doctor know about this if it gets any worse or reoccurs .
+[patient] okay , i will do that .
+[doctor] now , let's go over your lab work . so , when you took that pill , the dexamethasone test , you passed , which means you do n't have cushing's syndrome . on that test , at least . the salivary cortisol , though , unless you did one wrong ... two of them were completely normal and one was abnormal , so , we might need to repeat that in the future .
+[patient] okay , that's okay .
+[doctor] all right , so , your cholesterol was quite high . the total cholesterol was 222 . the good cholesterol was about 44 . the bad was 153 , and it should be less than 100 . the non-hdl was about 178 , and it should be less than 130 . the good cholesterol should be over 50 , and it was 44 . so , your screen for diabetes is ... was fine . you do have a vitamin d deficiency , and , i do n't know if we started the vitamin d yet , or not .
+[patient] yes , we did . i- i do need to take one today , though .
+[doctor] okay . so , i also checked a lot of other pituitary hormones , iron levels ... everything else seemed to be pretty good , and in decent range .
+[patient] okay , that sounds great . so , i wanted to also show you my liver enzymes , um , because i have n't come back since then ... but i was also happy , because one of them was back to normal .
+[doctor] okay , great . let's see them .
+[patient] okay . so , the one that's 30 , that was almost 200 not so long ago .
+[doctor] yeah , your alt was about 128 .
+[patient] okay , and , and back in october was 254 .
+[doctor] yeah , this is much better .
+[patient] okay , great . and then it dropped in january , and then it dropped a little more in march , since i stopped taking the medicine in december .
+[doctor] okay , that's good . so ... i'm proud of you with the course of your labs , so before i forget , i'm going to , uh , just put your labs into the computer today , and i wo n't be checking your vitamin d level for some time .
+[patient] okay . so , with the thyroid , and the low vitamin d , does that always happen together ?
+[doctor] um , i do have a lot of people that have thyroid , thyroid issues and they have vitamin d deficiency .
+[patient] okay .
+[doctor] this is what i'm , um , i'm going to do . i'm going to put , print out your prescriptions , so you can shop around at the pharmacies and see if you can find better prices .
+[patient] okay , that way i can go ask them and try cvs .
+[doctor] yeah , that sounds like a plan .
+[patient] okay , good . so , the weight loss study that you mentioned , when does that start ? or , how does that work ?
+[doctor] so , we are about to start , as we just got approval last week , and we are just waiting on our paperwork so we can get started .
+[patient] okay , and what's involved with that ?
+[doctor] so , it'll involve you receiving a medication which has been used for diabetes treatment , and it works mostly in the gut on satiety , or satiety hormones . um , the most common side effects are going to be nausea , vomiting , diarrhea and constipation . they are s- uh , six arms , to the study . one is a placebo , the other ones are a , various as ... various dosages of the medication , excuse me . um , you would receive an injection once a week . also , keep in mind that most of the weight loss medications are not covered by insurance .
+[patient] okay .
+[doctor] so , it's a way of getting them , but , the odds of getting one of the arms with the medication that are in your favor , right , might be only one out of five of our hundred patients that we have on the list for the study that will receive the placebo .
+[patient] okay .
+[doctor] does that make sense ?
+[patient] yes , it does .
+[doctor] so , we do expect pretty big weight loss , because of what we learn in diabetes study . so , it's a year long , uh , process , and it's an injection once a week . you come in weekly for the first four , five weeks , i believe . and then , after that , it's once a month . you do get a stipend for partici- for participating in the study , and parking is validated , and whatever else that you need for the study .
+[patient] okay , do you know how much the stipend is ?
+[doctor] um , i will have to double check for you , and , you do n't have to be my patient , you just have to meet the criteria . so the criteria is a bmi greater than 30 , if you do n't have any other medical condition . or , a bmi greater than 27 , if you do have another medical condition , like your cholesterol . um , a bmi greater than 27 would quali- uh , qualify you .
+[patient] i have a friend who might be interested , and she does have diabetes .
+[doctor] if she has d- diabetes , then she wo n't qualify .
+[patient] okay , you ca n't if you ... if you have diabetes , got it .
+[doctor] correct . yeah , the only thing that , um , they can not have , really , is diabetes . so , either a psychiatric disease , or schizophrenia , bipolar , things like that .
+[patient] okay .
+[doctor] but , if they have hypertension , high cholesterol , things like that ... they can definitely sign up .
+[patient] and they can , okay . thank you for explaining that .
+[doctor] of course . so , do you want me to try to get you into that study ? or , would you just like to try , me to prescribe something ? it's kind of up to you .
+[patient] i think i'll just wait for a little bit now .
+[doctor] all right , sounds good . i'll give you the information for the research , it's just in my office . um , it is a different phone number , though . so then , if you're interested , just call us within a month , because i do n't know how long , uh , the , the wait will be .
+[patient] okay , will do .
+[doctor] perfect . so , let me go grab your discount card for the unithroid . um , when you go in to activate it , the instructions are on this card , and then you use your insurance ... then , show them this , and ask how much it'll cost . if it's too expensive , just let me know .
+[patient] i will . thank you so much for your help on that .
+[doctor] you're welcome . then , what i did is , i gave you a topical antibiotic , plus i gave you the benzoyl peroxide . so , the peroxide may bleach your sheets , but , you want to make sure to take it and apply it at night , so you do n't have a reaction from the sun during the day .
+[patient] okay , i can do that .
+[doctor] but , you do also want to make sure that you do n't mess up your sheets .
+[patient] okay , sounds good .
+[doctor] um , so , that's that . and then , let's see how you do on the other medications . i think this will , this will get better . in the meantime , a low-carb diet , avoid alcohol and fatty foods , and low chole- cholesterol foods .
+[patient] okay .
+[doctor] and again , once you finish your dose of vitamin d , for the vitamin d deficiency , you're gon na start with the 2000iu daily , so that you're able to maintain those levels . sound good ?
+[patient] yes , that sounds great .
+[doctor] i really think your liver enzymes are going to get better once you lose the weight , though .
+[patient] okay , that would be great .
+[doctor] since we stopped your birth control , we can try once called phexxi , which is kind of like a spermicide , basically .
+[patient] okay .
+[doctor] and you just apply it before intercourse .
+[patient] okay .
+[doctor] if you need some , uh , just let me know .
+[patient] okay , i will . i'll let you know .
+[doctor] okay , perfect . so , stay put for me now . i'm going to go see if they have discount samples , and bring you that prescription . and then , i'm going to order the labs for next time .
+[patient] okay , great , thank you so much .
+[doctor] you're welcome .
+[doctor] so , under the plan , under abnormal liver enzymes , they have improved since discontinuation of her birth control . under abnormal weight gain , her dexamethasone suppression test was normal . two out of three salivary cortisol tests were normal , not consistent with cushing's , and therefore we're ruling out cushing's . under her hirsutism , her androgen levels were normal . for the acne vulgaris , the epiduo was not covered , so we'll try benzoyl peroxide with clindamycin , and remove the previous information . on the hyperthyroidism , we'll print out her prescriptions . unithroid should be better priced with the discount card , and we'll repeat levels of everything before next visit . thanks .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Hypothyroidism.
+Abnormal liver enzymes.
+Abnormal weight gain.
+Acne vulgaris.
+
+HISTORY OF PRESENT ILLNESS
+
+Christine Hernandez is a 39-year-old female who presents today for evaluation and management of abnormal liver enzymes and hypothyroidism.
+
+When the patient was last seen, her thyroid medicine was changed to Unithroid, but due to the cost of $75, she has not yet started the new medicine and continues taking her previous thyroid medicine. She denies utilizing the coupon that was previously recommended for the Unithroid. Similarly, the patient was prescribed Epiduo for her acne vulgaris, which she did not fill due to the cost of $100. She tried filling both prescriptions at Walmart.
+
+Mrs. Hernandez still presents with abnormal weight gain. She questioned if her oral contraceptive Microgestin, which was discontinued, could have been the cause. Additional symptoms included acne, hirsutism. She is attempting to modify her intake and plans to resume her gym membership in July as she will be on vacation. She inquired about the impact on weight loss of chromium, CLA, and amino acids.
+
+The patient confirmed that she is taking her high dose Vitamin D as prescribed. She does suffer from constipation and she treats with MiraLAX.
+
+She denies previous treatment for her acne vulgaris. She denies ever using clindamycin topical antibiotic. She reports having sensitive skin, developing rashes with various skin products.
+
+PAST HISTORY
+
+Medical
+Hypothyroidism.
+Acne Vulgaris.
+Vitamin D deficiency.
+Abnormal weight gain.
+Hirsutism.
+Constipation.
+
+CURRENT MEDICATIONS
+
+Benzoyl Peroxide.
+Clindamycin Gel applied topically.
+Vitamin D 2000 IU daily.
+Unithroid.
+MiraLAX.
+
+ALLERGIES
+
+No known allergies.
+
+RESULTS
+
+Dexamethasone Suppression Test: Normal.
+
+Salivary Cortisol Tests: 2 out of 3 were normal. Not consistent with Cushing’s Syndrome.
+
+Hepatic Function Panel: ALT 128.
+Lipid Panel: Total cholesterol 222 mg/dL, HDL 44 mg/dL, LDL 153 mg/dL, non-HDL 178 mg/dL.
+
+FAI: Normal.
+
+ASSESSMENT
+
+• Hypothyroidism.
+• Abnormal liver enzymes.
+• Abnormal weight gain.
+• Acne vulgaris
+• Vitamin D deficiency.
+• Hirsutism
+
+PLAN
+
+Hypothyroidism
+The patient will again attempt to initiate Unithroid. I have printed out the prescription and a discount card, which should result in a reduced price. She will contact my office if she encounters additional issues.
+
+Abnormal liver enzymes
+We have seen improvement since the discontinuation of Microgestin. I recommended the spermicide Phexxi for alternative birth control. The patient will also continue working on weight loss, which should additionally improve her liver enzymes.
+
+Abnormal weight gain
+Cushing’s Syndrome has been ruled out. I reviewed the weight loss study with the patient, she will call within a month if she is interested in participating. I advised her to follow a low carbohydrate, low cholesterol, abstain from alcohol, and reduce fatty foods diet.
+
+Acne vulgaris
+Epiduo was not covered and too expensive. The patient will try benzoyl peroxide and Clindamycin separately to see if the price improves.
+
+Vitamin D deficiency
+The patient will complete the high dose vitamin D and then should start vitamin D 2000 IU per day to maintain her levels.
+
+Hirsutism
+Her androgen levels were normal.
+
+INSTRUCTIONS
+
+She will repeat all labs prior to her next visit.
+

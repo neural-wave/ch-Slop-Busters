@@ -1,0 +1,34 @@
+[project]
+name = "neural-wave"
+version = "0.1.0"
+description = "Shield-first, code-aware anonymization of patient-doctor encounters (Neural Wave x Bosch)"
+readme = "README.md"
+authors = [
+    { name = "darthdaver", email = "davide.molinelli@uusi.ch" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+neural-wave = "neural_wave.cli:main"
+
+[project.optional-dependencies]
+ml = [
+    "gliner>=0.2.29",
+    "torch>=2.14.1",
+    "transformers>=5.16.1",
+]
+eval = [
+    "numpy>=2.5.4",
+    "scikit-learn>=1.9.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.1",
+]

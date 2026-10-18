@@ -1,0 +1,23 @@
+{
+  "encounter_id": "D2N177",
+  "phi": [
+    {"text": "bruce", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "60 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "thanksgiving", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a holiday"},
+    {"text": "new year", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "coming year"},
+    {"text": "gatherings", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "events"},
+    {"text": "vacation", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "break"},
+    {"text": "summer", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "warmer months"},
+    {"text": "long walks", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "walks"},
+    {"text": "weekends", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "days off"},
+    {"text": "in the yard", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "outdoors"},
+    {"text": "halloween", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a holiday"},
+    {"text": "Bruce Howard", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "60-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "Thanksgiving", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "a holiday"},
+    {"text": "gardening", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "outdoor activities"},
+    {"text": "summer", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "warmer months"},
+    {"text": "morning walks", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "walks"}
+  ],
+  "medical_concepts": []
+}

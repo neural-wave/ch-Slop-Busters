@@ -1,0 +1,49 @@
+{
+  "encounter_id": "D2N009",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "bryan",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "55-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Bryan",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Smith",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "55-year-old",
+      "category": "AGE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "refrigerator",
+      "category": "CODE_EVIDENCE",
+      "why": "supports X50.0XXA overexertion (pushing/moving a refrigerator)"
+    },
+    {
+      "field": "note",
+      "text": "refrigerator",
+      "category": "CODE_EVIDENCE",
+      "why": "supports X50.0XXA overexertion (pushing/moving a refrigerator)"
+    }
+  ]
+}

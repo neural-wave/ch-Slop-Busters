@@ -1,0 +1,66 @@
+{
+  "encounter_id": "D2N184",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "stephanie",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "morales",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "113322",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "44-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "ups",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "anna",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Stephanie",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Morales",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "44-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "UPS",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    }
+  ],
+  "keep": []
+}

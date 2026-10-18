@@ -1,0 +1,754 @@
+{
+ "id": "G0043",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "age_range": [
+  19,
+  30
+ ],
+ "icd10_codes": [
+  {
+   "code": "S93.401A",
+   "description": "Sprain of unspecified ligament of right ankle, initial encounter"
+  },
+  {
+   "code": "W11.XXXA",
+   "description": "Fall on and from ladder, initial encounter"
+  },
+  {
+   "code": "Y92.69",
+   "description": "Other specified industrial and construction area as the place of occurrence of the external cause"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} , i'm doctor {DOCTOR_LAST} . it's nice to meet you . what's going on today ?\n[patient] hey . i'm a roofer , and i fell off a ladder at work . my ankle is a mess . my regular doctor also wanted me to come in , because i think my psoriatic arthritis is flaring .\n[doctor] okay . tell me what happened with the ladder first .\n[patient] on {DATE_SPOKEN} i was on a twenty foot extension ladder at a house we were reroofing . i was carrying a bundle of shingles up , and the ladder slid sideways on the gutter . i came down on my right side , and my right foot twisted under me .\n[doctor] oh no . did you hit your head ?\n[patient] no , i landed on my shoulder and then my hip . my helmet was in the truck . i'm lucky .\n[doctor] you are lucky . did you pass out at all , or feel dizzy ?\n[patient] no , i was totally awake . i was just in a lot of pain .\n[doctor] okay . where does it hurt most ?\n[patient] the outside of my right ankle , and my shoulder a bit . the ankle is swollen up like a balloon .\n[doctor] can you put any weight on it ?\n[patient] barely . i hopped in on one foot . the guys from {ORG} drove me to urgent care , and they told me to come see you .\n[doctor] okay . let me pull up your chart . your medical record number is {MRN} , is that right ?\n[patient] yes , that's me .\n[doctor] good . you were seen at urgent care yesterday , correct ?\n[patient] yeah . they took x-rays and said it's not broken , just a bad sprain . they gave me a boot and some ibuprofen .\n[doctor] okay . now , how have your joints been over the last few weeks ?\n[patient] they've been bad for about three weeks . my fingers are puffy in the morning , and my lower back is stiff for like an hour after i get up .\n[doctor] when were you first diagnosed with psoriatic arthritis ?\n[patient] in {YEAR} , i think . i had the skin patches on my elbows for years before that , and then the joints started .\n[doctor] got it . are you on any medicine for it ?\n[patient] i take a shot every two weeks . it's a biologic , the one with the pen .\n[doctor] that's probably adalimumab . do you ever miss doses ?\n[patient] sometimes , when we're working out of town and i'm sleeping in a motel .\n[doctor] okay . any fevers , night sweats , or weight loss ?\n[patient] no fevers . i've lost a little weight , but i think that's from being on the crew all summer .\n[doctor] that's reasonable . any rashes or itchy patches right now ?\n[patient] some on my elbows and behind my ears . nothing like before .\n[doctor] okay , let me examine you . your blood pressure is one twenty two over seventy four and your heart rate is seventy six . your temperature is normal .\n[patient] okay .\n[doctor] i see swelling on the outside of the right ankle , with some bruising . press here , does it hurt ?\n[patient] yes , right there , that's the spot .\n[doctor] okay . the ligaments on the outside feel tender , but i don't feel a deformity . your achilles tendon feels fine , no pain there . can you wiggle your toes ?\n[patient] yes .\n[doctor] good . feel that ?\n[patient] yes , it's all there .\n[doctor] now raise your arm for me . does your shoulder hurt ?\n[patient] a little , especially behind the shoulder .\n[doctor] okay . make a fist for me .\n[patient] they're tight . my pinky and my ring finger are swollen , they look like little sausages .\n[doctor] i see that . dactylitis is what we call it when a whole finger swells like that . now bend forward for me .\n[patient] it pulls a bit , but it's not terrible .\n[doctor] okay . the x-ray from urgent care shows no fracture , just some soft tissue swelling .\n[patient] that's good news , right ?\n[doctor] it is . i'm going to diagnose you with a sprain of the ligaments on the outside of your right ankle , from the fall . for the joints , i want to check some labs , a c reactive protein and an esr . i'd also like a repeat x-ray of your hands .\n[patient] okay . what do i do about the ankle ?\n[doctor] keep the boot on , use crutches for a few days , and ice it twenty minutes at a time with the foot elevated above your heart . you'll start physical therapy in two weeks .\n[patient] is it okay to keep taking ibuprofen ?\n[doctor] for a short time , yes . i'd rather you use tylenol for the pain when you can , because ibuprofen can bother your stomach .\n[patient] okay .\n[doctor] and i'll increase your injection to every week for the next month , to see if we can calm the flare down .\n[patient] every week ? that's going to be rough .\n[doctor] i know . we'll see how you do . come back in four weeks , or sooner if the swelling gets worse or the foot goes numb .\n[patient] got it . thanks , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nRight ankle pain and swelling after a fall from an extension ladder, with recent worsening of psoriatic arthritis.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with psoriatic arthritis on adalimumab who presents for evaluation of a right ankle injury and a flare of inflammatory arthritis. He was referred by his primary rheumatology clinic.\n\nOn {DATE_SPOKEN}, he fell approximately 20 feet from a twenty foot extension ladder while carrying shingles at a residential reroofing job site. The ladder slid sideways on the gutter. He landed on his right side with the right foot inverted beneath him. He denies head strike or loss of consciousness. He was evaluated at urgent care the following day, where radiographs showed no fracture and he was given a walking boot and ibuprofen. Pain is primarily at the lateral right ankle and right shoulder.\n\nOver approximately three weeks he has had morning finger swelling and low back stiffness lasting about one hour after rising. He has skin plaques on the elbows and behind the ears that are improved compared with baseline. He denies fevers and night sweats. He reports mild weight loss, which he attributes to physical labor. He occasionally misses adalimumab doses when working out of town.\n\nPAST MEDICAL HISTORY\n\nPsoriatic arthritis, diagnosed in {YEAR}. Long-standing psoriasis.\n\nMEDICATIONS\n\nAdalimumab subcutaneous injection every two weeks. Ibuprofen as prescribed at urgent care.\n\nSOCIAL HISTORY\n\nWorks as a roofer for {ORG}. Frequent work travel out of town.\n\nIDENTIFICATION\n\nMedical record number: {MRN}.\n\nPHYSICAL EXAM\n\nVitals: BP 122/74, HR 76, afebrile. Right ankle with lateral swelling and ecchymosis. Tenderness over the anterior talofibular and calcaneofibular ligaments; no palpable deformity. Distal sensation and capillary refill intact. Right shoulder with pain on abduction. Dactylitis of the fourth and fifth digits. Lumbar flexion limited. Achilles tendons nontender. Scattered plaques on the elbows.\n\nRESULTS\n\nUrgent care radiographs of the right ankle reviewed: no fracture, soft tissue swelling only. CRP and ESR ordered. Repeat hand radiographs ordered.\n\nASSESSMENT AND PLAN\n\n1. Sprain of the lateral ligament complex of the right ankle from a fall off an extension ladder at a reroofing job site. Walking boot, crutches, ice, and elevation. Physical therapy in two weeks.\n2. Psoriatic arthritis with flare, including dactylitis and morning stiffness. Increase adalimumab to weekly dosing for one month. CRP, ESR, and hand radiographs ordered.\n3. Right shoulder pain, likely contusion from the fall.\n\nReturn in four weeks, sooner for worsening swelling or numbness of the foot.",
+ "medical_concepts": [
+  {
+   "text": "fell off a ladder",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my ankle is a mess",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "psoriatic arthritis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "twenty foot extension ladder",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "reroofing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "carrying a bundle of shingles",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the ladder slid sideways",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "came down on my right side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my right foot twisted under me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landed on my shoulder and then my hip",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "in a lot of pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the outside of my right ankle",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "the ankle is swollen up like a balloon",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my shoulder a bit",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "not broken",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "just a bad sprain",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a boot",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "bad for about three weeks",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my fingers are puffy in the morning",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my lower back is stiff",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "skin patches on my elbows",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a shot every two weeks",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "biologic",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "adalimumab",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "miss doses",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no fevers",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lost a little weight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "itchy patches",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure is one twenty two over seventy four",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart rate is seventy six",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "temperature is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "swelling on the outside of the right ankle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "some bruising",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the ligaments on the outside feel tender",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "don't feel a deformity",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "achilles tendon",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "behind the shoulder",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my pinky and my ring finger are swollen",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "dactylitis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "the x-ray from urgent care shows no fracture",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "soft tissue swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a sprain of the ligaments on the outside of your right ankle",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a c reactive protein",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "an esr",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "repeat x-ray of your hands",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "crutches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen can bother your stomach",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your injection",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "the swelling gets worse",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the foot goes numb",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sprain of the lateral ligament complex of the right ankle",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "fall off an extension ladder",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "reroofing job site",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "psoriatic arthritis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "adalimumab",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "fell approximately 20 feet",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "twenty foot extension ladder",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ladder slid sideways on the gutter",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landed on his right side",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "right foot inverted",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "denies head strike or loss of consciousness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "walking boot",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pain is primarily at the lateral right ankle",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "right shoulder",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "morning finger swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "low back stiffness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "skin plaques on the elbows",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "denies fevers and night sweats",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild weight loss",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "misses adalimumab doses",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Long-standing psoriasis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Adalimumab subcutaneous injection every two weeks",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 122/74",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "HR 76",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "afebrile",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right ankle with lateral swelling and ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness over the anterior talofibular and calcaneofibular ligaments",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no palpable deformity",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Distal sensation and capillary refill intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right shoulder with pain on abduction",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Dactylitis of the fourth and fifth digits",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lumbar flexion limited",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Achilles tendons nontender",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "Scattered plaques on the elbows",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "soft tissue swelling only",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "CRP",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "ESR",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "hand radiographs",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Walking boot, crutches, ice, and elevation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "dactylitis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "morning stiffness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Increase adalimumab to weekly dosing",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right shoulder pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "contusion",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness of the foot",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "achilles tendon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponymous anatomical structure, not a person"
+  },
+  {
+   "text": "Achilles tendons",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponymous anatomical structure, not a person"
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of acetaminophen"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S93.401A",
+   "spans": [
+    {
+     "text": "the outside of my right ankle",
+     "field": "dialogue"
+    },
+    {
+     "text": "just a bad sprain",
+     "field": "dialogue"
+    },
+    {
+     "text": "a sprain of the ligaments on the outside of your right ankle",
+     "field": "dialogue"
+    },
+    {
+     "text": "Sprain of the lateral ligament complex of the right ankle",
+     "field": "note"
+    },
+    {
+     "text": "Right ankle with lateral swelling and ecchymosis",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W11.XXXA",
+   "spans": [
+    {
+     "text": "fell off a ladder",
+     "field": "dialogue"
+    },
+    {
+     "text": "the ladder slid sideways",
+     "field": "dialogue"
+    },
+    {
+     "text": "fall off an extension ladder",
+     "field": "note"
+    },
+    {
+     "text": "fell approximately 20 feet",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.69",
+   "spans": [
+    {
+     "text": "reroofing",
+     "field": "dialogue"
+    },
+    {
+     "text": "twenty foot extension ladder",
+     "field": "dialogue"
+    },
+    {
+     "text": "reroofing job site",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm a roofer",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "working out of town and i'm sleeping in a motel",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive travel routine for crew work"
+  },
+  {
+   "text": "roofer",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "Frequent work travel out of town",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive travel routine for crew work"
+  }
+ ],
+ "scenario": {
+  "specialty": "rheumatology",
+  "visit": "injury",
+  "length": "short",
+  "focus": [
+   "DATE",
+   "ID",
+   "ORGANIZATION"
+  ]
+ }
+}

@@ -1,0 +1,643 @@
+{
+ "id": "G0045",
+ "dataset": "synthetic_followup",
+ "sex": "male",
+ "age_range": [
+  19,
+  30
+ ],
+ "icd10_codes": [
+  {
+   "code": "G47.33",
+   "description": "Obstructive sleep apnea (adult) (pediatric)"
+  },
+  {
+   "code": "G47.00",
+   "description": "Insomnia, unspecified"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  },
+  {
+   "code": "Z72.820",
+   "description": "Sleep deprivation"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . good to see you again . how have you been since the last visit ?\n[patient] hey , doctor {DOCTOR_LAST} . honestly , not as good as i want . i've been using the cpap about half the nights .\n[doctor] okay . tell me more about that . what gets in the way ?\n[patient] i travel a lot for work , and when i'm at a hotel the mask leaks and i wake up and take it off . and i'm so tired by the time i get home that i fall asleep on the couch without it .\n[doctor] that's very common . what do you do for work ?\n[patient] i'm a software engineer at {ORG} , so most of my week is on video calls . it's not very physical .\n[doctor] okay . how many hours do you actually sleep ?\n[patient] maybe five and a half on a good night . on weekends i try to catch up , but then i feel worse .\n[doctor] i see . do you nap during the day ?\n[patient] sometimes in the car on the way home . i have to pull over once in a while . that scared me a little .\n[doctor] that's important to tell me . please don't drive when you're drowsy . is your partner still noticing the snoring ?\n[patient] yes . we just adopted twins , so now i'm up at night with the babies , and my wife says the snoring is still bad .\n[doctor] congratulations . that's a big change . how loud is the snoring ?\n[patient] loud . she says i stop breathing sometimes . she videoed me on her phone .\n[doctor] that's helpful . let me ask about your routine . do you exercise ?\n[patient] i swim at 5:45 every morning at the pool near our apartment in {CITY} , before work . it's the only time i get to myself .\n[doctor] wow , that's early . how are you doing it on five hours ?\n[patient] i do n't know . coffee . a lot of coffee .\n[doctor] okay . let's look at your numbers . your blood pressure today is one thirty four over eighty six . that's a little higher than last time . and your weight is up two kilos since last year .\n[patient] yeah , i've been eating out more since the new job .\n[doctor] okay . your neck circumference looks larger than before . let me check your mouth and throat . any pain there ?\n[patient] no pain .\n[doctor] alright . the cpap download i got shows you're averaging about four hours a night . the apnea hypopnea index on your last study was twenty four , which is moderate , and the oxygen dropped to eighty six percent at the lowest .\n[patient] that's bad , right ?\n[doctor] it's moderate sleep apnea . the good news is it's very treatable , and we have options . your epworth score today is fourteen , which means you're quite sleepy during the day .\n[patient] yeah . okay .\n[doctor] let's go over your options . we can keep working on the cpap . we can change the mask to a nasal pillow mask , and i'd like you to try the humidifier at setting four . we can also repeat the sleep study as a titration study if the symptoms don't improve .\n[patient] i've been trying the full face mask . it's uncomfortable .\n[doctor] that's a good reason to switch . i'll send a referral to our sleep technician to refit the mask this week .\n[patient] okay . do you have anything to help me sleep ?\n[doctor] for insomnia , a short course of medicine can help . but i'd rather not give you a sedative with your sleep apnea . so we'll try cognitive behavioral therapy first . do you know what that involves ?\n[patient] i think so . it's the sleep diary and the rules about getting out of bed ?\n[doctor] exactly . and we can try melatonin at three milligrams , thirty minutes before bed . no alcohol after dinner .\n[patient] i'll try the melatonin . i'm not much of a drinker anyway , maybe one beer on the weekend .\n[doctor] okay . i also want to check your family history . any sleep problems or other conditions run in the family ?\n[patient] my grandfather had parkinson's , and my dad has high blood pressure like me .\n[doctor] okay . and your hobbies ? you seem like a busy person .\n[patient] i restore vintage motorcycles in my garage . it's a fun escape . i'm working on a seventy one honda right now .\n[doctor] that sounds like a lot of late nights . i'd like you to keep a sleep diary for two weeks , and bring the cpap data card to the next visit . we'll see you back in four weeks , and sooner if the snoring gets worse or you feel unsafe driving .\n[patient] got it . i'm planning a trip to lisbon next month , is it okay if i bring the machine ?\n[doctor] of course , bring it . just make sure you have the right adapter for the outlets there .\n[patient] will do . thanks , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nFollow-up for obstructive sleep apnea with suboptimal CPAP adherence and insomnia symptoms.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with obstructive sleep apnea on CPAP and insomnia who presents for follow-up. He reports using CPAP about half of nights. Mask leak occurs when traveling for work, and the full face mask is uncomfortable, so he removes it during sleep. He falls asleep on the couch after returning home late.\n\nHe estimates five and a half hours of sleep on a good night. He has had episodes of drowsy driving, once requiring him to pull over, which he finds concerning. His partner reports loud snoring with witnessed apneas, recorded on video. He swims at 5:45 each morning before work. Weight has increased by approximately 2 kg since last year, which he attributes to restaurant meals since starting a new job. He denies pain in the neck or throat.\n\nPAST MEDICAL HISTORY\n\nObstructive sleep apnea diagnosed on polysomnography. Insomnia. No known cardiac disease.\n\nFAMILY HISTORY\n\nGrandfather with Parkinson's disease. Father with hypertension.\n\nSOCIAL HISTORY\n\nSoftware engineer, primarily on video calls. Lives in {CITY} with his wife and recently adopted twins. Alcohol: occasional, one beer on weekends. Restores vintage motorcycles as a hobby in his garage. Recent travel for work. Plans international travel to Lisbon next month.\n\nMEDICATIONS\n\nCPAP therapy nightly. Melatonin 3 mg, to start.\n\nPHYSICAL EXAM\n\nVitals: BP 134/86. Neck circumference increased. Oropharynx examined, no pain.\n\nDATA\n\nCPAP download reviewed: average use approximately four hours per night. Most recent polysomnography apnea-hypopnea index 24 events per hour (moderate), with nadir oxygen saturation 86 percent. Epworth Sleepiness Scale score 14 today.\n\nASSESSMENT AND PLAN\n\n1. Moderate obstructive sleep apnea with suboptimal CPAP adherence and mask intolerance. Referral to sleep technician for mask refitting to nasal pillow interface. Humidifier increased to setting four. Repeat titration study if symptoms persist.\n2. Insomnia. Referral for cognitive behavioral therapy for insomnia, sleep hygiene education, and a two-week sleep diary. Melatonin 3 mg 30 minutes before bed. Avoid sedative hypnotics given untreated sleep apnea.\n3. Hypertension, elevated today at 134/86; monitor at home.\n4. Sleep deprivation with daytime sleepiness and drowsy driving; counseled to avoid driving when drowsy.\n5. Weight gain of about 2 kg since last year, counseled on nutrition.\n\nReturn in four weeks with CPAP data card, sooner for worsening snoring or unsafe driving.",
+ "medical_concepts": [
+  {
+   "text": "the cpap",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "half the nights",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the mask leaks",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "wake up and take it off",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "so tired by the time i get home",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fall asleep on the couch",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "five and a half on a good night",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pull over once in a while",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "snoring",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "stop breathing sometimes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "up at night with the babies",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "coffee",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure today is one thirty four over eighty six",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your weight is up two kilos",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "neck circumference looks larger",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "averaging about four hours a night",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the apnea hypopnea index on your last study was twenty four",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the oxygen dropped to eighty six percent",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "moderate sleep apnea",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "your epworth score today is fourteen",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "quite sleepy during the day",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "nasal pillow mask",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "the humidifier",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a titration study",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "full face mask",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "insomnia",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a sedative",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cognitive behavioral therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "the sleep diary",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "melatonin at three milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "one beer on the weekend",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "parkinson's",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "high blood pressure",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "obstructive sleep apnea",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "insomnia symptoms",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "using CPAP about half of nights",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mask leak",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "full face mask",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "falls asleep on the couch",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "five and a half hours of sleep",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "drowsy driving",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "loud snoring with witnessed apneas",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Weight has increased by approximately 2 kg",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain in the neck or throat",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Obstructive sleep apnea diagnosed on polysomnography",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Insomnia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "No known cardiac disease",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Grandfather with Parkinson's disease",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Father with hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "CPAP therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Melatonin 3 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 134/86",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Neck circumference increased",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Oropharynx examined",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "CPAP download",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "average use approximately four hours per night",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "apnea-hypopnea index 24 events per hour",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "nadir oxygen saturation 86 percent",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Epworth Sleepiness Scale score 14",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Moderate obstructive sleep apnea",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "suboptimal CPAP adherence",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mask intolerance",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mask refitting to nasal pillow interface",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Humidifier increased to setting four",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Repeat titration study",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "cognitive behavioral therapy for insomnia",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "sleep hygiene education",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Melatonin 3 mg 30 minutes before bed",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "sedative hypnotics",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hypertension, elevated today at 134/86",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Sleep deprivation",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "daytime sleepiness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Weight gain of about 2 kg since last year",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "parkinson's",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponym for Parkinson's disease, not a person"
+  },
+  {
+   "text": "Parkinson's disease",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponym for Parkinson's disease, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "G47.33",
+   "spans": [
+    {
+     "text": "moderate sleep apnea",
+     "field": "dialogue"
+    },
+    {
+     "text": "the apnea hypopnea index on your last study was twenty four",
+     "field": "dialogue"
+    },
+    {
+     "text": "snoring",
+     "field": "dialogue"
+    },
+    {
+     "text": "Moderate obstructive sleep apnea",
+     "field": "note"
+    },
+    {
+     "text": "apnea-hypopnea index 24 events per hour",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "G47.00",
+   "spans": [
+    {
+     "text": "insomnia",
+     "field": "dialogue"
+    },
+    {
+     "text": "insomnia symptoms",
+     "field": "note"
+    },
+    {
+     "text": "Insomnia",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "blood pressure today is one thirty four over eighty six",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypertension, elevated today at 134/86",
+     "field": "note"
+    },
+    {
+     "text": "BP 134/86",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z72.820",
+   "spans": [
+    {
+     "text": "five and a half on a good night",
+     "field": "dialogue"
+    },
+    {
+     "text": "quite sleepy during the day",
+     "field": "dialogue"
+    },
+    {
+     "text": "Sleep deprivation",
+     "field": "note"
+    },
+    {
+     "text": "five and a half hours of sleep",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm a software engineer at",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "we just adopted twins",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "recent family event"
+  },
+  {
+   "text": "i restore vintage motorcycles in my garage",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "i swim at 5:45 every morning",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive daily routine"
+  },
+  {
+   "text": "lisbon",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "planned international trip"
+  },
+  {
+   "text": "Software engineer",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "recently adopted twins",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "recent family event"
+  },
+  {
+   "text": "Restores vintage motorcycles as a hobby in his garage",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "swims at 5:45 each morning",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive daily routine"
+  },
+  {
+   "text": "Lisbon",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "planned international trip"
+  }
+ ],
+ "scenario": {
+  "specialty": "sleep medicine",
+  "visit": "followup",
+  "length": "medium",
+  "focus": [
+   "ORGANIZATION",
+   "OTHER_QUASI",
+   "LOCATION"
+  ]
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "encounter_id": "MC0022",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "Daisy",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "44 y/o",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "26 February 1981",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Madison",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "(718) 935-9540",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Costco",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "accountant",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Suresh",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Menon",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": []
+}

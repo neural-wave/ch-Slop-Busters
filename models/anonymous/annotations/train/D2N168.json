@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N168",
+  "phi": [
+    {"text": "diane", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "28 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "traveling a lot that week for work", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "busy a lot that week"},
+    {"text": "traveling", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "busy"},
+    {"text": "Diane Baker", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "28-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "traveling a lot that week for work", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "busy a lot that week"},
+    {"text": "traveling", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "busy"}
+  ],
+  "medical_concepts": []
+}

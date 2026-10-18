@@ -1,0 +1,110 @@
+########## ENCOUNTER D2N175
+=== FIELD: dialogue
+[doctor] hi , natalie . how are you ?
+[patient] good . how are you ?
+[doctor] it's good to see you .
+[patient] good to see you , too .
+[doctor] i know my nurse has already told you about dax . is it okay if i tell dax a little bit about you ?
+[patient] go for it .
+[doctor] all right . so , natalie is a 39-year-old female , here today for a check-up for an abnormal lab . she's got a history of high blood pressure , diabetes , and acl repair .
+[doctor] so , tell me what's going on .
+[patient] so , uh , i got some re- routine blood work done last week and , uh , they said that my blood sugars were , were high , so that i should come in , um , and talk to you and get some more work done and , and , uh , see why that is .
+[doctor] okay . well , were you having any symptoms at all or just , we had some blood work done routinely ? uh , any chest pain , shortness of breath ? any nausea , vomiting , or diarrhea ?
+[patient] no , no symptoms . uh , so i was a little shocked when i came back high and , and elevated , so hopefully we can figure out what's going on .
+[doctor] we've been , kind of , checking on this for a while and you've been on metformin . we actually increased your dose last time-
+[patient] yup .
+[doctor] so right now you're on 100 , 1,000 milligrams a day , correct ?
+[patient] correct . yup .
+[doctor] okay . all right . no , uh , no difficulty urinating or burning when you urinate at all ?
+[patient] nope .
+[doctor] okay . all right . um , hey , dragon , show me the hemoglobin a1c . so in reviewing your , that's the lab that we checked after when i saw before i walked in . it says 8.1 , which is elevated , so i think we need to do a maybe a better job with adjusting your medication .
+[doctor] how are you doing with your diet for your diabetes ?
+[patient] my diet's been really great lately . i've been avoiding sugars , um , been really watching , uh , my weight and power walking every day , so i was a little surprised when the , the blood work came back that i- i had , um , an elevated , uh , test .
+[doctor] okay . and , uh , have you had any , uh , any other , are you checking your blood sugars in the morning or your fasting blood sugars ?
+[patient] yes , i am .
+[doctor] okay . all right . how are you doing with your high blood pressure ?
+[patient] that's been good and stable . um , i've been stable on the medication , been taking that every day . um , and i have a b- a cuff at home to , to measure it myself and that , everything's been normal .
+[doctor] okay , great . and how's your knee doing that's the other issue we've been , kind of , following ? you had some surgery done for that ?
+[patient] yeah . about five years ago , i had , um , an acl repair on my right knee and everything's been going well so far . i have n't had any , uh , issues with mobility . um , it's been great .
+[doctor] and you're pretty physically active and doing exercises ?
+[patient] yeah . i've been power walking about , at least 30 minutes every day .
+[doctor] okay . great . well , let's review , uh , some of your vital signs . hey , dragon , show me the vitals . all right . blood pressure looks good right now . your oxygen level's great . uh , your temperature's good .
+[doctor] so i know you checked in with the review of systems with my assistant before coming in . uh , anything else bothering you today except for the abnormal blood work ? no chest pain ? no shortness of breath ?
+[patient] no , nothing like that ?
+[doctor] no headaches ? no belly pain ?
+[patient] no .
+[doctor] good . great . well , let me examine you , okay ?
+[patient] okay .
+[doctor] alright . just gon na listen to your heart here .
+[doctor] no belly pain ?
+[patient] nope .
+[doctor] okay .
+[doctor] so on exam , uh , your hent or your neck exam is fine . your , uh , your eyes look fine . your lungs are clear . i do hear a systolic ejection murmur , about three over six . your belly's nice and soft . no swelling in your legs or extremities right now .
+[doctor] so let's talk about some of the issues today . all right . for the first issue , for the diabetes , since your hemoglobin a1c is is elevated , uh , and you're already on 1,000 milligrams of metformin , i think we should add , uh , jardiance , uh , 10 milligrams a day . uh , so that's a new medication . we'll start that . i do want you to , uh follow your diet pretty , uh , aggressively . i wan na see if we can get that hemoglobin a1c down the next time .
+[doctor] i'm also gon na add some labs today to see what that , to see a lipid panel and some other blood work . hey , dragon , order a cbc , cmp , and a lipid panel . and i'll go ahead and prescribe the jardiance , 10 milligrams a day . hey , dragon , prescribe , uh , order jardiance , 10 milligrams a day .
+[doctor] all right . for the high blood pressure , i think you're doing great . you're on lisinopril for that , so i think that we should continue that . uh , we'll re-check it again next time and you are monitoring that at home , correct ?
+[patient] yes , i am .
+[doctor] okay , great . and for the knee , i think you're doing great with that . you know , continue with your physical exercise , with your physical therapy , uh , uh , with your normal exercise regimen . uh , if you have any issues with that , certainly give us a call .
+[patient] okay .
+[doctor] all right . any other questions ?
+[patient] no , that's it .
+[doctor] okay . hey , dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Check up for abnormal labs.
+
+HISTORY OF PRESENT ILLNESS
+
+Natalie Price is a 39-year-old female here today for a check up for an abnormal labs. She has a history of high blood pressure, diabetes type 2, and right ACL repair.
+
+The patient states she had routine blood work done last week and they said her blood sugars were high. She was instructed to follow up to get some more work done. She denies having any symptoms.
+
+Regarding her diabetes, her diet has been really great lately. She has been avoiding sugars and watching her weight. The patient is power walking 30 minutes every day. She is checking her blood sugars every morning. The patient has continued to utilize metformin 1000 mg a day, which was increased at her last visit.
+
+She states her high blood pressure has been stable with lisinopril. The patient has a cuff at home to measure her blood pressure herself.
+
+Regarding her knee, she had an ACL repair on her right knee about 5 years ago and everything has been going well. She has not had any issues with mobility.
+
+She denies chest pain, shortness of breath, vomiting, diarrhea, headaches, and abdominal pain. She denies any difficulty urinating or burning when she urinates.
+
+REVIEW OF SYSTEMS
+
+• Cardiovascular: Denies chest pain or dyspnea on exertion.
+• Respiratory: Denies shortness of breath.
+• Genitourinary: Denies urinary pain.
+• Neurological: Denies headaches.
+
+PHYSICAL EXAMINATION
+
+• Head and Face: Normocephalic and atraumatic.
+• Neck: Supple without thyromegaly or lymphadenopathy. No carotid bruits appreciable.
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: 3/6 systolic ejection murmur.
+• Gastrointestinal: Abdomen is soft and nondistended.
+• Musculoskeletal: No lower extremity edema.
+
+RESULTS
+
+Hemoglobin A1c is elevated at 8.1.
+
+ASSESSMENT AND PLAN
+
+Natalie Price is a 39-year-old female with a history of high blood pressure, diabetes type 2, and right ACL repair. She presents today for evaluation following abnormal labs.
+
+Diabetes type 2.
+• Medical Reasoning: She is asymptomatic but her recent lab work demonstrated an elevated hemoglobin A1c of 8.1. She has been compliant with metformin 1000 mg daily, dietary modifications, and monitoring her blood glucose levels at home.
+• Additional Testing: We will check her CBC, CMP, and lipid panel.
+• Medical Treatment: Continue metformin 1000 mg daily. Initiate Jardiance 10 mg daily.
+• Patient Education and Counseling: I encouraged her to follow her dietary modifications closely.
+
+Hypertension.
+• Medical Reasoning: This is stable and well-controlled on her current dose of lisinopril. She does monitor her blood pressures at home.
+• Medical Treatment: Continue lisinopril at current dose.
+
+Status post right ACL repair.
+• Medical Reasoning: She is doing well postoperatively.
+• Patient Education and Counseling: I encouraged the patient to continue with her physical activity and exercise regimen.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+

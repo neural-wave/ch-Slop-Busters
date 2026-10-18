@@ -1,0 +1,60 @@
+{
+  "encounter_id": "D2N057",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "joseph",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "trade show convention",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "dialogue",
+      "text": "rails the trails",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "dialogue",
+      "text": "fishing",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "dialogue",
+      "text": "croppy",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Joseph",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Walker",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "58-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "trade show convention",
+      "category": "OTHER_QI",
+      "risk": "low"
+    }
+  ],
+  "keep": []
+}

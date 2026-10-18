@@ -1,0 +1,36 @@
+{
+  "encounter_id": "D2N003",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "john",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "61-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "John",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Perry",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "61-year-old",
+      "category": "AGE",
+      "risk": "high"
+    }
+  ],
+  "keep": []
+}

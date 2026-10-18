@@ -1,0 +1,593 @@
+{
+ "id": "G0017",
+ "dataset": "synthetic_acute",
+ "sex": "female",
+ "age_range": [
+  60,
+  75
+ ],
+ "icd10_codes": [
+  {
+   "code": "K43.9",
+   "description": "Ventral hernia without obstruction or gangrene"
+  },
+  {
+   "code": "Z48.815",
+   "description": "Encounter for surgical aftercare following surgery on the digestive system"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . how are you feeling two weeks after your hernia repair ?\n[patient] hi , doctor {DOCTOR_LAST} . mostly good , but there's something new that worried me this morning .\n[doctor] tell me about it .\n[patient] there's a lump under the incision , kind of soft and squishy , and it hurts when i bend or cough . it wasn't there last tuesday .\n[doctor] okay . is the skin red or warm over it ?\n[patient] a little pink , but not hot . the stitches look fine , i think .\n[doctor] any drainage from the incision ?\n[patient] a little clear fluid on the bandage yesterday . no pus , no smell .\n[doctor] any fever or chills ?\n[patient] no fever . i took my temperature twice . it was ninety eight point four both times .\n[doctor] good . are you able to eat and move your bowels ?\n[patient] eating fine . bowels are a bit slow , but i'm passing gas . i had a normal bowel movement on sunday .\n[doctor] that's reassuring . any nausea or vomiting ?\n[patient] no vomiting . i feel a little queasy when i take the pain pills , though .\n[doctor] what are you taking for pain ?\n[patient] tylenol during the day , and one of the oxycodone tablets at night if i need it . i'm trying to use fewer every day .\n[doctor] good . how many did you take last night ?\n[patient] just one , around ten . i slept okay after that .\n[doctor] okay . let's go over your history . you had the hernia repair two weeks ago , and you have high blood pressure , right ?\n[patient] yes , i take the amlodipine every morning . my blood pressure has been running about one thirty over eighty .\n[doctor] okay . when did you first notice the hernia ?\n[patient] about two years ago , when i was lifting my grandson . i felt a bulge in the middle of my stomach . it got bigger over the months .\n[doctor] i see . and before the surgery , were you able to do your hobbies ?\n[patient] i grow ghost peppers in my greenhouse , and i play mandolin in a bluegrass band on tuesday nights . the bulge made it hard to hold the instrument .\n[doctor] that sounds lovely . has the greenhouse been too much for you lately ?\n[patient] not much , my husband has been doing the watering . i'm supposed to keep the lifting down .\n[doctor] right . where did you grow up ?\n[patient] {CITY} . my family still lives there , and we went to iceland last summer for my sister's birthday . the waterfalls were something else .\n[doctor] that's wonderful . okay , let me look at you . the nurse is going to take your vitals first .\n[patient] okay . the nurse has a nice cuff , it doesn't pinch .\n[doctor] your blood pressure is one twenty eight over seventy eight , and your temperature is ninety eight point four . heart rate is eighty . let me look at the incision .\n[patient] okay .\n[doctor] the incision is healing well . there's a soft fluid collection under the skin , about the size of a walnut . there's no spreading redness , and the skin is not tender to touch .\n[patient] it's tender when you press in the middle .\n[doctor] i see that . that fluid is likely a seroma , which is a collection of normal fluid after surgery . it usually goes away on its own over a few weeks .\n[patient] so nothing needs to be cut open ?\n[doctor] right . we'll watch it . if it gets bigger , hurts more , or starts to drain pus , we'd need to drain it in the office .\n[patient] okay . and no more heavy lifting , i promise .\n[doctor] good . i'd like you to see us again in one week to recheck the size . we'll also get a basic blood count today to make sure there's no infection .\n[patient] okay . what about the pain pills ?\n[doctor] keep using the tylenol as the first choice . cut back on the oxycodone , and stop it entirely if you can . no driving while you take it .\n[patient] i don't drive at night anyway , so that's easy .\n[doctor] good . and keep wearing the binder for the next two weeks .\n[patient] the binder is so hot in the summer . but fine .\n[doctor] i know . thank you for coming in . call us if you develop fever over one hundred one , more drainage , or redness spreading beyond the incision .\n[patient] i will . thanks , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nNew tender lump under the incision two weeks after ventral hernia repair.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who is two weeks status post open ventral hernia repair with mesh. She reports a soft, fluid-filled lump beneath the incision that appeared since last Tuesday, with pain on bending and coughing. Mild serous drainage on the dressing yesterday. She denies fever, chills, purulent drainage, or spreading erythema. Bowel function is slow but present, with a normal bowel movement on Sunday. She reports mild nausea with her pain medication and denies vomiting. Pain is managed with acetaminophen during the day and one oxycodone tablet at night. The hernia was first noticed about two years ago while lifting, and it enlarged over several months.\n\nPAST MEDICAL HISTORY\n\nHypertension, controlled on amlodipine.\n\nSOCIAL HISTORY\n\nGrows ghost peppers in a greenhouse and plays mandolin in a bluegrass band on Tuesday nights. Her husband has been assisting with watering and household lifting. Originally from {CITY}. Recent travel to Iceland last summer.\n\nPHYSICAL EXAM\n\nBP 128/78. T 98.4 F. HR 80. Incision well healed with no dehiscence. Soft, fluctuant, mildly tender subcutaneous collection about 2 cm in diameter in the midline. No erythema beyond the incision. No induration.\n\nRESULTS\n\nComplete blood count ordered to evaluate for infection.\n\nASSESSMENT AND PLAN\n\n1. Ventral hernia, status post open repair with mesh two weeks ago. Postoperative seroma, expected to resolve; no drainage today. Observation with recheck in one week; aspiration if enlarging, more painful, or purulent.\n2. Postoperative aftercare following surgery on digestive system. Continue abdominal binder for two more weeks. No lifting. Taper oxycodone; acetaminophen first line.\n3. Hypertension, controlled on amlodipine. Continue current dose.\n\nReturn precautions: fever >101 F, increasing drainage, or spreading redness.",
+ "medical_concepts": [
+  {
+   "text": "lump under the incision",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "soft and squishy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hurts when i bend or cough",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "red or warm",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little pink",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "drainage from the incision",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "clear fluid on the bandage",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no pus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chills",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ninety eight point four",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "bowels are a bit slow",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "passing gas",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "normal bowel movement",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "nausea",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vomiting",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "queasy when i take the pain pills",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxycodone tablets",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxycodone",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "high blood pressure",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "amlodipine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "one thirty over eighty",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hernia repair",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "the hernia",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a bulge in the middle of my stomach",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "one twenty eight over seventy eight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart rate is eighty",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "incision is healing well",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "soft fluid collection",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "spreading redness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tender when you press in the middle",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "seroma",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "binder",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "heavy lifting",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood count",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "drain it in the office",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever over one hundred one",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "more drainage",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "redness spreading beyond the incision",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "stomach",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "tender lump",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Ventral hernia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "open ventral hernia repair with mesh",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "soft, fluid-filled lump",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain on bending and coughing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild serous drainage",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "purulent drainage",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "spreading erythema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chills",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Bowel function is slow",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild nausea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vomiting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen during the day",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "one oxycodone tablet",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "enlarged over several months",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "amlodipine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "BP 128/78",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "T 98.4 F",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "HR 80",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Incision well healed with no dehiscence",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Soft, fluctuant, mildly tender subcutaneous collection",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No erythema beyond the incision",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No induration",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Complete blood count",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Postoperative seroma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "aspiration",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "abdominal binder",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Postoperative aftercare following surgery on digestive system",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Taper oxycodone",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen first line",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever >101 F",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "increasing drainage",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "spreading redness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for acetaminophen, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "K43.9",
+   "spans": [
+    {
+     "text": "lump under the incision",
+     "field": "dialogue"
+    },
+    {
+     "text": "soft fluid collection",
+     "field": "dialogue"
+    },
+    {
+     "text": "Ventral hernia",
+     "field": "note"
+    },
+    {
+     "text": "soft, fluid-filled lump",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z48.815",
+   "spans": [
+    {
+     "text": "hernia repair",
+     "field": "dialogue"
+    },
+    {
+     "text": "open ventral hernia repair with mesh",
+     "field": "note"
+    },
+    {
+     "text": "Postoperative aftercare following surgery on digestive system",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "high blood pressure",
+     "field": "dialogue"
+    },
+    {
+     "text": "one twenty eight over seventy eight",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypertension",
+     "field": "note"
+    },
+    {
+     "text": "BP 128/78",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i grow ghost peppers in my greenhouse",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "i play mandolin in a bluegrass band on tuesday nights",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "we went to iceland last summer",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "recent trip"
+  },
+  {
+   "text": "Grows ghost peppers in a greenhouse and plays mandolin in a bluegrass band on Tuesday nights",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "Iceland",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "recent trip"
+  }
+ ],
+ "scenario": {
+  "specialty": "general surgery follow-up",
+  "visit": "acute",
+  "length": "short",
+  "focus": [
+   "OTHER_QUASI",
+   "LOCATION"
+  ]
+ }
+}

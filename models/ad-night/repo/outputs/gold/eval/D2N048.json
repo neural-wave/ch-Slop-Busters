@@ -1,0 +1,67 @@
+{
+  "encounter_id": "D2N048",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "brittany",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Brittany",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Edwards",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "76-year-old",
+      "category": "AGE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "lisfranc",
+      "category": "EPONYM",
+      "why": "fracture/joint eponym, not a person"
+    },
+    {
+      "field": "note",
+      "text": "Lisfranc",
+      "category": "EPONYM",
+      "why": "fracture/joint eponym, not a person"
+    },
+    {
+      "field": "dialogue",
+      "text": "playing tennis",
+      "category": "CODE_EVIDENCE",
+      "why": "mechanism of the fall/injury (W19/Y30)"
+    },
+    {
+      "field": "note",
+      "text": "playing tennis",
+      "category": "CODE_EVIDENCE",
+      "why": "mechanism of the fall/injury (W19/Y30)"
+    },
+    {
+      "field": "dialogue",
+      "text": "falling",
+      "category": "CODE_EVIDENCE",
+      "why": "supports W19.XXXA fall"
+    },
+    {
+      "field": "note",
+      "text": "fell",
+      "category": "CODE_EVIDENCE",
+      "why": "supports W19.XXXA fall"
+    }
+  ]
+}

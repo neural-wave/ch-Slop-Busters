@@ -1,0 +1,49 @@
+{
+  "encounter_id": "D2N092",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "martinez",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "gomez",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "43-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Martinez",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "43-year-old",
+      "category": "AGE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "playing tennis",
+      "category": "CODE_EVIDENCE",
+      "why": "mechanism of injury for wrist sprain S63.501A"
+    },
+    {
+      "field": "note",
+      "text": "playing tennis",
+      "category": "CODE_EVIDENCE",
+      "why": "mechanism of injury for wrist sprain S63.501A"
+    }
+  ]
+}

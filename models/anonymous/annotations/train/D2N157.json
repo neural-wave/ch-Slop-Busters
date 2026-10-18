@@ -1,0 +1,21 @@
+{
+  "encounter_id": "D2N157",
+  "phi": [
+    {"text": "jose", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "west coast", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "another region"},
+    {"text": "la", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "a team"},
+    {"text": "super bowl", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the championship"},
+    {"text": "san francisco forty nine", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "rival team"},
+    {"text": "san francisco", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "rival team"},
+    {"text": "jimmy g", "field": "dialogue", "type": "NAME_OTHER", "tier": 1, "generalized": ""},
+    {"text": "erin rogers", "field": "dialogue", "type": "NAME_OTHER", "tier": 1, "generalized": ""},
+    {"text": "miller", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "live with my dog", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "live alone with a pet"},
+    {"text": "retiring", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "stepping away from work"},
+    {"text": "west coast", "field": "note", "type": "LOCATION", "tier": 1, "generalized": "another region"},
+    {"text": "San Francisco 49ers", "field": "note", "type": "ORGANIZATION", "tier": 1, "generalized": "sports team"},
+    {"text": "lives with his dog", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "lives with a pet"},
+    {"text": "Miller", "field": "note", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

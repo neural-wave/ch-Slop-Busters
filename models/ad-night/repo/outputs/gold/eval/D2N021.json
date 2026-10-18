@@ -1,0 +1,79 @@
+{
+  "encounter_id": "D2N021",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "christine",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "hernandez",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "january 13th , 1982",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "july 8th",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "wal-mart",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "cvs",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Christine",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Hernandez",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "39-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Walmart",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "cushing's",
+      "category": "EPONYM",
+      "why": "Cushing's syndrome ruled out, disease not a person"
+    },
+    {
+      "field": "note",
+      "text": "Cushing’s Syndrome",
+      "category": "EPONYM",
+      "why": "disease, not a person"
+    }
+  ]
+}

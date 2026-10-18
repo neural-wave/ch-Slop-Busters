@@ -1,0 +1,31 @@
+{
+  "encounter_id": "D2N190",
+  "phi": [
+    {"text": "beverly", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "howard", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "tandem bike", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "bike"},
+    {"text": "children's hospital", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "hospital"},
+    {"text": "baby rocker", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "caregiver"},
+    {"text": "nicu's", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "hospital units"},
+    {"text": "rock some of the babies", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "care for some patients"},
+    {"text": "rocking kids", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "working"},
+    {"text": "biking", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "walks with my dog", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "walks"},
+    {"text": "walking the dog", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "walking"},
+    {"text": "walking dogs", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "walking"},
+    {"text": "go to the gym", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "swim", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "swimming", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"},
+    {"text": "rockets", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "home team"},
+    {"text": "nets", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "opponents"},
+    {"text": "bulls", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "other team"},
+    {"text": "dallas", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a city"},
+    {"text": "Beverly Howard", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "33-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "tandem bicycle", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "bicycle"},
+    {"text": "walking her dogs", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "walking"},
+    {"text": "swimming", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"},
+    {"text": "Children's Hospital", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "hospital"}
+  ],
+  "medical_concepts": []
+}

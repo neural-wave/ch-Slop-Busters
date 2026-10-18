@@ -1,0 +1,139 @@
+########## ENCOUNTER D2N177
+=== FIELD: dialogue
+[doctor] hi bruce , how are you ?
+[patient] hey , good to see you .
+[doctor] good to see you as well . uh , so i know the nurse told you a little bit about dax .
+[patient] mm-hmm .
+[doctor] i'd like to tell dax about you-
+[patient] sure .
+[doctor] okay ?
+[doctor] so bruce is a 60 year old male , with a past medical history , significant for depression , type two diabetes and hypertension , who presents for followup of his chronic problems .
+[doctor] so , bruce , i saw you a couple months ago-
+[patient] mm-hmm .
+[doctor] how are- how are you doing ?
+[patient] it's been a crazy year and a half and i think the uh the anxiety , the pressure of getting ready for thanksgiving was really starting to wear on me .
+[doctor] okay .
+[doctor] did you have a nice holiday ?
+[patient] i , i did but it was uh , it was great to see everybody after about two years but it was just a lot of work .
+[patient] a lot of stress .
+[doctor] yeah . yeah . and what do you have to look forward for like , the new year and that type of thing . are you- more gatherings like that ?
+[patient] um planning to take a vacation . so hopefully somewhere nice and warm .
+[doctor] okay . all right . um , well how are you doing in terms of your depression . i know that we've kind of talked about this in the past .
+[patient] mm-hmm .
+[doctor] and we have n't put you on medication because you're on other meds and you- you have n't really wanted to do that , so what strategies are you using ?
+[patient] yeah . over the summer we tried something new . i started going for long walks outside every morning. the weather was so nice and all the plants were in full bloom that i loved to start my day that way. on the weekends, it even encouraged me to do a little in the yard myself which was a nice way to be active and get some sun. but with the seasons changing and it getting so cold out, i have not been able to keep doing it and need to find something new to do. . i'm not ready yet to try any meds , so i think i'd like to look into some alternative options .
+[doctor] okay . so yeah . so we can talk about some therapy and-
+[patient] sure .
+[doctor] that type of thing .
+[patient] sure .
+[doctor] all right . and no ... you do n't wan na harm yourself or others ?
+[patient] no .
+[doctor] any thoughts like that .
+[patient] no .
+[doctor] no , okay . and then in terms of your diabetes , how are you doing , you know especially with the holidays managing your- your sugar intake and that type of thing ?
+[patient] uh , got through halloween okay . did n't stick to the diet too much through the thanksgiving week but it's a little bit better . so i've been trying to really monitor it .
+[doctor] okay . and are you ... you're still taking the metformin , correct ?
+[patient] yes .
+[doctor] okay . all right . and then in terms of your high blood pressure , did you buy the blood pressure cuff that i recommended ?
+[patient] yes .
+[doctor] okay . and how have they been running . i have n't received any you know notes from you in the portal .
+[patient] nothing out of the ordinary . it's been pretty moderate .
+[doctor] it's been pretty good . and you're still taking the lisinopril , no problems with that ?
+[patient] mm-hmm . correct .
+[doctor] okay . all right . i know you did a review of system sheet when you checked in .
+[patient] mm-hmm .
+[doctor] um , do you have any symptoms . chest pain , shortness of breath , belly pain-
+[patient] no .
+[doctor] blood in your stool .
+[patient] no .
+[doctor] weight loss . anything like that ?
+[patient] no .
+[doctor] okay . all right . i wan na go ahead and do a quick physical exam .
+[patient] mm-hmm .
+[doctor] hey dragon . show me the vital signs .
+[doctor] so here in the office . i agree . your blood pressure looks good . uh , i think you're doing a good job with that so keep up the good work . i'm gon na go ahead and take a listen to your heart and lungs , i'll let you know what i find .
+[patient] sure .
+[doctor] all right . so on physical examination , everything looks pretty good , so on your neck exam , i do n't appreciate any carotid bruits . on your heart exam i do appreciate a slight two out of six systolic ejection murmur heard at the left base , which we've heard in the past .
+[patient] mm-hmm .
+[doctor] your lungs are nice and clear and you do have uh one plus non-pitting edema bilaterally in your lower extremities . so what does all that mean ?
+[doctor] it just means i heard a little sound in your heart , which you know is n't anything clinically significant . we had looked into that last year .
+[patient] mm-hmm .
+[doctor] you do have a little swelling in your legs but that might just be from your your diet recently , okay .
+[patient] sure .
+[doctor] i wan na just take a look at some of your results . hey dragon , show me the ekg .
+[doctor] so i just had the nurse do an ekg on you before you came in just to make sure we were n't missing anything . you're in your 60's we have some risk factors . everything looks good .
+[patient] mm-hmm .
+[doctor] there's no evidence that i'm concerned about anything at this time . hey dragon , show me the diabetes logs .
+[doctor] so on your diabetic labs , your hemoglobin a1c is elevated . it's at eight . i'd like to see it closer to six .
+[doctor] now some of them might be having to do with the holidays that type of thing but i still think that we need to get that under better control .
+[patient] sure .
+[doctor] so lets talk a little bit about my assessment and plan for you so for your first problem of your depression i'd like to just go ahead and refer you to uh psychiatry not for medications , but just for some talk therapy that type of thing , okay ?
+[patient] that's fine .
+[doctor] um , for your second problem of your type two diabetes i'd like to go ahead and order a hemoglobin a1c in the next couple months . i want to increase the metformin to 1000 milligrams twice a day . and we're gon na go ahead and order a lipid panel , okay .
+[patient] mm-hmm .
+[doctor] uh , lastly for your third problem for your hypertension i'm gon na go ahead and order an echocardiogram just to recheck it . just that heart murmur . and i'm going to go ahead and keep the lisinopril at 20 milligrams a day . do you have any questions ?
+[patient] no questions .
+[doctor] okay the nurse will be in soon , she'll get you checked out , okay ?
+[patient] you got it .
+[doctor] hey dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow up of chronic problems.
+
+HISTORY OF PRESENT ILLNESS
+
+Bruce Howard is a 60-year-old male with a past medical history significant for depression, type 2 diabetes, and hypertension who presents for follow up of his chronic problems.
+
+In regards to his depression, the patient notes that it has been a crazy year and a half. He experienced a lot of anxiety while getting ready for Thanksgiving but it is starting to resolve now. He denies suicidal and homicidal ideation. The patient and his wife began going on walks and gardening over the summer and he notes good relief of his depression from this; however, the season has changed and he needs an alterative method of management. He has preferred to avoid medications in the past.
+
+The patient is still taking metformin for his diabetes. He notes some dietary indiscretion with Thanksgiving but he is doing better with this now.
+
+In terms of his hypertension, he notes he is compliant with lisinopril. He did buy a blood pressure cuff and is checking his blood pressure at home. His blood pressures have reportedly been good.
+
+He denies chest pain, dyspnea, abdominal pain, hematochezia, or weight loss.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: Denies weight loss.
+• Cardiovascular: Denies chest pain or dyspnea on exertion.
+• Respiratory: Denies shortness of breath.
+• Gastrointestinal: Denies hematochezia or abdominal pain.
+• Psychiatric: Endorses anxiety and depression.  Denies suicidal and homicidal ideations.
+
+PHYSICAL EXAMINATION
+
+• Constitutional: Well-developed, well-nourished, in no apparent distress.
+• Neck: No carotid bruits appreciable.
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: Slight 2/6 systolic ejection murmur heard at the left base, heard previously.
+• Musculoskeletal: 1+ nonpitting edema bilaterally.
+
+RESULTS
+
+EKG was unremarkable.
+
+Diabetic labs revealed an elevated hemoglobin A1c of 8.
+
+ASSESSMENT
+
+Bruce Howard is a 60-year-old male with a past medical history significant for depression, type 2 diabetes, and hypertension who presents for follow up of his chronic problems.
+
+PLAN
+
+Depression.
+• Medical Reasoning: He has been doing well with going on morning walks; however, this has ended due to the cooler weather. He continues to decline the use of medications for this issue.
+• Medical Treatment: We will defer initiating medication at this time.
+• Specialist Referrals: I will refer him to psychiatry to engage in talk therapy.
+
+Diabetes type 2.
+• Medical Reasoning: The patient admits to recent dietary indiscretion. His most recent hemoglobin A1c was elevated at 8 percent. He is compliant with metformin.
+• Additional Testing: I will order a repeat hemoglobin A1c in the next couple of months. I will also order a lipid panel.
+• Medical Treatment: We will increase his metformin to 1000 mg twice a day.
+
+Hypertension.
+• Medical Reasoning: He has been monitoring his blood pressure on a regular basis. Blood pressure is well controlled at this time. He has a systolic ejection murmur that continues to be heard on exam.
+• Additional Testing: I will order an echocardiogram to reassess the heart murmur.
+• Medical Treatment: He will continue lisinopril 20 mg daily.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.

@@ -1,0 +1,552 @@
+{
+ "id": "G0049",
+ "dataset": "synthetic_telehealth",
+ "sex": "male",
+ "age_range": [
+  75,
+  90
+ ],
+ "icd10_codes": [
+  {
+   "code": "L57.0",
+   "description": "Actinic keratosis"
+  },
+  {
+   "code": "L82.1",
+   "description": "Other seborrheic keratosis"
+  }
+ ],
+ "dialogue": "[doctor] hello , can you hear me okay ? i can see you on the screen , {PATIENT_FIRST} .\n[patient] yes , i can hear you . the picture is a bit jumpy , my daughter set this up on the tablet for me .\n[doctor] that's okay . i can see you well enough . is your daughter there with you ?\n[patient] yes , this is {OTHER_FIRST} . she's sitting next to me , and she's going to hold the tablet so the camera does n't wander .\n[patient] hi , doctor {DOCTOR_LAST} . i'm the one who asked for this appointment , not dad . dad wanted to wait until the spring .\n[doctor] hi , {OTHER_FIRST} . thanks for helping out . so tell me what's been going on with your skin , {PATIENT_FIRST} .\n[patient] well , there's a rough patch on the top of my head that won't go away . it's been there since the summer . and my forearms have these scaly spots that feel like sandpaper .\n[doctor] okay . can you tilt your head down a little and move the camera closer to your scalp ?\n[patient] {OTHER_FIRST} , tilt it . no , the other way . there .\n[doctor] okay . i can see a few flat , scaly , reddish patches on the crown . does it itch or bleed ?\n[patient] it itches a little . it bled once when i scratched it with my comb .\n[doctor] okay . and the forearms , can you show me ?\n[patient] they're on both arms , mostly the outside . the scaly spots are rough when i touch them .\n[doctor] i see them . those look like actinic keratoses , which are caused by years of sun exposure .\n[patient] i've been out in the sun my whole life . i worked outside for almost forty years .\n[doctor] what kind of work did you do ?\n[patient] i was a roofer for a long time , then i ran a crew for a landscaping company . i'm retired now .\n[doctor] okay . and did you work indoors at all ?\n[patient] a few years i spent loading trucks at the warehouse . that was inside , but the loading dock was open to the sun all day .\n[doctor] that makes sense . do you still garden or work outdoors now ?\n[patient] every day in the backyard . i do n't wear a hat , i never did . my wife always yelled at me about it .\n[doctor] that's the main thing we want to change . do you have any other spots that bleed or do n't heal ?\n[patient] there's a waxy brown spot on my back . my daughter keeps asking me to get it checked . it's been there for years .\n[doctor] okay . we'll look at that too . can you show me the back of your shoulder ?\n[patient] hang on . {OTHER_FIRST} , help me with the phone . ugh , the screen froze .\n[doctor] i'll wait . i'm still seeing you , so take your time .\n[patient] okay , it's back . there .\n[doctor] that looks like a seborrheic keratosis , which is a benign growth that looks stuck on the skin . it's harmless , but we can freeze it off if it bothers you .\n[patient] good . it's not cancer ?\n[doctor] i'm fairly confident it's benign . i'd still like to biopsy anything that changes in color or grows quickly .\n[patient] okay . what do we do about the scalp and the arms ?\n[doctor] for the actinic keratoses , i'd like to prescribe a topical cream called fluorouracil . you apply it to the affected areas once or twice a day for two to three weeks .\n[patient] will it hurt ?\n[doctor] it can cause redness , crusting , and burning . that's actually how it works . it's normal , but if you get open sores , call us .\n[patient] okay . where do i get it ?\n[doctor] i'll send the prescription to your pharmacy , {ORG} on the main road .\n[patient] {ORG} . yeah , we go there all the time , the pharmacist knows me by name .\n[doctor] perfect . they can have it ready for pickup tomorrow afternoon .\n[patient] my daughter will pick it up for me . i'm not driving until the cataract is fixed .\n[doctor] that's wise . do you have any eye appointments coming up ?\n[patient] next month . i'm nervous about it .\n[doctor] okay . let's talk about sunscreen . use a broad spectrum sunscreen with an spf of thirty or higher every morning , even on cloudy days .\n[patient] i've never used sunscreen . i think it's a waste of money .\n[doctor] i understand . but it really does help prevent new spots . wide brim hats and long sleeves are good too .\n[patient] i'll think about it .\n[doctor] i also see that your last skin check was at blue ridge dermatology in {YEAR} . are you still seeing anybody there ?\n[patient] no , i stopped going after we moved . i was only going because my wife made me .\n[doctor] okay . we'll get you set up with a skin check here , and i'll ask for your records to be sent over to our office .\n[patient] that's fine .\n[doctor] for the itching , you can use a gentle moisturizer and avoid hot showers . what's your usual routine ?\n[patient] i shower twice a day in the summer , and the water is pretty hot .\n[doctor] try lukewarm water and a mild soap . and keep a moisturizer on your scalp after your shower if it's dry .\n[patient] i'll try . is the cream expensive ?\n[doctor] i think it's covered by most plans . the pharmacy can tell you exactly what it costs .\n[patient] okay . thank you , doctor {DOCTOR_LAST} .\n[doctor] you're welcome . i'll see you back in four weeks on video . if the spots on your scalp get worse , or you notice any bleeding that does n't stop , please call the office right away .\n[patient] we will . thanks for seeing us today .\n[patient] {OTHER_FIRST} here . you can turn off the camera now , dad . we're all set .",
+ "note": "CHIEF COMPLAINT\n\nScaly scalp and forearm patches, and a waxy brown lesion on the upper back. Telehealth follow-up.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male who presents by synchronous video visit for evaluation of rough, scaly patches on the scalp and bilateral forearms, present since the summer. His daughter, {OTHER_FIRST}, assists with the device. The scalp lesion is mildly pruritic and has bled once after scratching with a comb. The forearm lesions feel rough to touch. He also has a long-standing waxy brown lesion on the upper back that the family has asked him to have evaluated.\n\nLifetime sun exposure is extensive. He worked outdoors for nearly forty years, including roofing and crew supervision for a landscaping company, and spent several years loading trucks at a warehouse with the dock open to the sun. He currently gardens daily in his backyard and does not use a hat or sunscreen.\n\nVideo quality was limited by intermittent connectivity; the examination was performed by camera review with patient repositioning.\n\nPAST MEDICAL HISTORY\n\nPrior dermatology care at Blue Ridge Dermatology with last visit in {YEAR}; not followed there since relocation. No known history of skin cancer. Cataract, awaiting surgical evaluation.\n\nMEDICATIONS\n\nNone listed for dermatologic conditions.\n\nSOCIAL HISTORY\n\nRetired. Relies on his daughter for transportation and for picking up medications. Does not drive pending cataract surgery.\n\nEXAM (VIDEO)\n\nScalp: multiple flat, scaly, erythematous patches over the vertex and crown with adherent scale. Bilateral dorsal forearms: rough, scaly papules. Upper back: waxy, stuck-on, brown papule.\n\nASSESSMENT AND PLAN\n\n1. Actinic keratoses of the scalp and bilateral forearms, consistent with chronic cumulative sun exposure. Topical fluorouracil cream applied once or twice daily to affected areas for two to three weeks. Counseled on expected erythema, crusting, and burning. Prescription sent to {ORG} for pickup the following afternoon.\n2. Seborrheic keratosis of the upper back. Benign appearance. Cryotherapy offered; biopsy if the lesion changes in color or grows rapidly.\n3. Photoprotection counseled: broad spectrum sunscreen SPF 30 or higher daily, wide brim hat, and long sleeves.\n4. Pruritus of the scalp: lukewarm water, mild soap, and emollient after bathing.\n\nReturn to video visit in four weeks. Patient instructed to call the office for bleeding that does not stop or for open sores.",
+ "medical_concepts": [
+  {
+   "text": "rough patch on the top of my head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's been there since the summer",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "scaly spots that feel like sandpaper",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a few flat , scaly , reddish patches on the crown",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it itches a little",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it bled once when i scratched it",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the scaly spots are rough",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "actinic keratoses",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "years of sun exposure",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "out in the sun my whole life",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "loading trucks at the warehouse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the loading dock was open to the sun all day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "every day in the backyard",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i do n't wear a hat",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a waxy brown spot on my back",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the screen froze",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "seborrheic keratosis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a benign growth that looks stuck on the skin",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "freeze it off",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "biopsy anything that changes in color",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "fluorouracil",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "once or twice a day for two to three weeks",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "redness , crusting , and burning",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "open sores",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the pharmacist knows me by name",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the cataract",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "nervous about it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a broad spectrum sunscreen with an spf of thirty or higher",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "wide brim hats and long sleeves",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "prevent new spots",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a skin check",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a gentle moisturizer",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "avoid hot showers",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "shower twice a day in the summer",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lukewarm water and a mild soap",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "keep a moisturizer on your scalp",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "bleeding that does n't stop",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Scaly scalp and forearm patches",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "waxy brown lesion on the upper back",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "rough, scaly patches on the scalp and bilateral forearms",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mildly pruritic",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "has bled once after scratching with a comb",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "rough to touch",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lifetime sun exposure is extensive",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "loading trucks at a warehouse",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dock open to the sun",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "gardens daily in his backyard",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "does not use a hat or sunscreen",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "intermittent connectivity",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No known history of skin cancer",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cataract",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "None listed for dermatologic conditions",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Does not drive pending cataract surgery",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "flat, scaly, erythematous patches",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "adherent scale",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "rough, scaly papules",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "waxy, stuck-on, brown papule",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Actinic keratoses of the scalp and bilateral forearms",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "chronic cumulative sun exposure",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Topical fluorouracil cream",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "expected erythema, crusting, and burning",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Seborrheic keratosis of the upper back",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Benign appearance",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cryotherapy offered",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "biopsy if the lesion changes in color",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Photoprotection counseled",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "broad spectrum sunscreen SPF 30 or higher daily",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pruritus of the scalp",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lukewarm water, mild soap, and emollient after bathing",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Return to video visit in four weeks",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "bleeding that does not stop",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "open sores",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "fluorouracil",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "topical chemotherapy drug name, not a person"
+  },
+  {
+   "text": "Blue Ridge",
+   "field": "note",
+   "is_pii": false,
+   "comment": "regional place-like word; the organization is listed in pii_fixed"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "L57.0",
+   "spans": [
+    {
+     "text": "actinic keratoses",
+     "field": "dialogue"
+    },
+    {
+     "text": "years of sun exposure",
+     "field": "dialogue"
+    },
+    {
+     "text": "Actinic keratoses of the scalp and bilateral forearms",
+     "field": "note"
+    },
+    {
+     "text": "chronic cumulative sun exposure",
+     "field": "note"
+    },
+    {
+     "text": "does not use a hat or sunscreen",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "L82.1",
+   "spans": [
+    {
+     "text": "seborrheic keratosis",
+     "field": "dialogue"
+    },
+    {
+     "text": "a waxy brown spot on my back",
+     "field": "dialogue"
+    },
+    {
+     "text": "Seborrheic keratosis of the upper back",
+     "field": "note"
+    },
+    {
+     "text": "waxy, stuck-on, brown papule",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i was a roofer for a long time , then i ran a crew for a landscaping company",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "former jobs"
+  },
+  {
+   "text": "blue ridge dermatology",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "previous dermatology clinic"
+  },
+  {
+   "text": "roofing and crew supervision for a landscaping company",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "former jobs"
+  },
+  {
+   "text": "Blue Ridge Dermatology",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "comment": "previous dermatology clinic"
+  }
+ ],
+ "scenario": {
+  "specialty": "dermatology",
+  "visit": "telehealth",
+  "length": "long",
+  "focus": [
+   "ORGANIZATION",
+   "OTHER_PERSON_NAME"
+  ]
+ }
+}

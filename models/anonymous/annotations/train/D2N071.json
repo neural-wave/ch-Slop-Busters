@@ -1,0 +1,19 @@
+{
+  "encounter_id": "D2N071",
+  "phi": [
+    {"text": "ralph", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "62-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "spring", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "allergy season"},
+    {"text": "oldest daughter off at college", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "child off"},
+    {"text": "moved her into her dorm", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "helped her move"},
+    {"text": "summer", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "warmer months"},
+    {"text": "go for a run", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "running", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"},
+    {"text": "62-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "Ralph Barnes", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "summer", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "warmer months"},
+    {"text": "moved his oldest daughter into college", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "helped a family member move"},
+    {"text": "runs", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercises"}
+  ],
+  "medical_concepts": []
+}

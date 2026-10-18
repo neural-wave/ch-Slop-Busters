@@ -1,0 +1,141 @@
+########## ENCOUNTER D2N139
+=== FIELD: dialogue
+[doctor] all right , new patient , jordan roberts . date of birth : 3/2/1972 . he's a 49 year old , uh hm , with hypertension and palpitations . please copy forward his thyroid profile from march 1st , 2021 .
+[doctor] hello mr. roberts , how are you doing today ?
+[patient] i'm fine , thank you .
+[doctor] good . good . so , i saw you were recently in the emergency room with high blood pressure and some palpitations .
+[patient] yeah . that was back in march i think , but my girlfriend and i , we talked about it , and on that day i had a few cups of coffee , and no breakfast . so , i think it was probably more of a panic attack than anything else .
+[doctor] yeah . have you , uh , have you felt it again since ?
+[patient] uh , no .
+[doctor] okay . uh , so tell me about the blood pressure then .
+[patient] well , i've had issues with my blood pressure since i was young .
+[doctor] do you have a family history of this ?
+[patient] yeah . a lot of my family does have high blood pressure .
+[doctor] i see .
+[patient] yeah , i thought it was getting better , and , uh , i have a new primary doctor , and she put me on a new medication about a month ago .
+[doctor] uh , can you tell me which medications you're taking ?
+[patient] my new med is , uh , a combo med , something 40-25 .
+[doctor] okay . um . yes , i see that in your chart . the benicar hct . it has hydrochlorothiazide in it .
+[patient] yeah , that's it . my water pill i call it .
+[doctor] okay . are you still taking the amlodipine , 10 milligrams daily ?
+[patient] uh , yes i am .
+[doctor] that's- that's a good start on a regimen . are you checking your blood pressure at home , and if yes , what numbers are you seeing ?
+[patient] um , every day .
+[doctor] awesome .
+[patient] yeah . every morning , i take it when i get up , and it's been running at about , uh , 146 to 155 lately .
+[doctor] so you're not down in the 120s yet ?
+[patient] no , not yet . well , we're trying to get there though .
+[doctor] okay . uh , how are you doing with your salt intake ?
+[patient] i'm trying to back off of it . i think i'm doing good with it , not eating too much .
+[doctor] good , uh , it plays a huge part in lowering your pressure and , uh , staying away from salt is important . um , i'll give you some information on the dash eating plan , which is the only eating plan that has been shown to lower blood pressure .
+[patient] sounds good .
+[doctor] are you doing any exercise ?
+[patient] i do try to walk on the treadmill when i can .
+[doctor] okay , great . um , all right . so , let's take a look .
+[patient] all right .
+[doctor] uh , you're gon na hear me talk throughout your exam , just so i can make sure i get everything documented .
+[patient] okay .
+[doctor] so , use my general physical exam template . let me take a listen to you and make sure everything sounds good .
+[patient] all right .
+[doctor] your heart and lungs sound good , so that's great .
+[patient] good to hear .
+[doctor] all right . go ahead and lie down . uh , and let me know if anywhere i press hurts .
+[patient] nope . nowhere .
+[doctor] all right . so , i'm gon na take a look at your ankles and feet . i'm just gon na look for some swelling .
+[patient] all right .
+[doctor] all right . it all looks good . go ahead and sit up . so , in terms of getting that pressure down , you're on three meds that are maxed out and your blood pressure is still not down . and , the question is what do we need to do to get your- to get it down . uh , your potassium one week ago was 4.0 . uh , has it been redone since in the last week ?
+[patient] uh , no .
+[doctor] okay . uh , four is good for your potassium level , some people have what is called resistant hypertension that is driven by something else in their body , uh , often it is a form , uh , hormonal response . if i were to take 10 people under the age of 50 who have high blood pressure who developed it at a young age , eight out of 10 would respond to reduced salt in their diet with a lower blood pressure . but , for the two out of 10 , there is something else driving it , uh , parathyroid levels or something called your adrenal glands overproduce , um , aldosterone , which we call hyperaldosterone .
+[patient] okay . so , is there something we can do about it ?
+[doctor] um , in these cases , there's medicine called , uh , spironolactone , that is very effective at dropping the ald- aldosterone level , and your blood pressure , and i think we should give that a try .
+[patient] all right . i mean , i'm willing to give it a try .
+[doctor] okay . so , let's discuss the piss- the possible risk of , uh , being on hydrochlorothiazide , which is the fluid med that you're now on . and , the spironolactone . one issue is that they can affect your electrolyte balance . um , they can also cause dehydration . so , when ... so , you got ta make sure that you hydrate . if you do not hydrate , and you get dehydrated , you will know it because you will get dizzy standing up . um , second thing is the spironolactone can raise your potassium too far , it's rare , but it can . uh , you're starting with your potassium at four , so that gives us some room .
+[patient] all right . i guess that makes me feel a little bit better .
+[doctor] yeah . and then the third thing is that spironolactone combined with hydrocholorozide- chlorothiazide can cause your sodium levels to go down . now , this does not mean- mean that you need to be eating more salt , okay ? but , it does mean that you will need to do blood tests in two weeks to make sure that it's okay .
+[patient] all right . no , that i can do . um , are there any other side effects i need to worry about ?
+[doctor] uh , dizziness possibly , as well as , uh , one in 100 guys might develop tenderness in their chest , swollen breasts , or enlarged breasts . this is a rare side effect , um , called gynecomastia , and if it happens , you just cut the medication and you let me know , but it is very uncommon .
+[patient] i'll definitely let you know if that happens .
+[doctor] okay . uh , we'll keep working at it until your blood pressure gets better . um , it can be tricky when your blood pressure starts to go up at a young age though , it is important to get it under control because it can lead to your heart getting bigger or enlarged . um , same thing that happens when you lift weights and your muscles get bigger , uh , and if your heart pumps against high blood pressure , it can eventually lead to heart failure .
+[patient] i understand .
+[doctor] yeah , so getting that under control is really important to help prevent kidney failure , strokes , and- and things like that- that you're at high risk for with high blood pressure .
+[patient] okay .
+[doctor] um , the american heart association has a website called heart.org , it has a lot of really good information about blood pressure to teach- to teach you about it and how to control your diet with exercise . um , if you do your treadmill routinely for 30 minutes or so most days , that could be seven to 10 points off your blood pressure .
+[patient] really ? i did n't realize that .
+[doctor] yeah , yeah . it's very important to be active , lower your salt , and increase your potassium . um , the goal is to keep your salt under 2000 milligrams a day , the actual recommendation is- is 1500 milligrams per day , but most people have a hard time with that . um , so just take a look at the website and the dash diet information . um , that will give you a lot of tips and information to help you start learning about this stuff .
+[patient] okay . i'll definitely check that out .
+[doctor] all right . so , we'll try the spironolactone and schedule a followup in two weeks to check your blood pressure and electrolytes . uh , if the new med does n't work , the next up is going to be the resistant hypertension clinic .
+[patient] all right .
+[doctor] all right . so , there they will look into secondary causes of your hypertension . they have access to newer procedure based technologies that can lower your blood pressure without medication , uh , for example , there is something called a renal , uh , denervation , uh , where they go inside the artery that feeds your kidney with almost like a little coil and heat that artery up . when they do that , they can block the nerve endings that get into your kidneys and lower your blood pressure .
+[patient] that's interesting .
+[doctor] yeah . so , that procedure has been shown to lower blood pressure by 10 points . um , there are of course some risks , so not everyone is a candidate . uh , but we'll cross that road , uh , when we need to , and let's just- let's just see how you do with the addition of the medication .
+[patient] sounds good to me .
+[doctor] all right . so , we will see you in two weeks then .
+[patient] sounds good . thanks doc .
+[doctor] yeah , you're welcome . let me know if you have any questions .
+[patient] will do .
+[doctor] all right . have a great day mr. roberts .
+[patient] you too .
+[doctor] mr. roberts presents with resistant hypertension . he's on three meds and maximum dose . i have added spironolactone to his regiment . we will need to monitor his potassium and sodium . he will have a metabolic panel and blood pressure check in two weeks . uh , next medication would be carvedilol , uh , which i try to avoid giving , it's potential for erectile dysfunction . i have talked to the patient about that , and the potential side effects of spironolactone , including the gynecomastia and electrolyte disturbances . if he is not controlled on spironolactone , the next step would be sending him to resistant hypertension clinic .
+=== FIELD: note
+CHIEF COMPLAINT
+
+High blood pressure and palpitations.
+
+HISTORY OF PRESENT ILLNESS
+
+Jordan Roberts is a 49-year-old with a long history of hypertension and an acute episode of palpitations.
+
+In March, Mr. Roberts went to the emergency room for palpitations and hypertension. He attributed this to a panic attack, but also stated he consumed several cups of coffee on an empty stomach the morning of. He denies additional episodes of palpitations.
+
+He has been monitoring his blood pressure at home daily, obtaining systolic blood pressure readings of 146 to 155. He does report a family history of hypertension. Additionally, he has been monitoring his salt intake and feels he is doing well at reducing it. He also walks on his treadmill as often as he can.
+
+He has a new primary care physician who started him on a new medication Benicar HCT, which he has been using for the past month.
+
+PAST HISTORY
+
+Medical
+Hypertension.
+
+FAMILY HISTORY
+
+Several family members positive for hypertension.
+
+CURRENT MEDICATIONS
+
+Benicar HCT 40 mg/25 mg
+Amlodipine 10 mg daily.
+
+Physical Examination
+
+Cardiovascular
+Normal rate, regular rhythm, S2 normal, normal heart sounds, and normal pulses.
+
+Pulmonary/Chest
+Breath sounds normal. 
+
+Abdominal
+There is no tenderness.
+
+Musculoskeletal
+There is no edema.
+
+RESULTS
+
+Thyroid profile 03/01/2021.
+
+ASSESSMENT
+
+• Resistant hypertension.
+
+Mr. Roberts presents with resistant hypertension, with systolic blood pressure readings between 146-155. He is currently on maximal doses for 3 medications.
+
+PLAN
+
+I have added spironolactone to his regimen which will require monitoring of his potassium and sodium. We will schedule him for a follow up in 2 weeks to complete a basic metabolic panel and check his blood pressure. Next medication to consider adding is carvedilol. I have tried to avoid this, given the potential for issues with erectile dysfunction. I counseled the patient about spironolactone side effects, including gynecomastia and electrolyte disturbances, as well as his increased risk of dehydration, with one sign to watch for being dizziness. If we are not able to improve his blood pressure with spironolactone, the next step would be sending him to the resistant hypertension clinic.
+
+I provided and reviewed with Mr. Roberts the American Heart association website (heart.org) and encouraged him to access for tips on lowering his salt intake and increasing his potassium intake. His maximum salt intake should be 1500 to <2000 mg per day. He was provided materials to follow the DASH diet and encouraged to meet 30-min of walking most days.
+
+INSTRUCTIONS
+
+Schedule follow up appointment in 2 weeks for blood pressure check and basic metabolic panel. Reduce sodium intake to 1500 to <2000 mg per day. Follow DASH diet.
+

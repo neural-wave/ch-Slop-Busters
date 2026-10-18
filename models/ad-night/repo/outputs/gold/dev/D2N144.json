@@ -1,0 +1,55 @@
+{
+  "encounter_id": "D2N144",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "tyler",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "nelson",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "3 , 6 , 1949",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "385729",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Nelson",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "72-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "03/04/2021",
+      "category": "DATE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "6/10",
+      "category": "CLINICAL_NUMBER",
+      "why": "pain score, not a date"
+    }
+  ]
+}

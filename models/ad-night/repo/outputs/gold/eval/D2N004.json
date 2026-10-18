@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N004",
+  "pii": [
+    {"field": "dialogue", "text": "james", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "57-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "James", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Allen", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "57-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "golfing", "category": "CODE_EVIDENCE", "why": "activity code Y93.53 (golf)"},
+    {"field": "dialogue", "text": "backswing", "category": "CODE_EVIDENCE", "why": "mechanism supporting W18.49XA / Y93.53"},
+    {"field": "dialogue", "text": "dax", "category": "NOT_A_NAME", "why": "dictation software"},
+    {"field": "dialogue", "text": "dragon", "category": "NOT_A_NAME", "why": "dictation software"},
+    {"field": "note", "text": "golfing", "category": "CODE_EVIDENCE", "why": "activity code Y93.53 (golf)"},
+    {"field": "note", "text": "2/6", "category": "CLINICAL_NUMBER", "why": "murmur grade"},
+    {"field": "note", "text": "4/5", "category": "CLINICAL_NUMBER", "why": "strength grade"},
+    {"field": "note", "text": "5/5", "category": "CLINICAL_NUMBER", "why": "strength grade"}
+  ]
+}

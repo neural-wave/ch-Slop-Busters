@@ -1,0 +1,754 @@
+########## ENCOUNTER D2N036
+ICD-10 codes: G56.03 Carpal tunnel syndrome, bilateral upper limbs
+=== FIELD: dialogue
+[doctor] hey george how are you today i understand you're here for some numbness and tingling in your fingers and some pain in your wrist
+[patient] right my right wrist and hand has been bothering me probably for a few months now with pain and numbness
+[doctor] okay and you said that's been ongoing for several months do you know what caused this type of pain or is it just something that started slowly or
+[patient] it just kinda started on it's own it i notice it mostly at night
+[doctor] okay
+[patient] sometimes it will i'll wake up and my hands asleep and i got ta shake it out
+[doctor] shake it out and okay
+[patient] and then some
+[doctor] what kind of work do you do
+[patient] i do yard work
+[doctor] yard work
+[patient] landscaping landscaping
+[doctor] landscaping okay so a lot of raking a lot of digging so a lot of repetitive type movements
+[patient] yeah it's pretty heavy labor but it's yeah the same thing day in and day out
+[doctor] okay okay just a couple questions for you you did say that you have the pain at night in that and you have to you get that numbness into the hand is it in all the fingers
+[patient] yeah it seems to happen to all my fingers but i notice it more in my thumb and pointer finger
+[doctor] okay okay and anything into that little into your fifth finger your little finger any numbness there at times no
+[patient] sometimes yeah it seems like it's numb too
+[doctor] okay what about your right hand any problems with that hand
+[patient] no i do n't seem to have any problems with my right hand so far it's just mostly my left
+[doctor] okay okay good and just a couple you know do you how do you have many or do you drink often do you have you know many any alcohol consumption
+[patient] i drink usually a a beer or two on fridays and saturdays on the weekends
+[doctor] okay and do you have any evidence of any anybody ever said that you had some rheumatoid arthritis in your hand or wrist anything like that
+[patient] no nobody say anything like that so i mean
+[doctor] okay okay good so let me go ahead and do a physical exam here real quick and you know i'm gon na quickly just listen to your heart and lungs okay that's good i'd like you to squeeze i'm gon na hold your hands here and i'd like you to squeeze both hands
+[patient] okay
+[doctor] you seem a little bit weaker on that left hand is that what you've noticed
+[patient] yeah i i i experienced some weakness in my left hand
+[doctor] okay do you you find that you're dropping things when you're picking it up is it to that level or
+[patient] yeah i drop things mostly because i have a hard time feeling it
+[doctor] okay okay good and so you you do have a a grip strength is less on the left and i just wan na touch your fingers here on the on the right side you can feel me touching all the fingers on the right
+[patient] yeah i can i can say you touch me but it feels a little more weird on the thumb side than my pointer finger side
+[doctor] okay okay and i wan na turn your wrist over here and turn your hand over and i'm gon na go ahead and tap on the right wrist on the back here does that do anything when i do that
+[patient] i still i feel a little jolt or a zing in my finger tips
+[doctor] okay and then when i do that on the left side
+[patient] yeah same thing
+[doctor] same thing okay so you do have a bilateral positive tinel's sign so so here's here's where i'm at i think your your diagnosis is beginning to have some bilateral carpal tunnel syndrome usually we see that with repetitive actions such as the landscaping the heavy labor and you you know your your clinical exam and and history sound like it's a carpal tunnel syndrome i do want to order so where are we gon na go from here i would like to order a a study it's called an emg where it it measures some of that electrical impulses down into your fingers we will follow up with that but as far as your treatment so the treatment for carpal tunnel syndrome is really some activity modification now i know you are a landscaper is there any way that you could be work to have some lighter work during the time
+[patient] i suppose i could try to pass it off to some of my other employes and delegate
+[doctor] okay that would be good so that's i i just want you to kinda eliminate that the active repetitive motions that you're doing all the time just for a couple weeks i'm also gon na give you a wrist splint to wear and that should help and i'd like you to take ibuprofen six hundred milligrams every six hours and then i wan na see you back here in the office in two weeks and in that two week period i think we're gon na see if there's need for any other intervention if i need to do more diagnostic testing or if there is a possibly looking at a surgical intervention to release that pressure that's on the nerves in that hand does that sound like a a good plan for you
+[patient] yeah it sounds like a good first start
+[doctor] okay okay so i i just just off off the record here what kind of what do what do you specialize in landscaping is your company do
+[patient] mostly like yard work and maintenance flower beds not really designing just up keep
+[doctor] okay yeah i'm looking for a landscape designer i need somebody to put in some elaborate walkways back through the backyard so yeah we can do stuff like that i mean if you have an idea what you want i think that's easy
+[patient] okay
+[doctor] you know if you're looking for like some
+[patient] backyard elasis rehab remodel that's i mean i suppose we could do we have n't done things like that in a while because we're busy enough with just the up key but it's something to explore
+[doctor] okay yeah i may have to keep that in mind because i do wan na do some of that so let's listen i'm gon na get my my nurse in here to discharge you do you have any other questions for me before we end this
+[patient] no i think it's all clear i appreciate it
+[doctor] okay take care and i'll look forward to see you in two weeks
+[patient] very good appreciate your time
+=== FIELD: note
+CHIEF COMPLAINT
+
+Left wrist and hand pain.
+
+HISTORY OF PRESENT ILLNESS
+
+George Lewis is a pleasant 57-year-old male who presents to the clinic today for evaluation of left wrist and hand pain. He reports an onset of a few months ago but denies any specific injury. However, the patient notes he often engages in repetitive motions while performing his work duties. His symptoms are worse at night, and he wakes with numbness in the bilateral hands. He experiences numbness in all fingers, but states it is the most noticeable in the left thumb and index finger. He affirms intermittent numbness in the left little finger. For relief, he shakes his hands upon waking. The patient also experiences weakness in his left hand. He reports he drops objects and explains “I have a hard time feeling it.”
+
+MEDICAL HISTORY
+
+The patient denies a history of rheumatoid arthritis.
+
+SOCIAL HISTORY
+
+He works in landscaping. He reports consuming 1 to 2 beers on weekends.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports left wrist and hand pain. Denies right hand pain.
+Neurological: Reports numbness in bilateral hands and fingers, and left hand weakness.
+
+PHYSICAL EXAM
+
+NEURO: Decreased sensation in the right thumb and index finger.
+MSK: Examination of the bilateral hands: Grip strength is less on the left in comparison to the right. Positive Tinel sign bilaterally.
+
+ASSESSMENT
+
+Bilateral carpal tunnel syndrome.
+
+PLAN
+
+After reviewing the patient's clinical history and examination today, I have had a lengthy discussion with him regarding treatment options for his current symptoms. I discussed the importance of activity modification and encouraged the patient to limit active repetitive motions while working for the next 2 weeks. I also recommended that he wear a wrist splint to provide increased support. I advised him to take ibuprofen 600 mg every 6 hours. Additionally, I recommended we obtain an EMG of the bilateral upper extremities to evaluate for carpal tunnel syndrome. The patient will follow up with me in 2 weeks when the EMG results are available for review. If at that time his symptoms have not improved with these conservative measures, we will discuss further treatment options including additional diagnostic testing or possible surgical intervention.
+
+The patient states he understands and is in agreement with the plan. All questions were answered to the patient's satisfaction.
+
+INSTRUCTIONS
+
+The patient will follow up with me in 2 weeks.
+
+########## ENCOUNTER D2N037
+ICD-10 codes: M77.01 Medial epicondylitis, right elbow; M77.02 Medial epicondylitis, left elbow
+=== FIELD: dialogue
+[doctor] hey dylan what's going on so i lift quite a bit of weights i try to stay in shape as much as i can i'm not like normal people i lift heavy weights and my elbow is extremely sore which elbow is it
+[patient] actually it's both my elbows but my right elbow is hurting me the most
+[doctor] okay and you said you lift a lot of weights
+[patient] mm-hmm
+[doctor] did you play any sports when you were younger
+[patient] no anything you can think of primarily it was basketball baseball and football
+[doctor] okay and did your elbows hurt at that time or is this a a new injury
+[patient] it's new
+[doctor] when did it start
+[patient] probably year and a half ago
+[doctor] okay on both elbows about a year and a half ago
+[patient] yeah
+[doctor] okay have you taken anything for the pain
+[patient] ibuprofen eight hundred milligrams three times a day
+[doctor] okay and does anything make it better or worse
+[patient] the more i use my hands or my arms the more it hurts
+[doctor] okay have you tried icing
+[patient] yes
+[doctor] does that give you any relief
+[patient] no
+[doctor] alright is it the inside or outside of your elbows
+[patient] inside
+[doctor] inside okay let's just do a quick physical exam here i'll take a look at your right elbow first
+[patient] mm-hmm
+[doctor] if i bend it this way up does it hurt it's your left does that hurt
+[patient] yes
+[doctor] how about this
+[patient] yes
+[doctor] okay so pain with both flexion and extension
+[patient] mm-hmm
+[doctor] looks like you have little bit of limited range of motion on extension not on flexion though you said it hurts right here on the inside of your elbow
+[patient] yes
+[doctor] okay so pain on the medial side with palpation
+[patient] yes
+[doctor] alright how about the outside
+[patient] no
+[doctor] no pain with palpation outside of the elbow you have do you have normal sensation in your fingers
+[patient] i think so
+[doctor] yeah
+[patient] yeah
+[doctor] okay great
+[patient] good to go
+[doctor] sensation is normal to the touch
+[patient] yes
+[doctor] pulses equal in all extremities how about the left elbow same thing if i bend it this way does that hurt
+[patient] not as much
+[doctor] how about this way
+[patient] not as much
+[doctor] alright so little bit of pain on flexion and extension little bit of limited range of motion on extension of the arm how about if you twist like you're opening a door
+[patient] yes
+[doctor] okay so some pain with torsion and twisting supination what about pronation
+[patient] no
+[doctor] no pain with pronation on the right side
+[patient] mm-hmm
+[doctor] same thing on the left
+[patient] yes
+[doctor] pain with supination no pain with pronation
+[patient] correct
+[doctor] alright so dylan it took some x-rays coming in looks like you do n't have any any fractures or any bony misalignment which i expect with this kind of injury i do think that what you have is medial epicondylitis which is
+[patient] is that golfer's elbow
+[doctor] yes same thing have you been golfing a lot
+[patient] well not in the past year and a half i've had this for a long time
+[doctor] okay also known as pictures elbow
+[patient] well i have n't been pitching either
+[doctor] hmmm well in any case what i'm gon na have to do is i'm gon na send you up for mri to take another look at this
+[patient] mm-hmm
+[doctor] that will be our next step so we'll get you scheduled for the mri probably get you in pretty quick here since we're a private practice
+[patient] thank god
+[doctor] yeah and once you get the mri i'll know a little bit more what i'd like to do is something called a whole blood transfusion have you heard of that before
+[patient] no please tell me remind me
+[doctor] yeah it should help with the healing of your elbow it's just a procedure we'll stick a needle in your elbow
+[patient] you do a stick needle in my elbow
+[doctor] mm-hmm and help with some of the healing of your elbow
+[patient] so it's kinda like dry needling then
+[doctor] no
+[patient] not at all
+[doctor] what is it
+[patient] is it is that that thing where like you take the blood out of like say my my thigh
+[doctor] mm-hmm
+[patient] and then you literally inject it into my tendon
+[doctor] yes
+[patient] that it activates the healing
+[doctor] yeah that's exactly what it is
+[patient] interesting cool
+[doctor] yeah
+[patient] maybe i have heard about that
+[doctor] we've we've had some really good responses from other patients on it so hopefully i mean that should be a good solution for you since you've been having issues with this
+[patient] i'm excited
+[doctor] yeah and we can hopefully get you scheduled for that in the next couple of weeks it's not not a major procedure and you should heal in the next two weeks so that wo n't be a problem especially considering that you're expecting a newborn soon we want to make sure you're all healed for that
+[patient] wow i did n't even say that
+[doctor] i read it in your chart
+[patient] man you doctors are good
+[doctor] yeah anything else going on today
+[patient] just trying to figure out how you're doing
+[doctor] very good thank you
+[patient] you're welcome
+[doctor] nice to see you
+[patient] you have a good day
+=== FIELD: note
+CHIEF COMPLAINT
+
+Bilateral elbow pain, right worse than left.
+
+HISTORY OF PRESENT ILLNESS
+
+Dylan Bennett is a pleasant 53-year-old male who presents to the clinic today for the evaluation of bilateral elbow pain, right worse than left.
+
+The patient has been experiencing bilateral elbow pain, right worse than left, for approximately 1.5 years. His pain is localized to the medial aspect of his elbows and is described as being extremely sore, worse with increased use of his upper extremities. Of note, he utilizes heavy weights for strength training and was very active in sports when he was younger, primarily playing basketball, baseball, and football, but he denies having any pain at that time. Applying ice to the area has not been helpful, but he does use ibuprofen 800 mg 3 times daily.
+
+SOCIAL HISTORY
+
+The patient reports that utilizes heavy weights for strength training. He was also very active in sports when he was younger, primarily playing basketball, baseball, and football.
+
+He is expecting a newborn baby in the near future.
+
+MEDICATIONS
+
+The patient reports that he has been taking ibuprofen 800 mg 3 times daily.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports bilateral elbow pain, right worse than left.
+
+PHYSICAL EXAM
+
+CV: Pulses are equal in all extremities.
+NEURO: Sensation is normal to light touch distally.
+MSK: 
+Examination of the right elbow: Limited range of motion with extension with pain. Full range of motion with flexion with pain. Pain to palpation along the medial aspect. No pain to palpation on the lateral aspect of the elbow. Pain with supination. No pain with pronation.
+Examination of the left elbow: minimal pain with flexion and extension Slight Limited ROM on extension of the arm. Pain with supination. No pain with pronation.
+
+RESULTS
+
+X-ray images of the bilateral elbows were obtained and review in office today. These reveal no evidence of fracture or bony misalignment.
+
+ASSESSMENT
+
+Bilateral medial epicondylitis.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, we had a lengthy discussion in regards to his current symptoms. I want to get an MRI of the bilateral elbows for further evaluation. We discussed the possibility of performing a whole blood transfusion to encourage healing, and the patient is already familiar with this procedure.
+
+########## ENCOUNTER D2N038
+ICD-10 codes: B17.1 Acute hepatitis C
+=== FIELD: dialogue
+[patient] hey bruce so see here my my notes here is you here he had positive lab work for hep c so how're you doing today
+[doctor] i'm doing okay but i'm a little bit anxious about having hep c i've really surprised because i've been feeling fine they had done it as you know a screen as just part of my physical so i'm really surprised that that came back positive
+[patient] okay so in the past have any doctors ever told you that you had hep c
+[doctor] no never that's why i'm i'm so surprised
+[patient] okay so just you know i need to ask do you have a history of iv drug use or you know have known any hep c partners
+[doctor] i mean i used to party a lot and even did use iv drugs but i have been clean for over fifteen years now
+[patient] okay that that's good i mean i'm i'm happy that you were able to to kick that habit i know a lot of my patients that i see you know they're still dealing with with those dements so i'm i'm i'm happy that you're able to do that so hopefully we can get you better okay
+[doctor] thank you
+[patient] so what about alcohol use is that something that you used to do a lot
+[doctor] i did i did i mean i i still have a beer here and there everyday but not as much as i used to
+[patient] okay and have you ever smoked before
+[doctor] i do smoke i smoke about one to two cigarettes per day i've cut down a lot but i'm just having a hard time kicking those less too
+[patient] yeah yeah and that that's something i've got to work on too because hep c along with smoking you know both of those are n't are n't good so hopefully we can help you out you know if your pcp has n't prescribe something for you already and possibly we can we can do that for you as well
+[doctor] okay
+[patient] so do you have any other medical conditions
+[doctor] no i'm actually other than that i just had my physical and i'm not taking any medications no i'm i'm pretty good otherwise
+[patient] okay and what conditions would you say run in your family
+[doctor] i have high blood pressure diabetes and depression
+[patient] okay
+[doctor] alright so let me go ahead and do a quick physical exam on you so i reviewed your vitals and everything looks good and on general appearance you appear to be in no distress no jaundice on the skin on your heart exam you have a nice regular rhythm rate
+[patient] regular rate and rhythm with a grade two out of six systolic ejection murmur is appreciated on your lung exam your lungs are clear without wheezes rales or rhonchi on your abdominal exam bowel sounds are present your abdomen is soft with no hepatosplenomegaly
+[doctor] hepatosplenomegaly yes let me i will change that one
+[patient] splenomegaly and on your muscle exam there is no gait disturbance or edema so i did we i was able to review your your results of your recent lab work and your hcv antibody test was positive so your your liver panel we did one of those and it showed an elevated ast at thirty nine but your alt albumin and total bilirubin were all within normal limits so that's pretty good so let's talk a little bit about my assessment and plan for you so you do have hepatitis c so your initial labs were consistent with that hep c diagnosis and so you know i do n't know if you read much about hep c but hepatitis c is a viral infection that does affect your liver and you've most likely had it for several years now it it it most patients do n't see symptoms until years later so the next step that i would like to do is just confirm the diagnosis with some additional blood work so that includes checking your hep c rna and your hcv genotype and i would also like to determine the severity of your liver disease by checking for fibrosis of the liver and we will do that by ordering an ultrasound elasto elastography with this information we will we we will be able to know how we can proceed as far as treatment right so how does that sound
+[doctor] i hmmm so i do have a wife and kids so should i be worried about them
+[patient] okay yeah so we can start with the same screening that you had for august first so we'll just let's do that hep c antibody test and i'll actually help you set up those appointments with your your family doctor and then we can just see you back in three weeks and based on the results you know we will take action as needed okay
+[doctor] okay that sounds good
+[patient] alright
+[doctor] alright
+[patient] my nurse will be in with those those orders
+[doctor] alright thank you
+[patient] alright thanks
+[doctor] bye
+=== FIELD: note
+CHIEF COMPLAINT
+
+Hepatitis C.
+
+HISTORY OF PRESENT ILLNESS
+
+Bruce Ward is a pleasant 60-year-old male who presents to the clinic today following a positive result in a hepatitis C antibody test. He was sent to obtain the hepatitis C antibody test as part of a routine physical. He states he is anxious with the results and denies he has ever been diagnosed with hepatitis C. The patient admits to intravenous drug use in the past; however, he notes it has been longer than 15 years since his last usage. He also reports a history of heavy alcohol use. He continues to drink a beer on occasion. The patient currently smokes 1 to 2 cigarettes per day. He notes he used to smoke more and is having difficulty with complete cessation.
+
+MEDICAL HISTORY
+
+The patient denies any significant past medical history.
+
+SOCIAL HISTORY
+
+The patient is married with children. He reports history of IV drug use 15 years ago. He currently drinks beer occasionally. The patient reports smoking 1 to 2 cigarettes per day.
+
+FAMILY HISTORY
+
+He reports a family history of high blood pressure, diabetes, and depression.
+
+MEDICATIONS
+
+Patient denies taking any current medications.
+
+VITALS
+
+All vital signs are within normal limits.
+
+PHYSICAL EXAM
+
+CONSTITUTIONAL: In no apparent distress.
+CV: Regular rate and rhythm. Grade 2 out of 6 systolic ejection murmur is appreciated.
+RESPIRATORY: Lungs are clear without wheezes, rales, or rhonchi.
+GI/GU: Abdomen is soft with no hepatosplenomegaly. Bowel sounds are present.
+SKIN: No jaundice.
+
+RESULTS
+
+The HCV antibody test was reviewed today and is positive.
+
+Liver panel revealed an elevated AST at 39 U/L. The ALT, albumin, and total bilirubin were all within normal limits.
+
+ASSESSMENT
+
+Hepatitis C.
+
+PLAN
+
+After reviewing the patient's laboratory findings today, I have had a lengthy discussion with him in regard to his current symptoms. His initial labs were consistent with a hepatitis C diagnosis. I have recommended that we confirm the diagnosis with additional blood work including checking his hepatitis C RNA and HCV genotype. I have also recommended that we obtain an ultrasound elastography to evaluate for fibrosis of the liver.
+
+The patient is married with children and is concerned about their hepatitis C status. I advised the patient that his family should be screened and we will assist him with setting appointments with their primary care physician.
+
+INSTRUCTIONS
+
+The patient will follow up with me in 3 weeks to review his results and discuss further treatment.
+
+########## ENCOUNTER D2N039
+ICD-10 codes: I10 Essential (primary) hypertension
+=== FIELD: dialogue
+[doctor] hi virginia how are you today what brings you in
+[patient] i'm doing alright i started seeing this new pcp last year and you know she has been doing a lot of changes to my medication and making sure everything is up to date and she my noticed that my blood pressure has been quite high so she added to medications but and but i you know i've been taking them i've been really good and i i before i was n't but now i am and we're still having a hard time controlling my blood pressure so she thought it would be a good idea for me to see you especially since she noted some on my last blood work she said something about my kidneys
+[doctor] okay yeah so okay let's before i dive into a lot of that tell me a little bit about how you've been feeling
+[patient] i would say you know most of the days i feel fine i'm still busy at work i definitely can tell though when my blood pressure is high
+[doctor] okay you measure it at home you you you measure your blood pressure at home
+[patient] yeah i she wanted me to get a blood pressure cuff so i did start getting checking my blood pressures probably like a few times a week
+[doctor] okay
+[patient] and so then i noticed that it has been getting higher the other day was even as high as one seventy over ninety
+[doctor] wow
+[patient] so i did call my pcp and she increased the meds again
+[doctor] yeah okay now i i just have a couple questions about that are you using a an electronic blood pressure recorder or do you have somebody help you at home
+[patient] yeah she i have a a electronic one an electronic arm one
+[doctor] okay okay yeah that's good that's good and have you ever tried do you go to cvs at all
+[patient] yeah i i do but i've noticed like since the pandemic i do n't see the blood pressures anymore
+[doctor] okay okay yeah i i thought the one down on main street they i thought they just brought that one back so
+[patient] did they
+[doctor] yeah
+[patient] that's good to know
+[doctor] you may wan na check that but okay so that's good but i what i'd like you to do with that is i'd like you to keep a record of them for me for my next visit with you so let's talk a little bit about your diet tell me how how is your diet what what are the what kind of foods do you like what do you eat normally
+[patient] alright do you want the honest answer
+[doctor] well yeah that would be better
+[patient] so i really you know with everything going on i really been trying to get better but i mean during football season it's really difficult i really love watching my games so have a lot of pizza wings subs like i said i've been trying to cut down especially on days where there is no games but it probably could be better
+[doctor] okay i think we all can say that but i do wan na just hey i do n't know that if you've tried it or not but there is a new restaurant down on fifth street and it is nothing but solids and i you know when i heard this i was like okay yeah it's just another these solids are absolutely amazing so if you ever get a chance yeah if you ever get a chance try try that i mean i think you would enjoy them because they're salads that they make are just out unbelievable so let me go ahead and i just have a few more questions and i'm gon na just ask these in in order and you just tell me and then we will come back and talk about them do you have any headaches
+[patient] really just when my blood pressure gets really high i have some mild headaches but otherwise i do n't have it on a regular basis
+[doctor] okay what about chest pain
+[patient] no chest pain
+[doctor] shortness of breath
+[patient] no shortness of breath
+[doctor] even with exertion
+[patient] even with exertion
+[doctor] okay do you have any swelling in your lower extremities at all that you noticed
+[patient] not if i'm on my feet for a long time i'll notice a little bit of swelling but otherwise no
+[doctor] okay and then a couple other family history questions anybody in the family have kidney disease or significant high blood pressure
+[patient] both my parents do have high blood pressure and one of them did have kidney disease
+[doctor] okay okay and in the the the form that you filled out when you came in it says that you are on ten milligrams of norvasc daily and carvedilol twenty five milligrams twice a day is those the medicines you're on
+[patient] yes i was also on lisinopril before but with the adjustments yeah those are the ones i'm on
+[doctor] okay and so here's where i think we are going to go do you take any nonsteroidals like advil or motrin or aleve
+[patient] yeah just once in a while for my like any knee pain or back pain that i have but again not like everyday
+[doctor] okay and then lastly what kind of alcohol intake do you have you know do you consider how many drinks a week is really what i'm looking for
+[patient] i'll have a couple of beers during the week and like one or two on the weekends
+[doctor] okay okay so lem me do a quick physical examination so i looked at your vitals when you came in today and your blood pressure it's still high it's one sixty nine over seventy four your heart rate was eighty eight and your oxygenation was ninety eight percent so those are all fairly good except that blood pressure's a little higher than we'd like to see now when i look at your neck i do n't see any jugular vein distention and i'm gon na listen here real quick no i do n't hear any carotid bruits i'm gon na listen to your lungs okay your lungs are clear and let me listen quickly to your heart i do hear that a two over six systolic ejection murmur and we'll we're gon na have to take a little bit look extra look at that that's when i i can hear an extra sound when i'm listening to your heart and you do have a small amount of one plus pitting edema bilaterally now i did so you do have that your diagnosis is uncontrolled hypertension you know and i think you're aware that that's what your your physician's been treating you for and most of the time this cause is is the cause of this is multifactorial it's not that there is just one thing causing it so we may need to be changing your medicine around and i'm gon na talk to your doctor but first thing before we make any more medication changes i want to order some tests first to rule out if there is any specific cause for this so first order will be a renal artery ultrasound and what i'm looking for there is that there is no areas of areas of narrowing in the the blood vessels of your kidneys that would be the cause of your hypertension in addition to that i'm gon na order a you get another urine collection some morning aldosterone levels reining levels and a twenty four hour urine and these things can really show me if there is any problems with your adrenal glands again this is a lot of big words but you know i'm i i'll write this all out for you i want you to decrease your alcohol i know you like those beers but let's bring it down to maybe one a week or two a week just to get those down lower and then your salt intake you need to be very judicious about decreasing that salt intake i'm gon na give you a referral to a nutritionist to discuss those changes for that you need and and they will help you get that cleared up and then finally stop taking any nonsteroidal medicines such as your advil or motrin the only thing i really want to want you taking is tylenol for any pain right now i am gon na prescribe one medicine and that's cardura four milligrams and i want you to take that once a day and that's good to see if that can help us with your blood pressure and then finally three weeks i'd like you to return i want you to record all of your blood pressures that you take over the next three weeks and bring them into the office but most importantly if you can try to take them at the same time everyday that would be beneficial for me any questions for me
+[patient] no i i just it's a lot so i i'm hoping this will work and this will get it under control
+[doctor] yeah i i think you know this will be you know this we're gon na spend some time together so i'm glad to have you as a patient but you know we got ta try to get this under control and i'm gon na i'll be talking to your pcp just to let them know that you know what my plans are and we'll stay real in sync on treating this as we move forward does that sound like a plan
+[patient] that sounds good thank you
+[doctor] okay take care i'll talk to you later
+[patient] okay alright bye
+=== FIELD: note
+CHIEF COMPLAINT
+
+High blood pressure.
+
+SOCIAL HISTORY
+
+Patient reports drinking a couple of beers during the week and approximately 1 to 2 on the weekend. She is employed.
+
+FAMILY HISTORY
+
+Patient reports both of her parents have hypertension and one also had kidney disease.
+
+MEDICATIONS
+
+Patient reports taking Norvasc 10 mg daily and carvedilol 25 mg twice daily. She occasionally takes anti-inflammatories.
+
+REVIEW OF SYSTEMS
+
+Cardiovascular: Denies chest pain or dyspnea on exertion.
+Respiratory: Denies shortness of breath.
+Musculoskeletal: Denies bilateral lower extremity edema.
+Neurological: Reports headaches.
+
+VITALS
+
+BP: 169/74.
+HR: 88 bpm.
+SpO2: 98%.
+
+PHYSICAL EXAM
+
+Neck
+- General Examination: No jugular vein distension. No carotid bruits.
+
+Cardiovascular
+- Auscultation of Heart: Grade 2/6 systolic ejection murmur.
+
+Musculoskeletal
+- Examination: 1+pitting edema in the bilateral lower extremities.
+
+ASSESSMENT AND PLAN
+
+1. Hypertension, uncontrolled.
+- Medical Reasoning: The patient's elevated blood pressure is consistent with uncontrolled hypertension.
+- Patient Education and Counseling: We discussed the nature of the diagnosis and that this is typically multifactorial. I advised the patient that further testing should reveal additional information. She was encouraged to reduce her intake of alcohol as well as her salt intake. I recommended that she stop taking anti-inflammatories and use Tylenol as needed for pain. We also discussed the importance of home blood pressure monitoring of the next 3 weeks to see if the medication is beneficial.
+- Medical Treatment: Renal artery ultrasound ordered. Urine collection, morning aldosterone levels, renal levels, and a 24-hour urine were also ordered. Referral to nutritionist provided. Prescription for Cardura 4 mg once a day provided as well.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+The patient will follow-up in 3 weeks and will bring her blood pressure log with her.
+
+########## ENCOUNTER D2N040
+ICD-10 codes: R51 Headache; E11.9 Type 2 diabetes mellitus without complications
+=== FIELD: dialogue
+[doctor] carolyn is a 34 -year-old female with a history of diabetes mellitus type two who is here today with a headache so hi there carolyn it's nice to see you again listen i'm sorry you're having headaches well let's talk about it but i would like to record this conversation with this app that's gon na help me focus on you more would that be okay with you
+[patient] yes that's okay
+[doctor] okay great thanks so carolyn tell me about your headache and headache or headaches when did when did they start and and what symptoms are you having
+[patient] my headache started about a week ago it's feeling like a dull pain in the back of my head i have flushing in my ears they get really red and hot and sometimes i just feel a little bit dizzy when i get these headaches but i've taken tylenol and advil and it's not really going away it just keeps coming back
+[doctor] okay and alright and so this started about a week ago has it been fairly constant since it started or does it come and go does it come and go or what
+[patient] it comes and goes i it it's relieved when i take my tylenol or advil but then it comes right back
+[doctor] hmmm okay and do you notice any any timing difference you know is it is it worse in the morning worse in the evening is there anything else that makes it better or worse
+[patient] it's definitely worse in the evening
+[doctor] okay and do you feel any sort of tightness in the back of your neck or in your shoulders or you know you said it's in the back of your head primarily any discomfort anywhere else
+[patient] yes no just in the back of my head
+[doctor] okay and did the headache start all of a sudden carolyn or has it been gradual or what
+[patient] i've been under a lot of stress lately so maybe about when some stress started occurring
+[doctor] okay okay and alright and have you noticed any fever along with the headache
+[patient] no no fever
+[doctor] okay and any visual changes you know wavy lines in your vision spots in your vision or anything like that
+[patient] no
+[doctor] okay and have you had headaches like this before
+[patient] i have
+[doctor] okay so this is n't the worst headache you've ever had what did you say
+[patient] no it's not
+[doctor] okay alright and so okay fair enough now how's your diabetes been been been doing lately have you what have your blood sugars been running in the low one hundreds or two hundreds or what
+[patient] i have n't been checking my blood sugars
+[doctor] really okay well we will get you back on that and and we can talk about that but how about your metformin are you still taking the five hundred milligrams once a day no actually it looks like we increased your metformin to five hundred milligrams twice a day last visit are you still taking that
+[patient] yes
+[doctor] okay great and okay you're still watching your diet and getting some exercise
+[patient] i have not been eating well because i've been stressed over the last week but i have n't been exercising for maybe the past week but generally i've been doing better
+[doctor] okay the headache has has maybe made you feel uncomfortable and prevented your your exercise would you say or what
+[patient] yes it has
+[doctor] okay okay so you probably have n't been out golfing i remember you're a big golfer so not not lately uh so you know being
+[patient] not lately
+[doctor] being down being down here in florida we got ta get get some golf in so hey did you see the masters by the way a few weeks ago was n't that i do n't know did you happen to catch it
+[patient] i did
+[doctor] yeah that was crazy what a what a finish what an amazing what an amazing tournament right what do you think yeah yeah that's great well we'll we'll get you feeling better and get you back out there and now are you still working a lot on the computer ac or
+[patient] i am
+[doctor] carolyn okay yeah you're still working a lot on the computer for work okay are you taking breaks every hour or so you know get up stand around walk stand walk around that can be helpful
+[patient] no i really do n't get the opportunity to
+[doctor] hmmm okay understood alright well listen let's go ahead and examine you okay so so on your physical exam your physical exam is pretty normal unremarkable for the most part and you know few things a few exceptions so first of all on your heent exam your eye exam your extraocular motions are intact without pain you have a funduscopic exam that shows no papilledema that's good that just means there's no swelling in the back of your eye and on your neck exam you do have some posterior mild posterior paraspinal muscular tenderness in the cervical spine and in bilateral trapezius musculature as well and some tightness in those muscles as well and otherwise on your exam let's see your heart exam on your heart exam you have that grade three out of six systolic ejection murmur that's unchanged from your prior exam so it just means i hear some sounds in your heart as it's beating and i'm not too worried about that we'll watch that and otherwise normal heart exam and and your physical examination otherwise is normal and unremarkable and so now let's talk about my assessment and your plan so carolyn for your first problem of the headache i do think that you have a tension type headache and i think this because you've got some tension and tightness in your paraspinal muscles meaning the muscles around your neck and your shoulders and you know working at the computer i think is contributing to this and also probably the stress so you can continue to take that tylenol for the pain i'm also gon na give you a mild muscle relaxant i'll write you for flexeril five milligrams three times a day and you can take that that will help relax those muscles in your neck and that should help with the symptoms i want you to come back or give us a call if the headaches become more severe or suddenly worsen or you develop a fever but i do n't think that this is a a sign of a stroke or any bleeding in your brain or anything like that i think it's more related to tightness in your muscles in your neck now for your second problem of your diabetes mellitus let's continue you on the metformin five hundred milligrams i am going to order a hemoglobin a1c and also a cbc and a chem-12 to check some of your blood tests blood chemistries and so forth and we will continue you on the metformin i do want you to check your blood sugars daily and that will be very helpful so when you come back in a month i want you to bring those numbers with you we can talk about it again and please do try to get back into your exercise routine that's really gon na help you keep those blood sugars under control as well okay so how does that sound for a plan any other questions for me
+[patient] well would it so only call if if it gets worse or not any better
+[doctor] yeah that that just right but also let's set up an appointment in four weeks and i wan na see you back in four weeks if it's not if the headache is not better within the next few days with this flexeril then you can give us a call and and get back in later this week or early next but definitely if things get worse give us a call sooner and you know i meant to ask you on i wanted to ask if you had a history of any any trauma meaning have you hit your head or you have n't fallen hit your head or anything like that have you
+[patient] no no i think it's just stress
+[doctor] okay alright understood okay great well then i'll see you back in a month if not before okay you take care of yourself nice seeing you
+[patient] thank you
+[doctor] sure
+=== FIELD: note
+CHIEF COMPLAINT
+
+Headache.
+
+MEDICAL HISTORY
+
+Patient reports history of diabetes mellitus type 2.
+
+SOCIAL HISTORY
+
+Patient reports she enjoys golfing.
+
+MEDICATIONS
+
+Patient reports taking metformin 500 mg twice a day.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Denies fever.
+Eyes: Denies vision changes.
+HENT: Reports ear flushing.
+Neurological: Reports headaches and dizziness.
+
+PHYSICAL EXAM
+
+Eyes
+- Examination: No papilledema.
+- Extraocular Muscles: Grossly Intact without pain.
+
+Neck
+- General Examination: Mild posterior paraspinal muscular tenderness in the cervical spine and bilateral trapezius musculature as well tightness.
+
+Cardiovascular
+- Auscultation of Heart: Grade 3 out of 6 systolic ejection murmur that is unchanged from prior exam.
+
+ASSESSMENT AND PLAN
+
+1. Headache.
+- Medical Reasoning: Patient presents with symptoms similar to a tension headache. On exam she has tension and tightness in her paraspinal muscles as well likely due to working at the computer. Additionally, I think her stress level is also a contributing factor.
+- Patient Education and Counseling: I discussed the diagnosis with the patient today. I explained that her headaches may be caused by tension around the muscles around her neck and shoulders. I advised her that her symptoms do not appear related to signs of a stroke or brain bleeding. Questions were asked and answered today.
+- Medical Treatment: She can continue to take Tylenol for the pain. Prescription for Flexeril 5 mg 3 times a day is provided as well.
+
+2. Diabetes mellitus.
+- Medical Reasoning: Due to her headaches, she has been inconsistent with her exercise and checking her blood sugar.
+- Patient Education and Counseling: We discussed the importance of maintaining a healthy lifestyle. We also discussed the importance of keeping a watchful eye on her blood sugar levels.
+- Medical Treatment: She will continue taking metformin 500 mg daily. Order for hemoglobin A1c, CBC, and CMP provided today. She will check her blood sugar daily and will bring that information in on her next visit.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+The patient will follow up in 1 month. She can follow up or call sooner if her headaches become more severe or suddenly worsen or she develops a fever.
+
+########## ENCOUNTER D2N041
+ICD-10 codes: J02.9 Acute pharyngitis, unspecified; I10 Essential (primary) hypertension; E11.9 Type 2 diabetes mellitus without complications
+=== FIELD: dialogue
+[doctor] hi teresa what's going on i heard that i heard that you're having a sore throat you're not feeling well
+[patient] yeah my throat has been hurting me for like four four days now and i think i had a fever last night because i was really sweaty but i did n't take my temperature because i was already in bed
+[doctor] okay alright so four days ago you started feeling badly okay now were you having chills
+[patient] yeah last night i was chills and i had lot of sweating and it's really hard to swallow
+[doctor] it's really hard to swallow okay now do you have pain every time you swallow or is it just periodically
+[patient] every time i swallow i'm even having trouble eating i can drink okay the like really cold water feels good
+[doctor] okay that's what i was gon na ask you okay so you're able to drink water and are you able to drink any other fluids have you been able to drink any you know i do n't know juices or milk shakes or anything like that
+[patient] well besides my wine at night i really just drink water all day
+[doctor] okay well i like to drink wine too what's your favorite type of wine
+[patient] peanut grooves yes
+[doctor] it's a good one i like that too i am also a pino navar fan so there you go alright well let's now do you feel sick to your stomach at all
+[patient] no i have a little bit of a stuffy nose not too bad it's really just my throat but i think my tonsils are swollen too
+[doctor] and your tonsils are swollen too now has anyone else sick in your household
+[patient] i do have little kids that go to school so they've always got you know those little runny noses or cough but nobody is really complaining of anything
+[doctor] okay alright now have you had strep throat in the past
+[patient] when i was a kid i had strep throat but i have n't had anything like that as an adult
+[doctor] okay alright and what do you do for work
+[patient] i i work as a cashier in a supermarket
+[doctor] okay alright and did you get your covid vaccine
+[patient] yep i did get my covid vaccine but it really made me feel sick so i'm hoping i do n't have to get another one later this year
+[doctor] okay did so you just got the two vaccines you did n't get the booster
+[patient] no i did n't get the booster because i really have n't had time to feel that sick again it really knocked me down for like two days and with the little kids it's really hard
+[doctor] okay alright well i saw that they did a rapid covid test when you came in here and that was negative so that's good so you do n't have covid which is which is good now let's talk a little bit about your hypertension and hypertension since i have you here did you ever buy that blood pressure cuff that i asked you to buy
+[patient] yes i did i blood the blood pressure cuff and my blood pressure is like all over the place sometimes it could be like one twenty for the top number sometimes it could be one forty for the top number i i do n't really remember the bottom number though
+[doctor] okay that's okay are you taking the lisinopril i think we have you on twenty milligrams a day
+[patient] yep i take it every morning with my multivitamin and my vitamin d
+[doctor] okay alright and are you watching your salt intake
+[patient] i really like my chips with my wine
+[doctor] is n't that the best we we could get along really well outside of here alright and then tell me a little bit about your diabetes now are you are you watching your blood sugars are you taking them at home
+[patient] sometimes i take that all that often again that could be all over the place sometimes i get if i take it first thing in the morning it'll be like eighty or ninety but at night sometimes it could be one forty
+[doctor] okay alright and i are you still taking the metformin we have you on a thousand milligrams twice a day
+[patient] uh uh yes i do take it i take it with my breakfast and with my dinner
+[doctor] okay alright great alright now are you are you a meds fan or a yankie's fan or god for a bit of filly's fan
+[patient] nope
+[doctor] no
+[patient] no do n't do n't like sports
+[doctor] do n't like sports just the wine
+[patient] no
+[doctor] okay alright well let's go ahead i wan na just do a quick physical exam now i'm gon na be calling out some of my findings and i'm gon na let you know what that means when i'm done okay so looking here first at your vital signs your vital signs look pretty good you do have a low-grade fever of about a hundred . four right now but otherwise your blood pressure is pretty good it's about one thirty two over eighty and your heart rate is eighty four now that looks pretty good so i'm just gon na go ahead and examine you so on your facial exam i'm gon na just press on your face here does this hurt
+[patient] no not no it does n't bother me
+[doctor] okay on facial examination the patient has no pain to palpation of the frontal or maxillary sinuses on nasal examination there is edema and erythema of the nasal turbinates bilaterally with associated clear discharge open up your mouth and say
+[patient] ah
+[doctor] on throat examination there is bilateral erythema and edema of the peritonsillar space with exudates present bilaterally the uvula is midline on your neck exam i do appreciate some cervical lymphadenopathy on the right hand side on your lung exam your lungs you have some coarse rhonchi at the bases that clear with cough and on your heart exam your heart is a nice regular rate and rhythm i do n't appreciate any murmur or or rub so what does all of that mean teresa so all of that means is that yes you're showing signs of what we call an upper respiratory infection and i'm concerned that you might have some strep in the back of your throat based on the findings so let's just talk a little bit about my assessment and plan for you okay so for your first problem of your sore throat i'm gon na go ahead and have the medical assistant come in and swab you for a rapid strep test and if that's positive i wan na go ahead and place you on or prescribe amoxicillin five hundred milligrams three times a day for ten days and i'm gon na give you some lidocaine swish and swallow so that will help with some of the pain and you can take some ibuprofen as needed which will also help with the pain and some of that fever okay i do want you to go ahead and continue to to hydrate as much as possible what kind of questions do you have about that
+[patient] no that sounds good i just wanted to be sure i was okay because of the little kids
+[doctor] sure now for your next problem of your hypertension i wan na go ahead and order a lipid panel on you and i think i do wan na increase i do wan na increase the lisinopril to forty milligrams once a day just to get your blood pressure under better control and we'll see how you do on the forty milligrams once a day for your third problem of your diabetes let's go ahead and order a hemoglobin a1c and just to make sure that we do n't have to make any adjustments to your metformin how does that sound
+[patient] sounds good
+[doctor] any questions
+[patient] nope that's everything
+[doctor] okay bye good to see you i'll be in touch
+=== FIELD: note
+CHIEF COMPLAINT
+
+Sore throat.
+
+MEDICAL HISTORY
+
+Patient reports history of hypertension and diabetes.
+
+SOCIAL HISTORY
+
+Patient reports working as a cashier in a supermarket. She enjoys drinking wine.
+
+MEDICATIONS
+
+Patient reports taking lisinopril 20 mg daily, multi-vitamin, vitamin D, and metformin 1000 mg twice daily.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Reports fever, chills, and profuse sweating.
+HENT: Reports sore throat, dysphagia, tonsil swelling, and congestion.
+Gastrointestinal: Denies abdominal symptoms.
+
+VITALS
+
+Temperature: 100.4 degrees F.
+Blood pressure: 132/80 mm Hg.
+Heart rate: 84 BPM.
+
+PHYSICAL EXAM
+
+Head and Face
+- Examination: No pain to palpation of the frontal or maxillary sinuses.
+
+Ears, Nose, Mouth, and Throat
+- Examination of Nose: Edema and erythema of the nasal turbinates noted bilaterally with associated clear discharge.
+- Examination of Throat: Erythema and edema of the peritonsillar space with exudates present bilaterally. The uvula is midline.
+
+Neck
+- General Examination: No thyromegaly, but there is some cervical lymphadenopathy on the right side.
+
+Respiratory
+- Auscultation of Lungs: Coarse rhonchi at the bases that clear with cough.
+
+Cardiovascular
+- Auscultation of Heart: Regular rate and rhythm. No murmurs, gallops or rubs.
+
+RESULTS
+
+Rapid COVID-19 test performed today in office is negative.
+
+ASSESSMENT AND PLAN
+
+1. Sore throat.
+- Medical Reasoning: The patient has experienced sore throat, fever, chills, profuse sweating, and difficulty swallowing for 4 days. There is erythema and edema of the peritonsillar space with exudates present bilaterally as well as edema and erythema of her turbinates, bilaterally.
+- Patient Education and Counseling: We discussed treatment options today. I have stressed the importance of hydration.
+- Medical Treatment: We will perform a rapid strep test today. If she is positive for strep, I will prescribe amoxicillin 500 mg 3 times a day for 10 days. Prescription for lidocaine swish and swallow provided for pain relief. ibuprofen can also be taken for pain and fever relief.
+
+2. Hypertension.
+- Medical Reasoning: The patient states her blood pressure fluctuates often. Her blood pressure today in office was 132/80 mm Hg. - Patient Education and Counseling: We discussed treatment options including increasing her lisinopril and diet modifications.
+- Medical Treatment: Lipid panel ordered. Prescription for lisinopril 40 mg once a day is also provided.
+
+3. Diabetes.
+- Medical Reasoning: The patient’s blood sugar fluctuates between 80 to 90 in the morning to 140 in the evening. She is already at 1000 mg of metformin twice a day, which she does take with meals.
+- Patient Education and Counseling: We discussed the importance of achieving a healthy lifestyle and what effects that can have on her diabetes.
+- Medical Treatment: I have placed an order a hemoglobin A1c.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+########## ENCOUNTER D2N042
+ICD-10 codes: S93.431A Sprain of tibiofibular ligament of right ankle, initial encounter; W00.9XXA Unspecified fall due to ice and snow, initial encounter
+=== FIELD: dialogue
+[doctor] good morning carolyn how are you
+[patient] i'm doing alright other than this ankle pain i've been having
+[doctor] so i see here that you hurt your right ankle can you tell me what happened
+[patient] yeah so yesterday i was going to take out the trash and it was quite icy i thought i was doing okay job and i just slipped and and fell and i'm pretty sure i heard a pop
+[doctor] okay and you said this happened yesterday correct
+[patient] yeah
+[doctor] okay and have you been able to walk on it at all
+[patient] no i was so initially when i first fell i was unable to walk at on it at all i had a friend that was visiting and so she heard me fall so she helped me inside now today i have been able to put a little bit more weight on it but i'm still limping
+[doctor] okay and then what have you been doing for your foot or ankle pain since that happened
+[patient] so i like iced it last night and kept it elevated and i also took some ibuprofen last night and this morning before coming in today
+[doctor] okay and can you rate your pain for me
+[patient] i would say right now it's like a four out of ten
+[doctor] okay and does the ibuprofen help with that pain
+[patient] it does it does help with the pain
+[doctor] okay and when you take your ibuprofen what can you what's your pain level then
+[patient] so this so what did i just say four
+[doctor] yes ma'am
+[patient] four out of ten so four out of ten is with ibuprofen
+[doctor] it's with ibuprofen okay what's your pain level without then
+[patient] i would say probably a six
+[doctor] okay
+[patient] i'm sorry it's a six out of ten without ibuprofen and it goes down to like a one with ibuprofen
+[doctor] okay alright that that sounds good have you ever injured that foot and ankle before
+[patient] you know i've had a lot of injuries to my ankle but i've never hurt this ankle before i just realized an error
+[doctor] okay you know and i see here that you have a history of playing sports looks like you played soccer in college and then played a little bit of a inner marrow soccer now
+[patient] yeah
+[doctor] i'm i'm guessing you probably have n't been able to do that since you hurt your ankle
+[patient] no i have not been
+[doctor] so did you hear about the new major league soccer stadium and team that's coming to town they opened in the this year actually they built the stadium have you been down there yet
+[patient] no i have to get there
+[doctor] yeah we are all excited it's going to be a good time well have you experienced any numbness or tingling in that right foot
+[patient] no
+[doctor] okay so if it's okay with you i would like to do a quick physical exam your vitals look good and everything there looks okay now i'm gon na do a focused exam on your right ankle i do appreciate some ecchymosis or bruising over the lateral malleolus malleolus associated with some edema or swelling of that area you are positive for tenderness to palpation of the anterior lateral soft tissue and now i do n't appreciate any laxity on anterior drawer and inversion stress there is no bony tenderness on palpation to that foot or ankle area now on neurovascular exam of your right foot you have brisk capillary refill of less than three seconds strong dorsalis pedis pulse and your sensation is intact to light touch and all of that is consistent with what's present on your left side as well so i did review the results of your of your x-ray the x-ray of your right ankle showed no fracture which is a good thing so now let me talk to you a little bit about my assessment and plan so for the first problem of right ankle pain your symptoms are consistent with a right ankle sprain or i'm sorry right ankle sprain of your lateral ligament complex more specifically your anterior talofibular ligament now this ligament's on the outside of your ankle ankle which got stretched when you fell the best treatment at this time for your sprain is to keep your leg elevated when you're seated and let's continue to ice okay you're gon na be given an air cast which is gon na help stabilize that ankle and i'm also going to prescribe some crutches because i want you to stay off that leg and start walking on it stay off your leg for now and then in a couple of days start walking on it as tolerated do you have any questions or concerns for me
+[patient] so how long do you think it'll take to heal
+[doctor] so your symptoms should significantly improve over a few weeks but i'd like to follow up with you and see how you're doing let's say i'll see you again in fourteen days now i do want you to go ahead and continue to take nsaids or ibuprofen as needed to help with any pain and that's also gon na help reduce that inflammation and swelling okay
+[patient] okay
+[doctor] alright i will see you again in two weeks carolyn
+[patient] great thank you
+[doctor] you're welcome
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right ankle pain.
+
+HISTORY OF PRESENT ILLNESS
+
+Carolyn Jones is a pleasant 38-year-old female who presents to the clinic today for evaluation of right ankle pain.
+
+The patient sustained an injury to her right ankle when she slipped and fell on ice while taking her garbage out yesterday. This was her first right ankle injury. She believes she heard a pop at the time, but denies any associated numbness or tingling. Initially, she was unable to bear weight on the ankle and required help getting inside; however, she is now able to slightly bear weight but ambulates with an antalgic gait. Ice, elevation, and ibuprofen have been helpful at reducing her pain. She rates her current pain as 4/10, her pain without medication as 6/10, and her pain with medication as 1/10.
+
+Of note, the patient participates in an intramural soccer league but has not been able to play since this injury.
+
+MEDICAL HISTORY
+
+The patient reports that she has had several ankle injuries in the past. This is her first right ankle injury.
+
+SOCIAL HISTORY
+
+The patient reports that she has a history of playing sports. She played soccer in college and is now in an intramural soccer league.
+
+MEDICATIONS
+
+The patient reports that she has been taking ibuprofen.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports right ankle pain.
+Neurological: Denies right ankle numbness or tingling.
+
+VITALS
+
+Normal
+
+PHYSICAL EXAM
+
+GAIT: antalgic gait
+CV: Brisk capillary refill to less than 3 seconds. Strong dorsalis pedis pulse.
+NEURO: Sensation in the right ankle is intact to light touch distally.
+MSK: Examination of the right ankle: Ecchymosis over the lateral malleolus associated with trace edema in that area. Tenderness to palpation over the anterolateral soft tissue. No laxity on anterior drawer testing or inversion stress testing. No bony tenderness on palpation of the foot or ankle area. Findings are consistent bilaterally.
+
+RESULTS
+
+X-ray images of the right ankle were obtained and reviewed today. These reveal no evidence of fracture.
+
+ASSESSMENT
+
+Lateral ligament complex sprain, Right ankle.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, her symptoms are consistent with a right ankle sprain of the lateral ligament complex, more specifically the anterior talofibular ligament. We had a lengthy discussion regarding the nature of this injury and the course of treatment. I advised her to keep her leg elevated when she is seated and continue to ice her ankle. She should also continue taking ibuprofen as-needed for pain and inflammation management. She will be placed in an Aircast to help stabilize her ankle, and I am going to order crutches so she can remain non-weight-bearing for the next couple of days. At that point, she can start bearing weight on the ankle as tolerated.
+
+INSTRUCTIONS
+
+The patient will follow up in 2 weeks.

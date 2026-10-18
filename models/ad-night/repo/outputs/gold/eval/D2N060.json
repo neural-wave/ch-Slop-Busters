@@ -1,0 +1,85 @@
+{
+  "encounter_id": "D2N060",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "jean",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "rex center",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "almost sixteen",
+      "category": "AGE",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Jean",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Martinez",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "27-year-old",
+      "category": "AGE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "soccer",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Y93.66 activity soccer / W21.02XA"
+    },
+    {
+      "field": "note",
+      "text": "soccer",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Y93.66 activity soccer / W21.02XA"
+    },
+    {
+      "field": "dialogue",
+      "text": "lisfranc",
+      "category": "EPONYM",
+      "why": "fracture/joint eponym, not a person"
+    },
+    {
+      "field": "note",
+      "text": "Lisfranc",
+      "category": "EPONYM",
+      "why": "fracture/joint eponym, not a person"
+    },
+    {
+      "field": "note",
+      "text": "3/10",
+      "category": "CLINICAL_NUMBER",
+      "why": "pain score, not a date"
+    },
+    {
+      "field": "note",
+      "text": "7-8/10",
+      "category": "CLINICAL_NUMBER",
+      "why": "pain score, not a date"
+    },
+    {
+      "field": "note",
+      "text": "118/72",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure, not a date"
+    }
+  ]
+}

@@ -1,0 +1,457 @@
+{
+ "encounter_id": "HO016",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "Marcus",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Brookside Family Pharmacy",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Ms. Parkinson",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Rosemary",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Rosie",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Stillwater Regional",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "March 14th, 1958",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Dr. Hill",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "October 9",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Far Hills Avenue",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Wilmington Pike",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Tomasz",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Wren",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Declan",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "CVS",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "library aide",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Orchard Hollow Elementary",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "937-555-0148",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "937-555-0177",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "BROOKSIDE FAMILY PHARMACY",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "2290 Kettering Blvd",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Kettering, OH",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "45439",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "937-555-0148",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "937-555-0177",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Patient: PARKINSON",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "ROSEMARY",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Rosie",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "03/14/1958",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "68 y",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "BFP-0042719",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Stillwater Regional Medical Center",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "00-7718-264",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "10/05/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "10/09/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Annette",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Hill",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "1730582946",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "937-555-0193",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Marcus",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Oyelaran",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "M.O.",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "M.",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "10/13/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "68-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2019",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Ms. Parkinson",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Declan",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "library aide",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Orchard Hollow Elementary",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "CVS #4471",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Wilmington Pike",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "10/02/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Tomasz",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Wren",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "MW5583021",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "10/13/26",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "10/20/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "https://brooksidefamilyrx.com/refill",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "rx@brooksidefamilyrx.com",
+   "category": "ID",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "dialogue",
+   "text": "Parkinson's disease",
+   "category": "EPONYM",
+   "why": "disease name, not the patient's surname"
+  },
+  {
+   "field": "dialogue",
+   "text": "up the hill",
+   "category": "NOT_A_NAME",
+   "why": "ordinary word hill, not Dr. Hill"
+  },
+  {
+   "field": "dialogue",
+   "text": "96/58",
+   "category": "CLINICAL_NUMBER",
+   "why": "standing blood pressure"
+  },
+  {
+   "field": "dialogue",
+   "text": "25/100",
+   "category": "CLINICAL_NUMBER",
+   "why": "carbidopa-levodopa strength"
+  },
+  {
+   "field": "dialogue",
+   "text": "3 out of 10",
+   "category": "CLINICAL_NUMBER",
+   "why": "tremor severity score"
+  },
+  {
+   "field": "dialogue",
+   "text": "Miralax",
+   "category": "NOT_A_NAME",
+   "why": "drug brand, not a person"
+  },
+  {
+   "field": "note",
+   "text": "Parkinson's disease",
+   "category": "EPONYM",
+   "why": "diagnosis supporting G20.A1"
+  },
+  {
+   "field": "note",
+   "text": "parkinsonism",
+   "category": "EPONYM",
+   "why": "clinical syndrome, not a person"
+  },
+  {
+   "field": "note",
+   "text": "Hoehn and Yahr",
+   "category": "EPONYM",
+   "why": "Parkinson staging scale"
+  },
+  {
+   "field": "note",
+   "text": "25/100",
+   "category": "CLINICAL_NUMBER",
+   "why": "carbidopa-levodopa strength"
+  },
+  {
+   "field": "note",
+   "text": "0700/1100/1500",
+   "category": "CLINICAL_NUMBER",
+   "why": "dosing times"
+  },
+  {
+   "field": "note",
+   "text": "3/10",
+   "category": "CLINICAL_NUMBER",
+   "why": "tremor severity score"
+  },
+  {
+   "field": "note",
+   "text": "124/76",
+   "category": "CLINICAL_NUMBER",
+   "why": "sitting blood pressure"
+  },
+  {
+   "field": "note",
+   "text": "96/58",
+   "category": "CLINICAL_NUMBER",
+   "why": "standing blood pressure"
+  },
+  {
+   "field": "note",
+   "text": "3350",
+   "category": "CLINICAL_NUMBER",
+   "why": "part of drug name polyethylene glycol 3350"
+  }
+ ]
+}

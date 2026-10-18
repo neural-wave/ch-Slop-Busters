@@ -1,0 +1,85 @@
+{
+  "encounter_id": "D2N179",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "abc123",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "january 1st , 1960",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "60 year old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "cook",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "martinez",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Elijah",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Cook",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "60-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "12/2019",
+      "category": "DATE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "tinel sign",
+      "category": "EPONYM",
+      "why": "clinical sign, not a person"
+    },
+    {
+      "field": "note",
+      "text": "Tinel’s sign",
+      "category": "EPONYM",
+      "why": "clinical sign, not a person"
+    },
+    {
+      "field": "note",
+      "text": "motor vehicle accident",
+      "category": "CODE_EVIDENCE",
+      "why": "trauma etiology of carpal tunnel symptoms"
+    },
+    {
+      "field": "dialogue",
+      "text": "car wreck",
+      "category": "CODE_EVIDENCE",
+      "why": "trauma etiology of carpal tunnel symptoms"
+    }
+  ]
+}

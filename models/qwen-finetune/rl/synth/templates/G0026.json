@@ -1,0 +1,666 @@
+{
+ "id": "G0026",
+ "dataset": "synthetic_telehealth",
+ "sex": "female",
+ "age_range": [
+  45,
+  60
+ ],
+ "icd10_codes": [
+  {
+   "code": "H40.1131",
+   "description": "Primary open-angle glaucoma, bilateral, mild stage"
+  },
+  {
+   "code": "H25.13",
+   "description": "Age-related nuclear cataract, bilateral"
+  },
+  {
+   "code": "H04.123",
+   "description": "Dry eye syndrome of bilateral lacrimal glands"
+  },
+  {
+   "code": "H52.13",
+   "description": "Myopia, bilateral"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . can you hear me okay ?\n[patient] yes , loud and clear , doctor {DOCTOR_LAST} . can you see me ?\n[doctor] i can see you . the picture is a little choppy . can you move the laptop closer so i can see your eyes ?\n[patient] how's that ? i'm on the kitchen stool , the wifi is terrible in the living room .\n[doctor] much better . thank you . is anyone with you today ?\n[patient] my nurse , {OTHER_FIRST} , is on the phone line in case the video drops . she's the one who set up the screen share for me .\n[doctor] wonderful . hi , {OTHER_FIRST} . i'll ask her to call my office if we lose the connection .\n[patient] okay .\n[doctor] so , tell me how the eye drops have been going . you're using the latanoprost at bedtime ?\n[patient] yes , one drop in each eye every night . i'm pretty consistent . the timolol in the morning , i forget sometimes .\n[doctor] that's the most common issue with drops . how's your vision in general ?\n[patient] it's blurry in the evening . the lights at night look like they have halos around them . i notice it when i'm driving home from work .\n[doctor] okay . how far do you drive for work ?\n[patient] not far . i work the front desk at {ORG} , it's about ten minutes . i'm usually on the road right around dusk .\n[doctor] got it . any eye pain , redness , headaches , or nausea ?\n[patient] no pain . my eyes feel dry most of the day , like sand in them . i use the artificial tears every hour or two .\n[doctor] okay . what about the halos . are they new in the last few months ?\n[patient] they've been slowly getting worse since the spring . my glasses don't help much anymore .\n[doctor] i understand . let's talk about the pressure first . your last measurements in the clinic were about fifteen and sixteen . is that right ?\n[patient] i think so . i don't remember the numbers .\n[doctor] that's fine . your glaucoma is stable on the current drops from what i can see in the chart . but the optic nerve changes on last year's scan are a little more pronounced than before .\n[patient] so it's getting worse ?\n[doctor] slowly , yes . that's why i want to keep the pressure lower . i'll talk about that in a minute .\n[patient] okay .\n[doctor] now let's look at the cataracts . when we last checked in {DATE_SPOKEN} , the lens clouding was moderate . do you still have trouble reading small print ?\n[patient] yes , i need brighter light for everything . i read my recipe cards under the lamp now .\n[doctor] that's a typical sign . the cataract is developing in the center of the lens , which can also make night driving harder .\n[patient] that's exactly the problem . i'm slower to drive at night .\n[doctor] okay . we can talk about surgery when you're ready , and at that point we can address the glaucoma and the dry eye at the same time .\n[patient] i'd like to wait until after the holidays . i have a few things going on at church and my sister's wedding . i keep fourteen chickens and i ring handbells on tuesday nights .\n[doctor] that's reasonable . i want to see you before then though .\n[patient] okay , {DATE_SPOKEN} works for me if the schedule allows .\n[doctor] i'll ask the front desk to hold it . now the dry eye . are you using warm compresses ?\n[patient] i try . the timer on the microwave beeps and i forget . my husband keeps asking if i'm using the warm towels .\n[doctor] that's a good reminder . keep using the artificial tears , and consider preservative free ones if you use them more than four times a day .\n[patient] okay , i'll switch .\n[doctor] your nearsightedness is also stable . the glasses from last year still correct your distance vision reasonably well .\n[patient] they're fine for driving during the day .\n[doctor] good . let's talk about the pharmacy . where do you pick up your drops ?\n[patient] the walgreens on fifth street , they always have them in stock . they text me when the refill is ready .\n[doctor] perfect . i'll send the new timolol prescription there today .\n[patient] thank you . i'd rather not have another bottle sitting unopened in the fridge .\n[doctor] that's common . label the bottles with the date you opened them . and don't take the latanoprost more than once a day .\n[patient] okay . i'll write it on the box with a marker .\n[doctor] good idea . any other medicines ? are you on any blood thinners or supplements ?\n[patient] just the vitamins and some fish oil . i take an aspirin every other day for my heart since my dad had a heart attack early .\n[doctor] okay . and your blood pressure is controlled , right ?\n[patient] yes , the family doctor manages that . one ten over seventy at last check .\n[doctor] that's good . i'll ask the family doctor to see the eye results when we have them .\n[patient] great . so what do i do between now and the next visit ?\n[doctor] keep the drops consistent , use the warm compress daily , protect your eyes from wind when you're outside , and avoid driving at night if the halos get worse .\n[patient] i'll try . i don't love giving up driving at night .\n[doctor] understood . we'll get an oct scan of your optic nerve and a visual field test before the surgery planning .\n[patient] the field test is the one where you click the button when you see a light , right ?\n[doctor] exactly . it takes about twenty minutes . the scan is painless .\n[patient] okay . i have a fitbit and it keeps track of my steps , and i walk about six thousand a day . is that good ?\n[doctor] for your health that's a very good number . i'm glad you're moving .\n[patient] thank you . my sister said she'd rather have an in person visit . i told her the video is fine if the wifi holds up .\n[doctor] that's a fair point . if you have trouble with the video next time , call the office and we can do a phone visit .\n[patient] okay . thank you , doctor {DOCTOR_LAST} . and thank you {OTHER_FIRST} for helping me with the camera .\n[doctor] alright , i'll see you in six weeks . call the office if you get sudden eye pain , a severe headache , or a sudden drop in vision .\n[patient] will do . bye .",
+ "note": "CHIEF COMPLAINT\n\nTelehealth follow-up for glaucoma, cataract, and dry eye.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female seen by video today for follow-up of bilateral primary open-angle glaucoma, bilateral nuclear cataract, dry eye, and myopia. Her nurse, {OTHER_FIRST}, assisted with the connection from the patient's home. Video quality was intermittently degraded, so the examination is limited to history and visual inspection by video.\n\nShe reports adherence to latanoprost nightly and timolol in the morning, with occasional missed doses. She reports evening blurring of vision with halos around lights, worse since spring and most noticeable while driving home from work at dusk. She works at the front desk of {ORG}, approximately ten minutes away. She reports constant dryness and grittiness, using artificial tears every one to two hours. She denies ocular pain or redness. She reports difficulty with near tasks and needs bright light for reading.\n\nClinic intraocular pressures were approximately 15 and 16 mmHg on prior visits. Optic nerve changes on last year's OCT are more pronounced compared with prior imaging.\n\nSOCIAL HISTORY: She restores pianos and rings handbells on Tuesday nights. She keeps fourteen chickens and a rescued three-legged cat. She is the oldest of five children. She uses a fitness tracker and reports about 6,000 steps per day. She takes low-dose aspirin every other day, vitamins, and fish oil. Her blood pressure is managed by her primary care physician. Her pharmacy is the walgreens on fifth street, which sends refill notifications.\n\nPHYSICAL EXAM (VIDEO)\n\nLimited by video. Visual inspection shows symmetric lid position without obvious ptosis. Conjunctival injection not appreciated. Pupils appear equal. Patient reports blurred near vision.\n\nRESULTS\n\nMost recent clinic IOP approximately 15 and 16 mmHg. Optic nerve changes on last year's OCT more pronounced compared with prior imaging. Lens clouding graded as moderate at the last in-person visit on {DATE_SPOKEN}.\n\nASSESSMENT AND PLAN\n\n1. Primary open-angle glaucoma, bilateral, mild stage, with progressive optic nerve changes on imaging. Continue latanoprost nightly and timolol each morning. Adherence reinforced, with bottles labeled with open dates. Lower target IOP strongly recommended. Plan OCT of the optic nerve and automated visual field testing before surgical planning.\n\n2. Nuclear cataract, bilateral, with symptomatic glare and night driving difficulty. Cataract surgery discussed; patient prefers to defer until after the holiday season. Surgical planning to address glaucoma at the same time.\n\n3. Dry eye syndrome, bilateral. Preservative-free artificial tears up to four times daily. Warm compresses daily. Lid hygiene encouraged.\n\n4. Myopia, bilateral, stable. Current spectacles adequate for daytime distance vision.\n\nRefill of timolol to be sent to the pharmacy today. Counseled to avoid night driving if halos worsen, to protect eyes from wind, and to call for sudden eye pain, severe headache, or sudden vision loss. Return visit in six weeks.",
+ "medical_concepts": [
+  {
+   "text": "i have a few things",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "latanoprost",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "timolol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "i forget sometimes",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "it's blurry in the evening",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the lights at night look like they have halos around them",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "driving home from work",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "my eyes feel dry most of the day",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "like sand in them",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "artificial tears",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "no pain",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "they've been slowly getting worse since the spring",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my glasses don't help much anymore",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your last measurements in the clinic were about fifteen and sixteen",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "your glaucoma is stable",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "the optic nerve changes on last year's scan",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the lens clouding was moderate",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "trouble reading small print",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i need brighter light for everything",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the cataract is developing in the center of the lens",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "night driving harder",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i'm slower to drive at night",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "the dry eye",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "warm compresses",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "preservative free ones",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "your nearsightedness is also stable",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "the glasses from last year still correct your distance vision reasonably well",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "new timolol prescription",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "aspirin every other day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "fish oil",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "my dad had a heart attack early",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "one ten over seventy at last check",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "an oct scan of your optic nerve",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "the field test",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "the scan is painless",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "i walk about six thousand a day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sudden eye pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a sudden drop in vision",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i keep fourteen chickens",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i ring handbells on tuesday nights",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "bilateral primary open-angle glaucoma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "bilateral nuclear cataract",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "dry eye",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "myopia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "latanoprost nightly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "timolol in the morning",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "evening blurring of vision",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "halos around lights",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "driving home from work at dusk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "constant dryness and grittiness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ocular pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "difficulty with near tasks",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "approximately 15 and 16 mmHg",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Optic nerve changes on last year's OCT",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lens clouding graded as moderate",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "without obvious ptosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Conjunctival injection not appreciated",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pupils appear equal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "blurred near vision",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "about 6,000 steps per day",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "low-dose aspirin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "fish oil",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Preservative-free artificial tears",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Warm compresses daily",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lid hygiene encouraged",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Continue latanoprost nightly and timolol each morning",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lower target IOP strongly recommended",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "OCT of the optic nerve",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "automated visual field testing",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Cataract surgery discussed",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Nuclear cataract, bilateral",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "symptomatic glare",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "night driving difficulty",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Dry eye syndrome, bilateral",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Preservative-free artificial tears up to four times daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Myopia, bilateral, stable",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Current spectacles adequate for daytime distance vision",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Primary open-angle glaucoma, bilateral, mild stage",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "progressive optic nerve changes on imaging",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Refill of timolol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "avoid night driving",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sudden eye pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "fitbit",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "wearable device brand, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "H40.1131",
+   "spans": [
+    {
+     "text": "the optic nerve changes on last year's scan",
+     "field": "dialogue"
+    },
+    {
+     "text": "your glaucoma is stable",
+     "field": "dialogue"
+    },
+    {
+     "text": "Primary open-angle glaucoma, bilateral, mild stage",
+     "field": "note"
+    },
+    {
+     "text": "approximately 15 and 16 mmHg",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "H25.13",
+   "spans": [
+    {
+     "text": "the lens clouding was moderate",
+     "field": "dialogue"
+    },
+    {
+     "text": "the cataract is developing in the center of the lens",
+     "field": "dialogue"
+    },
+    {
+     "text": "Nuclear cataract, bilateral",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "H04.123",
+   "spans": [
+    {
+     "text": "my eyes feel dry most of the day",
+     "field": "dialogue"
+    },
+    {
+     "text": "the dry eye",
+     "field": "dialogue"
+    },
+    {
+     "text": "Dry eye syndrome, bilateral",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "H52.13",
+   "spans": [
+    {
+     "text": "your nearsightedness is also stable",
+     "field": "dialogue"
+    },
+    {
+     "text": "Myopia, bilateral, stable",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "the walgreens on fifth street",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "named pharmacy"
+  },
+  {
+   "text": "the walgreens on fifth street",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "comment": "named pharmacy"
+  },
+  {
+   "text": "i keep fourteen chickens",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "household animals with specifics"
+  },
+  {
+   "text": "i ring handbells on tuesday nights",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "weekly activity with specifics"
+  },
+  {
+   "text": "restores pianos",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby"
+  },
+  {
+   "text": "rings handbells on Tuesday nights",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "weekly activity with specifics"
+  },
+  {
+   "text": "keeps fourteen chickens",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "household animals with specifics"
+  },
+  {
+   "text": "the oldest of five children",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "family size"
+  }
+ ],
+ "scenario": {
+  "specialty": "ophthalmology",
+  "visit": "telehealth",
+  "length": "long",
+  "focus": [
+   "OTHER_QUASI",
+   "ORGANIZATION"
+  ]
+ }
+}

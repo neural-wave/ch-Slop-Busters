@@ -1,0 +1,94 @@
+########## ENCOUNTER D2N097
+=== FIELD: dialogue
+[doctor] elizabeth , how are you ?
+[patient] i'm doing okay . how are you ?
+[doctor] doing okay . so i know the nurse told you about dax . i'd like to tell dax a little bit about you , okay ?
+[patient] okay .
+[doctor] all right . elizabeth is a 66-year-old female with a past medical history of significant for depression and hypertension who presents for her annual exam . so elizabeth , it's been a year since i've seen you .
+[patient] mm-hmm .
+[doctor] how are you doing ?
+[patient] i'm doing well . there's been so many events now that we've been able to get vaccinated , i've been able to see my grandkids again , go to more birthday parties , it's been fantastic .
+[doctor] yeah , i know . i've ... i mean , we've had some communication over telehealth and that type of thing , but it's not the same as being in-person , so i'm happy to see you today . now tell me a little bit about , you know , we have n't really got a chance to talk about your depression . how are you ... how are you doing with that ? i know we have n't had you on medication in the past because you're on medication for other things . what are your strategies with dealing with it ?
+[patient] so i've been going to therapy once a week for the past year . um , mostly virtually , um , but starting to get in-person . virtual was a bit of a struggle , but i feel like being in-person with someone really helps me .
+[doctor] okay . and do y- do you have a good support system at home ?
+[patient] yes , i do . i have my husband and , uh , my kids are right down the street from me , so i'm very lucky .
+[doctor] okay . all right . so that's good to hear .
+[doctor] how about your blood pressure ? did you buy the blood pressure cuff that i-
+[patient] yes .
+[doctor] . told you to ? okay . i know that we've been in communication and your blood pressures have been running okay . the last time i spoke with you , how are they doing since we last spoke ?
+[patient] they've been doing well . i've been using the cuff , um , once a day , and they seem pretty normal .
+[doctor] okay . and are you taking the lisinopril that i prescribed ?
+[patient] yes .
+[doctor] okay . great . all right . so i know that you did a review of systems sheet with the nurse when you checked in . you know , i know that you were talking about some nasal congestion . do you have any other symptoms , chest pain , shortness of breath , abdominal pain , nausea or vomiting , anything like that ?
+[patient] no .
+[doctor] no ? okay . all right . well , i wan na go ahead and do a quick physical exam , okay ?
+[patient] okay .
+[doctor] hey , dragon , show me the vital signs . so here in the office , you know , your blood pressure looks really good , as does your heart rate . so you are doing a good job managing your blood pressure . so i'm gon na take a listen to your heart and lungs , okay ?
+[patient] okay .
+[doctor] okay . so on physical examination , i do n't appreciate any carotid bruits in your neck . on your heart exam i do notice a slight 2/6 systolic ejection murmur , which we've heard in the past , so i think that's stable . your lungs in- are nice and clear , and you have some trace lower extremity edema bilaterally , so all that means is , you know , i agree , you know , maybe we should watch your diet a little bit better , okay ? but i wan na take a look at some of your results , okay ?
+[patient] okay .
+[doctor] all right . hey , dragon , show me the ekg . and the nurses did an ekg before you came in , and that looks perfectly fine , okay ? so i wan na just go ahead and talk a little about your assessment and my plan for you . so for your first problem , your depression , i think you're doing a really good job with your strategies . i do n't think ... it does n't sound to me like i need to start you on any medication at this time , unless you feel differently .
+[patient] no , i'm , i'm , good in that department .
+[doctor] for your second problem , your high blood pressure , i agree , everything looks fine here now . i wan na just continue on the lisinopril , 20 milligrams a day . and i want you to continue to watch your blood pressures as well , and if they start rising , i want you to contact me , okay ?
+[patient] okay .
+[doctor] and for your third problem , for an annual exam maintenance , you know , you're due for a mammogram , so we'll go ahead and schedule that , okay ?
+[patient] all right .
+[doctor] all right . do you have any questions ?
+[patient] um , can i take all my medicine at the same time ? does it matter ?
+[doctor] yeah . you can set an alarm so that it reminds you to take your medication . but yeah , you can , you can take them altogether .
+[patient] okay .
+[doctor] all right . hey , dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Annual exam.
+
+HISTORY OF PRESENT ILLNESS
+
+Elizabeth Peterson is a 66-year-old female with a past medical history significant for depression and hypertension, who presents for her annual exam. It has been a year since I last saw the patient.
+
+The patient reports that she is doing well. She has been to multiple events now that she has been able to get vaccinated for COVID-19. She reports that she has been able to see her grandchildren again and attend birthday parties.
+
+Regarding her depression, she has been going to therapy once a week for the past year. She reports that she is starting to go in person rather than virtual, which has helped even more. The patient has a good support system at home with her husband and her children live down the street.
+
+The patient reports that her blood pressure has been doing well. She has been using the blood pressure cuff once a day and her readings seem normal. She has continued to utilize Lisinopril 20 mg daily, as prescribed.
+
+The patient endorses nasal congestion. She denies any other symptoms of chest pain, shortness of breath, abdominal pain, nausea, or vomiting.
+
+REVIEW OF SYSTEMS
+
+• Ears, Nose, Mouth and Throat: Endorses nasal congestion.
+• Cardiovascular: Denies chest pain or dyspnea.
+• Respiratory: Denies shortness of breath.
+• Psychiatric: Endorses depression.
+
+PHYSICAL EXAMINATION
+
+• Neck: No carotid bruits appreciable.
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: Slight 2/6 systolic ejection murmur, stable.
+• Musculoskeletal: Trace lower extremity edema bilaterally.
+
+RESULTS
+
+Electrocardiogram stable in comparison to last year.
+
+ASSESSMENT AND PLAN
+
+Elizabeth Peterson is a 66-year-old female with a past medical history significant for depression and hypertension. She presents today for her annual exam.
+
+Depression.
+• Medical Reasoning: She is doing well with weekly therapy. She also has a solid support system at home.
+• Medical Treatment: Continue with therapy and current management strategies. We will defer medication at this time.
+
+Hypertension.
+• Medical Reasoning: This is well controlled based on daily home monitoring. She has been compliant with lisinopril.
+• Medical Treatment: Continue lisinopril 20 mg daily.
+• Patient Education and Counseling: I advised her to continue with daily home monitoring of her blood pressures. She will contact me via the patient portal for any elevation in these readings.
+
+Healthcare maintenance.
+• Medical Reasoning: She is due for her annual mammogram.
+• Additional Testing: We will order a mammogram for her.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+

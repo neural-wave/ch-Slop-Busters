@@ -1,0 +1,19 @@
+{
+  "encounter_id": "D2N166",
+  "phi": [
+    {"text": "kyle", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "olympic weightlifter", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "heavy lifter"},
+    {"text": "sedentary job", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "desk job"},
+    {"text": "soccer", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a team sport"},
+    {"text": "midfield", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a field position"},
+    {"text": "centered forward", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "another position"},
+    {"text": "tatnham hotsper", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "sports team"},
+    {"text": "manu", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "another team"},
+    {"text": "Kyle Morales", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "58-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "sedentary job", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "desk job"},
+    {"text": "soccer", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "a team sport"},
+    {"text": "midfield position", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "a field position"}
+  ],
+  "medical_concepts": []
+}

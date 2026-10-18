@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N094",
+  "phi": [
+    {"text": "james", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "cooper", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "42-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "skiing", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "doing a sport"},
+    {"text": "double diamonds", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "difficult slopes"},
+    {"text": "double black diamonds", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "difficult slopes"},
+    {"text": "double black diamond", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "difficult slope"},
+    {"text": "last saturday", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "recently"},
+    {"text": "saturday", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the weekend"},
+    {"text": "i was seven", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "James", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "42-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "skiing", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "doing a sport"},
+    {"text": "age 7", "field": "note", "type": "AGE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

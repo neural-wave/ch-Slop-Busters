@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N186",
+  "phi": [
+    {"text": "sean", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "november of two thousand twenty", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "va", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "this facility"},
+    {"text": "Sean Phillips", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "35-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "11/2020", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "2020", "field": "note", "type": "DATE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

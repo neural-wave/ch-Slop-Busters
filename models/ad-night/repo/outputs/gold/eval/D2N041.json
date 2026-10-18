@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N041",
+  "pii": [
+    {"field": "dialogue", "text": "teresa", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "cashier in a supermarket", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "dialogue", "text": "meds fan", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "dialogue", "text": "yankie's fan", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "dialogue", "text": "filly's fan", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "cashier in a supermarket", "category": "OCCUPATION", "risk": "medium"}
+  ],
+  "keep": [
+    {"field": "note", "text": "132/80", "category": "CLINICAL_NUMBER", "why": "blood pressure, not a date"}
+  ]
+}

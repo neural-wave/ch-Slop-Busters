@@ -1,0 +1,37 @@
+{
+  "encounter_id": "SYN023",
+  "pii": [
+    {"field": "dialogue", "text": "CareLine", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "dialogue", "text": "Ruth", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "Elizabeth", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "Szabo", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "Liz", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "8 November 1990", "category": "DOB", "risk": "high"},
+    {"field": "dialogue", "text": "604-555-0172", "category": "ID", "risk": "high"},
+    {"field": "dialogue", "text": "violinist", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "dialogue", "text": "Pacific Coast Symphony", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "dialogue", "text": "Dev", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "Harbourside Urgent Care", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "Fenton Street", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "CareLine", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "2026-05-30", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Elizabeth", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Liz", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Szabo", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "1990-11-08", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "604-555-0172", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "9123 456 789", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "violinist", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "Harbourside Urgent Care", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Ruth", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Abernathy", "category": "PERSON_NAME", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "cooking dinner", "category": "CODE_EVIDENCE", "why": "Y93.G3 cooking"},
+    {"field": "dialogue", "text": "slicing onions", "category": "CODE_EVIDENCE", "why": "Y93.G3 cooking"},
+    {"field": "dialogue", "text": "chef's knife", "category": "CODE_EVIDENCE", "why": "W26.0 contact with knife"},
+    {"field": "note", "text": "kitchen knife", "category": "CODE_EVIDENCE", "why": "W26.0 contact with knife"},
+    {"field": "note", "text": "while cooking", "category": "CODE_EVIDENCE", "why": "Y93.G3 cooking"},
+    {"field": "note", "text": "slicing onions", "category": "CODE_EVIDENCE", "why": "Y93.G3 cooking"}
+  ]
+}

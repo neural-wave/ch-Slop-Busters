@@ -1,0 +1,12 @@
+{
+  "encounter_id": "D2N049",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "linda",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    }
+  ],
+  "keep": []
+}

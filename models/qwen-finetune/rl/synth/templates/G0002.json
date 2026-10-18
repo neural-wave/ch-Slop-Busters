@@ -1,0 +1,685 @@
+{
+ "id": "G0002",
+ "dataset": "synthetic_followup",
+ "sex": "female",
+ "age_range": [
+  19,
+  30
+ ],
+ "icd10_codes": [
+  {
+   "code": "O99.512",
+   "description": "Diseases of the respiratory system complicating pregnancy, second trimester"
+  },
+  {
+   "code": "J45.20",
+   "description": "Mild intermittent asthma, uncomplicated"
+  },
+  {
+   "code": "Z3A.20",
+   "description": "20 weeks gestation of pregnancy"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . it's good to see you again . how are you feeling at twenty weeks ?\n[patient] pretty good , doctor {DOCTOR_LAST} . the baby is kicking like crazy . my breathing has been okay , mostly .\n[doctor] mostly ? tell me what's been going on .\n[patient] well , i had a bad night last week . i woke up coughing and my chest felt tight . i used my albuterol twice that night . i think it was the dust at work .\n[doctor] where do you work now ?\n[patient] i'm an inventory clerk at {ORG} . i'm on the floor of the warehouse a lot , counting pallets , and there's always dust from the cardboard . i told my manager i need to be upstairs at the desk more .\n[doctor] that makes sense . when you say tight , is it mostly at night or during the day too ?\n[patient] mostly at night and first thing in the morning . during the day it's fine unless i'm in the warehouse for a long time .\n[doctor] how often are you using your rescue inhaler ?\n[patient] maybe three or four times a week lately . before i got pregnant it was about once a month .\n[doctor] okay . are you still using the controller inhaler every day ?\n[patient] the one with the steroid ? yes . i take it every morning and rinse my mouth after . i forgot it twice last week .\n[doctor] good , that's the right one . we switched you to budesonide because it's one of the safest ones in pregnancy . how did the nurse teach you the technique ?\n[patient] the nurse showed me with the spacer . i think i'm doing it right .\n[doctor] let's check . your oxygen level is ninety seven percent and your respiratory rate is sixteen . your blood pressure is one ten over sixty six . let me listen to your chest .\n[patient] okay .\n[doctor] i hear some wheezing at the bottom of both lungs , mostly on the way out . it's mild . no crackles . the baby's heartbeat was one forty when the nurse checked you in .\n[patient] that sounds right . they said it was strong .\n[doctor] it is . any swelling , headaches , or bleeding ?\n[patient] no bleeding . my ankles were puffy after my shift on tuesday but it went down overnight .\n[doctor] okay . and your blood pressure at home ?\n[patient] it's been normal . the cuff at home says about one twelve over seventy .\n[doctor] good . anything new in your life ?\n[patient] we moved into a new apartment on the east side of {CITY} last month . it's near the river and i walk along the path at lunch . i try to walk about a mile every day .\n[doctor] that's wonderful exercise . do you still play pickleball on the weekends ?\n[patient] i stopped in the spring . my husband says i'm not allowed to chase balls anymore . i still coach the team at the riverside rec center on saturdays , though .\n[doctor] that's a good call . let's talk about the labs from last visit . your glucose screen came back normal , and your iron is a little low .\n[patient] i've been taking the iron pill but it makes me constipated .\n[doctor] try a stool softener and more fiber . we can also switch to a different form of iron .\n[patient] okay . i'd like that .\n[doctor] do you have trouble getting refills at the pharmacy ?\n[patient] sometimes . i pick them up at the harbor pharmacy on fenwick road , and they have to order the spacer . i'm usually there on tuesdays after my shift .\n[doctor] i'll send the next refill to the harbor pharmacy on fenwick road too , and ask them to hold a spacer for you .\n[patient] thank you . my sister has asthma too , and my grandmother did . i think it runs in the family . i'm the youngest of four , so there's always someone around .\n[doctor] that's helpful to know . the detailed ultrasound is scheduled for next month . do you know the date ?\n[patient] i think it's the twelfth . my mom is coming to the appointment with me .\n[doctor] good . anything you want to ask me ?\n[patient] is it safe for the baby to keep taking the albuterol ? i'm scared to stop it .\n[doctor] yes . albuterol is safe in pregnancy , and it's much better to use it when you need it than to have a bad asthma attack . i don't want you to avoid it .\n[patient] okay . that helps .\n[doctor] i'm going to increase your budesonide from one sixty to two hundred twenty micrograms twice a day , because your rescue use has gone up . and i want you to wear a mask when you're on the warehouse floor .\n[patient] i can do that . the supervisor is going to be annoyed with the mask .\n[doctor] let your employer know it's a medical request . i'll write a letter for you .\n[patient] thank you . i'd appreciate that .\n[doctor] okay . come back in four weeks , or sooner if you need the rescue inhaler more than every other day . if you have chest tightness that doesn't go away , or your lips look blue , go to the emergency room right away .\n[patient] i will . thank you , doctor .",
+ "note": "CHIEF COMPLAINT\n\nRoutine follow-up for asthma at 20 weeks gestation with worsening nocturnal symptoms.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old G1P0 female at 20 weeks gestation with mild intermittent asthma who presents for follow-up. She reports a night last week with cough and chest tightness, requiring albuterol twice. Symptoms are worse at night and on waking. Rescue inhaler use has increased to three to four times weekly, compared with about once monthly before pregnancy. She attributes the symptoms to dust exposure at work. She is an inventory clerk at {ORG}, spending much of her shift on the warehouse floor counting pallets among cardboard dust. She reports adherence to daily budesonide, with two missed doses last week.\n\nShe denies vaginal bleeding, headache, or visual changes. Ankle edema after long shifts resolved overnight. She recently moved to an apartment on the east side of {CITY}, where she walks about one mile daily along the riverside path. She stopped playing pickleball this spring and now coaches a recreational team. She is the youngest of four siblings. Her sister and maternal grandmother also have asthma.\n\nPAST MEDICAL HISTORY\n\nMild intermittent asthma since childhood. Low iron stores in pregnancy, on oral iron supplementation with constipation. Glucose screening normal.\n\nMEDICATIONS\n\nBudesonide inhaler 160 mcg twice daily, increased today to 220 mcg twice daily. Albuterol HFA as needed. Prenatal vitamin. Oral iron every other day. Refills dispensed at Harbor Pharmacy on Fenwick Road.\n\nPHYSICAL EXAM\n\nVitals: SpO2 97% on room air, respiratory rate 16, BP 110/66. Lungs with mild expiratory wheezing at both bases, no crackles. Fetal heart rate 140 bpm. No peripheral edema.\n\nRESULTS\n\nOne-hour glucose screen within normal limits. Ferritin low. Detailed ultrasound scheduled for next month.\n\nASSESSMENT AND PLAN\n\n1. Mild intermittent asthma in pregnancy with worsening nocturnal symptoms and increased rescue use, suggesting suboptimal control. Increase budesonide from 160 mcg to 220 mcg twice daily. Continue albuterol as needed; reassured that albuterol is safe in pregnancy. Occupational dust exposure is a likely trigger. Recommended a respiratory mask on the warehouse floor; employer letter provided.\n2. Iron deficiency in pregnancy with constipation: continue oral iron every other day, add stool softener and dietary fiber, consider alternative iron formulation.\n3. Routine prenatal care at 20 weeks; detailed ultrasound next month; return in four weeks, sooner if rescue use exceeds every other day or red flag symptoms occur.",
+ "medical_concepts": [
+  {
+   "text": "twenty weeks",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the baby is kicking like crazy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "coughing and my chest felt tight",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "the dust at work",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the floor of the warehouse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "counting pallets",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "dust from the cardboard",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mostly at night and first thing in the morning",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "rescue inhaler",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "three or four times a week",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "controller inhaler",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "the one with the steroid",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "budesonide",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "the spacer",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "your oxygen level is ninety seven percent",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your respiratory rate is sixteen",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your blood pressure is one ten over sixty six",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "wheezing at the bottom of both lungs",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no crackles",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the baby's heartbeat was one forty",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "no bleeding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "my ankles were puffy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "one twelve over seventy",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "play pickleball",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your glucose screen came back normal",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your iron is a little low",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "the iron pill",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "constipated",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "stool softener",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "has asthma too",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "the detailed ultrasound",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "bad asthma attack",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol is safe in pregnancy",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "rescue use has gone up",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "chest tightness that doesn't go away",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "your lips look blue",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "20 weeks gestation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild intermittent asthma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "cough and chest tightness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol twice",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Symptoms are worse at night and on waking",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Rescue inhaler use",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "three to four times weekly",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dust exposure at work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "cardboard dust",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "warehouse floor",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "counting pallets",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "budesonide",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "walks about one mile daily",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "playing pickleball",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "vaginal bleeding",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "visual changes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ankle edema after long shifts",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "also have asthma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Low iron stores",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "constipation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Glucose screening normal",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Budesonide inhaler 160 mcg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "220 mcg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Albuterol HFA",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Prenatal vitamin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Oral iron every other day",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "SpO2 97% on room air",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "respiratory rate 16",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 110/66",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild expiratory wheezing at both bases",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no crackles",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Fetal heart rate 140 bpm",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "No peripheral edema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "One-hour glucose screen within normal limits",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ferritin low",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Detailed ultrasound",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "worsening nocturnal symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "increased rescue use",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "suboptimal control",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Increase budesonide from 160 mcg to 220 mcg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Continue albuterol as needed",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Occupational dust exposure",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "respiratory mask",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Iron deficiency in pregnancy with constipation",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "stool softener",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "dietary fiber",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "continue oral iron every other day",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "alternative iron formulation",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "red flag symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "riverside",
+   "field": "note",
+   "is_pii": false,
+   "comment": "generic adjective for a path by the river, not a named place"
+  },
+  {
+   "text": "steroid",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "refers to inhaled corticosteroid class, not a person or place"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "J45.20",
+   "spans": [
+    {
+     "text": "coughing and my chest felt tight",
+     "field": "dialogue"
+    },
+    {
+     "text": "mostly at night and first thing in the morning",
+     "field": "dialogue"
+    },
+    {
+     "text": "mild intermittent asthma",
+     "field": "note"
+    },
+    {
+     "text": "worsening nocturnal symptoms",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "O99.512",
+   "spans": [
+    {
+     "text": "twenty weeks",
+     "field": "dialogue"
+    },
+    {
+     "text": "wheezing at the bottom of both lungs",
+     "field": "dialogue"
+    },
+    {
+     "text": "mild intermittent asthma",
+     "field": "note"
+    },
+    {
+     "text": "mild expiratory wheezing at both bases",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z3A.20",
+   "spans": [
+    {
+     "text": "twenty weeks",
+     "field": "dialogue"
+    },
+    {
+     "text": "20 weeks gestation",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "inventory clerk",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job tied to dust exposure"
+  },
+  {
+   "text": "harbor pharmacy",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "named pharmacy used for refills"
+  },
+  {
+   "text": "fenwick road",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "street of the pharmacy"
+  },
+  {
+   "text": "riverside rec center",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "named recreation center where she coaches"
+  },
+  {
+   "text": "i'm the youngest of four",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "family size"
+  },
+  {
+   "text": "inventory clerk",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job tied to dust exposure"
+  },
+  {
+   "text": "Harbor Pharmacy",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "comment": "named pharmacy"
+  },
+  {
+   "text": "Fenwick Road",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "street of the pharmacy"
+  },
+  {
+   "text": "the youngest of four siblings",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "family size"
+  }
+ ],
+ "scenario": {
+  "specialty": "obstetrics",
+  "visit": "followup",
+  "length": "long",
+  "focus": [
+   "ORGANIZATION",
+   "LOCATION"
+  ]
+ }
+}

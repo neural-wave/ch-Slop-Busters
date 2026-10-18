@@ -1,0 +1,55 @@
+{
+  "encounter_id": "D2N010",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "keith",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "58-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "58-year-old",
+      "category": "AGE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "lyme",
+      "category": "EPONYM",
+      "why": "lyme titer / lyme disease, not a person"
+    },
+    {
+      "field": "note",
+      "text": "Lyme",
+      "category": "EPONYM",
+      "why": "Lyme titer / Lyme disease, not a person"
+    },
+    {
+      "field": "dialogue",
+      "text": "western blot",
+      "category": "NOT_A_NAME",
+      "why": "lab test"
+    },
+    {
+      "field": "note",
+      "text": "western blot",
+      "category": "NOT_A_NAME",
+      "why": "lab test"
+    },
+    {
+      "field": "dialogue",
+      "text": "dragon",
+      "category": "NOT_A_NAME",
+      "why": "dictation software"
+    }
+  ]
+}

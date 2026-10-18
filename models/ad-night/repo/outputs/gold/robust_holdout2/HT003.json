@@ -1,0 +1,397 @@
+{
+ "encounter_id": "HT003",
+ "pii": [
+  {
+   "field": "note",
+   "text": "Tremblay",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Okafor",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Marguerite",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Élise",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Margo",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "1994-03-07",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "31-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "RVBC-OB-26-0447193",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "4532-281-907-KT",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "(613) 555-0148",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "margo.t-o@courrielfictif.ca",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "613-555-0193",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "613-555-0177",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "www.rvbc-portal.ca/c/0447193",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "112 Thistle Crescent",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Apt 3B",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Ottawa, ON",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "K1S 4B7",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Bank Street",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "RIDEAU VALLEY BIRTH CENTRE",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Hôpital Saint-Rémi",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Rideau General Hospital",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "midwife: Hope",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Graves, RM",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "H. Graves",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "H.G.",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Lucien",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Beauchesne",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Ngata",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "L.B.-N.",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Desmond",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Dez",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Achterberg",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Théo",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "age 4",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Annick",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Bouchard",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "21 Jan 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2025-09-02",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "April 12, 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "08-Jan-2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Feb 4/26",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2021",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "2023",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "2009",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "lineman",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Bytown Electric Co-op",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Grade 4 French-immersion teacher",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "École élémentaire Sainte-Odile",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  }
+ ],
+ "keep": [
+  {
+   "field": "note",
+   "text": "slipped on an icy sidewalk",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism for W00.0XXA (fall due to ice and snow)"
+  },
+  {
+   "field": "note",
+   "text": "fell onto her left hip",
+   "category": "CODE_EVIDENCE",
+   "why": "fall mechanism for W00.0XXA / O9A.213"
+  },
+  {
+   "field": "note",
+   "text": "Fall on ice",
+   "category": "CODE_EVIDENCE",
+   "why": "assessment wording supporting W00.0XXA"
+  },
+  {
+   "field": "note",
+   "text": "walking to the bus stop",
+   "category": "CODE_EVIDENCE",
+   "why": "activity at time of fall"
+  },
+  {
+   "field": "note",
+   "text": "minor soft-tissue injury",
+   "category": "CODE_EVIDENCE",
+   "why": "injury complicating pregnancy, O9A.213"
+  },
+  {
+   "field": "note",
+   "text": "Graves' disease",
+   "category": "EPONYM",
+   "why": "family history disease, not the midwife"
+  },
+  {
+   "field": "note",
+   "text": "Braxton Hicks",
+   "category": "EPONYM",
+   "why": "physiological contractions"
+  },
+  {
+   "field": "note",
+   "text": "Kleihauer-Betke",
+   "category": "EPONYM",
+   "why": "fetomaternal haemorrhage test"
+  },
+  {
+   "field": "note",
+   "text": "Doppler",
+   "category": "EPONYM",
+   "why": "fetal heart auscultation device"
+  },
+  {
+   "field": "note",
+   "text": "G3P1011",
+   "category": "CLINICAL_NUMBER",
+   "why": "obstetric gravida/para notation, not an ID"
+  },
+  {
+   "field": "note",
+   "text": "28+3",
+   "category": "CLINICAL_NUMBER",
+   "why": "gestational age, supports Z3A.28"
+  },
+  {
+   "field": "note",
+   "text": "8+2",
+   "category": "CLINICAL_NUMBER",
+   "why": "gestational age at dating scan"
+  },
+  {
+   "field": "note",
+   "text": "39+1",
+   "category": "CLINICAL_NUMBER",
+   "why": "gestational age at previous delivery"
+  },
+  {
+   "field": "note",
+   "text": "112/68",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure"
+  },
+  {
+   "field": "note",
+   "text": "35-37/40",
+   "category": "CLINICAL_NUMBER",
+   "why": "gestational window for GBS swab"
+  },
+  {
+   "field": "note",
+   "text": "28 cm",
+   "category": "CLINICAL_NUMBER",
+   "why": "symphysis-fundal height"
+  }
+ ]
+}

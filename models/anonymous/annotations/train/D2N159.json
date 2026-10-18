@@ -1,0 +1,12 @@
+{
+  "encounter_id": "D2N159",
+  "phi": [
+    {"text": "alexis", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "sit at the keyboard all day", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "do repetitive hand work all day"},
+    {"text": "Alexis Gutierrez", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "33-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "working on a keyboard", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "doing repetitive hand work"},
+    {"text": "works on a keyboard all day", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "does repetitive hand work all day"}
+  ],
+  "medical_concepts": []
+}

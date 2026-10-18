@@ -1,0 +1,716 @@
+{
+ "id": "S019",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S92.011A",
+   "description": "Displaced fracture of body of right calcaneus, initial encounter for closed fracture"
+  },
+  {
+   "code": "W17.89XA",
+   "description": "Other fall from one level to another, initial encounter"
+  },
+  {
+   "code": "Y92.39",
+   "description": "Other specified sports and athletic area as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.31",
+   "description": "Activity, mountain climbing, rock climbing and wall climbing"
+  },
+  {
+   "code": "Y99.8",
+   "description": "Other external cause status"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_FIRST} {DOCTOR_LAST} . i hear you had a fall at the climbing gym ?\n[patient] yeah . not my finest moment .\n[doctor] tell me what happened .\n[patient] so last night , {DATE_SPOKEN} , i went bouldering after work with my friend {OTHER_FIRST} . it's just something i do for fun , two or three nights a week at the climbing gym downtown .\n[doctor] okay .\n[patient] and i was on a problem near the top of the wall , maybe twelve , thirteen feet up , and my foot slipped off a hold and my hand popped off too , and i just fell straight down . i landed on my feet , mostly on my right heel , on the edge where two crash pads meet , so there was kind of a gap .\n[doctor] oh , okay . so you landed on your heel from about twelve feet .\n[patient] yeah . and i felt the heel just crunch . i could n't stand on it at all .\n[doctor] okay . did you hit anything else ? did you fall back and hit your head or your back ?\n[patient] i fell back on my butt after i landed , but on the pad . my head was fine .\n[doctor] okay . any back pain ?\n[patient] a little bit of soreness in my low back , but not bad .\n[doctor] okay . any numbness or tingling in your legs or your feet ?\n[patient] no .\n[doctor] okay . any problems with your bladder or bowels ?\n[patient] no .\n[doctor] okay . and the left foot ?\n[patient] the left one's fine . it's all the right .\n[doctor] okay . and the pain now ?\n[patient] like an eight out of ten . the heel is huge and purple .\n[doctor] okay . any other medical problems ?\n[patient] no . i'm healthy . i do n't smoke .\n[doctor] okay . any medications ?\n[patient] just a multivitamin .\n[doctor] okay . allergies ?\n[patient] penicillin , i get a rash .\n[doctor] okay . what do you do for work ?\n[patient] i'm a vet tech , so i'm on my feet all day at the clinic .\n[doctor] okay . and at home ?\n[patient] i'm a mom of twins , they're four , so that's going to be fun on crutches .\n[doctor] yeah , that will be a challenge . all right , let me examine you . so , looking at your right foot and ankle , there is severe swelling around the heel with bruising on both sides and extending into the sole of your foot . there's no blistering yet , and the skin is intact . i'm going to gently squeeze the heel .\n[patient] ow . yes , that's very painful .\n[doctor] okay . you have tenderness all around the calcaneus , which is the heel bone . the ankle bones themselves are less tender . your dorsalis pedis and posterior tibial pulses are both present and your toes are pink and warm . sensation is intact on the bottom and top of your foot . your compartments in the foot feel soft . now let me check your back . i'm going to press along your spine .\n[patient] that's a little sore , but fine .\n[doctor] okay . mild tenderness in the low back muscles , but not right on the spine .\n[patient] okay .\n[doctor] so we got x-rays of your foot and also a ct scan of your heel , and x-rays of your low back because when people land on their heels from a height , they can also hurt their spine . hey dragon , show me the ct right calcaneus . so , looking at the ct , you have a fracture through the body of the right calcaneus . it's displaced , the heel has been flattened a bit , so your bohler's angle is decreased . the lumbar spine x-rays are normal , no fracture .\n[patient] okay . so what do we do ?\n[doctor] so my assessment is you have a closed , displaced fracture of the body of your right calcaneus from falling off the wall at the climbing gym . these are serious fractures , and because it's displaced and the heel is flattened , i think you're going to need surgery to restore the shape of the heel .\n[patient] okay .\n[doctor] first , the swelling needs to come down , which usually takes ten days to two weeks . you will be in a bulky splint , completely non weight bearing on the right foot , with crutches . i want you to keep your foot elevated above your heart almost all the time , and ice it .\n[patient] okay .\n[doctor] for pain , ibuprofen and tylenol around the clock , and i'll give you a few oxycodone for night time . and since you'll be off your foot , i want you on an aspirin a day to prevent blood clots .\n[patient] okay .\n[doctor] if you notice severe pain that is not controlled , numbness in your foot , or the splint feels too tight , you need to come back right away , because the swelling in a heel fracture can cut off the circulation .\n[patient] got it .\n[doctor] i'm going to have you see my foot and ankle partner this week to plan the surgery . and i'll write you a note for work , you will be off your feet for at least ten to twelve weeks .\n[patient] okay . no climbing for a while , i guess .\n[doctor] no climbing for a good while .",
+ "note": "CHIEF COMPLAINT\n\nRight heel pain after a fall.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents with right heel pain after a fall on {DATE_SPOKEN}. She was bouldering recreationally at an indoor climbing gym when she lost her hand and foot holds near the top of the wall and fell approximately 12 to 13 feet, landing on her right heel at a gap between crash pads. She then sat back onto the pad. She was unable to bear weight. She denies head injury. She reports mild low back soreness. She denies numbness, tingling, or bowel or bladder dysfunction. Pain is 8/10.\n\nPAST MEDICAL HISTORY\n\nNone. Nonsmoker.\n\nMEDICATIONS\n\nMultivitamin.\n\nALLERGIES\n\nPenicillin (rash).\n\nSOCIAL HISTORY\n\nVeterinary technician. Mother of 4-year-old twins.\n\nPHYSICAL EXAM\n\nRight foot: Severe hindfoot swelling with medial, lateral and plantar ecchymosis. Skin intact without fracture blisters. Diffuse tenderness of the calcaneus with pain on heel squeeze. Compartments soft. Dorsalis pedis and posterior tibial pulses present. Toes warm and well perfused. Sensation intact.\nBack: Mild lumbar paraspinal tenderness. No midline tenderness.\n\nRESULTS\n\nCT of the right calcaneus demonstrates a displaced fracture of the calcaneal body with loss of height and decreased Bohler's angle.\nX-rays of the lumbar spine: No fracture.\n\nASSESSMENT\n\nClosed displaced fracture of the body of the right calcaneus, sustained in a fall from the climbing wall while bouldering at a climbing gym, during leisure activity.\n\nPLAN\n\nBulky Jones splint. Strict non-weight bearing with crutches. Strict elevation and ice. Ibuprofen and Tylenol scheduled, oxycodone at night as needed. Aspirin daily for VTE prophylaxis. Compartment syndrome precautions reviewed. Referral to foot and ankle surgery this week for operative planning after soft tissue swelling resolves. Work note provided; anticipate 10 to 12 weeks off her feet.",
+ "medical_concepts": [
+  {
+   "text": "climbing gym",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i went bouldering",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's just something i do for fun",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "near the top of the wall , maybe twelve , thirteen feet up",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my foot slipped off a hold and my hand popped off too , and i just fell straight down",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i landed on my feet , mostly on my right heel",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "where two crash pads meet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "you landed on your heel from about twelve feet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i felt the heel just crunch",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i could n't stand on it at all",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "soreness in my low back",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "problems with your bladder or bowels",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the heel is huge and purple",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "multivitamin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "penicillin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "rash",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "crutches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "severe swelling around the heel",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bruising on both sides and extending into the sole of your foot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "there's no blistering yet , and the skin is intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tenderness all around the calcaneus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heel bone",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "your dorsalis pedis and posterior tibial pulses are both present",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your toes are pink and warm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your compartments in the foot feel soft",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild tenderness in the low back muscles",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ct right calcaneus",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "x-rays of your low back",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "fracture through the body of the right calcaneus",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's displaced",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your bohler's angle is decreased",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the lumbar spine x-rays are normal",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "closed , displaced fracture of the body of your right calcaneus",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "falling off the wall at the climbing gym",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "bulky splint",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxycodone",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "aspirin a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood clots",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "heel fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "no climbing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right heel pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "right heel pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bouldering recreationally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "indoor climbing gym",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lost her hand and foot holds near the top of the wall and fell approximately 12 to 13 feet, landing on her right heel",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "gap between crash pads",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "unable to bear weight",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "head injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild low back soreness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness, tingling, or bowel or bladder dysfunction",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pain is 8/10",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Multivitamin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Penicillin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "rash",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Severe hindfoot swelling with medial, lateral and plantar ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Skin intact without fracture blisters",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Diffuse tenderness of the calcaneus with pain on heel squeeze",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Compartments soft",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Dorsalis pedis and posterior tibial pulses present",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Toes warm and well perfused",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild lumbar paraspinal tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No midline tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "CT of the right calcaneus",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "displaced fracture of the calcaneal body",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "loss of height and decreased Bohler's angle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "X-rays of the lumbar spine: No fracture",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Closed displaced fracture of the body of the right calcaneus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "fall from the climbing wall",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bouldering at a climbing gym",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "during leisure activity",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Bulky Jones splint",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "crutches",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxycodone",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Aspirin daily for VTE prophylaxis",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Compartment syndrome",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "foot and ankle surgery",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software"
+  },
+  {
+   "text": "your bohler's angle is decreased",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponymous radiographic angle, not a person"
+  },
+  {
+   "text": "Bohler's angle",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponymous radiographic angle, not a person"
+  },
+  {
+   "text": "Bulky Jones splint",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponymous splint type, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S92.011A",
+   "spans": [
+    {
+     "text": "closed , displaced fracture of the body of your right calcaneus",
+     "field": "dialogue"
+    },
+    {
+     "text": "fracture through the body of the right calcaneus",
+     "field": "dialogue"
+    },
+    {
+     "text": "it's displaced",
+     "field": "dialogue"
+    },
+    {
+     "text": "ct right calcaneus",
+     "field": "dialogue"
+    },
+    {
+     "text": "there's no blistering yet , and the skin is intact",
+     "field": "dialogue"
+    },
+    {
+     "text": "Closed displaced fracture of the body of the right calcaneus",
+     "field": "note"
+    },
+    {
+     "text": "displaced fracture of the calcaneal body",
+     "field": "note"
+    },
+    {
+     "text": "CT of the right calcaneus",
+     "field": "note"
+    },
+    {
+     "text": "Skin intact without fracture blisters",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W17.89XA",
+   "spans": [
+    {
+     "text": "my foot slipped off a hold and my hand popped off too , and i just fell straight down",
+     "field": "dialogue"
+    },
+    {
+     "text": "near the top of the wall , maybe twelve , thirteen feet up",
+     "field": "dialogue"
+    },
+    {
+     "text": "you landed on your heel from about twelve feet",
+     "field": "dialogue"
+    },
+    {
+     "text": "falling off the wall at the climbing gym",
+     "field": "dialogue"
+    },
+    {
+     "text": "lost her hand and foot holds near the top of the wall and fell approximately 12 to 13 feet, landing on her right heel",
+     "field": "note"
+    },
+    {
+     "text": "fall from the climbing wall",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.39",
+   "spans": [
+    {
+     "text": "climbing gym",
+     "field": "dialogue"
+    },
+    {
+     "text": "indoor climbing gym",
+     "field": "note"
+    },
+    {
+     "text": "bouldering at a climbing gym",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.31",
+   "spans": [
+    {
+     "text": "i went bouldering",
+     "field": "dialogue"
+    },
+    {
+     "text": "bouldering recreationally",
+     "field": "note"
+    },
+    {
+     "text": "bouldering at a climbing gym",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.8",
+   "spans": [
+    {
+     "text": "it's just something i do for fun",
+     "field": "dialogue"
+    },
+    {
+     "text": "bouldering recreationally",
+     "field": "note"
+    },
+    {
+     "text": "during leisure activity",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm a vet tech",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "veterinary technician"
+  },
+  {
+   "text": "i'm a mom of twins , they're four",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "family composition"
+  },
+  {
+   "text": "two or three nights a week",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive routine"
+  },
+  {
+   "text": "Veterinary technician",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "Mother of 4-year-old twins",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "family composition"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N207",
+  "phi": [
+    {"text": "frank", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "twenty eighteen", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "holidays", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "festivities"},
+    {"text": "family get togethers", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "gatherings"},
+    {"text": "nba playoff", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the playoffs"},
+    {"text": "self expand", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "fan of a team"},
+    {"text": "nuts", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "other team"},
+    {"text": "jason tatum", "field": "dialogue", "type": "NAME_OTHER", "tier": 1, "generalized": ""},
+    {"text": "jaylen brown", "field": "dialogue", "type": "NAME_OTHER", "tier": 1, "generalized": ""},
+    {"text": "cell fix", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "team"},
+    {"text": "white", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "2018", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "basketball", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "White", "field": "note", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

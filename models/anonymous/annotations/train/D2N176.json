@@ -1,0 +1,15 @@
+{
+  "encounter_id": "D2N176",
+  "phi": [
+    {"text": "alexander", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "62-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "green tea", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "tea"},
+    {"text": "energy drinks", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "caffeinated drinks"},
+    {"text": "standing all day", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "being on your feet"},
+    {"text": "Alexander Myers", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "62-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "energy drinks", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "caffeinated drinks"},
+    {"text": "green tea", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "tea"}
+  ],
+  "medical_concepts": []
+}

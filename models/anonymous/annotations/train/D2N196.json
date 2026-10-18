@@ -1,0 +1,16 @@
+{
+  "encounter_id": "D2N196",
+  "phi": [
+    {"text": "thompson", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "jerry", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "67 -year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "softball", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a team sport"},
+    {"text": "little league tournament", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "youth sports tournament"},
+    {"text": "got all the way to the finals", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "did well"},
+    {"text": "golfer", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "sports player"},
+    {"text": "golfing", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"},
+    {"text": "golf", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "a sport"},
+    {"text": "golfing", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"}
+  ],
+  "medical_concepts": []
+}

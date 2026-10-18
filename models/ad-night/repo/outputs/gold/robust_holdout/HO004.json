@@ -1,0 +1,343 @@
+{
+  "encounter_id": "HO004",
+  "pii": [
+    {
+      "field": "note",
+      "text": "Patient: PARKINSON",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Mr Parkinson",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Albert",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Edward",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Bertie",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "03/02/1934",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "aged 92",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "92-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "WV2290457",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "485 777 3456",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "12 Garden Row",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Martock",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Somerset",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "TA12 6LN",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Janet",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Pryce-Morgan",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "07700 900418",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "13.03.26",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Kingfisher",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "14 March 2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Oliver",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Hill FRCS",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Mr Hill",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "O. Hill",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Kwame",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Asante-Boateng",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Ffion",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Rhys-Davies",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Pauline",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Moss",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "signalman",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Great Western Railway",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "12/03/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "12/3",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Wessex Vale General Hospital",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "2025K0391",
+      "category": "ID",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "77Q4019X",
+      "category": "ID",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "81372644",
+      "category": "ID",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Yusuf",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Brennan",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "01935 825140",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "6104472",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "14/03/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "35 years with",
+      "category": "OCCUPATION",
+      "risk": "low"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "Tripped over the edge of a rug",
+      "category": "CODE_EVIDENCE",
+      "why": "mechanism supporting W01.0XXA (fall on same level from tripping)"
+    },
+    {
+      "field": "note",
+      "text": "fell onto his right side",
+      "category": "CODE_EVIDENCE",
+      "why": "fall mechanism supporting W01.0XXA"
+    },
+    {
+      "field": "note",
+      "text": "Parkinson's",
+      "category": "EPONYM",
+      "why": "disease name (Parkinson's disease / medication), not the patient's surname"
+    },
+    {
+      "field": "note",
+      "text": "Garden IV",
+      "category": "EPONYM",
+      "why": "Garden classification of femoral neck fracture"
+    },
+    {
+      "field": "note",
+      "text": "Hill-Sachs",
+      "category": "EPONYM",
+      "why": "Hill-Sachs lesion, not the surgeon Mr Hill"
+    },
+    {
+      "field": "note",
+      "text": "Hardinge",
+      "category": "EPONYM",
+      "why": "Hardinge (direct lateral) approach to the hip"
+    },
+    {
+      "field": "note",
+      "text": "Exeter V40",
+      "category": "NOT_A_NAME",
+      "why": "implant brand, not a place of residence"
+    },
+    {
+      "field": "note",
+      "text": "25/100",
+      "category": "CLINICAL_NUMBER",
+      "why": "co-careldopa strength"
+    },
+    {
+      "field": "note",
+      "text": "7/10",
+      "category": "CLINICAL_NUMBER",
+      "why": "AMTS score"
+    },
+    {
+      "field": "note",
+      "text": "9/10",
+      "category": "CLINICAL_NUMBER",
+      "why": "baseline AMTS score"
+    },
+    {
+      "field": "note",
+      "text": "158/84",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure"
+    },
+    {
+      "field": "note",
+      "text": "92/50",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure during cementing"
+    }
+  ]
+}

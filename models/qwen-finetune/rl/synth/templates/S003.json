@@ -1,0 +1,754 @@
+{
+ "id": "S003",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S93.401A",
+   "description": "Sprain of unspecified ligament of right ankle, initial encounter"
+  },
+  {
+   "code": "W10.1XXA",
+   "description": "Fall (on)(from) sidewalk curb, initial encounter"
+  },
+  {
+   "code": "Y92.480",
+   "description": "Sidewalk as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.02",
+   "description": "Activity, running"
+  },
+  {
+   "code": "J45.20",
+   "description": "Mild intermittent asthma, uncomplicated"
+  }
+ ],
+ "dialogue": "[doctor] hey {PATIENT_FIRST} how are you doing today\n[patient] i'm okay other than my ankle\n[doctor] yeah i see that you're here for your right ankle what happened\n[patient] so i was out running yesterday morning with my friend {OTHER_FIRST} and we were going down the sidewalk and i was looking at my watch and i just did n't see the curb and i tripped on the curb and my right foot rolled under me and i went down\n[doctor] okay so your foot rolled inward like this\n[patient] yeah exactly it turned in and i heard like a pop and then i fell onto the sidewalk\n[doctor] okay and were you able to walk on it after that\n[patient] i limped home it was only about half a mile but it hurt the whole way and by the time i got home it was really swollen\n[doctor] okay did you hurt anything else when you fell\n[patient] i scraped my hands a little bit but they're fine it's really just the ankle\n[doctor] alright and what have you done for it since\n[patient] i've been icing it and i wrapped it with an ace bandage and i took some advil last night\n[doctor] and did that help\n[patient] a little the swelling went down a tiny bit this morning but it still hurts to put weight on it\n[doctor] okay on a scale of zero to ten how bad is the pain\n[patient] when i'm sitting maybe a three but when i walk on it it's like a six or seven\n[doctor] okay have you ever injured this ankle before\n[patient] i sprained it in high school playing volleyball but nothing since then\n[doctor] okay and how much running do you usually do\n[patient] i run about four or five days a week i'm training for the {PLACE} half marathon on {DATE_SPOKEN} so i'm really hoping i can still do it\n[doctor] okay and what do you do for work are you on your feet a lot\n[patient] i'm a dental hygienist so i'm standing most of the day\n[doctor] okay we'll talk about that now i also see that you have asthma how has that been doing\n[patient] it's been pretty good i only use my albuterol inhaler sometimes when it's cold out or before a long run\n[doctor] how often would you say you use it\n[patient] maybe once or twice a week before runs and i have n't had any attacks at night\n[doctor] okay and no er visits or steroids for it this year\n[patient] no nothing like that\n[doctor] great so it sounds like it's well controlled alright let me take a look at that ankle\n[patient] okay\n[doctor] so i'm looking at your right ankle there's swelling over the outside of the ankle and some bruising starting down here along the side of the foot does it hurt when i press here in front of the ankle bone\n[patient] yeah that's the spot\n[doctor] okay tenderness over the anterior talofibular ligament how about here on the back of the bone\n[patient] no not really\n[doctor] okay no tenderness at the posterior edge of the lateral malleolus or the tip how about on the inside of the ankle\n[patient] no\n[doctor] and how about here at the base of the fifth metatarsal on the outside of your foot\n[patient] no that's fine\n[doctor] okay and here on the navicular\n[patient] no\n[doctor] good let me move it around a bit when i pull your foot forward like this does that hurt\n[patient] a little bit\n[doctor] okay there's maybe a little laxity but it has a firm endpoint and your pulses are good and you can feel me touching your toes\n[patient] yes\n[doctor] alright and the palms of your hands just have some small superficial abrasions those look clean\n[doctor] so we did get an x-ray of your right ankle since you had trouble walking on it and the x-ray does n't show any fracture the ankle joint is lined up well and there's just some soft tissue swelling on the outside\n[patient] okay that's good\n[doctor] so what you have is a right ankle sprain it's most likely the anterior talofibular ligament on the outside of the ankle which is the most common one to injure when you roll your ankle\n[patient] okay so how long until i can run again\n[doctor] so for the next week i want you to do rice which is rest ice compression and elevation i'm going to give you an air cast type brace to wear when you're up and walking and you can use the advil six hundred milligrams every eight hours with food for the pain and swelling\n[patient] okay\n[doctor] i'm also going to refer you to physical therapy they'll work on range of motion strengthening and balance which helps prevent you from spraining it again\n[patient] okay\n[doctor] most people with this kind of sprain can start light jogging in about three to four weeks if the pain is gone so you might be able to make the race but we'll have to see how you're doing\n[patient] okay that's better than i thought\n[doctor] for your asthma it's mild intermittent and well controlled so let's continue the albuterol inhaler two puffs before exercise or as needed and i'll send in a refill\n[patient] perfect thank you\n[doctor] and maybe keep your eyes on the sidewalk instead of the watch\n[patient] lesson learned",
+ "note": "CHIEF COMPLAINT\n\nRight ankle injury.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with a history of asthma who presents today for evaluation of a right ankle injury.\n\nYesterday morning, the patient was running on the sidewalk when she tripped on a curb, inverting her right ankle, and fell. She felt a pop at the time of the injury. She was able to limp home but developed significant swelling. She also sustained minor abrasions to her palms. She has been treating her symptoms with ice, an ACE wrap, and Advil with mild improvement. She rates her pain as 3/10 at rest and 6-7/10 with weight bearing. She reports a remote right ankle sprain in high school. She runs 4 to 5 days per week. She works as a dental hygienist.\n\nHer asthma is well controlled. She uses her albuterol inhaler approximately 1 to 2 times per week, mostly before exercise or in cold weather. She denies nocturnal symptoms, emergency room visits, or steroid courses in the past year.\n\nREVIEW OF SYSTEMS\n\nMusculoskeletal: Reports right ankle pain and swelling.\nSkin: Reports abrasions of the palms.\nRespiratory: Denies nocturnal cough or wheezing.\n\nPHYSICAL EXAM\n\nMSK: Examination of the right ankle: Lateral ankle swelling with early ecchymosis along the lateral foot. Tenderness to palpation over the anterior talofibular ligament. No tenderness at the posterior edge or tip of the lateral malleolus, the medial malleolus, the base of the fifth metatarsal, or the navicular. Mild laxity on anterior drawer with a firm endpoint. Distal pulses intact. Sensation intact.\nSKIN: Small superficial abrasions of the bilateral palms, clean.\n\nRESULTS\n\nX-rays of the right ankle were obtained and reviewed today. No evidence of fracture. Ankle mortise intact. Lateral soft tissue swelling.\n\nASSESSMENT\n\n1. Right ankle sprain, likely anterior talofibular ligament.\n2. Mild intermittent asthma, well controlled.\n\nPLAN\n\n1. Right ankle sprain: Rest, ice, compression, and elevation. Air stirrup ankle brace when ambulating. Advil 600 mg every 8 hours with food as needed. Referral to physical therapy for range of motion, strengthening, and balance training. Gradual return to running in 3 to 4 weeks as tolerated.\n2. Asthma: Continue albuterol 2 puffs before exercise or as needed. Refill sent.\n\nINSTRUCTIONS\n\nThe patient will follow up in 3 weeks.\n",
+ "medical_concepts": [
+  {
+   "text": "ankle",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "right ankle",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "out running",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "going down the sidewalk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tripped on the curb",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "right foot rolled under me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heard like a pop",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell onto the sidewalk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "limped",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "really swollen",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "scraped my hands",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "icing",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ace bandage",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "advil",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "hurts to put weight on it",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sprained it in high school",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "run about four or five days a week",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "asthma",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol inhaler",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "attacks at night",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "steroids",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "well controlled",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "swelling over the outside of the ankle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bruising",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tenderness over the anterior talofibular ligament",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no tenderness at the posterior edge of the lateral malleolus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "base of the fifth metatarsal",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "navicular",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "little laxity",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "firm endpoint",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pulses are good",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "superficial abrasions",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-ray of your right ankle",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "does n't show any fracture",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "soft tissue swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "right ankle sprain",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "anterior talofibular ligament",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "rest ice compression and elevation",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "brace",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "advil six hundred milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild intermittent",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right ankle injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "asthma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "right ankle injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "running on the sidewalk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tripped on a curb",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "inverting her right ankle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "felt a pop",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "limp",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "significant swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "minor abrasions to her palms",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ACE wrap",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Advil",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "remote right ankle sprain",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "runs 4 to 5 days per week",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol inhaler",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "nocturnal symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "emergency room visits",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "steroid courses",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "right ankle pain and swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "abrasions of the palms",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "nocturnal cough or wheezing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lateral ankle swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "early ecchymosis along the lateral foot",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness to palpation over the anterior talofibular ligament",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No tenderness at the posterior edge or tip of the lateral malleolus",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "medial malleolus",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "base of the fifth metatarsal",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "navicular",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild laxity on anterior drawer with a firm endpoint",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Distal pulses intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Small superficial abrasions of the bilateral palms",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-rays of the right ankle",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "No evidence of fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Ankle mortise intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lateral soft tissue swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right ankle sprain, likely anterior talofibular ligament",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild intermittent asthma, well controlled",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right ankle sprain",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Rest, ice, compression, and elevation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Air stirrup ankle brace",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Advil 600 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "return to running",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Asthma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol 2 puffs",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "advil",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of ibuprofen"
+  },
+  {
+   "text": "Advil",
+   "field": "note",
+   "is_pii": false,
+   "comment": "brand name of ibuprofen"
+  },
+  {
+   "text": "ace bandage",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "elastic bandage brand, not a name"
+  },
+  {
+   "text": "Air stirrup ankle brace",
+   "field": "note",
+   "is_pii": false,
+   "comment": "brace type (Aircast-style), not an organization"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S93.401A",
+   "spans": [
+    {
+     "text": "right ankle sprain",
+     "field": "dialogue"
+    },
+    {
+     "text": "right foot rolled under me",
+     "field": "dialogue"
+    },
+    {
+     "text": "tenderness over the anterior talofibular ligament",
+     "field": "dialogue"
+    },
+    {
+     "text": "x-ray of your right ankle",
+     "field": "dialogue"
+    },
+    {
+     "text": "does n't show any fracture",
+     "field": "dialogue"
+    },
+    {
+     "text": "Right ankle sprain, likely anterior talofibular ligament",
+     "field": "note"
+    },
+    {
+     "text": "Right ankle sprain",
+     "field": "note"
+    },
+    {
+     "text": "inverting her right ankle",
+     "field": "note"
+    },
+    {
+     "text": "No evidence of fracture",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W10.1XXA",
+   "spans": [
+    {
+     "text": "tripped on the curb",
+     "field": "dialogue"
+    },
+    {
+     "text": "fell onto the sidewalk",
+     "field": "dialogue"
+    },
+    {
+     "text": "tripped on a curb",
+     "field": "note"
+    },
+    {
+     "text": "fell",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.480",
+   "spans": [
+    {
+     "text": "going down the sidewalk",
+     "field": "dialogue"
+    },
+    {
+     "text": "running on the sidewalk",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.02",
+   "spans": [
+    {
+     "text": "out running",
+     "field": "dialogue"
+    },
+    {
+     "text": "run about four or five days a week",
+     "field": "dialogue"
+    },
+    {
+     "text": "running on the sidewalk",
+     "field": "note"
+    },
+    {
+     "text": "runs 4 to 5 days per week",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "J45.20",
+   "spans": [
+    {
+     "text": "asthma",
+     "field": "dialogue"
+    },
+    {
+     "text": "mild intermittent",
+     "field": "dialogue"
+    },
+    {
+     "text": "well controlled",
+     "field": "dialogue"
+    },
+    {
+     "text": "albuterol inhaler",
+     "field": "dialogue"
+    },
+    {
+     "text": "Mild intermittent asthma, well controlled",
+     "field": "note"
+    },
+    {
+     "text": "albuterol inhaler",
+     "field": "note"
+    },
+    {
+     "text": "nocturnal symptoms",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "dental hygienist",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "dental hygienist",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "i sprained it in high school playing volleyball",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "personal history detail (school sport)"
+  }
+ ]
+}

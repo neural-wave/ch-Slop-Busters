@@ -1,0 +1,17 @@
+{
+  "encounter_id": "D2N148",
+  "phi": [
+    {"text": "jeremy", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "college dorm", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "residence"},
+    {"text": "gym", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "local facility"},
+    {"text": "maxed out our insurance", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "had coverage issues"},
+    {"text": "twenty eighteen", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "spring of twenty twenty", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "Jeremy Adams", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "57-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "college dorm", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "residence"},
+    {"text": "gym", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "local facility"},
+    {"text": "spring of 2020", "field": "note", "type": "DATE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

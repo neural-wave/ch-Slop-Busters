@@ -1,0 +1,659 @@
+{
+ "id": "G0050",
+ "dataset": "synthetic_followup",
+ "sex": "male",
+ "age_range": [
+  30,
+  45
+ ],
+ "icd10_codes": [
+  {
+   "code": "N20.1",
+   "description": "Calculus of ureter"
+  },
+  {
+   "code": "E11.65",
+   "description": "Type 2 diabetes mellitus with hyperglycemia"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . you're back with us in the emergency department again . what's going on today ?\n[patient] hey , doctor {DOCTOR_LAST} . yeah , my side is killing me again . same spot as last time , on the right .\n[doctor] okay . let me pull up your chart . your medical record number is {MRN} , is that right ?\n[patient] yes , that's me .\n[doctor] good . when did the pain start ?\n[patient] about six hours ago . i was at the gym and it just came on . it's coming in waves , and it goes down into my groin .\n[doctor] okay . does it burn when you urinate , or do you see blood in your urine ?\n[patient] a little burning , and yes , my urine looked pink this morning .\n[doctor] okay . any fever or chills ?\n[patient] no fever . i was shivering a little in the car , but i think that was the pain .\n[doctor] alright . any nausea or vomiting ?\n[patient] i threw up once in the parking lot . that's why i came straight here .\n[doctor] that's good that you came in . how much water have you been drinking ?\n[patient] not enough , honestly . i've been busy with the new job , and i forget .\n[doctor] okay . now tell me about your sugar . when did you last check your blood glucose ?\n[patient] this morning . it was two hundred and eighteen . i took my metformin and my glipizide like always .\n[doctor] that's high . how often are you checking it ?\n[patient] twice a day , usually . sometimes i skip the evening one .\n[doctor] okay . and your blood pressure medicine ?\n[patient] lisinopril , ten milligrams every morning .\n[doctor] alright . let's get your vitals . your blood pressure is one forty four over ninety . your heart rate is ninety eight . your temperature is ninety eight point nine .\n[patient] okay .\n[doctor] let me examine you . does it hurt more on the right side or the left ?\n[patient] right side , definitely . it's like a knife going in .\n[doctor] okay . there's marked tenderness over the right flank , and the abdomen is soft with no rebound .\n[patient] okay .\n[doctor] i'd like to check your urine and some blood work . we'll get a ct scan of your abdomen and pelvis to look for the stone .\n[patient] the last time they found a stone it was almost one centimeter . i thought the lithotripsy took care of it .\n[doctor] it did for that one , but you've had another episode since . let's see what the scan shows .\n[patient] okay . whatever you need .\n[doctor] your glucose on the blood work is two hundred and sixty one , and your creatinine is one point one . so your kidneys are working well .\n[patient] that's a relief .\n[doctor] the ct shows a four millimeter stone in the lower part of the right ureter , with some mild swelling of the kidney . it's moving , which is good , but it's causing the pain .\n[patient] so it just needs to pass ?\n[doctor] most stones this size pass on their own with fluids and pain control . i'd like you to give it a few days .\n[patient] okay . i'm supposed to be at a wedding in {CITY} this weekend . is it okay to travel ?\n[doctor] i'd rather you stay close to a bathroom for the next few days . if the pain becomes uncontrollable or you develop a fever , you need to come back right away .\n[patient] my trip to mount rainier got canceled because of this , so at least i'm not flying anywhere .\n[doctor] for pain you can take ibuprofen , four hundred milligrams every six hours with food , and use tamsulosin at night to help the stone move .\n[patient] tamsulosin . okay . my cousin has barrett's esophagus , and he took a lot of pills for it , so i'm glad this is a different one .\n[doctor] that's a different problem entirely . i want you to keep your blood sugar better controlled too . i'm increasing your metformin to one thousand milligrams twice a day .\n[patient] okay . i'll try to check it at night too .\n[doctor] good . your urine test also showed some sugar , which tells us your glucose is running high . hydration is the key . aim for about three liters a day unless i tell you otherwise .\n[patient] three liters ? that's a lot of water .\n[doctor] i know . use a water bottle and track it . and cut back on sugary drinks , the soda and the juice .\n[patient] i do drink a lot of soda at work . i'll try to switch to seltzer .\n[doctor] that's a good swap . we also want to check a hemoglobin a1c next week to see your average sugar over three months .\n[patient] okay . i grew up in harlow ridge , and my mother still lives there . i might go out there for a few days once the stone passes .\n[doctor] that's nice . let me know if the pain changes . and if you end up at another hospital , make sure they have your records .\n[patient] will do . thanks , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nRecurrent right flank pain consistent with ureteral calculus, with uncontrolled type 2 diabetes.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male returning to the emergency department with recurrent right flank pain. Onset approximately six hours prior to arrival while exercising, with colicky waves radiating to the right groin. Associated dysuria and gross hematuria this morning. One episode of emesis in the parking lot. He denies fever. He reports suboptimal oral fluid intake.\n\nHe has a prior history of nephrolithiasis treated with lithotripsy. Fasting home blood glucose this morning was 218 mg/dL. He reports taking metformin and glipizide as prescribed, but skips the evening glucose check.\n\nPAST MEDICAL HISTORY\n\nType 2 diabetes mellitus. Hypertension. Nephrolithiasis with prior lithotripsy. Family history of Barrett's esophagus in a cousin.\n\nSOCIAL HISTORY\n\nGrew up in Harlow Ridge; mother still lives there. Planned trip to Mount Rainier canceled. Drinks sugar-sweetened soda daily at work.\n\nIDENTIFICATION\n\nMedical record number: {MRN}\n\nMEDICATIONS\n\nMetformin, increased to 1000 mg twice daily. Glipizide. Lisinopril 10 mg every morning. Ibuprofen 400 mg every six hours with food as needed. Tamsulosin nightly, new.\n\nPHYSICAL EXAM\n\nVitals: BP 144/90, HR 98, T 98.9 F. Abdomen soft, nondistended, no rebound. Marked tenderness over the right flank and costovertebral angle.\n\nRESULTS\n\nUrinalysis positive for blood and glucose. Serum glucose 261 mg/dL. Creatinine 1.1 mg/dL. CT abdomen and pelvis without contrast: 4 mm calculus in the distal right ureter with mild right hydronephrosis.\n\nASSESSMENT AND PLAN\n\n1. Right ureteral calculus, 4 mm, with mild hydronephrosis. Hydration, ibuprofen and tamsulosin for analgesia and stone passage. Strain urine. Return precautions: uncontrolled pain, fever, or inability to keep fluids down.\n2. Type 2 diabetes mellitus with hyperglycemia. Metformin increased to 1000 mg twice daily. Home glucose checks twice daily. HbA1c next week. Reduce sugar-sweetened beverages.\n3. Hypertension, BP 144/90. Continue lisinopril; recheck at follow-up.\n\nFollow-up with primary care in one week.",
+ "medical_concepts": [
+  {
+   "text": "my side is killing me again",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "same spot as last time , on the right",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's coming in waves",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it goes down into my groin",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a little burning",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my urine looked pink",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "no fever",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "shivering a little",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "threw up once in the parking lot",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "not enough , honestly",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it was two hundred and eighteen",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "my metformin and my glipizide",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "skip the evening one",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril , ten milligrams every morning",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "your blood pressure is one forty four over ninety",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your heart rate is ninety eight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your temperature is ninety eight point nine",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "right side , definitely",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "like a knife going in",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "marked tenderness over the right flank",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the abdomen is soft with no rebound",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a ct scan of your abdomen and pelvis",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the stone",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "almost one centimeter",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the lithotripsy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "your glucose on the blood work is two hundred and sixty one",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "your creatinine is one point one",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "a four millimeter stone in the lower part of the right ureter",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "some mild swelling of the kidney",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's moving",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pass on their own with fluids and pain control",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "uncontrollable",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen , four hundred milligrams every six hours",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tamsulosin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "barrett's esophagus",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "metformin to one thousand milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "your glucose is running high",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "about three liters a day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sugary drinks",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the soda and the juice",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a lot of soda at work",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a hemoglobin a1c",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "your average sugar over three months",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the emergency department",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right ureteral calculus, 4 mm, with mild hydronephrosis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "recurrent right flank pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "colicky waves radiating to the right groin",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "gross hematuria",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dysuria",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "One episode of emesis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "denies fever",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "suboptimal oral fluid intake",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "nephrolithiasis treated with lithotripsy",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Fasting home blood glucose this morning was 218 mg/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin and glipizide",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Type 2 diabetes mellitus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Nephrolithiasis with prior lithotripsy",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Barrett's esophagus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "sugar-sweetened soda daily",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Metformin, increased to 1000 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Glipizide",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lisinopril 10 mg every morning",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Ibuprofen 400 mg every six hours with food",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tamsulosin nightly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 144/90",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "HR 98",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "T 98.9 F",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Abdomen soft, nondistended, no rebound",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Marked tenderness over the right flank and costovertebral angle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Urinalysis positive for blood and glucose",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Serum glucose 261 mg/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Creatinine 1.1 mg/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "CT abdomen and pelvis without contrast",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "4 mm calculus in the distal right ureter",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild right hydronephrosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hydration",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Strain urine",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "inability to keep fluids down",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Type 2 diabetes mellitus with hyperglycemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Home glucose checks twice daily",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "HbA1c next week",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Reduce sugar-sweetened beverages",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hypertension, BP 144/90",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Continue lisinopril",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "barrett's esophagus",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponym for a metaplastic esophageal condition, not a person"
+  },
+  {
+   "text": "Barrett's esophagus",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponym for a metaplastic esophageal condition, not a person"
+  },
+  {
+   "text": "tamsulosin",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "drug name, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "N20.1",
+   "spans": [
+    {
+     "text": "a four millimeter stone in the lower part of the right ureter",
+     "field": "dialogue"
+    },
+    {
+     "text": "some mild swelling of the kidney",
+     "field": "dialogue"
+    },
+    {
+     "text": "Right ureteral calculus, 4 mm, with mild hydronephrosis",
+     "field": "note"
+    },
+    {
+     "text": "4 mm calculus in the distal right ureter",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E11.65",
+   "spans": [
+    {
+     "text": "it was two hundred and eighteen",
+     "field": "dialogue"
+    },
+    {
+     "text": "your glucose on the blood work is two hundred and sixty one",
+     "field": "dialogue"
+    },
+    {
+     "text": "Type 2 diabetes mellitus with hyperglycemia",
+     "field": "note"
+    },
+    {
+     "text": "Serum glucose 261 mg/dL",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "your blood pressure is one forty four over ninety",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypertension",
+     "field": "note"
+    },
+    {
+     "text": "BP 144/90",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "harlow ridge",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "hometown"
+  },
+  {
+   "text": "mount rainier",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "planned trip destination"
+  },
+  {
+   "text": "Harlow Ridge",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "hometown"
+  },
+  {
+   "text": "Mount Rainier",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "planned trip destination"
+  }
+ ],
+ "scenario": {
+  "specialty": "emergency department",
+  "visit": "followup",
+  "length": "medium",
+  "focus": [
+   "ID",
+   "LOCATION"
+  ]
+ }
+}

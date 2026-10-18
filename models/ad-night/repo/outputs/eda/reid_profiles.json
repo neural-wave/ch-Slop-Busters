@@ -1,0 +1,7010 @@
+{
+ "D2N088": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 59,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "F32.A",
+   "I10",
+   "J06.9"
+  ],
+  "details": {
+   "employer_occupation_school|landscaping": 1,
+   "employer_occupation_school|going to work": 2,
+   "employer_occupation_school|work": 1,
+   "hobby|landscaping": 1,
+   "hobby|barre": 3,
+   "hobby|into barre classes": 1,
+   "hobby|into barre classes and": 1,
+   "event|house parties": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "into barre classes"
+   ],
+   [
+    1,
+    "hobby",
+    "into barre classes and"
+   ],
+   [
+    2,
+    "employer_occupation_school",
+    "going to work"
+   ],
+   [
+    2,
+    "hobby",
+    "barre"
+   ],
+   [
+    2,
+    "event",
+    "house parties"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N089": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 52,
+  "age5": 50,
+  "age10": 50,
+  "sex": "female",
+  "codes": [
+   "I48.91",
+   "K21.9",
+   "M06.9"
+  ],
+  "details": {
+   "hobby|yoga": 2,
+   "pet|dog": 2,
+   "pet|dog to": 1,
+   "pet|dog for": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "pet",
+    "dog to"
+   ],
+   [
+    1,
+    "pet",
+    "dog for"
+   ],
+   [
+    4,
+    "hobby",
+    "yoga"
+   ],
+   [
+    11,
+    "pet",
+    "dog"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N090": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 62,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "E11.65",
+   "F32.A",
+   "Z94.0"
+  ],
+  "details": {
+   "hobby|into meditation recently and": 2,
+   "doctor_staff_name|dr. reyes": 8
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "into meditation recently and"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. reyes"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N091": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 54,
+  "age5": 50,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "G35",
+   "M17.11",
+   "M81.0",
+   "Z00.00"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N092": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 43,
+  "age5": 40,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "S63.501A"
+  ],
+  "details": {
+   "hobby|tennis": 2,
+   "hobby|lawn work": 1,
+   "hobby|playing tennis": 2,
+   "doctor_staff_name|dr . gomez": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "lawn work"
+   ],
+   [
+    1,
+    "hobby",
+    "playing tennis"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr . gomez"
+   ],
+   [
+    4,
+    "hobby",
+    "tennis"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N093": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 62,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "E10.9",
+   "F32.A",
+   "I50.9",
+   "K21.9"
+  ],
+  "details": {
+   "hobby|love chocolate bars": 1,
+   "event|house parties": 2,
+   "product_brand|red bull": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "love chocolate bars"
+   ],
+   [
+    1,
+    "product_brand",
+    "red bull"
+   ],
+   [
+    2,
+    "event",
+    "house parties"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N094": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 42,
+  "age5": 40,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "S63.630A"
+  ],
+  "details": {
+   "hobby|skiing": 2,
+   "doctor_staff_name|dr. cooper": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "dr. cooper"
+   ],
+   [
+    7,
+    "hobby",
+    "skiing"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N095": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 34,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "I10",
+   "M54.9"
+  ],
+  "details": {
+   "hobby|crossfit": 1,
+   "hobby|deadlifts": 2,
+   "hobby|weightlifting": 1,
+   "hobby|lifting weights": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "crossfit"
+   ],
+   [
+    1,
+    "hobby",
+    "deadlifts"
+   ],
+   [
+    1,
+    "hobby",
+    "weightlifting"
+   ],
+   [
+    3,
+    "hobby",
+    "lifting weights"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N096": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 44,
+  "age5": 40,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "M25.512"
+  ],
+  "details": {
+   "hobby|gymnastics": 2
+  },
+  "rare_details": [
+   [
+    2,
+    "hobby",
+    "gymnastics"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N097": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 66,
+  "age5": 65,
+  "age10": 60,
+  "sex": "female",
+  "codes": [
+   "F32.A",
+   "I10"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N098": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 64,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "M75.42"
+  ],
+  "details": {
+   "employer_occupation_school|retired": 2,
+   "employer_occupation_school|office job": 1,
+   "doctor_staff_name|doctor isabella": 1,
+   "doctor_staff_name|dr. martha": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "retired"
+   ],
+   [
+    1,
+    "employer_occupation_school",
+    "office job"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "doctor isabella"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. martha"
+   ]
+  ],
+  "n_unique_details": 4
+ },
+ "D2N099": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 0,
+  "age5": 0,
+  "age10": 0,
+  "sex": "male",
+  "codes": [
+   "B34.9",
+   "L21.0"
+  ],
+  "details": {
+   "employer_occupation_school|works for the barky cough": 1,
+   "product_brand|vick's": 2,
+   "product_brand|aveno": 1,
+   "product_brand|zarbee's": 3,
+   "product_brand|honey nut cheerios": 1,
+   "product_brand|head & shoulder's": 1,
+   "product_brand|selsun blue": 2,
+   "product_brand|nizoral": 2,
+   "product_brand|aveeno": 1,
+   "product_brand|head and shoulders": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "works for the barky cough"
+   ],
+   [
+    1,
+    "product_brand",
+    "vick's"
+   ],
+   [
+    1,
+    "product_brand",
+    "aveno"
+   ],
+   [
+    1,
+    "product_brand",
+    "zarbee's"
+   ],
+   [
+    1,
+    "product_brand",
+    "honey nut cheerios"
+   ]
+  ],
+  "n_unique_details": 9
+ },
+ "D2N100": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 15,
+  "age5": 15,
+  "age10": 10,
+  "sex": "female",
+  "codes": [
+   "D22.5",
+   "L70.0"
+  ],
+  "details": {
+   "employer_occupation_school|7th grade": 2,
+   "hobby|basketball": 2,
+   "hobby|volleyball": 2,
+   "hobby|plays basketball and volleyball": 1,
+   "hobby|dancing": 1,
+   "hobby|playing school sports": 1,
+   "pet|dog": 2,
+   "other_quasi_identifier|lives with": 2,
+   "doctor_staff_name|dr. juan": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "7th grade"
+   ],
+   [
+    1,
+    "hobby",
+    "plays basketball and volleyball"
+   ],
+   [
+    1,
+    "hobby",
+    "playing school sports"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. juan"
+   ],
+   [
+    2,
+    "hobby",
+    "volleyball"
+   ]
+  ],
+  "n_unique_details": 4
+ },
+ "D2N101": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 25,
+  "age5": 25,
+  "age10": 20,
+  "sex": "female",
+  "codes": [
+   "N62"
+  ],
+  "details": {
+   "hobby|like to lose about": 1,
+   "hobby|like to lose an additional": 1,
+   "location|visit in regard to": 1,
+   "doctor_staff_name|dr. gonzalez": 2,
+   "doctor_staff_name|and catherine will": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "like to lose about"
+   ],
+   [
+    1,
+    "hobby",
+    "like to lose an additional"
+   ],
+   [
+    1,
+    "location",
+    "visit in regard to"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. gonzalez"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "and catherine will"
+   ]
+  ],
+  "n_unique_details": 5
+ },
+ "D2N102": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 41,
+  "age5": 40,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "N20.0",
+   "R31.9"
+  ],
+  "details": {
+   "hobby|like to discuss urolithiasis prevention": 1,
+   "location|drink more mountain": 1,
+   "location|drinks like mountain": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "like to discuss urolithiasis prevention"
+   ],
+   [
+    1,
+    "location",
+    "drink more mountain"
+   ],
+   [
+    1,
+    "location",
+    "drinks like mountain"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N103": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 58,
+  "age5": 55,
+  "age10": 50,
+  "sex": "female",
+  "codes": [
+   "Z09"
+  ],
+  "details": {
+   "doctor_staff_name|dr. hughes": 4
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "dr. hughes"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N104": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 61,
+  "age5": 60,
+  "age10": 60,
+  "sex": "female",
+  "codes": [
+   "L40.50",
+   "Z79.899"
+  ],
+  "details": {
+   "employer_occupation_school|desk job": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "desk job"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N105": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 100,
+  "age5": 90,
+  "age10": 100,
+  "sex": "female",
+  "codes": [
+   "E03.9",
+   "E78.5",
+   "I10",
+   "I49.3",
+   "R01.1",
+   "R42"
+  ],
+  "details": {
+   "location|driveway": 2,
+   "location|culdesac": 1,
+   "location|cul-de-sac": 1,
+   "other_quasi_identifier|driveway": 2,
+   "other_quasi_identifier|culdesac": 1,
+   "other_quasi_identifier|cul-de-sac": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "location",
+    "culdesac"
+   ],
+   [
+    1,
+    "location",
+    "cul-de-sac"
+   ],
+   [
+    1,
+    "other_quasi_identifier",
+    "culdesac"
+   ],
+   [
+    1,
+    "other_quasi_identifier",
+    "cul-de-sac"
+   ],
+   [
+    2,
+    "location",
+    "driveway"
+   ]
+  ],
+  "n_unique_details": 4
+ },
+ "D2N106": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 45,
+  "age5": 45,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "J45.909"
+  ],
+  "details": {
+   "hobby|love hunter yeah": 1,
+   "hobby|hunting": 1,
+   "hobby|enjoys hunting": 1,
+   "location|city": 1,
+   "pet|dog": 1,
+   "pet|cat": 1,
+   "other_quasi_identifier|living with": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "love hunter yeah"
+   ],
+   [
+    1,
+    "hobby",
+    "enjoys hunting"
+   ],
+   [
+    1,
+    "location",
+    "city"
+   ],
+   [
+    2,
+    "hobby",
+    "hunting"
+   ],
+   [
+    3,
+    "other_quasi_identifier",
+    "living with"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N107": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 39,
+  "age5": 35,
+  "age10": 30,
+  "sex": "male",
+  "codes": [
+   "S33.5XXA"
+  ],
+  "details": {
+   "hobby|yard work": 2,
+   "product_brand|brooks": 1
+  },
+  "rare_details": [
+   [
+    3,
+    "product_brand",
+    "brooks"
+   ],
+   [
+    5,
+    "hobby",
+    "yard work"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N108": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 40,
+  "age5": 40,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "E11.621"
+  ],
+  "details": {
+   "location|beach": 2,
+   "location|asking which beach": 1,
+   "location|dewey beach": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "location",
+    "asking which beach"
+   ],
+   [
+    1,
+    "location",
+    "dewey beach"
+   ],
+   [
+    2,
+    "location",
+    "beach"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N109": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 36,
+  "age5": 35,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I10",
+   "M25.572"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N110": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 43,
+  "age5": 40,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "E11.621"
+  ],
+  "details": {
+   "product_brand|hoka": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "product_brand",
+    "hoka"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N111": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 57,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "I10",
+   "S83.421A"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N112": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 44,
+  "age5": 40,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "M51.27"
+  ],
+  "details": {
+   "hobby|football": 2,
+   "hobby|play football and then": 1,
+   "hobby|play football": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "play football and then"
+   ],
+   [
+    1,
+    "hobby",
+    "play football"
+   ],
+   [
+    7,
+    "hobby",
+    "football"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N113": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "B19.20"
+  ],
+  "details": {
+   "hobby|like to determine the severity": 1
+  },
+  "rare_details": [
+   [
+    2,
+    "hobby",
+    "like to determine the severity"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N114": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 33,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "R51.9"
+  ],
+  "details": {
+   "hobby|like to wear yeah so": 1,
+   "product_brand|new balance": 2,
+   "product_brand|asics": 3,
+   "product_brand|nike": 2,
+   "product_brand|tumor guy": 1,
+   "doctor_staff_name|doctor white": 1,
+   "doctor_staff_name|dr. white": 4
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "like to wear yeah so"
+   ],
+   [
+    1,
+    "product_brand",
+    "new balance"
+   ],
+   [
+    1,
+    "product_brand",
+    "asics"
+   ],
+   [
+    1,
+    "product_brand",
+    "nike"
+   ],
+   [
+    1,
+    "product_brand",
+    "tumor guy"
+   ]
+  ],
+  "n_unique_details": 5
+ },
+ "D2N115": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 40,
+  "age5": 40,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "S16.1XXA"
+  ],
+  "details": {
+   "hobby|football": 2,
+   "hobby|played sports before or": 1,
+   "hobby|played football": 1,
+   "hobby|played football years ago": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "played sports before or"
+   ],
+   [
+    1,
+    "hobby",
+    "played football"
+   ],
+   [
+    1,
+    "hobby",
+    "played football years ago"
+   ],
+   [
+    7,
+    "hobby",
+    "football"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N116": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 56,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "M67.813",
+   "M79.671"
+  ],
+  "details": {
+   "hobby|baseball": 2,
+   "hobby|yard work": 2,
+   "hobby|playing baseball when i": 1,
+   "hobby|playing baseball": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "playing baseball when i"
+   ],
+   [
+    1,
+    "hobby",
+    "playing baseball"
+   ],
+   [
+    4,
+    "hobby",
+    "baseball"
+   ],
+   [
+    5,
+    "hobby",
+    "yard work"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N117": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 45,
+  "age5": 45,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "J45.21",
+   "M77.11"
+  ],
+  "details": {
+   "hobby|tennis": 14,
+   "hobby|like to record this conversation": 1,
+   "hobby|play tennis he just": 1,
+   "hobby|playing tennis kinda back": 1,
+   "hobby|playing tennis since high": 1,
+   "hobby|playing tennis for the": 1,
+   "location|australia": 1,
+   "event|tournament": 1,
+   "event|easter": 1,
+   "doctor_staff_name|doctor nelson": 1,
+   "doctor_staff_name|dr. nelson": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "play tennis he just"
+   ],
+   [
+    1,
+    "hobby",
+    "playing tennis kinda back"
+   ],
+   [
+    1,
+    "hobby",
+    "playing tennis since high"
+   ],
+   [
+    1,
+    "hobby",
+    "playing tennis for the"
+   ],
+   [
+    1,
+    "location",
+    "australia"
+   ]
+  ],
+  "n_unique_details": 7
+ },
+ "D2N118": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "G47.00",
+   "I10",
+   "N20.0"
+  ],
+  "details": {
+   "hobby|like to sleep with the": 1,
+   "product_brand|iphone": 1,
+   "doctor_staff_name|doctor harris": 2,
+   "doctor_staff_name|dr. harris": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "like to sleep with the"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "doctor harris"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. harris"
+   ],
+   [
+    2,
+    "product_brand",
+    "iphone"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N119": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "J45.20"
+  ],
+  "details": {
+   "hobby|hiking": 4,
+   "hobby|enjoyed hiking so you": 1,
+   "event|race": 1,
+   "pet|cat": 1,
+   "pet|cat so": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "enjoyed hiking so you"
+   ],
+   [
+    1,
+    "pet",
+    "cat so"
+   ],
+   [
+    2,
+    "event",
+    "race"
+   ],
+   [
+    7,
+    "hobby",
+    "hiking"
+   ],
+   [
+    11,
+    "pet",
+    "cat"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N120": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 41,
+  "age5": 40,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "M51.16"
+  ],
+  "details": {
+   "hobby|golf": 3,
+   "hobby|playing golf": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "playing golf"
+   ],
+   [
+    3,
+    "hobby",
+    "golf"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N121": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "I10",
+   "M25.561"
+  ],
+  "details": {
+   "hobby|skiing": 3,
+   "hobby|baseball": 3,
+   "hobby|love spring and chicken": 1,
+   "location|boat what lake": 1,
+   "location|boat on lake": 1,
+   "vehicle|boat": 4
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "love spring and chicken"
+   ],
+   [
+    1,
+    "location",
+    "boat what lake"
+   ],
+   [
+    1,
+    "location",
+    "boat on lake"
+   ],
+   [
+    1,
+    "vehicle",
+    "boat"
+   ],
+   [
+    4,
+    "hobby",
+    "baseball"
+   ]
+  ],
+  "n_unique_details": 4
+ },
+ "D2N122": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "M06.9",
+   "R91.1"
+  ],
+  "details": {
+   "hobby|horses": 1,
+   "hobby|biking": 3,
+   "hobby|trails": 1,
+   "hobby|love riding over there": 1,
+   "hobby|enjoys biking": 1,
+   "location|trails": 1,
+   "pet|cat": 1,
+   "vehicle|bike ride": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "love riding over there"
+   ],
+   [
+    1,
+    "hobby",
+    "enjoys biking"
+   ],
+   [
+    2,
+    "hobby",
+    "horses"
+   ],
+   [
+    3,
+    "hobby",
+    "biking"
+   ],
+   [
+    4,
+    "hobby",
+    "trails"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N123": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 56,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "I10",
+   "R13.10"
+  ],
+  "details": {
+   "hobby|like to lose a little": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "like to lose a little"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N124": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 45,
+  "age5": 45,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "S82.61XA"
+  ],
+  "details": {
+   "employer_occupation_school|coach": 2,
+   "employer_occupation_school|work from home": 1,
+   "employer_occupation_school|works from home": 1,
+   "hobby|basketball": 4,
+   "hobby|volunteer": 1,
+   "hobby|coaching": 2,
+   "hobby|playing basketball and there": 1,
+   "hobby|playing basketball with his": 1,
+   "pet|walk my dog": 1,
+   "pet|dog": 1,
+   "pet|dog so": 1,
+   "named_relative_or_friend|son sean": 1,
+   "doctor_staff_name|doctor michael": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "coach"
+   ],
+   [
+    1,
+    "hobby",
+    "volunteer"
+   ],
+   [
+    1,
+    "hobby",
+    "coaching"
+   ],
+   [
+    1,
+    "hobby",
+    "playing basketball and there"
+   ],
+   [
+    1,
+    "hobby",
+    "playing basketball with his"
+   ]
+  ],
+  "n_unique_details": 8
+ },
+ "D2N125": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 54,
+  "age5": 50,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "G50.0"
+  ],
+  "details": {
+   "doctor_staff_name|doctor cruz": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "doctor cruz"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N126": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 44,
+  "age5": 40,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "M25.561"
+  ],
+  "details": {
+   "hobby|dancing": 1,
+   "hobby|skiing": 5,
+   "location|vermont": 2,
+   "other_quasi_identifier|twins": 2
+  },
+  "rare_details": [
+   [
+    2,
+    "location",
+    "vermont"
+   ],
+   [
+    2,
+    "other_quasi_identifier",
+    "twins"
+   ],
+   [
+    3,
+    "hobby",
+    "dancing"
+   ],
+   [
+    7,
+    "hobby",
+    "skiing"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N127": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 46,
+  "age5": 45,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "S13.9XXD"
+  ],
+  "details": {
+   "employer_occupation_school|lawyer": 4,
+   "employer_occupation_school|go to work": 1,
+   "doctor_staff_name|doctor collins": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "lawyer"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "doctor collins"
+   ],
+   [
+    3,
+    "employer_occupation_school",
+    "go to work"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N128": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 49,
+  "age5": 45,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "L40.9",
+   "M10.9",
+   "M19.021"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N129": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 24,
+  "age5": 20,
+  "age10": 20,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I10"
+  ],
+  "details": {
+   "employer_occupation_school|working at a bakery this summer": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "working at a bakery this summer"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N130": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 26,
+  "age5": 25,
+  "age10": 20,
+  "sex": "female",
+  "codes": [
+   "F32.A",
+   "G40.909",
+   "K27.9",
+   "M25.522"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N131": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 26,
+  "age5": 25,
+  "age10": 20,
+  "sex": "female",
+  "codes": [
+   "I10",
+   "Z94.0"
+  ],
+  "details": {
+   "employer_occupation_school|stress at work": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "stress at work"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N132": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 40,
+  "age5": 40,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "S33.5XXA"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N133": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 27,
+  "age5": 25,
+  "age10": 20,
+  "sex": "female",
+  "codes": [
+   "F32.A",
+   "G56.00",
+   "G89.29",
+   "M22.41"
+  ],
+  "details": {
+   "hobby|swimming": 11
+  },
+  "rare_details": [
+   [
+    5,
+    "hobby",
+    "swimming"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N134": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 31,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "A69.20",
+   "E11.9",
+   "I10"
+  ],
+  "details": {
+   "hobby|hiking": 2,
+   "location|woods": 2
+  },
+  "rare_details": [
+   [
+    3,
+    "location",
+    "woods"
+   ],
+   [
+    7,
+    "hobby",
+    "hiking"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N135": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 52,
+  "age5": 50,
+  "age10": 50,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I48.91",
+   "K21.9"
+  ],
+  "details": {
+   "employer_occupation_school|work": 1,
+   "hobby|racing": 2
+  },
+  "rare_details": [
+   [
+    3,
+    "hobby",
+    "racing"
+   ],
+   [
+    11,
+    "employer_occupation_school",
+    "work"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N136": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 33,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I10",
+   "S83.92XA"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N137": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 63,
+  "age5": 60,
+  "age10": 60,
+  "sex": "female",
+  "codes": [
+   "F32.A",
+   "I10"
+  ],
+  "details": {
+   "employer_occupation_school|grocery store": 1,
+   "employer_occupation_school|work": 1
+  },
+  "rare_details": [
+   [
+    2,
+    "employer_occupation_school",
+    "grocery store"
+   ],
+   [
+    11,
+    "employer_occupation_school",
+    "work"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N138": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 20,
+  "age5": 20,
+  "age10": 20,
+  "sex": "female",
+  "codes": [
+   "J30.9",
+   "J45.40",
+   "T78.01XA"
+  ],
+  "details": {
+   "employer_occupation_school|grocery store": 1,
+   "employer_occupation_school|enlisted": 2,
+   "employer_occupation_school|work outside": 1,
+   "employer_occupation_school|army": 1,
+   "employer_occupation_school|works outside": 2,
+   "hobby|into contact with cars": 1,
+   "location|broadway": 1,
+   "product_brand|enterprise rent-a-car": 1,
+   "product_brand|enterprise": 1,
+   "doctor_staff_name|have helen come in": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "enlisted"
+   ],
+   [
+    1,
+    "employer_occupation_school",
+    "work outside"
+   ],
+   [
+    1,
+    "employer_occupation_school",
+    "army"
+   ],
+   [
+    1,
+    "employer_occupation_school",
+    "works outside"
+   ],
+   [
+    1,
+    "hobby",
+    "into contact with cars"
+   ]
+  ],
+  "n_unique_details": 9
+ },
+ "D2N139": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 49,
+  "age5": 45,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "I1A.0"
+  ],
+  "details": {
+   "hobby|treadmill": 3,
+   "hobby|lift weights": 1,
+   "hobby|into secondary causes of": 1,
+   "location|cross that road": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "into secondary causes of"
+   ],
+   [
+    1,
+    "location",
+    "cross that road"
+   ],
+   [
+    2,
+    "hobby",
+    "treadmill"
+   ],
+   [
+    2,
+    "hobby",
+    "lift weights"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N140": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 32,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "K58.9"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N141": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 86,
+  "age5": 85,
+  "age10": 80,
+  "sex": "male",
+  "codes": [
+   "G31.84",
+   "G91.9",
+   "N39.41",
+   "R26.89"
+  ],
+  "details": {
+   "hobby|like to leave the shunt": 1,
+   "hobby|like to burden anyone when": 1,
+   "hobby|like to leave the setting": 1,
+   "named_relative_or_friend|daughter , theresa": 2,
+   "named_relative_or_friend|sister , hannah": 2,
+   "named_relative_or_friend|daughter, theresa": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "like to leave the shunt"
+   ],
+   [
+    1,
+    "hobby",
+    "like to burden anyone when"
+   ],
+   [
+    1,
+    "hobby",
+    "like to leave the setting"
+   ],
+   [
+    1,
+    "named_relative_or_friend",
+    "daughter , theresa"
+   ],
+   [
+    1,
+    "named_relative_or_friend",
+    "sister , hannah"
+   ]
+  ],
+  "n_unique_details": 6
+ },
+ "D2N142": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 72,
+  "age5": 70,
+  "age10": 70,
+  "sex": "female",
+  "codes": [
+   "E78.00",
+   "F10.90",
+   "I10"
+  ],
+  "details": {
+   "hobby|into thinking it does": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "into thinking it does"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N143": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 23,
+  "age5": 20,
+  "age10": 20,
+  "sex": "female",
+  "codes": [
+   "Z11.3"
+  ],
+  "details": {
+   "doctor_staff_name|dr. diaz": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "dr. diaz"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N144": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 72,
+  "age5": 70,
+  "age10": 70,
+  "sex": "male",
+  "codes": [
+   "M06.9",
+   "M25.561",
+   "R60.0"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N145": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 40,
+  "age5": 40,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "L71.0",
+   "L71.8"
+  ],
+  "details": {
+   "vehicle|pickup": 1,
+   "product_brand|cetaphil": 2,
+   "product_brand|neutrogena": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "product_brand",
+    "cetaphil"
+   ],
+   [
+    1,
+    "product_brand",
+    "neutrogena"
+   ],
+   [
+    2,
+    "vehicle",
+    "pickup"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N146": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "K80.00"
+  ],
+  "details": {
+   "hobby|photography": 3,
+   "hobby|hiking": 2,
+   "hobby|love photography i i": 1,
+   "hobby|love nature of photography": 1,
+   "hobby|like to catch especially around": 1,
+   "hobby|like to perform a laparoscopic": 1,
+   "location|woods": 1,
+   "location|rex center": 1,
+   "product_brand|rex center": 1,
+   "doctor_staff_name|doctor miller": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "love photography i i"
+   ],
+   [
+    1,
+    "hobby",
+    "love nature of photography"
+   ],
+   [
+    1,
+    "hobby",
+    "like to catch especially around"
+   ],
+   [
+    1,
+    "hobby",
+    "like to perform a laparoscopic"
+   ],
+   [
+    2,
+    "hobby",
+    "photography"
+   ]
+  ],
+  "n_unique_details": 4
+ },
+ "D2N147": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 67,
+  "age5": 65,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "S43.81XA"
+  ],
+  "details": {
+   "hobby|football": 7,
+   "hobby|playing tackle football so": 1,
+   "hobby|play taggle football for": 1,
+   "hobby|playing pick up football": 1,
+   "location|driveway": 1,
+   "pet|cat": 1,
+   "other_quasi_identifier|driveway": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "playing tackle football so"
+   ],
+   [
+    1,
+    "hobby",
+    "play taggle football for"
+   ],
+   [
+    1,
+    "hobby",
+    "playing pick up football"
+   ],
+   [
+    2,
+    "location",
+    "driveway"
+   ],
+   [
+    3,
+    "other_quasi_identifier",
+    "driveway"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N148": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 57,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "M54.50"
+  ],
+  "details": {
+   "hobby|like to obtain an mri": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "like to obtain an mri"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N149": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 57,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "I10",
+   "R06.02"
+  ],
+  "details": {
+   "pet|cat": 2
+  },
+  "rare_details": [
+   [
+    11,
+    "pet",
+    "cat"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N150": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 36,
+  "age5": 35,
+  "age10": 30,
+  "sex": "male",
+  "codes": [
+   "M25.561"
+  ],
+  "details": {
+   "employer_occupation_school|job": 1,
+   "employer_occupation_school|works at a desk": 1,
+   "hobby|soccer": 2,
+   "hobby|jogging": 3,
+   "hobby|playing pickup soccer games": 1,
+   "pet|dog": 2,
+   "pet|dog or": 1,
+   "pet|dog is": 1,
+   "vehicle|pickup": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "works at a desk"
+   ],
+   [
+    1,
+    "hobby",
+    "playing pickup soccer games"
+   ],
+   [
+    1,
+    "pet",
+    "dog or"
+   ],
+   [
+    2,
+    "hobby",
+    "jogging"
+   ],
+   [
+    2,
+    "pet",
+    "dog is"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N151": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 33,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I10",
+   "M25.521"
+  ],
+  "details": {
+   "hobby|pottery": 8,
+   "hobby|ceramics": 2,
+   "hobby|baking": 4,
+   "hobby|like to fluctuate you know": 1,
+   "location|around the neighborhood": 1,
+   "location|around her neighborhood": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "baking"
+   ],
+   [
+    1,
+    "hobby",
+    "like to fluctuate you know"
+   ],
+   [
+    1,
+    "location",
+    "around the neighborhood"
+   ],
+   [
+    1,
+    "location",
+    "around her neighborhood"
+   ],
+   [
+    2,
+    "hobby",
+    "pottery"
+   ]
+  ],
+  "n_unique_details": 4
+ },
+ "D2N152": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "M54.50"
+  ],
+  "details": {
+   "hobby|skiing": 1,
+   "location|main street": 1,
+   "pet|cat": 1
+  },
+  "rare_details": [
+   [
+    4,
+    "location",
+    "main street"
+   ],
+   [
+    7,
+    "hobby",
+    "skiing"
+   ],
+   [
+    11,
+    "pet",
+    "cat"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N153": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 68,
+  "age5": 65,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "S83.421A"
+  ],
+  "details": {
+   "hobby|squats": 1,
+   "hobby|peloton": 2,
+   "hobby|gardening": 1,
+   "product_brand|peloton": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "peloton"
+   ],
+   [
+    1,
+    "product_brand",
+    "peloton"
+   ],
+   [
+    2,
+    "hobby",
+    "squats"
+   ],
+   [
+    3,
+    "hobby",
+    "gardening"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N154": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 46,
+  "age5": 45,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "M76.61"
+  ],
+  "details": {
+   "hobby|triathlon": 4,
+   "hobby|swimming": 1,
+   "hobby|hockey": 5,
+   "sports_team|red wings": 1,
+   "location|pittsburgh": 1,
+   "location|new york": 1,
+   "location|detroit": 2,
+   "vehicle|bicycle": 1,
+   "vehicle|bike ride": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "triathlon"
+   ],
+   [
+    1,
+    "hobby",
+    "hockey"
+   ],
+   [
+    1,
+    "sports_team",
+    "red wings"
+   ],
+   [
+    1,
+    "location",
+    "pittsburgh"
+   ],
+   [
+    1,
+    "location",
+    "new york"
+   ]
+  ],
+  "n_unique_details": 6
+ },
+ "D2N155": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 77,
+  "age5": 75,
+  "age10": 70,
+  "sex": "female",
+  "codes": [
+   "E11.621"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N156": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I05.1",
+   "I11.0",
+   "I25.10",
+   "I50.21"
+  ],
+  "details": {
+   "hobby|love pizza it's my": 1,
+   "hobby|love cardiac rehab and": 1,
+   "hobby|into acute heart failure": 1,
+   "pet|walk my dog": 1,
+   "pet|walking my dog": 1,
+   "pet|dog everyday": 1,
+   "pet|dog i": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "love pizza it's my"
+   ],
+   [
+    1,
+    "hobby",
+    "love cardiac rehab and"
+   ],
+   [
+    1,
+    "hobby",
+    "into acute heart failure"
+   ],
+   [
+    1,
+    "pet",
+    "walking my dog"
+   ],
+   [
+    1,
+    "pet",
+    "dog everyday"
+   ]
+  ],
+  "n_unique_details": 6
+ },
+ "D2N157": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "E11.22",
+   "F32.A",
+   "I25.10",
+   "N18.30"
+  ],
+  "details": {
+   "sports_team|49ers": 1,
+   "location|west coast": 2,
+   "location|san francisco": 3,
+   "event|super bowl": 1,
+   "event|retiring": 1,
+   "pet|dog": 2,
+   "pet|dog and": 1,
+   "other_quasi_identifier|live with": 1,
+   "other_quasi_identifier|lives with": 1,
+   "doctor_staff_name|doctor miller": 1,
+   "doctor_staff_name|dr. miller": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "sports_team",
+    "49ers"
+   ],
+   [
+    1,
+    "location",
+    "san francisco"
+   ],
+   [
+    1,
+    "event",
+    "retiring"
+   ],
+   [
+    2,
+    "location",
+    "west coast"
+   ],
+   [
+    2,
+    "pet",
+    "dog and"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N158": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 31,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "J45.909",
+   "R10.9"
+  ],
+  "details": {
+   "hobby|enjoys coffee": 1,
+   "product_brand|starbucks": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "enjoys coffee"
+   ],
+   [
+    1,
+    "product_brand",
+    "starbucks"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N159": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 33,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "G56.01"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N160": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "I10",
+   "S50.01XA"
+  ],
+  "details": {
+   "hobby|lacrosse": 5,
+   "hobby|playing lacrosse with my": 1,
+   "hobby|play lacrosse with your": 1,
+   "hobby|playing lacrosse for the": 1,
+   "hobby|playing normally": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "lacrosse"
+   ],
+   [
+    1,
+    "hobby",
+    "playing lacrosse with my"
+   ],
+   [
+    1,
+    "hobby",
+    "play lacrosse with your"
+   ],
+   [
+    1,
+    "hobby",
+    "playing lacrosse for the"
+   ],
+   [
+    1,
+    "hobby",
+    "playing normally"
+   ]
+  ],
+  "n_unique_details": 5
+ },
+ "D2N161": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 82,
+  "age5": 80,
+  "age10": 80,
+  "sex": "male",
+  "codes": [
+   "I13.0",
+   "I50.9",
+   "N18.30"
+  ],
+  "details": {
+   "hobby|football": 2,
+   "hobby|love chicken wings and": 1,
+   "hobby|love pizza too and": 1,
+   "hobby|love chicken minks but": 1,
+   "sports_team|cowboys": 2,
+   "sports_team|chiefs": 1,
+   "location|dallas": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "love chicken wings and"
+   ],
+   [
+    1,
+    "hobby",
+    "love pizza too and"
+   ],
+   [
+    1,
+    "hobby",
+    "love chicken minks but"
+   ],
+   [
+    1,
+    "sports_team",
+    "cowboys"
+   ],
+   [
+    1,
+    "sports_team",
+    "chiefs"
+   ]
+  ],
+  "n_unique_details": 5
+ },
+ "D2N162": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 42,
+  "age5": 40,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "S93.401A"
+  ],
+  "details": {
+   "hobby|soccer": 8,
+   "hobby|playing soccer i know": 1,
+   "hobby|play himself so they": 1,
+   "hobby|into soccer too": 1,
+   "hobby|play soccer again okay": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "playing soccer i know"
+   ],
+   [
+    1,
+    "hobby",
+    "play himself so they"
+   ],
+   [
+    1,
+    "hobby",
+    "into soccer too"
+   ],
+   [
+    1,
+    "hobby",
+    "play soccer again okay"
+   ],
+   [
+    7,
+    "hobby",
+    "soccer"
+   ]
+  ],
+  "n_unique_details": 4
+ },
+ "D2N163": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 17,
+  "age5": 15,
+  "age10": 10,
+  "sex": null,
+  "codes": [
+   "E78.00"
+  ],
+  "details": {
+   "hobby|trails": 1,
+   "location|trails": 1,
+   "vehicle|bicycle": 1,
+   "vehicle|bike ride": 2,
+   "vehicle|bike riding": 1,
+   "other_quasi_identifier|live with": 1,
+   "other_quasi_identifier|apartment": 1
+  },
+  "rare_details": [
+   [
+    2,
+    "vehicle",
+    "bike riding"
+   ],
+   [
+    2,
+    "other_quasi_identifier",
+    "apartment"
+   ],
+   [
+    4,
+    "hobby",
+    "trails"
+   ],
+   [
+    4,
+    "other_quasi_identifier",
+    "live with"
+   ],
+   [
+    5,
+    "location",
+    "trails"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N164": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 53,
+  "age5": 50,
+  "age10": 50,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I10",
+   "R07.9"
+  ],
+  "details": {
+   "hobby|love sodas so i'm": 1,
+   "hobby|into several other clinicians": 1,
+   "hobby|into cardiology the next": 1,
+   "product_brand|coke": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "love sodas so i'm"
+   ],
+   [
+    1,
+    "hobby",
+    "into several other clinicians"
+   ],
+   [
+    1,
+    "hobby",
+    "into cardiology the next"
+   ],
+   [
+    1,
+    "product_brand",
+    "coke"
+   ]
+  ],
+  "n_unique_details": 4
+ },
+ "D2N165": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 30,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "M22.2X1"
+  ],
+  "details": {
+   "employer_occupation_school|work from home": 1,
+   "employer_occupation_school|sixth grade": 1,
+   "employer_occupation_school|works from home": 1,
+   "hobby|treadmill": 2,
+   "hobby|marathon": 1,
+   "location|boston": 2,
+   "event|marathon": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "sixth grade"
+   ],
+   [
+    1,
+    "location",
+    "boston"
+   ],
+   [
+    2,
+    "hobby",
+    "treadmill"
+   ],
+   [
+    2,
+    "hobby",
+    "marathon"
+   ],
+   [
+    2,
+    "event",
+    "marathon"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N166": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 58,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "M51.16"
+  ],
+  "details": {
+   "employer_occupation_school|job": 2,
+   "hobby|soccer": 2,
+   "hobby|playing sports": 1,
+   "hobby|played midfield": 1,
+   "hobby|playing soccer in the": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "played midfield"
+   ],
+   [
+    1,
+    "hobby",
+    "playing soccer in the"
+   ],
+   [
+    2,
+    "hobby",
+    "playing sports"
+   ],
+   [
+    4,
+    "employer_occupation_school",
+    "job"
+   ],
+   [
+    7,
+    "hobby",
+    "soccer"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N167": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 81,
+  "age5": 80,
+  "age10": 80,
+  "sex": "female",
+  "codes": [
+   "M25.562"
+  ],
+  "details": {
+   "vehicle|bike": 1
+  },
+  "rare_details": [
+   [
+    3,
+    "vehicle",
+    "bike"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N168": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 28,
+  "age5": 25,
+  "age10": 20,
+  "sex": "female",
+  "codes": [
+   "F32.A",
+   "I10"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N169": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 61,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "G43.909",
+   "K21.9",
+   "R06.02"
+  ],
+  "details": {
+   "vehicle|bike ride": 3
+  },
+  "rare_details": [
+   [
+    5,
+    "vehicle",
+    "bike ride"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N170": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 50,
+  "age5": 50,
+  "age10": 50,
+  "sex": "female",
+  "codes": [
+   "I50.9",
+   "J44.9",
+   "R79.9"
+  ],
+  "details": {
+   "hobby|climbing": 2,
+   "hobby|like to obtain an endoscopy": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "like to obtain an endoscopy"
+   ],
+   [
+    2,
+    "hobby",
+    "climbing"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N171": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 56,
+  "age5": 55,
+  "age10": 50,
+  "sex": "female",
+  "codes": [
+   "I25.10",
+   "M51.9",
+   "Z00.00",
+   "Z98.890"
+  ],
+  "details": {
+   "employer_occupation_school|work": 1
+  },
+  "rare_details": [
+   [
+    11,
+    "employer_occupation_school",
+    "work"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N172": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 50,
+  "age5": 50,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "F32.A",
+   "I10"
+  ],
+  "details": {
+   "employer_occupation_school|work": 1,
+   "location|beach": 2
+  },
+  "rare_details": [
+   [
+    2,
+    "location",
+    "beach"
+   ],
+   [
+    11,
+    "employer_occupation_school",
+    "work"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N173": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 57,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "E78.00",
+   "U07.1",
+   "Z95.1"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N174": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 57,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "I25.10",
+   "M32.9"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N175": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 39,
+  "age5": 35,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I10",
+   "Z98.89"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N176": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 62,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "K21.9"
+  ],
+  "details": {
+   "employer_occupation_school|job": 2
+  },
+  "rare_details": [
+   [
+    4,
+    "employer_occupation_school",
+    "job"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N177": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 60,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "F32.A",
+   "I10",
+   "Z09"
+  ],
+  "details": {
+   "hobby|gardening": 1,
+   "event|thanksgiving": 4,
+   "event|new year": 1,
+   "event|halloween": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "event",
+    "thanksgiving"
+   ],
+   [
+    1,
+    "event",
+    "new year"
+   ],
+   [
+    2,
+    "event",
+    "halloween"
+   ],
+   [
+    3,
+    "hobby",
+    "gardening"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N178": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 75,
+  "age5": 75,
+  "age10": 70,
+  "sex": "female",
+  "codes": [
+   "E11.51",
+   "E78.5",
+   "I10",
+   "I73.9"
+  ],
+  "details": {
+   "doctor_staff_name|dr. sanchez": 4
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "dr. sanchez"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N179": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 60,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "G56.03"
+  ],
+  "details": {
+   "doctor_staff_name|dr. martinez": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "dr. martinez"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N180": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 60,
+  "age5": 60,
+  "age10": 60,
+  "sex": "female",
+  "codes": [
+   "G56.03"
+  ],
+  "details": {
+   "doctor_staff_name|dr. jacob": 2,
+   "doctor_staff_name|dr . lopez": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "dr. jacob"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr . lopez"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N181": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "K21.9"
+  ],
+  "details": {
+   "employer_occupation_school|paralegal": 2,
+   "employer_occupation_school|works as a paralegal": 1,
+   "doctor_staff_name|dr. phillips": 2,
+   "doctor_staff_name|dr. scott": 4
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "paralegal"
+   ],
+   [
+    1,
+    "employer_occupation_school",
+    "works as a paralegal"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. phillips"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. scott"
+   ]
+  ],
+  "n_unique_details": 4
+ },
+ "D2N182": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 39,
+  "age5": 35,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "K59.09",
+   "Z28.310"
+  ],
+  "details": {
+   "hobby|barre": 1,
+   "location|district regional hospital": 2,
+   "pet|cat": 1,
+   "named_relative_or_friend|kids vaccinated": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "location",
+    "district regional hospital"
+   ],
+   [
+    1,
+    "named_relative_or_friend",
+    "kids vaccinated"
+   ],
+   [
+    2,
+    "hobby",
+    "barre"
+   ],
+   [
+    11,
+    "pet",
+    "cat"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N183": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 14,
+  "age5": 10,
+  "age10": 10,
+  "sex": "male",
+  "codes": [
+   "L70.0"
+  ],
+  "details": {
+   "hobby|into treating the back": 1,
+   "product_brand|panoxyl": 4,
+   "product_brand|walgreens": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "into treating the back"
+   ],
+   [
+    1,
+    "product_brand",
+    "panoxyl"
+   ],
+   [
+    1,
+    "product_brand",
+    "walgreens"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N184": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 44,
+  "age5": 40,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "Z09"
+  ],
+  "details": {
+   "employer_occupation_school|work for ups": 1,
+   "employer_occupation_school|employer": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "work for ups"
+   ],
+   [
+    1,
+    "employer_occupation_school",
+    "employer"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N185": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 14,
+  "age5": 10,
+  "age10": 10,
+  "sex": "female",
+  "codes": [
+   "Q60.3"
+  ],
+  "details": {
+   "hobby|softball": 3,
+   "hobby|play softball back in": 1,
+   "location|jacksonville": 2,
+   "location|out of town": 2,
+   "location|atlanta": 2,
+   "location|like this road": 1,
+   "product_brand|gatorade": 2,
+   "named_relative_or_friend|dad , aunt": 1,
+   "doctor_staff_name|dr. rogers": 2,
+   "doctor_staff_name|doctor suspects": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "play softball back in"
+   ],
+   [
+    1,
+    "location",
+    "jacksonville"
+   ],
+   [
+    1,
+    "location",
+    "out of town"
+   ],
+   [
+    1,
+    "location",
+    "atlanta"
+   ],
+   [
+    1,
+    "location",
+    "like this road"
+   ]
+  ],
+  "n_unique_details": 9
+ },
+ "D2N186": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 35,
+  "age5": 35,
+  "age10": 30,
+  "sex": "male",
+  "codes": [
+   "M54.50"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N187": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "H35.3231"
+  ],
+  "details": {
+   "product_brand|mcdonalds": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "product_brand",
+    "mcdonalds"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N188": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 28,
+  "age5": 25,
+  "age10": 20,
+  "sex": "female",
+  "codes": [
+   "S93.401A"
+  ],
+  "details": {
+   "hobby|hiking": 1,
+   "hobby|biking": 7,
+   "location|colorado": 1,
+   "location|while in mountain": 1,
+   "location|has been mountain": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "location",
+    "colorado"
+   ],
+   [
+    1,
+    "location",
+    "while in mountain"
+   ],
+   [
+    1,
+    "location",
+    "has been mountain"
+   ],
+   [
+    3,
+    "hobby",
+    "biking"
+   ],
+   [
+    7,
+    "hobby",
+    "hiking"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N189": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "I21.11"
+  ],
+  "details": {
+   "hobby|swimming": 4,
+   "hobby|into cardiac rehab that's": 1,
+   "hobby|basketball": 1,
+   "hobby|enjoys swimming": 1,
+   "sports_team|nuggets": 3,
+   "location|denver": 4,
+   "location|brooklyn": 1,
+   "event|playoffs": 1,
+   "other_quasi_identifier|downstairs": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "into cardiac rehab that's"
+   ],
+   [
+    1,
+    "hobby",
+    "enjoys swimming"
+   ],
+   [
+    1,
+    "sports_team",
+    "nuggets"
+   ],
+   [
+    1,
+    "location",
+    "denver"
+   ],
+   [
+    1,
+    "location",
+    "brooklyn"
+   ]
+  ],
+  "n_unique_details": 5
+ },
+ "D2N190": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 33,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "M25.561"
+  ],
+  "details": {
+   "hobby|biking": 1,
+   "hobby|swimming": 2,
+   "hobby|play sports in in": 1,
+   "sports_team|bulls": 1,
+   "location|dallas": 1,
+   "pet|dog": 1,
+   "pet|walking the dog": 1,
+   "vehicle|bicycle": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "play sports in in"
+   ],
+   [
+    1,
+    "sports_team",
+    "bulls"
+   ],
+   [
+    1,
+    "pet",
+    "walking the dog"
+   ],
+   [
+    3,
+    "hobby",
+    "biking"
+   ],
+   [
+    3,
+    "location",
+    "dallas"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N191": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 45,
+  "age5": 45,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "I10",
+   "M79.602"
+  ],
+  "details": {
+   "hobby|mowing": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "mowing"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N192": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 34,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "G43.909",
+   "I10",
+   "R10.811"
+  ],
+  "details": {
+   "sports_team|packers": 1,
+   "location|europe": 2,
+   "location|wisconsin": 1,
+   "location|trip to europe": 1,
+   "event|super bowl": 2,
+   "event|playoffs": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "sports_team",
+    "packers"
+   ],
+   [
+    1,
+    "location",
+    "europe"
+   ],
+   [
+    1,
+    "location",
+    "wisconsin"
+   ],
+   [
+    1,
+    "location",
+    "trip to europe"
+   ],
+   [
+    2,
+    "event",
+    "playoffs"
+   ]
+  ],
+  "n_unique_details": 4
+ },
+ "D2N193": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I10",
+   "R05.9"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N194": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 50,
+  "age5": 50,
+  "age10": 50,
+  "sex": "female",
+  "codes": [
+   "M25.512"
+  ],
+  "details": {
+   "other_quasi_identifier|basement": 4,
+   "product_brand|home depot": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "product_brand",
+    "home depot"
+   ],
+   [
+    5,
+    "other_quasi_identifier",
+    "basement"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N195": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 40,
+  "age5": 40,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "I10",
+   "S83.411A"
+  ],
+  "details": {
+   "hobby|basketball": 7,
+   "hobby|playing basketball yesterday and": 1,
+   "hobby|playing basketball how often": 1,
+   "hobby|play basketball": 1,
+   "hobby|playing basketball you you": 1,
+   "hobby|playing basketball right and": 1,
+   "hobby|playing basketball and felt": 1,
+   "hobby|playing basketball": 1,
+   "product_brand|google": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "playing basketball yesterday and"
+   ],
+   [
+    1,
+    "hobby",
+    "playing basketball how often"
+   ],
+   [
+    1,
+    "hobby",
+    "play basketball"
+   ],
+   [
+    1,
+    "hobby",
+    "playing basketball you you"
+   ],
+   [
+    1,
+    "hobby",
+    "playing basketball right and"
+   ]
+  ],
+  "n_unique_details": 7
+ },
+ "D2N196": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 67,
+  "age5": 65,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "E78.5",
+   "I10",
+   "M19.90"
+  ],
+  "details": {
+   "hobby|racing": 1,
+   "hobby|softball": 1,
+   "hobby|golfing": 2,
+   "hobby|like to discuss that with": 1,
+   "hobby|golf": 1,
+   "event|tournament": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "like to discuss that with"
+   ],
+   [
+    2,
+    "hobby",
+    "softball"
+   ],
+   [
+    3,
+    "hobby",
+    "racing"
+   ],
+   [
+    3,
+    "hobby",
+    "golf"
+   ],
+   [
+    3,
+    "event",
+    "tournament"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N197": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 37,
+  "age5": 35,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I10"
+  ],
+  "details": {
+   "doctor_staff_name|doctor ruth": 2,
+   "doctor_staff_name|dr. ruth": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "doctor ruth"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. ruth"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N198": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "N05.9"
+  ],
+  "details": {
+   "employer_occupation_school|go to work": 1,
+   "employer_occupation_school|student": 1,
+   "hobby|like to leave that to": 1,
+   "vehicle|bike": 1,
+   "doctor_staff_name|doctor knows": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "like to leave that to"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "doctor knows"
+   ],
+   [
+    2,
+    "employer_occupation_school",
+    "student"
+   ],
+   [
+    3,
+    "employer_occupation_school",
+    "go to work"
+   ],
+   [
+    3,
+    "vehicle",
+    "bike"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N199": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "I10",
+   "M25.561",
+   "R05.9"
+  ],
+  "details": {
+   "employer_occupation_school|teacher": 3,
+   "employer_occupation_school|work as a teacher": 1,
+   "hobby|baseball": 1,
+   "location|cincinnati": 1,
+   "event|super bowl": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "teacher"
+   ],
+   [
+    1,
+    "employer_occupation_school",
+    "work as a teacher"
+   ],
+   [
+    1,
+    "location",
+    "cincinnati"
+   ],
+   [
+    3,
+    "event",
+    "super bowl"
+   ],
+   [
+    4,
+    "hobby",
+    "baseball"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N200": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I10"
+  ],
+  "details": {
+   "hobby|love mcdonald's i eat": 1,
+   "hobby|love mcdonald's too my": 1,
+   "hobby|love flare of fish": 1,
+   "event|easter": 2,
+   "product_brand|mcdonald's": 4,
+   "product_brand|iphone": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "love mcdonald's i eat"
+   ],
+   [
+    1,
+    "hobby",
+    "love mcdonald's too my"
+   ],
+   [
+    1,
+    "hobby",
+    "love flare of fish"
+   ],
+   [
+    2,
+    "product_brand",
+    "iphone"
+   ],
+   [
+    3,
+    "event",
+    "easter"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N201": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 60,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "M51.16"
+  ],
+  "details": {
+   "employer_occupation_school|judge": 1,
+   "hobby|basketball": 4,
+   "hobby|played basketball and i": 1,
+   "hobby|played basketball you know": 1,
+   "hobby|playing basketball": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "judge"
+   ],
+   [
+    1,
+    "hobby",
+    "played basketball and i"
+   ],
+   [
+    1,
+    "hobby",
+    "played basketball you know"
+   ],
+   [
+    3,
+    "hobby",
+    "playing basketball"
+   ],
+   [
+    8,
+    "hobby",
+    "basketball"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N202": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 36,
+  "age5": 35,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "M75.31"
+  ],
+  "details": {
+   "hobby|painting": 4,
+   "product_brand|lowe's": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "painting"
+   ],
+   [
+    1,
+    "product_brand",
+    "lowe's"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N203": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "H35.3211"
+  ],
+  "details": {
+   "location|main street": 1,
+   "other_quasi_identifier|basement": 1,
+   "other_quasi_identifier|downstairs": 1
+  },
+  "rare_details": [
+   [
+    4,
+    "location",
+    "main street"
+   ],
+   [
+    5,
+    "other_quasi_identifier",
+    "basement"
+   ],
+   [
+    6,
+    "other_quasi_identifier",
+    "downstairs"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N204": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 42,
+  "age5": 40,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "M25.511",
+   "S80.01XA"
+  ],
+  "details": {
+   "hobby|skiing": 4,
+   "location|up north": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "location",
+    "up north"
+   ],
+   [
+    7,
+    "hobby",
+    "skiing"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N205": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "C34.90",
+   "J70.0",
+   "R13.10"
+  ],
+  "details": {
+   "pet|walk my dog": 1,
+   "pet|dog": 1,
+   "pet|dog around": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "pet",
+    "dog around"
+   ],
+   [
+    4,
+    "pet",
+    "walk my dog"
+   ],
+   [
+    11,
+    "pet",
+    "dog"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N206": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 18,
+  "age5": 15,
+  "age10": 10,
+  "sex": "male",
+  "codes": [
+   "N20.0"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N207": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "I25.10",
+   "I50.9",
+   "N18.30"
+  ],
+  "details": {
+   "hobby|played phenomenally so i": 1,
+   "hobby|basketball": 1,
+   "doctor_staff_name|doctor white": 1,
+   "doctor_staff_name|dr. white": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "played phenomenally so i"
+   ],
+   [
+    2,
+    "doctor_staff_name",
+    "doctor white"
+   ],
+   [
+    2,
+    "doctor_staff_name",
+    "dr. white"
+   ],
+   [
+    8,
+    "hobby",
+    "basketball"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N068": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 58,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "I11.0",
+   "I50.21"
+  ],
+  "details": {
+   "employer_occupation_school|construction": 4,
+   "event|labor day": 3,
+   "event|halloween": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "construction"
+   ],
+   [
+    1,
+    "event",
+    "labor day"
+   ],
+   [
+    2,
+    "event",
+    "halloween"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N069": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 43,
+  "age5": 40,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "S83.241A"
+  ],
+  "details": {
+   "doctor_staff_name|dr. moore": 4
+  },
+  "rare_details": [
+   [
+    2,
+    "doctor_staff_name",
+    "dr. moore"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N070": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 58,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "I10",
+   "M19.90",
+   "S39.012A"
+  ],
+  "details": {
+   "hobby|love peanut butter cups": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "love peanut butter cups"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N071": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 62,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "F32.A",
+   "I10",
+   "Z90.2"
+  ],
+  "details": {
+   "hobby|into college which was": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "into college which was"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N072": {
+  "dataset": "virtassist",
+  "split": "train",
+  "age": 48,
+  "age5": 45,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "S60.021A"
+  ],
+  "details": {
+   "hobby|skiing": 3,
+   "product_brand|brooks": 3,
+   "doctor_staff_name|dr. baker": 4
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "dr. baker"
+   ],
+   [
+    3,
+    "product_brand",
+    "brooks"
+   ],
+   [
+    7,
+    "hobby",
+    "skiing"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N073": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 65,
+  "age5": 65,
+  "age10": 60,
+  "sex": "female",
+  "codes": [
+   "D50.9"
+  ],
+  "details": {
+   "other_quasi_identifier|living with": 1,
+   "doctor_staff_name|dr. flores": 2
+  },
+  "rare_details": [
+   [
+    2,
+    "doctor_staff_name",
+    "dr. flores"
+   ],
+   [
+    3,
+    "other_quasi_identifier",
+    "living with"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N074": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 52,
+  "age5": 50,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "D35.2",
+   "H53.47"
+  ],
+  "details": {
+   "employer_occupation_school|programmer": 2,
+   "employer_occupation_school|work as a computer programmer and": 1,
+   "employer_occupation_school|works as a computer programmer": 1,
+   "hobby|into door frames": 3,
+   "other_quasi_identifier|adopted": 2,
+   "other_quasi_identifier|lives with": 1,
+   "doctor_staff_name|dr. henry": 4,
+   "doctor_staff_name|dr. howard": 6,
+   "doctor_staff_name|dr. flores": 2,
+   "doctor_staff_name|scheduler , deborah": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "programmer"
+   ],
+   [
+    1,
+    "employer_occupation_school",
+    "work as a computer programmer and"
+   ],
+   [
+    1,
+    "employer_occupation_school",
+    "works as a computer programmer"
+   ],
+   [
+    1,
+    "hobby",
+    "into door frames"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. henry"
+   ]
+  ],
+  "n_unique_details": 7
+ },
+ "D2N075": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "R07.89"
+  ],
+  "details": {
+   "employer_occupation_school|job": 2,
+   "hobby|like to hold off on": 1,
+   "doctor_staff_name|dr. sanders": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "like to hold off on"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. sanders"
+   ],
+   [
+    4,
+    "employer_occupation_school",
+    "job"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N076": {
+  "dataset": "virtscribe",
+  "split": "train",
+  "age": 0,
+  "age5": 0,
+  "age10": 0,
+  "sex": "female",
+  "codes": [
+   "Q93.88"
+  ],
+  "details": {
+   "location|dallas": 3,
+   "location|georgia": 2,
+   "location|live in dallas": 1,
+   "location|lives in dallas": 1,
+   "location|dallas , georgia": 1,
+   "other_quasi_identifier|twin": 9,
+   "other_quasi_identifier|twins": 1,
+   "other_quasi_identifier|downstairs": 1,
+   "named_relative_or_friend|twin sister": 1,
+   "doctor_staff_name|dr. evelyn": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "location",
+    "live in dallas"
+   ],
+   [
+    1,
+    "location",
+    "lives in dallas"
+   ],
+   [
+    1,
+    "location",
+    "dallas , georgia"
+   ],
+   [
+    1,
+    "other_quasi_identifier",
+    "twin"
+   ],
+   [
+    1,
+    "named_relative_or_friend",
+    "twin sister"
+   ]
+  ],
+  "n_unique_details": 6
+ },
+ "D2N077": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 61,
+  "age5": 60,
+  "age10": 60,
+  "sex": "female",
+  "codes": [
+   "S52.531D"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N078": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "I10",
+   "S83.411A"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N079": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 66,
+  "age5": 65,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "M25.512"
+  ],
+  "details": {
+   "other_quasi_identifier|basement": 4
+  },
+  "rare_details": [
+   [
+    5,
+    "other_quasi_identifier",
+    "basement"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N080": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 34,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I10",
+   "M25.562"
+  ],
+  "details": {
+   "hobby|dancing": 2,
+   "hobby|likes to travel and is": 1,
+   "location|columbus": 2,
+   "location|georgia": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "likes to travel and is"
+   ],
+   [
+    1,
+    "location",
+    "columbus"
+   ],
+   [
+    3,
+    "hobby",
+    "dancing"
+   ],
+   [
+    3,
+    "location",
+    "georgia"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N081": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 53,
+  "age5": 50,
+  "age10": 50,
+  "sex": "female",
+  "codes": [
+   "C34.90",
+   "J70.0",
+   "R13.10"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N082": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 46,
+  "age5": 45,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "D80.2"
+  ],
+  "details": {
+   "employer_occupation_school|owns a": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "owns a"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N083": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 45,
+  "age5": 45,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "M77.01"
+  ],
+  "details": {
+   "hobby|ceramics": 1,
+   "hobby|pottery": 6,
+   "hobby|got into ceramics and doing": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "got into ceramics and doing"
+   ],
+   [
+    2,
+    "hobby",
+    "ceramics"
+   ],
+   [
+    2,
+    "hobby",
+    "pottery"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N084": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "I11.0",
+   "I50.9",
+   "R01.1",
+   "Z09"
+  ],
+  "details": {
+   "product_brand|zoom": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "product_brand",
+    "zoom"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N085": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "N20.0"
+  ],
+  "details": {
+   "pet|cat": 1
+  },
+  "rare_details": [
+   [
+    11,
+    "pet",
+    "cat"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N086": {
+  "dataset": "aci",
+  "split": "train",
+  "age": 45,
+  "age5": 45,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "E11.621",
+   "L97.419"
+  ],
+  "details": {
+   "hobby|poker": 1,
+   "hobby|hiking": 4,
+   "hobby|trails": 2,
+   "hobby|enjoys hiking": 1,
+   "location|park": 1,
+   "location|trails": 2,
+   "pet|dog": 1,
+   "pet|dog was": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "poker"
+   ],
+   [
+    1,
+    "hobby",
+    "enjoys hiking"
+   ],
+   [
+    1,
+    "pet",
+    "dog was"
+   ],
+   [
+    2,
+    "location",
+    "park"
+   ],
+   [
+    4,
+    "hobby",
+    "trails"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N087": {
+  "dataset": "aci",
+  "split": "train",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "I10",
+   "S80.261A"
+  ],
+  "details": {
+   "hobby|hunting": 7,
+   "hobby|into anesthesia takes you": 1,
+   "hobby|enjoys spending time outside": 1,
+   "location|woods": 3
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "into anesthesia takes you"
+   ],
+   [
+    1,
+    "hobby",
+    "enjoys spending time outside"
+   ],
+   [
+    2,
+    "hobby",
+    "hunting"
+   ],
+   [
+    3,
+    "location",
+    "woods"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N001": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 50,
+  "age5": 50,
+  "age10": 50,
+  "sex": "female",
+  "codes": [
+   "F32.A",
+   "I11.0",
+   "I50.9"
+  ],
+  "details": {
+   "hobby|hiking": 2
+  },
+  "rare_details": [
+   [
+    7,
+    "hobby",
+    "hiking"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N002": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 62,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "E03.9",
+   "M17.0",
+   "Z94.0"
+  ],
+  "details": {
+   "other_quasi_identifier|basement": 1,
+   "doctor_staff_name|dr. gutierrez": 4
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "dr. gutierrez"
+   ],
+   [
+    5,
+    "other_quasi_identifier",
+    "basement"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N003": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 61,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "G43.909",
+   "K21.9",
+   "N20.0"
+  ],
+  "details": {
+   "hobby|climbing": 1,
+   "other_quasi_identifier|apartment": 2
+  },
+  "rare_details": [
+   [
+    2,
+    "hobby",
+    "climbing"
+   ],
+   [
+    2,
+    "other_quasi_identifier",
+    "apartment"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N004": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 57,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "I50.9",
+   "S39.012A",
+   "W18.49XA",
+   "Y93.53"
+  ],
+  "details": {
+   "hobby|golfing": 3,
+   "hobby|love jelly beans": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "love jelly beans"
+   ],
+   [
+    4,
+    "hobby",
+    "golfing"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N005": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 41,
+  "age5": 40,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "S62.662A",
+   "V89.2XXA"
+  ],
+  "details": {
+   "doctor_staff_name|dr. james": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "dr. james"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N006": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 44,
+  "age5": 40,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "K21.9",
+   "M10.9",
+   "M19.90"
+  ],
+  "details": {
+   "hobby|pilates": 4,
+   "hobby|lifting weights": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "pilates"
+   ],
+   [
+    3,
+    "hobby",
+    "lifting weights"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N007": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 27,
+  "age5": 25,
+  "age10": 20,
+  "sex": "female",
+  "codes": [
+   "F32.A",
+   "G89.29",
+   "M54.9"
+  ],
+  "details": {
+   "employer_occupation_school|work": 2,
+   "hobby|like to defer pain medication": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "like to defer pain medication"
+   ],
+   [
+    11,
+    "employer_occupation_school",
+    "work"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N008": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 49,
+  "age5": 45,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "D64.9",
+   "I50.9",
+   "N20.0"
+  ],
+  "details": {
+   "employer_occupation_school|going to work": 2,
+   "location|vermont": 1,
+   "location|mountains": 1,
+   "product_brand|mcdonald's": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "location",
+    "mountains"
+   ],
+   [
+    2,
+    "employer_occupation_school",
+    "going to work"
+   ],
+   [
+    2,
+    "location",
+    "vermont"
+   ],
+   [
+    3,
+    "product_brand",
+    "mcdonald's"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N009": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 55,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "S33.5XXA",
+   "X50.0XXA"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N010": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 58,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "R73.9"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N011": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 62,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "I10",
+   "R07.9"
+  ],
+  "details": {
+   "hobby|yard work": 2
+  },
+  "rare_details": [
+   [
+    5,
+    "hobby",
+    "yard work"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N012": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 59,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "F32.A",
+   "J45.901"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N013": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 55,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "G40.909"
+  ],
+  "details": {
+   "product_brand|brooks": 2
+  },
+  "rare_details": [
+   [
+    3,
+    "product_brand",
+    "brooks"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N014": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 58,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "I50.9",
+   "Z85.828",
+   "Z98.49"
+  ],
+  "details": {
+   "hobby|tennis": 2,
+   "hobby|playing tennis on saturday": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "playing tennis on saturday"
+   ],
+   [
+    4,
+    "hobby",
+    "tennis"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N015": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 48,
+  "age5": 45,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "F32.A",
+   "G89.29",
+   "J44.9",
+   "M54.50"
+  ],
+  "details": {
+   "hobby|yoga": 6,
+   "other_quasi_identifier|driveway": 1
+  },
+  "rare_details": [
+   [
+    3,
+    "other_quasi_identifier",
+    "driveway"
+   ],
+   [
+    4,
+    "hobby",
+    "yoga"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N016": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 59,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "F32.A",
+   "I10"
+  ],
+  "details": {
+   "hobby|swimming": 2,
+   "hobby|yoga": 2,
+   "hobby|love burgers and wine": 1,
+   "product_brand|cvs": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "love burgers and wine"
+   ],
+   [
+    3,
+    "product_brand",
+    "cvs"
+   ],
+   [
+    4,
+    "hobby",
+    "yoga"
+   ],
+   [
+    5,
+    "hobby",
+    "swimming"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N017": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 43,
+  "age5": 40,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "S80.11XA",
+   "W21.09XA",
+   "Y93.54"
+  ],
+  "details": {
+   "hobby|bowling": 3,
+   "hobby|into diverticulitis and they": 1,
+   "other_quasi_identifier|upstairs": 1,
+   "other_quasi_identifier|downstairs": 1,
+   "doctor_staff_name|doctor taylor": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "bowling"
+   ],
+   [
+    1,
+    "hobby",
+    "into diverticulitis and they"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "doctor taylor"
+   ],
+   [
+    2,
+    "other_quasi_identifier",
+    "upstairs"
+   ],
+   [
+    6,
+    "other_quasi_identifier",
+    "downstairs"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N018": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 39,
+  "age5": 35,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "S42.201A",
+   "W01.0XXA",
+   "Y93.68"
+  ],
+  "details": {
+   "hobby|volleyball": 2,
+   "hobby|playing volleyball yesterday": 1,
+   "hobby|playing volleyball yesterday and": 1,
+   "doctor_staff_name|doctor gutierrez": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "playing volleyball yesterday"
+   ],
+   [
+    1,
+    "hobby",
+    "playing volleyball yesterday and"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "doctor gutierrez"
+   ],
+   [
+    2,
+    "hobby",
+    "volleyball"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N019": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 48,
+  "age5": 45,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "M77.11"
+  ],
+  "details": {
+   "event|moving to": 1,
+   "vehicle|truck": 2,
+   "doctor_staff_name|dr. fisher": 4
+  },
+  "rare_details": [
+   [
+    1,
+    "event",
+    "moving to"
+   ],
+   [
+    1,
+    "vehicle",
+    "truck"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. fisher"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N020": {
+  "dataset": "virtassist",
+  "split": "eval",
+  "age": 56,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "D64.9"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N021": {
+  "dataset": "virtscribe",
+  "split": "eval",
+  "age": 39,
+  "age5": 35,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "E03.9",
+   "E55.9",
+   "L70.0",
+   "R63.5",
+   "R94.5"
+  ],
+  "details": {
+   "product_brand|cvs": 1,
+   "product_brand|walmart": 1
+  },
+  "rare_details": [
+   [
+    2,
+    "product_brand",
+    "walmart"
+   ],
+   [
+    3,
+    "product_brand",
+    "cvs"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N022": {
+  "dataset": "virtscribe",
+  "split": "eval",
+  "age": 50,
+  "age5": 50,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "M65.841"
+  ],
+  "details": {
+   "event|race": 2,
+   "doctor_staff_name|dr. alice": 4
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "dr. alice"
+   ],
+   [
+    2,
+    "event",
+    "race"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N023": {
+  "dataset": "virtscribe",
+  "split": "eval",
+  "age": 59,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "E29.1"
+  ],
+  "details": {
+   "product_brand|walmart": 1
+  },
+  "rare_details": [
+   [
+    2,
+    "product_brand",
+    "walmart"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N024": {
+  "dataset": "virtscribe",
+  "split": "eval",
+  "age": 36,
+  "age5": 35,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "L90.5",
+   "Z90.13"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N025": {
+  "dataset": "virtscribe",
+  "split": "eval",
+  "age": 71,
+  "age5": 70,
+  "age10": 70,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I50.42",
+   "Z01.810"
+  ],
+  "details": {
+   "hobby|into congestive heart failure": 1,
+   "location|rightley regional hospital": 1,
+   "location|east metropolitan hospital": 1,
+   "location|done at county": 1,
+   "doctor_staff_name|dr. martin": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "into congestive heart failure"
+   ],
+   [
+    1,
+    "location",
+    "rightley regional hospital"
+   ],
+   [
+    1,
+    "location",
+    "east metropolitan hospital"
+   ],
+   [
+    1,
+    "location",
+    "done at county"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. martin"
+   ]
+  ],
+  "n_unique_details": 5
+ },
+ "D2N026": {
+  "dataset": "virtscribe",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "M50.30",
+   "M79.602"
+  ],
+  "details": {
+   "employer_occupation_school|veteran": 2,
+   "hobby|like to update that mri": 1,
+   "doctor_staff_name|dr. miller": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "veteran"
+   ],
+   [
+    1,
+    "hobby",
+    "like to update that mri"
+   ],
+   [
+    2,
+    "doctor_staff_name",
+    "dr. miller"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N027": {
+  "dataset": "virtscribe",
+  "split": "eval",
+  "age": 61,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "N50.89",
+   "R74.8",
+   "R91.8",
+   "Z09"
+  ],
+  "details": {
+   "employer_occupation_school|work": 1,
+   "vehicle|ride my bike": 1,
+   "vehicle|bike ride": 2,
+   "vehicle|road bike": 2,
+   "vehicle|bicycle": 1,
+   "vehicle|bike": 1,
+   "named_relative_or_friend|your friend , tyler": 2,
+   "doctor_staff_name|dr. lewis": 4,
+   "doctor_staff_name|dr. vincent": 2,
+   "doctor_staff_name|dr. tyler": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "vehicle",
+    "ride my bike"
+   ],
+   [
+    1,
+    "vehicle",
+    "road bike"
+   ],
+   [
+    1,
+    "named_relative_or_friend",
+    "your friend , tyler"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. lewis"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. vincent"
+   ]
+  ],
+  "n_unique_details": 6
+ },
+ "D2N028": {
+  "dataset": "virtscribe",
+  "split": "eval",
+  "age": 42,
+  "age5": 40,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "K59.00",
+   "R16.0"
+  ],
+  "details": {
+   "hobby|like to lose": 1,
+   "doctor_staff_name|dr. edwards": 4
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "like to lose"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. edwards"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N029": {
+  "dataset": "virtscribe",
+  "split": "eval",
+  "age": 57,
+  "age5": 55,
+  "age10": 50,
+  "sex": "female",
+  "codes": [
+   "C43.59"
+  ],
+  "details": {
+   "employer_occupation_school|auto repair shop": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "auto repair shop"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N030": {
+  "dataset": "virtscribe",
+  "split": "eval",
+  "age": 40,
+  "age5": 40,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "N60.01",
+   "N60.02",
+   "R87.619"
+  ],
+  "details": {
+   "employer_occupation_school|work": 2,
+   "doctor_staff_name|dr. brown": 4,
+   "doctor_staff_name|dr. ward": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "dr. brown"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "dr. ward"
+   ],
+   [
+    11,
+    "employer_occupation_school",
+    "work"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N031": {
+  "dataset": "virtscribe",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "D05.1"
+  ],
+  "details": {
+   "doctor_staff_name|doctor stewart": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "doctor stewart"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N032": {
+  "dataset": "virtscribe",
+  "split": "eval",
+  "age": 56,
+  "age5": 55,
+  "age10": 50,
+  "sex": "female",
+  "codes": [
+   "M16.11"
+  ],
+  "details": {
+   "employer_occupation_school|work at an infusion center": 1,
+   "employer_occupation_school|works at the infusion center at": 1,
+   "hobby|like to proceed with the": 2,
+   "hobby|like to proceed with a": 1,
+   "other_quasi_identifier|live with": 1,
+   "other_quasi_identifier|roommate": 2,
+   "other_quasi_identifier|lives with": 1,
+   "product_brand|weight watchers": 3
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "work at an infusion center"
+   ],
+   [
+    1,
+    "employer_occupation_school",
+    "works at the infusion center at"
+   ],
+   [
+    1,
+    "hobby",
+    "like to proceed with the"
+   ],
+   [
+    1,
+    "hobby",
+    "like to proceed with a"
+   ],
+   [
+    1,
+    "other_quasi_identifier",
+    "roommate"
+   ]
+  ],
+  "n_unique_details": 6
+ },
+ "D2N033": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "M25.561"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N034": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 69,
+  "age5": 65,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "M25.412"
+  ],
+  "details": {
+   "hobby|jogging": 1,
+   "hobby|lifting weights": 1,
+   "other_quasi_identifier|basement": 3
+  },
+  "rare_details": [
+   [
+    2,
+    "hobby",
+    "jogging"
+   ],
+   [
+    3,
+    "hobby",
+    "lifting weights"
+   ],
+   [
+    5,
+    "other_quasi_identifier",
+    "basement"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N035": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "I11.0",
+   "I50.9",
+   "R32"
+  ],
+  "details": {
+   "named_relative_or_friend|friend diane": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "named_relative_or_friend",
+    "friend diane"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N036": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 57,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "G56.03"
+  ],
+  "details": {
+   "employer_occupation_school|landscaping": 6,
+   "employer_occupation_school|landscaper": 1,
+   "employer_occupation_school|designer": 1,
+   "hobby|yard work": 3,
+   "hobby|landscaping": 6
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "landscaper"
+   ],
+   [
+    1,
+    "employer_occupation_school",
+    "designer"
+   ],
+   [
+    3,
+    "employer_occupation_school",
+    "landscaping"
+   ],
+   [
+    3,
+    "hobby",
+    "landscaping"
+   ],
+   [
+    5,
+    "hobby",
+    "yard work"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N037": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 53,
+  "age5": 50,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "M77.01",
+   "M77.02"
+  ],
+  "details": {
+   "hobby|basketball": 3,
+   "hobby|baseball": 3,
+   "hobby|football": 3,
+   "hobby|golfing": 1,
+   "hobby|playing basketball": 2
+  },
+  "rare_details": [
+   [
+    3,
+    "hobby",
+    "playing basketball"
+   ],
+   [
+    4,
+    "hobby",
+    "baseball"
+   ],
+   [
+    4,
+    "hobby",
+    "golfing"
+   ],
+   [
+    7,
+    "hobby",
+    "football"
+   ],
+   [
+    8,
+    "hobby",
+    "basketball"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N038": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 60,
+  "age5": 60,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "B17.1"
+  ],
+  "details": {
+   "employer_occupation_school|work for hep": 1,
+   "hobby|like to determine the severity": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "work for hep"
+   ],
+   [
+    2,
+    "hobby",
+    "like to determine the severity"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N039": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "I10"
+  ],
+  "details": {
+   "employer_occupation_school|work": 1,
+   "hobby|football": 1,
+   "location|virginia": 1,
+   "location|main street": 1,
+   "product_brand|cvs": 1
+  },
+  "rare_details": [
+   [
+    2,
+    "location",
+    "virginia"
+   ],
+   [
+    3,
+    "product_brand",
+    "cvs"
+   ],
+   [
+    4,
+    "location",
+    "main street"
+   ],
+   [
+    7,
+    "hobby",
+    "football"
+   ],
+   [
+    11,
+    "employer_occupation_school",
+    "work"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N040": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 34,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "R51"
+  ],
+  "details": {
+   "employer_occupation_school|working at the computer": 2,
+   "hobby|golfing": 2,
+   "hobby|golf": 1,
+   "hobby|like to record this conversation": 1,
+   "hobby|enjoys golfing": 1,
+   "location|florida": 1,
+   "event|tournament": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "working at the computer"
+   ],
+   [
+    1,
+    "hobby",
+    "enjoys golfing"
+   ],
+   [
+    1,
+    "location",
+    "florida"
+   ],
+   [
+    2,
+    "hobby",
+    "like to record this conversation"
+   ],
+   [
+    3,
+    "hobby",
+    "golf"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N041": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I10",
+   "J02.9"
+  ],
+  "details": {
+   "employer_occupation_school|cashier": 2,
+   "employer_occupation_school|work as a cashier in": 1,
+   "employer_occupation_school|working as a cashier in": 1,
+   "hobby|enjoys drinking wine": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "cashier"
+   ],
+   [
+    1,
+    "employer_occupation_school",
+    "work as a cashier in"
+   ],
+   [
+    1,
+    "employer_occupation_school",
+    "working as a cashier in"
+   ],
+   [
+    1,
+    "hobby",
+    "enjoys drinking wine"
+   ]
+  ],
+  "n_unique_details": 4
+ },
+ "D2N042": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 38,
+  "age5": 35,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "S93.431A",
+   "W00.9XXA"
+  ],
+  "details": {
+   "hobby|soccer": 6,
+   "hobby|playing sports looks like": 1,
+   "hobby|played soccer in college": 2,
+   "hobby|playing sports": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "playing sports looks like"
+   ],
+   [
+    1,
+    "hobby",
+    "played soccer in college"
+   ],
+   [
+    2,
+    "hobby",
+    "playing sports"
+   ],
+   [
+    7,
+    "hobby",
+    "soccer"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N043": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "F17.200",
+   "Z87.39"
+  ],
+  "details": {
+   "employer_occupation_school|work": 1,
+   "hobby|yoga": 2
+  },
+  "rare_details": [
+   [
+    4,
+    "hobby",
+    "yoga"
+   ],
+   [
+    11,
+    "employer_occupation_school",
+    "work"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N044": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "M22.2X1",
+   "M22.2X2"
+  ],
+  "details": {
+   "employer_occupation_school|work from home": 1,
+   "employer_occupation_school|works from home": 1,
+   "hobby|avid runner": 1,
+   "vehicle|riding my bike": 1,
+   "other_quasi_identifier|upstairs": 1,
+   "other_quasi_identifier|downstairs": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "avid runner"
+   ],
+   [
+    1,
+    "vehicle",
+    "riding my bike"
+   ],
+   [
+    2,
+    "other_quasi_identifier",
+    "upstairs"
+   ],
+   [
+    3,
+    "employer_occupation_school",
+    "work from home"
+   ],
+   [
+    3,
+    "employer_occupation_school",
+    "works from home"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N045": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "S83.91XA",
+   "X50.1XXA",
+   "Y93.02"
+  ],
+  "details": {
+   "employer_occupation_school|on my feet all day": 1,
+   "hobby|marathon": 1,
+   "hobby|lift weights": 1,
+   "hobby|squats": 1,
+   "hobby|avid runner who enjoys": 1,
+   "hobby|avid runner and her": 1,
+   "event|marathon": 1,
+   "doctor_staff_name|doctor sanchez": 1,
+   "doctor_staff_name|doctor wood": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "on my feet all day"
+   ],
+   [
+    1,
+    "hobby",
+    "avid runner who enjoys"
+   ],
+   [
+    1,
+    "hobby",
+    "avid runner and her"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "doctor sanchez"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "doctor wood"
+   ]
+  ],
+  "n_unique_details": 5
+ },
+ "D2N046": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "C56.2"
+  ],
+  "details": {
+   "pet|dog": 1,
+   "pet|dog and": 1,
+   "other_quasi_identifier|adopted": 2
+  },
+  "rare_details": [
+   [
+    2,
+    "pet",
+    "dog and"
+   ],
+   [
+    2,
+    "other_quasi_identifier",
+    "adopted"
+   ],
+   [
+    11,
+    "pet",
+    "dog"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N047": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "I25.10",
+   "R39.198"
+  ],
+  "details": {
+   "hobby|football": 2,
+   "location|georgia": 2,
+   "location|alabama": 2,
+   "doctor_staff_name|doctor moore": 1,
+   "doctor_staff_name|dr. moore": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "location",
+    "alabama"
+   ],
+   [
+    1,
+    "doctor_staff_name",
+    "doctor moore"
+   ],
+   [
+    2,
+    "doctor_staff_name",
+    "dr. moore"
+   ],
+   [
+    3,
+    "location",
+    "georgia"
+   ],
+   [
+    7,
+    "hobby",
+    "football"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N048": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 76,
+  "age5": 75,
+  "age10": 70,
+  "sex": "female",
+  "codes": [
+   "S93.324A",
+   "W19.XXXA",
+   "Y30.XXXA"
+  ],
+  "details": {
+   "hobby|tennis": 5,
+   "hobby|piano": 2,
+   "hobby|playing tennis and i": 1,
+   "hobby|playing tennis is that": 1,
+   "hobby|play racquet ball and": 1,
+   "hobby|playing tennis and was": 1,
+   "hobby|playing secondary to the": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "playing tennis and i"
+   ],
+   [
+    1,
+    "hobby",
+    "playing tennis is that"
+   ],
+   [
+    1,
+    "hobby",
+    "play racquet ball and"
+   ],
+   [
+    1,
+    "hobby",
+    "playing tennis and was"
+   ],
+   [
+    1,
+    "hobby",
+    "playing secondary to the"
+   ]
+  ],
+  "n_unique_details": 5
+ },
+ "D2N049": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "I10",
+   "N20.0"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N050": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 80,
+  "age5": 80,
+  "age10": 80,
+  "sex": "male",
+  "codes": [
+   "N20.0"
+  ],
+  "details": {
+   "hobby|horses": 1,
+   "pet|cat": 1
+  },
+  "rare_details": [
+   [
+    2,
+    "hobby",
+    "horses"
+   ],
+   [
+    11,
+    "pet",
+    "cat"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N051": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 79,
+  "age5": 75,
+  "age10": 70,
+  "sex": "male",
+  "codes": [
+   "E11.621",
+   "I25.10",
+   "L97.519"
+  ],
+  "details": {
+   "employer_occupation_school|working outside": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "working outside"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N052": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 29,
+  "age5": 25,
+  "age10": 20,
+  "sex": "female",
+  "codes": [
+   "N20.0"
+  ],
+  "details": {
+   "event|easter": 4
+  },
+  "rare_details": [
+   [
+    3,
+    "event",
+    "easter"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N053": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "L40.0"
+  ],
+  "details": {
+   "employer_occupation_school|work": 1,
+   "product_brand|head and shoulders": 1
+  },
+  "rare_details": [
+   [
+    2,
+    "product_brand",
+    "head and shoulders"
+   ],
+   [
+    11,
+    "employer_occupation_school",
+    "work"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N054": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 45,
+  "age5": 45,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "S93.324A",
+   "W20.8XXA"
+  ],
+  "details": {
+   "employer_occupation_school|landscaping": 1,
+   "employer_occupation_school|warehouse": 1,
+   "hobby|yard work": 2,
+   "hobby|landscaping": 1,
+   "hobby|into place using plates": 1,
+   "other_quasi_identifier|downstairs": 2
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "warehouse"
+   ],
+   [
+    1,
+    "hobby",
+    "into place using plates"
+   ],
+   [
+    3,
+    "employer_occupation_school",
+    "landscaping"
+   ],
+   [
+    3,
+    "hobby",
+    "landscaping"
+   ],
+   [
+    5,
+    "hobby",
+    "yard work"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N055": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 3,
+  "age5": 0,
+  "age10": 0,
+  "sex": "female",
+  "codes": [
+   "F95.0"
+  ],
+  "details": {
+   "hobby|soccer": 5,
+   "hobby|plays rough": 1,
+   "hobby|drawing": 1,
+   "hobby|plays soccer every saturday": 1,
+   "product_brand|mcdonald's": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "plays rough"
+   ],
+   [
+    1,
+    "hobby",
+    "drawing"
+   ],
+   [
+    1,
+    "hobby",
+    "plays soccer every saturday"
+   ],
+   [
+    3,
+    "product_brand",
+    "mcdonald's"
+   ],
+   [
+    7,
+    "hobby",
+    "soccer"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N056": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "male",
+  "codes": [
+   "J67.9"
+  ],
+  "details": {
+   "employer_occupation_school|farmer": 4,
+   "pet|cat": 1,
+   "other_quasi_identifier|farm": 2,
+   "other_quasi_identifier|live with": 1,
+   "other_quasi_identifier|living with": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "farmer"
+   ],
+   [
+    1,
+    "other_quasi_identifier",
+    "farm"
+   ],
+   [
+    3,
+    "other_quasi_identifier",
+    "living with"
+   ],
+   [
+    4,
+    "other_quasi_identifier",
+    "live with"
+   ],
+   [
+    11,
+    "pet",
+    "cat"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N057": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 58,
+  "age5": 55,
+  "age10": 50,
+  "sex": "male",
+  "codes": [
+   "M20.21"
+  ],
+  "details": {
+   "hobby|trails": 2,
+   "hobby|fishing": 2,
+   "hobby|likes to bicycle ride": 1,
+   "location|trails": 2,
+   "vehicle|bicycle": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "fishing"
+   ],
+   [
+    1,
+    "hobby",
+    "likes to bicycle ride"
+   ],
+   [
+    4,
+    "hobby",
+    "trails"
+   ],
+   [
+    5,
+    "location",
+    "trails"
+   ],
+   [
+    5,
+    "vehicle",
+    "bicycle"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N058": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 45,
+  "age5": 45,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "I10",
+   "I25.10",
+   "I34.0",
+   "I50.1"
+  ],
+  "details": {
+   "employer_occupation_school|plant": 1,
+   "hobby|walking the trails": 1,
+   "hobby|gardening": 2,
+   "hobby|photography": 3,
+   "location|rex center": 1,
+   "location|trails": 1,
+   "location|park": 1,
+   "product_brand|rex center": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "plant"
+   ],
+   [
+    1,
+    "hobby",
+    "walking the trails"
+   ],
+   [
+    2,
+    "hobby",
+    "photography"
+   ],
+   [
+    2,
+    "location",
+    "park"
+   ],
+   [
+    3,
+    "hobby",
+    "gardening"
+   ]
+  ],
+  "n_unique_details": 2
+ },
+ "D2N059": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": null,
+  "age5": null,
+  "age10": null,
+  "sex": "female",
+  "codes": [
+   "F39",
+   "J45.909"
+  ],
+  "details": {
+   "employer_occupation_school|student": 1,
+   "hobby|into sports is like": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "into sports is like"
+   ],
+   [
+    2,
+    "employer_occupation_school",
+    "student"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N060": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 27,
+  "age5": 25,
+  "age10": 20,
+  "sex": "female",
+  "codes": [
+   "S93.325A",
+   "W21.02XA",
+   "Y93.66"
+  ],
+  "details": {
+   "hobby|soccer": 10,
+   "hobby|piano": 2,
+   "hobby|playing soccer can you": 1,
+   "hobby|playing soccer": 2,
+   "hobby|playing somewhere else": 1,
+   "hobby|playing soccer yesterday": 1,
+   "hobby|playing soccer since she": 1,
+   "location|rex center": 1,
+   "product_brand|rex center": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "playing soccer can you"
+   ],
+   [
+    1,
+    "hobby",
+    "playing soccer"
+   ],
+   [
+    1,
+    "hobby",
+    "playing somewhere else"
+   ],
+   [
+    1,
+    "hobby",
+    "playing soccer yesterday"
+   ],
+   [
+    1,
+    "hobby",
+    "playing soccer since she"
+   ]
+  ],
+  "n_unique_details": 5
+ },
+ "D2N061": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 53,
+  "age5": 50,
+  "age10": 50,
+  "sex": "female",
+  "codes": [
+   "M25.561"
+  ],
+  "details": {
+   "hobby|basketball": 10,
+   "hobby|playing basketball and jerry": 1,
+   "hobby|love basketball i'm a": 1,
+   "hobby|play basketball again": 1,
+   "hobby|playing basketball now are": 1,
+   "hobby|play basketball but i": 1,
+   "hobby|playing basketball and another": 1,
+   "hobby|plays basketball at the": 1,
+   "location|virginia": 2,
+   "location|main street": 1,
+   "pet|cat": 1,
+   "vehicle|bike riding": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "hobby",
+    "playing basketball and jerry"
+   ],
+   [
+    1,
+    "hobby",
+    "love basketball i'm a"
+   ],
+   [
+    1,
+    "hobby",
+    "play basketball again"
+   ],
+   [
+    1,
+    "hobby",
+    "playing basketball now are"
+   ],
+   [
+    1,
+    "hobby",
+    "play basketball but i"
+   ]
+  ],
+  "n_unique_details": 7
+ },
+ "D2N062": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 67,
+  "age5": 65,
+  "age10": 60,
+  "sex": "male",
+  "codes": [
+   "K20.90"
+  ],
+  "details": {
+   "location|west coast": 2,
+   "location|east coast": 2,
+   "pet|dog": 1,
+   "pet|dog is": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "location",
+    "east coast"
+   ],
+   [
+    2,
+    "location",
+    "west coast"
+   ],
+   [
+    2,
+    "pet",
+    "dog is"
+   ],
+   [
+    11,
+    "pet",
+    "dog"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N063": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 46,
+  "age5": 45,
+  "age10": 40,
+  "sex": "female",
+  "codes": [
+   "E11.9",
+   "M54.50",
+   "R06.02"
+  ],
+  "details": {},
+  "rare_details": [],
+  "n_unique_details": 0
+ },
+ "D2N064": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 20,
+  "age5": 20,
+  "age10": 20,
+  "sex": "male",
+  "codes": [
+   "S93.492A",
+   "W10.1XXA",
+   "W18.49XA",
+   "Y92.480"
+  ],
+  "details": {
+   "hobby|hiking": 1,
+   "product_brand|rex center": 1
+  },
+  "rare_details": [
+   [
+    4,
+    "product_brand",
+    "rex center"
+   ],
+   [
+    7,
+    "hobby",
+    "hiking"
+   ]
+  ],
+  "n_unique_details": 0
+ },
+ "D2N065": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 31,
+  "age5": 30,
+  "age10": 30,
+  "sex": "female",
+  "codes": [
+   "S93.401A",
+   "W00.0XXA",
+   "Y92.009",
+   "Y93.E9"
+  ],
+  "details": {
+   "employer_occupation_school|go back to work": 1,
+   "employer_occupation_school|go to work": 1,
+   "hobby|soccer": 3,
+   "hobby|play soccer it happens": 1,
+   "hobby|play sports they sprain": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "go back to work"
+   ],
+   [
+    1,
+    "hobby",
+    "play soccer it happens"
+   ],
+   [
+    1,
+    "hobby",
+    "play sports they sprain"
+   ],
+   [
+    3,
+    "employer_occupation_school",
+    "go to work"
+   ],
+   [
+    7,
+    "hobby",
+    "soccer"
+   ]
+  ],
+  "n_unique_details": 3
+ },
+ "D2N066": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 43,
+  "age5": 40,
+  "age10": 40,
+  "sex": "male",
+  "codes": [
+   "E11.9",
+   "I10",
+   "M54.50"
+  ],
+  "details": {
+   "doctor_staff_name|doctor scott": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "doctor_staff_name",
+    "doctor scott"
+   ]
+  ],
+  "n_unique_details": 1
+ },
+ "D2N067": {
+  "dataset": "aci",
+  "split": "eval",
+  "age": 91,
+  "age5": 90,
+  "age10": 90,
+  "sex": "female",
+  "codes": [
+   "S83.521A",
+   "W22.8XXA",
+   "Y93.23"
+  ],
+  "details": {
+   "employer_occupation_school|athlete": 1,
+   "hobby|skiing": 6,
+   "hobby|racing": 1,
+   "hobby|gymnastics": 2,
+   "pet|walk my dog": 1
+  },
+  "rare_details": [
+   [
+    1,
+    "employer_occupation_school",
+    "athlete"
+   ],
+   [
+    2,
+    "hobby",
+    "gymnastics"
+   ],
+   [
+    3,
+    "hobby",
+    "racing"
+   ],
+   [
+    4,
+    "pet",
+    "walk my dog"
+   ],
+   [
+    7,
+    "hobby",
+    "skiing"
+   ]
+  ],
+  "n_unique_details": 1
+ }
+}

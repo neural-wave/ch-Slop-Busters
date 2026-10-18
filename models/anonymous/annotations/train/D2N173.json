@@ -1,0 +1,12 @@
+{
+  "encounter_id": "D2N173",
+  "phi": [
+    {"text": "logan", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "57-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "a little bit of travel", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "some traveling"},
+    {"text": "Logan Harris", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "57-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "a little travel", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "some traveling"}
+  ],
+  "medical_concepts": []
+}

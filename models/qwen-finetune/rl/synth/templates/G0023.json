@@ -1,0 +1,669 @@
+{
+ "id": "G0023",
+ "dataset": "synthetic_new",
+ "sex": "female",
+ "age_range": [
+  75,
+  90
+ ],
+ "icd10_codes": [
+  {
+   "code": "R26.81",
+   "description": "Unsteadiness on feet"
+  },
+  {
+   "code": "M81.0",
+   "description": "Age-related osteoporosis without current pathological fracture"
+  },
+  {
+   "code": "G31.84",
+   "description": "Mild cognitive impairment of uncertain or unknown etiology"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} , i'm a geriatrician . thanks for coming in . your primary care doctor sent me a letter about your balance and your memory .\n[patient] oh , that letter . she's worried about me , i know . i'm not as steady as i used to be and i forget where i put things .\n[doctor] tell me about the balance first . when did you start noticing it ?\n[patient] maybe the last few months . i stumbled in the kitchen last month , just reaching for the cabinet , and i grabbed the counter . i did n't hit the floor .\n[doctor] that's important that you caught yourself . were you dizzy at the time , or did your legs just give out ?\n[patient] neither . my feet just didn't do what i told them . i'm not dizzy , i don't spin .\n[doctor] okay . do you use anything to walk ?\n[patient] i have a walker in the closet that my daughter bought me , but i only use it at night when i'm going to the bathroom . my daughter {OTHER_FIRST} keeps saying i should use it all the time .\n[doctor] that sounds like good advice . how is your vision and your hearing ?\n[patient] my eyes are fine with my glasses . i have a little trouble with the phone , but that's probably the hearing .\n[doctor] okay . tell me about your work history , since you mentioned it when we talked on the phone .\n[patient] i was a pastry chef for thirty six years . i stood on my feet twelve hours a day . i would lift those big sheet pans and bags of flour . my knees and my back paid for that .\n[doctor] and you're retired now ?\n[patient] since {YEAR} . i still bake for my grandkids on sundays , but nothing like before .\n[doctor] that's nice . how about your memory ? what do you notice ?\n[patient] i misplace things all the time . keys , my glasses . once my purse went missing for two days and it was in the refrigerator . my daughter thinks it's worse than i do .\n[doctor] that's a common concern . have you had trouble with things you used to do easily , like following a recipe or paying bills ?\n[patient] the recipes , yes . i used to make puff pastry from memory and now i have to write every step down . i don't like it .\n[doctor] i understand . do you get lost driving , or forget conversations ?\n[patient] i stopped driving last year . my daughter takes me to the grocery store , and that's fine .\n[doctor] when was the last time your bone density was checked ?\n[patient] i think {DATE_SPOKEN} . the doctor said i had thin bones and started me on a pill . i think it's called alendronate .\n[doctor] right . when was the scan that showed the thin bones ?\n[patient] {YEAR} , the year i turned sixty five . they said my spine and hip were thin .\n[doctor] okay . are you still taking the alendronate every week ?\n[patient] most weeks . sometimes i forget that too .\n[doctor] that's important to address . how about blood pressure pills ?\n[patient] lisinopril for the pressure , every morning . it's been fine .\n[doctor] good . let's do a quick exam . can you stand up from this chair without using your hands ?\n[patient] it takes me a few tries . there , okay .\n[doctor] your blood pressure sitting is one thirty eight over eighty , heart rate sixty eight . let me check your gait . walk to the door and back for me .\n[patient] okay . i'm slow but i'm getting there .\n[doctor] your gait is wide based and short steps . when you turn you take a few small steps . i'd like to do a quick cognitive screen . can you name as many animals as you can in one minute ?\n[patient] dogs , cats , horses , cows , pigs . um . goats . chickens .\n[doctor] good . can you tell me what day and month it is ?\n[patient] it's october , and it's a friday . the date i'm not sure of , maybe the seventeenth .\n[doctor] very close . can you remember three words i'll say ? apple , table , penny .\n[patient] apple , penny , and ... table .\n[doctor] good , you got all three . the score on the screen is about twenty three out of thirty , which suggests mild impairment . we'll need blood work and maybe a brain scan .\n[patient] okay . i'm scared of the brain scan .\n[doctor] it's just an mri , no needles . let's check thyroid and vitamin b twelve , which can both cause memory trouble and are easy to treat .\n[patient] good .\n[doctor] for the falls , i'd like physical therapy for balance and strength . and a home safety check . and we'll review your sleep medications , since i see you take a sleeping pill at bedtime .\n[patient] just one half of a pill . for my sleep .\n[doctor] that medication can worsen balance and memory , so i'd like to taper it slowly .\n[patient] okay , i'll do what you say .\n[doctor] you could also use a pill organizer , so you don't double up or skip the alendronate .\n[patient] my daughter already bought one of those . she picks up my pills at the pharmacy anyway . i'll use it .\n[doctor] wonderful . and take the alendronate first thing in the morning with a full glass of water , and stay upright for thirty minutes .\n[patient] stay upright , got it .\n[doctor] i'll see you back in six weeks with the labs and the mri results . if you fall and hit your head , or you get new weakness or confusion , call right away .\n[patient] thank you , doctor {DOCTOR_LAST} . you've been very patient with me .",
+ "note": "CHIEF COMPLAINT\n\nReferral for gait instability, falls risk, and memory complaints.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female referred by her primary care physician for evaluation of progressive unsteadiness and subjective memory decline. She stumbled in the kitchen last month while reaching for a cabinet and caught herself on the counter without falling to the floor. She denies vertigo and lightheadedness. She uses a walker only at night for bathroom trips. Her daughter, {OTHER_FIRST}, is concerned about her safety and manages her transportation since she stopped driving last year.\n\nShe reports misplacing objects frequently and an episode in which her purse was misplaced for two days and was found in the refrigerator. She has difficulty following recipes she previously prepared from memory. She retired after working as a pastry chef for 36 years and continues to bake for her grandchildren on Sundays. She reports standing for long periods and lifting heavy sheet pans and flour bags throughout that career, with chronic knee and back pain.\n\nA bone density evaluation in {YEAR} established a diagnosis of osteoporosis. She takes alendronate weekly but reports missing doses. Her daughter picks up medications at the pharmacy. She takes lisinopril daily for hypertension and a half tablet of a sleep aid at bedtime.\n\nPHYSICAL EXAM\n\nBP 138/80 seated, heart rate 68. Sit-to-stand requires multiple attempts without arm support. Gait is wide-based with short steps and multiple small steps on turning. Romberg not performed given balance concerns.\n\nCOGNITIVE SCREEN\n\nAnimal naming: 6 in one minute. Orientation: correct month and day of week, approximate date. Three-word recall: 3 of 3 after delay. Overall score approximately 23/30.\n\nRESULTS\n\nLabs pending for thyroid function and vitamin B12. MRI brain ordered.\n\nASSESSMENT AND PLAN\n\n1. Gait instability with a recent near-fall, likely multifactorial, including age-related deconditioning, sleep medication effect, and possible sensory decline. Physical therapy referral for balance and strengthening. Home safety evaluation requested.\n\n2. Mild cognitive impairment, subjective and objective, of uncertain etiology. Thyroid function and vitamin B12 ordered. MRI brain to exclude structural causes. Taper sleep medication slowly.\n\n3. Age-related osteoporosis on ongoing alendronate therapy. Counseled on administration, including taking it on an empty stomach with a full glass of water and remaining upright for 30 minutes. Pill organizer recommended.\n\n4. Essential hypertension, controlled on lisinopril.\n\nReturn precautions reviewed, including head strike with a fall, new weakness, or acute confusion.",
+ "medical_concepts": [
+  {
+   "text": "not as steady as i used to be",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i forget where i put things",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "stumbled in the kitchen",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my feet just didn't do what i told them",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i'm not dizzy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a walker in the closet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "my knees and my back paid for that",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i stood on my feet twelve hours a day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lift those big sheet pans and bags of flour",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i misplace things all the time",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my purse went missing for two days",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it was in the refrigerator",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the recipes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i have to write every step down",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "puff pastry from memory",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i stopped driving last year",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "thin bones",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "alendronate",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "sometimes i forget that too",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood pressure sitting is one thirty eight over eighty",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart rate sixty eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your gait is wide based and short steps",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "when you turn you take a few small steps",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild impairment",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood work",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "thyroid and vitamin b twelve",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "memory trouble",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "an mri",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy for balance and strength",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a home safety check",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "sleeping pill at bedtime",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "just one half of a pill",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "if you fall and hit your head",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "new weakness or confusion",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a pill organizer",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "stay upright for thirty minutes",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "progressive unsteadiness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "subjective memory decline",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "stumbled in the kitchen",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "vertigo",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lightheadedness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "walker",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "misplacing objects frequently",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "misplaced for two days",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "difficulty following recipes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lifting heavy sheet pans and flour bags",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "chronic knee and back pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "bone density evaluation",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "osteoporosis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "alendronate",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "missing doses",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "half tablet of a sleep aid",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 138/80 seated",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart rate 68",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sit-to-stand requires multiple attempts without arm support",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Gait is wide-based with short steps",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "multiple small steps on turning",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Romberg not performed",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Animal naming: 6 in one minute",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Three-word recall: 3 of 3 after delay",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Overall score approximately 23/30",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "thyroid function",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "vitamin B12",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "MRI brain",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Physical therapy referral",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Home safety evaluation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "age-related deconditioning",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "sleep medication effect",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "possible sensory decline",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Gait instability",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild cognitive impairment",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Taper sleep medication slowly",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Age-related osteoporosis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "alendronate therapy",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "empty stomach",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pill organizer",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Essential hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "controlled on lisinopril",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "head strike with a fall",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "acute confusion",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "new weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "near-fall",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "walker",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "surname and common word for a mobility device"
+  },
+  {
+   "text": "walker",
+   "field": "note",
+   "is_pii": false,
+   "comment": "surname and common word for a mobility device"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "R26.81",
+   "spans": [
+    {
+     "text": "not as steady as i used to be",
+     "field": "dialogue"
+    },
+    {
+     "text": "progressive unsteadiness",
+     "field": "note"
+    },
+    {
+     "text": "Sit-to-stand requires multiple attempts without arm support",
+     "field": "note"
+    },
+    {
+     "text": "Gait instability",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "M81.0",
+   "spans": [
+    {
+     "text": "thin bones",
+     "field": "dialogue"
+    },
+    {
+     "text": "bone density evaluation",
+     "field": "note"
+    },
+    {
+     "text": "Age-related osteoporosis",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "G31.84",
+   "spans": [
+    {
+     "text": "i forget where i put things",
+     "field": "dialogue"
+    },
+    {
+     "text": "memory trouble",
+     "field": "dialogue"
+    },
+    {
+     "text": "subjective memory decline",
+     "field": "note"
+    },
+    {
+     "text": "Mild cognitive impairment",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "blood pressure sitting is one thirty eight over eighty",
+     "field": "dialogue"
+    },
+    {
+     "text": "lisinopril",
+     "field": "dialogue"
+    },
+    {
+     "text": "Essential hypertension",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i was a pastry chef for thirty six years",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's former job and duration"
+  },
+  {
+   "text": "i still bake for my grandkids on sundays",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive personal routine"
+  },
+  {
+   "text": "retired after working as a pastry chef for 36 years",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient's former job and duration"
+  },
+  {
+   "text": "continues to bake for her grandchildren on Sundays",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive personal routine"
+  }
+ ],
+ "scenario": {
+  "specialty": "geriatrics",
+  "visit": "new",
+  "length": "medium",
+  "focus": [
+   "OCCUPATION",
+   "DATE",
+   "OTHER_PERSON_NAME"
+  ]
+ }
+}

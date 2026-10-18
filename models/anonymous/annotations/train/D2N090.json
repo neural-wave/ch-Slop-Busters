@@ -1,0 +1,19 @@
+{
+  "encounter_id": "D2N090",
+  "phi": [
+    {"text": "albert", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "62-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "mother was actually in the hospital", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "relative was hospitalized"},
+    {"text": "hip replacement", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "surgery"},
+    {"text": "having people over", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "socializing"},
+    {"text": "reyes", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "meditation", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "relaxation techniques"},
+    {"text": "Albert Powell", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "62-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "mother is in the hospital", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "relative is ill"},
+    {"text": "Reyes", "field": "note", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "meditation", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "relaxation techniques"},
+    {"text": "meditating", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "relaxation exercises"}
+  ],
+  "medical_concepts": []
+}

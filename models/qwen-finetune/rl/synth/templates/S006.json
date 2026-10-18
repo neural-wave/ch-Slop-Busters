@@ -1,0 +1,864 @@
+{
+ "id": "S006",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S42.022A",
+   "description": "Displaced fracture of shaft of left clavicle, initial encounter for closed fracture"
+  },
+  {
+   "code": "V80.010A",
+   "description": "Animal-rider injured by fall from or being thrown from horse in noncollision accident, initial encounter"
+  },
+  {
+   "code": "Y92.73",
+   "description": "Farm field as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.52",
+   "description": "Activity, horseback riding"
+  },
+  {
+   "code": "K21.9",
+   "description": "Gastro-esophageal reflux disease without esophagitis"
+  }
+ ],
+ "dialogue": "[doctor] good morning , {PATIENT_FIRST} . i'm doctor {DOCTOR_FIRST} {DOCTOR_LAST} .\n[patient] morning , doctor .\n[doctor] so i understand you came off a horse yesterday . tell me about it .\n[patient] yeah . so my buddy {OTHER_FIRST} has a farm out past the county line , {ORG} , and a few of us go out on sundays and ride . i was horseback riding across the hay field , just at a trot , and a deer jumped out of the tree line and the horse spooked . she reared up and kind of twisted , and i got thrown off the horse .\n[doctor] okay . and how did you land ?\n[patient] right on my left shoulder . i hit the ground pretty hard . i heard a crack , and i knew right away something was broken .\n[doctor] were you wearing a helmet ?\n[patient] i was , yeah . i did n't hit my head , though . the helmet was fine , no dents or anything .\n[doctor] okay , good . did you lose consciousness at all ?\n[patient] no , i was awake the whole time . i got up and walked back to the barn holding my arm .\n[doctor] okay . where's the pain right now ?\n[patient] right here , on the collarbone . there's a bump there that was n't there before .\n[doctor] okay . any pain in your neck , your ribs , or trouble breathing ?\n[patient] no , my ribs are okay . breathing is fine .\n[doctor] any numbness or tingling down your arm or into your hand ?\n[patient] no , my hand feels normal . it just hurts to lift my arm at all .\n[doctor] alright , and what have you taken for the pain ?\n[patient] {OTHER_FIRST}'s wife gave me a sling and some ibuprofen . i took eight hundred last night .\n[doctor] okay . and does that bother your stomach ? i see that you have reflux .\n[patient] it made my heartburn a little worse , yeah . i take omeprazole every morning , twenty milligrams . most days the reflux is under control .\n[doctor] any trouble swallowing , or any black stools , vomiting blood , anything like that ?\n[patient] no , nothing like that .\n[doctor] okay , good . what do you do for work ? is it physical ?\n[patient] i'm an insurance adjuster , so a lot of driving and climbing around damaged houses . i'm also a volunteer firefighter .\n[doctor] okay , so you're going to need that arm . which hand do you write with ?\n[patient] right .\n[doctor] okay , good . let me take a look . so i'm going to take your sling off carefully . looking at the left clavicle , there is an obvious deformity over the middle of the collarbone , with some swelling and bruising . the skin is intact , it's not tented . does it hurt when i press here ?\n[patient] yeah , that's it .\n[doctor] okay , point tenderness over the midshaft of the clavicle . i'm going to check the shoulder joint here . no tenderness at the ac joint . your shoulder is lower on the left side and it drops forward a little . can you squeeze my fingers ? spread your fingers ? good . your radial pulse is strong and sensation is normal in your arm and hand . i'm going to listen to your lungs . breath sounds are equal on both sides .\n[patient] okay .\n[doctor] so we got an x-ray of your left clavicle and a chest x-ray . hey dragon , show me the clavicle x-ray . okay . so the x-ray shows a fracture of the middle third of the left clavicle . the two ends are displaced , about one bone width , and there's about a centimeter of shortening . the chest x-ray shows no pneumothorax and no rib fractures .\n[patient] so what's the plan ?\n[doctor] so this is a displaced midshaft clavicle fracture . a lot of these heal fine in a sling . but when they're displaced and shortened , and especially in somebody who's active and does physical work , there's a higher chance that it does n't heal or heals short , so some people choose surgery with a plate and screws . i'd like you to see the orthopedic surgeon this week to talk about the options .\n[patient] okay . i'd like to hear about the surgery .\n[doctor] for now , keep the sling on for comfort . you can take it off to shower and to move your elbow and wrist so they do n't get stiff . no lifting with that arm , and no riding until you're cleared .\n[patient] understood .\n[doctor] for pain , let's switch from ibuprofen to acetaminophen , one thousand milligrams three times a day , because of your reflux , and i'll give you a few tablets of hydrocodone for night if you need it . ice it twenty minutes at a time .\n[patient] sounds good .\n[doctor] for the reflux , continue the omeprazole twenty milligrams in the morning . if the heartburn is worse , you can take it twice a day for a couple of weeks .\n[patient] okay .\n[doctor] and no volunteer calls for a while .\n[patient] yeah , i figured .",
+ "note": "CHIEF COMPLAINT\n\nLeft shoulder pain after being thrown from a horse.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old right-hand-dominant male with a history of gastroesophageal reflux disease who presents for evaluation of left clavicle pain. Yesterday, he was horseback riding at a trot across a hay field on a farm when the horse spooked, reared, and he was thrown from the horse, landing directly on his left shoulder. He heard a crack. He was wearing a helmet and denies head strike or loss of consciousness. He reports a new bump over the collarbone and pain with any shoulder motion. He denies neck pain, rib pain, shortness of breath, numbness, or tingling. He took ibuprofen 800 mg, which worsened his heartburn.\n\nHis reflux is managed with omeprazole 20 mg daily and is generally well controlled. He denies dysphagia, melena, or hematemesis.\n\nSOCIAL HISTORY\n\nInsurance adjuster and volunteer firefighter.\n\nPHYSICAL EXAM\n\nLeft Shoulder: Visible deformity over the midshaft of the clavicle with swelling and ecchymosis. Skin intact, not tented. Point tenderness over the midshaft clavicle. No tenderness over the acromioclavicular joint. Shoulder ptosis on the left.\nNeurovascular: Grip strength and finger abduction intact. Radial pulse 2+. Sensation intact throughout the left upper extremity.\nRespiratory: Breath sounds equal bilaterally.\n\nRESULTS\n\nX-ray of the left clavicle: Displaced fracture of the middle third of the left clavicle with 100% displacement and approximately 1 cm of shortening.\n\nChest x-ray: No pneumothorax. No rib fractures.\n\nASSESSMENT AND PLAN\n\n1. Closed displaced fracture of the shaft of the left clavicle.\n- Sling for comfort with elbow, wrist, and hand range of motion.\n- No lifting with the left arm and no horseback riding until cleared.\n- Referral to orthopedic surgery this week to discuss nonoperative management versus open reduction and internal fixation.\n- Acetaminophen 1000 mg three times daily, hydrocodone-acetaminophen as needed at night, and ice packs.\n\n2. Gastroesophageal reflux disease.\n- Avoid NSAIDs.\n- Continue omeprazole 20 mg daily; may increase to twice daily for 2 weeks if symptoms worsen.\n",
+ "medical_concepts": [
+  {
+   "text": "came off a horse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "farm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ride",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "horseback riding across the hay field",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "horse spooked",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "reared up",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "got thrown off the horse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "left shoulder",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "heard a crack",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hit my head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lose consciousness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "collarbone",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "bump",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain in your neck",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ribs",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "trouble breathing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hurts to lift my arm",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sling",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "reflux",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "heartburn",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "omeprazole",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "twenty milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "trouble swallowing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "black stools",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "vomiting blood",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "left clavicle",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "obvious deformity over the middle of the collarbone",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "swelling and bruising",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "skin is intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "not tented",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "point tenderness over the midshaft of the clavicle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no tenderness at the ac joint",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "shoulder is lower on the left side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "radial pulse is strong",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "breath sounds are equal on both sides",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-ray of your left clavicle",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "chest x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "fracture of the middle third of the left clavicle",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "displaced",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "centimeter of shortening",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no pneumothorax",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no rib fractures",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "displaced midshaft clavicle fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "surgery with a plate and screws",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "orthopedic surgeon",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen , one thousand milligrams three times a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "hydrocodone",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice it twenty minutes at a time",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "omeprazole twenty milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Left shoulder pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "thrown from a horse",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "gastroesophageal reflux disease",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "left clavicle pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "horseback riding at a trot",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hay field on a farm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "horse spooked, reared",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "thrown from the horse",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landing directly on his left shoulder",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heard a crack",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "head strike",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "bump over the collarbone",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain with any shoulder motion",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "neck pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "rib pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shortness of breath",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tingling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen 800 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "heartburn",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "reflux",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "omeprazole 20 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "dysphagia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "melena",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "hematemesis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Left Shoulder",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Visible deformity over the midshaft of the clavicle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "swelling and ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Skin intact, not tented",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Point tenderness over the midshaft clavicle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No tenderness over the acromioclavicular joint",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Shoulder ptosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Grip strength and finger abduction intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Radial pulse 2+",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact throughout the left upper extremity",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Breath sounds equal bilaterally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-ray of the left clavicle",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Displaced fracture of the middle third of the left clavicle",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "100% displacement",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "1 cm of shortening",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Chest x-ray",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "No pneumothorax",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No rib fractures",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Closed displaced fracture of the shaft of the left clavicle",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Sling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "range of motion",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "horseback riding",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "orthopedic surgery",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "nonoperative management",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "open reduction and internal fixation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Acetaminophen 1000 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "hydrocodone-acetaminophen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice packs",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Gastroesophageal reflux disease",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "NSAIDs",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S42.022A",
+   "spans": [
+    {
+     "text": "fracture of the middle third of the left clavicle",
+     "field": "dialogue"
+    },
+    {
+     "text": "displaced midshaft clavicle fracture",
+     "field": "dialogue"
+    },
+    {
+     "text": "displaced",
+     "field": "dialogue"
+    },
+    {
+     "text": "skin is intact",
+     "field": "dialogue"
+    },
+    {
+     "text": "x-ray of your left clavicle",
+     "field": "dialogue"
+    },
+    {
+     "text": "Closed displaced fracture of the shaft of the left clavicle",
+     "field": "note"
+    },
+    {
+     "text": "Displaced fracture of the middle third of the left clavicle",
+     "field": "note"
+    },
+    {
+     "text": "Skin intact, not tented",
+     "field": "note"
+    },
+    {
+     "text": "100% displacement",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V80.010A",
+   "spans": [
+    {
+     "text": "got thrown off the horse",
+     "field": "dialogue"
+    },
+    {
+     "text": "horse spooked",
+     "field": "dialogue"
+    },
+    {
+     "text": "came off a horse",
+     "field": "dialogue"
+    },
+    {
+     "text": "thrown from a horse",
+     "field": "note"
+    },
+    {
+     "text": "thrown from the horse",
+     "field": "note"
+    },
+    {
+     "text": "horse spooked, reared",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.73",
+   "spans": [
+    {
+     "text": "horseback riding across the hay field",
+     "field": "dialogue"
+    },
+    {
+     "text": "farm",
+     "field": "dialogue"
+    },
+    {
+     "text": "hay field on a farm",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.52",
+   "spans": [
+    {
+     "text": "horseback riding across the hay field",
+     "field": "dialogue"
+    },
+    {
+     "text": "ride",
+     "field": "dialogue"
+    },
+    {
+     "text": "horseback riding at a trot",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "K21.9",
+   "spans": [
+    {
+     "text": "reflux",
+     "field": "dialogue"
+    },
+    {
+     "text": "heartburn",
+     "field": "dialogue"
+    },
+    {
+     "text": "omeprazole twenty milligrams",
+     "field": "dialogue"
+    },
+    {
+     "text": "gastroesophageal reflux disease",
+     "field": "note"
+    },
+    {
+     "text": "Gastroesophageal reflux disease",
+     "field": "note"
+    },
+    {
+     "text": "omeprazole 20 mg daily",
+     "field": "note"
+    },
+    {
+     "text": "hematemesis",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "insurance adjuster",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "volunteer firefighter",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "volunteer role"
+  },
+  {
+   "text": "Insurance adjuster",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "volunteer firefighter",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "volunteer role"
+  }
+ ]
+}

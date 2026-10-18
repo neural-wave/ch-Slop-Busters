@@ -1,0 +1,12 @@
+{
+  "encounter_id": "D2N197",
+  "phi": [
+    {"text": "donna", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "37 -year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "ruth", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "weekends", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "days off"},
+    {"text": "springtime", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "allergy season"},
+    {"text": "Ruth", "field": "note", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

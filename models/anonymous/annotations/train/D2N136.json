@@ -1,0 +1,12 @@
+{
+  "encounter_id": "D2N136",
+  "phi": [
+    {"text": "janet", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "33-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "stair type workouts", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "leg workouts"},
+    {"text": "Janet Sullivan", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "33-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "stair workouts", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "leg workouts"}
+  ],
+  "medical_concepts": []
+}

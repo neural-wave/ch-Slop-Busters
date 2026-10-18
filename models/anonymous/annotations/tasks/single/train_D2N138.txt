@@ -1,0 +1,201 @@
+########## ENCOUNTER D2N138
+=== FIELD: dialogue
+[doctor] next patient is emily hernandez . date of birth , march 26 2001 . this is a 20 year old female being seen today for our yearly follow-up for asthma , allergic rhinitis and food allergy . due to insurance changes since our last office appointment in april 2020 , she was switched from symbicort to wixela . she also uses zyrtec in the spring , summer and fall for her seasonal allergy symptoms , which tend to work well . she also has known peanut allergy , she does tolerate almonds and cashews . please put in the asthma section at the very bottom that the act score is 21 . please put under interval history , written consent is obtained today to use dax for documentation .
+[doctor] hi emily , how are you ?
+[patient] i'm pretty good , how are you ?
+[doctor] i'm good , thank you . so gosh , we last talked a little bit over a year ago and it was just a telemedicine visit , but it seems like you've been doing pretty good . i know there was an insurance change . i think you had switched over to wixela , is that right ?
+[patient] yep , that's right , and it's what i'm currently using .
+[doctor] okay , and that's the 250/50 dose , correct ?
+[patient] yes , correct .
+[doctor] perfect . so how does that compare ?
+[patient] i mean , it's working well . i really have n't had any issues with it and i take it once in the morning and once at night .
+[doctor] and that's one puff twice a day ?
+[patient] mm-hmm .
+[doctor] okay . and have you been having to use your albuterol inhaler at all ?
+[patient] rarely , and if i do it's really just before a workout or something out that , if i know i'm really going to be pushing it .
+[doctor] so it sounds like it's around strenuous activity .
+[patient] yes .
+[doctor] okay . so you can do things like go on a walk or going to the grocery store no problem , and just use it for more exertional stuff ?
+[patient] yes . like , if i'm gon na go for a run or something like that i'll really just take it before as a preventative .
+[doctor] okay .
+[patient] and i've been trying to use my daily if i can a little less because i'm trying to go into the military soon .
+[doctor] no kidding , that's great .
+[patient] yeah , so i have to be able to operate basically at a certain fitness level without an inhaler .
+[doctor] really ?
+[patient] yeah , and if i can prove that i'm capable of these activities without an inhaler it makes it easier .
+[doctor] and so by inhaler do they mean both your daily and rescue inhalers ?
+[patient] mm-hmm . so it's like they'll have a fitness test and basically they'll tell me not to take my inhaler that day before the test , and then they'll see how the asthma affects me . and they're looking to see if it's serious enough to hold me back from joining or whatever . so i have been taking it less and less . and really some days i feel like i do n't need it .
+[doctor] and that is the wixela that you're not taking . so on average per week , how many days of the week do you use one puff in the morning and one puff at night ?
+[patient] probably about three or four .
+[doctor] okay , three to four days per week and the other days it's once a day ?
+[patient] yes , that's correct .
+[doctor] okay .
+[patient] and it's either in the morning or at night that i'm taking it .
+[doctor] okay , and do you think that's working okay ?
+[patient] i do .
+[doctor] great . and any urgent care or er visits at all for breathing over the past year ?
+[patient] nope .
+[doctor] okay , so i'm going to assume no one has put you on prednisone for breathing issues then .
+[patient] nope .
+[doctor] okay . and now , military wise , what's the time frame of when you'll be completing some of these exertional tests ? like , what are your next steps ?
+[patient] so , hopefully i'm going to be enlisted early spring of 2022 . so that gives me about six to seven months to get to a point where i'm able to exert my body where i do n't really need the inhaler . or at least show them that i have it under control .
+[doctor] now when you were in the other room you completed a breathing test , correct ?
+[patient] correct .
+[doctor] okay , great . so now let me ask you about the allergies , 'cause i know typically you'll use the zyrtec in the spring , summer and fall , correct ?
+[patient] yeah , i do n't really ... um , or i'm sorry , i use it more during the spring and fall . i do n't really have to use it too much in the summer .
+[doctor] do you use it more just as needed in the summer ?
+[patient] yeah , that's right .
+[doctor] okay . and have you been taking the zyrtec every day recently since you're right in the mix of spring ?
+[patient] not every day , but i do take it on days i know i'm going to be outside a lot . um , i do tend to work outside about three days a week so i'll definitely take it on those days .
+[doctor] and does it seem to work pretty well still ? are you happy with it ?
+[patient] yeah , it does , it works great .
+[doctor] wonderful , good to hear . and then i'm assuming you're staying away from the peanuts . uh , last year you had told me it worked with ... uh , you worked with enterprise rent-a-car and one of the cars had a lot of peanuts in it that you were cleaning out and that gave you hives , uh , when you had touched it , is that correct ?
+[patient] yep , that's correct .
+[doctor] okay . and has there been anything like that since that experience ?
+[patient] no , i do n't think so . i definitely became more cautious after that , so i usually wear , uh , wear long sleeves and change my gloves every time now . so i have n't had a reaction , but i imagine that i probably came into contact with cars that had peanuts in them , but they just d- did n't touch my skin .
+[doctor] super . and it sounds like you're really smart about it .
+[patient] yeah , and the airplanes , they have peanuts . they give everyone too , so .
+[doctor] okay . and you have an epipen that k- that you keep with you , correct ?
+[patient] yes .
+[doctor] okay . and i'm assuming you're going to need refills , um , i can call you in a new set for the year . typically of course , they expire within a year .
+[patient] yeah , okay .
+[doctor] and i remember , um , sometime previously you've had some testing for tree nuts , but you do have almonds and cashews , correct ? and- and you do okay with them , or do you avoid all tree nuts ?
+[patient] i do tend to avoid all of them but i recall eating some almonds at one point , uh , really soon after we discussed i might not be allergic to tree nuts anymore .
+[doctor] okay .
+[patient] and i remember having them and nothing happened , but i usually just tend to stay away from them , um , really if i can help it .
+[doctor] okay . so sometimes when people have a peanut allergy , the nuts in general just are n't very important to them , so it is very common to avoid both . um , so let's do this . i'll have helen come in and i would love to complete a breathing test on you . if your breathing numbers are looking great we can work on getting you , uh , something lower than wixela . if you look at all of our asthma regimens it is a stepwise process , and wixela is a combination of two medications in one . and , well maybe you do n't need both of'em . uh , maybe you just need one of'em . so we can work our way backwards .
+[patient] okay .
+[doctor] and so the breathing test will help give us some- some more guidance , we will look at the results in just a moment .
+[patient] all right , and so this past year i did get into the bad habit of vaping and smoking , but i have been trying to cut that out . so i should be good , and , um , now i only do just a little bit and i am trying to quit . so i am sure that might have an effect .
+[doctor] it can . um , so what we can do today is compare your results with prior results , probably before you started smoking or using the vape .
+[patient] okay .
+[doctor] yeah . and we'll see where you stand at that point .
+[patient] all right , that sounds good .
+[doctor] well let me go ahead and listen , so hop on up here for me .
+[patient] okay .
+[doctor] all right so your ears look good , a little bit of wax on both sides . can i see inside your mouth ? big ahh .
+[patient] ahh .
+[doctor] good . okay let me take a peek in your nose . all right , good . you can put your mask back on .
+[patient] okay .
+[doctor] and go ahead take a big breath in and out . good , your lungs sound terrific . i'll listen to your heart , breathe quietly . okay very good .
+[patient] awesome .
+[doctor] so your breathing test is about the same as it was a couple years ago , and actually looks a little bit better . you may not remember but when we last completed the test in 2019 , uh , do you recall if you were feeling lousy at the time ?
+[patient] i think it was the smoke . there were so many fires at that point and i remember coming in and looking out the window and all you saw was the orange and the smoke .
+[doctor] yes , you're absolutely right , that was a bad year . that was my first fall here and i was really alarmed . well that explains why at that time your numbers were a little bit lower and today they look better . here's what i think , so you'll have kaiser currently , correct ?
+[patient] correct .
+[doctor] okay . most insurances do limit what we can use .
+[patient] yeah i do know that .
+[doctor] okay so option one would be to continue using wixela like you're using it now . we would classify it as off-label and you can use it once a day instead of twice a day , which is fine . some people do that because they just need it once a day , so that's an option . option two would be to actually back up to an inhaler that just has one med .
+[patient] mm-hmm
+[doctor] so the one that kaiser covers is alvesco . the thing about alvesco , though , is that it would be two puffs in the morning and two puffs at night . so it's a bit more work . um , it's not breath activated but we could step down the lowest dose to see how you do . some of the newer guidelines for asthma that were published this year is recommending trying to treat people with inhalers like wixela or alvesco only when you're ill , or say during smoke season . so minimizing their use to those periods of time versus all year . unless you found out that you're getting
+[ inaudible 00:09:25 ] sick having issues every month , then that would indicate would pull back too much .
+[patient] okay .
+[doctor] that we had too much , yeah .
+[patient] okay .
+[doctor] um , so we could step back and possibly get you to the point where you just use those inhalers , uh , when you're ill or it's smoke season , but at the first step to do any of that would be to try to drop down to just alvesco .
+[patient] okay , that actually sounds really good .
+[doctor] okay great . so i will call that in for you , it will be the lower dose , 80 mcg , and you'll have to do two puffs twice a day .
+[patient] all right
+[doctor] okay and that'll be on the box when i call it in . you can put the wixela off to the side , but do n't throw it away just in case the alvesco does n't work well for you .
+[patient] okay , got it .
+[doctor] and then ideally we would repeat your breathing test in four months to see how you're doing , and then be able to document that you're doing well . sometimes , not always , the military will require documentation on breathing tests .
+[patient] okay .
+[doctor] is your pharmacy still the same or did you update it with helen ?
+[patient] yeah i believe she updated it . it should be kaiser permanente broadway .
+[doctor] okay perfect . i'll make sure it's the alvesco and then i'll renew your albuterol and epipen as well .
+[patient] awesome , thank you .
+[doctor] you're welcome . uh , then the zyrtec , do you pick it up over the counter or do get- do you get it as a prescription ?
+[patient] i just get it over the counter .
+[doctor] okay got it . and do you have a nebulizer that you would , uh , need refills on ?
+[patient] i do n't think i need any refills , i have n't used that in such a long time . i think the last time was when i had bronchitis , or there was few select times when i had to use it when i was kid .
+[doctor] okay good . well i think we have our game plan .
+[patient] okay awesome .
+[doctor] and do the alvesco two puffs twice a day and your albuterol if you need it . the zyrtec 10 milligrams as you need it and continue to stay away from peanuts and tree nuts and i'll refill your epipen .
+[patient] okay
+[doctor] all right so we've got it .
+[patient] great .
+[doctor] all right i'll have you take this to the front and i'm gon na say four months re-check for asthma and we'll repeat the spirometer- spirometry at that time .
+[patient] okay sounds good .
+[doctor] all right well thanks so much and you have a great day .
+[patient] you too .
+[doctor] and we'll do a follow-up in four months with act and spirometry , sooner if needed . follow-up 25 minutes .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow-up for asthma, allergic rhinitis, and food allergy.
+
+HISTORY OF PRESENT ILLNESS
+
+Emily Hernandez is a 20-year-old female presenting today for an annual follow-up for asthma, allergic rhinitis, and food allergy. Due to insurance changes during the interim of our last office appointment from 04/2020, she was switched from Symbicort to Wixela. She uses Zyrtec in the spring, summer, and fall for her seasonal allergy symptoms, which tends to work well. She has known peanut and tree nut allergies, which she tries to avoid. She does tolerate almonds and cashew.
+
+Mrs. Hernandez is trying to join the military, who require a certain fitness level without use of a rescue or maintenance inhaler, so she has been weaning off her inhalers. She uses albuterol prior to a run, but otherwise functions without it. She has been reducing her Wixela dose, using 1 inhalation once daily 3 times per week, with remaining days using it twice per day as prescribed. She feels this is working well. She denies urgent care or emergency room visits for respiratory issues in the past year. She denies requiring prednisone for breathing issues in the past year.
+
+She hopes to be enlisted in the military in early spring of 2022. She is currently undergoing exertional testing to this purpose. She explains that this gives hers 6 to 7 months to show that she can exert herself without needing any inhalers.
+
+Over the past year, she admits to vaping and smoking, though she is trying to quit and has cut down her use significantly.
+
+She notes having a nebulizer but denies needing it recently and has only used it in her past for upper respiratory infections and as a child a few times.
+
+Mrs. Hernandez uses Zyrtec during the spring and fall but does not typically have to use it consistently during the summer. She confirms she has been taking Zyrtec 3 days per week when she works outside, and it works well to control her symptoms.
+
+She has been successfully avoiding peanuts. Incident from last year was reviewed where she was exposed to peanuts when she was cleaning an Enterprise rental car that had a lot of peanuts in it. She developed contact hives when the peanuts encountered her skin. Over the past year she denies additional accidental exposures. She wears long sleeves and changes her gloves between each cleaning. She thinks it is likely that she has been in contact with cars that contained peanuts, but due to her protective measures she did not touch them directly. She confirmed she always keeps an EpiPen with her.
+
+The patient is also avoiding tree nuts. She did ingest almonds without issue following our discussion that she could try them. Despite tolerating them well, she continues to avoid all tree nuts.
+
+PAST HISTORY
+
+Medical
+Asthma.
+Allergy rhinitis.
+Food allergies to peanut and tree nuts.
+
+SOCIAL HISTORY
+
+Currently smokes tobacco and vapes, trying to reduce and interested in cessation in preparation for joining the army.
+
+CURRENT MEDICATIONS
+
+Wixela Inhub 250 mcg-50 mcg/dose powder for inhalation. 1 puff 2 times daily in the morning and evening.
+Proair HFA as needed.
+EpiPen as needed.
+Alvesco 80 mcg 2 puff 2 times daily.
+
+ALLERGIES
+
+Peanuts cause a severe, anaphylactic reaction.
+Montelukast sodium, “seizure-like” reaction.
+
+RESULTS
+
+Asthma Control Test (ACT) Results: ACT score is 21.
+Current food skin test sensitivities include peanuts.
+
+ASSESSMENT
+
+• Moderate persistent asthma, uncomplicated.
+• Allergic rhinitis.
+• Anaphylactic reaction due to peanuts.
+
+Emily Hernandez is a 20-year-old female who presented today for her yearly follow-up appointment for asthma, allergic rhinitis, and food allergy.
+
+PLAN
+
+Moderate persistent asthma, uncomplicated
+The patient has been using Wixela inhaler daily and admits to reducing her daily dose to one puff per day, 3-4 days per week as she feels she does not always need it the full dose. Additionally, she aspires to join the military and she must meet certain physical fitness requirements without the use of her inhaler. I counseled the patient on current asthma treatment guidelines which recommend using Wixela and Alvesco only when needed during periods of illness. The patient agreed to reducing her medicine to Alvesco which is a single medication, versus 2 in Welixa. The patient will continue to use her albuterol inhaler as needed. Her ACT score is 21 today and her spirometry test today was better than it was in 2019, though she recalls that it was smoky from wildfires during her last breathing test.
+
+Allergic rhinitis
+She will continue to use Zyrtec as needed, primarily during spring and fall and sometimes in summer. Her current dose cadence is 3 times per week when she works outside. Symptoms are currently under control.
+
+Anaphylactic reaction due to peanuts
+The patient has successfully avoided peanuts. Plan is to continue with current methods to avoid exposure. I will refill her EpiPen which expires annually.
+
+INSTRUCTIONS
+
+Moderate persistent asthma, uncomplicated
+Start Alvesco, 2 puffs twice daily. Keep Wixela in case Alvesco does not work well. Continue albuterol as needed. Return in 4 months to repeat ACT and spirometry testing.
+
+Allergic rhinitis
+Continue Zyrtec 10 mg daily as needed.
+
+Anaphylactic reaction due to peanuts
+Continue strict avoidance of peanuts. I will refill her EpiPen today.

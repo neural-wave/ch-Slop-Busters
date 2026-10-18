@@ -1,0 +1,22 @@
+{
+  "encounter_id": "D2N178",
+  "phi": [
+    {"text": "maria martin", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "maria", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "03/05/1946", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "peanut butter sandwiches", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "sandwiches"},
+    {"text": "club soda", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "sparkling water"},
+    {"text": "seltzer water", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "sparkling water"},
+    {"text": "liberty road", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a local office"},
+    {"text": "optimum optometrists", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "eye doctors"},
+    {"text": "sanchez", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "Maria Martin", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Martin", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "75-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "club soda", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "sparkling water"},
+    {"text": "seltzer water", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "sparkling water"},
+    {"text": "Sanchez", "field": "note", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "Optimum Optometrists", "field": "note", "type": "ORGANIZATION", "tier": 1, "generalized": "an eye clinic"}
+  ],
+  "medical_concepts": []
+}

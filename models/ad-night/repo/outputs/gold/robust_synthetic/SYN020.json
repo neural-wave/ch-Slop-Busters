@@ -1,0 +1,32 @@
+{
+  "encounter_id": "SYN020",
+  "pii": [
+    {"field": "note", "text": "MOBILERAD IMAGING SERVICES", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "Golden Meadows Skilled Nursing & Rehabilitation", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Golden Meadows", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "750 Prairie Rose Road", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Cedar Bluff", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "IA 52299", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Room 118-A", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "CXR-2026-551208", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "GM-E0099128", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "QUIGLEY", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Bartholomew", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "04/03/1925", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "101 Y", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "101-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "October 2, 2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Lucia", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Benedetti", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "319-555-0175", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "08/14/2025", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Paula", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Svoboda", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "10/02/2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Kenneth", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Abara", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "MD-41187", "category": "ID", "risk": "high"}
+  ],
+  "keep": [
+  ]
+}

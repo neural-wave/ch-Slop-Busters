@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N123",
+  "pii": [
+    {"field": "dialogue", "text": "tyler", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "56 -year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Tyler", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Green", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "56-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "note", "text": "120/50", "category": "CLINICAL_NUMBER", "why": "blood pressure (I10)"}
+  ]
+}

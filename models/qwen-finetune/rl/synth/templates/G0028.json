@@ -1,0 +1,646 @@
+{
+ "id": "G0028",
+ "dataset": "synthetic_followup",
+ "sex": "male",
+ "age_range": [
+  13,
+  17
+ ],
+ "icd10_codes": [
+  {
+   "code": "J45.30",
+   "description": "Mild persistent asthma, uncomplicated"
+  },
+  {
+   "code": "F90.2",
+   "description": "Attention-deficit hyperactivity disorder, combined type"
+  },
+  {
+   "code": "J30.2",
+   "description": "Other seasonal allergic rhinitis"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . how's school going ? i saw you're {AGE} now .\n[patient] hi doctor {DOCTOR_LAST} . yeah , i'm {AGE} . school is fine , i guess . the asthma has been kind of annoying though .\n[doctor] tell me about it . how often are you using the rescue inhaler ?\n[patient] like twice a week ? more when the pollen is bad . i have a spacer that my brother {OTHER_FIRST} made me use after i kept messing up the inhaler .\n[doctor] that's a helpful brother . did you have any nighttime coughing ?\n[patient] a couple nights , yeah . it wakes me up and then i can't get back to sleep .\n[doctor] how many nights a week is that ?\n[patient] maybe once a week . i think it's worse in september when the ragweed goes crazy .\n[doctor] okay . are you taking the controller inhaler every day ?\n[patient] most days . i forget on the weekends when i'm at the farm .\n[doctor] at the farm ? tell me about that .\n[patient] i'm one of four boys in our house , so we all have chores . i raise quail for the county fair , and i have forty birds in the barn right now .\n[doctor] that's a lot of birds . is there dust or feathers in the barn ?\n[patient] yeah , a lot of dust when i clean the coops . i wear a mask but sometimes i don't .\n[doctor] okay , let's talk about that . any limits in sports , or coughing during practice ?\n[patient] i play soccer and i get winded at the end of the halves . the coach asked if i'm okay .\n[doctor] good , i'm glad you're asking for help . have you been wheezing during the games ?\n[patient] sometimes . i use the rescue inhaler before warm ups now .\n[doctor] that's the right approach . how's your allergy situation ? sneezing , itchy eyes ?\n[patient] yes , constant in the fall . my eyes itch and my nose is running all day .\n[doctor] i'd like to check the focus too , since you're on the adhd medication . how is that going ?\n[patient] the medicine helps me focus in class . but i can't eat much lunch and i'm grumpy by the end of the day .\n[doctor] that's a common side effect . are you still taking it every morning ?\n[patient] yes . i take it before breakfast and then i eat a big snack after school .\n[doctor] good idea . how's your sleep on the medicine ?\n[patient] it's okay . i fall asleep around eleven . my mom says i'm up at six thirty every morning .\n[doctor] screen time at night ?\n[patient] a little . i play games on my phone until midnight sometimes . i know .\n[doctor] okay . let's check your lungs and your vitals . take a deep breath in and out for me .\n[patient] okay .\n[doctor] your lungs are clear today , with no wheezing right now . your oxygen level is ninety eight percent and your pulse is eighty six . blood pressure is one eleven over sixty eight .\n[patient] good .\n[doctor] your nose has some swelling and clear discharge . your throat is a little red , but i don't see any infection .\n[patient] okay . so what's the plan ?\n[doctor] first , we'll increase the controller inhaler to a twice daily dose for the next month and recheck your peak flow .\n[patient] twice a day ? i'll forget that .\n[doctor] set an alarm on your phone , and use the spacer every time . i'll also start a nasal steroid spray for the allergies , one spray in each nostril every morning .\n[patient] okay . my brother will remind me anyway .\n[doctor] good . for the attention medicine , i'm not changing the dose yet , but i want to check your weight and appetite in one month . we can move the dose later in the day if it helps .\n[patient] that might help . i don't mind the medicine , i just hate being grumpy .\n[doctor] i understand . let's also talk about screen time . try to stop your phone an hour before bed .\n[patient] okay .\n[doctor] your flu shot is due this fall . screening starts at forty five for some other things , but the vaccine schedule for teenagers is different . and the guidelines say adults over the age of sixty five need extra vaccines , which is not you right now .\n[patient] i already had my flu shot last year at school .\n[doctor] perfect . then we'll just check your records for it .\n[patient] ha , good , i'd hate to need extra shots .\n[doctor] okay . the rescue inhaler stays with you at all times , including at soccer and at the farm . if you need it more than three times in a week , or you can't speak full sentences , call the office or go to the emergency room .\n[patient] got it . thanks , doctor {DOCTOR_LAST} . see you in a month .",
+ "note": "CHIEF COMPLAINT\n\nFollow-up of asthma with seasonal allergic symptoms and attention-deficit/hyperactivity disorder on stimulant therapy.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with asthma, seasonal allergic rhinitis, and attention-deficit/hyperactivity disorder presenting for routine follow-up. He uses albuterol approximately twice weekly, more with high pollen. He reports nocturnal cough and awakening about once weekly, worse in September with ragweed exposure. He takes an inhaled corticosteroid daily but misses doses on weekends. He uses a spacer, introduced by his older brother, {OTHER_FIRST}.\n\nHe is one of four boys in the household and helps with chores. He raises quail for a county fair project, with approximately forty birds housed in a barn. He reports dust exposure during coop cleaning and inconsistent mask use. He reports winding down at the end of halves in soccer and has used albuterol before warm-ups. He reports constant itchy eyes and rhinorrhea during the fall.\n\nHe takes a stimulant medication each morning for ADHD, which is effective in class but causes lunch-time appetite suppression and irritability by late afternoon. He sleeps around 11 PM with a parent-reported wake time of 6:30 AM. He uses his phone until midnight at times.\n\nPHYSICAL EXAM\n\nVitals: SpO2 98 percent on room air, heart rate 86, BP 111/68. Lungs clear to auscultation without wheezing at rest. Nasal mucosa with edema and clear discharge. Oropharynx mildly erythematous without exudate.\n\nRESULTS\n\nPeak flow measurement to be repeated at next visit.\n\nASSESSMENT AND PLAN\n\n1. Mild persistent asthma, uncomplicated, with exercise-related symptoms and nocturnal awakenings. Increase inhaled corticosteroid to twice daily for one month. Continue albuterol as needed, including before exercise. Spacer technique reviewed. Recheck peak flow at follow-up.\n\n2. Seasonal allergic rhinitis due to pollen. Start intranasal corticosteroid spray daily. Environmental counseling regarding dust and quail coop cleaning with mask use.\n\n3. Attention-deficit/hyperactivity disorder, combined presentation, on stimulant. No dose change today. Monitor weight and appetite; consider moving the dose later in the day if appetite suppression persists. Sleep hygiene and limits on screen time before bed discussed.\n\nInfluenza vaccine given at school last year, per record. Return precautions reviewed, with rescue inhaler use more than three times weekly or inability to speak full sentences prompting an urgent call or emergency care.",
+ "medical_concepts": [
+  {
+   "text": "the asthma has been kind of annoying",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the rescue inhaler",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "more when the pollen is bad",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a spacer",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "nighttime coughing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it wakes me up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the ragweed goes crazy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the controller inhaler",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "i forget on the weekends",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "dust or feathers",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a lot of dust when i clean the coops",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i wear a mask",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "get winded at the end of the halves",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "wheezing during the games",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "use the rescue inhaler before warm ups",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "constant in the fall",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my eyes itch and my nose is running all day",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sneezing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the adhd medication",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "the medicine helps me focus in class",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i can't eat much lunch",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "grumpy by the end of the day",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i fall asleep around eleven",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "up at six thirty every morning",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i play games on my phone until midnight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your lungs are clear today",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your oxygen level is ninety eight percent",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your pulse is eighty six",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure is one eleven over sixty eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your nose has some swelling and clear discharge",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your throat is a little red",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i don't see any infection",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "increase the controller inhaler to a twice daily dose",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "peak flow",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "use the spacer every time",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a nasal steroid spray",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "one spray in each nostril every morning",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "the attention medicine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "check your weight and appetite",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "try to stop your phone an hour before bed",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your flu shot is due this fall",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "i already had my flu shot last year",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "can't speak full sentences",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "asthma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "seasonal allergic rhinitis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "attention-deficit/hyperactivity disorder",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol approximately twice weekly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "nocturnal cough",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "awakening about once weekly",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ragweed exposure",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "inhaled corticosteroid daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "misses doses on weekends",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "dust exposure during coop cleaning",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "inconsistent mask use",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "winding down at the end of halves in soccer",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "used albuterol before warm-ups",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "constant itchy eyes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "rhinorrhea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a stimulant medication",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "lunch-time appetite suppression",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "irritability by late afternoon",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "wake time of 6:30 AM",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "uses his phone until midnight",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "SpO2 98 percent on room air",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart rate 86",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 111/68",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lungs clear to auscultation without wheezing at rest",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Nasal mucosa with edema and clear discharge",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Oropharynx mildly erythematous without exudate",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Peak flow measurement",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild persistent asthma, uncomplicated",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "exercise-related symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "nocturnal awakenings",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Increase inhaled corticosteroid to twice daily for one month",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Continue albuterol as needed",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Spacer technique reviewed",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Seasonal allergic rhinitis due to pollen",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Start intranasal corticosteroid spray daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Environmental counseling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "quail coop cleaning",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Attention-deficit/hyperactivity disorder, combined presentation",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "No dose change today",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "appetite suppression persists",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sleep hygiene",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Influenza vaccine given at school last year",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "inability to speak full sentences",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "rescue inhaler use more than three times weekly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [],
+ "evidence": [
+  {
+   "code": "J45.30",
+   "spans": [
+    {
+     "text": "nighttime coughing",
+     "field": "dialogue"
+    },
+    {
+     "text": "wheezing during the games",
+     "field": "dialogue"
+    },
+    {
+     "text": "Mild persistent asthma, uncomplicated",
+     "field": "note"
+    },
+    {
+     "text": "nocturnal awakenings",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "F90.2",
+   "spans": [
+    {
+     "text": "the adhd medication",
+     "field": "dialogue"
+    },
+    {
+     "text": "Attention-deficit/hyperactivity disorder, combined presentation",
+     "field": "note"
+    },
+    {
+     "text": "a stimulant medication",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "J30.2",
+   "spans": [
+    {
+     "text": "the ragweed goes crazy",
+     "field": "dialogue"
+    },
+    {
+     "text": "constant in the fall",
+     "field": "dialogue"
+    },
+    {
+     "text": "Seasonal allergic rhinitis due to pollen",
+     "field": "note"
+    },
+    {
+     "text": "rhinorrhea",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm one of four boys in our house",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "family size"
+  },
+  {
+   "text": "i raise quail for the county fair",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "one of four boys in the household",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "family size"
+  },
+  {
+   "text": "raises quail for a county fair project",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  }
+ ],
+ "scenario": {
+  "specialty": "pediatrics (adolescent patient with a parent)",
+  "visit": "followup",
+  "length": "medium",
+  "focus": [
+   "OTHER_QUASI",
+   "OTHER_PERSON_NAME"
+  ]
+ }
+}

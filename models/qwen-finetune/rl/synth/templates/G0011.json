@@ -1,0 +1,573 @@
+{
+ "id": "G0011",
+ "dataset": "synthetic_new",
+ "sex": "male",
+ "age_range": [
+  60,
+  75
+ ],
+ "icd10_codes": [
+  {
+   "code": "I48.0",
+   "description": "Paroxysmal atrial fibrillation"
+  },
+  {
+   "code": "Z79.01",
+   "description": "Long term (current) use of anticoagulants"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  },
+  {
+   "code": "E11.9",
+   "description": "Type 2 diabetes mellitus without complications"
+  },
+  {
+   "code": "R42",
+   "description": "Dizziness and giddiness"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} , one of the physicians on tonight . the nurse said your heart doctor sent you over . how are you feeling ?\n[patient] hi , doctor {DOCTOR_LAST} . honestly , i feel a little wobbly . my heart doctor said the monitor picked up something irregular and he wanted me checked out today .\n[doctor] okay . tell me what you've been noticing .\n[patient] it started about four days ago . i'd be sitting down after supper and my heart would start racing , like it was running a marathon without me . then i'd get lightheaded , like the room was tilting a little .\n[doctor] how long do the episodes last ?\n[patient] usually ten minutes , maybe fifteen . then it just stops on its own . last tuesday it happened twice in one afternoon , which is what scared me enough to call the office .\n[doctor] did you pass out at any point , or come close to it ?\n[patient] no , i never went all the way down . i grabbed the kitchen counter a couple of times though .\n[doctor] any chest pain or pressure with it ?\n[patient] no chest pain . i get a little short of breath while it's racing , but it eases off when the rhythm settles .\n[doctor] okay . what are you taking for your heart right now ?\n[patient] i take eliquis twice a day , and the lisinopril for blood pressure . they started the eliquis two years ago after the first irregular rhythm showed up . i also take metformin for my sugar .\n[doctor] and how have the sugars been running ?\n[patient] fasting around one twenty five , so not great . my fitbit says i'm sitting too much in the evenings , which i already know .\n[doctor] are you active otherwise ?\n[patient] oh , i'm pretty active , honestly . i restore vintage motorcycles in my garage , so i'm on my feet out there for hours most nights . and i swim at five forty five every morning , no matter what the weather is .\n[doctor] that's impressive . and how are things at home ?\n[patient] busy . we just adopted twins last spring , so the nights are short . my wife keeps saying i should slow down , and she's probably right .\n[doctor] congratulations . okay , let's get an ekg and check your blood work . the nurse is putting you on the monitor now .\n[patient] okay . the nurse already clipped something on my finger .\n[doctor] good . let me listen to your heart and lungs . your heart is irregular right now , a little fast , maybe one ten . lungs sound clear . any leg swelling ?\n[patient] no swelling . my ankles are fine .\n[doctor] okay . your ekg shows an irregular rhythm without clear p waves , which fits with atrial fibrillation . your potassium and kidney numbers came back normal . i'm going to give you a dose of metoprolol to slow the rate , and we'll watch you on the monitor for a few hours .\n[patient] will i need a cardioversion ?\n[doctor] possibly , if it doesn't settle on its own or keeps coming back . let's see how the rate responds first .\n[patient] okay .\n[doctor] your blood pressure is one forty over eighty eight , a little high . keep taking the lisinopril . don't skip the eliquis , even on the days you feel fine .\n[patient] i never skip it . i set an alarm on my phone .\n[doctor] good . i want you to keep a log of when the racing happens , how long it lasts , and what you were doing before it started .\n[patient] i can do that . i'm pretty organized with spreadsheets , actually .\n[doctor] perfect . the nurse will write down the best number to reach you at , in case the results come back after you leave .\n[patient] sure . it's on the form already .\n[doctor] okay . we'll get you an appointment with the heart rhythm clinic within two weeks .\n[patient] thank you , doctor {DOCTOR_LAST} . i was worried this was something serious .\n[doctor] it's serious enough that we want to watch it closely , but you're doing the right things . let's see how you feel after the metoprolol .",
+ "note": "CHIEF COMPLAINT\n\nPalpitations and lightheadedness for four days.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with paroxysmal atrial fibrillation on apixaban, hypertension, and type 2 diabetes who presents on referral from his cardiologist after a monitor picked up an irregular rhythm. He reports four days of palpitations at rest, with episodes lasting ten to fifteen minutes that resolve spontaneously. He had two episodes in one afternoon last Tuesday. He describes lightheadedness during the episodes and has steadied himself on the kitchen counter. He denies syncope and chest pain or pressure. He reports mild shortness of breath during the episodes that resolves when the rhythm settles. He denies orthopnea.\n\nSOCIAL HISTORY\n\nHe is very active. He restores vintage motorcycles in his garage most evenings and swims at 5:45 every morning. He and his wife recently adopted twins. He tracks his activity with a fitness watch. Callback number: {PHONE}.\n\nMEDICATIONS\n\nApixaban twice daily, lisinopril, and metformin. Apixaban was started about two years ago after the first documented irregular rhythm.\n\nPHYSICAL EXAM\n\nHeart rate 110 and irregularly irregular. Blood pressure 140/88. Lungs are clear to auscultation. No lower extremity edema.\n\nRESULTS\n\nECG shows atrial fibrillation without clear P waves. Potassium and creatinine are within normal limits. Fasting glucose approximately 125 per patient report.\n\nASSESSMENT AND PLAN\n\n1. Paroxysmal atrial fibrillation with rapid ventricular response. Start metoprolol for rate control. Continue apixaban without interruption. Monitor on telemetry. Consider cardioversion if rhythm persists or recurs. Referral to heart rhythm clinic within two weeks.\n2. Essential hypertension, borderline elevated today. Continue lisinopril.\n3. Type 2 diabetes mellitus. Continue metformin.\n4. Dizziness with arrhythmia, improving with rate control. Symptom log requested.",
+ "medical_concepts": [
+  {
+   "text": "heart would start racing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lightheaded",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "episodes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "racing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "short of breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pass out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "eliquis twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood pressure",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "metformin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "sugars",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "fasting around one twenty five",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "irregular rhythm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart is irregular",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "one ten",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "leg swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lungs sound clear",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "lungs",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "ankles",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "ekg",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "irregular rhythm without clear p waves",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "atrial fibrillation",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "potassium and kidney numbers came back normal",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "metoprolol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "cardioversion",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "one forty over eighty eight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "monitor",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "rhythm settles",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "paroxysmal atrial fibrillation",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "apixaban",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "type 2 diabetes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "palpitations",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "irregular rhythm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lightheadedness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "episodes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "syncope",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest pain or pressure",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shortness of breath",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "orthopnea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "resolve spontaneously",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Apixaban twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Heart rate 110",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "irregularly irregular",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "140/88",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lungs are clear to auscultation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No lower extremity edema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ECG",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "atrial fibrillation",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "without clear P waves",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Potassium and creatinine are within normal limits",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Fasting glucose approximately 125",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "metoprolol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "rate control",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "telemetry",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "cardioversion",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Essential hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Type 2 diabetes mellitus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Dizziness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "arrhythmia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "rapid ventricular response",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "eliquis",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for apixaban, not a person"
+  },
+  {
+   "text": "fitbit",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of a fitness tracker"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "I48.0",
+   "spans": [
+    {
+     "text": "atrial fibrillation",
+     "field": "dialogue"
+    },
+    {
+     "text": "irregular rhythm without clear p waves",
+     "field": "dialogue"
+    },
+    {
+     "text": "paroxysmal atrial fibrillation",
+     "field": "note"
+    },
+    {
+     "text": "irregularly irregular",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z79.01",
+   "spans": [
+    {
+     "text": "eliquis twice a day",
+     "field": "dialogue"
+    },
+    {
+     "text": "Apixaban twice daily",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "one forty over eighty eight",
+     "field": "dialogue"
+    },
+    {
+     "text": "Essential hypertension",
+     "field": "note"
+    },
+    {
+     "text": "140/88",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E11.9",
+   "spans": [
+    {
+     "text": "metformin",
+     "field": "dialogue"
+    },
+    {
+     "text": "fasting around one twenty five",
+     "field": "dialogue"
+    },
+    {
+     "text": "Type 2 diabetes mellitus",
+     "field": "note"
+    },
+    {
+     "text": "Fasting glucose approximately 125",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "R42",
+   "spans": [
+    {
+     "text": "lightheaded",
+     "field": "dialogue"
+    },
+    {
+     "text": "lightheadedness",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i restore vintage motorcycles in my garage",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "i swim at five forty five every morning",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive daily routine"
+  },
+  {
+   "text": "we just adopted twins last spring",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "recent family life event"
+  },
+  {
+   "text": "restores vintage motorcycles in his garage",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "swims at 5:45 every morning",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive daily routine"
+  },
+  {
+   "text": "recently adopted twins",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "recent family life event"
+  }
+ ],
+ "scenario": {
+  "specialty": "emergency department",
+  "visit": "new",
+  "length": "short",
+  "focus": [
+   "OTHER_QUASI",
+   "CONTACT"
+  ]
+ }
+}

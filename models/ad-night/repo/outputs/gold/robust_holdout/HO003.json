@@ -1,0 +1,343 @@
+{
+  "encounter_id": "HO003",
+  "pii": [
+    {
+      "field": "note",
+      "text": "CHAMPLAIN VALLEY MEDICAL CENTER",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "October 16, 2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "MICU East",
+      "category": "LOCATION",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Room 6",
+      "category": "LOCATION",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Bed 6B",
+      "category": "LOCATION",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "BÉLANGER-ROY",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Jean-François",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "JF",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "004-77-1923",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "22-MAR-1985",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "41 yo",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "41M",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Canadian resident",
+      "category": "LOCATION",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "RAMQ",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "BELJ 8503 2211",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Croix Bleue Medavie",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "CBM-7741-20963",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Faith",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Young, MD",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Dr. Young",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Lena",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Marchetti",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "L.",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Oluwaseun",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Adeyemi-Clarke",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "long-haul truck driver",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Transport Laurentide Express",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Colchester",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "15OCT2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Malik",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Oyelaran",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "GI-26-118734",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "RN Mallory",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Geneviève",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "+1 450-555-0136",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Saint-Jérôme",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "10/15",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Hannah",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Weiss, MD",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "1187 rue des Érables",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "QC",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "J7Z 4K2",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "two children",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Hôpital Régional de Saint-Jérôme",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "https://assist.croixbleue-medavie.example.ca/case/77412",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "pager 4471",
+      "category": "ID",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "Mallory-Weiss tear",
+      "category": "EPONYM",
+      "why": "diagnosis (K22.6); Mallory and Weiss are PII only as RN Mallory / Weiss, MD"
+    },
+    {
+      "field": "note",
+      "text": "Forrest IIa",
+      "category": "EPONYM",
+      "why": "endoscopic bleeding classification"
+    },
+    {
+      "field": "note",
+      "text": "Kussmaul respirations",
+      "category": "EPONYM",
+      "why": "clinical sign"
+    },
+    {
+      "field": "note",
+      "text": "Foley",
+      "category": "EPONYM",
+      "why": "urinary catheter"
+    },
+    {
+      "field": "note",
+      "text": "young man",
+      "category": "NOT_A_NAME",
+      "why": "adjective; Young is PII only as Dr. Young / Young, MD"
+    },
+    {
+      "field": "note",
+      "text": "420/5",
+      "category": "CLINICAL_NUMBER",
+      "why": "ventilator tidal volume / PEEP"
+    },
+    {
+      "field": "note",
+      "text": "5/5",
+      "category": "CLINICAL_NUMBER",
+      "why": "pressure support / PEEP, looks like a date"
+    },
+    {
+      "field": "note",
+      "text": "118/70",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure"
+    },
+    {
+      "field": "note",
+      "text": "7.36/34/118",
+      "category": "CLINICAL_NUMBER",
+      "why": "arterial blood gas"
+    },
+    {
+      "field": "note",
+      "text": "D5-1/2NS",
+      "category": "CLINICAL_NUMBER",
+      "why": "IV fluid, contains a fraction"
+    }
+  ]
+}

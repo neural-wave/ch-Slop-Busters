@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N200",
+  "phi": [
+    {"text": "theresa", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "mcdonald's", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "fast food"},
+    {"text": "fully of fish", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "fish sandwich"},
+    {"text": "flare of fish", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "fish sandwich"},
+    {"text": "easter", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "holiday"},
+    {"text": "over the weekend", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "recently"},
+    {"text": "iphone", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "smartphone"}
+  ],
+  "medical_concepts": []
+}

@@ -1,0 +1,15 @@
+{
+  "encounter_id": "D2N206",
+  "pii": [
+    {"field": "dialogue", "text": "joshua", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "brenda", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Joshua", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Reyes", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "18-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "05/06/2022", "category": "DATE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "note", "text": "4/10", "category": "CLINICAL_NUMBER", "why": "pain score, not a date"},
+    {"field": "note", "text": "1-2/10", "category": "CLINICAL_NUMBER", "why": "pain score range, not a date"}
+  ]
+}

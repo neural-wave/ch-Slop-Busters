@@ -1,0 +1,403 @@
+{
+ "encounter_id": "HO023",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "Siobhán",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Aoife",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Ballyknock Medical Centre",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Dr Hill",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Kilcroney",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "siobhan",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "ni",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "bhriain",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "03/11/1987",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "djouce",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "gráinne",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "10th oct",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "barista",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "kavanaghs cafe",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "greystones",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "tom",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "ryan",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "www.ballyknockmc.ie/certs",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "14 Cois Abhann",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Kilcoole",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "A63 FX27",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "087 555 3921",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "8273615WA",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "27/10",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "(01) 555 2840",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "shiv",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "BALLYKNOCK MEDICAL CENTRE",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "NÍ",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "BHRIAIN",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Siobhán",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "03-11-1987",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "8273615WA",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "14 Cois Abhann",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Kilcoole",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Wicklow",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "A63 FX27",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "12-Oct-2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "R.",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Hill",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Aoife",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Doyle",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "38 y/o",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Kilcroney Injury Unit",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "10/10/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "barista",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "27/10/2026",
+   "category": "DATE",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "dialogue",
+   "text": "7/10",
+   "category": "CLINICAL_NUMBER",
+   "why": "pain score"
+  },
+  {
+   "field": "dialogue",
+   "text": "3/10",
+   "category": "CLINICAL_NUMBER",
+   "why": "pain score"
+  },
+  {
+   "field": "dialogue",
+   "text": "ottawa ankle rules",
+   "category": "EPONYM",
+   "why": "clinical decision rule, not a place"
+  },
+  {
+   "field": "dialogue",
+   "text": "hillwalking",
+   "category": "CODE_EVIDENCE",
+   "why": "activity supporting Y93.01"
+  },
+  {
+   "field": "dialogue",
+   "text": "slipped on a wet rock",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism supporting W01.0XXA"
+  },
+  {
+   "field": "dialogue",
+   "text": "went over on my right ankle",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism/laterality supporting S93.401A"
+  },
+  {
+   "field": "dialogue",
+   "text": "walking up a hill",
+   "category": "CODE_EVIDENCE",
+   "why": "activity supporting Y93.01; 'hill' is terrain, not Dr Hill"
+  },
+  {
+   "field": "dialogue",
+   "text": "RICE",
+   "category": "NOT_A_NAME",
+   "why": "rest/ice/compression/elevation treatment for the ankle sprain, not the surname Rice"
+  },
+  {
+   "field": "dialogue",
+   "text": "3/7",
+   "category": "CLINICAL_NUMBER",
+   "why": "3 days (UK/IE shorthand)"
+  },
+  {
+   "field": "dialogue",
+   "text": "2/52",
+   "category": "CLINICAL_NUMBER",
+   "why": "2 weeks (UK/IE shorthand)"
+  },
+  {
+   "field": "note",
+   "text": "Hillwalking",
+   "category": "CODE_EVIDENCE",
+   "why": "activity supporting Y93.01"
+  },
+  {
+   "field": "note",
+   "text": "slipped on wet rock",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism supporting W01.0XXA"
+  },
+  {
+   "field": "note",
+   "text": "fall from slipping",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism supporting W01.0XXA"
+  },
+  {
+   "field": "note",
+   "text": "Ottawa ankle rules",
+   "category": "EPONYM",
+   "why": "clinical decision rule, not a place"
+  },
+  {
+   "field": "note",
+   "text": "7/10",
+   "category": "CLINICAL_NUMBER",
+   "why": "pain score"
+  },
+  {
+   "field": "note",
+   "text": "3/7",
+   "category": "CLINICAL_NUMBER",
+   "why": "3 days (UK/IE shorthand)"
+  },
+  {
+   "field": "note",
+   "text": "1/52",
+   "category": "CLINICAL_NUMBER",
+   "why": "1 week (UK/IE shorthand)"
+  },
+  {
+   "field": "note",
+   "text": "2/52",
+   "category": "CLINICAL_NUMBER",
+   "why": "2 weeks (UK/IE shorthand)"
+  },
+  {
+   "field": "note",
+   "text": "RICE",
+   "category": "NOT_A_NAME",
+   "why": "rest/ice/compression/elevation treatment for the ankle sprain, not the surname Rice"
+  },
+  {
+   "field": "note",
+   "text": "R ankle",
+   "category": "NOT_A_NAME",
+   "why": "right-side laterality of the ankle sprain (S93.401A), not the initial 'R.' of Dr R. Hill"
+  }
+ ]
+}

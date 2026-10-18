@@ -1,0 +1,49 @@
+{
+  "encounter_id": "D2N200",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "theresa",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "mcdonald's",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "dialogue",
+      "text": "big mac",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "dialogue",
+      "text": "easter",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "dialogue",
+      "text": "iphone",
+      "category": "OTHER_QI",
+      "risk": "low"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "172/98",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure, not a date"
+    },
+    {
+      "field": "note",
+      "text": "2/6",
+      "category": "CLINICAL_NUMBER",
+      "why": "murmur grade, not a date"
+    }
+  ]
+}

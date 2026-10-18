@@ -1,0 +1,15 @@
+All five files are written and the validator reports 0 problems.
+
+- D2N125: 5 PHI
+- D2N126: 15 PHI
+- D2N127: 8 PHI
+- D2N128: 6 PHI
+- D2N129: 8 PHI
+
+A few of these were judgement calls you may want to check:
+- **D2N125:** In this transcript the doctor and patient labels are swapped. I annotated by who is speaking, not by the label: "edwards" is the patient and "cruz" is the clinician. I also tagged the ethnicity mention as a personal detail ("eustachian descent", the transcription's garbling of "East Asian descent", and "East Asian descent" in the note). It reads as a general statement, but it hints at the patient's ancestry because it's the reason for the genetic test.
+- **D2N126:** I tagged "sandra" as another person's name and the garbled "cold dancing" as an activity. "Twins" is tagged as a rare personal detail.
+- **D2N127:** I tagged "lawyer" as a life event, because it points to legal action. I left the car crashes untagged because they explain the injury.
+- **D2N128:** I tagged "in the office" as a workplace type. It's weakly identifying, so you may prefer to drop it.
+
+--- stderr ---

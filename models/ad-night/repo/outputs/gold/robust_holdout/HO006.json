@@ -1,0 +1,391 @@
+{
+  "encounter_id": "HO006",
+  "pii": [
+    {
+      "field": "note",
+      "text": "Royal Strathkelvin Infirmary",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "84 Castlebank Street",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Glasgow",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "G11 6BQ",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "0141 211 4730",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "0141 211 4799",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "16/10/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "17.10.26",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "EM/kd",
+      "category": "PERSON_NAME",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Alasdair",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Kerr",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Partick Medical Practice",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "21 Dumbarton Road",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "G11 6AA",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Rosemary",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Margaret",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "BAIRD",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "R. Baird",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Rosie",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "18-Mar-1964",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "180364 2271",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "RSK 0716482",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "3/1 14 Crow Road",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "G11 7RT",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "07812 334 905",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "16 October 2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Eilidh",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "MacLeod",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Lena",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Hartmann (CT2 Surgery)",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Dr Hartmann",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Seán",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Murphy (Consultant)",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Dr Murphy",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Duncan",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Small (CN)",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "CN Small",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "62-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "02/08/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "05/08/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "7 Aug",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "works nights",
+      "category": "OCCUPATION",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "production supervisor",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Clydeside Bakeries",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Govan",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "SK26-0114732",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Gordon",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "www.rsk-surgery.scot.nhs.uk/lapchole",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "7023318",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "night shifts",
+      "category": "OCCUPATION",
+      "risk": "low"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "Tokyo grade I",
+      "category": "NOT_A_NAME",
+      "why": "Tokyo Guidelines severity grade of acute cholecystitis, not a location"
+    },
+    {
+      "field": "note",
+      "text": "Hartmann's pouch",
+      "category": "EPONYM",
+      "why": "anatomical eponym, not Dr Hartmann"
+    },
+    {
+      "field": "note",
+      "text": "Murphy's sign",
+      "category": "EPONYM",
+      "why": "clinical sign, not Dr Murphy"
+    },
+    {
+      "field": "note",
+      "text": "Calot's triangle",
+      "category": "EPONYM",
+      "why": "hepatocystic triangle"
+    },
+    {
+      "field": "note",
+      "text": "Rouviere's sulcus",
+      "category": "EPONYM",
+      "why": "anatomical landmark"
+    },
+    {
+      "field": "note",
+      "text": "Strasberg",
+      "category": "EPONYM",
+      "why": "critical view of safety (Strasberg)"
+    },
+    {
+      "field": "note",
+      "text": "Hasson",
+      "category": "EPONYM",
+      "why": "open (Hasson) entry technique"
+    },
+    {
+      "field": "note",
+      "text": "small umbilical hernia",
+      "category": "NOT_A_NAME",
+      "why": "ordinary adjective, not CN Small; supports K42.9"
+    },
+    {
+      "field": "note",
+      "text": "small gallstones",
+      "category": "NOT_A_NAME",
+      "why": "ordinary adjective, not CN Small"
+    },
+    {
+      "field": "note",
+      "text": "small breach",
+      "category": "NOT_A_NAME",
+      "why": "ordinary adjective in intra-operative finding (gallbladder breach), not CN Small"
+    },
+    {
+      "field": "note",
+      "text": "132/78",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure"
+    },
+    {
+      "field": "note",
+      "text": "420/6",
+      "category": "CLINICAL_NUMBER",
+      "why": "ventilator tidal volume / PEEP"
+    },
+    {
+      "field": "note",
+      "text": "3/10",
+      "category": "CLINICAL_NUMBER",
+      "why": "pain score"
+    },
+    {
+      "field": "note",
+      "text": "6/52",
+      "category": "CLINICAL_NUMBER",
+      "why": "six weeks"
+    }
+  ]
+}

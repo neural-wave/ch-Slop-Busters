@@ -1,0 +1,110 @@
+########## ENCOUNTER D2N096
+=== FIELD: dialogue
+[doctor] um , hi mrs. anderson . right ?
+[patient] yeah . yes , doctor .
+[doctor] what brings you here today ?
+[patient] hi , doctor . um , i'm having this left shoulder pain lately , uh , and it's paining a lot .
+[doctor] okay . all right . hey , dragon . i am seeing mrs. anderson , a 44-years-old female , uh , complaining to check the left shoulder pain . um , so how long how has this lasted ?
+[patient] it's been a week , doctor . yeah .
+[doctor] a week .
+[patient] yeah .
+[doctor] um , did you take any medication yourself ?
+[patient] no , i did not take any pain medications . actually , i did . i did take a tylenol for two or three days , but then that did n't help at all . so , uh , the reason why it started or when it started to happen is-
+[doctor] yeah .
+[patient] . i was actually in gymnastics class .
+[doctor] yeah , okay .
+[patient] and , uh , i do n't know . maybe i must have toppled over into some weird position , so it started to pain since then , uh , because of a certain move .
+[doctor] okay , uh-
+[patient] i went overboard , i think . yeah .
+[doctor] all right , lem me , uh , take a quick look . uh , can you move up a little bit ? yeah .
+[patient] uh , yeah . in fact , that's hurts .
+[doctor] does that- does it hurt ?
+[patient] yeah , it does .
+[doctor] what if you move back a little bit ?
+[patient] uh , that also hurts , doctor .
+[doctor] yeah , okay .
+[patient] any kind of movement on my left shoulder actually hurts .
+[doctor] okay . all right , um , so let's ... hey , dragon . show me the last x-ray . all right , from the x-ray , it does n't look like there is any , uh , broken bone or fracture . my guess is you probably , um , hurt your joint , uh-
+[patient] uh- .
+[doctor] . a little bit .
+[patient] mm-hmm .
+[doctor] so i would , uh , suggest you continue using the pain reliever , maybe just like 600 milligram of ibuprofen three times a day and use it for a week .
+[patient] and for how long ? yes .
+[doctor] for a week .
+[patient] a week , okay .
+[doctor] and then if you ... if it's still painful , you can use , uh , ice or , um , heat pad-
+[patient] okay .
+[doctor] . 'cause that might help relieve your pain .
+[patient] okay .
+[doctor] um ...
+[patient] but i wanted you to know that i did have past surgery on my , um , left arm-
+[doctor] mm-hmm .
+[patient] . so , um , i hope that should n't matter , right ?
+[doctor] um , that does n't seem related to your pain .
+[patient] okay .
+[doctor] so ... but i would try to rest my , your left arm-
+[patient] okay .
+[doctor] . while it's healing .
+[patient] okay .
+[doctor] so , um-
+[patient] can i , uh , carry any heavy weights or-
+[doctor] no , no . definitely not .
+[patient] . anything like that ?
+[doctor] definitely not .
+[patient] okay . okay .
+[doctor] yeah , use , um , right hand-
+[patient] okay .
+[doctor] . instead-
+[patient] mm-hmm .
+[doctor] . for the next , uh , at least just three to four weeks .
+[patient] mm-hmm .
+[doctor] uh , come back to see me if the pain , you know , still there after maybe three weeks-
+[patient] sure .
+[doctor] . so we can take a further look .
+[patient] okay . sure .
+[doctor] but you should be fine-
+[patient] yeah .
+[doctor] . after just resting and regular pain reliever .
+[patient] okay . all right .
+[doctor] um-
+[patient] should we take another x-ray when i come back , if the pain does n't improve ?
+[doctor] um , maybe . let's see how you're doing in the next three weeks .
+[patient] uh .
+[doctor] hey , dragon . um , order medications and procedures as discussed . all right .
+[patient] okay .
+[doctor] um , i think that's good for today . hope you feel better soon .
+[patient] okay . thank you , doctor .
+[doctor] yeah .
+[patient] hopefully , the pain reliever , uh , ibuprofen actually helps .
+[doctor] yeah .
+[patient] yeah , and if i have more pain , can i call you ? can i fix up another appointment earlier than three weeks ?
+[doctor] um , you can also try advil .
+[patient] okay .
+[doctor] yeah , so , um ...
+[patient] yeah .
+[doctor] ale- , aleve . i mean , aleve .
+[patient] i see . okay , thank you , doctor .
+[doctor] thank you .
+=== FIELD: note
+CC:
+
+Left shoulder pain.
+
+HPI:
+
+Ms. Anderson is a 44-year-old female who presents today for an evaluation of the left shoulder. She states that she was in gymnastics 1 week ago. The pain has been present since that time. She has pain with any type of movement of her left shoulder. She had taken Tylenol for 2 to 3 days with no improvement in her symptoms.
+
+She has a surgical history significant for prior left upper extremity surgery.
+
+EXAM
+
+Examination of the left shoulder shows pain with range of motion.
+
+RESULTS
+
+X-rays of the left shoulder, 3 views obtained on today's visit show no obvious signs of fracture.
+
+PLAN
+
+At this point, I discussed the diagnosis and treatment options with the patient. I have recommended taking ibuprofen 600 mg three times per day for one week. If the patient does not have relief from the ibuprofen she will take Aleve. The patient may also utilize ice or heat packs. She should rest her left arm and may not lift or carry heavy objects with her left arm. The patient should follow up in three to four weeks if the pain persists. We may repeat the left shoulder x-ray at that time.
+

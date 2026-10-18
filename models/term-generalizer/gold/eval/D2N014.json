@@ -1,0 +1,456 @@
+{
+ "encounter_id": "D2N014",
+ "pii": [
+  {
+   "text": "louis",
+   "field": "dialogue",
+   "category": "PATIENT_NAME",
+   "tier": "direct",
+   "comment": "patient first name"
+  },
+  {
+   "text": "58-year-old",
+   "field": "dialogue",
+   "category": "AGE",
+   "tier": "quasi",
+   "comment": "patient age"
+  },
+  {
+   "text": "saturday",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "specific day of the triggering event / ER visit"
+  },
+  {
+   "text": "sunday",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "specific day after event"
+  },
+  {
+   "text": "thursday",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "specific day of cataract surgery"
+  },
+  {
+   "text": "Louis Williams",
+   "field": "note",
+   "category": "PATIENT_NAME",
+   "tier": "direct",
+   "comment": "patient full name"
+  },
+  {
+   "text": "58-year-old",
+   "field": "note",
+   "category": "AGE",
+   "tier": "quasi",
+   "comment": "patient age"
+  },
+  {
+   "text": "Saturday",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "specific day of the triggering event / ER visit"
+  },
+  {
+   "text": "Sunday",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "specific day after event"
+  }
+ ],
+ "medical_concepts": [
+  {
+   "text": "short of breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "struggling breathing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart attack",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "light-head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "very dizzy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart failure",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "avoiding salt",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "removed a cataract from your eye",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "vision problems",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "skin cancer removed about five months ago",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood pressure is a little high",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "neck is very supple",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fibular venous distention",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "regular rate and rhythm , no murmur",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fine crackles in them , bilaterally",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "trace lower extremity edema in both legs",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "extra fluid on board",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "congestive heart failure",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ecg",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "left ventricular hypertrophy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "echocardiogram",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "pumping function of your heart is a little low",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "skin biopsy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "pathology report for your skin cancer",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "exacerbation of your heart failure",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "dietary indiscretion",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "retain some fluid",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lasix 80 milligrams , once a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "carvedilol 25 milligrams , twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "cataract surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "skin cancer removal",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "struggling to breathe",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart attack",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "lightheaded and dizzy",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "congestive heart failure",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "avoiding salt",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dietary indiscretion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "status post cataract extraction",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "vision problems",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "skin cancer removed",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "dyspnea on exertion",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "shortness of breath",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lightheadedness and dizziness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "No jugular venous distention",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Fine crackles bilaterally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Regular rate and rhythm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Bilateral lower extremity edema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ECG revealed left ventricular hypertrophy",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "stable diminished ejection fraction",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Skin cancer pathology demonstrates clear margins",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "exacerbation of his heart failure",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "fluid retention",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lasix 80 mg once a day",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "carvedilol 25 mg twice a day",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Status post basal cell carcinoma removal",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "removal site is well-healed",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Status post cataract surgery",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "basal cell carcinoma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "skin cancer",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "cataract",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "skin cancer",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software, not a person"
+  },
+  {
+   "text": "Williams",
+   "field": "note",
+   "is_pii": true,
+   "comment": "patient surname"
+  },
+  {
+   "text": "tennis",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "ordinary hobby; context of exertion, not identifying"
+  }
+ ]
+}

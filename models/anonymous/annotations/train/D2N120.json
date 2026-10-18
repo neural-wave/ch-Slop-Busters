@@ -1,0 +1,10 @@
+{
+  "encounter_id": "D2N120",
+  "phi": [
+    {"text": "larry", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "golf", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a sport"},
+    {"text": "Larry Garcia", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "41-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

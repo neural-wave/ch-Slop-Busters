@@ -1,0 +1,34 @@
+{
+  "encounter_id": "SYN002",
+  "pii": [
+    {"field": "note", "text": "MERCY VALLEY HOSPITAL", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "2026-01-18", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "PARKINSON, Harold", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Harold", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Mr. Parkinson", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "MV-7730195", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "4 March 1933", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "92 y/o", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Cedar Brook Nursing & Rehab", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Room 214", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Daniel", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Daniel Parkinson", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "541-555-0172", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "2014", "category": "YEAR", "risk": "medium"},
+    {"field": "note", "text": "Sunita", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Rao", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Rosa", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Delgado-Ferrer", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Graham", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Whitlock", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "4 West", "category": "LOCATION", "risk": "medium"}
+  ],
+  "keep": [
+    {"field": "note", "text": "Parkinson's disease", "category": "EPONYM", "why": "disease, not the patient's surname"},
+    {"field": "note", "text": "fall from bed", "category": "CODE_EVIDENCE", "why": "W06 fall from bed"},
+    {"field": "note", "text": "142/88", "category": "CLINICAL_NUMBER", "why": "blood pressure"},
+    {"field": "note", "text": "14/15", "category": "CLINICAL_NUMBER", "why": "GCS"},
+    {"field": "note", "text": "25/100", "category": "CLINICAL_NUMBER", "why": "carbidopa-levodopa strength"},
+    {"field": "note", "text": "7/10", "category": "CLINICAL_NUMBER", "why": "pain score"}
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "encounter_id": "D2N103",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "melissa",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "sanchez",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "9/23/1962",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "5484367",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "8/3/2020",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "9/17",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "12/26/2020",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "hughes",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Melissa",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Sanchez",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "58-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "08/03/2020",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "09/17/20",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "12/26/2020",
+      "category": "DATE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "6-9 months",
+      "category": "CLINICAL_NUMBER",
+      "why": "follow-up interval, not a date"
+    }
+  ]
+}

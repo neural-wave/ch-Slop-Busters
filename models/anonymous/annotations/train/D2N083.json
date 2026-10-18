@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N083",
+  "phi": [
+    {"text": "lawrence", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "this pandemic", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "recent times"},
+    {"text": "ceramics", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a craft hobby"},
+    {"text": "pottery", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "hand crafts"},
+    {"text": "Lawrence Butler", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "45-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "pottery", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "hand crafts"},
+    {"text": "COVID-19 pandemic", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "recent period"}
+  ],
+  "medical_concepts": []
+}

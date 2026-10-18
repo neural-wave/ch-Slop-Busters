@@ -1,0 +1,43 @@
+{
+  "encounter_id": "D2N005",
+  "phi": [
+    {"text": "hill", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1},
+    {"text": "james", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1},
+    {"text": "41-year-old", "field": "dialogue", "type": "AGE", "tier": 1},
+    {"text": "saturday", "field": "dialogue", "type": "TEMPORAL", "tier": 2},
+    {"text": "flip him the bird", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2},
+    {"text": "Hill", "field": "note", "type": "NAME_PATIENT", "tier": 1},
+    {"text": "41-year-old", "field": "note", "type": "AGE", "tier": 1}
+  ],
+  "medical_concepts": [
+    {"text": "right middle finger pain", "field": "dialogue", "type": "SYMPTOM", "icd_relevant": true},
+    {"text": "end of my right middle finger", "field": "dialogue", "type": "SYMPTOM", "icd_relevant": true},
+    {"text": "rear-ended", "field": "dialogue", "type": "DIAGNOSIS", "icd_relevant": true},
+    {"text": "motor , uh , vehicle accident", "field": "dialogue", "type": "DIAGNOSIS", "icd_relevant": true},
+    {"text": "motor vehicle accident", "field": "dialogue", "type": "DIAGNOSIS", "icd_relevant": true},
+    {"text": "x-ray", "field": "dialogue", "type": "TEST", "icd_relevant": true},
+    {"text": "fracture", "field": "dialogue", "type": "FINDING", "icd_relevant": true},
+    {"text": "distal phalanx fracture", "field": "dialogue", "type": "DIAGNOSIS", "icd_relevant": true},
+    {"text": "tenderness over your distal phalanx", "field": "dialogue", "type": "FINDING", "icd_relevant": true},
+    {"text": "pain medicine", "field": "dialogue", "type": "MEDICATION", "icd_relevant": true},
+    {"text": "tramadol", "field": "dialogue", "type": "MEDICATION", "icd_relevant": true},
+    {"text": "finger splint", "field": "dialogue", "type": "PROCEDURE", "icd_relevant": true},
+    {"text": "follow-up x-ray", "field": "dialogue", "type": "TEST", "icd_relevant": true},
+    {"text": "digoxin", "field": "dialogue", "type": "MEDICATION", "icd_relevant": false},
+    {"text": "afib", "field": "dialogue", "type": "DIAGNOSIS", "icd_relevant": false},
+    {"text": "atrial fibrillation", "field": "dialogue", "type": "DIAGNOSIS", "icd_relevant": false},
+
+    {"text": "Right middle finger pain", "field": "note", "type": "SYMPTOM", "icd_relevant": true},
+    {"text": "rear-ended", "field": "note", "type": "DIAGNOSIS", "icd_relevant": true},
+    {"text": "motor vehicle accident", "field": "note", "type": "DIAGNOSIS", "icd_relevant": true},
+    {"text": "Digoxin", "field": "note", "type": "MEDICATION", "icd_relevant": false},
+    {"text": "Atrial Fibrillation", "field": "note", "type": "DIAGNOSIS", "icd_relevant": false},
+    {"text": "tenderness over the distal phalanx", "field": "note", "type": "FINDING", "icd_relevant": true},
+    {"text": "X-rays of the right middle finger", "field": "note", "type": "TEST", "icd_relevant": true},
+    {"text": "comminuted distal phalanx fracture", "field": "note", "type": "FINDING", "icd_relevant": true},
+    {"text": "Right middle finger distal phalanx fracture", "field": "note", "type": "DIAGNOSIS", "icd_relevant": true},
+    {"text": "Tramadol", "field": "note", "type": "MEDICATION", "icd_relevant": true},
+    {"text": "finger splint", "field": "note", "type": "PROCEDURE", "icd_relevant": true},
+    {"text": "follow-up x-ray", "field": "note", "type": "TEST", "icd_relevant": true}
+  ]
+}

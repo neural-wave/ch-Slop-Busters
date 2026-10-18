@@ -1,0 +1,55 @@
+{
+  "encounter_id": "D2N072",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "brooks",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "sharon",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "baker",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "48 year old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Brooks",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "48-year-old",
+      "category": "AGE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "skiing",
+      "category": "CODE_EVIDENCE",
+      "why": "injury mechanism for S60.021A finger contusion"
+    },
+    {
+      "field": "note",
+      "text": "skiing",
+      "category": "CODE_EVIDENCE",
+      "why": "injury mechanism for S60.021A finger contusion"
+    }
+  ]
+}

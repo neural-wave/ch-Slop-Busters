@@ -1,0 +1,739 @@
+{
+ "encounter_id": "D2N122",
+ "pii": [
+  {
+   "text": "kyle",
+   "field": "dialogue",
+   "category": "PATIENT_NAME",
+   "tier": "direct",
+   "comment": "patient first name"
+  },
+  {
+   "text": "i have horses",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "owns horses, distinctive personal detail"
+  },
+  {
+   "text": "four hundred bills a day",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "specific hay-loading routine (400 bales)"
+  },
+  {
+   "text": "i do a lot of biking",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "regular cycling on local rail trails"
+  },
+  {
+   "text": "the old rail road right away",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "tier": "quasi",
+   "comment": "specific local rail-trail (60 miles) used by patient and doctor"
+  },
+  {
+   "text": "track seventy one hundred hybrid",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "clinician's specific bike model (Trek 7100)"
+  }
+ ],
+ "medical_concepts": [
+  {
+   "text": "cough",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "bronchitis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "pneumonia",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "lung nodule",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "cat scan",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "loading some pay",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "coughing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "just got a cold",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "my cough has gone away",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "rheumatoid arthritis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "your ra",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "arthritis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "methotrexate",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "seven and a half milligrams every week",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "joints",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "hands",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "flares",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "previous smoker",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "stopped smoking probably about seven years ago",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tobacco free",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "shortness of breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lung cancer",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "malignancies",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "my mom did have breast cancer",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lung infections",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart rate",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "respiration rate",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "o2 sat",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "afebrile",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lungs are clear and equal bilateral",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "regular rate and rhythm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no clicks rubs or murmurs",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "skin is pink warm and dry",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "edema to your lower extremities",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "swelling to to your knuckles there on your third digit on each hand",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pulses are intact in all extremities",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "capillary refill is brisk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest ct",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "solitary two centimeter nodule in the lateral aspect of the right upper lobe",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "nodule is smooth in appearance",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no evidence of any type of emphysematous disease",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "incidentally found right upper lobe lung nodule",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "pft",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulmonary function test",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "pet ct",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "metabolically active",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "cancer or inflammatory",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "video assisted thoracoscopy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "general anesthesia",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest tube",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "benign nodule",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "smoking history",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "rheumatologist",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cough",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "history of rheumatoid arthritis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "lung infections or pneumonia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "stopped smoking tobacco 7 years ago",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "enjoys biking",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mother has a history of breast cancer",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "family history of lung cancer",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "methotrexate 7.5 mg every week",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Denies cough or shortness of breath",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Blood Pressure",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Heart Rate",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Respiratory Rate",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Oxygen Saturation",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Afebrile",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Clear and equal bilaterally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Regular rate and rhythm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No clicks, rubs, or murmurs",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pulses are intact in all extremities",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No lower extremity edema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild swelling to the 3rd digit knuckles on the bilateral hands, consistent with RA",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Skin is pink, warm, and dry",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Capillary refill is brisk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "CT scan of chest",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "solitary 2 cm nodule in the lateral aspect of the right upper lobe",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "nodule is smooth in appearance",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No evidence of any type of emphysematous disease",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right upper lobe lung nodule",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "chest CT",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "benign nodule",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "smoking history",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "surgically removed",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "general anesthesia",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest tube",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pulmonary function test",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "PET CT",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "metabolically active",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "cancerous or inflammatory",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "video assisted thoracoscopy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Rheumatoid arthritis.",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "rheumatologist",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "has ra",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "track seventy one hundred hybrid",
+   "field": "dialogue",
+   "is_pii": true,
+   "comment": "mis-transcribed Trek bike brand/model; kept as clinician quasi detail"
+  },
+  {
+   "text": "loading some pay",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "mis-transcribed 'hay'; exposure context for cough, no matching code"
+  },
+  {
+   "text": "document",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "mis-transcribed 'doctor', not a name"
+  },
+  {
+   "text": "your ra",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "abbreviation for rheumatoid arthritis"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "R91.1",
+   "spans": [
+    {
+     "text": "lung nodule",
+     "field": "dialogue"
+    },
+    {
+     "text": "solitary two centimeter nodule in the lateral aspect of the right upper lobe",
+     "field": "dialogue"
+    },
+    {
+     "text": "incidentally found right upper lobe lung nodule",
+     "field": "dialogue"
+    },
+    {
+     "text": "chest ct",
+     "field": "dialogue"
+    },
+    {
+     "text": "chest x-ray",
+     "field": "dialogue"
+    },
+    {
+     "text": "pet ct",
+     "field": "dialogue"
+    },
+    {
+     "text": "solitary 2 cm nodule in the lateral aspect of the right upper lobe",
+     "field": "note"
+    },
+    {
+     "text": "Right upper lobe lung nodule",
+     "field": "note"
+    },
+    {
+     "text": "CT scan of chest",
+     "field": "note"
+    },
+    {
+     "text": "PET CT",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "M06.9",
+   "spans": [
+    {
+     "text": "rheumatoid arthritis",
+     "field": "dialogue"
+    },
+    {
+     "text": "your ra",
+     "field": "dialogue"
+    },
+    {
+     "text": "methotrexate",
+     "field": "dialogue"
+    },
+    {
+     "text": "swelling to to your knuckles there on your third digit on each hand",
+     "field": "dialogue"
+    },
+    {
+     "text": "history of rheumatoid arthritis",
+     "field": "note"
+    },
+    {
+     "text": "Rheumatoid arthritis.",
+     "field": "note"
+    },
+    {
+     "text": "methotrexate 7.5 mg every week",
+     "field": "note"
+    },
+    {
+     "text": "Mild swelling to the 3rd digit knuckles on the bilateral hands, consistent with RA",
+     "field": "note"
+    },
+    {
+     "text": "has ra",
+     "field": "dialogue"
+    }
+   ]
+  }
+ ]
+}

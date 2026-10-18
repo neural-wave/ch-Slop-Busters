@@ -1,0 +1,458 @@
+{
+ "id": "G0032",
+ "dataset": "synthetic_new",
+ "sex": "male",
+ "age_range": [
+  45,
+  60
+ ],
+ "icd10_codes": [
+  {
+   "code": "M10.071",
+   "description": "Idiopathic gout, right ankle and foot"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i 'm doctor {DOCTOR_LAST} . thanks for coming in . your family doctor sent a long letter about your foot .\n[patient] yeah , it 's my big toe . it swells up like a golf ball when it flares .\n[doctor] tell me about the first time it happened .\n[patient] it was back in {YEAR} , i think . i had just gotten home from a trip to {PLACE} , where i drank beer every night . i woke up at three in the morning and my toe was on fire .\n[doctor] that sounds miserable . did anyone check your uric acid back then ?\n[patient] they did , and it was high . they gave me colchicine and i was better in about a week .\n[doctor] okay . how many flares since then ?\n[patient] maybe four or five . the last one was right before my cousin 's wedding in {CITY} . i could barely get my shoe on .\n[doctor] what do you do for a living ?\n[patient] i do drywall and taping , so i 'm on my knees a lot and i stand all day . at night i dictate my estimates into dragon because i hate typing on the phone .\n[doctor] okay . how much do you drink now ?\n[patient] less , i promise . a couple of beers on the weekends . i quit the big drinking after the last flare .\n[doctor] good . and the blood pressure medicine ?\n[patient] lisinopril , and a water pill , hydrochlorothiazide . my sister says the water pill makes gout worse .\n[doctor] that 's a fair point , it can push the uric acid up . any other medicines ? tylenol , ibuprofen ?\n[patient] tylenol sometimes . the fitbit says i walk less since the flare , so i guess i 'm sitting on the couch more .\n[doctor] okay . when was your gallbladder surgery , by the way ? i see it on the chart .\n[patient] that was {DATE_NUM} . they took it out laparoscopically and i was home the same day .\n[doctor] good . let me look at the toe . i see redness and warmth over the first joint , and it 's tender to touch . can you move it for me ?\n[patient] barely . ouch , that one hurts .\n[doctor] okay . no swelling in the knees , and the ankle looks normal . no nodules on the ears or the elbows ?\n[patient] no , nothing like that . i do have a little bump on my elbow from leaning on the counter , but my wife says it 's nothing .\n[doctor] that 's probably a bursa . it 's not gout . i 'd like to draw blood today for the uric acid , kidney function and a complete blood count .\n[patient] okay .\n[doctor] for the flare right now , i 'd like you to take prednisone for five days , and keep the foot elevated with ice . no ibuprofen .\n[patient] what about the colchicine ?\n[doctor] we 'll hold it for now because you 're flaring . once the toe calms down , i 'd like to start a low dose of allopurinol to lower the uric acid over time .\n[patient] will i have to take it forever ?\n[doctor] likely , yes . it works best when you take it every day . and i 'll switch the hydrochlorothiazide to losartan , which helps your pressure without pushing the uric acid up .\n[patient] okay . that sounds better . my sister will be happy .\n[doctor] i 'll send a note to your family doctor . come back in six weeks with the lab results and a diary of your flares , and we 'll review it together .\n[patient] i can do that . i keep a log on my phone anyway .\n[doctor] perfect . call us if the toe turns dark or if you get a fever .\n[patient] thanks , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nRecurrent right first metatarsophalangeal joint pain and swelling, referred for evaluation.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male referred by his primary care physician for management of recurrent gout. His first flare occurred in {YEAR} after a trip to {PLACE} with heavy alcohol intake, and was treated with colchicine with resolution in about one week. He reports four to five subsequent flares, most recently before a family event in {CITY}, with inability to bear weight in the shoe. He reports reduced alcohol intake since the last flare.\n\nHe works in drywall finishing, with prolonged kneeling and standing. He uses dictation software for estimates. He reports reduced ambulation since the last flare.\n\nHe underwent laparoscopic cholecystectomy on {DATE_NUM} and was discharged the same day.\n\nPAST MEDICAL HISTORY\n\nHypertension, managed with lisinopril and hydrochlorothiazide. Cholecystectomy as above.\n\nSOCIAL HISTORY\n\nOccasional alcohol on weekends. No tobacco. No illicit drug use.\n\nPHYSICAL EXAM\n\nRight first metatarsophalangeal joint with erythema, warmth, swelling, and marked tenderness to palpation, with limited range of motion. Knees without effusion. Ankle with normal range of motion. Small soft bump over the elbow, consistent with olecranon bursitis. No tophi on the ears.\n\nRESULTS\n\nSerum uric acid and renal function pending. Uric acid was reportedly elevated at the time of the first flare.\n\nASSESSMENT AND PLAN\n\n1. Acute gout flare of the right first metatarsophalangeal joint. Prednisone for five days, elevation, and ice. Avoid NSAIDs given hypertension and renal considerations.\n\n2. Recurrent gout with four to five flares. Start low-dose allopurinol once the flare resolves and uric acid and renal function have returned. Colchicine to be held during the flare.\n\n3. Hypertension. Discontinue hydrochlorothiazide, which can elevate uric acid, and start losartan. Recheck blood pressure in six weeks.\n\n4. Olecranon bursitis, likely, no treatment needed. Monitor.\n\nLabs: uric acid, basic metabolic panel, and complete blood count. Follow-up in six weeks with flare diary.",
+ "medical_concepts": [
+  {
+   "text": "big toe",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "swells up like a golf ball",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my toe was on fire",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "uric acid",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "colchicine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "beer every night",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "gout",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "hydrochlorothiazide",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "gallbladder",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "took it out laparoscopically",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "redness and warmth",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tender to touch",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "first joint",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "barely",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "bump on my elbow",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "bursa",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "kidney function",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "complete blood count",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "prednisone",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "allopurinol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "losartan",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "uric acid",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "recurrent gout",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain and swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "first metatarsophalangeal joint",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "alcohol intake",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "colchicine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "inability to bear weight",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "reduced ambulation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "prolonged kneeling and standing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "cholecystectomy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "hydrochlorothiazide",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "erythema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "warmth",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "marked tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "limited range of motion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "effusion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "olecranon bursitis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "tophi",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Serum uric acid",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "renal function",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "reportedly elevated",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Prednisone",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "NSAIDs",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "allopurinol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Colchicine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "losartan",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "basic metabolic panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "complete blood count",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Recheck blood pressure",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tobacco",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "illicit drug use",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of acetaminophen"
+  },
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software brand, not a person"
+  },
+  {
+   "text": "fitbit",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "wearable device brand"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "M10.071",
+   "spans": [
+    {
+     "text": "my toe was on fire",
+     "field": "dialogue"
+    },
+    {
+     "text": "redness and warmth",
+     "field": "dialogue"
+    },
+    {
+     "text": "recurrent gout",
+     "field": "note"
+    },
+    {
+     "text": "erythema",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "lisinopril",
+     "field": "dialogue"
+    },
+    {
+     "text": "hydrochlorothiazide",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypertension",
+     "field": "note"
+    },
+    {
+     "text": "losartan",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i do drywall and taping",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific trade"
+  },
+  {
+   "text": "drywall finishing",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific trade"
+  }
+ ],
+ "scenario": {
+  "specialty": "rheumatology",
+  "visit": "new",
+  "length": "short",
+  "focus": [
+   "LOCATION",
+   "DATE"
+  ]
+ }
+}

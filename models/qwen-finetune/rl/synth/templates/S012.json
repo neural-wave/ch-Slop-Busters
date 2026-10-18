@@ -1,0 +1,597 @@
+{
+ "id": "S012",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S93.411A",
+   "description": "Sprain of calcaneofibular ligament of right ankle, initial encounter"
+  },
+  {
+   "code": "W03.XXXA",
+   "description": "Other fall on same level due to collision with another person, initial encounter"
+  },
+  {
+   "code": "Y92.213",
+   "description": "High school as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.67",
+   "description": "Activity, basketball"
+  }
+ ],
+ "dialogue": "[doctor] good morning , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . what brings you in today ?\n[patient] hi . i hurt my ankle last night , my right ankle .\n[doctor] okay . and how did that happen ?\n[patient] so , it's a little embarrassing . i teach chemistry at {CITY} high school , and every year the teachers play the seniors in a charity basketball game in the school gym . and i was playing basketball for the teachers' team , and i went up for a rebound , and when i came down i landed right on one of the students' feet .\n[doctor] oh , okay .\n[patient] and my ankle just rolled , like the bottom of my foot turned in , and then we kind of tangled up and i went down on the floor .\n[doctor] okay . so your foot turned inward when you landed .\n[patient] yeah , it rolled in . i heard kind of a pop .\n[doctor] okay . were you able to walk on it afterwards ?\n[patient] i hobbled off the court with help . i could put some weight on it , but it really hurt . the athletic trainer wrapped it and gave me an ice pack .\n[doctor] okay , good . and what happened overnight ?\n[patient] it swelled up a lot . it's purple on the outside now . i kept it up on pillows and took some advil .\n[doctor] okay . where exactly is the pain ? can you point to it ?\n[patient] right here , on the outside , below the ankle bone .\n[doctor] okay . any numbness or tingling in your foot or toes ?\n[patient] no .\n[doctor] any pain up here near your knee , on the outside of your leg ?\n[patient] no , just the ankle .\n[doctor] okay . have you ever injured this ankle before ?\n[patient] i sprained it in college playing volleyball , but that was a long time ago and it healed fine .\n[doctor] okay . any other medical problems ?\n[patient] no , i'm pretty healthy . i do n't take any medicines except birth control .\n[doctor] okay . any allergies ?\n[patient] no .\n[doctor] okay . so let me take a look . i'm going to have you sit up here on the table . okay , so looking at your right ankle , there is moderate swelling over the lateral side , and you have bruising that goes down along the outside of your foot . i'm going to press in a few spots . tell me if it hurts .\n[patient] okay .\n[doctor] how about here , at the back of the ankle bone ?\n[patient] a little bit , not really .\n[doctor] okay . and here , just in front of it ?\n[patient] ow , yes .\n[doctor] okay . and here , below the tip ?\n[patient] yes , that's the worst spot .\n[doctor] okay . and here on the inside ?\n[patient] no .\n[doctor] and how about the base of your fifth metatarsal , here on the side of your foot ?\n[patient] no , that's fine .\n[doctor] okay . and squeezing your calf ?\n[patient] that's fine .\n[doctor] okay . so you are tender just in front of and below the lateral malleolus , but not over the bone itself at the back edge , and not over the medial side or the base of the fifth metatarsal . i'm going to move your ankle around a little bit . the anterior drawer is mildly positive compared to the other side , and the talar tilt is painful , but there's a firm endpoint . your pulses are good and your sensation is normal .\n[patient] okay .\n[doctor] so we went ahead and got x-rays of your right ankle when you checked in . hey dragon , show me the right ankle x-rays . so looking at these , i do n't see any fracture . the ankle joint is lined up well . there's just soft tissue swelling on the outside .\n[patient] oh , good .\n[doctor] so for my assessment and plan , you have a right ankle sprain . based on where you're tender and that talar tilt , i think you've sprained the calcaneofibular ligament , which is one of the ligaments on the outside of the ankle . it looks like a moderate sprain , what we'd call a grade two .\n[patient] okay .\n[doctor] we're going to put you in an air stirrup brace , and i want you to use crutches and weight bear as tolerated for the next few days . rest , ice twenty minutes at a time a few times a day , compression , and keep it elevated .\n[patient] okay .\n[doctor] for pain you can take ibuprofen , six hundred milligrams , three times a day with food for about a week .\n[patient] okay .\n[doctor] i'm also going to refer you to physical therapy . they'll work on your range of motion and balance , which is really important so you do n't keep rolling this ankle .\n[patient] that makes sense .\n[doctor] no basketball or running for at least four to six weeks . and i'd like to see you back in two weeks . if you're still having a lot of pain then , we can think about an mri .\n[patient] do i need a note for school ?\n[doctor] sure , i'll write you a note . you can teach , but try to stay off your feet as much as you can .\n[patient] okay , great . thank you .\n[doctor] you're welcome . take care .",
+ "note": "CC:\n\nRight ankle injury.\n\nHPI:\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents on {DATE_NUM} for evaluation of a right ankle injury sustained the previous evening. She was playing basketball in a staff charity game in the high school gym when she came down from a rebound onto another player's foot, sustaining an inversion injury, and then fell to the floor after colliding with the player. She heard a pop. She was able to bear partial weight. She has had significant swelling and lateral bruising overnight and has used ice, elevation and Advil. She denies numbness or tingling. She reports a remote right ankle sprain that healed without issue. No other medical history. Medications: oral contraceptive.\n\nSOCIAL HISTORY:\n\nHigh school chemistry teacher.\n\nEXAM\n\nExamination of the right ankle shows moderate lateral swelling and ecchymosis tracking along the lateral foot. Tenderness anterior and inferior to the lateral malleolus. No tenderness at the posterior edge of the lateral malleolus, the medial malleolus or the base of the fifth metatarsal. Calf squeeze is negative. Anterior drawer mildly positive compared to the contralateral side. Talar tilt painful with a firm endpoint. Distal pulses intact. Sensation intact.\n\nRESULTS\n\nX-rays of the right ankle show no acute fracture. Mortise is congruent. Lateral soft tissue swelling.\n\nIMPRESSION\n\nGrade 2 sprain of the right calcaneofibular ligament.\n\nPLAN\n\nThe patient was placed in an air stirrup brace with crutches, weight bearing as tolerated. RICE protocol. Ibuprofen 600 mg 3 times daily with food for 1 week. Referral to physical therapy for range of motion, strengthening and proprioceptive training. No basketball or running for 4 to 6 weeks. Work note provided. She will follow up in 2 weeks; MRI will be considered if pain persists.",
+ "medical_concepts": [
+  {
+   "text": "right ankle",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "charity basketball game in the school gym",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "high school",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "school gym",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "playing basketball",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "went up for a rebound , and when i came down i landed right on one of the students' feet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my ankle just rolled",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the bottom of my foot turned in",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "we kind of tangled up and i went down on the floor",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i heard kind of a pop",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it swelled up a lot",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's purple on the outside",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "advil",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "on the outside , below the ankle bone",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i sprained it in college",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "birth control",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "moderate swelling over the lateral side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bruising that goes down along the outside of your foot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "base of your fifth metatarsal",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "tender just in front of and below the lateral malleolus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lateral malleolus",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "the anterior drawer is mildly positive",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the talar tilt is painful",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "firm endpoint",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your pulses are good",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your sensation is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "right ankle x-rays",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "i do n't see any fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "soft tissue swelling on the outside",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "right ankle sprain",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "calcaneofibular ligament",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "moderate sprain",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "grade two",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "air stirrup brace",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "crutches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen , six hundred milligrams , three times a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "mri",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "basketball",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "right ankle injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "playing basketball",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "high school gym",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "came down from a rebound onto another player's foot",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "inversion injury",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell to the floor after colliding with the player",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "She heard a pop",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "significant swelling and lateral bruising",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Advil",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "remote right ankle sprain",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "oral contraceptive",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "moderate lateral swelling and ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness anterior and inferior to the lateral malleolus",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No tenderness at the posterior edge of the lateral malleolus, the medial malleolus or the base of the fifth metatarsal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Calf squeeze is negative",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Anterior drawer mildly positive",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Talar tilt painful",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Distal pulses intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-rays of the right ankle",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "no acute fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mortise is congruent",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lateral soft tissue swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Grade 2 sprain of the right calcaneofibular ligament",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "air stirrup brace",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "crutches",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "RICE protocol",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen 600 mg 3 times daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "MRI",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software"
+  },
+  {
+   "text": "advil",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "drug brand name"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S93.411A",
+   "spans": [
+    {
+     "text": "right ankle sprain",
+     "field": "dialogue"
+    },
+    {
+     "text": "calcaneofibular ligament",
+     "field": "dialogue"
+    },
+    {
+     "text": "grade two",
+     "field": "dialogue"
+    },
+    {
+     "text": "tender just in front of and below the lateral malleolus",
+     "field": "dialogue"
+    },
+    {
+     "text": "the talar tilt is painful",
+     "field": "dialogue"
+    },
+    {
+     "text": "Grade 2 sprain of the right calcaneofibular ligament",
+     "field": "note"
+    },
+    {
+     "text": "inversion injury",
+     "field": "note"
+    },
+    {
+     "text": "Tenderness anterior and inferior to the lateral malleolus",
+     "field": "note"
+    },
+    {
+     "text": "no acute fracture",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W03.XXXA",
+   "spans": [
+    {
+     "text": "went up for a rebound , and when i came down i landed right on one of the students' feet",
+     "field": "dialogue"
+    },
+    {
+     "text": "we kind of tangled up and i went down on the floor",
+     "field": "dialogue"
+    },
+    {
+     "text": "came down from a rebound onto another player's foot",
+     "field": "note"
+    },
+    {
+     "text": "fell to the floor after colliding with the player",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.213",
+   "spans": [
+    {
+     "text": "high school",
+     "field": "dialogue"
+    },
+    {
+     "text": "school gym",
+     "field": "dialogue"
+    },
+    {
+     "text": "high school gym",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.67",
+   "spans": [
+    {
+     "text": "playing basketball",
+     "field": "dialogue"
+    },
+    {
+     "text": "charity basketball game in the school gym",
+     "field": "dialogue"
+    },
+    {
+     "text": "playing basketball",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i teach chemistry",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "chemistry teacher"
+  },
+  {
+   "text": "every year the teachers play the seniors",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "school-specific annual event"
+  },
+  {
+   "text": "in college playing volleyball",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "past personal history"
+  },
+  {
+   "text": "High school chemistry teacher",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "staff charity game",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "school-specific event"
+  }
+ ]
+}

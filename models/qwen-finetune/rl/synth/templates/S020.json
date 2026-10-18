@@ -1,0 +1,770 @@
+{
+ "id": "S020",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S43.111A",
+   "description": "Subluxation of right acromioclavicular joint, initial encounter"
+  },
+  {
+   "code": "V00.212A",
+   "description": "Ice-skater colliding with stationary object, initial encounter"
+  },
+  {
+   "code": "Y92.330",
+   "description": "Ice skating rink (indoor) (outdoor) as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.22",
+   "description": "Activity, ice hockey"
+  },
+  {
+   "code": "K21.9",
+   "description": "Gastro-esophageal reflux disease without esophagitis"
+  }
+ ],
+ "dialogue": "[doctor] hey , {PATIENT_FIRST} . what happened to the shoulder ?\n[patient] hey , doc . hockey happened .\n[doctor] i figured . go ahead and tell me about it .\n[patient] so i play in a men's league on tuesday nights , our team is sponsored by {ORG} . and last night we were playing ice hockey at the rink , and i was chasing the puck into the corner , and i caught an edge with my skate , and i could n't stop . i went right into the boards , shoulder first , full speed .\n[doctor] okay . so nobody checked you , you just lost your edge and hit the boards ?\n[patient] nobody touched me . it's a no checking league anyway . it was all me and the boards .\n[doctor] okay . which shoulder ?\n[patient] the right one . i hit right on the top of it , like the point of the shoulder .\n[doctor] okay . did you hit your head ?\n[patient] no , my helmet did n't touch anything .\n[doctor] okay . and what did you feel ?\n[patient] it was instant pain on the top of my shoulder . i went down on the ice and i could n't really lift my arm . i skated off holding it . and when i took my pads off , there was this bump sticking up on top of my shoulder .\n[doctor] okay . any numbness or tingling down your arm ?\n[patient] no .\n[doctor] any weakness in your hand ?\n[patient] no , my hand is fine . it's just really hard to lift my arm over my head , and reaching across my body hurts a lot .\n[doctor] okay . on a scale of one to ten ?\n[patient] a seven when i move it , maybe a three when i keep it still .\n[doctor] okay . have you hurt this shoulder before ?\n[patient] never . i've had a lot of stitches and a broken nose from hockey , but never the shoulder .\n[doctor] okay . what have you taken for it ?\n[patient] i took some ibuprofen last night , and then my heartburn kicked up .\n[doctor] okay , so let's talk about that . you've got reflux and you're on omeprazole ?\n[patient] yeah , twenty milligrams every morning . usually it's under control , unless i eat late or take a bunch of ibuprofen .\n[doctor] okay . any trouble swallowing , vomiting , black stools ?\n[patient] no , nothing like that .\n[doctor] okay , good . so what do you do for work ?\n[patient] i'm a firefighter , so i need this shoulder .\n[doctor] okay . let me take a look . so , on your right shoulder , there is a visible step off at the acromioclavicular joint , that's where the collarbone meets the top of the shoulder blade . there's mild swelling there and a little bit of bruising . i'm going to press on it .\n[patient] ow , yep .\n[doctor] okay . you're very tender right over the ac joint , and the end of the collarbone moves a little when i press it down . now i'm going to bring your arm across your body .\n[patient] that's the worst .\n[doctor] okay . so you have a positive cross body adduction test . your rotator cuff strength is good , although it's limited by pain when you lift your arm . you're not tender along the middle of the collarbone . your pulses and sensation in the arm are normal .\n[patient] okay .\n[doctor] so we got x-rays of the shoulder . hey dragon , show me the right shoulder x-rays . so looking at these , the end of the collarbone is sitting a little bit higher than the acromion , but less than the full width of the collarbone . there's no fracture of the collarbone or the shoulder blade , and the shoulder joint itself is in place .\n[patient] so it's separated ?\n[doctor] it is . so my assessment is you have a right ac joint separation , what we'd call a subluxation of the acromioclavicular joint , or a grade two separation , from crashing into the boards while skating . the good news is these almost always heal without surgery .\n[patient] okay . good .\n[doctor] i want you to wear a sling for comfort for about one to two weeks , and start gentle range of motion as the pain allows . ice twenty minutes a few times a day . for the pain , because of your reflux , i want you to use tylenol as your main medicine , up to three thousand milligrams a day , and if you do need ibuprofen , take it with food , and only for a few days .\n[patient] okay .\n[doctor] and for your reflux , continue the omeprazole twenty milligrams every morning . if the heartburn does n't settle within a week after you stop the ibuprofen , let me know .\n[patient] okay .\n[doctor] i'll refer you to physical therapy in about a week . for work , you're on light duty , no lifting with the right arm and no ladders or hose work for at least four weeks . and no hockey for about six weeks , until you have full strength and no pain .\n[patient] okay . the guys are going to give me a hard time .\n[doctor] i'm sure they will . i'll see you back in three weeks .",
+ "note": "CHIEF COMPLAINT\n\nRight shoulder injury.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with a history of gastroesophageal reflux disease who presents on {DATE_NUM} with right shoulder pain after an injury while playing ice hockey last night at an ice rink. He caught an edge on his skate while chasing the puck and was unable to stop, striking the boards with the point of his right shoulder at full speed. There was no contact with another player. No head injury. He had immediate superior shoulder pain, difficulty lifting the arm and a visible bump over the top of the shoulder. Pain is 7/10 with movement and 3/10 at rest. He denies numbness, tingling or hand weakness. No prior right shoulder injury.\n\nHe took ibuprofen last night, which aggravated his heartburn. His reflux is otherwise controlled on omeprazole 20 mg every morning. He denies dysphagia, vomiting or melena.\n\nSOCIAL HISTORY\n\nFirefighter.\n\nPHYSICAL EXAMINATION\n\nRight shoulder: Visible step-off at the acromioclavicular joint with mild swelling and ecchymosis. Marked tenderness over the AC joint with mild instability of the distal clavicle to downward pressure. Positive cross-body adduction test. Rotator cuff strength intact but limited by pain. No midshaft clavicle tenderness. Neurovascularly intact.\n\nRESULTS\n\nX-rays of the right shoulder demonstrate superior displacement of the distal clavicle relative to the acromion of less than 100% of the clavicular width, consistent with an AC joint subluxation. No fracture. Glenohumeral joint is located.\n\nASSESSMENT AND PLAN\n\n1. Grade II acromioclavicular joint subluxation, right shoulder.\n- Medical Reasoning: Ice skater struck the boards at the rink during an ice hockey game.\n- Medical Treatment: Sling for comfort for 1 to 2 weeks with early range of motion. Ice. Tylenol up to 3000 mg daily as primary analgesic; limit ibuprofen and take with food.\n- Referral to physical therapy in 1 week.\n- Work: Light duty, no lifting with the right arm, no ladder or hose work for 4 weeks. No hockey for 6 weeks.\n\n2. Gastroesophageal reflux disease.\n- Medical Reasoning: Symptoms aggravated by NSAID use, otherwise controlled.\n- Medical Treatment: Continue omeprazole 20 mg every morning.\n\nFollow-up in 3 weeks.",
+ "medical_concepts": [
+  {
+   "text": "hockey happened",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "we were playing ice hockey at the rink",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the rink",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was chasing the puck into the corner",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i caught an edge with my skate , and i could n't stop",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i went right into the boards , shoulder first , full speed",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "you just lost your edge and hit the boards",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "nobody touched me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it was all me and the boards",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the point of the shoulder",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "instant pain on the top of my shoulder",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i could n't really lift my arm",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "there was this bump sticking up on top of my shoulder",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "weakness in your hand",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "reaching across my body hurts a lot",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a broken nose",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "heartburn",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "reflux",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "omeprazole",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "twenty milligrams every morning",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "trouble swallowing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vomiting",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "black stools",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "visible step off at the acromioclavicular joint",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild swelling there and a little bit of bruising",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "very tender right over the ac joint",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the end of the collarbone moves a little when i press it down",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "positive cross body adduction test",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your rotator cuff strength is good",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "not tender along the middle of the collarbone",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your pulses and sensation in the arm are normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "right shoulder x-rays",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the end of the collarbone is sitting a little bit higher than the acromion , but less than the full width of the collarbone",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no fracture of the collarbone or the shoulder blade",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "the shoulder joint itself is in place",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "right ac joint separation",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "subluxation of the acromioclavicular joint",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "grade two separation",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "crashing into the boards while skating",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "sling",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "gentle range of motion",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "omeprazole twenty milligrams every morning",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "no hockey",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right shoulder injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "gastroesophageal reflux disease",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "right shoulder pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "playing ice hockey",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ice rink",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "He caught an edge on his skate while chasing the puck and was unable to stop, striking the boards with the point of his right shoulder at full speed",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "There was no contact with another player",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No head injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "immediate superior shoulder pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "difficulty lifting the arm",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "visible bump over the top of the shoulder",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Pain is 7/10 with movement and 3/10 at rest",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness, tingling or hand weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "heartburn",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "His reflux is otherwise controlled",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "omeprazole 20 mg every morning",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "dysphagia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vomiting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "melena",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Visible step-off at the acromioclavicular joint",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild swelling and ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Marked tenderness over the AC joint",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild instability of the distal clavicle to downward pressure",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Positive cross-body adduction test",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Rotator cuff strength intact but limited by pain",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No midshaft clavicle tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Neurovascularly intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-rays of the right shoulder",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "superior displacement of the distal clavicle relative to the acromion of less than 100% of the clavicular width",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "AC joint subluxation",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "No fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Glenohumeral joint is located",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Grade II acromioclavicular joint subluxation, right shoulder",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Ice skater struck the boards",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the rink",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ice hockey game",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Sling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "early range of motion",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol up to 3000 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "No hockey",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Gastroesophageal reflux disease",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "NSAID use",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software"
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "drug brand name"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S43.111A",
+   "spans": [
+    {
+     "text": "right ac joint separation",
+     "field": "dialogue"
+    },
+    {
+     "text": "subluxation of the acromioclavicular joint",
+     "field": "dialogue"
+    },
+    {
+     "text": "grade two separation",
+     "field": "dialogue"
+    },
+    {
+     "text": "the end of the collarbone is sitting a little bit higher than the acromion , but less than the full width of the collarbone",
+     "field": "dialogue"
+    },
+    {
+     "text": "visible step off at the acromioclavicular joint",
+     "field": "dialogue"
+    },
+    {
+     "text": "Grade II acromioclavicular joint subluxation, right shoulder",
+     "field": "note"
+    },
+    {
+     "text": "AC joint subluxation",
+     "field": "note"
+    },
+    {
+     "text": "superior displacement of the distal clavicle relative to the acromion of less than 100% of the clavicular width",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V00.212A",
+   "spans": [
+    {
+     "text": "i caught an edge with my skate , and i could n't stop",
+     "field": "dialogue"
+    },
+    {
+     "text": "i went right into the boards , shoulder first , full speed",
+     "field": "dialogue"
+    },
+    {
+     "text": "nobody touched me",
+     "field": "dialogue"
+    },
+    {
+     "text": "crashing into the boards while skating",
+     "field": "dialogue"
+    },
+    {
+     "text": "He caught an edge on his skate while chasing the puck and was unable to stop, striking the boards with the point of his right shoulder at full speed",
+     "field": "note"
+    },
+    {
+     "text": "There was no contact with another player",
+     "field": "note"
+    },
+    {
+     "text": "Ice skater struck the boards",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.330",
+   "spans": [
+    {
+     "text": "the rink",
+     "field": "dialogue"
+    },
+    {
+     "text": "ice rink",
+     "field": "note"
+    },
+    {
+     "text": "the rink",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.22",
+   "spans": [
+    {
+     "text": "we were playing ice hockey at the rink",
+     "field": "dialogue"
+    },
+    {
+     "text": "hockey happened",
+     "field": "dialogue"
+    },
+    {
+     "text": "i was chasing the puck into the corner",
+     "field": "dialogue"
+    },
+    {
+     "text": "playing ice hockey",
+     "field": "note"
+    },
+    {
+     "text": "ice hockey game",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "K21.9",
+   "spans": [
+    {
+     "text": "reflux",
+     "field": "dialogue"
+    },
+    {
+     "text": "heartburn",
+     "field": "dialogue"
+    },
+    {
+     "text": "omeprazole twenty milligrams every morning",
+     "field": "dialogue"
+    },
+    {
+     "text": "Gastroesophageal reflux disease",
+     "field": "note"
+    },
+    {
+     "text": "gastroesophageal reflux disease",
+     "field": "note"
+    },
+    {
+     "text": "omeprazole 20 mg every morning",
+     "field": "note"
+    },
+    {
+     "text": "His reflux is otherwise controlled",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm a firefighter",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "i play in a men's league on tuesday nights",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive recurring schedule and league"
+  },
+  {
+   "text": "i've had a lot of stitches",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive personal injury history"
+  },
+  {
+   "text": "Firefighter",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  }
+ ]
+}

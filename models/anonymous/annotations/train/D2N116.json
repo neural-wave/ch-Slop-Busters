@@ -1,0 +1,15 @@
+{
+  "encounter_id": "D2N116",
+  "phi": [
+    {"text": "bobby", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "baseball", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "outdoor shower", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "a fixture"},
+    {"text": "extending our patio", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "doing home improvements"},
+    {"text": "flower boxes", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "garden items"},
+    {"text": "flower beds", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "garden areas"},
+    {"text": "Bobby Flores", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "56-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "baseball", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "sports"}
+  ],
+  "medical_concepts": []
+}

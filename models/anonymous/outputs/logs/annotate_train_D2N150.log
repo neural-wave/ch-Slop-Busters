@@ -1,0 +1,15 @@
+I wrote all five files to `annotations/train/`, and the validator reports 0 problems.
+
+- D2N150: 12 PHI
+- D2N151: 15 PHI
+- D2N152: 5 PHI
+- D2N153: 13 PHI
+- D2N154: 16 PHI
+
+A few labels were judgement calls:
+- **D2N152:** the note has no name or age, so its only PHI item is the family bakery.
+- **D2N154:** I tagged the hockey score "seven to two" as TEMPORAL. A real game score could reveal the visit date, but some annotators would leave it out.
+- **D2N153:** I labelled "peloton" as a personal detail (a possession), not as a company. I did the same with "regain music" / "regade" (reggae misheard by the transcriber).
+- **D2N151:** I labelled "southern living" (the magazine) as an organization. I did not tag foods like cakes and cinnamon rolls, because they matter for the diabetes discussion.
+
+--- stderr ---

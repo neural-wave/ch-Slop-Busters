@@ -1,0 +1,668 @@
+{
+ "id": "S016",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S82.842A",
+   "description": "Displaced bimalleolar fracture of left lower leg, initial encounter for closed fracture"
+  },
+  {
+   "code": "W17.89XA",
+   "description": "Other fall from one level to another, initial encounter"
+  },
+  {
+   "code": "Y92.828",
+   "description": "Other wilderness area as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.01",
+   "description": "Activity, walking, marching and hiking"
+  },
+  {
+   "code": "Y99.8",
+   "description": "Other external cause status"
+  }
+ ],
+ "dialogue": "[doctor] hi there , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} , one of the orthopedic surgeons . how are you doing ?\n[patient] hanging in there . this boot thing they put on me is not comfortable .\n[doctor] yeah , that's a splint . we'll talk about that . so i have the notes from urgent care in {CITY} , but i'd like to hear it from you . what happened ?\n[patient] so on saturday my son {OTHER_FIRST} and i were hiking up {PLACE} . it was just a day hike for fun , we're both off on weekends . we were about two hours up the mountain trail , above the tree line , where it's all loose rock and scree .\n[doctor] okay .\n[patient] and there's a spot where the trail goes along a ledge , and the edge just gave way under my left foot . i slid off the ledge and dropped down maybe five or six feet onto the rocks below .\n[doctor] wow . okay . and how did you land ?\n[patient] i landed on my left foot , and it twisted under me , like my foot went out and my leg kept going . i heard a crack . then i kind of rolled down a few more feet .\n[doctor] okay . did you hit your head ?\n[patient] no , i had my pack on and it kind of cushioned me . no head injury .\n[doctor] okay , good . any loss of consciousness ?\n[patient] no .\n[doctor] okay . and how did you get down ?\n[patient] that was the hard part . {OTHER_FIRST} called search and rescue , and they came up and carried me out on a litter . took about four hours . then he drove me to the urgent care , and they did x-rays and put me in this splint and told me to see you .\n[doctor] okay . and the pain right now ?\n[patient] it's about a six out of ten , throbbing , both sides of the ankle . worse when i put it down .\n[doctor] okay . any numbness or tingling in your foot ?\n[patient] no , i can feel my toes .\n[doctor] okay . have you been putting any weight on it ?\n[patient] no , i've been using the crutches they gave me .\n[doctor] good . what about other medical problems ?\n[patient] i'm pretty healthy . i do n't take any medicines . i do n't smoke .\n[doctor] okay . any prior surgeries ?\n[patient] just my appendix when i was a kid .\n[doctor] okay , and what do you do for work ?\n[patient] i'm an electrician , so i'm on my feet and on ladders all day .\n[doctor] okay , that's going to be a factor in your recovery . all right , let me take a look . i'm going to take the splint down so i can see the ankle .\n[patient] okay .\n[doctor] so , on exam of the left ankle , there's significant swelling on both the inside and the outside , with bruising . there are some fracture blisters starting here on the inside , but the skin is intact , no open wounds . you're tender over both the medial malleolus and the lateral malleolus . i'm not going to move it much . your foot is warm , your dorsalis pedis pulse is palpable , and you can feel me touch the top and bottom of your foot . can you wiggle your toes ? good . your calf is soft .\n[patient] okay .\n[doctor] so let's look at the x-rays from urgent care . hey dragon , show me the left ankle x-rays . okay , so you have a fracture of the fibula on the outside , right at the level of the joint , and a fracture of the medial malleolus on the inside . so that's what we call a bimalleolar fracture . both pieces are displaced , and the ankle joint has shifted a little bit to the outside , meaning it's unstable .\n[patient] so what does that mean ?\n[doctor] so , my assessment is that you have a displaced bimalleolar fracture of the left ankle from a fall from a ledge while hiking . because it's displaced and the joint is unstable , this is something we fix with surgery , what we call an open reduction and internal fixation , where we put the bones back in place and hold them with a plate and screws .\n[patient] okay . when would that be ?\n[doctor] we want the swelling to come down first , so the skin is healthy enough to operate through . usually that's about seven to ten days . in the meantime , i want you to keep it elevated above your heart as much as possible , toes above your nose , and ice it . we'll put a new well padded splint on today . strictly non weight bearing with the crutches .\n[patient] okay .\n[doctor] for the pain , you can take ibuprofen and tylenol , and i'll give you a small supply of oxycodone for the worst of it . and i want you on a daily aspirin to help prevent blood clots while you're not walking .\n[patient] okay .\n[doctor] after surgery , you'll be non weight bearing for about six weeks , then we'll get you into a boot and physical therapy . so realistically you're looking at three months before you're back on ladders .\n[patient] and hiking ?\n[doctor] hiking on rough terrain is probably more like four to six months .\n[patient] okay . well , better to fix it right .\n[doctor] exactly . we'll see you back in one week to check the skin and schedule surgery .",
+ "note": "CHIEF COMPLAINT\n\nLeft ankle fracture.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male referred from urgent care in {CITY} for a left ankle fracture. On Saturday, he was on a recreational day hike on a mountain trail above the tree line when the edge of a ledge gave way and he fell approximately 5 to 6 feet onto rocks below, landing on his left foot with a twisting injury. He heard a crack. No head injury or loss of consciousness. He was carried out by search and rescue. X-rays at urgent care showed a fracture and he was placed in a splint. He reports 6/10 throbbing pain about both sides of the ankle. He denies numbness or tingling. He has been non-weight bearing on crutches.\n\nPAST MEDICAL HISTORY\n\nNone. Appendectomy in childhood. No medications. Nonsmoker.\n\nSOCIAL HISTORY\n\nElectrician, on his feet and on ladders.\n\nPHYSICAL EXAM\n\nLeft ankle: Significant medial and lateral swelling with ecchymosis. Early fracture blisters medially. Skin intact. Tenderness over the medial and lateral malleoli.\nNeurovascular: Foot warm. Dorsalis pedis pulse palpable. Sensation intact to light touch dorsally and plantarly. Toes move freely.\nCalf soft and nontender.\n\nRESULTS\n\nX-rays of the left ankle demonstrate a displaced fibular fracture at the level of the syndesmosis and a displaced medial malleolus fracture with lateral talar shift, consistent with an unstable bimalleolar ankle fracture.\n\nASSESSMENT\n\nClosed displaced bimalleolar fracture of the left ankle, sustained in a fall from a ledge while hiking on a mountain trail during leisure activity.\n\nPLAN\n\nDiscussed operative management with open reduction and internal fixation once soft tissue swelling allows, anticipated in 7 to 10 days. Placed in a well-padded splint today. Strict non-weight bearing with crutches. Elevation and ice. Ibuprofen and Tylenol, with a limited supply of oxycodone for breakthrough pain. Aspirin daily for VTE prophylaxis. Return in 1 week for skin check and surgical scheduling. Expected return to work in approximately 3 months.",
+ "medical_concepts": [
+  {
+   "text": "splint",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "were hiking up",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it was just a day hike for fun",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "up the mountain trail",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "above the tree line , where it's all loose rock and scree",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the edge just gave way under my left foot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i slid off the ledge and dropped down maybe five or six feet onto the rocks below",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i landed on my left foot , and it twisted under me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i heard a crack",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "no head injury",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "both sides of the ankle",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "throbbing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "crutches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "my appendix",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "significant swelling on both the inside and the outside",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bruising",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fracture blisters",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the skin is intact , no open wounds",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tender over both the medial malleolus and the lateral malleolus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your foot is warm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your dorsalis pedis pulse is palpable",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your calf is soft",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "left ankle x-rays",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "fracture of the fibula on the outside",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "fracture of the medial malleolus on the inside",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "bimalleolar fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "both pieces are displaced",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's unstable",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "displaced bimalleolar fracture of the left ankle",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a fall from a ledge while hiking",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "open reduction and internal fixation",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxycodone",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "daily aspirin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood clots",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "hiking on rough terrain",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Left ankle fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "left ankle fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "recreational day hike",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mountain trail",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "above the tree line",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the edge of a ledge gave way and he fell approximately 5 to 6 feet onto rocks below",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landing on his left foot with a twisting injury",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "He heard a crack",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "No head injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "splint",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "6/10 throbbing pain about both sides of the ankle",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "crutches",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Appendectomy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Significant medial and lateral swelling with ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Early fracture blisters medially",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Skin intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness over the medial and lateral malleoli",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Foot warm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Dorsalis pedis pulse palpable",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact to light touch dorsally and plantarly",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Calf soft and nontender",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-rays of the left ankle",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "displaced fibular fracture at the level of the syndesmosis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "displaced medial malleolus fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "lateral talar shift",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "unstable bimalleolar ankle fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Closed displaced bimalleolar fracture of the left ankle",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "fall from a ledge",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hiking on a mountain trail",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "during leisure activity",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "open reduction and internal fixation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxycodone",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Aspirin daily for VTE prophylaxis",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software"
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "drug brand name"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S82.842A",
+   "spans": [
+    {
+     "text": "displaced bimalleolar fracture of the left ankle",
+     "field": "dialogue"
+    },
+    {
+     "text": "fracture of the fibula on the outside",
+     "field": "dialogue"
+    },
+    {
+     "text": "fracture of the medial malleolus on the inside",
+     "field": "dialogue"
+    },
+    {
+     "text": "both pieces are displaced",
+     "field": "dialogue"
+    },
+    {
+     "text": "the skin is intact , no open wounds",
+     "field": "dialogue"
+    },
+    {
+     "text": "Closed displaced bimalleolar fracture of the left ankle",
+     "field": "note"
+    },
+    {
+     "text": "displaced fibular fracture at the level of the syndesmosis",
+     "field": "note"
+    },
+    {
+     "text": "displaced medial malleolus fracture",
+     "field": "note"
+    },
+    {
+     "text": "Skin intact",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W17.89XA",
+   "spans": [
+    {
+     "text": "i slid off the ledge and dropped down maybe five or six feet onto the rocks below",
+     "field": "dialogue"
+    },
+    {
+     "text": "a fall from a ledge while hiking",
+     "field": "dialogue"
+    },
+    {
+     "text": "the edge of a ledge gave way and he fell approximately 5 to 6 feet onto rocks below",
+     "field": "note"
+    },
+    {
+     "text": "fall from a ledge",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.828",
+   "spans": [
+    {
+     "text": "up the mountain trail",
+     "field": "dialogue"
+    },
+    {
+     "text": "above the tree line , where it's all loose rock and scree",
+     "field": "dialogue"
+    },
+    {
+     "text": "mountain trail",
+     "field": "note"
+    },
+    {
+     "text": "above the tree line",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.01",
+   "spans": [
+    {
+     "text": "were hiking up",
+     "field": "dialogue"
+    },
+    {
+     "text": "a fall from a ledge while hiking",
+     "field": "dialogue"
+    },
+    {
+     "text": "recreational day hike",
+     "field": "note"
+    },
+    {
+     "text": "hiking on a mountain trail",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.8",
+   "spans": [
+    {
+     "text": "it was just a day hike for fun",
+     "field": "dialogue"
+    },
+    {
+     "text": "recreational day hike",
+     "field": "note"
+    },
+    {
+     "text": "during leisure activity",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm an electrician",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "on ladders all day",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "work detail"
+  },
+  {
+   "text": "called search and rescue",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "rescue event that may be publicly recorded"
+  },
+  {
+   "text": "Electrician",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "carried out by search and rescue",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "rescue event that may be publicly recorded"
+  }
+ ]
+}

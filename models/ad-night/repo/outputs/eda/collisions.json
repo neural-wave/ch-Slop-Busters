@@ -1,0 +1,657 @@
+{
+ "advanced": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 0,
+  "as_name_dialogue_cued": 0,
+  "as_word_note": 2,
+  "as_word_dialogue_uncued": 2,
+  "examples_word": [
+   [
+    "D2N187",
+    "g and eye exam, this is at an «advanced» stage. ⏎ - Patient Education an"
+   ],
+   [
+    "D2N203",
+    "he diagnosis and that this is «advanced» to a stage that usually leads"
+   ],
+   [
+    "D2N187",
+    "cular degeneration so this is «advanced» to a stage that usually leads"
+   ]
+  ]
+ },
+ "allen": {
+  "kinds": [
+   "eponym"
+  ],
+  "as_name_note_capitalized": 12,
+  "as_name_dialogue_cued": 2,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 1,
+  "examples_word": [
+   [
+    "D2N028",
+    "[doctor] patrick «allen» . date of birth : 7/7/1977 . "
+   ]
+  ]
+ },
+ "baker": {
+  "kinds": [
+   "eponym",
+   "common_word"
+  ],
+  "as_name_note_capitalized": 2,
+  "as_name_dialogue_cued": 2,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 1,
+  "examples_word": [
+   [
+    "D2N001",
+    "scades, like around the mount «baker» area . ⏎ [doctor] nice . that's"
+   ]
+  ]
+ },
+ "bennett": {
+  "kinds": [
+   "eponym"
+  ],
+  "as_name_note_capitalized": 1,
+  "as_name_dialogue_cued": 0,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 0,
+  "examples_word": []
+ },
+ "brooks": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 4,
+  "as_name_dialogue_cued": 1,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 1,
+  "examples_word": [
+   [
+    "D2N072",
+    " . hey , dragon , uh , sharon «brooks» is a 48 year old female here "
+   ]
+  ]
+ },
+ "brown": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 3,
+  "as_name_dialogue_cued": 2,
+  "as_word_note": 2,
+  "as_word_dialogue_uncued": 6,
+  "examples_word": [
+   [
+    "D2N140",
+    "when out of either tequila or «brown» liquor and occasionally a mar"
+   ],
+   [
+    "D2N029",
+    "howed an asymmetric black and «brown» nevus with central amelanotic"
+   ],
+   [
+    "D2N140",
+    " prefer patron , but if i get «brown» liquor , i only get two . um "
+   ]
+  ]
+ },
+ "butler": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 4,
+  "as_name_dialogue_cued": 0,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 0,
+  "examples_word": []
+ },
+ "complaint": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 0,
+  "as_name_dialogue_cued": 0,
+  "as_word_note": 1,
+  "as_word_dialogue_uncued": 5,
+  "examples_word": [
+   [
+    "D2N198",
+    "patient presents today with a «complaint» of back pain, although this w"
+   ],
+   [
+    "D2N112",
+    "still have n't gotten a chief «complaint» out of them so i love the way"
+   ],
+   [
+    "D2N112",
+    " ever tell you what the chief «complaint» is you you got ta pull it out"
+   ]
+  ]
+ },
+ "cook": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 6,
+  "as_name_dialogue_cued": 2,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 5,
+  "examples_word": [
+   [
+    "D2N137",
+    " store, let alone prepare and «cook» meals. so, i have been eating"
+   ],
+   [
+    "D2N163",
+    "h ⏎ [patient] i mean i i try to «cook» pretty much everything is fre"
+   ],
+   [
+    "D2N068",
+    "kend , and it was ... hard to «cook» or prepare meals so we ate ou"
+   ]
+  ]
+ },
+ "cooper": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 4,
+  "as_name_dialogue_cued": 6,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 1,
+  "examples_word": [
+   [
+    "D2N073",
+    "r] today i'm seeing christina «cooper» . her date of birth is 07/01/"
+   ]
+  ]
+ },
+ "fisher": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 4,
+  "as_name_dialogue_cued": 2,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 0,
+  "examples_word": []
+ },
+ "frank": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 0,
+  "as_name_dialogue_cued": 2,
+  "as_word_note": 1,
+  "as_word_dialogue_uncued": 2,
+  "examples_word": [
+   [
+    "D2N146",
+    "ones. I do not appreciate any «frank» obstruction, but it looks lik"
+   ],
+   [
+    "D2N146",
+    "tones i do n't appreciate any «frank» obstruction but it looks like"
+   ],
+   [
+    "D2N085",
+    "t think there is any you know «frank» blood but the urine looks a l"
+   ]
+  ]
+ },
+ "grace": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 0,
+  "as_name_dialogue_cued": 0,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 1,
+  "examples_word": [
+   [
+    "D2N143",
+    "[doctor] next patient is «grace» ross . date of birth 8-23-97 "
+   ]
+  ]
+ },
+ "green": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 2,
+  "as_name_dialogue_cued": 0,
+  "as_word_note": 2,
+  "as_word_dialogue_uncued": 3,
+  "examples_word": [
+   [
+    "D2N176",
+    "gy drinks and is now drinking «green» tea. The patient states this "
+   ],
+   [
+    "D2N193",
+    "Reports productive cough with «green» phlegm. Denies any shortness "
+   ],
+   [
+    "D2N146",
+    "ook to coming alive with that «green» and and butting i i love to g"
+   ]
+  ]
+ },
+ "harris": {
+  "kinds": [
+   "eponym"
+  ],
+  "as_name_note_capitalized": 3,
+  "as_name_dialogue_cued": 2,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 0,
+  "examples_word": []
+ },
+ "hill": {
+  "kinds": [
+   "eponym",
+   "common_word"
+  ],
+  "as_name_note_capitalized": 3,
+  "as_name_dialogue_cued": 5,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 3,
+  "examples_word": [
+   [
+    "D2N126",
+    "were you able to ski down the «hill» or did you have to be taken d"
+   ],
+   [
+    "D2N190",
+    "ou like ⏎ [doctor] walking up a «hill» like any kind of incline real"
+   ],
+   [
+    "D2N075",
+    "now . good morning . you miss «hill» ? ⏎ [patient] good morning . ye"
+   ]
+  ]
+ },
+ "jack": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 1,
+  "as_name_dialogue_cued": 0,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 1,
+  "examples_word": [
+   [
+    "D2N115",
+    "t so hey it's nice to see you «jack» i know you've been experienci"
+   ]
+  ]
+ },
+ "jones": {
+  "kinds": [
+   "eponym"
+  ],
+  "as_name_note_capitalized": 4,
+  "as_name_dialogue_cued": 1,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 1,
+  "examples_word": [
+   [
+    "D2N101",
+    "in to get your photos . julia «jones» is a 25 year old female with "
+   ]
+  ]
+ },
+ "king": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 4,
+  "as_name_dialogue_cued": 2,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 1,
+  "examples_word": [
+   [
+    "D2N182",
+    "r] . next patient is michelle «king» . date of birth : 05/07/1982 "
+   ]
+  ]
+ },
+ "lee": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 2,
+  "as_name_dialogue_cued": 2,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 0,
+  "examples_word": []
+ },
+ "mason": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 1,
+  "as_name_dialogue_cued": 1,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 0,
+  "examples_word": []
+ },
+ "miller": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 5,
+  "as_name_dialogue_cued": 4,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 2,
+  "examples_word": [
+   [
+    "D2N145",
+    " patient's name is jacqueline «miller» . use last visit exam where a"
+   ],
+   [
+    "D2N025",
+    "octor] next patient is nicole «miller» . date of birth is 09/18/1949"
+   ]
+  ]
+ },
+ "moore": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 4,
+  "as_name_dialogue_cued": 3,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 0,
+  "examples_word": []
+ },
+ "murphy": {
+  "kinds": [
+   "eponym"
+  ],
+  "as_name_note_capitalized": 3,
+  "as_name_dialogue_cued": 0,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 3,
+  "examples_word": [
+   [
+    "D2N146",
+    "oblem so you are positive for «murphy»'s signs but i do n't apprecia"
+   ],
+   [
+    "D2N192",
+    "ave i would call an equivocal «murphy»'s sign in the right upper qua"
+   ],
+   [
+    "D2N062",
+    "nt] no ⏎ [doctor] okay negative «murphy»'s sign no peritoneal signs no"
+   ]
+  ]
+ },
+ "nap": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 0,
+  "as_name_dialogue_cued": 0,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 1,
+  "examples_word": [
+   [
+    "D2N161",
+    "ng i do have a good afternoon «nap» ⏎ [doctor] good that's good you"
+   ]
+  ]
+ },
+ "price": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 7,
+  "as_name_dialogue_cued": 0,
+  "as_word_note": 2,
+  "as_word_dialogue_uncued": 2,
+  "examples_word": [
+   [
+    "D2N021",
+    "ch should result in a reduced «price». She will contact my office i"
+   ],
+   [
+    "D2N021",
+    "ycin separately to see if the «price» improves. ⏎  ⏎ Vitamin D deficien"
+   ],
+   [
+    "D2N100",
+    "ory . hi kayla , i'm dr. juan «price» . i hear you are starting to "
+   ]
+  ]
+ },
+ "reed": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 2,
+  "as_name_dialogue_cued": 0,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 0,
+  "examples_word": []
+ },
+ "rogers": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 2,
+  "as_name_dialogue_cued": 1,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 2,
+  "examples_word": [
+   [
+    "D2N157",
+    "do you think he can beat erin «rogers» again ⏎ [patient] okay we'll se"
+   ],
+   [
+    "D2N183",
+    "] all right . this is matthew «rogers» . date of birth 5/24/2007 . i"
+   ]
+  ]
+ },
+ "ross": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 5,
+  "as_name_dialogue_cued": 4,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 1,
+  "examples_word": [
+   [
+    "D2N143",
+    "doctor] next patient is grace «ross» . date of birth 8-23-97 . ms."
+   ]
+  ]
+ },
+ "smith": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 9,
+  "as_name_dialogue_cued": 0,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 1,
+  "examples_word": [
+   [
+    "D2N076",
+    "34 and 3-week-old , twin with «smith» magenis syndrome . several or"
+   ]
+  ]
+ },
+ "taylor": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 6,
+  "as_name_dialogue_cued": 5,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 3,
+  "examples_word": [
+   [
+    "D2N142",
+    " can go ahead and sit up miss «taylor» . all right , so the good new"
+   ],
+   [
+    "D2N142",
+    "ient] you too . ⏎ [doctor] miss «taylor» is drinking alcohol four to f"
+   ],
+   [
+    "D2N180",
+    "[doctor] patient shirley «taylor» . date of birth 5/4/1961 . mr"
+   ]
+  ]
+ },
+ "thompson": {
+  "kinds": [
+   "eponym"
+  ],
+  "as_name_note_capitalized": 5,
+  "as_name_dialogue_cued": 2,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 4,
+  "examples_word": [
+   [
+    "D2N154",
+    "ay well that's good your your «thompson» test is negative that's a rea"
+   ],
+   [
+    "D2N196",
+    "[doctor] mister «thompson» is a 67 -year-old male with a"
+   ],
+   [
+    "D2N196",
+    " pressures so hi there mister «thompson» it's nice to see you again li"
+   ]
+  ]
+ },
+ "walker": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 11,
+  "as_name_dialogue_cued": 3,
+  "as_word_note": 2,
+  "as_word_dialogue_uncued": 2,
+  "examples_word": [
+   [
+    "D2N105",
+    "pping. The patient requires a «walker» and can walk around her cul-d"
+   ],
+   [
+    "D2N105",
+    ". ⏎  ⏎ SOCIAL HISTORY ⏎  ⏎ Requires a «walker» to ambulate. ⏎  ⏎ FAMILY HISTORY ⏎ "
+   ],
+   [
+    "D2N105",
+    " ⏎ [patient] well , i do have a «walker» now , so i do n't know . mayb"
+   ]
+  ]
+ },
+ "ward": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 7,
+  "as_name_dialogue_cued": 7,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 2,
+  "examples_word": [
+   [
+    "D2N180",
+    "patient referred by dr. jacob «ward» for evaluation of bilateral h"
+   ],
+   [
+    "D2N074",
+    "[doctor] patient , bruce «ward» . date of birth 5/21/1969 . p"
+   ]
+  ]
+ },
+ "white": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 6,
+  "as_name_dialogue_cued": 2,
+  "as_word_note": 2,
+  "as_word_dialogue_uncued": 24,
+  "examples_word": [
+   [
+    "D2N182",
+    " had a significantly elevated «white» blood cell count of 23,000, a"
+   ],
+   [
+    "D2N002",
+    "ications. On recent labs, his «white» blood cell count was within a"
+   ],
+   [
+    "D2N093",
+    ", you do n't have an elevated «white» blood cell count so i'm not r"
+   ]
+  ]
+ },
+ "wood": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 4,
+  "as_name_dialogue_cued": 4,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 2,
+  "examples_word": [
+   [
+    "D2N102",
+    "[doctor] kelly «wood» . date of birth , february 15"
+   ],
+   [
+    "D2N117",
+    "eeded ⏎ [patient] yeah knock on «wood» i my asthma is pretty much un"
+   ]
+  ]
+ },
+ "wright": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 1,
+  "as_name_dialogue_cued": 0,
+  "as_word_note": 0,
+  "as_word_dialogue_uncued": 0,
+  "examples_word": []
+ },
+ "young": {
+  "kinds": [
+   "common_word"
+  ],
+  "as_name_note_capitalized": 2,
+  "as_name_dialogue_cued": 2,
+  "as_word_note": 2,
+  "as_word_dialogue_uncued": 18,
+  "examples_word": [
+   [
+    "D2N007",
+    "ad to do a CABG on her fairly «young» age. She reports that her hea"
+   ],
+   [
+    "D2N046",
+    " in detail. Given that she is «young» and otherwise healthy, I reas"
+   ],
+   [
+    "D2N101",
+    "5 . so i'm still a little bit «young» . ⏎ [doctor] okay . and otherwi"
+   ]
+  ]
+ }
+}

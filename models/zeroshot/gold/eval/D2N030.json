@@ -1,0 +1,507 @@
+{
+  "encounter_id": "D2N030",
+  "pii": [
+    {
+      "text": "donna torres",
+      "field": "dialogue",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient full name"
+    },
+    {
+      "text": "donna",
+      "field": "dialogue",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient first name"
+    },
+    {
+      "text": "08/01/1980",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "date of birth"
+    },
+    {
+      "text": "dr. brown",
+      "field": "dialogue",
+      "category": "CLINICIAN_NAME",
+      "tier": "direct",
+      "comment": "prescribing clinician"
+    },
+    {
+      "text": "dr. ward",
+      "field": "dialogue",
+      "category": "CLINICIAN_NAME",
+      "tier": "direct",
+      "comment": "clinician who prescribed singulair"
+    },
+    {
+      "text": "november and december",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "months of anxiety episode / golive"
+    },
+    {
+      "text": "2019",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "year of last pap"
+    },
+    {
+      "text": "2009",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "year of abnormal pap"
+    },
+    {
+      "text": "golive",
+      "field": "dialogue",
+      "category": "OTHER_QUASI",
+      "tier": "quasi",
+      "comment": "workplace system go-live event"
+    },
+    {
+      "text": "lead the process of delivering the results to patients with covid",
+      "field": "dialogue",
+      "category": "OCCUPATION",
+      "tier": "quasi",
+      "comment": "patient job role in healthcare"
+    },
+    {
+      "text": "evaluation centers and the covid clinic",
+      "field": "dialogue",
+      "category": "ORGANIZATION",
+      "tier": "quasi",
+      "comment": "workplace units patient opened/supports"
+    },
+    {
+      "text": "almost 40",
+      "field": "dialogue",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "patient age"
+    },
+    {
+      "text": "almost 45",
+      "field": "dialogue",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "mother age at breast cancer diagnosis"
+    },
+    {
+      "text": "Donna Torres",
+      "field": "note",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient full name"
+    },
+    {
+      "text": "Mrs. Torres",
+      "field": "note",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient surname with title"
+    },
+    {
+      "text": "40-year-old",
+      "field": "note",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "patient age"
+    },
+    {
+      "text": "2019",
+      "field": "note",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "year of last pap"
+    },
+    {
+      "text": "2009",
+      "field": "note",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "year of abnormal pap"
+    },
+    {
+      "text": "11/2021",
+      "field": "note",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "month/year of anxiety"
+    },
+    {
+      "text": "12/2021",
+      "field": "note",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "month/year of anxiety"
+    },
+    {
+      "text": "Dr. Brown",
+      "field": "note",
+      "category": "CLINICIAN_NAME",
+      "tier": "direct",
+      "comment": "prescribing clinician"
+    },
+    {
+      "text": "Employed in healthcare",
+      "field": "note",
+      "category": "OCCUPATION",
+      "tier": "quasi",
+      "comment": "patient occupation"
+    },
+    {
+      "text": "supports Covid evaluation centers and clinics",
+      "field": "note",
+      "category": "OCCUPATION",
+      "tier": "quasi",
+      "comment": "patient job role"
+    },
+    {
+      "text": "age 45",
+      "field": "note",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "mother age at death"
+    }
+  ],
+  "medical_concepts": [
+    {
+      "text": "buspar",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "anxiety",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "singulair",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "progesterone",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "regulating your periods",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "irritability",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "camila birth control",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "hunger level was at a new high",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "lost some weight",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "pap",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "negative/negative",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "abnormal pap",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "vaccine",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "little bumps",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "denser",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "breastfed",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "clog",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "lumps",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "itching or discomfort",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "cream",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "breast cancer",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "cysts and lumps and fibroadenomas",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "breast specialist",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "ultrasound",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "biopsy",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "bilateral breast cysts",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "lumps",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "soreness",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "progesterone",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "normalization of menstruation",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "vaginal cream",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "itching and discomfort",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "pap smear",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "negative/negative",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "abnormal pap smear",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "repeat pap smears per 6 months",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "anxiety",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "Buspar",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "Singulair",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "Covid vaccinations",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "Camila birth control",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "increase in appetite",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "lost weight",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "breast cancer",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "Breast density",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "stable breast density bilaterally",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "breast specialist",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "abnormal paps",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "Anxiety",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "Bilateral breast cysts",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Pap smear",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "History of abnormal pap smear: 2009",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    }
+  ],
+  "ambiguous_terms": [
+    {
+      "text": "camila",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "'camila' is a birth control brand, not a person name"
+    },
+    {
+      "text": "Camila",
+      "field": "note",
+      "is_pii": false,
+      "comment": "'Camila' is a birth control brand, not a person name"
+    },
+    {
+      "text": "dax",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "ambient documentation software, not a person"
+    }
+  ]
+}

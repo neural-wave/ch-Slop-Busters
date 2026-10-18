@@ -1,0 +1,15 @@
+{
+  "encounter_id": "D2N050",
+  "pii": [
+    {"field": "dialogue", "text": "mason", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "barn", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "horses", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "hay", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Mason", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Ward", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "80-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "barn", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "hay", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": []
+}

@@ -1,0 +1,659 @@
+{
+ "id": "G0020",
+ "dataset": "synthetic_followup",
+ "sex": "female",
+ "age_range": [
+  30,
+  45
+ ],
+ "icd10_codes": [
+  {
+   "code": "O10.03",
+   "description": "Pre-existing essential hypertension complicating the puerperium"
+  },
+  {
+   "code": "O24.410",
+   "description": "Gestational diabetes mellitus in pregnancy, diet controlled"
+  },
+  {
+   "code": "Z3A.30",
+   "description": "30 weeks gestation of pregnancy"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . good to see you at thirty weeks . i see you brought someone with you today .\n[patient] hi , doctor {DOCTOR_LAST} . yes , this is my husband , {OTHER_FIRST} . he took the afternoon off so he could come to the ultrasound .\n[patient] hi , doctor {DOCTOR_LAST} . nice to meet you . i'm the one who keeps asking her questions in the car .\n[doctor] that's exactly what we like to hear . so how are you feeling ?\n[patient] tired , honestly . i've had a headache on and off for about four days . it's a dull one behind my eyes , and tylenol takes the edge off .\n[doctor] okay . is it worse in the mornings , or when you bend over ?\n[patient] mostly in the evening , after a long shift . i drive a city bus on the night shift , so i'm up and down the steps all night .\n[doctor] that's a demanding job at this stage . any vision changes , like spots or blurry vision ?\n[patient] no spots . once i saw a little flicker when i stood up too fast , but it passed .\n[doctor] okay . any pain under your right ribs ?\n[patient] no , nothing there . my feet are puffier than usual by the end of a shift , though . my wedding ring was tight this week .\n[doctor] that's common , but i want to check it . let's go through your home readings . what's your blood pressure been ?\n[patient] i check it at home every morning before my shift , with the cuff my sister lent me . it's been about one thirty eight over eighty eight most days .\n[doctor] okay . and your blood sugars ?\n[patient] i wear a dexcom on my arm . fasting has been around ninety six , and about an hour after lunch it climbs to one fifty , sometimes one sixty .\n[doctor] that's a little high after meals . how are you managing your food ?\n[patient] i've cut back on rice and bread . i eat more eggs and vegetables . the hard part is the night shift , i end up grabbing whatever's in the depot vending machine .\n[patient] yes , i'm the one who packs the lunches now . she drives a city bus on the night shift , and she's been very good about it , but the vending machine is a problem .\n[doctor] okay . we'll look at options . are you taking your medicines every day ?\n[patient] yes . the labetalol twice a day , and the baby aspirin , and the prenatal vitamins . i set alarms on the phone for all three .\n[doctor] that's good . and the metformin ? i don't see it on the list you brought .\n[patient] no metformin . the doctor said my numbers were fine with diet alone , which is why i'm so careful about the food part .\n[doctor] right , diet controlled . let's check your blood pressure and the baby now . the nurse will take your vitals .\n[patient] okay . the nurse did my last blood test in the spring , and she was very gentle .\n[doctor] your blood pressure is one forty two over ninety on this arm , which is higher than i'd like . heart rate is eighty four . temperature is ninety eight point six . let me check your weight and your belly .\n[patient] okay .\n[doctor] your weight is up about one pound this week . fundal height is thirty centimeters , which matches your dates . the baby's heart rate is one forty eight on the monitor , which is reassuring .\n[patient] that's the one i wanted to hear .\n[doctor] your urine dipstick shows a trace of protein . that's something we need to keep an eye on . your reflexes are a little brisk , but there's no clonus .\n[patient] what does a trace mean ?\n[doctor] it means a small amount of protein in the urine , which can happen with high blood pressure in pregnancy . it doesn't tell us the whole story , so we'll send blood work today .\n[patient] okay . will i need to go to the hospital ?\n[doctor] not today . the blood work will check your platelets , your liver tests , and your kidney function . if the numbers look fine , you can go home .\n[patient] okay . {OTHER_FIRST} , can you write this down , please ?\n[patient] i'm writing it down . blood work , trace protein , labetalol still the same .\n[doctor] good , thank you . i'd like to increase the labetalol from one hundred to two hundred milligrams twice a day . the lower dose has not been enough .\n[patient] okay . two hundred . and the dizziness when i stand , is that from the labetalol ?\n[doctor] possibly . stand up slowly , and sit down if you feel lightheaded . and don't drive the bus when you feel dizzy .\n[patient] i'd have to call in sick . that's my main worry , the bills .\n[doctor] i understand . we can write a note for your supervisor . where is the depot ? is it near your neighborhood ?\n[patient] it's over on {PLACE} , by the river . so it's about ten minutes from our house in {CITY} .\n[doctor] okay . let's plan the next steps . i'd like an ultrasound in three weeks to check the baby's growth , and weekly visits starting at thirty six weeks .\n[patient] okay . we're going to cape cod in two weeks for a family wedding . is that okay ?\n[doctor] short trips are fine . just keep up with the blood pressure checks , bring your home log , and take the labetalol with you .\n[patient] of course . we're driving up , and i'll pack a cooler with fresh fruit and the rest of the food .\n[doctor] perfect . if you have a bad headache that doesn't go away with rest , vision changes , belly pain under the ribs , or shortness of breath , call labor and delivery right away .\n[patient] got it . my sister has the number for the birth center on speed dial .\n[doctor] good . and kick counts every day . if the baby moves less than ten times in two hours , come in .\n[patient] i do the kick counts while i'm on break . the baby is very active at night .\n[doctor] that's reassuring . do you have any questions for me today ?\n[patient] just one . is the dexcom reading going to be accurate after the blood work ? the sensor is due for a change .\n[doctor] yes , it's fine . change the sensor on schedule , and bring the readings to the next visit . we'll review them together .\n[patient] thank you . this has been a lot , but it helps to know what to watch for .\n[doctor] you're doing a great job . take care of yourself , and see you in one week .\n[patient] thank you , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nRoutine follow-up at 30 weeks for chronic hypertension and diet-controlled gestational diabetes, with intermittent headache.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old G2P1 female at 30 weeks of gestation with pre-existing essential hypertension on labetalol and diet-controlled gestational diabetes. Accompanied today by her husband, {OTHER_FIRST}. She reports an intermittent dull frontal headache for approximately four days, mostly in the evening after shifts, partially relieved by acetaminophen. She denies scotomata or blurred vision. She reports one transient flicker of vision on standing quickly, which resolved. She denies right upper quadrant pain. She reports increased evening ankle and foot swelling; her wedding ring was tight this week. Home blood pressures average 138/88 most mornings. Home glucose fasting around 96 mg/dL; postprandial 150 to 160 mg/dL one hour after lunch, using a continuous glucose sensor. She has decreased refined carbohydrates, with limited adherence during night shifts due to vending machine access. Medication adherence is good: labetalol, low-dose aspirin, and prenatal vitamins. No metformin.\n\nSOCIAL HISTORY\n\nWorks as a bus operator on the night shift for {ORG}, with limited access to meals at the depot. Lives in {CITY}. The depot is located at {PLACE} near the river. Her husband packs her lunches. Family trip to Cape Cod planned in two weeks for a wedding; no contraindication identified.\n\nOBSTETRIC HISTORY\n\nG2P1. Prior uncomplicated vaginal delivery.\n\nPHYSICAL EXAM\n\nBP 142/90 right arm. HR 84. Temp 98.6 F. Weight increased by 1 lb since last visit. Fundal height 30 cm, consistent with dates. Fetal heart rate 148 bpm, reactive. Reflexes 3+ without clonus. Mild pitting edema at ankles. No RUQ or epigastric tenderness.\n\nRESULTS\n\nUrine dipstick: trace protein. CBC with platelets, hepatic function panel, and creatinine drawn today; results pending.\n\nASSESSMENT AND PLAN\n\n1. Chronic (pre-existing) essential hypertension in pregnancy, third trimester, with mild elevation today. Increase labetalol to 200 mg twice daily. Home BP log. Evaluate for superimposed preeclampsia with labs given trace proteinuria. Return precautions reviewed.\n2. Gestational diabetes mellitus, diet-controlled. Continue dietary modification; CGM review at next visit; postprandial targets reviewed.\n3. Fetal growth surveillance: growth ultrasound in 3 weeks. Weekly visits from 36 weeks. Kick counts daily.\n4. Dizziness with standing, possibly related to labetalol. Counseled on slow positional changes; no driving if dizzy. Work note offered.\n5. Travel to Cape Cod permitted with home monitoring and an adequate medication supply.",
+ "medical_concepts": [
+  {
+   "text": "thirty weeks",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tired",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "headache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a dull one behind my eyes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "vision changes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "spots",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little flicker",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain under your right ribs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "feet are puffier than usual",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "wedding ring was tight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "one thirty eight over eighty eight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood sugars",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "dexcom",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "fasting has been around ninety six",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "one fifty , sometimes one sixty",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "rice and bread",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "vending machine",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "labetalol twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "the baby aspirin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "prenatal vitamins",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "metformin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "diet controlled",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "one forty two over ninety",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart rate is eighty four",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "temperature is ninety eight point six",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "weight is up about one pound this week",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fundal height is thirty centimeters",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart rate is one forty eight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "trace of protein",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "reflexes are a little brisk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "clonus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "platelets",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "liver tests",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "kidney function",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "from one hundred to two hundred milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "dizziness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lightheaded",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ultrasound",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "kick counts",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "bad headache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "belly pain under the ribs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "shortness of breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "30 weeks of gestation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pre-existing essential hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "labetalol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "diet-controlled gestational diabetes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "intermittent dull frontal headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "acetaminophen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "scotomata",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "blurred vision",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "transient flicker of vision",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "right upper quadrant pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ankle and foot swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Home blood pressures average 138/88",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Home glucose fasting around 96 mg/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "postprandial 150 to 160 mg/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "continuous glucose sensor",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "decreased refined carbohydrates",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "vending machine access",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "low-dose aspirin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "prenatal vitamins",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "No metformin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Prior uncomplicated vaginal delivery",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 142/90",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "HR 84",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Temp 98.6 F",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Weight increased by 1 lb",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Fundal height 30 cm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Fetal heart rate 148 bpm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Reflexes 3+ without clonus",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild pitting edema at ankles",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No RUQ or epigastric tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "trace protein",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "CBC with platelets",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "hepatic function panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "creatinine",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "essential hypertension in pregnancy",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Increase labetalol to 200 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "superimposed preeclampsia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "trace proteinuria",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Gestational diabetes mellitus, diet-controlled",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "dietary modification",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "CGM review",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "growth ultrasound",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Kick counts",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Dizziness with standing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dexcom",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of a continuous glucose sensor"
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for acetaminophen, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "O10.03",
+   "spans": [
+    {
+     "text": "headache",
+     "field": "dialogue"
+    },
+    {
+     "text": "trace of protein",
+     "field": "dialogue"
+    },
+    {
+     "text": "essential hypertension in pregnancy",
+     "field": "note"
+    },
+    {
+     "text": "Home blood pressures average 138/88",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "O24.410",
+   "spans": [
+    {
+     "text": "diet controlled",
+     "field": "dialogue"
+    },
+    {
+     "text": "blood sugars",
+     "field": "dialogue"
+    },
+    {
+     "text": "Gestational diabetes mellitus, diet-controlled",
+     "field": "note"
+    },
+    {
+     "text": "Home glucose fasting around 96 mg/dL",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z3A.30",
+   "spans": [
+    {
+     "text": "thirty weeks",
+     "field": "dialogue"
+    },
+    {
+     "text": "fundal height is thirty centimeters",
+     "field": "dialogue"
+    },
+    {
+     "text": "30 weeks of gestation",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i drive a city bus on the night shift",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job tied to the complaint"
+  },
+  {
+   "text": "she drives a city bus on the night shift",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job, repeated by family member"
+  },
+  {
+   "text": "cape cod",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "planned trip destination"
+  },
+  {
+   "text": "Works as a bus operator on the night shift",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job tied to the complaint"
+  },
+  {
+   "text": "Cape Cod",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "planned trip destination"
+  }
+ ],
+ "scenario": {
+  "specialty": "obstetrics",
+  "visit": "followup",
+  "length": "long",
+  "focus": [
+   "LOCATION",
+   "OCCUPATION"
+  ]
+ }
+}

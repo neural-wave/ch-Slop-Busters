@@ -1,0 +1,115 @@
+########## ENCOUNTER D2N169
+=== FIELD: dialogue
+[doctor] hi alan , how are you ?
+[patient] hi , good to see you .
+[doctor] good to see you as well . are you ready to get started ?
+[patient] yes i am .
+[doctor] so , alan is a 61-year-old male , here with complaints of shortness of breath .
+[doctor] so alan , what's going on ?
+[patient] so over the weekend , uh , i took a very long bike ride , about three hours or so and i got back , i was very light headed , i was short of breath and it really surprised me because i pretty much bike ride every morning and it was never an issue before so i'm a little concerned about that .
+[doctor] okay , and have you had any other symptoms ? have you had any fever-
+[patient] n-
+[doctor] . chest pain ?
+[patient] no , but i felt very light headed and , uh , i- it was hard to catch my breath afterwards , so maybe i did have a little chest pain but , uh , it , it eventually went away after about an hour .
+[doctor] okay , um , and anyone else sick in your , in your family ?
+[patient] no .
+[doctor] okay , and any cough ?
+[patient] um , i had a little bit of a cough with my first cold in the last year and a half , but that went away after about a week or so .
+[doctor] okay , all right . um , and any other symptoms ? i know you went through the review of symptoms-
+[patient] mm-hmm .
+[doctor] . with the nurse but any nausea or vomiting or abdominal pain ?
+[patient] n- no .
+[doctor] okay . all right . well , i know that i've treated you for migraines in the past . how are you doing with those ?
+[patient] that's been under control . i've , uh , taken medication , i've , uh , avoided bright lights and it's so far so good .
+[doctor] okay . all right . and i think we had you on imitrex for that . have you-
+[patient] yes , i'm still taking that .
+[doctor] all right . and then your reflux , how are you doing with that ?
+[patient] managing that as well .
+[doctor] okay and everything's working out well with the protonix ?
+[patient] yes .
+[doctor] okay . and then i know you had the cataract surgery about three months ago , your vision is okay ?
+[patient] that was about four and a half months ago and it's been actually great ever since .
+[doctor] okay , great . all right , well , we're gon na go ahead and do a quick physical exam . i wan na see your vital signs first .
+[patient] sure .
+[doctor] hey dragon , show me the vital signs .
+[doctor] okay , so looking here , everything looks quite good . your oxygenation is perfect , which is wonderful . let me just take a listen .
+[doctor] deep breath . another one . good .
+[doctor] so , on your physical exam , your neck is nice and supple . i do n't appreciate any jugular venous distension . your heart is in a regular rhythm , i do n't hear any murmur . your lungs do have a slight wheeze , expiratory wheeze , bilaterally . i can hear it every time you breathe and i see trace lower extremity edema in your lower extremities .
+[doctor] so what does all that mean ? you know , you , uh , i'm not quite sure yet but we're gon na review some of your results . hey dragon , show me the chest x-ray .
+[doctor] so looking here , this is a very normal chest x-ray . um , i do n't see any pulmonary edema , there's no pneumonia , so we're viewing your chest x-ray as , it's a norm- it's normal .
+[patient] good .
+[doctor] so , let's look at your pulmonary function test .
+[doctor] hey dragon , show me your , the pfts . and looking here again , these look quite good , i'm , i'm quite encouraged by that . that's , that's normal pulmonary function tests . hey dragon , show me the labs . and all of your labs here look quite good here as well so , i- i- i'm very pleased . so , right now my impression of you is that you may have had an asthma exacerbation from exercising and with the allergies , so at this point in time i'd like to go ahead and prescribe you some albuterol inhaler .
+[patient] mm-hmm .
+[doctor] two puffs every four hours as needed for wheezing or for shortness of breath . and , i'd like to go ahead and order a pulmonary referral for you , okay . do you have any questions about that ?
+[patient] no questions , thanks .
+[doctor] hey dragon , order a pulmonary referral . hey dragon , order albuterol inhaler , two puffs every four hours , as needed for shortness of breath .
+[doctor] and then i think from your reflux standpoint , everything seems stable and your migraines , i think that we should just continue on with the imitrex , as needed . does that sound good to you ?
+[patient] that sounds fine .
+[doctor] i wan na see you in a couple weeks and if you have this shortness of breath again , i want you to call me right away , okay ?
+[patient] you got it .
+[doctor] all right . good to see you .
+[patient] same here .
+[doctor] hey dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Shortness of breath.
+
+HISTORY OF PRESENT ILLNESS
+
+Alan Butler is a 61-year-old male presenting with complaints of shortness of breath.
+
+The patient states that over the weekend, he took a very long bike ride for approximately 3 hours, and when he returned, he was very lightheaded and short of breath. He notes that it was difficult to catch his breath afterward. He endorses that he had mild chest pain at that time, however, it eventually went away after about an hour. He denies any fever at this time or any other symptoms at this time. No other members in his family have been sick.
+
+The patient is currently taking Imitrex as needed for his migraines. His migraines are under control and he avoids exposure to bright lights.
+
+The patient is currently taking Protonix for his reflux and he is doing well with this.
+
+The patient had cataract surgery about 4.5 months ago. He notes that his vision is okay since then.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: No fevers.
+• Cardiovascular: Endorses chest pain and dyspnea on exertion.
+• Respiratory: Endorses a cough. Endorses shortness of breath.
+• Gastrointestinal: Endorses reflux.
+• Neurological: Endorses migraines. Endorses lightheadedness.
+
+PHYSICAL EXAMINATION
+
+• Neck: Supple.  No jugular venous distension.
+• Respiratory: Slight expiratory wheezing bilaterally.
+• Cardiovascular: Regular rate and rhythm. No murmurs.
+• Musculoskeletal: Trace edema in the bilateral lower extremities.
+
+RESULTS
+
+Pulmonary function test are within normal limits.
+
+X-ray of the chest is unremarkable.
+
+CBC: Within normal limits.
+
+ASSESSMENT AND PLAN
+
+The patient is a 61-year-old male who presents for shortness of breath.
+
+Shortness of breath.
+• Medical Reasoning: I reviewed the patient's chest x-ray, pulmonary function test, and labs which were all normal. He does have slight expiratory wheezing bilaterally on exam. I suspect his episode of shortness of breath was due to an exacerbation of asthma.
+• Medical Treatment: I would like to prescribe an albuterol inhaler, 2 puffs every 4 hours as needed for wheezing or shortness of breath.
+• Specialist Referral: I have referred him to pulmonology for an asthma workup.
+
+Acid reflux.
+• Medical Reasoning: This seems stable.
+• Medical Treatment: I recommended the patient continue Protonix.
+
+Migraines.
+• Medical Reasoning: This problem is also stable. Continue on Imitrex as needed.
+• Medical Treatment: I recommended he continue Imitrex as needed for migraines.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+The patient will follow-up in 2 weeks or sooner if his conditions worsen.

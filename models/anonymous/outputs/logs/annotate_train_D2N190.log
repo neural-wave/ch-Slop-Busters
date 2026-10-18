@@ -1,0 +1,16 @@
+I wrote all five annotation files, and the validator reports 0 problems.
+
+- D2N190: 25 PHI
+- D2N191: 11 PHI
+- D2N192: 14 PHI
+- D2N193: 3 PHI
+- D2N194: 8 PHI
+
+Judgement calls:
+- **D2N190:** the [doctor] and [patient] labels in the dialogue are swapped. The patient is Beverly Howard, and I labelled her accordingly.
+- **D2N191:** "jobie", "joe biting" and "pooten" are garbled references to public figures. I labelled them `NAME_OTHER`.
+- **"pandemic":** labelled `TEMPORAL`, as in earlier training files. I used "public health situation" as the replacement so the sentence still reads correctly.
+- **Notes with no PHI:** the D2N193 note has none. The D2N192 note has no name or age, only the Europe trip, last summer and the travel hobby.
+- **Not annotated:** I left out mentions that are clinically relevant or not identifying: the sister, the doctor's wife, seasonal allergies around spring, "playoffs", "high school" sports, and "working around the house".
+
+--- stderr ---

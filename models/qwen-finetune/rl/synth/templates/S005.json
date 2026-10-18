@@ -1,0 +1,802 @@
+{
+ "id": "S005",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S83.511A",
+   "description": "Sprain of anterior cruciate ligament of right knee, initial encounter"
+  },
+  {
+   "code": "V00.321A",
+   "description": "Fall from snow-skis, initial encounter"
+  },
+  {
+   "code": "Y92.838",
+   "description": "Other recreation area as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.23",
+   "description": "Activity, snow (alpine) (downhill) skiing, snowboarding, sledding, tobogganing and snow tubing"
+  },
+  {
+   "code": "Y99.8",
+   "description": "Other external cause status"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} , i'm doctor {DOCTOR_LAST} , one of the orthopedic doctors here . how are you doing ?\n[patient] hi . honestly not great , my knee is pretty messed up .\n[doctor] i'm sorry . i read the note from urgent care , but i'd like to hear it from you . what happened ?\n[patient] so i was skiing up at {PLACE} on saturday . it was the last run of the day , i was a little tired , and i caught an edge on an icy patch coming down a blue run . my skis went in different directions and i fell , and my right ski did n't release from the binding . so my leg kind of twisted underneath me while i was going down .\n[doctor] okay . so your knee twisted with your foot planted in the ski .\n[patient] yeah , exactly . and i felt a pop in my knee , like a real pop , and it hurt a lot right away .\n[doctor] were you able to ski down ?\n[patient] no , ski patrol brought me down in the toboggan . it was humiliating .\n[doctor] it happens to a lot of people . did the knee swell up ?\n[patient] within like an hour it was huge . ski patrol gave me ice and a knee immobilizer and i went to the urgent care in town .\n[doctor] okay . and they got x-rays there , i see . since then , how's it been ?\n[patient] it's still swollen , i ca n't straighten it all the way , and it feels like it's going to give out when i try to walk without the crutches .\n[doctor] okay , that feeling of the knee giving way is important . any locking or catching ?\n[patient] not really locking . it just feels unstable .\n[doctor] okay . any numbness in your foot ?\n[patient] no .\n[doctor] what have you been taking for pain ?\n[patient] naproxen , the over the counter one , two in the morning and two at night .\n[doctor] alright . any other medical problems ?\n[patient] no , i'm pretty healthy . i do n't take anything regularly except birth control pills .\n[doctor] okay . have you ever hurt this knee before ?\n[patient] never .\n[doctor] and what do you do for work ?\n[patient] i'm a software engineer , so i sit at a desk . i'm from {CITY} , so we drove out for a long weekend with my book club . it's an annual thing .\n[doctor] that sounds fun , minus the knee . okay , let me examine you . go ahead and lie back . i'm looking at your right knee , there's a moderate effusion , there's a lot of fluid in the knee . you're lacking about ten degrees of full extension and you can bend it to about ninety degrees . does it hurt when i push here along the joint line on the inside ?\n[patient] a little .\n[doctor] and the outside ?\n[patient] yeah , that's more sore .\n[doctor] okay , lateral joint line tenderness . now i'm going to do a test where i pull your shin forward , just relax for me . okay , that's a lachman test , and compared to your left knee , there's increased translation on the right and i do n't feel a firm endpoint . the left side is normal .\n[patient] what does that mean ?\n[doctor] i'll explain in a second . now let me check your collateral ligaments , i'm going to stress the knee from the side . no real opening on the inside or outside . your kneecap is stable . and your pulses are good , sensation is normal in your foot .\n[patient] okay .\n[doctor] so the x-rays from urgent care show no fracture . there's a little effusion , and there's no avulsion fragment . so x-ray-wise the bones look good .\n[patient] okay .\n[doctor] so based on how you got hurt , the pop , the fast swelling , and the lachman test , i'm very suspicious that you tore your anterior cruciate ligament , your acl . i'd like to get an mri of the right knee to confirm that and to look at your meniscus , because of that tenderness on the outside .\n[patient] is that going to need surgery ?\n[doctor] a lot of people who are active and want to get back to cutting and pivoting sports like skiing do choose acl reconstruction . but we do n't have to decide that today . first , we'll get the mri . meanwhile , i want you to start prehab with physical therapy , to get the swelling down and get your knee straight again . that makes recovery from surgery a lot better if you go that route .\n[patient] okay .\n[doctor] you can keep using the crutches and weight bear as tolerated , and you can take off the immobilizer when you're sitting and doing your exercises . i'll put you in a hinged knee brace for walking . keep taking the naproxen with food , five hundred milligrams twice a day , and ice it a few times a day .\n[patient] okay .\n[doctor] i'll see you back after the mri , and we'll go over the results and talk about the options .\n[patient] thank you . and so no more skiing this season , huh ?\n[doctor] i'm afraid not this season .",
+ "note": "CHIEF COMPLAINT\n\nRight knee injury.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents for orthopedic evaluation of a right knee injury sustained while downhill skiing at a ski resort on Saturday. She caught an edge on an icy patch and fell from her skis, and her right ski did not release from the binding, resulting in a twisting injury to the right knee. She felt a pop with immediate pain. She was unable to ski down and was transported by ski patrol. She developed significant swelling within an hour. She was seen at an urgent care where x-rays were obtained and she was placed in a knee immobilizer.\n\nShe currently reports persistent swelling, inability to fully straighten the knee, and a sensation of instability. She denies locking. She denies numbness. She is taking over-the-counter naproxen twice daily. She has no prior injuries to this knee.\n\nPAST MEDICAL HISTORY\n\nNone.\n\nMEDICATIONS\n\nOral contraceptive pills.\n\nSOCIAL HISTORY\n\nWorks as a software engineer.\n\nPHYSICAL EXAM\n\nRight Knee: Moderate effusion. Range of motion lacking 10 degrees of extension, flexion to 90 degrees. Mild medial joint line tenderness. Lateral joint line tenderness. Positive Lachman test with increased anterior translation and soft endpoint compared to the left. Stable to varus and valgus stress. Patella stable. Distal pulses intact. Sensation intact.\nLeft Knee: Normal.\n\nRESULTS\n\nX-rays of the right knee from urgent care were reviewed. No fracture. Small joint effusion. No avulsion fragment.\n\nASSESSMENT AND PLAN\n\n1. Right knee anterior cruciate ligament sprain, suspected complete tear.\n- MRI of the right knee to confirm ACL tear and evaluate the lateral meniscus.\n- Prehabilitation with physical therapy for effusion control and restoration of extension.\n- Hinged knee brace for ambulation, weight bearing as tolerated with crutches.\n- Naproxen 500 mg twice daily with food. Ice.\n- Discussed ACL reconstruction as an option; will decide after MRI.\n- Follow up after MRI.\n",
+ "medical_concepts": [
+  {
+   "text": "knee",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "skiing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "caught an edge",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "icy patch",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "blue run",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my skis went in different directions and i fell",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "right ski did n't release from the binding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "leg kind of twisted",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "felt a pop in my knee",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ski patrol",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "toboggan",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "swell up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ice it a few times a day",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "knee immobilizer",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "x-rays",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "still swollen",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ca n't straighten it all the way",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "going to give out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "crutches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "giving way",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "locking or catching",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "unstable",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness in your foot",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "naproxen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "birth control pills",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "right knee",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "moderate effusion",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lacking about ten degrees of full extension",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bend it to about ninety degrees",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "joint line",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "lateral joint line tenderness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lachman test",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "increased translation",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "firm endpoint",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "collateral ligaments",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "kneecap is stable",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulses are good",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no fracture",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "little effusion",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no avulsion fragment",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the pop",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fast swelling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tore your anterior cruciate ligament",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "acl",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "mri of the right knee",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "meniscus",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "acl reconstruction",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "mri",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "weight bear as tolerated",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "immobilizer",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "hinged knee brace",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "naproxen with food , five hundred milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right knee injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "right knee injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "downhill skiing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ski resort",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "caught an edge on an icy patch",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell from her skis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "right ski did not release from the binding",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "twisting injury to the right knee",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "felt a pop",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "immediate pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ski patrol",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "significant swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "x-rays",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "knee immobilizer",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "persistent swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "inability to fully straighten the knee",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sensation of instability",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "locking",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "naproxen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Oral contraceptive pills",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right Knee",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Moderate effusion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Range of motion lacking 10 degrees of extension",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "flexion to 90 degrees",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild medial joint line tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lateral joint line tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Positive Lachman test",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "increased anterior translation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "soft endpoint",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Stable to varus and valgus stress",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Patella stable",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Distal pulses intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-rays of the right knee",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "No fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Small joint effusion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No avulsion fragment",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right knee anterior cruciate ligament sprain, suspected complete tear",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "MRI of the right knee",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "ACL tear",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "lateral meniscus",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "Prehabilitation with physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hinged knee brace",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "weight bearing as tolerated",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "crutches",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Naproxen 500 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ice",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ACL reconstruction",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "lachman test",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponymous knee exam maneuver, not a person"
+  },
+  {
+   "text": "Positive Lachman test",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponymous knee exam maneuver, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S83.511A",
+   "spans": [
+    {
+     "text": "tore your anterior cruciate ligament",
+     "field": "dialogue"
+    },
+    {
+     "text": "lachman test",
+     "field": "dialogue"
+    },
+    {
+     "text": "increased translation",
+     "field": "dialogue"
+    },
+    {
+     "text": "felt a pop in my knee",
+     "field": "dialogue"
+    },
+    {
+     "text": "right knee",
+     "field": "dialogue"
+    },
+    {
+     "text": "mri of the right knee",
+     "field": "dialogue"
+    },
+    {
+     "text": "Right knee anterior cruciate ligament sprain, suspected complete tear",
+     "field": "note"
+    },
+    {
+     "text": "Positive Lachman test",
+     "field": "note"
+    },
+    {
+     "text": "ACL tear",
+     "field": "note"
+    },
+    {
+     "text": "twisting injury to the right knee",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V00.321A",
+   "spans": [
+    {
+     "text": "my skis went in different directions and i fell",
+     "field": "dialogue"
+    },
+    {
+     "text": "caught an edge",
+     "field": "dialogue"
+    },
+    {
+     "text": "right ski did n't release from the binding",
+     "field": "dialogue"
+    },
+    {
+     "text": "fell from her skis",
+     "field": "note"
+    },
+    {
+     "text": "caught an edge on an icy patch",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.838",
+   "spans": [
+    {
+     "text": "blue run",
+     "field": "dialogue"
+    },
+    {
+     "text": "ski patrol",
+     "field": "dialogue"
+    },
+    {
+     "text": "ski resort",
+     "field": "note"
+    },
+    {
+     "text": "ski patrol",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.23",
+   "spans": [
+    {
+     "text": "skiing",
+     "field": "dialogue"
+    },
+    {
+     "text": "downhill skiing",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.8",
+   "spans": [
+    {
+     "text": "skiing",
+     "field": "dialogue"
+    },
+    {
+     "text": "downhill skiing",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "software engineer",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "software engineer",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "drove out for a long weekend with my book club . it's an annual thing",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive social routine"
+  }
+ ]
+}

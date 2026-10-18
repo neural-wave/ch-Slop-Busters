@@ -1,0 +1,403 @@
+{
+  "encounter_id": "D2N054",
+  "pii": [
+    {
+      "text": "elijah",
+      "field": "dialogue",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient first name"
+    },
+    {
+      "text": "landscapes warehouse",
+      "field": "dialogue",
+      "category": "ORGANIZATION",
+      "tier": "quasi",
+      "comment": "named local store, locates town"
+    },
+    {
+      "text": "Elijah Reyes",
+      "field": "note",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient full name"
+    },
+    {
+      "text": "45-year-old",
+      "field": "note",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "patient age"
+    }
+  ],
+  "medical_concepts": [
+    {
+      "text": "lisfranc fracture",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "second metatarsal bone",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "right foot pain",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "dropped a landscape brick on your foot",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "dorsal displacement of the base of the second metatarsal",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "three millimeter separation of the first and second metatarsal bases",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "bony fragments",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "bruising on the bottom part of your foot",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "swelling",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "tenderness to palpation for midfoot",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "capillary refill is brisk in less than three seconds",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "strong bounding dorsalis pedis pulse",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "motor and sensation is intact",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "a little sore",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "swollen",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "eleven out of ten",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "the whole foot is numb",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "numbness or tingling",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "broke my ankle",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "right foot",
+      "field": "dialogue",
+      "type": "anatomy",
+      "icd_relevant": true
+    },
+    {
+      "text": "ligaments",
+      "field": "dialogue",
+      "type": "anatomy",
+      "icd_relevant": false
+    },
+    {
+      "text": "x-ray of that right foot",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "mri",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "cast",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "plates and screws",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "outpatient surgery",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "crutches",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "tylenol",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "ibuprofen",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "flat-footed",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "arthritis",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "Right foot pain",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "right foot pain",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Lisfranc fracture",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "right ankle fracture",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "pes planus",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "arthritis",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "dropped a landscape brick on his right foot",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "dorsal displacement of the base of the 2nd metatarsal",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "3 mm separation of the 1st and 2nd metatarsal bases",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "bony fragments",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "Bruising on the plantar and dorsal aspects of the foot",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "Tenderness to palpation over the midfoot",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "Capillary refill is brisk in less than 3 seconds",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "Strong bounding dorsalis pedis pulse",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "11 out of 10",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "numbness in his entire right foot",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "soreness and swelling in his right ankle",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "giving way of the left ankle",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "x-ray of the right foot",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "MRI of the right foot",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "right foot ORIF",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "casting",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "left ankle surgery",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "non-weight-bearing",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "crutches",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "landscape brick",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "landscape brick",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "yard work",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    }
+  ],
+  "ambiguous_terms": [
+    {
+      "text": "lisfranc fracture",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "eponymous fracture, not a person"
+    },
+    {
+      "text": "Lisfranc fracture",
+      "field": "note",
+      "is_pii": false,
+      "comment": "eponymous fracture, not a person"
+    }
+  ]
+}

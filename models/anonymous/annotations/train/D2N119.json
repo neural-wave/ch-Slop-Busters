@@ -1,0 +1,11 @@
+{
+  "encounter_id": "D2N119",
+  "phi": [
+    {"text": "betty", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "eight years old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "hiking", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "outdoor exercise"},
+    {"text": "wreck center", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "community facility"},
+    {"text": "hiking", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "outdoor exercise"}
+  ],
+  "medical_concepts": []
+}

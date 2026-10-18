@@ -1,0 +1,530 @@
+{
+ "id": "G0035",
+ "dataset": "synthetic_acute",
+ "sex": "female",
+ "age_range": [
+  60,
+  75
+ ],
+ "icd10_codes": [
+  {
+   "code": "L50.0",
+   "description": "Allergic urticaria"
+  },
+  {
+   "code": "Z91.013",
+   "description": "Allergy to seafood"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i 'm doctor {DOCTOR_LAST} . i see you 're here with your sister . what happened ?\n[patient] hi , doctor {DOCTOR_LAST} . i broke out in hives all over my arms and my chest last night . i 'm still itchy .\n[patient] hi , i 'm {OTHER_FIRST} , her sister . i came with her because she took a benadryl and it did n't help much .\n[doctor] hi , {OTHER_FIRST} . thanks for coming . {PATIENT_FIRST} , tell me what you ate or did yesterday .\n[patient] we went to the new seafood place by the harbor for lunch . i had the fish stew with the mussels and some bread . i do n't usually eat mussels .\n[doctor] and how long after lunch did the itching start ?\n[patient] maybe thirty minutes later . first my hands got red , then the hives came up on my arms , and then my neck felt tight .\n[doctor] tight in the throat , or just the neck ?\n[patient] kind of in my throat , like something was sitting there . i could still breathe though . my sister made me sit down and i took the pills .\n[doctor] okay . have you ever had a reaction to shellfish before ?\n[patient] no , never . i 've eaten shrimp my whole life . i did n't think mussels were any different .\n[doctor] and any other food reactions , or medicines ?\n[patient] no . i take my blood pressure pill , the losartan , every morning . that 's all .\n[doctor] okay . let me check you . i see raised red welts on both forearms and a few on the chest . your lips look fine and your tongue is not swollen . do you have any wheezing ?\n[patient] no , i can take a deep breath .\n[doctor] good . your lungs are clear . your pulse is eighty four and your pressure is one twenty eight over seventy .\n[patient] okay .\n[doctor] so this sounds like an allergic reaction to the mussels or the stew . i 'd like to draw a blood test today for the tryptase and the specific shellfish antibodies .\n[patient] okay . will this happen again ?\n[doctor] possibly . the most important thing is avoiding the trigger . seafood is a common cause of allergy in adults , so i 'd like you to avoid shellfish until we 've tested .\n[patient] okay . i 'm sixty eight . my doctor told me the other day that screening starts at 45 for some blood tests , so i guess i 'm past that .\n[doctor] yes , that 's right for some things . let 's focus on the hives today .\n[patient] and my neighbor said the washington guidelines say something about shots . should i get allergy shots ?\n[doctor] the allergy shots are not for food allergy . we 'll talk about them later if needed .\n[patient] okay . i keep bees in the backyard , about six hives of them . i 'm worried one of them got me .\n[doctor] okay , that 's a wonderful hobby . did you get stung this week ?\n[patient] yes , one on the wrist last tuesday . it swelled a little but that 's normal for me .\n[doctor] good to know . now the medicine . continue the benadryl , one tablet every six hours as needed for itching , and i 'll prescribe a prednisone course for three days to calm the hives .\n[patient] will i need a shot ?\n[doctor] no shot right now . if you get trouble breathing , swelling of the lips or tongue , or you feel faint , use the epinephrine pen and call emergency . do you have an epi pen at home ?\n[patient] no , i do n't . my sister said i should get one .\n[doctor] i agree . i 'll write the prescription today .\n[patient] my sister went to the pharmacy on the corner last week for her own thing . i 'll have her pick it up .\n[doctor] perfect . come back in one week and we 'll review the blood test results . and let 's do a skin test for the shellfish once the hives are gone .\n[patient] okay . thank you , doctor {DOCTOR_LAST} .\n[doctor] {OTHER_FIRST} , please make sure she takes the medicine on schedule and keeps the epi pen in her purse .\n[patient] i will , i 'll keep it in my purse .",
+ "note": "CHIEF COMPLAINT\n\nAcute urticaria with mild throat tightness after eating seafood.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents with her sister, {OTHER_FIRST}, for evaluation of acute hives. Yesterday at lunch she ate a fish stew containing mussels. About thirty minutes later her hands became erythematous, followed by urticarial plaques on the forearms and chest, with a sensation of throat tightness. She denies wheezing or dyspnea. Her sister gave her an oral antihistamine, with partial improvement. She has eaten shrimp throughout her life and has never had a reaction to shellfish before. She takes losartan daily and denies new foods or medications.\n\nPAST MEDICAL HISTORY\n\nHypertension.\n\nSOCIAL HISTORY\n\nRetired. She keeps honeybees in her backyard, maintaining six hives. She was stung on the wrist last week with mild local swelling that resolved.\n\nALLERGIES\n\nShellfish (suspected, mussels). No known drug allergies.\n\nPHYSICAL EXAM\n\nBlood pressure 128/70, pulse 84. Raised erythematous wheals on both forearms and chest. Lips and tongue without swelling. Lungs clear to auscultation with no wheezing. Respiratory effort normal.\n\nRESULTS\n\nSerum tryptase and shellfish-specific IgE ordered.\n\nASSESSMENT AND PLAN\n\n1. Acute urticaria, likely IgE-mediated reaction to shellfish. Prednisone for three days. Diphenhydramine as needed for pruritus.\n\n2. Seafood allergy, suspected. Avoid shellfish. Prescription for an epinephrine auto-injector provided; sister to be trained on its use.\n\n3. Hypertension, continue losartan.\n\n4. Skin testing for shellfish once the urticaria resolves.\n\nReturn precautions reviewed, including throat swelling, trouble breathing, lip or tongue swelling, and syncope.",
+ "medical_concepts": [
+  {
+   "text": "hives",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "still itchy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "benadryl",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "mussels",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my hands got red",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the hives came up on my arms",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my neck felt tight",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "like something was sitting there",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "could still breathe",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shellfish",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "shrimp",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "losartan",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "raised red welts",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lips look fine",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tongue is not swollen",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "wheezing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse is eighty four",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "one twenty eight over seventy",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "allergic reaction",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "tryptase",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "specific shellfish antibodies",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "seafood is a common cause of allergy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "trouble breathing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "swelling of the lips or tongue",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "feel faint",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the epinephrine pen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "epi pen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "prednisone course",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "stung",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "it swelled a little",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a skin test",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Acute urticaria",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild throat tightness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "seafood",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "acute hives",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fish stew containing mussels",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hands became erythematous",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "urticarial plaques",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a sensation of throat tightness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dyspnea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "wheezing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "oral antihistamine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "partial improvement",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "losartan",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "stung on the wrist",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild local swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Shellfish",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Blood pressure 128/70",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse 84",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Raised erythematous wheals",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lips and tongue without swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lungs clear to auscultation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no wheezing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Respiratory effort normal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Serum tryptase",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "shellfish-specific IgE",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "IgE-mediated reaction",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Prednisone",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Diphenhydramine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Seafood allergy",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "epinephrine auto-injector",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Skin testing",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "urticaria resolves",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "throat swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "trouble breathing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lip or tongue swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "syncope",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "hives",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "symptom word; also a beekeeping term in the same visit"
+  },
+  {
+   "text": "washington",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "guideline or place word, not a person"
+  },
+  {
+   "text": "benadryl",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of diphenhydramine"
+  },
+  {
+   "text": "epi pen",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of epinephrine auto-injector"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "L50.0",
+   "spans": [
+    {
+     "text": "hives",
+     "field": "dialogue"
+    },
+    {
+     "text": "raised red welts",
+     "field": "dialogue"
+    },
+    {
+     "text": "Acute urticaria",
+     "field": "note"
+    },
+    {
+     "text": "urticarial plaques",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z91.013",
+   "spans": [
+    {
+     "text": "shellfish",
+     "field": "dialogue"
+    },
+    {
+     "text": "mussels",
+     "field": "dialogue"
+    },
+    {
+     "text": "seafood",
+     "field": "note"
+    },
+    {
+     "text": "Seafood allergy",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i keep bees in the backyard , about six hives of them",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "rare hobby with specifics"
+  },
+  {
+   "text": "i 'm sixty eight",
+   "field": "dialogue",
+   "category": "AGE",
+   "comment": "literal age stated by patient"
+  },
+  {
+   "text": "keeps honeybees in her backyard, maintaining six hives",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "rare hobby with specifics"
+  }
+ ],
+ "scenario": {
+  "specialty": "allergy and immunology",
+  "visit": "acute",
+  "length": "medium",
+  "focus": [
+   "OTHER_QUASI",
+   "OTHER_PERSON_NAME"
+  ]
+ }
+}

@@ -1,0 +1,519 @@
+{
+ "id": "G0018",
+ "dataset": "synthetic_postop",
+ "sex": "female",
+ "age_range": [
+  45,
+  60
+ ],
+ "icd10_codes": [
+  {
+   "code": "M20.11",
+   "description": "Hallux valgus (acquired), right foot"
+  },
+  {
+   "code": "E11.9",
+   "description": "Type 2 diabetes mellitus without complications"
+  },
+  {
+   "code": "Z47.89",
+   "description": "Encounter for other orthopedic aftercare"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . it's been three weeks since your bunion surgery . how's the foot doing ?\n[patient] hi , doctor {DOCTOR_LAST} . much better than i expected , honestly . the throbbing has calmed down a lot .\n[doctor] good . let me see the dressing in a moment . tell me how you've been managing the pain .\n[patient] i take the tylenol in the morning and at night , and i ice it when i can . i'm a seven out of ten in the morning and maybe a three by evening .\n[doctor] okay . are you still using the walking boot ?\n[patient] yes , i wear the boot whenever i'm up . i've been sneaking off it to get my mail , i admit that .\n[doctor] i'd like you to keep it on for two more weeks . what's your daily activity like ?\n[patient] i work part time as a hairdresser , so i'm on my feet a lot . i sit on a stool when i can , and my assistant has been covering the heavy stuff .\n[doctor] good . and how is your diabetes doing ? i know your sugars have been higher since the surgery .\n[patient] they've been a little high , around one eighty fasting . i'm eating a bit more carbs than i should because i'm not walking as much .\n[doctor] that's understandable . keep an eye on your numbers and let me know if they stay high . are you still on metformin ?\n[patient] yes , metformin twice a day . i also have a glucose meter , my brother bought it for me when i was diagnosed in {YEAR} .\n[doctor] okay . let's look at the foot now . the nurse is going to take the dressing down .\n[patient] okay . the nurse is very gentle , thank you .\n[doctor] the incision looks good . there's no redness spreading , no drainage , and the sutures are intact . the swelling is going down .\n[patient] it's still puffy at the end of the day .\n[doctor] that's normal . let me check the circulation . your pulses are palpable and the toes are warm . can you wiggle your toes ?\n[patient] yes , i can move them . the big toe is a bit stiff .\n[doctor] okay . there's mild tenderness along the incision , which is expected . no signs of infection .\n[patient] good . when can i go back to the gym ?\n[doctor] not for another six weeks . the treadmill is out until the bone heals . the calf stretches are great though , keep doing them .\n[patient] okay . i've been doing the calf stretch every morning , and my achilles tendon still feels tight .\n[doctor] that's normal after time in the boot . keep doing it twice a day .\n[patient] okay .\n[doctor] let's review the x-ray from {DATE_NUM} . the bone is lined up nicely , and the screws are holding well . i'm happy with the alignment .\n[patient] good . the surgery was on {DATE_SPOKEN} , right ? i still can't believe it's been that long .\n[doctor] yes , it was {DATE_SPOKEN} . your bone should be healing well by now .\n[patient] okay . i was worried about the x-ray .\n[doctor] the x-ray looks good . let's plan the next visit . i'd like to see you again in two weeks , and we'll remove the sutures then .\n[patient] wait , the sutures are still in ?\n[doctor] yes . the inside stitches dissolve on their own , but the outside ones come out at the two week visit . the nurse will show you how to care for the dressing at home .\n[patient] okay . i pick up my prescriptions at {ORG} on tarrant street , by the way . can they refill the cephalexin when the course runs out ?\n[doctor] yes , just call them . the course is seven days , and you should finish it .\n[patient] i'll finish it . i'm very good at finishing things .\n[doctor] good . any numbness in your toes , or any trouble with your balance ?\n[patient] no numbness , i'm just a little clumsy with the boot .\n[doctor] okay . the boot is for protection , so take it slow . make sure you're not standing for hours at a time .\n[patient] i'll try . thank you , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nPostoperative follow-up three weeks after right first metatarsal osteotomy for hallux valgus.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents for postoperative follow-up. Surgery was performed on {DATE_SPOKEN}. Pain has improved, rated 7/10 in the morning and 3/10 by evening. She takes acetaminophen twice daily and applies ice. She has been partially non-adherent to the postoperative walking boot. She reports morning stiffness of the great toe. She denies fever, calf pain, or new numbness.\n\nShe works part time as a hairdresser and spends much of the day on her feet.\n\nPAST MEDICAL HISTORY\n\nType 2 diabetes mellitus diagnosed in {YEAR}, managed with metformin. Fasting glucose reported around 180 mg/dL since surgery.\n\nMEDICATIONS\n\nMetformin twice daily. Acetaminophen as needed. Cephalexin 500 mg, seven-day course, started at surgery.\n\nSOCIAL HISTORY\n\nPicks up prescriptions at {ORG} on Tarrant Street.\n\nPHYSICAL EXAM\n\nIncision healing with no erythema beyond the margins and no drainage. Sutures intact. Mild swelling. DP and PT pulses palpable bilaterally. Capillary refill brisk. Hallux with mild stiffness at the MTP joint. Mild tenderness along incision.\n\nRESULTS\n\nRadiographs of the right foot taken on {DATE_NUM} show the first metatarsal osteotomy in good alignment, with screw fixation intact and early callus formation.\n\nASSESSMENT AND PLAN\n\n1. Hallux valgus, right foot, status post osteotomy. Clinically healing well.\n2. Type 2 diabetes mellitus with hyperglycemia since surgery. Continue metformin; primary care notified of glucose trend.\n3. Postoperative aftercare. Sutures to be removed at two-week follow-up. Continue walking boot for two more weeks. Calf stretching twice daily for Achilles tendon tightness. No gym or treadmill for six weeks.\n\nReturn sooner for fever, increasing redness, or drainage.",
+ "medical_concepts": [
+  {
+   "text": "bunion surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "throbbing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice it",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "walking boot",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "on my feet a lot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sugars have been higher",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "around one eighty fasting",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "diabetes",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "glucose meter",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "incision looks good",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no redness spreading",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "drainage",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the swelling is going down",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "still puffy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulses are palpable",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "toes are warm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "big toe is a bit stiff",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild tenderness along the incision",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "signs of infection",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "calf stretches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "achilles tendon",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "the x-ray",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "screws are holding well",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "alignment",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bone should be healing well",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "sutures are intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no numbness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "clumsy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "cephalexin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "hallux valgus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "right first metatarsal osteotomy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "rated 7/10",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "3/10",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "postoperative walking boot",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "morning stiffness of the great toe",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "calf pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "new numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Type 2 diabetes mellitus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Fasting glucose reported around 180 mg/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Metformin twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Cephalexin 500 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Incision healing with no erythema beyond the margins",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no drainage",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sutures intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "DP and PT pulses palpable bilaterally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Capillary refill brisk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild stiffness at the MTP joint",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild tenderness along incision",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Radiographs of the right foot",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "in good alignment",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "screw fixation intact",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "early callus formation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hyperglycemia",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Calf stretching twice daily",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Achilles tendon tightness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sutures to be removed",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "increasing redness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "achilles tendon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "anatomical structure named after a person, not PII"
+  },
+  {
+   "text": "Achilles tendon",
+   "field": "note",
+   "is_pii": false,
+   "comment": "anatomical structure named after a person, not PII"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "M20.11",
+   "spans": [
+    {
+     "text": "bunion surgery",
+     "field": "dialogue"
+    },
+    {
+     "text": "walking boot",
+     "field": "dialogue"
+    },
+    {
+     "text": "hallux valgus",
+     "field": "note"
+    },
+    {
+     "text": "right first metatarsal osteotomy",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E11.9",
+   "spans": [
+    {
+     "text": "metformin",
+     "field": "dialogue"
+    },
+    {
+     "text": "diabetes",
+     "field": "dialogue"
+    },
+    {
+     "text": "Type 2 diabetes mellitus",
+     "field": "note"
+    },
+    {
+     "text": "Metformin twice daily",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z47.89",
+   "spans": [
+    {
+     "text": "screws are holding well",
+     "field": "dialogue"
+    },
+    {
+     "text": "the x-ray",
+     "field": "dialogue"
+    },
+    {
+     "text": "screw fixation intact",
+     "field": "note"
+    },
+    {
+     "text": "Sutures to be removed",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i work part time as a hairdresser",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "on tarrant street",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "street of the pharmacy"
+  },
+  {
+   "text": "works part time as a hairdresser",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "Tarrant Street",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "street of the pharmacy"
+  }
+ ],
+ "scenario": {
+  "specialty": "podiatry",
+  "visit": "postop",
+  "length": "medium",
+  "focus": [
+   "ORGANIZATION",
+   "DATE"
+  ]
+ }
+}

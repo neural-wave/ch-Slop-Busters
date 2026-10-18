@@ -1,0 +1,457 @@
+{
+  "encounter_id": "HO010",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "doctor hill",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "dr . hill",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "teddy",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "april",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "kenji",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "four-year",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "theodora",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "vance-nakamura",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "vance",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "march 9th , 2022",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "614-555-0187",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "little acorns montessori",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "little acorns",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "priya",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "bodhi",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "he's seven",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "indian run elementary",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "nakamura",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "o'callaghan",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "smile sprouts",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "OLENTANGY VALLEY PEDIATRICS",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "2280 Sawmill Parkway",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Suite 140",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Columbus",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "OH 43235",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "(614) 555-0142",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "(614) 555-0143",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "4 YEAR",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "VANCE-NAKAMURA",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Theodora",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Teddy",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "03/09/2022",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "OVP-0048213",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Buckeye Kids Health Plan",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "BKH774019226",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "03/12/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Marcus",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "T. Hill",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "M. T. Hill",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "1639204857",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "April",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Vance",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "614-555-0187",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "april.vance@example.net",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Kenji",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Nakamura",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "4-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Little Acorns Montessori",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Little Acorns",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "7-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Bodhi",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Indian Run Elementary",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "4417 Larkspur Lane",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Worthington",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "OH 43085",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "firefighter",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Columbus Division of Fire",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "payroll analyst",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Siobhán",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "O'Callaghan",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Smile Sprouts Pediatric Dentistry",
+      "category": "LOCATION",
+      "risk": "medium"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "5-2-1-0",
+      "category": "CLINICAL_NUMBER",
+      "why": "obesity-prevention counselling mnemonic, not an ID"
+    },
+    {
+      "field": "dialogue",
+      "text": "98 over 58",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure"
+    },
+    {
+      "field": "dialogue",
+      "text": "20/40",
+      "category": "CLINICAL_NUMBER",
+      "why": "visual acuity, not a date"
+    },
+    {
+      "field": "dialogue",
+      "text": "2/6",
+      "category": "CLINICAL_NUMBER",
+      "why": "murmur grade"
+    },
+    {
+      "field": "dialogue",
+      "text": "still's murmur",
+      "category": "EPONYM",
+      "why": "innocent murmur named after Still"
+    },
+    {
+      "field": "dialogue",
+      "text": "92nd percentile",
+      "category": "CLINICAL_NUMBER",
+      "why": "BMI percentile supports Z68.53"
+    },
+    {
+      "field": "note",
+      "text": "98/58",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure, not a date"
+    },
+    {
+      "field": "note",
+      "text": "20/40",
+      "category": "CLINICAL_NUMBER",
+      "why": "visual acuity, not a date"
+    },
+    {
+      "field": "note",
+      "text": "2/6",
+      "category": "CLINICAL_NUMBER",
+      "why": "murmur grade"
+    },
+    {
+      "field": "note",
+      "text": "Still's murmur",
+      "category": "EPONYM",
+      "why": "innocent murmur eponym"
+    },
+    {
+      "field": "note",
+      "text": "Still's",
+      "category": "EPONYM",
+      "why": "innocent murmur eponym"
+    },
+    {
+      "field": "note",
+      "text": "Tanner 1",
+      "category": "EPONYM",
+      "why": "Tanner pubertal stage, not a person"
+    },
+    {
+      "field": "note",
+      "text": "5-2-1-0",
+      "category": "CLINICAL_NUMBER",
+      "why": "counselling mnemonic, not an ID"
+    },
+    {
+      "field": "note",
+      "text": "92nd percentile",
+      "category": "CLINICAL_NUMBER",
+      "why": "BMI percentile supports Z68.53"
+    }
+  ]
+}

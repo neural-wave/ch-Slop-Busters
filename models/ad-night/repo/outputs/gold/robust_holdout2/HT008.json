@@ -1,0 +1,439 @@
+{
+ "encounter_id": "HT008",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "gus",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "august 4th",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "august fourth",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "dr . smith",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "olentangy ortho",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "9-22",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "september twenty second",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "morse road",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "i'm forty two",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "inventory control associate",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "columbus state",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "tamika",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "614-555-0172",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "october 19th",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Kessler",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "August J.",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Gus",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "1984-02-29",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "00573921",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Central Ohio Occupational Medicine",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "2210 Groveport Rd",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Suite 3B",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Columbus",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "OH 43207",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "(614) 555-0139",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "www.centralohiooccmed.com",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Scioto Valley Fulfillment LLC",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Bldg C",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "5500 Alum Creek Dr",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Obetz",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "SVF-118930",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Inventory Control Associate",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Midstate Mutual Casualty",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "26-WC-0448-17",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Lindqvist",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Karin",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Tamika",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Oyelaran-Brooks",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "tamika.ob@sciotovalleyfulfillment.com",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "614-555-0172",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "614-555-0190",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "08/04/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Oct 16, 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Nadia",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Smith, MD",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Dr. Smith",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Olentangy Orthopedics",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "42-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "August 4",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "9/22/26",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "10/09/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "10/19/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "11/16/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "11/13/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "10/16/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Rafael",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Quiñones",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "dialogue",
+   "text": "fell off the ladder",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism for W11.XXXD"
+  },
+  {
+   "field": "dialogue",
+   "text": "stepladder",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism for W11.XXXD"
+  },
+  {
+   "field": "dialogue",
+   "text": "on the clock",
+   "category": "CODE_EVIDENCE",
+   "why": "activity done for pay, Y99.0"
+  },
+  {
+   "field": "dialogue",
+   "text": "smith's fracture",
+   "category": "EPONYM",
+   "why": "fracture type, not Dr Smith"
+  },
+  {
+   "field": "note",
+   "text": "Smith's fracture",
+   "category": "EPONYM",
+   "why": "fracture type, not Dr Smith"
+  },
+  {
+   "field": "note",
+   "text": "Tinel's sign",
+   "category": "EPONYM",
+   "why": "clinical sign"
+  },
+  {
+   "field": "note",
+   "text": "fall from a stepladder",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism for W11.XXXD"
+  },
+  {
+   "field": "note",
+   "text": "Fall from ladder",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism for W11.XXXD"
+  },
+  {
+   "field": "note",
+   "text": "on the clock",
+   "category": "CODE_EVIDENCE",
+   "why": "activity done for pay, Y99.0"
+  },
+  {
+   "field": "note",
+   "text": "work-related",
+   "category": "CODE_EVIDENCE",
+   "why": "activity done for pay, Y99.0"
+  },
+  {
+   "field": "note",
+   "text": "3/10",
+   "category": "CLINICAL_NUMBER",
+   "why": "pain score, looks like a date"
+  },
+  {
+   "field": "note",
+   "text": "132/84",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure, looks like a date"
+  },
+  {
+   "field": "note",
+   "text": "S52.541D",
+   "category": "CLINICAL_NUMBER",
+   "why": "ICD-10 code, looks like an ID"
+  },
+  {
+   "field": "note",
+   "text": "W11.XXXD",
+   "category": "CLINICAL_NUMBER",
+   "why": "ICD-10 code, looks like an ID"
+  },
+  {
+   "field": "note",
+   "text": "Y99.0",
+   "category": "CLINICAL_NUMBER",
+   "why": "ICD-10 code, looks like an ID"
+  }
+ ]
+}

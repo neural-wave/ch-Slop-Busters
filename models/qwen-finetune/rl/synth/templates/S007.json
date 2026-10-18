@@ -1,0 +1,767 @@
+{
+ "id": "S007",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S53.125A",
+   "description": "Posterior dislocation of left ulnohumeral joint, initial encounter"
+  },
+  {
+   "code": "W09.8XXA",
+   "description": "Fall on or from other playground equipment, initial encounter"
+  },
+  {
+   "code": "Y92.017",
+   "description": "Garden or yard in single-family (private) house as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.44",
+   "description": "Activity, trampolining"
+  },
+  {
+   "code": "E03.9",
+   "description": "Hypothyroidism, unspecified"
+  }
+ ],
+ "dialogue": "[doctor] hi there , {PATIENT_FIRST} ? i'm doctor {DOCTOR_LAST} , i'm one of the emergency physicians . i hear you hurt your elbow .\n[patient] yes . it's really bad . i ca n't move it at all .\n[doctor] okay , we're going to get you feeling better . i see you have your arm on a pillow . tell me what happened .\n[patient] it's so dumb . it was my son's birthday , we had like eight kids over , and they talked me into getting on the trampoline in the backyard with them . and i was jumping , and one of the kids landed right next to me and i got launched sideways , and i fell off the trampoline . i put my left arm out to break my fall and landed on my hand on the grass , and my elbow just went the wrong way .\n[doctor] okay . did you hit your head or anything else ?\n[patient] no , just the arm . i landed on the arm and then rolled onto my side .\n[doctor] and you were awake the whole time ?\n[patient] yes .\n[doctor] okay . is there a net around the trampoline ?\n[patient] there's supposed to be . it ripped last summer and we never replaced it . my husband is going to hear about that .\n[doctor] alright . and when did this happen ?\n[patient] maybe an hour and a half ago . my neighbor drove me here and my son {OTHER_FIRST} is with my husband .\n[doctor] okay . and how's the pain ?\n[patient] it's like a ten . it's the worst pain i've ever had , and i had two kids without an epidural .\n[doctor] okay , that's significant . any numbness or tingling in your hand ?\n[patient] my pinky and ring finger feel a little bit tingly , but i can feel them .\n[doctor] okay . can you wiggle your fingers ?\n[patient] yeah , a little .\n[doctor] good . do you have any medical problems ?\n[patient] just my thyroid . i have hypothyroidism and i take levothyroxine .\n[doctor] what dose are you on ?\n[patient] seventy five micrograms every morning .\n[doctor] okay . and when was your thyroid level last checked ?\n[patient] about two months ago , and my doctor said it was normal .\n[doctor] good . any fatigue , weight changes , feeling cold ?\n[patient] no , i've been feeling fine .\n[doctor] okay . any allergies to medicines ?\n[patient] no .\n[doctor] when did you last eat or drink ?\n[patient] i had a slice of pizza around noon .\n[doctor] okay . what do you do for work ?\n[patient] i own a little hair salon , i'm a hairdresser . so i need both arms .\n[doctor] understood . let me take a look . i'm going to be gentle . okay , looking at the left elbow , it's held in about ninety degrees of flexion , and the olecranon is very prominent in the back . there's a lot of swelling . the skin is intact , no open wounds . i'm not going to try to move it right now . can you give me a thumbs up ? spread your fingers ? okay . i can feel your radial pulse , and your hand is warm and pink . i'm going to touch your pinky , does that feel normal ?\n[patient] it feels a little different than the other side , kind of fuzzy .\n[doctor] okay , mild decreased sensation in the ulnar nerve distribution . let me check your wrist and shoulder . any pain here ?\n[patient] no , the wrist is fine and the shoulder is fine .\n[doctor] okay . so we got x-rays of your left elbow . the x-ray shows a posterior dislocation of the elbow . the ulna has slipped backwards behind the humerus . i do n't see any fractures , no fracture of the radial head or the coronoid , which is good news .\n[patient] so it's not broken ?\n[doctor] it's not broken , it's dislocated . so the plan is to put it back in place , what we call a closed reduction . we'll give you some medication through your iv to sedate you so you're comfortable and wo n't remember much , and then i'll pull it back into place .\n[patient] okay , please .\n[doctor] after the reduction , we'll check the nerves and the blood flow again , and we'll put you in a long arm splint with the elbow bent , and we'll get another x-ray to make sure it's in the right position . i'll also check how stable it is .\n[patient] okay .\n[doctor] you'll follow up with orthopedics in about five to seven days . the goal is to start moving the elbow early , usually within a week or so , because elbows get stiff quickly .\n[patient] okay .\n[doctor] for pain at home , you can alternate ibuprofen six hundred milligrams and acetaminophen . keep it elevated and ice it . if the tingling in your fingers gets worse , or your hand gets cold or pale , come back right away .\n[patient] alright .\n[doctor] and for your thyroid , just keep taking the levothyroxine as usual .\n[patient] okay . and no more trampolines .\n[doctor] maybe leave the trampoline to the kids , and get a new net .",
+ "note": "CHIEF COMPLAINT\n\nLeft elbow injury.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with a history of hypothyroidism who presents to the emergency department on {DATE_NUM} approximately 1.5 hours after a left elbow injury. She was jumping on a trampoline in her backyard when she was propelled sideways and fell off the trampoline, landing on her outstretched left hand on the grass. The trampoline safety net had been torn. She denies head injury or loss of consciousness. She reports 10/10 pain and inability to move the elbow. She endorses mild tingling of the ring and small fingers.\n\nHypothyroidism is treated with levothyroxine 75 mcg daily. TSH was reportedly normal 2 months ago. She denies fatigue, weight changes, or cold intolerance.\n\nALLERGIES\n\nNo known drug allergies.\n\nSOCIAL HISTORY\n\nHairdresser who owns a salon.\n\nPHYSICAL EXAM\n\nLeft Elbow: Held in approximately 90 degrees of flexion with prominent posterior olecranon and marked swelling. Skin intact without open wounds.\nNeurovascular: Radial pulse 2+. Hand warm and well perfused. Mildly decreased sensation in the ulnar nerve distribution. Motor function intact in median, radial, and ulnar distributions.\nLeft Wrist and Shoulder: Nontender.\n\nRESULTS\n\nX-ray of the left elbow: Posterior dislocation of the ulnohumeral joint. No associated fracture of the radial head or coronoid process.\n\nPROCEDURE\n\nClosed reduction of the left elbow under procedural sedation. Post-reduction x-ray to be obtained. Neurovascular checks to be repeated after reduction.\n\nASSESSMENT AND PLAN\n\n1. Simple posterior dislocation of the left elbow.\n- Closed reduction under procedural sedation, followed by post-reduction x-rays and neurovascular exam.\n- Long arm posterior splint at 90 degrees.\n- Orthopedic follow-up in 5 to 7 days for early range of motion.\n- Ibuprofen 600 mg alternating with acetaminophen, elevation, and ice.\n- Return precautions for worsening paresthesias, coolness, or pallor of the hand.\n\n2. Hypothyroidism.\n- Stable. Continue levothyroxine 75 mcg daily.\n",
+ "medical_concepts": [
+  {
+   "text": "hurt your elbow",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ca n't move it at all",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "getting on the trampoline in the backyard",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "jumping",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell off the trampoline",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "put my left arm out to break my fall",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my elbow just went the wrong way",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "net around the trampoline",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ripped",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "worst pain i've ever had",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "epidural",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pinky and ring finger feel a little bit tingly",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "thyroid",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "hypothyroidism",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "levothyroxine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "seventy five micrograms",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "thyroid level",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "fatigue",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "weight changes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "feeling cold",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "allergies",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "left elbow",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "ninety degrees of flexion",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "olecranon is very prominent in the back",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lot of swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "skin is intact , no open wounds",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "radial pulse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hand is warm and pink",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fuzzy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild decreased sensation in the ulnar nerve distribution",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "wrist",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "shoulder",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays of your left elbow",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "posterior dislocation of the elbow",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ulna has slipped backwards behind the humerus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no fracture of the radial head or the coronoid",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dislocated",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "closed reduction",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "sedate",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "long arm splint",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "orthopedics",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "elbows get stiff",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen six hundred milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "elevated",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "cold or pale",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Left elbow injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "hypothyroidism",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "left elbow injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "jumping on a trampoline in her backyard",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell off the trampoline",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landing on her outstretched left hand",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "trampoline safety net had been torn",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "head injury",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "inability to move the elbow",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild tingling of the ring and small fingers",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hypothyroidism",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "levothyroxine 75 mcg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "TSH",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "fatigue",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "weight changes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "cold intolerance",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "No known drug allergies",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Left Elbow",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Held in approximately 90 degrees of flexion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "prominent posterior olecranon",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "marked swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Skin intact without open wounds",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Radial pulse 2+",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hand warm and well perfused",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mildly decreased sensation in the ulnar nerve distribution",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Motor function intact in median, radial, and ulnar distributions",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Left Wrist and Shoulder: Nontender",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-ray of the left elbow",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Posterior dislocation of the ulnohumeral joint",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "No associated fracture of the radial head or coronoid process",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Closed reduction of the left elbow under procedural sedation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Post-reduction x-ray",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Neurovascular checks",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Simple posterior dislocation of the left elbow",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Closed reduction under procedural sedation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "post-reduction x-rays",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "neurovascular exam",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Long arm posterior splint",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Orthopedic follow-up",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "early range of motion",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen 600 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "elevation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "worsening paresthesias, coolness, or pallor of the hand",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Continue levothyroxine 75 mcg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [],
+ "evidence": [
+  {
+   "code": "S53.125A",
+   "spans": [
+    {
+     "text": "posterior dislocation of the elbow",
+     "field": "dialogue"
+    },
+    {
+     "text": "ulna has slipped backwards behind the humerus",
+     "field": "dialogue"
+    },
+    {
+     "text": "left elbow",
+     "field": "dialogue"
+    },
+    {
+     "text": "dislocated",
+     "field": "dialogue"
+    },
+    {
+     "text": "closed reduction",
+     "field": "dialogue"
+    },
+    {
+     "text": "Simple posterior dislocation of the left elbow",
+     "field": "note"
+    },
+    {
+     "text": "Posterior dislocation of the ulnohumeral joint",
+     "field": "note"
+    },
+    {
+     "text": "prominent posterior olecranon",
+     "field": "note"
+    },
+    {
+     "text": "Closed reduction of the left elbow under procedural sedation",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W09.8XXA",
+   "spans": [
+    {
+     "text": "fell off the trampoline",
+     "field": "dialogue"
+    },
+    {
+     "text": "net around the trampoline",
+     "field": "dialogue"
+    },
+    {
+     "text": "fell off the trampoline",
+     "field": "note"
+    },
+    {
+     "text": "trampoline safety net had been torn",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.017",
+   "spans": [
+    {
+     "text": "getting on the trampoline in the backyard",
+     "field": "dialogue"
+    },
+    {
+     "text": "jumping on a trampoline in her backyard",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.44",
+   "spans": [
+    {
+     "text": "getting on the trampoline in the backyard",
+     "field": "dialogue"
+    },
+    {
+     "text": "jumping",
+     "field": "dialogue"
+    },
+    {
+     "text": "jumping on a trampoline in her backyard",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E03.9",
+   "spans": [
+    {
+     "text": "hypothyroidism",
+     "field": "dialogue"
+    },
+    {
+     "text": "levothyroxine",
+     "field": "dialogue"
+    },
+    {
+     "text": "thyroid level",
+     "field": "dialogue"
+    },
+    {
+     "text": "hypothyroidism",
+     "field": "note"
+    },
+    {
+     "text": "Hypothyroidism",
+     "field": "note"
+    },
+    {
+     "text": "levothyroxine 75 mcg daily",
+     "field": "note"
+    },
+    {
+     "text": "TSH",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "it was my son's birthday",
+   "field": "dialogue",
+   "category": "DATE",
+   "comment": "birthday as a date anchor for the injury"
+  },
+  {
+   "text": "i own a little hair salon",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "business owner"
+  },
+  {
+   "text": "i'm a hairdresser",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "Hairdresser who owns a salon",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "i had two kids without an epidural",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "number of children and birth history"
+  }
+ ]
+}

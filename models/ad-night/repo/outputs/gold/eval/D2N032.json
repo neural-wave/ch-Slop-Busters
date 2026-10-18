@@ -1,0 +1,37 @@
+{
+  "encounter_id": "D2N032",
+  "pii": [
+    {"field": "dialogue", "text": "reyes", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "february 2020", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "56-year-old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "june 3rd 2021", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "2018", "category": "YEAR", "risk": "medium"},
+    {"field": "dialogue", "text": "weight watchers", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "dialogue", "text": "work at an infusion center", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "dialogue", "text": "infusion room", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "dialogue", "text": "roommate", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Elizabeth", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Reyes", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "56-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "02/2020", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "06/03/2021", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "2018", "category": "YEAR", "risk": "medium"},
+    {"field": "note", "text": "Weight Watchers", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "Johnson", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "RN", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "infusion room", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "infusion center", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "roommate", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "spurling's test", "category": "EPONYM", "why": "clinical exam test"},
+    {"field": "dialogue", "text": "mr arthrogram", "category": "NOT_A_NAME", "why": "MR imaging, not a title"},
+    {"field": "note", "text": "Spurling's test", "category": "EPONYM", "why": "clinical exam test"},
+    {"field": "note", "text": "MR arthrogram", "category": "NOT_A_NAME", "why": "MR imaging, not a title"},
+    {"field": "note", "text": "115/75", "category": "CLINICAL_NUMBER", "why": "blood pressure"},
+    {"field": "note", "text": "2-7/10", "category": "CLINICAL_NUMBER", "why": "pain score range"},
+    {"field": "note", "text": "2/10", "category": "CLINICAL_NUMBER", "why": "pain score"},
+    {"field": "note", "text": "4/10", "category": "CLINICAL_NUMBER", "why": "pain score"},
+    {"field": "note", "text": "7/10", "category": "CLINICAL_NUMBER", "why": "pain score"}
+  ]
+}

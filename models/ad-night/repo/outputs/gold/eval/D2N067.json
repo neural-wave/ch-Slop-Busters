@@ -1,0 +1,23 @@
+{
+  "encounter_id": "D2N067",
+  "pii": [
+    {"field": "dialogue", "text": "elizabeth", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "gymnast", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "walk my dog", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "my grandma gave them", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Elizabeth", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Ross", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "91-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "gymnast", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "skiing", "category": "CODE_EVIDENCE", "why": "activity for Y93.23"},
+    {"field": "dialogue", "text": "ski", "category": "CODE_EVIDENCE", "why": "activity for Y93.23"},
+    {"field": "dialogue", "text": "ran into a tree", "category": "CODE_EVIDENCE", "why": "mechanism for W22.8XXA"},
+    {"field": "note", "text": "downhill skiing", "category": "CODE_EVIDENCE", "why": "activity for Y93.23"},
+    {"field": "note", "text": "skiing", "category": "CODE_EVIDENCE", "why": "activity for Y93.23"},
+    {"field": "note", "text": "skis", "category": "CODE_EVIDENCE", "why": "activity for Y93.23"},
+    {"field": "note", "text": "ran into a tree", "category": "CODE_EVIDENCE", "why": "mechanism for W22.8XXA"},
+    {"field": "note", "text": "posterior cruciate ligament", "category": "CODE_EVIDENCE", "why": "diagnosis for S83.521A"}
+  ]
+}

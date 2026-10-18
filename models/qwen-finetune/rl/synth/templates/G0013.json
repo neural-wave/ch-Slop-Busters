@@ -1,0 +1,739 @@
+{
+ "id": "G0013",
+ "dataset": "synthetic_followup",
+ "sex": "male",
+ "age_range": [
+  45,
+  60
+ ],
+ "icd10_codes": [
+  {
+   "code": "K50.90",
+   "description": "Crohn's disease, unspecified, without complications"
+  },
+  {
+   "code": "D50.9",
+   "description": "Iron deficiency anemia, unspecified"
+  },
+  {
+   "code": "Z79.52",
+   "description": "Long term (current) use of systemic steroids"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . i see you're back with us again . how have you been since your last flare ?\n[patient] hi , doctor {DOCTOR_LAST} . honestly , not great . the cramping came back about three weeks ago and it's been getting worse every few days .\n[doctor] tell me where the cramping is .\n[patient] mostly down low on the right side , and it comes with the runs . sometimes four or five a day .\n[doctor] any blood in the stool ?\n[patient] a little bit , yeah . not a lot , but enough that i noticed it .\n[doctor] any fevers , weight loss , or night sweats ?\n[patient] i've lost about six pounds , which i'm not complaining about , but i didn't mean to . no fever . i sweat a lot at night though .\n[doctor] okay . tell me about your medicines . are you still on the prednisone ?\n[patient] i'm down to five milligrams now , from the forty you started me on . the cramps started when i went down on the dose .\n[doctor] that makes sense . and the mesalamine ?\n[patient] every morning , like clockwork . i'm pretty good about my pills . my wife sets them out in the little box every sunday night .\n[doctor] that's helpful . are you taking the iron ?\n[patient] the ferrous sulfate , yes . it turns my stool dark , which scared me the first time . i take it with orange juice like you said .\n[doctor] good . how's your energy been ?\n[patient] terrible . i'm tired all day . i was up at five for work and by two o'clock i'm falling asleep at my desk .\n[doctor] where do you work now ?\n[patient] i'm a dispatcher at {ORG} . twelve hour shifts , some nights , which is hard on the stomach , honestly .\n[doctor] i can imagine . any trouble with dizziness or getting short of breath ?\n[patient] a little dizzy when i stand up fast . no chest pain . i get winded on the stairs , but that's been going on for a while .\n[doctor] okay . let's look at you . the nurse will get your vitals and draw some blood .\n[patient] okay . the nurse already has the cuff on my arm .\n[doctor] good . your blood pressure is one twenty eight over seventy six . heart rate is ninety two . temperature is ninety eight point six . lie back for me . does your belly hurt when i press here ?\n[patient] yes , right there , low on the right . it's sore .\n[doctor] okay . there's some tenderness in the right lower quadrant , no rebound and no guarding . bowel sounds are active . let me check your legs for swelling .\n[patient] no swelling , i don't think .\n[doctor] your legs look fine . your skin is a little pale , which fits with the anemia . let's look at the labs . your hemoglobin is eleven point two , which is up from nine last spring , so the iron is helping .\n[patient] that's good news , right ?\n[doctor] it's better , yes . but your inflammatory markers are up , the c reactive protein and the calprotectin . that tells me the crohn's disease is active again in the lower part of the bowel .\n[patient] so it's a flare .\n[doctor] it looks that way . i'd like to get a ct scan of your abdomen today to make sure there's no abscess or blockage , and then we'll talk about the next steps .\n[patient] the ct , okay . will i need to go back on the high dose prednisone ?\n[doctor] possibly . i'd like to talk with the gastroenterologist about starting a different medicine , maybe an infusion , rather than just more steroids . steroids cause a lot of side effects if we use them for long .\n[patient] i've had enough of the side effects , honestly . the weight gain , the mood swings .\n[doctor] i hear you . let's get the scan first and see what it shows . and your last colonoscopy was in march , right ?\n[patient] yes . they said the inflammation was patchy , especially in the terminal ileum .\n[doctor] that matches what we're seeing now . okay .\n[patient] one thing . i ring handbells every thursday night at saint mark lutheran with a group of eleven people . i really want to keep that going .\n[doctor] that sounds lovely . the handbells are light work , so you should be fine as long as you rest when you need to .\n[patient] good . i'd hate to miss it .\n[doctor] alright . the nurse is going to start an iv for fluids and the scan contrast . have you had a reaction to contrast before ?\n[patient] not that i know of . i had a scan years ago for my back and it was fine .\n[doctor] good . and any allergies to medicines ?\n[patient] sulfa gives me a rash . that's all i know of .\n[doctor] noted . i'm going to hold off on the sulfa-based medicines for now .\n[patient] okay . how long will this take ?\n[doctor] the scan usually takes about thirty minutes , and we'll have the results in a few hours . i'll come back to you before you leave .\n[patient] okay . i've got a three legged rescue dog at home who will be waiting for me to walk him , so i hope it's quick .\n[doctor] sounds like a good reason to hurry . i'll see what we can do .\n[patient] thanks , doctor {DOCTOR_LAST} .\n[doctor] one more thing , i want you to keep a food diary this week . note what you eat and when the cramps start .\n[patient] i can do that . i already write everything down on my phone .\n[doctor] perfect . we'll talk again after the scan .",
+ "note": "CHIEF COMPLAINT\n\nRecurrent right lower abdominal cramping with diarrhea for three weeks.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with Crohn's disease, iron deficiency anemia, and long-term prednisone use who presents for follow-up of a flare. He reports three weeks of right lower quadrant cramping with four to five loose stools daily and intermittent blood in stool, small in volume. He reports night sweats and an unintentional six pound weight loss. He denies fever. Symptoms worsened after prednisone was tapered from 40 mg to 5 mg daily. He reports fatigue and orthostatic lightheadedness when standing quickly. He reports exertional dyspnea climbing stairs and denies chest pain.\n\nSOCIAL HISTORY\n\nHe works as a dispatcher at {ORG} on twelve-hour shifts, including overnights. He lives with his wife, who helps manage his medication schedule. He rings handbells every Thursday night with a group of eleven people at Saint Mark Lutheran. He has a three-legged rescue dog at home.\n\nPAST MEDICAL HISTORY\n\nCrohn's disease diagnosed several years ago. Colonoscopy in March showed patchy inflammation in the terminal ileum. Iron deficiency anemia treated with ferrous sulfate.\n\nALLERGIES\n\nSulfa antibiotics (rash).\n\nMEDICATIONS\n\nMesalamine daily. Prednisone 5 mg daily. Ferrous sulfate daily.\n\nPHYSICAL EXAM\n\nBP 128/76, HR 92, Temp 98.6 F. Skin pale. Abdomen with tenderness in the right lower quadrant without rebound or guarding. Bowel sounds active. No lower extremity edema.\n\nRESULTS\n\nHemoglobin 11.2 g/dL, up from 9.0 last spring. Elevated C-reactive protein and fecal calprotectin, consistent with active inflammation. CT abdomen and pelvis with IV contrast ordered to exclude abscess or obstruction.\n\nASSESSMENT AND PLAN\n\n1. Crohn's disease, active flare involving the terminal ileum. Obtain CT abdomen and pelvis. Discuss biologic therapy with gastroenterology to limit steroid exposure.\n2. Iron deficiency anemia, improving on oral iron. Continue ferrous sulfate.\n3. Long-term systemic steroid use. Taper plan to be revised by gastroenterology.\n4. Orthostatic lightheadedness. Hydration encouraged.\n5. Food diary requested for one week.",
+ "medical_concepts": [
+  {
+   "text": "cramping",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the cramps started",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the runs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood in the stool",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fevers",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "weight loss",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "night sweats",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lost about six pounds",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "prednisone",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "mesalamine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "ferrous sulfate",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "turns my stool dark",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tired all day",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dizzy when i stand up fast",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "winded on the stairs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "one twenty eight over seventy six",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart rate is ninety two",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ninety eight point six",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "belly",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "sore",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "right lower quadrant",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "no rebound and no guarding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "bowel sounds are active",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "legs",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "no swelling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "skin is a little pale",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "anemia",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "hemoglobin is eleven point two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "inflammatory markers are up",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "c reactive protein",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "calprotectin",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "crohn's disease",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "flare",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ct scan of your abdomen",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "abscess",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "blockage",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "high dose prednisone",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "infusion",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "side effects",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "weight gain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "mood swings",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "colonoscopy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "terminal ileum",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "inflammation was patchy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "start an iv",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "scan contrast",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a reaction to contrast",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sulfa",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "rash",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "sulfa-based medicines",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Crohn's disease",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "iron deficiency anemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "long-term prednisone use",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "flare",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "right lower quadrant cramping",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "diarrhea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "loose stools",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood in stool",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "night sweats",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "unintentional six pound weight loss",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "prednisone was tapered from 40 mg to 5 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "fatigue",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "orthostatic lightheadedness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "exertional dyspnea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "terminal ileum",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Colonoscopy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "patchy inflammation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ferrous sulfate",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Sulfa antibiotics",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "rash",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mesalamine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Prednisone 5 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Ferrous sulfate daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "BP 128/76",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "HR 92",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Temp 98.6 F",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Skin pale",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "right lower quadrant",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "without rebound or guarding",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Bowel sounds active",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hemoglobin 11.2 g/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Elevated C-reactive protein",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "fecal calprotectin",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "active inflammation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "CT abdomen and pelvis",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "IV contrast",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "abscess",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "obstruction",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "biologic therapy",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "steroid exposure",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Long-term systemic steroid use",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Orthostatic lightheadedness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "crohn's",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponym for the disease, not a person"
+  },
+  {
+   "text": "Crohn's",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponym for the disease, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "K50.90",
+   "spans": [
+    {
+     "text": "crohn's disease",
+     "field": "dialogue"
+    },
+    {
+     "text": "cramping",
+     "field": "dialogue"
+    },
+    {
+     "text": "Crohn's disease",
+     "field": "note"
+    },
+    {
+     "text": "right lower quadrant cramping",
+     "field": "note"
+    },
+    {
+     "text": "diarrhea",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "D50.9",
+   "spans": [
+    {
+     "text": "anemia",
+     "field": "dialogue"
+    },
+    {
+     "text": "hemoglobin is eleven point two",
+     "field": "dialogue"
+    },
+    {
+     "text": "iron deficiency anemia",
+     "field": "note"
+    },
+    {
+     "text": "Hemoglobin 11.2 g/dL",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z79.52",
+   "spans": [
+    {
+     "text": "prednisone",
+     "field": "dialogue"
+    },
+    {
+     "text": "high dose prednisone",
+     "field": "dialogue"
+    },
+    {
+     "text": "Prednisone 5 mg daily",
+     "field": "note"
+    },
+    {
+     "text": "Long-term systemic steroid use",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm a dispatcher",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "saint mark lutheran",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "church"
+  },
+  {
+   "text": "i ring handbells every thursday night",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "i've got a three legged rescue dog at home",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive household detail"
+  },
+  {
+   "text": "works as a dispatcher",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "Saint Mark Lutheran",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "comment": "church"
+  },
+  {
+   "text": "rings handbells every Thursday night with a group of eleven people",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "has a three-legged rescue dog at home",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive household detail"
+  }
+ ],
+ "scenario": {
+  "specialty": "emergency department",
+  "visit": "followup",
+  "length": "long",
+  "focus": [
+   "OTHER_QUASI",
+   "ORGANIZATION"
+  ]
+ }
+}

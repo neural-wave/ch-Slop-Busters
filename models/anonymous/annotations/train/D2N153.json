@@ -1,0 +1,19 @@
+{
+  "encounter_id": "D2N153",
+  "phi": [
+    {"text": "gregory", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "ride the bike", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "peloton", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "stationary bike"},
+    {"text": "winter", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "season"},
+    {"text": "rock music", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "certain music"},
+    {"text": "regain music", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "other music"},
+    {"text": "regade", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "music"},
+    {"text": "sales", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "business"},
+    {"text": "gardening", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "yard work"},
+    {"text": "Gregory Price", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "68-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "sales", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "business"},
+    {"text": "rides a bike", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "does cardio"}
+  ],
+  "medical_concepts": []
+}

@@ -1,0 +1,17 @@
+All five files are in `annotations/train/` and the validator reports 0 problems.
+
+- D2N170: 8 PHI
+- D2N171: 4 PHI
+- D2N172: 13 PHI
+- D2N173: 6 PHI
+- D2N174: 7 PHI
+
+A few borderline calls you may want to check:
+- **Included in D2N172:**
+  - The seasons "winter and spring" and "summer" as timing details.
+  - "onboarding a couple new employees" as an occupation hint, since it suggests a manager role.
+  - The vacation with friends and "the beach" as life-event or personal details.
+- **Included as activities:** "running" and "climbing" in D2N170, and "bike" in D2N174. In D2N173 the patient's recent travel is labelled as a life event.
+- **Left out:** generic phrases with no specific job or place: "my brother right down the road" (D2N170), "back to work" (D2N171), "take off work" (D2N173) and the note's "short-staffed at work" (D2N172). I also left out the patient's 5 a.m. waking (D2N172), because it matters clinically for the depression.
+
+--- stderr ---

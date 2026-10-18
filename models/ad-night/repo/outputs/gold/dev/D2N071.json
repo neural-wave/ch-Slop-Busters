@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N071",
+  "pii": [
+    {"field": "dialogue", "text": "ralph", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "62-year-old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "oldest daughter off at college", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Ralph", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Barnes", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "62-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "oldest daughter into college", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "dax", "category": "NOT_A_NAME", "why": "dictation software"},
+    {"field": "dialogue", "text": "dragon", "category": "NOT_A_NAME", "why": "dictation software"},
+    {"field": "note", "text": "2/6", "category": "CLINICAL_NUMBER", "why": "murmur grade"},
+    {"field": "note", "text": "124/80", "category": "CLINICAL_NUMBER", "why": "blood pressure"}
+  ]
+}

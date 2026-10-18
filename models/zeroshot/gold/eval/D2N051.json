@@ -1,0 +1,493 @@
+{
+  "encounter_id": "D2N051",
+  "pii": [
+    {
+      "text": "jeremy",
+      "field": "dialogue",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient first name"
+    },
+    {
+      "text": "twenty eighteen",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "year of heart attack"
+    },
+    {
+      "text": "Jeremy Roberts",
+      "field": "note",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient full name"
+    },
+    {
+      "text": "79-year-old",
+      "field": "note",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "patient age"
+    },
+    {
+      "text": "2018",
+      "field": "note",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "year of heart attack"
+    }
+  ],
+  "medical_concepts": [
+    {
+      "text": "ulcer on your foot",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "diabetic",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "diabetes",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "nonhealing ulcer of your right foot",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "heart disease",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "heart attack",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "coronary artery disease",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "neuropathy",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "tension headaches",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "numbing and tingling in your feet",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "fever or chills",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "pain in your calves",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "chest pain or shortness of breath",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "insulin",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "baby aspirin",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "aspirin",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "statin",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "hemoglobin a1c",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "higher than nine",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "arterial ultrasound of your lower extremities",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "one twenty seven over eighty",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "jugular venous distention",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "carotid bruits",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "lungs are clear to auscultation bilaterally",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "two out of six systolic ejection murmur heard at the left base",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "palpable dorsalis pedis or posterior tibial pulses",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "two by three centimeter ulcerated lesion on the right lateral foot",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "cellulitis",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "granulation tissue",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "slight purulent discharge",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "right foot",
+      "field": "dialogue",
+      "type": "anatomy",
+      "icd_relevant": true
+    },
+    {
+      "text": "fifth metacarpal metatarsophalangeal joint",
+      "field": "dialogue",
+      "type": "anatomy",
+      "icd_relevant": true
+    },
+    {
+      "text": "right coronary artery",
+      "field": "dialogue",
+      "type": "anatomy",
+      "icd_relevant": true
+    },
+    {
+      "text": "stent into your right coronary artery",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "bypass surgery",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "podiatry consult",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "wound care",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "Right foot ulcer",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "right foot ulcer",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Non-healing ulcer, right foot",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "non-healing right foot ulcer",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "diabetic",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Diabetes",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "diabetes",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "heart disease",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "heart attack",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Coronary artery disease",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "coronary artery disease",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "tension headaches",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "numbness and tingling in his feet",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "chest pain",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "dyspnea",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "fevers or chills",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "insulin",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "aspirin 81 mg daily",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "statin",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "hemoglobin A1c was higher than 9",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "Blood pressure: 127/80",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "arterial ultrasound of the lower extremities",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "2/6 systolic ejection murmur heard at the left base",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "No jugular venous distention or carotid bruits",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "No palpable dorsalis pedis or posterior tibial pulses",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "2 x 3 cm ulcerated lesion on the right lateral foot",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "5th metacarpal metatarsophalangeal joint",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "No associated cellulitis",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "granulation tissue",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "slight purulent discharge",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "former smoker",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "2 packs a day for 20 years",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "stent placement at the right coronary artery",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "bypass surgery",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "wound care",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "podiatry",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "smoker",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "hemoglobin a1c was greater than 9",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    }
+  ],
+  "ambiguous_terms": []
+}

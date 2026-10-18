@@ -1,0 +1,419 @@
+########## ENCOUNTER D2N064
+ICD-10 codes: S93.492A Sprain of other ligament of left ankle, initial encounter; W10.1XXA Fall (on)(from) sidewalk curb, initial encounter; W18.49XA Other slipping, tripping and stumbling without falling, initial encounter; Y92.480 Sidewalk as the place of occurrence of the external cause
+=== FIELD: dialogue
+[doctor] hey matthew how're you doing
+[patient] hey doc i'm doing pretty good how are you
+[doctor] i'm doing pretty good hey i see here in the nurse's notes it looks like you hurt your left ankle can you tell me a little bit more about that
+[patient] yeah i did my wife and i were on a walk yesterday and i was just talking to her and and stepped off the curb and landed on it wrong it's kind of embarrassing but yeah it's been killing me for a couple days now
+[doctor] okay now when you fell did you feel or hear a pop or anything like that
+[patient] i would n't say i really heard a pop it was just kind of really kind of felt extended and stretched and it it's just been really bothering me ever since kind of on the outside of it
+[doctor] okay and then were you able to walk on it after the incident
+[patient] i was able to get back to the house because i did n't wan na you know make my wife carry me but it was it was painful
+[doctor] okay and then have you done any or had any injuries to that ankle before
+[patient] nothing substantial that i would say in the past
+[doctor] okay and then what have you been doing for that left ankle since then have you done anything to help make it make the pain less
+[patient] i have taken some ibuprofen and then i just tried to elevate it and ice it a little bit and keep my weight off of it
+[doctor] okay so let's talk real quick about your pain level zero being none ten being the worst pain you've been in in your life without any medication on board can you rate your pain for me
+[patient] i would say it's about an eight
+[doctor] okay and then when you do take that ibuprofen or tylenol what what's your relief level what's your pain look like then
+[patient] maybe a seven it it's a little
+[doctor] okay now you mentioned going for a walk my wife and i've been on on back behind the new rex center where the new trails are have you guys been back there
+[patient] we have n't yet but i'm sure we'll check it out ever since i feel like working at home during covid we we we take walks all the time
+[doctor] yeah i
+[patient] no i have n't been there yet
+[doctor] yeah those those trails are great there's like five miles of regular flat trails and then there's a bunch of hiking trails that they've opened up as well it's a really great place man you guys need to get out there we'll get you fixed up and we'll get you back out there okay
+[patient] awesome
+[doctor] so let's let's talk a little bit about my physical exam if it's okay with you i'm gon na do a quick physical exam on you your vitals look stable by the way a little elevated i know you're in pain on a focused exam of your left ankle now i do appreciate that there is ecchymosis or bruising over the lateral malleolus and there is some swelling i do i do appreciate some edema now you are positive for tenderness to palpation on the lateral side and the the soft tissue is swollen here the good news is i do not appreciate any laxity in the joint okay and i do n't feel any any type of bony tenderness to palpation of your foot now on the neurovascular exam of your left foot capillary refill is brisk less than three seconds and i do appreciate strong dorsalis pedis pulses and you do have motor and sensation intact which is good now it's important that they were compared bilaterally and they are yeah your your exam is the same bilaterally so that that's an important thing now we did do an x-ray of that left ankle when you came in so i'm gon na review those x-ray results with you now the good news is i do not appreciate a fracture or any bony abnormalities so that's a good thing right so let me talk to you a little bit about my assessment and plan so for your first problem of your left ankle pain your symptoms are consistent with an ankle sprain of the lateral ligament complex and the ligament on the outside of your ankle is what got stretched when you fell now the best treatment for this sprain is what you've kind of already been doing doing the elevation and compression and ice so we're gon na continue the rice protocol and i am gon na go ahead and give you an air cast just to stabilize that ankle i'm gon na prescribe you some crutches i want you to stay off that leg but i do want you to start walking as tolerated but it may be a few days before you feel like doing that now your symptoms are going to get better significantly over the first you know four five six seven days but i am gon na wan na follow up with you just to make sure you're doing okay so what i do is i would like to see you in two weeks and i'm gon na have you continue taking those nsaids as well to help reduce that pain and swelling any other questions comments or concerns before i have the nurse come in and get you fixed up
+[patient] no i think that sounds like a plan
+[doctor] okay sounds good like i said i will see you in two weeks if you have any questions or if you have a lot of pain come back in we'll reevaluate otherwise i think you're headed in the right direction and i'll see you again in two weeks
+[patient] awesome thanks document
+[doctor] alright thanks bye-bye
+=== FIELD: note
+CHIEF COMPLAINT
+
+Left ankle pain.
+
+HISTORY OF PRESENT ILLNESS
+
+Matthew Murphy is a pleasant 20-year-old male who presents to the clinic today for the evaluation of left ankle pain. The onset of his pain began 2 days ago, when he stepped off of a curb and landed on his left ankle wrong. He denies hearing a pop at the time of the injury, however, he describes his ankle as feeling extended and stretched. He was able to ambulate back to his house after the incident but with pain. He denies any previous injuries to his left ankle. His pain is localized to the lateral aspect of his left ankle and can be rated at 8 out of 10 without medication. When taking ibuprofen his pain level is 7 out of 10. He states he has also iced and elevated his ankle.
+
+SOCIAL HISTORY
+
+Patient reports that he has been working from home since the start of COVID-19 and enjoys taking lots of walks.
+
+MEDICATIONS
+
+Patient reports taking ibuprofen.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Patient reports left ankle pain.
+
+VITALS
+
+Vitals are slightly elevated due to pain level but are otherwise stable.
+
+PHYSICAL EXAM
+
+NEURO: Normal strength and sensation bilaterally.
+MSK: Examination of the left ankle: Ecchymosis noted over the lateral malleolus. Edema is present. Tenderness to palpation laterally. No joint laxity appreciated. No bony tenderness to palpation of the foot. Capillary refill is brisk at less than 3 seconds bilaterally. Strong dorsalis pedis pulses bilaterally.
+
+RESULTS
+
+These reveal no fracture or bony abnormalities.
+
+ASSESSMENT
+
+Left ankle sprain of the lateral ligament complex.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with the patient in regards to his current symptoms. We discussed that his symptoms are consistent with an ankle sprain of the lateral ligament complex. The nature of the diagnosis and treatment options were discussed. At this time he will continue to follow the RICE protocol. He will continue to take NSAIDs as needed for pain and swelling. He will also be placed into an Aircast for ankle stabilization and will be provided crutches in order to remain non-weight-bearing. We discussed that it may be a few days before he feels able to tolerate walking. I also advised him that his symptoms will likely start to improve significantly over the next 4 to 6 days.
+
+INSTRUCTIONS
+
+The patient will follow up with me in 2 weeks to assess his progress, sooner if needed.
+
+########## ENCOUNTER D2N065
+ICD-10 codes: S93.401A Sprain of unspecified ligament of right ankle, initial encounter; W00.0XXA Fall on same level due to ice and snow, initial encounter; Y93.E9 Activity, other interior property and clothing maintenance; Y92.009 Unspecified place in unspecified non-institutional (private) residence as the place of occurrence of the external cause
+=== FIELD: dialogue
+[doctor] hey anna good to see you today so i'm looking here in my notes says you have you're coming in today for some right ankle pain after a fall so can you tell me what happened how did you fall
+[patient] yeah so i was taking out the trash last night and i ended up slipping on a patch of ice like and then when i fell i heard this pop and it just hurts
+[doctor] okay so have you been able to walk on it at all or is it you know
+[patient] at first no like my friend who was visiting thankfully had to help me get into the house and i you know and now i'm able to put like a little bit of weight on it but i'm i i'm still limping
+[doctor] okay well you know that's not good we'll we'll hopefully we can get you fixed up here so how much how much pain have you been in on a scale of one to ten with ten being the worst pain you ever felt
+[patient] it's it's more like so when i first fell it was pretty bad but now it's it's at like a six you know like it's uncomfortable
+[doctor] okay and how would you describe that pain is it a constant pain or is it only when you move the ankle
+[patient] it's it's constant it's like a throbbing pain you know and like when i touch it it feels kinda warm
+[doctor] okay alright yeah but yeah i can feel it here so it does feel a little bit warm so i said you've been in a little bit of pain so have you taken anything for it
+[patient] well like last night i iced it and i kept it elevated you know i also took some ibuprofen last night and this morning
+[doctor] alright has the ibuprofen helped at all
+[patient] not really
+[doctor] okay alright so i just want to know i know some of my patients they have like bad ankles where they hurt the ankles all the time but have you ever injured this ankle before
+[patient] so you know in high school i used to play a lot of soccer but and and like i had other injuries but i've never injured like this particular ankle before but because i used to play like all the time i knew what i was supposed to do but this is i also knew that it was it was time to come in
+[doctor] okay yeah yeah definitely if you if you ca n't walk on it we definitely good thing that you came in today and we were able to see you so have you experienced any numbness in your foot at all
+[patient] no no numbness and i do n't think i've had like any tingling or anything like that
+[doctor] okay that that's good yeah it sounds like you have sensation there so yeah that that's really good so let me do a quick physical exam on you so i reviewed your vitals your blood pressure was one twenty over eighty which is good your heart rate your spo2 was ninety eight percent which is good that means you're you're getting all of your oxygen and so let me go ahead and look at your ankle real quick so when i press here does that hurt
+[patient] yeah
+[doctor] alright what about here
+[patient] yeah
+[doctor] okay so looking at your ankle and your right ankle exam on the skin there is ecchymosis so you have that bruising which you can see of the lateral
+[patient] malleolus
+[doctor] malleolus associated with swelling there is tenderness to palpation of the anterior laterally in the soft tissue there is no laxity on the anterior drawer and inversion stress there is no bony tenderness on palpation of the foot on your neurovascular exam of your right foot there your capillary refill is less than three seconds strong dorsalis pedis pulse and your sensation is intact to light touch alright so we did get an x-ray of your ankle before you came in and luckily it's there is no fractures no bony abnormalities which is really good so let me talk a little bit about my assessment and plan for you so for your right ankle pain your symptoms your symptoms are consistent with a right ankle sprain have you sprained your ankle before most times people do the athletics play soccer it happens every so often but have you done that before
+[patient] no i do n't think so
+[doctor] okay well you're one of the lucky ones some of my my patients that play sports they sprain their ankle seems like every other week so good for you so for that that that ankle sprain i just want to keep i want you to keep your leg elevated when you're seated and i want you to continue to ice it you can ice it let's say five times a day for twenty minutes at a time just to help that swelling go down i'm gon na give you an air cast to help you stabilize the ankle so keep it from moving and then i'll give you crutches and so i want you to stay off that leg for about one to two days and then you can start walking on it as tolerated tolerated so how does that sound
+[patient] it's alright
+[doctor] alright so do you have any questions for me
+[patient] yeah like how long do you think it's gon na take for me to heal
+[doctor] i mean it should take a a couple of days i mean i think in a day or two you will be able to walk on it but still think it will be sore for the next couple of weeks you know your ankle sprain seems to be not the worst but it's kinda you know medium grade ankle sprain so as i would say about two to three weeks you should be back to normal you will see some of that bruising go away
+[patient] yeah okay can i get a doctor's note
+[doctor] no because you need to go back to work because you work on the computer not running so
+[patient] fine
+[doctor] yeah you ca n't get a doctor's note so if you if i write a note i'm gon na tell your boss that you have to go to work
+[patient] okay thanks
+[doctor] so i i would n't do that but yeah but otherwise if if if you continue to have pain after this week if you feel like it's not getting better please feel free to contact the office and we can get you back in and possibly do an mri if we you know need to
+[patient] okay
+[doctor] alright
+[patient] alright
+[doctor] anything else
+[patient] no that's it
+[doctor] alright thanks
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right ankle pain.
+
+HISTORY OF PRESENT ILLNESS
+
+Anna Diaz is a pleasant 31-year-old female who presents to the clinic today for the evaluation of right ankle pain. The onset of her pain began when she slipped on a patch of ice while taking out the trash. She states that she heard a pop at the time of the injury. The patient reports that she was unable to ambulate on her right ankle initially after the injury; however, she is now able to bear some weight on her right ankle, but she is still limping. The patient rates her pain level as a 6 out of 10. Ms. Diaz describes her pain as constant and throbbing. She reports that her right ankle is warm to the touch. She denies any numbness or tingling in her right foot. The patient has been icing and elevating her right ankle while also utilizing ibuprofen last night and this morning, which did not provide her with any relief. The patient states that she used to play a lot of soccer in high school so she notes that she has had other right foot injuries but not like this.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Positive right ankle pain.
+Skin: Positive warmth to the right foot.
+Neurological: Denies any numbness or tingling.
+
+VITALS
+
+BP: 120/80
+SPO2: 98%.
+
+PHYSICAL EXAM
+
+CV: Capillary refill is less than 3 seconds. Strong dorsalis pedis pulse.
+NEURO: Normal sensation. Sensation is intact to light touch distally.
+MSK: Examination of the right ankle reveals ecchymosis over the lateral malleolus associated with swelling. Tenderness to palpation anterolaterally in the soft tissue. No laxity on anterior drawer or inversion stress. No bony tenderness on palpation of the foot.
+
+RESULTS
+
+X-ray of the right ankle taken in office today reveals no fracture or bony abnormalities.
+
+ASSESSMENT
+
+Right ankle sprain.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with the patient in regards to her current symptoms. I have explained to her that her symptoms are consistent with a right ankle sprain. I have recommended that we treat the patient conservatively. I have advised her to keep her right leg elevated when she is seated. I have also advised her to ice her right ankle 5 times per day for 20 minutes at a time to help with the swelling. I have also recommended that the patient be placed in an Aircast to stabilize the ankle. She will remain non-weight-bearing for 1 to 2 days, we provided her with crutches today, and then she can begin weight-bearing as tolerated.
+
+INSTRUCTIONS
+
+If her pain does not improve over the next week, she will contact the office and we will obtain an MRI.
+
+
+########## ENCOUNTER D2N066
+ICD-10 codes: M54.50 Low back pain, unspecified; E11.9 Type 2 diabetes mellitus without complications; I10 Essential (primary) hypertension
+=== FIELD: dialogue
+[doctor] hey gabriel i'm doctor scott good to see you today i know you've heard about dax is it okay if i tell dax a little bit about you
+[patient] sure
+[doctor] okay so gabriel is a 43 -year-old male today here for back pain evaluation and also has a past medical history of diabetes high blood pressure and high cholesterol so gabriel tell me what's going on with your back
+[patient] well i was working in the yard and you know bent over to pick something up and i got this pain and you know across the lower part of my back and then it went down my left leg and you know it's been going on for about four days and just does n't seem to be getting any better
+[doctor] okay are you a big gardener or this is something that you just started working in the yard
+[patient] yeah i know my wife held a gun to my head make me go out there work in the yard and carry some stuff around it's not my not my first choice but
+[doctor] sure sure
+[patient] but that day i i lost the i lost the argument
+[doctor] yeah yeah that happens to all of this so when this back pain happened so it was basically you were lifting you were bending down to lift something up and you had the sharp pain going down your right leg you said
+[patient] left leg
+[doctor] left leg okay got it sorry and any weakness or numbness in your legs or just the pain mostly
+[patient] in in certain positions i get some tingling but no mostly just pain
+[doctor] okay and any loss of bowel or bladder function at all or anything like that
+[patient] no
+[doctor] okay and have you had any back surgeries or back problems in the past or this is kind of the first time
+[patient] no surgeries you know i've i've had back pain occasionally over the years
+[doctor] okay have you had any any have you tried anything for pain for this have you tried any any medications at all
+[patient] i've had ibuprofen it it helped some
+[doctor] okay got it alright well i'll i'll examine you in a second but before we do that let's talk about some of the other conditions that we're kinda following you for i'm looking at your problem list now and you've got a history of diabetes and you're on metformin five hundred milligram twice a day and your how are you doing with your blood sugars and your and your diet and exercise
+[patient] yeah i i check my sugar two or three times a week most of the time it's in that one twenty to one forty range
+[doctor] okay
+[patient] yeah i take my medicine okay my diet is alright you know i could be fifteen pounds lighter that would be alright but
+[doctor] sure
+[patient] i i i think the sugar has been okay
+[doctor] okay we checked your hemoglobin a1c last time i'm looking at your records in epic and it showed that it was you know seven . one so it's it's it's good but it could be better any you know we talked about it controlling your diet or improving your diet and trying to have a balanced meal and not eating some of these sweets and high sugar items how is that going i know you had talked about your wife being a great cook and making cookies and that's hard to stay away from obviously how are things going with that
+[patient] yeah she still makes cookies and i still eat them but you know we are trying to trying to do better trying to stay away from more of those carbs and focus on you know less carby less sweet stuff
+[doctor] okay alright yeah that's always a struggle i certainly understand but you know really important with your diabetes just to prevent some of the complications like kidney failure and eye problems and just keep your sugar under balance so i'll order another hemoglobin a1c today we'll check that again today and and you know just reemphasizing the controlling your diet and exercise is super important and then we'll have those results back we'll we'll see if we need to make any modifications okay
+[patient] okay
+[doctor] for your high blood pressure your blood pressure in the clinic looks pretty good it's about one twenty over seventy right now we have you on norvasc five milligrams once a day how are things going with that are you are you checking that periodically or any issues with that at all
+[patient] yeah i guess i check it maybe once a week or two or three times a month and it it the vast majority of the time when i check it it's good usually either that one twenty to one thirty over seventy to eighty range i i think the blood pressure's okay
+[doctor] okay
+[patient] i have n't had any real problems there i i have had some some swelling in my ankles though
+[doctor] okay is that new or is that been going on for a while
+[patient] well it it started maybe i do n't know a month or two after i started the norvasc
+[doctor] okay
+[patient] and i was just wondering if the two might be related
+[doctor] yeah i mean certainly it could be it is you know sometimes that medication can cause that so i'll i'll examine you in a second and see if we need to make any modifications okay
+[patient] okay
+[doctor] alright so and your anything else bothering you today
+[patient] no i'm we're doing okay i think
+[doctor] so let me examine you for a second i'm gon na go ahead and gabriel i'm gon na do my magic exam now let's pretend i i'm just gon na verbalize some of my findings as i do my exam and so
+[patient] these are like my video visit exams
+[doctor] exactly so your neck exam has no jvd there is no bruits that i can hear your lung exam no rales no wheezing on your heart exam you do have a two over six systolic ejection murmur you had that in the past so i'm not too worried about that otherwise regular rate and rhythm on your heart exam on your on your on your belly exam is nice and soft on your back exam you do have some tenderness on the left paraspinal area right where i'm pressing right there your straight leg raise test is negative your reflexes are normal you have some just some tenderness in the lower back in the paraspinal area of your back when i palpate there otherwise your neurological exam is normal on your extremity exam you do have this one plus nonpitting edema of your lower extremities which is a little bit of swelling in your ankles no calf tenderness negative homans sign no signs of blood clot that's what that means so let me just review what you know explain what all this means so the back pain the first problem that you're here today for i think this is more of a muscular sprain i'm gon na recommend we start you on some anti-inflammatory naprosyn five hundred five hundred milligrams twice a day and flexeril ten milligrams twice a day as well i'm gon na refer you to for for physical therapy to help strengthen some of the muscles in your lower back i do n't think you need an x-ray at this stage why do n't we start with physical therapy and the muscle relaxers and the pain medicines if it does n't get better then we can get an x-ray but right now i would start with that if that's okay with you any questions about that
+[patient] no
+[doctor] okay for the diabetes the the second problem that we talked about today i'm gon na order another hemoglobin a1c continue the metformin five hundred milligrams twice a day why do n't we have you come back in about two weeks and we should have some of the results back and we can discuss if we need to make any modifications for that but right now we will continue the course and we will go from there okay for the high blood pressure you do have this one plus edema in your legs i'm gon na go ahead and order some blood work today i'm gon na go ahead and stop the norvasc and we'll put you on some hydrochlorothiazide ten milligrams once a day and if that does n't get if the swelling does n't go away i'm gon na do some more testing for right now let's get some sort off with some cbc and a bmp i'm gon na check your kidney function i'm gon na get another ekg and also i'm gon na get a chest x-ray and we'll go from there but hopefully this will go away once we stop this medication since it started around that time okay okay and i think that's it anything else we forgot about do you need refills for anything
+[patient] no i i think i'm okay you gave me a year's worth of refills last time we were together
+[doctor] okay sounds great alright thanks gabriel good seeing you again
+[patient] good to see you thanks
+=== FIELD: note
+CHIEF COMPLAINT
+
+Back pain evaluation.
+
+MEDICAL HISTORY
+
+The patient has a history of diabetes, hypertension, and high cholesterol.
+
+SURGICAL HISTORY
+
+He denies previous back surgeries.
+
+MEDICATIONS
+
+The patient currently utilizes metformin 500 mg twice daily and Norvasc.
+
+REVIEW OF SYSTEMS
+
+Cardiovascular: Reports ankle swelling.
+Musculoskeletal: Reports lower back pain.
+Neurological: Reports tingling in left leg. Denies weakness or numbness in legs, or loss of bowl or bladder function.
+
+PHYSICAL EXAM
+
+Neurological
+- Orientation: Alert and oriented x3. Cranial nerves grossly intact. Normal gait.
+
+Neck
+- General Examination: No JVD. No bruits.
+
+Respiratory
+- Auscultation of Lungs: No wheezes, rales.
+
+Cardiovascular
+- Auscultation of Heart: Regular rate and rhythm. 2/6 systolic ejection murmur. Otherwise, regular rate and rhythm.
+
+Musculoskeletal
+- Examination: Tenderness on the left paraspinal area. Straight leg raise test is negative. Reflexes are normal. 1+ nonpitting edema of lower extremities. No calf tenderness. Negative Homan's sign.
+
+ASSESSMENT AND PLAN
+
+1. Lower back pain.
+- Medical Reasoning: I believe this is more of a muscular sprain.
+- Patient Education and Counseling: We discussed treatment options today.
+- Medical Treatment: I am going to start him on Naprosyn 500 mg twice a day and Flexeril 10 mg twice a day. I will refer him for physical therapy to help strengthen some of the muscles in his lower back.
+- Additional Testing: I do not think he needs an x-ray at this stage, however if he does not improve, we will order one for further evaluation.
+
+2. Diabetes.
+- Medical Reasoning: His most recent A1c was 7.1 and his blood sugar levels are typically between 120-140.
+- Patient Education and Counseling: We discussed treatment options today.
+- Medical Treatment: He will continue the metformin 500 mg twice a day.
+- Additional Testing: I am going to order another hemoglobin A1c.
+
+3. Hypertension.
+- Medical Reasoning: He does have 1+ edema in his legs.
+- Patient Education and Counseling: We discussed treatment options today. I explained that his edema is likely caused by the Norvasc.
+- Medical Treatment: The patient will discontinue the use of Norvasc and we will start him on hydrochlorothiazide 10 mg once a day.
+- Additional Testing: I will order a CBC and BMP. Additionally, I will order a repeat EKG, as well as a chest x-ray.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+The patient will follow up in 2 weeks.
+
+########## ENCOUNTER D2N067
+ICD-10 codes: S83.521A Sprain of posterior cruciate ligament of right knee, initial encounter; W22.8XXA Striking against or struck by other objects, initial encounter; Y93.23 Activity, snow (alpine) (downhill) skiing, snowboarding, sledding, tobogganing and snow tubing
+=== FIELD: dialogue
+[doctor] hi elizabeth so i see that you were experiencing some kind of injury did you say that you hurt your knee
+[patient] yes i hurt my knee when i was skiing two weeks ago
+[doctor] okay skiing that sounds exciting alright so what happened what what's when did the injury like what sorry what happened in the injury
+[patient] so i was flying down this black diamond you know like i like to do
+[doctor] yes
+[patient] and this kid who was going faster than me spent by me so then i tried to speed past them and then i ran into a tree and twisted my knee
+[doctor] so we were downhill skiing racing at this point okay is it your left or your right knee
+[patient] it's my right
+[doctor] okay and does it hurt on the inside or the outside
+[patient] the inside
+[doctor] okay so the medial aspect of the right knee when you fell did you hear a pop
+[patient] i did yes
+[doctor] okay alright
+[patient] i think that was my left knee
+[doctor] okay okay alright so we got we got ta pick one if it if it
+[patient] i'm just trying to be real
+[doctor] no
+[patient] what happens in the in a real
+[doctor] a hundred percent so how about this right now you're like i what i'm hearing is that you're experiencing bilateral knee pain like both of your knees hurt but i'm assuming that like your right knee hurts more is that correct
+[patient] yeah my left knee does n't really hurt
+[doctor] uh uh
+[patient] that's the one that popped it the left knee just feels unstable but my right knee hurts
+[doctor] gotcha gotcha okay yeah i think hmmm alright so we're gon na we're gon na go ahead and look at this sort of but on a scale of one to ten how severe is your pain
+[patient] it's a seven
+[doctor] okay that's pretty bad alright and does it has it been increasing or like rapidly or slowly over the last few days
+[patient] it's been slow
+[doctor] okay alright
+[patient] but sometimes it gets to an eleven
+[doctor] okay what would do you know if you are doing something that would cause it to be an eleven are you back on your ski's
+[patient] no i ca n't ski
+[doctor] okay
+[patient] usually when i walk my dog
+[doctor] okay does it hurt more when you walk for longer periods of time
+[patient] yes
+[doctor] okay how long does the pain last
+[patient] for as long as my walk is and i do n't sometimes i walk five minutes kinda depends on the wind
+[doctor] okay alright
+[patient] sometimes i walk there is
+[doctor] okay alright have you done anything to help with the pain
+[patient] well i wear a brace and i have used a lot of thc cream on it
+[doctor] okay alright thc cream is an interesting choice but do you think that's been helpful
+[patient] yes
+[doctor] alright have you taken
+[patient] reasons
+[doctor] not a problem have you taken any medications
+[patient] no just gummies
+[doctor] okay like vitamins or more thc
+[patient] kind of like thc gummies
+[doctor] thc gummies
+[patient] my grandma gave them to me
+[doctor] thc gummies from grandma that's an excellent grandmother that you have okay have you noticed any swelling stiffness tenderness
+[patient] yeah i i get a lot of swelling and it really is it's very stiff in the morning until i get walking
+[doctor] okay alright and then have you had any hospitalizations or surgeries in the past
+[patient] well i had surgery on my right knee before
+[doctor] okay so you've had surgery before alright do you remember what kind of surgery
+[patient] i do n't know they told me they reconstructed the whole thing i was fourteen i was a really good gymnast back then really good
+[doctor] okay
+[patient] and i was doing a back summer salt and i felt a pop then and then since that time i've really had problems with my knee
+[doctor] uh uh
+[patient] but you know the athlete that i am i can still really ski very well so i just kept going
+[doctor] okay
+[patient] and i'm really tough my pain tolerance is very high
+[doctor] okay okay okay how so do you have any other exercises that i might wan na know about outside of intense gym and ski events
+[patient] no i think that's about it
+[doctor] okay and how frequently do you normally ski
+[patient] i ski probably three times a week
+[doctor] okay and then are you on any medications at this time other than the thc
+[patient] no
+[doctor] okay alright what
+[patient] nothing no
+[doctor] okay alright not a problem so if you do n't mind i'm gon na go ahead and start my examination i'm just gon na call it out for the sake of being able to document it appropriately and you or just just let me know if you want me to explain anything further so with your knee i know that you said it hurts on the right inside a lot right so when i press on the inside of your knee does that hurt
+[patient] yes
+[doctor] okay and when i press on the outside of your left of your right knee sorry does that hurt
+[patient] no
+[doctor] okay alright so when i move your your kneecap does that hurt
+[patient] no it kinda makes a shooting pain down to my ankle though
+[doctor] okay
+[patient] but it does n't hurt my knee
+[doctor] okay so does the pain radiate frequently
+[patient] no
+[doctor] okay
+[patient] i've never really noticed it just messed with my kneecap
+[doctor] okay alright on your skin exam i do appreciate some mild swelling and bruising that's really interesting since it's been two weeks with your knee are you able to bend it
+[patient] yes
+[doctor] okay and then when you walked in on your gait i think i think i did appreciate a slight limp are you i i i i think you are you are protecting one of your knees does that sound familiar
+[patient] yeah i waddle pretty pretty good now
+[doctor] okay alright and when you move your knee away from your body you're bending like your you're pulling it towards me does that hurt
+[patient] yes
+[doctor] okay and then when you pull your knee back towards you does that hurt
+[patient] no
+[doctor] alright so pain on dorsiflexion but not on plantar flexion plantar flexion okay alright so what we are gon na do right now i think i'm gon na look at your x-rays but when i when i look at the results of your x-ray i do not appreciate any fracture what i am noticing is the development of a little bit of arthritis and that could explain like why you say that your joints hurt a bit more during like windy weather and what not so this is what we're gon na do for my assessment and plan right the first thing is i think you have a strain of your posterior cruciate ligament what that means is what that will mean for you though is that we are gon na continue to brace your right knee that's gon na hopefully take off some of the stress that you might be putting on it especially since you're limping i am going to recommend you for physical therapy i think it would be an i think it's a good idea to maybe start three times a week to get your strength back into your knee i would recommend not skiing or doing any gymnastics for now and i think that physical therapy will really help considering the injury that you had when you were fourteen i'm gon na prescribe you some medications i do n't necessarily recommend consuming gummies at the same time but the medications i'm gon na give you are gon na be meloxicam fifteen milligrams you're gon na take that once a day that will help with like the swelling and the bruising i'm also gon na prescribe you just like a higher strength nsaid so ibuprofen eight hundred milligrams a day you can take that twice a day as needed for your left knee i think you are i think you just kind of like strength a little bit but like not enough to necessarily require any kind of like medication or bracing i think you just take it easy on your body i know that you're like very active from what i hear and i i think that that's really exciting but i think you might need to listen to your body and give yourself a bit of a break you'll be able to do like several workouts when you go to when you go to physical therapy but you know let the yeah let your therapist be your guide about like what you should and should not be putting your body through does that make sense
+[patient] yes
+[doctor] alright do you have any questions right now
+[patient] no thank you so much
+[doctor] no problem
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right knee injury.
+
+HISTORY OF PRESENT ILLNESS
+
+Elizabeth Ross is a pleasant 91-year-old female who presents to the clinic today for the evaluation of a right knee injury. The onset of her pain began 2 weeks ago, when she was downhill skiing. She states she ran into a tree and twisted her right knee. At the time of the injury, she also heard a pop in her left knee, however she denies left knee pain. The patient locates her pain to the medial aspect of her right knee. Currently, her pain level is 7 out of 10, however she notes this can reach an 11 out of 10 at times with prolonged ambulation. The patient states that her pain has been slowly increasing over the last few days. She experiences limping with ambulation. The patient states that her pain lasts for as long as she is ambulating. She denies radiating pain. She also reports constant swelling and stiffness in the morning. Her stiffness will resolve with ambulation. The patient has been wearing a brace and using THC cream, which has been helpful. She denies taking any medications for pain, however she has been utilizing THC gummies, which have been beneficial.
+
+The patient has a history of a right knee reconstruction when she was 14 years old. She states that she was a good gymnast at that time. The patient adds that she has had problems with her right knee since that time. She denies any other exercises outside of intense gym and ski events. The patient states that she normally skis 3 times per week.
+
+SURGICAL HISTORY
+
+The patient reports a history of total right knee reconstruction at the age of 14.
+
+MEDICATIONS
+
+She denies needing medications.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports right knee pain, swelling, and stiffness. Denies left knee pain.
+
+PHYSICAL EXAM
+
+MSK: Examination of the right knee: Mild effusion. The patient ambulated with an antalgic gait. Pain with dorsiflexion, but not with plantarflexion.
+
+RESULTS
+
+4 views of the right knee were taken. These reveal no evidence of any fractures. There is development of mild arthritis.
+
+ASSESSMENT
+
+1. Right knee posterior cruciate ligament strain.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with the patient in regard to her current symptoms. I have explained to her that her x-rays did not reveal any signs of a fracture. I have recommended that we treat the patient conservatively with continued bracing. We will initiate formal physical therapy 3 times per week to strengthen her right knee. Additionally, I have prescribed the patient meloxicam 15 mg and ibuprofen 800 mg twice daily as needed. She should discontinue the use of her THC gummies while taking these medications.
+
+Regarding her left knee, I do not believe she will need any further medications to treat this. I have advised her to avoid skiing or gymnastics at this time.
+

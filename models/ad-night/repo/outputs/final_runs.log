@@ -1,0 +1,499 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:31, 12.06it/s]Loading weights:  83%|████████▎ | 323/391 [00:00<00:00, 626.74it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 471.16it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2261 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 67 records in 140.2s (2092.8 ms/encounter), peak RAM 2516.7 MB, peak VRAM 2123.7 MB, 646 edits, 129 explained keeps, schema errors: 0, shield overlaps: 0
+-> outputs/anonymized_eval_patient_doctor_encounters.jsonl
+-> outputs/anonymized_eval_patient_doctor_encounters.decisions.jsonl
+-> outputs/anonymized_eval_patient_doctor_encounters.summary.json
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| submission_eval | 0.839 | 0.998 | 0.921 | 1.000 | 0.958 | 1.000 | 1.000 | 0.235 | 0.235 | 0.928 | 2,092.8 | 2,516.7 | 2,123.7 |
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| submission_eval_icdllm | 0.839 | 0.998 | 0.921 | 1.000 | - | 1.000 | 1.000 | 0.234 | 0.261 | 0.790 | 2,092.8 | 2,516.7 | 2,123.7 |
+anonymized 67 records in 5.5s (82.3 ms/encounter), peak RAM 98.4 MB, peak VRAM 0.0 MB, 555 edits, 216 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_conservative/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_conservative/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_conservative/anonymized.summary.json
+anonymized 67 records in 5.4s (81.3 ms/encounter), peak RAM 99.0 MB, peak VRAM 0.0 MB, 635 edits, 128 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced/anonymized.summary.json
+anonymized 67 records in 5.5s (82.2 ms/encounter), peak RAM 99.0 MB, peak VRAM 0.0 MB, 716 edits, 41 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_aggressive/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_aggressive/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_aggressive/anonymized.summary.json
+anonymized 67 records in 5.4s (80.2 ms/encounter), peak RAM 84.8 MB, peak VRAM 0.0 MB, 642 edits, 119 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced_nocodes/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced_nocodes/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced_nocodes/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:31, 12.01it/s]Loading weights:  50%|████▉     | 195/391 [00:00<00:00, 373.33it/s]Loading weights:  76%|███████▌  | 298/391 [00:01<00:00, 344.20it/s]Loading weights:  94%|█████████▍| 368/391 [00:01<00:00, 327.72it/s]Loading weights: 100%|██████████| 391/391 [00:01<00:00, 286.18it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2261 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 67 records in 148.1s (2210.9 ms/encounter), peak RAM 2137.2 MB, peak VRAM 2139.7 MB, 559 edits, 256 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_conservative_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_conservative_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_conservative_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:29, 13.22it/s]Loading weights:  50%|████▉     | 195/391 [00:00<00:00, 389.81it/s]Loading weights:  73%|███████▎  | 285/391 [00:00<00:00, 373.00it/s]Loading weights:  90%|████████▉ | 350/391 [00:01<00:00, 369.52it/s]Loading weights: 100%|██████████| 391/391 [00:01<00:00, 316.96it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2261 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 67 records in 135.0s (2014.6 ms/encounter), peak RAM 2412.8 MB, peak VRAM 2123.7 MB, 646 edits, 129 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:26, 14.72it/s]Loading weights:  54%|█████▍    | 211/391 [00:00<00:00, 460.99it/s]Loading weights:  80%|███████▉  | 312/391 [00:00<00:00, 452.60it/s]Loading weights:  99%|█████████▉| 387/391 [00:00<00:00, 455.47it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 395.58it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2261 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 67 records in 140.9s (2102.7 ms/encounter), peak RAM 2519.2 MB, peak VRAM 2123.7 MB, 727 edits, 42 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_aggressive_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_aggressive_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_aggressive_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:24, 15.77it/s]Loading weights:  50%|████▉     | 195/391 [00:00<00:00, 462.50it/s]Loading weights:  77%|███████▋  | 300/391 [00:00<00:00, 468.57it/s]Loading weights:  97%|█████████▋| 379/391 [00:00<00:00, 453.81it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 391.53it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2261 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 67 records in 129.7s (1936.2 ms/encounter), peak RAM 2506.8 MB, peak VRAM 2123.7 MB, 653 edits, 120 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced_nocodes_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced_nocodes_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced_nocodes_rules+deid+gliner/anonymized.summary.json
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/eval_patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_conservative/anonymized.jsonl --preset conservative --explain-text --device auto
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_eval_conservative | 0.740 | 0.991 | 0.845 | 1.000 | 0.984 | 1.000 | 1.000 | 0.235 | 0.235 | 0.935 | 82.3 | 98.4 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/eval_patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced/anonymized.jsonl --preset balanced --explain-text --device auto
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_eval_balanced | 0.828 | 0.996 | 0.910 | 1.000 | 0.962 | 1.000 | 1.000 | 0.235 | 0.235 | 0.928 | 81.3 | 99.0 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/eval_patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_aggressive/anonymized.jsonl --preset aggressive --explain-text --device auto
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_eval_aggressive | 0.869 | 0.996 | 0.921 | 0.984 | 0.902 | 1.000 | 1.000 | 0.235 | 0.235 | 0.922 | 82.2 | 99.0 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/eval_patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced_nocodes/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_eval_balanced_nocodes | 0.832 | 0.996 | 0.915 | 0.994 | 0.956 | 1.000 | 0.999 | 0.235 | 0.235 | 0.928 | 80.2 | 84.8 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/eval_patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_conservative_rules+deid+gliner/anonymized.jsonl --preset conservative --explain-text --device auto --detectors rules,deid,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_eval_conservative_rules+deid+gliner | 0.745 | 0.998 | 0.851 | 1.000 | 0.984 | 1.000 | 1.000 | 0.235 | 0.235 | 0.935 | 2,210.9 | 2,137.2 | 2,139.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/eval_patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced_rules+deid+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,deid,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_eval_balanced_rules+deid+gliner | 0.839 | 0.998 | 0.921 | 1.000 | 0.958 | 1.000 | 1.000 | 0.235 | 0.235 | 0.928 | 2,014.6 | 2,412.8 | 2,123.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/eval_patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_aggressive_rules+deid+gliner/anonymized.jsonl --preset aggressive --explain-text --device auto --detectors rules,deid,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_eval_aggressive_rules+deid+gliner | 0.879 | 0.998 | 0.932 | 0.984 | 0.900 | 1.000 | 1.000 | 0.235 | 0.235 | 0.922 | 2,102.7 | 2,519.2 | 2,123.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/eval_patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_eval_balanced_nocodes_rules+deid+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes --detectors rules,deid,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_eval_balanced_nocodes_rules+deid+gliner | 0.843 | 0.998 | 0.925 | 0.994 | 0.953 | 1.000 | 0.999 | 0.235 | 0.235 | 0.928 | 1,936.2 | 2,506.8 | 2,123.7 |
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_eval_conservative | 0.740 | 0.991 | 0.845 | 1.000 | 0.984 | 1.000 | 1.000 | 0.235 | 0.235 | 0.935 | 82.3 | 98.4 | 0.000 |
+| sweep_eval_balanced | 0.828 | 0.996 | 0.910 | 1.000 | 0.962 | 1.000 | 1.000 | 0.235 | 0.235 | 0.928 | 81.3 | 99.0 | 0.000 |
+| sweep_eval_aggressive | 0.869 | 0.996 | 0.921 | 0.984 | 0.902 | 1.000 | 1.000 | 0.235 | 0.235 | 0.922 | 82.2 | 99.0 | 0.000 |
+| sweep_eval_balanced_nocodes | 0.832 | 0.996 | 0.915 | 0.994 | 0.956 | 1.000 | 0.999 | 0.235 | 0.235 | 0.928 | 80.2 | 84.8 | 0.000 |
+| sweep_eval_conservative_rules+deid+gliner | 0.745 | 0.998 | 0.851 | 1.000 | 0.984 | 1.000 | 1.000 | 0.235 | 0.235 | 0.935 | 2,210.9 | 2,137.2 | 2,139.7 |
+| sweep_eval_balanced_rules+deid+gliner | 0.839 | 0.998 | 0.921 | 1.000 | 0.958 | 1.000 | 1.000 | 0.235 | 0.235 | 0.928 | 2,014.6 | 2,412.8 | 2,123.7 |
+| sweep_eval_aggressive_rules+deid+gliner | 0.879 | 0.998 | 0.932 | 0.984 | 0.900 | 1.000 | 1.000 | 0.235 | 0.235 | 0.922 | 2,102.7 | 2,519.2 | 2,123.7 |
+| sweep_eval_balanced_nocodes_rules+deid+gliner | 0.843 | 0.998 | 0.925 | 0.994 | 0.953 | 1.000 | 0.999 | 0.235 | 0.235 | 0.928 | 1,936.2 | 2,506.8 | 2,123.7 |
+-> /Users/usi/neural wave/neural_wave/outputs/eval/sweep_eval.md
+anonymized 40 records in 3.4s (86.0 ms/encounter), peak RAM 98.2 MB, peak VRAM 0.0 MB, 330 edits, 112 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_conservative/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_conservative/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_conservative/anonymized.summary.json
+anonymized 40 records in 3.4s (85.2 ms/encounter), peak RAM 97.5 MB, peak VRAM 0.0 MB, 390 edits, 60 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced/anonymized.summary.json
+anonymized 40 records in 3.3s (82.4 ms/encounter), peak RAM 97.9 MB, peak VRAM 0.0 MB, 445 edits, 3 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_aggressive/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_aggressive/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_aggressive/anonymized.summary.json
+anonymized 40 records in 3.3s (83.0 ms/encounter), peak RAM 84.3 MB, peak VRAM 0.0 MB, 391 edits, 59 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced_nocodes/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced_nocodes/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced_nocodes/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:39,  9.65it/s]Loading weights:  50%|████▉     | 195/391 [00:00<00:00, 315.03it/s]Loading weights:  77%|███████▋  | 302/391 [00:01<00:00, 366.72it/s]Loading weights:  97%|█████████▋| 381/391 [00:01<00:00, 373.04it/s]Loading weights: 100%|██████████| 391/391 [00:01<00:00, 299.98it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2405 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 40 records in 80.8s (2021.2 ms/encounter), peak RAM 2240.5 MB, peak VRAM 2123.7 MB, 334 edits, 147 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_conservative_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_conservative_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_conservative_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:25, 15.09it/s]Loading weights:  54%|█████▍    | 211/391 [00:00<00:00, 479.16it/s]Loading weights:  82%|████████▏ | 320/391 [00:00<00:00, 494.55it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 403.13it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2405 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 40 records in 82.3s (2057.2 ms/encounter), peak RAM 2518.7 MB, peak VRAM 2123.7 MB, 401 edits, 60 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:25, 15.04it/s]Loading weights:  54%|█████▍    | 211/391 [00:00<00:00, 469.29it/s]Loading weights:  80%|████████  | 313/391 [00:00<00:00, 473.10it/s]Loading weights: 100%|█████████▉| 390/391 [00:00<00:00, 478.27it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 409.31it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2405 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 40 records in 81.7s (2042.5 ms/encounter), peak RAM 2519.1 MB, peak VRAM 2123.7 MB, 454 edits, 3 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_aggressive_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_aggressive_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_aggressive_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:24, 15.49it/s]Loading weights:  54%|█████▍    | 211/391 [00:00<00:00, 473.03it/s]Loading weights:  79%|███████▉  | 308/391 [00:00<00:00, 463.86it/s]Loading weights:  97%|█████████▋| 381/391 [00:00<00:00, 465.03it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 397.07it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2405 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 40 records in 92.0s (2301.0 ms/encounter), peak RAM 2509.1 MB, peak VRAM 2123.7 MB, 402 edits, 59 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced_nocodes_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced_nocodes_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced_nocodes_rules+deid+gliner/anonymized.summary.json
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_conservative/anonymized.jsonl --preset conservative --explain-text --device auto --ids /Users/usi/neural wave/neural_wave/outputs/gold/dev_ids.json
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_dev_conservative | 0.753 | 0.982 | 0.878 | 1.000 | 0.982 | 1.000 | 1.000 | 0.244 | 0.256 | 0.987 | 86.0 | 98.2 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced/anonymized.jsonl --preset balanced --explain-text --device auto --ids /Users/usi/neural wave/neural_wave/outputs/gold/dev_ids.json
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_dev_balanced | 0.865 | 1.000 | 0.970 | 1.000 | 0.954 | 1.000 | 1.000 | 0.244 | 0.256 | 0.974 | 85.2 | 97.5 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_aggressive/anonymized.jsonl --preset aggressive --explain-text --device auto --ids /Users/usi/neural wave/neural_wave/outputs/gold/dev_ids.json
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_dev_aggressive | 0.928 | 1.000 | 0.970 | 0.951 | 0.897 | 1.000 | 1.000 | 0.244 | 0.256 | 0.949 | 82.4 | 97.9 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced_nocodes/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes --ids /Users/usi/neural wave/neural_wave/outputs/gold/dev_ids.json
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_dev_balanced_nocodes | 0.865 | 1.000 | 0.970 | 0.993 | 0.951 | 1.000 | 1.000 | 0.244 | 0.256 | 0.974 | 83.0 | 84.3 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_conservative_rules+deid+gliner/anonymized.jsonl --preset conservative --explain-text --device auto --detectors rules,deid,gliner --ids /Users/usi/neural wave/neural_wave/outputs/gold/dev_ids.json
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_dev_conservative_rules+deid+gliner | 0.758 | 0.985 | 0.881 | 1.000 | 0.976 | 1.000 | 1.000 | 0.244 | 0.256 | 0.987 | 2,021.2 | 2,240.5 | 2,123.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced_rules+deid+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,deid,gliner --ids /Users/usi/neural wave/neural_wave/outputs/gold/dev_ids.json
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_dev_balanced_rules+deid+gliner | 0.879 | 1.000 | 0.970 | 1.000 | 0.943 | 1.000 | 1.000 | 0.244 | 0.256 | 0.974 | 2,057.2 | 2,518.7 | 2,123.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_aggressive_rules+deid+gliner/anonymized.jsonl --preset aggressive --explain-text --device auto --detectors rules,deid,gliner --ids /Users/usi/neural wave/neural_wave/outputs/gold/dev_ids.json
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_dev_aggressive_rules+deid+gliner | 0.942 | 1.000 | 0.970 | 0.951 | 0.892 | 1.000 | 1.000 | 0.244 | 0.256 | 0.949 | 2,042.5 | 2,519.1 | 2,123.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/sweep_dev_balanced_nocodes_rules+deid+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes --detectors rules,deid,gliner --ids /Users/usi/neural wave/neural_wave/outputs/gold/dev_ids.json
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_dev_balanced_nocodes_rules+deid+gliner | 0.879 | 1.000 | 0.970 | 0.993 | 0.940 | 1.000 | 1.000 | 0.244 | 0.256 | 0.974 | 2,301.0 | 2,509.1 | 2,123.7 |
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sweep_dev_conservative | 0.753 | 0.982 | 0.878 | 1.000 | 0.982 | 1.000 | 1.000 | 0.244 | 0.256 | 0.987 | 86.0 | 98.2 | 0.000 |
+| sweep_dev_balanced | 0.865 | 1.000 | 0.970 | 1.000 | 0.954 | 1.000 | 1.000 | 0.244 | 0.256 | 0.974 | 85.2 | 97.5 | 0.000 |
+| sweep_dev_aggressive | 0.928 | 1.000 | 0.970 | 0.951 | 0.897 | 1.000 | 1.000 | 0.244 | 0.256 | 0.949 | 82.4 | 97.9 | 0.000 |
+| sweep_dev_balanced_nocodes | 0.865 | 1.000 | 0.970 | 0.993 | 0.951 | 1.000 | 1.000 | 0.244 | 0.256 | 0.974 | 83.0 | 84.3 | 0.000 |
+| sweep_dev_conservative_rules+deid+gliner | 0.758 | 0.985 | 0.881 | 1.000 | 0.976 | 1.000 | 1.000 | 0.244 | 0.256 | 0.987 | 2,021.2 | 2,240.5 | 2,123.7 |
+| sweep_dev_balanced_rules+deid+gliner | 0.879 | 1.000 | 0.970 | 1.000 | 0.943 | 1.000 | 1.000 | 0.244 | 0.256 | 0.974 | 2,057.2 | 2,518.7 | 2,123.7 |
+| sweep_dev_aggressive_rules+deid+gliner | 0.942 | 1.000 | 0.970 | 0.951 | 0.892 | 1.000 | 1.000 | 0.244 | 0.256 | 0.949 | 2,042.5 | 2,519.1 | 2,123.7 |
+| sweep_dev_balanced_nocodes_rules+deid+gliner | 0.879 | 1.000 | 0.970 | 0.993 | 0.940 | 1.000 | 1.000 | 0.244 | 0.256 | 0.974 | 2,301.0 | 2,509.1 | 2,123.7 |
+-> /Users/usi/neural wave/neural_wave/outputs/eval/sweep_dev.md
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:26, 14.48it/s]Loading weights:  54%|█████▍    | 211/391 [00:00<00:00, 459.40it/s]Loading weights:  81%|████████  | 315/391 [00:00<00:00, 457.46it/s]Loading weights: 100%|██████████| 391/391 [00:01<00:00, 364.98it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2261 > 512). Running this sequence through the model will result in indexing errors
+anonymized 67 records in 76.3s (1139.5 ms/encounter), peak RAM 2524.5 MB, peak VRAM 1040.7 MB, 642 edits, 128 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+deid/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+deid/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+deid/anonymized.summary.json
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/eval_patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+deid/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,deid
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ablation_eval_rules+deid | 0.836 | 0.998 | 0.919 | 1.000 | 0.961 | 1.000 | 1.000 | 0.235 | 0.235 | 0.928 | 1,139.5 | 2,524.5 | 1,040.7 |
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 67 records in 75.2s (1122.1 ms/encounter), peak RAM 1943.0 MB, peak VRAM 1059.7 MB, 641 edits, 129 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+gliner/anonymized.summary.json
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/eval_patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ablation_eval_rules+gliner | 0.833 | 0.996 | 0.915 | 1.000 | 0.959 | 1.000 | 1.000 | 0.235 | 0.235 | 0.928 | 1,122.1 | 1,943.0 | 1,059.7 |
+anonymized 67 records in 397.0s (5925.0 ms/encounter), peak RAM 271.0 MB, peak VRAM 1581.1 MB, 646 edits, 129 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+llm/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+llm/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+llm/anonymized.summary.json
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/eval_patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+llm/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,llm
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ablation_eval_rules+llm | 0.835 | 0.996 | 0.918 | 0.994 | 0.954 | 1.000 | 1.000 | 0.235 | 0.235 | 0.928 | 5,925.0 | 271.0 | 1,581.1 |
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:01<01:09,  5.56it/s]Loading weights:  50%|████▉     | 195/391 [00:01<00:01, 187.12it/s]Loading weights:  69%|██████▉   | 270/391 [00:01<00:00, 211.10it/s]Loading weights:  83%|████████▎ | 323/391 [00:01<00:00, 199.79it/s]Loading weights:  93%|█████████▎| 362/391 [00:02<00:00, 218.88it/s]Loading weights: 100%|██████████| 391/391 [00:02<00:00, 177.92it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2261 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 67 records in 559.5s (8351.4 ms/encounter), peak RAM 1898.5 MB, peak VRAM 3702.3 MB, 652 edits, 130 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+deid+gliner+llm/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+deid+gliner+llm/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+deid+gliner+llm/anonymized.summary.json
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/eval_patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/ablation_eval_rules+deid+gliner+llm/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,deid,gliner,llm
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ablation_eval_rules+deid+gliner+llm | 0.842 | 0.998 | 0.924 | 0.994 | 0.953 | 1.000 | 1.000 | 0.235 | 0.235 | 0.928 | 8,351.4 | 1,898.5 | 3,702.3 |
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:32, 11.79it/s]Loading weights:  58%|█████▊    | 227/391 [00:00<00:00, 376.42it/s]Loading weights:  76%|███████▋  | 299/391 [00:01<00:00, 335.90it/s]Loading weights:  90%|████████▉ | 351/391 [00:01<00:00, 333.88it/s]Loading weights: 100%|██████████| 391/391 [00:01<00:00, 280.35it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2405 > 512). Running this sequence through the model will result in indexing errors
+anonymized 40 records in 34.8s (871.2 ms/encounter), peak RAM 1886.9 MB, peak VRAM 1032.7 MB, 394 edits, 60 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+deid/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+deid/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+deid/anonymized.summary.json
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+deid/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,deid --ids /Users/usi/neural wave/neural_wave/outputs/gold/dev_ids.json
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ablation_dev_rules+deid | 0.870 | 1.000 | 0.970 | 1.000 | 0.949 | 1.000 | 1.000 | 0.244 | 0.256 | 0.974 | 871.2 | 1,886.9 | 1,032.7 |
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 40 records in 42.2s (1054.3 ms/encounter), peak RAM 1759.1 MB, peak VRAM 1059.7 MB, 399 edits, 60 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+gliner/anonymized.summary.json
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,gliner --ids /Users/usi/neural wave/neural_wave/outputs/gold/dev_ids.json
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ablation_dev_rules+gliner | 0.877 | 1.000 | 0.970 | 1.000 | 0.945 | 1.000 | 1.000 | 0.244 | 0.256 | 0.974 | 1,054.3 | 1,759.1 | 1,059.7 |
+anonymized 40 records in 262.9s (6573.0 ms/encounter), peak RAM 266.4 MB, peak VRAM 1581.1 MB, 391 edits, 60 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+llm/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+llm/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+llm/anonymized.summary.json
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+llm/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,llm --ids /Users/usi/neural wave/neural_wave/outputs/gold/dev_ids.json
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ablation_dev_rules+llm | 0.865 | 1.000 | 0.970 | 1.000 | 0.951 | 1.000 | 1.000 | 0.244 | 0.256 | 0.974 | 6,573.0 | 266.4 | 1,581.1 |
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:40,  9.57it/s]Loading weights:  46%|████▌     | 179/391 [00:00<00:00, 282.77it/s]Loading weights:  69%|██████▉   | 269/391 [00:01<00:00, 255.89it/s]Loading weights:  84%|████████▍ | 328/391 [00:01<00:00, 240.76it/s]Loading weights:  95%|█████████▌| 372/391 [00:01<00:00, 234.76it/s]Loading weights: 100%|██████████| 391/391 [00:01<00:00, 216.29it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2405 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 40 records in 353.7s (8843.2 ms/encounter), peak RAM 1648.6 MB, peak VRAM 3702.3 MB, 402 edits, 60 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+deid+gliner+llm/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+deid+gliner+llm/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+deid+gliner+llm/anonymized.summary.json
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/resources/data/patient_doctor_encounters.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/ablation_dev_rules+deid+gliner+llm/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,deid,gliner,llm --ids /Users/usi/neural wave/neural_wave/outputs/gold/dev_ids.json
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ablation_dev_rules+deid+gliner+llm | 0.879 | 1.000 | 0.970 | 1.000 | 0.940 | 1.000 | 1.000 | 0.244 | 0.256 | 0.974 | 8,843.2 | 1,648.6 | 3,702.3 |
+A2 roster: {'original': {'recovered': 205, 'of': 205, 'rate': 1.0}, 'anonymized': {'recovered': 0, 'of': 205, 'rate': 0.0}, 'roster_size': 2236}
+A3 rare words: {'rare_out_of_vocabulary_tokens': 211, 'rare_out_of_vocabulary_surviving': 190, 'rare_tokens_original': 13, 'rare_tokens_surviving': 1, 'rare_token_removal': 0.9231, 'encounters_with_surviving_rare_token': 1, 'note': 'rare identifier-like = occurs in exactly one encounter, not medical/drug/dictionary vocabulary, and is a known name, place, employer, team or brand'}
+A5 linkage: {'top1_relink': 67, 'of': 67, 'rate': 1.0}
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:48,  7.93it/s]Loading weights:  50%|████▉     | 195/391 [00:01<00:00, 255.45it/s]Loading weights:  71%|███████   | 276/391 [00:01<00:00, 245.73it/s]Loading weights:  85%|████████▍ | 331/391 [00:01<00:00, 243.46it/s]Loading weights:  96%|█████████▌| 374/391 [00:01<00:00, 229.73it/s]Loading weights: 100%|██████████| 391/391 [00:01<00:00, 206.92it/s]
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2261 > 512). Running this sequence through the model will result in indexing errors
+A1 NER: {'original': {'recovered': 387, 'of': 453, 'rate': 0.8543}, 'anonymized': {'recovered': 2, 'of': 453, 'rate': 0.0044}}
+A4 LLM: {'original': {'name': {'recovered': 60, 'of': 63, 'rate': 0.9524}, 'age_exact': {'recovered': 54, 'of': 54, 'rate': 1.0}, 'place': {'recovered': 2, 'of': 13, 'rate': 0.1538}, 'employer_or_job': {'recovered': 8, 'of': 23, 'rate': 0.3478}}, 'anonymized': {'name': {'recovered': 0, 'of': 63, 'rate': 0.0}, 'age_exact': {'recovered': 11, 'of': 54, 'rate': 0.2037}, 'place': {'recovered': 1, 'of': 13, 'rate': 0.0769}, 'employer_or_job': {'recovered': 6, 'of': 23, 'rate': 0.2609}}, 'model': 'qwen3.5:2b-q4_K_M'}
+-> /Users/usi/neural wave/neural_wave/outputs/eval/attack_submission.json
+A2 roster: {'original': {'recovered': 205, 'of': 205, 'rate': 1.0}, 'anonymized': {'recovered': 0, 'of': 205, 'rate': 0.0}, 'roster_size': 2236}
+A3 rare words: {'rare_out_of_vocabulary_tokens': 211, 'rare_out_of_vocabulary_surviving': 194, 'rare_tokens_original': 13, 'rare_tokens_surviving': 2, 'rare_token_removal': 0.8462, 'encounters_with_surviving_rare_token': 2, 'note': 'rare identifier-like = occurs in exactly one encounter, not medical/drug/dictionary vocabulary, and is a known name, place, employer, team or brand'}
+A5 linkage: {'top1_relink': 67, 'of': 67, 'rate': 1.0}
+A4 LLM: {'original': {'name': {'recovered': 60, 'of': 63, 'rate': 0.9524}, 'age_exact': {'recovered': 54, 'of': 54, 'rate': 1.0}, 'place': {'recovered': 2, 'of': 13, 'rate': 0.1538}, 'employer_or_job': {'recovered': 8, 'of': 23, 'rate': 0.3478}}, 'anonymized': {'name': {'recovered': 0, 'of': 63, 'rate': 0.0}, 'age_exact': {'recovered': 11, 'of': 54, 'rate': 0.2037}, 'place': {'recovered': 1, 'of': 13, 'rate': 0.0769}, 'employer_or_job': {'recovered': 6, 'of': 23, 'rate': 0.2609}}, 'model': 'qwen3.5:2b-q4_K_M'}
+-> /Users/usi/neural wave/neural_wave/outputs/eval/attack_balanced_rules.json
+anonymized 16 records in 0.7s (41.9 ms/encounter), peak RAM 96.8 MB, peak VRAM 0.0 MB, 674 edits, 33 explained keeps, schema errors: 0, shield overlaps: 2
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced/anonymized.summary.json
+anonymized 16 records in 0.6s (35.9 ms/encounter), peak RAM 82.7 MB, peak VRAM 0.0 MB, 678 edits, 23 explained keeps, schema errors: 0, shield overlaps: 2
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced_nocodes/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced_nocodes/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced_nocodes/anonymized.summary.json
+anonymized 24 records in 0.9s (37.3 ms/encounter), peak RAM 97.1 MB, peak VRAM 0.0 MB, 1115 edits, 52 explained keeps, schema errors: 0, shield overlaps: 6
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced/anonymized.summary.json
+anonymized 24 records in 0.8s (34.2 ms/encounter), peak RAM 83.0 MB, peak VRAM 0.0 MB, 1121 edits, 43 explained keeps, schema errors: 0, shield overlaps: 6
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced_nocodes/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced_nocodes/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced_nocodes/anonymized.summary.json
+anonymized 500 records in 2.8s (5.6 ms/encounter), peak RAM 97.8 MB, peak VRAM 0.0 MB, 8047 edits, 96 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced/anonymized.summary.json
+anonymized 500 records in 2.8s (5.5 ms/encounter), peak RAM 84.0 MB, peak VRAM 0.0 MB, 8047 edits, 96 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced_nocodes/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced_nocodes/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced_nocodes/anonymized.summary.json
+anonymized 80 records in 0.9s (11.3 ms/encounter), peak RAM 82.8 MB, peak VRAM 0.0 MB, 906 edits, 87 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_medconv_balanced_nocodes/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_medconv_balanced_nocodes/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_medconv_balanced_nocodes/anonymized.summary.json
+anonymized 24 records in 0.6s (26.5 ms/encounter), peak RAM 96.8 MB, peak VRAM 0.0 MB, 788 edits, 62 explained keeps, schema errors: 0, shield overlaps: 1
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced/anonymized.summary.json
+anonymized 24 records in 0.6s (24.1 ms/encounter), peak RAM 82.8 MB, peak VRAM 0.0 MB, 796 edits, 40 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced_nocodes/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced_nocodes/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced_nocodes/anonymized.summary.json
+built discharge: 500 records, 7300 gold PII items -> /Users/usi/neural wave/neural_wave/outputs/robustness/discharge.jsonl
+built medconv: 80 records, 811 gold PII items -> /Users/usi/neural wave/neural_wave/outputs/robustness/medconv.jsonl
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/holdout2.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced/anonymized.jsonl --preset balanced --explain-text --device auto
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_holdout2_balanced | 0.710 | 0.771 | 0.719 | 0.926 | 0.953 | 0.995 | 0.953 | 0.298 | 0.362 | 0.723 | 41.9 | 96.8 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/holdout2.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced_nocodes/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_holdout2_balanced_nocodes | 0.714 | 0.777 | 0.723 | 0.921 | 0.951 | 0.995 | 0.906 | 0.298 | 0.319 | 0.723 | 35.9 | 82.7 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/holdout.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced/anonymized.jsonl --preset balanced --explain-text --device auto
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_holdout_balanced | 0.758 | 0.858 | 0.773 | 0.959 | 0.945 | 0.998 | 0.997 | 0.304 | 0.319 | 0.768 | 37.3 | 97.1 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/holdout.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced_nocodes/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_holdout_balanced_nocodes | 0.758 | 0.858 | 0.773 | 0.941 | 0.940 | 0.998 | 0.970 | 0.304 | 0.304 | 0.768 | 34.2 | 83.0 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/discharge.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced/anonymized.jsonl --preset balanced --explain-text --device auto
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_discharge_balanced | 0.992 | 1.000 | 0.992 | 1.000 | 0.994 | 0.996 | 1.000 | 0.444 | 0.632 | 0.640 | 5.6 | 97.8 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/discharge.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced_nocodes/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_discharge_balanced_nocodes | 0.992 | 1.000 | 0.992 | 1.000 | 0.994 | 0.996 | 1.000 | 0.444 | 0.632 | 0.640 | 5.5 | 84.0 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/medconv.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_medconv_balanced_nocodes/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_medconv_balanced_nocodes | 0.970 | 1.000 | 0.970 | - | 0.936 | 1.000 | - | - | - | - | 11.3 | 82.8 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/synthetic.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced/anonymized.jsonl --preset balanced --explain-text --device auto
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_synthetic_balanced | 0.958 | 0.987 | 0.964 | 1.000 | 0.984 | 0.997 | 0.980 | 0.339 | 0.393 | 0.750 | 26.5 | 96.8 | 0.000 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/synthetic.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced_nocodes/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_synthetic_balanced_nocodes | 0.958 | 0.987 | 0.964 | 0.985 | 0.977 | 0.993 | 0.941 | 0.339 | 0.393 | 0.732 | 24.1 | 82.8 | 0.000 |
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_holdout2_balanced | 0.710 | 0.771 | 0.719 | 0.926 | 0.953 | 0.995 | 0.953 | 0.298 | 0.362 | 0.723 | 41.9 | 96.8 | 0.000 |
+| robust_holdout2_balanced_nocodes | 0.714 | 0.777 | 0.723 | 0.921 | 0.951 | 0.995 | 0.906 | 0.298 | 0.319 | 0.723 | 35.9 | 82.7 | 0.000 |
+| robust_holdout_balanced | 0.758 | 0.858 | 0.773 | 0.959 | 0.945 | 0.998 | 0.997 | 0.304 | 0.319 | 0.768 | 37.3 | 97.1 | 0.000 |
+| robust_holdout_balanced_nocodes | 0.758 | 0.858 | 0.773 | 0.941 | 0.940 | 0.998 | 0.970 | 0.304 | 0.304 | 0.768 | 34.2 | 83.0 | 0.000 |
+| robust_discharge_balanced | 0.992 | 1.000 | 0.992 | 1.000 | 0.994 | 0.996 | 1.000 | 0.444 | 0.632 | 0.640 | 5.6 | 97.8 | 0.000 |
+| robust_discharge_balanced_nocodes | 0.992 | 1.000 | 0.992 | 1.000 | 0.994 | 0.996 | 1.000 | 0.444 | 0.632 | 0.640 | 5.5 | 84.0 | 0.000 |
+| robust_medconv_balanced_nocodes | 0.970 | 1.000 | 0.970 | - | 0.936 | 1.000 | - | - | - | - | 11.3 | 82.8 | 0.000 |
+| robust_synthetic_balanced | 0.958 | 0.987 | 0.964 | 1.000 | 0.984 | 0.997 | 0.980 | 0.339 | 0.393 | 0.750 | 26.5 | 96.8 | 0.000 |
+| robust_synthetic_balanced_nocodes | 0.958 | 0.987 | 0.964 | 0.985 | 0.977 | 0.993 | 0.941 | 0.339 | 0.393 | 0.732 | 24.1 | 82.8 | 0.000 |
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:54,  7.01it/s]Loading weights:  46%|████▌     | 179/391 [00:01<00:00, 221.10it/s]Loading weights:  72%|███████▏  | 280/391 [00:01<00:00, 174.29it/s]Loading weights:  87%|████████▋ | 341/391 [00:02<00:00, 162.43it/s]Loading weights:  98%|█████████▊| 384/391 [00:02<00:00, 170.00it/s]Loading weights: 100%|██████████| 391/391 [00:02<00:00, 153.65it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (829 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 16 records in 55.6s (3474.7 ms/encounter), peak RAM 1882.2 MB, peak VRAM 2139.7 MB, 841 edits, 45 explained keeps, schema errors: 0, shield overlaps: 3
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:28, 13.52it/s]Loading weights:  46%|████▌     | 179/391 [00:00<00:00, 372.44it/s]Loading weights:  69%|██████▉   | 270/391 [00:00<00:00, 404.45it/s]Loading weights:  87%|████████▋ | 341/391 [00:01<00:00, 404.70it/s]Loading weights: 100%|██████████| 391/391 [00:01<00:00, 344.27it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (829 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 16 records in 21.9s (1366.1 ms/encounter), peak RAM 2166.9 MB, peak VRAM 2139.7 MB, 842 edits, 32 explained keeps, schema errors: 0, shield overlaps: 3
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced_nocodes_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced_nocodes_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced_nocodes_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:06, 55.05it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 2139.37it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (1067 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 24 records in 26.7s (1113.3 ms/encounter), peak RAM 2517.0 MB, peak VRAM 2163.7 MB, 1293 edits, 69 explained keeps, schema errors: 0, shield overlaps: 10
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:17, 21.42it/s]Loading weights:  50%|████▉     | 195/391 [00:00<00:00, 559.85it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 744.14it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (1067 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 24 records in 26.2s (1090.5 ms/encounter), peak RAM 2505.6 MB, peak VRAM 2171.7 MB, 1298 edits, 55 explained keeps, schema errors: 0, shield overlaps: 10
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced_nocodes_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced_nocodes_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced_nocodes_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:26, 14.45it/s]Loading weights:  62%|██████▏   | 243/391 [00:00<00:00, 533.83it/s]Loading weights:  94%|█████████▍| 368/391 [00:00<00:00, 522.35it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 435.76it/s]
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 500 records in 103.9s (207.9 ms/encounter), peak RAM 2518.8 MB, peak VRAM 2097.7 MB, 8241 edits, 96 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:27, 13.89it/s]Loading weights:  54%|█████▍    | 211/391 [00:00<00:00, 458.36it/s]Loading weights:  84%|████████▍ | 329/391 [00:00<00:00, 467.28it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 403.07it/s]
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 500 records in 100.5s (201.0 ms/encounter), peak RAM 2505.0 MB, peak VRAM 2097.7 MB, 8241 edits, 96 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced_nocodes_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced_nocodes_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced_nocodes_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:26, 14.65it/s]Loading weights:  58%|█████▊    | 227/391 [00:00<00:00, 480.77it/s]Loading weights:  83%|████████▎ | 325/391 [00:00<00:00, 479.65it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 415.65it/s]
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (535 > 512). Running this sequence through the model will result in indexing errors
+anonymized 80 records in 28.7s (358.9 ms/encounter), peak RAM 2506.8 MB, peak VRAM 2131.7 MB, 899 edits, 91 explained keeps, schema errors: 0, shield overlaps: 0
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_medconv_balanced_nocodes_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_medconv_balanced_nocodes_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_medconv_balanced_nocodes_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:25, 14.81it/s]Loading weights:  54%|█████▍    | 211/391 [00:00<00:00, 463.76it/s]Loading weights:  80%|███████▉  | 312/391 [00:00<00:00, 473.19it/s]Loading weights: 100%|█████████▉| 390/391 [00:00<00:00, 482.51it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 409.51it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (554 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 24 records in 20.7s (864.2 ms/encounter), peak RAM 2518.6 MB, peak VRAM 2131.7 MB, 773 edits, 72 explained keeps, schema errors: 0, shield overlaps: 2
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced_rules+deid+gliner/anonymized.summary.json
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/391 [00:00<00:12, 30.47it/s]Loading weights:  54%|█████▍    | 211/391 [00:00<00:00, 743.77it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 936.67it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (554 > 512). Running this sequence through the model will result in indexing errors
+/Users/usi/neural wave/neural_wave/.venv/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+anonymized 24 records in 21.7s (904.1 ms/encounter), peak RAM 2504.7 MB, peak VRAM 2131.7 MB, 781 edits, 44 explained keeps, schema errors: 0, shield overlaps: 1
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced_nocodes_rules+deid+gliner/anonymized.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced_nocodes_rules+deid+gliner/anonymized.decisions.jsonl
+-> /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced_nocodes_rules+deid+gliner/anonymized.summary.json
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/holdout2.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced_rules+deid+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,deid,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_holdout2_balanced_rules+deid+gliner | 0.891 | 0.928 | 0.902 | 0.842 | 0.930 | 0.995 | 0.953 | 0.298 | 0.319 | 0.660 | 3,474.7 | 1,882.2 | 2,139.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/holdout2.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout2_balanced_nocodes_rules+deid+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes --detectors rules,deid,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_holdout2_balanced_nocodes_rules+deid+gliner | 0.895 | 0.934 | 0.907 | 0.837 | 0.929 | 0.995 | 0.906 | 0.298 | 0.277 | 0.660 | 1,366.1 | 2,166.9 | 2,139.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/holdout.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced_rules+deid+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,deid,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_holdout_balanced_rules+deid+gliner | 0.896 | 0.948 | 0.913 | 0.897 | 0.919 | 0.998 | 0.993 | 0.304 | 0.348 | 0.710 | 1,113.3 | 2,517.0 | 2,163.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/holdout.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_holdout_balanced_nocodes_rules+deid+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes --detectors rules,deid,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_holdout_balanced_nocodes_rules+deid+gliner | 0.896 | 0.948 | 0.913 | 0.879 | 0.914 | 0.998 | 0.960 | 0.304 | 0.319 | 0.725 | 1,090.5 | 2,505.6 | 2,171.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/discharge.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced_rules+deid+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,deid,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_discharge_balanced_rules+deid+gliner | 0.997 | 1.000 | 0.997 | 1.000 | 0.957 | 0.996 | 1.000 | 0.444 | 0.634 | 0.642 | 207.9 | 2,518.8 | 2,097.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/discharge.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_discharge_balanced_nocodes_rules+deid+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes --detectors rules,deid,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_discharge_balanced_nocodes_rules+deid+gliner | 0.997 | 1.000 | 0.997 | 1.000 | 0.957 | 0.996 | 1.000 | 0.444 | 0.634 | 0.642 | 201.0 | 2,505.0 | 2,097.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/medconv.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_medconv_balanced_nocodes_rules+deid+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes --detectors rules,deid,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_medconv_balanced_nocodes_rules+deid+gliner | 0.970 | 1.000 | 0.970 | - | 0.923 | 1.000 | - | - | - | - | 358.9 | 2,506.8 | 2,131.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/synthetic.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced_rules+deid+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --detectors rules,deid,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_synthetic_balanced_rules+deid+gliner | 0.970 | 0.994 | 0.976 | 0.970 | 0.955 | 0.997 | 0.980 | 0.339 | 0.411 | 0.768 | 864.2 | 2,518.6 | 2,131.7 |
+$ -m neural_wave.cli anonymize -i /Users/usi/neural wave/neural_wave/outputs/robustness/synthetic.jsonl -o /Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced_nocodes_rules+deid+gliner/anonymized.jsonl --preset balanced --explain-text --device auto --no-codes --detectors rules,deid,gliner
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_synthetic_balanced_nocodes_rules+deid+gliner | 0.970 | 0.994 | 0.976 | 0.955 | 0.949 | 0.993 | 0.941 | 0.339 | 0.411 | 0.750 | 904.1 | 2,504.7 | 2,131.7 |
+| run | privacy | high | high+med | keep | prec | concepts | evidence | ICD F1 orig | ICD F1 anon | ICD agree | ms/enc | RAM MB | VRAM MB |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| robust_holdout2_balanced_rules+deid+gliner | 0.891 | 0.928 | 0.902 | 0.842 | 0.930 | 0.995 | 0.953 | 0.298 | 0.319 | 0.660 | 3,474.7 | 1,882.2 | 2,139.7 |
+| robust_holdout2_balanced_nocodes_rules+deid+gliner | 0.895 | 0.934 | 0.907 | 0.837 | 0.929 | 0.995 | 0.906 | 0.298 | 0.277 | 0.660 | 1,366.1 | 2,166.9 | 2,139.7 |
+| robust_holdout_balanced_rules+deid+gliner | 0.896 | 0.948 | 0.913 | 0.897 | 0.919 | 0.998 | 0.993 | 0.304 | 0.348 | 0.710 | 1,113.3 | 2,517.0 | 2,163.7 |
+| robust_holdout_balanced_nocodes_rules+deid+gliner | 0.896 | 0.948 | 0.913 | 0.879 | 0.914 | 0.998 | 0.960 | 0.304 | 0.319 | 0.725 | 1,090.5 | 2,505.6 | 2,171.7 |
+| robust_discharge_balanced_rules+deid+gliner | 0.997 | 1.000 | 0.997 | 1.000 | 0.957 | 0.996 | 1.000 | 0.444 | 0.634 | 0.642 | 207.9 | 2,518.8 | 2,097.7 |
+| robust_discharge_balanced_nocodes_rules+deid+gliner | 0.997 | 1.000 | 0.997 | 1.000 | 0.957 | 0.996 | 1.000 | 0.444 | 0.634 | 0.642 | 201.0 | 2,505.0 | 2,097.7 |
+| robust_medconv_balanced_nocodes_rules+deid+gliner | 0.970 | 1.000 | 0.970 | - | 0.923 | 1.000 | - | - | - | - | 358.9 | 2,506.8 | 2,131.7 |
+| robust_synthetic_balanced_rules+deid+gliner | 0.970 | 0.994 | 0.976 | 0.970 | 0.955 | 0.997 | 0.980 | 0.339 | 0.411 | 0.768 | 864.2 | 2,518.6 | 2,131.7 |
+| robust_synthetic_balanced_nocodes_rules+deid+gliner | 0.970 | 0.994 | 0.976 | 0.955 | 0.949 | 0.993 | 0.941 | 0.339 | 0.411 | 0.750 | 904.1 | 2,504.7 | 2,131.7 |
+................................................x....................... [ 29%]
+x..........x...................................x.........x...x.......... [ 58%]
+.......x..x..x.xx....................................................... [ 87%]
+..............................                                           [100%]
+235 passed, 11 xfailed in 7.55s
+EXIT 0

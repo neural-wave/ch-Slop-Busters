@@ -1,0 +1,798 @@
+{
+ "id": "S030",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S82.62XA",
+   "description": "Displaced fracture of lateral malleolus of left fibula, initial encounter for closed fracture"
+  },
+  {
+   "code": "V81.4XXA",
+   "description": "Person injured while boarding or alighting from railway train or railway vehicle, initial encounter"
+  },
+  {
+   "code": "Y92.522",
+   "description": "Railway station as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y99.8",
+   "description": "Other external cause status"
+  },
+  {
+   "code": "E03.9",
+   "description": "Hypothyroidism, unspecified"
+  }
+ ],
+ "dialogue": "[doctor] good morning , ms. {PATIENT_LAST} .\n[patient] good morning .\n[doctor] so , {PATIENT_FIRST} , i understand you hurt your ankle getting off the train ?\n[patient] yes . it was so embarrassing . it was {DATE_SPOKEN} , in the morning , i take the commuter train in to work every day , i'm an accountant at {ORG} .\n[doctor] okay .\n[patient] and when we pulled into the station downtown in {CITY} , i was stepping off the train onto the platform , and there's always this gap between the train and the platform , and my left foot went right down into the gap .\n[doctor] oh , no .\n[patient] yeah , and my ankle kind of rolled , and i heard a pop , and i went down on the platform .\n[doctor] so you were getting off the train , stepping down , and your foot slipped into the gap between the train and the platform .\n[patient] exactly . the conductor and a couple of people helped me up . i could n't put any weight on it .\n[doctor] okay . did you hit your head or anything else when you fell ?\n[patient] no , i scraped my hands a little , but that's it .\n[doctor] okay . did your ankle roll in or out ?\n[patient] i think the foot turned in , like under me .\n[doctor] okay . and then what happened ?\n[patient] my coworker {OTHER_FIRST} came and got me and drove me to urgent care . they did an x-ray and said it was broken , and they put me in this splint and crutches and said to follow up with you .\n[doctor] okay . and how's the pain ?\n[patient] it's like a six . it's throbbing , especially if i let it hang down .\n[doctor] where exactly is it ?\n[patient] on the outside of the ankle , mostly .\n[doctor] any pain on the inside of the ankle ?\n[patient] a little , but not like the outside .\n[doctor] okay . any numbness or tingling in your toes ?\n[patient] no .\n[doctor] what have you been taking for it ?\n[patient] ibuprofen , and i've been keeping it up on pillows .\n[doctor] okay . now , any other medical problems ?\n[patient] i have hypothyroidism . i take levothyroxine .\n[doctor] what dose ?\n[patient] 75 micrograms .\n[doctor] okay . and how has that been ? any fatigue , feeling cold , weight changes ?\n[patient] i've been feeling more tired the last couple months , actually . and i've gained maybe five pounds .\n[doctor] are you taking it on an empty stomach ?\n[patient] um , i usually take it with my coffee and my calcium .\n[doctor] okay , so that can interfere with how it's absorbed . we'll talk about that . do you smoke ?\n[patient] no .\n[doctor] okay , good . let me take a look . i'm gonna take the splint off for a minute . so there's swelling and bruising on the outside of the left ankle . i'm gonna press here on the bone .\n[patient] ow , yes .\n[doctor] okay . tender over the lateral malleolus , that's the end of the fibula bone on the outside . and on the inside here ?\n[patient] a little sore .\n[doctor] mild tenderness medially . toes are warm , pulses are good , and you can feel me touching your foot everywhere ?\n[patient] yes .\n[doctor] okay . so i reviewed your x-rays . you have a fracture of the lateral malleolus of the left fibula , that's the outside ankle bone . it's displaced , it's shifted about three millimeters , and the space on the inside of the ankle is a little wider than it should be , which tells me the ankle may be unstable .\n[patient] so what does that mean ?\n[doctor] so with a displaced fracture like this , and the joint not lined up perfectly , i recommend surgery to put it back in place with a plate and some screws . that gives the best chance of the ankle healing straight and not getting arthritis later on .\n[patient] okay . when would we do that ?\n[doctor] we'd like to do it within the next week , once the swelling comes down a bit . until then , stay in the splint , no weight on it , use the crutches , and keep it elevated above your heart as much as you can .\n[patient] okay .\n[doctor] i'm also gonna prescribe a blood thinner shot , enoxaparin , while you're not walking on it , to prevent blood clots in your leg .\n[patient] okay .\n[doctor] for your thyroid , i want you to take the levothyroxine first thing in the morning on an empty stomach , with water , at least 30 to 60 minutes before your coffee and food , and take the calcium later in the day . we'll check a tsh today , and recheck it in six weeks .\n[patient] okay , that's easy enough .\n[doctor] you'll need to be off work for a little while , or work from home , after the surgery . i'll give you a note .\n[patient] thank you .",
+ "note": "CHIEF COMPLAINT\n\nLeft ankle injury.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with hypothyroidism who presents for evaluation of a left ankle fracture sustained while getting off a train.\n\nThe patient was commuting to work by commuter train. While stepping off the train onto the platform at the railway station, her left foot slipped into the gap between the train and the platform, and she sustained an inversion injury to the left ankle with an audible pop. She fell onto the platform and was unable to bear weight. She denies head injury and had minor abrasions to the hands. She was evaluated at urgent care, where x-rays showed a fracture, and she was placed in a splint with crutches. She reports throbbing pain rated 6/10, primarily over the lateral ankle, with mild medial ankle pain. She denies numbness or tingling. She has been taking ibuprofen and elevating.\n\nRegarding her hypothyroidism, she takes levothyroxine 75 mcg daily. She reports increased fatigue over the last 2 months and a 5-pound weight gain. She has been taking levothyroxine with coffee and calcium. She does not smoke.\n\nSOCIAL HISTORY\n\nWorks as an accountant.\n\nPHYSICAL EXAM\n\nLeft ankle: Lateral swelling and ecchymosis. Tender to palpation over the lateral malleolus. Mild medial tenderness. Toes warm. Pulses intact. Sensation intact.\n\nRESULTS\n\nX-rays of the left ankle: Displaced fracture of the lateral malleolus of the left fibula with approximately 3 mm displacement. Mild widening of the medial clear space, concerning for instability.\n\nASSESSMENT AND PLAN\n\n1. Displaced fracture of the lateral malleolus of the left fibula, closed.\n- Injury occurred while alighting from a train at the railway station.\n- Recommend open reduction and internal fixation within 1 week once swelling improves.\n- Splint, non-weight bearing with crutches, elevation.\n- Enoxaparin for venous thromboembolism prophylaxis while non-weight bearing.\n- Work note provided.\n\n2. Hypothyroidism.\n- Symptoms of fatigue and weight gain, possibly related to impaired absorption.\n- Counseled to take levothyroxine on an empty stomach 30 to 60 minutes before coffee and food, separated from calcium.\n- TSH today; recheck in 6 weeks.",
+ "medical_concepts": [
+  {
+   "text": "getting off the train",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i take the commuter train in to work every day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "when we pulled into the station",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was stepping off the train onto the platform",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "there's always this gap between the train and the platform",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my left foot went right down into the gap",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my ankle kind of rolled",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i heard a pop",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i went down on the platform",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "you were getting off the train , stepping down , and your foot slipped into the gap between the train and the platform",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i could n't put any weight on it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the foot turned in",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "swelling and bruising on the outside of the left ankle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tender over the lateral malleolus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's displaced , it's shifted about three millimeters",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the space on the inside of the ankle is a little wider than it should be",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the ankle may be unstable",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild tenderness medially",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "toes are warm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulses are good",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "you hurt your ankle",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's throbbing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "on the outside of the ankle",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i scraped my hands",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain on the inside of the ankle",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fatigue",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "feeling cold",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "weight changes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "feeling more tired",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i've gained maybe five pounds",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood clots",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "arthritis",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fracture of the lateral malleolus of the left fibula",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "displaced fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "hypothyroidism",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "thyroid",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "lateral malleolus",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "fibula",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "left ankle",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "outside ankle bone",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "toes",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "foot",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "tsh",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "enoxaparin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood thinner shot",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "calcium",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "levothyroxine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "75 micrograms",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "splint",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "crutches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "surgery to put it back in place with a plate and some screws",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "getting off a train",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "commuting to work by commuter train",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "stepping off the train onto the platform at the railway station",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "her left foot slipped into the gap between the train and the platform",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "inversion injury to the left ankle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "audible pop",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "She fell onto the platform",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "unable to bear weight",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "alighting from a train at the railway station",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lateral swelling and ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tender to palpation over the lateral malleolus",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "approximately 3 mm displacement",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild widening of the medial clear space, concerning for instability",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild medial tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Toes warm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pulses intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "impaired absorption",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Left ankle injury",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "throbbing pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "primarily over the lateral ankle",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "head injury",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "minor abrasions to the hands",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild medial ankle pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "increased fatigue",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "5-pound weight gain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fatigue and weight gain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "left ankle fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Displaced fracture of the lateral malleolus of the left fibula",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Displaced fracture of the lateral malleolus of the left fibula, closed",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "hypothyroidism",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hypothyroidism",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "venous thromboembolism",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-rays of the left ankle",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "TSH",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Enoxaparin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "calcium",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "levothyroxine 75 mcg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "levothyroxine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "splint",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Splint",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "crutches",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "open reduction and internal fixation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "non-weight bearing",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tsh",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "lab abbreviation (thyroid stimulating hormone)"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S82.62XA",
+   "spans": [
+    {
+     "text": "fracture of the lateral malleolus of the left fibula",
+     "field": "dialogue"
+    },
+    {
+     "text": "displaced fracture",
+     "field": "dialogue"
+    },
+    {
+     "text": "it's displaced , it's shifted about three millimeters",
+     "field": "dialogue"
+    },
+    {
+     "text": "Displaced fracture of the lateral malleolus of the left fibula, closed",
+     "field": "note"
+    },
+    {
+     "text": "Displaced fracture of the lateral malleolus of the left fibula",
+     "field": "note"
+    },
+    {
+     "text": "approximately 3 mm displacement",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V81.4XXA",
+   "spans": [
+    {
+     "text": "getting off the train",
+     "field": "dialogue"
+    },
+    {
+     "text": "i was stepping off the train onto the platform",
+     "field": "dialogue"
+    },
+    {
+     "text": "my left foot went right down into the gap",
+     "field": "dialogue"
+    },
+    {
+     "text": "getting off a train",
+     "field": "note"
+    },
+    {
+     "text": "her left foot slipped into the gap between the train and the platform",
+     "field": "note"
+    },
+    {
+     "text": "alighting from a train at the railway station",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.522",
+   "spans": [
+    {
+     "text": "when we pulled into the station",
+     "field": "dialogue"
+    },
+    {
+     "text": "i was stepping off the train onto the platform",
+     "field": "dialogue"
+    },
+    {
+     "text": "stepping off the train onto the platform at the railway station",
+     "field": "note"
+    },
+    {
+     "text": "alighting from a train at the railway station",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.8",
+   "spans": [
+    {
+     "text": "i take the commuter train in to work every day",
+     "field": "dialogue"
+    },
+    {
+     "text": "commuting to work by commuter train",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E03.9",
+   "spans": [
+    {
+     "text": "hypothyroidism",
+     "field": "dialogue"
+    },
+    {
+     "text": "levothyroxine",
+     "field": "dialogue"
+    },
+    {
+     "text": "tsh",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypothyroidism",
+     "field": "note"
+    },
+    {
+     "text": "hypothyroidism",
+     "field": "note"
+    },
+    {
+     "text": "levothyroxine 75 mcg daily",
+     "field": "note"
+    },
+    {
+     "text": "TSH",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm an accountant",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient job"
+  },
+  {
+   "text": "accountant",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient job"
+  }
+ ]
+}

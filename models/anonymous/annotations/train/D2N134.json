@@ -1,0 +1,11 @@
+{
+  "encounter_id": "D2N134",
+  "phi": [
+    {"text": "michelle", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "31-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "hiking", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "walking"},
+    {"text": "31-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "hiking", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "walking"}
+  ],
+  "medical_concepts": []
+}

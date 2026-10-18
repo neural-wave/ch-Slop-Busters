@@ -1,0 +1,285 @@
+{
+  "encounter_id": "D2N005",
+  "pii": [
+    {
+      "text": "ms. hill",
+      "field": "dialogue",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient surname with title"
+    },
+    {
+      "text": "dr. james",
+      "field": "dialogue",
+      "category": "CLINICIAN_NAME",
+      "tier": "direct",
+      "comment": "treating physician name"
+    },
+    {
+      "text": "41-year-old",
+      "field": "dialogue",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "patient age"
+    },
+    {
+      "text": "flip him the bird",
+      "field": "dialogue",
+      "category": "OTHER_QUASI",
+      "tier": "quasi",
+      "comment": "unusual, memorable non-medical event detail of how the injury occurred"
+    },
+    {
+      "text": "Ms. Hill",
+      "field": "note",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient surname with title"
+    },
+    {
+      "text": "41-year-old",
+      "field": "note",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "patient age"
+    }
+  ],
+  "medical_concepts": [
+    {
+      "text": "distal phalanx fracture in the middle finger",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "distal phalanx fracture of the middle finger or the third finger",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "afib",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "atrial fibrillation",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "pain at the end of my right middle finger",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "right middle finger pain",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "rear-ended",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "motor , uh , vehicle accident",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "motor vehicle accident",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "hit the ceiling of the car",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "tenderness over your distal phalanx of your right middle finger",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "fracture",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "tramadol , 50 milligrams , every six hours as needed for pain",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "digoxin",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "finger splint",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "x-ray",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "follow-up x-ray",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "right middle finger",
+      "field": "dialogue",
+      "type": "anatomy",
+      "icd_relevant": true
+    },
+    {
+      "text": "distal phalanx",
+      "field": "dialogue",
+      "type": "anatomy",
+      "icd_relevant": false
+    },
+    {
+      "text": "Right middle finger distal phalanx fracture",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "comminuted distal phalanx fracture",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Atrial Fibrillation",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "Right middle finger pain",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "rear-ended in a motor vehicle accident",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "tenderness over the distal phalanx",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "Digoxin",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "Tramadol 50 mg every 6 hours as needed for pain",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "finger splint",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "X-rays of the right middle finger",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "follow-up x-ray",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "tramadol",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "motor vehicle accident",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "right middle finger",
+      "field": "note",
+      "type": "anatomy",
+      "icd_relevant": true
+    },
+    {
+      "text": "distal phalanx",
+      "field": "note",
+      "type": "anatomy",
+      "icd_relevant": true
+    },
+    {
+      "text": "distal phalanx fracture",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    }
+  ],
+  "ambiguous_terms": [
+    {
+      "text": "dragon",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "voice assistant software, not a person"
+    },
+    {
+      "text": "dr. james",
+      "field": "dialogue",
+      "is_pii": true,
+      "comment": "clinician surname 'james' (also a common first name)"
+    },
+    {
+      "text": "hill",
+      "field": "dialogue",
+      "is_pii": true,
+      "comment": "patient surname, appears as 'ms. hill'; not a geographic hill"
+    },
+    {
+      "text": "Hill",
+      "field": "note",
+      "is_pii": true,
+      "comment": "patient surname in 'Ms. Hill'; not a geographic hill"
+    }
+  ]
+}

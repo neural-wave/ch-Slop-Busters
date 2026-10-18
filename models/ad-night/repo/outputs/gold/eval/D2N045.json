@@ -1,0 +1,109 @@
+{
+  "encounter_id": "D2N045",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "abigail",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "sanchez",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "wood",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "running",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Y93.02 activity, running"
+    },
+    {
+      "field": "dialogue",
+      "text": "runner",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Y93.02 activity, running"
+    },
+    {
+      "field": "dialogue",
+      "text": "runners",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Y93.02 activity, running"
+    },
+    {
+      "field": "dialogue",
+      "text": "i like to run",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Y93.02 activity, running"
+    },
+    {
+      "field": "dialogue",
+      "text": "marathon",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Y93.02 activity, running"
+    },
+    {
+      "field": "dialogue",
+      "text": "5k",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Y93.02 activity, running"
+    },
+    {
+      "field": "dialogue",
+      "text": "overuse",
+      "category": "CODE_EVIDENCE",
+      "why": "supports X50.1XXA overexertion"
+    },
+    {
+      "field": "dialogue",
+      "text": "on my feet all day",
+      "category": "CODE_EVIDENCE",
+      "why": "supports X50.1XXA prolonged static posture"
+    },
+    {
+      "field": "note",
+      "text": "avid runner",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Y93.02 activity, running"
+    },
+    {
+      "field": "note",
+      "text": "marathons",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Y93.02 activity, running"
+    },
+    {
+      "field": "note",
+      "text": "runners",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Y93.02 activity, running"
+    },
+    {
+      "field": "note",
+      "text": "running",
+      "category": "CODE_EVIDENCE",
+      "why": "supports Y93.02 activity, running"
+    },
+    {
+      "field": "note",
+      "text": "overuse",
+      "category": "CODE_EVIDENCE",
+      "why": "supports X50.1XXA overexertion"
+    },
+    {
+      "field": "note",
+      "text": "120/60",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure, not a date"
+    }
+  ]
+}

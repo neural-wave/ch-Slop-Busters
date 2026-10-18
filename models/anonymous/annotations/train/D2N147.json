@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N147",
+  "phi": [
+    {"text": "matthew", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "pick up football", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a contact sport"},
+    {"text": "last weekends", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "recently"},
+    {"text": "67", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "tackle football", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "contact sports"},
+    {"text": "taggle football", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "contact sports"},
+    {"text": "flag football", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "non-contact sports"},
+    {"text": "Matthew Allen", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Allen", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "67-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "pick up football", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "a contact sport"},
+    {"text": "tackle football", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "contact sports"}
+  ],
+  "medical_concepts": []
+}

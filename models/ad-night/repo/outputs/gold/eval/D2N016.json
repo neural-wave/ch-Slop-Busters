@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N016",
+  "pii": [
+    {"field": "dialogue", "text": "edward", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "59 year old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "cvs pharmacy", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "Edward", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Butler", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "59-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "CVS", "category": "ORGANIZATION", "risk": "medium"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "dax", "category": "NOT_A_NAME", "why": "dictation software"},
+    {"field": "dialogue", "text": "dragon", "category": "NOT_A_NAME", "why": "dictation software"},
+    {"field": "note", "text": "156/94", "category": "CLINICAL_NUMBER", "why": "blood pressure (I10)"},
+    {"field": "note", "text": "3/6", "category": "CLINICAL_NUMBER", "why": "murmur grade"}
+  ]
+}

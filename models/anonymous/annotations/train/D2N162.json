@@ -1,0 +1,15 @@
+{
+  "encounter_id": "D2N162",
+  "phi": [
+    {"text": "gregory", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "winter", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "season"},
+    {"text": "soccer", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "community league", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "recreational league"},
+    {"text": "four and five -year-olds", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "Gregory Hernandez", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "42-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "soccer", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "community soccer league", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "recreational league"}
+  ],
+  "medical_concepts": []
+}

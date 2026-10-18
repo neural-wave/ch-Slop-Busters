@@ -1,0 +1,738 @@
+{
+ "id": "S021",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S13.4XXA",
+   "description": "Sprain of ligaments of cervical spine, initial encounter"
+  },
+  {
+   "code": "V43.52XA",
+   "description": "Car driver injured in collision with other type car in traffic accident, initial encounter"
+  },
+  {
+   "code": "Y92.411",
+   "description": "Interstate highway as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y99.8",
+   "description": "Other external cause status"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . how are you ?\n[patient] hi , doctor {DOCTOR_LAST} . i've been better , honestly .\n[doctor] i'm sorry to hear that . so i see here you were in a car accident . do you wanna tell me what happened ?\n[patient] yeah . so it was on {DATE_SPOKEN} , i was driving home from work , i'm a dental hygienist at a practice downtown , and i was on the interstate , you know , the highway just outside of {CITY} . traffic was really backed up because of construction , so i was basically stopped .\n[doctor] okay .\n[patient] and i look in my rearview mirror and there's this car coming up behind me way too fast . and i just kind of braced , and he rear-ended me . like , hard .\n[doctor] oh , wow . so you were the driver and you were completely stopped when the other car hit you from behind ?\n[patient] yes . i was driving , i was alone in the car , and i was at a full stop .\n[doctor] were you wearing your seatbelt ?\n[patient] yes , always .\n[doctor] did the airbags go off ?\n[patient] no , they did n't .\n[doctor] okay . and did you hit your head on anything ? the steering wheel , the window ?\n[patient] no , i do n't think so . my head just kind of snapped forward and then back into the headrest .\n[doctor] did you lose consciousness at all ?\n[patient] no . i was shaken up but i was awake the whole time . i got out , we exchanged insurance , the police came .\n[doctor] okay . and when did you start to notice the neck pain ?\n[patient] so that night it was a little stiff , but the next morning i could barely turn my head . it's mostly in the back of my neck and it kind of goes into my shoulders , like the top of my shoulders .\n[doctor] okay . is it worse on one side ?\n[patient] maybe a little worse on the right .\n[doctor] and how would you rate the pain ?\n[patient] right now it's like a six out of 10 . when i try to look over my shoulder , like to check my blind spot , it's an eight .\n[doctor] okay . any numbness or tingling going down your arms or into your hands ?\n[patient] no , nothing like that .\n[doctor] any weakness , like dropping things ?\n[patient] no .\n[doctor] any headaches ?\n[patient] i've had a little bit of a headache in the back of my head , but it gets better with tylenol .\n[doctor] any nausea , vomiting , dizziness , trouble with your vision ?\n[patient] no .\n[doctor] okay . what have you been taking for the pain ?\n[patient] just tylenol , like two of the extra strength ones a couple times a day . and i've been using a heating pad .\n[doctor] okay , good . now , i also want to check in on your blood pressure while you're here . you're on lisinopril , right ?\n[patient] yes , 20 milligrams once a day .\n[doctor] and have you been taking that ?\n[patient] yes , every morning .\n[doctor] have you been checking your blood pressure at home ?\n[patient] i have a cuff . it's been running maybe 130s over 80s . i think it's been a little higher since the accident because i've been stressed and in pain .\n[doctor] that's understandable . any chest pain , shortness of breath ?\n[patient] no .\n[doctor] okay . let's go ahead and take a look at you . so i'm gonna press on the back of your neck here . does that hurt ?\n[patient] yeah , right there .\n[doctor] and over here on the right side , in the muscle ?\n[patient] yes , that's really tight .\n[doctor] okay . there's some spasm in the right trapezius . and down the middle , on the bones , does this hurt ?\n[patient] not really , it's more the muscles on the side .\n[doctor] okay . can you turn your head to the left for me ? and now to the right ?\n[patient] ow . the right is harder .\n[doctor] okay . look up at the ceiling , and down at your chest .\n[patient] looking up hurts .\n[doctor] all right . squeeze my fingers . push up against my hands . good . strength is five out of five , reflexes are normal , and sensation is intact in both arms .\n[patient] okay , good .\n[doctor] so we did get an x-ray of your neck before you came back here . the x-ray shows no fracture , and the alignment of the spine looks good . there's a little straightening of the normal curve , which we often see with muscle spasm .\n[patient] okay .\n[doctor] so what i think you have is a whiplash injury , which is a sprain of the ligaments in your cervical spine , your neck , from that rear-end collision .\n[patient] that makes sense .\n[doctor] so for the neck , i'm gonna prescribe you a muscle relaxer , cyclobenzaprine , 5 milligrams at night , because it can make you sleepy . you can take ibuprofen 600 milligrams three times a day with food for the next week in addition to the tylenol . keep using the heat . and i'd like to send you to physical therapy , twice a week for about four weeks .\n[patient] okay . should i wear one of those neck collars ?\n[doctor] no , we actually do n't recommend a collar for this . we want you to keep it moving gently .\n[patient] okay .\n[doctor] and i would avoid driving if you ca n't turn your head well enough to check your blind spot .\n[patient] yeah , i've had my husband {OTHER_FIRST} driving me .\n[doctor] good . now for your blood pressure , since you're gonna be on ibuprofen for a short time , that can raise your blood pressure a little . so keep checking it at home , and if it's over 150 , call us . we'll continue the lisinopril 20 milligrams .\n[patient] okay .\n[doctor] if you develop any numbness , tingling , or weakness in your arms , or the headache gets much worse , i want you to call right away .\n[patient] i will .\n[doctor] and let's see you back in about three weeks .\n[patient] sounds good . thank you .",
+ "note": "CHIEF COMPLAINT\n\nNeck pain after motor vehicle collision.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with a history of hypertension who presents for evaluation of neck pain following a motor vehicle collision on {DATE_NUM}.\n\nThe patient was the restrained driver of a car that was stopped in traffic on the interstate highway near {CITY} when she was rear-ended by another car traveling at speed. She was driving home from work at the time. She works as a dental hygienist. Airbags did not deploy. She denies head strike or loss of consciousness. She noted neck stiffness the evening of the accident, which worsened the following morning. Pain is located in the posterior neck and radiates to the upper shoulders, right worse than left. She rates the pain 6/10 at rest and 8/10 with rotation. She reports a mild occipital headache which improves with Tylenol. She denies numbness, tingling, or weakness in the upper extremities. She denies nausea, vomiting, dizziness, or visual changes. She has been taking Tylenol extra strength and using a heating pad.\n\nRegarding her hypertension, she takes lisinopril 20 mg daily. Home blood pressures have been in the 130s/80s, possibly slightly higher since the accident due to stress and pain. She denies chest pain or shortness of breath.\n\nPHYSICAL EXAM\n\nNeck: Tenderness to palpation of the posterior cervical paraspinal muscles. Spasm of the right trapezius. No midline bony tenderness. Decreased range of motion with right rotation and extension.\nNeurological: Strength 5/5 in bilateral upper extremities. Reflexes normal. Sensation intact.\n\nRESULTS\n\nX-ray of the cervical spine: No fracture. Normal alignment. Mild straightening of the cervical lordosis consistent with muscle spasm.\n\nASSESSMENT AND PLAN\n\n1. Cervical sprain (whiplash injury) after rear-end collision.\n- Prescribed cyclobenzaprine 5 mg at bedtime.\n- Ibuprofen 600 mg three times daily with food for one week, in addition to Tylenol.\n- Continue heat.\n- Referral to physical therapy twice weekly for 4 weeks.\n- No cervical collar recommended.\n- Avoid driving until able to rotate the neck sufficiently.\n- Return precautions reviewed for numbness, tingling, weakness, or worsening headache.\n\n2. Hypertension.\n- Continue lisinopril 20 mg daily.\n- Monitor home blood pressure while on NSAIDs; call if greater than 150 systolic.\n\nFollow up in 3 weeks.",
+ "medical_concepts": [
+  {
+   "text": "car accident",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was driving home from work",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was on the interstate",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the highway",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "he rear-ended me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "you were the driver",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was driving , i was alone in the car",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "rear-end collision",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "seatbelt",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "airbags",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "my head just kind of snapped forward and then back into the headrest",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "spasm in the right trapezius",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "strength is five out of five",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "reflexes are normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is intact in both arms",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no fracture",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "straightening of the normal curve",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "neck pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i could barely turn my head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "back of my neck",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lose consciousness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "stiff",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "weakness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "headache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nausea",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vomiting",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dizziness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shortness of breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "whiplash injury",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "sprain of the ligaments in your cervical spine",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood pressure",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "neck",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "cervical spine",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "shoulders",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "arms",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "hands",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "steering wheel",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cyclobenzaprine , 5 milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen 600 milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "muscle relaxer",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril 20 milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "x-ray of your neck",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "130s over 80s",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "heating pad",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "neck collars",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "motor vehicle collision",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "restrained driver of a car",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "stopped in traffic on the interstate highway",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "rear-ended by another car",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "driving home from work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "rear-end collision",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Neck pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "neck pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "neck stiffness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Pain is located in the posterior neck",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "head strike",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "occipital headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness, tingling, or weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nausea, vomiting, dizziness, or visual changes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest pain or shortness of breath",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "worsening headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Cervical sprain (whiplash injury)",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness to palpation of the posterior cervical paraspinal muscles",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Decreased range of motion with right rotation and extension",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Airbags did not deploy",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Spasm of the right trapezius",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No midline bony tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Strength 5/5 in bilateral upper extremities",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Reflexes normal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Normal alignment",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild straightening of the cervical lordosis consistent with muscle spasm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-ray of the cervical spine",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Home blood pressures have been in the 130s/80s",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "home blood pressure",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril 20 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cyclobenzaprine 5 mg at bedtime",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen 600 mg three times daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "NSAIDs",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "heating pad",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "cervical collar",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "upper shoulders",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "upper extremities",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand-name medication"
+  },
+  {
+   "text": "i was driving home from work",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "status context for Y99.8, not an employer"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S13.4XXA",
+   "spans": [
+    {
+     "text": "whiplash injury",
+     "field": "dialogue"
+    },
+    {
+     "text": "sprain of the ligaments in your cervical spine",
+     "field": "dialogue"
+    },
+    {
+     "text": "neck pain",
+     "field": "dialogue"
+    },
+    {
+     "text": "Cervical sprain (whiplash injury)",
+     "field": "note"
+    },
+    {
+     "text": "Neck pain",
+     "field": "note"
+    },
+    {
+     "text": "Tenderness to palpation of the posterior cervical paraspinal muscles",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V43.52XA",
+   "spans": [
+    {
+     "text": "he rear-ended me",
+     "field": "dialogue"
+    },
+    {
+     "text": "you were the driver",
+     "field": "dialogue"
+    },
+    {
+     "text": "rear-end collision",
+     "field": "dialogue"
+    },
+    {
+     "text": "restrained driver of a car",
+     "field": "note"
+    },
+    {
+     "text": "rear-ended by another car",
+     "field": "note"
+    },
+    {
+     "text": "motor vehicle collision",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.411",
+   "spans": [
+    {
+     "text": "i was on the interstate",
+     "field": "dialogue"
+    },
+    {
+     "text": "the highway",
+     "field": "dialogue"
+    },
+    {
+     "text": "stopped in traffic on the interstate highway",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.8",
+   "spans": [
+    {
+     "text": "i was driving home from work",
+     "field": "dialogue"
+    },
+    {
+     "text": "driving home from work",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "blood pressure",
+     "field": "dialogue"
+    },
+    {
+     "text": "lisinopril 20 milligrams",
+     "field": "dialogue"
+    },
+    {
+     "text": "hypertension",
+     "field": "note"
+    },
+    {
+     "text": "Hypertension",
+     "field": "note"
+    },
+    {
+     "text": "lisinopril 20 mg daily",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "dental hygienist",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient job"
+  },
+  {
+   "text": "dental hygienist",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient job"
+  }
+ ]
+}

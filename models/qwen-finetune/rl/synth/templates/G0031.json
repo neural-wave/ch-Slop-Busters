@@ -1,0 +1,724 @@
+{
+ "id": "G0031",
+ "dataset": "synthetic_followup",
+ "sex": "male",
+ "age_range": [
+  60,
+  75
+ ],
+ "icd10_codes": [
+  {
+   "code": "K21.9",
+   "description": "Gastro-esophageal reflux disease without esophagitis"
+  },
+  {
+   "code": "K57.30",
+   "description": "Diverticulosis of large intestine without perforation or abscess without bleeding"
+  },
+  {
+   "code": "D50.9",
+   "description": "Iron deficiency anemia, unspecified"
+  },
+  {
+   "code": "Z57.39",
+   "description": "Occupational exposure to other air contaminants"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . good to see you again . how have you been since we last met ?\n[patient] hi , doctor {DOCTOR_LAST} . honestly not great . my stomach has been acting up for about three weeks .\n[doctor] i 'm sorry to hear that . tell me what is going on .\n[patient] well , the heartburn is back . i take the omeprazole every morning like you told me , but it still burns at night . i wake up with that sour taste in my mouth .\n[doctor] okay . are you waking up at night because of it ?\n[patient] most nights , yeah . i have to sleep propped up on two pillows or i just cough and cough .\n[doctor] any trouble swallowing ? food getting stuck ?\n[patient] no , nothing like that . food goes down fine . it 's more the burning .\n[doctor] okay , good . and how are your bowels ? last time we talked about the diverticulosis .\n[patient] oh , that 's been a mess too . i had a bad cramp on the left side last tuesday , and then i was constipated for two days . then it went loose all at once . i think it was the bran cereal , i ate a whole box of it .\n[doctor] any blood in the stool , or black stool ?\n[patient] no blood that i saw . the stool was kind of dark after the loose day , but i had eaten blueberries , so i figured that was it .\n[doctor] that makes sense . how about your energy ? you were pretty tired at the last visit .\n[patient] i 'm still tired . i get winded going up the stairs to the second floor at home . my wife says i 'm getting old , but i do n't think that 's all of it .\n[doctor] i agree with you . did you get the blood work the lab sent over ?\n[patient] yes , the nurse called me about it . she said my blood count was low again , so i need to take the iron pills every other day . i picked them up at riverside pharmacy .\n[doctor] right . the hemoglobin was low and the iron stores were low too . so we 're treating an iron deficiency . i want to look at that more closely .\n[patient] okay .\n[doctor] now , i want to ask about work . you told me you still go in at the warehouse . is that still the case ?\n[patient] yep , three days a week at {ORG} , the warehouse on the east side . i 'm a dispatcher there now , but i still help load the trucks when they 're short .\n[doctor] okay . and what do you do there exactly ?\n[patient] i do the dispatching , the schedules and the driver calls . but the dust in that warehouse is awful . it gets right in your chest . i cough when i get back from the loading dock .\n[doctor] that 's worth knowing . do you wear a mask ?\n[patient] sometimes . the company gave us the cloth ones , they 're not great . i forget to wear them when we 're busy .\n[doctor] okay . we 'll talk about the mask and the dust . and the cough , is it productive ?\n[patient] a little clear stuff , nothing green . it 's worse in the morning .\n[doctor] any fever , chills , or weight loss ?\n[patient] no fever . i think i 've lost a few pounds , but i was trying to eat less bread anyway .\n[doctor] okay . are you still on the blood pressure pill ?\n[patient] the lisinopril , yes . the nurse checked my pressure when i came in . she said it was one thirty eight over eighty . that 's not bad for me .\n[doctor] no , that 's reasonable . and the sugar ? you were borderline last time .\n[patient] i 'm still on the diet . i quit the soda . my a1c was six point one , they told me at the lab .\n[doctor] yes , that 's in the prediabetes range . keep working on it . now tell me about your family , i always forget the details . how many kids do you have ?\n[patient] we have four , and nine grandchildren . the youngest is two . after mass at st. anne's on sundays the whole crowd comes to the house , and it 's loud . my wife cooks a roast every week .\n[doctor] that sounds wonderful . any stomach cancer in the family ?\n[patient] my dad had something in the stomach , he passed in his seventies . that 's about all i know .\n[doctor] okay . do you have any hobbies that keep you busy ? you mentioned something last year .\n[patient] i restore vintage motorcycles in my garage . right now it 's an old triumph . the wiring is driving me nuts .\n[doctor] that 's a nice hobby . just be careful with the solvent and the sanding dust out there . keep the window open .\n[patient] i will , i will . you sound like my wife .\n[doctor] okay . let me examine you now . your belly is soft , with mild tenderness in the left lower part and no rebound . i ca n't feel any mass . your lungs have some crackles at the bottom , and no wheezing . your ankles have no swelling . pulse is seventy six and regular .\n[patient] okay .\n[doctor] so here is my plan . for the heartburn , keep the omeprazole once a day , take it thirty minutes before breakfast , and add an antacid at bedtime . since you are not better on this , i want to do an upper endoscopy . it looks at the stomach and the esophagus with a small camera .\n[patient] okay . that 's the camera down the throat ?\n[doctor] yes . it is a short sedation , and i 'll refer you to our endoscopy unit .\n[patient] alright .\n[doctor] for the iron , keep taking the pills every other day , and we 'll recheck the blood count in six weeks . also , you were due for a colonoscopy after the diverticulosis episode , so we 'll book that too .\n[patient] okay . the last one was about ten years ago , right ?\n[doctor] that 's right . and about the dust at work , i want you to talk with your employer about better masks . if you 're coughing that much , we can do a breathing test and a chest x-ray .\n[patient] okay , i 'll talk to them . any questions ?\n[doctor] no , that 's it for now . call us if the black stools come back .\n[patient] thanks , doctor {DOCTOR_LAST} .\n[doctor] you 're welcome , {PATIENT_FIRST} . take care .",
+ "note": "CHIEF COMPLAINT\n\nRecurrent heartburn, intermittent left lower abdominal cramping, and fatigue.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with gastroesophageal reflux disease, diverticulosis of the large intestine, and iron deficiency who presents for follow-up. He reports three weeks of heartburn despite daily omeprazole, with nocturnal regurgitation and a sour taste, and he must sleep propped up on two pillows. He denies dysphagia, odynophagia, or hematemesis.\n\nHe had a left lower quadrant cramp last Tuesday followed by two days of constipation, then loose stools. He denies hematochezia. He noted a darker stool after the loose episode, which he attributes to blueberries. He reports ongoing fatigue and winded exertion when climbing one flight of stairs. He has a cough with clear sputum, worse in the morning, without fever or chills. He reports some weight loss.\n\nSOCIAL HISTORY\n\nHe is employed three days a week at {ORG}, a warehouse, as a dispatcher, and assists with loading when short-staffed. He reports chronic dust exposure at the loading dock, with inconsistent use of a cloth mask. He lives with his wife. He restores vintage motorcycles in his garage as a hobby. He has four children and nine grandchildren. He has stopped drinking regular soda.\n\nPHYSICAL EXAM\n\nVitals: blood pressure 138/80, pulse 76 and regular. Abdomen is soft with mild tenderness in the left lower quadrant, no rebound, and no palpable mass. Lungs with scattered basilar crackles and no wheezing. No peripheral edema.\n\nRESULTS\n\nMost recent labs show low hemoglobin and low ferritin, consistent with iron deficiency. Hemoglobin A1c 6.1 percent.\n\nASSESSMENT AND PLAN\n\n1. Gastroesophageal reflux disease with nocturnal symptoms, not improved on once-daily omeprazole. Increase to 30 minutes before breakfast, add an antacid at bedtime, and refer for upper endoscopy to evaluate for esophagitis.\n\n2. Diverticulosis of the large intestine with recent left-sided cramping. Schedule surveillance colonoscopy; last one was about ten years ago.\n\n3. Iron deficiency anemia. Continue oral iron every other day. Recheck complete blood count and iron studies in six weeks.\n\n4. Occupational dust exposure with cough. Counsel on consistent respirator use, discuss improved masks with the employer, and order spirometry and chest radiograph.\n\n5. Prediabetes with A1c 6.1 percent. Continue dietary modification.\n\nReturn precautions reviewed, including black or bloody stools, vomiting, and dysphagia.",
+ "medical_concepts": [
+  {
+   "text": "heartburn",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "omeprazole",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "burns at night",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sour taste",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sleep propped up on two pillows",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "cough and cough",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "trouble swallowing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "diverticulosis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "bad cramp on the left side",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "constipated for two days",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "went loose all at once",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bran cereal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood in the stool",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "black stool",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the stool was kind of dark",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "blueberries",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "still tired",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "winded going up the stairs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood count was low again",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "iron pills",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "hemoglobin was low",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "iron stores were low",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "iron deficiency",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "warehouse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dust",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "loading dock",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "clear stuff",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "weight loss",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "one thirty eight over eighty",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "prediabetes range",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "a1c was six point one",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "stomach cancer",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "upper endoscopy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "colonoscopy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "breathing test",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest x-ray",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild tenderness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "crackles",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no wheezing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "antacid",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "gastroesophageal reflux disease",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "diverticulosis of the large intestine",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "iron deficiency",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "heartburn",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "nocturnal regurgitation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sour taste",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dysphagia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "odynophagia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hematemesis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "left lower quadrant cramp",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "constipation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "loose stools",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "hematochezia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "darker stool",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "blueberries",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fatigue",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "winded exertion",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "cough",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chills",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "weight loss",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dust exposure",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "loading dock",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "warehouse",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood pressure 138/80",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "crackles",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "wheezing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "peripheral edema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "low hemoglobin",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "low ferritin",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hemoglobin A1c 6.1 percent",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "omeprazole",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "antacid",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "upper endoscopy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "esophagitis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "surveillance colonoscopy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Iron deficiency anemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "oral iron",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "complete blood count",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "iron studies",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Occupational dust exposure",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "spirometry",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest radiograph",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Prediabetes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "black or bloody stools",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vomiting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "triumph",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "motorcycle brand name, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "K21.9",
+   "spans": [
+    {
+     "text": "burns at night",
+     "field": "dialogue"
+    },
+    {
+     "text": "sour taste",
+     "field": "dialogue"
+    },
+    {
+     "text": "gastroesophageal reflux disease",
+     "field": "note"
+    },
+    {
+     "text": "nocturnal regurgitation",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "K57.30",
+   "spans": [
+    {
+     "text": "diverticulosis",
+     "field": "dialogue"
+    },
+    {
+     "text": "bad cramp on the left side",
+     "field": "dialogue"
+    },
+    {
+     "text": "diverticulosis of the large intestine",
+     "field": "note"
+    },
+    {
+     "text": "left lower quadrant cramp",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "D50.9",
+   "spans": [
+    {
+     "text": "iron deficiency",
+     "field": "dialogue"
+    },
+    {
+     "text": "blood count was low again",
+     "field": "dialogue"
+    },
+    {
+     "text": "Iron deficiency anemia",
+     "field": "note"
+    },
+    {
+     "text": "low ferritin",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z57.39",
+   "spans": [
+    {
+     "text": "dust",
+     "field": "dialogue"
+    },
+    {
+     "text": "loading dock",
+     "field": "dialogue"
+    },
+    {
+     "text": "dust exposure",
+     "field": "note"
+    },
+    {
+     "text": "warehouse",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "a dispatcher",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "on the east side",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "neighborhood of workplace"
+  },
+  {
+   "text": "i restore vintage motorcycles in my garage",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "rare hobby with specifics"
+  },
+  {
+   "text": "we have four , and nine grandchildren",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "family size"
+  },
+  {
+   "text": "st. anne's",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "parish church"
+  },
+  {
+   "text": "riverside pharmacy",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "named pharmacy"
+  },
+  {
+   "text": "dispatcher",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "restores vintage motorcycles in his garage",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "rare hobby with specifics"
+  },
+  {
+   "text": "has four children and nine grandchildren",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "family size"
+  }
+ ],
+ "scenario": {
+  "specialty": "gastroenterology",
+  "visit": "followup",
+  "length": "long",
+  "focus": [
+   "ORGANIZATION",
+   "OTHER_QUASI"
+  ]
+ }
+}

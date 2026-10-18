@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N007",
+  "pii": [
+    {"field": "dialogue", "text": "sarah", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "27-year-old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "age of 27", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "27-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "note", "text": "3/6", "category": "CLINICAL_NUMBER", "why": "murmur grade, not a date"},
+    {"field": "dialogue", "text": "dragon", "category": "NOT_A_NAME", "why": "dictation software"}
+  ]
+}

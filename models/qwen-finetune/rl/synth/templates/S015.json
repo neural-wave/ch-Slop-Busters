@@ -1,0 +1,714 @@
+{
+ "id": "S015",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S52.531A",
+   "description": "Colles' fracture of right radius, initial encounter for closed fracture"
+  },
+  {
+   "code": "W01.0XXA",
+   "description": "Fall on same level from slipping, tripping and stumbling without subsequent striking against object, initial encounter"
+  },
+  {
+   "code": "Y92.830",
+   "description": "Public park as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.02",
+   "description": "Activity, running"
+  },
+  {
+   "code": "E78.5",
+   "description": "Hyperlipidemia, unspecified"
+  }
+ ],
+ "dialogue": "[doctor] good afternoon , mrs . {PATIENT_LAST} . is it okay if i call you {PATIENT_FIRST} ?\n[patient] {PATIENT_FIRST} is fine . hi , doctor {DOCTOR_LAST} .\n[doctor] so i understand you had a fall this morning ?\n[patient] yes . i was out jogging in the park this morning , early , around six thirty . i go with my neighbor {OTHER_FIRST} three mornings a week , we do the loop around the pond at {PLACE} .\n[doctor] okay .\n[patient] and it was still a little dark under the trees , and i caught my toe on a tree root that was sticking up out of the path , and i tripped and went flying forward .\n[doctor] oh , no .\n[patient] and i put my right hand out to catch myself and landed on it , on the dirt path , and i felt it bend back and there was this awful pain .\n[doctor] okay . so you landed on your outstretched right hand . did you hit anything else on the way down , a bench or a rock or anything ?\n[patient] no , just the ground . i scraped my knees a little , but it's mostly my wrist .\n[doctor] okay . did you hit your head ?\n[patient] no .\n[doctor] okay . and how does the wrist feel now ?\n[patient] it's swollen and it looks kind of bent , like a fork . it really hurts if i try to move it . {OTHER_FIRST} drove me straight here .\n[doctor] okay . on a scale of one to ten ?\n[patient] about a seven . more if i move it .\n[doctor] okay . any numbness or tingling in your fingers ?\n[patient] my fingers feel a little bit tingly , but i can feel them .\n[doctor] which fingers ?\n[patient] kind of the thumb and the first two fingers .\n[doctor] okay . we'll keep an eye on that . are you right handed ?\n[patient] yes , unfortunately .\n[doctor] okay . now , i see from your chart we've been treating your cholesterol . you're on atorvastatin ?\n[patient] yes , twenty milligrams at night .\n[doctor] okay . any muscle aches with it ?\n[patient] no , i've been fine on it .\n[doctor] good . your last lipid panel in the spring , your ldl was one twenty two , which was down from one sixty , so that's a good improvement .\n[patient] oh , good .\n[doctor] okay . have you ever had a bone density scan ?\n[patient] i had one a few years ago and they said it was okay .\n[doctor] okay . let me take a look at your wrist . i'm going to be gentle . so , looking at your right wrist , there is swelling and a dorsal angulation , what we call a dinner fork deformity . you're tender over the distal radius here . the skin is intact , no open wounds . i'm going to check your fingers . can you make an okay sign ? good . and spread your fingers ? good . your capillary refill is brisk and your radial pulse is present . you have slightly decreased light touch over the tip of the index finger , but otherwise sensation is intact . there's no tenderness in the snuffbox here , and your elbow is fine .\n[patient] okay .\n[doctor] you've got some superficial abrasions on both knees , they're clean .\n[patient] okay .\n[doctor] so we did x-rays of your wrist . hey dragon , show me the right wrist x-rays . so looking at these , you have a fracture at the end of the radius , about two centimeters above the joint , and the broken piece is tilted backward . this is what we call a colles' fracture . it does n't look like it goes into the joint , and the ulna is okay .\n[patient] okay . so it's broken .\n[doctor] yes . so for my assessment and plan , for the right wrist , you have a closed colles' fracture with dorsal angulation . because it's tilted back , we're going to do a closed reduction today , which means we numb the area with a hematoma block and pull it back into position , and then put you in a splint .\n[patient] okay .\n[doctor] after that we'll repeat the x-rays to make sure it's lined up . because of the tingling in your fingers , we'll recheck your sensation after the reduction , and that usually improves once the bone is back in place . you'll keep it elevated above your heart and ice it . for pain , you can take tylenol and i'll give you a few tablets of something stronger for night time .\n[patient] okay .\n[doctor] i'm going to refer you to hand orthopedics this week . sometimes these need surgery if they slip after reduction . you'll be in a cast for about six weeks .\n[patient] okay . and the jogging ?\n[doctor] no jogging until the cast is off and ortho clears you . walking is fine .\n[patient] okay .\n[doctor] and since you broke a bone from a fall from standing height , i want to repeat your bone density scan to make sure we're not missing osteoporosis .\n[patient] that makes sense .\n[doctor] for your cholesterol , continue the atorvastatin twenty milligrams . we'll recheck your lipid panel at your next physical .\n[patient] okay . thank you .\n[doctor] you're welcome . we'll get you set up for the reduction .",
+ "note": "CHIEF COMPLAINT\n\nRight wrist injury.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old right-hand-dominant female with hyperlipidemia who presents on {DATE_NUM} after a fall while jogging in a public park this morning. She caught her toe on a tree root on the path, tripped and fell forward onto her outstretched right hand on a dirt path. She did not strike any object and did not hit her head. She reports immediate pain and deformity of the right wrist, pain 7/10, and mild tingling of the thumb, index and middle fingers. She also has abrasions of both knees.\n\nShe takes atorvastatin 20 mg nightly for hyperlipidemia without myalgias. Most recent LDL was 122, improved from 160. Prior bone density scan reportedly normal.\n\nPHYSICAL EXAMINATION\n\nRight wrist: Swelling with dorsal angulation (dinner fork deformity). Tenderness over the distal radius. Skin intact. No anatomic snuffbox tenderness. Elbow nontender.\nNeurovascular: Capillary refill brisk. Radial pulse present. Slightly decreased light touch at the tip of the index finger, otherwise sensation intact. Motor function intact.\nSkin: Superficial abrasions of the bilateral knees.\n\nRESULTS\n\nX-rays of the right wrist demonstrate an extra-articular distal radius fracture approximately 2 cm proximal to the articular surface with dorsal angulation, consistent with a Colles' fracture. Ulna intact.\n\nASSESSMENT\n\n1. Closed Colles' fracture of the right radius after a trip and fall while jogging in a public park.\n2. Mild median nerve paresthesias.\n3. Hyperlipidemia.\n\nPLAN\n\nClosed reduction under hematoma block with sugar-tong splint today. Post-reduction x-rays and neurovascular recheck. Elevation, ice, Tylenol, short course of analgesic at night. Referral to hand orthopedics this week. No jogging until cleared. Repeat DEXA scan given fragility-type fracture. Continue atorvastatin 20 mg nightly; repeat lipid panel at next physical.",
+ "medical_concepts": [
+  {
+   "text": "i was out jogging in the park",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the park",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i caught my toe on a tree root that was sticking up out of the path , and i tripped and went flying forward",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i put my right hand out to catch myself and landed on it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "on the dirt path",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it bend back",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "you landed on your outstretched right hand",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no , just the ground",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i scraped my knees",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "wrist",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's swollen and it looks kind of bent , like a fork",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it really hurts if i try to move it",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness or tingling in your fingers",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my fingers feel a little bit tingly",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "cholesterol",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "atorvastatin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "twenty milligrams at night",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "muscle aches",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lipid panel",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "ldl was one twenty two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "bone density scan",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "swelling and a dorsal angulation",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dinner fork deformity",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tender over the distal radius",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the skin is intact , no open wounds",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your capillary refill is brisk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your radial pulse is present",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "slightly decreased light touch over the tip of the index finger",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no tenderness in the snuffbox",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "superficial abrasions on both knees",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "right wrist x-rays",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "fracture at the end of the radius",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "the broken piece is tilted backward",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "colles' fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "it does n't look like it goes into the joint",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "closed colles' fracture with dorsal angulation",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "closed reduction",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "hematoma block",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "splint",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cast",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "jogging",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "osteoporosis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "atorvastatin twenty milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right wrist injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "hyperlipidemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "fall while jogging in a public park",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "caught her toe on a tree root on the path, tripped and fell forward onto her outstretched right hand",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dirt path",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "She did not strike any object",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "immediate pain and deformity of the right wrist",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain 7/10",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild tingling of the thumb, index and middle fingers",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "abrasions of both knees",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "atorvastatin 20 mg nightly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "myalgias",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "LDL was 122, improved from 160",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "bone density scan",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Swelling with dorsal angulation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dinner fork deformity",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness over the distal radius",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Skin intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No anatomic snuffbox tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Elbow nontender",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Capillary refill brisk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Radial pulse present",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Slightly decreased light touch at the tip of the index finger",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Motor function intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Superficial abrasions of the bilateral knees",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-rays of the right wrist",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "extra-articular distal radius fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "dorsal angulation, consistent with a Colles' fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Ulna intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Closed Colles' fracture of the right radius",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "trip and fall while jogging in a public park",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild median nerve paresthesias",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hyperlipidemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Closed reduction under hematoma block",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "sugar-tong splint",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Post-reduction x-rays",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "No jogging until cleared",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Repeat DEXA scan",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "fragility-type fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "repeat lipid panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software"
+  },
+  {
+   "text": "colles' fracture",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponym for distal radius fracture, not a person"
+  },
+  {
+   "text": "Colles' fracture",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponym for distal radius fracture, not a person"
+  },
+  {
+   "text": "the park",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic place of occurrence supporting Y92.830; named park is a slot"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S52.531A",
+   "spans": [
+    {
+     "text": "closed colles' fracture with dorsal angulation",
+     "field": "dialogue"
+    },
+    {
+     "text": "colles' fracture",
+     "field": "dialogue"
+    },
+    {
+     "text": "fracture at the end of the radius",
+     "field": "dialogue"
+    },
+    {
+     "text": "dinner fork deformity",
+     "field": "dialogue"
+    },
+    {
+     "text": "right wrist x-rays",
+     "field": "dialogue"
+    },
+    {
+     "text": "Closed Colles' fracture of the right radius",
+     "field": "note"
+    },
+    {
+     "text": "extra-articular distal radius fracture",
+     "field": "note"
+    },
+    {
+     "text": "dorsal angulation, consistent with a Colles' fracture",
+     "field": "note"
+    },
+    {
+     "text": "Skin intact",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W01.0XXA",
+   "spans": [
+    {
+     "text": "i caught my toe on a tree root that was sticking up out of the path , and i tripped and went flying forward",
+     "field": "dialogue"
+    },
+    {
+     "text": "no , just the ground",
+     "field": "dialogue"
+    },
+    {
+     "text": "caught her toe on a tree root on the path, tripped and fell forward onto her outstretched right hand",
+     "field": "note"
+    },
+    {
+     "text": "She did not strike any object",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.830",
+   "spans": [
+    {
+     "text": "the park",
+     "field": "dialogue"
+    },
+    {
+     "text": "fall while jogging in a public park",
+     "field": "note"
+    },
+    {
+     "text": "trip and fall while jogging in a public park",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.02",
+   "spans": [
+    {
+     "text": "i was out jogging in the park",
+     "field": "dialogue"
+    },
+    {
+     "text": "fall while jogging in a public park",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E78.5",
+   "spans": [
+    {
+     "text": "cholesterol",
+     "field": "dialogue"
+    },
+    {
+     "text": "atorvastatin twenty milligrams",
+     "field": "dialogue"
+    },
+    {
+     "text": "ldl was one twenty two",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hyperlipidemia",
+     "field": "note"
+    },
+    {
+     "text": "hyperlipidemia",
+     "field": "note"
+    },
+    {
+     "text": "atorvastatin 20 mg nightly",
+     "field": "note"
+    },
+    {
+     "text": "LDL was 122, improved from 160",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "three mornings a week",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive routine with named neighbor"
+  },
+  {
+   "text": "the loop around the pond",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "specific route that narrows location"
+  },
+  {
+   "text": "around six thirty",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "routine time of day"
+  }
+ ]
+}

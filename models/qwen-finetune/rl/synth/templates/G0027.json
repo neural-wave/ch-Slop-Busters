@@ -1,0 +1,721 @@
+{
+ "id": "G0027",
+ "dataset": "synthetic_acute",
+ "sex": "male",
+ "age_range": [
+  45,
+  60
+ ],
+ "icd10_codes": [
+  {
+   "code": "M71.21",
+   "description": "Synovial cyst of popliteal space [Baker], right knee"
+  },
+  {
+   "code": "M17.11",
+   "description": "Unilateral primary osteoarthritis, right knee"
+  },
+  {
+   "code": "E11.9",
+   "description": "Type 2 diabetes mellitus without complications"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  },
+  {
+   "code": "Z79.84",
+   "description": "Long term (current) use of oral hypoglycemic drugs"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . what's going on with the knee ?\n[patient] hey doctor {DOCTOR_LAST} . my right knee blew up on me about four days ago . it's swollen in the back , behind the kneecap , and it feels tight .\n[doctor] okay . did you injure it or twist it ?\n[patient] not really . i was up on a ladder all day wiring a panel , and i think i just kept kneeling on the concrete . my coworker {OTHER_FIRST} said i looked like i was walking on stilts .\n[doctor] ha . what do you do for work ?\n[patient] i'm a licensed electrician . i'm up and down ladders and crawling into crawl spaces all day . my knees take a beating .\n[doctor] that's a physical job . does the knee hurt when you bend it ?\n[patient] yes , especially when i bend all the way down . when i straighten it , the back of the knee pulls .\n[doctor] okay . any fever , redness , or warmth ?\n[patient] no fever . it's a little warm when i touch it , but not red .\n[doctor] good . did you have any locking or the knee giving out ?\n[patient] no locking . it just feels full .\n[doctor] okay . let me look . can you stand for me ? straighten your leg .\n[patient] okay . it's kind of stiff .\n[doctor] i see a soft swelling behind the knee , in the popliteal area . it's tender to touch . the calf is not swollen , and there's no redness . let me check your pulses .\n[patient] okay .\n[doctor] pulses are strong in both feet . the calf is soft with no tenderness . the joint itself has some fluid , and your range of motion is about one hundred ten degrees .\n[patient] so it's not a blood clot ?\n[doctor] i don't think so , but it's important to ask . you have no swelling in the calf and no shortness of breath .\n[patient] no , no breathing problems .\n[doctor] good . from what you've told me this sounds like a baker's cyst , which is a fluid-filled bulge behind the knee that often comes from arthritis or irritation .\n[patient] baker's cyst . is that bad ?\n[doctor] usually not , it's common . but we want to rule out other causes . how long have you had knee arthritis ?\n[patient] they said it was arthritis in the right knee about five years ago . i take ibuprofen when it flares up .\n[doctor] okay . are you taking anything else ?\n[patient] my blood sugar has been high lately . i've been on metformin for two years , five hundred twice a day .\n[doctor] good , that's helpful . your sugars matter for healing . what was your most recent a1c ?\n[patient] i think it was seven point four in the spring . my wife keeps reminding me to go back for the lab .\n[doctor] i'd like to check it again today . and your blood pressure . let's see . it's one thirty four over eighty six .\n[patient] that's been running high , they say i need a new pill for it .\n[doctor] right . are you on anything for the pressure right now ?\n[patient] yes , it was amlodipine , i think . i take it every night .\n[doctor] okay . do you have any family history of arthritis , or any neurologic conditions ?\n[patient] my dad had parkinson's , and my mom had bad arthritis in her hands .\n[doctor] thanks for telling me . i'm going to order an x-ray of the knee to look for arthritis changes and any loose bodies . i'd also like an ultrasound of the back of the knee to confirm the cyst and rule out a clot .\n[patient] an ultrasound , okay .\n[doctor] and blood work for your sugar and kidney function , since you're on metformin .\n[patient] fine .\n[doctor] for the knee in the meantime , rest , ice , and elevate it at night . use a compression sleeve when you're on your feet .\n[patient] i can't really stop working . the job is in an old building and the schedule is brutal .\n[doctor] i understand . try to kneel less and use a kneepad . we can give you a short note for light duty for a week .\n[patient] that would help . my boss was talking about giving me the crawl space jobs for the month .\n[doctor] i'll write you a note that says no crawl spaces for one week .\n[patient] okay . thank you .\n[doctor] for pain , ibuprofen is fine for a few days , but be careful with your kidneys since you're on metformin . tylenol is fine as well .\n[patient] okay , i'll mix it up .\n[doctor] if the knee gets hot , red , or you develop fever or calf pain , come back right away or go to the emergency room .\n[patient] got it . thanks , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nRight posterior knee swelling and tightness for four days.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male who presents with four days of right knee swelling behind the kneecap with a sensation of fullness and tightness. He works as a licensed electrician, wiring panels in an old building, and frequently kneels on concrete and climbs ladders. He denies a specific injury. He reports pain with full flexion and a pulling sensation behind the knee with full extension. He denies fever, redness, locking, or giving way. He has used ibuprofen intermittently for flares of right knee osteoarthritis diagnosed about five years ago. He reports no shortness of breath or calf pain.\n\nHe has type 2 diabetes treated with metformin 500 mg twice daily for two years. His most recent A1c was 7.4 percent in the spring, and repeat testing is overdue. He takes amlodipine nightly for hypertension, with home readings that have been running high.\n\nFamily history is notable for a father with Parkinson's disease and a mother with severe hand osteoarthritis.\n\nPHYSICAL EXAM\n\nBP 134/86. Right knee with a soft, tender swelling in the popliteal fossa consistent with a Baker's cyst. Joint effusion present. Range of motion approximately 110 degrees of flexion. Mild warmth without erythema. Calf is soft and nontender without swelling. Distal pulses 2+ and symmetric. Achilles tendon mildly tender, no defect.\n\nRESULTS\n\nKnee x-ray and popliteal ultrasound ordered. Basic metabolic panel and A1c ordered.\n\nASSESSMENT AND PLAN\n\n1. Right popliteal cyst, consistent with a Baker's cyst, with effusion. Ultrasound to confirm the cyst and exclude deep vein thrombosis. X-ray of the right knee to evaluate for osteoarthritis progression and loose bodies.\n\n2. Right knee osteoarthritis, previously diagnosed. Rest, ice, elevation, and compression sleeve. Ibuprofen for a few days only, given concurrent metformin and renal considerations. Acetaminophen as an alternative. Kneepad and avoidance of kneeling. Light duty work note for one week with no crawl space work.\n\n3. Type 2 diabetes mellitus on metformin, with A1c due. Labs ordered as above.\n\n4. Hypertension, above goal on amlodipine. Recheck blood pressure today and reassess the regimen after the labs.\n\nReturn precautions reviewed for a hot or red knee, fever, or calf pain, with instruction to seek emergency care if these occur.",
+ "medical_concepts": [
+  {
+   "text": "my right knee blew up on me",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's swollen in the back , behind the kneecap",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it feels tight",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "wiring a panel",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "kept kneeling on the concrete",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i'm up and down ladders and crawling into crawl spaces all day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "does the knee hurt when you bend it",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the back of the knee pulls",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "no fever",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little warm when i touch it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no locking",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "it just feels full",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's kind of stiff",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a soft swelling behind the knee",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's tender to touch",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pulses are strong in both feet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the joint itself has some fluid",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "range of motion is about one hundred ten degrees",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a blood clot",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "no shortness of breath",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a fluid-filled bulge behind the knee",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "knee arthritis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "arthritis in the right knee",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood sugar has been high",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "five hundred twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "seven point four",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "one thirty four over eighty six",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "amlodipine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "parkinson's",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "bad arthritis in her hands",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "an x-ray of the knee",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "an ultrasound of the back of the knee",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood work",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "rest , ice , and elevate it at night",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a compression sleeve",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "try to kneel less",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no crawl spaces for one week",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "if the knee gets hot , red",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever or calf pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "works as a licensed electrician",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "frequently kneels on concrete",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "climbs ladders",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "knee swelling behind the kneecap",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fullness and tightness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain with full flexion",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pulling sensation behind the knee",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "denies fever, redness, locking, or giving way",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "right knee osteoarthritis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen intermittently",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "shortness of breath",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "calf pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Type 2 diabetes mellitus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin 500 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "A1c was 7.4 percent",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "amlodipine nightly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "home readings that have been running high",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Parkinson's disease",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "severe hand osteoarthritis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 134/86",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "soft, tender swelling in the popliteal fossa",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Baker's cyst",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Joint effusion present",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Range of motion approximately 110 degrees of flexion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild warmth without erythema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Calf is soft and nontender",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Distal pulses 2+ and symmetric",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Achilles tendon mildly tender",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Knee x-ray",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "popliteal ultrasound",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Basic metabolic panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right popliteal cyst",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "deep vein thrombosis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "osteoarthritis progression",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "loose bodies",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right knee osteoarthritis, previously diagnosed",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Rest, ice, elevation, and compression sleeve",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen for a few days only",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Acetaminophen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Kneepad",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "avoidance of kneeling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Type 2 diabetes mellitus on metformin",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "A1c due",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hypertension, above goal on amlodipine",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "fever, or calf pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "baker's cyst",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponym for a popliteal cyst, not a person"
+  },
+  {
+   "text": "Baker's cyst",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponym for a popliteal cyst, not a person"
+  },
+  {
+   "text": "parkinson's",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponymous disease in family history"
+  },
+  {
+   "text": "Parkinson's disease",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponymous disease in family history"
+  },
+  {
+   "text": "Achilles tendon",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponymous anatomy term, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "M71.21",
+   "spans": [
+    {
+     "text": "it's swollen in the back , behind the kneecap",
+     "field": "dialogue"
+    },
+    {
+     "text": "a soft swelling behind the knee",
+     "field": "dialogue"
+    },
+    {
+     "text": "soft, tender swelling in the popliteal fossa",
+     "field": "note"
+    },
+    {
+     "text": "knee swelling behind the kneecap",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "M17.11",
+   "spans": [
+    {
+     "text": "arthritis in the right knee",
+     "field": "dialogue"
+    },
+    {
+     "text": "right knee osteoarthritis",
+     "field": "note"
+    },
+    {
+     "text": "osteoarthritis progression",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E11.9",
+   "spans": [
+    {
+     "text": "metformin",
+     "field": "dialogue"
+    },
+    {
+     "text": "seven point four",
+     "field": "dialogue"
+    },
+    {
+     "text": "Type 2 diabetes mellitus",
+     "field": "note"
+    },
+    {
+     "text": "metformin 500 mg twice daily",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "one thirty four over eighty six",
+     "field": "dialogue"
+    },
+    {
+     "text": "amlodipine",
+     "field": "dialogue"
+    },
+    {
+     "text": "hypertension",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z79.84",
+   "spans": [
+    {
+     "text": "metformin",
+     "field": "dialogue"
+    },
+    {
+     "text": "metformin 500 mg twice daily",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm a licensed electrician",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "i was up on a ladder all day wiring a panel",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "job task restated as the cause"
+  },
+  {
+   "text": "works as a licensed electrician",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "wiring panels in an old building",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "job setting"
+  }
+ ],
+ "scenario": {
+  "specialty": "internal medicine",
+  "visit": "acute",
+  "length": "short",
+  "focus": [
+   "OTHER_PERSON_NAME",
+   "OCCUPATION"
+  ]
+ }
+}

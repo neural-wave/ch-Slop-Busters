@@ -1,0 +1,27 @@
+{
+  "encounter_id": "D2N101",
+  "phi": [
+    {"text": "julia jones", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "julia", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "5/16/1996", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "gonzalez", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "blue cross blue shield", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "private insurance"},
+    {"text": "blue cross", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "the current insurer"},
+    {"text": "accepted a new job", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "had a change"},
+    {"text": "july", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "working at my desk", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "working seated"},
+    {"text": "40", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "25", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "25 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "psychology", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "a field"},
+    {"text": "catherine", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "Julia Jones", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Jones", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "25-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "Blue Cross Blue Shield", "field": "note", "type": "ORGANIZATION", "tier": 1, "generalized": "private"},
+    {"text": "07/2021", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "age 40", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "psychologist", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "professional"}
+  ],
+  "medical_concepts": []
+}

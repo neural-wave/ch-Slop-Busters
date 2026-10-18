@@ -1,0 +1,48 @@
+{
+  "encounter_id": "D2N012",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "joseph",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "59 year old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "sports tournaments",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Joseph",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Fisher",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "59-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "sports tournaments",
+      "category": "OTHER_QI",
+      "risk": "low"
+    }
+  ],
+  "keep": []
+}

@@ -1,0 +1,559 @@
+{
+ "id": "G0010",
+ "dataset": "synthetic_acute",
+ "sex": "female",
+ "age_range": [
+  30,
+  45
+ ],
+ "icd10_codes": [
+  {
+   "code": "K80.20",
+   "description": "Calculus of gallbladder without cholecystitis without obstruction"
+  },
+  {
+   "code": "R10.11",
+   "description": "Right upper quadrant pain"
+  },
+  {
+   "code": "R11.0",
+   "description": "Nausea"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . how are you feeling since the appendix surgery ?\n[patient] hi , doctor . the appendix is fine , thank god . it's a new thing this week that brought me in .\n[doctor] tell me about it . when did it start ?\n[patient] last tuesday after dinner . i had a pain right under my ribs on the right side , and it went through to my back . it was awful , like a knife .\n[doctor] i'm sorry . how long did it last ?\n[patient] about three hours . i was in the bathroom the whole time . i threw up twice , and the pain just would n't settle .\n[doctor] what did you eat for dinner ?\n[patient] a big plate of fried chicken and fries at the diner on harbor street . i know , i know . my husband said it was a bad idea .\n[doctor] okay . is the pain still there today ?\n[patient] it's down to a dull ache . maybe a three out of ten . it comes and goes .\n[doctor] any fever or yellow color in your eyes ?\n[patient] no fever . my eyes look fine , i checked the mirror this morning .\n[doctor] good . have you noticed a change in your stool or your urine ?\n[patient] my urine was darker on wednesday , and the stool was a little pale . but it's better now .\n[doctor] do you still have your gallbladder ?\n[patient] yes , i still have it . i had gallstones on the ultrasound from two years ago , the one they did when the appendix was acting up .\n[doctor] right . let me look at your belly .\n[patient] okay .\n[doctor] it's tender in the right upper quadrant , and there's no rebound . your temperature is ninety eight point six , your blood pressure is one twelve over seventy , and your heart rate is eighty four . the scar from the appendix is healed well .\n[patient] good .\n[doctor] i'd like labs today : a liver panel , a lipase , and a complete blood count . and an ultrasound of your gallbladder .\n[patient] the ultrasound from two years ago showed stones , right ?\n[doctor] yes , there were small stones in the gallbladder . the new ultrasound will show whether they've changed .\n[patient] will i need surgery to remove it ?\n[doctor] probably . given the attack with pain and vomiting , my recommendation is removal . we'd schedule a laparoscopic cholecystectomy in the next few weeks .\n[patient] another surgery . wonderful .\n[doctor] i know . the recovery is usually shorter than the appendix was , and most people go home the same day .\n[patient] okay . what should i avoid eating until then ?\n[doctor] fatty and fried foods . keep it low fat , eat small meals , and drink plenty of water .\n[patient] i'll cut out the fries .\n[doctor] good . if the pain comes back and lasts more than an hour , or you get a fever , go to the emergency room . don't wait for the next appointment .\n[patient] okay . my husband and i are going to lisbon next month for a conference . is it okay to fly ?\n[doctor] that's a good question . if you've had no attack for a few weeks and the labs look good , flying is generally fine . just avoid big meals on the plane .\n[patient] good . i'll be careful with the food on the trip .\n[doctor] also , the surgical scheduler will call you at {PHONE} to set up the date . please answer if it's an unknown number .\n[patient] i'll answer . my phone is always on silent though , so i'll check my messages .\n[doctor] good . come back for a 3-month follow-up after surgery , or sooner if the labs come back abnormal .\n[patient] thanks , doctor . i feel better already just knowing the plan .",
+ "note": "CHIEF COMPLAINT\n\nRight upper quadrant pain with nausea and emesis, concerning for biliary colic.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female, status post laparoscopic appendectomy two years ago, who presents with a new episode of right upper quadrant pain. Onset last Tuesday after dinner at a diner on Harbor Street, which consisted of fried chicken and fries. The pain was sharp, radiated to the right back, and lasted approximately three hours, with nausea and two episodes of emesis. Pain is currently dull, about 3/10, and intermittent. She denies fever or jaundice. Urine was darker on Wednesday and stools were transiently pale; both have improved. An ultrasound performed two years ago demonstrated small gallstones.\n\nPAST SURGICAL HISTORY\n\nLaparoscopic appendectomy two years ago.\n\nPHYSICAL EXAM\n\nVitals: temperature 98.6 F, BP 112/70, heart rate 84.\nAbdomen: tenderness in the right upper quadrant without rebound or guarding. Appendectomy scars well healed. Sclerae anicteric.\n\nRESULTS\n\nHepatic function panel, lipase, and complete blood count ordered. Right upper quadrant ultrasound ordered.\n\nASSESSMENT AND PLAN\n\n1. Symptomatic cholelithiasis with biliary colic, without clinical evidence of cholecystitis. Recommend laparoscopic cholecystectomy within the next few weeks. Low-fat diet and small meals in the interim. Return precautions: pain lasting more than one hour, fever, or jaundice.\n2. Right upper quadrant pain and nausea; labs and ultrasound pending.\n3. Travel to Lisbon next month: acceptable if asymptomatic for several weeks with normal labs; avoid large meals on the flight.\n4. Surgical scheduler to contact the patient at {PHONE}. Follow-up three months after surgery.",
+ "medical_concepts": [
+  {
+   "text": "a new thing this week",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a pain right under my ribs on the right side",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it went through to my back",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "like a knife",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "about three hours",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was in the bathroom the whole time",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i threw up twice",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the pain just would n't settle",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fried chicken and fries",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a dull ache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it comes and goes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "no fever",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "yellow color in your eyes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my urine was darker on wednesday",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the stool was a little pale",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "gallstones",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "the ultrasound from two years ago",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the appendix was acting up",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "tender in the right upper quadrant",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "there's no rebound",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your temperature is ninety eight point six",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your blood pressure is one twelve over seventy",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your heart rate is eighty four",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "the scar from the appendix is healed well",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a liver panel",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "a lipase",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "a complete blood count",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "an ultrasound of your gallbladder",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "small stones in the gallbladder",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a laparoscopic cholecystectomy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "fatty and fried foods",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "keep it low fat",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "if the pain comes back and lasts more than an hour",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "no attack for a few weeks",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "avoid big meals on the plane",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a 3-month follow-up after surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Laparoscopic appendectomy two years ago",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "new episode of right upper quadrant pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fried chicken and fries",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "The pain was sharp",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "radiated to the right back",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lasted approximately three hours",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "nausea and two episodes of emesis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Pain is currently dull, about 3/10",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "denies fever or jaundice",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Urine was darker",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "stools were transiently pale",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "small gallstones",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Vitals: temperature 98.6 F",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 112/70",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart rate 84",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "tenderness in the right upper quadrant",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "without rebound or guarding",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Appendectomy scars well healed",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sclerae anicteric",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hepatic function panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "lipase",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "complete blood count",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right upper quadrant ultrasound",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Symptomatic cholelithiasis with biliary colic",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "without clinical evidence of cholecystitis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "laparoscopic cholecystectomy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Low-fat diet and small meals",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain lasting more than one hour",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "jaundice",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right upper quadrant pain and nausea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "labs and ultrasound pending",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "asymptomatic for several weeks with normal labs",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "avoid large meals on the flight",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "harbor street",
+   "field": "dialogue",
+   "is_pii": true,
+   "comment": "street name, could be read as a generic word"
+  },
+  {
+   "text": "Harbor Street",
+   "field": "note",
+   "is_pii": true,
+   "comment": "street name, could be read as a generic word"
+  },
+  {
+   "text": "appendix",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "organ name, not a place"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "K80.20",
+   "spans": [
+    {
+     "text": "gallstones",
+     "field": "dialogue"
+    },
+    {
+     "text": "the ultrasound from two years ago",
+     "field": "dialogue"
+    },
+    {
+     "text": "Symptomatic cholelithiasis with biliary colic",
+     "field": "note"
+    },
+    {
+     "text": "small gallstones",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "R10.11",
+   "spans": [
+    {
+     "text": "a pain right under my ribs on the right side",
+     "field": "dialogue"
+    },
+    {
+     "text": "tender in the right upper quadrant",
+     "field": "dialogue"
+    },
+    {
+     "text": "new episode of right upper quadrant pain",
+     "field": "note"
+    },
+    {
+     "text": "tenderness in the right upper quadrant",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "R11.0",
+   "spans": [
+    {
+     "text": "i threw up twice",
+     "field": "dialogue"
+    },
+    {
+     "text": "nausea and two episodes of emesis",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "harbor street",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "street of the diner where she ate"
+  },
+  {
+   "text": "lisbon",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "travel destination next month"
+  },
+  {
+   "text": "Harbor Street",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "street of the diner where she ate"
+  },
+  {
+   "text": "Lisbon",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "travel destination next month"
+  }
+ ],
+ "scenario": {
+  "specialty": "general surgery follow-up",
+  "visit": "acute",
+  "length": "medium",
+  "focus": [
+   "LOCATION",
+   "CONTACT"
+  ]
+ }
+}

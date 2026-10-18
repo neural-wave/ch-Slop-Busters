@@ -1,0 +1,43 @@
+{
+  "encounter_id": "SYN016",
+  "pii": [
+    {"field": "note", "text": "Westmere General Hospital", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Bed 9", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Ifeoma", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Nwosu", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Rhys", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Pritchard", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Lucas", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "FERREIRA", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "52 y", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "WG-0081446", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "1974-02-19", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "Anneliese", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Brandt", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Hamid", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Rostami", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "29/08/2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Ward 22", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Lisbon", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "30/08", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Ana", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "+44 7700 900612", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "Marta", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "(16)", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Kingsmead Academy", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "long-haul HGV driver", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "Northgate Logistics", "category": "ORGANIZATION", "risk": "medium"}
+  ],
+  "keep": [
+    {"field": "note", "text": "Guillain-Barré syndrome", "category": "EPONYM", "why": "diagnosis"},
+    {"field": "note", "text": "Campylobacter", "category": "NOT_A_NAME", "why": "organism"},
+    {"field": "note", "text": "2/52", "category": "CLINICAL_NUMBER", "why": "two weeks, not a date"},
+    {"field": "note", "text": "15/15", "category": "CLINICAL_NUMBER", "why": "GCS"},
+    {"field": "note", "text": "4/5", "category": "CLINICAL_NUMBER", "why": "MRC power"},
+    {"field": "note", "text": "4+/5", "category": "CLINICAL_NUMBER", "why": "MRC power"},
+    {"field": "note", "text": "3/5", "category": "CLINICAL_NUMBER", "why": "MRC power / IVIG dose number"},
+    {"field": "note", "text": "4/10", "category": "CLINICAL_NUMBER", "why": "pain score"},
+    {"field": "note", "text": "168/94", "category": "CLINICAL_NUMBER", "why": "blood pressure"},
+    {"field": "note", "text": "96/52", "category": "CLINICAL_NUMBER", "why": "blood pressure"}
+  ]
+}

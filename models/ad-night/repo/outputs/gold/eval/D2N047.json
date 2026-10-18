@@ -1,0 +1,21 @@
+{
+  "encounter_id": "D2N047",
+  "pii": [
+    {"field": "dialogue", "text": "billy", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "moore", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "twenty eighteen", "category": "YEAR", "risk": "medium"},
+    {"field": "dialogue", "text": "georgia", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "alabama", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "dialogue", "text": "the dogs", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "dialogue", "text": "long horns", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "dialogue", "text": "nick saving", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "national championships", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "college football fan", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Moore", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "2018", "category": "YEAR", "risk": "medium"},
+    {"field": "note", "text": "college football fan", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": [
+    {"field": "note", "text": "3/6", "category": "CLINICAL_NUMBER", "why": "murmur grade, not a date"}
+  ]
+}

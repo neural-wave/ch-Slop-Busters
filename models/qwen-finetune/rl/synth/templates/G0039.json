@@ -1,0 +1,654 @@
+{
+ "id": "G0039",
+ "dataset": "synthetic_annual",
+ "sex": "female",
+ "age_range": [
+  19,
+  30
+ ],
+ "icd10_codes": [
+  {
+   "code": "Z00.01",
+   "description": "Encounter for general adult medical examination with abnormal findings"
+  },
+  {
+   "code": "Z90.49",
+   "description": "Acquired absence of other specified parts of digestive tract"
+  },
+  {
+   "code": "F41.1",
+   "description": "Generalized anxiety disorder"
+  },
+  {
+   "code": "N92.6",
+   "description": "Irregular menstruation, unspecified"
+  },
+  {
+   "code": "Z71.3",
+   "description": "Dietary counseling and surveillance"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i 'm doctor {DOCTOR_LAST} . this is your yearly checkup , and i see your mom came along .\n[patient] hi , doctor {DOCTOR_LAST} . yes , this is my mom , {OTHER_FIRST} . she insisted on coming .\n[patient] hi , yes , i 'm {OTHER_FIRST} , her mom . she has not been sleeping well , so i wanted to be here for the questions .\n[doctor] that 's wonderful , thanks for coming . {PATIENT_FIRST} , how have you been since your appendix surgery last year ?\n[patient] pretty good . the scar has healed . i got back to rock climbing at the gym in march , which i love .\n[doctor] that 's great . any pain around the incision now ?\n[patient] no , just a little tightness when i stretch .\n[doctor] okay . how about your periods ? you wrote on the form that they are irregular .\n[patient] yes , they 're all over the place . sometimes i skip two months , then i get two in one month .\n[patient] and the cramps are bad when they come . i take ibuprofen and lie down on the laundry room floor .\n[doctor] okay . when was your last period ?\n[patient] about five weeks ago .\n[doctor] any chance you could be pregnant ?\n[patient] no , i 'm careful .\n[doctor] good . now the sleep . your mom says you 're not sleeping well .\n[patient] i wake up at three in the morning , and my heart races . i worry about everything , like the bills and my job at the bank .\n[doctor] okay , that 's important . how long has the worry been this bad ?\n[patient] since last winter . my mom says i 'm wound up all the time . i ca n't stop the thoughts .\n[doctor] thank you . how is your appetite , and your weight ?\n[patient] i 'm eating less when i 'm anxious , i guess .\n[patient] she skips lunch when she 's stressed , and she 's lost about six pounds since the fall .\n[doctor] okay . let me look at your numbers . your blood pressure is one eighteen over seventy six , and you weigh one hundred twenty pounds . your heart sounds normal . your belly is soft , and the scar is well healed .\n[patient] good .\n[doctor] i want to screen for thyroid and anemia , and do a pregnancy test today . and the anxiety , we 'll discuss treatment options . i can start an ssri , or you can try therapy first .\n[patient] i 'd like to try therapy first , if possible .\n[doctor] that 's a reasonable choice . i 'll refer you to counseling , and we 'll reassess in six weeks .\n[patient] okay .\n[doctor] also , tell me about the diet . what do you usually eat in a day ?\n[patient] mostly salads and yogurt , and too much coffee in the morning .\n[doctor] let 's work on that , and i 'll refer you to a dietitian for counseling .\n[patient] okay . i also foster kittens for the shelter , we 've had twelve this year . they keep me up at night too .\n[doctor] that 's a lot of responsibility . i moved to this town myself a while ago , so i know the adjustment .\n[patient] i moved here from crested butte last spring . the kittens are the only thing that makes me feel calm .\n[doctor] good . your vaccines are up to date . any questions for me ?\n[patient] will the periods get better when the anxiety does ?\n[doctor] possibly . stress can change the cycle . the labs will show if there is a thyroid problem too .\n[patient] okay . thank you , doctor {DOCTOR_LAST} .\n[doctor] you 're welcome , {PATIENT_FIRST} . see you in six weeks .",
+ "note": "MRN: {MRN}\n\nCHIEF COMPLAINT\n\nAnnual physical examination. Follow-up after appendectomy. Irregular menses and anxiety symptoms.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female presenting for annual examination, accompanied by her mother, {OTHER_FIRST}. She underwent laparoscopic appendectomy last year and has healed well, with mild incisional tightness when stretching. She returned to rock climbing at the gym in March.\n\nShe reports irregular menstrual cycles, with skipping two months at times and then two cycles in one month. She has severe cramping that is partially relieved by ibuprofen. Last menstrual period about five weeks ago. She is not currently pregnant.\n\nShe reports several months of anxiety, with worry about finances and work, nocturnal awakening around 3 AM with palpitations, and difficulty controlling her thoughts since last winter. Her mother reports she has skipped lunches when stressed, with a six-pound weight loss since the fall.\n\nSOCIAL HISTORY\n\nWorks as a bank teller. Recently moved from Crested Butte. Fosters kittens for a local shelter, having fostered twelve this year. Diet consists mostly of salads and yogurt, with daily coffee.\n\nMEDICATIONS\n\nIbuprofen as needed. No hormonal contraception.\n\nPHYSICAL EXAM\n\nBP 118/76. Weight 120 lb. Heart regular without murmur. Abdomen soft and nontender, with healed laparoscopic port sites.\n\nRESULTS\n\nThyroid-stimulating hormone, complete blood count, ferritin, and urine pregnancy test ordered.\n\nASSESSMENT AND PLAN\n\n1. Annual physical examination with abnormal findings, including weight loss and anxiety symptoms.\n\n2. Status post appendectomy, healed.\n\n3. Generalized anxiety disorder. Referral to counseling and reassessment in six weeks. Consider an SSRI if no improvement.\n\n4. Irregular menses with dysmenorrhea. Labs for thyroid and anemia.\n\n5. Dietary counseling and surveillance, with dietitian referral for restricted intake.\n\nReturn precautions reviewed.",
+ "medical_concepts": [
+  {
+   "text": "yearly checkup",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "appendix surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "the scar has healed",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "rock climbing at the gym",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little tightness when i stretch",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "they are irregular",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "skip two months",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the cramps are bad when they come",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "the laundry room floor",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pregnant",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "not sleeping well",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i wake up at three in the morning",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my heart races",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i worry about everything",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "wound up all the time",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ca n't stop the thoughts",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "eating less",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "she skips lunch when she 's stressed",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lost about six pounds",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "one eighteen over seventy six",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your heart sounds normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the scar is well healed",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "thyroid",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "anemia",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "a pregnancy test",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "the anxiety",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "an ssri",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "therapy first",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "counseling",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "salads and yogurt",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "too much coffee",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a dietitian",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "stress can change the cycle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "thyroid problem",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Annual physical examination with abnormal findings",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "appendectomy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Irregular menses",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "anxiety symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "laparoscopic appendectomy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild incisional tightness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "rock climbing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "irregular menstrual cycles",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "skipping two months",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "severe cramping",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "not currently pregnant",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "several months of anxiety",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "worry about finances and work",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nocturnal awakening",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "palpitations",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "difficulty controlling her thoughts",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "skipped lunches",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "six-pound weight loss",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "salads and yogurt",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "daily coffee",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen as needed",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "No hormonal contraception",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 118/76",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Weight 120 lb",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Heart regular without murmur",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Abdomen soft and nontender",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "healed laparoscopic port sites",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Thyroid-stimulating hormone",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "complete blood count",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "ferritin",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "urine pregnancy test",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Status post appendectomy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Generalized anxiety disorder",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Consider an SSRI",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Referral to counseling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Irregular menses with dysmenorrhea",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Labs for thyroid and anemia",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Dietary counseling and surveillance",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "restricted intake",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "bank",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "place-like word used here for the workplace type, not a named bank"
+  },
+  {
+   "text": "bank",
+   "field": "note",
+   "is_pii": false,
+   "comment": "place-like word used here for the workplace type, not a named bank"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "Z00.01",
+   "spans": [
+    {
+     "text": "yearly checkup",
+     "field": "dialogue"
+    },
+    {
+     "text": "lost about six pounds",
+     "field": "dialogue"
+    },
+    {
+     "text": "Annual physical examination with abnormal findings",
+     "field": "note"
+    },
+    {
+     "text": "six-pound weight loss",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z90.49",
+   "spans": [
+    {
+     "text": "appendix surgery",
+     "field": "dialogue"
+    },
+    {
+     "text": "laparoscopic appendectomy",
+     "field": "note"
+    },
+    {
+     "text": "Status post appendectomy",
+     "field": "note"
+    },
+    {
+     "text": "healed laparoscopic port sites",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "F41.1",
+   "spans": [
+    {
+     "text": "the anxiety",
+     "field": "dialogue"
+    },
+    {
+     "text": "i worry about everything",
+     "field": "dialogue"
+    },
+    {
+     "text": "Generalized anxiety disorder",
+     "field": "note"
+    },
+    {
+     "text": "several months of anxiety",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "N92.6",
+   "spans": [
+    {
+     "text": "they are irregular",
+     "field": "dialogue"
+    },
+    {
+     "text": "skip two months",
+     "field": "dialogue"
+    },
+    {
+     "text": "Irregular menses with dysmenorrhea",
+     "field": "note"
+    },
+    {
+     "text": "irregular menstrual cycles",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z71.3",
+   "spans": [
+    {
+     "text": "a dietitian",
+     "field": "dialogue"
+    },
+    {
+     "text": "too much coffee",
+     "field": "dialogue"
+    },
+    {
+     "text": "Dietary counseling and surveillance",
+     "field": "note"
+    },
+    {
+     "text": "restricted intake",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "my job at the bank",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "workplace type and job"
+  },
+  {
+   "text": "crested butte",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "former hometown"
+  },
+  {
+   "text": "i also foster kittens for the shelter , we 've had twelve this year",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "rare volunteer routine with specifics"
+  },
+  {
+   "text": "bank teller",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "workplace type and job"
+  },
+  {
+   "text": "Crested Butte",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "former hometown"
+  },
+  {
+   "text": "Fosters kittens for a local shelter, having fostered twelve this year",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "rare volunteer routine with specifics"
+  }
+ ],
+ "scenario": {
+  "specialty": "general surgery follow-up",
+  "visit": "annual",
+  "length": "medium",
+  "focus": [
+   "LOCATION",
+   "ID",
+   "OTHER_QUASI"
+  ]
+ }
+}

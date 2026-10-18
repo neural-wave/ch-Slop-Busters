@@ -1,0 +1,36 @@
+{
+  "encounter_id": "SYN011",
+  "pii": [
+    {"field": "note", "text": "Kenji", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Kenji Hashimoto", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "kenji.hashimoto@nhs.net", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "Fiona", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "McBride", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "fiona.mcbride1@nhs.net", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "fairmead.endo.ag@nhs.net", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "22 June 2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Bethan", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Rhys-Jones", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "721 004 5583", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "she is 38", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "38 y", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Fairmead", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Fairmead General Hospital", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "0117 496 0812", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "0117 496 0815", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "19 June 2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "03/04/1988", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "2 Pembroke Mews", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "BS9 4QE", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "07700 900845", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "call-centre team leader", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "Westway Energy", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "12/06/2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Gareth", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Clifton Vale Surgery", "category": "LOCATION", "risk": "medium"}
+  ],
+  "keep": [
+    {"field": "note", "text": "Hashimoto's thyroiditis", "category": "EPONYM", "why": "diagnosis, not the consultant"},
+    {"field": "note", "text": "128/84", "category": "CLINICAL_NUMBER", "why": "blood pressure"}
+  ]
+}

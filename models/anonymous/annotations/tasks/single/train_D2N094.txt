@@ -1,0 +1,81 @@
+########## ENCOUNTER D2N094
+=== FIELD: dialogue
+[doctor] hey , ms. james . nice to meet you .
+[patient] nice to meet you , dr. cooper . how are you ?
+[doctor] i'm well . hey , dragon , i'm seeing ms. james . she's a 42-year-old female , and what brings you in today ?
+[patient] i hurt my , uh , finger when i was skiing this past weekend .
+[doctor] really ?
+[patient] yeah . yeah , so , um , i was going down hill , double diamonds , uh , double black diamonds , and i just lost control , and i , you know , flipped down a few ways , but , uh , somewhere along the way , i , i jammed my , my index finger on something . i'm not sure what .
+[doctor] okay . so this happened last saturday , you said ?
+[patient] it was saturday , yes .
+[doctor] okay . so about five days of this right index finger pain .
+[patient] mm-hmm .
+[doctor] have you taken any medicine for it ?
+[patient] i took some ibuprofen . um , did n't really seem to help .
+[doctor] okay . have you iced it or put a splint on it ?
+[patient] no .
+[doctor] okay . and what would you rate your pain ?
+[patient] it's about a seven .
+[doctor] a seven out of 10 pain . um , and no other injuries while you went down this double black diamond ?
+[patient] no , interestingly enough , this is the only one .
+[doctor] okay . well , i guess you escaped ... i mean ...
+[patient] could have been much worse .
+[doctor] could have been much worse , yes . so , um , do you have any medical problems ?
+[patient] um ... yeah , i'm ... i have chronic constipation .
+[doctor] do you take any medicine for it ?
+[patient] miralax .
+[doctor] and does that help ?
+[patient] seems to flow nicely .
+[doctor] good for you .
+[doctor] um ... have you ever had any surgeries before ?
+[patient] yes , i had my appendix out when i was seven .
+[doctor] okay . um , let's look at your x-ray together . hey , dragon , show me the last x-ray . all right . so looking at your right hand here , and that index finger looks great . so all the joints , bones are in the right places , no fractures , so you've got a normal right hand x-ray . um , let's go ahead and check your finger out . now does it hurt when i push on your finger like this ?
+[patient] yes .
+[doctor] does it hurt when i pull your finger like this ?
+[patient] yes .
+[doctor] does it hurt when i squeeze over this joint here ?
+[patient] yes . please do n't do that .
+[doctor] does it hurt when i squeeze over this ?
+[patient] yes .
+[doctor] okay . um ... so with your x-ray , and with your exam , looks like you have a sprain of your distar- distal interphalangeal joint . it's called your dip joint , of your right index finger , and so what we're gon na do for that is we're gon na put a splint on that right finger . i'm gon na give you a strong antiinflammatory called mobic . you'll take 15 milligrams once a day . i'll prescribe 14 of those for you . and i want you to come back and see me in two weeks , and let's make sure it's all healed up and if we need to start any hand therapy at that point , then we can . do you have any questions for me ?
+[patient] no questions . thank you .
+[doctor] you're welcome . hey , dragon , order the medications and procedures mentioned . and why do n't you come with me , and we'll get you checked out ?
+[patient] okay .
+[doctor] hey , dragon , finalize the report .
+=== FIELD: note
+CC:
+
+Right index finger pain.
+
+HPI:
+
+Ms. James is a 42-year-old female who presents today for an evaluation of right index finger pain. She states she injured it while skiing. She states she fell and jammed her finger. She took Ibuprofen on but it did not help her. She denies any icing it or wearing a splint. She rates her pain 7/10.
+
+CURRENT MEDICATIONS:
+
+MiraLAX
+
+PAST MEDICAL HISTORY:
+
+Chronic constipation
+
+PAST SURGICAL HISTORY:
+
+Appendectomy at age 7.
+
+EXAM
+
+Examination of the right hand reveals pain to palpation of the MCP and DIP joints.
+
+RESULTS
+
+X-rays of the right index finger show no obvious signs of fracture.
+
+IMPRESSION
+
+Right index finger DIP joint sprain.
+
+PLAN
+
+At this point, I discussed the diagnosis and treatment options with the patient. I have recommended a splint. A prescription is provided for Mobic 15 mg once a day, dispense 14. She will follow up with me in 2 weeks for a repeat evaluation. If she is unimproved, we will consider hand therapy at that time. All questions were answered.
+

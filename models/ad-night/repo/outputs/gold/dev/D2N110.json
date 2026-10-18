@@ -1,0 +1,61 @@
+{
+  "encounter_id": "D2N110",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "wayne",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "hoka's",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "dialogue",
+      "text": "rei",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Wayne",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Jenkins",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "43-year-old",
+      "category": "AGE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "110/65",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure, not a date"
+    },
+    {
+      "field": "dialogue",
+      "text": "doppler",
+      "category": "EPONYM",
+      "why": "doppler signs, not a person"
+    },
+    {
+      "field": "note",
+      "text": "Doppler",
+      "category": "EPONYM",
+      "why": "Doppler signs, not a person"
+    }
+  ]
+}

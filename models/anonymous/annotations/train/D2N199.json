@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N199",
+  "phi": [
+    {"text": "billy", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "teacher", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "public-facing worker"},
+    {"text": "cincinnati bangel", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "a team"},
+    {"text": "super bowl", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the championship"},
+    {"text": "brown span", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "fan of another team"},
+    {"text": "74", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "teacher", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "public-facing worker"}
+  ],
+  "medical_concepts": []
+}

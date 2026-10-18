@@ -1,0 +1,816 @@
+{
+ "id": "S009",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S32.010A",
+   "description": "Wedge compression fracture of first lumbar vertebra, initial encounter for closed fracture"
+  },
+  {
+   "code": "W13.2XXA",
+   "description": "Fall from, out of or through roof, initial encounter"
+  },
+  {
+   "code": "Y92.61",
+   "description": "Building [any] under construction as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.H3",
+   "description": "Activity, building and construction"
+  },
+  {
+   "code": "Y99.0",
+   "description": "Civilian activity done for income or pay"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . how are you feeling ?\n[patient] sore . my back is really sore .\n[doctor] i bet . so i've read through what the paramedics wrote , but walk me through what happened today .\n[patient] so i was at work , i work for {ORG} , and we're building a new house on a subdivision out on the east side . i was up on the roof putting down the plywood sheathing , and it had rained a little in the morning , and my boot slipped on the wet plywood , and i slid down and went right off the edge of the roof .\n[doctor] how far did you fall ?\n[patient] it's a two story , so maybe eighteen , twenty feet . i landed on my butt and my back on a pile of dirt , which was lucky , i guess .\n[doctor] that is lucky . were you wearing a harness ?\n[patient] no . we're supposed to . the harness anchor was n't set up on that side yet . my foreman {OTHER_FIRST} is not happy about it .\n[doctor] okay . did you hit your head ?\n[patient] no , i had my hard hat on and i did n't hit my head .\n[doctor] any loss of consciousness ?\n[patient] no , i remember all of it . i just could n't catch my breath for a minute .\n[doctor] okay . and where's the pain ?\n[patient] mostly in my mid to low back , right in the middle . it's sharp when i try to sit up or twist .\n[doctor] does it go down your legs at all ?\n[patient] no , it's just in the back .\n[doctor] any numbness or tingling in your legs , or weakness ?\n[patient] no .\n[doctor] any trouble with your bladder or bowels , like not being able to pee or leaking ?\n[patient] no , i peed in the er , it was fine .\n[doctor] okay , good . any pain in your neck , chest , belly , hips ?\n[patient] my left wrist was a little sore but it's better . nothing else .\n[doctor] okay . any medical problems ?\n[patient] no , i'm pretty healthy . i do n't take any medicines . i smoke about half a pack a day .\n[doctor] okay , we'll talk about that . how long have you been doing construction ?\n[patient] i've been a carpenter for about fifteen years . and i coach my daughter's wrestling team on the weekends .\n[doctor] okay . let me examine you . we're going to keep you flat and do a log roll to look at your back . on three . okay . so there's tenderness right in the middle of your back at about the junction of the mid and low back , at the thoracolumbar junction . no step-off that i can feel . no bruising on the skin . does it hurt anywhere above or below that ?\n[patient] no , it's right there .\n[doctor] okay . now push down with both feet , pull up , squeeze your legs together . good , strength is five out of five in both legs . can you feel me touching your legs here , and here ?\n[patient] yes , all normal .\n[doctor] okay , sensation is intact . reflexes at the knees and ankles are normal . your rectal tone was checked by the er doctor and was normal . and the left wrist has some mild tenderness , but you have full motion and no swelling .\n[doctor] so we did a ct scan of your whole spine . hey dragon , show me the ct of the lumbar spine . so the ct shows a compression fracture of the first lumbar vertebra , l1 . it's what's called a wedge compression fracture , the front of the bone is squished down about twenty percent , and the back wall of the vertebra is intact . there are no fragments going back toward the spinal canal . the rest of the spine looks normal . and the x-ray of your wrist is normal .\n[patient] so i broke my back ?\n[doctor] you did break a bone in your back , but it's a stable type of fracture , and your nerves are working normally , which is the most important thing . most of these heal without surgery .\n[patient] okay . that's a relief .\n[doctor] so we'll fit you for a back brace called a tlso , and you'll wear it whenever you're up out of bed . we'll get standing x-rays in the brace to make sure the fracture does n't collapse more . i'd like you to see the spine clinic in two weeks .\n[patient] okay .\n[doctor] for pain , you can take acetaminophen one thousand milligrams three times a day and ibuprofen six hundred milligrams with food . and i'll give you a short course of oxycodone five milligrams for the worst pain .\n[patient] okay .\n[doctor] no work at all for now . no lifting , no climbing , definitely no roofs . i'll fill out the workers' comp paperwork today .\n[patient] thank you .\n[doctor] and the smoking slows bone healing , so this would be a really good time to quit . i can give you nicotine patches .\n[patient] yeah , let's try that .\n[doctor] okay . if you get any numbness , weakness , or trouble with your bladder or bowels , come back right away .",
+ "note": "CHIEF COMPLAINT\n\nBack pain after a fall from a roof at work.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with no significant past medical history who presents on {DATE_NUM} after a work-related fall. He is employed by {ORG} and was working on a residential construction site, installing plywood roof sheathing on a two-story house under construction, when his boot slipped on wet plywood and he slid off the edge of the roof. He fell approximately 18 to 20 feet, landing on his buttocks and back on soft dirt. He was not wearing a fall-arrest harness. He was wearing a hard hat and denies head strike or loss of consciousness. He reports transient difficulty catching his breath.\n\nHe reports sharp thoracolumbar back pain worse with sitting up or twisting. He denies radiation of pain, lower extremity numbness, tingling, or weakness, and bowel or bladder dysfunction. He reports mild left wrist soreness that has improved.\n\nSOCIAL HISTORY\n\nCarpenter. Smokes approximately one-half pack per day.\n\nPHYSICAL EXAM\n\nBack: Tenderness at the thoracolumbar junction. No palpable step-off. No ecchymosis.\nNeuro: Strength 5/5 in bilateral lower extremities. Sensation intact to light touch. Patellar and Achilles reflexes 2+ and symmetric. Rectal tone normal per ED.\nLeft Wrist: Mild tenderness. Full range of motion. No swelling.\n\nRESULTS\n\nCT of the cervical, thoracic, and lumbar spine: Wedge compression fracture of the L1 vertebral body with approximately 20% loss of anterior height. Posterior vertebral wall intact. No retropulsion. Remainder of the spine unremarkable.\n\nX-ray of the left wrist: Normal.\n\nASSESSMENT AND PLAN\n\n1. Closed wedge compression fracture of the L1 vertebra, neurologically intact.\n- TLSO brace when upright.\n- Upright lumbar x-rays in the brace.\n- Follow-up in spine clinic in 2 weeks.\n- Acetaminophen 1000 mg three times daily, ibuprofen 600 mg with food, oxycodone 5 mg as needed for severe pain.\n- Off work. No lifting or climbing.\n- Workers' compensation paperwork completed.\n- Return precautions for new neurologic deficits or bowel or bladder dysfunction.\n\n2. Tobacco use.\n- Counseled on smoking cessation and its effect on bone healing. Nicotine patch prescribed.\n",
+ "medical_concepts": [
+  {
+   "text": "my back is really sore",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "at work",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "building a new house",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "up on the roof putting down the plywood sheathing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my boot slipped on the wet plywood",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "went right off the edge of the roof",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "eighteen , twenty feet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landed on my butt and my back",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "harness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hard hat",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "could n't catch my breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "mid to low back",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "sharp when i try to sit up or twist",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "go down your legs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness or tingling in your legs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "weakness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "trouble with your bladder or bowels",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "left wrist was a little sore",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i smoke about half a pack a day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "construction",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "log roll",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tenderness right in the middle of your back",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "thoracolumbar junction",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "no step-off",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no bruising",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "strength is five out of five in both legs",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "sensation is intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "reflexes at the knees and ankles are normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "rectal tone",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild tenderness , but you have full motion and no swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ct scan of your whole spine",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "ct of the lumbar spine",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "compression fracture of the first lumbar vertebra",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "l1",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "wedge compression fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "squished down about twenty percent",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "back wall of the vertebra is intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no fragments going back toward the spinal canal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "x-ray of your wrist is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "broke my back",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "stable type of fracture",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "nerves are working normally",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "back brace",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "tlso",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "standing x-rays in the brace",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "spine clinic",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen one thousand milligrams three times a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen six hundred milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxycodone five milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "smoking slows bone healing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "nicotine patches",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Back pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fall from a roof at work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "work-related fall",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "residential construction site",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "installing plywood roof sheathing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "house under construction",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "boot slipped on wet plywood",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "slid off the edge of the roof",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell approximately 18 to 20 feet",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landing on his buttocks and back",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fall-arrest harness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hard hat",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "head strike",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "transient difficulty catching his breath",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "sharp thoracolumbar back pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "radiation of pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lower extremity numbness, tingling, or weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bowel or bladder dysfunction",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild left wrist soreness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Smokes approximately one-half pack per day",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Back",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness at the thoracolumbar junction",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No palpable step-off",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Strength 5/5 in bilateral lower extremities",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Sensation intact to light touch",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Patellar and Achilles reflexes 2+ and symmetric",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Rectal tone normal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Left Wrist",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "CT of the cervical, thoracic, and lumbar spine",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Wedge compression fracture of the L1 vertebral body",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "20% loss of anterior height",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Posterior vertebral wall intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No retropulsion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "X-ray of the left wrist",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Closed wedge compression fracture of the L1 vertebra, neurologically intact",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "TLSO brace",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Upright lumbar x-rays",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "spine clinic",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Acetaminophen 1000 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen 600 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxycodone 5 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Off work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Workers' compensation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "neurologic deficits",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tobacco use",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "smoking cessation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "bone healing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Nicotine patch",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software"
+  },
+  {
+   "text": "tlso",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "thoracolumbosacral orthosis, not an organization"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S32.010A",
+   "spans": [
+    {
+     "text": "compression fracture of the first lumbar vertebra",
+     "field": "dialogue"
+    },
+    {
+     "text": "wedge compression fracture",
+     "field": "dialogue"
+    },
+    {
+     "text": "l1",
+     "field": "dialogue"
+    },
+    {
+     "text": "back wall of the vertebra is intact",
+     "field": "dialogue"
+    },
+    {
+     "text": "ct of the lumbar spine",
+     "field": "dialogue"
+    },
+    {
+     "text": "Closed wedge compression fracture of the L1 vertebra, neurologically intact",
+     "field": "note"
+    },
+    {
+     "text": "Wedge compression fracture of the L1 vertebral body",
+     "field": "note"
+    },
+    {
+     "text": "20% loss of anterior height",
+     "field": "note"
+    },
+    {
+     "text": "No retropulsion",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W13.2XXA",
+   "spans": [
+    {
+     "text": "went right off the edge of the roof",
+     "field": "dialogue"
+    },
+    {
+     "text": "my boot slipped on the wet plywood",
+     "field": "dialogue"
+    },
+    {
+     "text": "eighteen , twenty feet",
+     "field": "dialogue"
+    },
+    {
+     "text": "fall from a roof at work",
+     "field": "note"
+    },
+    {
+     "text": "slid off the edge of the roof",
+     "field": "note"
+    },
+    {
+     "text": "fell approximately 18 to 20 feet",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.61",
+   "spans": [
+    {
+     "text": "building a new house",
+     "field": "dialogue"
+    },
+    {
+     "text": "residential construction site",
+     "field": "note"
+    },
+    {
+     "text": "house under construction",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.H3",
+   "spans": [
+    {
+     "text": "up on the roof putting down the plywood sheathing",
+     "field": "dialogue"
+    },
+    {
+     "text": "construction",
+     "field": "dialogue"
+    },
+    {
+     "text": "installing plywood roof sheathing",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.0",
+   "spans": [
+    {
+     "text": "at work",
+     "field": "dialogue"
+    },
+    {
+     "text": "fall from a roof at work",
+     "field": "note"
+    },
+    {
+     "text": "work-related fall",
+     "field": "note"
+    },
+    {
+     "text": "Workers' compensation",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "carpenter for about fifteen years",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "occupation with tenure"
+  },
+  {
+   "text": "Carpenter",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "i coach my daughter's wrestling team on the weekends",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive personal routine"
+  }
+ ]
+}
