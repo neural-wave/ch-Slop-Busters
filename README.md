@@ -12,31 +12,6 @@ language model through Ollama, about 2.8 GB of GPU memory on an NVIDIA card (mea
 > [`docs/solution.html`](docs/solution.html) (open it in a browser). Labels, splits and metrics are in
 > [`docs/evaluation.md`](docs/evaluation.md).
 
-
-## Results at a glance
-
-Default configuration (mode `llm`, preset `privacy`). Silver labels: shares of labeled occurrences that
-were removed (privacy) or kept (keep traps, medical concepts).
-
-| Split | All PII removed | High-risk removed | Keep traps kept | Medical concepts kept |
-|---|---|---|---|---|
-| tune (140 train encounters, used for design decisions) | 92.1% | 99.2% | 100.0% | 99.7% |
-| validation (the 67 eval encounters) | 84.6% | 95.1% | 99.1% | 99.8% |
-| test (24 held-out ICU notes, unseen format, scored once) | 85.7% | 89.7% | 95.3% | 95.6% |
-
-**GPU memory**, default model `qwen3.5:2b-q4_K_M`, context window 4096 tokens, Ollama 0.40.6:
-
-| Hardware | Peak GPU memory | How it was measured |
-|---|---|---|
-| NVIDIA RTX PRO 6000 (CUDA) | 2.82–2.86 GB | `nvidia-smi`, the Ollama runner process: weights, CUDA context, KV cache and buffers |
-| Apple M-series (unified memory) | 1.56 GB | Ollama's own report (weights and KV cache only; there is no `nvidia-smi`) |
-
-The 4 GB guard uses `nvidia-smi` whenever it is available, so on NVIDIA it checks the real footprint.
-
-On the validation split, with the same labels and scorer, the two earlier team harnesses reach 77.1%
-(Ketai) and 81.5% (Alind and Davide) of PII removed, and keep 79.6% and 99.4% of keep traps. The
-`icd10_codes` and every field other than `dialogue` and `note` are byte-identical in every output.
-
 ## Requirements
 
 - **Python 3.12+** and [**uv**](https://docs.astral.sh/uv/).
@@ -241,78 +216,6 @@ Splits for `--split`: `tune` (140 train encounters), `validation` (the 67 eval e
 (24 held-out documents in `data/robustness/`). Any other set can be scored with `--gold <folder>`, one
 `<encounter_id>.json` per encounter in the label format of [`docs/labeling_guidelines.md`](docs/labeling_guidelines.md).
 
-## How it works
-
-1. **Normalize** the text with a one-to-one character view, so every detector reports positions in the
-   original.
-2. **Shield** what a coder needs: clinical numbers with units, drug names, eponyms, words that support
-   the encounter's own ICD-10 codes, and activities told as an injury mechanism. Nothing may edit them.
-3. **Detect** identifiers with rules and gazetteers, and with the local model on privacy-dense segments.
-4. **Link** the mentions of each person across turns and fields, so a surname cannot survive elsewhere.
-5. **Apply the policy**: replace, generalize or keep each category according to the preset.
-6. **Verify**: search for any removed string still in the text and repair it; check the output contract.
-7. **Publish** atomically, with the decisions file and the summary.
-
-The design merges the two earlier team harnesses: the shield-first rules, identity graph and leak repair
-of Alind and Davide, and the LLM extraction, age generalization and replay cache of Ketai.
-
-## Data and privacy rules
-
-- Never commit `labels/`, `outputs/`, `models/` or `data/robustness/`; all are git-ignored. The two
-  challenge files in `data/` are tracked on purpose.
-- Docker images contain no data, labels, outputs or weights; they are mounted at run time.
-- The decisions file never contains original text (`--explain-text` is a debug option that does).
-- Before publishing, run the release guard, which searches every tracked file for labeled identifiers:
-  `uv run python scripts/check_no_patient_text.py`.
-- Inference stays on-premises: no cloud models, at most 4 GB of VRAM.
-
-## Development
-
-```bash
-uv sync --all-extras          # every optional dependency (ml, eval, download)
-uv run ruff check . && uv run ruff format --check .
-uv run pytest -q
-uv run python scripts/build_solution_page.py   # rebuild docs/solution.html from outputs/eval/
-```
-
-
-## Troubleshooting
-
-| Symptom | Fix |
-|---|---|
-| `doctor`: `Ollama is not reachable` | Start Ollama (`ollama serve` or the app), or set `UNIFIED_HARNESS_OLLAMA_URL` |
-| `doctor`: `not pulled` | Run `anonymize` (it downloads the model), or `ollama pull <model>` |
-| Download fails in Docker | Run `docker compose up ollama-pull` (with `DETECTOR_MODEL` for another model) |
-| `doctor`: `not pinned in models.toml` | Pass `--allow-unpinned` for an experiment, or add the model and its digest under `[detector_models]` |
-| `... already exists` | Use another `--out-root` or `--date`, or `--overwrite` |
-| ICD columns empty in `evaluate` | The bge-m3 download failed (see the messages), or pass `--icd none` |
-| Privacy columns missing in `evaluate` | The `labels/` folder is missing |
-| A run on new text is slow | Expected: about 10–14 s per encounter for the LLM; reruns of the same text read `outputs/cache/` |
-
-## Limitations
-
-- All labels are silver (made by LLM agents and checked by script, not reviewed by a human).
-- The unseen ICU-note format scores clearly lower than the training format (see the test row above).
-- Some date forms are not targeted yet; they are the main high-risk gap on validation.
-- A relative or clinician sometimes gets the `[PATIENT]` tag; the name itself is removed.
-- GPU memory was measured on a large NVIDIA card (2.8 GB used) and on Apple unified memory; a card with exactly 4 GB was not tested.
-
-
-## Repository layout
-
-| Path | Contents |
-|---|---|
-| `data/patient_doctor_encounters.jsonl` | 140 training encounters (tracked) |
-| `data/eval_patient_doctor_encounters.jsonl` | 67 evaluation encounters (tracked) |
-| `src/unified_harness/` | The anonymizer and the evaluation code (Python package, CLI `unified-harness`) |
-| `src/unified_harness/models.toml` | Pinned models: the Ollama detector models (by digest) and, for `full` mode, the encoder weights |
-| `src/unified_harness/data/` | Public lexicons (ICD-10-CM, drugs, names, places, word frequencies), compressed |
-| `tests/` | Unit and integration tests on synthetic fixtures; data tests that run when `data/` and `labels/` exist |
-| `docs/` | `solution.html` (the solution page), `evaluation.md`, `error_analysis.md`, `labeling_guidelines.md`, `docker.md` |
-| `configs/` | `splits.json` (split ids) and the release-guard allowlist |
-| `scripts/` | Model download, solution-page builder, release guard, scorer cross-check, error analysis, label tools (`labels/`) |
-| `Dockerfile`, `compose.yaml`, `compose.gpu.yaml` | Container images and the offline Compose setup |
-| Local only (git-ignored) | `labels/` (silver labels), `outputs/` (results, LLM cache), `models/` (encoder weights), `data/robustness/` (held-out sets) |
 
 ## Credits and license
 
