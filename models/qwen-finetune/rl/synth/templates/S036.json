@@ -1,0 +1,798 @@
+{
+ "id": "S036",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S81.851A",
+   "description": "Open bite, right lower leg, initial encounter"
+  },
+  {
+   "code": "W54.0XXA",
+   "description": "Bitten by dog, initial encounter"
+  },
+  {
+   "code": "Y92.480",
+   "description": "Sidewalk as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.K1",
+   "description": "Activity, walking an animal"
+  },
+  {
+   "code": "Y99.8",
+   "description": "Other external cause status"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . nice to meet you , i'm doctor {DOCTOR_LAST} .\n[patient] hi . thanks for squeezing me in .\n[doctor] of course . so the nurse said you were bitten by a dog ?\n[patient] yes . this morning . i was out walking my dog , biscuit , like i do every morning before work . we were on the sidewalk on elm avenue , about two blocks from my house , and there's a house there where the dog is always behind the fence .\n[doctor] okay .\n[patient] well , today the gate was open , and this big dog came charging out . i think it was going for biscuit , and i stepped in between them , and it bit me on the back of my right leg . on the calf .\n[doctor] oh , that's scary . did it let go on its own ?\n[patient] it bit and kind of shook its head and then let go when the owner came out yelling . it was maybe a few seconds .\n[doctor] okay . is your dog okay ?\n[patient] she's fine , thank goodness . she's a little shaken up .\n[doctor] good . do you know the owner ? do you know if the dog is vaccinated ?\n[patient] yeah , the owner's name is {OTHER_FIRST} . she gave me her number and said the dog has all its shots , she's going to send me the rabies certificate .\n[doctor] okay , that's really helpful . did you report it to animal control ?\n[patient] not yet . should i ?\n[doctor] yes , we're required to report dog bites , so we'll file that from here , and they'll arrange for the dog to be observed for ten days .\n[patient] okay .\n[doctor] so how's the leg feeling ?\n[patient] it hurts . it's like a five or six . it bled through my jeans , but i washed it with soap and water at home and put a bandage on it .\n[doctor] good , washing it out right away is the most important thing . any numbness or tingling in your foot ?\n[patient] no .\n[doctor] can you walk on it okay ?\n[patient] yeah , i'm limping a little because it's sore , but i can walk .\n[doctor] okay . any medical problems i should know about ? diabetes , immune problems , anything like that ?\n[patient] no , i'm healthy . i just take a multivitamin .\n[doctor] any allergies to medications ?\n[patient] no .\n[doctor] and when was your last tetanus shot ?\n[patient] i had a tdap when i was pregnant with my youngest , and he's four now .\n[doctor] okay , so that's within five years , you're covered .\n[doctor] all right , let me take a look . can you lie on your stomach for me ? okay . so on the posterior right calf there are two puncture wounds from the upper teeth , and below them a curved row of smaller punctures from the lower teeth , and there's a small tear between them , about two centimeters , with some jagged edges . there's mild bruising around it . the wounds are not very deep , they go into the fat but i do n't see any muscle . there's no active bleeding . the calf is soft , and your foot pulses are good .\n[patient] okay .\n[doctor] can you point your toes for me ? and pull them up ? good . sensation is normal in your foot .\n[patient] okay .\n[doctor] so this is an open bite wound of the right lower leg , from a dog bite . the good news is that it's not too deep and it did n't hit anything important .\n[patient] are you going to stitch it ?\n[doctor] for dog bites on the leg , we usually do n't stitch the punctures , because closing them up traps bacteria in and increases infection risk . i'm going to irrigate it really well with a lot of saline , trim off a little bit of the jagged edge , and then leave it open with a dressing . the tear might get one or two loose stitches to bring the edges together , but i'd rather leave it open .\n[patient] okay , whatever you think is best .\n[doctor] i'm also going to start you on augmentin , eight seventy five milligrams twice a day for five days , to prevent infection . dog bites get infected fairly often .\n[patient] okay .\n[doctor] since the dog is known and vaccinated and will be observed , you do n't need rabies shots right now . if animal control ca n't confirm the vaccination or the dog gets sick , we'd start them .\n[patient] that's good to hear .\n[doctor] keep it clean , change the dressing every day , and keep the leg elevated when you can . you can take ibuprofen or tylenol for pain . if you see redness spreading , red streaks up the leg , pus , fever , or a lot more pain , call us at {PHONE} right away .\n[patient] okay , thank you .\n[doctor] i'd like to see you in two days for a wound check .\n[patient] sounds good .",
+ "note": "CHIEF COMPLAINT\n\nDog bite to the right lower leg.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents with a dog bite to the right lower leg sustained this morning, {DATE_SPOKEN}.\n\nThe patient reports that she was walking her own dog on a neighborhood sidewalk when an unleashed dog ran out of an open gate. She stepped between the two dogs and was bitten on the posterior right calf. The dog released after several seconds. The dog's owner is known to the patient and reports that the dog is up to date on rabies vaccination. The patient washed the wound with soap and water and applied a bandage. She reports 5-6/10 pain and a mild limp. She denies numbness or tingling of the foot. No significant past medical history; no immunocompromise. Tdap within the past 5 years. No known drug allergies.\n\nPHYSICAL EXAM\n\nRight lower leg: Posterior calf with two upper-arch puncture wounds and a curvilinear row of smaller lower-arch punctures, with a 2 cm superficial laceration with irregular edges between them. Mild surrounding ecchymosis. Wounds extend to subcutaneous tissue without exposed muscle. No active bleeding. Calf compartments soft. Dorsalis pedis and posterior tibial pulses 2+. Plantar flexion and dorsiflexion intact. Sensation intact.\n\nASSESSMENT AND PLAN\n\n1. Open bite of the right lower leg.\n• Medical Reasoning: Dog bite sustained while walking her dog on the sidewalk. Wounds are superficial without deep structure involvement.\n• Medical Treatment: Copious irrigation with normal saline and minimal debridement of wound edges. Wounds left open for delayed healing; non-adherent dressing applied. Amoxicillin-clavulanate 875 mg twice daily for 5 days for prophylaxis. Ibuprofen or Tylenol as needed.\n• Rabies: Dog known and reportedly vaccinated; 10-day observation via animal control. Rabies post-exposure prophylaxis not indicated at this time.\n• Patient Education and Counseling: Daily dressing changes and elevation. Return for spreading erythema, lymphangitic streaking, purulence, or fever.\n• Reporting: Animal bite report filed with animal control.\n\nPatient Agreements: The patient understands and agrees with the recommended medical treatment plan.\n\nWound check in 2 days.",
+ "medical_concepts": [
+  {
+   "text": "bitten by a dog",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was out walking my dog",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "we were on the sidewalk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "this big dog came charging out",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it bit me on the back of my right leg",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "on the calf",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "it bit and kind of shook its head",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "shots",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "rabies certificate",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "animal control",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dog bites",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "observed for ten days",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "it's like a five or six",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "it bled through my jeans",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "washed it with soap and water",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "bandage",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "limping",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "sore",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "diabetes",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "immune problems",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "multivitamin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "allergies to medications",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus shot",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tdap",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "posterior right calf",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "two puncture wounds from the upper teeth",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a curved row of smaller punctures from the lower teeth",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a small tear between them , about two centimeters , with some jagged edges",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild bruising",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "they go into the fat but i do n't see any muscle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no active bleeding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the calf is soft",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "foot pulses are good",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is normal in your foot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "open bite wound of the right lower leg",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "from a dog bite",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "stitch",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "infection risk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "irrigate it really well with a lot of saline",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "trim off a little bit of the jagged edge",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "leave it open with a dressing",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "augmentin , eight seventy five milligrams twice a day for five days",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "prevent infection",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "rabies shots",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "elevated",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "redness spreading",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "red streaks up the leg",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pus",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "wound check",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Dog bite to the right lower leg",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "dog bite to the right lower leg",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "she was walking her own dog on a neighborhood sidewalk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "an unleashed dog ran out of an open gate",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bitten on the posterior right calf",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "rabies vaccination",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "washed the wound with soap and water",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "bandage",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "5-6/10 pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild limp",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tingling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "immunocompromise",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tdap",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "No known drug allergies",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right lower leg",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Posterior calf",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "two upper-arch puncture wounds",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "curvilinear row of smaller lower-arch punctures",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "2 cm superficial laceration with irregular edges",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild surrounding ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Wounds extend to subcutaneous tissue without exposed muscle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No active bleeding",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Calf compartments soft",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Dorsalis pedis and posterior tibial pulses 2+",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Plantar flexion and dorsiflexion intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Open bite of the right lower leg",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Dog bite sustained while walking her dog on the sidewalk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "without deep structure involvement",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Copious irrigation with normal saline",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "minimal debridement of wound edges",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Wounds left open for delayed healing",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "non-adherent dressing",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Amoxicillin-clavulanate 875 mg twice daily for 5 days",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "prophylaxis",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "10-day observation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "animal control",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Rabies post-exposure prophylaxis",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Daily dressing changes",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "elevation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "spreading erythema",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lymphangitic streaking",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "purulence",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Animal bite report",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Wound check",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "biscuit",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "the patient's dog's name; a pet, not a person, though it is a mildly identifying detail"
+  },
+  {
+   "text": "the nurse",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic role"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S81.851A",
+   "spans": [
+    {
+     "text": "open bite wound of the right lower leg",
+     "field": "dialogue"
+    },
+    {
+     "text": "posterior right calf",
+     "field": "dialogue"
+    },
+    {
+     "text": "two puncture wounds from the upper teeth",
+     "field": "dialogue"
+    },
+    {
+     "text": "on the calf",
+     "field": "dialogue"
+    },
+    {
+     "text": "Open bite of the right lower leg",
+     "field": "note"
+    },
+    {
+     "text": "Right lower leg",
+     "field": "note"
+    },
+    {
+     "text": "two upper-arch puncture wounds",
+     "field": "note"
+    },
+    {
+     "text": "Dog bite to the right lower leg",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W54.0XXA",
+   "spans": [
+    {
+     "text": "bitten by a dog",
+     "field": "dialogue"
+    },
+    {
+     "text": "it bit me on the back of my right leg",
+     "field": "dialogue"
+    },
+    {
+     "text": "from a dog bite",
+     "field": "dialogue"
+    },
+    {
+     "text": "dog bite to the right lower leg",
+     "field": "note"
+    },
+    {
+     "text": "Dog bite sustained while walking her dog on the sidewalk",
+     "field": "note"
+    },
+    {
+     "text": "an unleashed dog ran out of an open gate",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.480",
+   "spans": [
+    {
+     "text": "we were on the sidewalk",
+     "field": "dialogue"
+    },
+    {
+     "text": "she was walking her own dog on a neighborhood sidewalk",
+     "field": "note"
+    },
+    {
+     "text": "Dog bite sustained while walking her dog on the sidewalk",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.K1",
+   "spans": [
+    {
+     "text": "i was out walking my dog",
+     "field": "dialogue"
+    },
+    {
+     "text": "she was walking her own dog on a neighborhood sidewalk",
+     "field": "note"
+    },
+    {
+     "text": "Dog bite sustained while walking her dog on the sidewalk",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.8",
+   "spans": [
+    {
+     "text": "i was out walking my dog",
+     "field": "dialogue"
+    },
+    {
+     "text": "she was walking her own dog on a neighborhood sidewalk",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "on elm avenue",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "street name"
+  },
+  {
+   "text": "about two blocks from my house",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "location of residence relative to the street"
+  },
+  {
+   "text": "pregnant with my youngest , and he's four now",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "family detail (child's age)"
+  }
+ ]
+}

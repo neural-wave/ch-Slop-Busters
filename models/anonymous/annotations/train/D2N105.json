@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N105",
+  "phi": [
+    {"text": "diana scott", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "diana", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "12/8/1920", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "7/9/2021", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "100", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "culdesac", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "the block"},
+    {"text": "madison", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "Diana Scott", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Scott", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Diana", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "100-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "cul-de-sac", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "the block"}
+  ],
+  "medical_concepts": []
+}

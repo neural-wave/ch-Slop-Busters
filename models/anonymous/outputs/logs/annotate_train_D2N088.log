@@ -1,0 +1,17 @@
+I wrote PHI labels for all five encounters to `annotations/train/` and the validator reports 0 problems. Every item has a `generalized` field, and `medical_concepts` is `[]`.
+
+- D2N088: 14 PHI
+- D2N089: 10 PHI
+- D2N090: 13 PHI
+- D2N091: 12 PHI
+- D2N092: 11 PHI
+
+Some tier-2 items were judgement calls you may want to check:
+- **Generic activities:** I labelled "work out in the yard", "house parties", "having people over" and "lawn work" as ACTIVITY. They are fairly generic, but I kept them for consistency with the guideline's "landscaping" example.
+- **Merged weekend spans:** "saturday or sunday" and "Saturdays and Sundays" are each one TEMPORAL span (generalized to "weekend"/"weekends") rather than separate day names.
+- **Mother's hospital stay (D2N090):** labelled as LIFE_EVENT ("mother was actually in the hospital", "hip replacement").
+- **Rake injury (D2N092):** "stabbing" and "rake" from the patient's past injury are labelled PERSONAL_DETAIL because the event is unusual.
+
+I did not label "dax"/"dragon", relation words like "my wife", or disease and medication names.
+
+--- stderr ---

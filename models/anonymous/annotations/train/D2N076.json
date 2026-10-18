@@ -1,0 +1,24 @@
+{
+  "encounter_id": "D2N076",
+  "phi": [
+    {"text": "evelyn", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "katherine", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "nine", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "two next month", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "22-month-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "ripple pea protein milk", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "plant-based milk"},
+    {"text": "dallas", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a nearby town"},
+    {"text": "dallas , georgia", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a nearby town"},
+    {"text": "kennesaw", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "another clinic location"},
+    {"text": "town center", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "satellite"},
+    {"text": "Katherine Lopez", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Katherine", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "22-month-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "Ripple Pea Protein milk", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "plant-based milk"},
+    {"text": "9-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "9 years old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "Dallas, Georgia", "field": "note", "type": "LOCATION", "tier": 1, "generalized": "a nearby town"},
+    {"text": "Town Center", "field": "note", "type": "LOCATION", "tier": 1, "generalized": "satellite"}
+  ],
+  "medical_concepts": []
+}

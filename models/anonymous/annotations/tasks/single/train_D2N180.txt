@@ -1,0 +1,90 @@
+########## ENCOUNTER D2N180
+=== FIELD: dialogue
+[doctor] patient shirley taylor . date of birth 5/4/1961 . mrn 0000123 . patient is a 60 year old right-handed female new patient referred by dr. jacob ward for evaluation of bilateral hand numbness and tingling . please note that i personally reviewed the ct brain with and without contrasting did 2/5/21 . uh , no metastatic disease . no acute intercranial abnormalities .
+[doctor] hello ms. taylor . how are you doing this morning ?
+[patient] hi dr . lopez . this weekend was a bit rough . i've had this numbness and tingling for a few weeks now .
+[doctor] so , in both of your hands ?
+[patient] yeah . ever since my car wreck last december when i broke them . well , once they heal , i mean , i noticed it more , the , the tingling and numbness .
+[doctor] are you still wearing the splint only on your right wrist ?
+[patient] no . i wear the left one also sometimes . the right one's just worse . the splint seems to help . both have gotten worse over the last month . when i broke them though , my wrist was definitely in worse shape than it is today . i've been having some mild stiffness in my neck too . i hit my head during the accident , and they told me it was a contusion .
+[doctor] okay . and where exactly on the right side would you say the tingling and numbness is ?
+[patient] on the right , i can really notice it from my middle and ring finger all the way up to my forearm , and on my left , a bit more the pinky and the ring and not the middle .
+[doctor] all right . and , um , is there is pain or , or just tingling and numbness ?
+[patient] uh , mainly just sore . sometimes they throb , but overall , they feel weaker too , especially when i'm using them . the tingling happens some more , but when they hurt , you know , it goes away and then the tingling's just dull .
+[doctor] what kind of activities ?
+[patient] well , really , i guess , just more so at night , and then it just kind of comes and goes throughout the day .
+[doctor] okay . and do you experience any loss of sensation in your hands or fingers ?
+[patient] uh , like , like feeling something ? no , not that i can think of really . in general , they might be less sensitive than they should be , but i can still feel . they gave me some nerve pain medicine , but i have n't been taking it like i should be .
+[doctor] okay . looks like your medical history is notable for chronic kidney disease , gout , hypertension , anxiety , gerd , and diabetes .
+[patient] well , i had pre-diabetes , but i got in under control changing my diet .
+[doctor] okay . good . and are you still on the carvedilol 25 milligrams two times a day for hypertension and lexapro 10 milligrams a day for anxiety ? looks like your allergic to sulfa drugs as well . is that correct ?
+[patient] yeah , i'm still taking those and sulfa just causes me to break out in a rash .
+[doctor] and no history of thyroid issues , right ?
+[patient] nope .
+[doctor] all right . thank you ms. taylor . i'll be right back for your exam . i want to look up that medication you mentioned for your nerve pain .
+[patient] all right . thanks .
+[doctor] review of systems , please make the following changes . uh , constitutional , patient reports fatigue and weight gain . gi , um , excessive appetite and bloating . eyes , floaters . uh , cardiovascular , shortness of breath and leg swelling . endocrine , positive diabetes , always hungry . skin , nail bed trenches , dryness , itching . musculoskeletal , gout , muscle pain . neurological , parasthesia , bilateral hands .
+[doctor] um , please use the default normal neuro-physical exam with the following changes . sensations normal except pin prick sensation diminished in the third and forth fingers on the right . and the fourth and fifth fingers on the left . reflexes are one plus and symmetric , two plus knees , toes are down going bilaterally , tinel's sign positive at both wrists and both elbows .
+[doctor] let's move onto assessment and plan , bilateral carpal tunnel syndrome , question of bilateral cubital tunnel syndrome . i discussed my impression with the patient , i will schedule her for emg , ncv . if her symptoms do not resolve , we can consider hand clinic referral for possible symptomatic injections or carpal tunnel release surgery although she can pursue these uh , through her current orthopedist . i encouraged her to wear her splints , returned for emg , ncv . end of note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Upper extremity tingling
+
+HISTORY OF PRESENT ILLNESS
+
+The patient is a 60-year-old female referred today for evaluation of numbness and tingling.
+
+The patient complains of numbness, tingling, and pain in both hands which began last December after she broke both wrists in an MVA and which has progressively worsened since then. She continues to wear a splint on the right wrist all the time and on the left only intermittently, which she states is because the right wrist was injured more severely in the MVA. The sensation radiates from the hands into the forearms and is equal bilaterally. The 4th and 5th fingers in the left hand and 3rd and 4th on the right-hand tingle. She states that her fingers are sore with palpation and seem weaker than before. Any exertion exacerbates the tingling, and after something exacerbates the pain, the tingling seems "dull". The symptoms come and go and seem to occur mostly at night. She denies complete loss of sensation in any of her fingers, but states that they seem less sensitive than they should be. she reports mild stiffness in her neck. She notes that she did hit her head during the MVA and was diagnosed with a contusion. She states that she has been given "nerve pain medicine” but has not been taking it.
+
+The patient takes carvedilol for her hypertension and Lexapro for her anxiety. She reports a history of prediabetes, which she has brought under control via dietary changes. She denies any history of thyroid issues.
+
+REVIEW OF SYMPTOMS
+
+• Constitutional Symptoms: The patient reports increased fatigue and weight gain.
+• Eyes: Positive for floaters.
+• Cardiovascular: Positive for leg swelling.
+• Respiratory: Positive for shortness of breath.
+• Gastrointestinal: Positive for excessive hunger and bloating.
+• Musculoskeletal: Positive for gout and muscle pain.
+• Integumentary: Positive for nail bed changes, dryness, and itching.
+• Neurological: Positive for bilateral paresthesia of hands.
+• Endocrine: Positive prediabetes and excessive hunger.
+
+PAST MEDICAL HISTORY
+
+Chronic kidney disease (CKD).
+Prediabetes, diet controlled.
+Hypertension.
+Gastric esophageal reflux disorder (GERD)
+
+CURRENT MEDICATIONS
+
+Carvedilol 25 mg twice daily.
+Lexapro 10 mg daily.
+
+ALLERGIES
+
+Sulfa, causes rash.
+
+PHYSICAL EXAM
+
+Neurological Exam
+Sensation is normal except pinprick sensation diminished in the 3rd and 4th fingers on the right and the 4th and 5th fingers on the left. 1+ and symmetric, 2+ knees. Toes are downgoing bilaterally. Tinel's sign positive at both wrists and both elbows.
+
+RESULTS
+
+CT brain with and without contrast, 02/05/2021
+Impression: No metastatic disease. No acute intracranial abnormalities. I personally reviewed the report and images.
+
+ASSESSMENT
+
+• Bilateral carpal tunnel syndrome, question of bilateral cubital tunnel syndrome.
+
+PLAN
+
+I discussed my impression with the patient. I will schedule her for EMG/NCV. If her symptoms do not resolve, we can consider Hand Clinic referral for possibly symptomatic injections or carpal tunnel release surgery, although she can also pursue these through her current orthopedist. I encouraged her to wear her splints.
+
+INSTRUCTIONS
+
+Return for EMG/NCV.

@@ -58,6 +58,10 @@ services:
     depends_on:
       ollama:
         condition: service_healthy
+    # Runs as the host user that owns ./outputs, so the container can write there and the results stay that user's
+    # (on Linux a container user writes host folders with its own uid). Create ./outputs first: a folder Docker
+    # creates belongs to root. Another uid: HARNESS_UID=$(id -u) HARNESS_GID=$(id -g) docker compose run ...
+    user: "${HARNESS_UID:-1000}:${HARNESS_GID:-1000}"
     environment:
       UNIFIED_HARNESS_OLLAMA_URL: http://ollama:11434
       UNIFIED_HARNESS_DETECTOR_MODEL: ${DETECTOR_MODEL:-qwen3.5:2b-q4_K_M}

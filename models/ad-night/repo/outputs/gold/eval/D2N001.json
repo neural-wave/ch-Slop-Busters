@@ -1,0 +1,67 @@
+{
+  "encounter_id": "D2N001",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "martha",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "50-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "washington",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "northern cascades",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "mount baker",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "fiscal year end data",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Martha",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Collins",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "50-year-old",
+      "category": "AGE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "3/6",
+      "category": "CLINICAL_NUMBER",
+      "why": "murmur grade, not a date"
+    }
+  ]
+}

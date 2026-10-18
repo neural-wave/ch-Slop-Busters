@@ -1,0 +1,1658 @@
+{
+ "name": "attack_eval_balanced_rules",
+ "n": 67,
+ "A2_roster": {
+  "original": {
+   "recovered": 205,
+   "of": 205,
+   "rate": 1.0
+  },
+  "anonymized": {
+   "recovered": 1,
+   "of": 205,
+   "rate": 0.0049
+  },
+  "recovered_items": [
+   {
+    "encounter_id": "D2N035",
+    "field": "dialogue",
+    "name": "diane"
+   }
+  ],
+  "roster_size": 2236
+ },
+ "A3_rare_words": {
+  "rare_tokens_original": 413,
+  "rare_tokens_surviving": 351,
+  "rare_token_removal": 0.1501,
+  "encounters_with_surviving_rare_token": 64,
+  "note": "rare = occurs in exactly one encounter, not medical/drug vocabulary, not a frequent English word"
+ },
+ "A5_linkage": {
+  "top1_relink": 67,
+  "of": 67,
+  "rate": 1.0,
+  "note": "attacker holds the original records; clinical content is kept by design, so text similarity re-links. This bounds the threat model: anonymization protects against identifying the person, not against matching a record one already has."
+ },
+ "A1_ner": {
+  "original": {
+   "recovered": 402,
+   "of": 453,
+   "rate": 0.8874
+  },
+  "anonymized": {
+   "recovered": 14,
+   "of": 453,
+   "rate": 0.0309
+  },
+  "recovered_items": [
+   {
+    "encounter_id": "D2N001",
+    "field": "dialogue",
+    "text": "northern cascades",
+    "category": "LOCATION"
+   },
+   {
+    "encounter_id": "D2N001",
+    "field": "dialogue",
+    "text": "mount baker",
+    "category": "LOCATION"
+   },
+   {
+    "encounter_id": "D2N021",
+    "field": "dialogue",
+    "text": "wal-mart",
+    "category": "ORGANIZATION"
+   },
+   {
+    "encounter_id": "D2N021",
+    "field": "dialogue",
+    "text": "cvs",
+    "category": "ORGANIZATION"
+   },
+   {
+    "encounter_id": "D2N024",
+    "field": "dialogue",
+    "text": "10-10 20-20",
+    "category": "DATE"
+   },
+   {
+    "encounter_id": "D2N025",
+    "field": "dialogue",
+    "text": "bartley regional",
+    "category": "LOCATION"
+   },
+   {
+    "encounter_id": "D2N025",
+    "field": "dialogue",
+    "text": "rightley regional hospital",
+    "category": "LOCATION"
+   },
+   {
+    "encounter_id": "D2N027",
+    "field": "dialogue",
+    "text": "hopkins",
+    "category": "LOCATION"
+   },
+   {
+    "encounter_id": "D2N035",
+    "field": "dialogue",
+    "text": "diane",
+    "category": "PERSON_NAME"
+   },
+   {
+    "encounter_id": "D2N039",
+    "field": "dialogue",
+    "text": "cvs",
+    "category": "ORGANIZATION"
+   },
+   {
+    "encounter_id": "D2N047",
+    "field": "dialogue",
+    "text": "georgia",
+    "category": "LOCATION"
+   },
+   {
+    "encounter_id": "D2N047",
+    "field": "dialogue",
+    "text": "alabama",
+    "category": "ORGANIZATION"
+   },
+   {
+    "encounter_id": "D2N056",
+    "field": "dialogue",
+    "text": "are a farmer",
+    "category": "OCCUPATION"
+   },
+   {
+    "encounter_id": "D2N058",
+    "field": "dialogue",
+    "text": "rex center",
+    "category": "LOCATION"
+   }
+  ]
+ },
+ "A4_llm": {
+  "original": {
+   "name": {
+    "recovered": 60,
+    "of": 63,
+    "rate": 0.9524
+   },
+   "age_exact": {
+    "recovered": 54,
+    "of": 54,
+    "rate": 1.0
+   },
+   "place": {
+    "recovered": 2,
+    "of": 13,
+    "rate": 0.1538
+   },
+   "employer_or_job": {
+    "recovered": 9,
+    "of": 23,
+    "rate": 0.3913
+   }
+  },
+  "anonymized": {
+   "name": {
+    "recovered": 0,
+    "of": 63,
+    "rate": 0.0
+   },
+   "age_exact": {
+    "recovered": 11,
+    "of": 54,
+    "rate": 0.2037
+   },
+   "place": {
+    "recovered": 1,
+    "of": 13,
+    "rate": 0.0769
+   },
+   "employer_or_job": {
+    "recovered": 10,
+    "of": 23,
+    "rate": 0.4348
+   }
+  },
+  "model": "qwen3.5:2b-q4_K_M",
+  "guesses": [
+   {
+    "version": "original",
+    "encounter_id": "D2N001",
+    "guess": {
+     "first_name": "Martha",
+     "last_name": "Collins",
+     "age": 50,
+     "city_or_state": "Washington",
+     "employer_or_job": "Fiscal year end data"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N002",
+    "guess": {
+     "first_name": "Andrew",
+     "last_name": "Perez",
+     "age": 62,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N003",
+    "guess": {
+     "first_name": "John",
+     "last_name": "Perry",
+     "age": 61,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N004",
+    "guess": {
+     "first_name": "James",
+     "last_name": "Allen",
+     "age": 57,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N005",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 41,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N006",
+    "guess": {
+     "first_name": "Anna",
+     "last_name": "Mitchell",
+     "age": 44,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N007",
+    "guess": {
+     "first_name": "Sara",
+     "last_name": "Dragon",
+     "age": 27,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N008",
+    "guess": {
+     "first_name": "Stephanie",
+     "last_name": "Diaz",
+     "age": 49,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N009",
+    "guess": {
+     "first_name": "Bryan",
+     "last_name": "Smith",
+     "age": 55,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N010",
+    "guess": {
+     "first_name": "Keith",
+     "last_name": "",
+     "age": 58,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N011",
+    "guess": {
+     "first_name": "Roger",
+     "last_name": "Nelson",
+     "age": 62,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N012",
+    "guess": {
+     "first_name": "Joseph",
+     "last_name": "Fisher",
+     "age": 59,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N013",
+    "guess": {
+     "first_name": "John",
+     "last_name": "Brooks",
+     "age": 55,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N014",
+    "guess": {
+     "first_name": "Louis",
+     "last_name": "Williams",
+     "age": 58,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N015",
+    "guess": {
+     "first_name": "Rachel",
+     "last_name": "",
+     "age": 48,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N016",
+    "guess": {
+     "first_name": "Edward",
+     "last_name": "Butler",
+     "age": 59,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N017",
+    "guess": {
+     "first_name": "Ms.",
+     "last_name": "Peterson",
+     "age": 43,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N018",
+    "guess": {
+     "first_name": "",
+     "last_name": "Russell",
+     "age": 39,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N019",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 48,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N020",
+    "guess": {
+     "first_name": "Vincent",
+     "last_name": "Young",
+     "age": 56,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N021",
+    "guess": {
+     "first_name": "Christine",
+     "last_name": "Hernandez",
+     "age": 39,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N022",
+    "guess": {
+     "first_name": "Philip",
+     "last_name": "Gutierrez",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": "x-ray technician"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N023",
+    "guess": {
+     "first_name": "Paul",
+     "last_name": "Edwards",
+     "age": 59,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N024",
+    "guess": {
+     "first_name": "Pamela",
+     "last_name": "Cook",
+     "age": 36,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N025",
+    "guess": {
+     "first_name": "Nicole",
+     "last_name": "Miller",
+     "age": 71,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N026",
+    "guess": {
+     "first_name": "Mr.",
+     "last_name": "Clark",
+     "age": 84,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N027",
+    "guess": {
+     "first_name": "Eugene",
+     "last_name": "Walker",
+     "age": 61,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N028",
+    "guess": {
+     "first_name": "Patrick",
+     "last_name": "Allen",
+     "age": 42,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N029",
+    "guess": {
+     "first_name": "Sophia",
+     "last_name": "Jackson",
+     "age": 57,
+     "city_or_state": "",
+     "employer_or_job": "Auto repair shop owner"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N030",
+    "guess": {
+     "first_name": "Donna",
+     "last_name": "Torres",
+     "age": 40,
+     "city_or_state": "",
+     "employer_or_job": "Supports Covid evaluation centers and clinics"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N031",
+    "guess": {
+     "first_name": "Sophia",
+     "last_name": "Brown",
+     "age": 75,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N032",
+    "guess": {
+     "first_name": "Elizabeth",
+     "last_name": "Reyes",
+     "age": 56,
+     "city_or_state": "",
+     "employer_or_job": "RN"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N033",
+    "guess": {
+     "first_name": "Sophia",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N034",
+    "guess": {
+     "first_name": "Alan",
+     "last_name": "Mitchell",
+     "age": 69,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N035",
+    "guess": {
+     "first_name": "Christina",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N036",
+    "guess": {
+     "first_name": "George",
+     "last_name": "Lewis",
+     "age": 57,
+     "city_or_state": "",
+     "employer_or_job": "Landscaping"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N037",
+    "guess": {
+     "first_name": "Dylan",
+     "last_name": "Bennett",
+     "age": 53,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N038",
+    "guess": {
+     "first_name": "Bruce",
+     "last_name": "Ward",
+     "age": 60,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N039",
+    "guess": {
+     "first_name": "Virginia",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": "Employed"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N040",
+    "guess": {
+     "first_name": "Carolyn",
+     "last_name": "",
+     "age": 34,
+     "city_or_state": "Florida",
+     "employer_or_job": "Computer worker"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N041",
+    "guess": {
+     "first_name": "Teresa",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": "Supermarket cashier"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N042",
+    "guess": {
+     "first_name": "Carolyn",
+     "last_name": "Jones",
+     "age": 38,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N043",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 44,
+     "city_or_state": "",
+     "employer_or_job": "Stressed at work"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N044",
+    "guess": {
+     "first_name": "Julie",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": "Home"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N045",
+    "guess": {
+     "first_name": "Abigail",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N046",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N047",
+    "guess": {
+     "first_name": "Billy",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N048",
+    "guess": {
+     "first_name": "Brittany",
+     "last_name": "Edwards",
+     "age": 76,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N049",
+    "guess": {
+     "first_name": "Linda",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N050",
+    "guess": {
+     "first_name": "",
+     "last_name": "Ward",
+     "age": 80,
+     "city_or_state": "",
+     "employer_or_job": "moving hay in a barn"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N051",
+    "guess": {
+     "first_name": "Jeremy",
+     "last_name": "Roberts",
+     "age": 79,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N052",
+    "guess": {
+     "first_name": "Anna",
+     "last_name": "Diaz",
+     "age": 29,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N053",
+    "guess": {
+     "first_name": "Barbara",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N054",
+    "guess": {
+     "first_name": "Elijah",
+     "last_name": "Reyes",
+     "age": 45,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N055",
+    "guess": {
+     "first_name": "Karen",
+     "last_name": "Nelson",
+     "age": 3,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N056",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": "farmer"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N057",
+    "guess": {
+     "first_name": "Joseph",
+     "last_name": "Walker",
+     "age": 58,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N058",
+    "guess": {
+     "first_name": "Russell",
+     "last_name": "Ramirez",
+     "age": 45,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N059",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N060",
+    "guess": {
+     "first_name": "Jean",
+     "last_name": "Martinez",
+     "age": 27,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N061",
+    "guess": {
+     "first_name": "Virginia",
+     "last_name": "Phillips",
+     "age": 53,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N062",
+    "guess": {
+     "first_name": "Raymond",
+     "last_name": "Taylor",
+     "age": 67,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N063",
+    "guess": {
+     "first_name": "Gloria",
+     "last_name": "",
+     "age": 46,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N064",
+    "guess": {
+     "first_name": "Matthew",
+     "last_name": "Murphy",
+     "age": 20,
+     "city_or_state": "",
+     "employer_or_job": "Working from home"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N065",
+    "guess": {
+     "first_name": "Anna",
+     "last_name": "Diaz",
+     "age": 31,
+     "city_or_state": "",
+     "employer_or_job": "Computer worker"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N066",
+    "guess": {
+     "first_name": "Gabriel",
+     "last_name": "",
+     "age": 43,
+     "city_or_state": "",
+     "employer_or_job": "Gardener"
+    }
+   },
+   {
+    "version": "original",
+    "encounter_id": "D2N067",
+    "guess": {
+     "first_name": "Elizabeth",
+     "last_name": "Ross",
+     "age": 91,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N001",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N002",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 60,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N003",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 60,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N004",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N005",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 40,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N006",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 40,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N007",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 20,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N008",
+    "guess": {
+     "first_name": "Dragon",
+     "last_name": "",
+     "age": 40,
+     "city_or_state": "[LOCATION]",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N009",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N010",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N011",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 60,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N012",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N013",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N014",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N015",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 40,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N016",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "[ORGANIZATION]",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N017",
+    "guess": {
+     "first_name": "Ms.",
+     "last_name": "[PATIENT]",
+     "age": 40,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N018",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 30,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N019",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 40,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N020",
+    "guess": {
+     "first_name": "Dragon",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N021",
+    "guess": {
+     "first_name": "Mrs.",
+     "last_name": "[PATIENT]",
+     "age": 30,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N022",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": "x-ray technician"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N023",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N024",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 30,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N025",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 70,
+     "city_or_state": "East Metro",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N026",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N027",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 8,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N028",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 40,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N029",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": "auto repair shop"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N030",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 40,
+     "city_or_state": "",
+     "employer_or_job": "Supports Covid evaluation centers and clinics"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N031",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 70,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N032",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": "infusion center"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N033",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N034",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 60,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N035",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N036",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": "landscaping"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N037",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N038",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 60,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N039",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": "employed"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N040",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 30,
+     "city_or_state": "[LOCATION]",
+     "employer_or_job": "Computer worker"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N041",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": "supermarket"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N042",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 30,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N043",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 40,
+     "city_or_state": "",
+     "employer_or_job": "Stressed at work"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N044",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": "Home"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N045",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N046",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N047",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N048",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 70,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N049",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N050",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 80,
+     "city_or_state": "",
+     "employer_or_job": "moving hay in a barn"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N051",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 70,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N052",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 20,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N053",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N054",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 40,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N055",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N056",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": "farmer"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N057",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N058",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 40,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N059",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 0,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N060",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 20,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N061",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 50,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N062",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 60,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N063",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 40,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N064",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 20,
+     "city_or_state": "",
+     "employer_or_job": "working from home"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N065",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 30,
+     "city_or_state": "",
+     "employer_or_job": "computer"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N066",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 40,
+     "city_or_state": "",
+     "employer_or_job": "gardener"
+    }
+   },
+   {
+    "version": "anonymized",
+    "encounter_id": "D2N067",
+    "guess": {
+     "first_name": "",
+     "last_name": "",
+     "age": 90,
+     "city_or_state": "",
+     "employer_or_job": ""
+    }
+   }
+  ]
+ }
+}

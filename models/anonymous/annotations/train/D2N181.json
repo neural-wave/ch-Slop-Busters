@@ -1,0 +1,21 @@
+{
+  "encounter_id": "D2N181",
+  "phi": [
+    {"text": "michelle king", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "king", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "01/05/1986", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "mrnq27631", "field": "dialogue", "type": "ID", "tier": 1, "generalized": ""},
+    {"text": "phillips", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "scott", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "12", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "a paralegal", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "an office worker"},
+    {"text": "one month old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "Michelle King", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "King", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "35 y.o.", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "Scott", "field": "note", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "age 12", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "a paralegal", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "an office worker"}
+  ],
+  "medical_concepts": []
+}

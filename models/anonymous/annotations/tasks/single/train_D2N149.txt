@@ -1,0 +1,113 @@
+########## ENCOUNTER D2N149
+=== FIELD: dialogue
+[doctor] so dennis is a 57 -year-old male today complaining of shortness of breath he has also got a history of diabetes high blood pressure and history of asthma so dennis tell me what's going on how're you doing
+[patient] not too good
+[doctor] okay how long have you been feeling not too well
+[patient] about a couple of weeks
+[doctor] couple of weeks tell me what's going on
+[patient] i wake up with shortness of breath
+[doctor] okay
+[patient] i go to when i'm short of breath there i get back home and i'm again short of breath so i had a tough time dealing with this
+[doctor] have you noticed any are you coughing up anything any swelling in your legs or what's going on
+[patient] yeah i've been i've been coughing up i've been coughing up blood
+[doctor] okay how long has that been going on for
+[patient] probably three weeks or so
+[doctor] okay and are you coughing a lot of blood or just a little bit of blood
+[patient] i shave three to four cups a day
+[doctor] wow that's a lot of blood okay are you throwing up any blood are you having bleeding in any place else or just when you cough
+[patient] only when i cough
+[doctor] okay have you noticed any bruising or bleeding from your teeth or anything like that or from your gums or anything like that
+[patient] no
+[doctor] okay any leg swelling or calf swelling or any any anything like that any recent travel history you've been on a plane or trip recently
+[patient] i had some knee problem but there is no swelling but it hurts that's been going on for quite some time
+[doctor] okay so that's not near the knee problem okay and have you had any have you been to the hospital or been to the emergency room or anything like that for your coughing and coughing up blood
+[patient] no i tried to get an appointment in the office but they were kinda booked up
+[doctor] okay
+[patient] they just numb
+[doctor] alright and alright no but no fevers with this so since you're here your oxygen level looks pretty good in the clinic it's about ninety four percent on pulse your pulse oxygenation so that's good are you short of breath so when you walk or you or you exert yourself you're short of breath you said right okay and have you and how how is your blood sugar been doing since this has been going on i know you're on metformin how's your diabetes been doing
+[patient] not so good you know it kinda going up and down i wear this dexcom
+[doctor] okay
+[patient] you know after meal they spike up well over two hundred
+[doctor] okay and
+[patient] and morning when i get up they are around one fifty
+[doctor] okay alright so it's been running a little bit high i know we checked your hemoglobin a1c last time and it was about seven . seven . i think and we had talked about you know improving your diet and improving some exercise but is this blood sugar been high and low or high and normal when you're especially in the last three weeks or has it been going on for longer than that
+[patient] i would say about a month
+[doctor] okay alright and how is your blood pressure been at home since you've been taking since these episodes that you've been sick are you taking norvasc
+[patient] yes i am but i keep them on some days because my blood pressure has been running somewhat on the low side
+[doctor] okay alright and right now it's about a hundred and twenty over seventy what how low does it go in the more when you check it
+[patient] well there are sometimes in the lower nineties
+[doctor] okay alright well let me let me examine you here in a second and we'll think about you know what we need to do especially with your coughing and your shortness of breath okay so nita i'm i'm examining you now let's pretend i did my exam i'm just gon na verbalize some of my findings so i can put it into my chart okay and i'll explain what those things mean so on my exam you've got no jvd there is no swelling in your neck no carotid bruits your lung exam you've got some rails and some rhonchi on on more on the right side i do n't hear any wheezing right now there is some diminished breath sounds in the right side as well on your heart exam you've got two over successolic ejection murmur you've had that in the past that's unchanged from before the rest regular rate and rhythm otherwise your belly exam is nice and soft on your extremity exam you've got one plus nonpitting edema on both of your lower extremities on your on your ankles no calf tenderness no negative homan sign so what does all this mean so basically you've got you know you've got some sort of infection or something going on in your lungs that i can hear right now the rest of your exam is pretty much stable it's unchanged from before so let's talk about what we what we should do about this so for the for the first problem with the shortness of breath the first thing i wan na do is go ahead and get a chest x-ray for you okay you've been coughing up blood i also wan na send you to the emergency department to get some blood testing done i'm worried about a blood clot or something else going on so i wan na get a cat scan of your chest as well so i'm gon na go ahead and refer you to the emergency department i'll call them and and have you head over that way they can get a chest x-ray and a cat scan and some blood work as well and then we'll evaluate why you're having the shortness of breath and why you're coughing up this blood okay and then depending on what they find you may need you know it could be as simple as a pneumonia or it could be something a little bit more serious we may have to get you know start you know depending on what you find we will get the right treatment started any questions about that or can you drive to the emergency department from here or is that okay
+[patient] yeah i can bike no problem i have no question
+[doctor] alright for the second problem for the diabetes since your blood sugar is running a little bit high once you get over this i'm blood sugars running a little bit high once we get you over this hump of the shortness of breath and get this diagnosed i'm gon na go ahead and order another hemoglobin a1c today we will probably increase your dose of metformin from five hundred twice a day to seven fifty twice a day so why do n't we do that and then why do n't we have we'll have the hemoglobin a1c back and then we can once you get over this illness that you're undergoing we'll we'll we'll discuss that more i'll have you come back in about three weeks to just discuss your diabetes and what our treatment plan will be for that okay
+[patient] okay
+[doctor] for the high blood pressure definitely hold off on the norvasc for right now let's figure out what's going what's causing this episode of shortness of breath i want some blood testing done and and once we have that under better control we can reassess your blood pressure so right now hold the norvasc and then we'll have you come back once everything is done okay
+[patient] no
+[doctor] any other questions or anything we know if we need to talk about today
+[patient] no i'm good
+[doctor] sounds good we'll get you signed out here in a second
+=== FIELD: note
+CHIEF COMPLAINT
+
+Shortness of breath with hemoptysis.
+
+MEDICAL HISTORY
+
+Patient reports history of diabetes, hypertension, and asthma. He also has a long history of knee pain.
+
+MEDICATIONS
+
+Patient reports taking metformin and Norvasc.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Denies fever.
+HENT: Denies bleeding gums.
+Respiratory: Reports shortness of breath, hemoptysis.
+Musculoskeletal: Reports knee pain. Denies lower extremity edema.
+Hematologic/Lymphatic: Denies bruising.
+
+VITALS
+
+Pulse oxygenation: 94 percent. Blood pressure: 120/70 mm Hg.
+
+PHYSICAL EXAM
+
+Neck
+- General Examination: Neck is supple. No JVD. No carotid bruits.
+
+Respiratory
+- Auscultation of Lungs: Some rales and rhonchi, more on the right. No wheezing right now. There is some diminished breath sounds in the right as well.
+
+Cardiovascular
+- Auscultation of Heart: Regular rate. 2/6 systolic ejection murmur, unchanged from before.
+
+Gastrointestinal
+- Examination of Abdomen: Soft.
+
+Musculoskeletal
+- Examination: 1+ nonpitting edema on bilateral lower extremities. No calf tenderness. Negative Homan's sign.
+
+Hematology/Lymphatic/Immunology
+- Examination: No bruising.
+
+ASSESSMENT AND PLAN
+
+1. Shortness of breath.
+- Medical Reasoning: The patient has been coughing up blood.
+- Patient Education and Counseling: We discussed the importance of further testing as his symptoms could be as simple as a pneumonia or something more serious.
+- Medical Treatment: I have ordered a chest x-ray, CT scan, and blood work to be done in the ER. I have instructed the patient to go into the ER immediately after this appointment and I will call ahead.
+
+2. Diabetes.
+- Medical Reasoning: The patient's blood sugar has not been well controlled.
+- Medical Treatment: I have ordered an updated A1c today. He will increase his metformin to 750 mg twice daily.
+
+3. Hypertension.
+- Medical Reasoning: His blood pressure has been running low for approximately 3 weeks. I believe this could be caused by his shortness of breath. I would like to get a better understanding of the cause of his shortness of breath prior to pursuing further treatment for his hypertension.
+- Medical Treatment: At this time, he will discontinue the use of Norvasc.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+We will have him follow up in about 3 weeks to just discuss his diabetes and further treatment recommendations.
+

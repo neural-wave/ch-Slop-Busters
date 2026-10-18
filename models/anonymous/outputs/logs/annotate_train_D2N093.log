@@ -1,0 +1,17 @@
+I wrote all five annotation files and the validator reports 0 problems.
+
+- D2N093: 17 PHI
+- D2N094: 14 PHI
+- D2N095: 8 PHI
+- D2N096: 6 PHI
+- D2N097: 8 PHI
+
+A few labelling choices you may want to check:
+- **Names that don't match:** in D2N095 the patient is "cheryl" in the dialogue but "Ms. Ramirez" in the note. I labelled both as the patient's name.
+- **Age at surgery in D2N094:** "seven" also appears twice as a pain score, and the checker masks every occurrence of a span. So I labelled "i was seven" in the dialogue rather than "seven" alone, and "age 7" in the note.
+- **Borderline personal details:** I included some lower-risk items as tier 2, each with a generic replacement that keeps the clinical meaning. Examples are "chocolate bars" → "sweets", "red bull" → "energy drinks", and "right down the street" → "nearby".
+- **Things left out:** walking, "crossfit" (the doctor only mentions it as an example), relation words like boyfriend, husband and grandkids, and COVID vaccination (treated as medical).
+
+The files are in `annotations/train/`, from `D2N093.json` to `D2N097.json`.
+
+--- stderr ---

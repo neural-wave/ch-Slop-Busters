@@ -1,0 +1,9 @@
+{
+  "encounter_id": "D2N193",
+  "phi": [
+    {"text": "hannah", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "vacation", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "time off"},
+    {"text": "pandemic", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "public health situation"}
+  ],
+  "medical_concepts": []
+}

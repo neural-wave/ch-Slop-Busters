@@ -1,0 +1,982 @@
+{
+ "classes": {
+  "age": {
+   "n": 344,
+   "dialogue": 114,
+   "note": 230,
+   "by_dataset": {
+    "virtassist": 153,
+    "virtscribe": 97,
+    "aci": 94
+   },
+   "spoken": 11,
+   "examples": [
+    [
+     "D2N199",
+     "dialogue",
+     "hat and i know that you are «74» and you know you have n't r"
+    ],
+    [
+     "D2N073",
+     "dialogue",
+     "'ve been anemic since i was «13» years old . ⏎ [doctor] right "
+    ],
+    [
+     "D2N095",
+     "dialogue",
+     "okay . ⏎ [doctor] cheryl is a «34»-year-old female with a past"
+    ],
+    [
+     "D2N165",
+     "note",
+     "ophia Jackson is a pleasant «30»-year-old female who present"
+    ]
+   ],
+   "label": "privacy (bucket) — code-relevant for age-specific codes"
+  },
+  "stage_grade_type": {
+   "n": 139,
+   "dialogue": 58,
+   "note": 81,
+   "by_dataset": {
+    "virtassist": 43,
+    "aci": 82,
+    "virtscribe": 14
+   },
+   "spoken": 46,
+   "examples": [
+    [
+     "D2N043",
+     "dialogue",
+     "e'll just monitor your type «two» diabetes i am gon na go ahe"
+    ],
+    [
+     "D2N040",
+     "dialogue",
+     "rt exam you have that grade «three» out of six systolic ejectio"
+    ],
+    [
+     "D2N087",
+     "note",
+     "rtension, and diabetes type «2». ⏎  ⏎ SOCIAL HISTORY ⏎  ⏎ Patient r"
+    ],
+    [
+     "D2N191",
+     "note",
+     "SSMENT ⏎  ⏎ Left arm pain. ⏎ Type «2» diabetes. ⏎ Hypertension. ⏎  ⏎ PL"
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "hba1c": {
+   "n": 87,
+   "dialogue": 34,
+   "note": 53,
+   "by_dataset": {
+    "virtassist": 27,
+    "aci": 48,
+    "virtscribe": 12
+   },
+   "spoken": 29,
+   "examples": [
+    [
+     "D2N004",
+     "note",
+     "s recent hemoglobin A1c was «8». ⏎ • Additional Testing: Repe"
+    ],
+    [
+     "D2N195",
+     "note",
+     "es. His most recent A1C was «7.2». He is taking metformin 500"
+    ],
+    [
+     "D2N025",
+     "note",
+     "today. She may need another «one» prior to her surgery next m"
+    ],
+    [
+     "D2N155",
+     "note",
+     "Her last hemoglobin A1C was «10». ⏎  ⏎ REVIEW OF SYSTEMS ⏎  ⏎ Consti"
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "other": {
+   "n": 1359,
+   "dialogue": 950,
+   "note": 409,
+   "by_dataset": {
+    "virtassist": 127,
+    "virtscribe": 400,
+    "aci": 832
+   },
+   "spoken": 819,
+   "examples": [
+    [
+     "D2N027",
+     "dialogue",
+     "pical ride is , like , 20 , «30» . in years back , i could d"
+    ],
+    [
+     "D2N141",
+     "dialogue",
+     " was able to get two of the «three» memory words with cuing , a"
+    ],
+    [
+     "D2N185",
+     "dialogue",
+     "st] yeah . and so a week or «two» later , she would have a fe"
+    ],
+    [
+     "D2N141",
+     "dialogue",
+     "of 30 with calculations and «24» out of 30 with spelling . a"
+    ]
+   ],
+   "label": "check"
+  },
+  "dose": {
+   "n": 808,
+   "dialogue": 365,
+   "note": 443,
+   "by_dataset": {
+    "virtassist": 235,
+    "virtscribe": 188,
+    "aci": 385
+   },
+   "spoken": 205,
+   "examples": [
+    [
+     "D2N058",
+     "note",
+     "nt: Continue taking aspirin «81» mg daily Continue taking Br"
+    ],
+    [
+     "D2N118",
+     "note",
+     "Treatment: Continue Norvasc «2.5» mg. Referral to nutrition p"
+    ],
+    [
+     "D2N018",
+     "dialogue",
+     "we'll do lortab 500- lortab «5» milligram . ⏎  ⏎ [doctor] um , "
+    ],
+    [
+     "D2N151",
+     "note",
+     " continue taking lisinopril «10» mg. I also encouraged her t"
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "duration_or_relative_time": {
+   "n": 791,
+   "dialogue": 445,
+   "note": 346,
+   "by_dataset": {
+    "virtassist": 140,
+    "virtscribe": 192,
+    "aci": 459
+   },
+   "spoken": 428,
+   "examples": [
+    [
+     "D2N004",
+     "note",
+     "while golfing approximately «4» days ago. He has tried Tyle"
+    ],
+    [
+     "D2N050",
+     "dialogue",
+     "s n't passed in that one to «two» weeks that sound good ⏎ [pati"
+    ],
+    [
+     "D2N025",
+     "dialogue",
+     "h , for county for the next «30» days , and they might be ab"
+    ],
+    [
+     "D2N127",
+     "dialogue",
+     "to eight hours every six to «eight» hours and that really shoul"
+    ]
+   ],
+   "label": "must-keep (relative timeline)"
+  },
+  "lab_value": {
+   "n": 313,
+   "dialogue": 185,
+   "note": 128,
+   "by_dataset": {
+    "virtassist": 49,
+    "virtscribe": 136,
+    "aci": 128
+   },
+   "spoken": 132,
+   "examples": [
+    [
+     "D2N199",
+     "note",
+     " will order a lipid panel. ⏎  ⏎ «4». Diabetes. ⏎ - Medical Reason"
+    ],
+    [
+     "D2N124",
+     "dialogue",
+     "e point line and he is only «ten and» tiny so it's it's not a goo"
+    ],
+    [
+     "D2N117",
+     "dialogue",
+     "for twenty minutes at least «three» times per day and this shou"
+    ],
+    [
+     "D2N073",
+     "dialogue",
+     "etter . do this for about 8-«12» weeks , uh , and then we ca"
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "blood_pressure": {
+   "n": 270,
+   "dialogue": 86,
+   "note": 184,
+   "by_dataset": {
+    "virtassist": 59,
+    "virtscribe": 46,
+    "aci": 165
+   },
+   "spoken": 55,
+   "examples": [
+    [
+     "D2N045",
+     "dialogue",
+     "ure and was one twenty over «sixty» that's phenomenal your hear"
+    ],
+    [
+     "D2N139",
+     "note",
+     "pressure readings of 146 to «155». He does report a family hi"
+    ],
+    [
+     "D2N080",
+     "note",
+     "rations: 16 ⏎ Blood pressure: «122»/70 mmHg ⏎  ⏎ PHYSICAL EXAM ⏎  ⏎ MSK"
+    ],
+    [
+     "D2N041",
+     "dialogue",
+     "umber sometimes it could be «one forty» for the top number i i do n"
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "glucose": {
+   "n": 42,
+   "dialogue": 19,
+   "note": 23,
+   "by_dataset": {
+    "virtassist": 6,
+    "aci": 35,
+    "virtscribe": 1
+   },
+   "spoken": 16,
+   "examples": [
+    [
+     "D2N086",
+     "dialogue",
+     "es over two hundred i check «two» or three times a day if i f"
+    ],
+    [
+     "D2N066",
+     "dialogue",
+     "h i i check my sugar two or «three» times a week most of the ti"
+    ],
+    [
+     "D2N066",
+     "note",
+     "evels are typically between «120»-140. ⏎ - Patient Education an"
+    ],
+    [
+     "D2N158",
+     "dialogue",
+     " been what low one hundreds «two» hundreds where where is it ⏎ "
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "score_or_grade": {
+   "n": 309,
+   "dialogue": 133,
+   "note": 176,
+   "by_dataset": {
+    "virtassist": 47,
+    "virtscribe": 86,
+    "aci": 176
+   },
+   "spoken": 102,
+   "examples": [
+    [
+     "D2N054",
+     "note",
+     " rates his pain level as an «11» out of 10. The patient also"
+    ],
+    [
+     "D2N028",
+     "dialogue",
+     "had an abdominal ct on 1/23/«2020» . impression is a normal ct"
+    ],
+    [
+     "D2N008",
+     "dialogue",
+     "ur heart exam , i do hear a «three» out of six systolic ejectio"
+    ],
+    [
+     "D2N042",
+     "dialogue",
+     " ⏎ [patient] i'm sorry it's a «six» out of ten without ibuprofe"
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "count": {
+   "n": 82,
+   "dialogue": 38,
+   "note": 44,
+   "by_dataset": {
+    "virtassist": 8,
+    "virtscribe": 26,
+    "aci": 48
+   },
+   "spoken": 30,
+   "examples": [
+    [
+     "D2N187",
+     "note",
+     "atient smokes approximately «1» pack of cigarettes per day."
+    ],
+    [
+     "D2N113",
+     "dialogue",
+     "do smoke i'm down to one to «two» cigarettes a day it's just "
+    ],
+    [
+     "D2N038",
+     "note",
+     "tient currently smokes 1 to «2» cigarettes per day. He note"
+    ],
+    [
+     "D2N096",
+     "note",
+     "-rays of the left shoulder, «3» views obtained on today's v"
+    ]
+   ],
+   "label": "neutral / must-keep (pack-years, drinks)"
+  },
+  "ratio_other": {
+   "n": 307,
+   "dialogue": 119,
+   "note": 188,
+   "by_dataset": {
+    "virtassist": 3,
+    "virtscribe": 282,
+    "aci": 22
+   },
+   "spoken": 0,
+   "examples": [
+    [
+     "D2N124",
+     "note",
+     "is son’s basketball team in «04»/2022. He enjoys working out"
+    ],
+    [
+     "D2N023",
+     "note",
+     "nadism. He was last seen on «11»/24/2020. The patient’s hist"
+    ],
+    [
+     "D2N091",
+     "note",
+     "s in the lower extremities, «4»/5 on the right and 3/5 on t"
+    ],
+    [
+     "D2N027",
+     "note",
+     "g aortic aneurysm repair on «01»/22/2013. As he is now 8 yea"
+    ]
+   ],
+   "label": "check"
+  },
+  "frequency": {
+   "n": 123,
+   "dialogue": 61,
+   "note": 62,
+   "by_dataset": {
+    "virtassist": 19,
+    "virtscribe": 29,
+    "aci": 75
+   },
+   "spoken": 64,
+   "examples": [
+    [
+     "D2N045",
+     "dialogue",
+     "and i want you to take that «three» times a day and that's gon "
+    ],
+    [
+     "D2N049",
+     "note",
+     "e blood pressure monitoring «3» times per week. Limit salt "
+    ],
+    [
+     "D2N159",
+     "dialogue",
+     "p to six hundred milligrams «four» times a day and ⏎ [patient] o"
+    ],
+    [
+     "D2N140",
+     "dialogue",
+     "eat , and then repeat up to «four» times daily . and then on d"
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "vital_weight": {
+   "n": 46,
+   "dialogue": 25,
+   "note": 21,
+   "by_dataset": {
+    "virtscribe": 27,
+    "aci": 17,
+    "virtassist": 2
+   },
+   "spoken": 12,
+   "examples": [
+    [
+     "D2N184",
+     "dialogue",
+     "ifting greater than five or «10» pounds , and no standing or"
+    ],
+    [
+     "D2N066",
+     "dialogue",
+     "alright you know i could be «fifteen» pounds lighter that would b"
+    ],
+    [
+     "D2N101",
+     "note",
+     " like to lose an additional «20» pounds. ⏎  ⏎ She endorses the f"
+    ],
+    [
+     "D2N146",
+     "dialogue",
+     "to diet and i've lost about «twenty five» pounds over the last three "
+    ]
+   ],
+   "label": "must-keep (BMI/obesity codes) — fingerprint risk if extreme"
+  },
+  "vital_temperature": {
+   "n": 52,
+   "dialogue": 26,
+   "note": 26,
+   "by_dataset": {
+    "virtscribe": 10,
+    "aci": 40,
+    "virtassist": 2
+   },
+   "spoken": 21,
+   "examples": [
+    [
+     "D2N086",
+     "dialogue",
+     "my temperature it was about «ninety nine point seven and» then at one point i had to "
+    ],
+    [
+     "D2N150",
+     "dialogue",
+     "cking about maybe twenty to «thirty» degrees of terminal flexion"
+    ],
+    [
+     "D2N150",
+     "note",
+     "es of terminal extension to «115» degrees. Lacking 20-30 degr"
+    ],
+    [
+     "D2N057",
+     "note",
+     "the right great toe reveals «10» degrees of plantar flexion "
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "mrn_id": {
+   "n": 10,
+   "dialogue": 10,
+   "note": 0,
+   "by_dataset": {
+    "virtscribe": 10
+   },
+   "spoken": 0,
+   "examples": [
+    [
+     "D2N100",
+     "dialogue",
+     "f birth , 4/28/07 . mrn 3-8-«4»-9-2-0 . she's here for a ne"
+    ],
+    [
+     "D2N180",
+     "dialogue",
+     "ate of birth 5/4/1961 . mrn «0000123» . patient is a 60 year old "
+    ],
+    [
+     "D2N144",
+     "dialogue",
+     "irth : 3 , 6 , 1949 , mrn , «385729» . he is here today for ongo"
+    ],
+    [
+     "D2N100",
+     "dialogue",
+     "te of birth , 4/28/07 . mrn «3»-8-4-9-2-0 . she's here for "
+    ]
+   ],
+   "label": "privacy"
+  },
+  "percent_other": {
+   "n": 54,
+   "dialogue": 33,
+   "note": 21,
+   "by_dataset": {
+    "virtscribe": 23,
+    "aci": 25,
+    "virtassist": 6
+   },
+   "spoken": 18,
+   "examples": [
+    [
+     "D2N105",
+     "note",
+     "functioning has declined 20-«30»%. Prior to 6 months, sympto"
+    ],
+    [
+     "D2N183",
+     "dialogue",
+     " trent- tretinoin cream , 4-«5» % benzoyl peroxide wash for"
+    ],
+    [
+     "D2N183",
+     "note",
+     "sh twice daily, clindamycin «1»% lotion each morning, treti"
+    ],
+    [
+     "D2N183",
+     "note",
+     "regimen for the face with 4-«5» % benzoyl peroxide wash twi"
+    ]
+   ],
+   "label": "neutral"
+  },
+  "year": {
+   "n": 47,
+   "dialogue": 32,
+   "note": 15,
+   "by_dataset": {
+    "virtscribe": 30,
+    "aci": 17
+   },
+   "spoken": 7,
+   "examples": [
+    [
+     "D2N139",
+     "dialogue",
+     "id profile from march 1st , «2021» . ⏎ [doctor] hello mr. robert"
+    ],
+    [
+     "D2N207",
+     "dialogue",
+     " had a heart attack back in «twenty eighteen» we put that stent in your r"
+    ],
+    [
+     "D2N031",
+     "dialogue",
+     "other mammogram in april of «2022» before you come back to see"
+    ],
+    [
+     "D2N186",
+     "note",
+     "r to his microdiscectomy in «2020», he was taking high-dose ga"
+    ]
+   ],
+   "label": "privacy (low) / clinical timeline"
+  },
+  "measurement": {
+   "n": 74,
+   "dialogue": 36,
+   "note": 38,
+   "by_dataset": {
+    "virtscribe": 36,
+    "aci": 36,
+    "virtassist": 2
+   },
+   "spoken": 27,
+   "examples": [
+    [
+     "D2N141",
+     "note",
+     "evel of foramen of Munro of «4.6» cm with a 3rd ventricular c"
+    ],
+    [
+     "D2N054",
+     "dialogue",
+     "he second metatarsal with a «three» millimeter separation of th"
+    ],
+    [
+     "D2N029",
+     "dialogue",
+     "ferred her . she biopsied a «0.7» millimeter lesion which was"
+    ],
+    [
+     "D2N052",
+     "note",
+     "ent. The CT scan revealed a «0.5» cm kidney stone in the prox"
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "ordinal_enumeration": {
+   "n": 17,
+   "dialogue": 15,
+   "note": 2,
+   "by_dataset": {
+    "virtscribe": 10,
+    "aci": 6,
+    "virtassist": 1
+   },
+   "spoken": 16,
+   "examples": [
+    [
+     "D2N141",
+     "dialogue",
+     ", your safety is our number «one» priority and , ya know , i'"
+    ],
+    [
+     "D2N193",
+     "dialogue",
+     " okay so for problem number «two» the type two diabetes so we"
+    ],
+    [
+     "D2N141",
+     "note",
+     "ds with cuing and the third «one» with multiple choice. This "
+    ],
+    [
+     "D2N114",
+     "dialogue",
+     "hat diagnosis and the first «one» that we just talked about i"
+    ]
+   ],
+   "label": "neutral"
+  },
+  "vital_height": {
+   "n": 20,
+   "dialogue": 13,
+   "note": 7,
+   "by_dataset": {
+    "aci": 10,
+    "virtassist": 5,
+    "virtscribe": 5
+   },
+   "spoken": 9,
+   "examples": [
+    [
+     "D2N032",
+     "note",
+     "115/75 ⏎ Pulse: 67. ⏎ Height: 5’«6». ⏎ Weight: 169 lb. ⏎  ⏎ PHYSICAL "
+    ],
+    [
+     "D2N010",
+     "dialogue",
+     " been running , in like the «200»'s or 300's ? ⏎ [patient] 300'"
+    ],
+    [
+     "D2N177",
+     "dialogue",
+     "g anything . you're in your «60»'s we have some risk factors"
+    ],
+    [
+     "D2N155",
+     "dialogue",
+     "ave a one by two centimeter «two» inch circular wound on the "
+    ]
+   ],
+   "label": "must-keep (BMI)"
+  },
+  "vital_heart_rate": {
+   "n": 49,
+   "dialogue": 19,
+   "note": 30,
+   "by_dataset": {
+    "aci": 44,
+    "virtscribe": 5
+   },
+   "spoken": 16,
+   "examples": [
+    [
+     "D2N188",
+     "dialogue",
+     "ur heart rate looks good at «seventy seven» beats per minute on your ri"
+    ],
+    [
+     "D2N146",
+     "dialogue",
+     "sixteen your pulse rate was «sixty eight» you were afebrile today whi"
+    ],
+    [
+     "D2N146",
+     "note",
+     "ths per minute. ⏎ Heart Rate: «68» beats per minute. ⏎ Oxygen Sa"
+    ],
+    [
+     "D2N110",
+     "note",
+     "eart rate: 72. ⏎ Respiration: «16». ⏎ Blood pressure: 110/65 mm "
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "vital_resp_rate": {
+   "n": 26,
+   "dialogue": 15,
+   "note": 11,
+   "by_dataset": {
+    "aci": 25,
+    "virtscribe": 1
+   },
+   "spoken": 15,
+   "examples": [
+    [
+     "D2N044",
+     "dialogue",
+     "nd your respiratory rate is «fourteen» those are all phenomenal nu"
+    ],
+    [
+     "D2N053",
+     "dialogue",
+     "d your respiratory rate was «eighteen» so those all look good and "
+    ],
+    [
+     "D2N146",
+     "note",
+     "/88 mmHg. ⏎ Respiratory Rate: «16» breaths per minute. ⏎ Heart R"
+    ],
+    [
+     "D2N080",
+     "dialogue",
+     "eventy two respirations are «sixteen» blood pressure is one twent"
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "money": {
+   "n": 14,
+   "dialogue": 12,
+   "note": 2,
+   "by_dataset": {
+    "aci": 1,
+    "virtscribe": 13
+   },
+   "spoken": 1,
+   "examples": [
+    [
+     "D2N145",
+     "dialogue",
+     ", it will be around 30 to $ «40» or something . ⏎ [patient] ok"
+    ],
+    [
+     "D2N021",
+     "note",
+     "ot fill due to the cost of $«100». She tried filling both pre"
+    ],
+    [
+     "D2N021",
+     "dialogue",
+     "de , should only be about $ «9» for 90 days . ⏎ [patient] oka"
+    ],
+    [
+     "D2N145",
+     "dialogue",
+     "ur coupon , it was around $ «850» or something . ⏎ [doctor] ugh"
+    ]
+   ],
+   "label": "neutral"
+  },
+  "percent_clinical": {
+   "n": 53,
+   "dialogue": 17,
+   "note": 36,
+   "by_dataset": {
+    "aci": 39,
+    "virtassist": 10,
+    "virtscribe": 4
+   },
+   "spoken": 17,
+   "examples": [
+    [
+     "D2N151",
+     "dialogue",
+     "your oxygen saturation is a «hundred» percent again so that means"
+    ],
+    [
+     "D2N119",
+     "dialogue",
+     "d your oxygen saturation is «ninety nine» percent on room air which i"
+    ],
+    [
+     "D2N122",
+     "note",
+     " minute. ⏎ Oxygen Saturation: «98»% on room air. ⏎ Body Temperat"
+    ],
+    [
+     "D2N043",
+     "note",
+     " ⏎ VITALS ⏎  ⏎ Oxygen Saturation: «98»% on room air. ⏎ Blood Pressur"
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "date_absolute": {
+   "n": 14,
+   "dialogue": 7,
+   "note": 7,
+   "by_dataset": {
+    "virtscribe": 13,
+    "aci": 1
+   },
+   "spoken": 1,
+   "examples": [
+    [
+     "D2N032",
+     "dialogue",
+     "een going on since february «2020» ? ⏎ [patient] yeah . ⏎ [doctor]"
+    ],
+    [
+     "D2N142",
+     "note",
+     "table form and start on May «17». We reviewed side effects a"
+    ],
+    [
+     "D2N197",
+     "dialogue",
+     "es down to probably about a «four» maybe five it i still feel "
+    ],
+    [
+     "D2N142",
+     "note",
+     "mia. At last visit on April «16», BP was 130/90. After prese"
+    ]
+   ],
+   "label": "privacy (generalize to year / shift)"
+  },
+  "clock_time": {
+   "n": 7,
+   "dialogue": 5,
+   "note": 2,
+   "by_dataset": {
+    "virtassist": 2,
+    "aci": 1,
+    "virtscribe": 4
+   },
+   "spoken": 5,
+   "examples": [
+    [
+     "D2N031",
+     "dialogue",
+     "hich revealed a mass at the «two» o'clock position , 11 centi"
+    ],
+    [
+     "D2N026",
+     "note",
+     "weeks ago. He woke around 2:«00» am with intense pain in his"
+    ],
+    [
+     "D2N026",
+     "dialogue",
+     "ed off , maybe about four , «five» am , i laid back down and i"
+    ],
+    [
+     "D2N018",
+     "dialogue",
+     "rs ago now ? ⏎ [patient] uh , «seven» o'clock last night , so a l"
+    ]
+   ],
+   "label": "privacy (low)"
+  },
+  "vital_spo2": {
+   "n": 2,
+   "dialogue": 2,
+   "note": 0,
+   "by_dataset": {
+    "aci": 2
+   },
+   "spoken": 2,
+   "examples": [
+    [
+     "D2N204",
+     "dialogue",
+     "od pressure is one ten over «seventy four» your o2 sat looks good at y"
+    ],
+    [
+     "D2N063",
+     "dialogue",
+     "r oxygen level here is like «ninety two» right now in the office whi"
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "bmi": {
+   "n": 3,
+   "dialogue": 3,
+   "note": 0,
+   "by_dataset": {
+    "virtscribe": 3
+   },
+   "spoken": 0,
+   "examples": [
+    [
+     "D2N021",
+     "dialogue",
+     "l . um , a bmi greater than «27» would quali- uh , qualify y"
+    ],
+    [
+     "D2N021",
+     "dialogue",
+     "n . or , a bmi greater than «27» , if you do have another me"
+    ],
+    [
+     "D2N021",
+     "dialogue",
+     "teria is a bmi greater than «30» , if you do n't have any ot"
+    ]
+   ],
+   "label": "must-keep"
+  },
+  "large_number_id_like": {
+   "n": 1,
+   "dialogue": 1,
+   "note": 0,
+   "by_dataset": {
+    "virtscribe": 1
+   },
+   "spoken": 0,
+   "examples": [
+    [
+     "D2N024",
+     "dialogue",
+     " . medical record number is «123546» . she's a 36-year-old femal"
+    ]
+   ],
+   "label": "check (lab or id)"
+  }
+ },
+ "total_numeric_tokens": 5463
+}

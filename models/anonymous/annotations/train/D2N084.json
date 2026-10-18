@@ -1,0 +1,9 @@
+{
+  "encounter_id": "D2N084",
+  "phi": [
+    {"text": "david", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "megan", "field": "dialogue", "type": "NAME_OTHER", "tier": 1, "generalized": ""},
+    {"text": "the holidays", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "this time of year"}
+  ],
+  "medical_concepts": []
+}

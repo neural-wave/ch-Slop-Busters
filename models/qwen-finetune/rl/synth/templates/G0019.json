@@ -1,0 +1,603 @@
+{
+ "id": "G0019",
+ "dataset": "synthetic_followup",
+ "sex": "female",
+ "age_range": [
+  75,
+  90
+ ],
+ "icd10_codes": [
+  {
+   "code": "I11.0",
+   "description": "Hypertensive heart disease with heart failure"
+  },
+  {
+   "code": "I50.22",
+   "description": "Chronic systolic (congestive) heart failure"
+  },
+  {
+   "code": "E87.6",
+   "description": "Hypokalemia"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . the nurse said you've been gaining weight and your ankles are swollen . how are you feeling today ?\n[patient] hi , doctor {DOCTOR_LAST} . honestly , i'm not doing so well . i feel heavy all over , and my shoes don't fit anymore .\n[doctor] tell me about the weight . how much have you gained ?\n[patient] about six pounds in the last five days . i weigh myself every morning on the bathroom scale right after i go to the bathroom .\n[doctor] good habit . what was your weight at your last visit ?\n[patient] at my last visit on {DATE_SPOKEN} i was about one fifty four . so i'm back up near one sixty .\n[doctor] okay . any shortness of breath ?\n[patient] when i climb the stairs to my bedroom , yes . i stop at the landing and catch my breath . i used to do the whole thing without thinking .\n[doctor] do you need extra pillows to sleep ?\n[patient] two pillows , yes . and i wake up coughing a few nights a week .\n[doctor] okay . any chest pain or fainting ?\n[patient] no chest pain . no fainting . just tired .\n[doctor] are you taking your water pill ?\n[patient] the furosemide , forty milligrams in the morning . i took it this morning . and the carvedilol twice a day , and my blood pressure pill , the lisinopril .\n[doctor] have you missed any doses this week ?\n[patient] i missed one furosemide on tuesday , because i was at my sister's house and didn't want to be up all night going to the bathroom . that was a mistake , i know .\n[doctor] that's understandable , but please take it on schedule even when you travel . how much salt are you eating ?\n[patient] i try to watch it . i cook most of my meals , but my son brings over the frozen pizzas on sundays .\n[doctor] that's the salt . any alcohol or fluids ?\n[patient] a glass of wine with supper , and i drink about eight cups of water a day .\n[doctor] okay . let's check you over . the nurse will take your vitals and weigh you on our scale .\n[patient] okay . the nurse has cold hands , i'll tell you that .\n[doctor] your blood pressure is one forty over eighty eight . heart rate is ninety six and a little irregular . oxygen is ninety one percent on room air . let me listen to your chest .\n[patient] okay .\n[doctor] i hear crackles at the bases of both lungs , and your neck veins are a bit distended . your ankles have pitting edema , about two plus . your abdomen is soft .\n[patient] that matches how i feel .\n[doctor] your weight on our scale is one fifty nine point four pounds . that's up about five pounds since your last visit .\n[patient] that's close to my home number .\n[doctor] your labs from this morning are back . your potassium is a little low at three point three , and your kidney function is stable . the heart ultrasound from {YEAR} showed an ejection fraction of about thirty five percent .\n[patient] i remember that . they said my heart pumps weaker than it should .\n[doctor] right . so your heart failure is flaring up from the extra fluid . we need to give you more diuretic and watch your potassium .\n[patient] okay . should i double the furosemide ?\n[doctor] for three days , yes , forty milligrams twice a day , then back to the usual dose . and add potassium chloride ten milliequivalents daily while we're on the extra dose .\n[patient] okay . will i need to come back ?\n[doctor] yes , i want you back in the clinic within three days to recheck your weight and your potassium . if you feel worse before then , go to the emergency room .\n[patient] okay . i'll call my son to drive me . he's the one who takes me to everything .\n[doctor] good . we also want to talk about how you're keeping busy . what do you do for fun ?\n[patient] i raise rare heritage chickens and sell the eggs at the farmers' market . i'm one of nine children , so we always had a full house growing up .\n[doctor] that's wonderful . have you been able to do the market lately ?\n[patient] not since the spring . i can't stand for hours with the fluid in my legs . my daughter handles the stall now .\n[doctor] that makes sense . when you feel up to it , the chickens will still be there .\n[patient] they're my reason to get up in the morning .\n[doctor] i'm glad to hear that . we'll repeat the heart ultrasound in three months .\n[patient] three months is a long time from now .\n[doctor] it is . that's why i want to see you in three days . and i'd like you to take your blood pressure at home each morning , and bring the log .\n[patient] i can do that . i have the cuff in the closet .\n[doctor] perfect . any questions for me ?\n[patient] just one . is the salt the main reason this happened ?\n[doctor] it's a big part of it . missed doses and the salt together , yes . don't blame yourself , just tighten things up .\n[patient] okay . thank you , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nWeight gain, lower extremity edema, and exertional dyspnea.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with chronic systolic heart failure and hypertension who presents with a six pound weight gain over five days. Her last clinic visit was on {DATE_NUM}, when her weight was lower. She reports dyspnea climbing one flight of stairs, two-pillow orthopnea, and nocturnal cough several nights per week. She denies chest pain or syncope. Fatigue. One missed furosemide dose on Tuesday while traveling. Dietary sodium intake is inconsistent, with frozen pizza on weekends. One glass of wine nightly with supper. Fluid intake about eight cups daily.\n\nSOCIAL HISTORY\n\nRaises rare heritage chickens and sells eggs at the farmers' market, though she has not attended since spring. She is one of nine children. Her son provides transportation to appointments. Her daughter now manages the market stall.\n\nPAST MEDICAL HISTORY\n\nHeart failure with reduced ejection fraction diagnosed in {YEAR}, with ejection fraction about 35 percent on echocardiogram. Hypertension.\n\nMEDICATIONS\n\nFurosemide 40 mg each morning. Carvedilol twice daily. Lisinopril daily.\n\nPHYSICAL EXAM\n\nBP 140/88. HR 96, irregular. SpO2 91% on room air. Bibasilar crackles. Jugular venous distension mild. 2+ pitting edema bilateral lower extremities. Abdomen soft.\n\nRESULTS\n\nWeight 159.4 lb. Potassium 3.3 mmol/L. Creatinine stable. Echo results from {YEAR} as above.\n\nASSESSMENT AND PLAN\n\n1. Chronic systolic heart failure with volume overload. Hypertensive heart disease with heart failure. Furosemide 40 mg twice daily for three days, then resume usual dose. Potassium chloride 10 mEq daily during the diuretic course. Clinic recheck in 3 days for weight and potassium. Repeat echocardiogram in three months.\n2. Hypokalemia secondary to diuresis. Potassium supplementation as above.\n3. Adherence and dietary sodium counseling provided.\n4. Return to the emergency department for dyspnea at rest, chest pain, or syncope.",
+ "medical_concepts": [
+  {
+   "text": "gaining weight",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ankles are swollen",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "not doing so well",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "feel heavy all over",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my shoes don't fit anymore",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "six pounds in the last five days",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "one fifty four",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "back up near one sixty",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "shortness of breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "catch my breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "two pillows",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "wake up coughing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "chest pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fainting",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tired",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "furosemide",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "carvedilol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "missed one furosemide",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "salt",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "frozen pizzas",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a glass of wine with supper",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "eight cups of water a day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "one forty over eighty eight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a little irregular",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "oxygen is ninety one percent",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "crackles at the bases of both lungs",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "neck veins are a bit distended",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pitting edema",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "abdomen is soft",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "one fifty nine point four pounds",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "potassium is a little low at three point three",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "kidney function is stable",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart ultrasound",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "ejection fraction of about thirty five percent",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart pumps weaker than it should",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart failure",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "extra fluid",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "diuretic",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "potassium chloride",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "the fluid in my legs",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "missed doses",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Chronic systolic heart failure",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "six pound weight gain",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dyspnea climbing one flight of stairs",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "two-pillow orthopnea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "nocturnal cough",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "chest pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "syncope",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Fatigue",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "One missed furosemide dose",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Dietary sodium intake is inconsistent",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Heart failure with reduced ejection fraction",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ejection fraction about 35 percent",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Furosemide 40 mg each morning",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Carvedilol twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lisinopril daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "BP 140/88",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "HR 96",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "SpO2 91% on room air",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Bibasilar crackles",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Jugular venous distension mild",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "2+ pitting edema bilateral lower extremities",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Abdomen soft",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Weight 159.4 lb",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Potassium 3.3 mmol/L",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Creatinine stable",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Echo results",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Chronic systolic heart failure with volume overload",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hypertensive heart disease with heart failure",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Furosemide 40 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Potassium chloride 10 mEq daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Repeat echocardiogram",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hypokalemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Potassium supplementation",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "dietary sodium counseling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "dyspnea at rest",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "furosemide",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic diuretic name, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "I11.0",
+   "spans": [
+    {
+     "text": "heart failure",
+     "field": "dialogue"
+    },
+    {
+     "text": "lisinopril",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypertensive heart disease with heart failure",
+     "field": "note"
+    },
+    {
+     "text": "hypertension",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I50.22",
+   "spans": [
+    {
+     "text": "pitting edema",
+     "field": "dialogue"
+    },
+    {
+     "text": "heart pumps weaker than it should",
+     "field": "dialogue"
+    },
+    {
+     "text": "Chronic systolic heart failure with volume overload",
+     "field": "note"
+    },
+    {
+     "text": "ejection fraction about 35 percent",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E87.6",
+   "spans": [
+    {
+     "text": "potassium is a little low at three point three",
+     "field": "dialogue"
+    },
+    {
+     "text": "potassium chloride",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypokalemia",
+     "field": "note"
+    },
+    {
+     "text": "Potassium 3.3 mmol/L",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i raise rare heritage chickens and sell the eggs at the farmers' market",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "i'm one of nine children",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "family size"
+  },
+  {
+   "text": "Raises rare heritage chickens and sells eggs at the farmers' market",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "is one of nine children",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "family size"
+  }
+ ],
+ "scenario": {
+  "specialty": "urgent care",
+  "visit": "followup",
+  "length": "medium",
+  "focus": [
+   "DATE",
+   "OTHER_QUASI"
+  ]
+ }
+}

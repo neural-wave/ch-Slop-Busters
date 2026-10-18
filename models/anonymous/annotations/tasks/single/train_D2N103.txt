@@ -1,0 +1,111 @@
+########## ENCOUNTER D2N103
+=== FIELD: dialogue
+[doctor] next patient is melissa sanchez . date of birth , 9/23/1962 . mrn : 5484367 . she is being seen in office today for status post mitral valve repair done on 8/3/2020 . at her previous follow-up on 9/17 , we felt that she was doing quite well from a cardiac standpoint , and so we recommended she continue with the same medication . ecg taken on 12/26/2020 reveals atrial fibrillation with a controlled ventricular response . t-wave inversion anteriorly . compared to the previous study , there are no significant changes , and please add in the history , patient has a history of mitral regurgitation and atrial fibrillation , history of diabetes , asthma , and recurrent chest discomfort with negative cardiac workup for coronary artery disease .
+[doctor] ms. sanchez , it's good to see you again .
+[patient] yeah , it's good seeing you too dr. hughes . you look like you're doing well .
+[doctor] i am , thank you . you too . you're looking great . how have you been feeling ?
+[patient] pretty good . i'm definitely feeling better , thank goodness . i was having a rough time before surgery , um , but i think i'm overall pretty good now though .
+[doctor] okay . well , that's really good to hear . i'm glad . are you having any new symptoms right now ?
+[patient] no , not really . but , you know , i'm still getting some chest pains sometimes , and my breathing gets shallow . but , i guess i'm learning what i can and ca n't do . uh , so if i feel like that , if i'm , like , exerting myself , i slow down a bit which helps , and then when i go back to it later , i can usually finish whatever i was doing .
+[doctor] okay . so , it does go away though ? how long does an episode seem to last ?
+[patient] uh , only a few minutes i guess . then it disappears for a while . it's weird .
+[doctor] what is a while ?
+[patient] it goes away for a couple weeks . um , so when it happens , i just take the day nice and slow , i do n't push myself .
+[doctor] okay . so , maybe it's a couple times a month you feel this way ?
+[patient] yeah , just often enough for me to notice .
+[doctor] understood . okay . are you taking your medications regularly ?
+[patient] uh- . i've been trying to keep up with that . there's a lot of extra pills now , but i have a reminder app , so i do pretty well .
+[doctor] okay . that's great . and so , you're taking coumadin , right ?
+[patient] yeah , also lasix and the atenolol .
+[doctor] are you having any side effects from the medications at all ?
+[patient] not really . uh , i notice that the atenolol is making me irritable in the beginning , but i guess i've gotten used to it , does n't seem to bother me as much now .
+[doctor] okay . well , that sounds good . sounds like you're well on the mend . so , why do n't i start out , um , with the physical exam , and just check you out .
+[patient] okay .
+[doctor] you're going to hear me describe things in detail or repeat things as i go to reference later for my notes .
+[patient] okay .
+[doctor] okay then . i'm going to be using my status post template , ms. sanchez , please lie down on the table here and we'll get started . all right . can you turn your head to the left . head and neck no jvd detected . you can turn back now and just take a couple of deep breaths for me please . okay , that's good . and lungs have reduced breath , but auscultation and percussion are clear . okay . breath normally , i'm just going to listen to your heart . rhythm is irregularly irregular .
+[patient] that's a funny statement . what does that mean ?
+[doctor] yeah , it does sounds kind of weird , right ? it's when your heart does n't beat with the correct rhythm , and whatever rhythm it does n't have a pattern to it . so , it's part of the atrial fibrillation .
+[patient] wow , that sounds like a mess .
+[doctor] yeah , it's not ideal . but , many people have a-fib are able to keep it under control with medicine and lifestyle changes .
+[patient] agh , i see . that's good to know .
+[doctor] okay . so , s1 slightly accentuated , no s3 . i'm going to touch your belly , and does any of that hurt .
+[patient] nope .
+[doctor] how about there ? and your feet ?
+[patient] no , not really .
+[doctor] okay , great . and trace peripheral edema on extremities . all right ms. sanchez , you can sit up now . so , it looks like your heart valves are working well and you are recovering from the surgery nicely .
+[patient] good .
+[doctor] yes . we are , we looked at your ecg taken earlier today , and we are seeing the a-fib , but it's being well controlled with the medicine , and you're taking coumadin , four milligrams , lasix at four milligrams a day , and the atenolol , you're taking that every day as well , right ?
+[patient] yes . the 50 milligrams every day .
+[doctor] great . it sounds like you're well on your way to recovery .
+[patient] great .
+[doctor] so , let's continue on your current meds . i'm glad that you're figuring out what your body can handle . definitely try to keep active as that will certainly help .
+[patient] i'll do my best .
+[doctor] and that's about it . do you have any questions for me ?
+[patient] um , i do . when do i need to come back and get checked out ?
+[doctor] well , i do n't think you need to come back soon . everything from a cardio perspective is fine . so , i think let's do a followup in about six to nine months .
+[patient] all right , thank you . it was good to see you again dr. hughes .
+[doctor] you as well ms. sanchez , do take care .
+[patient] you too .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Status post mitral valve repair.
+
+HISTORY OF PRESENT ILLNESS
+
+Mrs. Melissa Sanchez is a 58-year-old female being seen today for a status post mitral valve repair, completed on 08/03/2020.
+
+On 09/17/20 we saw Mrs. Sanchez in office, and she was doing well and thus we recommended maintaining her current medications, she is using a reminder app to stay compliant with medications.
+
+The patient reports feeling better and overall, pretty good. She denies experiencing new symptoms. She is still having chest pain intermittently, and her breathing “gets shallow” which results in her “slowing down” and decreasing her exertion. An episode of shortness of breath and chest pains may last a few minutes and will not recur for a few weeks.
+
+PAST HISTORY
+
+Medical
+Mitral regurgitation.
+Atrial fibrillation.
+Diabetes Type II.
+Asthma.
+
+Surgical
+Mitral valve repair 08/03/2020.
+
+CURRENT MEDICATIONS
+
+Coumadin 4 mg daily.
+Lasix 40 mg daily.
+Atenolol 50 mg daily.
+
+PHYSICAL EXAM
+
+Head and Neck
+No JVD detected.
+
+Respiratory
+Lungs have reduced breath, but auscultation and percussion are clear.
+
+Cardiovascular
+Rhythm is irregularly irregular, S1 slightly accentuated, no S3.
+
+Musculoskeletal
+Trace peripheral edema on extremities.
+
+RESULTS
+
+ECG, 12/26/2020.
+Impression: Atrial fibrillation with a controlled ventricular response, t-wave inversion anteriorly. Compared to the previous study, there are no significant changes. I also recommended that the patient continues to be active within her limits.
+
+ASSESSMENT
+
+• Status post mitral valve repair
+
+Mrs. Melissa Sanchez is a 58-year-old female being seen today for a status post mitral valve repair, completed on 08/03/2020.
+
+PLAN
+
+Continue with current medications. Coumadin 4 mg daily, Lasix 40 mg daily, and Atenolol 50 mg daily.
+
+INSTRUCTIONS
+
+Return to clinic in 6-9 months.

@@ -1,0 +1,16 @@
+{
+  "encounter_id": "D2N160",
+  "pii": [
+    {"field": "dialogue", "text": "philip", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "is thirteen", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "is ten", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "thirteen -year-old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "lacrosse", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "lacrosse", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "white coat syndrome", "category": "NOT_A_NAME", "why": "clinical phenomenon, 'white' is not a surname"},
+    {"field": "note", "text": "150/90", "category": "CLINICAL_NUMBER", "why": "blood pressure, not a date"},
+    {"field": "note", "text": "2/6", "category": "CLINICAL_NUMBER", "why": "murmur grade, not a date"}
+  ]
+}

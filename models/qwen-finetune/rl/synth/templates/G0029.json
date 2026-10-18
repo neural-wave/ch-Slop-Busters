@@ -1,0 +1,664 @@
+{
+ "id": "G0029",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "age_range": [
+  45,
+  60
+ ],
+ "icd10_codes": [
+  {
+   "code": "S61.411A",
+   "description": "Laceration without foreign body of right hand, initial encounter"
+  },
+  {
+   "code": "W25.XXXA",
+   "description": "Contact with sharp glass, initial encounter"
+  },
+  {
+   "code": "Y92.511",
+   "description": "Restaurant or cafe as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Z79.01",
+   "description": "Long term (current) use of anticoagulants"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . you've been traveling , i hear ? what happened to your hand ?\n[patient] hi doctor {DOCTOR_LAST} . yeah , we just got back from a two week trip to portugal . i cut my hand open on a broken wine glass in a cafe in {CITY} .\n[doctor] oh no . tell me exactly what happened .\n[patient] we were having dinner on the second night . the waiter knocked a full bottle off the edge of the table , and it shattered on the tile . i reached down to grab the stem of my glass without thinking , and the glass broke in my right hand .\n[doctor] ouch . which hand did you cut ?\n[patient] my right hand , across the palm and the base of my thumb . there was a lot of blood , and the staff wrapped it in a towel .\n[doctor] okay . did you go to a clinic or a hospital there ?\n[patient] a small clinic near the hotel . they cleaned it , put in stitches , and gave me a tetanus shot . the stitches are a little tight now .\n[doctor] did they give you any paperwork or a note about the antibiotics ?\n[patient] they gave me a prescription for antibiotics in portuguese . i got it filled at the pharmacy near the hotel , the first one i found , and i've been taking one tablet twice a day .\n[doctor] okay . do you have any fevers , redness , or drainage ?\n[patient] no fever . a little pink around the stitches on the second day but it's better now . no drainage .\n[doctor] good . what is your job , by the way ? you seem like you're used to using your hands .\n[patient] i'm a marine surveyor . i climb around cargo ships and inspect the hulls , so my hands are in everything , and i get cut a lot .\n[doctor] that makes sense . when do you usually work ?\n[patient] usually weekdays on the water at the port . on weekends i volunteer as a lifeboat crewman . we've got a little boat , and it's a rare hobby , i know , but i love it .\n[doctor] that's impressive . okay , let's look at the hand . can you make a fist for me ?\n[patient] i can make a fist but it's tight across the palm .\n[doctor] good . i see a clean laceration about five centimeters across the palm and a smaller one at the base of the thumb , both with sutures in place . there's no active bleeding and no pus .\n[patient] that's good .\n[doctor] how's your sensation ? can you feel my touch on each finger ?\n[patient] yes , all of them . the thumb is numb on the very tip but that's been since the day after .\n[doctor] okay . the sensation is intact in the other fingers . your capillary refill is brisk . can you spread your fingers ?\n[patient] yes , a bit slow but yes .\n[doctor] good . now , i see on your list that you take eliquis for atrial fibrillation . when did you last take it ?\n[patient] this morning , with breakfast . i don't miss it , i take it every twelve hours .\n[doctor] good . that's important because it can make bleeding worse , and that's why the hand was bleeding so much .\n[patient] i know , i told the clinic that too .\n[doctor] also , do you take aspirin or tylenol , or anything else for pain ?\n[patient] just tylenol . no aspirin . i took two with dinner .\n[doctor] okay . let's clean this area again and check the wound edges . this might sting a little .\n[patient] ow . okay .\n[doctor] the wound looks clean . i'll remove the stitches in about ten days , and i want you to keep the hand dry for another few days .\n[patient] i can do that . i have a fitbit and i'm supposed to keep walking , so i'll walk on the treadmill instead of outside .\n[doctor] that's a good plan . keep the hand elevated and move your fingers every hour .\n[patient] okay .\n[doctor] we'll check your tetanus status since the clinic gave you a shot already . i'll keep it on record .\n[patient] thank you .\n[doctor] i'll also get an x-ray of the right hand to make sure there's no glass left behind . glass can show up on x-ray or not , so we'll look .\n[patient] there was no glass that i saw .\n[doctor] okay , good . any other travel problems ? any diarrhea , vomiting , or fever since you got back ?\n[patient] no , nothing like that . i had an upset stomach on the flight but it's gone .\n[doctor] good . and do you have any trouble breathing , chest pain , or dizziness ?\n[patient] no , none of that .\n[doctor] okay . let's plan the follow up . i want to see you again after the stitches come out , and sooner if the hand gets hot , red , or starts draining .\n[patient] yes , i'll come back . my wife says i need to stop trying to do everything with one hand anyway .\n[doctor] she's right . finish the antibiotics and bring the bottle next time .\n[patient] okay . thanks , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nRight palm and thumb lacerations sustained while traveling abroad; suture check and wound care.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male who returns after a two-week trip to Portugal with lacerations of the right palm and base of the thumb. The injury occurred during dinner at a restaurant in {CITY} when a bottle fell and shattered, and he grasped his glass stem as the broken wine glass shattered in his hand, causing contact with sharp glass. He had substantial bleeding, controlled with a towel by staff. He was seen at a local clinic where wounds were irrigated, closed with sutures, and tetanus immunization was administered. He was prescribed an oral antibiotic and reports taking it twice daily. He had mild erythema around the sutures on day two, now improved. He denies fever or drainage. He reports one episode of upset stomach during the flight, now resolved. He denies diarrhea, vomiting, dyspnea, or chest pain.\n\nHe takes apixaban (Eliquis) twice daily for atrial fibrillation, last dose this morning. He uses acetaminophen for pain and denies aspirin use.\n\nSOCIAL HISTORY: He works as a marine surveyor, inspecting ship hulls on cargo vessels at the port. He volunteers as a weekend lifeboat crewman.\n\nPHYSICAL EXAM\n\nBP and pulse stable. Right palm laceration approximately 5 cm with sutures in place, with no active bleeding or purulence. Smaller laceration at the base of the right thumb with sutures in place. Mild residual tightness with fist formation. Sensation intact to light touch in all digits, with decreased sensation at the distal thumb pulp. Capillary refill brisk. Wounds cleaned and edges checked, without signs of infection.\n\nRESULTS\n\nRight hand radiographs ordered to exclude retained foreign body.\n\nASSESSMENT AND PLAN\n\n1. Right palm and thumb base lacerations, sutured, without infection, from a broken glass in a restaurant while traveling abroad. Wound care and suture removal in approximately 10 days. Keep dry for additional days. Radiographs to exclude retained glass.\n\n2. Long-term anticoagulation with apixaban for atrial fibrillation. Counseled that anticoagulation may increase bleeding; the bleeding from the injury was consistent with this.\n\n3. Tetanus status updated per clinic record. Complete antibiotic course; bring bottle to next visit.\n\n4. Travel-related gastrointestinal symptoms resolved.\n\nReturn precautions reviewed for redness, warmth, drainage, or fever.",
+ "medical_concepts": [
+  {
+   "text": "cut my hand open",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a broken wine glass",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "in a cafe",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "knocked a full bottle off the edge of the table",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "shattered on the tile",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the glass broke in my right hand",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "across the palm and the base of my thumb",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "there was a lot of blood",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "put in stitches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a tetanus shot",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "the stitches are a little tight now",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a prescription for antibiotics",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "one tablet twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "no fever",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little pink around the stitches",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "no drainage",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "marine surveyor",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i climb around cargo ships and inspect the hulls",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i get cut a lot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a clean laceration about five centimeters across the palm",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's tight across the palm",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "no active bleeding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no pus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the thumb is numb on the very tip",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the sensation is intact in the other fingers",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "capillary refill is brisk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "eliquis for atrial fibrillation",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "atrial fibrillation",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "it can make bleeding worse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "that's why the hand was bleeding so much",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "aspirin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "clean this area again",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "remove the stitches in about ten days",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "keep the hand dry",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "keep the hand elevated",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus status",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "an x-ray of the right hand",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "no glass left behind",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "diarrhea",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "upset stomach on the flight",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "starts draining",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lacerations of the right palm and base of the thumb",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "at a restaurant",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "broken wine glass",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "contact with sharp glass",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "substantial bleeding",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "wounds were irrigated",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "closed with sutures",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus immunization",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "oral antibiotic",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild erythema around the sutures",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "drainage",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "upset stomach during the flight",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "diarrhea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vomiting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dyspnea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "apixaban",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "atrial fibrillation",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "acetaminophen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "aspirin use",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "inspecting ship hulls on cargo vessels",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP and pulse stable",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right palm laceration approximately 5 cm",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "sutures in place",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "no active bleeding or purulence",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Smaller laceration at the base of the right thumb",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild residual tightness with fist formation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "decreased sensation at the distal thumb pulp",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Sensation intact to light touch in all digits",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Capillary refill brisk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "without signs of infection",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right hand radiographs",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "retained foreign body",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "suture removal",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Keep dry",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Long-term anticoagulation with apixaban",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "the bleeding from the injury",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tetanus status",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Travel-related gastrointestinal symptoms resolved",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "eliquis",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for apixaban, not a person"
+  },
+  {
+   "text": "Eliquis",
+   "field": "note",
+   "is_pii": false,
+   "comment": "brand name for apixaban, not a person"
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for acetaminophen, not a person"
+  },
+  {
+   "text": "fitbit",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "wearable device brand, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S61.411A",
+   "spans": [
+    {
+     "text": "a clean laceration about five centimeters across the palm",
+     "field": "dialogue"
+    },
+    {
+     "text": "cut my hand open",
+     "field": "dialogue"
+    },
+    {
+     "text": "Right palm laceration approximately 5 cm",
+     "field": "note"
+    },
+    {
+     "text": "lacerations of the right palm and base of the thumb",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W25.XXXA",
+   "spans": [
+    {
+     "text": "a broken wine glass",
+     "field": "dialogue"
+    },
+    {
+     "text": "the glass broke in my right hand",
+     "field": "dialogue"
+    },
+    {
+     "text": "contact with sharp glass",
+     "field": "note"
+    },
+    {
+     "text": "broken wine glass",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.511",
+   "spans": [
+    {
+     "text": "in a cafe",
+     "field": "dialogue"
+    },
+    {
+     "text": "at a restaurant",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z79.01",
+   "spans": [
+    {
+     "text": "eliquis for atrial fibrillation",
+     "field": "dialogue"
+    },
+    {
+     "text": "apixaban",
+     "field": "note"
+    },
+    {
+     "text": "Long-term anticoagulation with apixaban",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "portugal",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "extra named country of travel"
+  },
+  {
+   "text": "Portugal",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "extra named country of travel"
+  },
+  {
+   "text": "i'm a marine surveyor",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "i volunteer as a lifeboat crewman",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "rare volunteer role with specifics"
+  },
+  {
+   "text": "works as a marine surveyor",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient's job"
+  },
+  {
+   "text": "volunteers as a weekend lifeboat crewman",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "rare volunteer role with specifics"
+  }
+ ],
+ "scenario": {
+  "specialty": "travel medicine",
+  "visit": "injury",
+  "length": "medium",
+  "focus": [
+   "OCCUPATION",
+   "OTHER_QUASI"
+  ]
+ }
+}

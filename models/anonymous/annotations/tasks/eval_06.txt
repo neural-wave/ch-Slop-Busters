@@ -1,0 +1,692 @@
+########## ENCOUNTER D2N043
+ICD-10 codes: F17.200 Nicotine dependence, unspecified, uncomplicated; E11.9 Type 2 diabetes mellitus without complications; Z87.39 Personal history of other diseases of the musculoskeletal system and connective tissue
+=== FIELD: dialogue
+[doctor] how are you doing
+[patient] i'm doing i'm good i'm i'm doing really good i'm here i'm just ready to quit smoking and but i've been having quite a hard time with it
+[doctor] well i'm glad that you're taking the first steps to quit smoking would you tell me a little bit more about your history of smoking
+[patient] yeah so i've been smoking for some time now i started in high school and was just you know just experimenting and smoking here and there with friends or at parties and then it just started getting more regular and regular and i do n't even know how i'm 44 now and i'm smoking everyday so yes now i'm up to a pack and a half a day
+[doctor] okay do you use any other type of tobacco products
+[patient] no smoking is enough
+[doctor] okay and i understand that so when you wake up in the morning how soon after waking up do you smoke your first cigarette
+[patient] i would say probably within an hour of waking up i'll have my first cigarette
+[doctor] okay so i'm really excited that you wan na quit and i know that you probably heard this multiple times before but this really is one of the best things that you can do to help your health especially since you have the history of gout and type two diabetes this is really gon na be a great step in you having better long term health outcomes
+[patient] yeah i know and you know i'm really motivated now because i am about to be a father any day now and i just really wan na be there for my daughter growing up
+[doctor] hey that's great and that's great to hear congratulations i'm so excited to hear about the new baby
+[patient] yeah
+[doctor] i i have a daughter myself have have you picked out any names
+[patient] we're you know we're deciding between a few names but we're kinda just waiting to see her to see which name fits
+[doctor] okay alright that sounds good well congratulations again i'm very excited for you and your and and your wife that that's this is great
+[patient] thank you
+[doctor] so you mentioned you tried to quit before can you tell me a little bit about the methods that you used or or what you tried
+[patient] yeah actually i just went cold turkey one day i woke up and i said you know i've had enough and i know that smoking is not good for me so i woke up and stopped and i actually did really well and i was able to quit smoking for almost a year and then things just started getting really stressful at work they started laying people off and i'm happy i still have a job but that also meant that i was responsible for more things so things just got stressful and i and just started picking it up again
+[doctor] well you are absolutely correct you know stress can often be a trigger for things like smoking and drinking have you thought what you would do this time when you encountered the stressful situations
+[patient] yeah i i did n't think about that a lot actually and one thing is i have started learning and trying to do more meditation and then i also just recently joined the gym so i'm really looking forward to working out again
+[doctor] okay well that's great to hear that you're getting back in the gym that will be good for your long term health too you know helping to maintain that type two diabetes you know those are really great strategies talking about gym for stress relief and and you know we have other products as well that you can use for an additional aid to help you stop smoking have you given any thought to using some type of smoking cessation aid at this time or or what do you think about that
+[patient] you know i've had you know because i've been trying to do cold turkey and it's not working and some of my friends actually have mentioned using a patch and they they've had some success with that so i think i would i would probably wan na start with that
+[doctor] okay alright that that sounds good it's good that you've you've picked out one of those aids and have you thought of a quit date i mean we we really wan na talk about when you're gon na say this is the day
+[patient] yeah you know next monday is actually my birthday so i think that's a good day
+[doctor] that's a fantastic day and happy birthday coming up on monday
+[patient] thank you
+[doctor] so let's talk a little bit about your exam here okay i'm gon na go ahead and do a quick physical exam and i reviewed your vitals and everything looks good including your oxygen saturation blood pressure for today was one twenty eight over eighty eight heart rate was sixty eight respirations were sixteen and your pulse ox was ninety eight percent on room air so those were all really good now on your heart exam you do have a nice regular and your your rate is of regular rate and rhythm or i'm sorry your heart exam for your heart exam notice that your heart is regular in rate and rhythm i do however still appreciate that two over six systolic murmur that we talked about in the past now that's okay we'll just continue to monitor that now for your lung exam i'm gon na go ahead and listen to your lungs your lungs are clear and equal bilateral with no expiratory wheezes and no rales or rhonchi are appreciated on your neck exam i do n't appreciate any lymphadenopathy when i listen i do n't hear any extra noises so i do n't hear any hearing any carotid bruit which is a good thing now for my impression and plan let's talk a little bit about my assessment and plan for you so for your first problem of nicotine dependence first of all i just want to apply you on making this first step to stop smoking and i want you to know with absolute one hundred percent certainty that i'm gon na be with you every step of the way i think it's fantastic that you're very welcome i i i think it's fantastic you've chosen next monday as a quit date and on that day i'm gon na start you with a twenty one milligram nicotine patch and the goal will be to decrease that over time okay now we will work together to decrease that so there is no necessarily hard dates in mind okay be sure to change the patch location each day and that's going to help reduce or avoid that skin irritation that can occur if you use the same location over and over again i would like to see you again in two weeks just to see how things are going and we will reevaluate at that time the dosage for your nicotine patch now we also see further need to discuss any handouts you received today for those common smoking triggers i really want you to keep an eye on and monitor your stress level not only about work but also the fact that you are experiencing are going to be be a new father and we really want to watch any stress you will be experiencing around the birth of your new child so please keep an eye on that and let me know how that goes now for now until we meet in two weeks go ahead and keep up your exercise routine i think that's a great plan and just try to monitor your stress and and maybe think about some things like meditation or adding in some yoga and that type of thing to help further work with your your stress levels so do you have any questions for me
+[patient] no not at this time
+[doctor] okay so for your other conditions that we talked about briefly your second condition of type two diabetes we'll let's go ahead and continue to maintain that with diet and exercise and we'll just monitor your type two diabetes i am gon na go ahead and order a hemoglobin a1c for your next blood draw since i'll see you in two weeks go ahead and have that done and we will talk about that when you come back in now for your third problem of your history of gout let's go ahead and continue you on your allopurinol and just you know continue to watch those foods that will exacerbate your uric acid levels any other questions about those
+[patient] no i think that's it thanks so much
+[doctor] alright sounds good i'll see you in two weeks congratulations on the baby and and we're excited about next monday that's your quit date
+[patient] alrighty thank you
+[doctor] you're welcome i'll see you in two weeks thanks bye-bye
+[patient] alright bye
+=== FIELD: note
+CHIEF COMPLAINT
+
+Smoking cessation.
+
+MEDICAL HISTORY
+
+Patient reports a history of type 2 diabetes, gout, and a 2/6 Systolic ejection murmur.
+
+SOCIAL HISTORY
+
+Patient reports he is a smoker.
+
+MEDICATIONS
+
+Patient reports taking allopurinol.
+
+VITALS
+
+Oxygen Saturation: 98% on room air.
+Blood Pressure: 128/88 mmHg.
+Heart Rate: 68 beats per minute.
+Respiratory Rate: 16 breaths per minute.
+
+PHYSICAL EXAM
+
+Neck
+- General Examination: Neck is supple without lymphadenopathy. No carotid bruits.
+
+Respiratory
+- Auscultation of Lungs: Clear bilaterally. No expiratory wheezes, rales, or rhonchi.
+
+Cardiovascular
+- Auscultation of Heart: Regular rate. 2/6 systolic ejection murmur.
+
+Hematology/Lymphatic/Immunology
+- Palpation: No enlarged lymph nodes.
+
+ASSESSMENT AND PLAN
+
+1. Nicotine dependence.
+- Medical Reasoning: The patient has a long history of smoking cigarettes. He is currently smoking 1.5 packs per day. He is highly motivated to cease smoking as he is preparing to become a father.
+- Patient Education and Counseling: I applaud the patient on making this first step to stop smoking. I reassured him that with absolute 100% certainty that I will be with him every step of the way. I explained to the patient that stress can often be a trigger for smoking. He received handouts today for common smoking triggers. I advised him to be watchful and monitor his stress level, not only regarding work, but also his impending fatherhood. The patient and I discussed coping mechanisms for when he encounters stressful situations. I encouraged him to maintain his gym routine, engage in meditation, and try adding in yoga to help further reduce his stress levels. We discussed additional cessation aids.
+- Medical Treatment: The patient has chosen his birthday, as a quit date. On that day, I am going to start him with a 21 mg nicotine patch, and the goal will be to decrease that over time. We will work together to decrease the dosage of the nicotine patch, so there are not necessarily any hard dates in mind. I recommend he change the patch location each day as that will help reduce or avoid any skin irritation that can occur if he re-uses the same location repeatedly.
+
+2. Type 2 diabetes.
+- Medical Reasoning: Stable.
+- Patient Education and Counseling: We discussed that continuing to follow a healthy diet and perform regular exercise will help to maintain his blood glucose levels.
+- Medical Treatment: We will continue to monitor his type 2 diabetes. Hemoglobin A1c is ordered to be completed by his next visit in 2 weeks.
+
+3. History of gout.
+- Medical Reasoning: Stable with medication.
+- Patient Education and Counseling: I advised him to continue to watch for foods that will exacerbate his uric acid levels.
+- Medical Treatment: He will continue his allopurinol.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+I would like to see him again in 2 weeks to discuss how things are going and to reevaluate the nicotine patch dosage.
+
+########## ENCOUNTER D2N044
+ICD-10 codes: M22.2X1 Patellofemoral disorders, right knee; M22.2X2 Patellofemoral disorders, left knee
+=== FIELD: dialogue
+[doctor] good morning julie how are you doing this morning
+[patient] i've been better my primary care doctor wanted me to see you because of this this knee pain that i've been having for about six months now
+[doctor] okay and do you remember what caused the pain initially
+[patient] honestly i do n't i ca n't think of anytime if i fell or like i i've really been trying to think and i ca n't really think of any specific event
+[doctor] okay now it it says here that it's in both knees is that correct
+[patient] yes both my knees
+[doctor] okay it kinda try let's let's try describing the pain for me please
+[patient] yeah it's kind of feels like it's like right behind my kneecaps
+[doctor] okay
+[patient] and it's like a deep achy pain
+[doctor] a deep achy pain okay what kind of activities makes the pain feel worse
+[patient] let's see so anytime so if i'm sitting at my desk and i get up i have a lot of pain so anytime from like standing up from sitting for a while or even going up and down the stairs
+[doctor] okay so you work from home
+[patient] i do
+[doctor] okay okay so there is a lot of desk setting at home is your office upstairs or is it i mean do you have to go up or downstairs to get to it
+[patient] no well first thing in the morning but otherwise it's downstairs
+[doctor] okay okay how do you like working from home
+[patient] you know it has it's plus and minuses
+[doctor] okay
+[patient] i like it though my i like my commute
+[doctor] yeah
+[patient] i love it
+[doctor] and the parking i'm sure the parking is
+[patient] and the parking is great
+[doctor] yeah i you know if i could do telehealth visits all day long i would be totally happy with that yeah and just set it home and do those so you mentioned is there anything that makes that pain feel better
+[patient] usually after like if i feel that pain and then i just it does get better
+[doctor] okay now you mentioned earlier that you tried some things in the past what have what are they and did they work at all
+[patient] yeah i've done some ibuprofen or aleve sometimes some tylenol and that does help
+[doctor] okay
+[patient] it takes the edge off
+[doctor] okay but you're never really pain free is that what i hear you saying
+[patient] not really unless i'm like really just resting which i hate to do but otherwise any type of movement especially from sitting it causes pain
+[doctor] okay so are you active other than going up and down the steps to your office
+[patient] very i'm a big runner i love to run i run about five to six miles a day but with this knee with with these knee pain that i've been having it's i barely can even do half a mile
+[doctor] yeah you know what that's that's i am a biker and i know that once you get that into your you know you have loved doing that activity it's so frustrating when you ca n't it's almost like a it's almost like a dry it almost becomes a drug when you get up
+[patient] exactly
+[doctor] yeah
+[patient] it's
+[doctor] okay so have you noticed any redness or swelling in your knees
+[patient] no
+[doctor] okay and have you ever injured your knees before
+[patient] you know despite how active i am i you know i've never
+[doctor] okay
+[patient] injured or broken a bone
+[doctor] okay great so let's go ahead and do a i just wan na take a look here i reviewed your vitals and overall they look good your blood pressure is one twenty over seventy your your heart rate is sixty and your respiratory rate is fourteen those are all phenomenal numbers as i listened to your heart it is at a regular and a slower rate but i do n't hear any extra sounds so there is no murmurs as we go through that now on musculoskeletal exam you have a normal gait i watched you you know kinda walk in here this morning your strength i just wan na check it when i go ahead and i want you to move your leg okay your muscle strength is is good you do have a three out of five for abduction of your legs bilaterally and that's you know kinda bringing your legs in the remainder of your muscle strength for your lower extremities is a five out of five now let me focus specifically on your knee examination i do n't see any redness or ecchymosis or warmth of the skin and those are big words you know i do n't see any bruising or or that redness there is no effusion that's just like a fluid underneath the knee i do n't appreciate that any at all you do seem to have some tenderness when i palpate and you do have a positive patellar grind test when you stood up i could feel that as we went through there you did say you had that knee pain with squatting but your lachman your anterior and posterior drawer and mcmurray test are all negative bilaterally neurologically and your your your lower extremities your patella and your achilles reflex are symmetrical and that's good so i did review the x-rays of both your knees which shows no fractures or osteoarthritis so based on what you told me and reviewing the mri that you had done before you came in your symptoms are consistent with patellofemoral pain syndrome and this is a really common condition that we see that causes knee knee pain especially in really active young people that's probably why i do n't get it when i'm riding my bike forever and ever now this condition has to do with the way your kneecap moves across along the groove of your thigh bone your femur so for pain i want you to continue to take the ibuprofen or any other anti-inflammatories you know aleve or any of those as you need it to help with the pain now i am going to recommend physical therapy well they will show you a number of lower extremity exercises this is probably one of the best things that you can do and this will help increase your lower extremity strength your mobility and correct any incorrect running mechanics that you might have do you have any questions for me
+[patient] so will i be able to run again
+[doctor] absolutely my goal is to get you out there and maybe we can cross pads on the the bike trail some day you are gon na have to take it a little bit easy for now but we are gon na get you back and once we do that i think you will be really pleased is there anything else
+[patient] no i think that's it
+[doctor] okay have a great day
+[patient] okay you too
+[doctor] thank you
+[patient] bye
+=== FIELD: note
+CHIEF COMPLAINT
+
+Bilateral knee pain.
+
+SOCIAL HISTORY
+
+The patient is an avid runner. She also works from home.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports bilateral knee pain. Denies knee swelling.
+Skin: Denies redness.
+
+VITALS
+
+Blood pressure: 120/70 mmHg
+Heart rate: 60 bpm
+Respirations: 14
+
+PHYSICAL EXAM
+
+Neurological
+- Orientation: Normal gait. Patellar and Achilles reflexes are symmetrical.
+
+Cardiovascular
+- Auscultation of Heart: Regular, slower rate. No murmurs.
+
+Gastrointestinal
+- Examination of Abdomen: No masses or tenderness.
+- Auscultation: Bowel sounds normal in all 4 quadrants.
+
+Musculoskeletal
+- Examination: No clubbing, cyanosis, or edema. Normal gait. 3/5 abduction strength of the bilateral lower extremities. Otherwise, 5/5 strength in the bilateral lower extremities.
+- Bilateral knees: No erythema, ecchymosis, or warmth. No effusion. Tender to palpation. Positive patellar grind test. Lachman, anterior and posterior drawer, and McMurray test are all negative bilaterally.
+
+RESULTS
+
+X-ray of the bilateral knees are reviewed and reveal no fractures or osteoarthritis.
+
+ASSESSMENT AND PLAN
+
+1. Patellofemoral pain syndrome, bilateral.
+- Medical Reasoning: After reviewing her x-ray, previous MRI, and exam findings, her symptoms are consistent with patellofemoral pain syndrome.
+- Patient Education and Counseling: We discussed the nature of this condition in detail. I encouraged the patient to be conservative with her physical activity for now.
+- Medical Treatment: Continue with over-the-counter NSAIDs for pain relief We are going to refer her to physical therapy to help strengthen her lower extremities, increase mobility, and demonstrate proper running mechanics.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+
+########## ENCOUNTER D2N045
+ICD-10 codes: S83.91XA Sprain of unspecified site of right knee, initial encounter; X50.1XXA Overexertion from prolonged static or awkward postures, initial encounter; Y93.02 Activity, running
+=== FIELD: dialogue
+[doctor] hi abigail how are you today
+[patient] hello hi nice to meet you i'm i'm doing okay
+[doctor] good i'm doctor sanchez and i'm gon na go ahead and take a look i saw with your notes that you've been having some knee pain yes that's that's true you know it's been going on for a while i like to run i do jogs i sign up for the 5k tack you know sometimes the marathon and i have n't been doing longer distances because
+[patient] when i'm running i my right knee here it just starts to ache and it's it's just to the point where i need your opinion
+[doctor] okay okay what have you done for it so far what makes it better what makes it worse
+[patient] well it used to be that when i run it ache and then i put ice on it and then it would be okay so i do ice and ibuprofen
+[doctor] okay okay and did you see anybody for this before coming into the office here
+[patient] yeah i doctor wood is my primary care provider and i talked to him about it actually over the years and this last visit he said he referred me to you
+[doctor] okay okay good so ice and rest makes it feel better running and and activity makes it hurt a little bit more is that correct
+[patient] yeah that's right
+[doctor] okay do you have any family history of arthritis or any of those type of immune diseases
+[patient] i'm trying to think no i do n't think so no
+[doctor] okay and do you get is it is this primarily worse in the morning or does it is it just there all the time when it comes on
+[patient] it actually is worse towards the end of the day
+[doctor] okay
+[patient] once i'm on my feet all day it starts to ache towards the afternoon
+[doctor] okay so let's go ahead and i want to do a quick examination here your blood pressure and was one twenty over sixty that's phenomenal your heart rate was fifty eight and you can tell that you're a runner with that that level of a heart rate and your respirations were fourteen so all of that looked very good there was no fever when you came in when i'm gon na just quickly listen to your heart and lungs okay those those sound good but let me get let's focus here on your lower extremities i'm i'm gon na look at your your left knee first when i move your left knee do you get any type of pain or is it just feel like normal and it's always your pain's always isolated to the right
+[patient] that feels that feels normal
+[doctor] okay okay so let me i just want you to back up here in the stretcher a little bit more and i'm just gon na do some movement of your knee any okay so i want you to push your leg out against my hand does that hurt
+[patient] no
+[doctor] okay and if you pull back does that hurt a little bit
+[patient] no
+[doctor] okay and i'm gon na move it around so when i look at the knee there is no redness there's no swelling i can appreciate a a small amount of effusion and that means that there's a little bit of fluid under the knee or in that knee's joint space and there is there is several reasons that could be now when i push on your knee does it hurt more on the inside or does it hurt more on the outside here
+[patient] the the right knee here hurts on the outside
+[doctor] okay okay and you've got a good pedal pulse so you know you can feel that and when i touch your feet you do n't have any numbness or tingling or anything like that
+[patient] no uh uh
+[doctor] okay well so what i want to tell you is that i think you have a knee sprain from overuse and we see that sometimes in runners now unfortunately you're gon na have to take some a little bit of time off of of active running but i do n't think it will be that long until we can get you up and running again now i reviewed the x-rays that we did when you first came into the office here this morning and the joint spaces of that right knee are are well maintained i do n't see any evidence of any fracture and when compared to the left knee everything looks good so i do n't even see any signs of any arthritis that i would've been suspecting i would like you to stay on two tylenol five hundred milligrams and two ibuprofen two hundred milligram tablets and i want you to take that three times a day and that's gon na help with both the pain and the inflammation i'm also gon na order some physical therapy for your your right knee and that physical therapy will help strengthen the lower extremities and make it give you a little bit of a balance and some they'll be able to recommend good running exercises for you i do wan na follow up with you in two weeks and see if we're getting better so let's no running for two weeks and if we're we're improving then we'll move on and probably start adding some additional activity does that sound like a plan
+[patient] yeah that does i i was curious so i will lay off the running for now can i you know lift weights and do like my squats and and those type of exercises at the gym
+[doctor] yeah absolutely and and those are good exercises but i'd like you to get that first physical therapy appointment in and they'll be able to talk with you on what the best exercises are for you to do
+[patient] okay got it
+[doctor] any questions
+[patient] hmmm no i do n't think so
+[doctor] okay thank you abigail and i'd like i said stop out at the desk and we'll make an appointment for two weeks
+[patient] okay thanks doctor
+[doctor] thank you
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right knee pain.
+
+SOCIAL HISTORY
+
+Patient reports she is an avid runner who enjoys participating in marathons.
+
+FAMILY HISTORY
+
+Patient denies any known family history of arthritis or other immune disease.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Denies fever.
+Musculoskeletal: Reports right knee pain.
+
+VITALS
+
+Blood pressure: 120/60 mmHg
+Heart rate: 58 bpm
+Respiration: 14
+No fever.
+
+PHYSICAL EXAM
+
+Respiratory
+- Assessment of Respiratory Effort: Normal respiratory effort.
+
+Cardiovascular
+- Examination: Normal pedal pulses in right knee.
+- Auscultation of Heart: Regular rate and rhythm. No murmurs, gallops or rubs.
+
+Musculoskeletal
+- Examination: No clubbing, cyanosis, or edema.
+- Right knee: No pain with movement. No pain with strength testing. No erythema or edema. Small effusion. Tender to palpation over the lateral aspect of the knee.
+
+RESULTS
+
+X-rays of the right knee were obtained and reviewed in office today. These reveal well-maintained joint spaces. There is no evidence of any fracture or arthritis.
+
+ASSESSMENT AND PLAN
+
+1. Right knee sprain.
+- Medical Reasoning: The patient is an avid runner and her symptoms appear to be the result of overuse.
+- Patient Education and Counseling: We discussed the nature of her diagnosis, as well as her x-ray results, in detail. I advised her that this is a common issue for runners and encouraged her to continue her strength training exercises.
+- Medical Treatment: She will take Tylenol 500 mg, 2 tablets, and ibuprofen 200 mg, 2 tablets, 3 times daily to reduce her pain and inflammation. We will also refer her to physical therapy to help strengthen her lower extremities, work on her balance, and demonstrate proper running exercises. She should avoid running for the next 2 weeks until her follow up visit, at which point we can consider adding some additional activity.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+The patient will follow up in 2 weeks.
+
+########## ENCOUNTER D2N046
+ICD-10 codes: C56.2 Malignant neoplasm of left ovary
+=== FIELD: dialogue
+[doctor] okay so we are recording okay so okay so i understand you've so you've got a past medical history of type two diabetes and you're coming in and for evaluation of a newly diagnosed ovarian cancer so how are you doing today
+[patient] i do n't hear the question but i'm assuming that you when you say batcher so when i start talking about my dog and my three cats and all that those sort of things are not going to be included in the in the note
+[doctor] right i want you you can talk about those things yes
+[patient] okay
+[doctor] okay so with your newly diagnosed ovarian cancer so how are you feeling today how are you doing
+[patient] i'm doing pretty good depressed
+[doctor] little depressed i can understand it's a lot to take on is n't it
+[patient] yes
+[doctor] okay okay so lem me ask you some questions so what kind of symptoms were you having that prompted you your doctor to do the tests
+[patient] i was having severe pain and bleeding
+[doctor] okay now do you have other symptoms such as weight loss constipation vomiting or issues with urination
+[patient] no vomiting but constipation and weight loss
+[doctor] okay yeah that's understandable so do you have any children or have you ever been pregnant
+[patient] i'm sorry i did n't hear that part
+[doctor] do you have any children or have you ever been pregnant
+[patient] no to either one of those
+[doctor] okay so and do you know at what age you got your period and when you started menopause
+[patient] thirteen for my period and twenty eighth for menopause
+[doctor] okay do you take any oral hormone replacement therapy
+[patient] no
+[doctor] okay any history of endometriosis
+[patient] any history of what
+[doctor] endometriosis
+[patient] no
+[doctor] okay how about any family history of any gynecological cancers
+[patient] i was adopted
+[doctor] okay okay so i'm just gon na do a quick exam of your abdomen and then perform a vaginal exam okay
+[patient] okay
+[doctor] alright okay so i do feel the mass on the where to go here okay
+[patient] i did n't know you're gon na play a doctor today
+[doctor] i did okay okay so i do feel the mass on the left side but everything else looks good and on abdominal exam there is slight tenderness to palpation of the left lower quadrant no rebounding or guarding on vaginal exam there are no external lesions on the labia the vaginal vault is within normal limits the cervix is pink without lesions and on bimanual exam i appreciate a left adnexal mass and there is no masses on the right okay so now i reviewed the results of your abdominal ct which show a three centimeter left ovarian mass with an associated local localized lymph node involvement there is no evidence of gross peritoneal or metastatic disease so lem me tell you a little bit about my assessment and plan so for the first problem so i do think this is most likely ovarian cancer looking at your ct scan it looks like stage three a disease based on the lymph node involvement i want to start by sending off some blood tests like a ca-125 and hcg and afp and ldh these are just tests that help me to determine what type of tumor i'm dealing with and then i want you to undergo genetic counseling and testing to see if you have a genetic predisposition for developing ovarian cancer so this stage of ovarian cancer is treated by performing surgery followed by adjunct chemotherapy so this means we'll start chemotherapy after you've recovered from surgery okay so for the surgery i would perform a hysterectomy remove both ovaries and perform a lymph node dissection to remove the involved and involve lymph nodes as well as any other ones i see and i'll also send a sample of any tissue if there anything that looks suspicious at all and we'll be able to tell exactly what stage this is based on the pathology reports i then recommend chemotherapy with cisplatin and taxol and based on how the surgery goes i may want you to receive intraperitoneal intraperitoneal chemo which is done inserting a small tube into your belly for the chemo to go directly into your peritoneum now i know that was a lot sick in do you have any questions or
+[patient] am i gon na die
+[doctor] well that's a good question so based on what i see at this time i will we believe you have a favorable diagnosis prognosis and you're also still young and healthy which makes your prognosis even better and we do need to see a final pathology report to give you a definitive answer though okay
+[patient] alright alright
+=== FIELD: note
+CHIEF COMPLAINT
+
+New patient evaluation of newly diagnosed ovarian cancer.
+
+FAMILY HISTORY
+
+The patient was adopted and has no knowledge of any family history.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Reports unintentional weight loss
+Gastrointestinal: Reports abdominal pain and constipation. Denies vomiting.
+Genitourinary: Reports abnormal vaginal bleeding. Denies urinary issues.
+Psychiatric: Reports depression
+
+PHYSICAL EXAM
+
+Gastrointestinal
+- Examination of Abdomen: There is slight tenderness to palpation of the left lower quadrant. No rebounding or guarding.
+
+Pelvic
+- Examination: There are no external lesions on the labia. The vaginal vault is within normal limits. The cervix is pink without lesions. On bimanual exam, I appreciate a left adnexal mass. No masses on the right.
+
+RESULTS
+
+CT scan of the abdomen was reviewed and demonstrated a 3 cm left ovarian mass with associated localized lymph node involvement. There is no evidence of gross peritoneal or metastatic disease.
+
+ASSESSMENT AND PLAN
+
+1. Ovarian cancer.
+- Medical Reasoning: Looking at her abdominal CT results, it appears to be stage IIIA disease based on the lymph node involvement.
+- Patient Education and Counseling: I explained to the patient that the typical approach to treating this stage of cancer is surgical intervention followed by adjunct chemotherapy. The procedure and subsequent chemotherapy plans were discussed in detail. Given that she is young and otherwise healthy, I reassured her that I believe her prognosis is favorable based on her current status, however, this is dependent on the final pathology report. All of her questions were answered.
+- Medical Treatment: I want to start by ordering several blood tests including a CA-125, hCG, AFP, and LDH. I also want her to undergo genetic counseling and testing to see if she has a genetic predisposition for developing ovarian cancer. I recommend we perform a hysterectomy and oophorectomy, as well as a lymph node dissection to remove any involved lymph nodes. Any concerning tissue will be biopsied and sent to pathology for staging. After she has recovered from surgery, she will start chemotherapy treatment with cisplatin and Taxol. We may also consider intraperitoneal chemotherapy.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+########## ENCOUNTER D2N047
+ICD-10 codes: R39.198 Other difficulties with micturition; I25.10 Atherosclerotic heart disease of native coronary artery without angina pectoris; E11.9 Type 2 diabetes mellitus without complications
+=== FIELD: dialogue
+[doctor] hi billy how are you what's been going on the medical assistant told me that you're having some difficulty urinating
+[patient] yeah yeah i i did n't really wan na come in to talk about it's kinda weird but i think probably over the last six months i'm just not peeing right it just does n't seem to be normal
+[doctor] okay so let's talk a little bit about that now is your is your stream is your urination stream weak
+[patient] yeah i'd probably say so
+[doctor] okay and do you feel like you're emptying your bladder fully or do you feel like you still have some urine left in there when you when you finish
+[patient] most of the times i'm okay but sometimes if i stand there long enough i i can kinda go a little bit more so it's taking a while actually to just go to the bathroom
+[doctor] okay and are you waking up at night to go to the bathroom does it impact your sleep
+[patient] yeah i try to empty my bladder now right before i go to bed and and not drink anything but i'm still probably getting up three or four times a night to go to the bed
+[doctor] okay so you're getting up about three or four times a night and and how long has this been going on you said for about six months
+[patient] yeah six months to like this and it's probably been a little bit worse over the last six months and maybe it's been longer i just did n't want to bring it up
+[doctor] okay so you think it's been going on longer okay alright now how about have you had any burning when you urinate at all
+[patient] no it i do n't think it burns
+[doctor] no burning when you urinate okay and and any other any other issues any problems with your bowels any constipation issues
+[patient] hmmm no i i i had diarrhea last week but i think i ate something bad
+[doctor] okay and ever have you ever had any issues where you had what we call urinary retention where you could n't pee and you needed to have like a catheter inserted
+[patient] my gosh no
+[doctor] okay
+[patient] i'll do that
+[doctor] alright and have you ever seen a urologist i do n't think so you've been my patient for a while i do n't remember ever sending you but have you ever seen one
+[patient] i do n't think so
+[doctor] okay now tell me how are you doing with your with your heart when was the last time you saw doctor moore the cardiologist i know that you had the the stent placed in your right coronary artery about what was that twenty eighteen
+[patient] yeah sounds about right i think i just saw him in november he said everything was okay
+[doctor] he said everything was okay alright and so you have n't had any chest pain or shortness of breath you're still walking around doing your activities of daily living are you exercising
+[patient] kind of
+[doctor] kind of okay now from what i remember i remember you being a big college football fan are you as excited as i am that georgia beat alabama in the national championships
+[patient] yeah yeah i'm super excited
+[doctor] you do n't really seem that excited
+[patient] get the problem fixed because i have to be able to sit there and watch the whole game
+[doctor] yeah i i really do n't like nick saving i'm so i'm super happy that that the dogs pulled it out
+[patient] i do n't know if we can do friends anymore
+[doctor] are you in alabama fan
+[patient] maybe i'm actually originally not from georgia so
+[doctor] okay alright well i mean i i'm i'm a long horns fan but anyway well i digress let's talk a little bit about your diabetes how are how are you doing with your sugars are you watching your diet
+[patient] i'm trying to yeah i think they are okay
+[doctor] okay and are you still taking the metformin
+[patient] yep
+[doctor] you are okay alright now i wan na go ahead and just move on to a quick physical exam okay i'm gon na be calling out some of my exam findings and i'm gon na let you know what that means when i'm done okay alright i do have to do a rectal exam i apologize i'm just gon na be calling it out what what i what i appreciate okay so on your heart exam i do appreciate a slight three out of six systolic ejection murmur hurt at the left base on your lung exam your lungs are clear to auscultation bilaterally on your abdominal exam your abdomen is nontender and nondistended i do n't appreciate any masses or any rebound or guarding on your prostate exam i do appreciate an enlarged prostate i do n't appreciate any masses on physical exam so what what does that mean billy so that ultimately means that you know everything looks good you know you have that little heart murmur which i believe you you've had in the past but we're gon na go ahead and look into that you know your prostate seems a little bit enlarged to me on physical exam so let's talk about how we can go about and and remedy that okay so for your first problem of this you know difficulty urinating i wan na go ahead and just order some routine labs i wan na get a a psa that kind of that ultimately kinda looks for prostate cancer issues which i do n't think you have because we did n't really appreciate that on physical exam i wan na go ahead and we can try to start you on what we call flomax zero point four milligrams once a day you should take it at night because it can cause people to get a little bit dizzy if they take it in the morning so i would take it at night and i wan na go ahead and refer you to a urologist just to look into this more so we can go ahead and and get this problem solved for you okay i'm also gon na go ahead and just order some routine blood tests just to make sure that we are not missing anything do you have any questions about that and i wan na go ahead and order a urinalysis and a urine culture
+[patient] yeah so sounds good have you seen that commercial for that super batter prostate stuff does that work
+[doctor] well i think the data it's it's i'm not really sure if it works or not i'm not that familiar with it let's just go ahead and stick with flomax and that's why we are gon na refer you to the urologist so that they can go ahead and talk to you about you know the most current treatment options for you okay
+[patient] alright
+[doctor] alright for your second problem of your coronary artery disease i wan na go ahead and order an echocardiogram just to follow up on that heart murmur that you had and i wan na go ahead and continue you on the lipitor forty milligrams a day and the aspirin and the metoprolol and i wan na go ahead and order a lipid panel any questions about that
+[patient] nope
+[doctor] okay and then for your third problem of your diabetes it sounds like you're doing really well let's go ahead and continue you on the metformin a thousand milligrams twice a day we will go ahead and order a hemoglobin a1c to see if we need to make any adjustments to that and i'm gon na see you again in about three to four weeks okay i want you to call me or message me in the patient portal if you have any concerns
+[patient] alright when is the urologist gon na call me
+[doctor] i'm gon na reach out i'm gon na reach out to them now and see if they can get you in this week
+[patient] sounds good
+[doctor] okay alright well great it was good to see you bye
+[doctor] i could just hit it and i can just talk and then i'm just
+=== FIELD: note
+CHIEF COMPLAINT
+
+Difficulty urinating.
+
+MEDICAL HISTORY
+
+Patient reports history of coronary artery disease and diabetes.
+
+SURGICAL HISTORY
+
+Patient reports undergoing right coronary arter stent placement in 2018 by Dr. Moore.
+
+SOCIAL HISTORY
+
+Patient reports that he tries to exercise. He is a college football fan.
+
+REVIEW OF SYSTEMS
+
+Cardiovascular: Denies chest pain or shortness of breath.
+Gastrointestinal: Denies change in bowel movements.
+Genitourinary: Reports difficulty urinating. Denies dysuria or urinary retention.
+
+PHYSICAL EXAM
+
+Respiratory
+- Auscultation of Lungs: Clear bilaterally.
+
+Cardiovascular
+Slight 3/6 systolic ejection murmur heard at the left base.
+
+Gastrointestinal
+- Examination of Abdomen: Nontender and nondistended. No masses, rebound or guarding.
+
+Rectal
+- Examination: Enlarged prostate appreciated. No masses appreciated.
+
+ASSESSMENT AND PLAN
+
+1. Difficulty urinating.
+- Medical Reasoning: The patient presents today with approximately a 6 month history of difficulty with urination. His prostate also felt slightly enlarged on exam today.
+- Patient Education and Counseling: The patient was advised that there were no concerning symptoms of prostate cancer appreciated on his physical exam today.
+- Medical Treatment: We will order routine labs including a PSA to rule out prostate cancer. We will also refer him to a urologist for further evaluation as well as order a urinalysis and urine culture. We will start him on Flomax 0.4 mg once at night to avoid dizziness.
+
+2. Coronary artery disease.
+- Medical Reasoning: The patient had a 3/6 systolic ejection murmur heard at the left base on exam today. This has been heard on his exams in the past.
+- Medical Treatment: We will order an echocardiogram to follow up on his murmur. We will also order a lipid panel. He will continue Lipitor 40 mg a day, aspirin and metoprolol.
+
+3. Diabetes.
+- Medical Reasoning: The patient is currently doing well with his diabetes.
+- Medical Treatment: We will continue him on metformin 1000 mg twice a day. A hemoglobin A1c will be ordered to see if any medication adjustments are needed.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+He will follow up in 3 to 4 weeks and is advised to call or message me in the patient portal if he has any concerns.
+
+########## ENCOUNTER D2N048
+ICD-10 codes: S93.324A Dislocation of tarsometatarsal joint of right foot, initial encounter; W19.XXXA Unspecified fall, initial encounter; Y30.XXXA Falling, jumping or pushed from a high place, undetermined intent, initial encounter
+=== FIELD: dialogue
+[doctor] alright brittany so i see that you are experiencing some right foot pain could you tell me what happened
+[patient] yeah well i was playing tennis and i was trying to you know volley the ball
+[doctor] mm-hmm
+[patient] it was like a double game and i was trying to volley the ball and i got in front of another player and actually ended up falling on top of my foot
+[doctor] alright
+[patient] and then yeah it kinda hurt i quickly then twisted my myself around her because i was trying to catch myself but then i started to feel some pain in my foot
+[doctor] mm-hmm okay have you ever injured that foot before
+[patient] yeah no sorry i injured my other foot before not this foot
+[doctor] okay so right now you're experiencing right leg pain but you have injured your your left leg before is that what i'm hearing
+[patient] yeah that's fine
+[doctor] alright were you able to continue playing
+[patient] no i had to stop i actually it was like i had to be held from the field because i could n't put weight on my foot
+[doctor] i'm sorry okay so what have you been doing for the pain since then
+[patient] i wrapped it after a the game they had some ace wraps in their clubhouse and so i wrapped it up and then i iced it last night and i just kept it up on a pillow and then i took some ibuprofen
+[doctor] okay could you one more time when did this injury happen
+[patient] this happened about couple days ago
+[doctor] okay so did you say whether does the ibuprofen help at all
+[patient] yeah it helps a little bit but then you know it it you know after a while it wears out
+[doctor] okay and then have you experienced any numb numbness or tingling
+[patient] no no numbness
+[doctor] okay alright any loss in sensation
+[patient] no i mean i i can still feel like i can still feel my foot
+[doctor] okay alright that's good to hear so you were playing tennis is that what you normally do to work out
+[patient] i do i'm trying to learn but i can not afford tennis less lessons so me and my friends just hit the balls back and forth i do sleep
+[doctor] i love it absolutely yeah my dad one time took me to play racquet ball and i learned the very bruisy way that that was n't for me yeah
+[patient] that scares me
+[doctor] it's it they they move pretty fast i'm not gon na lie alright so if you do n't mind i'm gon na go ahead and do my my physical exam i'm gon na be calling out some of my findings but if you have any questions go ahead stop me let me know but i will be explaining along the way okay
+[patient] okay
+[doctor] alright so i've looked at your vitals and honestly they look great you know your blood pressure i see is one twenty five over seventy that's almost textbook respiratory rate we are seeing you at a smooth eighteen excuse me your temperature you're running normal ninety seven . one you're you're satting at a hundred percent so and then your pulse so that's interesting like you're you're going at like about sixty beats a minute so i think they're i think we're doing pretty well i'm gon na go ahead and listen to your heart on your heart exam i do n't appreciate any like murmur rub or gallop we have a nice regular rate and rhythm for your lung exam i do appreciate a little bit of stridor that's really interesting but i do n't hear any wheezes or rales so that's great for your i know this sounds weird but for your abdominal exam i do n't appreciate any rebound no guarding on your skin exam i do n't sorry like on your your head everything looks symmetrical your your mucosal membranes are normal you do n't feel hot to touch so that's great but i'm gon na do my foot exam okay so on the right foot there is some bruising of the plantar and dorsal aspects of the foot there is associated swelling when i touch on your midfoot here does it hurt
+[patient] no uh uh
+[doctor] okay alright tenderness to palpation of the midfoot and positive piano key test of the first and second metatarsals alright it's also warm to touch alright so on your neurovascular exam of your right foot your capillary refill is less than three seconds strong dorsalis pedis pulse and your sensation is intact to light touch your left foot exam is normal capillary refill is appropriate pedal pulses are strong and sensation is intact so i know that before here we before i came in that we got an x-ray so i've reviewed the results of your x-ray of your right foot and it showed subtle dorsal displacement of the base of the second metatarsal with a three millimeter separation of the first and second metatarsal bases and the presence of a bony fragment in the lisfranc joint space alright i know those were a bunch of fancy words so now i'm gon na explain to you what that all means for my impression and plan your first problem is right foot pain consistent with a lisfranc fracture which is a fracture to one of your second metatarsal bones near the top of your foot right so the big part of your toe is the first metatarsal the second part where you can kinda like bend it right that's the that's the metatarsal that we're talking about based on your exam and what i'm seeing on your x-ray i am gon na recommend surgery for your foot the surgery will help place the bones in their proper positions using plates and screws to help prevent further complications there are also many ligaments at the top of your foot so i will be ordering an mri to further assess the fracture and any injury to the ligaments i know this is a lot do you have any questions
+[patient] yeah do i have to do the surgery
+[doctor] so i'm recommending it as there can be significant complications to your foot if you do n't it can lead to poor bone alignment or poor ligament healing which can lead to you losing the arch of your foot and becoming flat-footed you can also develop arthritis in that foot so yes i i i highly recommend it if you want to be able to walk and move about in a way that you are familiar with
+[patient] i just hate that word surgery doc
+[doctor] i know
+[patient] you know it scares me every time i mean especially with my foot i want to be able to walk again and so i just get really worried i mean how long is the procedure usually too
+[doctor] so it's actually
+[patient] have to be in the hospital
+[doctor] no no no no no it's actually a day surgery and you'll be able to go home the same day and then you will follow up with me here in the clinic in about a week you'll be in a cast and you will use crutches as you will not be able to use that foot for six to eight weeks after that you'll start gradually walking on your foot based on how you do so the procedure itself is not very long you will and so like since you will be able to go home that's great but you wo n't be able to drive especially since you're saying are you left handed or right handed
+[patient] i'm right handed
+[doctor] yeah so your your right foot is probably your dominant one and the also the one you're supposed to drive with so no you're gon na you're gon na need somebody to take you home but what
+[patient] i mean
+[doctor] uh uh
+[patient] does that mean i'm out for the rest of the season i mean i wan na be able to get back and play again i really am i'm getting a little better so i
+[doctor] mm-hmm
+[patient] i really wan na keep on playing my tennis with my friends but
+[doctor] yeah so unfortunately yes it does mean that you're out for the rest of the season but hopefully we can get you a great get you to a set up well for next season and in the meantime i think i'm gon na recommend after surgery that we get you to physical therapy i think that that's gon na be a really great way to like kinda strengthen the muscles and make sure that you're at peak performance before we put you back out there
+[patient] i suppose so
+[doctor] yeah
+[patient] okay
+[doctor] alright
+[patient] thank you
+[doctor] no problem so i do wan na let you know that there are some risks associated with any kind of surgical procedure i'm gon na bring you some paperwork and that my ma is gon na go over with you such as like risks of bleeding loss of sensation nerve damage all those things will be discussed with you and if you have any questions leading up to and even after your procedure go ahead and ask them and we'll be more than happy to help with that okay
+[patient] okay
+[doctor] alright
+[patient] good
+[doctor] thank you
+[patient] thank you
+=== FIELD: note
+HISTORY OF PRESENT ILLNESS
+
+Brittany Edwards is a 76-year-old female, right-hand-dominant, female who presents to the clinic today for the evaluation of right foot pain. The onset of her pain began 2 days ago, when she was playing tennis and was trying to volley the ball when she got in front of another player and fell on the dorsal aspect of her right foot. She states that she quickly twisted her foot because she was trying to catch herself. The patient reports that she was unable to continue playing secondary to the pain. She states that she wrapped her foot after the game and iced it last night. The patient adds that she kept her foot up on a pillow and took ibuprofen for pain. She denies any numbness. The patient denies any loss of sensation.
+
+The patient has a history of a left leg injury.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports right foot pain.
+Neurological: Denies numbness in the right foot.
+
+PHYSICAL EXAM
+
+SKIN: Warm
+NEURO: Normal sensation.
+MSK:
+Examination of the right foot: Bruising of the plantar and dorsal aspects of the foot. Associated swelling. Tenderness to palpation of the midfoot. Positive piano key test of the 1st and 2nd metatarsals. Warm to touch. Neurovascular intact distally. Capillary refill is less than 3 seconds. Strong dorsalis pedis pulse.
+Examination of the left foot: Brisk capillary refill to all digits and light touch intact.
+
+RESULTS
+
+3 views of the right foot were taken. These reveal subtle dorsal displacement of the base of the 2nd metatarsal with a 3 mm separation of the 1st and 2nd metatarsal bases. There is the presence of a bony fragment in the Lisfranc joint space.
+
+ASSESSMENT
+
+Right foot pain, consistent with a Lisfranc fracture.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with the patient in regards to her current symptoms. I have explained to her that her x-rays revealed a Lisfranc fracture. We discussed treatment options for this and I have recommended that we proceed with surgical intervention. The plan is to proceed with a right foot ORIF and all indicated procedures. We went over the risk, benefits, and alternatives of the surgery. The risk include but not limited to continued pain, swelling, damage to surrounding tissue including nerves and blood vessels, numbness that could be permanent, infection, nonunion, malunion, failure of hardware, and need for further surgery. There is always a risk of amputation, heart attack, stroke, blood clots, pulmonary embolism, and death. There is a possibility of chronic pain and the inability to get back to the previous level of function. The patient wishes to proceed with the operation and she will follow up with me on the day of surgery. In the meantime, I have recommended that the patient attend formal physical therapy to strengthen her right foot.
+
+
+########## ENCOUNTER D2N049
+ICD-10 codes: N20.0 Calculus of kidney; I10 Essential (primary) hypertension; E11.9 Type 2 diabetes mellitus without complications
+=== FIELD: dialogue
+[doctor] hey linda good to see you today so looking here in my notes looks like you you think you have a kidney stone think you've had them before and and you i guess you're having some pain and while we are here i see you i see you have a you have past medical history of hypertension diabetes and we will check up on those as well so with your kidney stone can you tell me what happened what's going on
+[patient] and i've been in a lot of pain it started about i would say probably about three days ago
+[doctor] okay
+[patient] started having pain on my left back
+[doctor] okay
+[patient] and since then i continued to have pain it is traveling a little lower it's gotten little low but i definitely have not passed it yet and i'm just in so much pain
+[doctor] okay so is the pain that you're having is it constant or does it come and go
+[patient] it's constant
+[doctor] okay
+[patient] all the time i ca n't get comfortable
+[doctor] alright are you able to urinate
+[patient] i am and this morning i actually started seeing some blood
+[doctor] okay yeah so and i know you said i see you've had some kidney stones in the past like how many times would you say you've had one of these episodes
+[patient] i've had it for probably this might be my third time
+[doctor] third time alright
+[patient] yeah i have n't had one in a while but yeah this is my third time
+[doctor] okay so have you noticed any nausea chills fever
+[patient] no fever some chills and i i just in so much pain i i ca n't eat and i do feel a little nauseous
+[doctor] okay that sound definitely understandable so you've been in a lot of pain so have you tried to take any medications to alleviate the pain
+[patient] yeah i've been taking tylenol i have had to try some ibuprofen i know you said to be careful with my blood pressure but i have been trying to do that because i'm just in so much pain and it's not really working
+[doctor] okay and before what would you how long would you say it took you to pass the other stones or how was that that resolved
+[patient] yeah usually usually about about three four days to pass it yeah
+[doctor] right so this is this is the looks like this is the third day
+[patient] yeah
+[doctor] so we are getting close there
+[patient] okay
+[doctor] yeah so hopefully we can pass it but we'll i'll definitely we can take a look at it here in a second so while you are here i also wanted to check up on your your diabetes and and hypertension you have so i'm looking here at my notes and you're on two . five of norvasc for your high blood pressure when you came in today your blood pressure was a was a little bit high and i know that's probably because you are in a bunch of pain so that definitely makes sense but i think last time we talked a little bit about you getting a blood pressure cuff and taking your blood pressures regularly so those readings first off were you able to get the blood pressure cuff
+[patient] i was i have n't been great about taking it but i did get the blood pressure cuff
+[doctor] so the time that you did take it and i think that's something we got to work on is you've taken them i think at least three times a week i would like you to what have those been running
+[patient] like the top numbers they're usually the one thirties sometimes i get i do go into one forties and once it went to like one fifty
+[doctor] okay
+[patient] and then the bottom number has been between seventy and eighty okay that i mean that's not too bad i think when you were first diagnosed you were up there in the
+[doctor] the one eighties which was really high
+[patient] right
+[doctor] so let me talk a little bit also about you trying to lower your salt intake to like like twenty three hundred milligrams a a day so have you been able to do that
+[patient] trying my best but doc i really like my french fries
+[doctor] yeah
+[patient] like
+[doctor] we we all like we all like the french fries you know but you know we we we we also do n't like strokes so we do n't want to have a scope and all the all the french fries so that's something definitely i would like you to work on and do you think you'd be able to to curb that french fry habit or that bad this bad food habits by yourself or do you think you need help
+[patient] yeah some help could be helpful okay yeah we can definitely get you connected with someone just to help you with your diet kinda that's the biggest thing for a lot of my patient is trying to control that diet alright
+[doctor] so i also want to take a look here at your diabetes and last time you came in your a1c was a little bit higher at seven . three and you're on five hundred of metformin currently so have you been taking your blood sugars before you eat everyday
+[patient] i have and those those have been pretty good they are like in the low one hundreds
+[doctor] okay that that that's definitely good because when you came in i think we did a glucose test on you couple of months ago and you were around three hundred which is which is pretty up there so i'm glad that you know those levels are down and have you been taking that metformin everyday
+[patient] i do
+[doctor] okay
+[patient] i do take it
+[doctor] that that that that's really good alright so let me do a quick physical exam on you just a couple of questions before i take a look at your your abdomen and and your back talked to take a look at that that kidney stones you're having so i just want to make sure are you having any any chest pain
+[patient] no chest pain
+[doctor] no chest pain are you having any belly pain
+[patient] the back pain is starting to kind of go down into my groin but i would n't say any back pain i mean abdominal pain
+[doctor] no abdominal pain alright so let me check here i'm gon na listen to your heart real quick and so on your heart exam i do hear a grade two out of six systolic ejection murmur and that we knew about that already so not really worried about that currently listen to your lungs your lungs are clear bilaterally i do n't hear any crackles or wheezes so let me press here on your abdomen does that hurt
+[patient] yes
+[doctor] okay i'm gon na press here on your back is that painful
+[patient] yes
+[doctor] alright so on your examination of your abdomen there is tenderness to palpation of the abdomen there is n't any rebound or guarding though and only there is also cva tinnitus on the right on your on your flank as well and so it seems to me you know that you do have that kidney stone looks like you do have some inflammation around your kidney that's what that that's that tenderness around your cva is is telling me so let's go talk a little bit about my assessment and plan for you so you know right now because of your history of of having kidney stones you you do have a kidney stone so what we're gon na do is first off i'm gon na get you some pain medication kinda you're in a ton of pain right now i'm gon na prescribe you some oxycodone five milligrams you can take that every six to eight hours as needed for pain and so hopefully that can help you feeling better and you can continue to take that tylenol for any breakthrough pain that you're having i do wan na make sure that you're pushing fluids right now because we need to try to push that stone out that you're having just kinda clear your kidneys and that that would definitely help i also want to give you a strainer so you can strain your urine to see if you do actually pass that stone and then i'm going to refer you to urology and we're actually i'm gon na have you you even if you pass a stone in the next couple of days i want you to go anyway because it seems like you're having recurrent kidney stones and so hopefully they can help do something to to help this from happening in the future for your hypertension i'm gon na keep you on that two . five norvasc your your blood pressures look good so i'm not gon na make any changes there and then for your diabetes we'll keep you on the five hundred of metformin and i also want to give you a referral to nutrition to a dietitian and they will be able to help you with your your diet i know you said you have a few issues so you know they can possibly write a diet for you and if you follow it you know hopefully in the future we can get you off of both of these medications and get you back to normal so how does that all sound
+[patient] that sounds good and i i just i just want this pain to go away so thank you
+[doctor] okay no problem
+=== FIELD: note
+CHIEF COMPLAINT
+
+Left-sided back pain.
+
+MEDICAL HISTORY
+
+Patient reports history of history of hypertension, diabetes, and kidney stones.
+
+MEDICATIONS
+
+Patient reports taking Tylenol, occasional ibuprofen, Norvasc 2.5 mg daily, and metformin 500 mg daily.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Reports chills and decreased appetite. Denies fever.
+Cardiovascular: Denies chest pain.
+Gastrointestinal: Reports nausea. Denies abdominal pain.
+Genitourinary: Reports hematuria.
+Musculoskeletal: Reports left-sided back pain.
+
+VITALS
+
+Blood pressure is slightly elevated, likely due to patient's pain level.
+
+PHYSICAL EXAM
+
+Respiratory
+- Auscultation of Lungs: Clear bilaterally. No wheezes, rales, or rhonchi.
+
+Cardiovascular
+- Auscultation of Heart: Grade 2 out of 6 systolic ejection murmur, unchanged.
+
+Gastrointestinal
+- Examination of Abdomen: Tenderness to palpation of the abdomen. No rebound or guarding. CVA tenderness present at right flank.
+
+RESULTS
+
+Previous hemoglobin A1c is reviewed at 7.3.
+
+ASSESSMENT AND PLAN
+
+1. Kidney stone.
+- Medical Reasoning: Patient presents today with symptoms consistent with kidney stones. She does have a history of kidney stones with this being her third episode.
+- Patient Education and Counseling: We discussed the importance of pushing fluids to help facilitate passing the kidney stone.
+- Medical Treatment: Prescription for oxycodone 5 mg every 6 to 8 hours as needed for pain was provided today. Tylenol is recommended for breakthrough pain. She will push fluids and has been provided with a urine strainer. Referral to urology was also provided due to her recurrent episodes.
+
+2. Hypertension.
+- Medical Reasoning: Patient is currently stable and has not had any elevated readings. Her blood pressure was slightly elevated today, however, this is due to her current pain level.
+- Patient Education and Counseling: We discussed the importance of home blood pressure monitoring with the goal of at least 3 times per week. She was also advised on the importance of diet modification with limiting salt to 2300 mg daily.
+- Medical Treatment: Continue Norvasc 2.5 mg. Continue with home blood pressure monitoring 3 times per week. Limit salt intake to 2300 mg daily.
+
+3. Diabetes.
+- Medical Reasoning: Patient is currently stable and has not had any elevated glucose readings.
+- Patient Education and Counseling: We discussed the importance of diet modification.
+- Medical treatment: Continue metformin 500 mg daily. Continue with home glucose monitoring before meals. Referral to a dietitian was provided.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+

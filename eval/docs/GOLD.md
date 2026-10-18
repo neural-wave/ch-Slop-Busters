@@ -20,7 +20,7 @@ gold does not rebuild the suite.
 | Gold | Path (under `neuralwave-container/`) | Made by | Eval split | Label set |
 |---|---|---|---|---|
 | `harness` | `neuralwave/data/converted/aci_bench/labels.jsonl` (imported by `scripts/convert/aci_bench.py`) | A+D team's annotators | 532 PII items, 194 keep items | the harness's 11 categories, per-item risk |
-| `vm` | `vm-backup/neuralwave/annotations/eval/<id>.json` (`GUIDELINES.md` there) | VM teacher annotation for the anonymous model | 815 PHI items (tier 1/2), 5,211 concepts | 15 PHI types, 6 concept types |
+| `vm` | `models/anonymous/annotations/eval/<id>.json` (`GUIDELINES.md` there) | VM teacher annotation for the anonymous model | 815 PHI items (tier 1/2), 5,211 concepts | 15 PHI types, 6 concept types |
 | `ketai` | `ketai-eval/gold/eval_gold.jsonl` (`build_gold.py` there) | ketai's reference annotation | 484 PII items, 4,334 concepts, 125 non-PII ambiguous terms | 11 PII categories, 7 concept types |
 
 Item counts are distinct (field, lowercased text) pairs with at least two alphanumeric characters, the unit the suites

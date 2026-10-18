@@ -1,0 +1,15 @@
+{
+  "encounter_id": "D2N019",
+  "pii": [
+    {"field": "dialogue", "text": "hernandez", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "fisher", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "48-year-old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "moving to a new home", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Hernandez", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "48-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "dragon", "category": "NOT_A_NAME", "why": "dictation software"},
+    {"field": "dialogue", "text": "lateral epicondylitis", "category": "CODE_EVIDENCE", "why": "diagnosis for M77.11"}
+  ]
+}

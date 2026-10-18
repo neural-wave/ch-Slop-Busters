@@ -1,0 +1,503 @@
+{
+  "encounter_id": "D2N001",
+  "pii": [
+    {
+      "text": "martha",
+      "field": "dialogue",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient first name"
+    },
+    {
+      "text": "50-year-old",
+      "field": "dialogue",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "patient age"
+    },
+    {
+      "text": "washington",
+      "field": "dialogue",
+      "category": "LOCATION",
+      "tier": "quasi",
+      "comment": "state visited for hiking"
+    },
+    {
+      "text": "northern cascades",
+      "field": "dialogue",
+      "category": "LOCATION",
+      "tier": "quasi",
+      "comment": "named mountain range visited"
+    },
+    {
+      "text": "mount baker",
+      "field": "dialogue",
+      "category": "LOCATION",
+      "tier": "quasi",
+      "comment": "named mountain area visited"
+    },
+    {
+      "text": "Martha Collins",
+      "field": "note",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient full name"
+    },
+    {
+      "text": "50-year-old",
+      "field": "note",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "patient age"
+    },
+    {
+      "text": "fiscal year end data",
+      "field": "dialogue",
+      "category": "OCCUPATION",
+      "tier": "quasi",
+      "comment": "work pulling fiscal year-end data implies finance/accounting role"
+    }
+  ],
+  "medical_concepts": [
+    {
+      "text": "congestive heart failure",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "depression",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "hypertension",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "heart failure",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "high blood pressure",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "mitral regurgitation",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "allergies",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "chest pains",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "shortness of breath",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "swelling in your legs",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "nasal congestion",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "nausea or vomiting",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "abdominal pain",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "fluid in your legs",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "blood pressure medication",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "lisinopril to 40 milligrams a day",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "lasix",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "vaccine",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "therapy",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "low sodium diet",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "mammogram",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "echocardiogram",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "lipid panel",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "cholesterol",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "blood pressure readings",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "three out of six systolic ejection murmur",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "one plus pitting edema",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "low-ish pumping function of your heart at about 45 %",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "blood pressure's high",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "lower extremities",
+      "field": "dialogue",
+      "type": "anatomy",
+      "icd_relevant": false
+    },
+    {
+      "text": "congestive heart failure",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "depression",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "hypertension",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Congestive heart failure.",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Depression.",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Hypertension.",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Mitral regurgitation",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "allergies",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "Endorses depression",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "chest pain",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "shortness of breath",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "swelling in her legs",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "nasal congestion",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "nausea, vomiting, abdominal pain",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "suicidal or homicidal ideation",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "dyspnea on exertion",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "COVID-19 vaccine",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "blood pressure medication",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "lisinopril to 40 mg daily",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "Lasix 20 mg daily",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "therapy every week",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "dietary modifications",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "mammogram",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "Echocardiogram",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "repeat echocardiogram",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "Lipid panel",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "Elevated cholesterol",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "Grade 3/6 systolic ejection murmur",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "1+ pitting edema of the bilateral lower extremities",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "Blood Pressure: Elevated",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "decreased ejection fraction of 45%",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "reduced ejection fraction of 45%",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "retaining a little bit of fluid",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "out of control",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "annual exam",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "blood pressure medications",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "weekly therapy",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "Mitral regurgitation is present",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "blood pressures at home",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    }
+  ],
+  "ambiguous_terms": [
+    {
+      "text": "dax",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "ambient documentation software, not a person"
+    },
+    {
+      "text": "dragon",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "voice assistant software, not a person"
+    },
+    {
+      "text": "washington",
+      "field": "dialogue",
+      "is_pii": true,
+      "comment": "US state (location), not a person surname"
+    },
+    {
+      "text": "martha",
+      "field": "dialogue",
+      "is_pii": true,
+      "comment": "patient first name"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "encounter_id": "D2N087",
+  "phi": [
+    {"text": "richard", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "out in the woods", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "outdoors"},
+    {"text": "out in the yard", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "outside"},
+    {"text": "working in the yard", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "doing outdoor work"},
+    {"text": "hunter", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "outdoorsman"},
+    {"text": "hunting", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "outdoor activities"},
+    {"text": "hunting season", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the season"},
+    {"text": "windle season", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the season"},
+    {"text": "train dogs", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "train animals"},
+    {"text": "hunters", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "outdoorsmen"},
+    {"text": "out of the woods", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "outdoors"},
+    {"text": "pie", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "dessert"},
+    {"text": "apples cherry chocolate", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "various flavors"},
+    {"text": "bicon", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "the sweetest kind"},
+    {"text": "outside in the woods", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "outdoors"},
+    {"text": "working in the yard", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "doing outdoor work"},
+    {"text": "hunting", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "outdoor activities"}
+  ],
+  "medical_concepts": []
+}

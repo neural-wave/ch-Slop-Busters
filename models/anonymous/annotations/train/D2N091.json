@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N091",
+  "phi": [
+    {"text": "jerry", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "54 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "traveling all over the country", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "traveling a lot"},
+    {"text": "summer", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "season"},
+    {"text": "fall", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "next season"},
+    {"text": "meditation", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "relaxation techniques"},
+    {"text": "Jerry Nguyen", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "54-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "traveling all over the country", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "traveling a lot"},
+    {"text": "summer", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "season"},
+    {"text": "fall", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "next season"},
+    {"text": "meditation", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "relaxation techniques"}
+  ],
+  "medical_concepts": []
+}

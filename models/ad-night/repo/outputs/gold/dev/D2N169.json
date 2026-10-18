@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N169",
+  "pii": [
+    {"field": "dialogue", "text": "alan", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "61-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Alan", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Butler", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "61-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "dragon", "category": "NOT_A_NAME", "why": "dictation software"}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "encounter_id": "D2N029",
+  "pii": [
+    {"field": "dialogue", "text": "sophia", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "jackson", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "mrnr472348", "category": "ID", "risk": "high"},
+    {"field": "dialogue", "text": "57 year old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "april 10th", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "auto repair shop", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "Sophia", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Jackson", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "57-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "04/10", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "auto repair shop", "category": "OCCUPATION", "risk": "medium"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "clark level", "category": "EPONYM", "why": "melanoma staging (Clark level), not a person"},
+    {"field": "dialogue", "text": "breslow thickness", "category": "EPONYM", "why": "melanoma depth measure, not a person"},
+    {"field": "dialogue", "text": "national comprehensive cancer network", "category": "NOT_A_NAME", "why": "guideline body, not a personal organization"},
+    {"field": "note", "text": "Clark level", "category": "EPONYM", "why": "melanoma staging (Clark level), not a person"},
+    {"field": "note", "text": "Breslow thickness", "category": "EPONYM", "why": "melanoma depth measure, not a person"},
+    {"field": "note", "text": "National Comprehensive Cancer Network", "category": "NOT_A_NAME", "why": "guideline body, not a personal organization"}
+  ]
+}

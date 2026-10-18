@@ -1,0 +1,187 @@
+########## ENCOUNTER D2N028
+ICD-10 codes: K59.00 Constipation, unspecified; R16.0 Hepatomegaly, not elsewhere classified
+=== FIELD: dialogue
+[doctor] patrick allen . date of birth : 7/7/1977 . new patient visit . past medical history includes gerd , anxiety , depression . here for chronic abdominal pain . he had an abdominal ct on 1/23/2020 . impression is a normal ct of the ab- abdomen .
+[doctor] hello , are you mr. allen ?
+[patient] yes , i am .
+[doctor] hi . my name is dr. edwards . nice to meet you .
+[patient] nice to meet you .
+[doctor] welcome to the gi specialty clinic .
+[patient] thank you .
+[doctor] did you have any problems finding us ?
+[patient] no , i've been here with my sister once before .
+[doctor] good . so how can i help you today ? uh , the referral i have is for abdominal pain and diarrhea .
+[patient] right . so i've had ... i've been having this pain right here in my stomach , like right around here .
+[doctor] so in the area of your mid abdomen , just below the belly button ?
+[patient] correct . i've had the pain on and off for about two years . i finally went to the er and a ... a few months ago and they did a ct scan .
+[doctor] i saw that .
+[patient] yeah . they said they did n't really see anything on the scan .
+[doctor] yes , i agree . it looked normal .
+[patient] the problem is i'm either constipated or have explosive diarrhea .
+[doctor] is the pain there all the time ?
+[patient] it's a nagging feeling and it just depends . sometimes it bothers me , sometimes it does n't .
+[doctor] has this been the case over the past two years as well ?
+[patient] more recently in the past couple months , at least with the constipation and diarrhea .
+[doctor] and before that , how are your bowel movements ?
+[patient] they were normal .
+[doctor] uh , okay . so any blood in your stool ?
+[patient] nope .
+[doctor] do you feel like you have more constipation or diarrhea ?
+[patient] probably more constipation .
+[doctor] okay , so when you're constipated , do you not have a bowel movement or is the stool hard ?
+[patient] i usually do n't go , but when i do , it's hard .
+[doctor] and how often do you have a bowel movement when you are constipated ?
+[patient] about three to four times a week . it's like when i need to go to the bathroom , if i can massage it , it feels like it's moving some and i can eventually go .
+[doctor] okay . and when you have a bowel movement , does the pain change ?
+[patient] yeah , it gets a little better .
+[doctor] and are you eating and drinking okay ? any nausea or vomiting , heartburn or indigestion ?
+[patient] none of that .
+[doctor] okay . so tell me about the diarrhea , how often do you get it ?
+[patient] it kinda just depends on what i eat . i think i have a very sensitive stomach . if i eat pasta with a creamy sauce , i'm probably gon na have diarrhea .
+[doctor] okay . and it does n't happen for multiple days in a row or is it just one time ?
+[patient] it's usually just one time and then it's over .
+[doctor] and how's your weight been ? any fluctuation ?
+[patient] nice and pretty stable , although i could stand to lose about 25 pounds .
+[doctor] okay . and is there any family history of gi issues that you know of ?
+[patient] not that i can think of . well , actually my sister does have problems with her stomach too . she has irritable bowel syndrome and that is kind of what i always thought i had even thought i've never been diagnosed with it .
+[doctor] okay . and is there any family history of gi cancer or liver disease ?
+[patient] nope .
+[doctor] have you ever had any surgeries on your abdomen ?
+[patient] i've never had any surgery .
+[doctor] okay , so your gallbladder , appendix , all those are still intact ?
+[patient] yup .
+[doctor] and have you ever had a colonoscopy ?
+[patient] no . i thought that happen when you turn 50 .
+[doctor] well , that's for colon cancer screening , but there are other reasons to have a colonoscopy , like unexplained abdominal pain and changes in bowel habits .
+[patient] okay .
+[doctor] well , come have a seat here and lay back so i can examine you .
+[patient] okay .
+[doctor] i'm gon na start by listening to your belly with my steth- stethoscope . and i hear bowel sounds in all four quadrants .
+[patient] what does that mean ? is everything okay ?
+[doctor] it just means that i can hear little noises in all areas of your belly , which means your bowels are active and working .
+[patient] okay , good .
+[doctor] so now , i'm going to push on your upper and lower abdomen . let me know if you have any pain .
+[patient] it hurts a little when you push right there on the left side , near my belly button .
+[doctor] okay . i do feel stool in your lower colon , which would coincide with constipation , but i also feel a slight enlargement of your liver here on the upper right side . have you had any lab work done recently ?
+[patient] yes , i have a physical about four months ago and they ... i had blood drawn then .
+[doctor] okay . and did your primary care physician say anything about the lab results ?
+[patient] he said i had some very slightly elevated liver enzymes , but we would recheck them in about six months .
+[doctor] and you remember what enzymes were elevated , alt , ast , alp ?
+[patient] he said the alt and the ast were elevated .
+[doctor] and do you take any medications , either prescription or over-the-counter ?
+[patient] i take crestor and olmesartan daily and then tylenol for occasion- occasional pain .
+[doctor] and how frequently do you take the tylenol ?
+[patient] hardly ever . maybe once a month .
+[doctor] and do you consume alcohol ?
+[patient] uh , yes , but only a couple of beers after working in the yard on saturdays .
+[doctor] okay . and no previous history of heavy alcohol or drug use ?
+[patient] nope .
+[doctor] and have you had any recent issues with excessive bruising or bleeding ?
+[patient] nope .
+[doctor] and how about any issues with your ankles or feet swelling ?
+[patient] no .
+[doctor] okay . i'm gon na take a look at your eyes and skin . i do n't see any jaundice .
+[patient] what would cause that ?
+[doctor] issues with your liver . let me take a quick listen to your heart and lungs .
+[patient] okay .
+[doctor] lungs are clear , bilateral heart sounds are normal , no murmurs , gallops , or rubs noted .
+[patient] that's good .
+[doctor] yes . the rest of your physical exam is normal other than what seems to be an increased stool burden in your colon and a slight hepatomegaly .
+[patient] what's that ?
+[doctor] increase stool burden means that there's a lot of stool sitting in your colon .
+[patient] and that's the constipation , right ? but what about the other thing ?
+[doctor] the hepatomegaly means the liver is enlarged .
+[patient] but you said mine was slightly enlarged ?
+[doctor] correct .
+[patient] so what does that mean ?
+[doctor] well , let's talk about what we found and then some possible next steps if you're in agreement .
+[patient] okay .
+[doctor] so as i said , the hepatomegaly means your liver is enlarged .
+[patient] could that be why my stomach is hurting and i'm having issues with the constipation and diarrhea ?
+[doctor] no , i think you're constipated and have occasional bouts of diarrhea because of certain foods you eat . and we can get you started right away on a fiber supplement that should help with that .
+[patient] so what about my liver ? why is it enlarged ?
+[doctor] well , there are many reasons why people can have an elevated liver enzymes and also enlarged liver . some possible causes are certain medications that can be toxic to liver , alcohol abuse , fatty liver disease , hepatitis , cirrhosis , and other liver diseases like wilson's disease .
+[patient] so what do i need to do ?
+[doctor] well , i think since it's been about four months since your blood work was done , we should check your liver enzymes in addition to a few other labs .
+[patient] okay . and then what ?
+[doctor] we will get those drawn today and then depending upon the results you may need an ultrasound of your liver . i think we need to talk about your medications too .
+[patient] which medications ?
+[doctor] crestor , how long have you been taking that ?
+[patient] about 18 months .
+[doctor] okay . well , crestor is one of the medications that can cause liver toxicity so it may be a good idea to discuss other alternatives .
+[patient] should i talk to my primary care or can you change it ?
+[doctor] i would recommend calling your primary care and discuss that with him since he follows you for your blood pressure and cholesterol .
+[patient] okay . i'll call him this afternoon .
+[doctor] great . i also think we should go ahead and get you scheduled for a liver ultrasound . if your blood work looks good , then we can always cancel that .
+[patient] okay . when do you think i'll be able to get the ultrasound done ?
+[doctor] hopefully , within the next two weeks . you will receive a call from the radiology scheduling this afternoon to get it set up .
+[patient] okay . and then what happens ?
+[doctor] when i get the results from the test , i will contact you . and depending upon what we find , we'll come up with our next steps .
+[patient] and when should i see you again ?
+[doctor] uh , let's schedule an appointment when you check out to return in four weeks . we'll discuss how you're doing with the fiber supplement and your constipation and review test results to determine if we need to do further testing on your liver .
+[patient] okay . is there anything else i can do to help with these issues ?
+[doctor] definitely refrain from drinking any alcohol , increase your water intake to at least 48 ounces a day in addition to taking the fiber supplement to help with your constipation . and be mindful of eating foods that you were sensitive to so you can avoid the bouts of diarrhea .
+[patient] okay . and i'll talk to my primary care about my crestor .
+[doctor] excellent . and do you have any other questions for me ?
+[patient] i do n't think so .
+[doctor] great . so remember when you check out the front desk , schedule follow-up appointment with me for four weeks and then go to the lab to get your blood work drawn .
+[patient] okay . sounds good .
+[doctor] and expect a call from radiology scheduling about setting up your ultrasound .
+[patient] all right . thanks , dr. edwards .
+[doctor] thank you , mr. allen .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Abdominal pain and diarrhea.
+
+HISTORY OF PRESENT ILLNESS
+
+Patrick Allen is a 42-year-old male who presents for a new patient visit for chronic abdominal pain, constipation, and diarrhea.
+
+Mr. Allen reports experiencing intermittent mid-abdominal pain for approximately 2 years. The pain is localized just inferior to the umbilicus and he describes it as a “nagging feeling” when it is present. The pain sometimes improves following a bowel movement. Unfortunately, Mr. Allen reports that the pain has been present more often in the past 2 months. In 01/2020, the patient presented to the emergency room due to the pain and underwent a CT scan.
+
+In addition to the abdominal pain, Mr. Allen complains of constipation and episodic severe diarrhea for the past 2 months; however, he estimates that the constipation is more frequent than the diarrhea. When he is constipated, he has a bowel movement 3-4 times a week and the stools are hard. Regarding his diarrhea, he has noticed that it seems to be associated with certain foods. In particular, he notes that pasta with a creamy sauce is likely to prompt an episode of diarrhea. When this occurs, he usually has just 1 bowel movement of diarrhea and then it resolves. The patient states that, prior to 2 months ago, his bowel movements were normal. Mr. Allen notes that massaging his abdomen has sometimes been helpful in producing a bowel movement.
+
+The patient’s last physical was 4 months ago, and he confirms that he did have bloodwork that day. Mr. Allen reports that his primary care provider notified him that his AST and ALT were mildly elevated and advised that they would need to recheck his liver enzymes in 6 months. The patient’s medication list includes Crestor and olmesartan daily and he estimates that he has been taking the Crestor for approximately 18 months. He also takes Tylenol as needed for pain, approximately once a month. The patient states that he drinks 2 beers once a week and denies a history of heavy alcohol or drug use. He also denies excessive bruising or bleeding and any lower extremity edema.
+
+The patient denies blood in his stools, nausea, vomiting, heartburn, and indigestion. He confirms that he is eating and drinking normally, and his weight has been stable. He does acknowledge that he would like to lose 25 pounds, however. He has no family history of gastrointestinal cancer or liver disease; however, his sister has irritable bowel syndrome (IBS). The patient has not had any prior abdominal surgeries and he has never had a colonoscopy.
+
+PHYSICAL EXAM
+
+Respiratory
+Lungs clear to auscultation bilaterally.
+
+Cardiovascular
+No murmurs, gallops, or rubs.
+
+Abdomen
+Normoactive bowel sounds in all 4 quadrants. There is mild left periumbilical tenderness to palpation, mild hepatomegaly, and increased stool burden in colon.
+
+RESULTS
+
+CT of Abdomen, 01/23/2020.
+Impression: Normal CT of abdomen.
+
+ASSESSMENT
+
+• Constipation
+• Mild hepatomegaly
+
+PLAN
+
+Patrick Allen is a 42-year-old male who presents for a new patient visit for chronic abdominal pain, constipation, and diarrhea. The most likely etiology of his abdominal pain is constipation given his history, exam with increased stool burden, and normal abdominal CT. Mild hepatomegaly was also noted on exam today and the patient reportedly had elevated liver enzymes on labs with his primary care provider 4 months ago. The patient is currently on Crestor which may be contributing to his elevated liver enzymes. We discussed findings, diagnosis, and next steps at length.
+
+Constipation
+• Start daily fiber supplement and increase water consumption to at least 48 ounces daily to help with bowel regularity.
+• Avoid trigger foods that may cause episodes of diarrhea.
+
+Mild Hepatomegaly
+• Repeat liver enzyme labs today.
+• Schedule a liver ultrasound pending lab results.
+• Encouraged to cease alcohol consumption.
+• Patient to contact his PCP to discuss alternative medications.
+
+INSTRUCTIONS
+
+Return to clinic in 4 weeks.
+

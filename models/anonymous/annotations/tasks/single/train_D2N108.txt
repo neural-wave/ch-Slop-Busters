@@ -1,0 +1,81 @@
+########## ENCOUNTER D2N108
+=== FIELD: dialogue
+[doctor] hey gregory good to see you today so take a look at my notes and i see that you're here you've had a nonhealing foot ulcer so can you tell me how you're doing how long have you had it what's going on with it
+[patient] sure so i've had it for about two months now and it's recently become red and is draining so i was concerned about how it's healed
+[doctor] okay and when you when you got it would you have any trauma to your foot or it just just did it pop up all of a sudden
+[patient] i think i may have gotten it from walking barefoot on the beach
+[doctor] okay alright and i saw you you did see your pcp before you came in did they put you on antibiotics
+[patient] they did start me on some medication but i did n't i did n't pick them up from the pharmacy yet
+[doctor] okay do you know which ones that they prescribed for you
+[patient] i do n't recall the name exactly
+[doctor] do n't recall alright
+[patient] something i had taken it before
+[doctor] okay so when you what beach did you go to when you you hurt it
+[patient] i'm sorry
+[doctor] so i was asking which beach did you did you go to when you hurt your foot
+[patient] at i was at dewey beach in my ambulance
+[doctor] dewey beach wow that sounds like fun i wish i could be a mab right now but all or as lucky as i guess as you are to go to dewey beach okay so does it hurt
+[patient] it sometimes it throbs does n't i do n't have specific pain but sometimes it does feel like there is some throbbing going on and again my my biggest concern is the it started to drain and it looks a little red
+[doctor] okay
+[patient] i have n't had that before
+[doctor] okay and that makes sense alright so as far as your diabetes you know and i think that's probably a a major cause of this not being able to heal how well are how well is that controlled
+[patient] i take my medication but i do n't check my sugar all the time
+[doctor] okay do you
+[patient] i'm not really sure how
+[doctor] okay do you know what your last a1c is i'm pretty sure you doc talk to you about it
+[patient] i think they told me it was around ten
+[doctor] around ten okay yeah that that's that's definitely pretty high yeah you definitely if your if your pcp has n't gotten created treatment plan for you definitely need to go back and see them so you can get that controlled alright so let me do a quick physical exam on your foot here today your vital signs look normal you do n't have a fever so let me just take a look at your foot so on your foot exam there is a one by two inch circular wound on the dorsal aspect of the lateral right foot so it's just proximal to the fifth mtp joint there is some redness some drainage present you have some edema around it there is fluid like you said that's coming out of it i do n't see any necrosis you do n't have any odor and i do n't appreciate any bony exposure so it pretty much is like you said it's it's red it's swollen i think you have an infection in there as well so when i touch it does that hurt
+[patient] no i i feel like increased pressure but it's not distinct
+[doctor] okay alright that's good so before you came in we did get an x-ray of your right foot and there is no evidence of osteomyelitis that means that luckily you do n't have a bone infection so that's great i think it's just in your skin so let's talk a little bit about your assessment and plan so you do have that diabetic foot ulcer and what i wan na do is i wan na order an abi ankle brachial index just to determine the blood supply in your foot to see if we can actually heal that ulcer i'm gon na also perform a debridement here just to take off some of that dead tissue and then i'm gon na prescribe you some clindamycin you can do that four hundred milligrams you take that for seven days take that twice a day just to try to get rid of that infection which you currently do have and that will get rid of some of that that redness and and drainage that that's happening right now did your doc did your pcp give you a surgical shoe something that you would wear while this is happening
+[patient] they did n't they mentioned that you may be able to give it to me
+[doctor] okay yeah we could definitely get you a a shoe because if you wear your regular shoes that pressure on that foot can really irritate it and take you backwards so i'll get you a shoe where you can wear that for the next month you know we just wan na make sure that it does heal and then i wan na see you back again in two weeks and we can we'll possibly do another debridement at that time we'll just take a look and see how the tissue is doing so how does that sound
+[patient] that sounds great
+[doctor] alright do you have any other question
+[patient] i do if anything happens in between
+[doctor] please feel free to call the office yeah please feel free to call you call the office we can definitely get you in you know if you are having any other issues and if it's an emergency if you feel like you're getting a fever feeling well please go to the urgent care or the er if you feel getting black or anything like that but otherwise we'll see you back in two weeks
+[patient] okay sounds great thanks document
+[doctor] alright great
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right foot ulcer.
+
+HISTORY OF PRESENT ILLNESS
+
+Gregory Hernandez is a pleasant 40-year-old male who presents to the clinic today for the evaluation of a non-healing right foot ulcer. Onset of ulcer was approximately 2 months ago after walking barefoot on the beach. He reports the ulcer has recently become red and is draining. At times he will also experience throbbing pain. He has seen his primary care physician and was prescribed antibiotics, however, he has not started them yet and does not recall the name of the medication.
+
+The patient is a diabetic. He is taking medication for this, however, he does not monitor his blood sugar consistently. His last A1C was around 10.
+
+MEDICAL HISTORY
+
+Patient reports history of diabetes.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports right foot pain.
+Skin: Reports right foot ulcer with redness and drainage.
+
+VITALS
+
+Vital signs are normal.
+
+PHYSICAL EXAM
+
+MSK: Examination of the right foot: There is a 1 x 2 inch circular wound on the dorsal aspect laterally just proximal to the 5th MTP joint. There is some redness and drainage present as well as edema. No necrosis, odor, or bony exposure. Nontender to palpation.
+
+RESULTS
+
+3 views of the right foot were taken. These reveal no evidence of osteomyelitis.
+
+ASSESSMENT
+
+Right diabetic foot ulcer.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with the patient in regards to his current symptoms. I have explained to him that his x-rays did not reveal any evidence of osteomyelitis. I have recommended that we obtain an ankle brachial index to determine the blood supply in his foot. Debridement will be performed. A prescription for clindamycin 400 mg 2 times per day for 7 days will be provided as he does seem to have an infection. He will also be placed in a surgical shoe to provide increased support for the next month.
+
+INSTRUCTIONS
+
+The patient will follow up with me in 2 weeks to assess his progress and for possible repeat debridement. He has been advised to call the office if his symptoms worsen and we will get him in sooner, however, if he starts to develop a fever or necrosis he has been instructed to go to the ER.
+

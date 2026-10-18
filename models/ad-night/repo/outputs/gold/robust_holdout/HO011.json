@@ -1,0 +1,319 @@
+{
+  "encounter_id": "HO011",
+  "pii": [
+    {
+      "field": "note",
+      "text": "ROBINA COAST HOSPITAL",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "NGATA",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Kahu",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Rawiri",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "7714302",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "02-Feb-2018",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "8y 7m",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "2953 61847 2 / 3",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "8003 6081 7742 0195",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "17 Banksia Cres",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Burleigh Heads",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "QLD 4220",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Mere",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "0491 570 156",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "13/09/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Tomás",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Ferreira-Lynch",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Ferreira",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Lynch",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Leonie",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Leonie Strong",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Dr Strong",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Palm Beach Family Medical",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "(07) 5550 4417",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "8 year old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "13 September 2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Matariki",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "aged 11",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "RCH-XR-26-0918834",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Anh",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Nguyen",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Burleigh Ridge State School",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Hamish",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Grey",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "https://kids.robinacoast.example.org.au/factsheets/wrist-buckle",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "04/10/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "4471829T",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "(07) 5550 1234",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "13.09.26",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "14.09.26",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "KJ",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "trampolining",
+      "category": "CODE_EVIDENCE",
+      "why": "activity supports Y93.44 Activity, trampolining"
+    },
+    {
+      "field": "note",
+      "text": "trampoline",
+      "category": "CODE_EVIDENCE",
+      "why": "mechanism/activity supports Y93.44"
+    },
+    {
+      "field": "note",
+      "text": "backyard",
+      "category": "CODE_EVIDENCE",
+      "why": "place of occurrence supports Y92.017 garden or yard of private house"
+    },
+    {
+      "field": "note",
+      "text": "family trampoline in the backyard",
+      "category": "CODE_EVIDENCE",
+      "why": "place and activity evidence for Y92.017 / Y93.44"
+    },
+    {
+      "field": "note",
+      "text": "6/10",
+      "category": "CLINICAL_NUMBER",
+      "why": "pain score, not a date"
+    },
+    {
+      "field": "note",
+      "text": "2/10",
+      "category": "CLINICAL_NUMBER",
+      "why": "pain score, not a date"
+    },
+    {
+      "field": "note",
+      "text": "15/15",
+      "category": "CLINICAL_NUMBER",
+      "why": "GCS, not a date"
+    },
+    {
+      "field": "note",
+      "text": "Salter-Harris",
+      "category": "EPONYM",
+      "why": "physeal fracture classification, not people"
+    },
+    {
+      "field": "note",
+      "text": "pulse strong",
+      "category": "NOT_A_NAME",
+      "why": "'strong' describes the radial pulse, not Dr Strong"
+    },
+    {
+      "field": "note",
+      "text": "torus",
+      "category": "CODE_EVIDENCE",
+      "why": "fracture type supports S52.521A"
+    },
+    {
+      "field": "note",
+      "text": "on the grass",
+      "category": "CODE_EVIDENCE",
+      "why": "landing surface in the yard supports Y92.017 garden or yard of private house"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "encounter_id": "SYN019",
+  "pii": [
+    {"field": "note", "text": "GLENMORRIS ROYAL HOSPITAL", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "H26-04417", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "GRH7730551", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "401 023 7765", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "LLEWELLYN", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Seren", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Angharad", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "01/07/2002", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "Age: 24", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "24 y/o", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Ward 9", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Oliver", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Oliver Hodgkin", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Dr. Hodgkin", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "ext. 6620", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "11/07/2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "15/07/2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Rachel", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Okeke", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Inês", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Carvalho", "category": "PERSON_NAME", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "note", "text": "Hodgkin lymphoma", "category": "EPONYM", "why": "diagnosis, not the haematologist"},
+    {"field": "note", "text": "Hodgkin and Reed-Sternberg", "category": "EPONYM", "why": "diagnostic cell type"},
+    {"field": "note", "text": "A1-A4", "category": "CLINICAL_NUMBER", "why": "tissue block labels"}
+  ]
+}

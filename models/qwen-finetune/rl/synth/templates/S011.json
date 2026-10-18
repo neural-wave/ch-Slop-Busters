@@ -1,0 +1,626 @@
+{
+ "id": "S011",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S02.2XXA",
+   "description": "Fracture of nasal bones, initial encounter for closed fracture"
+  },
+  {
+   "code": "W21.13XA",
+   "description": "Struck by golf club, initial encounter"
+  },
+  {
+   "code": "Y92.39",
+   "description": "Other specified sports and athletic area as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.53",
+   "description": "Activity, golf"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . how are you ?\n[patient] i've been better , doc . i look like i went a few rounds with a boxer .\n[doctor] yeah , i can see that . so i'm doctor {DOCTOR_LAST} . i'm going to be taking care of you today . tell me what happened .\n[patient] so this was yesterday afternoon . i was golfing with my buddy {OTHER_FIRST} out at the {PLACE} golf course . we've been playing together every saturday for about twenty years , same foursome .\n[doctor] okay .\n[patient] and we were on the seventh hole , and my ball had gone into the rough , and his was right next to it . and i was bent over looking for my ball , and i guess i was standing a little too close behind him , and he did n't see me , and he took a full backswing with his driver and the club came right back and hit me square in the face .\n[doctor] oh , no . so the golf club hit you right in the nose ?\n[patient] right across the bridge of my nose , yeah . i heard a crunch .\n[doctor] okay . did you lose consciousness at all ?\n[patient] no , no . i did n't black out . i sat down on the grass for a minute because i was seeing stars , but i knew where i was the whole time .\n[doctor] okay . and did your nose bleed ?\n[patient] oh , it bled a lot . {OTHER_FIRST} gave me a towel from his bag and we held pressure for maybe fifteen or twenty minutes before it slowed down .\n[doctor] okay . and any bleeding since then ?\n[patient] a little bit of oozing this morning when i blew my nose , but nothing like yesterday .\n[doctor] okay . and how is your breathing through your nose ?\n[patient] the right side is kind of blocked . i can breathe through the left side okay .\n[doctor] okay . any headache ?\n[patient] a little bit of a headache , mostly right here across my forehead and my nose .\n[doctor] any nausea , vomiting ?\n[patient] no .\n[doctor] any changes in your vision , double vision ?\n[patient] no , my vision is fine .\n[doctor] okay . any pain in your teeth or trouble with your bite ?\n[patient] no , my teeth feel fine . i can chew okay .\n[doctor] okay . did you finish the round ?\n[patient] no , we called it a day . the ranger drove us back to the clubhouse in the cart .\n[doctor] okay . and what have you been doing for the pain ?\n[patient] i put a bag of frozen peas on it last night and i took some tylenol .\n[doctor] okay , good . that's the right thing to do . and i see you're also here with a history of high blood pressure ?\n[patient] yes . i've had high blood pressure for , oh , about ten years now .\n[doctor] and you're taking lisinopril for that ?\n[patient] lisinopril , twenty milligrams , once a day .\n[doctor] okay . and are you checking your blood pressure at home ?\n[patient] i do . my wife makes me . it's usually running around one thirty over eighty .\n[doctor] okay , that's pretty good . today it's a little bit high , it's one fifty two over ninety , but you're also in pain , so i'm not too worried about that .\n[patient] yeah , i figured it would be up today .\n[doctor] all right . and are you still working ?\n[patient] no , i'm a retired mail carrier . thirty two years with the postal service . that's why i have so much time for golf .\n[doctor] that sounds well earned . okay , let me take a look at you . i'm going to look at your face and press on a few places . let me know if anything hurts .\n[patient] okay .\n[doctor] so , on exam , you have swelling across the nasal bridge and some bruising under both eyes . i do see a small deviation of your nose to the left . does it hurt when i press here ?\n[patient] yes , that's sore .\n[doctor] okay . and here on your cheekbones ?\n[patient] no , that's fine .\n[doctor] okay . there's no tenderness over the cheekbones or around the eye sockets . your eye movements are full and your pupils are equal and reactive . i'm going to look inside your nose with a light . so i do n't see a septal hematoma , which is a collection of blood on the septum that we would need to drain . there's some dried blood on the right side , and the septum is a little bit swollen , but no active bleeding .\n[patient] okay .\n[doctor] your bite looks normal and your teeth are stable . neurologically you're intact .\n[patient] good .\n[doctor] so we got an x-ray of your face before i came in . hey dragon , show me the nasal bone x-ray . so looking at this , you have a fracture of the nasal bones with a mild displacement to the left . i do n't see any other facial fractures .\n[patient] so it's broken .\n[doctor] it is broken . so , let's talk a little bit about my assessment and plan . for your first problem , the broken nose , this is a closed nasal bone fracture from being struck by a golf club . the good news is there's no septal hematoma , and there are no other facial fractures . right now there's too much swelling to tell how crooked it's going to look , so i want you to keep icing it , keep your head elevated when you sleep , and you can continue the tylenol . i'd like to avoid ibuprofen for the first couple of days because of the bleeding .\n[patient] okay .\n[doctor] i'm going to refer you to ent , and they'll see you in about five to seven days , once the swelling goes down . if your nose is still deviated , they can do a closed reduction , which is basically resetting it , and that works best within the first ten days or so .\n[patient] okay , that sounds fine .\n[doctor] and if you have any heavy bleeding that wo n't stop with pressure , clear fluid running from your nose , worsening headache , or vision changes , i want you to go to the emergency room .\n[patient] okay .\n[doctor] for your second problem , the high blood pressure , i want you to continue the lisinopril twenty milligrams a day . keep checking at home , and if it stays above one forty over ninety once the pain settles down , let me know .\n[patient] will do .\n[doctor] and no golf for a couple of weeks , and when you go back , maybe stand a little farther back from {OTHER_FIRST} .\n[patient] believe me , i will .\n[doctor] all right . any questions ?\n[patient] no , i think that covers it . thank you , doctor .\n[doctor] you're welcome .",
+ "note": "CHIEF COMPLAINT\n\nFacial injury.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with a history of hypertension who presents for evaluation of a nasal injury sustained on {DATE_SPOKEN}. The patient was golfing at the {PLACE} golf course when his playing partner's driver struck him across the bridge of the nose on the backswing. He did not lose consciousness. He had significant epistaxis, controlled with 15 to 20 minutes of direct pressure, and minor oozing this morning. He reports right-sided nasal obstruction and a mild frontal headache. He denies nausea, vomiting, visual changes, diplopia, dental pain or malocclusion. He has been using ice and Tylenol.\n\nHe has a 10-year history of hypertension, treated with lisinopril 20 mg daily. Home readings are around 130/80.\n\nSOCIAL HISTORY\n\nRetired mail carrier.\n\nPHYSICAL EXAM\n\nVitals: Blood pressure 152/90.\n\nFace: Swelling over the nasal bridge with bilateral periorbital ecchymosis. Mild deviation of the nasal dorsum to the left. Tenderness over the nasal bones. No tenderness over the zygomas or orbital rims.\n\nEyes: Extraocular movements intact. Pupils equal and reactive.\n\nNose: Dried blood in the right nare. Mild septal swelling. No septal hematoma. No active bleeding.\n\nMouth: Normal occlusion. Dentition stable.\n\nNeuro: Nonfocal.\n\nRESULTS\n\nX-ray of the nasal bones demonstrates a nasal bone fracture with mild leftward displacement. No other facial fractures.\n\nASSESSMENT AND PLAN\n\n1. Closed nasal bone fracture, struck by a golf club while golfing at a golf course.\n- Medical Reasoning: Mildly displaced nasal bone fracture without septal hematoma or other facial fractures.\n- Medical Treatment: Ice, head elevation and Tylenol. Avoid NSAIDs for 48 hours.\n- Referral: ENT in 5 to 7 days to assess for closed reduction once swelling improves.\n- Patient Education and Counseling: Return precautions reviewed, including uncontrolled epistaxis, clear rhinorrhea, worsening headache or visual change. No golf for 2 weeks.\n\n2. Hypertension.\n- Medical Reasoning: Elevated today in the setting of acute pain; well controlled at home.\n- Medical Treatment: Continue lisinopril 20 mg daily. Continue home monitoring and report readings above 140/90.\n\nPatient Agreements: The patient understands and agrees with the recommended medical treatment plan.",
+ "medical_concepts": [
+  {
+   "text": "i was golfing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "golf course",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "took a full backswing with his driver and the club came right back and hit me square in the face",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the golf club hit you right in the nose",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bridge of my nose",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "seeing stars",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "did n't black out",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "it bled a lot",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the right side is kind of blocked",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "headache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nausea",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vomiting",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "double vision",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain in your teeth",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "high blood pressure",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril , twenty milligrams , once a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "one fifty two over ninety",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "swelling across the nasal bridge",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bruising under both eyes",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "small deviation of your nose to the left",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no tenderness over the cheekbones or around the eye sockets",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your eye movements are full",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pupils are equal and reactive",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "septal hematoma",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "the septum is a little bit swollen",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "nasal bone x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "fracture of the nasal bones",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild displacement to the left",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "other facial fractures",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "closed nasal bone fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "struck by a golf club",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "closed reduction",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "golf",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "nose",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "golfing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "golf course",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "driver struck him across the bridge of the nose on the backswing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "epistaxis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "right-sided nasal obstruction",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild frontal headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nausea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vomiting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "visual changes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "diplopia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dental pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "malocclusion",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril 20 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "130/80",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Blood pressure 152/90",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Swelling over the nasal bridge",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bilateral periorbital ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild deviation of the nasal dorsum to the left",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness over the nasal bones",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No tenderness over the zygomas or orbital rims",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Extraocular movements intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pupils equal and reactive",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Dried blood in the right nare",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild septal swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No septal hematoma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Normal occlusion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Nonfocal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-ray of the nasal bones",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "nasal bone fracture with mild leftward displacement",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "No other facial fractures",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Closed nasal bone fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "struck by a golf club",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mildly displaced nasal bone fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "NSAIDs",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "closed reduction",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "clear rhinorrhea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software"
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "drug brand name"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S02.2XXA",
+   "spans": [
+    {
+     "text": "fracture of the nasal bones",
+     "field": "dialogue"
+    },
+    {
+     "text": "closed nasal bone fracture",
+     "field": "dialogue"
+    },
+    {
+     "text": "Closed nasal bone fracture",
+     "field": "note"
+    },
+    {
+     "text": "nasal bone fracture with mild leftward displacement",
+     "field": "note"
+    },
+    {
+     "text": "X-ray of the nasal bones",
+     "field": "note"
+    },
+    {
+     "text": "Tenderness over the nasal bones",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W21.13XA",
+   "spans": [
+    {
+     "text": "the golf club hit you right in the nose",
+     "field": "dialogue"
+    },
+    {
+     "text": "struck by a golf club",
+     "field": "dialogue"
+    },
+    {
+     "text": "struck by a golf club",
+     "field": "note"
+    },
+    {
+     "text": "driver struck him across the bridge of the nose on the backswing",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.39",
+   "spans": [
+    {
+     "text": "golf course",
+     "field": "dialogue"
+    },
+    {
+     "text": "golf course",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.53",
+   "spans": [
+    {
+     "text": "i was golfing",
+     "field": "dialogue"
+    },
+    {
+     "text": "golfing",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "high blood pressure",
+     "field": "dialogue"
+    },
+    {
+     "text": "lisinopril , twenty milligrams , once a day",
+     "field": "dialogue"
+    },
+    {
+     "text": "hypertension",
+     "field": "note"
+    },
+    {
+     "text": "lisinopril 20 mg daily",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "retired mail carrier",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "former occupation"
+  },
+  {
+   "text": "thirty two years with the postal service",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "career length with a named employer type"
+  },
+  {
+   "text": "every saturday for about twenty years , same foursome",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive long-standing routine"
+  },
+  {
+   "text": "Retired mail carrier",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "former occupation"
+  }
+ ]
+}

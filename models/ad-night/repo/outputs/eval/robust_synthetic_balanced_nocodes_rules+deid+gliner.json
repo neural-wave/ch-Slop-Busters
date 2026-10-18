@@ -1,0 +1,3090 @@
+{
+ "name": "robust_synthetic_balanced_nocodes_rules+deid+gliner",
+ "n_records": 24,
+ "schema_errors": [],
+ "privacy": {
+  "n_encounters": 24,
+  "removed": {
+   "ALL": 0.9699,
+   "cat:AGE": 0.9474,
+   "cat:DATE": 1.0,
+   "cat:DOB": 1.0,
+   "cat:ID": 1.0,
+   "cat:LOCATION": 0.9876,
+   "cat:OCCUPATION": 0.2857,
+   "cat:ORGANIZATION": 0.8519,
+   "cat:OTHER_QI": 0.0,
+   "cat:PATIENT_NAME": 0.9828,
+   "cat:PERSON_NAME": 1.0,
+   "cat:YEAR": 1.0,
+   "dataset:discharge_letter": 0.9733,
+   "dataset:er_triage": 0.939,
+   "dataset:nursing_handoff": 0.9561,
+   "dataset:phone_triage": 0.9385,
+   "dataset:radiology_pathology": 1.0,
+   "dataset:referral_email": 0.9909,
+   "field:dialogue": 0.9242,
+   "field:note": 0.9739,
+   "items_fully_removed": 0.9624,
+   "risk:high": 0.9935,
+   "risk:high+medium": 0.9758,
+   "risk:low": 0.0,
+   "risk:medium": 0.9231
+  },
+  "counts": {
+   "ALL": [
+    806,
+    831
+   ],
+   "cat:AGE": [
+    36,
+    38
+   ],
+   "cat:DATE": [
+    71,
+    71
+   ],
+   "cat:DOB": [
+    30,
+    30
+   ],
+   "cat:ID": [
+    115,
+    115
+   ],
+   "cat:LOCATION": [
+    159,
+    161
+   ],
+   "cat:OCCUPATION": [
+    4,
+    14
+   ],
+   "cat:ORGANIZATION": [
+    23,
+    27
+   ],
+   "cat:OTHER_QI": [
+    0,
+    5
+   ],
+   "cat:PATIENT_NAME": [
+    114,
+    116
+   ],
+   "cat:PERSON_NAME": [
+    248,
+    248
+   ],
+   "cat:YEAR": [
+    6,
+    6
+   ],
+   "dataset:discharge_letter": [
+    182,
+    187
+   ],
+   "dataset:er_triage": [
+    77,
+    82
+   ],
+   "dataset:nursing_handoff": [
+    109,
+    114
+   ],
+   "dataset:phone_triage": [
+    122,
+    130
+   ],
+   "dataset:radiology_pathology": [
+    99,
+    99
+   ],
+   "dataset:referral_email": [
+    217,
+    219
+   ],
+   "field:dialogue": [
+    61,
+    66
+   ],
+   "field:note": [
+    745,
+    765
+   ],
+   "items_fully_removed": [
+    640,
+    665
+   ],
+   "risk:high": [
+    614,
+    618
+   ],
+   "risk:high+medium": [
+    806,
+    826
+   ],
+   "risk:low": [
+    0,
+    5
+   ],
+   "risk:medium": [
+    192,
+    208
+   ]
+  },
+  "keep_survival": {
+   "ALL": 0.9552,
+   "cat:CLINICAL_NUMBER": 0.9556,
+   "cat:CODE_EVIDENCE": 0.9762,
+   "cat:EPONYM": 0.9062,
+   "cat:NOT_A_NAME": 1.0
+  },
+  "leaks": [
+   {
+    "encounter_id": "SYN003",
+    "field": "note",
+    "text": "58F",
+    "category": "AGE",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN003",
+    "field": "note",
+    "text": "primary school teacher",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN004",
+    "field": "note",
+    "text": "33M",
+    "category": "AGE",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN004",
+    "field": "note",
+    "text": "Old Mill Trail",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN004",
+    "field": "note",
+    "text": "warehouse supervisor",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN005",
+    "field": "note",
+    "text": "community pharmacist",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN006",
+    "field": "note",
+    "text": "Green Mountain Family Practice",
+    "category": "LOCATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN007",
+    "field": "note",
+    "text": "Dot",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN008",
+    "field": "note",
+    "text": "third-year engineering student",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN008",
+    "field": "note",
+    "text": "share house with two friends",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN009",
+    "field": "note",
+    "text": "retired letter carrier",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN011",
+    "field": "note",
+    "text": "call-centre team leader",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN013",
+    "field": "note",
+    "text": "school dinner lady",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN014",
+    "field": "note",
+    "text": "late husband",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN015",
+    "field": "note",
+    "text": "twin brother",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN015",
+    "field": "note",
+    "text": "Twi",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN016",
+    "field": "note",
+    "text": "long-haul HGV driver",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN021",
+    "field": "dialogue",
+    "text": "Riverbend Health",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN021",
+    "field": "dialogue",
+    "text": "Ray",
+    "category": "PATIENT_NAME",
+    "risk": "high",
+    "left": 1,
+    "of": 2
+   },
+   {
+    "encounter_id": "SYN021",
+    "field": "note",
+    "text": "Riverbend Health",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN022",
+    "field": "dialogue",
+    "text": "Little Sprouts Daycare",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN022",
+    "field": "note",
+    "text": "Little Sprouts",
+    "category": "ORGANIZATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN023",
+    "field": "dialogue",
+    "text": "violinist",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN023",
+    "field": "note",
+    "text": "violinist",
+    "category": "OCCUPATION",
+    "risk": "medium",
+    "left": 1,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN024",
+    "field": "dialogue",
+    "text": "Biscuit",
+    "category": "OTHER_QI",
+    "risk": "low",
+    "left": 1,
+    "of": 1
+   }
+  ],
+  "over_removed_keep_items": [
+   {
+    "encounter_id": "SYN003",
+    "field": "note",
+    "text": "House-Brackmann",
+    "category": "EPONYM",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN003",
+    "field": "note",
+    "text": "Ramsay Hunt",
+    "category": "EPONYM",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN005",
+    "field": "note",
+    "text": "2/7",
+    "category": "CLINICAL_NUMBER",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN016",
+    "field": "note",
+    "text": "2/52",
+    "category": "CLINICAL_NUMBER",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN019",
+    "field": "note",
+    "text": "Hodgkin and Reed-Sternberg",
+    "category": "EPONYM",
+    "kept": 0,
+    "of": 1
+   },
+   {
+    "encounter_id": "SYN021",
+    "field": "dialogue",
+    "text": "gardening",
+    "category": "CODE_EVIDENCE",
+    "kept": 0,
+    "of": 1
+   }
+  ],
+  "edit_precision": 0.9488,
+  "edits_matching_gold": 741,
+  "edits_not_in_gold": 40,
+  "edits_not_in_gold_examples": [
+   {
+    "encounter_id": "SYN001",
+    "field": "note",
+    "category": "PATIENT_NAME",
+    "source": "deid:patient",
+    "text": "TTP",
+    "start": 903
+   },
+   {
+    "encounter_id": "SYN002",
+    "field": "note",
+    "category": "FACILITY",
+    "source": "deid:hosp",
+    "text": "NH",
+    "start": 830
+   },
+   {
+    "encounter_id": "SYN003",
+    "field": "note",
+    "category": "PERSON_NAME",
+    "source": "rule:cap_name",
+    "text": "Majors",
+    "start": 671
+   },
+   {
+    "encounter_id": "SYN003",
+    "field": "note",
+    "category": "LOCATION",
+    "source": "format:ward_room_bed",
+    "text": "cubicle 3",
+    "start": 678
+   },
+   {
+    "encounter_id": "SYN003",
+    "field": "note",
+    "category": "FACILITY",
+    "source": "deid:hosp",
+    "text": "House-Brackmann",
+    "start": 1022
+   },
+   {
+    "encounter_id": "SYN003",
+    "field": "note",
+    "category": "PATIENT_NAME",
+    "source": "deid:patient",
+    "text": "Ramsay",
+    "start": 1091
+   },
+   {
+    "encounter_id": "SYN003",
+    "field": "note",
+    "category": "PATIENT_NAME",
+    "source": "deid:patient",
+    "text": "Hunt",
+    "start": 1098
+   },
+   {
+    "encounter_id": "SYN005",
+    "field": "note",
+    "category": "PATIENT_NAME",
+    "source": "rule:name_field",
+    "text": "Mrs",
+    "start": 251
+   },
+   {
+    "encounter_id": "SYN005",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "Ward",
+    "start": 435
+   },
+   {
+    "encounter_id": "SYN005",
+    "field": "note",
+    "category": "DATE",
+    "source": "deid:date",
+    "text": "2/7",
+    "start": 733
+   },
+   {
+    "encounter_id": "SYN006",
+    "field": "note",
+    "category": "PERSON_NAME",
+    "source": "format:nickname",
+    "text": "Orthopaedics",
+    "start": 469
+   },
+   {
+    "encounter_id": "SYN007",
+    "field": "note",
+    "category": "PATIENT_NAME",
+    "source": "rule:name_field",
+    "text": "Mrs",
+    "start": 401
+   },
+   {
+    "encounter_id": "SYN007",
+    "field": "note",
+    "category": "FACILITY",
+    "source": "deid:hosp",
+    "text": "NHS",
+    "start": 458
+   },
+   {
+    "encounter_id": "SYN008",
+    "field": "note",
+    "category": "PATIENT_NAME",
+    "source": "rule:name_field",
+    "text": "Mr",
+    "start": 261
+   },
+   {
+    "encounter_id": "SYN008",
+    "field": "note",
+    "category": "ORGANIZATION",
+    "source": "gliner:organization",
+    "text": "IBD MDT",
+    "start": 1470
+   },
+   {
+    "encounter_id": "SYN008",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "format:staff_role",
+    "text": "Head",
+    "start": 2292
+   },
+   {
+    "encounter_id": "SYN009",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "Heart",
+    "start": 2488
+   },
+   {
+    "encounter_id": "SYN011",
+    "field": "note",
+    "category": "FACILITY",
+    "source": "deid:hosp",
+    "text": "NHS",
+    "start": 222
+   },
+   {
+    "encounter_id": "SYN011",
+    "field": "note",
+    "category": "FACILITY",
+    "source": "deid:hosp",
+    "text": "NHS",
+    "start": 1633
+   },
+   {
+    "encounter_id": "SYN012",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "format:staff_field",
+    "text": "Lung",
+    "start": 6
+   },
+   {
+    "encounter_id": "SYN012",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "Lung",
+    "start": 158
+   },
+   {
+    "encounter_id": "SYN012",
+    "field": "note",
+    "category": "PATIENT_NAME",
+    "source": "deid:patient",
+    "text": "CHI",
+    "start": 269
+   },
+   {
+    "encounter_id": "SYN012",
+    "field": "note",
+    "category": "PATIENT_NAME",
+    "source": "identity:sweep",
+    "text": "CHI",
+    "start": 413
+   },
+   {
+    "encounter_id": "SYN012",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "Lung",
+    "start": 1616
+   },
+   {
+    "encounter_id": "SYN014",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "gliner:doctor",
+    "text": "HCP",
+    "start": 1680
+   },
+   {
+    "encounter_id": "SYN014",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "HCP",
+    "start": 1900
+   },
+   {
+    "encounter_id": "SYN016",
+    "field": "note",
+    "category": "FACILITY",
+    "source": "deid:hosp",
+    "text": "BEDSIDE NURSING",
+    "start": 4
+   },
+   {
+    "encounter_id": "SYN016",
+    "field": "note",
+    "category": "LOCATION",
+    "source": "deid:loc",
+    "text": "HANDOVER",
+    "start": 20
+   },
+   {
+    "encounter_id": "SYN016",
+    "field": "note",
+    "category": "DATE",
+    "source": "deid:date",
+    "text": "2/52",
+    "start": 493
+   },
+   {
+    "encounter_id": "SYN016",
+    "field": "note",
+    "category": "ID",
+    "source": "gliner:medical_record_number",
+    "text": "HR 58-110",
+    "start": 1094
+   },
+   {
+    "encounter_id": "SYN017",
+    "field": "note",
+    "category": "PHONE",
+    "source": "gliner:phone_number",
+    "text": "07:24",
+    "start": 1842
+   },
+   {
+    "encounter_id": "SYN019",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "identity:sweep",
+    "text": "Hodgkin",
+    "start": 1117
+   },
+   {
+    "encounter_id": "SYN019",
+    "field": "note",
+    "category": "FACILITY",
+    "source": "deid:hosp",
+    "text": "FRCPath",
+    "start": 1766
+   },
+   {
+    "encounter_id": "SYN021",
+    "field": "dialogue",
+    "category": "OCCUPATION",
+    "source": "rule:occupation_frame",
+    "text": "nurse",
+    "start": 78
+   },
+   {
+    "encounter_id": "SYN021",
+    "field": "dialogue",
+    "category": "ACTIVITY",
+    "source": "gazetteer:activity",
+    "text": "gardening",
+    "start": 909
+   },
+   {
+    "encounter_id": "SYN021",
+    "field": "note",
+    "category": "FACILITY",
+    "source": "deid:hosp",
+    "text": "EHR",
+    "start": 885
+   },
+   {
+    "encounter_id": "SYN023",
+    "field": "dialogue",
+    "category": "LOCATION",
+    "source": "rule:street",
+    "text": "t drive",
+    "start": 1432
+   },
+   {
+    "encounter_id": "SYN023",
+    "field": "note",
+    "category": "LOCATION",
+    "source": "rule:street",
+    "text": "not drive",
+    "start": 656
+   },
+   {
+    "encounter_id": "SYN024",
+    "field": "dialogue",
+    "category": "LOCATION",
+    "source": "gliner:location",
+    "text": "marina",
+    "start": 593
+   },
+   {
+    "encounter_id": "SYN024",
+    "field": "note",
+    "category": "CLINICIAN_NAME",
+    "source": "format:staff_role",
+    "text": "Line",
+    "start": 47
+   }
+  ]
+ },
+ "privacy_removed": 0.9699,
+ "privacy_high": 0.9935,
+ "privacy_high_medium": 0.9758,
+ "keep_survival": 0.9552,
+ "edit_precision": 0.9488,
+ "concepts": {
+  "concept_recall": 0.9932,
+  "by_field": {
+   "dialogue": 1.0,
+   "note": 0.9923
+  },
+  "n_concepts": 1037,
+  "top_lost": [
+   [
+    "lung",
+    3
+   ],
+   [
+    "head",
+    1
+   ],
+   [
+    "heart",
+    1
+   ],
+   [
+    "hodgkin",
+    1
+   ],
+   [
+    "line",
+    1
+   ]
+  ]
+ },
+ "concept_recall": 0.9932,
+ "evidence_retention": 0.9412,
+ "external_cause_evidence_retention": 0.9714,
+ "n_evidence_occurrences": 255,
+ "icd": {
+  "icd_f1_original": 0.3393,
+  "icd_f1_anonymized": 0.4107,
+  "icd_agreement_f1": 0.75,
+  "k": "oracle",
+  "label_space": 272,
+  "model": "bge-m3",
+  "rows": [
+   {
+    "encounter_id": "SYN001",
+    "gold": [
+     "S52.531A",
+     "W11.XXXA",
+     "Y93.H2"
+    ],
+    "orig": [
+     "M79.602",
+     "S63.501A",
+     "W11.XXXA"
+    ],
+    "anon": [
+     "M79.602",
+     "S63.501A",
+     "W11.XXXA"
+    ]
+   },
+   {
+    "encounter_id": "SYN002",
+    "gold": [
+     "G20.A1",
+     "S72.002A",
+     "W06.XXXA"
+    ],
+    "orig": [
+     "G20.A1",
+     "M79.671",
+     "S13.9XXD"
+    ],
+    "anon": [
+     "M25.522",
+     "S13.9XXD",
+     "W06.XXXA"
+    ]
+   },
+   {
+    "encounter_id": "SYN003",
+    "gold": [
+     "E11.9",
+     "G51.0"
+    ],
+    "orig": [
+     "F05",
+     "G51.0"
+    ],
+    "anon": [
+     "F05",
+     "G51.0"
+    ]
+   },
+   {
+    "encounter_id": "SYN004",
+    "gold": [
+     "S01.81XA",
+     "S06.0X1A",
+     "Y93.55"
+    ],
+    "orig": [
+     "V80.010A",
+     "V89.2XXA",
+     "Y93.55"
+    ],
+    "anon": [
+     "V80.010A",
+     "V89.2XXA",
+     "Y93.55"
+    ]
+   },
+   {
+    "encounter_id": "SYN005",
+    "gold": [
+     "E05.00",
+     "I48.91",
+     "Z79.01"
+    ],
+    "orig": [
+     "E05.00",
+     "I13.0",
+     "I50.42"
+    ],
+    "anon": [
+     "E05.00",
+     "E06.3",
+     "N05.9"
+    ]
+   },
+   {
+    "encounter_id": "SYN006",
+    "gold": [
+     "S42.021A",
+     "V80.010A",
+     "Y93.52"
+    ],
+    "orig": [
+     "M79.602",
+     "S42.021A",
+     "V80.010A"
+    ],
+    "anon": [
+     "M79.602",
+     "S42.021A",
+     "V80.010A"
+    ]
+   },
+   {
+    "encounter_id": "SYN007",
+    "gold": [
+     "F05",
+     "J18.9",
+     "N17.9"
+    ],
+    "orig": [
+     "F05",
+     "J06.9",
+     "Z79.899"
+    ],
+    "anon": [
+     "F05",
+     "J06.9",
+     "Z79.899"
+    ]
+   },
+   {
+    "encounter_id": "SYN008",
+    "gold": [
+     "D50.9",
+     "K50.012"
+    ],
+    "orig": [
+     "D50.9",
+     "K58.9"
+    ],
+    "anon": [
+     "D50.9",
+     "K50.012"
+    ]
+   },
+   {
+    "encounter_id": "SYN009",
+    "gold": [
+     "I35.0",
+     "R55"
+    ],
+    "orig": [
+     "I50.21",
+     "R01.1"
+    ],
+    "anon": [
+     "I35.0",
+     "R01.1"
+    ]
+   },
+   {
+    "encounter_id": "SYN010",
+    "gold": [
+     "S83.511A",
+     "Y93.67"
+    ],
+    "orig": [
+     "S80.01XA",
+     "S83.241A"
+    ],
+    "anon": [
+     "S80.01XA",
+     "S83.241A"
+    ]
+   },
+   {
+    "encounter_id": "SYN011",
+    "gold": [
+     "E06.3",
+     "E78.00"
+    ],
+    "orig": [
+     "E06.3",
+     "I13.0"
+    ],
+    "anon": [
+     "E06.3",
+     "I13.0"
+    ]
+   },
+   {
+    "encounter_id": "SYN012",
+    "gold": [
+     "C34.11",
+     "G90.2",
+     "Z77.090"
+    ],
+    "orig": [
+     "I50.1",
+     "M25.511",
+     "Z77.090"
+    ],
+    "anon": [
+     "C43.59",
+     "Z09",
+     "Z77.090"
+    ]
+   },
+   {
+    "encounter_id": "SYN013",
+    "gold": [
+     "F17.210",
+     "J44.1"
+    ],
+    "orig": [
+     "J06.9",
+     "R51.9"
+    ],
+    "anon": [
+     "J06.9",
+     "J44.1"
+    ]
+   },
+   {
+    "encounter_id": "SYN014",
+    "gold": [
+     "F05",
+     "G30.1",
+     "N39.0"
+    ],
+    "orig": [
+     "G30.1",
+     "Y93.02",
+     "Y93.K1"
+    ],
+    "anon": [
+     "G30.1",
+     "Y93.02",
+     "Y93.K1"
+    ]
+   },
+   {
+    "encounter_id": "SYN015",
+    "gold": [
+     "E86.0",
+     "J21.0"
+    ],
+    "orig": [
+     "J06.9",
+     "J45.909"
+    ],
+    "anon": [
+     "J06.9",
+     "J45.909"
+    ]
+   },
+   {
+    "encounter_id": "SYN016",
+    "gold": [
+     "G61.0",
+     "R13.10"
+    ],
+    "orig": [
+     "M25.562",
+     "R26.89"
+    ],
+    "anon": [
+     "J06.9",
+     "R26.89"
+    ]
+   },
+   {
+    "encounter_id": "SYN017",
+    "gold": [
+     "I48.91",
+     "I63.412"
+    ],
+    "orig": [
+     "I50.1",
+     "I63.412"
+    ],
+    "anon": [
+     "I50.1",
+     "I63.412"
+    ]
+   },
+   {
+    "encounter_id": "SYN018",
+    "gold": [
+     "M17.11",
+     "M71.21"
+    ],
+    "orig": [
+     "L97.519",
+     "M71.21"
+    ],
+    "anon": [
+     "L97.519",
+     "M71.21"
+    ]
+   },
+   {
+    "encounter_id": "SYN019",
+    "gold": [
+     "C81.11"
+    ],
+    "orig": [
+     "C81.11"
+    ],
+    "anon": [
+     "C81.11"
+    ]
+   },
+   {
+    "encounter_id": "SYN020",
+    "gold": [
+     "J69.0",
+     "J90"
+    ],
+    "orig": [
+     "C34.11",
+     "R91.8"
+    ],
+    "anon": [
+     "I50.1",
+     "R91.8"
+    ]
+   },
+   {
+    "encounter_id": "SYN021",
+    "gold": [
+     "T63.441A",
+     "Y93.H2"
+    ],
+    "orig": [
+     "S80.261A",
+     "W54.0XXA"
+    ],
+    "anon": [
+     "W21.02XA",
+     "W54.0XXA"
+    ]
+   },
+   {
+    "encounter_id": "SYN022",
+    "gold": [
+     "J05.0"
+    ],
+    "orig": [
+     "J45.909"
+    ],
+    "anon": [
+     "J06.9"
+    ]
+   },
+   {
+    "encounter_id": "SYN023",
+    "gold": [
+     "S61.412A",
+     "W26.0XXA",
+     "Y93.G3"
+    ],
+    "orig": [
+     "M25.522",
+     "M79.602",
+     "W26.0XXA"
+    ],
+    "anon": [
+     "M79.602",
+     "S61.412A",
+     "W26.0XXA"
+    ]
+   },
+   {
+    "encounter_id": "SYN024",
+    "gold": [
+     "S81.851A",
+     "W54.0XXA",
+     "Y93.K1"
+    ],
+    "orig": [
+     "S81.851A",
+     "W54.0XXA",
+     "Y93.K1"
+    ],
+    "anon": [
+     "S81.851A",
+     "W54.0XXA",
+     "Y93.K1"
+    ]
+   }
+  ]
+ },
+ "icd_f1_original": 0.3393,
+ "icd_f1_anonymized": 0.4107,
+ "icd_agreement_f1": 0.75,
+ "summary": {
+  "input": "/Users/usi/neural wave/neural_wave/outputs/robustness/synthetic.jsonl",
+  "output": "/Users/usi/neural wave/neural_wave/outputs/runs/robust_synthetic_balanced_nocodes_rules+deid+gliner/anonymized.jsonl",
+  "config": {
+   "preset": "balanced",
+   "use_codes": false,
+   "detectors": [
+    "rules",
+    "deid",
+    "gliner"
+   ],
+   "remove": [
+    "ACTIVITY",
+    "ADDRESS",
+    "AGE",
+    "CLINICIAN_NAME",
+    "DATE",
+    "DOB",
+    "EMAIL",
+    "FACILITY",
+    "HOLIDAY",
+    "ID",
+    "INSURER",
+    "LOCATION",
+    "OCCUPATION",
+    "ORGANIZATION",
+    "PATIENT_NAME",
+    "PERSON_NAME",
+    "PHONE",
+    "RELATIVE_NAME",
+    "SPORTS_TEAM",
+    "STAFF_NAME",
+    "URL",
+    "YEAR"
+   ],
+   "weak_name_threshold": 0.6,
+   "age_mode": "decade",
+   "explain_text": true,
+   "repair_rounds": 2,
+   "injury_context_shield": true,
+   "llm_model": "qwen3.5:2b-q4_K_M",
+   "llm_num_ctx": 4096,
+   "device": "auto"
+  },
+  "n_records": 24,
+  "runtime_s": 21.7,
+  "ms_per_encounter": 904.1,
+  "peak_ram_mb": 2504.7,
+  "peak_vram_mb": 2131.7,
+  "vram_budget_mb": 4096,
+  "vram_events": [],
+  "device_placement": {
+   "rules": "cpu",
+   "deid": "mps",
+   "gliner": "mps"
+  },
+  "n_decisions": 825,
+  "n_edits": 781,
+  "n_kept_with_reason": 44,
+  "explained_decisions": 1.0,
+  "explanations": {
+   "action": {
+    "REPLACE": 628,
+    "GENERALIZE": 153,
+    "KEEP": 44
+   },
+   "category": {
+    "CLINICIAN_NAME": 197,
+    "PATIENT_NAME": 183,
+    "DATE": 84,
+    "FACILITY": 70,
+    "PHONE": 48,
+    "ID": 45,
+    "LOCATION": 36,
+    "AGE": 35,
+    "ADDRESS": 34,
+    "DOB": 26,
+    "EMAIL": 22,
+    "PERSON_NAME": 11,
+    "ORGANIZATION": 11,
+    "ACTIVITY": 10,
+    "OTHER_QI": 6,
+    "OCCUPATION": 5,
+    "RELATIVE_NAME": 2
+   },
+   "layer": {
+    "rule": 365,
+    "format": 154,
+    "identity": 148,
+    "deid": 108,
+    "gliner": 39,
+    "gazetteer": 11
+   },
+   "keep_reason": {
+    "shield:eponym": 22,
+    "shield:activity_context": 9,
+    "preset:balanced keeps OTHER_QI": 6,
+    "shield:clinical_number": 4,
+    "shield:drug": 3
+   },
+   "with_reason": 825
+  },
+  "residual_leaks": 4,
+  "shield_edit_overlaps": 1,
+  "shield_spans": 437,
+  "schema_errors": [],
+  "per_encounter": [
+   {
+    "encounter_id": "SYN001",
+    "runtime_s": 10.1645,
+    "n_edits": 19,
+    "n_entities": 8,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 22,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN002",
+    "runtime_s": 0.6199,
+    "n_edits": 24,
+    "n_entities": 9,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 24,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN003",
+    "runtime_s": 0.4253,
+    "n_edits": 23,
+    "n_entities": 11,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E11",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 20,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN004",
+    "runtime_s": 0.491,
+    "n_edits": 17,
+    "n_entities": 8,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "person",
+      "label": "[PERSON]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E8",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 20,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN005",
+    "runtime_s": 0.5269,
+    "n_edits": 38,
+    "n_entities": 12,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 4
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_5]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_5]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_6]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E11",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E12",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 2
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 32,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN006",
+    "runtime_s": 0.5053,
+    "n_edits": 41,
+    "n_entities": 10,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_5]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 20,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN007",
+    "runtime_s": 0.5481,
+    "n_edits": 46,
+    "n_entities": 13,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E7",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_5]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E11",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E12",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E13",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 2
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 33,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN008",
+    "runtime_s": 0.4814,
+    "n_edits": 42,
+    "n_entities": 10,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 4
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "clinician",
+      "label": "[CLINICIAN_5]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E10",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 26,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN009",
+    "runtime_s": 0.5309,
+    "n_edits": 52,
+    "n_entities": 18,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_7]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "clinician",
+      "label": "[CLINICIAN_8]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_5]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_6]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "clinician",
+      "label": "[CLINICIAN_9]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_7]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E11",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E12",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E13",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E14",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E15",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E16",
+      "role": "clinician",
+      "label": "[CLINICIAN_5]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E17",
+      "role": "clinician",
+      "label": "[CLINICIAN_6]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E18",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 1,
+    "shield": {
+     "shield_spans": 23,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN010",
+    "runtime_s": 0.4565,
+    "n_edits": 55,
+    "n_entities": 16,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E3",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "clinician",
+      "label": "[CLINICIAN_6]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "clinician",
+      "label": "[CLINICIAN_7]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_5]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_6]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E11",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E12",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E13",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E14",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E15",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E16",
+      "role": "clinician",
+      "label": "[CLINICIAN_5]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 4,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN011",
+    "runtime_s": 0.521,
+    "n_edits": 42,
+    "n_entities": 6,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E3",
+      "role": "relative",
+      "label": "[RELATIVE_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E6",
+      "role": "relative",
+      "label": "[RELATIVE_2]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 1,
+    "shield": {
+     "shield_spans": 31,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN012",
+    "runtime_s": 0.4967,
+    "n_edits": 48,
+    "n_entities": 15,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 4
+     },
+     {
+      "key": "E4",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "clinician",
+      "label": "[CLINICIAN_5]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "clinician",
+      "label": "[CLINICIAN_6]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E11",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E12",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E13",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E14",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E15",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 1,
+    "shield": {
+     "shield_spans": 18,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN013",
+    "runtime_s": 0.4287,
+    "n_edits": 19,
+    "n_entities": 11,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E9",
+      "role": "clinician",
+      "label": "[CLINICIAN_5]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E11",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 27,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN014",
+    "runtime_s": 0.4713,
+    "n_edits": 34,
+    "n_entities": 14,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "clinician",
+      "label": "[CLINICIAN_5]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "person",
+      "label": "[PERSON_5]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "person",
+      "label": "[PERSON_6]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E10",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E11",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E12",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E13",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E14",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 22,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN015",
+    "runtime_s": 0.4762,
+    "n_edits": 29,
+    "n_entities": 12,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 4
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "clinician",
+      "label": "[CLINICIAN_5]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E9",
+      "role": "clinician",
+      "label": "[CLINICIAN_6]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E11",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E12",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 16,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN016",
+    "runtime_s": 0.445,
+    "n_edits": 30,
+    "n_entities": 8,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E6",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E8",
+      "role": "clinician",
+      "label": "[CLINICIAN_5]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 30,
+     "edit_overlaps": 1,
+     "missing_strings": 1
+    }
+   },
+   {
+    "encounter_id": "SYN017",
+    "runtime_s": 0.4763,
+    "n_edits": 23,
+    "n_entities": 5,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "person",
+      "label": "[PERSON]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 10,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN018",
+    "runtime_s": 0.3607,
+    "n_edits": 22,
+    "n_entities": 8,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E3",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E7",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E8",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 14,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN019",
+    "runtime_s": 0.3989,
+    "n_edits": 26,
+    "n_entities": 9,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E9",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     }
+    ],
+    "residual_leaks": 1,
+    "shield": {
+     "shield_spans": 17,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN020",
+    "runtime_s": 0.4215,
+    "n_edits": 25,
+    "n_entities": 10,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E9",
+      "role": "clinician",
+      "label": "[CLINICIAN_4]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E10",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 4,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN021",
+    "runtime_s": 0.6208,
+    "n_edits": 34,
+    "n_entities": 7,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 4
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E7",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 3,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN022",
+    "runtime_s": 0.604,
+    "n_edits": 28,
+    "n_entities": 7,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E3",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 6,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN023",
+    "runtime_s": 0.5944,
+    "n_edits": 27,
+    "n_entities": 8,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E5",
+      "role": "person",
+      "label": "[PERSON]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E6",
+      "role": "relative",
+      "label": "[RELATIVE]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E8",
+      "role": "clinician",
+      "label": "[CLINICIAN_3]",
+      "n_tokens": 2
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 4,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   },
+   {
+    "encounter_id": "SYN024",
+    "runtime_s": 0.6267,
+    "n_edits": 37,
+    "n_entities": 8,
+    "entities": [
+     {
+      "key": "E1",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 3
+     },
+     {
+      "key": "E2",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E3",
+      "role": "person",
+      "label": "[PERSON_1]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E4",
+      "role": "person",
+      "label": "[PERSON_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E5",
+      "role": "clinician",
+      "label": "[CLINICIAN_1]",
+      "n_tokens": 2
+     },
+     {
+      "key": "E6",
+      "role": "person",
+      "label": "[PERSON_3]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E7",
+      "role": "clinician",
+      "label": "[CLINICIAN_2]",
+      "n_tokens": 1
+     },
+     {
+      "key": "E8",
+      "role": "patient",
+      "label": "[PATIENT]",
+      "n_tokens": 1
+     }
+    ],
+    "residual_leaks": 0,
+    "shield": {
+     "shield_spans": 11,
+     "edit_overlaps": 0,
+     "missing_strings": 0
+    }
+   }
+  ]
+ },
+ "ms_per_encounter": 904.1,
+ "peak_ram_mb": 2504.7,
+ "peak_vram_mb": 2131.7,
+ "runtime_s": 21.7,
+ "eval_seconds": 0.6
+}

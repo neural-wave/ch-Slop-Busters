@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N096",
+  "pii": [
+    {"field": "dialogue", "text": "anderson", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "44-years-old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "gymnastics class", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Anderson", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "44-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "gymnastics", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "dragon", "category": "NOT_A_NAME", "why": "dictation software"}
+  ]
+}

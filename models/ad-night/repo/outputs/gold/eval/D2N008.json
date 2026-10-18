@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N008",
+  "pii": [
+    {"field": "dialogue", "text": "stephanie", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "49-year-old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "vermont", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "mcdonald's", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "explore the mountains", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Stephanie", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Diaz", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "49-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "dax", "category": "NOT_A_NAME", "why": "dictation software"},
+    {"field": "dialogue", "text": "dragon", "category": "NOT_A_NAME", "why": "dictation software"},
+    {"field": "note", "text": "3/6", "category": "CLINICAL_NUMBER", "why": "murmur grade 3/6, not a date"}
+  ]
+}

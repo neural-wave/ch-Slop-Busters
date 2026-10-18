@@ -1,0 +1,94 @@
+########## ENCOUNTER D2N115
+=== FIELD: dialogue
+[doctor] alright so hey it's nice to see you jack i know you've been experiencing some neck pain could you tell me what happened
+[patient] yeah so i was in a a car accident
+[doctor] mm-hmm
+[patient] and i hit in the back and like my my neck went forward and my head went forward really quick and so i've been having some pain ever since
+[doctor] okay and so with this pain how long ago was the car accident
+[patient] that was about a week ago
+[doctor] okay with this pain like on a scale of one to ten how severe is it
+[patient] i would say it's about a seven
+[doctor] okay
+[patient] it's not a constant pain but like whenever i move my head which is like a lot i i feel it
+[doctor] alright so where exactly is it on the side on the back
+[patient] it's in the back of my neck
+[doctor] okay has anything made it better
+[patient] i mean i've tried some ibuprofen that helped a little bit but not too much
+[doctor] mm-hmm
+[patient] just about five out of ten
+[doctor] mm-hmm alright and did you say whether the pain was getting worse
+[patient] i mean it's been staying the same it just gets worse when i'm moving my neck
+[doctor] okay are you able to turn your neck from side to side
+[patient] mostly but there is there is pain with it
+[doctor] okay and then do you have headaches
+[patient] yeah i had i had a couple early on
+[doctor] uh uh
+[patient] i have had it lately
+[doctor] okay and so does the pain move anywhere like your upper back your shoulder
+[patient] no it just stays on monday
+[doctor] okay and then any kind of hearing any kind of hearing problems visual disturbances
+[patient] no
+[doctor] okay have you do have you ever like played sports before or had like a sports accident before
+[patient] yeah i played football
+[doctor] okay
+[patient] years ago but i i did n't have any issues with my neck though
+[doctor] okay and then when you got in the car accident did you end up going to the emergency room
+[patient] no i mean i i know that going to the emergency room that like the english rides like five hundred bucks so i did n't want to do that
+[doctor] i understand i understand okay was there any like swelling or bruising on your neck
+[patient] not that i know about no other mag of my neck i really ca n't see that
+[doctor] yeah okay no just checking okay so if you do n't mind i'm gon na go ahead and do my physical exam so when i press on here on the side of your neck does it hurt
+[patient] yeah a little bit
+[doctor] okay positive pain to palpation of the soft tissues of the neck what about when i press on your back or your shoulders
+[patient] no that's fine
+[doctor] okay so when you flex your neck when you're touching your chin to your chest does that hurt
+[patient] mm-hmm
+[doctor] alright positive pain with flexion what about when you move it back
+[patient] yeah that hurts worse
+[doctor] okay okay severe positive pain to extension okay so can you turn your head from side to side does that hurt
+[patient] yeah a little bit
+[doctor] okay positive pain with rotation and then can you touch your ear to your shoulders
+[patient] no
+[doctor] okay alright so positive pain on lateral bending wow this is pretty this is pretty serious not serious necessarily sorry about that so i reviewed the results of your x-ray but the results show no signs of fracture or bony abnormalities but let's go ahead and talk about my assessment and plan for you i believe what you have is something called neck strain for your neck pain i sorry treatments we are gon na go ahead and treat this a bit conservatively your i'm gon na put you on anti-inflammatories motrin six hundred milligrams and you're gon na take that every six to eight hours i also wan na give you a muscle relaxant called flexeril and it's gon na be ten milligrams and you'll take that every twelve hours as needed i'm gon na want you to try your best to to like relax your neck i'm sorry not to strain your neck anymore like to be conservative with how you move about and everything like that i also wan na order an mri just because you said you did n't go to the hospital or anything like that i just wan na make sure that you you're not suffering from like a concussion but this is something that's commonly referred to as like whiplash right your head just like it it just wiped essentially like back and forth to so severely and and that's probably what's causing your pain i think i wan na refer you to either physical rehab or a chiropractor once we get the results of the mri just to make sure that there is n't any impingement of like the nerves or anything like that do you have any questions
+[patient] i heard the chiropractors will shake they work
+[doctor] i do understand that some people have like reservations about going to the chiropractor but you know we do have some good ones that have like longstanding histories and patients that have had positive results from the experience but if you if you do n't like the idea of that we can consider other options like that rehab and physical therapy
+[patient] okay
+[doctor] alright any other questions
+[patient] no
+[doctor] alright thank you
+=== FIELD: note
+CHIEF COMPLAINT
+
+Neck pain
+
+HISTORY OF PRESENT ILLNESS
+
+Jack Torres is a pleasant 40-year-old male who presents to the clinic today for the evaluation of neck pain. The onset of his pain began 1 week ago after he was involved in a motor vehicle accident. He states that he was hit in the back and experienced whiplash. Following the accident he did not present to the emergency room and he does not recall having any swelling or bruising at the neck. He localizes his pain to the posterior aspect of his neck. His pain level is rated at 7 out of 10. When taking ibuprofen he states his pain improves to 5 out of 10. He finds that neck range of motion exacerbates his pain. Initially after the accident he reports that he experienced a couple of headaches, but he states he has not had any recently. He denies any hearing problems or visual disturbances.
+
+SOCIAL HISTORY
+
+Patient reports that he played football years ago without any neck issues.
+
+REVIEW OF SYSTEMS
+
+Eyes: Denies visual disturbances.
+HENT: Denies hearing loss.
+Musculoskeletal: Reports neck pain.
+Neurological: Denies headaches.
+
+PHYSICAL EXAM
+
+NECK: No swelling noted
+MSK: Examination of the cervical spine: Positive pain to palpation of the soft tissues of the neck. Shoulders and back are nontender to palpation. Positive pain with flexion, rotation, and lateral bending. Severe pain with extension.
+
+RESULTS
+
+3 views of the cervical spine were taken. These reveal no evidence of any fractures or bony abnormalities.
+
+ASSESSMENT
+
+Neck strain.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with the patient in regards to his current symptoms. We discussed his x-rays did not reveal any signs of a fracture or bony abnormalities. Treatment options were discussed and conservative treatment has been recommended. He will begin taking Motrin 600 mg every 6 to 8 hours. A prescription for Flexeril 10 mg every 12 hours as needed was also provided. He was advised to be mindful of how he moves his neck and to be conservative to avoid straining his neck. I have also recommended that we obtain an MRI for further evaluation as the patient did not go to the emergency room following his accident. He will also be referred to either physical rehab or a chiropractor pending his MRI results.
+

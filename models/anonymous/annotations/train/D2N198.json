@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N198",
+  "phi": [
+    {"text": "michael", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "ride a bike", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "march madness", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the tournament"},
+    {"text": "school", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "class"},
+    {"text": "physics", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "science"},
+    {"text": "changing jobs", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "making a change"},
+    {"text": "no insurance", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "limited benefits"},
+    {"text": "restaurant", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "food business"},
+    {"text": "student", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "learner"},
+    {"text": "rides his bike", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercises"},
+    {"text": "switching jobs", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "making a life change"},
+    {"text": "restaurant", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "food business"}
+  ],
+  "medical_concepts": []
+}

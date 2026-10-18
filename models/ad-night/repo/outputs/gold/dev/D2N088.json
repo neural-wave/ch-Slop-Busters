@@ -1,0 +1,16 @@
+{
+  "encounter_id": "D2N088",
+  "pii": [
+    {"field": "dialogue", "text": "andrew", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "59-year-old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "barre classes", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "house parties", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "landscaping", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Andrew", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Campbell", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "59-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "barre classes", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "house parties", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": []
+}

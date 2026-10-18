@@ -1,0 +1,25 @@
+{
+  "encounter_id": "D2N033",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "sophia",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "mcmurray's",
+      "category": "EPONYM",
+      "why": "McMurray's test, exam maneuver"
+    },
+    {
+      "field": "note",
+      "text": "McMurray's",
+      "category": "EPONYM",
+      "why": "McMurray's test, exam maneuver"
+    }
+  ]
+}

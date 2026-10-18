@@ -1,0 +1,16 @@
+{
+  "encounter_id": "D2N114",
+  "pii": [
+    {"field": "dialogue", "text": "julie", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "doctor white", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "new balance", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "asics", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Julie", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Jenkins", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Dr. White", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "33-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "New Balance", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Asics", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": []
+}

@@ -1,0 +1,325 @@
+{
+ "encounter_id": "HT010",
+ "pii": [
+  {
+   "field": "note",
+   "text": "Pātene",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Wiremu",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Hōri",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Bill",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "ZRT4471",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "SASC-26-0918",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "03 365 0841",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "03 365 0848",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "021 448 3196",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "reception@southernalpssleep.co.nz",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "physicians@southernalpssleep.co.nz",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "07.05.1935",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "91 yrs",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "91-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "14-Sep-26",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "8–9 September 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "22 August",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "March 2019",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "M. Hope",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "M.",
+   "category": "PERSON_NAME",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Dr Hope",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Hinemoa",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Kiri",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Parkinson, RPSGT",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Anaïs",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Duval",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "KP",
+   "category": "PERSON_NAME",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "AD",
+   "category": "PERSON_NAME",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Sione",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Fifita",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Southern Alps Sleep Centre",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "77 Montreal Street",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Sydenham",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Christchurch",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "8023",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "12B Huia Terrace",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Cashmere",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "8022",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Heathcote Valley Medical Centre",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Rata Grove",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Halswell",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Avonhead Respiratory Clinic",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "orchardist",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  }
+ ],
+ "keep": [
+  {
+   "field": "note",
+   "text": "Parkinson disease",
+   "category": "EPONYM",
+   "why": "disease name; same surname as the technologist"
+  },
+  {
+   "field": "note",
+   "text": "Lewy bodies",
+   "category": "EPONYM",
+   "why": "dementia with Lewy bodies"
+  },
+  {
+   "field": "note",
+   "text": "Epworth",
+   "category": "EPONYM",
+   "why": "Epworth Sleepiness Scale"
+  },
+  {
+   "field": "note",
+   "text": "7/24",
+   "category": "CLINICAL_NUMBER",
+   "why": "Epworth score, looks like a date"
+  },
+  {
+   "field": "note",
+   "text": "26/30",
+   "category": "CLINICAL_NUMBER",
+   "why": "MoCA score, looks like a date"
+  },
+  {
+   "field": "note",
+   "text": "136/74",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure"
+  },
+  {
+   "field": "note",
+   "text": "I hope",
+   "category": "NOT_A_NAME",
+   "why": "verb; the GP is Dr Hope"
+  },
+  {
+   "field": "note",
+   "text": "fell out of bed",
+   "category": "CODE_EVIDENCE",
+   "why": "supports W06.XXXD fall from bed"
+  },
+  {
+   "field": "note",
+   "text": "Fall from bed",
+   "category": "CODE_EVIDENCE",
+   "why": "supports W06.XXXD fall from bed"
+  },
+  {
+   "field": "note",
+   "text": "struck his head on the bedside cabinet",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism of the fall from bed"
+  }
+ ]
+}

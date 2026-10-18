@@ -1,0 +1,313 @@
+{
+  "encounter_id": "HO001",
+  "pii": [
+    {
+      "field": "note",
+      "text": "PARKINSON,",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Mr. Parkinson",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Harold",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "J.",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "MW-00482915",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "02/11/1933",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "7730142268",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "10/09/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "10/14/2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "10/10",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "10/15",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "10/9",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "10/13",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "10/12",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Lucinda",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Okafor-Reyes",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Tomasz",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Wiśniewski",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Priya",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Raghunathan",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Deborah",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Debbie",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Kowalczyk",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "J.B.",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Glen",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Underwood",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "93 y/o",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "93-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "937-555-0182",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "937-555-0119",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "1538294067",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Mercy West Regional Medical Center",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Pod B",
+      "category": "LOCATION",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Bed 14",
+      "category": "LOCATION",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Larkspur Gardens Assisted Living",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Huber Heights",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Kettering Family Practice",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "tool-and-die machinist",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Widowed",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Miami Valley Tool & Die",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "2021",
+      "category": "YEAR",
+      "risk": "medium"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "Parkinson's disease",
+      "category": "EPONYM",
+      "why": "diagnosis; patient surname Parkinson is only PII after Mr./in header"
+    },
+    {
+      "field": "note",
+      "text": "Parkinson disease",
+      "category": "EPONYM",
+      "why": "diagnosis without possessive"
+    },
+    {
+      "field": "note",
+      "text": "parkinsonism-hyperpyrexia syndrome",
+      "category": "EPONYM",
+      "why": "clinical syndrome"
+    },
+    {
+      "field": "note",
+      "text": "Hoehn and Yahr",
+      "category": "EPONYM",
+      "why": "staging scale named after people, not persons in this encounter"
+    },
+    {
+      "field": "note",
+      "text": "Foley",
+      "category": "EPONYM",
+      "why": "urinary catheter"
+    },
+    {
+      "field": "note",
+      "text": "108/62",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure"
+    },
+    {
+      "field": "note",
+      "text": "25/100",
+      "category": "CLINICAL_NUMBER",
+      "why": "carbidopa-levodopa dose"
+    },
+    {
+      "field": "note",
+      "text": "450/5",
+      "category": "CLINICAL_NUMBER",
+      "why": "ventilator tidal volume / PEEP"
+    },
+    {
+      "field": "note",
+      "text": "10/5",
+      "category": "CLINICAL_NUMBER",
+      "why": "pressure support / PEEP, looks like a date"
+    },
+    {
+      "field": "note",
+      "text": "7.38/41/92",
+      "category": "CLINICAL_NUMBER",
+      "why": "arterial blood gas"
+    }
+  ]
+}

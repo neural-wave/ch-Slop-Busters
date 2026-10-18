@@ -1,0 +1,156 @@
+########## ENCOUNTER D2N099
+=== FIELD: dialogue
+[doctor] next patient is randy gutierrez . date of birth , 8/10/2020 . please use review of symptoms . all text to write . physical exam , auto text uri .
+[doctor] hello , how are you doing today ?
+[patient_guest] we're okay , thank you .
+[doctor] that's good to hear . so , how many days has randy been feeling sick ?
+[patient_guest] well , i would say it started around supper time last night .
+[doctor] last night , okay , and what's been going on ?
+[patient_guest] well , he started to get a runny nose .
+[doctor] okay , and is he stuffy too ?
+[patient_guest] yeah . yeah .
+[doctor] okay , and have you noticed , is his mucous clear right now ?
+[patient_guest] it is , it is right now , yes .
+[doctor] okay . and , does he also have a cough ?
+[patient_guest] yes , but it's not barky .
+[doctor] and does he act like he has a sore throat or is he pulling on his ears ?
+[patient_guest] well , i know he's been pulling on his ears , yeah .
+[doctor] okay .
+[patient_guest] you know , he also , he's also been going crazy rubbing at his nose too .
+[doctor] okay . and , any fever you've noticed ?
+[patient_guest] i checked his rectal temperature and it was 100.3 .
+[doctor] okay . so , a little bit of a low-grade fever there , definitely . and , how was his appetite ? did he eat last night ?
+[patient_guest] yes , he did . yeah .
+[doctor] and how about this morning ? did he eat his breakfast ?
+[patient_guest] uh , this morning he ate about seven ounces from the bottle .
+[doctor] okay .
+[patient_guest] and then he got another bottle , and he barely ate that . um , i offered him cereal and he would n't eat that either .
+[doctor] okay .
+[patient_guest] so , he varies i guess .
+[doctor] how is his energy ? does he seem like he wants to take more naps , or does he have pretty good energy ?
+[patient_guest] mmm , it seems like he's irritable .
+[doctor] irritable because he is n't feeling good ?
+[patient_guest] yeah . he is energetic , but it seems like he ca n't go to sleep , like , he's fighting it really hard .
+[doctor] okay , and just for the chart , is there anyone , anybody else exposed to him who has been sick ?
+[patient_guest] yes , his older sister's been sick .
+[doctor] thank you .
+[patient_guest] we also had a play date with my nephew , who i learned later had a sinus infection .
+[doctor] and what medication have you tried for him ? anything at all ?
+[patient_guest] um , i've been doing the saline mist in his nose .
+[doctor] good , good . that's a good choice .
+[patient_guest] i did give him tylenol really early this morning because he was warm when i took the sleeper off of him , and we had the ac on in the house , but his whole body was sweating .
+[doctor] i see . and , any other medications ?
+[patient_guest] we did put some baby vick's on his feet last night to try and help him breathe . and , i also used the humidifier .
+[doctor] okay . that's good .
+[patient_guest] okay . okay .
+[doctor] so , there was another thing i wanted to bring up since we're here . it appears that his cradle cap has gotten a little worse . what are you using on it ?
+[patient_guest] i've been using the cradle cap brush , and then i use regular aveno shampoo .
+[doctor] is it a dandruff shampoo ?
+[patient_guest] no , i do n't think so .
+[doctor] okay , thank you . well , let's complete his exam and then we'll talk about the next steps .
+[patient_guest] okay , sounds good .
+[doctor] can you take a big breath randy .
+[patient_guest] where's mama ?
+[doctor] do n't forget to breathe little one . okay . let's try the front too .
+[patient_guest] yeah , it's okay buddy .
+[doctor] excellent . he's doing excellent . next let's- let's check out those ears .
+[patient_guest] okay .
+[doctor] let's try to make sure you do n't tip all the way over .
+[patient_guest] dino , you're doing so good .
+[doctor] all right . ears look okay . we're going to slide you forward so you do n't bump your head when i lay you down .
+[patient_guest] hey , you're- hey you're okay . you're okay .
+[doctor] okay , you can go ahead and sit him back up if you like .
+[patient_guest] all right . thank you .
+[doctor] all right . so , he's just kind of getting started with this , and i think we're seeing something viral right now . often sinus infections will start out as a virus and then will become bacterial infections if left alone and does n't go away . but , i do n't think he needs any antibiotics , at least not at this point in time . um , keep up with the fluids , rest , and i would watch him very carefully for a barking cough . if he does get a barky cough , then that tends to be a little bit more significant and a little more severe . so , if he develops a barky cough , i want you to give him a half a teaspoon of his sister's medicine .
+[doctor] you know , i'm almost tempted to give you some of the medicine because they're probably sharing the same virus .
+[patient_guest] okay .
+[doctor] actually , i will . i'll go ahead and just give you some as well .
+[patient_guest] okay . okay .
+[doctor] but , if he does n't become barky , you do n't have to use it . it only works for the barky cough .
+[patient_guest] mm-hmm , got it .
+[doctor] okay . we'll do the same thing with him , as long as nothing gets worse , and we'll see him back in one week . so , it wo n't get rid of a regular cough . he can use zarbee's , but use the dose for kids under a year of age . so , if you wan na get some of that , you can definitely try that for him , it can help out a little bit with the regular cough .
+[patient_guest] i do have a question . do you or do you not give honey to babies ?
+[doctor] yes , that's a great question . you do n't give honey to kids under a year , instead , you can give them agave , which is a different type of nectar . um , now you can give honey to his older sister , that is okay , but for him , it would not be very good because his stomach acid's not good enough to break down the botulism spores . so , it'd cause him harm . um , you should look at the package of say , honey nut cheerios . it says right on there to not give it to a baby .
+[patient_guest] okay .
+[doctor] now , whether that would really hurt a baby , i am unsure , but it has real honey in it . so , no honey for him , but agave is definitely fine .
+[patient_guest] okay . so , zarbee's for the stuffy nose .
+[doctor] yes , zarbee's .
+[patient_guest] and then you said , uh , which medicine to give him just in case ?
+[doctor] i'm gon na give him the same medicine as his sister , and just hang onto it , um , just to watch and see . if this was a monday and we had a whole week to watch , i would say to just call us if things got worse , um , but since , um , if it's gon na be the weekend , and things might worsen tonight or tomorrow night , i'd rather you have just what you need on hand .
+[patient_guest] okay .
+[doctor] right , does that make sense ?
+[patient_guest] yeah , yeah . that makes sense .
+[doctor] okay , great . and that way you do n't have to share , um , with his sister .
+[patient_guest] right , okay .
+[doctor] and since he's about half her size , we'll do half the dose , which is a half a teaspoon .
+[patient_guest] okay . will this information all be in the papers ?
+[doctor] yes . and so , if he ends up starting the medicine , just give him a half a teaspoon for five days .
+[patient_guest] okay .
+[doctor] yeah , that's the only thing it wo n't say is , " as needed , " or anything like that .
+[patient_guest] mm-hmm , understood , thank you .
+[doctor] you're welcome .
+[patient_guest] and the cradle cap ?
+[doctor] what i would do is use something like either head & shoulder's , or selsun blue , or nizoral ad . now , do n't get the extra strength stuff , just use the regular strength . um , cradle cap , it's just basically a fancy way of saying dandruff . so , those shampoos will help get rid of it . it's not an immediate thing 'cause they , um , they are all dead scales , and you still have to brush them off . so , continue to use the soft brush and some baby oil , or something that will help get the scales out , and those shampoos will actually help to prevent it as well . use it two times per week , not every day , but maybe twice a week .
+[doctor] so , two days between shampooing , use what you normally use any other time . and then , often , within six weeks or so , you'll notice that the-the cradle cap is just , um , not coming back anymore . but , he has to be careful because it's not ph balanced for eyes . so , just make sure when you're rinsing his hair you avoid his eyes .
+[patient_guest] okay . okay .
+[doctor] all right . and , if it keeps getting worse , definitely let us know .
+[patient_guest] okay . sounds good .
+[doctor] good . and , since they do n't have covid-19 , you can go right ahead and check out .
+[patient_guest] okay . and both appointments in the week ?
+[doctor] correct . we'll see you all then . bye randy , feel better .
+[patient_guest] all right , great . thank you so much .
+[doctor] you are welcome , and have a good rest of your day .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Cough, nasal congestion, and rhinorrhea.
+
+HISTORY OF PRESENT ILLNESS
+
+Randy Gutierrez is a 9-month-old male who is being evaluated today for a cough, nasal congestion, and rhinorrhea. He is accompanied by his mother.
+
+Symptoms began yesterday around dinnertime with clear nasal drainage, pulling on his ears bilaterally, and rubbing his nose frequently. He does not have a barky cough or a sore throat. His rectal temperature was 100.3 degrees. The patient did consume a 7 ounce bottle this morning, but mostly denied the next offered bottle and declined cereal. He is irritable and having trouble falling asleep, described “like he is fighting it”.
+
+The patient has been exposed to an older sister who is sick and a cousin who has a sinus infection.
+
+Treatment has included saline nasal spray, Tylenol, baby Vick's, and a humidifier. When the patient aroused this morning, he was warm to the touch. When his sleeper was removed, he was quite sweaty despite the air conditioner being on.
+
+The patient's dandruff is also worsening. The only tried treatment is Aveeno shampoo.
+
+SOCIAL HISTORY
+
+Older sister.
+
+CURRENT MEDICATIONS
+
+Tylenol PRN.
+
+PHYSICAL EXAM
+
+Temperature 100.3 degrees.
+
+Ears, Eyes, Nose, Throat
+Nasal congestion, clear mucus, rhinorrhea. Bilateral pulling of ears, no sore throat or hoarseness.
+
+Respiratory
+Positive for cough.
+
+ASSESSMENT
+
+• Viral infection
+• Dandruff
+
+PLAN
+
+Viral infection
+The patient presents with a viral infection and does not need antibiotics currently. I advised continuation of fluids, rest. Additionally, I suggested trying Zarbee’s for children under 1 years old. If a croup cough develops, the patient will receive a 0.5 teaspoon.
+
+I also provided counseling to the mother to avoid giving honey to the patient for his first year of life due to botulism spores.
+
+Dandruff
+The patient is experiencing worsening symptoms of dandruff. I recommended Head and Shoulders shampoo, Selsun Blue, or Nizoral A-D 2 times per week, combined with his usual shampoo. I counseled the mother that she should be careful not to get the shampoo in the patient eyes and to not use the extra strength shampoos. Additionally, he may also use baby oil and a soft brush on the area.
+
+INSTRUCTIONS
+
+Return in one week for a re-check.
+

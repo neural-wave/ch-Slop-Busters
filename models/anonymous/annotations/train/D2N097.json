@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N097",
+  "phi": [
+    {"text": "elizabeth", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "66-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "birthday parties", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "social gatherings"},
+    {"text": "right down the street", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "nearby"},
+    {"text": "Elizabeth Peterson", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "66-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "birthday parties", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "social gatherings"},
+    {"text": "down the street", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "nearby"}
+  ],
+  "medical_concepts": []
+}

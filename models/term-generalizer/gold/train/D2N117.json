@@ -1,0 +1,848 @@
+{
+ "encounter_id": "D2N117",
+ "pii": [
+  {
+   "text": "mister jackson",
+   "field": "dialogue",
+   "category": "PATIENT_NAME",
+   "tier": "direct",
+   "comment": "patient last name with title"
+  },
+  {
+   "text": "mark",
+   "field": "dialogue",
+   "category": "PATIENT_NAME",
+   "tier": "direct",
+   "comment": "patient first name"
+  },
+  {
+   "text": "45 -year-old",
+   "field": "dialogue",
+   "category": "AGE",
+   "tier": "quasi",
+   "comment": "patient age"
+  },
+  {
+   "text": "doctor nelson",
+   "field": "dialogue",
+   "category": "CLINICIAN_NAME",
+   "tier": "direct",
+   "comment": "surgeon who removed gallbladder"
+  },
+  {
+   "text": "tiger",
+   "field": "dialogue",
+   "category": "OTHER_PERSON_NAME",
+   "tier": "direct",
+   "comment": "golfer (celebrity) mentioned in small talk"
+  },
+  {
+   "text": "easter",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "holiday used as time anchor"
+  },
+  {
+   "text": "state champ in high school",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "distinctive past achievement"
+  },
+  {
+   "text": "he just joined a country club",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "friend's club membership, social detail"
+  },
+  {
+   "text": "you're a golfer",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "personal hobby of the clinician"
+  },
+  {
+   "text": "Dr. Nelson",
+   "field": "note",
+   "category": "CLINICIAN_NAME",
+   "tier": "direct",
+   "comment": "surgeon who performed cholecystectomy"
+  }
+ ],
+ "medical_concepts": [
+  {
+   "text": "diabetes type two",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild intermittent asthma",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "right elbow pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "elbow pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "playing a lot of tennis",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "outside part",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "radiate",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shooting stabbing very sharp",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "trauma",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "increase in tennis activity",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "worse with movement better with rest",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little ice",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "diabetes",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood sugars",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin five hundred milligrams once a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin five hundred milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "asthma",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "asthma attacks",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "flovent",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "my asthma is pretty much under control",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "allergy to penicillin",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "gallbladder out",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "grade three out of six systolic ejection murmur",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "moderate lateral epicondylar tenderness of the right elbow",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "moderate pain with passive range of motion of the right elbow",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no palpable joint effusion",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild pain with resisted extension of the right wrist",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "right elbow x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "no acute fracture or other bony abnormality",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no malalignment or sign of joint effusion",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "acute lateral epicondylitis of your right elbow",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "tennis elbow",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "overuse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "stop tennis",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "repetitive stress",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ice that right elbow",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "inflammation",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "brace for your right forearm",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ultram fifty milligrams once per day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ultram",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "imaging",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy referral",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood sugar is a little bit out of control",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin to one thousand milligrams twice per day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin to one thousand milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "check your blood sugar twice daily",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "hemoglobin a1c",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "cbc",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "chem-12",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild acute intermittent asthma",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right elbow pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "type 2 diabetes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild intermittent asthma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "cholecystectomy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "playing tennis since high school",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "allergy to PENICILLIN",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "metformin 500 mg twice a day",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Flovent twice a day",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol as needed",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Denies fever",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Grade 3 out of 6 systolic ejection murmur",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Moderate lateral epicondylar tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Moderate pain with passive range of motion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No palpable joint effusion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild pain with resisted extension of the right wrist",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "X-ray of the right elbow",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "no acute fracture or other bony abnormality",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no malalignment or joint effusion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Acute lateral epicondylitis of right elbow",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "lateral epicondylitis secondary to overuse",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "increased tennis activity",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "discontinue playing tennis",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "repetitive stress with the right arm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "apply ice to the elbow",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "inflammation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right forearm brace",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ultram 50 mg once per day",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Diabetes type 2",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood sugar today is not controlled",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin to 1000 mg twice a day",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "home blood sugar monitoring",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hemoglobin A1c",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "CBC",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Chem-12 test",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild acute intermittent asthma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "remains well-controlled",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Flovent",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Refill of albuterol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "imaging",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "australia open",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "public sports event watched on TV, not the patient's location"
+  },
+  {
+   "text": "the masters",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "public golf tournament watched on TV"
+  },
+  {
+   "text": "cadboy eggs",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "mis-transcribed candy brand (Cadbury)"
+  },
+  {
+   "text": "cadberry eggs",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "mis-transcribed candy brand (Cadbury)"
+  },
+  {
+   "text": "tennis elbow",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "lay term for lateral epicondylitis, not a hobby identifier"
+  },
+  {
+   "text": "flovent",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "medication brand name"
+  },
+  {
+   "text": "ultram",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "medication brand name"
+  },
+  {
+   "text": "app",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "recording software"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "M77.11",
+   "spans": [
+    {
+     "text": "acute lateral epicondylitis of your right elbow",
+     "field": "dialogue"
+    },
+    {
+     "text": "tennis elbow",
+     "field": "dialogue"
+    },
+    {
+     "text": "right elbow pain",
+     "field": "dialogue"
+    },
+    {
+     "text": "moderate lateral epicondylar tenderness of the right elbow",
+     "field": "dialogue"
+    },
+    {
+     "text": "outside part",
+     "field": "dialogue"
+    },
+    {
+     "text": "overuse",
+     "field": "dialogue"
+    },
+    {
+     "text": "increase in tennis activity",
+     "field": "dialogue"
+    },
+    {
+     "text": "playing a lot of tennis",
+     "field": "dialogue"
+    },
+    {
+     "text": "no acute fracture or other bony abnormality",
+     "field": "dialogue"
+    },
+    {
+     "text": "Acute lateral epicondylitis of right elbow",
+     "field": "note"
+    },
+    {
+     "text": "lateral epicondylitis secondary to overuse",
+     "field": "note"
+    },
+    {
+     "text": "Right elbow pain",
+     "field": "note"
+    },
+    {
+     "text": "Moderate lateral epicondylar tenderness",
+     "field": "note"
+    },
+    {
+     "text": "increased tennis activity",
+     "field": "note"
+    },
+    {
+     "text": "X-ray of the right elbow",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E11.9",
+   "spans": [
+    {
+     "text": "diabetes type two",
+     "field": "dialogue"
+    },
+    {
+     "text": "diabetes",
+     "field": "dialogue"
+    },
+    {
+     "text": "metformin five hundred milligrams twice a day",
+     "field": "dialogue"
+    },
+    {
+     "text": "metformin to one thousand milligrams twice per day",
+     "field": "dialogue"
+    },
+    {
+     "text": "blood sugar is a little bit out of control",
+     "field": "dialogue"
+    },
+    {
+     "text": "hemoglobin a1c",
+     "field": "dialogue"
+    },
+    {
+     "text": "type 2 diabetes",
+     "field": "note"
+    },
+    {
+     "text": "Diabetes type 2",
+     "field": "note"
+    },
+    {
+     "text": "metformin 500 mg twice a day",
+     "field": "note"
+    },
+    {
+     "text": "metformin to 1000 mg twice a day",
+     "field": "note"
+    },
+    {
+     "text": "blood sugar today is not controlled",
+     "field": "note"
+    },
+    {
+     "text": "Hemoglobin A1c",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "J45.21",
+   "spans": [
+    {
+     "text": "mild intermittent asthma",
+     "field": "dialogue"
+    },
+    {
+     "text": "mild acute intermittent asthma",
+     "field": "dialogue"
+    },
+    {
+     "text": "flovent",
+     "field": "dialogue"
+    },
+    {
+     "text": "albuterol",
+     "field": "dialogue"
+    },
+    {
+     "text": "mild intermittent asthma",
+     "field": "note"
+    },
+    {
+     "text": "Mild acute intermittent asthma",
+     "field": "note"
+    },
+    {
+     "text": "Flovent twice a day",
+     "field": "note"
+    },
+    {
+     "text": "albuterol as needed",
+     "field": "note"
+    }
+   ]
+  }
+ ]
+}

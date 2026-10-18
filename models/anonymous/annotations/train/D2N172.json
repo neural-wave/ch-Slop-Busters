@@ -1,0 +1,19 @@
+{
+  "encounter_id": "D2N172",
+  "phi": [
+    {"text": "roy", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "50-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "winter and spring", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "few months"},
+    {"text": "onboarding a couple new employees", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "dealing with changes at work"},
+    {"text": "hosting some friends over vacation", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "having guests"},
+    {"text": "the beach", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "a vacation spot"},
+    {"text": "in the summer", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "recently"},
+    {"text": "Roy Sanchez", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "50-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "winter and spring", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "few months"},
+    {"text": "hosting friends over vacation", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "having guests"},
+    {"text": "the beach", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "a vacation spot"},
+    {"text": "this summer", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "recently"}
+  ],
+  "medical_concepts": []
+}

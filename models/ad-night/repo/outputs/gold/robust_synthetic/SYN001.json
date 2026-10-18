@@ -1,0 +1,34 @@
+{
+  "encounter_id": "SYN001",
+  "pii": [
+    {"field": "note", "text": "ST. BRIDGET'S REGIONAL MEDICAL CENTER", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "03/10/2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Price", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "William", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Will Price", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "00482913", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "11/22/1958", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "Tobi", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Okafor", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "67 y/o", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Anika", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Sorensen", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "retired electrician", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "Lakeside Orthopaedics", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Femi", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Adeyemi", "category": "PERSON_NAME", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "note", "text": "ladder", "category": "CODE_EVIDENCE", "why": "W11 fall from ladder"},
+    {"field": "note", "text": "stepladder", "category": "CODE_EVIDENCE", "why": "W11 fall from ladder"},
+    {"field": "note", "text": "trimming hedges", "category": "CODE_EVIDENCE", "why": "Y93.H2 gardening activity"},
+    {"field": "note", "text": "gardening", "category": "CODE_EVIDENCE", "why": "Y93.H2 gardening activity"},
+    {"field": "note", "text": "back garden", "category": "CODE_EVIDENCE", "why": "Y93.H2 gardening context"},
+    {"field": "note", "text": "158/92", "category": "CLINICAL_NUMBER", "why": "blood pressure"},
+    {"field": "note", "text": "8/10", "category": "CLINICAL_NUMBER", "why": "pain score"},
+    {"field": "note", "text": "15/15", "category": "CLINICAL_NUMBER", "why": "GCS"},
+    {"field": "note", "text": "NEXUS", "category": "NOT_A_NAME", "why": "c-spine decision rule"},
+    {"field": "note", "text": "will need", "category": "NOT_A_NAME", "why": "verb, not the nickname Will"},
+    {"field": "note", "text": "Colles' fracture", "category": "EPONYM", "why": "fracture type"}
+  ]
+}

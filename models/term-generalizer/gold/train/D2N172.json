@@ -1,0 +1,62 @@
+{"encounter_id": "D2N172",
+ "pii": [
+  {"text": "roy", "field": "dialogue", "category": "PATIENT_NAME", "tier": "direct", "comment": "patient first name"},
+  {"text": "50-year-old", "field": "dialogue", "category": "AGE", "tier": "quasi", "comment": "patient age"},
+  {"text": "onboarding a couple new employees", "field": "dialogue", "category": "OTHER_QUASI", "tier": "quasi", "comment": "implies managerial role at work"},
+  {"text": "Roy Sanchez", "field": "note", "category": "PATIENT_NAME", "tier": "direct", "comment": "patient full name"},
+  {"text": "50-year-old", "field": "note", "category": "AGE", "tier": "quasi", "comment": "patient age"}
+ ],
+ "medical_concepts": [
+  {"text": "depression", "field": "dialogue", "type": "diagnosis", "icd_relevant": true},
+  {"text": "high blood pressure", "field": "dialogue", "type": "diagnosis", "icd_relevant": true},
+  {"text": "hypertension", "field": "dialogue", "type": "diagnosis", "icd_relevant": true},
+  {"text": "zoloft , uh , 50 milligrams a day", "field": "dialogue", "type": "medication", "icd_relevant": true},
+  {"text": "zoloft 50 milligrams daily", "field": "dialogue", "type": "medication", "icd_relevant": true},
+  {"text": "zoloft", "field": "dialogue", "type": "medication", "icd_relevant": true},
+  {"text": "lisinopril 5 milligrams a day", "field": "dialogue", "type": "medication", "icd_relevant": true},
+  {"text": "blood pressures", "field": "dialogue", "type": "lab_or_test", "icd_relevant": true},
+  {"text": "you want to hurt yourself or anybody", "field": "dialogue", "type": "symptom", "icd_relevant": true},
+  {"text": "normal reactive stuff", "field": "dialogue", "type": "finding", "icd_relevant": true},
+  {"text": "stressful", "field": "dialogue", "type": "symptom", "icd_relevant": false},
+  {"text": "weight gain", "field": "dialogue", "type": "symptom", "icd_relevant": false},
+  {"text": "wake up at about 5:00 in the morning", "field": "dialogue", "type": "symptom", "icd_relevant": false},
+  {"text": "physical exam", "field": "dialogue", "type": "procedure", "icd_relevant": false},
+  {"text": "lungs are clear", "field": "dialogue", "type": "finding", "icd_relevant": false},
+  {"text": "grade two systolic ejection murmur", "field": "dialogue", "type": "finding", "icd_relevant": false},
+  {"text": "no edema", "field": "dialogue", "type": "finding", "icd_relevant": false},
+  {"text": "kidneys", "field": "dialogue", "type": "anatomy", "icd_relevant": false},
+  {"text": "a1c", "field": "dialogue", "type": "lab_or_test", "icd_relevant": false},
+  {"text": "depression", "field": "note", "type": "diagnosis", "icd_relevant": true},
+  {"text": "Depression", "field": "note", "type": "diagnosis", "icd_relevant": true},
+  {"text": "high blood pressure", "field": "note", "type": "diagnosis", "icd_relevant": true},
+  {"text": "Hypertension", "field": "note", "type": "diagnosis", "icd_relevant": true},
+  {"text": "Zoloft 50 mg a day", "field": "note", "type": "medication", "icd_relevant": true},
+  {"text": "Zoloft 50 mg daily", "field": "note", "type": "medication", "icd_relevant": true},
+  {"text": "lisinopril 5 mg daily", "field": "note", "type": "medication", "icd_relevant": true},
+  {"text": "Blood pressure is well controlled", "field": "note", "type": "finding", "icd_relevant": true},
+  {"text": "Denies thoughts of self-harm or suicidal ideation", "field": "note", "type": "symptom", "icd_relevant": true},
+  {"text": "stress", "field": "note", "type": "symptom", "icd_relevant": false},
+  {"text": "weight gain", "field": "note", "type": "symptom", "icd_relevant": false},
+  {"text": "abnormal labs", "field": "note", "type": "lab_or_test", "icd_relevant": false},
+  {"text": "waking up at 5 a.m.", "field": "note", "type": "symptom", "icd_relevant": false},
+  {"text": "Lungs are clear to auscultation bilaterally", "field": "note", "type": "finding", "icd_relevant": false},
+  {"text": "Grade 2 systolic ejection murmur", "field": "note", "type": "finding", "icd_relevant": false}
+ ],
+ "ambiguous_terms": [
+  {"text": "dax", "field": "dialogue", "is_pii": false, "comment": "documentation software"},
+  {"text": "dragon", "field": "dialogue", "is_pii": false, "comment": "dictation software"}
+ ],
+ "evidence": [
+  {"code": "I10", "spans": [
+    {"text": "hypertension", "field": "dialogue"}, {"text": "high blood pressure", "field": "dialogue"},
+    {"text": "lisinopril 5 milligrams a day", "field": "dialogue"}, {"text": "blood pressures", "field": "dialogue"},
+    {"text": "Hypertension", "field": "note"}, {"text": "high blood pressure", "field": "note"},
+    {"text": "lisinopril 5 mg daily", "field": "note"}, {"text": "Blood pressure is well controlled", "field": "note"}]},
+  {"code": "F32.A", "spans": [
+    {"text": "depression", "field": "dialogue"}, {"text": "zoloft , uh , 50 milligrams a day", "field": "dialogue"},
+    {"text": "zoloft 50 milligrams daily", "field": "dialogue"}, {"text": "zoloft", "field": "dialogue"},
+    {"text": "you want to hurt yourself or anybody", "field": "dialogue"}, {"text": "normal reactive stuff", "field": "dialogue"},
+    {"text": "depression", "field": "note"}, {"text": "Depression", "field": "note"},
+    {"text": "Zoloft 50 mg a day", "field": "note"}, {"text": "Zoloft 50 mg daily", "field": "note"},
+    {"text": "Denies thoughts of self-harm or suicidal ideation", "field": "note"}]}
+ ]}

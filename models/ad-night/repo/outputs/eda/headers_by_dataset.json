@@ -1,0 +1,766 @@
+{
+ "headers": {
+  "aci": {
+   "PHYSICAL EXAM": {
+    "lines": 111,
+    "encounters": 111,
+    "pct_encounters": 99.1
+   },
+   "REVIEW OF SYSTEMS": {
+    "lines": 106,
+    "encounters": 106,
+    "pct_encounters": 94.6
+   },
+   "CHIEF COMPLAINT": {
+    "lines": 99,
+    "encounters": 99,
+    "pct_encounters": 88.4
+   },
+   "RESULTS": {
+    "lines": 85,
+    "encounters": 85,
+    "pct_encounters": 75.9
+   },
+   "VITALS": {
+    "lines": 73,
+    "encounters": 73,
+    "pct_encounters": 65.2
+   },
+   "INSTRUCTIONS": {
+    "lines": 71,
+    "encounters": 71,
+    "pct_encounters": 63.4
+   },
+   "SOCIAL HISTORY": {
+    "lines": 63,
+    "encounters": 63,
+    "pct_encounters": 56.2
+   },
+   "HISTORY OF PRESENT ILLNESS": {
+    "lines": 58,
+    "encounters": 58,
+    "pct_encounters": 51.8
+   },
+   "ASSESSMENT": {
+    "lines": 58,
+    "encounters": 58,
+    "pct_encounters": 51.8
+   },
+   "PLAN": {
+    "lines": 58,
+    "encounters": 58,
+    "pct_encounters": 51.8
+   },
+   "MEDICAL HISTORY": {
+    "lines": 57,
+    "encounters": 57,
+    "pct_encounters": 50.9
+   },
+   "ASSESSMENT AND PLAN": {
+    "lines": 54,
+    "encounters": 54,
+    "pct_encounters": 48.2
+   },
+   "MEDICATIONS": {
+    "lines": 53,
+    "encounters": 53,
+    "pct_encounters": 47.3
+   },
+   "FAMILY HISTORY": {
+    "lines": 17,
+    "encounters": 17,
+    "pct_encounters": 15.2
+   },
+   "SURGICAL HISTORY": {
+    "lines": 16,
+    "encounters": 16,
+    "pct_encounters": 14.3
+   },
+   "ALLERGIES": {
+    "lines": 5,
+    "encounters": 5,
+    "pct_encounters": 4.5
+   },
+   "MSK": {
+    "lines": 4,
+    "encounters": 4,
+    "pct_encounters": 3.6
+   },
+   "RESPIRATORY": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 0.9
+   },
+   "SUBJECTIVE": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 0.9
+   },
+   "ORDERS": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 0.9
+   },
+   "OTC": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 0.9
+   }
+  },
+  "virtassist": {
+   "RESULTS": {
+    "lines": 52,
+    "encounters": 52,
+    "pct_encounters": 94.5
+   },
+   "HISTORY OF PRESENT ILLNESS": {
+    "lines": 45,
+    "encounters": 45,
+    "pct_encounters": 81.8
+   },
+   "PHYSICAL EXAMINATION": {
+    "lines": 45,
+    "encounters": 45,
+    "pct_encounters": 81.8
+   },
+   "CHIEF COMPLAINT": {
+    "lines": 43,
+    "encounters": 43,
+    "pct_encounters": 78.2
+   },
+   "REVIEW OF SYSTEMS": {
+    "lines": 43,
+    "encounters": 43,
+    "pct_encounters": 78.2
+   },
+   "ASSESSMENT AND PLAN": {
+    "lines": 38,
+    "encounters": 38,
+    "pct_encounters": 69.1
+   },
+   "PLAN": {
+    "lines": 16,
+    "encounters": 16,
+    "pct_encounters": 29.1
+   },
+   "HPI": {
+    "lines": 10,
+    "encounters": 10,
+    "pct_encounters": 18.2
+   },
+   "EXAM": {
+    "lines": 10,
+    "encounters": 10,
+    "pct_encounters": 18.2
+   },
+   "IMPRESSION": {
+    "lines": 9,
+    "encounters": 9,
+    "pct_encounters": 16.4
+   },
+   "VITALS REVIEWED": {
+    "lines": 8,
+    "encounters": 8,
+    "pct_encounters": 14.5
+   },
+   "ASSESSMENT": {
+    "lines": 6,
+    "encounters": 6,
+    "pct_encounters": 10.9
+   },
+   "CURRENT MEDICATIONS": {
+    "lines": 5,
+    "encounters": 5,
+    "pct_encounters": 9.1
+   },
+   "PAST MEDICAL HISTORY": {
+    "lines": 5,
+    "encounters": 5,
+    "pct_encounters": 9.1
+   },
+   "PAST SURGICAL HISTORY": {
+    "lines": 4,
+    "encounters": 4,
+    "pct_encounters": 7.3
+   },
+   "INSTRUCTIONS": {
+    "lines": 2,
+    "encounters": 2,
+    "pct_encounters": 3.6
+   },
+   "GERD.": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 1.8
+   },
+   "COPD.": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 1.8
+   }
+  },
+  "virtscribe": {
+   "CHIEF COMPLAINT": {
+    "lines": 40,
+    "encounters": 40,
+    "pct_encounters": 100.0
+   },
+   "HISTORY OF PRESENT ILLNESS": {
+    "lines": 40,
+    "encounters": 40,
+    "pct_encounters": 100.0
+   },
+   "ASSESSMENT": {
+    "lines": 39,
+    "encounters": 39,
+    "pct_encounters": 97.5
+   },
+   "PLAN": {
+    "lines": 39,
+    "encounters": 39,
+    "pct_encounters": 97.5
+   },
+   "PHYSICAL EXAM": {
+    "lines": 34,
+    "encounters": 34,
+    "pct_encounters": 85.0
+   },
+   "INSTRUCTIONS": {
+    "lines": 34,
+    "encounters": 34,
+    "pct_encounters": 85.0
+   },
+   "CURRENT MEDICATIONS": {
+    "lines": 24,
+    "encounters": 24,
+    "pct_encounters": 60.0
+   },
+   "PAST HISTORY": {
+    "lines": 24,
+    "encounters": 24,
+    "pct_encounters": 60.0
+   },
+   "RESULTS": {
+    "lines": 21,
+    "encounters": 21,
+    "pct_encounters": 52.5
+   },
+   "SOCIAL HISTORY": {
+    "lines": 19,
+    "encounters": 19,
+    "pct_encounters": 47.5
+   },
+   "FAMILY HISTORY": {
+    "lines": 14,
+    "encounters": 14,
+    "pct_encounters": 35.0
+   },
+   "ALLERGIES": {
+    "lines": 10,
+    "encounters": 10,
+    "pct_encounters": 25.0
+   },
+   "REVIEW OF SYSTEMS": {
+    "lines": 6,
+    "encounters": 6,
+    "pct_encounters": 15.0
+   },
+   "VITALS": {
+    "lines": 4,
+    "encounters": 4,
+    "pct_encounters": 10.0
+   },
+   "REVIEW OF SYMPTOMS": {
+    "lines": 2,
+    "encounters": 2,
+    "pct_encounters": 5.0
+   },
+   "PROCEDURE": {
+    "lines": 2,
+    "encounters": 2,
+    "pct_encounters": 5.0
+   },
+   "BSA 2.65": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 2.5
+   },
+   "ECG, 12/26/2020.": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 2.5
+   },
+   "EKG": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 2.5
+   },
+   "PAST MEDICAL HISTORY": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 2.5
+   },
+   "CMP, 03/22/2021.": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 2.5
+   },
+   "BIRTH HISTORY": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 2.5
+   },
+   "HIV": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 2.5
+   },
+   "MEDICATIONS": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 2.5
+   },
+   "ASSESSMENT AND PLAN": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 2.5
+   },
+   "PCOS.": {
+    "lines": 1,
+    "encounters": 1,
+    "pct_encounters": 2.5
+   }
+  }
+ },
+ "header_sequences_top3": {
+  "aci": [
+   {
+    "n": 7,
+    "seq": [
+     "CHIEF COMPLAINT",
+     "HISTORY OF PRESENT ILLNESS",
+     "REVIEW OF SYSTEMS",
+     "VITALS",
+     "PHYSICAL EXAM",
+     "RESULTS",
+     "ASSESSMENT",
+     "PLAN",
+     "INSTRUCTIONS"
+    ]
+   },
+   {
+    "n": 4,
+    "seq": [
+     "CHIEF COMPLAINT",
+     "MEDICAL HISTORY",
+     "SOCIAL HISTORY",
+     "MEDICATIONS",
+     "REVIEW OF SYSTEMS",
+     "VITALS",
+     "PHYSICAL EXAM",
+     "RESULTS",
+     "ASSESSMENT AND PLAN",
+     "INSTRUCTIONS"
+    ]
+   },
+   {
+    "n": 3,
+    "seq": [
+     "CHIEF COMPLAINT",
+     "HISTORY OF PRESENT ILLNESS",
+     "MEDICAL HISTORY",
+     "SOCIAL HISTORY",
+     "MEDICATIONS",
+     "REVIEW OF SYSTEMS",
+     "PHYSICAL EXAM",
+     "RESULTS",
+     "ASSESSMENT",
+     "PLAN",
+     "INSTRUCTIONS"
+    ]
+   }
+  ],
+  "virtassist": [
+   {
+    "n": 22,
+    "seq": [
+     "CHIEF COMPLAINT",
+     "HISTORY OF PRESENT ILLNESS",
+     "REVIEW OF SYSTEMS",
+     "PHYSICAL EXAMINATION",
+     "RESULTS",
+     "ASSESSMENT AND PLAN"
+    ]
+   },
+   {
+    "n": 7,
+    "seq": [
+     "CHIEF COMPLAINT",
+     "HISTORY OF PRESENT ILLNESS",
+     "REVIEW OF SYSTEMS",
+     "PHYSICAL EXAMINATION",
+     "VITALS REVIEWED",
+     "RESULTS",
+     "ASSESSMENT AND PLAN"
+    ]
+   },
+   {
+    "n": 4,
+    "seq": [
+     "CHIEF COMPLAINT",
+     "HISTORY OF PRESENT ILLNESS",
+     "REVIEW OF SYSTEMS",
+     "PHYSICAL EXAMINATION",
+     "RESULTS",
+     "ASSESSMENT",
+     "PLAN"
+    ]
+   }
+  ],
+  "virtscribe": [
+   {
+    "n": 3,
+    "seq": [
+     "CHIEF COMPLAINT",
+     "HISTORY OF PRESENT ILLNESS",
+     "PHYSICAL EXAM",
+     "RESULTS",
+     "ASSESSMENT",
+     "PLAN",
+     "INSTRUCTIONS"
+    ]
+   },
+   {
+    "n": 2,
+    "seq": [
+     "CHIEF COMPLAINT",
+     "HISTORY OF PRESENT ILLNESS",
+     "PAST HISTORY",
+     "FAMILY HISTORY",
+     "CURRENT MEDICATIONS",
+     "RESULTS",
+     "ASSESSMENT",
+     "PLAN",
+     "INSTRUCTIONS"
+    ]
+   },
+   {
+    "n": 2,
+    "seq": [
+     "CHIEF COMPLAINT",
+     "HISTORY OF PRESENT ILLNESS",
+     "PAST HISTORY",
+     "CURRENT MEDICATIONS",
+     "PHYSICAL EXAM",
+     "ASSESSMENT",
+     "PLAN",
+     "INSTRUCTIONS"
+    ]
+   }
+  ]
+ },
+ "empty_sections": [
+  [
+   "D2N203",
+   "RESULTS"
+  ],
+  [
+   "D2N015",
+   "ASSESSMENT AND PLAN"
+  ],
+  [
+   "D2N101",
+   "VITALS"
+  ],
+  [
+   "D2N101",
+   "BSA 2.65"
+  ],
+  [
+   "D2N103",
+   "RESULTS"
+  ],
+  [
+   "D2N105",
+   "RESULTS"
+  ],
+  [
+   "D2N185",
+   "CMP, 03/22/2021."
+  ],
+  [
+   "D2N023",
+   "HIV"
+  ]
+ ],
+ "spelling_variants": {
+  "PHYSICAL": [
+   "PHYSICAL EXAM",
+   "PHYSICAL EXAMINATION"
+  ],
+  "REVIEW": [
+   "REVIEW OF SYMPTOMS",
+   "REVIEW OF SYSTEMS"
+  ],
+  "VITALS": [
+   "VITALS",
+   "VITALS REVIEWED"
+  ],
+  "ASSESSMENT": [
+   "ASSESSMENT",
+   "ASSESSMENT AND PLAN"
+  ],
+  "PAST": [
+   "PAST HISTORY",
+   "PAST MEDICAL HISTORY",
+   "PAST SURGICAL HISTORY"
+  ]
+ },
+ "non_ascii": {
+  "U+2022": {
+   "name": "BULLET",
+   "count": 789,
+   "encounters": 83,
+   "fields": {
+    "note": 789
+   },
+   "datasets": {
+    "virtassist": 655,
+    "virtscribe": 134
+   },
+   "examples": [
+    [
+     "D2N088",
+     "note",
+     "hea. ⏎  ⏎ REVIEW OF SYSTEMS ⏎  ⏎ «•» Constitutional: Denies f"
+    ],
+    [
+     "D2N088",
+     "note",
+     "itutional: Denies fever. ⏎ «•» Cardiovascular: Endorses"
+    ],
+    [
+     "D2N088",
+     "note",
+     "ses dyspnea on exertion. ⏎ «•» Respiratory: Endorses sh"
+    ]
+   ]
+  },
+  "U+00A0": {
+   "name": "NO-BREAK SPACE",
+   "count": 4,
+   "encounters": 4,
+   "fields": {
+    "note": 4
+   },
+   "datasets": {
+    "virtassist": 4
+   },
+   "examples": [
+    [
+     "D2N093",
+     "note",
+     "l: Denies fevers, chills.« » Endorses fatigue. ⏎ • Card"
+    ],
+    [
+     "D2N128",
+     "note",
+     "extremity. Examination of« » the right elbow, there i"
+    ],
+    [
+     "D2N169",
+     "note",
+     "MINATION ⏎  ⏎ • Neck: Supple.« » No jugular venous disten"
+    ]
+   ]
+  },
+  "U+2019": {
+   "name": "RIGHT SINGLE QUOTATION MARK",
+   "count": 39,
+   "encounters": 25,
+   "fields": {
+    "note": 39
+   },
+   "datasets": {
+    "virtscribe": 29,
+    "aci": 10
+   },
+   "examples": [
+    [
+     "D2N098",
+     "note",
+     " Hawkins-Kennedy and Neer«’»s test. Normal proximal a"
+    ],
+    [
+     "D2N099",
+     "note",
+     "I suggested trying Zarbee«’»s for children under 1 ye"
+    ],
+    [
+     "D2N100",
+     "note",
+     "st every day. The patient«’»s mother notes that the m"
+    ]
+   ]
+  },
+  "U+201C": {
+   "name": "LEFT DOUBLE QUOTATION MARK",
+   "count": 21,
+   "encounters": 17,
+   "fields": {
+    "note": 21
+   },
+   "datasets": {
+    "virtscribe": 18,
+    "aci": 3
+   },
+   "examples": [
+    [
+     "D2N099",
+     "note",
+     "alling asleep, described «“»like he is fighting it”. ⏎ "
+    ],
+    [
+     "D2N103",
+     "note",
+     "ently, and her breathing «“»gets shallow” which resul"
+    ],
+    [
+     "D2N103",
+     "note",
+     "ow” which results in her «“»slowing down” and decreas"
+    ]
+   ]
+  },
+  "U+201D": {
+   "name": "RIGHT DOUBLE QUOTATION MARK",
+   "count": 23,
+   "encounters": 19,
+   "fields": {
+    "note": 23
+   },
+   "datasets": {
+    "virtscribe": 20,
+    "aci": 3
+   },
+   "examples": [
+    [
+     "D2N099",
+     "note",
+     "d “like he is fighting it«”». ⏎  ⏎ The patient has been e"
+    ],
+    [
+     "D2N103",
+     "note",
+     "r breathing “gets shallow«”» which results in her “sl"
+    ],
+    [
+     "D2N103",
+     "note",
+     "ults in her “slowing down«”» and decreasing her exert"
+    ]
+   ]
+  },
+  "U+202F": {
+   "name": "NARROW NO-BREAK SPACE",
+   "count": 35,
+   "encounters": 8,
+   "fields": {
+    "note": 35
+   },
+   "datasets": {
+    "virtscribe": 33,
+    "virtassist": 2
+   },
+   "examples": [
+    [
+     "D2N101",
+     "note",
+     "reasts ⏎ Inspection reveals« »asymmetrical breasts with"
+    ],
+    [
+     "D2N101",
+     "note",
+     "tion reveals asymmetrical« »breasts with severe ptosi"
+    ],
+    [
+     "D2N140",
+     "note",
+     "s which has been helpful.« »The patient reports passi"
+    ]
+   ]
+  },
+  "U+200B": {
+   "name": "ZERO WIDTH SPACE",
+   "count": 1,
+   "encounters": 1,
+   "fields": {
+    "note": 1
+   },
+   "datasets": {
+    "virtassist": 1
+   },
+   "examples": [
+    [
+     "D2N174",
+     "note",
+     " bilateral knees lately. «​»His recent knee x-ray was"
+    ]
+   ]
+  },
+  "U+00B2": {
+   "name": "SUPERSCRIPT TWO",
+   "count": 1,
+   "encounters": 1,
+   "fields": {
+    "note": 1
+   },
+   "datasets": {
+    "virtscribe": 1
+   },
+   "examples": [
+    [
+     "D2N185",
+     "note",
+     "than 90 mL/min per 1.73 m«²», and normal serum electr"
+    ]
+   ]
+  },
+  "U+2013": {
+   "name": "EN DASH",
+   "count": 1,
+   "encounters": 1,
+   "fields": {
+    "dialogue": 1
+   },
+   "datasets": {
+    "aci": 1
+   },
+   "examples": [
+    [
+     "D2N200",
+     "dialogue",
+     " like for you to start a «–» diet it's really to to h"
+    ]
+   ]
+  },
+  "U+00DF": {
+   "name": "LATIN SMALL LETTER SHARP S",
+   "count": 1,
+   "encounters": 1,
+   "fields": {
+    "note": 1
+   },
+   "datasets": {
+    "virtassist": 1
+   },
+   "examples": [
+    [
+     "D2N010",
+     "note",
+     "he right lower extremity.«ß» ⏎  ⏎ RESULTS ⏎  ⏎ Lyme titer: el"
+    ]
+   ]
+  }
+ }
+}

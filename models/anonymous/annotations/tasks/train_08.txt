@@ -1,0 +1,1129 @@
+########## ENCOUNTER D2N168
+=== FIELD: dialogue
+[doctor] hi diane , how are you ?
+[patient] i'm doing okay , how are you ?
+[doctor] i'm doin' okay . so i know the nurse told you about dax and i'd like to tell dax a little bit about you okay ?
+[patient] okay .
+[doctor] diane is a 28 year old female with a past medical history , significant for , depression and hypertension who presents for emergency room follow-up .
+[doctor] so diane what's going on ? i heard that your- your blood pressure was really high in the emergency room . what happened ?
+[patient] yeah , so i ended up going for a walk , um , yesterday 'cause it was sunny and it was really great . and i just felt really light-headed , um , and i started to fall a bit , and , um , luckily i was with my boyfriend and he caught me , um , and then we went right to the e , to the er .
+[doctor] yeah , okay . yeah , i saw that the blood pressure was pretty high , like in , like , the , almost 200 .
+[patient] yeah .
+[doctor] did you have a headache ?
+[patient] yeah i did .
+[doctor] okay , all right . have your blood pressures been running high in the past ?
+[patient] yeah , they have been . it's- it's , like , once a week , a month , it , kind of , just skyrockets .
+[doctor] okay .
+[patient] um , it usually ends up , um , being , i'm traveling a lot that week for work , so i'm not eating as well , um-
+[doctor] you're not taking your blood pressures , i take it-
+[patient] yeah .
+[doctor] . when you're traveling ?
+[patient] yeah , no , i do n't bring my cuff with me .
+[doctor] okay , but you did buy the cuff like we talked about in the past ?
+[patient] yes i did .
+[doctor] okay , all right . and are you taking your medication , are you taking the lisinopril ?
+[patient] yes i am .
+[doctor] okay , all right . um , so i think we had started you at a , kind of , a moderate dose , so we'll have to talk about that a little bit , okay ?
+[patient] okay .
+[doctor] then in terms of your depression , how are you doing ? i know that we did n't start you on medication , since you're on a bunch of other medications . what- what are your strategies for dealing with that and how are you doing ?
+[patient] so last year i started therapy and i've been going once a week and that's really helped .
+[doctor] okay , all right , great . and how is your support system ?
+[patient] really great . my boyfriend , my mom , and my brother are- are s- , amazing and they're all super close to me , so it's been , it's been good .
+[doctor] okay , well great . so i know you did a review of system sheet when you checked in and i know that you had the headache and the lightheadedness yesterday . do you have any other symptoms at this time , chest pain , shortness of breath , anything like that ?
+[patient] uh , i have a little bit of nasal congestion , but that's just from my seasonal allergies .
+[doctor] okay , all right . well i want to go ahead and do a quick physical exam , okay ?
+[patient] okay .
+[doctor] hey , dragon , show me the blood pressure .
+[doctor] so , yeah , looking at your blood pressure today here in the office , it does look a little elevated still , so we'll have to talk about that . so i'm just gon na listen to your heart and your lungs and we'll go from there okay ?
+[patient] okay .
+[doctor] so on physical examination , i- i do n't appreciate any carotid bruits in your neck . your heart on your heart exam , it does show that you have a slight two out of six systolic ejection murmur . your , there , your lung exam shows nice clear lungs bilaterally and you do have some trace pitting edema to your lower extremities bilaterally . so what that means is , you know , i- i think ultimately , uh , you know we just need to get your blood pressure under better control , okay ?
+[patient] mm-hmm .
+[doctor] um , uh , let me just go ahead , i want to take a look at some of your results , okay ?
+[patient] okay .
+[doctor] hey , dragon , show me the ecg .
+[doctor] yeah , so in reviewing the results of your ekg , it looks the same as last year . um , you do have just blood , those changes from your chronic high blood pressure that we'll address , okay ?
+[doctor] hey , dragon , show me the echocardiogram .
+[doctor] and this is just the echocardiogram from just a few months ago that just , you know , show that you have that slightly leaky heart valve , nothing to do for it , and that the heart murmur is stable , okay ?
+[patient] okay .
+[doctor] so let's just talk a little bit about , you know , my assessment and my plan for you . so , for your first problem , your high blood pressure , it's not controlled at this time , so i want to go ahead and increase the lisinopril to 40 milligrams once a day . i want you to continue to check your blood pressures and report them to me through the patient portal and we'll have to make adjustments if necessary and maybe have to add a second agent , okay ?
+[patient] okay .
+[doctor] and then for your second problem , uh , i want , you know , for your depression , i do n't think that we need to start you on any medication , it sounds like you're doing really well from that standpoint , but you know that you can contact me if you , if you need anything , okay ?
+[patient] okay .
+[doctor] do you have any questions ?
+[patient] no , not at this time .
+[doctor] okay , all right , well it's good to see you .
+[patient] good seeing you too .
+[doctor] hey , dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Emergency room follow-up.
+
+HISTORY OF PRESENT ILLNESS
+
+Ms. Diane Baker is a 28-year-old female with a past medical history significant for depression, and hypertension, who presents for emergency room follow-up.
+
+The patient went for a walk yesterday and began to feel lightheaded. She started to fall, however she was with her boyfriend, who caught her. She presented to the emergency room after this. While in the emergency room, her blood pressure was nearly 200 and she had a headache.
+
+Her blood pressure is typically normal, however will become elevated approximately one week a month. She notes it is typically elevated because she is traveling a lot that week for work. While traveling, she is not eating as well and does not monitor her blood pressure. The patient is taking her lisinopril as prescribed.
+
+Regarding her depression, she states she is doing well. Last year she started therapy and she has been going once a week, which has helped. Her support system is great and includes her boyfriend, mom, and brother.
+
+The patient notes she has a little bit of nasal congestion, which she attributes to her seasonal allergies. She denies chest pain and shortness of breath.
+
+REVIEW OF SYSTEMS
+
+• Ears, Nose, Mouth and Throat: Endorses nasal congestion from seasonal allergies.
+• Cardiovascular: Denies chest pain or dyspnea.
+• Respiratory: Denies shortness of breath.
+• Neurological: Endorses lightheadedness and a headache.
+• Psychiatric: Endorses depression.
+
+PHYSICAL EXAMINATION
+
+• Neck: No carotid bruits appreciable.
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: Slight 2/6 systolic ejection murmur.
+• Musculoskeletal: Trace pitting edema in the bilateral lower extremities.
+
+VITALS REVIEWED
+
+• Blood Pressure: Elevated.
+
+RESULTS
+
+Electrocardiogram stable in comparison to last year.
+
+Echocardiogram demonstrates decreased ejection fraction. Stable heart murmur.
+
+ASSESSMENT
+
+Ms. Diane Baker is a 28-year-old female with a past medical history significant for depression, and hypertension, who presents for emergency room follow-up.
+
+PLAN
+
+Hypertension.
+• Medical Reasoning: This is not controlled at this time. The patient presented to the emergency department yesterday with an elevated blood pressure, presyncope, and headache. She has been compliant with lisinopril, but her blood pressures have been spiking once a month based on home monitoring; however, she admits to not taking her blood pressures while traveling recently. A recent EKG revealed changes from her chronic high blood pressure.
+• Medical Treatment: Increase lisinopril to 40 mg once a day.
+• Patient Education and Counseling: She will continue to check her blood pressures and report them to me through the patient portal. We will have to make adjustments if necessary.
+
+Depression.
+• Medical Reasoning: The patient is doing well with weekly therapy.
+• Medical Treatment: Continue current management strategies. No medication to start at this time.
+• Patient Education and Counseling: She can contact me if she needs anything.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+
+########## ENCOUNTER D2N169
+=== FIELD: dialogue
+[doctor] hi alan , how are you ?
+[patient] hi , good to see you .
+[doctor] good to see you as well . are you ready to get started ?
+[patient] yes i am .
+[doctor] so , alan is a 61-year-old male , here with complaints of shortness of breath .
+[doctor] so alan , what's going on ?
+[patient] so over the weekend , uh , i took a very long bike ride , about three hours or so and i got back , i was very light headed , i was short of breath and it really surprised me because i pretty much bike ride every morning and it was never an issue before so i'm a little concerned about that .
+[doctor] okay , and have you had any other symptoms ? have you had any fever-
+[patient] n-
+[doctor] . chest pain ?
+[patient] no , but i felt very light headed and , uh , i- it was hard to catch my breath afterwards , so maybe i did have a little chest pain but , uh , it , it eventually went away after about an hour .
+[doctor] okay , um , and anyone else sick in your , in your family ?
+[patient] no .
+[doctor] okay , and any cough ?
+[patient] um , i had a little bit of a cough with my first cold in the last year and a half , but that went away after about a week or so .
+[doctor] okay , all right . um , and any other symptoms ? i know you went through the review of symptoms-
+[patient] mm-hmm .
+[doctor] . with the nurse but any nausea or vomiting or abdominal pain ?
+[patient] n- no .
+[doctor] okay . all right . well , i know that i've treated you for migraines in the past . how are you doing with those ?
+[patient] that's been under control . i've , uh , taken medication , i've , uh , avoided bright lights and it's so far so good .
+[doctor] okay . all right . and i think we had you on imitrex for that . have you-
+[patient] yes , i'm still taking that .
+[doctor] all right . and then your reflux , how are you doing with that ?
+[patient] managing that as well .
+[doctor] okay and everything's working out well with the protonix ?
+[patient] yes .
+[doctor] okay . and then i know you had the cataract surgery about three months ago , your vision is okay ?
+[patient] that was about four and a half months ago and it's been actually great ever since .
+[doctor] okay , great . all right , well , we're gon na go ahead and do a quick physical exam . i wan na see your vital signs first .
+[patient] sure .
+[doctor] hey dragon , show me the vital signs .
+[doctor] okay , so looking here , everything looks quite good . your oxygenation is perfect , which is wonderful . let me just take a listen .
+[doctor] deep breath . another one . good .
+[doctor] so , on your physical exam , your neck is nice and supple . i do n't appreciate any jugular venous distension . your heart is in a regular rhythm , i do n't hear any murmur . your lungs do have a slight wheeze , expiratory wheeze , bilaterally . i can hear it every time you breathe and i see trace lower extremity edema in your lower extremities .
+[doctor] so what does all that mean ? you know , you , uh , i'm not quite sure yet but we're gon na review some of your results . hey dragon , show me the chest x-ray .
+[doctor] so looking here , this is a very normal chest x-ray . um , i do n't see any pulmonary edema , there's no pneumonia , so we're viewing your chest x-ray as , it's a norm- it's normal .
+[patient] good .
+[doctor] so , let's look at your pulmonary function test .
+[doctor] hey dragon , show me your , the pfts . and looking here again , these look quite good , i'm , i'm quite encouraged by that . that's , that's normal pulmonary function tests . hey dragon , show me the labs . and all of your labs here look quite good here as well so , i- i- i'm very pleased . so , right now my impression of you is that you may have had an asthma exacerbation from exercising and with the allergies , so at this point in time i'd like to go ahead and prescribe you some albuterol inhaler .
+[patient] mm-hmm .
+[doctor] two puffs every four hours as needed for wheezing or for shortness of breath . and , i'd like to go ahead and order a pulmonary referral for you , okay . do you have any questions about that ?
+[patient] no questions , thanks .
+[doctor] hey dragon , order a pulmonary referral . hey dragon , order albuterol inhaler , two puffs every four hours , as needed for shortness of breath .
+[doctor] and then i think from your reflux standpoint , everything seems stable and your migraines , i think that we should just continue on with the imitrex , as needed . does that sound good to you ?
+[patient] that sounds fine .
+[doctor] i wan na see you in a couple weeks and if you have this shortness of breath again , i want you to call me right away , okay ?
+[patient] you got it .
+[doctor] all right . good to see you .
+[patient] same here .
+[doctor] hey dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Shortness of breath.
+
+HISTORY OF PRESENT ILLNESS
+
+Alan Butler is a 61-year-old male presenting with complaints of shortness of breath.
+
+The patient states that over the weekend, he took a very long bike ride for approximately 3 hours, and when he returned, he was very lightheaded and short of breath. He notes that it was difficult to catch his breath afterward. He endorses that he had mild chest pain at that time, however, it eventually went away after about an hour. He denies any fever at this time or any other symptoms at this time. No other members in his family have been sick.
+
+The patient is currently taking Imitrex as needed for his migraines. His migraines are under control and he avoids exposure to bright lights.
+
+The patient is currently taking Protonix for his reflux and he is doing well with this.
+
+The patient had cataract surgery about 4.5 months ago. He notes that his vision is okay since then.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: No fevers.
+• Cardiovascular: Endorses chest pain and dyspnea on exertion.
+• Respiratory: Endorses a cough. Endorses shortness of breath.
+• Gastrointestinal: Endorses reflux.
+• Neurological: Endorses migraines. Endorses lightheadedness.
+
+PHYSICAL EXAMINATION
+
+• Neck: Supple.  No jugular venous distension.
+• Respiratory: Slight expiratory wheezing bilaterally.
+• Cardiovascular: Regular rate and rhythm. No murmurs.
+• Musculoskeletal: Trace edema in the bilateral lower extremities.
+
+RESULTS
+
+Pulmonary function test are within normal limits.
+
+X-ray of the chest is unremarkable.
+
+CBC: Within normal limits.
+
+ASSESSMENT AND PLAN
+
+The patient is a 61-year-old male who presents for shortness of breath.
+
+Shortness of breath.
+• Medical Reasoning: I reviewed the patient's chest x-ray, pulmonary function test, and labs which were all normal. He does have slight expiratory wheezing bilaterally on exam. I suspect his episode of shortness of breath was due to an exacerbation of asthma.
+• Medical Treatment: I would like to prescribe an albuterol inhaler, 2 puffs every 4 hours as needed for wheezing or shortness of breath.
+• Specialist Referral: I have referred him to pulmonology for an asthma workup.
+
+Acid reflux.
+• Medical Reasoning: This seems stable.
+• Medical Treatment: I recommended the patient continue Protonix.
+
+Migraines.
+• Medical Reasoning: This problem is also stable. Continue on Imitrex as needed.
+• Medical Treatment: I recommended he continue Imitrex as needed for migraines.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+The patient will follow-up in 2 weeks or sooner if his conditions worsen.
+
+########## ENCOUNTER D2N170
+=== FIELD: dialogue
+[doctor] hi joyce , how are you ?
+[patient] i'm good . how are you ?
+[doctor] i'm doing well . so , i know the nurse told you about dax . i'd like to tell dax a little bit about you when we get started , okay ?
+[patient] okay .
+[doctor] all right . so , joyce is a 50 year old female with a past medical history significant for copd , congestive heart failure who presents for follow-up to an abnormal lab finding . so , joyce , i , i got the results of your lab , uh , your labs . your hemoglobin was low . uh , so , i asked them to schedule a follow-up appointment with me . so , how are you feeling ?
+[patient] i've been feeling really tired lately . over the past couple of months , i've noticed that my energy has really gone down . i used to be really active , um , just trying to be as healthy as i can be , running, climbing . um , i at least try to do an hour or two a day . and over the past month , it's gone slowly downhill . i've just been so tired and exhausted and i have n't been able to really keep up with the way i , i was g- was going with my exercise .
+[doctor] okay . all right . um , now , have you had ... have you noticed any blood in your stools at all ?
+[patient] uh , no , not really . not , not at this time .
+[doctor] okay . and are your stools , like , dark or charry or black looking ?
+[patient] no . not that i've noticed .
+[doctor] okay . and are you spotting a lot with your periods ?
+[patient] no , i'm not .
+[doctor] okay . all right . um , and do you have any other ... i know that you are endorsing this fatigue and you feel kind of dizzy and that type of thing . do you have any other symptoms like chest pain , shortness of breath , fever , chills , body aches , anything ?
+[patient] no , nothing like that .
+[doctor] okay . any weight loss ?
+[patient] um , i've noticed a little bit , but that's because i think i've been doing really well with my exercise . um , but nothing too significant .
+[doctor] okay . all right . well , let me ask you a little bit about how's the , the copd doing . i , i know that , you know , you've stopped smoking several years ago , but , you know , you still have that em- those emphysema changes on your chest x-ray . so , how are you doing with that ? how's your breathing ?
+[patient] it's been okay . um , i have n't been smoking . i ... after i quit , i quit cold turkey and i have n't gone back since . so , that's been doing well . i think , uh , during the changes of season , it gets a little bit harder for me to breathe , but i think that's just because of my allergies .
+[doctor] okay . all right . and then from a congestive heart failure standpoint , are you watching your diet , you're watching your salt intake ?
+[patient] yeah . i've been doing really well with that . i've been staying away from the french fries , and all the other salty foods that i love to eat , uh , and everything looks great .
+[doctor] um , so , french fries are one of my favorite foods , that and fried chicken , so-
+
+[doctor] i give you a lot of credit for staying away from french fries .
+[patient] thank you .
+[doctor] um , okay . so , you ... so , no swelling in your legs or any- anything like that .
+[patient] no , not that i've noticed .
+[doctor] okay . and you feel like you have a good support system ?
+[patient] yeah . my boyfriend is , is great and i have , um , my brother right down the road .
+[doctor] okay . all right . good . i'm glad to hear that . uh , so , let's go ahead . i wan na just do a quick physical exam , okay ?
+[patient] okay .
+[doctor] hey , dragon , show me the vital signs . all right . well , your vital signs here in the office look good , so , i'm , i'm really happy to see that with the abnormal hemoglobin that we saw . um , i'm gon na just listen to your heart and lungs and press on your belly a little bit and i'll let you know if i find anything , okay ?
+[patient] okay .
+[doctor] all right . okay . all right . so , on physical exam , you know , i , i do n't appreciate anything cervical lymphadenopathy . your heart sounds really good , but i do hear a , a slight two out of six systolic heart , uh , murmur , um , systolic ejection murmur on your heart exam . your lungs sound clear . your abdomen ... you know , you did have a little tenderness to palpation in your right lower quadrant on your abdominal exam , uh , but i do n't appreciate any lower extremity edema . so , all that means it that we , you know , we hear that heart murmur , which we heard in the past , um , and your belly had some tenderness , so we'll have to talk about that a little bit , uh , going forward , okay ?
+[patient] okay .
+[doctor] let's look at some of your results , okay ?
+[patient] mm-hmm .
+[doctor] hey , dragon , show me the hemoglobin . so , here , looking at this , you know , your hemoglobin level is 8.2. somebody like you should have a hemoglobin o- of about 13 , 14 , okay ?
+[patient] okay .
+[doctor] so , we need to investigate why it's low . hey , dragon , show me the anemia labs . okay . so , looking here at your labs , uh , everything looks good from , from this standpoint . i think some of your anemia labs are still pending at this time that's part of the workup .
+[patient] mm-hmm .
+[doctor] so , let's go over a little bit about the assessment and plan for you . so , you know , your main problem , this abnormal lab , this low hemoglobin that we found , so , you're anemic and we nee- ... you know , i'm waiting for those anemia labs to come back to find out exactly , you know , what type of anemia you have . i'd like to go ahead and schedule you for an endoscopy a- and a colonoscopy just to make sure that you're not bleeding from your , inside your belly , okay ? um , and i'm ... i'll be in touch when those labs come back to see what further workup we need to do , okay ?
+[patient] mm-hmm .
+[doctor] for your next problem , the copd , i think you're doing great . you know , i , i do n't think that you , uh , need any further referrals at this time for that . i would just continue staying away from smoking . it does n't sound to be like you need any inhalers at this time . uh , for your third problem , your congestive heart failure , you know , i wan na continue you on the toprol , continue you on the lisinopril and we'll continue you on your current diuretic dosing of 20 , lasix 20 milligrams a day .
+[doctor] i'm gon na go ahead and order that referral to g- to gastroenterology . they're the ones who will do the endoscopy and the colonoscopy , okay ?
+[patient] okay .
+[doctor] hey , dragon , order the referral to gastroenterology . so , i'll be in touch . i'm gon na stay in close contact with you over the next week or so and , uh , we'll get this all sorted out , okay ?
+[patient] okay .
+[doctor] all right . take care , joyce .
+[patient] thank you .
+[doctor] hey , dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow-up to an abnormal labs.
+
+HISTORY OF PRESENT ILLNESS
+
+Joyce Price is a 50-year-old female with a past medical history significant for COPD, congestive heart failure who presents for follow-up to an abnormal lab finding.
+
+The patient reports that she has been feeling really tired lately. She reports that over the past couple of months, her energy has really gone down. She used to be really active, trying to be as healthy as she can be with running and climbing, at least an hour or two a day. Over the past month, her activity has slowly decreased. She reports that, due to her fatigue, she has not been able to keep up with her exercise. She reports that she had noticed a little weight loss, but she believes that was due to her doing really well with her exercises.
+
+The patient reports that her COPD is doing well. She reports that she has not been smoking since she quit. She reports that during the changes of the season, it gets a little harder for her to breathe, but she believes that is because of her allergies.
+
+From a congestive heart failure standpoint, she reports that she has been doing really well with her diet. She reports that she has been staying away from French fries and all the other salty foods that she likes to eat. She denies any swelling in her legs.
+
+She reports that she has a good support system with her boyfriend and her brother.
+
+She reports that she has not noticed any blood in her stool at this time. She denies that her stools are dark or black in color. She denies that she has had any abnormal bleeding between menses. The patient denies any other symptoms such as chest pain, shortness of breath, fever, chills, or malaise.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: Denies fevers, chills. Endorses weight loss. Endorses fatigue.
+• Cardiovascular: Denies chest pain or dyspnea.
+• Respiratory:   Endorses shortness of breath with seasonal changes.
+• Gastrointestinal: Denies hematochezia, melena.
+• Genitourinary: Denies abnormal bleeding between menses.
+• Neurological: Positive for dizziness.
+
+PHYSICAL EXAMINATION
+
+• Neck: Supple without cervical lymphadenopathy.
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: Regular rate. Slight 2/6 systolic ejection murmur. No gallops or rubs. No extra heart sounds.
+• Gastrointestinal: Tenderness to palpation to the right lower quadrant.
+
+RESULTS
+
+Hemoglobin A1c is 8.2.
+Labs are within normal limits.
+Anemia labs: Still pending.
+
+ASSESSMENT AND PLAN
+
+Joyce Price is a 50-year-old female with a past medical history significant for COPD, congestive heart failure, who presents for follow up of abnormal labs.
+
+1. Abnormal labs.
+• Medical Reasoning: Her recent hemoglobin level was low at 8.2. Her available anemia labs were normal, but we need to wait for her pending labs for a definitive anemia diagnosis.
+• Additional Testing: I would like to obtain an endoscopy and colonoscopy to evaluate for gastrointestinal bleeding.
+• Specialist Referrals: We will put in a referral to gastroenterology to perform her endoscopy and colonoscopy.
+
+2. COPD.
+• Medical Reasoning: The patient is doing well. She ceased tobacco use several years ago and continues to abstain from this.
+• Medical Treatment: I do not think she needs any inhalers at this time. She should continue to stay away from smoking.
+
+3. Congestive heart failure.
+• Medical Reasoning: She is doing well and continues to follow dietary modifications, particularly with limiting her sodium intake.
+• Medical Treatment: Continue on Toprol and lisinopril, as well as her current dose of Lasix 20 mg a day.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+
+########## ENCOUNTER D2N171
+=== FIELD: dialogue
+[doctor] hi evelyn , how are you ?
+[patient] i'm good , how are you ?
+[doctor] i'm good . it's good to see you .
+[patient] good to see you too .
+[doctor] so i know the nurse told you a little bit about dax . i'm gon na tell dax about you , okay ?
+[patient] okay .
+[doctor] so evelyn is a 56-year-old female with a past medical history significant for coronary artery disease , prior carpal tunnel release , and a herniated disc who presents for her annual exam . so evelyn it's been a little while since i've seen you , how have you been doing over the last year ?
+[patient] i've been doing okay , um , everything , um , with my herniated disc in my back has been doing really well . i have n't had any , um , back pain , or any , um , limitations in movement , so that's been doing well .
+[doctor] okay , yeah , i know that we have done a steroid injection for that , uh , a couple of month- , uh , several months ago , so that's- that's doing well ?
+[patient] yeah , it is .
+[doctor] okay , i'm glad to hear that . and then , how about your carpal tunnel issues , you had that fixed a couple of years ago , so are you having any recurrent issues , or you good , you back to work ?
+[patient] i am back to work . i have n't had any issues , and i've had full range of motion , and it's- it feels really good .
+[doctor] all right , so no numbing and tingling in your hands ?
+[patient] no .
+[doctor] okay , that's good . and then , you know , i know that you've had , uh , prior stenting in the past for your- for your heart , and your heart vessels .
+[patient] mm-hmm .
+[doctor] how are you doing from that standpoint ? have you had any chest pain , shortness of breath , nausea or vomiting ?
+[patient] over the last month i've been having a bit of chest pain , but i have n't had any of the other symptoms you mentioned .
+[doctor] okay , does the chest pain happen when you walk ?
+[patient] yeah , it does .
+[doctor] okay , and does it- does it go away if you- if you rest ?
+[patient] yeah , it does actually .
+[doctor] okay , all right . do you ever get it just sitting there at rest ?
+[patient] no i do n't .
+[doctor] okay , all right . okay , and- and can you describe it ?
+[patient] it's like a burn .
+[doctor] okay .
+[patient] it it just feels like it's burning , um , nothing terribly concerning , not enough to send me to the er , but i do notice it .
+[doctor] okay , and where exactly is it located in your chest ?
+[patient] just , um , right in the middle ...
+[doctor] okay .
+[patient] right here .
+[doctor] okay . and how often are you getting it ?
+[patient] um , probably about three- three times a week .
+[doctor] okay , all right . well i'm glad that you talked about that with me today , um , i know the nurse did a review of systems sheet with you , and , you know , you're obviously endorsing this- this chest pressure . um , have you had any other symptoms , i know the- the other ones that you have n't had , but any lower extremity edema , or muscle aches , or fever chills ?
+[patient] no , nothing like that , but i have had a little bit of congestion , um , just from allergies , because of the pollen .
+[doctor] okay , so you're endorsing some nasal congestion ?
+[patient] yeah .
+[doctor] all right , well let's go ahead and we'll do a physical exam , okay ?
+[patient] okay .
+[doctor] hey dragon ? show me the vital signs . so here your vital signs look really good , i'm- i'm happy to see that your blood pressure is under- under good control , and your oxygenation is fine , so i'm just gon na take a listen to your heart and lungs , and i'll let you know if i find anything , okay ?
+[patient] okay .
+[doctor] okay , so in physical exam your heart has a slight three out of six systolic ejection murmur , which we've heard before . your lungs are nice and clear , uh , i do n't appreciate any carotid bruits , and- and you have no lower extremity edema , you have healed , uh , surgical scars on your- on your , uh , right wrist . um , so let's go ahead , i wan na look at some of your results , okay ?
+[patient] okay .
+[doctor] hey dragon , show me the echocardiogram ? so this is the echocardiogram from last year , you know , you did have a slightly low pumping function of your heart at 45 % , but , uh , i- , you know , i suspected that will improve over time , and you did have some slight , what we call , mitral regurgitation , that's just a leaky heart valve , and that's that murmur that i heard . hey dragon , show me the ecg ? and here , you know , in reviewing your results of your e- ecg , you know , it looks stable , it just kinda reflects your prior coronary artery disease . there's no new changes , which is good , so let's talk a little bit about my assessment and plan for you .
+[doctor] so , from your first problem , you know , your carpal tunnel release , i do n't think that we need to anything further about that , 'cause you seem to be doing really well , you're back at work , if you have any recurring symptoms , just let me know , and we can take it from there . for your next problem , your herniated disc , that also sounds like your doing really well , i do n't think that we need to refer you for any further steroid injection , or physical therapy at this time . so , if you have recurrent symptoms , i want you to let me know . and finally , your last problem , the most concerning problem to me is your known coronary artery disease , and this recurrent chest pain you have .
+[doctor] so , i wan na go ahead and continue you on your asprin , and your toprol , okay ? i wan na go ahead and order a stress test for you to see if you have more blockages that could be causing this chest discomfort , okay ?
+[patient] okay .
+[doctor] and i'm gon na go ahead and get a lipid panel and , uh , start you on crestor 20 mg , once a day , okay ?
+[patient] okay .
+[doctor] hey dragon , order a cardiac stress test . do you have any questions ?
+[patient] no , that's it .
+[doctor] okay , all right . hey dragon , finalize the note . so , it was good to see you , the nurse will come in , she'll help you get your scheduled for all of those things , and i'll be in touch , okay ?
+[patient] okay .
+[doctor] take care .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Annual exam.
+
+HISTORY OF PRESENT ILLNESS
+
+Evelyn Morris is a 56-year-old female with a past medical history significant for coronary artery disease, prior carpal tunnel release, and a herniated disc. She presents for her annual exam.
+
+The patient states she has been doing okay with her herniated disc in her back. She has not had any back pain or any limitations in movement. She had a steroid injection for her herniated disc several months ago, which has been doing well.
+
+Her right carpal tunnel release was performed a couple of years ago and she is back to work. She has full range of motion and it feels really good. No numbness or tingling in her hands.
+
+She has had prior stenting for her heart and heart vessels in the past. Over the last month, she reports chest pain approximately 3-4 times a week with ambulation. Her chest pain does resolve with rest. The pain is described as burning and is located in the middle of her chest. She denies pain at rest.
+
+She has had a little bit of nasal congestion from allergies. The patient denies, shortness of breath, nausea, vomiting, or lower extremity edema.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: Denies fevers, chills.
+• Ears, Nose, Mouth and Throat: Endorses nasal congestion form allergies.
+• Cardiovascular: Denies dyspnea. Endorses chest pain with exertion.
+• Respiratory: Denies shortness of breath.
+• Musculoskeletal: Denies muscle pain.
+
+PHYSICAL EXAMINATION
+
+• Neck: No carotid bruits appreciable.
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: Slight 3/6 systolic ejection murmur.
+• Integumentary: Well-healed surgical scars on her right wrist.
+
+RESULTS
+
+Echocardiogram shows reduced ejection fraction at 45% with a slight mitral regurgitation.
+
+ECG prior coronary artery disease. No new changes.
+
+ASSESSMENT AND PLAN
+
+Evelyn Morris is a 56-year-old female with a past medical history significant for coronary artery disease, prior carpal tunnel release, and a herniated disc. She presents for her annual exam.
+
+Status post right carpal tunnel release.
+• Medical Reasoning: The patient is doing well postoperatively. She has returned to work and denies any recurrent symptoms.
+
+Herniated disc.
+• Medical Reasoning: She has been asymptomatic since receiving a steroid injection several months ago. I do not think we need to refer her for any further steroid injections or physical therapy at this time.
+• Patient Education and Counseling: If she has any recurrent symptoms, she will let me know and we can take it from there.
+
+Coronary artery disease.
+• Medical Reasoning: She reports a burning chest pain with exertion approximately 3 times per week for the past month. Her recent echocardiogram demonstrated a reduced ejection fraction of 45%.
+• Medical Treatment: Continue aspirin and Toprol. Initiate Crestor 20 mg once daily.
+• Additional Testing: We will order a cardiac stress test and a lipid panel for further evaluation.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+
+########## ENCOUNTER D2N172
+=== FIELD: dialogue
+[doctor] morning roy , how are you doing ?
+[patient] hey , good to see you .
+[doctor] so , my nurse told you a little bit about dax ? so , if you do n't mind , i'm going to tell dax a little bit about you today .
+[patient] perfect .
+[doctor] great , great . so , roy is a 50-year-old male patient who comes in with a history of depression , you had some , um , high blood pressure and some hypertension .
+[doctor] so , tell me how have you been doing?
+[patient] sure . so it's been a , a pretty stressful winter and spring . and , uh , we've been onboarding a couple new employees and we have been pretty short-staffed in the meantime .
+[doctor] um , any changes in , um , weight gain or anything like that ?
+[patient] probably for the last month or so , we've been hosting some friends over vacation , and on ... you know , at the beach in the summer , so the diet is off the charts .
+[doctor] okay . okay . gotcha , gotcha .
+[patient] out the window .
+[doctor] out the window . okay . and , um , now i know you've had a history of depression . you're on zoloft , uh , 50 milligrams a day . have you been doing okay with that ?
+[patient] uh , for the most part . again , it's been kind of a challenging year-and-a-half or so .
+[doctor] sure .
+[patient] so i have my bouts . but i- it- it's under control .
+[doctor] okay . uh , sleeping okay at night ?
+[patient] mm-
+[doctor] occasionally ?
+[patient] i , i could use more sleep like everybody .
+[doctor] okay .
+[patient] but, uh, i'll, i'll usually wake up at about 5:00 in the morning .
+[doctor] okay .
+[patient] which is a little early .
+[doctor] uh , no feelings of , uh , you want to hurt yourself or anybody ?
+[patient] no , no .
+[doctor] okay , good , good . and , um , your high blood pressure , um , that's been under relatively good control recently . have you found that ? your blood pressures have been okay ?
+[patient] yes . that's why this is a little concerning to me , because of the , uh , recent , the recent readings .
+[doctor] okay , gotcha . gotcha . okay . so , um , if you do n't mind , i'm going to do a quick exam . okay ?
+[patient] sure .
+[doctor] okay . so , um , on my physical exam , your lungs are clear . your heart is , is regular . you do have a grade two systolic ejection murmur . we've had that before , so nothing new-
+[patient] mm-hmm .
+[doctor] . there . um , and not clinically relevant at all . um , your extremities are normal , no edema . um , you have put on a c- a , a little bit of weight .
+[patient] okay .
+[doctor] i want you to get back on that diet .
+[patient] okay .
+[doctor] because that's the key . right ?
+[patient] okay .
+[doctor] as far as your high blood pressure , not going to change anything there . okay ? we'll just leave you on your lisinopril 5 milligrams a day , that's good .
+[patient] okay .
+[doctor] that's also good for your kidneys , so everything , everything good ... is good there . your third problem is your depression . been a rough year . some of that's just normal reactive stuff . so i think we'll just keep you where you are at . not going to change the zoloft . do you need a refill on your zoloft ?
+[patient] uh , actually i do .
+[doctor] okay . hey dragon , order a zoloft 50 milligrams daily . we'll get that refilled for you . okay ? so , um , i'd like to see you back in about a month , an- and then in about , uh , three months
+[doctor] okay .
+[patient] a1c , if everything's getting back on track . okay ? anything else i can do for you today ?
+[doctor] no . that should do it .
+[patient] okay . come with me , we'll get you checked out . hey dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+History of depression.
+
+HISTORY OF PRESENT ILLNESS
+
+Roy Sanchez is a 50-year-old male who comes in with a history of depressionand high blood pressure. He presents today for abnormal labs.
+
+He states it has been a pretty stressful winter and spring, as they have been very short-staffed at work. The patient admits to recent weight gain. He has been hosting friends over vacation and at the beach this summer so the diet is off the charts out the window.
+
+The patient has a history of depression and is doing well. He has been consistent with utilizing his Zoloft 50 mg a day. The patient states this has been a challenging year and a half. He is sleeping okay at night, occasionally waking up at 5 a.m. Denies thoughts of self-harm or suicidal ideation
+
+His high blood pressure has been under good control recently
+
+REVIEW OF SYSTEMS
+
+• Constitutional: Endorses weight gain.
+• Psychiatric:   Endorses stress.
+
+PHYSICAL EXAMINATION
+
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: Regular rate. Grade 2 systolic ejection murmur. No gallops or rubs. No extra heart sounds.
+
+ASSESSMENT AND PLAN
+
+Roy Sanchez is a 50-year-old male who comes in with a history of depression and high blood pressure. He presents today for abnormal labs.
+
+Hypertension.
+• Medical Reasoning: Blood pressure is well controlled at this time.
+• Medical Treatment: He will continue lisinopril 5 mg daily.
+
+Depression.
+• Medical Reasoning: He is doing well with Zoloft 50 mg daily.
+• Medical Treatment: He will continue Zoloft 50 mg daily. This was refilled today.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+########## ENCOUNTER D2N173
+=== FIELD: dialogue
+[doctor] hi logan , how are you ?
+[patient] hi . good to see you .
+[doctor] it's good to see you as well . so i know the nurse told you about dax . i'd like to tell dax a little bit about you . okay ?
+[patient] sure .
+[doctor] so logan is a 57-year-old male , with a past medical history significant for coronary artery bypass grafting , hyperlipidemia , and ocd , who presents with an upper respiratory infection . so , logan , what's going on ?
+[patient] so , uh , about a week ago i started to get a cold . and , in the last two or three days , it seemed to move into my chest .
+[doctor] okay . um , and , and are you having any pain in your sinuses ? or , any post nasal drip ?
+[patient] um , i had some post nasal drip for , again , for the beginning of the week . and then , uh , it , it left my , uh , my head . it went right down to my upper , uh , chest .
+[doctor] okay . and have you gotten vaccinated against covid ?
+[patient] i actually have . i've , uh , gotten both vaccines .
+[doctor] okay . all right .
+[patient] on both , both stages .
+[doctor] okay . and anyone else sick as far as you know ?
+[patient] no , not in my house . no .
+[doctor] okay . and have you had any fevers ?
+[patient] uh , i thought i had a slight fever , but no .
+[doctor] okay . and , um , any shortness of breath ?
+[patient] no .
+[doctor] okay . all right . um , so let's just talk a little bit about your high cholesterol . how are you doing with the diet ?
+[patient] i've been pretty good for the most part . uh , we did a little bit of travel over the last week or so , so the diet was n't great . but , for the most part it's been good .
+[doctor] okay , i , i know we have you on the , on the crestor 20 milligrams a day . you're doing okay with that , so tolerating it ? no muscle aches , anything like that ?
+[patient] no muscle aches .
+[doctor] okay . and i know you had the , uh , bypass grafting last year . you're doing okay ?
+[patient] it's been great .
+[doctor] no chest pain ?
+[patient] other than the congestion , no chest pain .
+[doctor] okay . all right . and you're able to exercise ?
+[patient] yes .
+[doctor] okay . before you got sick .
+[patient] that's correct .
+[patient] that's correct .
+[doctor] okay . all right . well , let's go ahead , i want to do a quick physical exam . okay ?
+[patient] you got it .
+[doctor] hey dragon , show me the vital signs . so , here it ... your vital signs look great . your oxygenation is 96 % . so that's very good . okay ? uh , i'm just going to check out your heart and lungs , and i'll let you know what i find . okay ?
+[patient] sure .
+[doctor] okay . so on exam , you do have some cervical lymphadenopathy . and your lungs have bilateral ronchi in them , um , and some wheezing . so , what that means is , you know , you have a little infection . you probably have a little bit of a cold , and you have some lymph nodes that are swollen , and some congestion in your lungs , like you said . let's go ahead and take a look at some of your results . okay ?
+[patient] mm-hmm .
+[doctor] hey dragon , show me the lipid panel . so your cholesterol , for the most part , is really good . i think you're doing a good job . uh , i do n't think you have to make any changes right now . um , hey dragon , show me the covid test . turns out you're positive for ... for covid .
+[doctor] so the results of your po- your covid test are positive .
+[patient] okay .
+[doctor] so , i know you were vaccinated . you probably have a , a , a very , um , low-level positivity . so let's talk about that . so for your first problem , uh , is your covid infection . and i think the vaccine has helped you . it seems to be very mild at this time . your oxygenation is really good . i want you to quarantine for t- for 10 days , so , uh , try to avoid your other household family members . okay ?
+[patient] okay .
+[doctor] and you're going to have to take off work . um , if your symptoms worsen , i want you to call me .
+[patient] okay .
+[doctor] it's just supportive management . uh , for your next problem , your high cholesterol , let's continue you on the crestor 20 milligrams a day , and continue to watch your ja- your , your diet and i- then i'll go ahead and order another lipid panel for six months . and , from a coronary artery bypass grafting standpoint , your coronary artery disease seems under control . you're exercising . you do n't have any chest pain . we'll do a stress test in six months as well .
+[patient] okay .
+[doctor] okay ? any questions ?
+[patient] no questions .
+[doctor] okay . it was good to see you .
+[patient] same here .
+[doctor] hey dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Upper respiratory infection.
+
+HISTORY OF PRESENT ILLNESS
+
+Logan Harris is a 57-year-old male with a past medical history significant for coronary artery bypass grafting, hyperlipidemia, and OCD, who presents with an upper respiratory infection.
+
+The patient reports that about a week ago he started to get a cold, which has worsened in the last 2 or 3 days. He endorses some postnasal drip for the beginning of the week, however, it has seemed to move into his chest. He denies chest pain other than his chest congestion. He was able to exercise prior to getting sick. He denies anyone else being sick in his house. He denies fever and shortness of breath.
+
+Regarding his high cholesterol, he states he has been pretty good for the most part. He did a little travel over the last week or so and his diet was not great but for the most part it is pretty good. He is on Crestor 20 mg a day and is tolerating it well. He denies any muscle aches. He had his bypass grafting last year and is doing great.
+
+The patient is fully vaccinated for COVID-19.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: Denies fevers.
+• Ears, Nose, Mouth and Throat: Endorses post nasal drip.
+• Cardiovascular: Endorses chest congestion.
+• Respiratory: Denies shortness of breath.
+• Psychiatric: Endorses obsessive compulsive disorder.
+
+PHYSICAL EXAMINATION
+
+• Neck: Positive cervical lymphadenopathy
+• Respiratory: Rhonchi and wheezing bilaterally.
+
+VITALS REVIEWED
+
+• Oxygen Saturation: 96%.
+
+RESULTS
+
+Lipid panel: Within normal limits.
+
+COVID-19 test: Positive
+
+ASSESSMENT AND PLAN
+
+Logan Harris is a 57-year-old male with a past medical history significant for coronary artery bypass grafting, hyperlipidemia, and OCD who presents today for upper respiratory symptoms.
+
+COVID-19 Positive.
+• Medical Reasoning: The patient presents with upper respiratory symptoms and his COVID-19 test was positive today. He has received both doses of the vaccination. His symptoms seem to be very mild at this time. His oxygenation is good at 96%.
+• Patient Education and Counseling: I advised him to quarantine for 10 days and we discussed that he should try to avoid family members. I asked him to call me if his symptoms worsen.
+
+Hypercholesterolemia.
+• Medical Reasoning: He is doing well on Crestor 20 mg once a day. His cholesterol looked good on his most recent lipid panel.
+• Patient Education and Counseling: I encouraged him to continue to watch his diet.
+• Additional Testing: We will go ahead and order another lipid panel for 6 months.
+• Medical Treatment: He can continue Crestor 20 mg once a day.
+
+History of coronary artery bypass grafting.
+• Medical Reasoning: He underwent coronary artery bypass grafting approximately 1 year ago. His coronary artery disease seems to be under control currently. He denies chest pain.
+• Additional Testing: We will do a stress test in 6 months.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+########## ENCOUNTER D2N174
+=== FIELD: dialogue
+[doctor] hi , james , how are you ?
+[patient] hi , good to see you .
+[doctor] it's good to see you too . so i know the nurse told you about dax , i'd like to tell dax a little bit about you .
+[patient] sure .
+[doctor] james is a 57 year old male with a past medical history significant for coronary artery disease and lupus , who presents today with joint pain . so james , what's what's going on ?
+[patient] yeah . i've been putting a , a few more miles on the bike each day and , uh , my knees have been killing me , just more so in the last three or four days or so .
+[doctor] okay . is it one knee versus the other , or both ?
+[patient] both equally .
+[doctor] okay . and , um , does it hurt more in the morning when you wake up , or does it hurt more when you're walking around and that type of thing ?
+[patient] usually when i get up in the morning , they're pretty stiff and sore , and then by the end of the day , i start to feel that same sensation . kind of pretty much , like , uh , probably around dinner time or so .
+[doctor] okay . and any other , any other joints bothering you , your elbows , wrists , shoulders , anything like that ?
+[patient] no , it's just the knees .
+[doctor] just the knees . and have you noticed any swelling of your knees , or any redness of your knees ?
+[patient] uh , they look a little inflamed in the morning , and then in the afternoon , same but not as bad , not as noticeable .
+[doctor] okay . and do you have any other symptoms with this ? do you have any other associated fatigue or fever or anything like that ?
+[patient] no , no .
+[doctor] okay . and no injury ?
+[patient] no , no . just , uh , repetitive motion , riding the bike the everyday , it , it's part of my workout , i just probably , uh , probably doubled the miles .
+[doctor] okay , all right . well , tell me a little bit about . uh , you know , it's been a while since i've seen you . you know , in terms of your heart disease , and i know you got the stent placed last year .
+[patient] mm-hmm .
+[doctor] um , i know they took you off the plavix , are you still taking your aspirin every day ?
+[patient] i am .
+[doctor] okay . and how are you doing with your crestor ? any problems with that ?
+[patient] no , none whatsoever .
+[doctor] okay . and any chest pain or shortness of breath ?
+[patient] no .
+[doctor] no ? okay .
+[doctor] okay . all right , and in terms of your lupus , we have , you know , this is something that was kinda back in the , in the background for you , and we have n't had to do a whole lot . you know , your kidney function's been really good . um , any , any issues as far as you know ?
+[patient] no , nothing , not at least in the last year or so .
+[doctor] okay . i think we , we might have to look into it a little bit further with this knee pain that you're having .
+[patient] okay .
+[doctor] but i wan na go ahead and , um ... you know , i know that the nurse did a review of system sheet and we just covered a lot here .
+[patient] mm-hmm .
+[doctor] any other symptoms , abdominal pain , nausea , vomiting ?
+[patient] no , no .
+[doctor] no , just the knee pain ?
+[patient] mm-hmm .
+[doctor] okay . all right . well , let's go ahead and do a quick physical exam .
+[patient] okay .
+[doctor] hey , dragon , show me the vital signs . so your vital signs here in the office look really good .
+[patient] mm-hmm .
+[doctor] there's no fever , your blood pressure and your heart rate look great , so that's , that's awesome .
+[patient] mm-hmm .
+[doctor] um , i'm just gon na check out your heart and your lungs .
+[patient] sure .
+[doctor] and your knees , and i'll let you know what i find , okay ?
+[patient] okay .
+[doctor] all right . so on physical examination of your heart , you know , i do hear that's , like , two out of six systolic ejection murmur , but we've heard that in the past . your lungs sound nice and clear . and on your knee exam , i do appreciate , you know , some bilateral , uh , edema and some slight erythema , there is a slight effusion present on the right knee . does that hurt ?
+[patient] little bit .
+[doctor] all right , so pain to palpation of the right knee . um , and decreased range of motion of the knees bilaterally . so i just wan na look at some of your results , okay ?
+[patient] mm-hmm .
+[doctor] hey , dragon . show me the right knee x-ray . so this is an x-ray of your right knee and in reviewing the results of that , everything looks fine , there's no boney abnormality , there's no fracture , which is not surprising , based on the history , okay ?
+[patient] mm-hmm .
+[doctor] hey , dragon . show me the ekg . and this is your most recent ekg which we did before you came in , and that all looks really good . so , um , so no concerns from a heart standpoint . so let's talk a little bit about , you know , my assessment and my plan for you .
+[patient] mm-hmm .
+[doctor] so for your first problem , your , your knee pain , you know , i'm concerned that it might be from , you know , a flareup of your lupus , so i wan na go ahead and order and autoimmune panel to kinda see where we stand , okay ?
+[patient] sure .
+[doctor] hey , dragon . order an autoimmune panel . for your next problem , the coronary artery disease , i think you're doing really well , your ekg looks good , your vital signs look good .
+[patient] mm-hmm .
+[doctor] i'm gon na go ahead and order a lipid panel and another echocardiogram , okay ?
+[patient] okay .
+[doctor] hey , dragon . order an echocardiogram .
+[doctor] do you have any questions ?
+[patient] no questions .
+[doctor] all right , well , the nurse will be in soon and she'll get you checked out , okay ?
+[patient] you got it .
+[doctor] hey , dragon . finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Joint pain.
+
+HISTORY OF PRESENT ILLNESS
+
+Mr. James Moore is a 57-year-old male with a past medical history significant for coronary artery disease and lupus, who presents today with some joint pain.
+
+The patient reports he has been " putting a few more miles on the bike each day ". His bilateral knees have been sore in the last 3 to 4 days. He states his bilateral knees are equally painful. He notes stiffness and soreness in the morning and, by the end of the day, he feels the same sensation. He endorses swelling and redness in his knees which reduces in severity by the afternoon. The patient denies any other associated fatigue. He denies any injury to his knees. He denies pain in any other joints including his elbows, wrists, or shoulders.
+
+In regards to his coronary artery disease, Mr. Moore states he is compliant with his aspirin and Crestor. He denies chest pain or shortness of breath.
+
+The patient denies recent symptoms related to his lupus over the last year.
+
+He denies fever, chills, abdominal pain, nausea, and vomitting.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: Denies fevers.
+• Cardiovascular: Denies chest pain or dyspnea.
+• Respiratory: Denies shortness of breath.
+• Musculoskeletal: Endorses joint pain, stiffness, swelling, and erythema in bilateral knees.
+
+PHYSICAL EXAMINATION
+
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: 2/6 systolic ejection murmur, stable.
+• Musculoskeletal: Edema and slight erythema of bilateral knees. Slight effusion of the right knee with pain to palpation. Decreased range of motion in bilateral knees.
+
+RESULTS
+
+X-ray of the right knee is unremarkable. No bony abnormalities or fractures were noted.
+
+Electrocardiogram stable in comparison to last year.
+
+ASSESSMENT AND PLAN
+
+Mr. James Moore is a 57-year-old male with a past medical history significant for coronary artery disease and lupus, who presents today with some joint pain.
+
+Lupus.
+• Medical Reasoning: This has been stable and asymptomatic for the past year, but the patient reports increased joint pain and inflammation in his bilateral knees lately. ​His recent knee x-ray was unremarkable, so I am concerned that this is a lupus flare.
+• Additional Testing: We will order an autoimmune panel for further evaluation.
+
+Coronary artery disease.
+• Medical Reasoning: He is asymptomatic at this time. He has discontinued Plavix but continues with daily aspirin and Crestor. His recent EKG was unremarkable.
+• Additional Testing: We will order a lipid panel and a repeat echocardiogram.
+• Medical Treatment: Continue current regimen.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+
+########## ENCOUNTER D2N175
+=== FIELD: dialogue
+[doctor] hi , natalie . how are you ?
+[patient] good . how are you ?
+[doctor] it's good to see you .
+[patient] good to see you , too .
+[doctor] i know my nurse has already told you about dax . is it okay if i tell dax a little bit about you ?
+[patient] go for it .
+[doctor] all right . so , natalie is a 39-year-old female , here today for a check-up for an abnormal lab . she's got a history of high blood pressure , diabetes , and acl repair .
+[doctor] so , tell me what's going on .
+[patient] so , uh , i got some re- routine blood work done last week and , uh , they said that my blood sugars were , were high , so that i should come in , um , and talk to you and get some more work done and , and , uh , see why that is .
+[doctor] okay . well , were you having any symptoms at all or just , we had some blood work done routinely ? uh , any chest pain , shortness of breath ? any nausea , vomiting , or diarrhea ?
+[patient] no , no symptoms . uh , so i was a little shocked when i came back high and , and elevated , so hopefully we can figure out what's going on .
+[doctor] we've been , kind of , checking on this for a while and you've been on metformin . we actually increased your dose last time-
+[patient] yup .
+[doctor] so right now you're on 100 , 1,000 milligrams a day , correct ?
+[patient] correct . yup .
+[doctor] okay . all right . no , uh , no difficulty urinating or burning when you urinate at all ?
+[patient] nope .
+[doctor] okay . all right . um , hey , dragon , show me the hemoglobin a1c . so in reviewing your , that's the lab that we checked after when i saw before i walked in . it says 8.1 , which is elevated , so i think we need to do a maybe a better job with adjusting your medication .
+[doctor] how are you doing with your diet for your diabetes ?
+[patient] my diet's been really great lately . i've been avoiding sugars , um , been really watching , uh , my weight and power walking every day , so i was a little surprised when the , the blood work came back that i- i had , um , an elevated , uh , test .
+[doctor] okay . and , uh , have you had any , uh , any other , are you checking your blood sugars in the morning or your fasting blood sugars ?
+[patient] yes , i am .
+[doctor] okay . all right . how are you doing with your high blood pressure ?
+[patient] that's been good and stable . um , i've been stable on the medication , been taking that every day . um , and i have a b- a cuff at home to , to measure it myself and that , everything's been normal .
+[doctor] okay , great . and how's your knee doing that's the other issue we've been , kind of , following ? you had some surgery done for that ?
+[patient] yeah . about five years ago , i had , um , an acl repair on my right knee and everything's been going well so far . i have n't had any , uh , issues with mobility . um , it's been great .
+[doctor] and you're pretty physically active and doing exercises ?
+[patient] yeah . i've been power walking about , at least 30 minutes every day .
+[doctor] okay . great . well , let's review , uh , some of your vital signs . hey , dragon , show me the vitals . all right . blood pressure looks good right now . your oxygen level's great . uh , your temperature's good .
+[doctor] so i know you checked in with the review of systems with my assistant before coming in . uh , anything else bothering you today except for the abnormal blood work ? no chest pain ? no shortness of breath ?
+[patient] no , nothing like that ?
+[doctor] no headaches ? no belly pain ?
+[patient] no .
+[doctor] good . great . well , let me examine you , okay ?
+[patient] okay .
+[doctor] alright . just gon na listen to your heart here .
+[doctor] no belly pain ?
+[patient] nope .
+[doctor] okay .
+[doctor] so on exam , uh , your hent or your neck exam is fine . your , uh , your eyes look fine . your lungs are clear . i do hear a systolic ejection murmur , about three over six . your belly's nice and soft . no swelling in your legs or extremities right now .
+[doctor] so let's talk about some of the issues today . all right . for the first issue , for the diabetes , since your hemoglobin a1c is is elevated , uh , and you're already on 1,000 milligrams of metformin , i think we should add , uh , jardiance , uh , 10 milligrams a day . uh , so that's a new medication . we'll start that . i do want you to , uh follow your diet pretty , uh , aggressively . i wan na see if we can get that hemoglobin a1c down the next time .
+[doctor] i'm also gon na add some labs today to see what that , to see a lipid panel and some other blood work . hey , dragon , order a cbc , cmp , and a lipid panel . and i'll go ahead and prescribe the jardiance , 10 milligrams a day . hey , dragon , prescribe , uh , order jardiance , 10 milligrams a day .
+[doctor] all right . for the high blood pressure , i think you're doing great . you're on lisinopril for that , so i think that we should continue that . uh , we'll re-check it again next time and you are monitoring that at home , correct ?
+[patient] yes , i am .
+[doctor] okay , great . and for the knee , i think you're doing great with that . you know , continue with your physical exercise , with your physical therapy , uh , uh , with your normal exercise regimen . uh , if you have any issues with that , certainly give us a call .
+[patient] okay .
+[doctor] all right . any other questions ?
+[patient] no , that's it .
+[doctor] okay . hey , dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Check up for abnormal labs.
+
+HISTORY OF PRESENT ILLNESS
+
+Natalie Price is a 39-year-old female here today for a check up for an abnormal labs. She has a history of high blood pressure, diabetes type 2, and right ACL repair.
+
+The patient states she had routine blood work done last week and they said her blood sugars were high. She was instructed to follow up to get some more work done. She denies having any symptoms.
+
+Regarding her diabetes, her diet has been really great lately. She has been avoiding sugars and watching her weight. The patient is power walking 30 minutes every day. She is checking her blood sugars every morning. The patient has continued to utilize metformin 1000 mg a day, which was increased at her last visit.
+
+She states her high blood pressure has been stable with lisinopril. The patient has a cuff at home to measure her blood pressure herself.
+
+Regarding her knee, she had an ACL repair on her right knee about 5 years ago and everything has been going well. She has not had any issues with mobility.
+
+She denies chest pain, shortness of breath, vomiting, diarrhea, headaches, and abdominal pain. She denies any difficulty urinating or burning when she urinates.
+
+REVIEW OF SYSTEMS
+
+• Cardiovascular: Denies chest pain or dyspnea on exertion.
+• Respiratory: Denies shortness of breath.
+• Genitourinary: Denies urinary pain.
+• Neurological: Denies headaches.
+
+PHYSICAL EXAMINATION
+
+• Head and Face: Normocephalic and atraumatic.
+• Neck: Supple without thyromegaly or lymphadenopathy. No carotid bruits appreciable.
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: 3/6 systolic ejection murmur.
+• Gastrointestinal: Abdomen is soft and nondistended.
+• Musculoskeletal: No lower extremity edema.
+
+RESULTS
+
+Hemoglobin A1c is elevated at 8.1.
+
+ASSESSMENT AND PLAN
+
+Natalie Price is a 39-year-old female with a history of high blood pressure, diabetes type 2, and right ACL repair. She presents today for evaluation following abnormal labs.
+
+Diabetes type 2.
+• Medical Reasoning: She is asymptomatic but her recent lab work demonstrated an elevated hemoglobin A1c of 8.1. She has been compliant with metformin 1000 mg daily, dietary modifications, and monitoring her blood glucose levels at home.
+• Additional Testing: We will check her CBC, CMP, and lipid panel.
+• Medical Treatment: Continue metformin 1000 mg daily. Initiate Jardiance 10 mg daily.
+• Patient Education and Counseling: I encouraged her to follow her dietary modifications closely.
+
+Hypertension.
+• Medical Reasoning: This is stable and well-controlled on her current dose of lisinopril. She does monitor her blood pressures at home.
+• Medical Treatment: Continue lisinopril at current dose.
+
+Status post right ACL repair.
+• Medical Reasoning: She is doing well postoperatively.
+• Patient Education and Counseling: I encouraged the patient to continue with her physical activity and exercise regimen.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+
+########## ENCOUNTER D2N176
+=== FIELD: dialogue
+[doctor] hi , alexander . how are you ?
+[patient] i'm doing really well . thank you .
+[doctor] so , i know the nurse told you a little bit about dax . i'd like to tell dax about you . okay ?
+[patient] sure .
+[doctor] so , alexander is a 62-year-old male , with a past medical history significant for reflux , who presents for follow-up of his chronic problems .
+[doctor] so , alexander , what's being going on ?
+[patient] well , i am so thankful you put me on that medicine for my , my reflux .
+[doctor] the protonix ?
+[patient] the protonix . that , i had , w- made an amazing change in my life .
+[doctor] yeah .
+[patient] i'm really comfortable now . i eat whatever i want , and i feel so much better .
+[doctor] okay , great . i'm glad to hear that . i know you were having a lot of discomfort there before , so that's good . okay . and how are you doing , kind of , managing your diet ? i know , you know , you have to do some lifestyle modifications , like cutting back on caffeine and spicy foods and alcohol . how are you doing with that ?
+[patient] i'm doing really well . i moved over from caffeine , over to green tea .
+[doctor] okay .
+[patient] and it , it is so , m- it does n't cause as much problem as it did with , when i was drinking so many energy drinks a day .
+[doctor] all right . good . i'm glad to hear that . great . all right .
+[patient] uh , i think getting that , rid of that reflux , really helped my attitude improve .
+[doctor] okay .
+[patient] uh , my job's going great . everything's phenomenal right now .
+[doctor] okay .
+[doctor] okay . and you have a , a good support system at home ? i know you have a big-
+[patient] yeah .
+[doctor] . family .
+[patient] yes . yes . all my kids-
+[doctor] okay .
+[patient] . call and check on me every day .
+[doctor] okay . great . i'm glad to hear that . now , i know you did a review of systems sheet when you checked in .
+[patient] yes .
+[doctor] i , are you having any symptoms ? any chest pain , shortness of breath , belly pain , of , nausea or vomiting ? anything like that ?
+[patient] no . no symptoms at all .
+[doctor] okay , great . um , well , let me go ahead . i wan na do a quick physical exam .
+[doctor] hey , dragon . show me the vital signs .
+[doctor] so , your vital signs here in the office look really good . so , you're doing a great job managing your , your blood pressure . your heart rate's nice and low . i'm gon na go ahead and take a listen to your heart and lungs .
+[patient] okay .
+[doctor] and i'll let you know what i find . okay ?
+[patient] okay .
+[doctor] okay . good . all right . so , on physical examination , i , i do n't hear any carotid bruits in your neck , which is really good . you know , your heart exam , i do hear a slight 2/6 systolic ejection murmur , which i've heard in the past , so that's stable . uh , your lungs are nice and clear , and you do have , you know , 1+ pitting edema bilaterally in your lower extremities .
+[patient] okay .
+[doctor] so , what does that mean ? you know , i , i think , you know , you're doing a ... it sounds like a doing a good job watching your diet . you could ... you just are retaining a little bit of fluid , maybe just from standing all day .
+[patient] okay .
+[doctor] okay ? let's take a look at some of your results . okay ?
+[patient] okay .
+[doctor] hey , dragon . show me the endoscope results .
+[doctor] so , this was the endoscopy that you had last year when you were having all that pain . it just showed that you had had some mild gastritis . so , it's good to hear that that , you know , protonix is helping you a lot . okay ?
+[patient] okay .
+[patient] i'll do a little more exercise too .
+[doctor] that sounds great . all right . so , let's talk just a little bit about , you know , my assessment and my plan for you .
+[doctor] for your reflux , i want you to continue on the protonix 40 mg a day , and continue with those lifestyle modifications with the dietary stuff-
+[patient] okay .
+[doctor] . okay ? do you have any questions ?
+[patient] no questions .
+[doctor] okay . all right . well , the nurse is gon na come in soon , and she's gon na check you , get you checked out . okay ?
+[patient] okay . thank you .
+[doctor] hey , dragon . finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow-up chronic problems.
+
+HISTORY OF PRESENT ILLNESS
+
+Alexander Myers is a 62-year-old male with a past medical history significant for reflux who presents for follow-up of his chronic problems.
+
+In regards to his reflux, he reports that he has continued to utilize Protonix 40 mg daily. He states this has helped a lot and he is really comfortable. The patient is doing really well with his diet. He reports that he has discontinued drinking energy drinks and is now drinking green tea. The patient states this change has also helped reduce his side effects.
+
+He notes that his reflux being improved has helped his mood. The patient has a good support system at home and all of his children call to check on him daily. He also notes his job is going well.
+
+The patient denies chest pain, shortness of breath, abdominal pain, nausea, and vomiting.
+
+REVIEW OF SYSTEMS
+
+• Cardiovascular: Denies chest pain or dyspnea on exertion.
+• Respiratory: Denies shortness of breath
+
+PHYSICAL EXAMINATION
+
+• Neurological/Psychological: Appropriate mood and affect.
+• Neck: No carotid bruits appreciable.
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: Regular rate. Slight 2/6 systolic ejection murmur, stable.
+• Musculoskeletal: 1+ pitting edema bilaterally in the lower extremities.
+
+RESULTS
+
+Endoscopy from last year revealed mild gastritis.
+
+ASSESSMENT AND PLAN
+
+Alexander Myers is a 62-year-old male with a past medical history significant for acid reflux. He presents today for follow up of his chronic problems.
+
+Acid reflux.
+• Medical Reasoning: This is well controlled on Protonix and dietary modifications.
+• Medical Treatment: Continue Protonix 40 mg daily.
+• Patient Education and Counseling: I advised the patient to continue with lifestyle and dietary modifications.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+
+########## ENCOUNTER D2N177
+=== FIELD: dialogue
+[doctor] hi bruce , how are you ?
+[patient] hey , good to see you .
+[doctor] good to see you as well . uh , so i know the nurse told you a little bit about dax .
+[patient] mm-hmm .
+[doctor] i'd like to tell dax about you-
+[patient] sure .
+[doctor] okay ?
+[doctor] so bruce is a 60 year old male , with a past medical history , significant for depression , type two diabetes and hypertension , who presents for followup of his chronic problems .
+[doctor] so , bruce , i saw you a couple months ago-
+[patient] mm-hmm .
+[doctor] how are- how are you doing ?
+[patient] it's been a crazy year and a half and i think the uh the anxiety , the pressure of getting ready for thanksgiving was really starting to wear on me .
+[doctor] okay .
+[doctor] did you have a nice holiday ?
+[patient] i , i did but it was uh , it was great to see everybody after about two years but it was just a lot of work .
+[patient] a lot of stress .
+[doctor] yeah . yeah . and what do you have to look forward for like , the new year and that type of thing . are you- more gatherings like that ?
+[patient] um planning to take a vacation . so hopefully somewhere nice and warm .
+[doctor] okay . all right . um , well how are you doing in terms of your depression . i know that we've kind of talked about this in the past .
+[patient] mm-hmm .
+[doctor] and we have n't put you on medication because you're on other meds and you- you have n't really wanted to do that , so what strategies are you using ?
+[patient] yeah . over the summer we tried something new . i started going for long walks outside every morning. the weather was so nice and all the plants were in full bloom that i loved to start my day that way. on the weekends, it even encouraged me to do a little in the yard myself which was a nice way to be active and get some sun. but with the seasons changing and it getting so cold out, i have not been able to keep doing it and need to find something new to do. . i'm not ready yet to try any meds , so i think i'd like to look into some alternative options .
+[doctor] okay . so yeah . so we can talk about some therapy and-
+[patient] sure .
+[doctor] that type of thing .
+[patient] sure .
+[doctor] all right . and no ... you do n't wan na harm yourself or others ?
+[patient] no .
+[doctor] any thoughts like that .
+[patient] no .
+[doctor] no , okay . and then in terms of your diabetes , how are you doing , you know especially with the holidays managing your- your sugar intake and that type of thing ?
+[patient] uh , got through halloween okay . did n't stick to the diet too much through the thanksgiving week but it's a little bit better . so i've been trying to really monitor it .
+[doctor] okay . and are you ... you're still taking the metformin , correct ?
+[patient] yes .
+[doctor] okay . all right . and then in terms of your high blood pressure , did you buy the blood pressure cuff that i recommended ?
+[patient] yes .
+[doctor] okay . and how have they been running . i have n't received any you know notes from you in the portal .
+[patient] nothing out of the ordinary . it's been pretty moderate .
+[doctor] it's been pretty good . and you're still taking the lisinopril , no problems with that ?
+[patient] mm-hmm . correct .
+[doctor] okay . all right . i know you did a review of system sheet when you checked in .
+[patient] mm-hmm .
+[doctor] um , do you have any symptoms . chest pain , shortness of breath , belly pain-
+[patient] no .
+[doctor] blood in your stool .
+[patient] no .
+[doctor] weight loss . anything like that ?
+[patient] no .
+[doctor] okay . all right . i wan na go ahead and do a quick physical exam .
+[patient] mm-hmm .
+[doctor] hey dragon . show me the vital signs .
+[doctor] so here in the office . i agree . your blood pressure looks good . uh , i think you're doing a good job with that so keep up the good work . i'm gon na go ahead and take a listen to your heart and lungs , i'll let you know what i find .
+[patient] sure .
+[doctor] all right . so on physical examination , everything looks pretty good , so on your neck exam , i do n't appreciate any carotid bruits . on your heart exam i do appreciate a slight two out of six systolic ejection murmur heard at the left base , which we've heard in the past .
+[patient] mm-hmm .
+[doctor] your lungs are nice and clear and you do have uh one plus non-pitting edema bilaterally in your lower extremities . so what does all that mean ?
+[doctor] it just means i heard a little sound in your heart , which you know is n't anything clinically significant . we had looked into that last year .
+[patient] mm-hmm .
+[doctor] you do have a little swelling in your legs but that might just be from your your diet recently , okay .
+[patient] sure .
+[doctor] i wan na just take a look at some of your results . hey dragon , show me the ekg .
+[doctor] so i just had the nurse do an ekg on you before you came in just to make sure we were n't missing anything . you're in your 60's we have some risk factors . everything looks good .
+[patient] mm-hmm .
+[doctor] there's no evidence that i'm concerned about anything at this time . hey dragon , show me the diabetes logs .
+[doctor] so on your diabetic labs , your hemoglobin a1c is elevated . it's at eight . i'd like to see it closer to six .
+[doctor] now some of them might be having to do with the holidays that type of thing but i still think that we need to get that under better control .
+[patient] sure .
+[doctor] so lets talk a little bit about my assessment and plan for you so for your first problem of your depression i'd like to just go ahead and refer you to uh psychiatry not for medications , but just for some talk therapy that type of thing , okay ?
+[patient] that's fine .
+[doctor] um , for your second problem of your type two diabetes i'd like to go ahead and order a hemoglobin a1c in the next couple months . i want to increase the metformin to 1000 milligrams twice a day . and we're gon na go ahead and order a lipid panel , okay .
+[patient] mm-hmm .
+[doctor] uh , lastly for your third problem for your hypertension i'm gon na go ahead and order an echocardiogram just to recheck it . just that heart murmur . and i'm going to go ahead and keep the lisinopril at 20 milligrams a day . do you have any questions ?
+[patient] no questions .
+[doctor] okay the nurse will be in soon , she'll get you checked out , okay ?
+[patient] you got it .
+[doctor] hey dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow up of chronic problems.
+
+HISTORY OF PRESENT ILLNESS
+
+Bruce Howard is a 60-year-old male with a past medical history significant for depression, type 2 diabetes, and hypertension who presents for follow up of his chronic problems.
+
+In regards to his depression, the patient notes that it has been a crazy year and a half. He experienced a lot of anxiety while getting ready for Thanksgiving but it is starting to resolve now. He denies suicidal and homicidal ideation. The patient and his wife began going on walks and gardening over the summer and he notes good relief of his depression from this; however, the season has changed and he needs an alterative method of management. He has preferred to avoid medications in the past.
+
+The patient is still taking metformin for his diabetes. He notes some dietary indiscretion with Thanksgiving but he is doing better with this now.
+
+In terms of his hypertension, he notes he is compliant with lisinopril. He did buy a blood pressure cuff and is checking his blood pressure at home. His blood pressures have reportedly been good.
+
+He denies chest pain, dyspnea, abdominal pain, hematochezia, or weight loss.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: Denies weight loss.
+• Cardiovascular: Denies chest pain or dyspnea on exertion.
+• Respiratory: Denies shortness of breath.
+• Gastrointestinal: Denies hematochezia or abdominal pain.
+• Psychiatric: Endorses anxiety and depression.  Denies suicidal and homicidal ideations.
+
+PHYSICAL EXAMINATION
+
+• Constitutional: Well-developed, well-nourished, in no apparent distress.
+• Neck: No carotid bruits appreciable.
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: Slight 2/6 systolic ejection murmur heard at the left base, heard previously.
+• Musculoskeletal: 1+ nonpitting edema bilaterally.
+
+RESULTS
+
+EKG was unremarkable.
+
+Diabetic labs revealed an elevated hemoglobin A1c of 8.
+
+ASSESSMENT
+
+Bruce Howard is a 60-year-old male with a past medical history significant for depression, type 2 diabetes, and hypertension who presents for follow up of his chronic problems.
+
+PLAN
+
+Depression.
+• Medical Reasoning: He has been doing well with going on morning walks; however, this has ended due to the cooler weather. He continues to decline the use of medications for this issue.
+• Medical Treatment: We will defer initiating medication at this time.
+• Specialist Referrals: I will refer him to psychiatry to engage in talk therapy.
+
+Diabetes type 2.
+• Medical Reasoning: The patient admits to recent dietary indiscretion. His most recent hemoglobin A1c was elevated at 8 percent. He is compliant with metformin.
+• Additional Testing: I will order a repeat hemoglobin A1c in the next couple of months. I will also order a lipid panel.
+• Medical Treatment: We will increase his metformin to 1000 mg twice a day.
+
+Hypertension.
+• Medical Reasoning: He has been monitoring his blood pressure on a regular basis. Blood pressure is well controlled at this time. He has a systolic ejection murmur that continues to be heard on exam.
+• Additional Testing: I will order an echocardiogram to reassess the heart murmur.
+• Medical Treatment: He will continue lisinopril 20 mg daily.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.

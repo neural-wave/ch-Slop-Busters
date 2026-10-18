@@ -1,0 +1,17 @@
+{
+  "encounter_id": "D2N133",
+  "phi": [
+    {"text": "rebecca", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "27-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "swimming", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"},
+    {"text": "swim", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "breaststroke", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "kicking stroke"},
+    {"text": "freestyle", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "straight-leg style"},
+    {"text": "Thompson", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "27 y.o.", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "swimming", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"},
+    {"text": "swim", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "freestyle", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "straight-leg"}
+  ],
+  "medical_concepts": []
+}

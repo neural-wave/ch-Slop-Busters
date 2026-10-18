@@ -1,0 +1,120 @@
+########## ENCOUNTER D2N174
+=== FIELD: dialogue
+[doctor] hi , james , how are you ?
+[patient] hi , good to see you .
+[doctor] it's good to see you too . so i know the nurse told you about dax , i'd like to tell dax a little bit about you .
+[patient] sure .
+[doctor] james is a 57 year old male with a past medical history significant for coronary artery disease and lupus , who presents today with joint pain . so james , what's what's going on ?
+[patient] yeah . i've been putting a , a few more miles on the bike each day and , uh , my knees have been killing me , just more so in the last three or four days or so .
+[doctor] okay . is it one knee versus the other , or both ?
+[patient] both equally .
+[doctor] okay . and , um , does it hurt more in the morning when you wake up , or does it hurt more when you're walking around and that type of thing ?
+[patient] usually when i get up in the morning , they're pretty stiff and sore , and then by the end of the day , i start to feel that same sensation . kind of pretty much , like , uh , probably around dinner time or so .
+[doctor] okay . and any other , any other joints bothering you , your elbows , wrists , shoulders , anything like that ?
+[patient] no , it's just the knees .
+[doctor] just the knees . and have you noticed any swelling of your knees , or any redness of your knees ?
+[patient] uh , they look a little inflamed in the morning , and then in the afternoon , same but not as bad , not as noticeable .
+[doctor] okay . and do you have any other symptoms with this ? do you have any other associated fatigue or fever or anything like that ?
+[patient] no , no .
+[doctor] okay . and no injury ?
+[patient] no , no . just , uh , repetitive motion , riding the bike the everyday , it , it's part of my workout , i just probably , uh , probably doubled the miles .
+[doctor] okay , all right . well , tell me a little bit about . uh , you know , it's been a while since i've seen you . you know , in terms of your heart disease , and i know you got the stent placed last year .
+[patient] mm-hmm .
+[doctor] um , i know they took you off the plavix , are you still taking your aspirin every day ?
+[patient] i am .
+[doctor] okay . and how are you doing with your crestor ? any problems with that ?
+[patient] no , none whatsoever .
+[doctor] okay . and any chest pain or shortness of breath ?
+[patient] no .
+[doctor] no ? okay .
+[doctor] okay . all right , and in terms of your lupus , we have , you know , this is something that was kinda back in the , in the background for you , and we have n't had to do a whole lot . you know , your kidney function's been really good . um , any , any issues as far as you know ?
+[patient] no , nothing , not at least in the last year or so .
+[doctor] okay . i think we , we might have to look into it a little bit further with this knee pain that you're having .
+[patient] okay .
+[doctor] but i wan na go ahead and , um ... you know , i know that the nurse did a review of system sheet and we just covered a lot here .
+[patient] mm-hmm .
+[doctor] any other symptoms , abdominal pain , nausea , vomiting ?
+[patient] no , no .
+[doctor] no , just the knee pain ?
+[patient] mm-hmm .
+[doctor] okay . all right . well , let's go ahead and do a quick physical exam .
+[patient] okay .
+[doctor] hey , dragon , show me the vital signs . so your vital signs here in the office look really good .
+[patient] mm-hmm .
+[doctor] there's no fever , your blood pressure and your heart rate look great , so that's , that's awesome .
+[patient] mm-hmm .
+[doctor] um , i'm just gon na check out your heart and your lungs .
+[patient] sure .
+[doctor] and your knees , and i'll let you know what i find , okay ?
+[patient] okay .
+[doctor] all right . so on physical examination of your heart , you know , i do hear that's , like , two out of six systolic ejection murmur , but we've heard that in the past . your lungs sound nice and clear . and on your knee exam , i do appreciate , you know , some bilateral , uh , edema and some slight erythema , there is a slight effusion present on the right knee . does that hurt ?
+[patient] little bit .
+[doctor] all right , so pain to palpation of the right knee . um , and decreased range of motion of the knees bilaterally . so i just wan na look at some of your results , okay ?
+[patient] mm-hmm .
+[doctor] hey , dragon . show me the right knee x-ray . so this is an x-ray of your right knee and in reviewing the results of that , everything looks fine , there's no boney abnormality , there's no fracture , which is not surprising , based on the history , okay ?
+[patient] mm-hmm .
+[doctor] hey , dragon . show me the ekg . and this is your most recent ekg which we did before you came in , and that all looks really good . so , um , so no concerns from a heart standpoint . so let's talk a little bit about , you know , my assessment and my plan for you .
+[patient] mm-hmm .
+[doctor] so for your first problem , your , your knee pain , you know , i'm concerned that it might be from , you know , a flareup of your lupus , so i wan na go ahead and order and autoimmune panel to kinda see where we stand , okay ?
+[patient] sure .
+[doctor] hey , dragon . order an autoimmune panel . for your next problem , the coronary artery disease , i think you're doing really well , your ekg looks good , your vital signs look good .
+[patient] mm-hmm .
+[doctor] i'm gon na go ahead and order a lipid panel and another echocardiogram , okay ?
+[patient] okay .
+[doctor] hey , dragon . order an echocardiogram .
+[doctor] do you have any questions ?
+[patient] no questions .
+[doctor] all right , well , the nurse will be in soon and she'll get you checked out , okay ?
+[patient] you got it .
+[doctor] hey , dragon . finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Joint pain.
+
+HISTORY OF PRESENT ILLNESS
+
+Mr. James Moore is a 57-year-old male with a past medical history significant for coronary artery disease and lupus, who presents today with some joint pain.
+
+The patient reports he has been " putting a few more miles on the bike each day ". His bilateral knees have been sore in the last 3 to 4 days. He states his bilateral knees are equally painful. He notes stiffness and soreness in the morning and, by the end of the day, he feels the same sensation. He endorses swelling and redness in his knees which reduces in severity by the afternoon. The patient denies any other associated fatigue. He denies any injury to his knees. He denies pain in any other joints including his elbows, wrists, or shoulders.
+
+In regards to his coronary artery disease, Mr. Moore states he is compliant with his aspirin and Crestor. He denies chest pain or shortness of breath.
+
+The patient denies recent symptoms related to his lupus over the last year.
+
+He denies fever, chills, abdominal pain, nausea, and vomitting.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: Denies fevers.
+• Cardiovascular: Denies chest pain or dyspnea.
+• Respiratory: Denies shortness of breath.
+• Musculoskeletal: Endorses joint pain, stiffness, swelling, and erythema in bilateral knees.
+
+PHYSICAL EXAMINATION
+
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: 2/6 systolic ejection murmur, stable.
+• Musculoskeletal: Edema and slight erythema of bilateral knees. Slight effusion of the right knee with pain to palpation. Decreased range of motion in bilateral knees.
+
+RESULTS
+
+X-ray of the right knee is unremarkable. No bony abnormalities or fractures were noted.
+
+Electrocardiogram stable in comparison to last year.
+
+ASSESSMENT AND PLAN
+
+Mr. James Moore is a 57-year-old male with a past medical history significant for coronary artery disease and lupus, who presents today with some joint pain.
+
+Lupus.
+• Medical Reasoning: This has been stable and asymptomatic for the past year, but the patient reports increased joint pain and inflammation in his bilateral knees lately. ​His recent knee x-ray was unremarkable, so I am concerned that this is a lupus flare.
+• Additional Testing: We will order an autoimmune panel for further evaluation.
+
+Coronary artery disease.
+• Medical Reasoning: He is asymptomatic at this time. He has discontinued Plavix but continues with daily aspirin and Crestor. His recent EKG was unremarkable.
+• Additional Testing: We will order a lipid panel and a repeat echocardiogram.
+• Medical Treatment: Continue current regimen.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+

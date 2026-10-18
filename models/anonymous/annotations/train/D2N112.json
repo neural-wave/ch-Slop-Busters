@@ -1,0 +1,11 @@
+{
+  "encounter_id": "D2N112",
+  "phi": [
+    {"text": "matthew", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "football", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "Matthew Hill", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "44-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "football", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "sports"}
+  ],
+  "medical_concepts": []
+}

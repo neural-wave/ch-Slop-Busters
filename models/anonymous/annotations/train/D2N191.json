@@ -1,0 +1,17 @@
+{
+  "encounter_id": "D2N191",
+  "phi": [
+    {"text": "zachary", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "mowed grass", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "did yard work"},
+    {"text": "mowing grass", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "doing yard work"},
+    {"text": "heart doctor", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "medical professional"},
+    {"text": "jobie", "field": "dialogue", "type": "NAME_OTHER", "tier": 1, "generalized": ""},
+    {"text": "joe biting", "field": "dialogue", "type": "NAME_OTHER", "tier": 1, "generalized": ""},
+    {"text": "pooten", "field": "dialogue", "type": "NAME_OTHER", "tier": 1, "generalized": ""},
+    {"text": "united states", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "country"},
+    {"text": "Zachary Wood", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "45-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "cutting the grass", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "doing yard work"}
+  ],
+  "medical_concepts": []
+}

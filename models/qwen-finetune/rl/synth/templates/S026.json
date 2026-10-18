@@ -1,0 +1,643 @@
+{
+ "id": "S026",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S52.124A",
+   "description": "Nondisplaced fracture of head of right radius, initial encounter for closed fracture"
+  },
+  {
+   "code": "V00.841A",
+   "description": "Fall from standing electric scooter, initial encounter"
+  },
+  {
+   "code": "Y92.480",
+   "description": "Sidewalk as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y99.8",
+   "description": "Other external cause status"
+  }
+ ],
+ "dialogue": "[doctor] hi there , {PATIENT_FIRST} ? i'm doctor {DOCTOR_LAST} .\n[patient] hi .\n[doctor] so what brings you in today ?\n[patient] so , um , i fell off one of those electric scooters , the rental ones , and i hurt my elbow .\n[doctor] oh no . when did this happen ?\n[patient] {DATE_SPOKEN} , so like three days ago . i was riding it back from class , i'm a junior at the university , and i was on the sidewalk on the way to my apartment .\n[doctor] okay . and what happened ?\n[patient] so the front wheel , it's like a really small wheel , it caught in a crack in the sidewalk where the concrete was all broken up , and the scooter just stopped and i flew forward . i put my right arm out and landed on my hand , and like , my elbow kind of jammed .\n[doctor] okay . did anything else hit you , like a car , or a pole , or another person ?\n[patient] no , nothing , it was just the crack . i just fell .\n[doctor] were you going fast ?\n[patient] i mean , i think those things go like 15 miles an hour , and i was probably going full speed .\n[doctor] were you wearing a helmet ?\n[patient] no . i know , i know .\n[doctor] did you hit your head ?\n[patient] no , i did n't , luckily . i landed mostly on my arm and my knees .\n[doctor] okay . and what kind of pain are you having ?\n[patient] it's on the outside of my elbow . it hurts to straighten it all the way , and turning my hand over , like to turn a doorknob or open a jar , that really hurts .\n[doctor] how bad is it ?\n[patient] like a six . if i try to straighten it , like an eight .\n[doctor] okay . any numbness or tingling in your hand ?\n[patient] no .\n[doctor] any pain in your wrist ?\n[patient] a little bit at first , but now it's mostly the elbow .\n[doctor] okay . what have you done for it ?\n[patient] my roommate {OTHER_FIRST} made me ice it , and i've been taking ibuprofen . i've been kind of keeping it bent , because that's comfortable .\n[doctor] okay . do you have any medical problems ?\n[patient] no .\n[doctor] take any medicines regularly ?\n[patient] just birth control .\n[doctor] any allergies ?\n[patient] penicillin , i get a rash .\n[doctor] okay . let me take a look . so i'm looking at your right elbow , there's some swelling on the outside . i'm gonna press here , right over the radial head .\n[patient] ow . yes , that's it .\n[doctor] okay . that's point tender . and on the inside of the elbow ? here ?\n[patient] no , that's fine .\n[doctor] and the wrist ? here on the forearm ?\n[patient] that's okay .\n[doctor] okay . go ahead and straighten your arm as much as you can .\n[patient] that's as far as it goes .\n[doctor] so you're missing about 20 degrees of extension . now turn your palm up , and palm down .\n[patient] ow , that hurts .\n[doctor] okay , pain with supination and pronation . but you're able to rotate it , that's important . squeeze my fingers . good . sensation is normal . you also have some scrapes on both knees , those look like they're healing fine .\n[doctor] so we took an x-ray of your elbow . there's a small crack in the radial head , that's the top of one of the forearm bones where it meets the elbow . the piece is not shifted , it's a nondisplaced fracture of the head of the right radius . there's also a fat pad sign , which means there's a little bit of blood in the joint .\n[patient] okay , so it's broken ?\n[doctor] it is , but this is one of the good ones to have . these heal really well without surgery . we're gonna put you in a sling for comfort , but i actually want you to start moving it within a few days , because the biggest problem with these is stiffness .\n[patient] okay .\n[doctor] so , sling for about a week , then take it out and gently bend and straighten the elbow , and turn the palm up and down , several times a day . you can keep taking ibuprofen , 600 milligrams up to three times a day with food , and ice .\n[patient] can i still go to class ? i have to write a lot .\n[doctor] you can . you can write with it , just do n't lift anything heavy , no more than like a cup of coffee , and no pushing up out of chairs with that arm .\n[patient] okay .\n[doctor] and no more scooters for a while . and when you do ride again , please wear a helmet .\n[patient] yeah , i think i'm done with those .\n[doctor] we'll see you back in two weeks with another x-ray , and we'll probably start physical therapy if it's stiff .\n[patient] sounds good , thank you .",
+ "note": "CHIEF COMPLAINT\n\nRight elbow pain.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents with right elbow pain after a fall from a standing electric scooter 3 days ago.\n\nThe patient was riding a rental electric scooter on the sidewalk when the front wheel caught in a crack in the concrete, and she was thrown forward. She fell onto an outstretched right hand. No collision with a vehicle, object, or person. She was not wearing a helmet and denies head injury. She reports lateral right elbow pain rated 6/10, increasing to 8/10 with attempted full extension, as well as pain with forearm rotation. She denies numbness or tingling. She had mild wrist pain initially that has resolved. She also sustained abrasions to both knees. She has been icing and taking ibuprofen.\n\nMEDICATIONS\n\nOral contraceptive.\n\nALLERGIES\n\nPenicillin (rash).\n\nSOCIAL HISTORY\n\nUniversity student.\n\nPHYSICAL EXAM\n\nRight elbow: Lateral swelling. Point tenderness over the radial head. No medial elbow tenderness. No wrist or forearm tenderness. Lacks approximately 20 degrees of terminal extension. Pain with supination and pronation, but rotation is preserved without mechanical block. Grip strength intact. Sensation intact.\nKnees: Healing bilateral abrasions.\n\nRESULTS\n\nX-ray of the right elbow: Nondisplaced fracture of the radial head. Positive fat pad sign consistent with hemarthrosis.\n\nASSESSMENT AND PLAN\n\n1. Nondisplaced fracture of the head of the right radius, closed.\n- Fall from a rental electric scooter on the sidewalk.\n- Sling for comfort for approximately 1 week, followed by early active range of motion.\n- Ibuprofen 600 mg up to three times daily with food. Ice.\n- No lifting heavier than a cup of coffee. No weight bearing through the arm.\n- Counseled on helmet use.\n- Follow-up in 2 weeks with repeat x-ray. Physical therapy if stiffness persists.",
+ "medical_concepts": [
+  {
+   "text": "i fell off one of those electric scooters",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the rental ones",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was riding it back from class",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was on the sidewalk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it caught in a crack in the sidewalk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the scooter just stopped and i flew forward",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i put my right arm out and landed on my hand",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it was just the crack . i just fell",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "swelling on the outside",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "that's point tender",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "missing about 20 degrees of extension",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain with supination and pronation",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fat pad sign",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a little bit of blood in the joint",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "small crack in the radial head",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the piece is not shifted",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "some scrapes on both knees",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i hurt my elbow",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's on the outside of my elbow",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it hurts to straighten it all the way",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain in your wrist",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "rash",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "stiffness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nondisplaced fracture of the head of the right radius",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "right elbow",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "radial head",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "knees",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "wrist",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "forearm",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-ray of your elbow",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "another x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "600 milligrams up to three times a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "birth control",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "penicillin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "sling",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "fall from a standing electric scooter",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "riding a rental electric scooter on the sidewalk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the front wheel caught in a crack in the concrete",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "she was thrown forward",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell onto an outstretched right hand",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No collision with a vehicle, object, or person",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Fall from a rental electric scooter on the sidewalk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lateral swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Point tenderness over the radial head",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lacks approximately 20 degrees of terminal extension",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Pain with supination and pronation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Positive fat pad sign consistent with hemarthrosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No medial elbow tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No wrist or forearm tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "rotation is preserved without mechanical block",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Grip strength intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Healing bilateral abrasions",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right elbow pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "right elbow pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lateral right elbow pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain with forearm rotation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "head injury",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild wrist pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "abrasions to both knees",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "stiffness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "rash",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Nondisplaced fracture of the head of the right radius, closed",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Nondisplaced fracture of the radial head",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "X-ray of the right elbow",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "repeat x-ray",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen 600 mg up to three times daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Oral contraceptive",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Penicillin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ice",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "early active range of motion",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "the rental ones",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic type of scooter, not a named company"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S52.124A",
+   "spans": [
+    {
+     "text": "nondisplaced fracture of the head of the right radius",
+     "field": "dialogue"
+    },
+    {
+     "text": "small crack in the radial head",
+     "field": "dialogue"
+    },
+    {
+     "text": "that's point tender",
+     "field": "dialogue"
+    },
+    {
+     "text": "Nondisplaced fracture of the head of the right radius, closed",
+     "field": "note"
+    },
+    {
+     "text": "Nondisplaced fracture of the radial head",
+     "field": "note"
+    },
+    {
+     "text": "Point tenderness over the radial head",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V00.841A",
+   "spans": [
+    {
+     "text": "i fell off one of those electric scooters",
+     "field": "dialogue"
+    },
+    {
+     "text": "the scooter just stopped and i flew forward",
+     "field": "dialogue"
+    },
+    {
+     "text": "it was just the crack . i just fell",
+     "field": "dialogue"
+    },
+    {
+     "text": "fall from a standing electric scooter",
+     "field": "note"
+    },
+    {
+     "text": "Fall from a rental electric scooter on the sidewalk",
+     "field": "note"
+    },
+    {
+     "text": "No collision with a vehicle, object, or person",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.480",
+   "spans": [
+    {
+     "text": "i was on the sidewalk",
+     "field": "dialogue"
+    },
+    {
+     "text": "it caught in a crack in the sidewalk",
+     "field": "dialogue"
+    },
+    {
+     "text": "riding a rental electric scooter on the sidewalk",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.8",
+   "spans": [
+    {
+     "text": "i was riding it back from class",
+     "field": "dialogue"
+    },
+    {
+     "text": "riding a rental electric scooter on the sidewalk",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm a junior at the university",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "student status and year"
+  },
+  {
+   "text": "University student",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "student status"
+  }
+ ]
+}

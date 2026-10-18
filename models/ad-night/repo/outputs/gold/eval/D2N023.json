@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N023",
+  "pii": [
+    {"field": "dialogue", "text": "paul", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "edwards", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "january 15th 1962", "category": "DOB", "risk": "high"},
+    {"field": "dialogue", "text": "59 year old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "november 24th 2020", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "the 28th", "category": "DATE", "risk": "medium"},
+    {"field": "dialogue", "text": "walmart pharmacy", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "Paul", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Edwards", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "59-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "11/24/2020", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "11/24/2021", "category": "DATE", "risk": "high"}
+  ],
+  "keep": []
+}

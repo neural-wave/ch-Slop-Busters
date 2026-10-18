@@ -1,0 +1,33 @@
+{
+  "encounter_id": "D2N100",
+  "phi": [
+    {"text": "kayla ward", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "kayla", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "4/28/07", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "3-8-4-9-2-0", "field": "dialogue", "type": "ID", "tier": 1, "generalized": ""},
+    {"text": "dog", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pet"},
+    {"text": "bird", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pet"},
+    {"text": "bunnies", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pets"},
+    {"text": "7th grade", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "school"},
+    {"text": "basketball", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "volleyball", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "tap", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "dance"},
+    {"text": "juan price", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "school sports", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "the fall", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "one season"},
+    {"text": "ward", "field": "dialogue", "type": "NAME_RELATIVE", "tier": 1, "generalized": ""},
+    {"text": "Kayla Ward", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Kayla", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "15-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "the fall", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "one season"},
+    {"text": "school sports", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "dog", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pet"},
+    {"text": "bird", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pet"},
+    {"text": "rabbits", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pets"},
+    {"text": "the 7th grade", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "school"},
+    {"text": "basketball", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "volleyball", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "tap dancing", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "dance"}
+  ],
+  "medical_concepts": []
+}

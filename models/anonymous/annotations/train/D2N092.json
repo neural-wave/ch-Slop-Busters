@@ -1,0 +1,17 @@
+{
+  "encounter_id": "D2N092",
+  "phi": [
+    {"text": "martinez", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "gomez", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "43-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "tennis", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a racket sport"},
+    {"text": "backhand", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "swing"},
+    {"text": "stabbing", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "puncture injury"},
+    {"text": "lawn work", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "outdoor chores"},
+    {"text": "rake", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "garden tool"},
+    {"text": "Martinez", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "43-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "tennis", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "a racket sport"}
+  ],
+  "medical_concepts": []
+}

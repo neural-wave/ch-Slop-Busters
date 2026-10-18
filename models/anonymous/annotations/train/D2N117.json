@@ -1,0 +1,22 @@
+{
+  "encounter_id": "D2N117",
+  "phi": [
+    {"text": "jackson", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "45 -year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "mark", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "tennis", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "country club", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "club"},
+    {"text": "state champ", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "a strong player"},
+    {"text": "australia open", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "tennis tournament"},
+    {"text": "masters", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "golf tournament"},
+    {"text": "golfer", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "sports fan"},
+    {"text": "tiger", "field": "dialogue", "type": "NAME_OTHER", "tier": 1, "generalized": ""},
+    {"text": "easter", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a holiday"},
+    {"text": "cadboy", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "chocolate"},
+    {"text": "cadberry", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "chocolate"},
+    {"text": "nelson", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "Nelson", "field": "note", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "tennis", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "sports"}
+  ],
+  "medical_concepts": []
+}

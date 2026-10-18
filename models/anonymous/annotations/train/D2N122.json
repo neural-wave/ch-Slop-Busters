@@ -1,0 +1,15 @@
+{
+  "encounter_id": "D2N122",
+  "phi": [
+    {"text": "kyle", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "loading some pay", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "doing farm chores"},
+    {"text": "horses", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "animals"},
+    {"text": "four hundred bills", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "a large load"},
+    {"text": "biking", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "bike", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "track seventy one hundred hybrid", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "a bicycle"},
+    {"text": "old rail road right away", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a local trail"},
+    {"text": "biking", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"}
+  ],
+  "medical_concepts": []
+}

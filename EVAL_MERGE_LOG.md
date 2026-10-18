@@ -46,7 +46,7 @@
   fingerprints are:
   - `identity`: `baselines.py` and `common.py`
   - `anonymous`, `anonymous_rules`: `anonymous_vm.py`, the VM's `detect/**/*.py` and `common.py` (`Span`, `TIER`, `NEVER_PHI`),
-    and the `--words` list `models/anonymous-deps/american-english-large`
+    and the `--words` list `models/anonymous/american-english-large`
   - `ad_*`: the A+D repo's `src/**/*.py` and `src/**/*.gz`
 
   `anonymous_vm.py`'s `DEFAULT_ROOT` now uses `parents[3]`.

@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N099",
+  "pii": [
+    {"field": "dialogue", "text": "randy", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "gutierrez", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "dino", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "8/10/2020", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "Randy", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Gutierrez", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "9-month-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "baby vick's", "category": "NOT_A_NAME", "why": "OTC product (Vicks VapoRub), not a person"},
+    {"field": "dialogue", "text": "zarbee's", "category": "NOT_A_NAME", "why": "OTC cough product, not a person"},
+    {"field": "note", "text": "baby Vick's", "category": "NOT_A_NAME", "why": "OTC product (Vicks VapoRub), not a person"},
+    {"field": "note", "text": "Zarbee’s", "category": "NOT_A_NAME", "why": "OTC cough product, not a person"}
+  ]
+}

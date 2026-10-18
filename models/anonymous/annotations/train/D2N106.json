@@ -1,0 +1,17 @@
+{
+  "encounter_id": "D2N106",
+  "phi": [
+    {"text": "charles", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "moved out in the city", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "moved"},
+    {"text": "big plot of land", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "property"},
+    {"text": "hunter", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "outdoorsman"},
+    {"text": "venison", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "meat"},
+    {"text": "dog", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pet"},
+    {"text": "cat", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pet"},
+    {"text": "Charles Sullivan", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "45-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "hunting", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "outdoor activities"},
+    {"text": "cat", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pet"}
+  ],
+  "medical_concepts": []
+}

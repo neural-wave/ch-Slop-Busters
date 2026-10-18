@@ -1,0 +1,31 @@
+{
+  "encounter_id": "SYN017",
+  "pii": [
+    {"field": "note", "text": "LARKSPUR FALLS UNIVERSITY HOSPITAL", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "2500 Commonwealth Boulevard", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Larkspur Falls", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "MN 55990", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "RAD-26-0093317", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "RAD-26-0093318", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "001-447-2981", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "DUFRESNE", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "JEROME", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "J.D.", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "09/03/1962", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "63 Y", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "63 y/o", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "03/04/2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Imani", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Hollowell", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "pager 3390", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "11/02/2023", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Lakeview Imaging Center", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Sven", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Aaltonen", "category": "PERSON_NAME", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "note", "text": "Circle of Willis", "category": "EPONYM", "why": "anatomy"},
+    {"field": "note", "text": "Tan score", "category": "EPONYM", "why": "collateral grading score, not a person"},
+    {"field": "note", "text": "NASCET", "category": "NOT_A_NAME", "why": "stenosis criteria"}
+  ]
+}

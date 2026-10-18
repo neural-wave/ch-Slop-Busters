@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N144",
+  "phi": [
+    {"text": "tyler nelson", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "nelson", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "3 , 6 , 1949", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "385729", "field": "dialogue", "type": "ID", "tier": 1, "generalized": ""},
+    {"text": "Nelson", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "72-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "03/04/2021", "field": "note", "type": "DATE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N103",
+  "phi": [
+    {"text": "melissa sanchez", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "sanchez", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "9/23/1962", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "5484367", "field": "dialogue", "type": "ID", "tier": 1, "generalized": ""},
+    {"text": "8/3/2020", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "9/17", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "12/26/2020", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "hughes", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "Melissa Sanchez", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Sanchez", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "58-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "08/03/2020", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "09/17/20", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "12/26/2020", "field": "note", "type": "DATE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

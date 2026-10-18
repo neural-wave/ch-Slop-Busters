@@ -1,0 +1,877 @@
+{
+ "id": "G0030",
+ "dataset": "synthetic_followup",
+ "sex": "female",
+ "age_range": [
+  75,
+  90
+ ],
+ "icd10_codes": [
+  {
+   "code": "L40.0",
+   "description": "Psoriasis vulgaris"
+  },
+  {
+   "code": "L57.0",
+   "description": "Actinic keratosis"
+  },
+  {
+   "code": "L82.1",
+   "description": "Other seborrheic keratosis"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . good to see you again . how have the spots been ?\n[patient] hi doctor {DOCTOR_LAST} . the spots on my arms are better , but my scalp is still a mess . and my nose is still healing from the last thing .\n[doctor] right , the nose . we'll look at that . let's start with the scalp .\n[patient] it's itchy and flaky , like snow , and there's a thick patch right behind my left ear that bleeds if i scratch it .\n[doctor] okay . are you using the clobetasol ointment twice a day like we talked about ?\n[patient] i use it every night before bed , but the nurse said twice a day . i'd forgotten .\n[doctor] the nurse is right . let's go over the routine . the foam works better on the scalp than the ointment .\n[patient] i have a bottle of the foam that the pharmacy gave me . it smells like cough syrup .\n[doctor] that's the one . how long have you been using it on the scalp ?\n[patient] for about three weeks . the arms have cleared up nicely .\n[doctor] that's good progress . the arms look much better on my exam . what about the joints ? any pain or stiffness in the fingers or knees ?\n[patient] my knuckles ache in the morning , maybe for twenty minutes , and then it eases . my knees are fine .\n[doctor] okay . let's talk about the sun spots on your face and the hands . how many of those have you noticed ?\n[patient] a few on my forehead and the back of my hands . one on my nose that the last surgeon removed .\n[doctor] right , that was the mohs surgery . when was that exactly ?\n[patient] {DATE_NUM} . they took a little piece from the side of my nose and sewed it back . the scar is still pink .\n[doctor] it looks good , healing well . is it tender ?\n[patient] only when i wear my glasses . the bridge rubs right there .\n[doctor] that's common . we can pad the glasses or adjust them .\n[patient] my daughter {OTHER_FIRST} already offered to take me to the optician .\n[doctor] that's great . now , tell me about your work history . you mentioned a job when you came in .\n[patient] i was a seamstress for thirty years at the textile mill . i sat at a machine all day with my hands on the fabric , and my hands were always in water and starch .\n[doctor] that's a long career with a lot of hand exposure . were you ever out in the sun at work ?\n[patient] not really , it was indoors . the sun came later , when i gardened . i've been outside in the sun since i retired .\n[doctor] okay . do you use sunscreen now ?\n[patient] when i remember . i keep it by the back door .\n[doctor] good , put it by the front door too . are you still gardening ?\n[patient] yes , tomatoes and roses . i garden every morning until about ten , and then i'm in the shade .\n[doctor] that's helpful . now , let's look at the scalp and the skin . please sit here .\n[patient] okay .\n[doctor] i see thick silvery scale on the scalp , and the patch behind the ear is raised and crusted . on your forehead there are several rough , scaly spots that feel like sandpaper . these are called actinic keratoses .\n[patient] they feel like sandpaper , yes . i can't see them well but my daughter says they look bad .\n[doctor] the spots on your hands are similar . there are also a few waxy , stuck on looking spots on your back . those look like seborrheic keratoses , which are benign .\n[patient] stuck on , yes . i was worried those were something else .\n[doctor] i'll do a biopsy of one of the waxy ones to be sure . and we'll freeze the rough spots on the forehead today with liquid nitrogen .\n[patient] freezing hurts , right ?\n[doctor] it stings for a minute . you'll get a blister that heals in a couple weeks . would you like me to do the forehead first , or the hands ?\n[patient] the forehead . i need to see myself in the mirror in the morning .\n[doctor] okay . let's do the forehead first .\n[patient] ouch . okay .\n[doctor] almost done . now the back biopsy . i'll numb it with lidocaine first .\n[patient] okay . i'm fine .\n[doctor] the biopsy is done . it's a small stitch , and we'll send it to pathology . results in about a week .\n[patient] okay . i'll call the nurse for the results .\n[doctor] good . now , the psoriasis . have you been on the calcipotriene or the coal tar ?\n[patient] the calcipotriene , not the coal tar . it smells worse .\n[doctor] i agree . what about the medicines in the bathroom cabinet ? anything for the blood pressure or the heart ?\n[patient] yes , lisinopril in the morning and a little aspirin at night . my doctor says my blood pressure is one thirty eight over eighty two at home .\n[doctor] that's close to goal . any problems with the lisinopril ?\n[patient] no , none . i take it with my breakfast every morning and i have since {YEAR} .\n[doctor] that's good to know . and the hand pain , is there any color change when it's cold ?\n[patient] yes , my fingers go white and then blue when i go outside in the winter . then they come back red . my cousin has the same thing .\n[doctor] that sounds like raynaud's . we can talk about keeping your hands warm and the medicine for it .\n[patient] i have gloves but i forget them when i'm in a rush .\n[doctor] that's common . let's also look at your thyroid . you've mentioned hashimoto's before , correct ?\n[patient] yes , i take the thyroid pill in the morning , twenty five micrograms . the blood test was normal last year .\n[doctor] okay , good . the labs from last month were fine too .\n[patient] good . i'm glad . i turn eighty three on {DATE_SPOKEN} , and i want to feel good for that .\n[doctor] happy early birthday . let's make a plan so you feel good for it .\n[patient] thank you .\n[doctor] first , keep using the clobetasol foam on the scalp twice a day for two more weeks , then go to once a day . keep moisturizing the body .\n[patient] okay . i'll put the foam on before the news .\n[doctor] perfect . second , use sunscreen every day , even on cloudy days , and reapply when you're outside in the garden . a wide brim hat helps too .\n[patient] i have a straw hat from the church rummage sale that i wear .\n[doctor] that works . third , come back in six weeks , and we'll recheck the forehead and go over the biopsy results .\n[patient] six weeks , got it . and the nurse will call me with the biopsy result ?\n[doctor] yes . if you see any sores that bleed and don't heal in four weeks , or any new spots that grow fast , call the office right away .\n[patient] okay . i will . thank you , doctor {DOCTOR_LAST} . you've been very patient with me today .",
+ "note": "CHIEF COMPLAINT\n\nFollow-up of plaque psoriasis and sun-damaged skin; scalp plaques with inconsistent topical steroid use; postoperative check after Mohs surgery.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with long-standing plaque psoriasis diagnosed in {YEAR}, actinic keratoses, and a history of Mohs micrographic surgery to the left nasal sidewall on {DATE_NUM}. She returns with her daughter, {OTHER_FIRST}. A nurse reviewed her topical regimen earlier today.\n\nScalp: pruritic, scaling, thick plaques with a crusted, bleeding lesion behind the left ear. She has used clobetasol foam once nightly, rather than twice daily as prescribed, for approximately three weeks. Body psoriasis on the arms has improved substantially. She reports morning stiffness of the knuckles lasting about 20 minutes, improving with activity. No knee symptoms.\n\nSkin: multiple rough, scaly papules on the forehead and dorsal hands consistent with actinic keratoses. Several waxy, stuck-on lesions on the back consistent with seborrheic keratoses. The Mohs site on the left nasal sidewall is healing with a pink scar. She reports tenderness of the scar when wearing glasses.\n\nOccupational history: She worked as a seamstress for thirty years at a textile mill, with extensive hand exposure to water and starch and predominantly indoor work. She has had increased outdoor sun exposure in retirement through gardening (tomatoes and roses) most mornings until about 10 AM. Sunscreen use is inconsistent.\n\nVascular: fingers pale then cyanotic with cold exposure in winter, with rubor on rewarming. A cousin has similar symptoms. Thyroid: Hashimoto's thyroiditis on levothyroxine 25 mcg daily with normal recent labs.\n\nCardiovascular: hypertension treated with lisinopril each morning since {YEAR}. Home BP reported as 138/82. Low-dose aspirin nightly.\n\nPHYSICAL EXAM\n\nVitals per nursing: BP 138/82. Scalp with thick silvery scale over the vertex and a 2 cm crusted, friable lesion behind the left ear. Forehead with multiple rough erythematous papules. Dorsal hands with scattered actinic keratoses. Back with several stuck-on, waxy keratoses. Left nasal sidewall Mohs scar well healed with pink color and no tenderness on palpation. Hands: no digital ulceration.\n\nPROCEDURES\n\nCryotherapy with liquid nitrogen to forehead actinic keratoses, treated in one session. Punch biopsy of one back seborrheic keratosis under local anesthesia with lidocaine, sent for histopathology.\n\nASSESSMENT AND PLAN\n\n1. Plaque psoriasis of the scalp, suboptimally controlled due to inconsistent application. Clobetasol foam twice daily for two additional weeks, then once daily. Emollients to the body. Calcipotriene preferred over coal tar.\n\n2. Actinic keratoses, forehead and dorsal hands. Cryotherapy performed on the forehead today. Sun protection counseling including daily broad-spectrum sunscreen and a wide-brim hat. Reassess the hands at the next visit.\n\n3. Seborrheic keratoses, back. Biopsy sent to pathology to exclude malignancy. Results to be reviewed by phone.\n\n4. Raynaud's phenomenon, cold-induced digital color change. Keep hands warm with gloves. Vasodilator options discussed if symptoms persist.\n\n5. Hashimoto's thyroiditis, stable on levothyroxine. Continue current dose.\n\n6. Hypertension, reported home BP 138/82 near goal on lisinopril.\n\nReturn precautions reviewed: bleeding or nonhealing sores beyond four weeks and rapidly enlarging lesions. Return visit in six weeks.",
+ "medical_concepts": [
+  {
+   "text": "the spots on my arms are better",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my scalp is still a mess",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my nose is still healing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "it's itchy and flaky",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a thick patch right behind my left ear",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "that bleeds if i scratch it",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "clobetasol ointment",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "a bottle of the foam",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "it smells like cough syrup",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "for about three weeks",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the arms have cleared up nicely",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my knuckles ache in the morning",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the sun spots on your face and the hands",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "on my forehead and the back of my hands",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "that the last surgeon removed",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "the mohs surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "they took a little piece from the side of my nose",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "the scar is still pink",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "only when i wear my glasses",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the bridge rubs right there",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i sat at a machine all day with my hands on the fabric",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "my hands were always in water and starch",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the sun came later , when i gardened",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "sunscreen",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tomatoes and roses",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i garden every morning until about ten",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "thick silvery scale on the scalp",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the patch behind the ear is raised and crusted",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "several rough , scaly spots that feel like sandpaper",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "actinic keratoses",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "they feel like sandpaper",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "waxy , stuck on looking spots on your back",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "seborrheic keratoses",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "which are benign",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a biopsy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "freeze the rough spots on the forehead today with liquid nitrogen",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "freezing hurts",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "it stings for a minute",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a blister that heals in a couple weeks",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lidocaine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "a small stitch",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "send it to pathology",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "calcipotriene",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "coal tar",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril in the morning",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little aspirin at night",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "one thirty eight over eighty two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "my fingers go white and then blue",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my cousin has the same thing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "raynaud's",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "hashimoto's",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "the thyroid pill in the morning , twenty five micrograms",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "the blood test was normal last year",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "the labs from last month were fine",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "keep using the clobetasol foam on the scalp twice a day for two more weeks",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "use sunscreen every day",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a wide brim hat",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a straw hat from the church rummage sale",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sores that bleed and don't heal in four weeks",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "any new spots that grow fast",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the nurse said twice a day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "plaque psoriasis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "actinic keratoses",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mohs micrographic surgery",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "left nasal sidewall",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "pruritic, scaling, thick plaques",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a crusted, bleeding lesion behind the left ear",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "clobetasol foam once nightly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "for approximately three weeks",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Body psoriasis on the arms has improved substantially",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "morning stiffness of the knuckles",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "No knee symptoms",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "rough, scaly papules on the forehead and dorsal hands",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "waxy, stuck-on lesions on the back",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "healing with a pink scar",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tenderness of the scar when wearing glasses",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "extensive hand exposure to water and starch",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "predominantly indoor work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "increased outdoor sun exposure in retirement",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "gardening (tomatoes and roses)",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Sunscreen use is inconsistent",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fingers pale then cyanotic with cold exposure in winter",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "rubor on rewarming",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hashimoto's thyroiditis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "levothyroxine 25 mcg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril each morning",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Home BP reported as 138/82",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Low-dose aspirin nightly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 138/82",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "thick silvery scale over the vertex",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a 2 cm crusted, friable lesion behind the left ear",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "multiple rough erythematous papules",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "scattered actinic keratoses",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "several stuck-on, waxy keratoses",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mohs scar well healed",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no digital ulceration",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cryotherapy with liquid nitrogen",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Punch biopsy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "lidocaine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "histopathology",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Plaque psoriasis of the scalp",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Clobetasol foam twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Emollients to the body",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Calcipotriene preferred over coal tar",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Actinic keratoses, forehead and dorsal hands",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Cryotherapy performed on the forehead today",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Sun protection counseling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "daily broad-spectrum sunscreen",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "wide-brim hat",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Seborrheic keratoses, back",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Biopsy sent to pathology",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Raynaud's phenomenon",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "cold-induced digital color change",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Keep hands warm with gloves",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Vasodilator options",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hashimoto's thyroiditis, stable on levothyroxine",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hypertension, reported home BP 138/82 near goal on lisinopril",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "bleeding or nonhealing sores beyond four weeks",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "rapidly enlarging lesions",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "mohs",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponym for the surgical technique, not a person in this record"
+  },
+  {
+   "text": "raynaud's",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponymous phenomenon, not a person"
+  },
+  {
+   "text": "hashimoto's",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponymous thyroid disease, not a person"
+  },
+  {
+   "text": "Raynaud's phenomenon",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponymous phenomenon, not a person"
+  },
+  {
+   "text": "Hashimoto's thyroiditis",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponymous thyroid disease, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "L40.0",
+   "spans": [
+    {
+     "text": "it's itchy and flaky",
+     "field": "dialogue"
+    },
+    {
+     "text": "a thick patch right behind my left ear",
+     "field": "dialogue"
+    },
+    {
+     "text": "Plaque psoriasis of the scalp",
+     "field": "note"
+    },
+    {
+     "text": "pruritic, scaling, thick plaques",
+     "field": "note"
+    },
+    {
+     "text": "Calcipotriene preferred over coal tar",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "L57.0",
+   "spans": [
+    {
+     "text": "the sun came later , when i gardened",
+     "field": "dialogue"
+    },
+    {
+     "text": "several rough , scaly spots that feel like sandpaper",
+     "field": "dialogue"
+    },
+    {
+     "text": "Actinic keratoses, forehead and dorsal hands",
+     "field": "note"
+    },
+    {
+     "text": "rough, scaly papules on the forehead and dorsal hands",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "L82.1",
+   "spans": [
+    {
+     "text": "waxy , stuck on looking spots on your back",
+     "field": "dialogue"
+    },
+    {
+     "text": "seborrheic keratoses",
+     "field": "dialogue"
+    },
+    {
+     "text": "Seborrheic keratoses, back",
+     "field": "note"
+    },
+    {
+     "text": "waxy, stuck-on lesions on the back",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i was a seamstress for thirty years at the textile mill",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's former job and duration"
+  },
+  {
+   "text": "i sat at a machine all day with my hands on the fabric",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "job task details"
+  },
+  {
+   "text": "She worked as a seamstress for thirty years at a textile mill",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient's former job and duration"
+  }
+ ],
+ "scenario": {
+  "specialty": "dermatology",
+  "visit": "followup",
+  "length": "long",
+  "focus": [
+   "OCCUPATION",
+   "DATE"
+  ]
+ }
+}

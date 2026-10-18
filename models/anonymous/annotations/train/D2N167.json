@@ -1,0 +1,12 @@
+{
+  "encounter_id": "D2N167",
+  "phi": [
+    {"text": "angela", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "training wheels for her bike", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "extra support on her toy"},
+    {"text": "five", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "ride a bike", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "play outside"},
+    {"text": "Angela Powell", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "81-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

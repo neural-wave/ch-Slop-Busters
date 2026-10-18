@@ -1,0 +1,11 @@
+{
+  "encounter_id": "D2N107",
+  "phi": [
+    {"text": "bryan", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "raking leaves", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "yard work"},
+    {"text": "Bryan Brooks", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "39-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "raking leaves", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "yard work"}
+  ],
+  "medical_concepts": []
+}

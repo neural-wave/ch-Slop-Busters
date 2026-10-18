@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N203",
+  "phi": [
+    {"text": "matthew", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "eat out almost every night", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "eat out often"},
+    {"text": "office", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "workplace"},
+    {"text": "go out to eat every night", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "go out to eat often"},
+    {"text": "italium place", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "restaurant"},
+    {"text": "main street", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a nearby street"},
+    {"text": "the basement of that big building", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a building"},
+    {"text": "bio marsal", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "entree"}
+  ],
+  "medical_concepts": []
+}

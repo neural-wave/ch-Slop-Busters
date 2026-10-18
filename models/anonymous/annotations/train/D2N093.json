@@ -1,0 +1,23 @@
+{
+  "encounter_id": "D2N093",
+  "phi": [
+    {"text": "lawrence", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "62-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "house parties", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "social gatherings"},
+    {"text": "saturdays or sundays", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "weekends"},
+    {"text": "chocolate bars", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "sweets"},
+    {"text": "summer", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "warmer months"},
+    {"text": "stretches outdoors", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercises outdoors"},
+    {"text": "red bull", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "energy drinks"},
+    {"text": "holiday season", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "busy season"},
+    {"text": "Lawrence Walker", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "62-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "house parties", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "social gatherings"},
+    {"text": "chocolate bars", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "sweets"},
+    {"text": "summer", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "warmer months"},
+    {"text": "outdoor stretching", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "outdoor exercise"},
+    {"text": "red bull", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "energy drink"},
+    {"text": "holiday season", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "busy season"}
+  ],
+  "medical_concepts": []
+}

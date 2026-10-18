@@ -1,0 +1,19 @@
+{
+  "encounter_id": "D2N204",
+  "phi": [
+    {"text": "joe", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "skiing", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "doing a sport"},
+    {"text": "skis", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "gear"},
+    {"text": "over the weekend on saturday", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "recently"},
+    {"text": "took a trip up up north", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "went away"},
+    {"text": "mount saint helen", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a mountain area"},
+    {"text": "washington", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "another state"},
+    {"text": "good trip", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "good time"},
+    {"text": "maple syrup", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "local products"},
+    {"text": "Joe Reed", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "42-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "skiing", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "doing a sport"},
+    {"text": "skis", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "gear"}
+  ],
+  "medical_concepts": []
+}

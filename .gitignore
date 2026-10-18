@@ -6,13 +6,16 @@
 # Core dumps
 /core.[0-9]*
 
-# unified-harness: silver labels, generated outputs, model weights and the robustness sets stay local.
+# unified-harness: silver labels, generated outputs and the robustness sets stay local.
 # The challenge files data/patient_doctor_encounters.jsonl and data/eval_patient_doctor_encounters.jsonl
 # are tracked by this repository on purpose.
 /data/robustness/
 /labels/
 /outputs/
-/models/
+# models/: code, data and outputs are tracked; venvs, weights and caches come from models/download.sh.
+/models/*/.venv/
+/models/anonymous/models/base/
+/models/ad-night/repo/resources/external/kaggle_*/
 
 # Local working notes: never published
 /PLAN.md

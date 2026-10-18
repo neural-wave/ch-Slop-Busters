@@ -1,0 +1,495 @@
+{
+ "id": "G0014",
+ "dataset": "synthetic_new",
+ "sex": "male",
+ "age_range": [
+  30,
+  45
+ ],
+ "icd10_codes": [
+  {
+   "code": "J45.909",
+   "description": "Unspecified asthma, uncomplicated"
+  },
+  {
+   "code": "Z57.5",
+   "description": "Occupational exposure to toxic agents in other industries"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_LAST} . i'm doctor {DOCTOR_LAST} . your primary care office sent me your file . how can i help you today ?\n[patient] hi , doctor {DOCTOR_LAST} . thanks for seeing me . my chest has been tight at work for about two months , and my inhaler is not doing much anymore .\n[doctor] okay . tell me about the tightness . when does it come on ?\n[patient] usually a couple hours into the shift . i spray foam insulation for {ORG} , mostly in crawl spaces . by the afternoon i'm wheezing and coughing and i have to step outside .\n[doctor] and when you're away from work , how is your breathing ?\n[patient] much better . weekends are fine . my chest feels normal by monday morning , then it starts again on tuesday .\n[doctor] that pattern is important . what chemicals do you work with ?\n[patient] the foam is a two part thing , the isocyanate side and the polyol side . we mix them in the gun . the safety sheets say you need a respirator with organic vapor cartridges .\n[doctor] do you wear one ?\n[patient] most days . honestly , not every day . in the summer the crawl spaces get so hot i take it off when the boss is not looking .\n[doctor] that's understandable , but it's dangerous . what inhaler are you using ?\n[patient] albuterol , the rescue one . i use it about five times a week now . it used to be about once a month .\n[doctor] okay . any cough at night ?\n[patient] sometimes , yes . i wake up a few times a month with my chest tight .\n[doctor] have you ever had asthma diagnosed ?\n[patient] not that i remember . i had bronchitis a couple of times as a kid , and my mom was always treating my wheezing with a steam tent .\n[doctor] okay . any other medical problems ?\n[patient] no , i'm pretty healthy . i run on weekends with my dog . but i do get a runny nose at work , and my eyes get itchy .\n[doctor] any smoking ?\n[patient] i quit three years ago . i smoked about a pack a day for ten years before that .\n[doctor] okay . and alcohol ?\n[patient] a beer or two on friday . nothing more .\n[doctor] any family history of asthma or allergies ?\n[patient] my brother has asthma . my dad had hay fever .\n[doctor] okay . let me examine you . breathe in for me . your lungs have some wheezing on the right side when you breathe out . the rest sounds clear .\n[patient] that's the same thing i hear at work .\n[doctor] your oxygen is ninety six percent on room air , and your peak flow is about seventy percent of your predicted value . that is lower than i'd like .\n[patient] what does that mean ?\n[doctor] it means your airways narrow when you're exposed to something . the pattern fits with work related asthma from the isocyanates .\n[patient] so it's the foam .\n[doctor] it's very likely part of it . we'll do a spirometry test today to measure how much air you can move out . and i'd like a chest x-ray to rule out other problems .\n[patient] okay . my coworker {OTHER_FIRST} has the same cough , and his wife says he wakes up at night too .\n[doctor] that's worth telling him to see someone . the nurse will set you up for the breathing test now .\n[patient] okay .\n[doctor] while we wait , the guidelines say a cholesterol check should start at age thirty five for men , so that's a good time to check yours .\n[patient] i'm {AGE} , so i guess i'm due for that .\n[doctor] and pneumonia vaccines become a bigger deal over the age of sixty five , but that's far off for you .\n[patient] good . i'm far from that .\n[doctor] here's what i recommend . first , the most important thing is less exposure . can you talk to your supervisor about a different job for a few weeks , or at least use supplied air every shift ?\n[patient] i can try . he's pretty set on production , though .\n[doctor] i'll write a letter to your employer recommending a temporary change in your duties . i'd also like you to start a low dose inhaled steroid , twice a day , every day .\n[patient] okay . and the albuterol ?\n[doctor] keep it for rescue . if you need it more than twice a week , or if you wake up at night with it , call us .\n[patient] got it .\n[doctor] i'm also going to refer you to the occupational health clinic on hillcrest avenue . they can look at your workplace and your respirator fit .\n[patient] that's close to where my sister works . she's a nurse there , actually .\n[doctor] good , then you'll have someone to ask . where did you grow up ?\n[patient] {CITY} . my family is still there , and i go back for christmas every year . the drive is brutal but worth it .\n[doctor] okay . let's see you in four weeks with repeat peak flow and spirometry . sooner if the wheezing gets worse .\n[patient] thank you , doctor {DOCTOR_LAST} . i was worried this was going to be a big deal .\n[doctor] it's a serious problem , but it's very treatable when we catch it early and reduce the exposure .",
+ "note": "CHIEF COMPLAINT\n\nChest tightness and wheezing at work for two months with reduced response to albuterol.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_LAST} is a {AGE}-year-old male referred by primary care for evaluation of work-related respiratory symptoms. Symptoms began approximately two months ago and occur reliably within a few hours of starting his shift. He describes wheezing, cough, and chest tightness during workdays that resolve over the weekend and recur by Tuesday. He uses albuterol now about five times weekly, up from roughly once monthly. He reports nocturnal chest tightness several times per month. He denies a prior diagnosis of asthma; he had childhood bronchitis. He reports rhinorrhea and itchy eyes at work.\n\nOCCUPATIONAL HISTORY\n\nHe works as a spray foam insulation installer for {ORG}, primarily in crawl spaces, and handles two-part polyurethane foam containing isocyanate and polyol components. Respirator use with organic vapor cartridges is inconsistent; he reports removing it in hot crawl spaces. Coworker {OTHER_FIRST} has similar cough symptoms.\n\nSOCIAL HISTORY\n\nFormer smoker, quit three years ago after approximately ten pack-years. Alcohol: one or two beers on Fridays. Originally from {CITY}. Runs on weekends with his dog.\n\nFAMILY HISTORY\n\nBrother with asthma. Father with hay fever.\n\nPHYSICAL EXAM\n\nSpO2 96% on room air. Peak flow approximately 70% of predicted. Expiratory wheezing on the right with otherwise clear lung fields.\n\nRESULTS\n\nSpirometry ordered. Chest radiograph ordered to exclude other pathology. Cholesterol screening due at age 35 per guidelines.\n\nASSESSMENT AND PLAN\n\n1. Suspected work-related asthma due to isocyanate exposure during spray foam application. Recommended supplied-air respiratory protection each shift or temporary reassignment. Letter to employer recommending a change in duties. Start low-dose inhaled corticosteroid twice daily. Albuterol as needed; call for use more than twice weekly or nocturnal symptoms.\n2. Referral to occupational health clinic on Hillcrest Avenue for workplace assessment and respirator fit testing.\n3. Follow-up in four weeks with repeat peak flow and spirometry.",
+ "medical_concepts": [
+  {
+   "text": "chest has been tight",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "inhaler",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "wheezing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "coughing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "spray foam",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "crawl spaces",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "respirator",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the isocyanate side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "polyol side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "albuterol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "cough at night",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my chest tight",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "asthma",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "bronchitis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "runny nose",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "eyes get itchy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "smoked about a pack a day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hay fever",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "wheezing on the right side",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the rest sounds clear",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "oxygen is ninety six percent",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "peak flow is about seventy percent",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "airways narrow",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "spirometry test",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "chest x-ray",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "isocyanates",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "same cough",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "cholesterol check",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "pneumonia vaccines",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "less exposure",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "low dose inhaled steroid",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "breathing test",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Chest tightness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "wheezing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "albuterol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "work-related asthma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "nocturnal chest tightness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "childhood bronchitis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "rhinorrhea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "itchy eyes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "spray foam insulation installer",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "crawl spaces",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "two-part polyurethane foam",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "isocyanate",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Respirator use",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "cough symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Former smoker",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ten pack-years",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Brother with asthma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Father with hay fever",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "SpO2 96% on room air",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Peak flow approximately 70% of predicted",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Expiratory wheezing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "clear lung fields",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Spirometry ordered",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Chest radiograph",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cholesterol screening",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "isocyanate exposure",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "spray foam application",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "supplied-air respiratory protection",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "low-dose inhaled corticosteroid",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Albuterol as needed",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "respirator fit testing",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "repeat peak flow",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "albuterol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic drug name, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "J45.909",
+   "spans": [
+    {
+     "text": "wheezing",
+     "field": "dialogue"
+    },
+    {
+     "text": "peak flow is about seventy percent",
+     "field": "dialogue"
+    },
+    {
+     "text": "Expiratory wheezing",
+     "field": "note"
+    },
+    {
+     "text": "Peak flow approximately 70% of predicted",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z57.5",
+   "spans": [
+    {
+     "text": "isocyanates",
+     "field": "dialogue"
+    },
+    {
+     "text": "spray foam",
+     "field": "dialogue"
+    },
+    {
+     "text": "isocyanate exposure",
+     "field": "note"
+    },
+    {
+     "text": "spray foam insulation installer",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i spray foam insulation",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "hillcrest avenue",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "street of the referral clinic"
+  },
+  {
+   "text": "spray foam insulation installer",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "Hillcrest Avenue",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "street of the referral clinic"
+  }
+ ],
+ "scenario": {
+  "specialty": "occupational medicine",
+  "visit": "new",
+  "length": "medium",
+  "focus": [
+   "OTHER_PERSON_NAME",
+   "LOCATION",
+   "ORGANIZATION"
+  ]
+ }
+}

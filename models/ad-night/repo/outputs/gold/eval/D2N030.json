@@ -1,0 +1,33 @@
+{
+  "encounter_id": "D2N030",
+  "pii": [
+    {"field": "dialogue", "text": "donna", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "torres", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "08/01/1980", "category": "DOB", "risk": "high"},
+    {"field": "dialogue", "text": "brown", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "ward", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "almost 40", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "almost 45", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "2019", "category": "YEAR", "risk": "medium"},
+    {"field": "dialogue", "text": "2009", "category": "YEAR", "risk": "medium"},
+    {"field": "dialogue", "text": "lead the process of delivering the results to patients with covid", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "dialogue", "text": "the evaluation centers and the covid clinic", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "dialogue", "text": "golive", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Donna", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Torres", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "40-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "age 45", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Brown", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "11/2021", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "12/2021", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "2019", "category": "YEAR", "risk": "medium"},
+    {"field": "note", "text": "2009", "category": "YEAR", "risk": "medium"},
+    {"field": "note", "text": "Employed in healthcare", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "Covid evaluation centers and clinics", "category": "OCCUPATION", "risk": "medium"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "camila birth control", "category": "NOT_A_NAME", "why": "Camila is a progestin-only contraceptive brand, not a person"},
+    {"field": "note", "text": "Camila birth control", "category": "NOT_A_NAME", "why": "Camila is a progestin-only contraceptive brand, not a person"},
+    {"field": "note", "text": "negative/negative", "category": "CLINICAL_NUMBER", "why": "pap/HPV co-test result, R87.619 context"}
+  ]
+}

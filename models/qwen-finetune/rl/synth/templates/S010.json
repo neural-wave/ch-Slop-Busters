@@ -1,0 +1,957 @@
+{
+ "id": "S010",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S33.5XXA",
+   "description": "Sprain of ligaments of lumbar spine, initial encounter"
+  },
+  {
+   "code": "S80.01XA",
+   "description": "Contusion of right knee, initial encounter"
+  },
+  {
+   "code": "W01.0XXA",
+   "description": "Fall on same level from slipping, tripping and stumbling without subsequent striking against object, initial encounter"
+  },
+  {
+   "code": "Y92.512",
+   "description": "Supermarket, store or market as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y99.0",
+   "description": "Civilian activity done for income or pay"
+  }
+ ],
+ "dialogue": "[doctor] hello , ms . {PATIENT_LAST} . i'm doctor {DOCTOR_FIRST} {DOCTOR_LAST} . nice to meet you .\n[patient] nice to meet you too . you can call me {PATIENT_FIRST} .\n[doctor] okay , {PATIENT_FIRST} . so i understand you were hurt at work . this is a workers' comp visit ?\n[patient] yes . my manager , {OTHER_FIRST} , filled out the incident report and sent me over here .\n[doctor] okay . tell me what happened .\n[patient] so i work at the {ORG} supermarket on the main road . last night on my shift , i was walking down the dairy aisle with a cart of milk to restock the cooler , and somebody had dropped a jug of juice and nobody had mopped it up yet . there was no wet floor sign or anything . i stepped right in it , slipped on the wet floor , and my feet went out from under me .\n[doctor] okay . and how did you land ?\n[patient] i came down hard on my right knee first and then kind of twisted and landed on my back and my bottom . i did n't hit anything on the way down , just the floor .\n[doctor] did you hit your head ?\n[patient] no , my head was fine .\n[doctor] okay . and what bothers you the most right now ?\n[patient] my lower back , definitely . it was stiff last night , and this morning i could barely get out of bed . it's like a tight , achy pain across the low back , and it gets sharp when i bend over or lift .\n[doctor] does the pain go down into your legs ?\n[patient] no , it stays in my back .\n[doctor] any numbness or tingling in your legs , any weakness ?\n[patient] no .\n[doctor] any trouble with your bladder or bowels ?\n[patient] no .\n[doctor] and the knee ?\n[patient] it's bruised and sore on the front , right on the kneecap . it hurts to kneel , but i can walk on it okay .\n[doctor] any swelling , locking , or giving way in the knee ?\n[patient] a little swelling , but no locking or giving way .\n[doctor] okay . what have you done for it ?\n[patient] i took two ibuprofen last night and used a heating pad on my back this morning .\n[doctor] okay . have you ever had back problems before ?\n[patient] i strained it once about five years ago moving furniture , but it got better in a couple weeks .\n[doctor] okay . any other medical problems ?\n[patient] no , i do n't take any regular medicines .\n[doctor] alright . and what's your job like there ? lots of lifting ?\n[patient] yes , i'm the assistant manager of the dairy department , so i'm unloading cases , stocking the shelves , lifting crates all night . and at home i'm raising my two grandkids , so i'm picking up a four year old .\n[doctor] that's a lot of lifting . okay , let me examine you . can you stand up for me ? okay , bend forward as far as you can .\n[patient] ouch . that's about it .\n[doctor] okay , flexion is limited to about forty five degrees by pain . lean back for me .\n[patient] that's not as bad .\n[doctor] okay . i'm going to press along your back . there's tenderness and spasm in the muscles on both sides of the lower back , but no tenderness right on the spine itself . now lie down for me . i'm going to lift your leg straight up .\n[patient] it pulls in my back but not in the leg .\n[doctor] okay , negative straight leg raise on both sides . strength in your legs is five out of five , sensation is normal , and reflexes are normal and equal . now let me look at the right knee . there's a bruise on the front of the kneecap with mild swelling over it . there's tenderness on the kneecap , but no tenderness at the joint lines . you can fully bend and straighten it . the ligaments are stable . and you can do a straight leg raise without a lag .\n[patient] okay .\n[doctor] so we did an x-ray of your right knee because you landed on it directly . the x-ray shows no fracture of the kneecap or the rest of the knee , just some soft tissue swelling in front . i did n't get an x-ray of your back , because with no red flags , it's not needed right now .\n[patient] okay .\n[doctor] so for my assessment , you have a lumbar sprain , which is a stretch injury of the muscles and ligaments of the low back , and a contusion , or a bruise , of the right knee . both of these should get better over the next few weeks .\n[patient] that's good .\n[doctor] for the back , i'd like you to keep moving , bed rest makes it worse . use heat or ice , whatever feels better . you can take naproxen five hundred milligrams twice a day with food , and i'll give you cyclobenzaprine five milligrams at night for the muscle spasms . it can make you sleepy , so do n't drive after taking it .\n[patient] okay .\n[doctor] i'm also going to refer you to physical therapy for your back . for the knee , ice it , and avoid kneeling for now .\n[patient] can i work ?\n[doctor] you can go back to work with restrictions . no lifting over fifteen pounds and no kneeling for two weeks . i'll write that up for your workers' comp form . i'll see you back in two weeks .\n[patient] okay , thank you .",
+ "note": "CHIEF COMPLAINT\n\nLow back pain and right knee pain after a work-related fall.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents for a workers' compensation evaluation following a work-related injury on {DATE_SPOKEN}. While working her shift at a supermarket, she was walking down an aisle pushing a cart of product to restock a cooler when she slipped on a wet floor from a spilled beverage and fell. She landed initially on her right knee and then on her back and buttocks. She did not strike any objects during the fall. She denies head injury.\n\nShe reports low back stiffness and a tight, achy pain across the lumbar region, worse with bending and lifting. She denies radiating pain, lower extremity numbness, tingling, or weakness, and bowel or bladder dysfunction. She also reports anterior right knee pain and mild swelling, worse with kneeling, without locking or instability. She took ibuprofen and used a heating pad with partial relief. She reports a prior lumbar strain approximately 5 years ago that resolved.\n\nSOCIAL HISTORY\n\nAssistant manager of the dairy department. Her job requires frequent lifting.\n\nPHYSICAL EXAM\n\nLumbar Spine: Flexion limited to 45 degrees by pain. Extension better tolerated. Bilateral paraspinal tenderness and muscle spasm. No midline tenderness. Negative straight leg raise bilaterally.\nNeuro: Strength 5/5 in bilateral lower extremities. Sensation intact. Reflexes 2+ and symmetric.\nRight Knee: Ecchymosis over the anterior patella with mild prepatellar swelling. Tenderness over the patella. No joint line tenderness. Full range of motion. Ligaments stable. Able to perform straight leg raise without extensor lag.\n\nRESULTS\n\nX-ray of the right knee: No fracture. Anterior soft tissue swelling.\n\nASSESSMENT AND PLAN\n\n1. Lumbar sprain.\n- Remain active; avoid bed rest. Heat or ice as needed.\n- Naproxen 500 mg twice daily with food.\n- Cyclobenzaprine 5 mg at bedtime as needed for muscle spasm. Counseled on sedation.\n- Referral to physical therapy.\n\n2. Contusion of the right knee.\n- Ice. Avoid kneeling.\n\nWork status: Return to modified duty with no lifting over 15 pounds and no kneeling for 2 weeks. Workers' compensation forms completed. Follow up in 2 weeks.\n",
+ "medical_concepts": [
+  {
+   "text": "hurt at work",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "workers' comp",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "incident report",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "supermarket",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "on my shift",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "walking down the dairy aisle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "restock the cooler",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "slipped on the wet floor",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my feet went out from under me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "came down hard on my right knee",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landed on my back and my bottom",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "did n't hit anything on the way down",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lower back",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "stiff",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tight , achy pain across the low back",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sharp when i bend over or lift",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain go down into your legs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness or tingling in your legs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "weakness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "trouble with your bladder or bowels",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bruised and sore on the front",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "kneecap",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "hurts to kneel",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "little swelling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "locking",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "giving way",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "heating pad",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "back problems",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "strained it once about five years ago",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "stocking the shelves",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "flexion is limited to about forty five degrees by pain",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tenderness and spasm in the muscles on both sides of the lower back",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no tenderness right on the spine",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "negative straight leg raise on both sides",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "strength in your legs is five out of five",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "sensation is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "reflexes are normal and equal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "right knee",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "bruise on the front of the kneecap",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tenderness on the kneecap",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no tenderness at the joint lines",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ligaments are stable",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "straight leg raise without a lag",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "x-ray of your right knee",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "no fracture of the kneecap",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "soft tissue swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "x-ray of your back",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "red flags",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lumbar sprain",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "stretch injury of the muscles and ligaments of the low back",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "contusion",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "bruise , of the right knee",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "bed rest",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "heat or ice",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "naproxen five hundred milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cyclobenzaprine five milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "muscle spasms",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sleepy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "avoid kneeling",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "back to work with restrictions",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Low back pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "right knee pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "work-related fall",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "workers' compensation evaluation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "work-related injury",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "working her shift",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "supermarket",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "restock a cooler",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "slipped on a wet floor",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landed initially on her right knee",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "did not strike any objects during the fall",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "head injury",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "low back stiffness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tight, achy pain across the lumbar region",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "worse with bending and lifting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "radiating pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lower extremity numbness, tingling, or weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bowel or bladder dysfunction",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "anterior right knee pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "worse with kneeling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "locking or instability",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "heating pad",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "prior lumbar strain",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lumbar Spine",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Flexion limited to 45 degrees by pain",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Extension better tolerated",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Bilateral paraspinal tenderness and muscle spasm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No midline tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Negative straight leg raise bilaterally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Strength 5/5 in bilateral lower extremities",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Reflexes 2+ and symmetric",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right Knee",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Ecchymosis over the anterior patella",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild prepatellar swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness over the patella",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No joint line tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Full range of motion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Ligaments stable",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "straight leg raise without extensor lag",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "X-ray of the right knee",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "No fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Anterior soft tissue swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lumbar sprain",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "bed rest",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Heat or ice",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Naproxen 500 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cyclobenzaprine 5 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "muscle spasm",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sedation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Contusion of the right knee",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Avoid kneeling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Return to modified duty",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Workers' compensation forms",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [],
+ "evidence": [
+  {
+   "code": "S33.5XXA",
+   "spans": [
+    {
+     "text": "lumbar sprain",
+     "field": "dialogue"
+    },
+    {
+     "text": "stretch injury of the muscles and ligaments of the low back",
+     "field": "dialogue"
+    },
+    {
+     "text": "tight , achy pain across the low back",
+     "field": "dialogue"
+    },
+    {
+     "text": "tenderness and spasm in the muscles on both sides of the lower back",
+     "field": "dialogue"
+    },
+    {
+     "text": "negative straight leg raise on both sides",
+     "field": "dialogue"
+    },
+    {
+     "text": "Lumbar sprain",
+     "field": "note"
+    },
+    {
+     "text": "Bilateral paraspinal tenderness and muscle spasm",
+     "field": "note"
+    },
+    {
+     "text": "Negative straight leg raise bilaterally",
+     "field": "note"
+    },
+    {
+     "text": "Low back pain",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "S80.01XA",
+   "spans": [
+    {
+     "text": "contusion",
+     "field": "dialogue"
+    },
+    {
+     "text": "bruise , of the right knee",
+     "field": "dialogue"
+    },
+    {
+     "text": "bruise on the front of the kneecap",
+     "field": "dialogue"
+    },
+    {
+     "text": "no fracture of the kneecap",
+     "field": "dialogue"
+    },
+    {
+     "text": "x-ray of your right knee",
+     "field": "dialogue"
+    },
+    {
+     "text": "Contusion of the right knee",
+     "field": "note"
+    },
+    {
+     "text": "Ecchymosis over the anterior patella",
+     "field": "note"
+    },
+    {
+     "text": "No fracture",
+     "field": "note"
+    },
+    {
+     "text": "X-ray of the right knee",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W01.0XXA",
+   "spans": [
+    {
+     "text": "slipped on the wet floor",
+     "field": "dialogue"
+    },
+    {
+     "text": "my feet went out from under me",
+     "field": "dialogue"
+    },
+    {
+     "text": "did n't hit anything on the way down",
+     "field": "dialogue"
+    },
+    {
+     "text": "slipped on a wet floor",
+     "field": "note"
+    },
+    {
+     "text": "fell",
+     "field": "note"
+    },
+    {
+     "text": "did not strike any objects during the fall",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.512",
+   "spans": [
+    {
+     "text": "supermarket",
+     "field": "dialogue"
+    },
+    {
+     "text": "walking down the dairy aisle",
+     "field": "dialogue"
+    },
+    {
+     "text": "supermarket",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.0",
+   "spans": [
+    {
+     "text": "hurt at work",
+     "field": "dialogue"
+    },
+    {
+     "text": "on my shift",
+     "field": "dialogue"
+    },
+    {
+     "text": "workers' comp",
+     "field": "dialogue"
+    },
+    {
+     "text": "stocking the shelves",
+     "field": "dialogue"
+    },
+    {
+     "text": "work-related injury",
+     "field": "note"
+    },
+    {
+     "text": "working her shift",
+     "field": "note"
+    },
+    {
+     "text": "workers' compensation evaluation",
+     "field": "note"
+    },
+    {
+     "text": "work-related fall",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "assistant manager of the dairy department",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "job title"
+  },
+  {
+   "text": "Assistant manager of the dairy department",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "job title"
+  },
+  {
+   "text": "i'm raising my two grandkids",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "family situation"
+  },
+  {
+   "text": "a four year old",
+   "field": "dialogue",
+   "category": "AGE",
+   "comment": "grandchild's exact age"
+  }
+ ]
+}

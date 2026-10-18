@@ -1,0 +1,116 @@
+########## ENCOUNTER D2N168
+=== FIELD: dialogue
+[doctor] hi diane , how are you ?
+[patient] i'm doing okay , how are you ?
+[doctor] i'm doin' okay . so i know the nurse told you about dax and i'd like to tell dax a little bit about you okay ?
+[patient] okay .
+[doctor] diane is a 28 year old female with a past medical history , significant for , depression and hypertension who presents for emergency room follow-up .
+[doctor] so diane what's going on ? i heard that your- your blood pressure was really high in the emergency room . what happened ?
+[patient] yeah , so i ended up going for a walk , um , yesterday 'cause it was sunny and it was really great . and i just felt really light-headed , um , and i started to fall a bit , and , um , luckily i was with my boyfriend and he caught me , um , and then we went right to the e , to the er .
+[doctor] yeah , okay . yeah , i saw that the blood pressure was pretty high , like in , like , the , almost 200 .
+[patient] yeah .
+[doctor] did you have a headache ?
+[patient] yeah i did .
+[doctor] okay , all right . have your blood pressures been running high in the past ?
+[patient] yeah , they have been . it's- it's , like , once a week , a month , it , kind of , just skyrockets .
+[doctor] okay .
+[patient] um , it usually ends up , um , being , i'm traveling a lot that week for work , so i'm not eating as well , um-
+[doctor] you're not taking your blood pressures , i take it-
+[patient] yeah .
+[doctor] . when you're traveling ?
+[patient] yeah , no , i do n't bring my cuff with me .
+[doctor] okay , but you did buy the cuff like we talked about in the past ?
+[patient] yes i did .
+[doctor] okay , all right . and are you taking your medication , are you taking the lisinopril ?
+[patient] yes i am .
+[doctor] okay , all right . um , so i think we had started you at a , kind of , a moderate dose , so we'll have to talk about that a little bit , okay ?
+[patient] okay .
+[doctor] then in terms of your depression , how are you doing ? i know that we did n't start you on medication , since you're on a bunch of other medications . what- what are your strategies for dealing with that and how are you doing ?
+[patient] so last year i started therapy and i've been going once a week and that's really helped .
+[doctor] okay , all right , great . and how is your support system ?
+[patient] really great . my boyfriend , my mom , and my brother are- are s- , amazing and they're all super close to me , so it's been , it's been good .
+[doctor] okay , well great . so i know you did a review of system sheet when you checked in and i know that you had the headache and the lightheadedness yesterday . do you have any other symptoms at this time , chest pain , shortness of breath , anything like that ?
+[patient] uh , i have a little bit of nasal congestion , but that's just from my seasonal allergies .
+[doctor] okay , all right . well i want to go ahead and do a quick physical exam , okay ?
+[patient] okay .
+[doctor] hey , dragon , show me the blood pressure .
+[doctor] so , yeah , looking at your blood pressure today here in the office , it does look a little elevated still , so we'll have to talk about that . so i'm just gon na listen to your heart and your lungs and we'll go from there okay ?
+[patient] okay .
+[doctor] so on physical examination , i- i do n't appreciate any carotid bruits in your neck . your heart on your heart exam , it does show that you have a slight two out of six systolic ejection murmur . your , there , your lung exam shows nice clear lungs bilaterally and you do have some trace pitting edema to your lower extremities bilaterally . so what that means is , you know , i- i think ultimately , uh , you know we just need to get your blood pressure under better control , okay ?
+[patient] mm-hmm .
+[doctor] um , uh , let me just go ahead , i want to take a look at some of your results , okay ?
+[patient] okay .
+[doctor] hey , dragon , show me the ecg .
+[doctor] yeah , so in reviewing the results of your ekg , it looks the same as last year . um , you do have just blood , those changes from your chronic high blood pressure that we'll address , okay ?
+[doctor] hey , dragon , show me the echocardiogram .
+[doctor] and this is just the echocardiogram from just a few months ago that just , you know , show that you have that slightly leaky heart valve , nothing to do for it , and that the heart murmur is stable , okay ?
+[patient] okay .
+[doctor] so let's just talk a little bit about , you know , my assessment and my plan for you . so , for your first problem , your high blood pressure , it's not controlled at this time , so i want to go ahead and increase the lisinopril to 40 milligrams once a day . i want you to continue to check your blood pressures and report them to me through the patient portal and we'll have to make adjustments if necessary and maybe have to add a second agent , okay ?
+[patient] okay .
+[doctor] and then for your second problem , uh , i want , you know , for your depression , i do n't think that we need to start you on any medication , it sounds like you're doing really well from that standpoint , but you know that you can contact me if you , if you need anything , okay ?
+[patient] okay .
+[doctor] do you have any questions ?
+[patient] no , not at this time .
+[doctor] okay , all right , well it's good to see you .
+[patient] good seeing you too .
+[doctor] hey , dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Emergency room follow-up.
+
+HISTORY OF PRESENT ILLNESS
+
+Ms. Diane Baker is a 28-year-old female with a past medical history significant for depression, and hypertension, who presents for emergency room follow-up.
+
+The patient went for a walk yesterday and began to feel lightheaded. She started to fall, however she was with her boyfriend, who caught her. She presented to the emergency room after this. While in the emergency room, her blood pressure was nearly 200 and she had a headache.
+
+Her blood pressure is typically normal, however will become elevated approximately one week a month. She notes it is typically elevated because she is traveling a lot that week for work. While traveling, she is not eating as well and does not monitor her blood pressure. The patient is taking her lisinopril as prescribed.
+
+Regarding her depression, she states she is doing well. Last year she started therapy and she has been going once a week, which has helped. Her support system is great and includes her boyfriend, mom, and brother.
+
+The patient notes she has a little bit of nasal congestion, which she attributes to her seasonal allergies. She denies chest pain and shortness of breath.
+
+REVIEW OF SYSTEMS
+
+• Ears, Nose, Mouth and Throat: Endorses nasal congestion from seasonal allergies.
+• Cardiovascular: Denies chest pain or dyspnea.
+• Respiratory: Denies shortness of breath.
+• Neurological: Endorses lightheadedness and a headache.
+• Psychiatric: Endorses depression.
+
+PHYSICAL EXAMINATION
+
+• Neck: No carotid bruits appreciable.
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: Slight 2/6 systolic ejection murmur.
+• Musculoskeletal: Trace pitting edema in the bilateral lower extremities.
+
+VITALS REVIEWED
+
+• Blood Pressure: Elevated.
+
+RESULTS
+
+Electrocardiogram stable in comparison to last year.
+
+Echocardiogram demonstrates decreased ejection fraction. Stable heart murmur.
+
+ASSESSMENT
+
+Ms. Diane Baker is a 28-year-old female with a past medical history significant for depression, and hypertension, who presents for emergency room follow-up.
+
+PLAN
+
+Hypertension.
+• Medical Reasoning: This is not controlled at this time. The patient presented to the emergency department yesterday with an elevated blood pressure, presyncope, and headache. She has been compliant with lisinopril, but her blood pressures have been spiking once a month based on home monitoring; however, she admits to not taking her blood pressures while traveling recently. A recent EKG revealed changes from her chronic high blood pressure.
+• Medical Treatment: Increase lisinopril to 40 mg once a day.
+• Patient Education and Counseling: She will continue to check her blood pressures and report them to me through the patient portal. We will have to make adjustments if necessary.
+
+Depression.
+• Medical Reasoning: The patient is doing well with weekly therapy.
+• Medical Treatment: Continue current management strategies. No medication to start at this time.
+• Patient Education and Counseling: She can contact me if she needs anything.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+

@@ -25,7 +25,7 @@ A suite with a merged gold (data/eval/gold/<name>/merged.jsonl, written by `eval
 `pii_by_source` holds each gold's own list (eval/docs/GOLD.md). The merged file is part of `source_sha1`, so the suite
 rebuilds when the gold changes. `--no-merged` falls back to the old ACI labels: `pii` is the harness gold (made by the
 A+D team's annotators, imported by scripts/convert/aci_bench.py), `pii_alt` the VM teacher annotation
-(vm-backup/neuralwave/annotations/eval, made for the anonymous model) and `concepts` its medical concepts. suite.json
+(models/anonymous/annotations/eval, made for the anonymous model) and `concepts` its medical concepts. suite.json
 records `--no-merged` (`merged_gold: false`) and keeps it until `--merged` is given. A suite built with
 `--vm-annotations DIR` likewise records DIR (`vm_annotations`) and keeps it on every rebuild until another
 `--vm-annotations` is given.
@@ -43,10 +43,10 @@ from pathlib import Path
 
 if not __package__:  # run as a file: the repo root makes the package importable
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from eval.common import CATEGORY_RISK, CONTAINER, CONVERTED, ENCOUNTER_KEYS, OUT, SUITES_DIR, distinct_items, load_jsonl, sha1_file, write_json, write_jsonl
+from eval.common import CATEGORY_RISK, CONTAINER, REPO, CONVERTED, ENCOUNTER_KEYS, OUT, SUITES_DIR, distinct_items, load_jsonl, sha1_file, write_json, write_jsonl
 from eval.gold.taxonomy import LEVELS, SOURCES, in_level
 
-VM_ANNOTATIONS = CONTAINER / "vm-backup" / "neuralwave" / "annotations" / "eval"
+VM_ANNOTATIONS = REPO / "models" / "anonymous" / "annotations" / "eval"
 GOLD_DIR = OUT / "gold"  # merged golds: <suite>/merged.jsonl (eval/gold/merge_aci_gold.py)
 
 # name -> definition. `source`: data/converted/<source>; `where`/`where_not`: filters on labels.meta;
@@ -269,7 +269,7 @@ def main(argv: list[str] | None = None) -> int:
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--only", "--suites", dest="only", nargs="*", default=list(SUITES), choices=list(SUITES), help="suites to build (default: all)")
     p.add_argument("--vm-annotations", type=Path, help="VM teacher annotations for the ACI eval split (default: the dir the suite was built with, "
-                   "else vm-backup/neuralwave/annotations/eval)")  # fmt: skip
+                   "else models/anonymous/annotations/eval)")  # fmt: skip
     p.add_argument("--merged", action=argparse.BooleanOptionalAction, help="labels from the merged gold data/eval/gold/<suite>/merged.jsonl when it "
                    "exists (default: what the suite was built with, else yes); --no-merged: the old harness + VM labels")  # fmt: skip
     p.add_argument("--if-stale", action="store_true", help="build only missing or stale suites (default: rebuild every selected suite)")

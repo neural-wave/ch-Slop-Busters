@@ -1,0 +1,33 @@
+{
+  "encounter_id": "D2N185",
+  "phi": [
+    {"text": "ashley james", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "ashley", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "12/27/2006", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "14-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "rogers", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "vacation", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "time off"},
+    {"text": "jacksonville", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "another city"},
+    {"text": "atlanta", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "this city"},
+    {"text": "four years old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "47", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "gatorade", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "sports drinks"},
+    {"text": "softball", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a team sport"},
+    {"text": "drill team", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a school activity"},
+    {"text": "summer", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the coming months"},
+    {"text": "Ashley James", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Ashley", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "14-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "Jacksonville", "field": "note", "type": "LOCATION", "tier": 1, "generalized": "another city"},
+    {"text": "Atlanta", "field": "note", "type": "LOCATION", "tier": 1, "generalized": "this city"},
+    {"text": "4 years old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "Gatorade", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "sports drinks"},
+    {"text": "V8 juice", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "vegetable juice"},
+    {"text": "softball", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "a team sport"},
+    {"text": "drill team", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "a school activity"},
+    {"text": "summer", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "the coming months"},
+    {"text": "47", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "03/22/2021", "field": "note", "type": "DATE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

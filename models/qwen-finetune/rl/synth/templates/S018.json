@@ -1,0 +1,702 @@
+{
+ "id": "S018",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S56.511A",
+   "description": "Strain of other extensor muscle, fascia and tendon at forearm level, right arm, initial encounter"
+  },
+  {
+   "code": "M77.11",
+   "description": "Lateral epicondylitis, right elbow"
+  },
+  {
+   "code": "X50.3XXA",
+   "description": "Overexertion from repetitive movements, initial encounter"
+  },
+  {
+   "code": "Y92.312",
+   "description": "Tennis court as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.73",
+   "description": "Activity, racquet and hand sports"
+  }
+ ],
+ "dialogue": "[doctor] hello , {PATIENT_FIRST} , good to see you again .\n[patient] hi , doctor {DOCTOR_LAST} . i wish it was under better circumstances .\n[doctor] so , last time you were here it was for your tennis elbow , on the right . what's going on now ?\n[patient] so it had been getting a little better with the strap and the stretches you gave me . i'd say it was down to like a two out of ten most days . and then on saturday i had a league match , i'm the captain of our women's doubles team , so i was n't going to sit out .\n[doctor] of course .\n[patient] and we were playing tennis on the hard courts at {PLACE} , and it was a really long match , three sets , and i was hitting backhand after backhand , because the other team kept going to my backhand side . and in the third set i hit a backhand and i felt this sharp pull on the outside of my elbow , like something tore .\n[doctor] okay . so it happened on one specific backhand , after a lot of repetitive backhands .\n[patient] yes . it had been aching more and more through the match , and then that one shot it just grabbed .\n[doctor] okay . were you able to finish ?\n[patient] barely . my partner {OTHER_FIRST} took most of the overheads . i could n't really grip the racquet after that .\n[doctor] okay . and since saturday ?\n[patient] it's a lot worse than before . it's maybe a six out of ten . it's swollen on the outside of my elbow , and it hurts to pick up a coffee cup or turn a doorknob . shaking hands is terrible .\n[doctor] okay . any numbness or tingling in your hand ?\n[patient] no .\n[doctor] any pain in your neck or shooting down the arm ?\n[patient] no , it's all right here at the elbow and a little bit into the forearm .\n[doctor] okay . any bruising ?\n[patient] a little bit of a faint bruise on the outside , yeah .\n[doctor] okay . what have you been doing for it ?\n[patient] ice , and i've been taking naproxen , two pills twice a day .\n[doctor] okay . and you were doing the physical therapy exercises ?\n[patient] yes , the wrist ones with the band , three times a week .\n[doctor] good . and you're still working at the pharmacy ?\n[patient] yes , i'm a pharmacist , so a lot of counting pills and typing . that bothers it a little , but not like tennis .\n[doctor] okay . any other new medical problems ?\n[patient] no .\n[doctor] okay . let me take a look . so on your right elbow , there's mild swelling over the lateral epicondyle with a faint bruise just below it . you're very tender right over the lateral epicondyle and just distal to it , over the common extensor origin . does this hurt when i press here ?\n[patient] ow , yes .\n[doctor] okay . now resist me as i push your wrist down . does that hurt ?\n[patient] yes , a lot .\n[doctor] okay . and the middle finger , push up against me ?\n[patient] that hurts too .\n[doctor] okay . your grip strength is reduced on the right compared to the left . your elbow range of motion is full . there's no tenderness on the inside of the elbow , and the ligaments feel stable . sensation is normal in your hand .\n[patient] okay .\n[doctor] so i went ahead and did a quick ultrasound here in the office . hey dragon , show me the elbow ultrasound . so you can see here the common extensor tendon is thickened , which is your chronic tennis elbow , but there is also a new small partial thickness tear at the origin , with some fluid around it . the tendon is not completely torn .\n[patient] okay . so i tore it .\n[doctor] a little bit , yes . so , my assessment is , you have an acute strain with a small partial tear of the extensor tendon at the elbow , on top of your known lateral epicondylitis , from repetitive backhands during the match .\n[patient] okay .\n[doctor] for the plan , i want you to rest it from tennis for at least six weeks . i'm going to put you in a wrist splint that holds your wrist slightly extended , which takes the stress off the tendon , and you can keep using the counterforce strap during the day . continue icing . you can keep taking the naproxen , five hundred milligrams twice a day with food , for two more weeks .\n[patient] okay .\n[doctor] i'm not going to do a steroid injection right now , because it can weaken the tendon when it's partially torn . i'll send you back to physical therapy , and we'll restart the eccentric strengthening once the acute pain settles , in about two weeks .\n[patient] okay , that makes sense .\n[doctor] and when you go back , we'll talk with the therapist about your backhand technique and maybe your racquet grip size .\n[patient] my coach has been saying the same thing .\n[doctor] i'll see you back in four weeks . if it's not improving , we can get an mri .\n[patient] okay . thank you .",
+ "note": "CHIEF COMPLAINT\n\nWorsening right elbow pain.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old right-hand-dominant female with known right lateral epicondylitis who presents on {DATE_NUM} with acute worsening of right elbow pain. Her lateral elbow pain had improved to 2/10 with a counterforce strap and a home exercise program. On Saturday, she was playing tennis in a three-set league match on a tennis court and was hitting repeated backhands. In the third set, she felt a sharp pulling sensation at the lateral elbow on a backhand stroke. Pain is now 6/10 with lateral elbow swelling, a faint bruise, pain with gripping, and weakness. She denies numbness, tingling, neck pain or radiating pain. She has been using ice and naproxen.\n\nSOCIAL HISTORY\n\nPharmacist.\n\nPHYSICAL EXAMINATION\n\nRight elbow: Mild swelling over the lateral epicondyle with faint ecchymosis distally. Marked tenderness over the lateral epicondyle and common extensor origin. Pain with resisted wrist extension and resisted middle finger extension. Grip strength decreased on the right. Full range of motion. No medial tenderness. Ligaments stable. Sensation intact.\n\nRESULTS\n\nPoint-of-care ultrasound of the right elbow demonstrates thickening of the common extensor tendon with a small partial-thickness tear at its origin and adjacent fluid. No full-thickness tear.\n\nASSESSMENT AND PLAN\n\n1. Strain of the extensor tendon at the right elbow and forearm with a small partial-thickness tear, due to repetitive backhand strokes while playing tennis.\n- Medical Reasoning: Acute injury superimposed on chronic tendinopathy, confirmed by ultrasound.\n- Medical Treatment: Wrist splint in slight extension. Continue counterforce strap and ice. Naproxen 500 mg twice daily with food for 2 weeks. No corticosteroid injection given partial tear.\n- No tennis for at least 6 weeks.\n\n2. Lateral epicondylitis, right elbow.\n- Medical Treatment: Resume physical therapy with eccentric strengthening in 2 weeks. Review stroke mechanics and grip size.\n\nFollow-up in 4 weeks; MRI if not improving.",
+ "medical_concepts": [
+  {
+   "text": "tennis elbow , on the right",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "the strap",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "two out of ten",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "we were playing tennis on the hard courts",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hard courts",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a really long match , three sets",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was hitting backhand after backhand",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i felt this sharp pull on the outside of my elbow , like something tore",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "after a lot of repetitive backhands",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it had been aching more and more through the match",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i could n't really grip the racquet",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "six out of ten",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "it's swollen on the outside of my elbow",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it hurts to pick up a coffee cup or turn a doorknob",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain in your neck",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "faint bruise",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "naproxen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy exercises",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild swelling over the lateral epicondyle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "very tender right over the lateral epicondyle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "common extensor origin",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "resist me as i push your wrist down",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your grip strength is reduced on the right",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your elbow range of motion is full",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no tenderness on the inside of the elbow",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the ligaments feel stable",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "elbow ultrasound",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the common extensor tendon is thickened",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "chronic tennis elbow",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "small partial thickness tear at the origin",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "fluid around it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the tendon is not completely torn",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "acute strain with a small partial tear of the extensor tendon at the elbow",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "lateral epicondylitis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "repetitive backhands during the match",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "wrist splint",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "counterforce strap",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "naproxen , five hundred milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "steroid injection",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "eccentric strengthening",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "mri",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Worsening right elbow pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "right lateral epicondylitis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "acute worsening of right elbow pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lateral elbow pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "counterforce strap",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "home exercise program",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "playing tennis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "league match on a tennis court",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tennis court",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hitting repeated backhands",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "sharp pulling sensation at the lateral elbow on a backhand stroke",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Pain is now 6/10",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lateral elbow swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "faint bruise",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain with gripping",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness, tingling, neck pain or radiating pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "naproxen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild swelling over the lateral epicondyle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "faint ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Marked tenderness over the lateral epicondyle and common extensor origin",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Pain with resisted wrist extension and resisted middle finger extension",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Grip strength decreased on the right",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Full range of motion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No medial tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ligaments stable",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Point-of-care ultrasound of the right elbow",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "thickening of the common extensor tendon",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "small partial-thickness tear at its origin",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "No full-thickness tear",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Strain of the extensor tendon at the right elbow and forearm with a small partial-thickness tear",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "repetitive backhand strokes while playing tennis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Acute injury superimposed on chronic tendinopathy",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Wrist splint",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Naproxen 500 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "corticosteroid injection",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lateral epicondylitis, right elbow",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "physical therapy with eccentric strengthening",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "MRI",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software"
+  },
+  {
+   "text": "tennis elbow , on the right",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "lay name for lateral epicondylitis, medical"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S56.511A",
+   "spans": [
+    {
+     "text": "acute strain with a small partial tear of the extensor tendon at the elbow",
+     "field": "dialogue"
+    },
+    {
+     "text": "small partial thickness tear at the origin",
+     "field": "dialogue"
+    },
+    {
+     "text": "i felt this sharp pull on the outside of my elbow , like something tore",
+     "field": "dialogue"
+    },
+    {
+     "text": "the tendon is not completely torn",
+     "field": "dialogue"
+    },
+    {
+     "text": "Strain of the extensor tendon at the right elbow and forearm with a small partial-thickness tear",
+     "field": "note"
+    },
+    {
+     "text": "small partial-thickness tear at its origin",
+     "field": "note"
+    },
+    {
+     "text": "Acute injury superimposed on chronic tendinopathy",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "M77.11",
+   "spans": [
+    {
+     "text": "tennis elbow , on the right",
+     "field": "dialogue"
+    },
+    {
+     "text": "chronic tennis elbow",
+     "field": "dialogue"
+    },
+    {
+     "text": "lateral epicondylitis",
+     "field": "dialogue"
+    },
+    {
+     "text": "the common extensor tendon is thickened",
+     "field": "dialogue"
+    },
+    {
+     "text": "Lateral epicondylitis, right elbow",
+     "field": "note"
+    },
+    {
+     "text": "right lateral epicondylitis",
+     "field": "note"
+    },
+    {
+     "text": "thickening of the common extensor tendon",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "X50.3XXA",
+   "spans": [
+    {
+     "text": "i was hitting backhand after backhand",
+     "field": "dialogue"
+    },
+    {
+     "text": "after a lot of repetitive backhands",
+     "field": "dialogue"
+    },
+    {
+     "text": "repetitive backhands during the match",
+     "field": "dialogue"
+    },
+    {
+     "text": "hitting repeated backhands",
+     "field": "note"
+    },
+    {
+     "text": "repetitive backhand strokes while playing tennis",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.312",
+   "spans": [
+    {
+     "text": "hard courts",
+     "field": "dialogue"
+    },
+    {
+     "text": "tennis court",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.73",
+   "spans": [
+    {
+     "text": "we were playing tennis on the hard courts",
+     "field": "dialogue"
+    },
+    {
+     "text": "a really long match , three sets",
+     "field": "dialogue"
+    },
+    {
+     "text": "playing tennis",
+     "field": "note"
+    },
+    {
+     "text": "league match on a tennis court",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm the captain of our women's doubles team",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "team role that narrows identity"
+  },
+  {
+   "text": "working at the pharmacy",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "workplace type"
+  },
+  {
+   "text": "i'm a pharmacist",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "Pharmacist",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  }
+ ]
+}

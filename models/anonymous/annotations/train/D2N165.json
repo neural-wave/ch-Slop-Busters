@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N165",
+  "phi": [
+    {"text": "sophia", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "work from home", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "have a flexible job"},
+    {"text": "love to run", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "love to exercise"},
+    {"text": "running", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "boston", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "the city"},
+    {"text": "harbor", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "waterfront"},
+    {"text": "boston marathon", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the big local race"},
+    {"text": "sixth grade", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "school"},
+    {"text": "Sophia Jackson", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "30-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "running outdoors", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"},
+    {"text": "running", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "works from home", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "has a flexible job"},
+    {"text": "6th grade", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "school"}
+  ],
+  "medical_concepts": []
+}

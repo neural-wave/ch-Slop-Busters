@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N040",
+  "pii": [
+    {"field": "dialogue", "text": "carolyn", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "34 -year-old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "florida", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "the masters", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "golfing", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "big golfer", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "golfing", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": []
+}

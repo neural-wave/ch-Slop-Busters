@@ -1,0 +1,307 @@
+{
+  "encounter_id": "HO002",
+  "pii": [
+    {
+      "field": "note",
+      "text": "Rideau Valley General Hospital",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "2026-10-15",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "TNICU-07",
+      "category": "LOCATION",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Whitfield",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Desmond",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "A.",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Des",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "RVG-2219376",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "OHIP",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "5839-204-716-RX",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "1959-04-23",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "67-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "62 Pinecrest Hollow",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Kanata",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": ", ON",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "K2K 3R9",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "wife Rose",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "(613) 555-0148",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Trevor",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Calgary",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "t.whitfield@northmail.ca",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "chemistry teacher",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "St. Brendan Catholic Secondary School",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "2026-10-12",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Anouk",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Vandermeer",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "12-Oct-2026",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "2026-10-14",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Dr. Hill",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "I.",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Hill, MD",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Kwame",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Asante-Boateng",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Riverbend Family Health Team",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "613-555-0172",
+      "category": "ID",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "MacPherson",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "K.",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "fall from ladder",
+      "category": "CODE_EVIDENCE",
+      "why": "mechanism supporting W11.XXXA"
+    },
+    {
+      "field": "note",
+      "text": "cleaning eavestroughs",
+      "category": "CODE_EVIDENCE",
+      "why": "activity at time of the ladder fall (W11.XXXA context)"
+    },
+    {
+      "field": "note",
+      "text": "Glasgow Coma Scale",
+      "category": "EPONYM",
+      "why": "clinical scale named after a city, not a location of the patient"
+    },
+    {
+      "field": "note",
+      "text": "Battle's sign",
+      "category": "EPONYM",
+      "why": "clinical sign, not a person"
+    },
+    {
+      "field": "note",
+      "text": "Foley",
+      "category": "EPONYM",
+      "why": "urinary catheter"
+    },
+    {
+      "field": "note",
+      "text": "steep hill",
+      "category": "NOT_A_NAME",
+      "why": "terrain description; Hill is PII only as Dr. Hill / I. Hill"
+    },
+    {
+      "field": "note",
+      "text": "ICP rose",
+      "category": "NOT_A_NAME",
+      "why": "verb rose; Rose is PII only as wife Rose"
+    },
+    {
+      "field": "note",
+      "text": "9/15",
+      "category": "CLINICAL_NUMBER",
+      "why": "GCS score, looks like a date"
+    },
+    {
+      "field": "note",
+      "text": "4-8",
+      "category": "CLINICAL_NUMBER",
+      "why": "rib levels, looks like a date"
+    },
+    {
+      "field": "note",
+      "text": "10-16",
+      "category": "CLINICAL_NUMBER",
+      "why": "ICP range in mmHg, looks like a date (Oct 16)"
+    },
+    {
+      "field": "note",
+      "text": "500/8",
+      "category": "CLINICAL_NUMBER",
+      "why": "ventilator tidal volume / PEEP"
+    },
+    {
+      "field": "note",
+      "text": "138/74",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure"
+    },
+    {
+      "field": "note",
+      "text": "7.41/39/96",
+      "category": "CLINICAL_NUMBER",
+      "why": "arterial blood gas"
+    }
+  ]
+}

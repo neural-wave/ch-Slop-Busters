@@ -1,0 +1,156 @@
+{
+  "encounter_id": "D2N025",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "nicole",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "miller",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "09/18/1949",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "the 24th",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "martin",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "east metro",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "county surgical services",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "valley medical",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "springfield",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "bartley regional",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "rightley regional hospital",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "for county",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "medicare",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Nicole",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Miller",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "71-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "03/2021",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "04/2021",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "06/24/2021",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "01/2021",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "06/2021",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "03/2020",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "East Metropolitan Hospital",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "County Hospital",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Medicare",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    }
+  ],
+  "keep": []
+}

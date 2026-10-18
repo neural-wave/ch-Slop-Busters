@@ -1,0 +1,49 @@
+{
+  "encounter_id": "D2N037",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "dylan",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "expecting a newborn",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "Dylan",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Bennett",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "53-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "expecting a newborn",
+      "category": "OTHER_QI",
+      "risk": "low"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "golfer's elbow",
+      "category": "CODE_EVIDENCE",
+      "why": "lay synonym of medial epicondylitis (M77.01/M77.02)"
+    }
+  ]
+}

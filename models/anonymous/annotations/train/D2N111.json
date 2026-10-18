@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N111",
+  "phi": [
+    {"text": "william", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "trampoline park", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "recreation park"},
+    {"text": "trampoline", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "platform"},
+    {"text": "William Russell", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "57-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "trampoline park", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "recreation park"},
+    {"text": "trampoline", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "platform"}
+  ],
+  "medical_concepts": []
+}

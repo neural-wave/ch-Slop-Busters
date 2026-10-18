@@ -1,0 +1,12 @@
+{
+  "encounter_id": "D2N059",
+  "pii": [
+    {"field": "dialogue", "text": "cooper", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "water polo", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "ap classes", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "sats", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "water polo", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "student", "category": "OCCUPATION", "risk": "medium"}
+  ],
+  "keep": []
+}

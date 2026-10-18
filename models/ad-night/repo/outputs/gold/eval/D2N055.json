@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N055",
+  "pii": [
+    {"field": "dialogue", "text": "karen", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "nelson", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "3 -year-old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "isabella", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "soccer", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "mcdonald's", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "mcdugge's", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Karen", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "soccer", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "tourette's syndrome", "category": "EPONYM", "why": "disease, not a person"},
+    {"field": "dialogue", "text": "tourette thing", "category": "EPONYM", "why": "disease, not a person"},
+    {"field": "dialogue", "text": "toret", "category": "EPONYM", "why": "ASR spelling of Tourette (disease)"},
+    {"field": "note", "text": "Tourette's syndrome", "category": "EPONYM", "why": "disease, not a person"}
+  ]
+}

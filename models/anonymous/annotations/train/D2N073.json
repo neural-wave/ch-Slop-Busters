@@ -1,0 +1,26 @@
+{
+  "encounter_id": "D2N073",
+  "phi": [
+    {"text": "christina cooper", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "cooper", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "07/01/1954", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "diane nelson", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "donate blood", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "have blood drawn"},
+    {"text": "december", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "13 years old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "1996", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "flores", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "65 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "12-2019", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "01/20/20", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "Christina Cooper", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Cooper", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "65-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "13 years old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "donate blood", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "have blood drawn"},
+    {"text": "12/2019", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "1996", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "01/2020", "field": "note", "type": "DATE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

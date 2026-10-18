@@ -1,0 +1,16 @@
+{
+  "encounter_id": "D2N089",
+  "phi": [
+    {"text": "andrea", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "52-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "yoga", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "stretching exercises"},
+    {"text": "meditation", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "relaxation techniques"},
+    {"text": "running with my dog", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"},
+    {"text": "Andrea Roberts", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "52-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "yoga", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "stretching exercises"},
+    {"text": "meditation", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "relaxation techniques"},
+    {"text": "running with her dog", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"}
+  ],
+  "medical_concepts": []
+}

@@ -35,7 +35,7 @@ Ollama setup that matters for speed and memory:
   predictions are cached on disk.
 - **Power profile.** On a laptop, `power-saver` cut prompt processing about tenfold; use `performance`.
 
-`daniel-eval/`, `ketai-eval/` and `vm-backup/` (siblings of this repo) are kept as read-only sources: the coder, the
+`daniel-eval/` and `ketai-eval/` (siblings of this repo) and `models/anonymous/` (the VM backup) are kept as read-only sources: the coder, the
 third ACI gold and the VM gold and tools were vendored or merged from them, and nothing here writes to them.
 
 ## Commands
@@ -128,7 +128,7 @@ suites. On `partial` gold only leak recall is meaningful.
 ### ACI gold and privacy levels
 
 `python3 -I eval gold` (`gold/`) merges the three ACI-eval golds: the harness gold (`data/converted/aci_bench`, made by
-the A+D team's annotators), the VM teacher gold (`vm-backup/neuralwave/annotations/eval`, made for the anonymous model)
+the A+D team's annotators), the VM teacher gold (`models/anonymous/annotations/eval`, made for the anonymous model)
 and ketai's gold (`ketai-eval/gold/eval_gold.jsonl`). Labels map to the harness categories plus `CONTACT`; per
 encounter and field the longest span is canonical and a shorter item inside it adds a nested vote; each item carries
 its `votes` (1–3), `sources` and `direct` (names, DOB, dates, IDs, contacts). `aci_eval`'s `labels.jsonl` then holds
@@ -431,12 +431,12 @@ other models still run.
 
 | Entry | What runs | Setup |
 |---|---|---|
-| `ad_rules`, `ad_night`, `ad_night_nocodes` | A+D night model (`neural_wave` 93b5eea, Davide's latest zip) in `../models/ad-night/repo`: rules only, and their submission config (rules + deid_roberta + GLiNER), with and without codes. Fingerprint: its `src/` code and lexicons | `uv sync --all-extras` there, then download `obi/deid_roberta_i2b2` and `knowledgator/gliner-pii-base-v1.0` (runs offline) |
-| `anonymous_rules`, `anonymous` | Anonymous model (`../vm-backup/neuralwave`) through `adapters/anonymous_vm.py`: its regex and name layers (+ deid_roberta, GLiNER), every span replaced by `[TYPE]` and logged with its reason in `output.decisions.jsonl`. The VM code has no replacement step, so the adapter adds only that. Fingerprint: the adapter, the VM's `detect/` and `common.py`, and the word list | Own venv in `../models/anonymous-deps/.venv` with the VM's versions (`transformers==5.16.1 gliner==0.2.29 regex protobuf sentencepiece spacy torch`; spaCy gives the name layer its stop words). HF: `obi/deid_roberta_i2b2`, `urchade/gliner_multi_pii-v1` and the tokenizer files of `microsoft/mdeberta-v3-base`. The name layer's word list is Debian's `wamerican-large` (`../models/anonymous-deps/american-english-large`) |
+| `ad_rules`, `ad_night`, `ad_night_nocodes` | A+D night model (`neural_wave` 93b5eea, Davide's latest zip) in `models/ad-night/repo`: rules only, and their submission config (rules + deid_roberta + GLiNER), with and without codes. Fingerprint: its `src/` code and lexicons | `uv sync --all-extras` there, then download `obi/deid_roberta_i2b2` and `knowledgator/gliner-pii-base-v1.0` (runs offline) |
+| `anonymous_rules`, `anonymous` | Anonymous model (`models/anonymous`) through `adapters/anonymous_vm.py`: its regex and name layers (+ deid_roberta, GLiNER), every span replaced by `[TYPE]` and logged with its reason in `output.decisions.jsonl`. The VM code has no replacement step, so the adapter adds only that. Fingerprint: the adapter, the VM's `detect/` and `common.py`, and the word list | Own venv in `../models/anonymous/.venv` with the VM's versions (`transformers==5.16.1 gliner==0.2.29 regex protobuf sentencepiece spacy torch`; spaCy gives the name layer its stop words). HF: `obi/deid_roberta_i2b2`, `urchade/gliner_multi_pii-v1` and the tokenizer files of `microsoft/mdeberta-v3-base`. The name layer's word list is Debian's `wamerican-large` (`../models/anonymous/american-english-large`) |
 | `unified_harness_rules`, `unified_harness`, `unified_harness_nocodes` | unified-harness, this repo's anonymizer (`src/unified_harness`), through `adapters/unified_harness.py`: rules only, and its default config (`llm` mode: rules + `qwen3.5:2b-q4_K_M`, `privacy` preset with F0 and F2), with and without codes. The adapter imports the package in-process (its anonymization path is standard library only) with `UNIFIED_HARNESS_HOME` in a fresh folder next to the output, so the LLM reply cache starts cold on every run and the repo's `outputs/` are never touched. It copies the decisions (`output.decisions.jsonl`) and the summary (`output.summary.json`, which holds the Ollama VRAM the harness cannot see in the process tree). The model publishes nothing when one record fails its own checks, so such a suite is a failed run. Fingerprint: the adapter and `src/unified_harness/` (code, lexicons, `models.toml`) | Python 3.12+. The LLM rows: Ollama with `qwen3.5:2b-q4_K_M` at the digest pinned in `src/unified_harness/models.toml` (the run checks it) |
-| `unified_harness_submitted` | The delivered `aci_eval` file (`../anonymized-2026-10-18-unified-harness.jsonl`): `precomputed`, checks the `unified_harness` run against it | none |
-| `term_generalizer`, `term_generalizer_nocodes` | The term-generalizer's delivered `aci_eval` outputs (`../vllm4gb-pilot-ppo_generalize.jsonl` and its `_noicd_ablation` twin, made without the codes): `precomputed`, so the harness scores them without running the model | none |
-| `zeroshot` | Zero-shot baseline: `../zeroshot/anonymize.py --mode extract` through `adapters/zeroshot_llm.py`. Ollama `qwen3.5:2b-q4_K_M` returns the PII spans of each 2,000-character chunk as JSON (task definition and label set, no examples), each span becomes `[TYPE]`. It never reads the codes. The adapter keeps the work folder next to the output, so an interrupted run resumes, and fails rather than deliver missing records | Ollama with the model (see the ICD coders) |
+| `unified_harness_submitted` | The delivered `aci_eval` file (`data/delivered/anonymized-2026-10-18-unified-harness.jsonl`): `precomputed`, checks the `unified_harness` run against it | none |
+| `term_generalizer`, `term_generalizer_nocodes` | The term-generalizer's delivered `aci_eval` outputs (`data/delivered/vllm4gb-pilot-ppo_generalize.jsonl` and its `_noicd_ablation` twin, made without the codes): `precomputed`, so the harness scores them without running the model | none |
+| `zeroshot` | Zero-shot baseline: `models/zeroshot/anonymize.py --mode extract` through `adapters/zeroshot_llm.py`. Ollama `qwen3.5:2b-q4_K_M` returns the PII spans of each 2,000-character chunk as JSON (task definition and label set, no examples), each span becomes `[TYPE]`. It never reads the codes. The adapter keeps the work folder next to the output, so an interrupted run resumes, and fails rather than deliver missing records | Ollama with the model (see the ICD coders) |
 | `ketai` | Disabled until it lands | Set `cmd` or `precomputed`, then `enabled = true` |
 | `identity` | Reference: input unchanged (privacy 0, utility 1) | none |
 

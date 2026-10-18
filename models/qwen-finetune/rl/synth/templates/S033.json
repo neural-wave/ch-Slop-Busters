@@ -1,0 +1,702 @@
+{
+ "id": "S033",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S61.012A",
+   "description": "Laceration without foreign body of left thumb without damage to nail, initial encounter"
+  },
+  {
+   "code": "W26.0XXA",
+   "description": "Contact with knife, initial encounter"
+  },
+  {
+   "code": "Y92.010",
+   "description": "Kitchen of single-family (private) house as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.G1",
+   "description": "Activity, food preparation and clean up"
+  },
+  {
+   "code": "Y99.8",
+   "description": "Other external cause status"
+  }
+ ],
+ "dialogue": "[doctor] hello , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . i hear you had a run-in with a knife .\n[patient] i did . it's so embarrassing .\n[doctor] do n't be embarrassed , we see this all the time . what happened ?\n[patient] so i was home , in my kitchen , making dinner . i was cutting up a butternut squash for soup , and those things are so hard . i was pushing down on the knife with my right hand and holding the squash with my left , and the knife just slipped off the side and went right into my thumb .\n[doctor] ouch . which part of the thumb ?\n[patient] the left thumb , kind of on the inside , right here by the knuckle .\n[doctor] okay . about what time was this ?\n[patient] maybe six thirty last night ? it bled a lot . like a lot a lot .\n[doctor] okay . what did you do for it ?\n[patient] i wrapped it in a dish towel and held pressure for probably twenty minutes . it slowed down , but every time i let go it started again . so my daughter {OTHER_FIRST} drove me over here this morning . i thought maybe it would stop on its own overnight .\n[doctor] okay . was the knife clean ?\n[patient] yeah , it was a chef's knife , i had just washed it . i was only cutting the squash .\n[doctor] okay . do you have any numbness or tingling in the thumb ?\n[patient] it feels a little bit numb right at the tip , on one side .\n[doctor] okay , which side ?\n[patient] the side toward my pointer finger .\n[doctor] okay . can you bend and straighten it ?\n[patient] yes , it hurts but i can .\n[doctor] are you on any blood thinners , aspirin , anything like that ?\n[patient] no , nothing .\n[doctor] any medical problems ? diabetes ?\n[patient] no , i'm pretty healthy . i teach piano lessons , though , so i really need this thumb to work .\n[doctor] when was your last tetanus shot ?\n[patient] oh gosh , i have no idea . probably more than ten years .\n[doctor] okay , we'll update that today . let's take a look . go ahead and rest your hand on the table . all right . so there's a laceration on the palmar side of your left thumb , over the joint between the two bones of the thumb . it's about two and a half centimeters long and it goes through the skin into the fat , but i do n't see any tendon showing . the nail is not involved . it's oozing a bit .\n[patient] okay .\n[doctor] i'm going to hold your thumb straight . push against my finger , bend the tip . good , that's strong . and bend at the base . good . so your flexor tendon is working . now , i'm going to touch both sides of the tip with this paper clip . does it feel like one point or two points ?\n[patient] on this side two , on that side it's kind of fuzzy .\n[doctor] okay . so on the radial side , the side toward your index finger , there's a little decreased two-point discrimination . that can just be swelling from the cut , or it can be a small nerve branch that was nicked . your capillary refill is normal , so blood flow is fine .\n[patient] is that bad ?\n[doctor] it's usually okay . most of these get better on their own . but i do want a hand surgeon to see you in the next week or so to check the nerve .\n[patient] okay .\n[doctor] so , what we're going to do today , i'm going to numb the thumb with a digital block , wash out the cut really well , and then close it with stitches . probably five or six .\n[patient] okay . will it hurt ?\n[doctor] the numbing medicine stings for a few seconds , and then you should n't feel anything .\n[patient] okay , let's do it .\n[doctor] all right . and you'll get a tetanus booster before you leave . after this , keep the dressing clean and dry for the first forty-eight hours , then you can gently wash it . stitches come out in about ten days . you can take tylenol or ibuprofen for pain .\n[patient] can i cook ?\n[doctor] you can , just keep it covered and dry , and maybe let someone else do the chopping for a little while .\n[patient] that's fair . i'm definitely buying the pre-cut squash next time .\n[doctor] good plan . if you see redness spreading , pus , fever , or the numbness gets worse , call us at {PHONE} .\n[patient] okay . thank you so much .",
+ "note": "PATIENT: {PATIENT_FIRST} {PATIENT_LAST}\nMRN: {MRN}\nDATE OF SERVICE: {DATE_NUM}\n\nCHIEF COMPLAINT\n\nLeft thumb laceration.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old right-hand-dominant female with no significant past medical history who presents with a laceration to the left thumb.\n\nThe patient states that last night at approximately 6:30 PM, while preparing dinner in the kitchen of her home, she was cutting a butternut squash with a chef's knife when the knife slipped and cut the palmar aspect of her left thumb. She reports significant bleeding, controlled with direct pressure using a dish towel, but recurrent when pressure was released. She reports mild numbness at the radial aspect of the thumb tip. She is able to flex and extend the thumb. She denies use of anticoagulants or antiplatelet agents. Tetanus status unknown, likely more than 10 years.\n\nPHYSICAL EXAM\n\nLeft thumb: 2.5 cm linear laceration over the volar interphalangeal joint, through the dermis into the subcutaneous fat. No exposed tendon. Nail and nail bed not involved. Mild oozing. FPL and thenar flexion intact against resistance. Decreased two-point discrimination over the radial digital tip. Capillary refill brisk.\n\nPROCEDURE\n\nDigital block with 1% lidocaine without epinephrine. Copious irrigation with normal saline. Wound explored under bloodless field; no tendon injury or foreign body identified. Closed with 6 simple interrupted 5-0 nylon sutures. Tetanus-diphtheria-pertussis (Tdap) vaccine administered.\n\nASSESSMENT AND PLAN\n\n1. Laceration without foreign body of the left thumb without damage to nail.\n• Medical Reasoning: Knife laceration sustained while cutting food in the home kitchen. Possible partial radial digital nerve injury versus neurapraxia from swelling.\n• Medical Treatment: Repair as above. Keep dressing clean and dry for 48 hours. Tylenol or ibuprofen as needed. Suture removal in 10 days.\n• Specialist Referrals: Hand surgery follow up within 1 week for sensory evaluation.\n• Patient Education and Counseling: Return for spreading redness, purulent drainage, fever, or worsening numbness.\n\nPatient Agreements: The patient understands and agrees with the recommended medical treatment plan.",
+ "medical_concepts": [
+  {
+   "text": "a run-in with a knife",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was home , in my kitchen , making dinner",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "cutting up a butternut squash for soup",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the knife just slipped off the side and went right into my thumb",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "left thumb",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "by the knuckle",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "it bled a lot",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "held pressure",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "chef's knife",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little bit numb right at the tip",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bend and straighten it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood thinners",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "aspirin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "diabetes",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus shot",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "laceration on the palmar side of your left thumb",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "joint between the two bones of the thumb",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "two and a half centimeters",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "goes through the skin into the fat",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i do n't see any tendon showing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the nail is not involved",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "oozing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "flexor tendon is working",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "radial side",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "decreased two-point discrimination",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "small nerve branch that was nicked",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "capillary refill is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hand surgeon",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "digital block",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "wash out the cut",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "close it with stitches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus booster",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "dressing",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "i cook",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "chopping",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "redness spreading",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pus",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Left thumb laceration",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "right-hand-dominant",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "laceration to the left thumb",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "while preparing dinner in the kitchen of her home",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "cutting a butternut squash with a chef's knife",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the knife slipped and cut the palmar aspect of her left thumb",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "significant bleeding",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "direct pressure",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "radial aspect of the thumb tip",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "able to flex and extend the thumb",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "anticoagulants",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "antiplatelet agents",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tetanus status unknown",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Left thumb",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "2.5 cm linear laceration",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "volar interphalangeal joint",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "through the dermis into the subcutaneous fat",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No exposed tendon",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Nail and nail bed not involved",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild oozing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "FPL and thenar flexion intact against resistance",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Decreased two-point discrimination over the radial digital tip",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Capillary refill brisk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Digital block with 1% lidocaine without epinephrine",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Copious irrigation with normal saline",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Wound explored under bloodless field",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "no tendon injury or foreign body identified",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "6 simple interrupted 5-0 nylon sutures",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tetanus-diphtheria-pertussis (Tdap) vaccine",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Laceration without foreign body of the left thumb without damage to nail",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Knife laceration",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "while cutting food in the home kitchen",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "partial radial digital nerve injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "neurapraxia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Keep dressing clean and dry",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Suture removal",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hand surgery",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensory evaluation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "spreading redness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "purulent drainage",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "worsening numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "my daughter",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic family role; her name is the {OTHER_FIRST} slot"
+  },
+  {
+   "text": "butternut squash",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "food being prepared; part of the activity evidence, not personal"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S61.012A",
+   "spans": [
+    {
+     "text": "laceration on the palmar side of your left thumb",
+     "field": "dialogue"
+    },
+    {
+     "text": "the nail is not involved",
+     "field": "dialogue"
+    },
+    {
+     "text": "left thumb",
+     "field": "dialogue"
+    },
+    {
+     "text": "Laceration without foreign body of the left thumb without damage to nail",
+     "field": "note"
+    },
+    {
+     "text": "2.5 cm linear laceration",
+     "field": "note"
+    },
+    {
+     "text": "Nail and nail bed not involved",
+     "field": "note"
+    },
+    {
+     "text": "no tendon injury or foreign body identified",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W26.0XXA",
+   "spans": [
+    {
+     "text": "a run-in with a knife",
+     "field": "dialogue"
+    },
+    {
+     "text": "the knife just slipped off the side and went right into my thumb",
+     "field": "dialogue"
+    },
+    {
+     "text": "chef's knife",
+     "field": "dialogue"
+    },
+    {
+     "text": "the knife slipped and cut the palmar aspect of her left thumb",
+     "field": "note"
+    },
+    {
+     "text": "Knife laceration",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.010",
+   "spans": [
+    {
+     "text": "i was home , in my kitchen , making dinner",
+     "field": "dialogue"
+    },
+    {
+     "text": "while preparing dinner in the kitchen of her home",
+     "field": "note"
+    },
+    {
+     "text": "while cutting food in the home kitchen",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.G1",
+   "spans": [
+    {
+     "text": "cutting up a butternut squash for soup",
+     "field": "dialogue"
+    },
+    {
+     "text": "chopping",
+     "field": "dialogue"
+    },
+    {
+     "text": "cutting a butternut squash with a chef's knife",
+     "field": "note"
+    },
+    {
+     "text": "while cutting food in the home kitchen",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.8",
+   "spans": [
+    {
+     "text": "i was home , in my kitchen , making dinner",
+     "field": "dialogue"
+    },
+    {
+     "text": "i cook",
+     "field": "dialogue"
+    },
+    {
+     "text": "while preparing dinner in the kitchen of her home",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i teach piano lessons",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's job; not evidence for any code"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+  "encounter_id": "D2N127",
+  "pii": [
+    {"field": "dialogue", "text": "brandon", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "pamela", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "collins", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "february", "category": "DATE", "risk": "medium"},
+    {"field": "note", "text": "Brandon", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Green", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "46-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "02/2022", "category": "DATE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "car crash", "category": "CODE_EVIDENCE", "why": "injury mechanism for neck sprain S13.9XXD"},
+    {"field": "note", "text": "motor vehicle accident", "category": "CODE_EVIDENCE", "why": "injury mechanism for neck sprain S13.9XXD"}
+  ]
+}

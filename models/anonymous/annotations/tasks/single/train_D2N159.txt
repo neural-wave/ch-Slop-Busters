@@ -1,0 +1,79 @@
+########## ENCOUNTER D2N159
+=== FIELD: dialogue
+[doctor] good afternoon alexis i understand you're having some issues with your hand
+[patient] yes i sit at the keyboard all day long and recently i've been having some numbness and tingling in my right hand
+[doctor] okay how long has that been going on
+[patient] i do n't know probably on and off for six months but over the last month or so it's been a little more persistent
+[doctor] okay okay and when does that numbness and tingling do you get a lot of pain with it first let me ask that question
+[patient] some pain
+[doctor] some pain
+[patient] mostly when i'm actually typing on the keyboard is when i experience the pain
+[doctor] okay
+[patient] but the numbness and tingling is all the time now
+[doctor] okay and when you get this pain what makes it better is it stopping and just resting for a while or do you take medications or try other
+[patient] i've been taking ibuprofen so ibuprofen and seem like not typing on the keyboard helps the most
+[doctor] okay
+[patient] the other thing that makes it hurt is my mouse
+[doctor] your mouth okay
+[patient] wow
+[doctor] yeah when you're moving that around okay
+[patient] yeah
+[doctor] does this pain ever wake you up in the middle of the night or the pain or the tingling
+[patient] no
+[doctor] no okay
+[patient] not affecting my sleep hmmm
+[doctor] okay so and you're using motrin for for ibuprofen for for the pain well let me go ahead and take a take a look here at your is it both hands or just your right hand
+[patient] mostly my right hand
+[doctor] mostly your right hand okay so let's go ahead and take a look at that right hand when i bend your wrist does that cause any pain
+[patient] yes
+[doctor] it does okay and so you do have some pain on extension and if you pull your your hand wrist up towards you does that cause the pain also
+[patient] yes
+[doctor] yeah okay so you do have pain on flexion and extension and when i touch the fingertips here now you said you had some numbness in your thumb and your index finger and a little bit in your your middle finger the other two fingers they feel okay or do you think that there is different than the other hand
+[patient] yeah for some reason it really is just that the thumb the pointer in the middle finger that i experience the most symptoms with
+[doctor] okay
+[patient] not why that is
+[doctor] okay so i i want you to grip my hands here and just squeeze tight okay so you do have a a little bit of a less grip strength on the right and that's typical that we would see with this type of pain and and numbness that you have going on now i want you to turn your arm over for me and i'm gon na touch on or tap on the inside of your wrist or or forearm and when i do that i can see your face you're grimacing so that that that must cause that shooting pain yeah okay so you do have a positive tinel's sign so in alexis what i think is going on is that you have a a carpal tunnel syndrome and we see that frequent
+[patient] i was afraid of
+[doctor] yeah you see this frequently but people who are doing data entry spend a lot of time on keyboards or you know some a lotta manufacturing people who do a repetitive procedure again and again will get that type of pain so here is my plan i'd like to put you in a splint and it's it's it's kind of a wrist splint i would like you to wear that at night that will help with that i want you to continue with the ibuprofens but i would like you to go up to six hundred milligrams four times a day and
+[patient] okay
+[doctor] we're gon na do that now i am going to order some a a outpatient test called an emg where we look at that nerve conduction study in that wrist and that's really what's happening here is you've got some thickening in the the in the wrist and the the the membranes of the wrist that are just pressing down and just compressing some of those nerves any other questions for me for now if that test comes back positive and we'll talk about that later on your next visit if it comes back positive we may have to do we're gon na stick with conservative treatment first but we may consider some surgery where i can go in and release that impingement on your nerves through your wrist it's a simple outpatient procedure and then i think you would feel better how does that sound
+[patient] that sounds like a good plan i was hoping maybe i could get some relief with some therapy rather than having to go to surgery so i like that plan very much
+[doctor] yeah we'll start with the the wrist splint and once i get the nerve conduction studies that will give me another idea whether or not i need to send you some physical therapy in addition or if we need to go directly to surgery but that will all hinge on that nerve conduction test do you so do you have any further questions
+[patient] no that's great thank you so much
+[doctor] thank you very much
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right hand pain.
+
+HISTORY OF PRESENT ILLNESS
+
+Alexis Gutierrez is a pleasant 33-year-old female who presents to the clinic today for the evaluation of right hand pain.
+
+Approximately 6 months ago, the patient began experiencing intermittent episodes of numbness and tingling in the 1st, 2nd, and 3rd digits on her right hand. The numbness and tingling has become constant over the past month or so and is accompanied by pain with typing and using a mouse, which she does all day while working on a keyboard. She denies any sleep disturbance associated with her symptoms. Rest and ibuprofen have been the most helpful at providing symptomatic relief.
+
+SOCIAL HISTORY
+
+The patient reports that she works on a keyboard all day.
+
+MEDICATIONS
+
+The patient reports that she has been taking ibuprofen.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Denies sleep disturbance.
+Musculoskeletal: Reports pain in the 1st, 2nd, and 3rd digits on the right hand.
+Neurological: Reports numbness and tingling in the 1st, 2nd, and 3rd digits on the right hand.
+
+PHYSICAL EXAM
+
+MSK: Examination of the right hand: Pain with flexion and extension of the wrist.. Decreased grip strength on the right compared to the left. Positive Tinel's sign.
+
+ASSESSMENT
+
+Right carpal tunnel syndrome.
+
+PLAN
+
+After reviewing her symptoms and exam findings, I believe her symptoms are secondary to carpal tunnel syndrome. We discussed the nature of this condition, as well as her treatment options, in detail. I recommend we treat this conservatively with nighttime wrist splinting and ibuprofen, but I want to increase her dose to 600 mg 4 times daily. I'm also going to order an EMG/Nerve conduction study for further evaluation. If this is positive, we can consider additional treatment with physical therapy or surgical intervention with carpal tunnel release.

@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N028",
+  "pii": [
+    {"field": "dialogue", "text": "patrick", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "allen", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "7/7/1977", "category": "DOB", "risk": "high"},
+    {"field": "dialogue", "text": "1/23/2020", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "edwards", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Patrick", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Allen", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "42-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "01/2020", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "01/23/2020", "category": "DATE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "wilson's disease", "category": "EPONYM", "why": "disease name, not a person"}
+  ]
+}

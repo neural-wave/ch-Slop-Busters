@@ -1,0 +1,21 @@
+{
+  "encounter_id": "D2N121",
+  "phi": [
+    {"text": "kenneth", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "holiday weekend", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a long weekend"},
+    {"text": "boat", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "a watercraft"},
+    {"text": "water skiing", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a water sport"},
+    {"text": "skiing", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "water sports"},
+    {"text": "water skier", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "water sports enthusiast"},
+    {"text": "ski", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "do water sports"},
+    {"text": "lake martin", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a lake"},
+    {"text": "spring", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a season"},
+    {"text": "opening day", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a sports event"},
+    {"text": "baseball", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "meds", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "a sports team"},
+    {"text": "Lake Martin", "field": "note", "type": "LOCATION", "tier": 1, "generalized": "a lake"},
+    {"text": "boat", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "a watercraft"},
+    {"text": "water skier", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "water sports participant"}
+  ],
+  "medical_concepts": []
+}

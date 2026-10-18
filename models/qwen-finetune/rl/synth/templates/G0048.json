@@ -1,0 +1,708 @@
+{
+ "id": "G0048",
+ "dataset": "synthetic_acute",
+ "sex": "male",
+ "age_range": [
+  75,
+  90
+ ],
+ "icd10_codes": [
+  {
+   "code": "T78.19XA",
+   "description": "Other adverse food reactions, not elsewhere classified, initial encounter"
+  },
+  {
+   "code": "Z91.013",
+   "description": "Allergy to seafood"
+  },
+  {
+   "code": "L50.9",
+   "description": "Urticaria, unspecified"
+  },
+  {
+   "code": "J30.81",
+   "description": "Allergic rhinitis due to animal (cat) (dog) hair and dander"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  }
+ ],
+ "dialogue": "[doctor] good morning , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . what brings you in today ?\n[patient] morning , doctor {DOCTOR_LAST} . i broke out in hives all over my chest and back after supper last night , and my lip has been tingling since .\n[doctor] that sounds uncomfortable . what did you eat for supper ?\n[patient] shrimp . we had a shrimp boil at the fire hall , the volunteers cook it every summer . i had two plates . i've eaten shrimp my whole life without any problem .\n[doctor] okay . did you eat anything else new , or take any new medicines ?\n[patient] no , just the usual . i take my blood pressure pill in the morning and that's it .\n[doctor] okay . any trouble breathing , or tightness in your throat ?\n[patient] no , my breathing is fine . my throat feels a little scratchy , that's all .\n[doctor] good . how soon after eating did the hives start ?\n[patient] about thirty minutes later . i was in my car on the way home and i started scratching . by the time i got in the house i was red all over .\n[doctor] i see . did you have any vomiting , diarrhea , or stomach cramps ?\n[patient] a little stomach upset . i felt queasy for an hour or so , then it settled .\n[doctor] okay . tell me about your allergies . do you have hay fever or asthma ?\n[patient] i have hay fever in the spring , and i take a pill for it . and i've been wheezing a little at night since we got the cats .\n[doctor] tell me about the cats .\n[patient] we took in three rescue cats last spring . my wife could n't say no . they're in the house all day , and they sleep on my bed . my nose runs all the time now .\n[doctor] okay . so the cats are probably making your nose and your breathing worse . what did you do for work ?\n[patient] i was a mail carrier for thirty four years , so i'm used to being outside in all kinds of weather . i still restore pocket watches at my kitchen table , too .\n[doctor] that's a long career . have you had hives before ?\n[patient] once , when i was about forty , after taking an antibiotic . the doctor said it was penicillin . i had to stop it right away .\n[doctor] okay . that's important to know , so we need to note the penicillin reaction too .\n[patient] yeah . i'd like that on the record .\n[doctor] let me check you now . your blood pressure is one forty two over eighty eight . your pulse is eighty four . your temperature is ninety eight point two .\n[patient] that's a little high , is it ?\n[doctor] it's higher than we'd like . the nurse will recheck it before you leave .\n[patient] okay .\n[doctor] let's look at your skin . i can see raised welts on the chest and across the back . they're pink , and they blanch when i press . your lips look a bit puffy , but your tongue is normal .\n[patient] it's the itching that's driving me crazy .\n[doctor] i know . your lungs sound clear , with no wheezing today . that's good .\n[patient] okay .\n[doctor] so this looks like hives from the shrimp , which is a food reaction . it's called acute urticaria . shellfish allergy is very common in men your age .\n[patient] so i'm allergic to shellfish now ?\n[doctor] it sounds like it . we'll put that on your allergy list . and we'll draw a blood test for shrimp specific antibodies , and check your cat allergy as well .\n[patient] how long will the results take ?\n[doctor] about a week or two . in the meantime , i'll give you prednisone for three days , and an antihistamine . which one do you usually use for your hay fever ?\n[patient] the little yellow pill , cetirizine i think .\n[doctor] okay . you can take cetirizine ten milligrams twice a day for the next week . use an over the counter cream for the itching . and for the prednisone , take forty milligrams each morning .\n[patient] okay . will that make me jittery ?\n[doctor] it can . do n't eat any more shrimp or shellfish , and bring an epinephrine pen if you have one at home .\n[patient] i do n't have one . should i get one ?\n[doctor] yes , i'm going to write a prescription for an auto injector . the pharmacist will show you how to use it . and keep it with you when you go out , especially to picnics and suppers .\n[patient] i will .\n[doctor] i'd also like you to keep the cats out of the bedroom , and wash your hands after you play with them .\n[patient] that's going to be hard . they're family now .\n[doctor] i understand . the nurse will also need a callback number so she can follow up with you . what's the best number to reach you at ?\n[patient] it's {PHONE} . that's the house phone . my cell does n't get signal in the basement , so use the house one .\n[doctor] got it . the nurse will call you within two days with the blood test results and your appointment time .\n[patient] okay . i'm going to the volunteer dinner at the fire hall next week , so i'd like to know what to avoid .\n[doctor] you should avoid all shellfish there , and ask the cooks to confirm what's in the food .\n[patient] will do . that's what i'm planning .\n[doctor] come back to the clinic if the hives spread , or if your lips or tongue start to swell , or if you feel any tightness in your throat . call nine one one right away in that case .\n[patient] okay . i'll remember that . thank you , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nGeneralized urticaria and lip tingling after shrimp ingestion, with worsening nasal symptoms.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is an {AGE}-year-old male who presents with pruritic urticaria on the chest and back beginning approximately 30 minutes after eating shrimp at a community supper yesterday evening. He reports tingling of the lower lip and a scratchy sensation in the throat. He denies dyspnea, stridor, voice change, or wheezing during the event. He had transient nausea lasting about an hour without emesis or diarrhea. He ate two servings of shrimp, which he has eaten all his life without prior reaction. No new medications or foods.\n\nHay fever each spring, treated with an oral antihistamine. Over the past several weeks he has had nocturnal wheezing and persistent rhinorrhea since adopting three rescue cats last spring; the cats sleep on his bed.\n\nHe reports one prior episode of urticaria in his forties after an antibiotic, attributed to penicillin.\n\nPAST MEDICAL HISTORY\n\nHypertension. Seasonal allergic rhinitis. Prior penicillin-associated urticaria.\n\nSOCIAL HISTORY\n\nRetired mail carrier after a thirty-four-year career. Restores pocket watches at his kitchen table. Lives with his wife and three rescue cats. Best callback number: {PHONE} (house line; cell phone has poor reception at home).\n\nMEDICATIONS\n\nAntihypertensive medication every morning. Seasonal oral antihistamine. Cetirizine 10 mg twice daily to start.\n\nPHYSICAL EXAM\n\nVitals: BP 142/88, pulse 84, temperature 98.2 F. Urticarial wheals on the chest and back that blanch with pressure. Mild lip edema, tongue normal. Lungs clear without wheezing. Nasal mucosa boggy with clear discharge.\n\nRESULTS\n\nSerum shrimp-specific IgE and cat IgE panel ordered; results pending. Nurse to recheck blood pressure before discharge.\n\nASSESSMENT AND PLAN\n\n1. Acute urticaria due to shrimp ingestion, consistent with shellfish food allergy. Avoid all shellfish. Prednisone 40 mg daily for three days. Cetirizine 10 mg twice daily for one week. Topical hydrocortisone for pruritus. Epinephrine auto-injector prescribed with instruction on use. Shellfish and penicillin added to allergy list.\n2. Allergic rhinitis with probable cat dander sensitization. Environmental measures, bedroom restriction for cats, and hand hygiene after contact.\n3. Hypertension, BP 142/88 today. Recheck before discharge and at follow-up.\n\nReturn precautions reviewed: call 911 for throat tightness, dyspnea, or lip or tongue swelling. Phone follow-up for laboratory results within two weeks.",
+ "medical_concepts": [
+  {
+   "text": "broke out in hives all over my chest and back",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my lip has been tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a shrimp boil",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "shrimp",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "two plates",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure pill",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "trouble breathing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my throat feels a little scratchy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "about thirty minutes later",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i started scratching",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "red all over",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "vomiting , diarrhea , or stomach cramps",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little stomach upset",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "queasy for an hour",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hay fever",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "wheezing a little at night",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "three rescue cats",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my nose runs all the time",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a mail carrier for thirty four years",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hives before",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "an antibiotic",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "penicillin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure is one forty two over eighty eight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pulse is eighty four",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "temperature is ninety eight point two",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "raised welts on the chest and across the back",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "they blanch when i press",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your lips look a bit puffy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your tongue is normal",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "it's the itching that's driving me crazy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "your lungs sound clear , with no wheezing today",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hives from the shrimp",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "acute urticaria",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "shellfish allergy",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "shrimp specific antibodies",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "cat allergy",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "prednisone for three days",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cetirizine ten milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "an over the counter cream",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "take forty milligrams each morning",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "jittery",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "an epinephrine pen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "an auto injector",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "the cats out of the bedroom",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "signal in the basement",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the hives spread",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lips or tongue start to swell",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tightness in your throat",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Acute urticaria due to shrimp ingestion",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "pruritic urticaria on the chest and back",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tingling of the lower lip",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a scratchy sensation in the throat",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "denies dyspnea, stridor, voice change, or wheezing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "transient nausea lasting about an hour",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "without emesis or diarrhea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shrimp at a community supper",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hay fever each spring",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "nocturnal wheezing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "persistent rhinorrhea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "three rescue cats",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "urticaria in his forties",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Seasonal allergic rhinitis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Prior penicillin-associated urticaria",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Antihypertensive medication every morning",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Seasonal oral antihistamine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cetirizine 10 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 142/88",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pulse 84",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "temperature 98.2 F",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Urticarial wheals on the chest and back that blanch with pressure",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild lip edema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lungs clear without wheezing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Nasal mucosa boggy with clear discharge",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Serum shrimp-specific IgE",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "cat IgE panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "shellfish food allergy",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Prednisone 40 mg daily for three days",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cetirizine 10 mg twice daily for one week",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Topical hydrocortisone",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Epinephrine auto-injector",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Allergic rhinitis with probable cat dander sensitization",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "bedroom restriction for cats",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hand hygiene after contact",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 142/88 today",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "throat tightness, dyspnea, or lip or tongue swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "laboratory results",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "Cetirizine",
+   "field": "note",
+   "is_pii": false,
+   "comment": "antihistamine drug name, not a person"
+  },
+  {
+   "text": "cetirizine",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "antihistamine drug name, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "T78.19XA",
+   "spans": [
+    {
+     "text": "a shrimp boil",
+     "field": "dialogue"
+    },
+    {
+     "text": "about thirty minutes later",
+     "field": "dialogue"
+    },
+    {
+     "text": "shrimp at a community supper",
+     "field": "note"
+    },
+    {
+     "text": "Acute urticaria due to shrimp ingestion",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z91.013",
+   "spans": [
+    {
+     "text": "shellfish allergy",
+     "field": "dialogue"
+    },
+    {
+     "text": "shellfish food allergy",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "L50.9",
+   "spans": [
+    {
+     "text": "broke out in hives all over my chest and back",
+     "field": "dialogue"
+    },
+    {
+     "text": "raised welts on the chest and across the back",
+     "field": "dialogue"
+    },
+    {
+     "text": "pruritic urticaria on the chest and back",
+     "field": "note"
+    },
+    {
+     "text": "Urticarial wheals on the chest and back that blanch with pressure",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "J30.81",
+   "spans": [
+    {
+     "text": "three rescue cats",
+     "field": "dialogue"
+    },
+    {
+     "text": "my nose runs all the time",
+     "field": "dialogue"
+    },
+    {
+     "text": "persistent rhinorrhea",
+     "field": "note"
+    },
+    {
+     "text": "Allergic rhinitis with probable cat dander sensitization",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "blood pressure is one forty two over eighty eight",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypertension",
+     "field": "note"
+    },
+    {
+     "text": "BP 142/88 today",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "mail carrier",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "former job"
+  },
+  {
+   "text": "restore pocket watches at my kitchen table",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "three rescue cats",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "household pets adopted last spring"
+  },
+  {
+   "text": "mail carrier",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "former job"
+  },
+  {
+   "text": "Restores pocket watches at his kitchen table",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  }
+ ],
+ "scenario": {
+  "specialty": "allergy and immunology",
+  "visit": "acute",
+  "length": "medium",
+  "focus": [
+   "OCCUPATION",
+   "OTHER_QUASI",
+   "CONTACT"
+  ]
+ }
+}

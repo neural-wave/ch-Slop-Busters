@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N170",
+  "phi": [
+    {"text": "joyce", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "50 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "running", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "cardio exercise"},
+    {"text": "climbing", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "other sports"},
+    {"text": "Joyce Price", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "50-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "running", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "cardio exercise"},
+    {"text": "climbing", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "other sports"}
+  ],
+  "medical_concepts": []
+}

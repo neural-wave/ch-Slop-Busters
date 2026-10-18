@@ -1,0 +1,699 @@
+{
+  "encounter_id": "D2N031",
+  "pii": [
+    {
+      "text": "sophia brown",
+      "field": "dialogue",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient full name"
+    },
+    {
+      "text": "ms. brown",
+      "field": "dialogue",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient surname with title"
+    },
+    {
+      "text": "3/17/1946",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "date of birth"
+    },
+    {
+      "text": "doctor stewart",
+      "field": "dialogue",
+      "category": "CLINICIAN_NAME",
+      "tier": "direct",
+      "comment": "treating physician"
+    },
+    {
+      "text": "january 20th , 2020",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "lumpectomy date"
+    },
+    {
+      "text": "october 2019",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "mammogram date"
+    },
+    {
+      "text": "november 3rd , 2019",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "ultrasound date"
+    },
+    {
+      "text": "december 5th , 2019",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "biopsy date"
+    },
+    {
+      "text": "january 2021",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "last mammogram date"
+    },
+    {
+      "text": "january , 2021",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "last mammogram date"
+    },
+    {
+      "text": "2018",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "colonoscopy year"
+    },
+    {
+      "text": "april of 2022",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "next mammogram date"
+    },
+    {
+      "text": "i have five",
+      "field": "dialogue",
+      "category": "OTHER_QUASI",
+      "tier": "quasi",
+      "comment": "number of children"
+    },
+    {
+      "text": "Sophia Brown",
+      "field": "note",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient full name"
+    },
+    {
+      "text": "Mrs. Brown",
+      "field": "note",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient surname with title"
+    },
+    {
+      "text": "75 y.o.",
+      "field": "note",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "patient age"
+    },
+    {
+      "text": "10/2019",
+      "field": "note",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "mammogram date"
+    },
+    {
+      "text": "11/03/2019",
+      "field": "note",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "ultrasound date"
+    },
+    {
+      "text": "12/05/2019",
+      "field": "note",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "biopsy date"
+    },
+    {
+      "text": "01/20/2020",
+      "field": "note",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "lumpectomy date"
+    },
+    {
+      "text": "01/2021",
+      "field": "note",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "last mammogram date"
+    },
+    {
+      "text": "2018",
+      "field": "note",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "colonoscopy year"
+    },
+    {
+      "text": "04/2022",
+      "field": "note",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "next mammogram date"
+    },
+    {
+      "text": "5 children and multiple grandchildren",
+      "field": "note",
+      "category": "OTHER_QUASI",
+      "tier": "quasi",
+      "comment": "family size"
+    }
+  ],
+  "medical_concepts": [
+    {
+      "text": "dcis",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "right breast lumpectomy",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "self breast exams",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "calcification in your right breast",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "mammogram",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "ultrasound of your right breast",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "mass at the two o'clock position , 11 centimeters from the nipple in the retroareolar region",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "ultrasound-guided core needle biopsy",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "grade two , er positive , pr positive , dcis , or ductal carcinoma in situ",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "eight millimeter tumor",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "margins were negative",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "5 lymph nodes",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "negative for malignancy",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "colonoscopy",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "polyp",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "sigmoid colon",
+      "field": "dialogue",
+      "type": "anatomy",
+      "icd_relevant": false
+    },
+    {
+      "text": "benign tubular adenoma",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "g5 p5",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "post-menopausal",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "hormone replacement therapy",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "back pain",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "joint pain",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "high cholesterol",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "knee pain",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "coq10",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "vitamin d",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "vitamin c",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "fish oil",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "elderberry fruit",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "stage 0 er/pr positive invasive ductal carcinoma of the right breast",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "tubes tied",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "non-hodgkin's lymphoma",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "prostate cancer",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "heart disease",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "smoke",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "allergic to penicillin",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "no palpable masses",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "skin thickening at the medial inferior aspect of the right breast",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "radiation skin changes",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "ecog performance status today is zero",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "radiation",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "endocrine therapy",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "no evidence of recurrence",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "right ductal carcinoma in situ (DCIS)",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "right DCIS",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "screening mammogram",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "calcification in the right breast",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "right breast ultrasound",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "mass at the 2 o’clock position, 11 cm from the nipple, in the retroareolar region",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "0.4 by 2.0 by 3.0 centimeters",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "ultrasound-guided core needle biopsy",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "grade 2 ER-positive, PR-positive DCIS",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "lumpectomy with lymphadenectomy",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "8 mm with negative margins",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "5 lymph nodes removed were all benign",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "adjuvant radiation therapy",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "Endocrine therapy",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "self-breast exams",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "G5P5",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "hormone replacement therapy",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "colonoscopy",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "sigmoid polypectomy",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "tubular adenoma",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "Hypercholesterolemia",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "Stage 0 ER/PR-positive invasive ductal carcinoma of the right breast",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Bilateral tubal ligation",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "Non-Hodgkin’s lymphoma",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "Prostate cancer, heart disease",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "Former smoker",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "Co-Q 10",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "Vitamin D",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "Vitamin C",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "Fish oil",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "Elderberry fruit",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "Penicillin",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "back pain, joint pain, high cholesterol",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "ECOG performance status today is grade 0",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "no palpable masses",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "skin thickening at the medial inferior aspect of the right breast which may be radiation skin changes",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "no evidence of recurrent disease or other malignancy",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "negative mammogram",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "radiation therapy",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "lumpectomy",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "Right lumpectomy, lymphadenectomy x5",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": true
+    }
+  ],
+  "ambiguous_terms": [
+    {
+      "text": "non-hodgkin's lymphoma",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "disease eponym, not a person"
+    },
+    {
+      "text": "Non-Hodgkin’s lymphoma",
+      "field": "note",
+      "is_pii": false,
+      "comment": "disease eponym, not a person"
+    },
+    {
+      "text": "brown",
+      "field": "dialogue",
+      "is_pii": true,
+      "comment": "patient surname (ms. brown)"
+    }
+  ]
+}

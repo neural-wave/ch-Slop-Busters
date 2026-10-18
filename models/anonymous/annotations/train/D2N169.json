@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N169",
+  "phi": [
+    {"text": "alan", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "61-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "over the weekend", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "recently"},
+    {"text": "bike ride", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "workout"},
+    {"text": "Alan Butler", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "61-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "over the weekend", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "recently"},
+    {"text": "bike ride", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "workout"}
+  ],
+  "medical_concepts": []
+}

@@ -1,0 +1,30 @@
+{
+  "encounter_id": "SYN018",
+  "pii": [
+    {"field": "note", "text": "MOORSIDE COMMUNITY DIAGNOSTIC CENTRE", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Unit 7, Calder Park", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Halden", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "HX5 2BW", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "01632 960 771", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "Wanda", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "NOWICKI-ROSS", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "1956-03-04", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "943 476 5919", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "RXH2611045", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "17 August 2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Nathan", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Nathan Baker", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Dr. Baker", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Moorside Medical Centre", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Priti", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Sharma", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "70F", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Mohammed", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Al-Rashid", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "17/08/2026", "category": "DATE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "note", "text": "Baker's cyst", "category": "EPONYM", "why": "popliteal cyst, not the referring GP"},
+    {"field": "note", "text": "Wells score", "category": "EPONYM", "why": "DVT probability score"}
+  ]
+}

@@ -1,0 +1,1100 @@
+########## ENCOUNTER D2N148
+=== FIELD: dialogue
+[doctor] hi jeremy how are you the medical assistant told me that you injured your back
+[patient] yeah i was moving some boxes when my son was moving out of his college dorm and i really hurt my lower back
+[doctor] okay how long ago did that happen
+[patient] this was about four months ago
+[doctor] about four months ago okay that's quite a long time and you're just seeing me now for it
+[patient] yeah the appointments were backed up and i tried some pt at my gym but it it really did n't seem to help and i was really concerned
+[doctor] okay and what exactly are your symptoms are you having pain when you're just sitting there or when you're moving around for a very short period of time it felt like i was gon na tapple over i like i could n't support my my upper body weight and then my right toe or the the toes on my right foot tingled a little bit but that went away after about an hour okay are you still getting that numbing and tingling periodically in your feet or is that completely gone
+[patient] that's completely gone it it just happened when i first felt the the tweak in my lower back i felt that sensation but i have n't since
+[doctor] okay and how about any difficulty or weakness in your legs
+[patient] only if i'm carrying something heavy otherwise it seems relatively normal but i i feel the sensation so i'm a little nervous about carrying something heavy
+[doctor] okay and are and do you still have pain down there in your lower back if i turn a certain way or if i roll over in my sleep i'll wake up from it from a like a sharp pain but then that that goes away if i if i position myself the right way okay and what have you been taking for the pain
+[patient] i took some tylenol i took some ibuprofen i've tried heat i've tried ice and nothing really seems to help
+[doctor] okay is the ibuprofen any better than the tylenol
+[patient] a little bit but for sure a shorter period of time
+[doctor] okay and did you get any stomach upset from the ibuprofen
+[patient] no i try not to take too much so i i do n't have an upset stomach from it
+[doctor] okay and did you go to like an urgent care centing or an emergency room have you had any imaging on this at all
+[patient] i went to an urgent care and they wanted me to do an mri but i was a little concerned because i think we maxed out our insurance so i i did n't do it because it started to feel better but because it's been going on so long i'm i'm a little bit concerned now i i do wan na actually move forward with that
+[doctor] okay alright and any other symptoms any problems with like your bladder or your bowels any incontinence or you know you feel like you ca n't go to the bathroom
+[patient] no i have n't had any of those issues
+[doctor] okay alright and any other any other past medical history do you that you have any
+[patient] i had knee surgery about two years ago on my right knee
+[doctor] okay
+[patient] that went fine i rehabbed it pt has been fine it it feels about ninety five percent ever since
+[doctor] okay and what did you have done to your right knee
+[patient] it was a total knee replacement
+[doctor] okay a total knee replacement in twenty eighteen is that what you said
+[patient] no it was actually about two years ago so it's the spring of twenty twenty
+[doctor] okay alright alright well i wan na go ahead and just move on to a physical exam i'm gon na be calling out some of my exam findings
+[patient] mm-hmm
+[doctor] now you have you had any fever or chills with this
+[patient] no
+[doctor] okay alright alright so looking at your vital signs here in the office you know they look really good your you you do n't have any temperature your blood pressure is good it's about one seventeen over fifty six
+[patient] mm-hmm
+[doctor] your heart rate is nice and slow at sixty eight and your oxygenation is fine at ninety five percent on room air so that means everything looks good
+[patient] good
+[doctor] on your neck exam i i do appreciate some bony protuberance of the c5 c6 do you have any pain when i touch here
+[patient] no
+[doctor] no okay on your lumbar spine exam i do appreciate do you have pain when i touch here
+[patient] no
+[doctor] okay so there is no pain to palpation of the lumbar spine there is decreased flexion and extension of the lower back the patient does have a positive straight leg raise and there is some spasm of the paraspinal muscles of the lumbar spine on musculoskeletal exam the lower extremities strength is equal bilaterally so what does that mean jeremy that means that you have some you know maybe a some arthritis in your neck here and or maybe just a a little bit of some injury from from that from that back that back thing that you told me about
+[patient] mm-hmm
+[doctor] okay but i think overall things look really good so you know i had them do an lumbar spine x-ray on you before i saw you and i looked at the results of your lumbar spine x-ray which showed no acute bony abnormality you know there was no fracture of your back or anything which is not surprising based on your history so let's just talk a little bit about my assessment and plan so i do believe it sounds like you have an acute disk herniation now this did happen a few months ago but it sounds like that's what you had based on the fact that you're still having symptoms
+[patient] mm-hmm
+[doctor] i do wan na go ahead and order a a lumbar spine mri to get a a a better look at what's going on you know x-rays really just look at the bones they do n't show us any of the soft tissue so let's go ahead and order the lumbar spine mri i wan na continue with physical therapy so i'm going to refer you to a a physical therapist through our health system
+[patient] mm-hmm
+[doctor] and then i also wan na go ahead and prescribe meloxicam fifteen milligrams once a day
+[patient] mm-hmm
+[doctor] to help with that do you have any questions about that
+[patient] no questions
+[doctor] now if you do have a herniated disk we can go ahead and talk about some other treatment options maybe like an epidural steroid injection to help take down some of that inflammation
+[patient] mm-hmm
+[doctor] it might make you feel better but we'll we'll deal with that when we get get there okay
+[patient] sure
+[doctor] any questions
+[patient] not at this point
+[doctor] okay great thank you
+[patient] thank you
+=== FIELD: note
+HISTORY OF PRESENT ILLNESS
+
+Jeremy Adams is a pleasant 57-year-old male who presents to the clinic today for the evaluation of low back pain. The onset of his pain began 4 months ago, when he was moving boxes out of his son’s college dorm. At that time, he noted tingling in his right toes, which resolved after approximately 1 hour. After his injury, he felt as though he was unable to support his upper body weight. The patient reports weakness in his legs when carrying heavy objects. He reports a sharp pain in his lower back when he turns a certain way or rolls over in his sleep. The pain will resolve with repositioning. The patient was seen at urgent care and was referred to obtain an MRI, however he did not undergo this secondary to insurance issues. He has been utilizing Tylenol, ibuprofen, heat, and ice for pain, which does not provide relief. The patient notes the ibuprofen is slightly more beneficial than the Tylenol, however it does not relieve his symptoms. He denies upset stomach with the use of ibuprofen. Additionally, he attempted physical therapy at his gym without any relief. He denies any bladder or bowels issues, fevers, and chills.
+
+SURGICAL HISTORY
+
+The patient has a history of a right total knee arthroplasty 2 years ago, in spring of 2020. He states that his right knee feels 95% improved since the surgery.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Denies fevers or chills.
+Gastrointestinal: Denies bowel issues.
+Genitourinary: Denies bladder issues.
+Musculoskeletal: Reports lower back pain.
+
+VITALS
+
+Temperature: Normal.
+Blood pressure: 117/56 mm Hg.
+Heart rate: 68 BPM.
+Oxygenation: 95% on room air.
+
+PHYSICAL EXAM
+
+NECK: Bony protuberance of the C5-C6. No pain to palpation of the C5-C6
+MSK: Examination of the Lumbar spine: No pain to palpation of the lumbar spine. Decreased flexion and extension of the lower back. Positive straight leg raise. Spasm of the paraspinal muscles of the lumbar spine. Strength is equal bilaterally.
+
+RESULTS
+
+X-rays of the lumbar spine were reviewed. These reveal no acute bony abnormalities.
+
+ASSESSMENT
+
+Low back pain, possible acute disc herniation.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with the patient in regards to his current symptoms. His x-rays did not reveal any signs of a fracture. I would like to obtain an MRI of the lumbar spine to evaluate for a possible acute disc herniation. I have prescribed the patient meloxicam 15 mg to treat his pain. He will continue with physical therapy and a referral was provided for this today.
+
+########## ENCOUNTER D2N149
+=== FIELD: dialogue
+[doctor] so dennis is a 57 -year-old male today complaining of shortness of breath he has also got a history of diabetes high blood pressure and history of asthma so dennis tell me what's going on how're you doing
+[patient] not too good
+[doctor] okay how long have you been feeling not too well
+[patient] about a couple of weeks
+[doctor] couple of weeks tell me what's going on
+[patient] i wake up with shortness of breath
+[doctor] okay
+[patient] i go to when i'm short of breath there i get back home and i'm again short of breath so i had a tough time dealing with this
+[doctor] have you noticed any are you coughing up anything any swelling in your legs or what's going on
+[patient] yeah i've been i've been coughing up i've been coughing up blood
+[doctor] okay how long has that been going on for
+[patient] probably three weeks or so
+[doctor] okay and are you coughing a lot of blood or just a little bit of blood
+[patient] i shave three to four cups a day
+[doctor] wow that's a lot of blood okay are you throwing up any blood are you having bleeding in any place else or just when you cough
+[patient] only when i cough
+[doctor] okay have you noticed any bruising or bleeding from your teeth or anything like that or from your gums or anything like that
+[patient] no
+[doctor] okay any leg swelling or calf swelling or any any anything like that any recent travel history you've been on a plane or trip recently
+[patient] i had some knee problem but there is no swelling but it hurts that's been going on for quite some time
+[doctor] okay so that's not near the knee problem okay and have you had any have you been to the hospital or been to the emergency room or anything like that for your coughing and coughing up blood
+[patient] no i tried to get an appointment in the office but they were kinda booked up
+[doctor] okay
+[patient] they just numb
+[doctor] alright and alright no but no fevers with this so since you're here your oxygen level looks pretty good in the clinic it's about ninety four percent on pulse your pulse oxygenation so that's good are you short of breath so when you walk or you or you exert yourself you're short of breath you said right okay and have you and how how is your blood sugar been doing since this has been going on i know you're on metformin how's your diabetes been doing
+[patient] not so good you know it kinda going up and down i wear this dexcom
+[doctor] okay
+[patient] you know after meal they spike up well over two hundred
+[doctor] okay and
+[patient] and morning when i get up they are around one fifty
+[doctor] okay alright so it's been running a little bit high i know we checked your hemoglobin a1c last time and it was about seven . seven . i think and we had talked about you know improving your diet and improving some exercise but is this blood sugar been high and low or high and normal when you're especially in the last three weeks or has it been going on for longer than that
+[patient] i would say about a month
+[doctor] okay alright and how is your blood pressure been at home since you've been taking since these episodes that you've been sick are you taking norvasc
+[patient] yes i am but i keep them on some days because my blood pressure has been running somewhat on the low side
+[doctor] okay alright and right now it's about a hundred and twenty over seventy what how low does it go in the more when you check it
+[patient] well there are sometimes in the lower nineties
+[doctor] okay alright well let me let me examine you here in a second and we'll think about you know what we need to do especially with your coughing and your shortness of breath okay so nita i'm i'm examining you now let's pretend i did my exam i'm just gon na verbalize some of my findings so i can put it into my chart okay and i'll explain what those things mean so on my exam you've got no jvd there is no swelling in your neck no carotid bruits your lung exam you've got some rails and some rhonchi on on more on the right side i do n't hear any wheezing right now there is some diminished breath sounds in the right side as well on your heart exam you've got two over successolic ejection murmur you've had that in the past that's unchanged from before the rest regular rate and rhythm otherwise your belly exam is nice and soft on your extremity exam you've got one plus nonpitting edema on both of your lower extremities on your on your ankles no calf tenderness no negative homan sign so what does all this mean so basically you've got you know you've got some sort of infection or something going on in your lungs that i can hear right now the rest of your exam is pretty much stable it's unchanged from before so let's talk about what we what we should do about this so for the for the first problem with the shortness of breath the first thing i wan na do is go ahead and get a chest x-ray for you okay you've been coughing up blood i also wan na send you to the emergency department to get some blood testing done i'm worried about a blood clot or something else going on so i wan na get a cat scan of your chest as well so i'm gon na go ahead and refer you to the emergency department i'll call them and and have you head over that way they can get a chest x-ray and a cat scan and some blood work as well and then we'll evaluate why you're having the shortness of breath and why you're coughing up this blood okay and then depending on what they find you may need you know it could be as simple as a pneumonia or it could be something a little bit more serious we may have to get you know start you know depending on what you find we will get the right treatment started any questions about that or can you drive to the emergency department from here or is that okay
+[patient] yeah i can bike no problem i have no question
+[doctor] alright for the second problem for the diabetes since your blood sugar is running a little bit high once you get over this i'm blood sugars running a little bit high once we get you over this hump of the shortness of breath and get this diagnosed i'm gon na go ahead and order another hemoglobin a1c today we will probably increase your dose of metformin from five hundred twice a day to seven fifty twice a day so why do n't we do that and then why do n't we have we'll have the hemoglobin a1c back and then we can once you get over this illness that you're undergoing we'll we'll we'll discuss that more i'll have you come back in about three weeks to just discuss your diabetes and what our treatment plan will be for that okay
+[patient] okay
+[doctor] for the high blood pressure definitely hold off on the norvasc for right now let's figure out what's going what's causing this episode of shortness of breath i want some blood testing done and and once we have that under better control we can reassess your blood pressure so right now hold the norvasc and then we'll have you come back once everything is done okay
+[patient] no
+[doctor] any other questions or anything we know if we need to talk about today
+[patient] no i'm good
+[doctor] sounds good we'll get you signed out here in a second
+=== FIELD: note
+CHIEF COMPLAINT
+
+Shortness of breath with hemoptysis.
+
+MEDICAL HISTORY
+
+Patient reports history of diabetes, hypertension, and asthma. He also has a long history of knee pain.
+
+MEDICATIONS
+
+Patient reports taking metformin and Norvasc.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Denies fever.
+HENT: Denies bleeding gums.
+Respiratory: Reports shortness of breath, hemoptysis.
+Musculoskeletal: Reports knee pain. Denies lower extremity edema.
+Hematologic/Lymphatic: Denies bruising.
+
+VITALS
+
+Pulse oxygenation: 94 percent. Blood pressure: 120/70 mm Hg.
+
+PHYSICAL EXAM
+
+Neck
+- General Examination: Neck is supple. No JVD. No carotid bruits.
+
+Respiratory
+- Auscultation of Lungs: Some rales and rhonchi, more on the right. No wheezing right now. There is some diminished breath sounds in the right as well.
+
+Cardiovascular
+- Auscultation of Heart: Regular rate. 2/6 systolic ejection murmur, unchanged from before.
+
+Gastrointestinal
+- Examination of Abdomen: Soft.
+
+Musculoskeletal
+- Examination: 1+ nonpitting edema on bilateral lower extremities. No calf tenderness. Negative Homan's sign.
+
+Hematology/Lymphatic/Immunology
+- Examination: No bruising.
+
+ASSESSMENT AND PLAN
+
+1. Shortness of breath.
+- Medical Reasoning: The patient has been coughing up blood.
+- Patient Education and Counseling: We discussed the importance of further testing as his symptoms could be as simple as a pneumonia or something more serious.
+- Medical Treatment: I have ordered a chest x-ray, CT scan, and blood work to be done in the ER. I have instructed the patient to go into the ER immediately after this appointment and I will call ahead.
+
+2. Diabetes.
+- Medical Reasoning: The patient's blood sugar has not been well controlled.
+- Medical Treatment: I have ordered an updated A1c today. He will increase his metformin to 750 mg twice daily.
+
+3. Hypertension.
+- Medical Reasoning: His blood pressure has been running low for approximately 3 weeks. I believe this could be caused by his shortness of breath. I would like to get a better understanding of the cause of his shortness of breath prior to pursuing further treatment for his hypertension.
+- Medical Treatment: At this time, he will discontinue the use of Norvasc.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+We will have him follow up in about 3 weeks to just discuss his diabetes and further treatment recommendations.
+
+
+########## ENCOUNTER D2N150
+=== FIELD: dialogue
+[doctor] alright scott so so i understand that you you had some right knee injury can you tell me a little bit about what happened
+[patient] yeah i was trying to go out and play some pickup soccer games over the weekend and went to go plank kick the ball and and just felt a pop in my right knee
+[doctor] okay and and how long ago did that happen
+[patient] about three days ago
+[doctor] three days okay and when did you notice any swelling anything like that
+[patient] it it's swollen some some of that swelling has gone down
+[doctor] okay
+[patient] but it it mainly just it it feels like that i just i ca n't my knee is just not as functionally it's not moving as well as what it used to be it seems to be a little limited
+[doctor] okay alright and then so how's the pain with your knee on a scale of one to ten one being the least pain ten being the worst pain how's how's it been ranging
+[patient] it's somewhere between six and seven right now it's about four or five with some of the swelling going down
+[doctor] okay alright and did you take anything at all to relieve the pain
+[patient] anti-inflammatories
+[doctor] okay alrighty and did that help
+[patient] yeah the ibuprofen helped a little bit but i'm on it pretty on a pretty regular basis right now
+[doctor] gotcha okay now tell me are you able to bend or straighten your leg ever since then
+[patient] i can bend it but it hurts towards the end of the motion and i can straighten it but it does n't it feels like i have to help get it straightened
+[doctor] okay alright and then how about you able to bear any weight on it or walk on it at all
+[patient] i can still bear weight on it but it feels just really loose it it does n't feel normal
+[doctor] gotcha okay alright well let's go ahead and take a look at your knee here real quick before i take a look at your knee here i'm gon na do a physical exam and in terms of your gait here i did notice that you do have a marked limp on your looks like it's your right leg upon ambulation so let me go ahead and take a look at that right knee real quick i do appreciate some significant effusion in the right knee just a slight bit of ecchymosis let me just feel around here scott how does that feel does that hurt when i kinda press on that there
+[patient] a little bit of pain there not not really bad it's it feels like it's just more on the inside of my knee
+[doctor] yep okay so you definitely feeling some a little bit of pain to palpation at the medial joint line now i'm gon na have you lie on your back and also i'm gon na do some maneuvering here of your leg i'm gon na do a real quick test on you here okay alright how does that feel
+[patient] just feels just feels loose it hurts when you pull it at the very end
+[doctor] okay sorry about that alright so you're definitely having some difficulty with some passive range of motion here and you're lacking a few degrees of terminal extension to about a hundred and fifteen degrees as well as lacking about maybe twenty to thirty degrees of terminal flexion on the secondary secondary to the pain here and you do have a positive lachman exam so one more thing i wan na take a look at real quick i'm gon na take a look at your toes here real quick very good so neurovascularly your bilateral lower extremities are intact and it looks like you have a muscle strength of a five out of five so scott you know based on my examination here your right knee injury is really suggestive of anterior cruciate ligament tear and you've heard of it probably even heard as acl tear sometimes especially when a lot of people do sports and they injure their knee that that can happen so my plan for you though is i wan na i wan na go ahead and order an mri because i wan na evaluate the integrity of that acl now you may need surgery but we'll we'll first take a look at that mri result and reevaluate and reevaluate that first but in the meantime i wan na go ahead and order some anti-inflammatory medication meloxicam fifty milligrams a day it's gon na help reduce that swelling and the pain and then i want you to go ahead and ice the knee if you need to if you're still seeing some swelling and some pain you can go ahead and use ice as well but i definitely would like for you to moderate your activities so i would like for you to wear a knee immobilizer and then also use crutches when you walk around just to help you a little bit so not to put too much stress and strain on that knee does that sound like a plan
+[patient] it it does now well i need to limit my work activities i i typically sit behind a desk but it's not been very comfortable sitting here lately
+[doctor] yeah definitely so yeah so you you can limit the activities for sure in terms of your work activities i know if you sit too long sometimes it can be painful because you do need to move that leg a little bit so it does n't lock up so i i would like for you to you know do do some slight activities not enough to stress your legs but definitely move move them a little bit every now and then so it does n't lock up on you okay
+[patient] okay
+[doctor] alright i do want you to i know you are i know you actually jog often so i want you to just slow that down for a bit no jogging for a while until we get you know results of your mri till we figure out what we what we are gon na be doing okay
+[patient] okay
+[doctor] alright and how's your dog you has it been jogging with you before this incident
+[patient] how's just how's my dog or how is my job
+[doctor] your your dog
+[patient] my my my dog is okay
+[doctor] good
+[patient] is doing really well and and he enjoys still playing around outside but looks like wo n't be able to do that for a little bit
+[doctor] very good alright well i'm gon na go ahead and have the nurse take you to the scheduler to get your mri and i'll get back with you as soon as we get the results of that
+[patient] okay sounds good thank you
+[doctor] thank you
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right knee injury.
+
+HISTORY OF PRESENT ILLNESS
+
+Scott Miller is a pleasant 36-year-old male who presents to the clinic today for the evaluation of a right knee injury. The injury occurred 3 days ago, when he was playing pickup soccer games and felt a pop in his right knee. He reports swelling at the time of the injury, which has improved. The patient states that his knee is not as functional or moving as well as it used to be. He rates his pain level as a 6 to 7 out of 10 currently and a 4 to 5 out of 10 when the swelling decreases. The patient has been taking ibuprofen on a regular basis, which provides some relief. He states that he is able to bend his knee with pain towards the end of this motion; however, when he goes to straighten his knee, he feels like he has to help it straight. The patient adds that he is able to bear weight on his right knee, however it feels loose and does not feel normal.
+
+SOCIAL HISTORY
+
+The patient works at a desk.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports right knee pain.
+
+PHYSICAL EXAM
+
+GAIT: Marked limp in the right leg upon ambulation.
+MSK: Examination of the right knee: Significant effusion. Slight ecchymosis. Pain with palpation at the medial joint line. Difficulty with passive ROM. Lacking a few degrees of terminal extension to 115 degrees. Lacking 20-30 degrees of terminal flexion secondary to pain. Positive Lachman's test. Muscle strength is 5/5. Neurovascular intact distally.
+
+ASSESSMENT
+
+Right knee pain, possible anterior cruciate ligament tear.
+
+PLAN
+
+After reviewing the patient's examination findings today, I have had a lengthy discussion with the patient in regards to his current symptoms. I have recommended that we obtain an MRI of the right knee to evaluate the integrity of the ACL. I have prescribed the patient meloxicam 15 mg a day to reduce swelling and pain. We discussed that the patient should utilize ice and activity modification to reduce swelling and pain. I recommended that he wears a knee immobilizer and use crutches when he is ambulating. He will avoid jogging until we have the results of his MRI.
+
+INSTRUCTIONS
+
+The patient will follow up with me once the MRI results are available for review and further discussion.
+
+########## ENCOUNTER D2N151
+=== FIELD: dialogue
+[doctor] alright teresa i see here in your chart that you seem to be experiencing some elbow pain could you tell me where it hurts
+[patient] yeah so it's hurting on the inside of my elbow
+[doctor] mm-hmm
+[patient] and when i i i've been doing some pottery i've been creating you know i have a pottery wheel and i've been i love my pottery and for my son's birthday i've been making a a ceramic bowl and i'm gon na paint it and i have to do some real full decorations but i've really been working on it a lot and my gosh this is hurting and i ca n't work on it right now because it's hurting so much
+[doctor] i am so sorry so i mean that's really cool that you do parttery it's something that i've wanted to pick up you know but i do n't know that i have those skills yet does the pain radiate down your arm or up your shoulder or anything
+[patient] yeah it does down my arm and along that inside of my arm
+[doctor] okay so the medial aspect okay have you did you hit it on anything
+[patient] no not that i recall
+[doctor] okay and have you ever injured your elbow before
+[patient] no i have n't
+[doctor] okay alright so on a on a scale of one to ten with ten being your arm is actively being sought off by a chainsaw how bad is the pain
+[patient] well i'd say it's about a seven
+[doctor] wow that's pretty bad does it keep you up at night
+[patient] yes it really does it's you know if i roll over and it it it just wakes me up
+[doctor] okay have you done anything to relieve the pain
+[patient] well i have been taking some ibuprofen but that is n't really helping
+[doctor] okay and have you tried anything like ice or heat or anything else
+[patient] i tried a little bit of ice at first
+[doctor] mm-hmm
+[patient] but and it's just it's been hurting for about four days now
+[doctor] okay
+[patient] did n't getting better
+[doctor] okay okay so it's probably it do you think it's getting worse
+[patient] well it's just not getting better
+[doctor] okay no i understand okay so i know that you also have like a history of hypertension and that we have you on ten milligrams of lisinopril have you been checking your blood pressures regularly
+[patient] yeah you know what i remember too i mean they they have been pretty good one teens to one thirties
+[doctor] okay alright and okay do you think that you've been good about taking your medications do you usually take them everyday
+[patient] yeah pretty much i i i you know set an alarm for that lisinopril
+[doctor] awesome that's great alright and so i see that you also we are treating you for diabetes as well and that we have you on five hundred milligrams of metformin twice a day how about that have you been taking that regularly
+[patient] well sometimes i forget i mean having a medication twice a day you know sometimes i'm out doing stuff and i just forget to take it
+[doctor] okay
+[patient] and plus i kinda have a sweet tooth so you know sometimes they're a little bit higher you know like one fifty to one seventy so
+[doctor] okay alright so when you say a sweet tooth what are we talking about there
+[patient] i love to bak also besides my ceramics i'm really big and baking and i like to make cakes and and take them to you know parties and get togethers you know family get togethers and i like to make senna rules too i've been doing that since i was very young so i kinda noticed that
+[doctor] okay cinnamon rolls can be kind of hard like do you for your cakes do you do you use fondant you know to like do any of the decorations
+[patient] no i i mine are just pretty basic they're not overly fancy
+[doctor] okay
+[patient] simpon rolls i got that recipe out of a southern living magazine
+[doctor] oof
+[patient] a long time ago and
+[doctor] so you know it's good
+[patient] yeah
+[doctor] alright well so i totally understand like baking and like the excitement of being able to give those to your family but we maybe wan na start cutting down on eating and taste testing ourselves is do you think that's something we could manage
+[patient] yeah i know i need to get better on it i probably could use maybe a refresher on just managing what i should and should n't eat how like if i need to combine a protein you know if i do eat something a little bit sweet maybe pling a protein or something with it
+[doctor] mm-hmm yeah that sounds like a
+[patient] had some friends tell me something about that
+[doctor] yeah that sounds like a great idea and i think if that's something that we can maybe discuss to get you in contact with someone who can offer you someone with a degree that can offer you some really good advice you know i do n't wan na as much as it's really helpful to have friends i do wan na be able to give you like a source of truth right
+[patient] yeah i i had a diabetic consult a long time ago but yeah it it would be nice to see a dietitian again and go over those and maybe there is some new stuff too
+[doctor] a hundred percent yeah you know like i one of the things that i struggle with is like are eggs good for you or bad for you you know like with cholesterol i feel like it changes every other year or something like that so you're right there may be some pieces of information that we do need to update and and you know over a fresh of course would n't hurt but if you do n't mind i'm gon na go ahead and start my physical exam i'm gon na call out my findings and just go let me know if you have any questions or if anything sounds anything that you you want me to expand on further but this is just for the recording sake so we can get everything documented okay
+[patient] yeah and can i ask you what word what were my vital signs can you show me what my vital signs were
+[doctor] yeah that's uh uh that's a really good question so our big and favorite one is gon na be your blood pressure right so you're right like we are seeing some some definite improvement today it was one twenty over seventy and honestly that's a great place to be so that tells me that your medication is working and that maybe we can start to evaluate a bit more your respiratory rate is completely normal so i see it here as eighteen that's wonderful you are not running a fever so ninety seven . nine and you're honestly that's within like a good enough range for me you're satting pretty well your oxygen saturation is a hundred percent again so that means that you're not experiencing any kind of difficulty getting in that oxygen to the rest of your body i do wan na say that you know pain is one of the vitals that we worry about and you're saying that at it's worst your the pain in your elbow is a seven out of ten so that's something that i'm gon na evaluate and then your pulse rate seems to be appropriate as well so those are all great do you have any questions about that so far
+[patient] no that sounds good yeah i was just curious
+[doctor] yeah
+[patient] checked it in a while so
+[doctor] mm-hmm i do wan na say that like looking at your the weight we do see like maybe a five pound increase from the last time that you were here but that's completely normal right to be able like to fluctuate you know give or take five pounds so i'm not i'm not i'm not like seriously worried about it but if we do come back and notice an additional five pounds then we might have to start talking about like actually you know what let's do that right now what kind of exercise regimen are you on
+[patient] well i do go for some walks in the evening i try to get one in on the morning too
+[doctor] mm-hmm
+[patient] so not a whole lot other than that because i'm busy with my pottery or baking so but i do try to get out and walk daily
+[doctor] okay that's awesome so like how about about how long are your walks
+[patient] well i just walk around the neighborhood there is you know the sidewalks and there is kind of a little bit more of a nature type area that goes across the bridge and so it's probably you know maybe one to two miles a day
+[doctor] wow that's intense i was not expecting that number that's awesome okay alright so maybe this five pounds is muscle we're gon na go for it okay but thank you but that's some really important information but i'm gon na start your physical exam now okay
+[patient] okay
+[doctor] alright so i know that you said that you are experiencing elbow pain could you tell me is it your left or your right elbow
+[patient] it's my right
+[doctor] okay alright right elbow when i touch it does it hurt on the inside
+[patient] yes it does
+[doctor] okay so moderate tenderness at the medial epicondyle when you turn like when you turn your wrist is if you're trying to open a door knob do you experience pain
+[patient] no not really
+[doctor] alright so turning out no pain but when you turn your wrist inwards do you have any pain
+[patient] yeah
+[doctor] okay so pain with resisted pronation of right forearm when you rest your arm on a table with the palm side up alright i want you to raise your hand by bending the wrist do you experiencing any pain
+[patient] yeah that hurts
+[doctor] alright alright so when you are when i'm pressing here and like flexing your wrist are you experiencing any pain
+[patient] yes
+[doctor] alright pain with flexion and when bending the wrist alright when i listen to you you know i'm just gon na check your heart and lungs everything sounds sounds good no murmur no rub no gallop your lungs are clear bilaterally to bilaterally to auscultation i'm not noticing any rash for your at your elbow i do n't notice any bruising any swelling we do wan na note that tenderness but otherwise there is no discoloration no lesions so that's good your pulses and are equal bilaterally and i think i think we have an idea of what we are dealing with here okay so i'm gon na go ahead and give you my impression and plan for your your first problem like your primary problem that you are here for is right elbow pain it's consistent with medial epicondylitis and that it just means it's pain caused from overuse and damage to the tendons in your arm what we are gon na do is rest it i'm gon na order a sling for your right arm and you can wear this while you're awake well i want you to apply ice to your elbow for twenty minutes three times a day i'm going to i'm gon na ask you to take six hundred milligrams of ibuprofen that's three pills every six hours with food and you can take that for one week i know it's really important that you said that you have something that a gift that you wan na make for your son but we're gon na hold off on pottery for the next couple of weeks just to give your arm a chance to heal you know like it's awesome that you wan na be able to do these things for your family but sometimes you know your body is not where your where your where your heart is like where your heart and your head are right and then so
+[patient] i'll i'll just let him know that that i maybe i'll take a picture of what i have so far
+[doctor] absolutely that's awesome and so it'll be like a a movie like coming soon to a shelf near you that's great for your second problem right we have this longstanding diabetes i want to increase your metformin to a thousand milligrams twice a day i know that you're saying you're having a hard time keeping up with that so i want you to do a good job of like checking and recording your blood sugars every day i do need you to follow up with me in a couple weeks i also wan na order something called an a1c since you are having a hard time with like the blood like the blood sugars everyday an a1c will give me a more accurate picture of like a longer period of time and then we might need to evaluate like what are what other options that we have if your sugars if we ca n't get them a bit more under control i do want you to follow up with me in a couple of weeks about the about your diabetes and for your third problem of hypertension we're just gon na continue you on your lisinopril at ten milligrams that's it seems to be doing it's job i'm really i'm really glad about that and it's probably due to the walking that you're doing i forgot to mention for your diabetes we are gon na i'm gon na recommend a a referral to diabetic counseling that way you can get like a bit more information on like the steps that you can take to help you with that
+[patient] i was gon na ask you how about my x-ray the x-ray of my elbow how did that look
+[doctor] your x-ray honestly looks great in that i do n't see any kind of fracture or bony abnormality so that's what makes me think that this is like a tendon related thing right so in reviewing your x-ray like it it does support the the the assessment and plan that i have given you i
+[patient] okay
+[doctor] do you
+[patient] just true
+[doctor] yeah absolutely i do think for your your primary problem the elbow that we might wan na get put you in some physical rehab if the problem is taking a little longer to heal but we'll discuss that at your next visit here okay
+[patient] okay
+[doctor] alright no problem any other questions
+[patient] nope
+[doctor] alright thank you for keeping me accountable
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right elbow pain.
+
+HISTORY OF PRESENT ILLNESS
+
+Teresa Sullivan is a pleasant 33-year-old female who presents to the clinic today for the evaluation of right elbow pain. Her pain began 4 days ago, without any improvement. She denies any specific injury; however, she has recently increased her usage of a pottery wheel in creating a bowl for her son. She is currently unable to work with the pottery wheel secondary to pain. Her pain is in the medial aspect of her elbow. She notes it radiates medially down her arm as well. The patient rates her pain level as 7 out of 10 at its worst. She reports the pain wakes her at night if she rolls over. She denies ibuprofen or ice provide pain relief. The patient denies any previous elbow injuries.
+
+The patient has a history of hypertension. She states she has been checking her blood pressures regularly. She adds that her blood pressures have been in the 110s to 130s range. She affirms she is taking lisinopril 10 mg daily and denies missing doses.
+
+Regarding her diabetes type 2, she reports she sometimes forgets to take metformin 500 mg twice daily. At times, her blood sugar levels range from 150 to 170 mg/dL. She states that she has a sweet tooth and indulges in home baked goods. For exercise, she walks in the evening and in the morning. She walks 1 to 2 miles per day around her neighborhood.
+
+The patient enjoys working with ceramics as well as baking cakes and cinnamon rolls for family gatherings.
+
+MEDICAL HISTORY
+
+Patient reports history of hypertension and diabetes type 2.
+
+MEDICATIONS
+
+Patient reports taking lisinopril 10 mg and metformin 500 mg twice daily.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports right elbow pain.
+
+VITALS
+
+Blood Pressure: 120/70 mmHg.
+Pulse Rate: Appropriate.
+Respiratory Rate: 18 breaths per minute.
+Oxygen Saturation: 100% on room air.
+Body Temperature: 97.9 degrees F.
+Pain Level: 7/10 at its worst.
+Weight: 5 lb increase since last visit.
+
+PHYSICAL EXAM
+
+CV: No murmurs, gallops or rubs. Pulses are equal bilaterally.
+RESPIRATORY: Normal respiratory effort, no respiratory distress. Lungs are clear bilaterally to auscultation.
+SKIN: No rash or lesions.
+MSK: Examination of the right elbow: Moderate tenderness at the medial epicondyle. Pain with resisted pronation of the right forearm. Pain with flexion and bending the right wrist. No bruising or swelling. No discoloration or lesions.
+
+RESULTS
+
+An x-ray of the right elbow was reviewed today. It demonstrated no evidence of any fractures. No other abnormalities are noted.
+
+ASSESSMENT
+
+1. Right elbow pain, consistent with medial epicondylitis.
+2. Diabetes type 2.
+3. Hypertension.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with her regarding her current symptoms. I have explained to her that her elbow pain is consistent with medial epicondylitis and was most likely caused by overuse and damage to the tendons in her arm. I have recommended that we treat the patient conservatively. The patient will wear a sling on her right arm while she is awake to provide increased support. I advised her to ice her right elbow for 20 minutes 3 times per day. She will take ibuprofen 600 mg every 6 hours with food for 1 week. I have also advised her to hold off on creating pottery for the next 2 weeks to allow her arm to heal. If the patient continues to experience persistent elbow pain, we may consider formal physical therapy at her next visit.
+
+I have encouraged the patient to check and record her blood sugars every day. I will increase her metformin to 1000 mg twice a day. The patient and I discussed the importance of her taking her medication on a regular basis twice a day. I have also recommended that she be referred to diabetic counseling for more information on the steps she can take to manage her diabetes. I will also order a hemoglobin A1c test for a more accurate assessment of her long-term blood sugar levels.
+
+The patient’s hypertension is currently controlled with medication and exercise. I have instructed her to continue taking lisinopril 10 mg. I also encouraged her to continue with her walking routine.
+
+All questions were answered.
+
+INSTRUCTIONS
+
+The patient will follow up with me in 2 weeks to review the results of the hemoglobin A1c test and discuss her progress.
+
+########## ENCOUNTER D2N152
+=== FIELD: dialogue
+[doctor] good morning noah tell me a little bit about why you are here today
+[patient] hi document i'm i'm just had you know the back pain you know and i've i've had it for you know about a week and
+[doctor] oh
+[patient] you know i mean i tried some you know i mean medications but you know some over the counter stuff but it does n't go away
+[doctor] okay can you tell me a little bit more about it how did it start or how did it do you remember injuring yourself
+[patient] no not really i mean i was just like you know i guess i one day i mean i just twisted you know on my left and maybe i mean i might have picked something up
+[doctor] okay
+[patient] so i mean at that time i mean there was this pain but i you know it went away you know and i thought that was you know that was you know the end of it but you know i mean after you know a few hours you know it's it kinda it came back
+[doctor] okay
+[patient] it's been there since then you know
+[doctor] okay and is it anywhere in specific is it in the middle of the back across the whole low back or on one side or the other
+[patient] i think it's more towards you know right in the middle maybe on the lower side and nothing on the you know i mean it sometimes it goes back you know maybe having troubles with the left eye i suppose but i mean it's aggravated you know when i you know when i do some you know maybe i'm a sudden movement to the left
+[doctor] okay and that's when you get the pain more maybe located in the center but it goes across to the little back and i on the left side and i also heard you say you know if you twist suddenly that makes it worse is that correct
+[patient] it makes it worse it makes it worse i mean yeah
+[doctor] now you know i was looking at your records and i know you have that history of diabetes and i have n't seen you a while for a follow-up for that how you've been feeling
+[patient] i mean been okay i mean i take my meds
+[doctor] okay
+[patient] and i try to still have sugar but you know i mean i you know you know i mean whenever i get the chance i mean i you know i exercise but you know i mean that's about it
+[doctor] okay so you're on
+[patient] mm-hmm
+[doctor] yeah i think i think you're on that metformin twice a day
+[patient] yeah
+[doctor] yeah okay
+[patient] yes
+[doctor] do you test your blood sugar at home in the mornings
+[patient] yeah i mean i try to
+[doctor] okay
+[patient] most of the morning but sometimes i mean i go skiing yeah
+[doctor] and how have those numbers been
+[patient] they bumped towards i mean bit towards the higher side i mean i must have been
+[doctor] okay
+[patient] you know but
+[doctor] well if
+[patient] yeah
+[doctor] yeah if i remember right your family do n't they own that that bakery down on the corner of main street and did n't they own that
+[patient] yeah thank you
+[doctor] and how do you do you stay away from those i i got ta be honest i love i love the cakes and donuts they make those are delicious
+[patient] yeah i try to
+[doctor] okay
+[patient] but i mean you know they they you know i have to visit them and you know i end up you know i mean getting some stuff but it's not that much
+[doctor] okay
+[patient] but it's been i try to contain it you know
+[doctor] well let me so we're gon na have to watch that and i'll come back and we'll talk a little bit about the diabetes but let's go ahead and do that i do n't wan na do a a a quick physical exam on you i'm gon na look in your eyes here and so let me quickly look in your ears
+[patient] i see
+[doctor] okay that looks good and any let me let me listen to your lungs okay your lungs are clear and your heart it's a regular rate and rhythm that's all good as we go through that now i want you to sit up here i'm gon na press down your back starting at the top and any pain up top no
+[patient] no
+[doctor] okay and then once i get down here and around that low back i wan na press in the center first does that cause you a lot of pain
+[patient] yeah
+[doctor] yeah okay
+[patient] yeah that that's the spot
+[doctor] okay and if i come over here to the right no
+[patient] not that much you know
+[doctor] okay so and then on the left hand side if i push down here kind of into your butt
+[patient] yeah
+[doctor] yeah okay
+[patient] yeah
+[doctor] lay back on the stretcher for me for a second i'm gon na go ahead and and lift your legs for me or i'm gon na go ahead and lift your legs for you just relax i'm gon na start here on the right side when i lift that right leg up does that cause you significant pain or any pain at all
+[patient] a little a little bit
+[doctor] okay let me come around let me lift up the left side if i lift that up does that cause
+[patient] yeah yeah yeah that's that's
+[doctor] yeah
+[patient] still get tender yeah
+[doctor] i can see that gritts on your face so okay that's good and you know as i look at your lower extremities there is no pain or numbness or tingling in your feet or anything like that
+[patient] hmmm no
+[doctor] okay okay so lem me talk a little bit about my impression and plan so for that low back pain i believe you have a musculoskeletal low back strain i'm going to order a low back x-ray so we'll order that and get that done as an outpatient i do n't expect to see anything significant but it's gon na tell me how those joint spaces look and if you know if we're dealing with any disk issue but that will be the start of it and i'm also gon na order some physical therapy two for two reasons to help with a little bit with the pain but also strengthen some of the muscles there in the back so those are the two things that we are gon na do now i want you to take take four hundred milligrams of ibuprofen you can take that occasionally with some tylenol when the pain gets more severe up to about three times a day i'm gon na also give you a prescription for some flexeril that's a muscle relaxant and i want you to take one of those once a day every evening but be careful if you're doing any strenuous or hazardous activities such as driving after you take those now for your diabetes my impression is that your diabetes is is under control i noticed that we do n't have n't had a a1c for almost five months so i'm also gon na order an a1c so we can find out where we are with that continue with your diet and exercise we know that's really important and then continue with your metformin i'm not gon na make any changes today but we'll go ahead and look at that once i get that results of that a1c do you have any questions for me
+[patient] yeah can i still go to the bakery
+[doctor] i would yes it's nice for you to go to the bakery but you ca n't have any donuts i'm no i you just really need to watch that intake of of anything that you might get at the at the bakery so just just be careful with those carbohydrates those sweets that you're taking as we go through your day it's occasional occasional one perfectly fine but on a routine basis we need to watch that
+[patient] right and how soon should i you know check my blood sugars i mean what's a good you know
+[doctor] yeah i that's a great question i'm really glad you asked that i would prefer that you're taking your blood pressure every morning the first thing you get up when you get up in the morning that's gon na give me a good idea and so if you can do that the first thing in the morning and keep a record of it you know i know your glucometer keeps a record of it but if you can write them down and once we get that a1c that's gon na give me a little more guidance on how to deal with your blood your diabetes
+[patient] right do you think would i need to see you know a pain doctor or you know
+[doctor] not yet let's let's get the that's a great question i may end up referring you to a a pain doctor for that low back pain but i really would like to start with some of the diagnostics first let's get an x-ray and if there is you know any question of that x-ray and the pain continues i'm gon na go ahead and maybe order a cat scan and then at that point in time we can refer you to a pain doctor if we're still having significant pain
+[patient] sounds good
+[doctor] okay thank you i'm gon na send my nursing to see you and we'll get you out the door
+[patient] thank you
+[doctor] take care
+[patient] that one is a follow-up mm-hmm
+=== FIELD: note
+CHIEF COMPLAINT
+
+Back pain.
+
+MEDICAL HISTORY
+
+Patient reports history of diabetes.
+
+SOCIAL HISTORY
+
+The patient's family owns and runs a bakery.
+
+MEDICATIONS
+
+Patient reports taking metformin twice daily.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports back pain.
+Neurological: Denies numbness or tingling in feet.
+
+PHYSICAL EXAM
+
+Eyes
+- Examination: No redness, discharge, or icterus.
+
+Ears, Nose, Mouth, and Throat
+- Examination of Ears: Auditory canal and tympanic membranes are clear.
+
+Respiratory
+- Auscultation of Lungs: Clear bilaterally.
+
+Cardiovascular
+- Auscultation of Heart: Regular rate and rhythm.
+Musculoskeletal
+- Examination: No pain to palpation of the upper back. Pain to palpation of the midline of the lower back, especially on the left. No pain to palpation on the right lower back. Mildly positive straight leg rise on the right Positive straight leg rise on the left.
+
+ASSESSMENT AND PLAN
+
+1. Low back pain.
+- Medical Reasoning: I believe he has a musculoskeletal low back strain. I do not expect to see anything significant on x-ray, but we will obtain one for further evaluation of any possible disc issues.
+- Patient Education and Counseling: We discussed his diagnosis at length today. I explained that physical therapy can help with the pain, but also strengthen some of the muscles in the back. I explained that he needs to be careful while taking medications, such as an overuse of muscle relaxers if he is doing any strenuous or hazardous activities such as driving.
+- Medical Treatment: Low back x-ray ordered. Referral to physical therapy provided. He will take 400 mg of ibuprofen up to 3 times per day. Tylenol can be used for severe pain. Prescription for Flexeril also provided.
+
+2. Diabetes.
+- Medical Reasoning: His diabetes is currently under control.
+- Patient Education and Counseling: We discussed the importance of maintaining a healthy lifestyle. I encouraged him to try an avoid foods high in sugar. He asked many questions and I feel he is confident in the plan at this point.
+- Medical Treatment: Hemoglobin A1c ordered as he has not had an updated one in almost 5 months. He will continue with his diet and exercise. Continue current dose of metformin for the time being. The patient will be checking his blood sugar in the morning and will log this information for me.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+
+########## ENCOUNTER D2N153
+=== FIELD: dialogue
+[patient] i hope i did n't hurt it again
+[doctor] hi gregory how are you i the medical assistant told me that you injured your knee
+[patient] yeah yeah i heard it stepping off a curb
+[doctor] how long ago did that happen
+[patient] about two and a half weeks ago
+[doctor] two and a half weeks ago and what what knee is bothering you
+[patient] the right knee the outside of my right knee
+[doctor] the outside of your right knee
+[patient] yeah
+[doctor] okay and did you actually fall down when this happened or
+[patient] no i just sorta turned over my ankle
+[doctor] okay
+[patient] to the outside and i thought my ankle was the thing that was gon na hurt most but after the ankle soreness went away the only my knee hurt and it sort of clicks when i walk
+[doctor] and no okay so now it clicks when you walk okay does it hurt when you walk
+[patient] no unless i stand on one foot for an extended period of time like leaning my foot up against the wall
+[doctor] okay
+[patient] then i feel like it's locked and then i sort of have to ease into walking again
+[doctor] okay and what have you taken for the pain
+[patient] really nothing
+[doctor] okay
+[patient] ibuprofen but i'm not a big pill taker so i sort of sucked it up and
+[doctor] does the ibuprofen work
+[patient] at night you know during the day i'm more active so it it really does n't impact it because i just work through it but at night it does help me to settle down and sleep better
+[doctor] does your knee hurt when you're just resting and sitting there
+[patient] no when it's up it's fine when it's down on the floor with my foot flat it's fine it does hurt when i rest it on my heel
+[doctor] okay and are you able to do things like bending or things like that
+[patient] a full squat that's when i feel the most clicking like if i go all the way down to a full squat like a catcher that's when i feel the most clicking but otherwise no there is no pain it's just the clicking and i'm fearful that that's an injury of some type
+[doctor] okay alright now you said squats are you are you active are you doing like burpees going to
+[patient] no i ride the bike
+[doctor] okay
+[patient] i ride the bike i ride the bike which i'm not doing now peloton inside for the winter i do have a winter bike though
+[doctor] okay alright well i have a peloton who is your favorite instructor
+[patient] i i actually do n't have a favorite instructor i have more favorite rides
+[doctor] okay what kind of rides do you like
+[patient] i like rock music and regain music rides so whoever is doing those in a began or a medium content i'm cool with
+[doctor] i ca n't picture you as a regade person so that's interesting to know okay alright and any numbing or tingling in your foot at all
+[patient] yes but not from the knee injury i broke my foot my second toe on my right foot and i have numbness depending upon the shoe i wear
+[doctor] okay when did you break your toe
+[patient] i've broken it three times over the last ten years so it's just something that's a an annoyance but it was n't caused by this injury
+[doctor] okay so you do have some numbing and tingling but it's not new
+[patient] right correct
+[doctor] alright alright well let's just go ahead and i'm gon na go ahead and do a quick physical exam i'm gon na be calling out my exam findings i'll let you know what that means so on your musculoskeletal exam on your right knee i do appreciate some slight edema you do have a slight effusion does it hurt when i press on the outside of your knee
+[patient] no not physically
+[doctor] okay there is no pain to palpation of the right lateral knee i'm gon na be bending your knee in all sorts of positions does that hurt
+[patient] only when you pull it to the outside
+[doctor] okay
+[patient] from my my foot when you pull it to the outside that's the only time it hurts
+[doctor] okay the patient has a positive varus test there is full range of motion there is a negative lachman sign the patient does on cardiovascular exam the patient does have a palpable dorsalis pedis and posterior tibialis pulse okay well let's just i wan na talk a little bit about i had the nurse do an x-ray on you and i looked at the results of your knee x-ray and it does n't show any acute fracture or bony abnormality which is not surprising based on your injury so let's just talk a little bit about you know my assessment and my plan for you so i think you do have a a lateral a lateral collateral ligament strain based on your exam findings and this this type of injury essentially can be healed by itself you know i do n't think we're gon na need to refer you to surgery or anything like that i want you to go ahead and i'm gon na prescribe meloxicam fifteen milligrams once a day i do wan na go ahead and refer you to physical therapy because if we strengthen up those muscles and areas around that injury then that will make your knee stronger it help prevent future injuries are you able to ice it at all during the day now you said you working you work in sales so you said you're home
+[patient] yeah i actually i'm at home so i can ice it and i have been icing it
+[doctor] okay
+[patient] i mean twenty on twenty off at least four times a day
+[doctor] okay and so does that help at all
+[patient] it's it it makes it feel better in the morning when i first go to my desk and at the end of the day before bed you know i take ibuprofen so i do n't have swelling overnight but honestly i have a pretty decent threshold for pain so it's not good it's not changing it by much
+[doctor] okay do you feel like your symptoms are getting worse or better i think i think pretty much for the last two weeks they've remained about the same the the only time i feel like they get worse is when i exert myself doing up and down like gardening in the yard or moving pots
+[patient] and stuff outside that's the only time i felt like it got any worse but nothing to the point where it stayed worse
+[doctor] okay alright well let's go ahead and refer you to physical therapy if you're still having pain then we might have to consider an mri
+[patient] okay
+[doctor] any questions about that
+[patient] no
+[doctor] okay alright well it was very nice seeing you today call me if you need anything
+[patient] i will
+[doctor] okay bye
+[patient] bye
+=== FIELD: note
+HISTORY OF PRESENT ILLNESS
+
+Gregory Price is a pleasant 68-year-old male who presents to the clinic today for the evaluation of a right knee injury. The onset of his pain began 2.5 weeks ago, when he stepped off of a curb and turned over his ankle. He locates his pain to the lateral aspect of his right knee. The patient also reports clicking with ambulation. He denies any pain with ambulation unless he stands on one foot for an extended period of time. The patient also reports locking of his knee with prolonged standing. He notices pain when he is resting his foot on his heel. He denies any pain at rest and elevated, or when his foot is flat on the ground. The patient states that he is more active during the day, which does not impact his knee pain. He adds that he is able to perform a full squat without pain. The patient reports numbness and tingling in his right foot, however this is not new. The patient has been taking ibuprofen, which provides him with relief at night. He has also been icing his knee 4 times per day, which provides him with relief in the morning and at the end of the day.
+
+MEDICAL HISTORY
+
+He states that he has fractured his 2nd toe 3 times over the last 10 years.
+
+SOCIAL HISTORY
+
+The patient works in sales. He rides a bike for exercise.
+
+REVIEW OF SYSTEMS
+
+Neurological: Positive for numbness and tingling in his toes on his right foot from prior injury.
+
+PHYSICAL EXAM
+
+CV: >Palpable dorsalis pedis and posterior tibialis pulse.
+MSK: Examination of the right knee: Slight edema. Slight effusion. No pain with palpation of the right lateral knee. Positive varus test. Full ROM. Negative Lachman's.
+
+RESULTS
+
+4 views of the right knee were taken. These reveal no evidence of any fractures, dislocations, or bony abnormality. No other abnormalities are noted.
+
+ASSESSMENT
+
+Right knee lateral collateral ligament strain.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with the patient in regards to his current symptoms. I have explained to him that his x-rays did not reveal any acute fractures or bony abnormality. I have recommended that we treat the patient conservatively with formal physical therapy to strengthen his right knee. I have also prescribed the patient meloxicam 15 mg to treat his pain. If his pain does not improve with physical therapy, I will recommend obtaining an MRI.
+
+
+########## ENCOUNTER D2N154
+=== FIELD: dialogue
+[doctor] hi dennis how are you today
+[patient] good
+[doctor] so what what brings you into the office i do n't believe i have ever seen you before here
+[patient] the i'm training for a triathlon and the back of my heel hurts typically after a workout or when i first get up in the morning it will really hurt in the back of my heel all the way up into my calf
+[doctor] okay now tell me a little bit about this triathlon training what do you are you are you running far are you tell me kind of how you work out for that today
+[patient] i i will run about ten klometers
+[doctor] okay
+[patient] in the morning at lunchtime i try to get on the bike for about forty five minutes to an hour
+[doctor] okay
+[patient] and then in the evening i go to the aquatic center and i jump in the pool and swim for about another thirty minutes to an hour
+[doctor] wow that's that's a that's an aggressive campaign to get there so really hope you get that triathlon in so you're how many days a week does this occur that you're training
+[patient] i i do that five days a week on the weekends i kinda alternate between you know a long run and a long bike do n't really do a long swim but
+[doctor] okay
+[patient] i i just swimming on those other five days and i take one day off
+[doctor] okay on your running days or when you do the running tell me a little bit about your stretching routine do you are you aggressive stretchers you do not stretch at all i know people that do both
+[patient] yeah i do n't i do n't stretch at all i do n't have time for that
+[doctor] okay and i'm assuming that with the bicycle either you do n't really work the lower legs to get them stretched out you just jump on and go correct
+[patient] yeah
+[doctor] okay
+[patient] yeah you know i you know when i first start off i go slow until i'm warmed up and then i
+[doctor] okay tell me a little bit about the pain is you said it it's after the activity but it you when you first wake up in the morning it it's it's there also
+[patient] yeah when i first get out of bed it's just it just feels really tight and almost like it's tearing and i after i been walking around for about ten or fifteen minutes it eases up a little bit but if if i ever sit down for any extended period of time and then try to get back up it's really sore again
+[doctor] okay
+[patient] or
+[doctor] no go ahead go ahead
+[patient] or after a lot of activity it'll get sore too
+[doctor] okay okay i'm sure this is impacting that ability to to really focus on your training uh as you're going with that with that type of a pain so lem me go ahead and let's let's take a look at your your and your lower extremities here and yeah okay so roll up your pants yeah okay good now does your left leg hurt at all do you get that severe pain or is it mainly on the right
+[patient] no it's mainly just on the right
+[doctor] okay okay so i'm gon na just hold your leg here and i want you to take your your foot and ankle and i want you to go ahead and just pull your your toes up towards you does that create some pain when you do that
+[patient] yeah a little bit
+[doctor] a little bit okay now i'm just gon na hold your foot up and i want you to push against me and does that hurt
+[patient] yeah that hurts a little bit too
+[doctor] yeah okay okay roll over here on my my stretcher for me and i want you to dangle your your feet over the edge and what i wan na do is i just wan na i'm gon na squeeze your left calf first and when i do that does that hurt on your left side
+[patient] no
+[doctor] okay
+[patient] no
+[doctor] and i'm gon na squeeze on the right side anything there
+[patient] no
+[doctor] okay okay well that's good your your thompson test is negative that's a really good finding and i just wan na continue pressing here on your right from your heel when i squeeze your heel does that cause significant pain at all
+[patient] yeah
+[doctor] yeah okay and if i come up a little bit further as i i run up that achilles tendon does that hurt
+[patient] that's real tender
+[doctor] yeah okay okay great not great so yeah go ahead and sit up for me so dennis my diagnosis is achilles tendinitis and it's really from overuse when we see this frequently when somebody starts to you know get in and train aggressively for an event i'm unfortunately i'm gon na have to ask you to stop training for a a week or two i know that's concerning but i really want this to heal before we move into that next phase i did n't ask you about medication but i'm assuming whatever you were doing was n't working significantly so what i'd like you to do is take some ibuprofen or advil that's the same medication and i want you to take three tablets every six hours and that's really an anti-inflammatory see if we can eliminate some of that tendinitis type pain that you're getting that inflammation around that achilles tendon i'm gon na also order a couple physical therapy visits and the reason for that is i'd like you to get some strength and stretching understanding i think it's important for you especially here at the beginning is to get some of that real stretching knowledge in and learn how to stretch those muscles before you start these activities and they are gon na help strengthen your your lower extremities also and i want you to come back to me within you know a week to ten days following your first couple physical therapy appointments so i can monitor how you're doing i see no reason for an x-ray at this point but if this continues we're gon na you know if you're still having pain ten days in significant pain without change modification of your activity then we may have to look at more aggressive treatment plans how does that sound for you
+[patient] sounds good
+[doctor] okay hey did you happen to catch that pittsburgh pang one hockey game last night
+[patient] no i i was watching the track meet
+[doctor] my gosh the the pang ones are on fire you know they beat up on new york seven to two i mean the hockey's just an amazing sport i i just do you guy do you do a lot of hockey down there in town here
+[patient] used to when i lived in detroit
+[doctor] oh
+[patient] hockey town but not so much anymore
+[doctor] no yeah detroit is a hockey town yeah the red wings okay well i'm gon na go ahead and i'll send my nurse in and go ahead and get you discharged and like i said i'd like to see you back here in seven to ten days after that first physical therapy appointment i've got a great phenomenal office staff you just call in once that gets scheduled they will get you in to that next available appointment so take care and i will talk to you later
+[patient] thanks
+=== FIELD: note
+HISTORY OF PRESENT ILLNESS
+
+Dennis Martin is a pleasant 46-year-old male who presents to the clinic today for the evaluation of right heel pain. The onset of his pain began 10 days ago while training for a triathlon. He locates his pain to the posterior aspect of his heel, which radiates proximally into his calf. His pain is aggravated by working out and when he first gets up in the morning. If he sits for a long period, his pain will return upon standing. The patient states that he runs 10 kilometers in the morning. At lunchtime, he tries to get on a bike for about 45 minutes to an hour. In the evening, he goes to the aquatic center and swims for 30 minutes to 1 hour. The patient states that he runs 5 days per week. He adds that he alternates between a long run and a long bike ride on weekends. He currently takes one day off from his exercises. The patient states that he does not stretch at all. He denies any left leg pain.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports right heel pain. Denies left leg pain.
+
+PHYSICAL EXAM
+
+MSK: Examination of the right heel: Pain with resisted extension. Mild pain with flexion. Positive calcaneal squeeze test. Severe tenderness to the Achilles tendon. Thompson test is negative, bilaterally.
+
+RESULTS
+
+No new imaging was obtained today
+
+ASSESSMENT
+
+Right Achilles tendinitis.
+
+PLAN
+
+After reviewing the patient's examination today, I had a lengthy discussion with the patient regarding his current symptoms. I have explained to him that his symptoms are likely secondary to overuse. I have recommended that we treat the patient conservatively. The patient was instructed to take at least 1 week off from his training to recover from this. I will provide him with a referral for formal physical therapy to strengthen his right lower extremities. I have advised him to take 3 tablets of ibuprofen every 6 hours for pain. If his pain does not improve with physical therapy, I will recommend obtaining an x-ray.
+
+INSTRUCTIONS
+
+The patient will follow up with me in 7 to 10 days to check on his progress.
+
+########## ENCOUNTER D2N155
+=== FIELD: dialogue
+[doctor] so hey christina good to see you today i see you're here you have a nonhealing foot ulcer well also looks like in my notes that you got some you've got type two diabetes and that probably the reason for your ear but ulcer not healing so how you doing today what's going on
+[patient] doing pretty good except i ca n't get this ulcer to heal
+[doctor] okay how long has that wound been present
+[patient] maybe about a year
+[doctor] a year well that that's a that's a a long time so when it started i guess did you have any trauma to the foot or did was it just all of a sudden
+[patient] no trauma it just it seemed like a little blister and then i picked at it and it did get a little bit red and infected so i talked to my primary about it
+[doctor] okay
+[patient] i went on some antibiotics it seemed to get better but nothing is really making it go away
+[doctor] okay when was the last time you were on antibiotics
+[patient] it's probably been five months
+[doctor] five months alright do you remember which antibiotics you were on
+[patient] keflex
+[doctor] keflex alright so kinda does your foot hurt or is it just just the
+[patient] no pain but i do n't have much feeling in my foot
+[doctor] alright so you've got neuropathy yeah that that that makes sense with the the diabetes so have you had any other symptoms like a fever chills any drainage coming from it
+[patient] lately there has been a lot more drainage and i just feel a little more tired
+[doctor] okay alright well that that sounds good so today is thursday so what do you have for the weekend
+[patient] not too much i'll probably be walking around at the zoo on this ulcer all weekend and eating out and not doing anything my doctor wants me to do
+[doctor] no yeah i yeah i know you do have that diabetes i know your pcp probably would n't be excited about you you eating out and all that but you know hopefully we can we i can at least get your your foot a little bit better so your diabetes i know we talked a little bit earlier how is that going for you is it controlled you know what's your your blood sugars running
+[patient] yeah they are running better than they were but they are still in the two hundreds so my doctor does n't like that my last a1c was about ten
+[doctor] okay alright yeah i i you probably definitely need to get back with your pcp about that because the a1c is is pretty high and i know he probably had you on some medication and insulin and metformin and insulin just to try to to get that lower but
+[patient] yes
+[doctor] you know we are here for your foot so let's let me take a look at that so we will do a quick exam of your foot so you do n't have any fever your vitals look good so on your your right foot exam i can see here you do have a one by two centimeter two inch circular wound on the dorsal aspect of the lateral right foot so it's just proximal to the fifth mtp joint i do see some yellow slough that's present with minimal granulation tissue you have no surrounding erythema or cellulitis and there is n't any evidence of fluid collection i do n't see necrosis so there is no dead tissue around it there's no odor and i i do n't appreciate any bony exposure and does it hurt when i touch it here
+[patient] no
+[doctor] okay so we did a x-ray of your right foot before you came in and it showed no evidence of osteomyelitis that means that there is no bone infection which is really good so let me just talk a little about my assessment and plan of your your foot so you do have that diabetic foot ulcer so what i'm gon na do is i'm going to order a abi or ankle brachial index and that's just to determine your blood supply just to see if we can actually heal that wound i know it's been there for about a year which is a pretty long time and so we just need to see if we can if you do have that blood flow just in case we need to to make other goals for that foot just to depend upon that i'm also gon na do a debridement here have you had that done before of the
+[patient] yes i think so
+[doctor] okay so you know you know pretty much about that so i'm just gon na try to take off some of that dead tissue we'll do that here in the office afterwards and then i'm going to prescribe you some colaganase ointment and you could just add that to your wound once a day and cover it with a sterile dressing and we're gon na try to continue that until we see it start to shrink and hopefully you know that will work between the debridement and then the ointment did they give you at your pcp they give you a surgical shoe or have you been wearing your regular shoes
+[patient] i've just been wearing my regular shoes
+[doctor] okay so we're gon na get you a surgical shoe and i want you to to wear that and that can help you take pressure off the area because i know you said you're gon na walk around with this zoo this this weekend so i definitely do n't want you to put much pressure on it from now on and hopefully that can help it heal and so after all that i'm just gon na see you back in two weeks and we could take another look and possible do another debridement of the ulcer so do you have any questions for me
+[patient] i do n't think so
+[doctor] alright so i'll see you back in two weeks and i hope you have fun at the zoo this weekend
+[patient] thank you
+[doctor] alright thanks
+=== FIELD: note
+CHIEF COMPLAINT
+
+Non-healing right foot ulcer.
+
+HISTORY OF PRESENT ILLNESS
+
+Christina Cooper is a pleasant 77-year-old female who presents to the clinic today for the evaluation of a non-healing right foot ulcer. The onset of her wound began 1 year ago with no specific injury. The patient states that it seemed like a blister and she picked at it where it then turned red. The patient was seen by her primary care physician and was prescribed Keflex. She states that the antibiotics improved her symptoms, however they did not resolve them. The patient adds that she was last on Keflex 5 months ago. She denies any pain, however she reports decreased sensation in her foot. The patient also reports increased drainage and fatigue. She states that she has been wearing her regular shoes.
+
+The patient has type 2 diabetes with neuropathy. She states that her blood sugars are running better than they were; however, they are still in the 200's. Her last hemoglobin A1C was 10.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Reports fatigue.
+Skin: Reports right foot ulcer and drainage.
+
+VITALS
+
+No fever noted. Vitals look good today.
+
+PHYSICAL EXAM
+
+MSK: Examination of the right foot: There is a 1.0 cm x 2.0 cm wound on the dorsal aspect of the lateral right foot, just proximal to the 5th MTP joint. I do see some yellow slough that is present with minimal granulation tissue. No surrounding erythema or cellulitis. There is no evidence of fluid collection. I do not see necrosis. No odor. I do not appreciate any bony exposure. No pain to palpation.
+
+RESULTS
+
+X-ray of the right foot today reveals no evidence of osteomyelitis.
+
+ASSESSMENT
+
+Right diabetic foot ulcer.
+
+PLAN
+
+I have recommended that we obtain an ankle brachial index to determine her blood supply to see if we can heal the wound. We discussed doing a debridement in office today, which she agreed to. I have also recommended that the patient be placed in a surgical shoe to provide increased support. I have also prescribed the patient collagenase ointment to apply to her wound 1 time per day and cover it with a sterile dressing. I advised the patient that this should be continued until we see the ulcer decrease in size.
+
+INSTRUCTIONS
+
+The patient will follow up with me in 2 weeks to check on her progress.
+
+########## ENCOUNTER D2N156
+=== FIELD: dialogue
+[doctor] alright julia so you've been coming to see me for a while now ever since you had an rca stent placed back in twenty eighteen but i see you're here for follow-up after an interior stemi where we had to put in another stent right so like how are you doing
+[patient] well i mean it was a real shock for me i thought everything was fine after my last heart attack and then i just started having this horrible chest pain and it would n't go away so i went to the emergency room and yeah they told me i needed another stent
+[doctor] wow so you were experiencing similar symptoms similar to what you had the first time
+[patient] yeah yeah it was yeah it was bad it was just like the last time
+[doctor] okay have you had any chest pain or shortness of breath
+[patient] no i think i saw you about six months ago and and i was doing fine
+[doctor] okay have you been able to like exercise at all since since you last saw me
+[patient] yeah you know i walk my dog everyday and you know we go like a mile and a half or two miles
+[doctor] awesome okay yeah you know because like fall is setting in like are you excited
+[patient] yeah yeah i'm excited
+[doctor] do you have any like plans for the holiday
+[patient] no mm-hmm no i'm just you know looking forward to seeing family and having some nice weather and yeah
+[doctor] okay so i do wan na ask i know that you have a history of coronary artery disease hypertension and diabetes so i wan na get an idea of like where you stand with those have you been experiencing any kind of leg swelling
+[patient] i have noticed that my legs are a little swollen since they sent me home from the hospital
+[doctor] okay are you able to lie flat at night when you sleep
+[patient] yeah i mean i always use a couple of pillows you know i maybe i've had to sit up a little bit more but i mean for the most part i think it's pretty normal
+[doctor] okay and then have you been able to afford your medications and are you taking them like your like you were prescribed
+[patient] yeah i'm able to afford afford them i have good insurance i am taking them they told me it's really important to take them so so yeah
+[doctor] yeah that's very accurate you know like there are huge consequences to not taking them so if you are noticing any problems please please please please let us know how about your diet are you watching your salt intake
+[patient] i mean i'm not i i i have n't really adjusted i mean i tried to watch it after the last heart attack and now you know i i've kind of been less strict with my diet but i'll have to go back to watching the salt intake
+[doctor] mm-hmm
+[patient] i love pizza it's my favorite food
+[doctor] yeah
+[patient] my tries are probably my second favorite food
+[doctor] what are you for her toppings on pizza
+[patient] pepperoni occasionally vegetables
+[doctor] mm-hmm alright but you know that pepperoni is pretty high in salt on top of a cheesy pizza right
+[patient] i know i know i'm gon na work on it
+[doctor] okay so we are we are gon na have to negotiate some of these diet things and then especially since you have diabetes like have you been managing that well
+[patient] my i've been watching my sugars yep because i do n't wan na go on insulin so i'm taking that metformin that's why i've been walking my dog i'm trying to stay active
+[doctor] okay okay so you know maybe this is just a situation of like where we are on the right path but probably need to step up a few things okay
+[patient] okay
+[doctor] alright so i do want to do a quick physical exam so you are aware i'm going to be calling out my findings as i run through it alright
+[patient] okay
+[doctor] alright so your vital signs look good you know so i'm glad that it looks like you're tolerating your medication pretty well on your neck exam i do n't appreciate any jugular venous distention so and then on top of that i'm not i do n't appreciate any carotid bruits so i'm not feeling anything like too concerning on your heart exam though there is a three over six systolic ejection murmur heard at the that i'm hearing at the left base that's not like a huge deal especially considering like what you've been through already in terms of the hospital but it is something that i wan na know in your chart when i listen to you your lungs your lungs are clear over here with your extremities i do notice you know some lower lower edema swelling sorry some lower swelling edema lower limb edema and it it is pitting one plus on your right radial artery the cath site is clean dry and intact without hematoma and i also your right radial artery pulses are palpable so i did review the results of your ekg and they show a normal sinus rhythm and a good r wave progression and a a evolutionary changes that are anticipated after a stemi one of the reasons though that we had you come in is that we noticed on your echo there is a reduced ejection fraction of thirty five percent we are a little bit concerned about that so let's talk about my assessment and plan for you your primary and like first diagnosis is gon na be coronary artery disease right you already have a history of that but you know we're gon na do some things to make we're gon na continue to evaluate that over time i want you to continue your aspirin eighty one milligrams daily and your brilinta ninety milligrams twice daily i wan na continue you on a high dose statin called lipitor and you're gon na be taking that eighty milligrams a day and we're gon na continue you on your toprol and that's gon na be fifty milligrams daily i am gon na refer you to cardiac rehab so we can get you some education and give you some confidence to get back to exercising regularly i know it was kinda scary to have such an episode but i promise like most of the patients i have love cardiac rehab and i think you'll do pretty well for your second diagnosis we have newly you have newly reduced left ventricular dysfunction and moderate mitral regurgitation what i think is like what that means is that you're you're pumping like the way that your heart is pumping is a bit concerning but i think like given your history that it will improve over time they got you into the cath lab pretty quickly so i think that the muscle is just kinda like stunned like surprised and since you're compliant with your meds i think you will recover we are gon na continue you on your lisinopril twenty milligrams daily however considering that you are retaining fluid i think that your third diagnosis is like we are crossing into acute heart failure i'm gon na prescribe something called a diuretic it's called lasix and i do want to we need to take that forty milligrams once a day i wan na add aldactone twelve . five milligrams daily and i need you to get labs finally we will repeat another echo in about two months last but not least there is the hypertension your blood pressure seems fine i think with the aldactone that you'll tolerate that pretty well but we do want to maybe get you into some nutrition counseling to consider like what other diet options might be available to you maybe suggestions of things that you have n't thought about like cutting out meat especially any kind of preserved meat like pepperoni but maybe finding you some alternatives how does that sound
+[patient] that sounds good yeah so i'm yeah as long as you tell me i'm gon na get better i believe you
+[doctor] yes yeah i i strongly believe this is our best course of action and that you will get better given enough time i i see that you are making efforts i'm really glad that you are out there walking and that you're cognizant of your diet and willing to make changes we will just you know monitor it over time okay
+[patient] okay
+[doctor] alright thank you
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow up status post inferior STEMI.
+
+SURGICAL HISTORY
+
+RCA stent 2018
+
+MEDICATIONS
+
+aspirin 81 mg daily
+Brilinta 90 mg twice daily
+Lipitor 80 mg daily
+Toprol 50 mg daily
+lisinopril 20 mg daily
+metformin
+
+REVIEW OF SYSTEMS
+
+Cardiovascular: Denies chest pain.
+Respiratory: Denies shortness of breath.
+Musculoskeletal: Reports bilateral leg swelling.
+
+VITALS
+
+Within normal limits
+
+PHYSICAL EXAM
+
+Neck
+- General Examination: No jugular venous distention.
+
+Respiratory
+- Auscultation of Lungs: Clear bilaterally.
+
+Cardiovascular
+- Auscultation of Heart: No carotid bruits. A 3/6 systolic ejection murmur is heard at the left base.
+- Examination: Right radial artery cath site is clean, dry, and intact without hematoma. Radial artery pulses are palpable.
+
+Musculoskeletal
+- Examination: Bilateral lower limb edema. Pitting 1+.
+
+RESULTS
+
+EKG is reviewed and demonstrates a normal sinus rhythm. Good R wave progression. Evolutionary changes that are anticipated after a STEMI.
+
+Echocardiogram is reviewed and demonstrates a reduced ejection fraction of 35%.
+
+ASSESSMENT AND PLAN
+
+1. Coronary artery disease.
+- Medical Reasoning: The patient has a history of coronary artery disease that we will continue to monitor.
+- Medical Treatment: She will continue aspirin 81 mg daily and Brilinta 90 mg twice daily. She will continue Lipitor 80 mg a day and Toprol 50 mg daily. I am going to refer her to cardiac rehab for education and to gain confidence to resume exercising regularly.
+
+2. Newly reduced left ventricular dysfunction and moderate mitral regurgitation.
+- Medical Reasoning: A recent echocardiogram revealed a reduced ejection fraction of 35%. She was able to be treated in the cath lab in a timely manner, so I think that the muscle is just stunned. Given her history. it will improve over time.
+- Patient Education and Counseling: I advised the patient that she will recover since she is compliant with her medications.
+- Medical Treatment: Continue lisinopril 20 mg daily.
+
+3. Acute heart failure.
+- Medical Reasoning: The patient is retaining fluid.
+- Medical Treatment: I am going to prescribe Lasix 40 mg once a day. I want to add Aldactone 12.5 mg daily. I will order lab work. We will obtain a repeat echo in approximately 2 months.
+
+4. Hypertension.
+- Medical Reasoning: Blood pressure is well controlled. She will tolerate the Aldactone well.
+- Patient Education and Counseling: I encouraged the patient to continue exercising and to be cognizant of her diet. I explained that there are healthier alternatives available to reduce the amount of preserved meats she consumes.
+- Medical Treatment: Continue lisinopril 20 mg daily. The patient received a referral to nutrition counseling to consider what other diet options might be available to her.
+
+5. Type 2 diabetes.
+- Medical Reasoning: Stable.
+- Patient Education and Counseling: I encouraged the patient to continue monitoring her blood glucose levels.
+- Medical Treatment: Continue metformin as prescribed.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+The patient will follow up as instructed.
+
+########## ENCOUNTER D2N157
+=== FIELD: dialogue
+[doctor] hey jose how are you doing it's been about you know three or four months since i last saw you what's going on
+[patient] i'm doing okay i i guess the medications are helping i'm concerned about all the medications i'm taking but i think i'm doing okay
+[doctor] yeah yeah you are on a fair amount of medications you know we do have you on those medications because you did have a heart attack about six months ago they put that that stent into your left anterior descending artery and so that's a major artery on the left side of your heart and so we need to keep those stents open and and kinda help your heart heal so it is gon na be very important for you to continue on those medications so you're still taking your aspirin and are you still taking the brilinta
+[patient] yes and and fish oil
+[doctor] and fish oil okay good now how are you doing with the crestor i know that that's you know that's the statin that's the cholesterol medication you were concerned that it might cause you to have some muscle aches are you taking that
+[patient] i i think i'm doing good but i i am i feel like i i when i i guess the only complaint that i have is ever since i i do n't know if this is the heart attack or if this this is the the medication but when i stand up real fast i get really dizzy
+[doctor] you get you get dizzy okay yeah you know we do have you on a what we call a beta-blocker metoprolol i think your dose is fifty milligrams once a day and you know sometimes it takes a little bit for your body to adjust to that but yes if you stand up too quickly it can cause you to be a little dizzy so
+[patient] okay okay that makes sense okay that's good to know because i did n't know what what what the problem was so can i ask you a question regarding the stents
+[doctor] yep
+[patient] how long do i have to have that in there
+[doctor] so the stents are permanent we do n't we do n't remove them so yep so that's why it's gon na be super important for you you know you're gon na be on aspirin for the rest of your life and then i'm gon na keep you on that brilinta for another six months that's gon na help prevent the that stent from clogging
+[patient] okay okay do i need to ever replace the stents then
+[doctor] no i mean every so often the stents can become narrowed again but you know that's why you're seeing me your cardiologist so that i can follow you for that now if you start to have symptoms again of any chest pain like you had before or any shortness of breath when you start to exert yourself i want you to tell me and we might have to go ahead and send you for further testing to make sure that those stents are okay but typically if you continue to take the medication watch your diet that type of thing your stents will will stay open for a long time
+[patient] okay alright that sounds good you know i have n't i had a i had i know you asked me to follow up with the dietitian because i had diabetes as well which probably contributed to my heart attack
+[doctor] yeah
+[patient] i may need a new order i do n't i i forgot who i was supposed to talk to
+[doctor] okay that's okay yeah i certainly can help you with that now managing your diabetes is also going to play an important role in your coronary artery disease which it sounds like you already know that which is really good so i will put in another referral for diabetic education for you how are you doing watching your sweets i know that you know you do have an afinity for those chocolate chip cookies
+[patient] it's okay my a1c was n't where i wanted but my glucose is coming in in about one thirty
+[doctor] okay
+[patient] fasting
+[doctor] okay what was the what was the a1c the hemoglobin a1c if you do n't mind me asking
+[patient] i thought it was close to sixty
+[doctor] okay yeah that's really high so we want it to be about six so you you do have some work to do with your diet
+[patient] yeah yeah so okay so i know you asked me to do a blood test so i did that i was wondering if you got the results
+[doctor] i did you know i looked at the results of your kidney function that's what we call your creatinine just because you had some contrast dye and sometimes contrast dye can impact the kidneys and your kidney function is stable which is great when was the last time you saw your nephrologist
+[patient] oh
+[doctor] that's your kidney doctor
+[patient] i'm a bad i'm a bad patient so probably a year ago
+[doctor] okay you know you do have the stage three ckd so that's the the stage three kidney disease so it is gon na be important for you to follow up with your nephrologist just to make sure that everything is okay now i did check your kidney function and and it was fine but are you staying away from things like motrin and advil
+[patient] right yeah that's i threw all of those out
+[doctor] okay good okay perfect now i know that you're from the west coast are you super excited that la one the super bowl or are you more of a san francisco forty nine or span
+[patient] i'm a more of a san francisco fan
+[doctor] so do you like jimmy g do you think he can beat erin rogers again
+[patient] okay we'll see we'll see what happens but i'm pretty flexible when he comes to you know that is but one thing that since i ca n't take motrin what pain killer can i take for headaches
+[doctor] you can take tylenol
+[patient] okay
+[doctor] yeah
+[patient] alright that sounds good
+[doctor] yeah
+[patient] okay
+[doctor] okay
+[patient] this is i i do n't think i have any other question the only thing i'm gon na need is a i need some refills on my medications
+[doctor] yeah i can do that but i do wan na just do a physical exam on you okay so and looking here at your vital signs here you know your your vital signs look quite good you know your blood pressure is what right where it should be it's about one twenty seven over eighty which is great so you're doing a good job taking your metoprolol now in terms of on your neck exam i do n't appreciate any jugular venous distention or carotid bruits on your heart exam i do appreciate a slight three out of six systolic ejection murmur heard at the left base and on your lower extremity exam i do appreciate some one plus nonpitting edema now what does that mean what does that mean jose so all of that means is that i do hear a little heart murmur on your heart which i've heard before in the past and it does n't it does n't look like you're retaining any fluid which is good but you do have a little puffiness in your legs which sometimes some of the medications can cause
+[patient] yeah i do have that
+[doctor] so let's just go over a little bit about my assessment and and plan for you going forward so for your first problem of your coronary artery disease i think you're doing really well i wan na go ahead and refer you for cardiac rehab just so that you can be more active and have some confidence in in exercising again okay and i am gon na go ahead and refill your metoprolol your crestor forty milligrams once a day as well as the aspirin okay i do n't think we need to proceed with a a stress test or anything at this time but you know to let me know if you have any symptoms okay
+[patient] okay
+[doctor] okay for your
+[patient] sounds really good
+[doctor] good for your second problem of your stage three chronic kidney disease i am gon na reach out to doctor miller and make an appointment for you to be seen just because again i think it's important for you to follow up with your nephrologist okay
+[patient] okay
+[doctor] and then for your third problem of your diabetes i am gon na go ahead and order another hemoglobin a1c and i'm gon na put that referral in for the dietitian to give you some dietary education and i'm gon na go ahead and talk with your primary care physician about your your insulin regimen okay
+[patient] okay
+[doctor] any questions
+[patient] yeah you know i've been kinda down ever since i had my heart attack is there any medication that i could take to make me feel a little bit less sad
+[doctor] yeah i mean are you having any thoughts of of harming yourself or harming others
+[patient] no no i just feel kinda down
+[doctor] you feel kinda down what's your
+[patient] life sucks
+[doctor] what well i do n't think so what what's your support system like
+[patient] you know i i live with my dog and that's it so it's kind of you know lonely
+[doctor] okay alright well would you be interested in in like a referral to psychiatry or something like that so that you have someone to talk to about some of of issues because medication can help but i do i think it's important to have you know talk some of these things out
+[patient] okay yeah you know i'll give that a try i mean i'm retiring i got plenty of time
+[doctor] okay so why do n't we go ahead and i'm gon na place a referral to psychiatry for you know you know difficulty adjusting after having a heart attack maybe some some mild depression okay does that sound okay okay
+[patient] yeah that sounds really good thank you
+[doctor] okay you're welcome anything else
+[patient] so you will do the medication refill do i so that's automatic
+[doctor] yep i'm gon na put them into the computer and and whatever pharmacy you want yep mm-hmm
+[patient] okay alright sounds great thank you
+[doctor] okay you're welcome i'll be in touch bye
+[patient] okay alright bye-bye
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow-up.
+
+MEDICAL HISTORY
+
+Patient reports having a heart attack 6 months ago, coronary artery disease, diabetes.
+
+SURGICAL HISTORY
+
+Patient reports history of stent placement at the left anterior descending artery.
+
+SOCIAL HISTORY
+
+Patient reports that he is from the west coast and is a San Francisco 49ers fan. He lives with his dog.
+
+MEDICATIONS
+
+Patient reports taking aspirin, Brilinta, fish oil, Crestor, metoprolol 50 mg once a day,
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports non-pitting lower extremity edema. Denies muscle aches.
+Neurological: Reports dizziness and headaches.
+Psychiatric: Reports depression. Denies suicidal ideation or homicidal ideation.
+
+VITALS
+
+Vital signs look good with blood pressure of 127/80.
+
+PHYSICAL EXAM
+
+Neck
+- General Examination: No jugular venous distention or carotid bruits.
+
+Respiratory
+- Assessment of Respiratory Effort: Normal respiratory effort.
+- Auscultation of Lungs: Clear bilaterally. No wheezes, rales, or rhonchi.
+
+Cardiovascular
+- Auscultation of Heart: Slight, 3/6 systolic ejection murmur heard at the left base.
+
+Musculoskeletal
+- Examination: 1+ non-pitting lower extremity edema.
+
+RESULTS
+
+Lab results are reviewed and show stable a creatinine level.
+
+ASSESSMENT AND PLAN
+
+1. Coronary artery disease.
+- Medical Reasoning: The patient is doing very well and has been compliant with all medications. A slight 3/6 ejection murmur was heard on exam, however, this is stable and has been present in the past. He is experiencing 1+ non-pitting edema, but this seems to be medication related.
+
+- Patient Education and Counseling: Patient was advised that his stents will remain in place permanently and that they typically do not require replacement. We discussed it is common to experience dizziness when standing quickly and that this should resolve once he is adjusted to his medications. We also discussed that cardiac rehab will be beneficial in helping him become more active and confident with exercising. He was advised to watch for symptoms such as chest pain or shortness of breath on exertion as this would need further testing such as a stress test.
+- Medical Treatment: Referral to cardiac rehab was provided. A refill for metoprolol 50 mg once a day and Crestor 40 mg once a day was also provided. He is also advised to continue aspirin daily long term as well as Brilinta for the next 6 months.
+
+2. Stage 3 chronic kidney disease.
+- Medical Reasoning: Patient's most recent creatinine levels are stable.
+- Patient Education and Counseling: We discussed the importance of following up with nephrology.
+- Medical Treatment: He will follow up with his nephrologist, Dr. Miller.
+
+3. Diabetes.
+- Medical Reasoning: Patient reports most recent hemoglobin A1c was 16.
+- Patient Education and Counseling: We discussed the importance of diabetes management and how plays an important role in his coronary artery disease. He was advised that his hemoglobin A1c goal will be 6.
+- Medical Treatment: Repeat hemoglobin A1c was ordered today. A dietitian referral for diabetes education was also provided. We will contact his primary care physician regarding his insulin regimen.
+
+4. Mild depression:
+- Medical Reasoning: Patient reports feeling depressed and having a hard time adjusting since having his heart attack. He mentions he is also lonely and does not have a support system.
+- Medical Treatment: Referral to psychiatry was provided today.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+

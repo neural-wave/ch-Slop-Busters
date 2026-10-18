@@ -1,0 +1,586 @@
+{
+ "id": "G0001",
+ "dataset": "synthetic_acute",
+ "sex": "female",
+ "age_range": [
+  75,
+  90
+ ],
+ "icd10_codes": [
+  {
+   "code": "K92.1",
+   "description": "Melena"
+  },
+  {
+   "code": "K29.61",
+   "description": "Other gastritis with bleeding"
+  },
+  {
+   "code": "Z79.1",
+   "description": "Long term (current) use of non-steroidal anti-inflammatories (NSAID)"
+  }
+ ],
+ "dialogue": "[doctor] good morning , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . how have you been since the last time ?\n[patient] oh , not great , doctor . my stomach has been acting up for about four days now .\n[doctor] i'm sorry to hear that . tell me what's going on .\n[patient] it's this burning right up under my breastbone . and last night i noticed my stool was black , like tar . that scared me half to death .\n[doctor] black stool is important , and i'm glad you came in today . has there been any blood that's bright red ?\n[patient] no , no red . just black and sticky . i did n't want to say anything at first , but my neighbor {OTHER_FIRST} saw it on the bathroom floor and told me to call .\n[doctor] i'm glad she told you . when you say burning , is it after you eat ?\n[patient] usually about an hour after supper . and it wakes me up at night sometimes . i take a tums and it helps for maybe twenty minutes .\n[doctor] any vomiting ?\n[patient] i threw up once on tuesday . it was just my supper , no blood , and no coffee grounds that i saw .\n[doctor] okay . any dizziness when you stand up ?\n[patient] yes , a little . i grabbed the counter this morning . i thought it was just my blood pressure pills .\n[doctor] that's a good thing to mention . what medicines do you take for your arthritis ?\n[patient] i take naproxen , the big pills , twice a day for my knees . i've been on it for years . my sister said i should switch to tylenol but i never got around to it .\n[doctor] okay , that's important . how much naproxen have you been taking lately ?\n[patient] the same as always , two in the morning and two at night , five hundred milligrams each . maybe a few extra on the bad days this week , when the knees were flaring .\n[doctor] any other medications , any blood thinners ?\n[patient] just my lisinopril , and a little vitamin d . i do n't take aspirin , my cardiologist took me off that years ago .\n[doctor] good . let me check your vitals . your blood pressure is one eleven over sixty eight sitting , and your pulse is one hundred and four . that's a little fast for you .\n[patient] is that bad ?\n[doctor] it means your body is working harder , probably because you've lost some blood . your temperature is ninety eight point four . let me listen to your heart and lungs .\n[patient] okay .\n[doctor] heart is regular , a little fast . lungs are clear . now let me press on your belly . does this hurt ?\n[patient] yes , right here at the top . ouch . it's maybe a five out of ten right now .\n[doctor] okay . no rebound and no guarding . your belly is a little tender in the upper middle . let's check your blood count and your kidney function today .\n[patient] will i need to stay in the hospital ?\n[doctor] possibly . i'd like to get labs first and then decide . the nurse is going to start an iv and draw the blood now . the main thing i'm checking is your hemoglobin , which tells me how much blood you've lost .\n[patient] oh , i don't like needles .\n[doctor] i know . we'll also check your kidney function because of the naproxen . and i want a stool test for blood and a look inside your stomach with a scope .\n[patient] a scope , like the camera thing ?\n[doctor] yes , a gastroenterologist would do an upper endoscopy . we'll make that referral today and i'll call them myself .\n[patient] do you have a number i can call ? my daughter wants to be the one to talk to them .\n[doctor] of course . the gastroenterology office number is {PHONE} . ask for the scheduling line and tell them it's urgent , black stools .\n[patient] {PHONE} , okay , i'll write it down .\n[doctor] now , i want you to stop the naproxen completely , starting today . no more ibuprofen or aleve either .\n[patient] so what do i take for my knees ?\n[doctor] tylenol , up to one thousand milligrams three times a day . no more than three thousand in one day .\n[patient] okay . and the acid ?\n[doctor] i'm starting you on omeprazole , twenty milligrams in the morning before breakfast .\n[patient] the little purple pill . my sister took that .\n[doctor] right . if the labs come back low on blood we may need to transfuse you . i'll let you know tonight .\n[patient] my hands are shaky just thinking about it .\n[doctor] i understand . are you safe to drive home ?\n[patient] no , my daughter has to come get me . she's in the parking lot now .\n[doctor] good . the nurse will get her set up with the discharge papers once we see the results .",
+ "note": "CHIEF COMPLAINT\n\nEpigastric burning pain and black stools for four days.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with osteoarthritis of both knees, hypertension, and gastroesophageal reflux who presents with four days of epigastric burning pain and black, tarry stools first noticed last evening. The burning occurs about one hour after meals and occasionally awakens her from sleep, with partial relief from calcium carbonate. She had one episode of non-bloody emesis on Tuesday containing food only, without coffee-ground material. She reports orthostatic lightheadedness this morning on standing. She has been taking naproxen 500 mg twice daily for several years and took additional doses this week during a flare of knee pain. She denies hematemesis, chest pain, or dyspnea. A neighbor, {OTHER_FIRST}, first noticed the black stool on the bathroom floor and encouraged her to seek care.\n\nPAST MEDICAL HISTORY\n\nOsteoarthritis of both knees, hypertension, and gastroesophageal reflux. Previously on aspirin, discontinued by her cardiologist years ago.\n\nMEDICATIONS\n\nNaproxen 500 mg twice daily with additional doses this week, lisinopril daily, vitamin D supplement. Denies current aspirin use. Uses calcium carbonate as needed for heartburn.\n\nPHYSICAL EXAM\n\nVitals: BP 111/68 seated, HR 104 and regular, temperature 98.4 F. Heart regular and mildly tachycardic. Lungs clear to auscultation bilaterally. Abdomen with mild epigastric tenderness, no rebound or guarding.\n\nRESULTS\n\nCBC, BMP, and stool occult blood test ordered; results pending at the time of this note.\n\nASSESSMENT AND PLAN\n\n1. Melena with suspected upper gastrointestinal bleeding in the setting of chronic NSAID use, consistent with NSAID-associated gastritis with bleeding. Hemodynamically borderline with mild tachycardia and orthostatic symptoms. Discontinue naproxen and avoid all NSAIDs, including ibuprofen and naproxen sodium. Start omeprazole 20 mg daily before breakfast. Check hemoglobin and kidney function; transfusion will be considered if hemoglobin falls. Urgent outpatient gastroenterology referral for upper endoscopy; office contact {PHONE}.\n2. Knee osteoarthritis pain: acetaminophen up to 3 g per day.\n3. Hypertension: continue lisinopril.",
+ "medical_concepts": [
+  {
+   "text": "my stomach has been acting up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "burning right up under my breastbone",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my stool was black , like tar",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "black and sticky",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "about an hour after supper",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "wakes me up at night sometimes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tums",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "threw up once on tuesday",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "vomiting",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "no coffee grounds",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dizziness when you stand up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood pressure pills",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "arthritis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "naproxen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "been on it for years",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "two in the morning and two at night , five hundred milligrams each",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "a few extra on the bad days this week",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "the knees were flaring",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my knees",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "vitamin d",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "aspirin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "your blood pressure is one eleven over sixty eight sitting",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your pulse is one hundred and four",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your temperature is ninety eight point four",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart is regular , a little fast",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lungs are clear",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a five out of ten",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "no rebound and no guarding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little tender in the upper middle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood count",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "kidney function",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "hemoglobin",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "an iv",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "draw the blood",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "my hands are shaky",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a stool test for blood",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "upper endoscopy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "a look inside your stomach with a scope",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "aleve",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "tylenol , up to one thousand milligrams three times a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "omeprazole , twenty milligrams in the morning before breakfast",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "transfuse",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "black, tarry stools",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "epigastric burning pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "The burning occurs about one hour after meals",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "awakens her from sleep",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "calcium carbonate",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "non-bloody emesis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "orthostatic lightheadedness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "naproxen 500 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "hematemesis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "osteoarthritis of both knees",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "gastroesophageal reflux",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "aspirin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 111/68 seated",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "HR 104",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "temperature 98.4 F",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild epigastric tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no rebound or guarding",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "CBC",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "stool occult blood test",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Melena",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "NSAID-associated gastritis with bleeding",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "orthostatic symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tachycardia",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Discontinue naproxen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "NSAIDs",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Start omeprazole 20 mg daily before breakfast",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "hemoglobin",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "upper endoscopy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "transfusion",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen up to 3 g per day",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Knee osteoarthritis pain",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for acetaminophen"
+  },
+  {
+   "text": "tums",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for calcium carbonate antacid"
+  },
+  {
+   "text": "aleve",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for naproxen sodium"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "K92.1",
+   "spans": [
+    {
+     "text": "my stool was black , like tar",
+     "field": "dialogue"
+    },
+    {
+     "text": "black and sticky",
+     "field": "dialogue"
+    },
+    {
+     "text": "black, tarry stools",
+     "field": "note"
+    },
+    {
+     "text": "Melena",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "K29.61",
+   "spans": [
+    {
+     "text": "burning right up under my breastbone",
+     "field": "dialogue"
+    },
+    {
+     "text": "epigastric burning pain",
+     "field": "note"
+    },
+    {
+     "text": "a little tender in the upper middle",
+     "field": "dialogue"
+    },
+    {
+     "text": "NSAID-associated gastritis with bleeding",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z79.1",
+   "spans": [
+    {
+     "text": "naproxen",
+     "field": "dialogue"
+    },
+    {
+     "text": "been on it for years",
+     "field": "dialogue"
+    },
+    {
+     "text": "naproxen 500 mg twice daily",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [],
+ "scenario": {
+  "specialty": "gastroenterology",
+  "visit": "acute",
+  "length": "medium",
+  "focus": [
+   "OTHER_PERSON_NAME",
+   "CONTACT"
+  ]
+ }
+}

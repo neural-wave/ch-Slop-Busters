@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N064",
+  "pii": [
+    {"field": "dialogue", "text": "matthew", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "rex center", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "working at home", "category": "OCCUPATION", "risk": "low"},
+    {"field": "note", "text": "Matthew", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Murphy", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "20-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "working from home", "category": "OCCUPATION", "risk": "low"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "stepped off the curb", "category": "CODE_EVIDENCE", "why": "W10.1XXA fall from curb / Y92.480 sidewalk"},
+    {"field": "dialogue", "text": "landed on it wrong", "category": "CODE_EVIDENCE", "why": "W18.49XA stumbling without falling"},
+    {"field": "dialogue", "text": "rice protocol", "category": "NOT_A_NAME", "why": "rest-ice-compression-elevation, not a surname"},
+    {"field": "note", "text": "stepped off of a curb", "category": "CODE_EVIDENCE", "why": "W10.1XXA fall from curb / Y92.480 sidewalk"},
+    {"field": "note", "text": "landed on his left ankle wrong", "category": "CODE_EVIDENCE", "why": "W18.49XA stumbling without falling"},
+    {"field": "note", "text": "RICE protocol", "category": "NOT_A_NAME", "why": "rest-ice-compression-elevation, not a surname"}
+  ]
+}

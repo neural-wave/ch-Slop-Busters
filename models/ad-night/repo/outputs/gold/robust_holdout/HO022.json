@@ -1,0 +1,355 @@
+{
+ "encounter_id": "HO022",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "deb",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "PARKINSON,",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "WALTER",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "03/14/1934",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "00483291",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "he's 92",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Renee",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Abernathy",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Olentangy Valley Neurology",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Mr. Parkinson",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "9/22",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "machinist",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "harmon tool & die",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "(614) 555-0187",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "walt",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "nov 18",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "westerville library",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "10/29/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Polaris",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "8250 Lazelle Crossing Rd",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Suite 210",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Columbus",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "OH 43240",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "deb.okafor62@gmail.com",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "mr hill",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Olentangy Valley Neurology",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "PARKINSON,",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Walter",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "3/14/1934",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "00483291",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "10/16/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Debra",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Parkinson-Okafor",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "614-555-0122",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "92-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "9/22/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "machinist",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "10/29/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Lorraine",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Abernathy",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "1649382057",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Polaris",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Renee",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Szymańska",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "dialogue",
+   "text": "parkinsons",
+   "category": "EPONYM",
+   "why": "disease (typed without apostrophe), not the patient's surname"
+  },
+  {
+   "field": "dialogue",
+   "text": "Parkinson's",
+   "category": "EPONYM",
+   "why": "disease, not the patient's surname"
+  },
+  {
+   "field": "dialogue",
+   "text": "25/100",
+   "category": "CLINICAL_NUMBER",
+   "why": "carbidopa/levodopa tablet strength"
+  },
+  {
+   "field": "dialogue",
+   "text": "3/5",
+   "category": "CLINICAL_NUMBER",
+   "why": "cognitive screening score"
+  },
+  {
+   "field": "dialogue",
+   "text": "132/78",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure sitting"
+  },
+  {
+   "field": "dialogue",
+   "text": "104/66",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure standing (orthostatic drop)"
+  },
+  {
+   "field": "dialogue",
+   "text": "6-8 cups",
+   "category": "CLINICAL_NUMBER",
+   "why": "fluid intake target for constipation (K59.00); date-like range"
+  },
+  {
+   "field": "note",
+   "text": "Parkinson's",
+   "category": "EPONYM",
+   "why": "disease, supports G20.A1"
+  },
+  {
+   "field": "note",
+   "text": "Hoehn and Yahr",
+   "category": "EPONYM",
+   "why": "Parkinson staging scale"
+  },
+  {
+   "field": "note",
+   "text": "25/100",
+   "category": "CLINICAL_NUMBER",
+   "why": "carbidopa/levodopa tablet strength"
+  },
+  {
+   "field": "note",
+   "text": "3/5",
+   "category": "CLINICAL_NUMBER",
+   "why": "Mini-Cog score"
+  },
+  {
+   "field": "note",
+   "text": "132/78",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure sitting"
+  },
+  {
+   "field": "note",
+   "text": "104/66",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure standing, supports I95.1"
+  },
+  {
+   "field": "note",
+   "text": "6-8 cups",
+   "category": "CLINICAL_NUMBER",
+   "why": "fluid intake target for constipation (K59.00); date-like range"
+  }
+ ]
+}

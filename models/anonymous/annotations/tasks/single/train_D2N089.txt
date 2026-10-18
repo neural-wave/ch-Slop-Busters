@@ -1,0 +1,101 @@
+########## ENCOUNTER D2N089
+=== FIELD: dialogue
+[doctor] hi andrea , how are you ?
+[patient] i'm doing well . how are you ?
+[doctor] doing well . uh , so i know the nurse told you about dax . i'd like to tell dax a little bit about you . okay ?
+[patient] okay .
+[doctor] so , andrea is a 52-year-old female with a past medical history significant for rheumatoid arthritis , atrial fibrillation , and reflux who presents today for her annual exam . so andrea , it's been a year since i saw you . how are you doing ?
+[patient] i'm doing well . so , i've been walking like you told me to and , um , exercising and doing yoga , and that's actually helped with my arthritis a lot , just the- the constant movement . so , i have n't had any joint pain recently .
+[doctor] okay . good . so , no- no issues with any stiffness or pain or flare ups over the last year ?
+[patient] no .
+[doctor] okay . and i know that we have you on the methotrexate , are you still taking that once a week ?
+[patient] yes , i am .
+[doctor] okay . and any issues with that ?
+[patient] no .
+[doctor] no . okay . and then in terms of your a-fib , how are you doing with that ? are you having any palpitations ? or , i know that you've kind of been in and out of it over the past , you know , year or so .
+[patient] yeah . i've still been having palpitations . the- the last one i had was about a week ago . i've noticed that when i start to get stressed , um , they start to flare up again . so , i've been trying meditation , trying running with my dog to try and relieve the stress but it has n't really been working .
+[doctor] yeah . i- i know that you had called , um , last month and we- we did that event monitor for you , uh , which we'll take a look at in a few minutes . okay ?
+[patient] okay .
+[doctor] um , how about um , your reflux ? you know , we had placed you on the protonix , uh , has that helped ? and i know that you were gon na do some dietary modifications .
+[patient] yeah . i cut out soda and that- that's helped- seemed to help , and the medication's been helping too . i have n't had a flare up in over , i think , five months .
+[doctor] okay . all right . um , so , you know , i know that you did the review of systems sheet when you checked in and , you know , you had- you know , you endorsed the palpitations and you had some nasal congestion . any other symptoms ? you know , chest pain , shortness of breath , nausea or vomiting ?
+[patient] no , nothing like that . just the nasal- nasal congestion because of my allergies .
+[doctor] okay . all right . okay . well , i'd like to go ahead and do a quick physical exam , okay ?
+[patient] okay .
+[doctor] all right . hey dragon , show me the vital signs . okay . so , you're in- here in the office today , it looks like , you know , your heart rate's really good today . it's- it's nice and controlled so that's good . um , i'm just gon na take a look into your heart and lungs and- and i'll let you know what i find . okay ?
+[patient] okay .
+[doctor] okay . so , on physical examination , um , you know , everything looks really good . on your heart examination , i do appreciate a slight 2/6 systolic- systolic ejection murmur , um , which we've heard in the past so i'm not worried at that . you're in the- a nice regular rate and rhythm at this time . your lungs are nice and clear . on your right elbow , i do notice some edema and some erythema . does it hurt when i press it ?
+[patient] yeah , it does a bit .
+[doctor] okay . so , she has pain to palpation of the right elbow . um , and you have no lower extremity edema , okay ? um , so i wan na go ahead and just take a look at some of your results . okay ?
+[patient] okay .
+[doctor] hey dragon , show me the event- event monitor results . okay . so , you know , this is the results of your event monitor which shows that , you know , you're in and out of a-fib , you have what we call a conversion pause . you know , you're in a-fib , you pause , and then you go back to regular rhythm . so , we'll talk about that , okay ?
+[patient] okay .
+[doctor] hey dragon , show me the autoimmune panel . so , looking here at your autoimmune panel , everything looks good , it looks like you're- you know , everything is well controlled with your rheumatoid arthritis on the methotrexate . okay ? so , let me just go over a little bit about my assessment and my plan for you . okay ?
+[patient] okay .
+[doctor] so for your first problem , your rheumatoid arthritis , again , everything looks good . i wan na just continue you on the methotrexate 2.5 mg , once weekly . um , and uh , if you need a referral back to see the rheumatologist , let me know , but i think everything seems stable now . do you need a refill of the methotrexate ?
+[patient] yes , i do .
+[doctor] okay . hey dragon , order methotrexate , 2.5 mg once weekly . for your second problem , the atrial fibrillation . so , you're going in and out of a-fib and i'd like to just keep you in normal sinus rhythm . so , i wan na go ahead and refer you to cardiology for a cardiac ablation which just maps out where that rhythm is coming from and burns it so it does n't come back . okay ? you're young , we wan na keep you in a normal rhythm and , being that you're going in and out of a-fib , i think that's what we should do . okay ?
+[patient] okay .
+[doctor] hey dragon , order a referral to cardiology . and for your last problem , the reflux , you know , i wanna- i want you to just continue on the protonix , 40 mg a day . continue with your dietary modifications , you know , avoiding coffee and spicy foods , that type of thing . okay ? and then let me know if you have any other issues with that , okay ?
+[patient] will do .
+[doctor] any questions ?
+[patient] no , i do n't .
+[doctor] okay . all right . it was good to see you .
+[patient] good seeing you .
+[doctor] hey dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Annual exam.
+
+HISTORY OF PRESENT ILLNESS
+
+Andrea Roberts is a 52-year-old female with a past medical history significant for rheumatoid arthritis, atrial fibrillation, and reflux, who presents today for her annual exam. It has been a year since she was last seen.
+
+The patient states she is doing well. She has been walking, exercising, and doing yoga, which has helped with her arthritis. She denies issues with stiffness, pain, or flare ups over the last year. The patient has continued utilizing methotrexate 2.5 mg once a week and denies issues with that.
+
+In terms of her atrial fibrillation, she endorses continued palpitations. The last episode she had was about 1 week ago. She has noticed that when she starts to get stressed they start to flare up again. She has tried meditation and running with her dog for stress relief, however these have not been helpful. The patient had called last month and had an event monitor done.
+
+Regarding her GERD, she has continued to utilize Protonix 40 mg a day. The patient has cut out soda, which seemed to help. She has not had a flare up in over 5 months.
+
+The patient endorses nasal congestion because of her allergies. She denies chest pain, shortness of breath, nausea, and vomitting.
+
+REVIEW OF SYSTEMS
+
+• Ears, Nose, Mouth and Throat: Endorses nasal congestion from allergies.
+• Cardiovascular: Denies chest pain or dyspnea. Endorses palpitations.
+• Respiratory: Denies shortness of breath.
+• Musculoskeletal: Denies joint pain.
+
+PHYSICAL EXAMINATION
+
+• Respiratory: Lungs are clear to auscultation bilaterally. No wheezes, rales, or rhonchi.
+• Cardiovascular: Regular rate and rhythm. Slight 2/6 systolic ejection murmur.
+• Musculoskeletal: No lower extremity edema. Edema and erythema of the right elbow. Pain to palpation of the right elbow.
+
+RESULTS
+
+Event monitor: Positive for conversion pause.
+
+Autoimmune panel: Normal. Well controlled rheumatoid arthritis.
+
+ASSESSMENT AND PLAN
+
+Andrea Roberts is a 52-year-old female with a past medical history significant for rheumatoid arthritis, atrial fibrillation, and reflux, who presents today for her annual exam. It has been a year since she was last seen.
+
+Rheumatoid arthritis.
+• Medical Reasoning: The patient has remained active and has been compliant with methotrexate once weekly. Her recent autoimmune panel was normal.
+• Medical Treatment: She will continue on methotrexate 2.5 mg once weekly. This was refilled today.
+• Specialist Referrals: If she needs a referral back to the rheumatologist, she will let me know.
+
+Atrial fibrillation.
+• Medical Reasoning: She continues to experience episodes of palpitations. Her most recent episode was about 1 week ago. She is in normal sinus rhythm today, but her recent cardiac event monitor demonstrated a conversion pause.
+• Specialist Referrals: We will refer her to cardiology for a cardiac ablation.
+
+GERD.
+• Medical Reasoning: She has been compliant with dietary modifications and denies any episodes in approximately 5 months.
+• Medical Treatment: Continue on Protonix 40 mg daily.
+• Patient Education and Counseling: She could continue with dietary modifications and avoid known dietary triggers.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+

@@ -1,0 +1,23 @@
+{
+  "encounter_id": "D2N098",
+  "phi": [
+    {"text": "jose james", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "james", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "9/29/1957", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "isabella", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "martha rivera", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "hit the gym", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercised"},
+    {"text": "lifted weights", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "done strength exercises"},
+    {"text": "hitting the gym", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"},
+    {"text": "retired", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "stepped away"},
+    {"text": "office job", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "job"},
+    {"text": "Jose James", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "James", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Jose", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "64-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "strength training", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "fitness"},
+    {"text": "Retired", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "Stopped working"},
+    {"text": "office worker", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "employee"}
+  ],
+  "medical_concepts": []
+}

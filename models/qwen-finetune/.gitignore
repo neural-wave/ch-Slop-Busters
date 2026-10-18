@@ -1,0 +1,48 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.venv-vllm/
+.venv-train/
+venv/
+.env
+
+# Claude Code local settings (per machine)
+.claude/settings.local.json
+
+# Local model checkpoints (hf download --local-dir models/<name>)
+models/
+
+# Training checkpoints (rl/sft.py, rl/ppo.py, rl/export.py)
+ckpt/
+
+# Model weights anywhere else (merged exports, adapters, quantized files)
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.bin
+
+# Console logs from ad-hoc runs
+*.log
+logs/
+
+# Run outputs (anonymized.jsonl, metrics, reports, per-decision logs with the original private strings): local only,
+# shared as archives
+runs/
+
+# Archives of run directories and datasets copied between machines
+*.tar.gz
+
+# TensorBoard event files (normally under ckpt/, also when a run writes elsewhere)
+events.out.tfevents.*
+
+# Failure log of rl/synth_gen.py (API generation of synthetic templates)
+rl/synth/gen_failures.jsonl

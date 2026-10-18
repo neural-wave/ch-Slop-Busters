@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N056",
+  "pii": [
+    {"field": "dialogue", "text": "are a farmer", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "dialogue", "text": "on the farm", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "dialogue", "text": "ten of us", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "farmer", "category": "OCCUPATION", "risk": "medium"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "farmer's lung", "category": "CODE_EVIDENCE", "why": "disease name (hypersensitivity pneumonitis), J67.9"},
+    {"field": "dialogue", "text": "hay", "category": "CODE_EVIDENCE", "why": "organic dust exposure supporting J67.9"},
+    {"field": "note", "text": "hay", "category": "CODE_EVIDENCE", "why": "organic dust exposure supporting J67.9"}
+  ]
+}

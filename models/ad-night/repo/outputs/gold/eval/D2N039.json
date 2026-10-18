@@ -1,0 +1,49 @@
+{
+  "encounter_id": "D2N039",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "virginia",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "cvs",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "main street",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "fifth street",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "football season",
+      "category": "OTHER_QI",
+      "risk": "low"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "169/74",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure reading, supports I10"
+    },
+    {
+      "field": "note",
+      "text": "2/6",
+      "category": "CLINICAL_NUMBER",
+      "why": "murmur grade, not a date"
+    }
+  ]
+}

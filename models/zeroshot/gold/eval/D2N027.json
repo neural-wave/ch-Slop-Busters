@@ -1,0 +1,796 @@
+{
+ "encounter_id": "D2N027",
+ "pii": [
+  {
+   "text": "eugene walker",
+   "field": "dialogue",
+   "category": "PATIENT_NAME",
+   "tier": "direct",
+   "comment": "patient full name"
+  },
+  {
+   "text": "mr. walker",
+   "field": "dialogue",
+   "category": "PATIENT_NAME",
+   "tier": "direct",
+   "comment": "patient surname with title"
+  },
+  {
+   "text": "4/14/1960",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "date of birth"
+  },
+  {
+   "text": "61-year-old",
+   "field": "dialogue",
+   "category": "AGE",
+   "tier": "quasi",
+   "comment": "patient age"
+  },
+  {
+   "text": "1/22/2013",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "surgery date"
+  },
+  {
+   "text": "4/10/2021",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "blood work date"
+  },
+  {
+   "text": "tyler",
+   "field": "dialogue",
+   "category": "OTHER_PERSON_NAME",
+   "tier": "direct",
+   "comment": "patient's cycling buddy"
+  },
+  {
+   "text": "september 9th , 2019",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "last stress test date"
+  },
+  {
+   "text": "dr. lewis",
+   "field": "dialogue",
+   "category": "CLINICIAN_NAME",
+   "tier": "direct",
+   "comment": "named physician"
+  },
+  {
+   "text": "hopkins",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "tier": "quasi",
+   "comment": "hospital where patient was previously followed"
+  },
+  {
+   "text": "lecture",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "tier": "quasi",
+   "comment": "patient lectures at work (lecturer/teacher)"
+  },
+  {
+   "text": "20 to 30 miles on a road bike",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "specific long-distance road cycling habit"
+  },
+  {
+   "text": "5:45 swim",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "specific recurring swim reservation routine"
+  },
+  {
+   "text": "january 15th , '21",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "first COVID-19 vaccine dose"
+  },
+  {
+   "text": "february 5th , '21",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "second COVID-19 vaccine dose"
+  },
+  {
+   "text": "dr. vincent sanchez",
+   "field": "dialogue",
+   "category": "CLINICIAN_NAME",
+   "tier": "direct",
+   "comment": "recommended cardiologist"
+  },
+  {
+   "text": "vincent sanchez",
+   "field": "dialogue",
+   "category": "CLINICIAN_NAME",
+   "tier": "direct",
+   "comment": "recommended cardiologist"
+  },
+  {
+   "text": "1/20/2013",
+   "field": "dialogue",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "surgery date (alternate)"
+  },
+  {
+   "text": "Mr. Eugene Walker",
+   "field": "note",
+   "category": "PATIENT_NAME",
+   "tier": "direct",
+   "comment": "patient full name with title"
+  },
+  {
+   "text": "Mr. Walker",
+   "field": "note",
+   "category": "PATIENT_NAME",
+   "tier": "direct",
+   "comment": "patient surname with title"
+  },
+  {
+   "text": "61-year-old",
+   "field": "note",
+   "category": "AGE",
+   "tier": "quasi",
+   "comment": "patient age"
+  },
+  {
+   "text": "rides his bike for about 20 to 30 miles",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "specific long-distance cycling habit"
+  },
+  {
+   "text": "01/22/2013",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "surgery date"
+  },
+  {
+   "text": "Dr. Lewis",
+   "field": "note",
+   "category": "CLINICIAN_NAME",
+   "tier": "direct",
+   "comment": "named physician"
+  },
+  {
+   "text": "09/09/2019",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "last stress test date"
+  },
+  {
+   "text": "01/15/2021",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "first COVID-19 vaccine dose"
+  },
+  {
+   "text": "02/05/2021",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "second COVID-19 vaccine dose"
+  },
+  {
+   "text": "04/10/2021",
+   "field": "note",
+   "category": "DATE",
+   "tier": "direct",
+   "comment": "blood work date"
+  },
+  {
+   "text": "Dr. Tyler Sanchez",
+   "field": "note",
+   "category": "CLINICIAN_NAME",
+   "tier": "direct",
+   "comment": "recommended cardiologist"
+  },
+  {
+   "text": "bicycle around 20 to 30 miles",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "specific long-distance cycling habit"
+  },
+  {
+   "text": "cycle 20 to 30 miles",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "tier": "quasi",
+   "comment": "specific long-distance cycling habit"
+  }
+ ],
+ "medical_concepts": [
+  {
+   "text": "routine follow-up with chronic medical conditions",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "aortic valve replacement",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "ascending aortic aneurysm repair",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "alkaline phosphatate- phosphatase , excuse me , was elevated to 156",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "lipid panel",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "total cholesterol of 247",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "hdl of 66",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "ldl of 166",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "triglycerides at 74",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "tsh was normal at 2.68",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "cbc was unremarkable",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "vitamin d level",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "fatigue",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "stress test",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "echocardiogram",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "pursed lips breathing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "wheezing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "little nodule on my right testicle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "epididymis",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "vasectomy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "depression",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "snore",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vitamin d3",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "50,000 units on sundays",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "clindamycin prior to dental procedures",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "covid-19 shot",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "elevated alkaline phosphatase level at 156",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "bone health",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pursed lip breathing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "exhalation is low",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pulmonary function test",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "urology",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "shingles vaccine",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "low exhalation phase",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "clear to oscillation",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "right testicle with two to three millimeters palpable nodule",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "variococele",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no hernia",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "history of the aortic aneurysm repair",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "elevated alkaline phosphatase level",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a gt",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "lung field abnormal finding",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "pfts",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "right testicular nodule",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ultrasound",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "mmr titer",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "routine follow-up of his chronic medical conditions",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "more fatigued",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "snores",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "apnea",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "aortic valve replacement and ascending aortic aneurysm repair",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "echocardiogram",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "stress test",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "pursed lips",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "wheezing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "2 to 3 mm nodule in his right testicle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "epididymis",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "vasectomy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "clindamycin prior to dental procedures",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "vitamin D3 (50,000 IU on Sundays and 2000 IU the other 6 days)",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "shingles vaccine",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "MMR titer",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "COVID-19",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pursed lip breathing noted",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "The exhalation phase is low",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lungs are clear to auscultation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No hernia noted",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Left testicle normal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "alkaline phosphatase was elevated at 156",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "total cholesterol of 247",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "HDL 66",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "LDL 166",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "triglycerides 74",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "TSH was normal at 2.68",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "CBC was unremarkable",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "vitamin D level",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "History of aortic aneurysm repair",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Elevated alkaline phosphate level",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lung field abnormal finding on examination",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right testicular nodule",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "CMP showed elevation at 156 IU/L",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "gamma GT",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "pulmonary function testing",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "urology",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "ultrasound",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "bone health",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "most recent cmd showed elevation at 156",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "palpable nodule",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "purse his lips while breathing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Referral placed to urology",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tyler",
+   "field": "dialogue",
+   "is_pii": true,
+   "comment": "name of patient's friend/cycling buddy"
+  },
+  {
+   "text": "Tyler",
+   "field": "note",
+   "is_pii": true,
+   "comment": "appears as first name of recommended cardiologist in note"
+  },
+  {
+   "text": "hopkins",
+   "field": "dialogue",
+   "is_pii": true,
+   "comment": "hospital institution (Johns Hopkins), not a disease eponym"
+  },
+  {
+   "text": "lecture",
+   "field": "dialogue",
+   "is_pii": true,
+   "comment": "indicates occupation (lecturer)"
+  },
+  {
+   "text": "cmv",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "likely mis-transcription of CMP lab panel, medical"
+  }
+ ]
+}

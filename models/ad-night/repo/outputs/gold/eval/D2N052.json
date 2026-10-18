@@ -1,0 +1,11 @@
+{
+  "encounter_id": "D2N052",
+  "pii": [
+    {"field": "dialogue", "text": "anna", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "easter", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Anna", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Diaz", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "29-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": []
+}

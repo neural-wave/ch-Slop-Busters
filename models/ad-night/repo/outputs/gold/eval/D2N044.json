@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N044",
+  "pii": [
+    {"field": "dialogue", "text": "julie", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "work from home", "category": "OCCUPATION", "risk": "low"},
+    {"field": "dialogue", "text": "i am a biker", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "works from home", "category": "OCCUPATION", "risk": "low"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "lachman", "category": "EPONYM", "why": "knee ligament test"},
+    {"field": "dialogue", "text": "mcmurray test", "category": "EPONYM", "why": "meniscus test"},
+    {"field": "dialogue", "text": "achilles reflex", "category": "EPONYM", "why": "reflex, not a person"},
+    {"field": "note", "text": "Lachman", "category": "EPONYM", "why": "knee ligament test"},
+    {"field": "note", "text": "McMurray test", "category": "EPONYM", "why": "meniscus test"},
+    {"field": "note", "text": "Achilles", "category": "EPONYM", "why": "reflex, not a person"},
+    {"field": "note", "text": "120/70", "category": "CLINICAL_NUMBER", "why": "blood pressure"},
+    {"field": "note", "text": "3/5", "category": "CLINICAL_NUMBER", "why": "muscle strength grade"},
+    {"field": "note", "text": "5/5", "category": "CLINICAL_NUMBER", "why": "muscle strength grade"}
+  ]
+}

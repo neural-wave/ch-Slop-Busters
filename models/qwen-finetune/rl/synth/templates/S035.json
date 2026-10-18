@@ -1,0 +1,834 @@
+{
+ "id": "S035",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S61.442A",
+   "description": "Puncture wound with foreign body of left hand, initial encounter"
+  },
+  {
+   "code": "W29.4XXA",
+   "description": "Contact with nail gun, initial encounter"
+  },
+  {
+   "code": "Y92.61",
+   "description": "Building [any] under construction as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.H3",
+   "description": "Activity, building and construction"
+  },
+  {
+   "code": "Y99.0",
+   "description": "Civilian activity done for income or pay"
+  }
+ ],
+ "dialogue": "[doctor] {PATIENT_FIRST} ? hi , i'm doctor {DOCTOR_LAST} . so i see you came in with a nail in your hand .\n[patient] yep . still in there .\n[doctor] i can see that . okay , let's hear the story .\n[patient] so i do framing for {ORG} . we're putting up a new house out in {CITY} , it's just studs and plywood right now . this morning i was nailing off a wall section with the nail gun , and i was holding the stud with my left hand , kind of close to where i was shooting . the nail hit a knot or something , and it deflected , came out the side of the board and went right into my hand .\n[doctor] okay . so it came through the wood first and then into your hand ?\n[patient] yeah . it kind of curved out of the side of the stud .\n[doctor] what kind of nail gun was it ?\n[patient] a framing nailer , pneumatic . three and a quarter inch nails .\n[doctor] okay . and where exactly did it go in ?\n[patient] right here , the web between my thumb and my pointer finger , kind of on the palm side . you can see the head of it sticking out .\n[doctor] okay , i see it . did anyone try to pull it out ?\n[patient] my foreman {OTHER_FIRST} wanted to , but the safety guy said do n't touch it , so they cut off the strip and wrapped it and drove me here .\n[doctor] that was the right call . good . what time did this happen ?\n[patient] about nine thirty .\n[doctor] okay . how's the pain ?\n[patient] honestly it's like a six . it's more weird than painful . it throbs .\n[doctor] any numbness or tingling in your fingers ?\n[patient] my thumb feels a little bit tingly , but i can feel everything .\n[doctor] okay . can you move your fingers ?\n[patient] yeah , but moving the thumb hurts .\n[doctor] okay , that makes sense . were you wearing gloves ?\n[patient] no , not for nailing .\n[doctor] okay . any medical problems ?\n[patient] no , nothing .\n[doctor] medications ?\n[patient] nope .\n[doctor] allergies ?\n[patient] penicillin . i get hives .\n[doctor] okay , good to know . and your last tetanus shot ?\n[patient] no idea . a long time .\n[doctor] okay . let me take a look . so on exam , there's a nail entering the palmar aspect of the left first web space , with about one centimeter of the shank and the head protruding . there's no active bleeding . there's mild swelling around it . your capillary refill is less than two seconds in all fingers . sensation is intact in all fingers , including the thumb . you can flex and extend all your fingers , and thumb opposition is intact though painful . i do n't see any signs of tendon injury .\n[patient] okay .\n[doctor] we got x-rays of the left hand . the nail goes in about four centimeters , through the soft tissue of the first web space . it's sitting between the first and second metacarpals , and it does n't go into the bone . no fracture . but this one has a barb on it , so i do n't want to just yank it out backwards .\n[patient] okay , so how do you get it out ?\n[doctor] i'm going to numb the area really well with a nerve block , then make a small incision along the nail so it comes out cleanly without tearing more tissue . then we'll irrigate it and leave it open to drain . we usually do n't stitch puncture wounds like this because of the infection risk .\n[patient] okay .\n[doctor] because this is a puncture wound with a foreign body , and those nails are not clean , i'm going to start you on an antibiotic . since you're allergic to penicillin , we'll use clindamycin , three hundred milligrams four times a day for five days . and you'll get a tetanus booster today .\n[patient] okay .\n[doctor] keep the hand elevated , change the dressing daily , and if you see redness spreading up the hand , pus , fever , or you ca n't move your thumb , come back right away . deep hand infections can get serious fast .\n[patient] got it .\n[doctor] work-wise , no use of the left hand on the job site for a week . no gripping , no power tools . i'll do the workers' comp paperwork since this happened at work on a construction site .\n[patient] okay . my foreman's gonna love that .\n[doctor] safety first . and wear gloves and keep that hand out of the line of fire next time .\n[patient] yeah , lesson learned .\n[doctor] i want to recheck it in two to three days . okay ?\n[patient] sounds good .",
+ "note": "CHIEF COMPLAINT\n\nNail gun injury to the left hand.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with no significant past medical history who presents with a nail gun injury to the left hand sustained at work earlier today.\n\nThe patient works in framing for {ORG}. He was on a residential construction site where a house is under construction in {CITY}. At approximately 9:30 AM, while nailing a wall section with a pneumatic framing nailer, he was stabilizing the stud with his left hand. A 3.25 inch nail deflected off a knot, exited the side of the stud, and penetrated the palmar aspect of his left first web space. The nail was left in place and the collation strip was cut. He reports throbbing pain rated 6/10 and mild tingling of the thumb. No gloves were worn. Allergy to penicillin (hives). Tetanus status unknown.\n\nPHYSICAL EXAM\n\nLeft hand: Nail entering the palmar first web space with approximately 1 cm of shank and head protruding. No active bleeding. Mild surrounding swelling. Capillary refill less than 2 seconds in all digits. Sensation intact in all digits. Full flexion and extension of all digits. Thumb opposition intact but painful. No signs of tendon injury.\n\nRESULTS\n\nX-ray of the left hand: Retained nail approximately 4 cm in length within the soft tissues of the first web space between the first and second metacarpals. Barbed tip. No osseous involvement. No fracture.\n\nPROCEDURE\n\nMedian and radial nerve block. Small incision along the nail tract; nail removed intact. Wound irrigated and left open to heal by secondary intention. Tdap administered.\n\nASSESSMENT AND PLAN\n\n1. Puncture wound with foreign body of the left hand.\n• Medical Reasoning: Penetrating nail gun injury while framing a house on a construction site at work. Retained barbed nail removed without complication. No bony or tendon involvement.\n• Medical Treatment: Clindamycin 300 mg four times daily for 5 days given penicillin allergy. Elevation, daily dressing changes.\n• Patient Education and Counseling: Return for spreading erythema, purulent drainage, fever, or loss of thumb motion.\n• Work: No use of the left hand on the job site for 1 week. Workers' compensation paperwork completed.\n\nPatient Agreements: The patient understands and agrees with the recommended medical treatment plan.\n\nRecheck in 2 to 3 days.",
+ "medical_concepts": [
+  {
+   "text": "a nail in your hand",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "we're putting up a new house",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's just studs and plywood right now",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "nailing off a wall section with the nail gun",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "holding the stud with my left hand",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the nail hit a knot or something , and it deflected",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "went right into my hand",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "framing nailer , pneumatic",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "three and a quarter inch nails",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the web between my thumb and my pointer finger",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "palm side",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "the head of it sticking out",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's like a six",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "it throbs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my thumb feels a little bit tingly",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "moving the thumb hurts",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "gloves",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "penicillin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "hives",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus shot",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a nail entering the palmar aspect of the left first web space",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "one centimeter of the shank and the head protruding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no active bleeding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "capillary refill is less than two seconds",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is intact in all fingers",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "flex and extend all your fingers",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "thumb opposition is intact though painful",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tendon injury",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays of the left hand",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the nail goes in about four centimeters , through the soft tissue of the first web space",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "between the first and second metacarpals",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "it does n't go into the bone",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no fracture",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a barb on it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "nerve block",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "small incision along the nail",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "irrigate it",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "leave it open to drain",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "puncture wounds",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "infection risk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "puncture wound with a foreign body",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "antibiotic",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "allergic to penicillin",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "clindamycin , three hundred milligrams four times a day for five days",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus booster",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "elevated",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "change the dressing daily",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "redness spreading up the hand",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pus",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "deep hand infections",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "on the job site",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "power tools",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "workers' comp",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "this happened at work on a construction site",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Nail gun injury to the left hand",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "nail gun injury to the left hand sustained at work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "residential construction site where a house is under construction",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "while nailing a wall section with a pneumatic framing nailer",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "stabilizing the stud with his left hand",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "A 3.25 inch nail deflected off a knot",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "penetrated the palmar aspect of his left first web space",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "collation strip",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "throbbing pain rated 6/10",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild tingling of the thumb",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "No gloves were worn",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Allergy to penicillin (hives)",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tetanus status unknown",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Left hand",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Nail entering the palmar first web space",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "1 cm of shank and head protruding",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No active bleeding",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild surrounding swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Capillary refill less than 2 seconds",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact in all digits",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Full flexion and extension of all digits",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Thumb opposition intact but painful",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No signs of tendon injury",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-ray of the left hand",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Retained nail approximately 4 cm in length within the soft tissues of the first web space",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "first and second metacarpals",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Barbed tip",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No osseous involvement",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Median and radial nerve block",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Small incision along the nail tract",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "nail removed intact",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Wound irrigated",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "left open to heal by secondary intention",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tdap",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Puncture wound with foreign body of the left hand",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Penetrating nail gun injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "while framing a house on a construction site at work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Retained barbed nail",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No bony or tendon involvement",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Clindamycin 300 mg four times daily for 5 days",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "penicillin allergy",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Elevation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "daily dressing changes",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "spreading erythema",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "purulent drainage",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of thumb motion",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "on the job site",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Workers' compensation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "my foreman",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic workplace role; his name is the {OTHER_FIRST} slot"
+  },
+  {
+   "text": "the safety guy",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic role, not a named person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S61.442A",
+   "spans": [
+    {
+     "text": "puncture wound with a foreign body",
+     "field": "dialogue"
+    },
+    {
+     "text": "a nail entering the palmar aspect of the left first web space",
+     "field": "dialogue"
+    },
+    {
+     "text": "the nail goes in about four centimeters , through the soft tissue of the first web space",
+     "field": "dialogue"
+    },
+    {
+     "text": "x-rays of the left hand",
+     "field": "dialogue"
+    },
+    {
+     "text": "Puncture wound with foreign body of the left hand",
+     "field": "note"
+    },
+    {
+     "text": "Retained nail approximately 4 cm in length within the soft tissues of the first web space",
+     "field": "note"
+    },
+    {
+     "text": "Left hand",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W29.4XXA",
+   "spans": [
+    {
+     "text": "nailing off a wall section with the nail gun",
+     "field": "dialogue"
+    },
+    {
+     "text": "framing nailer , pneumatic",
+     "field": "dialogue"
+    },
+    {
+     "text": "Nail gun injury to the left hand",
+     "field": "note"
+    },
+    {
+     "text": "Penetrating nail gun injury",
+     "field": "note"
+    },
+    {
+     "text": "while nailing a wall section with a pneumatic framing nailer",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.61",
+   "spans": [
+    {
+     "text": "we're putting up a new house",
+     "field": "dialogue"
+    },
+    {
+     "text": "it's just studs and plywood right now",
+     "field": "dialogue"
+    },
+    {
+     "text": "this happened at work on a construction site",
+     "field": "dialogue"
+    },
+    {
+     "text": "residential construction site where a house is under construction",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.H3",
+   "spans": [
+    {
+     "text": "nailing off a wall section with the nail gun",
+     "field": "dialogue"
+    },
+    {
+     "text": "we're putting up a new house",
+     "field": "dialogue"
+    },
+    {
+     "text": "while framing a house on a construction site at work",
+     "field": "note"
+    },
+    {
+     "text": "while nailing a wall section with a pneumatic framing nailer",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.0",
+   "spans": [
+    {
+     "text": "this happened at work on a construction site",
+     "field": "dialogue"
+    },
+    {
+     "text": "workers' comp",
+     "field": "dialogue"
+    },
+    {
+     "text": "on the job site",
+     "field": "dialogue"
+    },
+    {
+     "text": "nail gun injury to the left hand sustained at work",
+     "field": "note"
+    },
+    {
+     "text": "Workers' compensation",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i do framing",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's trade (framer); building-and-construction activity is supported by the nailing/house spans"
+  },
+  {
+   "text": "works in framing",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient's trade"
+  }
+ ]
+}

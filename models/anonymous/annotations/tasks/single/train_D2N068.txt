@@ -1,0 +1,131 @@
+########## ENCOUNTER D2N068
+=== FIELD: dialogue
+[doctor] hi , brian . how are you ?
+[patient] hi , good to see you .
+[doctor] it's good to see you too . so , i know the nurse told you a little bit about dax .
+[patient] mm-hmm .
+[doctor] i'd like to tell dax about you , okay ?
+[patient] sure .
+[doctor] so , brian is a 58 year old male with a past medical history significant for congestive heart failure and hypertension , who presents today for follow-up of his chronic problems . so , brian , it's been a little while i've seen you .
+[patient] mm-hmm .
+[doctor] whats , what's going on ?
+[patient] i , i just feel out of sorts lately . i do n't know if it's the change in the seasons or if we're just doing a lot of projects around the house and , and some , some construction on our own . i'm just feeling out of it . lack of , uh , energy . i'm just so tired and fatigued , and i feel kinda ... i feel lightheaded every once in a while .
+[doctor] okay . all right . um , how long has that been going on for ?
+[patient] uh , probably since labor day , so about five weeks or so .
+[doctor] okay . and , have you noticed any , like , symptoms of weight gain , like , like swollen legs , or , you know , your belly feels bloated and things like that ?
+[patient] i feel , i feel bloated every once in a while .
+[doctor] okay . all right . um , and , are you taking your , your medications ?
+[patient] uh , yes , i am .
+[doctor] okay . and , how about your diet ? are you watching your diet ?
+[patient] uh , it's been a little bit of a struggle . we began construction on our kitchen over labor day weekend , and it was ... hard to cook or prepare meals so we ate out a lot, and not always the best food out. it , it , it kind of reeked havoc , uh , so it's been maybe off a little bit .
+[doctor] okay . all right . and , how about , you know , other symptoms , like , have you had a fever or chills ?
+[patient] no .
+[doctor] okay , and any problems breathing ? do you feel short of breath ?
+[patient] uh , just when i'm doing doing the projects . again , not even lifting anything really heavy , it's just that if i'm ex- exerting any energy , i , i kinda feel it at that point .
+[doctor] okay . do you have any chest pain ?
+[patient] slight cramps . that seems to go away after about , maybe about an hour or so after i first feel it .
+[doctor] okay , and how about a cough ?
+[patient] a , a slight cough , and again , i'm not sure if it's just the change of seasons and i'm getting a cold .
+[doctor] mm-hmm . okay . all right . well , you know , for the most part , how , you know , before all of this-
+[patient] mm-hmm .
+[doctor] . how were you doing with your heart failure ? i know that we've kinda talked about you being able to watch your healthy food intake and that's been kind of a struggle in the past .
+[patient] i , i , i've actually been pretty good about that ever since . the , the , the last year , it's been a little chaotic , but i wanted to make sure i stayed on top of that .
+[doctor] okay . all right . are you excited for halloween ?
+[patient] uh , ca n't wait .
+[doctor] okay .
+[patient] our home renovations should be complete by then
+[doctor] all right , yeah , right .
+[patient] yeah .
+[doctor] and , so , lastly , for your high blood pressure , how are you doing with that ? have , are , did you buy the blood pressure cuff like i asked ?
+[patient] yeah , i , i did , and we do mon- , i , i monitor it regularly . my wife makes sure i stay on top of that , but it's been pretty good .
+[doctor] okay . all right . well , i know you did the review of systems sheet when you checked in , and you were endorsing this fatigue-
+[patient] mm-hmm .
+[doctor] . and a little dizziness and we just talked a lot about a lot of other symptoms .
+[patient] mm-hmm .
+[doctor] any other symptoms i might be missing ? nausea or vomiting , diarrhea ?
+[patient] no .
+[doctor] anything like that ?
+[patient] no .
+[doctor] okay . all right . well , i just want to go ahead and do a quick physical exam .
+[patient] mm-hmm .
+[doctor] hey , dragon ? show me the vital signs . so , looking at your vital signs here in the office , everything looks good . you know , your blood pressure and your heart rate and your oxygenation all look really good .
+[patient] mm-hmm .
+[doctor] so , i'm gon na just take a listen to a few things and check some things out , and i'll let you know what i find , okay ?
+[patient] perfect .
+[doctor] okay . so , on your physical examination , you know , i do appreciate some jugular venous distention to-
+[patient] mm-hmm .
+[doctor] to about eight centimeters . on your heart exam , i do appreciate a three out of six systolic ejection murmur , which we've heard in the past . and , on your lung exam , i do appreciate some fine crackles at the bases bilaterally , and your lower extremities have , you know , 1+ pitting edema . so , what does all that mean ? that means i think you're retaining a little bit of fluid .
+[patient] mm-hmm .
+[doctor] okay ? i wan na just go ahead and look at some of your results , okay ?
+[patient] sure .
+[doctor] hey , dragon ? show me the chest x-ray . so , looking here at the results of your chest x-ray , it does look like you have a little bit of fluid in your lungs there , and that can be just from , um , your heart failure , okay ? hey , dragon ? show me the echocardiogram . so , this is the echocardiogram that we did about four months ago , and this shows that the pumping function of your heart is a little bit reduced at 45 % , and it also shows that leaky valve , the mitral regurgitation that , that you have , okay ? um , so , let me just go over and talk about , a little bit , my assessment and my plan for you .
+[patient] mm-hmm .
+[doctor] okay ? so , for your first problem , your congestive heart failure , i think you're retaining fluid , and i wan na go ahead and increase your lasix to 80 mg once a day .
+[patient] mm-hmm .
+[doctor] i want you to weigh yourself every day . i want you to call me if you're gaining more weight .
+[patient] mm-hmm .
+[doctor] and , i certainly want you to call me if you have any other symptoms of shortness of breath , and i wan na go ahead and order another echocardiogram , okay ?
+[patient] sure .
+[doctor] hey , dragon ? order an echocardiogram .
+lastly , for your high blood pressure , it looks like you're managing it well at this time , okay ? so , i wan na go ahead and continue with the lisinopril 20 mg a day . i want you to continue to record your blood pressures at home , and report them to me in the patient portal if you see they're getting elevated , okay ?
+[patient] mm-hmm .
+[doctor] does that sound like a plan ?
+[patient] that sounds fine .
+[doctor] okay . um , i'm gon na be in touch with you after we get your test results , and we'll go from there , okay ?
+[patient] sure .
+[doctor] all right . hey , dragon , finalize the note .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow-up of chronic problems.
+
+HISTORY OF PRESENT ILLNESS
+
+Brian White is a 58-year-old male with a past medical history significant for congestive heart failure and hypertension, who presents today for follow-up of his chronic problems.
+
+The patient states he has been feeling out of sorts lately. He is not sure if it is due to the change in the seasons or due to performing lots of projects and some construction on his home. He reports fatigue and lightheadedness. This has been going on for about 5 weeks. While exerting energy, he has experienced some shortness of breath and chest cramps. The patient also notes a slight cough, but he is not sure if it is just the change in seasons.
+
+He feels bloated every once in a while. His diet has been a little bit of a struggle. They had construction on their kitchen begin over Labor Day weekend, and have been eating less healthy food as a result.
+
+Regarding his heart failure, he has been pretty good with his salt intake. He has been pretty good about his diet since the last year and is staying on top of that as much as possible. The patient has continued to utilize Lasix daily.
+
+For his hypertension, this has been well controlled with lisinopril 20 mg a day. He has continued to monitor his blood pressure regularly.
+
+The patient did the review of systems sheet when he checked in. He denies weight gain, swelling in the lower extremities, fevers, chills, dizziness, nausea, vomiting, and diarrhea.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: Endorses fatigue. Denies fevers, chills, or weight loss.
+• Cardiovascular: Endorses chest pain or dyspnea on exertion.
+• Respiratory: Endorses cough and shortness of breath.
+• Gastrointestinal: Endorses bloating.
+
+PHYSICAL EXAMINATION
+
+• Neck: JVD 8 cm.
+• Respiratory: Rales bilateral bases.
+• Cardiovascular: 3/6 systolic ejection murmur.
+• Musculoskeletal: 1+ pitting edema bilateral lower extremities.
+
+RESULTS
+
+X-ray of the chest demonstrates a mild amount of fluid in the lungs.
+
+Echocardiogram demonstrates decreased ejection fraction of 45% and mild mitral regurgitation.
+
+ASSESSMENT AND PLAN
+
+Brian White is a 58-year-old male with a past medical history significant for congestive heart failure and hypertension, who presents today for follow up of his chronic problems.
+
+Congestive heart failure.
+• Medical Reasoning: The patient reports increased fatigue, dizziness, and chest discomfort on exertion. He also exhibits some jugular venous distention, lung base crackles, and lower extremity edema on exam today. He has been compliant with his current medications but admits to dietary indiscretion lately. His recent echocardiogram demonstrated a reduced ejection fraction of 45%, as well as mitral regurgitation.
+• Additional Testing: We will order a repeat echocardiogram.
+• Medical Treatment: Increase Lasix to 80 mg daily.
+• Patient Education and Counseling: I advised the patient to monitor and record his daily weight and report those to me via the patient portal. He will contact me should he continue to experience any dyspnea.
+
+Hypertension.
+• Medical Reasoning: This is well controlled based on home monitoring.
+• Medical Treatment: Continue lisinopril 20 mg daily.
+• Patient Education and Counseling: I advised him to monitor and record his blood pressures at home and report these to me via the patient portal.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.

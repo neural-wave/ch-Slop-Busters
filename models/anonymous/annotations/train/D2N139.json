@@ -1,0 +1,19 @@
+{
+  "encounter_id": "D2N139",
+  "phi": [
+    {"text": "jordan roberts", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "roberts", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "3/2/1972", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "49 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "march 1st , 2021", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "march", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "treadmill", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise machine"},
+    {"text": "Jordan Roberts", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Roberts", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "49-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "March", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "03/01/2021", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "treadmill", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercise machine"}
+  ],
+  "medical_concepts": []
+}

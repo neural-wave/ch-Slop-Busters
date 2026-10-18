@@ -1,0 +1,11 @@
+{
+  "encounter_id": "D2N137",
+  "phi": [
+    {"text": "christine", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "63-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "a computer screen all day", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "screens"},
+    {"text": "Christine Flores", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "63-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

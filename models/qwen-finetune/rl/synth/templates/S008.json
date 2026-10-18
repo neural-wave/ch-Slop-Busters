@@ -1,0 +1,845 @@
+{
+ "id": "S008",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S72.142A",
+   "description": "Displaced intertrochanteric fracture of left femur, initial encounter for closed fracture"
+  },
+  {
+   "code": "W18.2XXA",
+   "description": "Fall in (into) shower or empty bathtub, initial encounter"
+  },
+  {
+   "code": "Y92.59",
+   "description": "Other trade areas as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.E1",
+   "description": "Activity, personal bathing and showering"
+  },
+  {
+   "code": "E11.9",
+   "description": "Type 2 diabetes mellitus without complications"
+  }
+ ],
+ "dialogue": "[doctor] hi mrs {PATIENT_LAST} i'm doctor {DOCTOR_LAST} from orthopedics the emergency room asked me to come see you about your hip\n[patient] oh hello yes thank you for coming\n[doctor] of course and who do we have here\n[patient] this is my granddaughter {OTHER_FIRST} i'm in town from {CITY} for her wedding on {DATE_SPOKEN}\n[doctor] oh congratulations\n[patient] thank you well we'll see if grandma makes it to the wedding now\n[doctor] we're going to do our best so can you tell me what happened\n[patient] so we're staying at a hotel downtown and this morning i was taking a shower and the tub in the hotel bathroom is one of those slippery ones and there was no mat and i reached for the shampoo and my feet slipped and i fell in the shower and landed right on my left hip on the edge of the tub\n[doctor] okay did you hit your head\n[patient] no i caught myself with my arm on the shower curtain bar but my hip took the whole fall\n[doctor] okay and did you get dizzy or lightheaded or black out before you fell\n[patient] no nothing like that it was just slippery i felt fine\n[doctor] okay and were you able to get up after\n[patient] no i could n't get up at all {OTHER_FIRST} heard me yelling and she called the front desk and they called the ambulance\n[doctor] okay where's the pain now\n[patient] it's in my left hip and kind of down into my groin and it hurts terribly when anybody moves my leg\n[doctor] okay on a scale of zero to ten\n[patient] about a nine when they move me\n[doctor] okay any pain anywhere else your wrist your back your neck\n[patient] my right wrist is a little sore but it's not bad\n[doctor] okay and before this were you walking on your own\n[patient] yes i walk every day i do n't use a cane or anything i still do my garden\n[doctor] good now tell me about your medical problems i see you have diabetes\n[patient] yes type two i take metformin five hundred milligrams twice a day\n[doctor] and how's your sugar been\n[patient] pretty good my last a1c was six point eight my doctor at home was happy with it\n[doctor] okay any numbness in your feet from the diabetes or any kidney problems\n[patient] no my feet are fine\n[doctor] okay and any blood thinners\n[patient] no just a baby aspirin\n[doctor] okay any problems with your heart or lungs\n[patient] no\n[doctor] any previous fractures\n[patient] no i've never broken anything\n[doctor] okay and what did you do for work before you retired\n[patient] i was a mail carrier for thirty one years so i've done a lot of walking\n[doctor] that's great alright let me take a look at you so i'm looking at your left leg it's shortened compared to the right and it's rotated outward does it hurt when i gently roll the leg\n[patient] oh yes that hurts\n[doctor] okay pain with log roll of the left hip there's some bruising starting on the outside of your hip can you wiggle your toes for me\n[patient] yes\n[doctor] good push down with your foot like a gas pedal and pull up good your pulses in the foot are good and you can feel me touching your foot\n[patient] yes\n[doctor] okay and let me look at your right wrist there's mild tenderness but full range of motion and no swelling\n[doctor] okay so they did x-rays of your hip and pelvis down in the er and the x-ray shows a fracture of the left hip specifically it's what we call an intertrochanteric fracture which is a break just below the ball of the hip joint and it is displaced so the pieces are out of place the x-ray of your wrist did n't show a fracture\n[patient] oh dear so what happens now\n[doctor] so for this kind of hip fracture the best treatment is surgery we would put a rod with a screw up into the ball of the hip to hold it together it's called an intramedullary nail and the good news is that it lets you get up and walk on it pretty much right away usually the day after surgery\n[patient] and when would you do that\n[doctor] we'd like to do it within the next twenty four hours ideally tomorrow morning\n[patient] okay\n[doctor] before surgery we're going to get some blood work an ekg and a chest x-ray and we'll hold your metformin and the aspirin while you're in the hospital we'll check your blood sugar before meals and at bedtime and cover you with insulin as needed\n[patient] okay\n[doctor] for pain we'll do a nerve block in your hip area which helps a lot and you'll have pain medicine as you need it\n[patient] thank you\n[doctor] after surgery you'll work with physical therapy and we'll also check your bone density and vitamin d since you broke your hip from a fall in the shower\n[patient] that makes sense\n[doctor] and {OTHER_FIRST} we'll do everything we can to get grandma to the wedding even if she's in a wheelchair\n[patient] that's all i want",
+ "note": "CHIEF COMPLAINT\n\nLeft hip pain after a fall in the shower.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with a history of type 2 diabetes mellitus who presents to the emergency department after a fall. She is visiting from out of town and is staying at a hotel. This morning, while showering in the hotel bathroom, she slipped in the bathtub and fell in the shower, landing directly on her left hip against the edge of the tub. She denies head strike, loss of consciousness, or prodromal dizziness. She was unable to get up after the fall. She reports severe left hip and groin pain, 9/10 with movement, and mild right wrist soreness.\n\nAt baseline, she ambulates independently without an assistive device. No prior fractures.\n\nHer diabetes is managed with metformin 500 mg twice daily. Most recent hemoglobin A1c was 6.8%. She denies peripheral neuropathy or kidney disease. She takes aspirin 81 mg daily and no anticoagulants.\n\nSOCIAL HISTORY\n\nRetired mail carrier. Lives independently.\n\nPHYSICAL EXAM\n\nLeft Lower Extremity: Shortened and externally rotated. Pain with log roll of the left hip. Early ecchymosis over the lateral hip. Toe motion and ankle plantarflexion and dorsiflexion intact. Dorsalis pedis and posterior tibial pulses palpable. Sensation intact.\nRight Wrist: Mild tenderness. Full range of motion. No swelling.\n\nRESULTS\n\nX-ray of the left hip and pelvis: Displaced intertrochanteric fracture of the left femur.\n\nX-ray of the right wrist: No fracture.\n\nASSESSMENT AND PLAN\n\n1. Closed displaced intertrochanteric fracture of the left femur.\n- Admit to orthopedics. Plan for intramedullary nail fixation within 24 hours.\n- Preoperative labs, ECG, and chest x-ray.\n- Fascia iliaca nerve block for pain control; analgesics as needed.\n- Hold aspirin.\n- Postoperative weight bearing as tolerated and physical therapy.\n- Bone density and vitamin D evaluation.\n\n2. Type 2 diabetes mellitus.\n- Well controlled with A1c 6.8%.\n- Hold metformin while inpatient. Fingerstick glucose before meals and at bedtime with sliding scale insulin.\n\n3. Right wrist contusion.\n- Symptomatic care.\n",
+ "medical_concepts": [
+  {
+   "text": "hip",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "staying at a hotel",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "taking a shower",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hotel bathroom",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my feet slipped",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell in the shower",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landed right on my left hip",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dizzy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lightheaded",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "black out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "could n't get up at all",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "left hip",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "groin",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "hurts terribly when anybody moves my leg",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "right wrist is a little sore",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "cane",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "diabetes",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "type two",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin five hundred milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "sugar",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "a1c",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness in your feet",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "kidney problems",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood thinners",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "baby aspirin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "previous fractures",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "left leg",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "shortened compared to the right",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "rotated outward",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain with log roll of the left hip",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bruising",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pulses in the foot are good",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild tenderness but full range of motion and no swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays of your hip and pelvis",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "fracture of the left hip",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "intertrochanteric fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "displaced",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "x-ray of your wrist",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "hip fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "rod with a screw",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "intramedullary nail",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood work",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "ekg",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "metformin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "aspirin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood sugar",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "insulin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "nerve block",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "bone density",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "vitamin d",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "fall in the shower",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "wheelchair",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Left hip pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fall in the shower",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "type 2 diabetes mellitus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "hotel",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "showering in the hotel bathroom",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "slipped in the bathtub",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell in the shower",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landing directly on her left hip",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "head strike",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "prodromal dizziness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "unable to get up",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "severe left hip and groin pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild right wrist soreness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "assistive device",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "prior fractures",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "diabetes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin 500 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "hemoglobin A1c was 6.8%",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "peripheral neuropathy",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "kidney disease",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "aspirin 81 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "anticoagulants",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Left Lower Extremity",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Shortened and externally rotated",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Pain with log roll of the left hip",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Early ecchymosis over the lateral hip",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Dorsalis pedis and posterior tibial pulses palpable",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right Wrist",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-ray of the left hip and pelvis",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Displaced intertrochanteric fracture of the left femur",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "X-ray of the right wrist",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Closed displaced intertrochanteric fracture of the left femur",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "intramedullary nail fixation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Preoperative labs",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "ECG",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest x-ray",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Fascia iliaca nerve block",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "analgesics",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hold aspirin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "weight bearing as tolerated",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Bone density",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "vitamin D",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Type 2 diabetes mellitus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Well controlled with A1c 6.8%",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hold metformin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Fingerstick glucose",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "sliding scale insulin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right wrist contusion",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [],
+ "evidence": [
+  {
+   "code": "S72.142A",
+   "spans": [
+    {
+     "text": "fracture of the left hip",
+     "field": "dialogue"
+    },
+    {
+     "text": "intertrochanteric fracture",
+     "field": "dialogue"
+    },
+    {
+     "text": "displaced",
+     "field": "dialogue"
+    },
+    {
+     "text": "shortened compared to the right",
+     "field": "dialogue"
+    },
+    {
+     "text": "rotated outward",
+     "field": "dialogue"
+    },
+    {
+     "text": "x-rays of your hip and pelvis",
+     "field": "dialogue"
+    },
+    {
+     "text": "Closed displaced intertrochanteric fracture of the left femur",
+     "field": "note"
+    },
+    {
+     "text": "Displaced intertrochanteric fracture of the left femur",
+     "field": "note"
+    },
+    {
+     "text": "Shortened and externally rotated",
+     "field": "note"
+    },
+    {
+     "text": "X-ray of the left hip and pelvis",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W18.2XXA",
+   "spans": [
+    {
+     "text": "fell in the shower",
+     "field": "dialogue"
+    },
+    {
+     "text": "my feet slipped",
+     "field": "dialogue"
+    },
+    {
+     "text": "fall in the shower",
+     "field": "dialogue"
+    },
+    {
+     "text": "fall in the shower",
+     "field": "note"
+    },
+    {
+     "text": "slipped in the bathtub",
+     "field": "note"
+    },
+    {
+     "text": "fell in the shower",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.59",
+   "spans": [
+    {
+     "text": "staying at a hotel",
+     "field": "dialogue"
+    },
+    {
+     "text": "hotel bathroom",
+     "field": "dialogue"
+    },
+    {
+     "text": "hotel",
+     "field": "note"
+    },
+    {
+     "text": "showering in the hotel bathroom",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.E1",
+   "spans": [
+    {
+     "text": "taking a shower",
+     "field": "dialogue"
+    },
+    {
+     "text": "showering in the hotel bathroom",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E11.9",
+   "spans": [
+    {
+     "text": "diabetes",
+     "field": "dialogue"
+    },
+    {
+     "text": "type two",
+     "field": "dialogue"
+    },
+    {
+     "text": "metformin five hundred milligrams twice a day",
+     "field": "dialogue"
+    },
+    {
+     "text": "a1c",
+     "field": "dialogue"
+    },
+    {
+     "text": "type 2 diabetes mellitus",
+     "field": "note"
+    },
+    {
+     "text": "Type 2 diabetes mellitus",
+     "field": "note"
+    },
+    {
+     "text": "Well controlled with A1c 6.8%",
+     "field": "note"
+    },
+    {
+     "text": "peripheral neuropathy",
+     "field": "note"
+    },
+    {
+     "text": "kidney disease",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "mail carrier for thirty one years",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "former occupation with tenure"
+  },
+  {
+   "text": "Retired mail carrier",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "former occupation"
+  },
+  {
+   "text": "for her wedding",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "granddaughter's wedding, life event"
+  }
+ ]
+}

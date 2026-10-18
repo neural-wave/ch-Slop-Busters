@@ -1,0 +1,42 @@
+{
+  "encounter_id": "SYN021",
+  "pii": [
+    {"field": "dialogue", "text": "Riverbend Health", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "dialogue", "text": "Colleen", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "Denise", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "Albright", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "Ray", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "Raymond", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "He's 61", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "the fourteenth of June, 1965", "category": "DOB", "risk": "high"},
+    {"field": "dialogue", "text": "2287 Sycamore Ridge Drive", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "Bellwether", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "Ohio 45822", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "419-555-0163", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "Riverbend Health", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "07/19/2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Denise", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Albright", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "419-555-0163", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "Raymond", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "61 y/o", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "06/14/1965", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "RB-4410093", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "2287 Sycamore Ridge Drive", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Bellwether", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "OH 45822", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Alan", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Fitzgerald", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Colleen", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Marsh", "category": "PERSON_NAME", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "stung by a bee", "category": "CODE_EVIDENCE", "why": "T63.441A bee venom"},
+    {"field": "dialogue", "text": "weeding the vegetable garden", "category": "CODE_EVIDENCE", "why": "Y93.H2 gardening"},
+    {"field": "dialogue", "text": "gardening", "category": "CODE_EVIDENCE", "why": "Y93.H2 gardening"},
+    {"field": "note", "text": "bee sting", "category": "CODE_EVIDENCE", "why": "T63.441A bee venom"},
+    {"field": "note", "text": "gardening", "category": "CODE_EVIDENCE", "why": "Y93.H2 gardening"},
+    {"field": "note", "text": "weeding vegetable garden", "category": "CODE_EVIDENCE", "why": "Y93.H2 gardening"},
+    {"field": "note", "text": "Schmitt-Thompson", "category": "EPONYM", "why": "telephone triage protocol"}
+  ]
+}

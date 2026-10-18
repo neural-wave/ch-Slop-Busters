@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N158",
+  "phi": [
+    {"text": "barbara", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "31 -year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "starbucks", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "a coffee chain"},
+    {"text": "nitrocolbrus", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "cold brews"},
+    {"text": "venti", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "large size"},
+    {"text": "jog", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "go for a run", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"}
+  ],
+  "medical_concepts": []
+}

@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N192",
+  "phi": [
+    {"text": "karen", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "34 -year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "super bowl", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the big game"},
+    {"text": "packers", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "my team"},
+    {"text": "travel travel fan", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "leisure fan"},
+    {"text": "trip to europe", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "trip"},
+    {"text": "europe", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "another continent"},
+    {"text": "last summer", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "last year"},
+    {"text": "wisconsin", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "another state"},
+    {"text": "traveling", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "leisure activities"},
+    {"text": "big trips", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "big outings"},
+    {"text": "visiting Europe", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "traveling"},
+    {"text": "Europe", "field": "note", "type": "LOCATION", "tier": 1, "generalized": "another continent"},
+    {"text": "last summer", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "last year"}
+  ],
+  "medical_concepts": []
+}

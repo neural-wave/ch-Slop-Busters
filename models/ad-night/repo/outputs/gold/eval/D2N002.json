@@ -1,0 +1,17 @@
+{
+  "encounter_id": "D2N002",
+  "pii": [
+    {"field": "dialogue", "text": "andrew", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "62-year-old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "gutierrez", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Andrew", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Perez", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "62-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Gutierrez", "category": "PERSON_NAME", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "white blood cell", "category": "NOT_A_NAME", "why": "lab test, 'white' is not a surname here"},
+    {"field": "note", "text": "white blood cell", "category": "NOT_A_NAME", "why": "lab test, 'white' is not a surname here"},
+    {"field": "note", "text": "2/6", "category": "CLINICAL_NUMBER", "why": "murmur grade, not a date"}
+  ]
+}

@@ -1,0 +1,1006 @@
+{
+ "id": "S031",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S67.21XA",
+   "description": "Crushing injury of right hand, initial encounter"
+  },
+  {
+   "code": "W24.1XXA",
+   "description": "Contact with transmission devices, not elsewhere classified, initial encounter"
+  },
+  {
+   "code": "Y92.63",
+   "description": "Factory as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y99.0",
+   "description": "Civilian activity done for income or pay"
+  },
+  {
+   "code": "E11.9",
+   "description": "Type 2 diabetes mellitus without complications"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . how are you doing ?\n[patient] not great , doc . my hand is pretty beat up .\n[doctor] i can see that . you've got it wrapped up there . so tell me what happened .\n[patient] so i was at work this morning at the {ORG} plant . it's a factory , we make corrugated boxes . i run one of the lines , and there's a conveyor that feeds the sheets into the folder .\n[doctor] okay .\n[patient] one of the sheets got jammed and i reached in to pull it out , and i guess i did n't hit the stop all the way . my right hand got caught between the belt and the roller and pulled in up to about here , like the middle of my hand .\n[doctor] oh , wow . how long was it stuck ?\n[patient] maybe five , ten seconds ? it felt like forever . my coworker {OTHER_FIRST} hit the emergency stop and they had to back the roller off to get my hand out .\n[doctor] okay . and you're right-handed ?\n[patient] yeah , right-handed .\n[doctor] all right . did you lose consciousness or hit your head or anything like that ?\n[patient] no , nothing like that . i just yelled a lot .\n[doctor] understandable . so what are you feeling right now ?\n[patient] it's throbbing , mostly across the back of the hand and the knuckles . it's really swollen . i'd say the pain is like a seven out of ten .\n[doctor] okay . any numbness or tingling in your fingers ?\n[patient] a little bit of tingling in my index and middle finger right after , but that's mostly gone now .\n[doctor] okay . can you make a fist ?\n[patient] not all the way . it hurts too much to close it .\n[doctor] okay . did they give you anything at the plant ?\n[patient] they put ice on it and the safety guy wrapped it . i took two ibuprofen about an hour ago .\n[doctor] okay . any cuts or bleeding ?\n[patient] there was a little scrape on the knuckle , but not much bleeding .\n[doctor] all right . and when was your last tetanus shot , do you know ?\n[patient] i think i had one about three years ago when i cut myself on a box cutter .\n[doctor] okay , good , so you're up to date . now , i see in your chart that you have type 2 diabetes . how has that been going ?\n[patient] it's been okay . i take the metformin twice a day . my last a1c was like seven point two , i think .\n[doctor] okay . are you checking your sugars at home ?\n[patient] most mornings . they run around one thirty , one forty .\n[doctor] okay . and any problems with numbness in your feet or anything like that ?\n[patient] no , my feet are fine .\n[doctor] okay . well let's go ahead and take a look at that hand . i'm going to unwrap it here .\n[patient] okay .\n[doctor] all right , so on exam of your right hand , i do see moderate swelling over the dorsum of the hand , mostly over the second through fourth metacarpals . there's some bruising developing there . there's a small superficial abrasion over the third knuckle , but no laceration that needs stitches . does it hurt when i press here ?\n[patient] yeah , that hurts .\n[doctor] and here , over the wrist ?\n[patient] no , the wrist is okay .\n[doctor] okay . can you spread your fingers apart for me ? good . and touch your thumb to each fingertip ? okay , you can do that , just slowly . your capillary refill is brisk , less than two seconds in all fingers , and sensation to light touch is intact . i do n't feel any crepitus . your radial pulse is strong .\n[patient] okay .\n[doctor] so we did get an x-ray of the right hand before i came in . i looked at it and there is no fracture or dislocation . there is soft tissue swelling over the back of the hand .\n[patient] oh , good . i was sure something was broken .\n[doctor] yeah , that's good news . so what you have is a crush injury of the right hand . the soft tissues , the muscles and tendons got squeezed pretty hard , but the bones are intact .\n[patient] okay .\n[doctor] the main thing i worry about with crush injuries is swelling getting so bad that it cuts off the blood flow , something called compartment syndrome . right now i do n't see any signs of that , but i want you to watch for it . if the pain gets much worse , especially when you move your fingers , or your fingers get numb or pale , you need to go straight to the emergency room .\n[patient] got it .\n[doctor] i'm going to put you in a soft bulky dressing and a volar splint for comfort . keep the hand elevated above your heart as much as you can , ice it twenty minutes at a time , and you can keep taking ibuprofen , six hundred milligrams every six to eight hours with food .\n[patient] okay .\n[doctor] i'll also clean that abrasion and put some antibiotic ointment on it . because you have diabetes , i want you to keep an eye on that scrape for any redness or pus .\n[patient] sure .\n[doctor] for work , i'm going to put you on light duty , no use of the right hand , for one week . i'll fill out the workers' comp paperwork . who should i send it to ?\n[patient] the hr office . the number is {PHONE} .\n[doctor] okay , we'll take care of it . and for the diabetes , continue the metformin , five hundred milligrams twice a day . we'll recheck the a1c at your next visit .\n[patient] sounds good .\n[doctor] i want to see you back in one week , and then we'll start some hand therapy if you're still stiff . any questions ?\n[patient] no , i think that's it . thanks , doc .\n[doctor] you're welcome . take care of that hand .",
+ "note": "CHIEF COMPLAINT\n\nRight hand injury.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old right-hand-dominant male with a past medical history significant for type 2 diabetes mellitus, who presents today after a right hand injury at work.\n\nThe patient reports that this morning, while working at the {ORG} plant, a box factory, he reached into a conveyor to clear a jammed sheet and his right hand was caught between the conveyor belt and a roller, pulled in to the mid hand for approximately 5 to 10 seconds. A coworker activated the emergency stop. He denies head injury or loss of consciousness. He reports throbbing pain over the dorsum of the hand and knuckles, rated 7/10, with significant swelling. He had transient tingling of the index and middle fingers which has largely resolved. He is unable to make a full fist. He took ibuprofen and applied ice. Last tetanus vaccination approximately 3 years ago.\n\nRegarding his type 2 diabetes, he is taking metformin twice daily. Last hemoglobin A1c was approximately 7.2%. Home fasting glucose runs 130-140. He denies peripheral numbness.\n\nPHYSICAL EXAM\n\nMusculoskeletal: Right hand with moderate dorsal swelling over the second through fourth metacarpals and early ecchymosis. Small superficial abrasion over the third MCP joint, no laceration. Tenderness to palpation over the dorsal hand. No wrist tenderness. No crepitus. Finger abduction and opposition intact but slow. Limited fist closure due to pain.\nNeurovascular: Sensation intact to light touch in all digits. Capillary refill less than 2 seconds. Radial pulse 2+.\n\nRESULTS\n\nX-ray of the right hand: No fracture or dislocation. Dorsal soft tissue swelling.\n\nASSESSMENT AND PLAN\n\n1. Crushing injury of the right hand.\n• Medical Reasoning: Hand caught in a conveyor roller at work in a factory. No fracture on imaging. No signs of compartment syndrome at this time.\n• Medical Treatment: Abrasion cleaned and dressed with antibiotic ointment. Bulky soft dressing and volar splint. Elevation, ice, ibuprofen 600 mg every 6 to 8 hours with food.\n• Patient Education and Counseling: Return precautions for compartment syndrome reviewed, including worsening pain with finger motion, numbness, or pallor.\n• Work: Light duty, no use of the right hand, for 1 week. Workers' compensation paperwork completed.\n\n2. Type 2 diabetes mellitus.\n• Medical Reasoning: Reasonably controlled on metformin.\n• Medical Treatment: Continue metformin 500 mg twice daily. Repeat hemoglobin A1c at next visit. Monitor abrasion for signs of infection.\n\nPatient Agreements: The patient understands and agrees with the recommended medical treatment plan.\n\nFollow up in 1 week; consider hand therapy if stiffness persists.",
+ "medical_concepts": [
+  {
+   "text": "hand is pretty beat up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "at work",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "factory",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "plant",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "conveyor",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "reached in to pull it out",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my right hand got caught between the belt and the roller",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "middle of my hand",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "emergency stop",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "right-handed",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lose consciousness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "throbbing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "back of the hand",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "knuckles",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "swollen",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "seven out of ten",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "index and middle finger",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "make a fist",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "put ice on it",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "scrape",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "knuckle",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "bleeding",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus shot",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "type 2 diabetes",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "a1c",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "seven point two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "sugars",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "feet",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "right hand",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "moderate swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dorsum of the hand",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "second through fourth metacarpals",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "bruising",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "superficial abrasion",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "third knuckle",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "laceration",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "stitches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "wrist",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "capillary refill",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation to light touch is intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "crepitus",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "radial pulse",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-ray of the right hand",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "no fracture or dislocation",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "soft tissue swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "crush injury of the right hand",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "compartment syndrome",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "emergency room",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "soft bulky dressing",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "volar splint",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "elevated above your heart",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "six hundred milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "antibiotic ointment",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "diabetes",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "redness or pus",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "light duty",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "workers' comp",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "five hundred milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "hand therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "stiff",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right hand injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "right-hand-dominant",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "type 2 diabetes mellitus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "injury at work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "while working",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "box factory",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "plant",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "reached into a conveyor to clear a jammed sheet",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "right hand was caught between the conveyor belt and a roller",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mid hand",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "emergency stop",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "head injury",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "throbbing pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dorsum of the hand",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "knuckles",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "7/10",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "significant swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "transient tingling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "index and middle fingers",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "unable to make a full fist",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "applied ice",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus vaccination",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "type 2 diabetes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "hemoglobin A1c",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "7.2%",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "fasting glucose",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "130-140",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "peripheral numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right hand",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "moderate dorsal swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "second through fourth metacarpals",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "early ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "superficial abrasion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "third MCP joint",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "no laceration",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tenderness to palpation over the dorsal hand",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No wrist tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No crepitus",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Finger abduction and opposition intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Limited fist closure",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Sensation intact to light touch",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Capillary refill less than 2 seconds",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Radial pulse 2+",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-ray of the right hand",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "No fracture or dislocation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Dorsal soft tissue swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Crushing injury of the right hand",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hand caught in a conveyor roller",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "at work in a factory",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No fracture on imaging",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "compartment syndrome",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Abrasion cleaned and dressed",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "antibiotic ointment",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Bulky soft dressing",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "volar splint",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Elevation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen 600 mg every 6 to 8 hours",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pallor",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Light duty",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Workers' compensation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Type 2 diabetes mellitus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "metformin 500 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "infection",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "hand therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "stiffness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "plant",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic word for the workplace (factory), supports Y92.63; the employer name is the {ORG} slot"
+  },
+  {
+   "text": "the safety guy",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic role, not a named person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S67.21XA",
+   "spans": [
+    {
+     "text": "crush injury of the right hand",
+     "field": "dialogue"
+    },
+    {
+     "text": "my right hand got caught between the belt and the roller",
+     "field": "dialogue"
+    },
+    {
+     "text": "swollen",
+     "field": "dialogue"
+    },
+    {
+     "text": "x-ray of the right hand",
+     "field": "dialogue"
+    },
+    {
+     "text": "no fracture or dislocation",
+     "field": "dialogue"
+    },
+    {
+     "text": "Crushing injury of the right hand",
+     "field": "note"
+    },
+    {
+     "text": "Right hand",
+     "field": "note"
+    },
+    {
+     "text": "moderate dorsal swelling",
+     "field": "note"
+    },
+    {
+     "text": "No fracture or dislocation",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W24.1XXA",
+   "spans": [
+    {
+     "text": "conveyor",
+     "field": "dialogue"
+    },
+    {
+     "text": "my right hand got caught between the belt and the roller",
+     "field": "dialogue"
+    },
+    {
+     "text": "right hand was caught between the conveyor belt and a roller",
+     "field": "note"
+    },
+    {
+     "text": "Hand caught in a conveyor roller",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.63",
+   "spans": [
+    {
+     "text": "factory",
+     "field": "dialogue"
+    },
+    {
+     "text": "plant",
+     "field": "dialogue"
+    },
+    {
+     "text": "box factory",
+     "field": "note"
+    },
+    {
+     "text": "at work in a factory",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.0",
+   "spans": [
+    {
+     "text": "at work",
+     "field": "dialogue"
+    },
+    {
+     "text": "workers' comp",
+     "field": "dialogue"
+    },
+    {
+     "text": "injury at work",
+     "field": "note"
+    },
+    {
+     "text": "while working",
+     "field": "note"
+    },
+    {
+     "text": "Workers' compensation",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E11.9",
+   "spans": [
+    {
+     "text": "type 2 diabetes",
+     "field": "dialogue"
+    },
+    {
+     "text": "metformin",
+     "field": "dialogue"
+    },
+    {
+     "text": "a1c",
+     "field": "dialogue"
+    },
+    {
+     "text": "Type 2 diabetes mellitus",
+     "field": "note"
+    },
+    {
+     "text": "type 2 diabetes mellitus",
+     "field": "note"
+    },
+    {
+     "text": "hemoglobin A1c",
+     "field": "note"
+    },
+    {
+     "text": "metformin 500 mg twice daily",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "we make corrugated boxes",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "type of product the employer makes, narrows the workplace"
+  },
+  {
+   "text": "i run one of the lines",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's job role (line operator)"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N129",
+  "phi": [
+    {"text": "beverly", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "24 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "bakery", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "food shop"},
+    {"text": "this summer", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "recently"},
+    {"text": "Beverly Ortiz", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "24-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "bakery", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "food shop"},
+    {"text": "this summer", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "recently"}
+  ],
+  "medical_concepts": []
+}

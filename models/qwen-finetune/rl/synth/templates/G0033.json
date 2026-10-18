@@ -1,0 +1,602 @@
+{
+ "id": "G0033",
+ "dataset": "synthetic_new",
+ "sex": "male",
+ "age_range": [
+  60,
+  75
+ ],
+ "icd10_codes": [
+  {
+   "code": "Z23",
+   "description": "Encounter for immunization"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i 'm doctor {DOCTOR_LAST} . thanks for coming in on short notice . what brings you here today ?\n[patient] hi , doctor {DOCTOR_LAST} . i 'm going to peru in november , and my travel agent said i need to see somebody about shots .\n[doctor] okay . tell me about the trip . where are you going , and for how long ?\n[patient] three weeks . we fly into lima , then go up to cusco and the sacred valley , and then take the train to machu picchu . my wife wants to do the four day trail , but i told her i 'd take the train .\n[doctor] that 's a lot of altitude . have you ever been that high before ?\n[patient] i went to denver once for a conference , and that 's a mile high . i was fine . cusco is over eleven thousand feet though . my brother in law , {OTHER_FIRST} , says he got sick there the first day .\n[doctor] that 's very common . it 's worth planning for . do you take any medicines now ?\n[patient] the lisinopril in the morning for my pressure , and a baby aspirin at night . nothing else .\n[doctor] okay . do you remember your last tetanus shot ?\n[patient] it was about eight years ago , at the riverbend pharmacy on elm street . i went in with my wife for a checkup and they gave it right there .\n[doctor] good . so your tetanus is probably due . have you had any other vaccines ? hepatitis ? typhoid ?\n[patient] i had the hepatitis b shots about ten years ago , when i worked at {ORG} . they tested my blood then . i think i 'm immune .\n[doctor] okay . we 'll check the hepatitis titer to be sure . what kind of work did you do at {ORG} ?\n[patient] i was an accountant there for thirty years . now i just do taxes part time for people in the neighborhood . a lot of it is seasonal .\n[doctor] that 's a busy job . does anyone in your family have a bad reaction to vaccines ? anyone with a problem after a shot ?\n[patient] my brother in law , {OTHER_FIRST} , had a bad reaction to something once . he swelled up pretty badly . that 's why he 's the one who got so sick at altitude . his doctor says he has parkinson 's now , poor guy .\n[doctor] i 'm sorry to hear that . let me look at your blood pressure and your heart . your pressure today is one thirty six over eighty .\n[patient] that 's better than last time . i 've been walking the dog every morning , trying to lose the weight .\n[doctor] that 's great . any chest pain when you climb the hills ?\n[patient] no , nothing like that . i get a little short of breath on the steep stairs at st. brendan 's , but that 's just being out of shape .\n[doctor] okay . heart sounds are normal , no murmur . your lungs are clear . let 's check your legs . no swelling .\n[patient] okay .\n[doctor] for the trip , here is what i recommend . a tetanus booster now . the hepatitis a vaccine , two doses , and the typhoid vaccine is an option , oral or shot . plus a flu shot before you leave . and i want to talk about rabies , because you 'll be near animals .\n[patient] rabies ? i 'm not going near any dogs there except maybe the stray ones .\n[doctor] right . the rabies shots are for people who might be exposed , like hikers in the countryside . we can talk about it . i 'd like you to get the first dose of the hepatitis a today and come back in two weeks .\n[patient] okay . can i get the other shots at the pharmacy ?\n[doctor] yes , you can pick up the typhoid pills or the antibiotic for traveler 's diarrhea at the pharmacy , and bring the prescription .\n[patient] i 'll take it to the pharmacy on elm street again .\n[doctor] fine . and for altitude sickness , i 'd like to start acetazolamide two days before you go up to the high ground . it can make your fingers tingle , so tell me if that happens .\n[patient] tingling , okay . my sister takes a pill for her ankles that makes her tingle too .\n[doctor] okay . we 'll sort out your medicines with your sister 's doctor if needed . any questions ?\n[patient] what about the washington guidelines ? my cousin said the government site says i need something special .\n[doctor] the cdc travel guidance is the best source , not any one city . i 'll print the list for you .\n[patient] thanks , doctor {DOCTOR_LAST} . i 'll see you in two weeks .\n[doctor] you 're welcome , {PATIENT_FIRST} . safe travels .",
+ "note": "CHIEF COMPLAINT\n\nPre-travel consultation for a three-week trip to high-altitude destinations in the Andes.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male referred for pre-travel evaluation. He plans a three-week trip in November, flying into the capital and then traveling by train to a famous mountain citadel and the surrounding valley. He has previously traveled only to moderate altitude. His brother-in-law, {OTHER_FIRST}, developed altitude sickness on his first day at high elevation.\n\nHe reports a prior tetanus booster approximately eight years ago at Riverbend Pharmacy on Elm Street, and hepatitis B vaccination about ten years ago. He denies current symptoms and denies chest pain. He reports mild dyspnea on the steep stairs at St. Brendan's.\n\nSOCIAL HISTORY\n\nRetired accountant from {ORG}, now doing part-time tax preparation. He walks his dog every morning. He may hike in rural countryside but plans no visits to animal markets.\n\nFAMILY HISTORY\n\nBrother-in-law with Parkinson's disease and a prior severe reaction to a vaccine.\n\nMEDICATIONS\n\nLisinopril daily and low-dose aspirin nightly.\n\nPHYSICAL EXAM\n\nBlood pressure 136/80. Heart sounds normal without murmur. Lungs clear bilaterally. No peripheral edema.\n\nASSESSMENT AND PLAN\n\n1. Pre-travel health counseling for high-altitude travel. Discussed acetazolamide prophylaxis to start two days before ascent, with counseling about paresthesias. Discussed rabies exposure risk in rural areas and pre-exposure prophylaxis options.\n\n2. Immunizations today: hepatitis A dose 1, with dose 2 in two weeks. Typhoid vaccine offered. Influenza vaccine before departure.\n\n3. Hypertension, controlled on current regimen. Continue.\n\n4. Traveler's diarrhea prevention: prescribe an empiric antibiotic to carry, to be picked up at the pharmacy.\n\n5. Hepatitis B immunity to be checked by serology.",
+ "medical_concepts": [
+  {
+   "text": "a lot of altitude",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "shots",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "four day trail",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "eleven thousand feet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mile high",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "altitude sickness",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "baby aspirin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "my pressure",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus shot",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "hepatitis b shots",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "immune",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hepatitis titer",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "bad reaction",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "swelled up pretty badly",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "parkinson 's",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "walking the dog every morning",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "one thirty six over eighty",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "chest pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "short of breath on the steep stairs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart sounds are normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no murmur",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your lungs are clear",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus booster",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "hepatitis a vaccine",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "typhoid vaccine",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "flu shot",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "rabies shots",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "near animals",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "hikers in the countryside",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "two doses",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "typhoid pills",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "antibiotic",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "traveler 's diarrhea",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetazolamide",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "make your fingers tingle",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pre-travel health counseling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "high-altitude destinations",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "moderate altitude",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "altitude sickness",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus booster",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "hepatitis B vaccination",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "denies current symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dyspnea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Parkinson's disease",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "severe reaction to a vaccine",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lisinopril",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "aspirin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "136/80",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Heart sounds normal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "murmur",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lungs clear",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "peripheral edema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetazolamide",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "paresthesias",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "rabies exposure risk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pre-exposure prophylaxis",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "hepatitis A dose 1",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Typhoid vaccine",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Influenza vaccine",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Traveler's diarrhea",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "empiric antibiotic",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "serology",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hepatitis B immunity",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "rural countryside",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "animal markets",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "washington",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "surname or place word used as a guideline name, not a person"
+  },
+  {
+   "text": "parkinson 's",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponymous neurological disease"
+  },
+  {
+   "text": "Parkinson's",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponymous neurological disease"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "Z23",
+   "spans": [
+    {
+     "text": "tetanus shot",
+     "field": "dialogue"
+    },
+    {
+     "text": "hepatitis a vaccine",
+     "field": "dialogue"
+    },
+    {
+     "text": "tetanus booster",
+     "field": "note"
+    },
+    {
+     "text": "hepatitis B vaccination",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "lisinopril",
+     "field": "dialogue"
+    },
+    {
+     "text": "one thirty six over eighty",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypertension",
+     "field": "note"
+    },
+    {
+     "text": "136/80",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "an accountant",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "former profession"
+  },
+  {
+   "text": "riverbend pharmacy",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "named pharmacy"
+  },
+  {
+   "text": "elm street",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "street of pharmacy"
+  },
+  {
+   "text": "st. brendan 's",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "parish church"
+  },
+  {
+   "text": "peru",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "travel destination"
+  },
+  {
+   "text": "lima",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "travel destination"
+  },
+  {
+   "text": "cusco",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "travel destination"
+  },
+  {
+   "text": "sacred valley",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "travel destination"
+  },
+  {
+   "text": "machu picchu",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "travel destination"
+  },
+  {
+   "text": "denver",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "previous city visited"
+  },
+  {
+   "text": "accountant",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "former profession"
+  },
+  {
+   "text": "Riverbend Pharmacy",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "comment": "named pharmacy"
+  },
+  {
+   "text": "Elm Street",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "street of pharmacy"
+  },
+  {
+   "text": "St. Brendan's",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "comment": "parish church"
+  }
+ ],
+ "scenario": {
+  "specialty": "travel medicine",
+  "visit": "new",
+  "length": "medium",
+  "focus": [
+   "ORGANIZATION",
+   "OTHER_PERSON_NAME"
+  ]
+ }
+}

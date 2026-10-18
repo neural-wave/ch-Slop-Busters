@@ -1,0 +1,49 @@
+{
+  "encounter_id": "D2N167",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "angela",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "is five",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Angela",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Powell",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "81-year-old",
+      "category": "AGE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "lachman's",
+      "category": "EPONYM",
+      "why": "knee ligament test, not a person"
+    },
+    {
+      "field": "note",
+      "text": "Lachman's",
+      "category": "EPONYM",
+      "why": "knee ligament test, not a person"
+    }
+  ]
+}

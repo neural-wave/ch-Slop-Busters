@@ -1,0 +1,535 @@
+{
+ "id": "G0047",
+ "dataset": "synthetic_followup",
+ "sex": "female",
+ "age_range": [
+  19,
+  30
+ ],
+ "icd10_codes": [
+  {
+   "code": "D50.9",
+   "description": "Iron deficiency anemia, unspecified"
+  },
+  {
+   "code": "N92.0",
+   "description": "Excessive and frequent menstruation with regular cycle"
+  },
+  {
+   "code": "Z79.899",
+   "description": "Other long term (current) drug therapy"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . good to see you . how have you been feeling since the last visit ?\n[patient] better than in the spring . i'm still tired by the afternoon , but the walks help a bit .\n[doctor] okay . let's go over the labs from last week . your hemoglobin came back at eleven point two , which is up from nine point eight .\n[patient] good . is that the iron working ?\n[doctor] it is . your ferritin is still low , at fourteen , so we want to keep the iron going for a few more months .\n[patient] okay . i take it every morning with orange juice , like you said .\n[doctor] and not with your tea or your milk ?\n[patient] right , i've been good about that . except on weekends .\n[doctor] that's fine . now , your periods . are they still heavy ?\n[patient] a little lighter since i started the pill . i still change a pad every two hours on the first day , but it's not as bad as before .\n[doctor] okay . when did you first find out you had anemia ?\n[patient] {YEAR} , when i gave blood at the drive and they said my iron was low . i was shocked .\n[doctor] that's a common story . what were you doing back then ?\n[patient] i was working the front desk at {ORG} , and i was doing a lot of double shifts .\n[doctor] okay . any new bruising or nosebleeds ?\n[patient] no , nothing new . my gums bleed a little when i floss , but that's it .\n[doctor] alright . let's check you over . your blood pressure is one eleven over sixty eight , and your pulse is seventy eight . i don't see any pallor today , your color looks better .\n[patient] thanks .\n[doctor] your spleen is not enlarged , and your lymph nodes are normal . your heart sounds regular .\n[patient] great .\n[doctor] your last iron infusion was on {DATE_SPOKEN} , correct ?\n[patient] yes , that's right . i felt a little flushed for about an hour afterward , but the nurse was great .\n[doctor] that's a known side effect . are you still planning to finish the course of iron tablets ?\n[patient] yes . i'll take them for three more months , then come back for blood work .\n[doctor] perfect . i'd like to start you on a low dose of folic acid as well , one milligram daily .\n[patient] okay . anything else i should know ?\n[doctor] keep the iron away from calcium supplements , and eat foods with vitamin c . you'll get constipated sometimes , so drink plenty of water and get some fiber .\n[patient] i do get constipated . okay .\n[doctor] i'll see you back in six weeks with repeat labs . if your bleeding gets heavier , or you feel faint , call us right away .\n[patient] i will . thanks , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nFollow-up for iron deficiency anemia with heavy menstrual bleeding.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with iron deficiency anemia diagnosed in {YEAR} after a blood donation screening, who presents for follow-up. She reports ongoing fatigue in the afternoons, improved with daily walks. Menstrual bleeding is lighter on combined oral contraceptive, but she still requires a pad change every two hours on the first day of menses. She reports gum bleeding with flossing. She denies melena, hematochezia, new bruising, or epistaxis.\n\nShe takes oral iron every morning with orange juice, with occasional lapses on weekends. She has intermittent constipation.\n\nWork history includes front desk responsibilities at {ORG}, with frequent double shifts at the time of diagnosis.\n\nPAST MEDICAL HISTORY\n\nIron deficiency anemia. No known bleeding disorder.\n\nMEDICATIONS\n\nFerrous sulfate tablets daily. Combined oral contraceptive. Folic acid 1 mg daily, newly started.\n\nPHYSICAL EXAM\n\nVitals: BP 111/68, pulse 78. No conjunctival pallor. Spleen not palpable. Lymph nodes not enlarged. Heart regular rate and rhythm.\n\nRESULTS\n\nHemoglobin 11.2 g/dL, up from 9.8 g/dL. Ferritin 14 ng/mL, still low.\n\nLast IV iron infusion on {DATE_SPOKEN}, tolerated with transient flushing.\n\nASSESSMENT AND PLAN\n\n1. Iron deficiency anemia with improving hemoglobin on oral iron. Continue ferrous sulfate for three additional months, then repeat CBC, ferritin, and iron studies. Folic acid 1 mg daily started. Counseled to take iron on an empty stomach with vitamin C and to separate it from calcium.\n2. Heavy menstrual bleeding, improved on combined oral contraceptive. Return precautions reviewed for increased bleeding or presyncope.\n3. Constipation related to oral iron; fluids and fiber advised.\n\nFollow-up in six weeks with repeat labs.",
+ "medical_concepts": [
+  {
+   "text": "tired by the afternoon",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the walks help a bit",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your hemoglobin came back at eleven point two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "nine point eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "the iron working",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "your ferritin is still low",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "keep the iron going for a few more months",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "orange juice",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your periods",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "still heavy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "change a pad every two hours on the first day",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "since i started the pill",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "anemia",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "my iron was low",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the drive",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "double shifts",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "new bruising or nosebleeds",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my gums bleed a little when i floss",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood pressure is one eleven over sixty eight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse is seventy eight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "any pallor today",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your spleen is not enlarged",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "your lymph nodes are normal",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "your heart sounds regular",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "last iron infusion",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "felt a little flushed for about an hour afterward",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "known side effect",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the course of iron tablets",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "for three more months",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "folic acid",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "one milligram daily",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "calcium supplements",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "constipated",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "feel faint",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Iron deficiency anemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ongoing fatigue in the afternoons",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Menstrual bleeding is lighter",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "combined oral contraceptive",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "pad change every two hours on the first day of menses",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "gum bleeding with flossing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "denies melena, hematochezia, new bruising, or epistaxis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "oral iron",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "intermittent constipation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "front desk responsibilities",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "double shifts",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No known bleeding disorder",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ferrous sulfate tablets daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Folic acid 1 mg daily, newly started",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "BP 111/68",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse 78",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No conjunctival pallor",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Spleen not palpable",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lymph nodes not enlarged",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "Heart regular rate and rhythm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hemoglobin 11.2 g/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "up from 9.8 g/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ferritin 14 ng/mL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "transient flushing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "IV iron infusion",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Iron deficiency anemia with improving hemoglobin",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Continue ferrous sulfate",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "repeat CBC, ferritin, and iron studies",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Folic acid 1 mg daily started",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "take iron on an empty stomach with vitamin C",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Heavy menstrual bleeding",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "increased bleeding or presyncope",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Constipation related to oral iron",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "repeat labs",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "the drive",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "blood drive, a place-like word not a named place"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "D50.9",
+   "spans": [
+    {
+     "text": "your ferritin is still low",
+     "field": "dialogue"
+    },
+    {
+     "text": "my iron was low",
+     "field": "dialogue"
+    },
+    {
+     "text": "Iron deficiency anemia",
+     "field": "note"
+    },
+    {
+     "text": "Ferritin 14 ng/mL",
+     "field": "note"
+    },
+    {
+     "text": "Hemoglobin 11.2 g/dL",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "N92.0",
+   "spans": [
+    {
+     "text": "still heavy",
+     "field": "dialogue"
+    },
+    {
+     "text": "change a pad every two hours on the first day",
+     "field": "dialogue"
+    },
+    {
+     "text": "Heavy menstrual bleeding",
+     "field": "note"
+    },
+    {
+     "text": "pad change every two hours on the first day of menses",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z79.899",
+   "spans": [
+    {
+     "text": "the course of iron tablets",
+     "field": "dialogue"
+    },
+    {
+     "text": "folic acid",
+     "field": "dialogue"
+    },
+    {
+     "text": "Ferrous sulfate tablets daily",
+     "field": "note"
+    },
+    {
+     "text": "Folic acid 1 mg daily, newly started",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "the front desk",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "former front desk job"
+  },
+  {
+   "text": "front desk responsibilities",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "former front desk job"
+  }
+ ],
+ "scenario": {
+  "specialty": "hematology",
+  "visit": "followup",
+  "length": "short",
+  "focus": [
+   "ORGANIZATION",
+   "DATE"
+  ]
+ }
+}

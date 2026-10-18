@@ -1,0 +1,22 @@
+{
+  "encounter_id": "D2N163",
+  "phi": [
+    {"text": "julie cruz", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "julie", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "17 -year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "immensipated minor", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "minor"},
+    {"text": "ride my bicycle", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "ride the trails", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise outdoors"},
+    {"text": "bike ride", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "workout"},
+    {"text": "over the weekend", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "recently"},
+    {"text": "pick", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "meal"},
+    {"text": "springtime", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "warmer weather"},
+    {"text": "live on my own", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "live elsewhere"},
+    {"text": "apartment", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "home"},
+    {"text": "forty four", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "forty five", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "bike riding", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "riding their bike on trails", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercising outdoors"}
+  ],
+  "medical_concepts": []
+}

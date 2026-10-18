@@ -1,0 +1,17 @@
+{
+  "encounter_id": "D2N184",
+  "phi": [
+    {"text": "stephanie morales", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "113322", "field": "dialogue", "type": "ID", "tier": 1, "generalized": ""},
+    {"text": "44-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "ups", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "a delivery company"},
+    {"text": "anna", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "labor-intensive work", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "physical work"},
+    {"text": "Stephanie Morales", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Morales", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "44-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "UPS", "field": "note", "type": "ORGANIZATION", "tier": 1, "generalized": "a delivery company"},
+    {"text": "labor-intensive job", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "physical job"}
+  ],
+  "medical_concepts": []
+}

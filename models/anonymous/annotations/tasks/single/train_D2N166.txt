@@ -1,0 +1,123 @@
+########## ENCOUNTER D2N166
+=== FIELD: dialogue
+[doctor] hey kyle so i see here on your chart that you've been having some back pain could you tell me like how you've been doing what's going on
+[patient] yeah i have this real bad low back pain it started a couple of weeks ago i was lifting something and i just felt a pop and i i do n't know what's going on
+[doctor] okay and so you were like moving what what were you moving exactly when you say lifting
+[patient] i was lifting a box of books
+[doctor] okay
+[patient] yeah
+[doctor] alright did we use proper lifting technique do you wonder
+[patient] you know probably not
+[doctor] okay alright i'm sorry about that alright can you describe the pain for me
+[patient] yeah i i feel like kind of it's like achy and sharp
+[doctor] oh
+[patient] in in my low back
+[doctor] uh uh and does the pain like radiate anywhere
+[patient] you know it did n't at first but now i'm feeling it's kinda starting to shoot down my left leg
+[doctor] okay alright and how is positioning for you does any sitting in any particular position hurt more or hurt less
+[patient] no sitting is usually okay for me
+[doctor] mm-hmm okay and then do you have any numbness or tingling associated with the pain
+[patient] no
+[doctor] okay alright any loss of sensation
+[patient] no
+[doctor] okay how yes sir okay how about any weakness
+[patient] no i do n't feel any weakness
+[doctor] okay and i know this sounds like a weird question but i do need to know do you experience any loss of control of your bladder or bowels
+[patient] no
+[doctor] alright this this is a no judgment zone i there i'm working through some things in my head to make sure that i give you the best care that we need right i'm making a plan as we move along you mentioned that the pain has been getting worse have you done anything or tried anything that's worked in the past
+[patient] i tried to take some ibuprofen and tylenol
+[doctor] mm-hmm
+[patient] that that sometimes helps
+[doctor] okay alright and has anyone discussed the option of like just no has anyone discussed surgery with you
+[patient] no this is the first time i'm talking about it
+[doctor] okay alright that's good so what is your like how what is your activity level right now that i know that you're you know an olympic weightlifter with books what else do you do to like exercise
+[patient] you know i try to exercise a few times a week but i'm pretty inconsistent i have a sedentary job
+[doctor] okay alright and has this like pain started to like affect you like in your job or anything like that
+[patient] not my job but i feel like i do n't want to be as active as i was previously
+[doctor] alright so do you have any family members that have spine conditions
+[patient] yeah my dad has back pain
+[doctor] okay alright and then do you smoke
+[patient] i do n't smoke
+[doctor] okay awesome alright so sorry one question did you do you have a history of playing sports
+[patient] yes
+[doctor] okay what did you play
+[patient] soccer
+[doctor] okay what position
+[patient] i played midfield
+[doctor] okay the people who hide in the back that's fine i was centered forward fine no baby do you have a team that you wrote for
+[patient] you know i am a tatnham hotsper fan
+[doctor] they have the best colors not going to lie but i i grew up manu so sorry
+[patient] well i wo n't fault you for that
+[doctor] thanks okay so if you do n't mind i'm gon na go ahead and do my physical exam i'm gon na call out my findings just to have them recorded and if you have any questions please feel free to stop me and let me know okay
+[patient] okay
+[doctor] alright so looking at your vitals your blood pressure seems alright we are in like the one thirty over seventy range that's perfectly fine your respiratory rate i have you at an eighteen again pretty normal when i listen here to your heart you have a regular rate and rhythm i do n't appreciate any murmurs rubs or gallops that means your heart sounds great on your respiratory exam your lungs sound clear to auscultation bilaterally on your musculoskeletal back exam as i'm looking here i do n't notice any overlying redness or bruising on the skin when i push here on the midline of your back does it hurt
+[patient] yes
+[doctor] okay so there is midline tenderness at the l4 l5 disk space with right sided lumbar paravertebral tenderness alright so are you able to bend forward
+[patient] yes
+[doctor] alright and are you able to bend backward
+[patient] yes
+[doctor] alright do either of those actions cause you pain
+[patient] bending forward
+[doctor] okay so pain with lumbar flexion and so i'm gon na have you lie down and we're gon na do i'm sorry okay and then i see that a supine straight leg test is positive alright so for your neurological exam you said that you are experiencing pain radiating down radiating down your left leg correct
+[patient] yes
+[doctor] alright when i touch are there any like decreased sensation
+[patient] no
+[doctor] okay alright so patella and achilles reflexes are symmetrical alright so i received before you came in here we got an mri and so in reviewing your results it does show a disk desiccation a disk bulge with paracentral disk herniation resulting in moderate right neuroforaminal i do n't like this word neural foraminal stenosis what those complicated words is that i just said is that it seems that you have a a a herniated disk with nerve impingement so let's talk about my assessment and plan alright your symptoms are in line with a i'm sorry you have lumbar back pain at the l4 l5 disk space due to a herniated disk with radiculopathy this means that one of your disks that sits between your vertebrae like the bones in your spine is bulging out and the bulge is pinching on some nerves so that's why you are feeling that pain like radiating down your leg i'm gon na recommend something a spinal injection with a strong nsaid and called the i'm sorry and a corticosteroid i'm just gon na inject it into the lumbar spine under fluoroscopy which you can think of like an x-ray to localize the exact area of your pain this should help with the inflammation that's causing your pain i know that sounds a bit scary it this is a typical procedure that i do all the time it's in office and we can get you scheduled today if you would like so what questions do you have right now
+[patient] is that something that we can do today
+[doctor] yeah i think i have time in my schedule to get it done today just you know i'm here for you right now
+[patient] alright
+[doctor] okay
+[patient] are there are there any complications with this
+[doctor] there are sorry yeah you're right there are risks associated with this kind of injection just like any procedure but we aim to minimize them and my ma when she comes in we will give you some paperwork with explanations and any and hopefully answer most of the questions that you have if after reading that you have any more questions please feel free to stop us we want to make sure that you feel as comfortable as possible during this time
+[patient] okay
+[doctor] alright
+[patient] great
+[doctor] anything else
+[patient] i think that's it
+[doctor] alright
+=== FIELD: note
+HISTORY OF PRESENT ILLNESS
+
+Kyle Morales is a pleasant 58-year-old male who presents to the clinic today for the evaluation of low back pain.
+
+Onset of his pain began 2 weeks ago, when he was lifting a box of books and felt a pop. The pain is described as aching and sharp. His pain has been increasing since the time of onset and is beginning to radiate down his left leg. The patient denies any pain with sitting. He adds that he has a sedentary job. The patient states that his pain does not affect his job, however he feels that he does not want to be as active as he was previously. He tries to exercise a few times per week, however he is inconsistent. He denies any numbness, tingling, loss of sensation, weakness, and loss of control of his bladder or bowels.
+
+The patient has been taking ibuprofen and Tylenol for pain, which provides some relief. He has not been evaluated for surgery.
+
+SOCIAL HISTORY
+
+He denies smoking. The patient has a history of playing soccer in the midfield position.
+
+FAMILY HISTORY
+
+The patient states that his father has back pain.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports low back pain.
+Neurological: Denies bowl or bladder control issues, numbness, tingling, decreased sensations, or weakness.
+
+VITALS
+
+Blood pressure: 130/70 mm Hg.
+Respiratory rate: 18.
+
+PHYSICAL EXAM
+
+CV: I do not appreciate any murmurs, rubs, or gallops.
+RESPIRATORY: Normal respiratory effort no respiratory distress. Clear to auscultation, bilaterally.
+BACK: No evidence of trauma or deformity
+NEURO: Normal sensation. Patellar and Achilles reflexes are symmetrical.
+MSK: Examination of the lumbar spine: No ecchymosis noted. Midline tenderness at the L4-5 disc space with right-sided lumbar paravertebral tenderness. Pain with lumbar flexion. Positive supine straight leg test.
+
+RESULTS
+
+The MRI of the lumbar spine was reviewed today. It revealed disc desiccation and a disc bulge with a paracentral disc herniation resulting in moderate right neural foraminal stenosis.
+
+ASSESSMENT
+
+Lumbar back pain at the L4-5 disc space due to a herniated disc with radiculopathy.
+
+PLAN
+
+After reviewing the patient's examination and MRI findings today, I have discussed with the patient that his MRI revealed a herniated disc with radiculopathy. We discussed treatment options for this and I have recommended that we begin with conservative treatment in the form of a corticosteroid injection. With the patient's consent, we will proceed with a corticosteroid injection into the lumbar spine today. The patient was made aware of the risks of bleeding, infection, nerve damage, blood vessel damage, reaction to the medication, including skin changes, swelling, and also, the risk of elevated glucose levels if the patient were diabetic.

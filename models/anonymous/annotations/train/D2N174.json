@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N174",
+  "phi": [
+    {"text": "james", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "57 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "bike", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise machine"},
+    {"text": "James Moore", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Moore", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "57-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "bike", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercise machine"}
+  ],
+  "medical_concepts": []
+}

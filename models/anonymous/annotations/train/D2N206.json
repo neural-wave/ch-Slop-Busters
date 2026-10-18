@@ -1,0 +1,12 @@
+{
+  "encounter_id": "D2N206",
+  "phi": [
+    {"text": "joshua", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "brenda", "field": "dialogue", "type": "NAME_OTHER", "tier": 1, "generalized": ""},
+    {"text": "weekend", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "days off"},
+    {"text": "Joshua Reyes", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "18-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "05/06/2022", "field": "note", "type": "DATE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

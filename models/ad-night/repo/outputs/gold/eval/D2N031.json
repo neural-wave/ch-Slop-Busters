@@ -1,0 +1,35 @@
+{
+  "encounter_id": "D2N031",
+  "pii": [
+    {"field": "dialogue", "text": "sophia", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "brown", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "3/17/1946", "category": "DOB", "risk": "high"},
+    {"field": "dialogue", "text": "stewart", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "january 20th , 2020", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "october 2019", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "november 3rd , 2019", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "december 5th , 2019", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "january 2021", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "january , 2021", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "april of 2022", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "2018", "category": "YEAR", "risk": "medium"},
+    {"field": "dialogue", "text": "big family", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Sophia", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Brown", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "75 y.o.", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "10/2019", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "11/03/2019", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "12/05/2019", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "01/20/2020", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "01/2021", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "04/2022", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "2018", "category": "YEAR", "risk": "medium"},
+    {"field": "note", "text": "multiple grandchildren", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "non-hodgkin's", "category": "EPONYM", "why": "disease (family history), not a person"},
+    {"field": "note", "text": "Non-Hodgkin’s lymphoma", "category": "EPONYM", "why": "disease (family history), not a person"},
+    {"field": "note", "text": "G5P5", "category": "CLINICAL_NUMBER", "why": "obstetric history, not an ID"},
+    {"field": "note", "text": "ER/PR-positive", "category": "CODE_EVIDENCE", "why": "tumour receptor status for D05.1"}
+  ]
+}

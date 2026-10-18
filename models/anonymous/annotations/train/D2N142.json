@@ -1,0 +1,23 @@
+{
+  "encounter_id": "D2N142",
+  "phi": [
+    {"text": "amanda taylor", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "taylor", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "october 31st 1949", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "72 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "april 16th", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "monday", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a recent day"},
+    {"text": "february 9th", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "may 17th", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "june", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "june 14th", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "Amanda Taylor", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Taylor", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "72-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "April 16", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "May 17", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "June 14", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "June 14th", "field": "note", "type": "DATE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

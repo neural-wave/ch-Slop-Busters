@@ -1,0 +1,15 @@
+I annotated all five encounters and wrote one file per encounter to `annotations/train/`. The validator reports 0 problems.
+
+- D2N115: 6 PHI
+- D2N116: 9 PHI
+- D2N117: 16 PHI
+- D2N118: 5 PHI
+- D2N119: 5 PHI
+
+A few labels were judgement calls you may want to check:
+- **Left unlabelled because they matter clinically:** the car accident that caused the neck pain (D2N115), the aunt's cat that triggers asthma, and the smoky bars (both D2N119).
+- **"yard work" (D2N116):** not labelled, because an earlier file uses it as the generic replacement for "raking leaves". I did label the specific home projects (outdoor shower, patio extension, flower boxes, flower beds).
+- **Two speech-to-text errors labelled as PHI:** "monday" (D2N115) is probably a mishearing, but I labelled it as a weekday anyway. "cadboy" and "cadberry" (D2N117) are brand names (Cadbury), so I labelled them as an organization.
+- **Age span (D2N119):** I labelled the age as "eight years old" rather than just "eight". The evaluator matches every occurrence of a span, and "eight" alone would also match inside "twenty eight" and "eighty" in the vital signs.
+
+--- stderr ---

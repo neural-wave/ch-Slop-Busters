@@ -1,0 +1,13 @@
+All five files are written to `annotations/train/`, and the validator reports 0 problems.
+
+- D2N140: 18 PHI
+- D2N141: 19 PHI
+- D2N142: 17 PHI
+- D2N143: 8 PHI
+- D2N144: 7 PHI
+
+A few borderline calls you may want to check:
+- **Labelled:** "MyChart" as an organization, since an earlier file labelled "epic" that way. "friday's" (the restaurant chain) is also an organization. "patron" (a tequila brand) is a personal detail, since earlier files labelled "red bull" and "mountain dew" that way. The "age 20" in D2N143, when the patient had an abnormal Pap smear, is labelled as an exact age.
+- **Left out:** the "Medtronic Strata" shunt, because it's a medical device. Also the partner's cheating in D2N143, which is the clinical reason for the STD screening, and generic food and drink like "salty snacks" and "chicken alfredo".
+
+--- stderr ---

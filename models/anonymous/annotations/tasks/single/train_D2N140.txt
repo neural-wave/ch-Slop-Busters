@@ -1,0 +1,110 @@
+########## ENCOUNTER D2N140
+=== FIELD: dialogue
+[doctor] brittany edwards , 07 , 1898 . she is a return visit for ibs with functional abdominal pain , nausea , vomiting . ms. edwards is a pleasant , 32-year-old female who was last seen in august of 2019 with flares of abdominal pain , who was diagnosed with irritable bowl that was treated with bentyl .
+[doctor] she had a previous prescription for reglan that she received from the emergency room that she used as needed for nausea . she was instructed to start a low dose fiber supplement , such as citrucel , daily , probiotics to help with gas and bloating , bentyl up to four times daily for intestinal cramping , and stop reglan and use zofran as needed . neuromodulators such as elavil and buspar were discussed but not started .
+[doctor] hello , how are you ?
+[patient] i'm okay .
+[doctor] good . how have you been feeling ?
+[patient] not so good .
+[doctor] yeah , so my nurse told me you have been going out to eat some on friday nights and saturday nights and that you have had some spicy foods or spicy shrimp .
+[patient] yeah , i have .
+[doctor] okay . well , your gut probably does not always appreciate that .
+[patient] no , it does n't like it at all .
+[doctor] yeah , so ibs is one of those things where you are very sensitive to certain things such as spicy foods or fatty foods and alcohol . and this can cause lower belly stuff like cramps , or you can get upper belly stuff such as nausea .
+[patient] i've been getting both .
+[doctor] okay . um , so how frequently have you been getting or having a bowel movement on normal days ?
+[patient] i'm starting to notice it's between two and three times a day .
+[doctor] okay . and are they soft stools or formed stools ?
+[patient] um , they're formed .
+[doctor] okay . and after you have gone out either drinking with your friends , do you tend to have more diarrhea ?
+[patient] yeah , i do .
+[doctor] okay . do you feel it's the food or the alcohol or both ?
+[patient] uh , well usually we go to friday's restaurant . i always eat pasta , the chicken alfredo .
+[doctor] okay . i can s- i can bet it's the alfredo sauce .
+[patient] but it normally does n't bother me .
+[doctor] okay . well , pasta can make you bloated , uh , but it does n't usually cause diarrhea . grilled chi- uh , grilled chicken is usually all right . alfredo , though , is higher in fat , and it does contain dairy . but you're saying it usually does n't bother you ?
+[patient] no .
+[doctor] okay . what type of alcohol drink do you drink when you are there ? is it a sweet drink ?
+[patient] most of the time it's either tequila or dark liquor . i prefer patron , but if i get brown liquor , i only get two . um , every now and again , i'll drink a martini .
+[doctor] sometimes it's the mixer they tend to put in the drinks , but it can be a variety of things . um , so when you're not eating out or drinking , what we do on a daily basis does help keep us regular , so when it does flare up , it c- it might not be as bad . um , have you had any luck using the fiber like citrucel regularly ?
+[patient] um , no . i guess i need to find a new drink .
+[doctor] okay . and how is it during the week ?
+[patient] like what i eat ?
+[doctor] yeah , and with the diarrhea and abdomal- um , abdominal pain .
+[patient] right now , i'm still having the cramping and sharp pains , so i've been avoiding heavy foods . i did have some fried chicken today , though .
+[doctor] and was everything all right after that ?
+[patient] yeah , for the most part .
+[doctor] okay . remember , it's also the portion sizes . so i mean , if you eat a little and you feel fine , then that's okay . you have to just really watch the portions .
+[patient] okay , good . i ca n't go out- go without some fried chicken at least once in a while .
+[doctor] sounds good . all right , well let's take a look at you today , and we'll do a brief physical exam . you will hear me call out some findings . i will answer any questions , and we will discuss once we have finished the exam .
+[patient] sounds good .
+[doctor] all right . so the patient is alert and cooperative , appears stated age . all right . i'm going to listen to your heart and lungs . and lungs are clear to auscultation bilaterally . heart regular rate and rhythm . all right , so if you could just lay back for me , and i'll examine your abdomen .
+[patient] okay .
+[doctor] all right . do you have any tenderness ?
+[patient] no , not really .
+[doctor] okay . so the abdomen is soft , non-tender . no masses or organomegaly . and let me take a listen . normal active bowel sounds . all right . you can go ahead and sit up now . thank you .
+[doctor] all right , so first i want you to try citrucel . it does come in a tablet . you should use it twice daily for regularity . then i would say , if you know you're going out and will possibly have diarrhea as a result , you can go ahead and use your bentyl 20 milligrams . you can do one tablet before you eat , and then repeat up to four times daily . and then on days when you feel good , you do n't have to use anything . um , and then on friday before you leave the house , you can take a bentyl and put one in your pocket for later , and then you can repeat the same thing on saturday if you want , and that will be totally fine .
+[patient] okay , that sounds good .
+[doctor] okay . and so your bentyl , that's the anti-spasm medication , and i would take the higher dose .
+[patient] can i get a refill of that ?
+[doctor] yes , absolutely . uh , so take one tablet about 30 to 45 minutes before leaving the house and then the second tablet at the restaurant . then with the nausea , um , i think we should try and see if you can recognize a pattern with what you are eating and drinking , um , um , about , like , what makes it worse .
+[patient] yeah , i noticed i've been doing better with drinking water instead of sodas .
+[doctor] okay , good . and then for your zofran , i would n't take that ahead of time . just plan on drinking plenty of water .
+[patient] okay .
+[doctor] okay , and you can take it , but before you do , we want to try to reduce the triggers . uh , so watch out for greasy or fatty foods and sugary drinks .
+[patient] okay , i can do that .
+[doctor] okay . and so , however , if it is not just these isolated inci- incidents and the symptoms are happening all the time , we could put you on a long term medication that would take ... that you would take every night . and so then you do n't have to use so much bentyl or the zofran . how do you feel about that ?
+[patient] i was actually going to ask you about something like that to help avoid flares altogether .
+[doctor] yeah , there is . and it actually works on the chemicals in your brain that are causing your gut to be overly sensitive . one is called elavil , but the only drawback is that it can make you a little sleepy . how does that sound ?
+[patient] that sounds like a much better plan .
+[doctor] okay , great . we can definitely do that . uh , just take it every night before bedtime .
+[patient] okay , that sounds good . thank you so much .
+[doctor] you're welcome . and so i have gone ahead and sent your prescriptions to your pharmacy . just give us a call if you have any questions or need us for anything else . and then let's plan on touching base through mychart email in about a month to just check in to see how you're doing with symptoms . okay ?
+[patient] okay , that sounds good . thank you .
+[doctor] you're welcome , and have a good rest of your day .
+[doctor] so review of symptoms is positive for diarrhea , nausea , and abdominal pain . assessment and plan . brittany edwards is a pleasant female with ibs and functional abdominal pain , aggravated by high stress , poor eating habits , and poor sleeping habits . i've encouraged dietary and lifestyle modifications , as well as starting a neuromodulator such as elavil 25 milligrams at bedtime for ibs .
+[doctor] she can use bentyl 20 milligrams as needed 30 to 45 minutes prior to eating out at a restaurant . she can also use zofran if needed . however , i have encouraged her to reduce greasy and fatty foods and alcohol consumption . i have asked her to follow up in one month by emailing over mychart regarding any side effects and issues , or issues with elavil or if adjustments are needed .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow up irritable bowel syndrome (IBS).
+
+HISTORY OF PRESENT ILLNESS
+
+Ms. Brittany Edwards is a pleasant 32-year-old female who returns in follow up for irritable bowel syndrome (IBS) with functional abdominal pain, nausea, and vomiting.
+
+Ms. Edwards was last seen in August 2019 with flares of abdominal pain and was diagnosed with irritable bowel syndrome that was treated with Bentyl. She had a previous prescription for Reglan that she received from the emergency room that she used as needed for nausea. She was instructed to start a low dose fiber supplement such as Citrucel daily, probiotics to help with gas and bloating, and Bentyl up to 4 times daily for intestinal cramping. She was instructed to discontinue Reglan and to use Zofran as needed for nausea. Neuromodulators such as Elavil and Buspar were discussed but not started.
+
+Ms. Edwards continues to have intermittent abdominal symptoms. Monday through Thursday she has less flare ups of her symptoms but states she is currently having cramps and sharp pains. She describes she recently ate shrimp which caused her to have both upper and lower abdominal pain and bloating. However, she notices episodes of diarrhea after eating chicken alfredo and consuming alcohol. She does not believe the alfredo contributes to her symptoms. The patient states she consumes 2 drinks when out of either tequila or brown liquor and occasionally a martini. She does her best to avoid “heavy foods,” but ate fried chicken today without any symptoms. She has stopped drinking sodas which has been helpful. The patient reports passing 2-3 formed stools a day.
+
+REVIEW OF SYMPTOMS
+
+• Gastrointestinal: Positive nausea, diarrhea, and abdominal pain.
+
+PHYSICAL EXAM
+
+Alert and cooperative, appears stated age.
+
+Respiratory
+Lungs clear to auscultation bilaterally.
+
+Cardiovascular
+Heart regular rate and rhythm.
+
+Gastrointestinal
+Abdomen soft, non-tender, no masses or organomegaly. Normoactive bowel sounds.
+
+ASSESSMENT
+
+• Irritable bowel syndrome
+
+Brittany Edwards is a 32-year-old established patient who returned today to discuss management of IBS and functional abdominal pain made worse by high stress, poor eating habits, and poor sleeping habits.
+
+PLAN
+
+I have encouraged dietary and lifestyle modifications as well as starting a neuromodulator, such as Elavil 25 mg at bedtime for IBS. She can use Bentyl 20 mg as needed 30-45 minutes before eating out at a restaurant. She can also use Zofran as needed for nausea. However, I have encouraged her to reduce greasy fatty foods and alcohol consumption.
+
+INSTRUCTIONS
+
+Send MyChart message in 1 month regarding any side effects of issues with Elavil or if dose adjustments are needed.
+Return to clinic in 1 month or sooner if needed.

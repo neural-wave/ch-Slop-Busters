@@ -1,0 +1,585 @@
+{
+ "id": "G0007",
+ "dataset": "synthetic_new",
+ "sex": "female",
+ "age_range": [
+  30,
+  45
+ ],
+ "icd10_codes": [
+  {
+   "code": "E05.00",
+   "description": "Thyrotoxicosis with diffuse goiter without thyrotoxic crisis or storm"
+  },
+  {
+   "code": "Z79.899",
+   "description": "Other long term (current) drug therapy"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} , thanks for coming in on the referral . what's been going on ?\n[patient] hi , doctor . my family doctor thinks it's my thyroid . i've been losing weight even though i'm eating like a horse , and my heart races all the time .\n[doctor] tell me more . when did it start ?\n[patient] about four months ago . i lost about twelve pounds , and my hands shake when i'm holding a whisk . i'm a pastry chef at {ORG} , so my hands are everything .\n[doctor] that's a difficult job with a tremor . what's a typical day look like ?\n[patient] i'm in the kitchen at four in the morning . i'm on my feet ten hours and around the ovens all day . it's hot and i sweat through my shirts . i've been drinking way too much coffee to get through it .\n[doctor] i see . how about sleep ?\n[patient] i wake up at three and can't get back to sleep . my fitbit says my resting heart rate is around one ten , even when i'm sitting still .\n[doctor] that's helpful data . do you notice your heart pounding at night ?\n[patient] yes , sometimes i can feel it in my neck . and i'm always too warm , even when everyone else is cold .\n[doctor] okay . any changes in your bowel habits ?\n[patient] i'm going to the bathroom more , yes . loose stools two or three times a day .\n[doctor] any eye changes , like grittiness or bulging ?\n[patient] my eyes feel dry sometimes , and my husband says they look a little wider . i don't think they stick out though .\n[doctor] okay . let's look . any family history of thyroid disease ?\n[patient] my mother had her thyroid out after she had something like this . the doctors called it an autoimmune thing . she's on levothyroxine now .\n[doctor] that's useful . the thyroid test your family doctor sent over was from {DATE_NUM} . it showed a very low tsh and a high free t4 .\n[patient] what does that mean ?\n[doctor] your thyroid is making too much hormone . the most likely cause is graves' disease , an autoimmune condition where antibodies make the thyroid overactive .\n[patient] graves . i've heard of it . is it curable ?\n[doctor] it's manageable . there are medicines that slow the thyroid down , and there are treatments that can reduce the thyroid's activity for good .\n[doctor] let me examine your neck . the thyroid is diffusely enlarged and firm , without distinct nodules . there's a fine tremor when you hold your arms out . your reflexes are brisk .\n[patient] okay .\n[doctor] your pulse is one oh four , your blood pressure is one thirty four over seventy eight , and your temperature is ninety eight point eight . no fever .\n[patient] i'm always warm .\n[doctor] let's get the antibody test today , the tsh receptor antibody . i also want your full thyroid panel and a complete blood count .\n[patient] any blood work i should be worried about ?\n[doctor] no , it's standard . what medicines are you taking now ?\n[patient] just tylenol for the headaches , and the multivitamin . oh , and my family doctor started methimazole last month , ten milligrams in the morning .\n[doctor] good . are you taking it every day ?\n[patient] yes , every morning with my coffee . i did miss two doses because i was working a double shift .\n[doctor] that's okay , but missing doses matters with methimazole . set an alarm on your phone . i'll continue the methimazole at the same dose and start propranolol to control your heart rate .\n[patient] propranolol . is that going to make me tired at work ?\n[doctor] at a low dose , it can cause some tiredness at first . take it with food .\n[patient] okay . i'll try .\n[doctor] i'd also like you to get a radioiodine uptake scan to help decide between medicine and radioactive iodine treatment . it's a quick test where you swallow a small capsule and we measure how much iodine your thyroid picks up .\n[patient] will it hurt ?\n[doctor] no , it doesn't hurt . the radiation dose is low . the scheduling team will send the paperwork .\n[patient] radioactive iodine . that sounds scary .\n[doctor] it's very common and well tolerated , and we'd go through the details before any decision . one thing : if you're planning to get pregnant in the next year , we need to avoid radioiodine and adjust the methimazole .\n[patient] we're not planning that right now . my husband and i are just busy with the business .\n[doctor] good . and about your work : the heat and the caffeine will make the symptoms worse , so try to cut the coffee to one cup before noon .\n[patient] that's going to be hard . i'll try .\n[doctor] also , if you get a fever , a sore throat , or a rash on methimazole , call us right away . methimazole can lower your white blood cell count .\n[patient] okay . i'll call the number on the sheet .\n[doctor] good . come back in six weeks with the blood test results . take care , {PATIENT_FIRST} .\n[patient] alright , thank you .",
+ "note": "MRN: {MRN}\n\nCHIEF COMPLAINT\n\nNew patient consultation on referral for hyperthyroidism.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female referred by her primary care physician for evaluation of hyperthyroidism. She reports approximately four months of unintentional weight loss of about 12 pounds despite increased appetite, palpitations, heat intolerance with diaphoresis, tremor affecting fine motor tasks, insomnia with early-morning waking, and loose stools two to three times daily. Wearable device readings show resting heart rate around 110 bpm. She reports neck fullness at night and mild dry eye sensation. Her husband observes mild eyelid widening. She denies eye pain or diplopia.\n\nShe works as a pastry chef at {ORG}, starting shifts around 4 a.m. and spending about ten hours on her feet near ovens with significant heat exposure. She has increased her caffeine intake to cope with fatigue.\n\nFamily history is notable for her mother, who had autoimmune thyroid disease treated with thyroidectomy and is now on levothyroxine.\n\nPAST MEDICAL HISTORY\n\nHeadaches managed with acetaminophen as needed.\n\nMEDICATIONS\n\nMethimazole 10 mg by mouth every morning, started last month by primary care; two doses missed during a recent double shift. Multivitamin daily. Acetaminophen as needed.\n\nPHYSICAL EXAM\n\nVitals: HR 104, BP 134/78, temperature 98.8 F.\nNeck: thyroid diffusely enlarged and firm, no discrete nodules. Fine bilateral tremor with arms extended. Reflexes brisk. No proptosis appreciated; mild lid retraction noted.\n\nRESULTS\n\nTSH markedly suppressed and free T4 elevated on outside thyroid panel dated {DATE_NUM}. TSH receptor antibody, complete thyroid panel, and complete blood count ordered.\n\nASSESSMENT AND PLAN\n\n1. Graves' disease with hyperthyroidism, diagnosed in {YEAR}, with symptomatic tachycardia and weight loss. Continue methimazole 10 mg daily; counseled on adherence. Start propranolol at low dose for adrenergic symptoms. Radioactive iodine uptake scan to guide definitive treatment. Discussed pregnancy planning implications.\n2. Occupational heat and caffeine exposure likely aggravating symptoms; advised limiting caffeine to one cup before noon.\n3. Return in six weeks with laboratory results. Return precautions for fever, sore throat, or rash on methimazole.",
+ "medical_concepts": [
+  {
+   "text": "losing weight",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "eating like a horse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "my heart races all the time",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lost about twelve pounds",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "my hands shake",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "holding a whisk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "that's a difficult job with a tremor",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "around the ovens all day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "it's hot and i sweat through my shirts",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "way too much coffee",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i wake up at three and can't get back to sleep",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "resting heart rate is around one ten",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart pounding at night",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "always too warm",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "loose stools two or three times a day",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my eyes feel dry sometimes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "they look a little wider",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "stick out",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "an autoimmune thing",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "very low tsh and a high free t4",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "graves' disease",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "the thyroid's activity",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the thyroid is diffusely enlarged and firm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "without distinct nodules",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a fine tremor when you hold your arms out",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your reflexes are brisk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your pulse is one oh four",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "your blood pressure is one thirty four over seventy eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your temperature is ninety eight point eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "the tsh receptor antibody",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "a complete blood count",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "the headaches",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "methimazole",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "two doses",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "propranolol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "a radioiodine uptake scan",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "radioactive iodine treatment",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "the heat and the caffeine will make the symptoms worse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a rash on methimazole",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "methimazole can lower your white blood cell count",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Headaches managed with acetaminophen",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "unintentional weight loss",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "palpitations",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "heat intolerance with diaphoresis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tremor affecting fine motor tasks",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "insomnia with early-morning waking",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "loose stools two to three times daily",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "resting heart rate around 110 bpm",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "neck fullness at night",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild dry eye sensation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "eyelid widening",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "denies eye pain or diplopia",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "significant heat exposure",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "increased her caffeine intake",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "autoimmune thyroid disease treated with thyroidectomy",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "levothyroxine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Methimazole 10 mg by mouth every morning",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Multivitamin daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Acetaminophen as needed",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "HR 104",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "BP 134/78",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "temperature 98.8 F",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "thyroid diffusely enlarged and firm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Fine bilateral tremor with arms extended",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Reflexes brisk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No proptosis appreciated",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mild lid retraction",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "TSH markedly suppressed",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "free T4 elevated",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Graves' disease with hyperthyroidism",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "symptomatic tachycardia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Continue methimazole 10 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Start propranolol at low dose",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Radioactive iodine uptake scan",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Occupational heat and caffeine exposure",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fever, sore throat, or rash",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for acetaminophen"
+  },
+  {
+   "text": "fitbit",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of a wearable device"
+  },
+  {
+   "text": "graves' disease",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponym for autoimmune hyperthyroidism, not a person"
+  },
+  {
+   "text": "Graves' disease",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponym for autoimmune hyperthyroidism, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "E05.00",
+   "spans": [
+    {
+     "text": "my heart races all the time",
+     "field": "dialogue"
+    },
+    {
+     "text": "the thyroid is diffusely enlarged and firm",
+     "field": "dialogue"
+    },
+    {
+     "text": "Graves' disease with hyperthyroidism",
+     "field": "note"
+    },
+    {
+     "text": "TSH markedly suppressed",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z79.899",
+   "spans": [
+    {
+     "text": "methimazole",
+     "field": "dialogue"
+    },
+    {
+     "text": "propranolol",
+     "field": "dialogue"
+    },
+    {
+     "text": "Methimazole 10 mg by mouth every morning",
+     "field": "note"
+    },
+    {
+     "text": "Continue methimazole 10 mg daily",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "pastry chef",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job tied to heat and caffeine exposure"
+  },
+  {
+   "text": "pastry chef",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job tied to heat and caffeine exposure"
+  }
+ ],
+ "scenario": {
+  "specialty": "endocrinology",
+  "visit": "new",
+  "length": "medium",
+  "focus": [
+   "ID",
+   "OCCUPATION",
+   "DATE"
+  ]
+ }
+}

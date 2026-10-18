@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N132",
+  "phi": [
+    {"text": "lee", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "40-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "birthday party", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "party"},
+    {"text": "surprise party", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "party"},
+    {"text": "Lee", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "40-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "birthday party", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "party"}
+  ],
+  "medical_concepts": []
+}

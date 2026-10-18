@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N120",
+  "pii": [
+    {"field": "dialogue", "text": "larry", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "golf", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Larry", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Garcia", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "41-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "achilles", "category": "EPONYM", "why": "Achilles reflex, anatomical eponym"},
+    {"field": "note", "text": "Achilles", "category": "EPONYM", "why": "Achilles reflex, anatomical eponym"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "encounter_id": "D2N201",
+  "phi": [
+    {"text": "steven", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "basketball", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a sport"},
+    {"text": "Steven Reed", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "60-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "basketball", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "a sport"}
+  ],
+  "medical_concepts": []
+}

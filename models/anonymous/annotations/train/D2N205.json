@@ -1,0 +1,16 @@
+{
+  "encounter_id": "D2N205",
+  "phi": [
+    {"text": "angela", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "over the weekend", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "recently"},
+    {"text": "this weekend", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "recently"},
+    {"text": "walk my dog", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "go for a walk"},
+    {"text": "run with your dogs", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"},
+    {"text": "mile long walks", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "long walks"},
+    {"text": "dog", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pet"},
+    {"text": "dobrman", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "dog"},
+    {"text": "mile long walks", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "long walks"},
+    {"text": "doberman", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "dog"}
+  ],
+  "medical_concepts": []
+}

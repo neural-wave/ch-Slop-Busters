@@ -1,0 +1,626 @@
+{
+  "encounter_id": "D2N029",
+  "pii": [
+    {
+      "text": "sophia jackson",
+      "field": "dialogue",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient full name"
+    },
+    {
+      "text": "mrs. jackson",
+      "field": "dialogue",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient surname with title"
+    },
+    {
+      "text": "mrnr472348",
+      "field": "dialogue",
+      "category": "ID",
+      "tier": "direct",
+      "comment": "medical record number"
+    },
+    {
+      "text": "57 year old",
+      "field": "dialogue",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "patient age"
+    },
+    {
+      "text": "april 10th",
+      "field": "dialogue",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "dermatology visit date"
+    },
+    {
+      "text": "auto repair shop",
+      "field": "dialogue",
+      "category": "OCCUPATION",
+      "tier": "quasi",
+      "comment": "patient owns an auto repair shop"
+    },
+    {
+      "text": "Sophia Jackson",
+      "field": "note",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient full name"
+    },
+    {
+      "text": "Mrs. Jackson",
+      "field": "note",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient surname with title"
+    },
+    {
+      "text": "57-year-old",
+      "field": "note",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "patient age"
+    },
+    {
+      "text": "04/10",
+      "field": "note",
+      "category": "DATE",
+      "tier": "direct",
+      "comment": "biopsy date"
+    },
+    {
+      "text": "auto repair shop",
+      "field": "note",
+      "category": "OCCUPATION",
+      "tier": "quasi",
+      "comment": "patient owns an auto repair shop"
+    }
+  ],
+  "medical_concepts": [
+    {
+      "text": "melanoma",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "0.7 millimeter lesion",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "right inferior back",
+      "field": "dialogue",
+      "type": "anatomy",
+      "icd_relevant": true
+    },
+    {
+      "text": "biopsy",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "skin cancer",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "basal cell",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "squamous cell",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "pancreatic cancer",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "breast or ovarian",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "moles",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "allergic to augmentin",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "smoke",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "gall bladder and appendix",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "one centimeter shave biopsy site",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "no residual pigmentation",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "no intrinsic or satellite lesions",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "no axillary , cervical , or supraclavicular lymphadenopathy",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "soft lymph node in the right groin",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "ultrasound",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "metastasize to the lymph nodes",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "wide local incision",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "malignant melanoma , invasive , superficial spreading",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "shave of right inferior back",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "clark level 4",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "breslow thickness 0.7 millimeters",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "radial growth phase present",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "vertical growth phase not identified",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "ulceration not identified",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "lymphatic invasion not identified",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "perineural invasion not identified",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "predominant cytology epithelioid",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "peripheral margin positive",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "stage 1",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "asymmetric black and brown nevus",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "irregular border",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "newly diagnosed melanoma",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "intermediate thickness melanoma",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "right inguinal lymph node with slightly atypical consistency",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "metastatic disease",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "wide local excision with a one to two centimeter margin",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "skin graft closure",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "sunscreen",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "Melanoma",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "melanoma of the right inferior back",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "0.7 mm lesion",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "atypical nevi",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "mole checks",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "Cholecystectomy",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "Appendectomy",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "Current smoker since teens",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "pancreatic cancer",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "Augmentin",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "No axillary, cervical, or supraclavicular lymphadenopathy",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "soft lymph node in the right groin",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "1 cm shave biopsy site",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "no residual pigmentation",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "No other suspicious moles",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "Shave biopsy of right inferior back malignant melanoma, invasive, superficial spreading",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Superficial spreading",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "Clark level: 4",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "Breslow thickness: 0.7 mm",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "Radial growth phase: present",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "Vertical growth phase: not identified",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "Mitotic figures: less than 1 mm2",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "Ulceration: not identified",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "Lymphatic invasion: not identified",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "Perineural invasion: not identified",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "Predominant cytology: epithelioid",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "Peripheral margin: positive",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "Deep margin: Negative",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "Stage: 1",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "asymmetric black and brown nevus with central amelanotic component and irregular border",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "newly diagnosed melanoma",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "intermediate thickness melanoma",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "right inguinal lymph node with slightly atypical consistency",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "ultrasound",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "metastatic disease",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "wide local excision with a 1-2 cm margin",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": true
+    },
+    {
+      "text": "skin graft closure",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "mitotic features , less than one millimeter squared",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "deep margin , uh , negative",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "microscopic satellitosis not identified",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "lymphadenopathy",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "Microscopic satellitosis: not identified",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "Infiltrating lymphocytes",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "Mother: melanoma",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": false
+    }
+  ],
+  "ambiguous_terms": [
+    {
+      "text": "clark level 4",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "Clark level is a melanoma staging eponym, not a person"
+    },
+    {
+      "text": "breslow thickness 0.7 millimeters",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "Breslow is a melanoma thickness eponym, not a person"
+    },
+    {
+      "text": "Clark level: 4",
+      "field": "note",
+      "is_pii": false,
+      "comment": "Clark level is a staging eponym, not a person"
+    },
+    {
+      "text": "Breslow thickness: 0.7 mm",
+      "field": "note",
+      "is_pii": false,
+      "comment": "Breslow is a staging eponym, not a person"
+    }
+  ]
+}

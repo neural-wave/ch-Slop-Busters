@@ -1,0 +1,34 @@
+{
+  "encounter_id": "SYN013",
+  "pii": [
+    {"field": "note", "text": "Rowan Ward", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Bay 3 Bed 14", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Olivia", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Brennan", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Marco", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Bianchi", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Grace", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Grace Hill", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Mrs. Hill", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "74-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "W-552190", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "02/11/1951", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "06/10/2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "17 Wren Court", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Hollinsworth", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "HL4 6RT", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "school dinner lady", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "Ahmed", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "bleep 4417", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "daughter Joy", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Hill-Barker", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "07700 900233", "category": "ID", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "note", "text": "up the hill", "category": "NOT_A_NAME", "why": "functional status, not the surname Hill"},
+    {"field": "note", "text": "no joy", "category": "NOT_A_NAME", "why": "nursing slang for unsuccessful, not the daughter Joy"},
+    {"field": "note", "text": "cigarettes", "category": "CODE_EVIDENCE", "why": "F17.210 cigarette dependence"},
+    {"field": "note", "text": "142/84", "category": "CLINICAL_NUMBER", "why": "blood pressure"},
+    {"field": "note", "text": "3/5", "category": "CLINICAL_NUMBER", "why": "steroid course day"}
+  ]
+}

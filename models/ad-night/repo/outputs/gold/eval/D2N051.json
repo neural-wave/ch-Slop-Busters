@@ -1,0 +1,55 @@
+{
+  "encounter_id": "D2N051",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "jeremy",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "twenty eighteen",
+      "category": "YEAR",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Jeremy",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Roberts",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "79-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "2018",
+      "category": "YEAR",
+      "risk": "medium"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "127/80",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure reading"
+    },
+    {
+      "field": "note",
+      "text": "2/6",
+      "category": "CLINICAL_NUMBER",
+      "why": "murmur grade, not a date"
+    }
+  ]
+}

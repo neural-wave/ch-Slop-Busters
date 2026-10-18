@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N194",
+  "phi": [
+    {"text": "betty", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "renovating my basement", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "doing home projects"},
+    {"text": "renovations", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "home projects"},
+    {"text": "pandemic", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "public health situation"},
+    {"text": "home depot", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "hardware store"},
+    {"text": "Betty Rogers", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "50-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "renovating her basement", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "doing home projects"}
+  ],
+  "medical_concepts": []
+}

@@ -16,7 +16,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent  # the eval package
 REPO = HERE.parent
-CONTAINER = REPO.parent  # the folder that also holds the model checkouts (models/, vm-backup/, ...)
+CONTAINER = REPO.parent  # the folder that holds the other tools (daniel-eval/, judge/, adversary/, ...)
 ADAPTERS = HERE / "adapters"
 DATA = REPO / "data"
 CONVERTED = DATA / "converted"

@@ -1,0 +1,772 @@
+{
+ "id": "S023",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S42.021A",
+   "description": "Displaced fracture of shaft of right clavicle, initial encounter for closed fracture"
+  },
+  {
+   "code": "V28.49XA",
+   "description": "Other motorcycle driver injured in noncollision transport accident in traffic accident, initial encounter"
+  },
+  {
+   "code": "Y92.413",
+   "description": "State road as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y99.8",
+   "description": "Other external cause status"
+  },
+  {
+   "code": "F17.210",
+   "description": "Nicotine dependence, cigarettes, uncomplicated"
+  }
+ ],
+ "dialogue": "[doctor] hey , {PATIENT_FIRST} , nice to meet you . i'm doctor {DOCTOR_LAST} .\n[patient] hey , nice to meet you .\n[doctor] hey , dragon , i'm seeing {PATIENT_FIRST} {PATIENT_LAST} , he's a {AGE}-year-old male here for a right shoulder injury . so what happened ?\n[patient] so i wrecked my motorcycle on saturday . me and my buddy {OTHER_FIRST} were riding up to {PLACE} , just a weekend ride , and we were on the state route that goes up through the hills . it's a two-lane road with a lot of curves .\n[doctor] okay .\n[patient] and i came around a curve and there was a bunch of gravel spread across my lane . i hit it , and the back tire just slid out from under me . i laid the bike down and slid , and i landed right on my right shoulder .\n[doctor] okay . so no other vehicles were involved ? you did n't hit a car or anything ?\n[patient] no , nobody else . it was just me and the gravel .\n[doctor] were you wearing a helmet ?\n[patient] yeah , full face helmet , and my jacket .\n[doctor] good . did you hit your head ?\n[patient] the helmet hit the road a little , but i did n't black out or anything . i remember the whole thing .\n[doctor] any headache , nausea , blurry vision since then ?\n[patient] no .\n[doctor] okay . and where is the pain exactly ?\n[patient] it's like right here , on the collarbone . there's a big bump there now .\n[doctor] okay . and how bad is the pain ?\n[patient] like a seven . it's really bad when i try to lift my arm .\n[doctor] any numbness or tingling in your arm or your fingers ?\n[patient] no , my hand feels fine .\n[doctor] okay . any other injuries ? any pain in your chest , your ribs , your hips ?\n[patient] just some road rash on my right forearm , like scrapes , but the jacket took most of it . my buddy cleaned it up .\n[doctor] okay . did you go to the emergency room ?\n[patient] no , i probably should have . i just put my arm in a sling i had at home and took some advil .\n[doctor] okay . do you have any medical problems ?\n[patient] no , not really .\n[doctor] do you smoke ?\n[patient] yeah , about a pack a day .\n[doctor] how long have you been smoking ?\n[patient] since i was like 16 .\n[doctor] okay . so i do wanna talk to you about that , because smoking actually slows down bone healing quite a bit .\n[patient] really ? i did n't know that .\n[doctor] yeah . have you ever tried to quit ?\n[patient] i tried once with the gum . i made it about a month . i get cravings first thing in the morning , i usually light one up within like 10 minutes of waking up .\n[doctor] okay . would you be interested in trying again ?\n[patient] yeah , i mean , if it's gonna help this heal , i'll try .\n[doctor] okay . let's take a look at you . so , on exam , there's an obvious deformity over the middle of the right clavicle , with swelling and bruising . the skin is intact , it's not tented . i'm gonna press here gently .\n[patient] ow , yeah .\n[doctor] okay . tender over the midshaft clavicle . can you wiggle your fingers ? squeeze my hand . good . you have good pulses at the wrist , and sensation is normal in the hand . there are some healing abrasions on the right forearm , they look clean , no signs of infection .\n[patient] okay .\n[doctor] hey , dragon , show me the right clavicle x-ray . so here's your x-ray . you can see the collarbone is broken right in the middle , and the two ends are shifted , so it's a displaced midshaft fracture of the right clavicle . there's about one centimeter of shortening , and it's not in a lot of pieces .\n[patient] do i need surgery ?\n[doctor] so for most of these , we treat them without surgery . since yours is displaced but not too shortened , i think we can try a sling first . we'd consider surgery if it's shortened more than about two centimeters , if the skin was at risk , or if it does n't heal .\n[patient] okay . how long am i gonna be out of work ? i'm an electrician , so i kinda need both arms .\n[doctor] probably light duty only for at least six weeks , no climbing ladders or overhead work .\n[patient] okay .\n[doctor] so i want you in the sling for comfort for the next two to three weeks . you can take it off to do gentle elbow , wrist and hand movement . no lifting anything heavier than a coffee cup with that arm , and absolutely no riding the motorcycle until it's healed .\n[patient] yeah , the bike's pretty beat up anyway .\n[doctor] for pain , you can take ibuprofen 600 milligrams every six hours with food , and tylenol in between . for the smoking , i'm gonna start you on nicotine patches , 21 milligrams a day , and you can use the nicotine gum for cravings . and i'll give you the number for the quit line .\n[patient] okay , sounds good .\n[doctor] we'll get another x-ray in two weeks to make sure it has n't shifted .\n[patient] all right . thanks , doc .",
+ "note": "CHIEF COMPLAINT\n\nRight shoulder pain after motorcycle accident.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male who presents with right clavicle pain after a motorcycle accident on Saturday.\n\nThe patient was the driver of a motorcycle on a two-lane state road during a weekend ride when he lost control on gravel in a curve. The rear tire slid out and he laid the bike down, landing on his right shoulder. No other vehicles were involved. He was wearing a full-face helmet and riding jacket. His helmet struck the road, but he denies loss of consciousness, headache, nausea, or blurry vision. He reports pain over the right collarbone with a visible bump, rated 7/10, worse with arm elevation. He denies numbness or tingling. He also sustained abrasions to the right forearm. He did not seek emergency care. He has been using a sling and Advil.\n\nSOCIAL HISTORY\n\nSmokes 1 pack per day since age 16. Smokes within 10 minutes of waking. Previously tried nicotine gum with 1 month of abstinence. He is interested in quitting. He works as an electrician.\n\nPHYSICAL EXAM\n\nRight shoulder: Obvious deformity over the midshaft of the right clavicle with swelling and ecchymosis. Skin intact, not tented. Tender to palpation over the midshaft clavicle.\nNeurovascular: Radial pulse intact. Sensation intact in the hand. Full finger motion and grip.\nSkin: Healing abrasions on the right forearm, clean, without signs of infection.\n\nRESULTS\n\nX-ray of the right clavicle: Displaced midshaft clavicle fracture with approximately 1 cm of shortening. No comminution.\n\nASSESSMENT AND PLAN\n\n1. Displaced fracture of the shaft of the right clavicle, closed.\n- Nonoperative management with sling for comfort for 2 to 3 weeks.\n- Gentle elbow, wrist, and hand range of motion.\n- Light duty at work for at least 6 weeks.\n- No lifting with the right arm. No motorcycle riding until healed.\n- Ibuprofen 600 mg every 6 hours with food, alternating with Tylenol.\n- Repeat x-ray in 2 weeks. Surgical fixation would be considered for shortening greater than 2 cm, skin compromise, or nonunion.\n\n2. Nicotine dependence, cigarettes.\n- Counseled that smoking delays fracture healing.\n- Start nicotine patch 21 mg daily with nicotine gum as needed for cravings.\n- Quit line information provided.",
+ "medical_concepts": [
+  {
+   "text": "i wrecked my motorcycle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the state route",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "two-lane road",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a bunch of gravel spread across my lane",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the back tire just slid out from under me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i laid the bike down",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no other vehicles were involved",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it was just me and the gravel",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "riding the motorcycle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "just a weekend ride",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the helmet hit the road",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "big bump",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "road rash on my right forearm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "scrapes",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "good pulses at the wrist",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is normal in the hand",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "healing abrasions on the right forearm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no signs of infection",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "obvious deformity over the middle of the right clavicle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "swelling and bruising",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tender over the midshaft clavicle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the skin is intact , it's not tented",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "one centimeter of shortening",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the collarbone is broken right in the middle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "right shoulder injury",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's really bad when i try to lift my arm",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "black out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "headache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nausea",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "blurry vision",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "cravings",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "displaced midshaft fracture of the right clavicle",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "smoking",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a pack a day",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "collarbone",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "right clavicle",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "right shoulder",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "chest",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "ribs",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "hips",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "elbow",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "wrist",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "fingers",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "right clavicle x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "another x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "advil",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen 600 milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "nicotine patches , 21 milligrams a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "nicotine gum",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "the gum",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "sling",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "quit line",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "motorcycle accident",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "driver of a motorcycle on a two-lane state road",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lost control on gravel in a curve",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "during a weekend ride",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "The rear tire slid out and he laid the bike down",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No other vehicles were involved",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Obvious deformity over the midshaft of the right clavicle with swelling and ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tender to palpation over the midshaft clavicle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Skin intact, not tented",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Displaced midshaft clavicle fracture with approximately 1 cm of shortening",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No comminution",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Radial pulse intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact in the hand",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Full finger motion and grip",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Healing abrasions on the right forearm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "without signs of infection",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right shoulder pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "right clavicle pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain over the right collarbone",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "loss of consciousness, headache, nausea, or blurry vision",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "cravings",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Displaced fracture of the shaft of the right clavicle, closed",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Nicotine dependence, cigarettes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Smokes 1 pack per day since age 16",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Smokes within 10 minutes of waking",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "abrasions to the right forearm",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "nonunion",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-ray of the right clavicle",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Repeat x-ray",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Advil",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen 600 mg every 6 hours",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "nicotine gum",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "nicotine patch 21 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "sling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Nonoperative management",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Surgical fixation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Quit line information provided",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "documentation software"
+  },
+  {
+   "text": "advil",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand-name medication"
+  },
+  {
+   "text": "Saturday",
+   "field": "note",
+   "is_pii": false,
+   "comment": "bare weekday"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S42.021A",
+   "spans": [
+    {
+     "text": "displaced midshaft fracture of the right clavicle",
+     "field": "dialogue"
+    },
+    {
+     "text": "obvious deformity over the middle of the right clavicle",
+     "field": "dialogue"
+    },
+    {
+     "text": "the skin is intact , it's not tented",
+     "field": "dialogue"
+    },
+    {
+     "text": "Displaced fracture of the shaft of the right clavicle, closed",
+     "field": "note"
+    },
+    {
+     "text": "Displaced midshaft clavicle fracture with approximately 1 cm of shortening",
+     "field": "note"
+    },
+    {
+     "text": "Skin intact, not tented",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V28.49XA",
+   "spans": [
+    {
+     "text": "i wrecked my motorcycle",
+     "field": "dialogue"
+    },
+    {
+     "text": "i laid the bike down",
+     "field": "dialogue"
+    },
+    {
+     "text": "no other vehicles were involved",
+     "field": "dialogue"
+    },
+    {
+     "text": "driver of a motorcycle on a two-lane state road",
+     "field": "note"
+    },
+    {
+     "text": "The rear tire slid out and he laid the bike down",
+     "field": "note"
+    },
+    {
+     "text": "No other vehicles were involved",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.413",
+   "spans": [
+    {
+     "text": "the state route",
+     "field": "dialogue"
+    },
+    {
+     "text": "two-lane road",
+     "field": "dialogue"
+    },
+    {
+     "text": "driver of a motorcycle on a two-lane state road",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.8",
+   "spans": [
+    {
+     "text": "just a weekend ride",
+     "field": "dialogue"
+    },
+    {
+     "text": "during a weekend ride",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "F17.210",
+   "spans": [
+    {
+     "text": "smoking",
+     "field": "dialogue"
+    },
+    {
+     "text": "a pack a day",
+     "field": "dialogue"
+    },
+    {
+     "text": "Nicotine dependence, cigarettes",
+     "field": "note"
+    },
+    {
+     "text": "Smokes 1 pack per day since age 16",
+     "field": "note"
+    },
+    {
+     "text": "Smokes within 10 minutes of waking",
+     "field": "note"
+    },
+    {
+     "text": "nicotine patch 21 mg daily",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm an electrician",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient job"
+  },
+  {
+   "text": "electrician",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient job"
+  },
+  {
+   "text": "since i was like 16",
+   "field": "dialogue",
+   "category": "AGE",
+   "comment": "age at smoking onset"
+  },
+  {
+   "text": "age 16",
+   "field": "note",
+   "category": "AGE",
+   "comment": "age at smoking onset"
+  }
+ ]
+}

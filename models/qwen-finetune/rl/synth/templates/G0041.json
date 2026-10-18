@@ -1,0 +1,625 @@
+{
+ "id": "G0041",
+ "dataset": "synthetic_acute",
+ "sex": "female",
+ "age_range": [
+  45,
+  60
+ ],
+ "icd10_codes": [
+  {
+   "code": "T78.3XXA",
+   "description": "Angioneurotic edema, initial encounter"
+  },
+  {
+   "code": "L50.0",
+   "description": "Allergic urticaria"
+  },
+  {
+   "code": "T36.0X5A",
+   "description": "Adverse effect of penicillins, initial encounter"
+  },
+  {
+   "code": "Z88.0",
+   "description": "Allergy status to penicillin"
+  },
+  {
+   "code": "J30.9",
+   "description": "Allergic rhinitis, unspecified"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . how are you feeling today ?\n[patient] honestly not great , doctor . i woke up looking like a balloon this morning . my lips and my eyelids are puffy and i have hives all over my arms .\n[doctor] i'm sorry to hear that . is that your sister with you ?\n[patient] yes , this is {OTHER_FIRST} . she took the morning off work to drive me here . she said i should come in right away because the swelling was getting worse .\n[doctor] that was the right call . so tell me when this started .\n[patient] it started about two days ago . i had a tooth pulled on {DATE_SPOKEN} at {ORG} for an abscess , and the dentist sent me home with amoxicillin . i took the first pill that night . by the next morning my lips were swollen .\n[doctor] okay . had you ever taken amoxicillin or penicillin before ?\n[patient] i do n't think so . i had a rash from sulfa pills when i was a teenager , but that's the only thing i remember .\n[doctor] okay . any trouble breathing , or any tightness in your throat or your voice changing ?\n[patient] no , my throat feels a little funny , like something is sitting there , but i can swallow . i can breathe fine .\n[doctor] good . and how is the itching ?\n[patient] the hives itch like crazy . i scratched my forearms raw last night . on a scale of one to ten the itch is about an eight .\n[doctor] okay . and the pain in the tooth ?\n[patient] that's better , actually . the dentist did a good job .\n[doctor] let me take a look at you . your blood pressure is one twenty four over seventy six and your pulse is ninety . your temperature is normal . your lips and eyelids are swollen but your tongue looks normal . i can see raised welts across both forearms and up your back .\n[patient] that's what it looks like .\n[doctor] your lungs sound clear , no wheezing . so this looks like an allergic reaction to the amoxicillin . the swelling of the lips and eyelids is called angioedema , and the hives are urticaria .\n[patient] so i ca n't have penicillin anymore ?\n[doctor] that's right . we'll stop the amoxicillin today , and i'll add penicillin and amoxicillin to your allergy list so no one prescribes them again .\n[patient] will that be a problem for my other antibiotics ?\n[doctor] it can be . which other medicines do you take regularly ?\n[patient] i take one fifty of levothyroxine every morning for my thyroid . and i use a nasal spray in the spring .\n[doctor] is the spray for seasonal allergies ?\n[patient] yes , i've had hay fever since {YEAR} . every april and may my eyes itch and i sneeze all day long .\n[doctor] okay . do you have asthma or eczema ?\n[patient] no asthma . i get dry patches on my hands in the winter , but that's mostly from the cold .\n[doctor] okay . i'd like to draw a blood test to check your tryptase level . i'm going to give you prednisone and an antihistamine .\n[patient] how much prednisone ?\n[doctor] forty milligrams once a day for five days . take cetirizine ten milligrams every night , and use tylenol for the pain in your tooth .\n[patient] okay . the tylenol is what i've been taking for the tooth , yeah .\n[doctor] good . i'm also going to prescribe an epinephrine auto injector . if your throat starts to feel tight or you have trouble breathing , you use it right away and call nine one one .\n[patient] okay . i'll keep it in my purse , and {OTHER_FIRST} will keep one in her car .\n[doctor] perfect . i'd like to refer you to our allergy clinic for testing , and the nurse will call you to schedule within the next two weeks .\n[patient] can you please send the prescriptions to northgate pharmacy so they know about the penicillin ?\n[doctor] yes , i'll send them to northgate pharmacy downtown . come back if the swelling spreads to your mouth or you start to feel dizzy .\n[patient] got it . thank you , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nLip and eyelid swelling with generalized itchy hives after starting amoxicillin.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with seasonal allergic rhinitis and hypothyroidism who presents with lip and periorbital swelling and an itchy rash that began the morning after she started amoxicillin for a dental abscess. She is accompanied by her sister, {OTHER_FIRST}.\n\nShe had a tooth extracted at {ORG} on {DATE_SPOKEN} for an abscess and was prescribed amoxicillin that evening. The next morning she noted swelling of the lips and eyelids and raised, pruritic welts on both forearms and the upper back. She reports throat fullness without dysphagia, stridor, voice change, or dyspnea. Pruritus is severe, rated 8/10. Dental pain has improved on acetaminophen. She recalls a rash as a teenager after sulfa tablets. She has no prior exposure to penicillin.\n\nPAST MEDICAL HISTORY\n\nSeasonal allergic rhinitis, with hay fever symptoms every April and May since {YEAR}. Hypothyroidism. No history of asthma.\n\nMEDICATIONS\n\nLevothyroxine 150 mcg daily. Intranasal corticosteroid spray seasonally.\n\nPHYSICAL EXAM\n\nVitals: BP 124/76, HR 90, afebrile. Lips and periorbital region with edema. Tongue and oral mucosa without involvement. Lungs clear to auscultation without wheeze. Urticarial wheals over bilateral forearms and upper back.\n\nRESULTS\n\nSerum tryptase drawn today, pending.\n\nASSESSMENT AND PLAN\n\n1. Angioedema and urticaria secondary to amoxicillin, adverse drug reaction. No airway compromise. Amoxicillin discontinued. Penicillin and amoxicillin added to allergy list. Prednisone 40 mg daily for 5 days. Cetirizine 10 mg nightly. Acetaminophen as needed for dental pain. Epinephrine auto-injector prescribed; use and emergency instructions reviewed with patient and sister. Allergy and immunology referral placed for testing. Prescriptions sent to Northgate Pharmacy.\n2. Seasonal allergic rhinitis, continue intranasal steroid as needed.\n3. Hypothyroidism, continue levothyroxine.\n\nReturn precautions reviewed: call 911 for airway symptoms or difficulty breathing.",
+ "medical_concepts": [
+  {
+   "text": "my lips and my eyelids are puffy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "hives all over my arms",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tooth pulled",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "abscess",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "amoxicillin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "rash from sulfa pills",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "trouble breathing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my throat feels a little funny",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the hives itch like crazy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "scratched my forearms raw",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the itch is about an eight",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the pain in the tooth",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my lips were swollen",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood pressure is one twenty four over seventy six",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse is ninety",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "temperature is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lips and eyelids are swollen",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tongue looks normal",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "raised welts across both forearms and up your back",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lungs sound clear , no wheezing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "allergic reaction",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "the swelling of the lips and eyelids",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "angioedema",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "urticaria",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "penicillin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "levothyroxine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "nasal spray",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "hay fever",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "seasonal allergies",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "every april and may",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "my eyes itch",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "sneeze all day long",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "asthma",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "dry patches on my hands",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood test",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "tryptase level",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "prednisone",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "an antihistamine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "forty milligrams once a day for five days",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cetirizine ten milligrams every night",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "epinephrine auto injector",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "swelling spreads to your mouth",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dizzy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lip and periorbital swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "itchy rash",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dental abscess",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "throat fullness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dysphagia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "stridor",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dyspnea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pruritus",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Dental pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "sulfa tablets",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "penicillin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Seasonal allergic rhinitis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "hay fever symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hypothyroidism",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "No history of asthma",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Levothyroxine 150 mcg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Intranasal corticosteroid spray",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 124/76",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "HR 90",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "afebrile",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lips and periorbital region with edema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tongue and oral mucosa without involvement",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "Urticarial wheals",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lungs clear to auscultation without wheeze",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Serum tryptase",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Angioedema",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "urticaria",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "adverse drug reaction",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "airway compromise",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Prednisone 40 mg daily for 5 days",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cetirizine 10 mg nightly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Epinephrine auto-injector",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Allergy and immunology referral",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Return precautions",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "difficulty breathing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of acetaminophen, not a person or place"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "T78.3XXA",
+   "spans": [
+    {
+     "text": "my lips and my eyelids are puffy",
+     "field": "dialogue"
+    },
+    {
+     "text": "the swelling of the lips and eyelids",
+     "field": "dialogue"
+    },
+    {
+     "text": "lip and periorbital swelling",
+     "field": "note"
+    },
+    {
+     "text": "Angioedema",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "L50.0",
+   "spans": [
+    {
+     "text": "hives all over my arms",
+     "field": "dialogue"
+    },
+    {
+     "text": "raised welts across both forearms and up your back",
+     "field": "dialogue"
+    },
+    {
+     "text": "Urticarial wheals",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "T36.0X5A",
+   "spans": [
+    {
+     "text": "amoxicillin",
+     "field": "dialogue"
+    },
+    {
+     "text": "adverse drug reaction",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z88.0",
+   "spans": [
+    {
+     "text": "penicillin",
+     "field": "dialogue"
+    },
+    {
+     "text": "penicillin",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "J30.9",
+   "spans": [
+    {
+     "text": "hay fever",
+     "field": "dialogue"
+    },
+    {
+     "text": "Seasonal allergic rhinitis",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "northgate pharmacy",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "named pharmacy"
+  },
+  {
+   "text": "Northgate Pharmacy",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "comment": "named pharmacy"
+  }
+ ],
+ "scenario": {
+  "specialty": "allergy and immunology",
+  "visit": "acute",
+  "length": "short",
+  "focus": [
+   "ORGANIZATION",
+   "DATE"
+  ]
+ }
+}

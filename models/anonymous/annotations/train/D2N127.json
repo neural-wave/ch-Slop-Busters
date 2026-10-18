@@ -1,0 +1,14 @@
+{
+  "encounter_id": "D2N127",
+  "phi": [
+    {"text": "brandon", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "lawyer", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "advisor"},
+    {"text": "february", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "pamela", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "collins", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "Brandon Green", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "46-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "02/2022", "field": "note", "type": "DATE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

@@ -1,0 +1,25 @@
+{
+  "encounter_id": "D2N141",
+  "phi": [
+    {"text": "christopher watson", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "watson", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "04/12/1934", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "86-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "august 1st , 2020", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "may of 2020", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "june 2020", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "theresa", "field": "dialogue", "type": "NAME_RELATIVE", "tier": 1, "generalized": ""},
+    {"text": "hannah", "field": "dialogue", "type": "NAME_RELATIVE", "tier": 1, "generalized": ""},
+    {"text": "10/15/2020", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "Christopher Watson", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Watson", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "86-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "08/01/2020", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "Theresa", "field": "note", "type": "NAME_RELATIVE", "tier": 1, "generalized": ""},
+    {"text": "May 2020", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "June 2020", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "Hannah", "field": "note", "type": "NAME_RELATIVE", "tier": 1, "generalized": ""},
+    {"text": "10/15/2020", "field": "note", "type": "DATE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

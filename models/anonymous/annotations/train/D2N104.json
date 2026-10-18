@@ -1,0 +1,16 @@
+{
+  "encounter_id": "D2N104",
+  "phi": [
+    {"text": "judy gomez", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "judy", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "gomez", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "869723", "field": "dialogue", "type": "ID", "tier": 1, "generalized": ""},
+    {"text": "5 , 7 , 1961", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "desk job", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "sedentary job"},
+    {"text": "Judy Gomez", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Gomez", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "61-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "Wednesday", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "week"}
+  ],
+  "medical_concepts": []
+}

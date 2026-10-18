@@ -1,0 +1,85 @@
+########## ENCOUNTER D2N179
+=== FIELD: dialogue
+[doctor] patient mrn : abc123 . date of birth : january 1st , 1960 . patient is a 60 year old , right-handed male , referred today for evaluation of numbness and tingling .
+[doctor] hello , mr. cook . how are you doing this morning ?
+[patient] hi , dr. martinez . this weekend was a bit rough . i've had this numbness and tingling for a few weeks now .
+[doctor] so it's in both of your hands ?
+[patient] yes , ever since my car wreck last december when i broke them ... well , once they healed , i mean , i noticed it more , the tingling and the numbness .
+[doctor] and you still wear the splint only on the right wrist ?
+[patient] no , i also wear the left sometimes . the right is just worse , but the splint helps . both have really gotten worse over the last month . when i broke them , my right wrist was definitely in worse shape . i've also been having some s- mild stiffness in my neck too . i hit my head during the accident , and they told me it was a contusion .
+[doctor] and where would you say the tingling and numbness is ?
+[patient] on this side , it goes from here and here up to about here . on the other side , it's from here to here .
+[doctor] i see . so on the right side , you're pointing from the middle and ring finger , all the way up the forearm . and on the left , the symptoms extend from the pinky and ring finger . and is there any pain or just tingling and numbness ?
+[patient] eh , it's mainly just sore . sometimes they throb , but overall , they feel weaker too , especially when i'm using them . the tingling happens more when they hurt , but when it goes away , the tingling is dull .
+[doctor] and when do you feel these symptoms ?
+[patient] well , really , i guess , just more so at night , and they come and go throughout the day .
+[doctor] okay . and do you experience any loss of sensation in your hands or fingers ?
+[patient] like , feeling something ? no , not that i can really think of . though , in general , they may be less sensitive than they should be , but i can still feel . they also gave me some nerve pain medicine , but i have n't been taking it like i should .
+[doctor] and are you still on the coreg for hypertension and the lexapro for anxiety ?
+[patient] yes , i'm still taking those . i had prediabetes too , but i got it under control by changing my diet .
+[doctor] and no history of thyroid issues , correct ?
+[patient] nope .
+[doctor] all right , thank you , mr. cook . okay , first , we'll go over your review of systems . correct me if i'm wrong in any of this .
+[doctor] constitutional , you have fatigue and weight gain ; gi , you have excessive appetite and bloating ; eyes have floaters ; cardiovascular shows shortness of breath and leg swelling ; endocrine , you're always hungry ; skin , you have some nail bed changes , dryness , itching ; musculoskeletal , you have gout and muscle pain . and the remainder of the review of systems is negative .
+[patient] yep , that's all correct .
+[doctor] all right , we're going to go ahead and do the neurologic examination . let's look at the right hand first . can you feel this ?
+[patient] yeah , but a little less on these two fingers .
+[doctor] sensation is normal , except pin prick sensation diminished in third and fourth fingers on the right .
+[doctor] and how about on the left ?
+[patient] um , yeah , but these two a little less .
+[doctor] sensation is decreased in the fourth and fifth fingers on the left
+[doctor] okay , let's test your reflexes now . reflexes are 1+ and symmetric ; 2+ knees ; toes are downgoing bilaterally .
+[doctor] all right , i'm going to tap on your right wrist . do you feel anything ?
+[patient] yeah , it feels like a zing up my wrist and something into my elbow too .
+[doctor] and how about the left side ?
+[patient] yeah , same on that side too .
+[doctor] tinel sign positive at both wrists and both elbows . rest of exam is normal .
+[doctor] all right , so what i am seeing today is bilateral carpal tunnel syndrome or , potentially , this could also be bilateral cubital tunnel syndrome . however , your symptom presentation suggests car- bilateral carpal syndrome , as the nerve in your wrists are aggravated by your past trauma . this is causing the pain and tingling you were describing to me .
+[patient] okay , so how do we make it better ?
+[doctor] first , i want to determine exactly where the nerve irritation is coming from . we'll need to schedule you for a nerve test , which is called an emg test . they will measure the responsiveness of your nerves to truly pinpoint where you are having your issues .
+[patient] that sounds fine to me .
+[doctor] great . after the tests are complete , you can return here for a follow-up visit . if you're still having symptoms , we can consider a referral to our hand clinic , possibly for injections or carpal tunnel release se- surgery . you could also refer ... we could also refer you to an orthopedist for the same treatment .
+[patient] sounds good , doc .
+[doctor] all right , keep wearing your splints , and i will see you after those studies .
+[patient] thank you .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Numbness and tingling of both hands.
+
+HISTORY OF PRESENT ILLNESS
+
+Elijah Cook is a 60-year-old male referred today for evaluation of numbness and tingling of both hands.
+
+The patient complains of numbness, tingling, and pain in both hands which began in 12/2019 after he broke both wrists in a motor vehicle accident and which has progressively worsened since then. He continues to wear a splint on the right wrist all the time and on the left only intermittently, which he states is because the right wrist was injured more severely in the accident. The sensation radiates from the hands into the forearms and is equal bilaterally. The 4th and 5th fingers in the left hand and 3rd and 4th on the right-hand tingle. He states that his fingers are sore with palpation and seem weaker than before. Any exertion exacerbates the tingling, and after something exacerbates the pain, the tingling seems "dull". The symptoms come and go and seem to occur mostly at night. He denies complete loss of sensation in any of his fingers, but states that they seem less sensitive than they should be. He reports mild stiffness in his neck. He notes that he did hit his head during the car accident and was diagnosed with a contusion. He states that he has been given "nerve pain medicine” but has not been taking it.
+
+He currently takes Coreg for his hypertension and Lexapro for his anxiety. He reports a history of prediabetes, which he has brought under control via dietary changes. He denies any history of thyroid issues.
+
+REVIEW OF SYSTEMS
+
+• Constitutional Symptoms: Easily fatigued, weight gain.
+• Eyes: Floaters.
+• Cardiovascular: Bilateral peripheral edema.
+• Respiratory: Shortness of breath.
+• Gastrointestinal: Excessive appetite, abdominal bloating.
+• Musculoskeletal: Gout, muscle pain.
+• Integumentary: Dry itchy skin, nail bed changes.
+• Endocrine: Excessive hunger.
+
+PHYSICAL EXAM
+
+Neurological
+Pinprick sensation intact in the 3rd and 4th fingers on the right hand and 4th and 5th fingers on the left hand. Reflexes are 1+ and symmetric, 2+ knees. Toes down going bilaterally. Tinel’s sign positive at both wrists and elbows.
+
+ASSESSMENT
+
+• Bilateral carpal tunnel syndrome
+Mr. Cook is a 60-year-old male referred today for evaluation of numbness and tingling of both hands. His symptom presentation and exam findings today suggest this is bilateral carpal tunnel syndrome or, potentially, this could also be bilateral cubital tunnel syndrome.
+
+PLAN
+
+Diagnosis discussed with patient, I explained that the nerves in his wrists are aggravated by the past trauma causing the pain and tingling. Further testing is indicated to measure the responsiveness of the nerves to determine exactly where the nerve irritation is coming from. We will plan for a follow-up visit after the EMG testing is performed. If still symptomatic, we can consider a referral to our Hand Clinic possibly for injections or carpal tunnel release surgery. We could also refer to an orthopedist for the same treatment.
+
+INSTRUCTIONS
+
+Follow-up after EMG testing.

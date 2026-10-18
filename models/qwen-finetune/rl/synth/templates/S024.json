@@ -1,0 +1,748 @@
+{
+ "id": "S024",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S52.531A",
+   "description": "Colles' fracture of right radius, initial encounter for closed fracture"
+  },
+  {
+   "code": "V13.4XXA",
+   "description": "Pedal cycle driver injured in collision with car, pick-up truck or van in traffic accident, initial encounter"
+  },
+  {
+   "code": "Y92.414",
+   "description": "Local residential or business street as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.55",
+   "description": "Activity, bike riding"
+  },
+  {
+   "code": "J45.909",
+   "description": "Unspecified asthma, uncomplicated"
+  }
+ ],
+ "dialogue": "[doctor] hello , {PATIENT_FIRST} . come on in , have a seat .\n[patient] thanks .\n[doctor] so i see you've got a splint on that right wrist . what happened ?\n[patient] so yesterday morning i was riding my bike to work . i ride in every day , i work at {ORG} , it's about four miles . and i was on the main street through my neighborhood , in the bike lane , and a car that was next to me just turned right , right into me . i do n't think he ever saw me .\n[doctor] oh no . so the car turned across the bike lane and hit you ?\n[patient] yeah . the front of the car clipped my back wheel and i went over , and i put my right hand out to catch myself and landed right on it on the pavement .\n[doctor] okay . were you wearing a helmet ?\n[patient] yes , and it has a little scratch on it , but i do n't think my head really hit hard .\n[doctor] did you pass out at all ?\n[patient] no , i was totally awake . the driver stopped and called 911 , and they took me to urgent care , and they did an x-ray and put this splint on and told me to see you .\n[doctor] okay , good . and how's the pain ?\n[patient] it's pretty bad . like a seven out of 10 . it's throbbing , and it's swollen .\n[doctor] any numbness or tingling in your fingers ?\n[patient] my fingers felt a little tingly last night , but it's better this morning .\n[doctor] okay . is it in your thumb and index finger ?\n[patient] yeah , kind of the thumb side .\n[doctor] okay . we'll keep an eye on that . any other injuries ?\n[patient] i scraped up my left knee , but it's just a scrape .\n[doctor] okay . what have you taken for pain ?\n[patient] they gave me some tylenol at urgent care , and i've been icing it and keeping it up on a pillow .\n[doctor] good . any other medical problems ?\n[patient] just asthma .\n[doctor] okay . how's your asthma been doing lately ?\n[patient] it's been pretty good . i use my inhaler , the albuterol , maybe once a week , usually when it's cold out and i'm riding . i have the steroid one too , the fluticasone , that i'm supposed to use twice a day .\n[doctor] are you using that one every day ?\n[patient] honestly , i forget sometimes . maybe like five days a week .\n[doctor] okay . any nighttime coughing or waking up short of breath ?\n[patient] no , not really .\n[doctor] okay . so one thing i wanna mention is for pain , we usually avoid giving a lot of anti-inflammatories to some people with asthma . have you ever had a reaction to ibuprofen or aspirin ?\n[patient] no , i take advil all the time and it's fine .\n[doctor] okay , good to know . so let me take a look . i'm gonna take the splint off just for a second . so there's swelling over the right wrist , and there's a little bit of that dinner fork shape , where the wrist is bent back . it's tender over the end of the radius . can you touch your thumb to each finger ?\n[patient] yeah , like that ?\n[doctor] perfect . and do you feel me touching here ? and here ?\n[patient] yes , both .\n[doctor] good , sensation is intact and the capillary refill is normal . your left knee has a superficial abrasion , that looks clean . lungs are clear , no wheezing .\n[doctor] so i pulled up your x-ray from urgent care . you have what we call a colles fracture of the right radius . that's a break at the end of the forearm bone , right near the wrist , and the broken piece is tilted backward . it does n't go into the joint , and it's only mildly angulated .\n[patient] okay . so what happens now ?\n[doctor] so because the alignment is acceptable , i think we can treat this in a cast . i'd like to put you in a short arm cast today , and we'll get x-rays every week for the first two or three weeks to make sure it does n't slip . if it does slip , then we'd talk about surgery with a plate .\n[patient] okay . how long will i be in the cast ?\n[doctor] usually about six weeks . keep it elevated above your heart as much as you can the next few days , keep moving your fingers , and if the tingling comes back or gets worse , or your fingers get really swollen or cold , i want you to call right away .\n[patient] okay .\n[doctor] for pain , you can take advil 600 milligrams three times a day with food , and tylenol in between .\n[patient] okay . and can i ride my bike ?\n[doctor] not for now . no riding until the fracture is healed .\n[patient] that's gonna be hard .\n[doctor] i know . and for your asthma , i want you to use the fluticasone every day , twice a day , and keep the albuterol for rescue .\n[patient] okay , i'll try .\n[doctor] all right , we'll get you into a cast and see you back in one week with an x-ray .",
+ "note": "CHIEF COMPLAINT\n\nRight wrist injury.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with a history of asthma who presents for evaluation of a right wrist injury sustained on {DATE_NUM}.\n\nThe patient was riding her bicycle to work in the bike lane of a residential street when a car turning right struck her rear wheel. She fell onto an outstretched right hand on the pavement. She was wearing a helmet and denies significant head strike or loss of consciousness. She was evaluated at urgent care, where x-rays were obtained and a splint was applied. She reports throbbing pain rated 7/10 and swelling. She had transient tingling in the radial-sided fingers overnight, which has improved. She also sustained a left knee abrasion. She has been taking Tylenol, icing, and elevating.\n\nRegarding her asthma, she uses albuterol about once weekly, mainly in cold weather while cycling. She is prescribed fluticasone twice daily but uses it approximately 5 days per week. She denies nocturnal symptoms. She tolerates ibuprofen without bronchospasm.\n\nPHYSICAL EXAM\n\nRight wrist: Swelling with dorsal angulation (dinner fork deformity). Tender over the distal radius. Thumb opposition intact. Sensation intact. Capillary refill normal.\nLeft knee: Superficial abrasion, clean.\nLungs: Clear to auscultation. No wheezing.\n\nRESULTS\n\nX-ray of the right wrist: Extra-articular distal radius fracture with dorsal angulation, consistent with a Colles' fracture, mildly angulated, acceptable alignment.\n\nASSESSMENT AND PLAN\n\n1. Colles' fracture of the right radius, closed.\n- Short arm cast applied today.\n- Weekly x-rays for 2 to 3 weeks to monitor alignment; surgical fixation if displacement occurs.\n- Elevation and finger range of motion.\n- Advil 600 mg three times daily with food, alternating with Tylenol.\n- Return precautions for worsening numbness, tingling, swelling, or cold fingers.\n- No cycling until fracture healed.\n\n2. Asthma, uncomplicated.\n- Counseled on daily adherence to fluticasone twice daily.\n- Continue albuterol as needed.\n\nFollow up in 1 week with x-ray.",
+ "medical_concepts": [
+  {
+   "text": "i was riding my bike to work",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i ride in every day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the main street through my neighborhood",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "in the bike lane",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a car that was next to me just turned right , right into me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the car turned across the bike lane and hit you",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the front of the car clipped my back wheel and i went over",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landed right on it on the pavement",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "riding",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "swelling over the right wrist",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dinner fork shape",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tender over the end of the radius",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it does n't go into the joint",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "only mildly angulated",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the broken piece is tilted backward",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "capillary refill is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "superficial abrasion",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lungs are clear",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no wheezing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "throbbing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's swollen",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pass out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tingly",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "scraped up my left knee",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nighttime coughing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "short of breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "colles fracture of the right radius",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "asthma",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "right wrist",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "radius",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "forearm bone",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "fingers",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "thumb",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "index finger",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "left knee",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "advil 600 milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "aspirin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "anti-inflammatories",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "albuterol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "fluticasone",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "inhaler",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "splint",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "short arm cast",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "surgery with a plate",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "icing it",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "riding her bicycle to work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "in the bike lane of a residential street",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a car turning right struck her rear wheel",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell onto an outstretched right hand on the pavement",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Swelling with dorsal angulation (dinner fork deformity)",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tender over the distal radius",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Extra-articular distal radius fracture with dorsal angulation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mildly angulated, acceptable alignment",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No cycling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "helmet",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Thumb opposition intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Capillary refill normal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Superficial abrasion, clean",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Clear to auscultation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No wheezing",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "bronchospasm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right wrist injury",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "right wrist injury",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "throbbing pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "head strike",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "transient tingling in the radial-sided fingers",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nocturnal symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness, tingling, swelling, or cold fingers",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Colles' fracture of the right radius, closed",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Colles' fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "asthma",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Asthma, uncomplicated",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "left knee abrasion",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-ray of the right wrist",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Weekly x-rays",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "albuterol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "fluticasone twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Advil 600 mg three times daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "splint",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Short arm cast",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "surgical fixation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "colles fracture",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponym, medical diagnosis"
+  },
+  {
+   "text": "Colles' fracture",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponym, medical diagnosis"
+  },
+  {
+   "text": "advil",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand-name medication"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S52.531A",
+   "spans": [
+    {
+     "text": "colles fracture of the right radius",
+     "field": "dialogue"
+    },
+    {
+     "text": "dinner fork shape",
+     "field": "dialogue"
+    },
+    {
+     "text": "tender over the end of the radius",
+     "field": "dialogue"
+    },
+    {
+     "text": "Colles' fracture of the right radius, closed",
+     "field": "note"
+    },
+    {
+     "text": "Extra-articular distal radius fracture with dorsal angulation",
+     "field": "note"
+    },
+    {
+     "text": "Swelling with dorsal angulation (dinner fork deformity)",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V13.4XXA",
+   "spans": [
+    {
+     "text": "a car that was next to me just turned right , right into me",
+     "field": "dialogue"
+    },
+    {
+     "text": "the front of the car clipped my back wheel and i went over",
+     "field": "dialogue"
+    },
+    {
+     "text": "a car turning right struck her rear wheel",
+     "field": "note"
+    },
+    {
+     "text": "riding her bicycle to work",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.414",
+   "spans": [
+    {
+     "text": "the main street through my neighborhood",
+     "field": "dialogue"
+    },
+    {
+     "text": "in the bike lane",
+     "field": "dialogue"
+    },
+    {
+     "text": "in the bike lane of a residential street",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.55",
+   "spans": [
+    {
+     "text": "i was riding my bike to work",
+     "field": "dialogue"
+    },
+    {
+     "text": "i ride in every day",
+     "field": "dialogue"
+    },
+    {
+     "text": "riding her bicycle to work",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "J45.909",
+   "spans": [
+    {
+     "text": "asthma",
+     "field": "dialogue"
+    },
+    {
+     "text": "albuterol",
+     "field": "dialogue"
+    },
+    {
+     "text": "fluticasone",
+     "field": "dialogue"
+    },
+    {
+     "text": "Asthma, uncomplicated",
+     "field": "note"
+    },
+    {
+     "text": "asthma",
+     "field": "note"
+    },
+    {
+     "text": "fluticasone twice daily",
+     "field": "note"
+    },
+    {
+     "text": "albuterol",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "it's about four miles",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "commute distance narrows down residence/employer"
+  }
+ ]
+}

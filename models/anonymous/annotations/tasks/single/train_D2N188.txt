@@ -1,0 +1,101 @@
+########## ENCOUNTER D2N188
+=== FIELD: dialogue
+[doctor] hi jaqueline how are you i heard that you injured your ankle
+[patient] yeah it's not going so great
+[doctor] what what happened to your ankle
+[patient] well i was doing something i did n't really want to be doing and i fell and now my ankle hurts
+[doctor] okay well what were you doing were you hiking or biking or what were you doing
+[patient] i was in a mountain biking messenger
+[doctor] you were in a mountain biking lesson and you fell off your bike and twisted your ankle
+[patient] yes
+[doctor] and what ankle was bothering you
+[patient] the right one
+[doctor] your right ankle okay and did it twist like did your ankle twist outward or did your ankle twist inward do you know
+[patient] my ankle twisted outward
+[doctor] your ankle twisted outward and where are you having the most pain is it is it kind of like right on your outer ankle or is it more in your foot
+[patient] outer ankle
+[doctor] it's in your outer ankle okay alright and do you have any numbing or tingling in your toes at all
+[patient] i have some tingling i have no tingling i have some numbing going on and some numbing going on in other places
+[doctor] really like where
+[patient] my heart
+[doctor] alright well i'm an orthopedic person so i ca n't talk to you about your numbing hearts okay now are you able to move your ankle
+[patient] a little bit
+[doctor] are you able to walk on your ankle
+[patient] not really
+[doctor] no
+[patient] not so great
+[doctor] are you limping
+[patient] yeah
+[doctor] you're limping okay have you taken anything for the pain
+[patient] i've taken tylenol
+[doctor] you took tylenol
+[patient] mm-hmm
+[doctor] okay did that help at all
+[patient] no
+[doctor] no it did n't help alright did you hear anything pop or anything like that when
+[patient] i heard like an like a crack crackle so
+[doctor] you heard a crack
+[patient] yeah
+[doctor] okay alright how long have you been mountain biking
+[patient] for like three years
+[doctor] three years wow
+[patient] or so
+[doctor] what where is your favorite place to go mountain biking
+[patient] i do n't remember
+[doctor] is it at north point
+[patient] no
+[doctor] no it's not at north point
+[patient] maybe i do n't know
+[doctor] do you or do you like going to colorado
+[patient] hmmm kind of a time
+[doctor] okay alright okay alright well let's go ahead and do a quick physical exam okay so i looked here at your vital signs and have you had any fever chills or anything like that since this happened
+[patient] i've had a fever it hits the pain hits
+[doctor] you've had a fever how high was your fever
+[patient] like two hundred
+[doctor] that's not a fever alright okay so lem me go ahead you looking at your vital signs you do n't have a fever now your temperature is ninety eight . six your blood pressure is fine at one eighteen over seventy seven and your heart rate looks good at seventy seven beats per minute on your right ankle exam there is some edema and erythema on the lateral malleolus on the right hand side there is associated ecchymosis and a few excoriations does it hurt when i press on it
+[patient] yes
+[doctor] there is pain to palpation of the right lateral malleolus there is decreased flexion and extension of the right ankle as well as internal and external rotation there is no apparent injury to the knee or the foot okay so what does that mean jacqueline seem awfully giggling right now so what does that mean so i took a i had the nurse do an x-ray on you before i came in and reviewing the results of your right ankle x-ray shows that you have no acute fracture or bony abnormality which is good you just have a some soft tissue injury so let's talk a little bit about my assessment and plan so for
+[patient] really
+[doctor] yeah so for your assessment and plan i do believe you have a an acute right ankle sprain i wan na go ahead and put you in an air cast we can give you some crutches i wan na go ahead and prescribe some meloxicam fifteen milligrams once a day you should ice the area for about twenty minutes five times a day and weight-bear as tolerated i am anticipating you to start feeling better in the next couple of weeks if you're not come back here and see me and we will consider physical therapy or pursuing further imaging okay
+[patient] okay bye
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right ankle injury.
+
+HISTORY OF PRESENT ILLNESS
+
+Jacqueline Price is a pleasant 28-year-old female who presents to the clinic today for the evaluation of a right ankle injury. The patient sustained the injury when she fell while in mountain biking lessons. She states that her ankle twisted outward. The patient localizes the pain to her lateral aspect of her right ankle. She denies any tingling, but notes numbness in her toes. She notes that she is able to move her ankle a little bit. The patient states that she has difficulty walking. Additionally, she notes that she has a limp when she ambulates. She has taken Tylenol for the pain, but states that it was not beneficial. She denies hearing a pop, but did hear a crack when the injury happened. Ms. Price notes that she has had a fever.
+
+SOCIAL HISTORY
+
+The patient has been mountain biking for 3 years.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Reports fever.
+Musculoskeletal: Reports right ankle pain.
+Neurological: Reports numbness in the right ankle.
+
+VITALS
+
+Temperature in offce today was 98.6.
+BP: 118/77.
+HR: 77 bpm.
+
+PHYSICAL EXAM
+
+CV: Mild edema.
+MSK: Examination of the right ankle there is edema and erythema on the lateral malleolus on the right side. There is associated ecchymosis and a few excoriations. Pain with palpation of the right lateral malleolus. Decreased flexion and extension of the right ankle, as well as internal and external rotation. There is no apparent injury to the right knee or foot.
+
+RESULTS
+
+X-ray of the right foot taken in office today reveals no acute fracture or bony abnormalities.
+
+ASSESSMENT
+
+Acute right ankle sprain.
+
+PLAN
+
+We reviewed the patient's x-rays in detail today. The plan is to place the patient in an Aircast and provide the patient with crutches. I have also prescribed the patient meloxicam 15 mg to treat the pain. I have advised her to ice the area for 20 minutes 5 times per day. She can weight-bear as tolerated. I anticipate that she will improve in the next 2 weeks. If her pain does not improve with the Aircast, I will recommend formal physical therapy or pursuing further imaging.

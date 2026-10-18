@@ -1,0 +1,10 @@
+{
+  "encounter_id": "D2N078",
+  "phi": [
+    {"text": "philip", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "work on my property", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "yard work"},
+    {"text": "the pandemic", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a stressful period"},
+    {"text": "work out in the yard", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "do the outdoor chores"}
+  ],
+  "medical_concepts": []
+}

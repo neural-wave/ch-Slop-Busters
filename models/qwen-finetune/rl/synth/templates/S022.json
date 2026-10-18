@@ -1,0 +1,693 @@
+{
+ "id": "S022",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S20.212A",
+   "description": "Contusion of left front wall of thorax, initial encounter"
+  },
+  {
+   "code": "V43.63XA",
+   "description": "Car passenger injured in collision with pick-up truck in traffic accident, initial encounter"
+  },
+  {
+   "code": "Y92.414",
+   "description": "Local residential or business street as the place of occurrence of the external cause"
+  },
+  {
+   "code": "E11.9",
+   "description": "Type 2 diabetes mellitus without complications"
+  }
+ ],
+ "dialogue": "[doctor] good morning , mr. {PATIENT_LAST} .\n[patient] morning , doc .\n[doctor] so , {PATIENT_FIRST} , the emergency room asked us to see you for follow up . you were in a car crash ?\n[patient] yeah , two days ago . my daughter {OTHER_FIRST} was driving , i was in the front passenger seat . we were going through an intersection downtown , on a regular city street , you know , stores on both sides , and a pickup truck ran the red light and hit us right on my side .\n[doctor] oh my goodness . so the truck hit the passenger side of the car ?\n[patient] t-boned us , yep . right into my door .\n[doctor] was everybody wearing their seatbelts ?\n[patient] yes , sir . and i think that's what saved me , but that belt really dug into my chest .\n[doctor] okay . how's your daughter doing ?\n[patient] she's fine , just sore . the car is totaled though .\n[doctor] well , cars can be replaced . so tell me about the pain .\n[patient] it's right here on the left side of my chest , kind of across where the belt went . it hurts when i take a deep breath , when i cough , and rolling over in bed is the worst .\n[doctor] what would you rate it ?\n[patient] maybe a five most of the time . if i cough , a seven or eight .\n[doctor] any shortness of breath ?\n[patient] no , not really . just hurts to breathe deep .\n[doctor] any pain in your belly ?\n[patient] no .\n[doctor] did you hit your head or pass out ?\n[patient] no . i was awake for everything .\n[doctor] okay . what did they do in the emergency room ?\n[patient] they took some x-rays of my chest and they did a cat scan i think . they said nothing was broken and my lungs were okay . they gave me some pain pills .\n[doctor] okay , i have those results here . so the chest x-ray and the ct of the chest showed no rib fractures , no collapsed lung , no bleeding in the chest . so that's all good news .\n[patient] good .\n[doctor] what pain medicine are you taking ?\n[patient] they gave me some tylenol with codeine , but it makes me constipated , so i've been mostly using regular tylenol .\n[doctor] okay . now , i also wanna check on your diabetes . how have your sugars been ?\n[patient] they've been a little high since the accident . normally in the morning i'm around 120 , and this week i've seen like 170 , 180 .\n[doctor] okay . stress and pain can do that . you're on metformin ?\n[patient] yes , 1000 milligrams twice a day .\n[doctor] and are you taking it regularly ?\n[patient] yes , i do n't miss it .\n[doctor] how's your diet been ?\n[patient] well , honestly , i have n't been cooking , so it's been a lot of takeout .\n[doctor] are you still working these days ?\n[patient] no , i'm retired . i was a mail carrier for 30 years , so i'm used to being on my feet , and now i'm just stuck in the recliner .\n[doctor] okay . we'll talk about that . any numbness or tingling in your feet ?\n[patient] no .\n[doctor] okay . let me examine you . go ahead and take a deep breath for me . and again . your lungs sound clear on both sides . now i'm gonna press here on the left side of your chest .\n[patient] ooh , yeah , that's sore .\n[doctor] i can see some bruising here , in a line , from the seatbelt . it goes from the left shoulder down across your chest . and there's tenderness over the left front chest wall , but i do n't feel any crunching or any step-off of the ribs . how about here on your belly ?\n[patient] no , that's fine .\n[doctor] okay , your abdomen is soft and not tender . no bruising on the belly . heart sounds regular .\n[doctor] okay . so , you have a contusion , a bruise , of the left front chest wall from the seatbelt in the collision . there's no fracture , and your lungs look good .\n[patient] how long is this gonna hurt ?\n[doctor] usually chest wall bruises take about three to six weeks to really settle down . the important thing is to keep taking deep breaths , even if it's uncomfortable , so you do n't get a pneumonia . i'm gonna give you something called an incentive spirometer . you breathe into it about ten times every hour while you're awake .\n[patient] okay .\n[doctor] for pain , you can take tylenol 1000 milligrams three times a day . i'd also like you to try a lidocaine patch on that area , 12 hours on and 12 hours off . and you can put ice on it for 20 minutes at a time .\n[patient] all right .\n[doctor] if you develop shortness of breath , fevers , coughing up green or yellow stuff , or the pain gets much worse , i want you to come back right away .\n[patient] got it .\n[doctor] for your diabetes , keep taking the metformin 1000 milligrams twice a day . the sugars should come back down as the pain improves and you get back to your normal eating . let's check an a1c today since you're due anyway .\n[patient] sounds good .\n[doctor] and i'll see you back in two weeks .\n[patient] thanks , doc .",
+ "note": "CHIEF COMPLAINT\n\nLeft chest wall pain following motor vehicle collision.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with type 2 diabetes who presents for follow-up after an emergency department visit for a motor vehicle collision 2 days ago.\n\nThe patient was the restrained front seat passenger in a car driven by his daughter. While crossing an intersection on a city street downtown, a pickup truck ran a red light and struck the passenger side of the vehicle. He denies head injury or loss of consciousness. He reports left anterior chest wall pain along the course of the seatbelt, rated 5/10 at rest and 7-8/10 with coughing or deep inspiration. Pain is worse when rolling over in bed. He denies shortness of breath or abdominal pain. He was given Tylenol with codeine in the emergency department, but it caused constipation, so he has been taking regular Tylenol.\n\nRegarding his diabetes, he is taking metformin 1000 mg twice daily. Fasting blood sugars are normally around 120 but have been 170-180 since the accident. His diet has included more takeout food recently. He denies numbness or tingling in his feet.\n\nSOCIAL HISTORY\n\nHe is a retired mail carrier.\n\nPHYSICAL EXAM\n\nRespiratory: Lungs clear to auscultation bilaterally.\nCardiovascular: Regular rate and rhythm.\nChest: Linear ecchymosis consistent with a seatbelt sign extending from the left shoulder across the anterior chest. Tenderness to palpation over the left anterior chest wall. No crepitus or step-off.\nAbdomen: Soft, nontender. No ecchymosis.\n\nRESULTS\n\nChest x-ray and CT of the chest from the emergency department: No rib fractures, no pneumothorax, no hemothorax.\n\nASSESSMENT AND PLAN\n\n1. Contusion of the left front wall of the thorax secondary to seatbelt injury in a motor vehicle collision.\n- Incentive spirometer, 10 times per hour while awake.\n- Tylenol 1000 mg three times daily.\n- Lidocaine patch to the left chest wall, 12 hours on and 12 hours off.\n- Ice for 20 minutes at a time.\n- Return precautions for shortness of breath, fever, productive cough, or worsening pain.\n\n2. Type 2 diabetes mellitus.\n- Continue metformin 1000 mg twice daily.\n- Hemoglobin A1c ordered today.\n- Elevated sugars likely related to stress and dietary changes; counseled on diet.\n\nFollow up in 2 weeks.",
+ "medical_concepts": [
+  {
+   "text": "car crash",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was in the front passenger seat",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "intersection",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "regular city street",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a pickup truck ran the red light and hit us right on my side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the truck hit the passenger side of the car",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "t-boned us",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the collision",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "seatbelts",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "that belt really dug into my chest",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your lungs sound clear on both sides",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart sounds regular",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your abdomen is soft and not tender",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no rib fractures",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no collapsed lung",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no bleeding in the chest",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no fracture",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "some bruising here , in a line , from the seatbelt",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tenderness over the left front chest wall",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "left side of my chest",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it hurts when i take a deep breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "shortness of breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain in your belly",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pass out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "constipated",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fevers",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "coughing up green or yellow stuff",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "contusion , a bruise , of the left front chest wall",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "chest wall bruises",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "diabetes",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "pneumonia",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays of my chest",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "cat scan",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest x-ray",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "ct of the chest",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "a1c",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "sugars",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "tylenol with codeine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol 1000 milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "lidocaine patch",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain pills",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "metformin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "1000 milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "incentive spirometer",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ribs",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "abdomen",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "feet",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "left shoulder",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "motor vehicle collision",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "restrained front seat passenger in a car",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "crossing an intersection on a city street",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a pickup truck ran a red light and struck the passenger side of the vehicle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "seatbelt injury",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Linear ecchymosis consistent with a seatbelt sign",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness to palpation over the left anterior chest wall",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lungs clear to auscultation bilaterally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Regular rate and rhythm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No crepitus or step-off",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Soft, nontender",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No ecchymosis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No rib fractures, no pneumothorax, no hemothorax",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Left chest wall pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "left anterior chest wall pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "head injury",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shortness of breath or abdominal pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "constipation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "productive cough",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Contusion of the left front wall of the thorax",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "type 2 diabetes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Type 2 diabetes mellitus",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "diabetes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Chest x-ray",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "CT of the chest",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Fasting blood sugars",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hemoglobin A1c",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Elevated sugars",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tylenol with codeine",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol 1000 mg three times daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lidocaine patch",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "metformin 1000 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Incentive spirometer",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ice",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "cat scan",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "lay term for CT scan, not an animal"
+  },
+  {
+   "text": "Tylenol with codeine",
+   "field": "note",
+   "is_pii": false,
+   "comment": "brand-name medication"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S20.212A",
+   "spans": [
+    {
+     "text": "contusion , a bruise , of the left front chest wall",
+     "field": "dialogue"
+    },
+    {
+     "text": "tenderness over the left front chest wall",
+     "field": "dialogue"
+    },
+    {
+     "text": "some bruising here , in a line , from the seatbelt",
+     "field": "dialogue"
+    },
+    {
+     "text": "Contusion of the left front wall of the thorax",
+     "field": "note"
+    },
+    {
+     "text": "left anterior chest wall pain",
+     "field": "note"
+    },
+    {
+     "text": "Linear ecchymosis consistent with a seatbelt sign",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V43.63XA",
+   "spans": [
+    {
+     "text": "i was in the front passenger seat",
+     "field": "dialogue"
+    },
+    {
+     "text": "a pickup truck ran the red light and hit us right on my side",
+     "field": "dialogue"
+    },
+    {
+     "text": "t-boned us",
+     "field": "dialogue"
+    },
+    {
+     "text": "restrained front seat passenger in a car",
+     "field": "note"
+    },
+    {
+     "text": "a pickup truck ran a red light and struck the passenger side of the vehicle",
+     "field": "note"
+    },
+    {
+     "text": "motor vehicle collision",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.414",
+   "spans": [
+    {
+     "text": "regular city street",
+     "field": "dialogue"
+    },
+    {
+     "text": "intersection",
+     "field": "dialogue"
+    },
+    {
+     "text": "crossing an intersection on a city street",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E11.9",
+   "spans": [
+    {
+     "text": "diabetes",
+     "field": "dialogue"
+    },
+    {
+     "text": "metformin",
+     "field": "dialogue"
+    },
+    {
+     "text": "a1c",
+     "field": "dialogue"
+    },
+    {
+     "text": "Type 2 diabetes mellitus",
+     "field": "note"
+    },
+    {
+     "text": "type 2 diabetes",
+     "field": "note"
+    },
+    {
+     "text": "metformin 1000 mg twice daily",
+     "field": "note"
+    },
+    {
+     "text": "Hemoglobin A1c",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i was a mail carrier for 30 years",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "former job"
+  },
+  {
+   "text": "retired mail carrier",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "former job"
+  }
+ ]
+}

@@ -1,0 +1,922 @@
+########## ENCOUNTER D2N029
+ICD-10 codes: C43.59 Malignant melanoma of other part of trunk
+=== FIELD: dialogue
+[doctor] next patient is sophia jackson , mrnr472348 . she's a 57 year old female who is here for a surgical consult . her dermatologist referred her . she biopsied a 0.7 millimeter lesion which was located on right inferior back . pathology came back as melanoma .
+[doctor] mrs. jackson , it's good to meet you .
+[patient] likewise , wish it were under better circumstances .
+[doctor] yeah , i hear your dermatologist sent you to me 'cause she found a melanoma ?
+[patient] yes , that's what the biopsy said .
+[doctor] okay and when did you first notice the spot ?
+[patient] my mom noticed it when i was visiting her last month .
+[doctor] i see . and so you went to the dermatologist on april 10th to get it checked out , right ?
+[patient] yes , i wanted to be extra cautious because skin cancer does run in my family .
+[doctor] well i'm really glad you took it seriously and got it checked . who in your family has had skin cancer , and do you know if it was melanoma or was it basal cell or squamous cell ?
+[patient] my mom and her sister , i think they both had melanoma .
+[doctor] okay . do you have any other types of cancer in the family , like breast or ovarian ?
+[patient] my grandfather had pancreatic cancer .
+[doctor] okay , and was that your mom or dad's father ?
+[patient] mother's .
+[doctor] okay . and , um , have you personally had any skin spots in the past that you got checked out and they were cancerous or precancerous ?
+[patient] no , this was the first time i've been to a dermatologist . um , but my primary care doctor looks over all of my moles every year at my physical and has n't said , um , he's concerned about any of 'em before .
+[doctor] good- good . uh , let's go over your medical history from your chart . i have that you're not taking any medications and do n't have any health problems listed , but that you're allergic to augmentin , is that right ?
+[patient] yes , that's correct .
+[doctor] okay , and for social history can you tell me what you do for work ?
+[patient] i own an auto repair shop .
+[doctor] okay and have you ever been a smoker ?
+[patient] yeah , i still smoke from time to time . i started that awful habit in my teens and it's hard to break , but i'm trying .
+[doctor] i'm glad you're trying to quit . uh , what about your surgical history , have you had any surgeries ?
+[patient] i had gall bladder and appendix .
+[doctor] okay , great , we can get your chart up to date now , thank you . and other than the melanoma , how has your health been , any unintentional weight changes , headaches , fatigue , nausea , vomiting , vision changes ?
+[patient] no , i've been feelin' great .
+[doctor] good . well let me take a look at your back here where they did the biopsy if you do n't mind .
+[patient] sure .
+[doctor] okay , i'm gon na describe it in medical jargon what i'm seeing here , so that the recording can capture it , but you and i are gon na go over it together in just a moment , okay ?
+[patient] okay , that's fine .
+[doctor] all right , so on the right inferior back there's a one centimeter shave biopsy site , including all of the dermis with no residual pigmentation . there's no intrinsic or satellite lesions , no other suspicious moles , no axillary , cervical , or supraclavicular lymphadenopathy . there is a soft lymph node in the right groin , but it's nontender , otherwise normal exam .
+[doctor] okay , you can sit up . um , so what i was saying there is that i see your biopsy site , but i do n't see any other s- , um , skin lumps or bumps that look suspicious . uh , i also felt your lymph nodes to see if any of them felt abnormal . there is one in the right groin that felt slightly abnormal . it's very likely nothing , but i do want you to have an ultrasound of that area to confirm it's nothing , um , and , you know , make sure it's nothing that we need to worry about . uh , the reason we're being extra cautious is that melanoma can very rarely metastasize to the lymph nodes . the ultrasound can tell us if we need to look into this further .
+[patient] okay , i should n't worry too much then ?
+[doctor] no , i have a low suspicion that it will show anything .
+[patient] okay , good .
+[doctor] so assuming that the ultrasound is normal , the treatment for you melanoma is to cut out the area where the lesion was . with lesions that are 0.7 millimeters or less , um , and that's what we recommend , and yours was exactly 0.7 millimeters . if it were any bigger , we would have had to do a more complex surgery . but what i recommend for you is what we call a wide local incision , excuse me , excision , meaning that i will make a long incision and then cut out an area a bit wider than your current biopsy site . the incision is long because that's what allows me to close the skin nicely . you'll have a fairly long scar from the incision .
+[patient] okay , that is fine with me , i ca n't see back there anyways .
+[doctor] yeah , your wife can tell you what it looks like and she may need to help care for the incision at it , as it heals . um , but since we're , we are n't doing the more complex surgery , i actually do n't need to see you back unless you want to check in with me or have any problems . however , it is very important that you continue to follow up with your dermatologist regularly so she can monitor you . uh , your dermatologist will check that this one does n't come back , but she'll also check for other lesions that look suspicious . uh , unfortunately , since you've had one melanoma , you're at a higher risk of developing another one somewhere else .
+[patient] yeah , she did say she wants to see me back .
+[doctor] good , and i'm sure she's already told you , but it's very important that you apply sunscreen anytime and anywhere that your skin is exposed to sunlight .
+[patient] yeah , she definitely went over that , um , several times with me .
+[doctor] good . other than that , i think that's all for me . um , we'll get you set up for the ultrasound , the procedure . do you have any questions for me ?
+[patient] um , no i ca n't think of any at this time .
+[doctor] okay , my nurse will be in to get you scheduled , so sit tight . it was very good to meet you .
+[patient] thank you , nice to meet you as well .
+[doctor] please add the following pathology r- , to results . a pathology , shave of right inferior back , malignant melanoma , invasive , superficial spreading . histology , superficial spreading . clark level 4 , breslow thickness 0.7 millimeters , radial growth phase present , vertical growth phase not identified . mitotic features , less than one millimeter squared . ulceration not identified , progression not identified , lymphatic invasion not identified , perineural invasion not identified , microscopic satellitosis not identified . infiltrating , uh , lymphocytes , breast . um , melanocytic nevus not identified . predominant cytology epithelioid , peripheral margin positive , deep margin , uh , negative , stage 1 . also note that i reviewed the dermatologist's photo of the lesion which showed an asymmetric black and brown nevus with central a melanotic component and irregular border .
+[doctor] for assessment and plan , the patient presents today with newly diagnosed melanoma . biopsy revealed an intermediate thickness melanoma . on examination today , there is right inguinal lymph node with slightly atypical consistency . i recommended an ultrasound to rule out metastatic disease . if the ultrasound is normal , the patient is a candidate for wide local excision with a one to two centimeter margin .
+[doctor] primary closure should be possible , but skin graft closure may be needed . the relationship between tumor histology and prognosis and treatment was carefully reviewed . the need for follow-up , according to the national comprehensive cancer network guidelines , was reviewed . we also reviewed the principles of sun avoidance , skin self-examination , and the abcdes of mole surveillance .
+[doctor] after discussing the procedure , risk and expected outcomes , and possible complications , questions were answered and the patient expressed understanding and did choose to proceed .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Melanoma.
+
+HISTORY OF PRESENT ILLNESS
+
+Sophia Jackson is a very pleasant 57-year-old female who presents for a surgical consult for melanoma of the right inferior back. She was referred by her dermatologist who biopsied the 0.7 mm lesion on 04/10 and diagnosed the melanoma. The lesion was initially noticed by the patient’s mother when she was visiting her last month. Mrs. Jackson denies a personal history of atypical nevi and reports that she has annual mole checks by her primary care provider at her physicals. She has never seen a dermatologist prior to last month. There is a family history of melanoma in her mother and maternal aunt. The patient reports that she has been in her usual state of health with no unintentional weight changes, headaches, fatigue, nausea, vomiting, or vision changes.
+
+PAST HISTORY
+
+Medical
+None reported.
+
+Surgical
+Cholecystectomy.
+Appendectomy.
+
+SOCIAL HISTORY
+
+Patient owns an auto repair shop.
+Current smoker since teens. Actively trying to quit.
+
+FAMILY HISTORY
+
+Mother: melanoma.
+Maternal aunt: melanoma.
+Maternal grandfather: pancreatic cancer.
+No family history of breast or ovarian cancers.
+
+MEDICATIONS
+
+None.
+
+ALLERGIES
+
+Augmentin.
+
+PHYSICAL EXAM
+
+Hematologic/lymphatics: No axillary, cervical, or supraclavicular lymphadenopathy. There is a soft lymph node in the right groin. Nontender.
+Skin: On the right inferior back there is a 1 cm shave biopsy site including all of the dermis with no residual pigmentation. There’s no intrinsic or satellite lesions. No other suspicious moles.
+
+RESULTS
+
+Pathology Report.
+
+Pathology: Shave biopsy of right inferior back malignant melanoma, invasive, superficial spreading.
+Histology: Superficial spreading.
+Clark level: 4.
+Breslow thickness: 0.7 mm.
+Radial growth phase: present.
+Vertical growth phase: not identified.
+Mitotic figures: less than 1 mm2.
+Ulceration: not identified.
+Regression: not identified.
+Lymphatic invasion: not identified.
+Perineural invasion: not identified.
+Microscopic satellitosis: not identified.
+Infiltrating lymphocytes: breast.
+Melanocytic nevus: not identified.
+Predominant cytology: epithelioid.
+Peripheral margin: positive.
+Deep margin: Negative.
+Stage: 1.
+
+I reviewed the dermatologist’s photo of the lesion which showed an asymmetric black and brown nevus with central amelanotic component and irregular border.
+
+ASSESSMENT AND PLAN
+
+The patient presents today with newly diagnosed melanoma. The biopsy revealed an intermediate thickness melanoma. On examination today, there is a right inguinal lymph node with slightly atypical consistency. I recommended an ultrasound to rule out metastatic disease. If the ultrasound is normal, the patient is a candidate for a wide local excision with a 1-2 cm margin. Primary closure should be possible, but skin graft closure may be needed. The relationship between tumor histology and prognosis and treatment was carefully reviewed. The need for follow up according to the National Comprehensive Cancer Network (NCCN) guidelines was reviewed. We also reviewed the principles of sun avoidance, skin self-examination, and the ABCDE’s of mole surveillance. After discussing the procedure, risks, expected outcomes and possible complications, questions were answered, and the patient expressed understanding and did choose to proceed.
+
+########## ENCOUNTER D2N030
+ICD-10 codes: N60.01 Solitary cyst of right breast; N60.02 Solitary cyst of left breast; R87.619 Unspecified abnormal cytological findings in specimens from cervix uteri
+=== FIELD: dialogue
+[doctor] donna torres , date of birth , 08/01/1980 .
+[doctor] hi donna ! how are you ?
+[patient] i'm good . how about you ?
+[doctor] i'm doing well , thank you . and so , i saw that dr. brown put you on buspar . have you been on that before ?
+[patient] no , that's new .
+[doctor] okay . how is it working for you ?
+[patient] my anxiety is going good now , thankfully . i'm serious , it was brutal in november and december . finally , i was like , " i can not do this . " i have no idea why it happened . dr. ward did put me on singulair , and she did say we need to be careful because singulair can cause anxiety . so i'm not sure if that was the issue or what .
+[doctor] mm . okay .
+[patient] and it would , um , start usually during the day , at work .
+[doctor] i see .
+[patient] i mean , i'm fine now .
+[doctor] well , that's good , that things have settled . i do wonder if some of what you are dealing with is hormonal , and that's why i was asking . 'cause you were on the progesterone , and i feel like you were having some irritability back then too .
+[patient] i did .
+[doctor] and that was before we started the progesterone .
+[patient] yes .
+[doctor] so i know we started it for regulating your periods , but perhaps it helped with this also .
+[patient] yeah . and before , in november and december , i noticed that the week before my period , my anxiety would go through the roof . which then , i knew my period was coming . then it turned into my anxiety spiking just at random times .
+[doctor] hmm , okay .
+[patient] and it seemed like it was for no reason .
+[doctor] but november and december you were on the progesterone at that time .
+[patient] yes .
+[doctor] all right . so not really a link there , all right .
+[patient] yeah , i do n't know .
+[doctor] yeah , i do n't know either . um , sometimes with the aging process , that can happen too .
+[patient] i figured maybe that's what it was .
+[doctor] and we did go through the golive in november and december , so that can be pretty stressful also .
+[patient] yeah , and at work , that's when i first started to lead the process of delivering the results to patients with covid . in the beginning of the whole pandemic , patients would have to wait nine days before they'd get their results . and then we opened the evaluation centers and the covid clinic . so i think it just took a toll on me .
+[doctor] yeah , i can absolutely see that .
+[patient] yeah , and then i was feeling selfish because i was n't even on the front lines . i mean , i was supporting people , sure , but i was n't in the icu . so i felt selfish and guilty . i mean , hands down , the physicians and nurses were in the thick of it and there i was , having anxiety . and it felt ridiculous .
+[doctor] well , honestly , you feel how you feel and what you were doing was n't easy as well , so ... but let's see . i need to just put this dax back to work . all right , so no other issues whatsoever ?
+[patient] no .
+[doctor] have you lost weight ?
+[patient] no , but i stopped taking the camila birth control . my hunger level was at a new high . i mean , i was eating constantly . i felt like , " what is going on ? "
+[doctor] all right .
+[patient] and now i am feeling better .
+[doctor] okay , that's good . and your masked face , though , it does look thinner .
+[patient] well , the past six months i have lost some weight .
+[doctor] okay , good . um , anything else going on ?
+[patient] no .
+[doctor] all right . so your pap was in 2019 . i do n't think that we need to repeat that because it was negative/negative . um , have you ever had an abnormal pap ?
+[patient] not with you , but i did around 2009 , and then i had to be seen every six months for a while . and then i had a normal pap .
+[doctor] all right , well , let's just repeat it then .
+[patient] yeah , that's fine with me , to be safe .
+[doctor] okay . i know it sounds superstitious , but i feel like with all the immunocompromising , the pressure , the stress that people's bodies have been under , and the potential for getting covid or the vaccine ... i have actually seen some , um , an increase in abnormal paps in people who have been fine for a while . so that's why i figure let's just check .
+[patient] okay . i fight the vaccine fight every day at home because my husband is n't ready to get it . same with my daughter . she shares the same worries as her dad in how it'll impact her when she gets older .
+[doctor] have you had the vaccine ?
+[patient] yes , i have . and so has my son . he , um , has had his first already .
+[doctor] okay . well , you know , you can only do what you can do .
+[patient] yeah , i agree .
+[doctor] all right . well , let's complete your exam .
+[patient] all right .
+[doctor] so let's take a deep breath . and again . all right , you can breathe normally . all right , and take one more deep breath . okay , now i'm gon na touch your neck . go ahead and swallow . perfect . and just place your hand above your head . okay , i do feel some little bumps .
+[patient] yeah , but they're not as big as they were .
+[doctor] mm-hmm . okay , in this breast it does feel a little bit denser . does it hurt at all ?
+[patient] it does , where your left hand just was .
+[doctor] okay , right here ?
+[patient] yeah , down here . but whenever i breastfed , it was always sore there too . i had a clog and something else . the lumps do feel smaller , but they are still there , unfortunately .
+[doctor] yeah , they are . uh , well now i do n't know , because if it was the progesterone , they would've gone away .
+[patient] yeah .
+[doctor] all right , well just let your knees just op- relax and open . how's the itching or discomfort ? are you still using the cream ?
+[patient] yes , and i actually need to get that refilled for the first time ever .
+[doctor] okay .
+[patient] uh , but yeah , i use it once a week and it does help .
+[doctor] okay , great . all right , looks good .
+[patient] good .
+[doctor] you can go ahead and sit up .
+[patient] thank you .
+[doctor] all right , so typically the lumps would often just shrink up pretty quickly after you've had one or two cycles , and you've had two cycles so far . so i think let's just keep monitoring them for now .
+[patient] okay . and what could that mean ?
+[doctor] well , so just like people have an increased risk of breast cancer , there's also an increased risk for breast issues . you know what i mean ? so for example , cysts and lumps and fibroadenomas , those are all benign things . they're annoying and require some workup , but they're all benign .
+[patient] and i'm- i'm just worried because i'm almost 40 and my mom was almost 45 when she was diagnosed with breast cancer . so i mean , i know there's nothing i can do about it , but it's just i feel like , uh , we had it under control and now it is n't .
+[doctor] well , i would n't say that . i mean , i feel like we're at a point where we have a good cadence for you having surveillance on things , and i think you are more aware of your breasts than ever before , and things actually have n't changed .
+[patient] yeah .
+[doctor] so those are all good things .
+[patient] okay .
+[doctor] because , um , if it was cancer , we'd actually , we would see some change .
+[patient] we would ? okay , thank you for explaining that .
+[doctor] yeah . so i know it's annoying and distressing , but i think that's where we're at . it's annoying that you have the breast issue , and it's annoying that we have to follow them .
+[patient] yeah , i agree there .
+[doctor] um , but the only extra that i could po- , uh , potentially do , is we could get a breast specialist on the team and have you start to follow with them . and one of the advantages there is that they sometimes will do an ultrasound as an extension of their physical exam , in the office , to check out it- check it out on their own . uh , they also have a lot more experience and more willingness to sometimes perform procedures earlier , if they think it needs , um , if they think it needs to be done . and i think they tend to be much quicker than , you know , like radiology as to biopsy it .
+[patient] okay . i'll do whatever you think i should .
+[doctor] all right . well , i think since you're feeling worried , let's go ahead and we can get them on board . i'll send out a referral and they will call you within the next couple of business days to schedule .
+[patient] okay , i think that sounds great .
+[doctor] all right . i do too . all right , well any questions or anything else we can discuss today ?
+[patient] no , i think i'm all set .
+[doctor] all right , good . all right , well have a good rest of your day and just give us a call if you need anything else .
+[patient] all right , thank you . you have a good day too .
+[doctor] all right .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Follow-up bilateral breast cysts.
+
+HISTORY OF PRESENT ILLNESS
+
+Donna Torres is a 40-year-old female who presents for follow-up surveillance of bilateral breast cysts.
+
+The patient reports continual presence of “lumps” in bilateral breasts with some soreness. She is being seen today for surveillance of the cysts. The patient is taking progesterone, which was initially prescribed to support normalization of menstruation, which was effective. She is also still using vaginal cream one time per week which has improved symptoms of itching and discomfort.
+
+Her last pap smear was in 2019, with negative/negative results. She did have an abnormal pap smear in 2009, which resulted in repeat pap smears per 6 months until her results normalized.
+
+Mrs. Torres experienced increased anxiety in 11/2021 and 12/2021, stating “it was brutal” and felt she could not manage her symptoms and sought treatment. Dr. Brown started the patient on Buspar, which has successfully controlled her anxiety. The patient relates her anxiety to work related stress and possibly aging. Her work involves supporting Covid evaluation centers and clinics. She confirms receiving both Covid vaccinations. Initially, she was experiencing spikes in anxiety prior to menstruation, but her anxiety then became more random with an unclear cause. To note, the patient was started on Singulair, which the patient was told could also cause anxiety.
+
+The patient discontinued Camila birth control, which did result in a significant increase in appetite. This has resolved and she reports she has lost weight in the past 6 months.
+
+Gynecologic History
+Last pap smear: 2019.
+History of abnormal pap smear: 2009.
+
+PAST HISTORY
+
+Medical
+Bilateral breast cysts.
+Anxiety.
+
+SOCIAL HISTORY
+
+Employed in healthcare, supports Covid evaluation centers and clinics.
+
+FAMILY HISTORY
+
+Mother, deceased age 45, from complications of breast cancer.
+
+CURRENT MEDICATIONS
+
+Buspar.
+Singulair.
+
+PHYSICAL EXAM
+
+Genitourinary
+Breast: Breast density.
+
+ASSESSMENT
+
+• Follow-up bilateral breast cysts.
+• Pap smear.
+
+PLAN
+
+Follow-up bilateral breast cysts
+Physical exam indicated stable breast density bilaterally. The patient is being seen regularly for monitoring. The plan is to continue close monitoring and the patient will be referred to breast specialist for additional review. The patient agreed to this plan.
+
+Pap smear
+Exam was normal. No additional treatment needed at this time.
+
+INSTRUCTIONS
+
+Schedule appointment with breast specialist. Call clinic with any additional concerns.
+
+########## ENCOUNTER D2N031
+ICD-10 codes: D05.1 Intraductal carcinoma in situ of breast
+=== FIELD: dialogue
+[doctor] sophia brown . date of birth , 3/17/1946 . this is a new patient visit . she's here to establish care for a history of dcis . we'll go over the history with the patient .
+[doctor] hello , ms. brown .
+[patient] hi . yes , that's me .
+[doctor] wonderful . i'm doctor stewart . it's lovely to meet you .
+[patient] you as well .
+[doctor] so , you've come to see me today because you had a right breast lumpectomy last year . is that right ?
+[patient] yes . on january 20th , 2020 .
+[doctor] okay . and how have you been since then ? any problems or concerns ?
+[patient] no , i'm feeling good . i do my self breast exams religiously now and have n't felt anything since .
+[doctor] perfect . i want to back up and go over your history so i can make sure everything in your chart is correct and i do n't miss anything . so , i'll tell you what we have in your chart from your other providers and you tell me if anything is wrong or missing . sound good ?
+[patient] sounds good .
+[doctor] great . so , i have that you were found to have a calcification in your right breast during a mammogram in october 2019 . was that just a normal screening mammogram , or was it done because you felt a lump ?
+[patient] it was just a normal one you're supposed to get every so often .
+[doctor] i see . and then it looks like you had an ultrasound of your right breast on november 3rd , 2019 , which revealed a mass at the two o'clock position , 11 centimeters from the nipple in the retroareolar region . the report states the mass was point four by two by three centimeters .
+[patient] yes , that sounds right . hard to remember now , though .
+[doctor] yep , definitely .
+[doctor] based on those results , they decided to do an ultrasound-guided core needle biopsy on december 5th , 2019 . pathology results during that biopsy came back as grade two , er positive , pr positive , dcis , or ductal carcinoma in situ .
+[patient] yes . unfortunately .
+[doctor] i know . scary stuff . but you had a lumpectomy on january 20th , 2020 , which removed the eight millimeter tumor and margins were negative . the pathology confirmed dcis . looks like they also removed 5 lymph nodes , which , thankfully , were negative for malignancy . that's great !
+[patient] yeah , i was definitely very relieved .
+[doctor] and your last mammogram was in january 2021 ? and that was normal .
+[patient] yes .
+[doctor] okay . so , i feel like i have a good grasp of what's been going on with you now . and you're here today to establish care with me so i can continue to follow you and make sure you're doing well , right ?
+[patient] yes . fingers crossed .
+[doctor] definitely . we'll keep a close eye on you and take good care of you .
+[patient] okay , sounds good .
+[doctor] i have a few more questions for you . when was your last colonoscopy ?
+[patient] i had one in 2018 and , if i remember correctly , i had one polyp and that was removed and it was n't cancerous .
+[doctor] okay , yes , i see that report now . one polyp in the sigmoid colon which had a benign tubular adenoma . okay . and when was your last menstrual period ?
+[patient] gosh . it was probably around 30 years ago .
+[doctor] okay . do you have children ?
+[patient] i do . i have five .
+[doctor] ah , big family then . that's nice .
+[patient] yes . and they're all having kids of their own now , so it's getting even bigger .
+[doctor] i bet . sounds like fun .
+[patient] it is .
+[doctor] did you have any other pregnancies that were miscarriages or terminations ?
+[patient] really , i did not .
+[doctor] okay . so for the record , that's g5 p5 . and now that you're post-menopausal , are you currently or have you ever been on hormone replacement therapy ?
+[patient] my primary care doctor gave me the option years ago but i decided against it .
+[doctor] okay . and on your review systems form , you indicated that you've not had any recent weight loss or gain , headaches , bone pain , urinary symptoms , or blood in the stools . but you did indicate that you have some back pain , joint pain , and high cholesterol . tell me some more about those .
+[patient] okay . so i've seen doctors for all of those . they've said , excuse me , the back and knee pain are age-related . and the cholesterol is a fairly new diagnosis , but i am working on exercise and cutting back on fatty foods to see if i can get it lower without any medication .
+[doctor] okay . and your primary care doctor is following you for that , right ?
+[patient] that's correct .
+[doctor] okay . for medications , i have that you take coq10 , vitamin d , vitamin c , fish oil , and elderberry fruit . is that all right ?
+[patient] yes , and that's all .
+[doctor] okay . so for your medical history , it's high cholesterol and stage 0 er/pr positive invasive ductal carcinoma of the right breast . any surgeries other than the lumpectomy ?
+[patient] i did have my tubes tied after my last baby , but that's all .
+[doctor] okay . and how about family history ?
+[patient] my mom had non-hodgkin's lymphoma and my dad had prostate cancer and heart disease , but i think that's it .
+[doctor] all right . any family history of breast cancer ?
+[patient] none .
+[doctor] did any of your children have medical issues or siblings with medical problems ?
+[patient] i do not have any siblings and , thankfully , my children are all healthy .
+[doctor] wonderful . do you have any history of smoking , illicit drug use , heavy alcohol consumption ?
+[patient] no drugs . i do drink socially , but never more than that . and i used to smoke , but really , everybody did back then and i probably quit about 30 years ago .
+[doctor] excellent . i have that you're allergic to penicillin . any other allergies ?
+[patient] nope , just penicillin .
+[doctor] okay . i think that covers it . hop up here and let me take a look at you .
+[doctor] okay , so let's use the normal new patient exam template . only change to make is the breast exam . there are no palpable masses , however , there is skin thickening at the medial inferior aspect of the right breast which may be radiation skin changes .
+[doctor] in the result section , note that her ecog performance status today is zero .
+[doctor] do you have ... did you have radiation after the lumpectomy ?
+[patient] i did . we also talked about endocrine therapy , but i decided against that .
+[doctor] okay . so your exam looks good , no masses , just some skin changes from that radiation . now , let's go over the plan for you .
+[patient] okay , sounds good .
+[doctor] as you know , you've had dcis which we'll list in my note as stage zero , er/pr positive , invasive ductal carcinoma of the right breast . your status post-lumpectomy with removal of five lymph nodes that were benign . you also had , um , radiation therapy but declined endocrine therapy . today's clinical examination shows no evidence of recurrence with the dcis or other malignancy and your mammogram in january , 2021 was also negative for recurrence and malignancy .
+[doctor] so , based on all of that , we can just continue to observe you .
+[patient] okay . that sounds great . and when do i come back in to see you ?
+[doctor] in a year , but you should have another mammogram in april of 2022 before you come back to see me .
+[patient] okay , i can do that .
+[doctor] wonderful . i'm glad to see you doing so well . do you have any questions or concerns i can address for you today ?
+[patient] i do n't think so .
+[doctor] okay , great . my nurse will be in shortly to discharge you . take care !
+[patient] you as well .
+=== FIELD: note
+CHIEF COMPLAINT
+
+History of right ductal carcinoma in situ (DCIS).
+
+HISTORY OF PRESENT ILLNESS
+
+Sophia Brown is a 75 y.o. female who presents today for a new patient evaluation due to her history of right DCIS. She is doing well but wishes to establish care today for continued monitoring.
+
+The patient underwent a screening mammogram in 10/2019 and was found to have a calcification in the right breast. She then had a right breast ultrasound on 11/03/2019 which revealed a mass at the 2 o’clock position, 11 cm from the nipple, in the retroareolar region. The report states the mass was 0.4 by 2.0 by 3.0 centimeters. She subsequently had an ultrasound-guided core needle biopsy on 12/05/2019 and pathology results revealed grade 2 ER-positive, PR-positive DCIS. The patient then had a lumpectomy with lymphadenectomy performed on 01/20/2020. The tumor was 8 mm with negative margins and the 5 lymph nodes removed were all benign. Pathology from the tumor confirmed DCIS. Her lumpectomy was followed by adjuvant radiation therapy. Endocrine therapy was also offered but the patient declined. She has since had a mammogram in 01/2021 which was normal. The patient also reports that she performs self-breast exams regularly at home.
+
+Mrs. Brown is a G5P5 female and estimates that her last menstrual period was approximately 30 years ago. She is not currently and has never been on hormone replacement therapy.
+
+The patient’s last colonoscopy was done in 2018. She had a sigmoid polypectomy at that time and pathology showed a tubular adenoma.
+
+Her cholesterol was recently noted to be elevated and the patient reports that she is exercising and reducing fatty food intake accordingly. This is being followed by her primary care provider.
+
+PAST HISTORY
+
+Medical
+Hypercholesterolemia.
+Stage 0 ER/PR-positive invasive ductal carcinoma of the right breast, status post lumpectomy and adjuvant radiation therapy.
+
+Surgical
+Right lumpectomy, lymphadenectomy x5, 01/20/2020.
+Bilateral tubal ligation.
+
+SOCIAL HISTORY
+
+Alcohol: Socially. No history of heavier consumption.
+Illicit drug use: Never.
+Tobacco: Former smoker. Quit approximately 30 years ago.
+Patient has 5 children and multiple grandchildren.
+
+FAMILY HISTORY
+
+Mother: Non-Hodgkin’s lymphoma.
+Father: Prostate cancer, heart disease.
+Her children are healthy. She has no siblings. Denies family history of breast cancer.
+
+CURRENT MEDICATIONS
+
+Co-Q 10.
+Vitamin D.
+Vitamin C.
+Fish oil.
+Elderberry fruit.
+
+ALLERGIES
+
+Penicillin.
+
+REVIEW OF SYSTEMS
+
+Negative for weight loss, weight gain, headaches, bone pain, urinary symptoms, blood in the stools.
+Positive for back pain, joint pain, high cholesterol. Patient has sought care for these complaints. She reports that she was told the back pain and joint pain (knee) are age-related. She is being followed for the high cholesterol by her primary care provider.
+
+PHYSICAL EXAM
+
+The ECOG performance status today is grade 0.
+Breast: There are no palpable masses; however, there is some skin thickening at the medial inferior aspect of the right breast which may be radiation skin changes.
+
+ASSESSMENT
+
+Stage 0 ER/PR-positive invasive ductal carcinoma of the right breast.
+The patient is status post lumpectomy with removal of 5 lymph nodes which were benign. She also underwent adjuvant radiation therapy but declined endocrine therapy. Today’s clinical examination shows no evidence of recurrent disease or other malignancy. She also had a negative mammogram in 01/2021.
+
+PLAN
+
+1. We will continue to observe the patient.
+2. She is due for a mammogram in 04/2022.
+3. She should follow up with me in 1 year after the mammogram.
+
+########## ENCOUNTER D2N032
+ICD-10 codes: M16.11 Unilateral primary osteoarthritis, right hip
+=== FIELD: dialogue
+[doctor] good morning ms. reyes !
+[patient] good morning .
+[doctor] how are you doing ma'am ?
+[patient] i'm doing well doctor , how are you ?
+[doctor] i am fine thank you . so you've been having some problems with your right hip ?
+[patient] yeah .
+[doctor] okay , and where are you hurting ? can you show me ?
+[patient] right in the groin area .
+[doctor] okay , and this has been going on since february 2020 ?
+[patient] yeah .
+[doctor] okay . and is it worse with movement ?
+[patient] well when it catches and i almost fall , yeah .
+[doctor] okay . so it kinda grabs you ?
+[patient] yeah .
+[doctor] okay , and this all started when you were walking ?
+[patient] well , walking around the infusion room .
+[doctor] okay .
+[patient] so it started if i took a step back or , you know , stuff like that . now it happens anywhere .
+[doctor] okay , so now it hurts whenever you move ?
+[patient] it hurts when i pivot .
+[doctor] okay . so if you pivot then it hurts , got it . um ...
+[patient] anything can sometimes do it . sometimes it wo n't though , and sometimes it'll do it several times in a row .
+[doctor] several times in a row , okay .
+[patient] and sometimes i fall .
+[doctor] okay . and you rate the pain to range from two through seven out of 10 ?
+[patient] yeah , that's correct .
+[doctor] okay . and are you experiencing fever or chills ?
+[patient] no .
+[doctor] okay . and any tingling or numbness ?
+[patient] no .
+[doctor] and have you had any problems with your bowel or bladder ?
+[patient] no .
+[doctor] okay . and if you stay still , do you feel better ?
+[patient] yes , but i do n't want to stay still .
+[doctor] i understand , no problem . and for past medical history , do you have anything going on ?
+[patient] i've had a lot of surgeries . i've had pcl , i had infertility , a gall bladder removed , but that's it .
+[doctor] okay . and for family history , it looks like there's high blood pressure , diabetes , thyroid disease , heart disease , kidney disease and gastric ulcers . for your current medications , it does n't look like you're taking anything at this time . and you're allergic to percocet , vicodin and regulin . and it looks like you've had intentional weight loss ?
+[patient] yes , i've lost 110 pounds .
+[doctor] that is awesome . and how did you do that ?
+[patient] with weight watchers .
+[doctor] that's great .
+[patient] mm-hmm .
+[doctor] and how many months have you been participating in weight watchers ?
+[patient] i started in 2018 , and i've been at my current weight for a little over a year .
+[doctor] that is awesome .
+[patient] yeah , thank you .
+[doctor] yeah , very good , and congratulations . and so , for social history , it looks like you work at an infusion center ?
+[patient] yes , over at .
+[doctor] okay . and you live with your roommate , no history of tobacco and you limit alcohol intake to less than five drinks per month .
+[patient] that's correct .
+[doctor] all right . well let's go ahead and take a look at your hip .
+[patient] okay .
+[doctor] please use my general physical exam template . physical exam . ms. reyes is a pleasant 56-year-old woman who is five feet , six inches in height , weighing 169 pounds . blood pressure is 115 over 75 . pulse rate is 67 . ankles , no ankle edema is noted , no calf tenderness . okay , ms. reyes , can you go ahead and stand up for me please and take a couple of steps ? great .
+[patient] okay .
+[doctor] and can you walk on your tippy toes ? good , okay . and can you walk on your heels ? kind of a heel walk and toe walk are intact . um , go ahead and turn around please .
+[patient] okay .
+[doctor] examination of the cervical spine , any pain here now ?
+[patient] no .
+[doctor] okay , no tenderness . look at your right and your left and then over to the right , then go ahead and look up , then look down , and look straight ahead . range of motion is full in the neck without pain . spurling's test is negative . exam of the low back . any pain here ?
+[patient] no .
+[doctor] okay . skin is intact , no midline tenderness to palpitation . go ahead and lean back . and lean to your right , to your left . does that hurt at all ?
+[patient] no .
+[doctor] okay , great . and go ahead and bend forward and then come back up . and that does n't bother you ?
+[patient] no . i did or do have several bulging discs .
+[doctor] okay . but you're not hurting right now ?
+[patient] no , the weight loss has really decreased all the pain .
+[doctor] okay . range of motion is decreased in exertion . lateral flection without pain . any pain when i push ?
+[patient] no .
+[doctor] okay . you can go ahead and , um , sit down please . no pain ?
+[patient] no .
+[doctor] okay . sacroiliac signs are negative . examination of the hips . trochanteric is non tender . go ahead and lift your knee up , does that bother you ?
+[patient] um , just a little bit .
+[doctor] okay , little bit . and then back one , probably bothers you ?
+[patient] right there , like there , yeah .
+[doctor] okay . how about this way ? not too bad ?
+[patient] no .
+[doctor] okay . range of motion is decreased in right hip with pain in the groin and internal and external rotation . okay , go ahead and keep it up , do n't let me push it down . does that hurt ?
+[patient] right there .
+[doctor] okay . resisted right hip flection causes pain in the right groin region . no tenderness is noted . do you feel me touching you all the way down ?
+[patient] yeah .
+[doctor] okay . motor control is normal in the lower extremities . go ahead and lift your knee up .
+[patient] okay .
+[doctor] okay , lift it up . any pain ?
+[patient] no .
+[doctor] okay . and this one ?
+[patient] yeah .
+[doctor] and squeeze your knees together , push it out and kick your leg out straight . now go ahead and bring it back and kick it out straight again . and go ahead and lean back , keep it loose . okay , all set . you can go ahead and sit up now .
+[patient] okay , thank you .
+[doctor] you're welcome . so what i think we're dealing with is right hip degenerative joint disease .
+[patient] okay .
+[doctor] and we do have some options . so first is to start some low impact exercises . i can provide you with a hand out with what exercises you can do . you should take nsaids as needed to help with the pain and discomfort , as well as use of a cane to help offload the right side . a cane will help support your painful side to help reduce the pain .
+[patient] hmm , i do n't love that idea but i'll give it a try .
+[doctor] okay , that would be great . and we can also try a cortisone injection into the right hip joint to see if that offers any relief .
+[patient] i would like to definitely get the injection .
+[doctor] okay . we can take care of that today while you're here and then schedule a follow up appointment in three months to see how you're doing , and then receive another injection if needed .
+[patient] okay , that sounds good .
+[doctor] okay . and here are the risks associated with getting the inje- injection . um , please just take a moment to review it and consent to the shot .
+[patient] i'm good .
+[doctor] great . we'll get that set up for ya . all right , well i hope things , um , feel better , and we will see you back here in three months .
+[patient] see you . have a nice day .
+[doctor] thank you so much , you as well . deep tendon reflex is one plus throughout . no focal motor weakness is noted . no focal sensory deficit noted . can you please include the surgical list ? next radiographs , mr arthrogram of the right hip done june 3rd 2021 show high grade condromalacia involving the interosuperior right acetabulum with subchondral marrow edema and cyst formation . next paragraph plan . options include low impact exercise program , use of an nsaid and use of a cane to offload the right . we discussed that she'd like to proceed with the cortisone injection in right hip joint . i explained the risks of injection , including needles , sterile and covid . she understood and decided to proceed with the injection . she will follow up with me in three months for another injection if needed . end of dictation .
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right hip pain.
+
+HISTORY OF PRESENT ILLNESS
+
+Elizabeth Reyes is a 56-year-old female who presents for the evaluation of pain in her right hip and groin region. Her symptoms started on 02/2020 and has progressively worsened. She is employed as an RN and notes that her symptoms began while she was working and walking around the infusion room at Johnson. Initially the pain would only happen when she took a step back, but the pain has progressed and now occurs with any type of movement involving her right hip and groin. She describes that her hip will sometimes “catch” when she moves, causing her to fall on occasion. The pain improves when she is still and stops moving. She rates her pain as 2-7/10.
+
+Starting in 2018, the patient intentionally lost 110 pounds through Weight Watchers. She has maintained the weight loss and her weight has been stabile for the past 1 year. She has a history of several bulging discs, but the pain has significantly reduced due to her weight loss. Today, she reports no back pain.
+
+She denies fever, chills, new onset of bowel or bladder dysfunction, tingling or numbness.
+
+Opioid Assessment
+
+Opioid Use: No.
+
+Pain Assessment
+
+Pain is frequent.
+Quality of Pain: Right hip catches.
+Intensity of Pain Using VAS 0-10 Scale (0 = No pain, 10 = Worst imaginable pain)
+• Current Pain Intensity: 2/10.
+• Average Pain Intensity Over the Past Week: 4/10.
+• Pain at Best: 2/10.
+• Pain at Worst: 7/10.
+Relieving Factors: Lying down, sitting.
+Aggravating Factors: Walking, pivoting, turning, any movement engaging right hip.
+
+PAST HISTORY
+
+Medical
+PCOS.
+
+Surgical
+Cholecystectomy.
+
+SOCIAL HISTORY
+
+Works at the infusion center at Johnson. Lives with a roommate. Denies tobacco use. Limits alcohol intake to less than 5 drinks per month.
+
+FAMILY HISTORY
+
+Hypertension.
+Diabetes.
+Thyroid disease.
+Kidney disease.
+Gastric ulcers.
+
+CURRENT MEDICATIONS
+
+NSAID PRN by mouth.
+
+ALLERGIES
+
+Percocet.
+Vicodin.
+Reglan.
+
+VITALS
+
+Blood pressure: 115/75
+Pulse: 67.
+Height: 5’6.
+Weight: 169 lb.
+
+PHYSICAL EXAM
+
+Constitutional
+Pleasant.
+
+Integumentary
+Skin is in tact.
+
+Musculoskeletal
+Extremities: No bilateral ankle edema or calf tenderness.
+Examination of gait: Heel-walk and toe-walk are intact.
+Cervical spine exam: No tenderness is elicited. Range of motion is full in all planes without pain. Spurling's test is negative.
+Lumbar spine exam: Range of motion is decreased in extension and lateral flexion without pain. No tenderness is elicited in the midline.
+Sacroiliac joint exam: Bilateral sacroiliac joints are nontender to palpation.
+Bilateral hip exam: Range of motion is decreased in the right hip with pain in the groin on internal and external rotation. Resisted right hip flexion causes pain in the right groin region. Bilateral trochanteric regions are nontender to palpation.
+
+Neurological
+Motor bulk and tone are normal in both lower extremities. Motor strength testing reveals no focal motor weakness in the lower extremities. Deep tendon reflexes are 1+ throughout. No focal sensory deficit is noted.
+
+RESULTS
+
+MR arthrogram of the right hip completed on 06/03/2021 reveals evidence of high-grade chondromalacia involving the anterosuperior right acetabulum with subchondral marrow edema and cyst formation.
+
+ASSESSMENT
+
+• Right hip degenerative joint disease.
+
+PLAN
+
+I discussed the clinical and radiological findings with the patient. Treatment options discussed are low impact exercises, use of analgesics as needed, and use of a cane to offload the right hip. She would like to proceed with a cortisone injection into her right hip joint. We will administer the injection today. I reviewed the procedure in detail, including the risks of the injection related to the use of steroid in the COVID setting. She understands the risks and would like to proceed with the injection.
+
+INSTRUCTIONS
+
+Schedule a follow up appointment in 3 months to assess her pain. If needed, a second injection may be administered.
+
+
+########## ENCOUNTER D2N033
+ICD-10 codes: M25.561 Pain in right knee; E11.9 Type 2 diabetes mellitus without complications
+=== FIELD: dialogue
+[doctor] so sophia i see that you you hurt your knee tell me about what happened
+[patient] yeah i was jumping on my kid's trampoline and i could just slipped out from under me
+[doctor] my gosh one of those big trampolines in your back yard
+[patient] yeah a pretty big one
+[doctor] okay which knee was it
+[patient] my right knee
+[doctor] right knee okay and when did this happen
+[patient] about four days ago
+[doctor] great the weather was perfect this weekend so i'm glad you at least got outside sorry to hear you got hurt okay so your right knee did you did you feel it like pop or or snap or anything when you hurt it
+[patient] yeah i felt a little pop and then it swelled up really big afterward
+[doctor] okay did you try anything for the pain
+[patient] i took some ibuprofen and i put some ice on it
+[doctor] okay did that help
+[patient] a little bit but it's still really hard to get around
+[doctor] alright and have you have you been able to stand on it or does that hurt too much
+[patient] it hurts quite a bit to stand but i am able to put weight on it
+[doctor] okay alright and what part of the knee is it inside outside middle
+[patient] kind of that inside part of my kneecap
+[doctor] okay alright and okay so as long as you're here and then your primary care physician i'm looking through your chart and it looks like we're treating your diabetes so how you've been doing with your your diet overall are you are you keeping your sugars low
+[patient] it's going okay i i forget to check quite a bit though
+[doctor] sure
+[patient] on it
+[doctor] yeah i understand how has your diet been lately
+[patient] it's been pretty good
+[doctor] okay okay good good you know it's hard to stay away from the sugary foods sometimes i i enjoy ice cream regularly okay so let's do physical exam as long as you are here so i'm just gon na listen to your heart your heart sounds normal no murmurs or gallops listen to your lungs quick if you can take a deep breath lungs are clear that's good news let's take a look at that knee right knee looks like it definitely has some swelling i'm gon na do some maneuvers here does it hurt when i push you on the inside of the knee
+[patient] yeah that hurts
+[doctor] okay how about the outside
+[patient] a little bit but not as much
+[doctor] okay so some pain on palpation on the inside little bit of pain on the outside of the knee if i bend the knee back does that hurt
+[patient] yeah
+[doctor] how about when i extend it
+[patient] yeah that hurts
+[doctor] okay so little bit of limited range of motion as well as pain on both flexion and extension on the knee i'm gon na push on this a little bit looks like your mcmurray's test is negative just checking for a meniscus tear okay so let's talk a little bit about your plan what i am concerned about for your knee is it sounds like you have a torn or injured mcl i it's that inside tendon in your knee so i'm concerned about that since you're having trouble with weightbearing and you heard that pop so what i'm gon na do is i'm gon na put you in a straight leg brace and i'll prescribe some mobic you can start taking that as a a pain reliever and to try to get some of the swelling down i want you to ice your knee once an hour for about fifteen minutes but i'm also gon na send you out for an mri because we wan na make sure this is what happens see if there's any other damage to the knee does that sound good
+[patient] yeah that sounds great thank you
+[doctor] yeah and then for your diabetes as long as you're here it sounds like you're managing that pretty well but i do wan na get a recheck on your hemoglobin a1c and then i'm also i'm going to get a refill on the metformin that you have been taking five hundred milligrams so you can keep taking that as well so do you have any other questions for me
+[patient] no that's it thanks
+[doctor] alright well thank you hope that you feel better
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right knee pain.
+
+MEDICAL HISTORY
+
+The patient has a history of diabetes. She has been doing pretty good with her diet. She states that she forgets to check her sugars quite a bit.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports right knee pain and swelling.
+
+PHYSICAL EXAM
+
+Respiratory
+- Auscultation of Lungs: Clear bilaterally.
+
+Cardiovascular
+No murmurs, gallops.
+
+Musculoskeletal
+- Examination of the right knee: Some swelling present.
+- Palpation: Some pain to palpation on the medial aspect of the right knee, and a little bit of pain on the lateral aspect of the right knee.
+- Range of Motion: Limited range of motion as well as pain on both flexion and extension of the knee.
+- Special Testing:
+McMurray's Test: Negative.
+
+ASSESSMENT AND PLAN
+
+1. Right knee pain.
+- Medical Reasoning: I am concerned about a torn MCL due to pain on ambulation and trouble with weightbearing, as well as the pop she heard.
+- Patient Education and Counseling: We discussed treatment options today including bracing, anti-inflammatories, and icing. - Medical Treatment: I am going to put her in a straight leg brace and I will prescribe some Mobic. She can start taking that as a pain reliever and to try to get some of the swelling down. I want her to ice her knee once an hour for about 15 minutes.
+- Additional Testing: I am also going to send her out for an MRI.
+
+2. Type 2 diabetes.
+- Medical Reasoning: The patient states that her type 2 diabetes are well-managed.
+- Medical Treatment: I am also going to get a refill on the metformin that she has been taking 500 mg.
+- Additional Testing: We are going to recheck her hemoglobin A1c.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+########## ENCOUNTER D2N034
+ICD-10 codes: M25.412 Effusion, left shoulder
+=== FIELD: dialogue
+[doctor] alright you can go ahead
+[patient] hey alan i good to see you today so i looked here my appointment notes and i see that you're coming in you had some shoulder pain left shoulder pain for the last three weeks so
+[doctor] how you doing is it is it gotten any better
+[patient] yeah yeah i've been having a lot of pain of my shoulder for the last three weeks now and it's not getting better okay do you remember what you were doing when the pain first started
+[doctor] so i i was thinking that i i ca n't recall like falling on it injuring it getting hit
+[patient] hmmm
+[doctor] i have been doing a lot of work in my basement and i even i put in a new ceiling so i do n't know if it's from all that activity doing that but otherwise that's that's all i can think of
+[patient] okay so do you remember hitting it or anything like that
+[doctor] no nothing at all
+[patient] okay alright did you fall do you remember doing that
+[doctor] no
+[patient] okay hmmm so like a little mystery so have you had pain in that shoulder before
+[doctor] i mean i'm very active so i can get pains in my shoulders but it's nothing that sometime some tylenol can help
+[patient] okay and are you able to move the arm or is it kinda just stuck
+[doctor] i'm having a lot of pain like i can move it but you know when i try to reach for something lifting anything and even like i do n't even try to put my hands over my head because it causes so much pain
+[patient] alright so does that pain radiate anywhere or like where would you say it is in your shoulder
+[doctor] it actually it stays pretty much just right at the shoulder it does n't go down anywhere
+[patient] okay and the pain is it is it all the time or does it come and go
+[doctor] it's pretty much all the time anytime i put any pressure on it like when i'm trying to sleep it hurts even more so it's been affecting my sleep as well
+[patient] okay so i know you mentioned tylenol so this time i have n't taken anything for it
+[doctor] yeah i i do the tylenol which usually works for me and it does take the edge off but i still have pain okay did you try icing it at all
+[patient] i iced it initially but i have n't iced it at all recently
+[doctor] alright
+[patient] and so with your shoulder have you experienced any numbness in your arm or in your fingers
+[doctor] no numbness or tingling
+[patient] okay good so i'm gon na go ahead and do a quick physical exam and take a look at your your shoulder so i reviewed your your vitals everything looks good with that so touch here in your shoulder so your left shoulder exam you have limited active and passive range of motion so pressure here so that there is tenderness of the greater
+[doctor] okay
+[patient] tuberosity of the humerus let's see there is no tenderness at the sternoclavicular or acro
+[doctor] yeah
+[patient] acromioclavicular joints
+[doctor] yeah yeah
+[patient] and looks like you have good hand grip let me see so on the neurovascular exam of your left arm your capillary refill is less than three seconds and your sensation is is intact to light touch
+[doctor] yes thank you yep
+[patient] so you did get a we get we had to get a x-ray of your shoulder before you came in and so it's normal so that's really good so there is no fractures no bony abnormalities so let's talk a little bit about my assessment and plan for you so you you do have that left shoulder pain so your symptoms are
+[doctor] most likely due to a rotator cuff tendinopathy so this means that you injured tendon you have injured tendons and muscles that make up your shoulder and make up your shoulder muscles so what i'm gon na do is i'm gon na order an mri of your left shoulder
+[patient] and so we're gon na begin with that just to make sure nothing else is going on have you done physical therapy before
+[doctor] i have n't
+[patient] okay so what i'm gon na do i'm going to refer you to physical therapy for approximately six to eight weeks and so they can help you strengthen those muscles around your shoulder and that should definitely help with the pain during that time you can also continue to take tylenol i do n't think i need to prescribe anything else for the pain you said as it's working pretty good for you so if your symptoms do n't improve we can consider a steroid injection of your shoulder which should provide some relief but i think right now we can just go with the the pt and hopefully that works to alleviate your injury so do you have any questions about the plan
+[doctor] so like i said i'm really active do you think that this pain will ever go away
+[patient] yeah so many patients are very successful with rehab and so we'll start with that and see how you do most most of the time once we build up those muscles around that shoulder you know things things the pain alleviates itself and and and you will be good to go back to working on your basement and running and jogging and lifting weights all all the active things people do these days
+[doctor] okay alright thank you
+[patient] bye
+[doctor] okay bye
+=== FIELD: note
+CHIEF COMPLAINT
+
+Left shoulder pain.
+
+HISTORY OF PRESENT ILLNESS
+
+Alan Mitchell is a pleasant 69-year-old male who presents to the clinic today for the evaluation of left shoulder pain. The onset of his pain began 3 weeks ago, without any improvement. He denies any specific injury; however, he has been renovating his basement and putting in a new ceiling. He does not recall hitting or falling onto the left shoulder. The patient states he is very active and has experienced left shoulder pain before that usually resolves with Tylenol.
+
+The patient reports significant pain with reaching, lifting, and overhead activities. The pain is constant. He states the pain is primarily located in the left shoulder and denies it radiates down into the left arm. The patient also reports difficulty sleeping secondary to the pain. He denies any numbness or tingling in his left arm or fingers. He has been taking Tylenol for pain, which provides partial relief. He initially iced his shoulder but has not iced it recently. The patient denies he has done any physical therapy.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports left shoulder pain. Neurological: Denies numbness or tingling.
+
+VITALS
+
+All vital signs are within the normal limits.
+
+PHYSICAL EXAM
+
+MSK: Examination of the left shoulder: Limited active and passive ROM. Tenderness over the greater tuberosity of the humerus. No tenderness at the sternoclavicular or AC joints. Good hand grip. Neurovascularly intact distally. Capillary refill is less than 3 seconds. Sensation is intact to light touch distally.
+
+RESULTS
+
+X-rays of the left shoulder were obtained and reviewed today. These are normal and reveal no fracture or bony abnormalities.
+
+ASSESSMENT
+
+Left shoulder pain, likely rotator cuff tendinopathy.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with him regarding his current symptoms. I have explained that his x-rays did not reveal any signs of a fracture. I have recommended that we obtain an MRI of the left shoulder to evaluate for possible rotator cuff tendinopathy. The patient was provided with a referral to formal physical therapy. He will engage in a 6-to-8-week course in order to strengthen his left shoulder. I have also advised him to take Tylenol as needed for pain. If his symptoms do not improve, we may consider a steroid injection to the left shoulder.
+
+INSTRUCTIONS
+
+The patient will follow up with me once the MRI results are available for review and further discussion.
+
+########## ENCOUNTER D2N035
+ICD-10 codes: I11.0 Hypertensive heart disease with heart failure; I50.9 Heart failure, unspecified; R32 Unspecified urinary incontinence
+=== FIELD: dialogue
+[doctor] well hello christina so how are you doing i was notified you were in the hospital for some heart failure what happened
+[patient] well i'm doing better now but i just started having problems that my ankles were swelling and could n't get them to go down even when i went to bed and could n't breathe very good had to get propped up in bed so i could breathe at night and so i just really got to feeling bad i called my friend diane and she said i probably ought to call nine one one since i was having a hard time talking and so i called nine one one and they sent out an ambulance and they took me into the er on the it was quite an experience
+[doctor] yeah
+[patient] having an ambulance ride and and i've never done that before so not an experience i wan na do again either
+[doctor] i'm sure you do n't yeah i see that your blood pressure was high also it was two hundred over ninety have you been
+[patient] yeah i guess is that really high
+[doctor] yeah that's
+[patient] i feel really bad
+[doctor] yeah that's pretty high are you taking your medications or you missing some doses
+[patient] i do n't know i might miss one now but i try to take them all time
+[doctor] yeah yeah you really need to take them very consistently now you also said you were watching your diet did you did you have some slips with that you said your ankles were swelling
+[patient] no i yeah i do i like to i like to eat
+[doctor] are you eating a lot of salty foods and pizza or
+[patient] i like potato chips
+[doctor] yeah
+[patient] i like the salt and vinegar potato chips they're really good so
+[doctor] well so do you do you go out to eat a lot or do you where you where where are you eating those potato chips or is that just the home snacking or
+[patient] that's home snacking i buy the the the the brand name salt and vinitive because brand wo n't taste real good but the the brand names really tastes good
+[doctor] oh
+[patient] so i eat those probably everyday
+[doctor] goodness well you know you we need to probably stop eating those now
+[patient] yeah well i hate to hate to give those up but i guess i might have to
+[doctor] well since you've been in the hospital and and they've helped you out with some with all that how are you feeling now
+[patient] well i'm i'm doing better
+[doctor] mm-hmm and they
+[patient] i do n't do n't have quite as much shortness of breath i think maybe getting up and walking a little more is helping
+[doctor] and they gave you a water pill and is that is that helping is that making you pee a lot
+[patient] yeah yeah i have almost incontinence so
+[doctor] goodness
+[patient] yes that's not very pleasant at all
+[doctor] and so they added another blood pressure medication also how are you doing with that are you feeling a little bit better
+[patient] yeah i think so
+[doctor] okay
+[patient] if i can remember to take the pills
+[doctor] yeah
+[patient] that seems to be a sticky point
+[doctor] well a a pill box or maybe setting an alarm on your phone might really help
+[patient] okay i'll i'll give that a try anything that will help
+[doctor] yeah okay well that's good to hear so now have you bought a blood pressure cuff to have at home now
+[patient] yes i already had one but i very failed if i ever used it
+[doctor] okay
+[patient] but
+[doctor] got it
+[patient] i'll i'll try to use it everyday now
+[doctor] okay and you might even just keep a log of what your blood pressures are and when it's up think about you know what you've eaten if you've done something different because that may help you to figure out what you need to cut back on or how you might need to change your your eating habits a little bit so
+[patient] okay okay
+[doctor] have you been short of breath or any problems sleeping since you've been home
+[patient] no i've been sleeping like a log
+[doctor] okay good alright have you had any chest pain
+[patient] no no chest pain
+[doctor] okay alright well let's do a quick physical exam here so your vital signs your blood pressure looks pretty good today at one twenty eight over seventy two your temperature is ninety eight . seven and your heart rate is seventy two your respirations are eighteen your oxygen saturation looks pretty good at at ninety six percent okay now on your neck exam there is no jugular venous distention on your heart exam i appreciate a two over six systolic ejection murmur which i've heard before and so it's stable and your lungs are clear bilaterally and your lower extremities show just trace edema now now we since we did the echocardiogram i reviewed those results and it does show a preserved ef of fifty five percent abnormal diastolic filling and mild-to-moderate mitral regurgitation so let me tell you a little bit about my assessment and plan so for your first problem for your congestive heart failure it sounds like this was caused by dietary indiscretion and some uncontrolled hypertension so i want you to continue on your bumex two milligrams once daily continue to watch your diet and avoid salty foods might try keeping that log we talked about with your blood pressures and what you've eaten if if your blood pressure seems a little high also weigh yourself daily and call me if you gain three pounds in two days okay
+[patient] okay
+[doctor] and i also want you to see a nutritionist to give you some education about what foods you can eat okay now for your second problem for i know this sounds like this is just for you and so for your second problem for your hypertension i want you to continue on the cozaar one hundred milligrams daily continue on the norvasc five milligrams once daily also and i'm going to order a renal artery ultrasound just to be sure we're not missing anything and then like maybe you know some renal artery stenosis or something and so so for your third problem for your kidney disease i wan na get some more labs to make sure you tolerate this the new medications and then i'll see you again in three months do you have any questions
+[patient] no i do n't think so not today
+[doctor] alright it's good to see you and i hope we'll just keep getting you feeling better
+[patient] okay
+=== FIELD: note
+CHIEF COMPLAINT
+
+Emergency department follow up.
+
+MEDICAL HISTORY
+
+Patient reports history of hypertension.
+
+MEDICATIONS
+
+Patient reports taking Bumex 2 mg once daily, Cozaar 100 mg daily, and Norvasc 5 mg once daily.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Denies sleep disturbance.
+Cardiovascular: Denies chest pain.
+Respiratory: Denies dyspnea.
+Genitourinary: Reports urinary incontinence in the setting of diuretic medication.
+
+VITALS
+
+Blood Pressure: 128/72 mmHg
+Temperature: 98.7 degrees F
+Heart Rate: 72 bpm
+Oxygen Saturation: 96%
+
+PHYSICAL EXAM
+
+Neck
+- General Examination: No jugular venous distention.
+
+Cardiovascular
+- Auscultation of Heart: Stable 2/6 systolic ejection murmur.
+
+Musculoskeletal
+- Examination: Trace lower extremity edema.
+
+RESULTS
+
+Echocardiogram reveals a preserved ejection fraction of 55%, abnormal diastolic filling, and mild-to-moderate mitral regurgitation.
+
+ASSESSMENT AND PLAN
+
+1. Congestive heart failure.
+- Medical Reasoning: This appears to have been caused by dietary indiscretion and uncontrolled hypertension.
+- Patient Education and Counseling: I encouraged the patient to continue making dietary modifications, including limiting her sodium intake. She could try keeping a food diary, as previously discussed, to log her diet and associated blood pressure readings. I also advised her to monitor her weight daily and contact me if she gains 3 pounds in 2 days.
+- Medical Treatment: Continue with Bumex 2 mg once daily. Referral placed for consult with a nutritionist for education and recommendations regarding her diet.
+
+2. Hypertension.
+- Medical Reasoning: This has been poorly controlled due to inconsistent compliance with medication and dietary indiscretion.
+- Patient Education and Counseling: We discussed dietary modifications as noted above.
+- Medical Treatment: She can continue on Cozaar 100 mg daily and Norvasc 5 mg once daily. Renal artery ultrasound ordered to rule out any issues such as renal artery stenosis.
+
+3. Kidney disease.
+- Medical Treatment: Labs will be ordered to assess her response to new medications.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+The patient will follow up in 3 months.

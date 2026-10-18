@@ -1,0 +1,553 @@
+{
+  "encounter_id": "D2N004",
+  "pii": [
+    {
+      "text": "james",
+      "field": "dialogue",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient first name"
+    },
+    {
+      "text": "57-year-old",
+      "field": "dialogue",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "patient age"
+    },
+    {
+      "text": "James Allen",
+      "field": "note",
+      "category": "PATIENT_NAME",
+      "tier": "direct",
+      "comment": "patient full name"
+    },
+    {
+      "text": "57-year-old",
+      "field": "note",
+      "category": "AGE",
+      "tier": "quasi",
+      "comment": "patient age"
+    }
+  ],
+  "medical_concepts": [
+    {
+      "text": "congestive heart failure",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "type 2 diabetes",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "heart failure",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "diabetes",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "acute lumbar , um , strain",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "muscle strain",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "disc herniation",
+      "field": "dialogue",
+      "type": "diagnosis",
+      "icd_relevant": false
+    },
+    {
+      "text": "back pain",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "felt the pop",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "immediately had to hit the ground",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "leg weakness",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "numbing or tingling",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "dropped foot",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "struggling with my right leg",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "weight gain",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "swelling in your legs",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "weakness in your right leg",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "sweet tooth",
+      "field": "dialogue",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "tylenol",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "ibuprofen",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "metformin",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "meloxicam 15 milligrams once a day",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "metformin to 1,000 milligrams twice daily",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "lisinopril",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "lasix",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "lisinopril 20 milligrams once a day",
+      "field": "dialogue",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "surgery about 10 years ago on my lower back",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "physical therapy",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "mri",
+      "field": "dialogue",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "golfing",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "hurt my back when i went for my backswing",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "back x-ray",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "hemoglobin a1c",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "blood sugars",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "diabetic labs",
+      "field": "dialogue",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "2 out of 6 systolic ejection murmur",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "pain to palpation of the lumbar 5",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "l5",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "decreased range of motion with flexion and extension",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "positive straight leg raise",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "4 out of 5 on your right",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "normal x-ray of your lumbar spine",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "good boney alignment",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "congestive heart failure",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "type 2 diabetes",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Acute lumbar strain.",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Diabetes type 2.",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "Congestive heart failure.",
+      "field": "note",
+      "type": "diagnosis",
+      "icd_relevant": true
+    },
+    {
+      "text": "back pain",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "felt a pop in his back",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "immediately hit the ground",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "right lower extremity weakness",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "drop foot",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "right leg weakness and drop foot",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "weight gain",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "feeling a 'pop' and immediate pain while golfing",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": true
+    },
+    {
+      "text": "Tylenol, ibuprofen",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": false
+    },
+    {
+      "text": "metformin",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "Initiate meloxicam 15 mg once daily",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "Increase metformin to 1000 mg twice daily",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "Continue lisinopril 20 mg once daily and Lasix",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "golfing",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "surgery about 10 years ago in his lower back",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "MRI",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "physical therapy",
+      "field": "note",
+      "type": "procedure",
+      "icd_relevant": false
+    },
+    {
+      "text": "X-ray lumbar spine",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "Hemoglobin A1c is elevated at 8",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    },
+    {
+      "text": "Repeat hemoglobin A1c",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "blood sugars",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": false
+    },
+    {
+      "text": "Grade 2/6 systolic ejection murmur",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "pain to palpation at L5",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "Decreased range of motion with flexion and extension",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "Positive straight leg raise",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "Strength is 4/5 on the right and 5/5 on the left",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "good bony alignment",
+      "field": "note",
+      "type": "finding",
+      "icd_relevant": false
+    },
+    {
+      "text": "lumbar spine",
+      "field": "dialogue",
+      "type": "anatomy",
+      "icd_relevant": true
+    },
+    {
+      "text": "lumbar spine",
+      "field": "note",
+      "type": "anatomy",
+      "icd_relevant": true
+    },
+    {
+      "text": "hit the ground",
+      "field": "dialogue",
+      "type": "finding",
+      "icd_relevant": true
+    },
+    {
+      "text": "Endorses right leg weakness and drop foot",
+      "field": "note",
+      "type": "symptom",
+      "icd_relevant": false
+    },
+    {
+      "text": "lower back",
+      "field": "note",
+      "type": "anatomy",
+      "icd_relevant": true
+    },
+    {
+      "text": "Lasix",
+      "field": "note",
+      "type": "medication",
+      "icd_relevant": true
+    },
+    {
+      "text": "hemoglobin A1c was 8",
+      "field": "note",
+      "type": "lab_or_test",
+      "icd_relevant": true
+    }
+  ],
+  "ambiguous_terms": [
+    {
+      "text": "dax",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "ambient documentation software, not a person"
+    },
+    {
+      "text": "dragon",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "voice assistant software, not a person"
+    },
+    {
+      "text": "golfing",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "ordinary activity; ICD external-cause activity code (Y93.53), not identifying"
+    },
+    {
+      "text": "jelly beans",
+      "field": "dialogue",
+      "is_pii": false,
+      "comment": "ordinary dietary preference, not identifying"
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+{
+ "encounter_id": "HT004",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "rasika",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "sister mercy",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "aarav",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "sunny",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "year-end audits",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "ninety two years old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "twentieth of october",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "deccan matru seva",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "dr . shirodkar",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "ninth of november",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "vedanta infosoft",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "hinjewadi phase two",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "d'souza",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "d-m-s-h zero one five eight eight",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "DECCAN MATRU SEVA HOSPITAL",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Kothrud",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Pune",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "411038",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "www.dmsh-pune.in/anc",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "DMSH/ANC/2026/01588",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "7730-4412-09",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "91-4432-8810-2275",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Joshi",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Rasika",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Sunil",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Kulkarni",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "33 Y",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "02.08.1993",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Flat 702",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Shubham Heights",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Paud Road",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "+91 98220 41736",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "rasika.k.joshi@fictmail.in",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Sunny",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "chartered accountant",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "12/10/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "01/03/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "06/12/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Anjali",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Shirodkar    ANC",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "A. Shirodkar",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Mercy",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "D'Souza",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2022",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "2024",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Aarav",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "3 yrs",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "02/06/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "30-Aug-2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "21-Sep-2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "QA tester",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Vedanta Infosoft",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Hinjewadi Phase 2",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Leela",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "92 yrs",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "20/10/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "15/11/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "09/11/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "020-2545 8899",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Marathi",
+   "category": "OTHER_QI",
+   "risk": "low"
+  },
+  {
+   "field": "note",
+   "text": "Joint family",
+   "category": "OTHER_QI",
+   "risk": "low"
+  }
+ ],
+ "keep": [
+  {
+   "field": "dialogue",
+   "text": "braxton hicks",
+   "category": "EPONYM",
+   "why": "physiological contractions"
+  },
+  {
+   "field": "dialogue",
+   "text": "shirodkar stitch",
+   "category": "EPONYM",
+   "why": "cervical cerclage technique, supports O34.33"
+  },
+  {
+   "field": "dialogue",
+   "text": "god's mercy",
+   "category": "NOT_A_NAME",
+   "why": "ordinary word, not the midwife"
+  },
+  {
+   "field": "dialogue",
+   "text": "thirty two weeks and one day",
+   "category": "CLINICAL_NUMBER",
+   "why": "gestational age, supports Z3A.32"
+  },
+  {
+   "field": "dialogue",
+   "text": "one ten by seventy",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure"
+  },
+  {
+   "field": "note",
+   "text": "Shirodkar cerclage",
+   "category": "EPONYM",
+   "why": "cervical cerclage technique, supports O34.33"
+  },
+  {
+   "field": "note",
+   "text": "Leopold's manoeuvres",
+   "category": "EPONYM",
+   "why": "obstetric abdominal palpation"
+  },
+  {
+   "field": "note",
+   "text": "Doppler",
+   "category": "EPONYM",
+   "why": "ultrasound modality"
+  },
+  {
+   "field": "note",
+   "text": "G3P1L1A1",
+   "category": "CLINICAL_NUMBER",
+   "why": "obstetric score, not an ID"
+  },
+  {
+   "field": "note",
+   "text": "32+1",
+   "category": "CLINICAL_NUMBER",
+   "why": "gestational age, supports Z3A.32"
+  },
+  {
+   "field": "note",
+   "text": "13+2",
+   "category": "CLINICAL_NUMBER",
+   "why": "gestational age at cerclage"
+  },
+  {
+   "field": "note",
+   "text": "29+1",
+   "category": "CLINICAL_NUMBER",
+   "why": "gestational age at scan"
+  },
+  {
+   "field": "note",
+   "text": "37+0",
+   "category": "CLINICAL_NUMBER",
+   "why": "planned gestational age for stitch removal"
+  },
+  {
+   "field": "note",
+   "text": "110/70",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure"
+  },
+  {
+   "field": "note",
+   "text": "5/5",
+   "category": "CLINICAL_NUMBER",
+   "why": "fifths of fetal head palpable"
+  },
+  {
+   "field": "note",
+   "text": "86-94",
+   "category": "CLINICAL_NUMBER",
+   "why": "fasting glucose range"
+  },
+  {
+   "field": "note",
+   "text": "118-130",
+   "category": "CLINICAL_NUMBER",
+   "why": "post-prandial glucose range"
+  },
+  {
+   "field": "note",
+   "text": "84/min",
+   "category": "CLINICAL_NUMBER",
+   "why": "pulse rate"
+  },
+  {
+   "field": "note",
+   "text": "146/min",
+   "category": "CLINICAL_NUMBER",
+   "why": "fetal heart rate"
+  }
+ ]
+}

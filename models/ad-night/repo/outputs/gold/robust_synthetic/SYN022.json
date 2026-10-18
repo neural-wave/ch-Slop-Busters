@@ -1,0 +1,32 @@
+{
+  "encounter_id": "SYN022",
+  "pii": [
+    {"field": "dialogue", "text": "Marisa", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "Kelsey", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "Dunmore", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "Owen", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "He's four", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "March 5th, 2021", "category": "DOB", "risk": "high"},
+    {"field": "dialogue", "text": "Dr. Young", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "Brightside Pediatrics", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "Little Sprouts Daycare", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "dialogue", "text": "608-555-0139", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "Brightside Pediatrics", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "01/22/2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Kelsey", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Dunmore", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "608-555-0139", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "Owen", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "4 yo", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "03/05/2021", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "Patricia", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Patricia Young", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Little Sprouts", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "01/23/2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "Marisa", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Thibodeaux", "category": "PERSON_NAME", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "are young", "category": "NOT_A_NAME", "why": "adjective, not Dr. Young"}
+  ]
+}

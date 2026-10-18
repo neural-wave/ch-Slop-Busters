@@ -1,0 +1,10 @@
+{
+  "encounter_id": "D2N164",
+  "phi": [
+    {"text": "elizabeth", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "53 -year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "epic mychart", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "the patient portal"},
+    {"text": "MyChart", "field": "note", "type": "ORGANIZATION", "tier": 1, "generalized": "the patient portal"}
+  ],
+  "medical_concepts": []
+}

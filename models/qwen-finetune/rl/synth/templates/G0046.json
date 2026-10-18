@@ -1,0 +1,632 @@
+{
+ "id": "G0046",
+ "dataset": "synthetic_followup",
+ "sex": "male",
+ "age_range": [
+  75,
+  90
+ ],
+ "icd10_codes": [
+  {
+   "code": "F33.1",
+   "description": "Major depressive disorder, recurrent, moderate"
+  },
+  {
+   "code": "G31.84",
+   "description": "Mild cognitive impairment of uncertain or unknown etiology"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  }
+ ],
+ "dialogue": "[doctor] good afternoon , {PATIENT_FIRST} . how have you been since we last saw each other ?\n[patient] oh , same old , doctor {DOCTOR_LAST} . some days are fine and some days i just ca n't get out of the chair .\n[doctor] i'm sorry to hear that . tell me about a typical day .\n[patient] i get up around six , make my coffee , and sit by the window . the crossword helps for about an hour . then the afternoon is long .\n[doctor] how is your appetite and your sleep ?\n[patient] i'm eating maybe half of what i used to . i wake up at three in the morning and i ca n't get back to sleep .\n[doctor] okay . and your mood , how would you rate it on a scale from one to ten ?\n[patient] maybe a four . on the good days it's a six .\n[doctor] okay . i know your wife passed away last year . how are you holding up with that ?\n[patient] it's been about fourteen months now . people keep saying it gets easier , but it does n't feel like that .\n[doctor] that's a lot of grief to carry . do you still have thoughts of hurting yourself , or of not wanting to be here ?\n[patient] no , no . i'd never do that . i think about her a lot , that's all . the anniversary was {DATE_SPOKEN} , and that was hard .\n[doctor] i'm glad to hear it . how often do you see your family ?\n[patient] {OTHER_FIRST} calls every evening around seven . she drives over on sundays . she worries too much , honestly .\n[doctor] she cares about you . you worked at a bank for a long time , right ?\n[patient] yes , i was a loan officer at {ORG} for thirty one years . i still have the habit of checking everyone's paperwork .\n[doctor] that's a good habit . now , tell me about your memory . have you noticed more trouble finding words , or losing track of things ?\n[patient] a little . i misplaced my keys twice this week , and i ca n't remember the name of the lady at the pharmacy . but my daughter says everybody does that .\n[doctor] it's common . we'll do a short memory test today . let's start with the clock drawing .\n[patient] okay .\n[doctor] your scores are a bit lower than last time , but not dramatically . you got twenty three out of thirty on the screen today .\n[patient] is that bad ?\n[doctor] it's in the mild range . the memory changes and the mood symptoms can overlap , which is why we're watching both closely .\n[patient] i see .\n[doctor] okay . let's look at your medicines . you're still taking the sertraline one hundred milligrams every morning ?\n[patient] yes . and the blood pressure pill , lisinopril , twenty milligrams .\n[doctor] how many days a week do you miss a dose ?\n[patient] maybe once a week . i forget the evening pill .\n[doctor] okay . let's use a pill box with a reminder alarm . have you taken any sleeping pills , or anything over the counter ?\n[patient] just a tylenol now and then for my back .\n[doctor] good . any alcohol ?\n[patient] a glass of wine with dinner , that's all . my doctor from years ago said it's fine .\n[doctor] okay . let's check your vitals . blood pressure one thirty eight over eighty two . pulse seventy four , and your weight is one hundred seventy pounds , down about eight pounds since the spring .\n[patient] that's the not eating .\n[doctor] it probably is . let me examine you . any tremor in your hands ?\n[patient] a little when i hold a cup . my brother had crohn's disease , and i never had any of that , but i get some stiffness in the shoulders .\n[doctor] okay . your gait looks steady . strength is normal in both arms and legs . no tremor at rest .\n[patient] good .\n[doctor] let's talk about the plan . i'd like to increase the sertraline to one hundred fifty milligrams daily , and we'll recheck in four weeks .\n[patient] okay . will that make me sleepy ?\n[doctor] it can at first . take it with breakfast . i'd also like you to try the senior center on tuesdays , where they do art and music . and i'll send a referral for counseling .\n[patient] i used to volunteer at the library on tuesdays . maybe i'll try the center instead .\n[doctor] that sounds great . the counseling is a grief group on thursdays at st. agnes parish .\n[patient] st. agnes parish ? my wife and i went there for years .\n[doctor] then it's a good fit . i'll see you in four weeks . and call the clinic right away if you have any thoughts of hurting yourself .\n[patient] i will . thank you , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nFollow-up for recurrent major depression with mild cognitive decline.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is an {AGE}-year-old male with recurrent major depressive disorder and mild cognitive impairment who presents for follow-up on sertraline. His mood is rated 4 out of 10 on most days, with better days rated 6. He reports reduced appetite with approximately 8 pounds of weight loss since spring, early morning awakening around 3 AM with difficulty returning to sleep, and anhedonia in the afternoons. His wife died fourteen months ago, and the anniversary of her death, {DATE_SPOKEN}, was particularly difficult. He denies suicidal ideation, intent, or plan. He has ongoing grief and thinks about his wife frequently.\n\nHe has misplaced objects and had trouble recalling names over the past several weeks. His daughter, {OTHER_FIRST}, calls nightly and visits on Sundays, and reports the same concerns.\n\nPAST MEDICAL HISTORY\n\nRecurrent major depressive disorder, initially diagnosed in {YEAR}. Mild cognitive impairment. Hypertension.\n\nFAMILY HISTORY\n\nBrother with Crohn's disease.\n\nSOCIAL HISTORY\n\nWidowed. Previously a loan officer at {ORG} for thirty-one years. Previously volunteered at the library on Tuesdays. Attends grief support at St. Agnes Parish on Thursdays once referred. Alcohol: one glass of wine with dinner. Occasional acetaminophen for back pain.\n\nMEDICATIONS\n\nSertraline 100 mg every morning, to increase to 150 mg daily. Lisinopril 20 mg daily. Missing the evening pill about once weekly.\n\nPHYSICAL EXAM\n\nVitals: BP 138/82, pulse 74, weight 170 lb. Mild postural tremor with cup-holding; no resting tremor. Gait steady. Strength normal in both upper and lower extremities.\n\nRESULTS\n\nCognitive screen score 23/30 today, consistent with mild impairment.\n\nASSESSMENT AND PLAN\n\n1. Recurrent major depressive disorder, moderate, with persistent symptoms. Increase sertraline to 150 mg daily, taken with breakfast. Pill organizer with reminder alarm. Referral to grief group at St. Agnes Parish. Senior center activity referral. Safety plan reviewed; return precautions for suicidal thoughts. Recheck in four weeks.\n2. Mild cognitive impairment, without behavioral disturbance. Repeat cognitive screening in six months.\n3. Hypertension, continue lisinopril.\n4. Unintentional weight loss. Monitor weight at each visit.",
+ "medical_concepts": [
+  {
+   "text": "some days i just ca n't get out of the chair",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the afternoon is long",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "eating maybe half of what i used to",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i wake up at three in the morning",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ca n't get back to sleep",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "maybe a four",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "on the good days it's a six",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your wife passed away last year",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "it does n't feel like that",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "thoughts of hurting yourself",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "not wanting to be here",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i think about her a lot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "trouble finding words",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "losing track of things",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "misplaced my keys twice this week",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ca n't remember the name of the lady at the pharmacy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a short memory test",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "clock drawing",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "twenty three out of thirty",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the mild range",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the memory changes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the mood symptoms",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sertraline one hundred milligrams every morning",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril , twenty milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "miss a dose",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sleeping pills",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "a glass of wine with dinner",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure one thirty eight over eighty two",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pulse seventy four",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "down about eight pounds since the spring",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the not eating",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tremor in your hands",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little when i hold a cup",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "crohn's disease",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "stiffness in the shoulders",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "your gait looks steady",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "strength is normal in both arms and legs",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no tremor at rest",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sertraline to one hundred fifty milligrams daily",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "counseling",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "grief group",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "rated 4 out of 10",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "better days rated 6",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "reduced appetite",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "approximately 8 pounds of weight loss",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "early morning awakening around 3 AM",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "anhedonia in the afternoons",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "denies suicidal ideation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ongoing grief",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "misplaced objects",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "trouble recalling names",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "reports the same concerns",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "recurrent major depressive disorder",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild cognitive impairment",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Recurrent major depressive disorder",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild cognitive impairment",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Brother with Crohn's disease",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sertraline 100 mg every morning",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lisinopril 20 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Missing the evening pill about once weekly",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 138/82",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild postural tremor",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "no resting tremor",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Gait steady",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Strength normal in both upper and lower extremities",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cognitive screen score 23/30",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Recurrent major depressive disorder, moderate",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Increase sertraline to 150 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pill organizer with reminder alarm",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "grief group",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Senior center activity referral",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Safety plan reviewed",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "return precautions for suicidal thoughts",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Repeat cognitive screening",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "continue lisinopril",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Unintentional weight loss",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "crohn's disease",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponym for an inflammatory bowel disease, not a person"
+  },
+  {
+   "text": "Crohn's disease",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponym for an inflammatory bowel disease, not a person"
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of acetaminophen"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "F33.1",
+   "spans": [
+    {
+     "text": "maybe a four",
+     "field": "dialogue"
+    },
+    {
+     "text": "eating maybe half of what i used to",
+     "field": "dialogue"
+    },
+    {
+     "text": "reduced appetite",
+     "field": "note"
+    },
+    {
+     "text": "anhedonia in the afternoons",
+     "field": "note"
+    },
+    {
+     "text": "Recurrent major depressive disorder, moderate",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "G31.84",
+   "spans": [
+    {
+     "text": "misplaced my keys twice this week",
+     "field": "dialogue"
+    },
+    {
+     "text": "ca n't remember the name of the lady at the pharmacy",
+     "field": "dialogue"
+    },
+    {
+     "text": "misplaced objects",
+     "field": "note"
+    },
+    {
+     "text": "trouble recalling names",
+     "field": "note"
+    },
+    {
+     "text": "Cognitive screen score 23/30",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "blood pressure one thirty eight over eighty two",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypertension",
+     "field": "note"
+    },
+    {
+     "text": "BP 138/82",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "loan officer",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "former occupation"
+  },
+  {
+   "text": "st. agnes parish",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "named church"
+  },
+  {
+   "text": "i used to volunteer at the library on tuesdays",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "former weekly volunteer routine"
+  },
+  {
+   "text": "loan officer",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "former occupation"
+  },
+  {
+   "text": "St. Agnes Parish",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "comment": "named church"
+  },
+  {
+   "text": "volunteered at the library on Tuesdays",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "former weekly volunteer routine"
+  }
+ ],
+ "scenario": {
+  "specialty": "psychiatry",
+  "visit": "followup",
+  "length": "medium",
+  "focus": [
+   "DATE",
+   "ORGANIZATION",
+   "OTHER_PERSON_NAME"
+  ]
+ }
+}

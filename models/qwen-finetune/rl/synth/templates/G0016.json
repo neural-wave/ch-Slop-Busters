@@ -1,0 +1,579 @@
+{
+ "id": "G0016",
+ "dataset": "synthetic_annual",
+ "sex": "female",
+ "age_range": [
+  19,
+  30
+ ],
+ "icd10_codes": [
+  {
+   "code": "M54.50",
+   "description": "Low back pain, unspecified"
+  },
+  {
+   "code": "F41.9",
+   "description": "Anxiety disorder, unspecified"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . it's been a while since your last physical . how have things been ?\n[patient] hi , doctor {DOCTOR_LAST} . pretty good overall . i'm busy , work is crazy right now , but i'm happy .\n[doctor] tell me about work . what do you do ?\n[patient] i'm a pastry chef at {ORG} on fulton street . i start at four in the morning , so i'm on my feet for ten hours before lunch .\n[doctor] wow , that's early . how is your back holding up with all that standing ?\n[patient] honestly , my lower back has been killing me . i lift the fifty pound sacks of flour and i twist when i pour the big mixing bowls . it's a dull ache most days , and sharp when i bend .\n[doctor] how long has that been going on ?\n[patient] about four months , since the spring . i was fine before that . i think the new sacks are heavier .\n[doctor] okay . any pain going down your legs , or numbness or tingling ?\n[patient] no numbness . no tingling . it doesn't go down my leg . it's just right here in the low back .\n[doctor] good . any weakness when you push off the floor or lift your foot ?\n[patient] no , i'm strong . i'm just sore . i take tylenol at night , and a heating pad helps .\n[doctor] okay . and how is your sleep ?\n[patient] not great . i'm up at two thirty to get the ovens going , so i'm in bed by eight . sometimes i ca n't fall back asleep .\n[doctor] that's a hard schedule . how are you feeling in your mood ?\n[patient] anxious . a lot of nights i lie awake worrying about orders and whether the staff will show up . my heart races at work sometimes .\n[doctor] okay . how long have you felt this worried ?\n[patient] for about a year . it got worse after my roommate moved out and i had to take on the full rent .\n[doctor] that's a big change . any panic attacks , or feeling like you can't breathe ?\n[patient] no panic attacks . i just feel tense all the time , and i catch myself chewing on my nails .\n[doctor] okay . do you drink any caffeine ?\n[patient] a lot of coffee . i'm honest about it , it's probably four cups before noon . i know .\n[doctor] that adds to the anxiety . anything else you use to relax ?\n[patient] i swim laps at the community pool three mornings a week . i'm training for a masters meet in the fall . that really helps my head .\n[doctor] that's great . how many laps are you doing ?\n[patient] about forty laps , so a mile , on a good day . i'm slower than i used to be , but i'm getting there .\n[doctor] wonderful . what about a fitness tracker ? do you use one ?\n[patient] yes , a fitbit on my wrist . it says i'm doing okay on steps but i sleep badly .\n[doctor] okay . let's look at you . your blood pressure is one eleven over seventy two . heart rate is seventy six . weight is about where it was last year .\n[patient] good , i hate getting weighed .\n[doctor] let me check your back . can you bend forward for me ? does it hurt here ?\n[patient] yes , right on the low part of the spine . that's where it hurts when i bend .\n[doctor] okay . there's some tenderness over the lumbar muscles , no spinal tenderness , and your straight leg raise is negative on both sides . your reflexes are normal .\n[patient] that's a relief .\n[doctor] i'd like you to start physical therapy for the back , twice a week for six weeks . they'll teach you how to lift from your legs and how to brace your core .\n[patient] okay . is there a physical therapy place near my apartment ?\n[doctor] i'll send the referral to the clinic on delancey avenue . they have a good sports rehab team .\n[patient] that's close to my work , good . i can go on my break .\n[doctor] perfect . for the anxiety , i'd like to talk about options . would you be open to counseling , or a medicine like an ssri ?\n[patient] maybe counseling first . i don't like the idea of a daily pill right now .\n[doctor] that's fine . there's a counselor who does evening sessions , so it won't interfere with your schedule .\n[patient] that would help . i've got a trip coming up too , to lisbon with my sister in october . i'm nervous about that too .\n[doctor] that's a fun trip . we can plan around it .\n[patient] thanks . also , i'm due for my vaccines , right ?\n[doctor] yes . your tetanus booster is due , and the flu shot is due this fall . i'll give you both today .\n[patient] okay . and my pap test ?\n[doctor] your last one was normal three years ago . at your age we do a pap every three years , so you're due next year .\n[patient] okay . i'll put it on my calendar .\n[doctor] let's review the plan . physical therapy for six weeks , counseling for the anxiety , and let's recheck your sleep and mood in two months . if the back pain wakes you up at night or you get any new weakness , come back sooner .\n[patient] got it . thanks , doctor {DOCTOR_LAST} . this was really helpful .",
+ "note": "CHIEF COMPLAINT\n\nAnnual physical examination; chronic low back pain and anxiety symptoms.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents for annual preventive care. She reports approximately four months of mechanical low back pain that began in the spring, aggravated by lifting fifty pound flour sacks and twisting while pouring large mixing bowls. Pain is a dull ache at rest and sharp with bending. No radiation below the knee. No numbness, tingling, or focal weakness. She takes acetaminophen at night with partial relief and uses a heating pad.\n\nShe reports about one year of worry and tension, with nail biting, worse since a roommate moved out. She endorses a racing heart at work and insomnia related to a 2:30 AM start. She denies panic attacks. Caffeine intake is about four cups of coffee before noon.\n\nSOCIAL HISTORY\n\nShe works as a pastry chef at {ORG} on Fulton Street, starting her shift at 4 AM. She swims laps at the community pool three mornings a week in training for a masters meet this fall. She grew up in {CITY}. She travels to Lisbon with her sister in October. She wears a fitness tracker.\n\nMEDICATIONS\n\nAcetaminophen as needed, heating pad. No prescription medications.\n\nPHYSICAL EXAM\n\nBP 111/72. HR 76. Weight stable. Lumbar paraspinal tenderness without midline spinal tenderness. Straight leg raise negative bilaterally. Strength and reflexes normal and symmetric.\n\nRESULTS\n\nNo laboratory studies today. Vaccine record reviewed.\n\nASSESSMENT AND PLAN\n\n1. Chronic mechanical low back pain related to occupational lifting. Refer to physical therapy twice weekly for six weeks with lumbar strengthening and body mechanics training. Referral to the rehab clinic on Delancey Avenue.\n2. Provisional anxiety disorder with worry, tension, and insomnia. Offer counseling; defer SSRI. Evening counseling sessions arranged. Reassess in two months.\n3. Tetanus booster and influenza vaccine administered today.\n4. Cervical cancer screening due next year.\n5. Return sooner for night pain, new weakness, or worsening symptoms.",
+ "medical_concepts": [
+  {
+   "text": "lower back has been killing me",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dull ache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sharp when i bend",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fifty pound sacks of flour",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i twist when i pour",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "new sacks are heavier",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "weakness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "heating pad",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ca n't fall back asleep",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "anxious",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "worrying",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my heart races",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "panic attacks",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tense all the time",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "chewing on my nails",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a lot of coffee",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the anxiety",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "one eleven over seventy two",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart rate is seventy six",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tenderness over the lumbar muscles",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no spinal tenderness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "straight leg raise is negative",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "reflexes are normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "counseling",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ssri",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus booster",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "flu shot",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "pap test",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "vaccines",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "mechanical low back pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dull ache at rest",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sharp with bending",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "No radiation below the knee",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "focal weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen at night",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "heating pad",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "worry",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tension",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "nail biting",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "racing heart",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "insomnia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "panic attacks",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Caffeine intake",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lifting fifty pound flour sacks",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "twisting while pouring large mixing bowls",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "BP 111/72",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "HR 76",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lumbar paraspinal tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Straight leg raise negative bilaterally",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Strength and reflexes normal and symmetric",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "laboratory studies",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Acetaminophen as needed",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Chronic mechanical low back pain",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "occupational lifting",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "physical therapy twice weekly",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "lumbar strengthening",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "body mechanics training",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Provisional anxiety disorder",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "worry, tension, and insomnia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "counseling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "SSRI",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tetanus booster",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "influenza vaccine",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cervical cancer screening",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "night pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "new weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for acetaminophen, not a person"
+  },
+  {
+   "text": "fitbit",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of a fitness tracker"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "M54.50",
+   "spans": [
+    {
+     "text": "lower back has been killing me",
+     "field": "dialogue"
+    },
+    {
+     "text": "dull ache",
+     "field": "dialogue"
+    },
+    {
+     "text": "mechanical low back pain",
+     "field": "note"
+    },
+    {
+     "text": "dull ache at rest",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "F41.9",
+   "spans": [
+    {
+     "text": "anxious",
+     "field": "dialogue"
+    },
+    {
+     "text": "worrying",
+     "field": "dialogue"
+    },
+    {
+     "text": "Provisional anxiety disorder",
+     "field": "note"
+    },
+    {
+     "text": "worry",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm a pastry chef",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "on fulton street",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "street of the workplace"
+  },
+  {
+   "text": "i'm up at two thirty to get the ovens going",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive daily routine"
+  },
+  {
+   "text": "i swim laps at the community pool three mornings a week",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive routine and training goal"
+  },
+  {
+   "text": "to lisbon with my sister in october",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "recent travel plan"
+  },
+  {
+   "text": "clinic on delancey avenue",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "street of the referral clinic"
+  },
+  {
+   "text": "works as a pastry chef",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "Fulton Street",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "street of the workplace"
+  },
+  {
+   "text": "swims laps at the community pool three mornings a week",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive routine and training goal"
+  },
+  {
+   "text": "travels to Lisbon",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "recent travel plan"
+  },
+  {
+   "text": "Delancey Avenue",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "street of the referral clinic"
+  }
+ ],
+ "scenario": {
+  "specialty": "physical medicine and rehabilitation",
+  "visit": "annual",
+  "length": "medium",
+  "focus": [
+   "OCCUPATION",
+   "ORGANIZATION",
+   "LOCATION"
+  ]
+ }
+}

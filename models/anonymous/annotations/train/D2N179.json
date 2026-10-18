@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N179",
+  "phi": [
+    {"text": "abc123", "field": "dialogue", "type": "ID", "tier": 1, "generalized": ""},
+    {"text": "january 1st , 1960", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "60 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "cook", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "martinez", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "this weekend", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the past few days"},
+    {"text": "car wreck", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "accident"},
+    {"text": "december", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "Elijah Cook", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Cook", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "60-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "12/2019", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "motor vehicle accident", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "traumatic accident"},
+    {"text": "car accident", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "accident"}
+  ],
+  "medical_concepts": []
+}

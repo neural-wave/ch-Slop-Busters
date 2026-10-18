@@ -1,0 +1,31 @@
+{
+  "encounter_id": "D2N026",
+  "pii": [
+    {"field": "dialogue", "text": "donald", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "clark", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "03/04/1937", "category": "DOB", "risk": "high"},
+    {"field": "dialogue", "text": "miller", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "betty", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "roy", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "6421", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "am a va", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "dialogue", "text": "one percent disabled", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Clark", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Betty", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Ross", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "06/04/2021", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "veteran", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "1% disability", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "spurling's maneuver", "category": "EPONYM", "why": "clinical exam maneuver, not a person"},
+    {"field": "note", "text": "Spurling's maneuver", "category": "EPONYM", "why": "clinical exam maneuver, not a person"},
+    {"field": "note", "text": "Hoffman's", "category": "EPONYM", "why": "Hoffmann's sign, neurologic exam finding"},
+    {"field": "dialogue", "text": "c56", "category": "CLINICAL_NUMBER", "why": "cervical level C5-6, not an ID"},
+    {"field": "dialogue", "text": "c45", "category": "CLINICAL_NUMBER", "why": "cervical level C4-5, not an ID"},
+    {"field": "dialogue", "text": "c34", "category": "CLINICAL_NUMBER", "why": "cervical level C3-4, not an ID"},
+    {"field": "dialogue", "text": "c67", "category": "CLINICAL_NUMBER", "why": "cervical level C6-7, not an ID"},
+    {"field": "dialogue", "text": "c7-t1", "category": "CLINICAL_NUMBER", "why": "spinal level, not an ID"},
+    {"field": "note", "text": "C7-T1", "category": "CLINICAL_NUMBER", "why": "spinal level, not an ID"}
+  ]
+}

@@ -1,0 +1,689 @@
+{
+ "id": "G0015",
+ "dataset": "synthetic_new",
+ "sex": "female",
+ "age_range": [
+  75,
+  90
+ ],
+ "icd10_codes": [
+  {
+   "code": "N95.0",
+   "description": "Postmenopausal bleeding"
+  },
+  {
+   "code": "N81.10",
+   "description": "Cystocele, unspecified"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  },
+  {
+   "code": "E78.5",
+   "description": "Hyperlipidemia, unspecified"
+  },
+  {
+   "code": "Z79.82",
+   "description": "Long term (current) use of aspirin"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . your family doctor sent you over about some bleeding . how are you doing today ?\n[patient] hi , doctor {DOCTOR_LAST} . i'm all right , i suppose . i'm eighty one and i wasn't expecting any bleeding at my age .\n[doctor] i understand . tell me what you've noticed .\n[patient] a little spotting , like pink on the toilet paper . it started about three weeks ago . then last week it was a bit more , maybe the size of a quarter on my underwear .\n[doctor] okay . when was your last period ?\n[patient] goodness . i've been past that for almost twenty years . i went through the change at about fifty one .\n[doctor] okay . are you taking any hormones ?\n[patient] no , not for years . i stopped the estrogen cream when i was about sixty five , because it made my breasts sore .\n[doctor] that's helpful . any pain in your belly or pelvis ?\n[patient] not really . i have a heavy , dragging feeling down there sometimes , like something is sitting low . especially when i've been on my feet all morning .\n[doctor] okay . does it bother you when you pass urine or have a bowel movement ?\n[patient] sometimes i have to push a little to empty out . and i leak a bit when i sneeze . nothing too terrible .\n[doctor] any blood in your urine , or burning ?\n[patient] no burning . no blood that i can see .\n[doctor] okay . let's go over your other health . what medicines are you taking ?\n[patient] amlodipine every morning , five milligrams for my blood pressure , and atorvastatin at night for my cholesterol . and a baby aspirin , eighty one milligrams . my son says i'm a walking pharmacy .\n[doctor] that's a good list . any allergies ?\n[patient] penicillin makes me break out . that's the only one .\n[doctor] okay . any blood thinners besides the aspirin ?\n[patient] no . just the aspirin , for my heart .\n[doctor] good . let's talk about you . where do you live now ?\n[patient] alone in the house i've had since nineteen seventy eight . my daughter {OTHER_FIRST} calls every single day , she worries about me .\n[doctor] that's lovely . what do you do with your days ?\n[patient] i keep bees in the back yard , about six hives . i still do that every spring , even though my knees are not what they were .\n[doctor] wow . and any stings ?\n[patient] oh , plenty . i'm used to it .\n[doctor] okay . were you ever in the service ?\n[patient] yes , i was a navy veteran . i served on a destroyer for four years , from nineteen sixty one .\n[doctor] thank you for your service . let's examine you . the nurse is going to check your blood pressure first .\n[patient] okay . the nurse is very gentle .\n[doctor] your blood pressure is one thirty eight over seventy six , which is pretty good for your age . heart rate is seventy four . let me look at your belly first .\n[patient] okay .\n[doctor] your abdomen is soft , no tenderness . now i'm going to do a pelvic exam . take a deep breath and bear down for me .\n[patient] okay . oh , there it is , that bulge .\n[doctor] i see it . there's a cystocele , the bladder is dropping into the front wall of the vagina . the cervix is small and looks normal . there's a little bit of pinkish blood at the opening .\n[patient] that's what i saw this morning .\n[doctor] okay . we'll do a transvaginal ultrasound to measure the lining of the uterus , and i'd like to take a small sample of the lining in the office today .\n[patient] does that hurt ?\n[doctor] it's a quick pinch , maybe ten seconds of discomfort . i'll give you a moment after .\n[patient] okay . please go slow .\n[doctor] i will . the hemoglobin from the blood drawn earlier was twelve point one , which is fine . your kidney numbers are normal , and your cholesterol is a little high on the atorvastatin , so we'll recheck it .\n[patient] okay . what about the bulge ?\n[doctor] for the bulge we can try a pessary , a small device that fits inside the vagina and holds things up . many women find it very comfortable .\n[patient] i don't want surgery . i'm too old for that kind of thing .\n[doctor] i agree , a pessary is a good first step . let's get the ultrasound and the biopsy results first .\n[patient] okay . how long until i hear back ?\n[doctor] the biopsy usually takes about a week . i'll call you myself with the results , and the nurse will set up the ultrasound for next week .\n[patient] good . my daughter wants to come with me to the next visit .\n[doctor] that's fine . please ask her to bring your medication list .\n[patient] she'll love that . she likes to keep track of everything .\n[doctor] one more thing . if the bleeding gets heavier , or you have clots or dizziness , call us right away . don't wait for next week .\n[patient] i will . thank you , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nPostmenopausal spotting for three weeks.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female, postmenopausal since age 51, referred by her family physician for evaluation of postmenopausal vaginal bleeding. She reports spotting for approximately three weeks, with a larger episode last week about the size of a quarter. She discontinued vaginal estrogen cream around age 65 because of breast tenderness and has not used hormone therapy since. She reports pelvic heaviness and dragging, worse after prolonged standing, with incomplete emptying requiring straining and leakage with sneezing. She denies dysuria, hematuria, or abdominal pain.\n\nPAST MEDICAL HISTORY\n\nHypertension and hyperlipidemia, both controlled on medication.\n\nMEDICATIONS\n\nAmlodipine 5 mg daily. Atorvastatin nightly. Aspirin 81 mg daily.\n\nALLERGIES\n\nPenicillin (rash).\n\nSOCIAL HISTORY\n\nLives alone in the same home since 1978. Daughter, {OTHER_FIRST}, calls daily and will accompany her to future visits. She keeps bees in her backyard, approximately six hives, and is a navy veteran who served on a destroyer from 1961 for four years.\n\nPHYSICAL EXAM\n\nBP 138/76. HR 74. Abdomen soft and nontender. Pelvic examination with grade 2 anterior vaginal wall prolapse consistent with cystocele. Cervix small and unremarkable. Small amount of blood at the introitus.\n\nRESULTS\n\nHemoglobin 12.1 g/dL. Renal function within normal limits. LDL elevated on current statin therapy; repeat lipid panel planned.\n\nASSESSMENT AND PLAN\n\n1. Postmenopausal bleeding, evaluate for endometrial pathology. Transvaginal ultrasound to measure endometrial thickness. Office endometrial biopsy today.\n2. Cystocele with stress urinary incontinence symptoms. Trial of pessary; surgery deferred per patient preference.\n3. Essential hypertension, controlled on amlodipine.\n4. Hyperlipidemia on atorvastatin, recheck lipids.\n5. Aspirin for cardiovascular prevention; no other anticoagulants.\n\nReturn precautions reviewed: heavy bleeding, clots, or dizziness.",
+ "medical_concepts": [
+  {
+   "text": "spotting",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pink on the toilet paper",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bleeding",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "went through the change",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "estrogen cream",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "breasts sore",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "heavy , dragging feeling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "something is sitting low",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "push a little to empty out",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "leak a bit when i sneeze",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "burning",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood in your urine",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "amlodipine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood pressure",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "atorvastatin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "cholesterol",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "baby aspirin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "penicillin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "break out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood thinners",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "the aspirin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "one thirty eight over seventy six",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart rate is seventy four",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "abdomen is soft , no tenderness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pelvic exam",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "that bulge",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "cystocele",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "the bladder is dropping into the front wall of the vagina",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "cervix is small and looks normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pinkish blood",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "transvaginal ultrasound",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "lining of the uterus",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "small sample of the lining",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "quick pinch",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hemoglobin from the blood drawn earlier was twelve point one",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "kidney numbers are normal",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "cholesterol is a little high",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "pessary",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "biopsy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "clots",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dizziness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "belly",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "pelvis",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "Postmenopausal spotting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "spotting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "postmenopausal vaginal bleeding",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "postmenopausal since age 51",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "vaginal estrogen cream",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "breast tenderness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pelvic heaviness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "incomplete emptying",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "straining",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dysuria",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hematuria",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "abdominal pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "hyperlipidemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Amlodipine 5 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Atorvastatin nightly",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Aspirin 81 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Penicillin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "rash",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pelvic examination",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "grade 2 anterior vaginal wall prolapse",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Cervix small and unremarkable",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood at the introitus",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Abdomen soft and nontender",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 138/76",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "HR 74",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hemoglobin 12.1 g/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Renal function within normal limits",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "LDL elevated",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "lipid panel",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Transvaginal ultrasound",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "endometrial thickness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "endometrial biopsy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "pessary",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Essential hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Aspirin for cardiovascular prevention",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "heavy bleeding",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "clots",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dizziness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "baby aspirin",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "low-dose aspirin, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "N95.0",
+   "spans": [
+    {
+     "text": "spotting",
+     "field": "dialogue"
+    },
+    {
+     "text": "pink on the toilet paper",
+     "field": "dialogue"
+    },
+    {
+     "text": "Postmenopausal spotting",
+     "field": "note"
+    },
+    {
+     "text": "postmenopausal vaginal bleeding",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "N81.10",
+   "spans": [
+    {
+     "text": "cystocele",
+     "field": "dialogue"
+    },
+    {
+     "text": "that bulge",
+     "field": "dialogue"
+    },
+    {
+     "text": "grade 2 anterior vaginal wall prolapse",
+     "field": "note"
+    },
+    {
+     "text": "pelvic heaviness",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "blood pressure",
+     "field": "dialogue"
+    },
+    {
+     "text": "one thirty eight over seventy six",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hypertension",
+     "field": "note"
+    },
+    {
+     "text": "BP 138/76",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E78.5",
+   "spans": [
+    {
+     "text": "cholesterol is a little high",
+     "field": "dialogue"
+    },
+    {
+     "text": "atorvastatin",
+     "field": "dialogue"
+    },
+    {
+     "text": "hyperlipidemia",
+     "field": "note"
+    },
+    {
+     "text": "LDL elevated",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z79.82",
+   "spans": [
+    {
+     "text": "baby aspirin",
+     "field": "dialogue"
+    },
+    {
+     "text": "the aspirin",
+     "field": "dialogue"
+    },
+    {
+     "text": "Aspirin 81 mg daily",
+     "field": "note"
+    },
+    {
+     "text": "Aspirin for cardiovascular prevention",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i was a navy veteran",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "veteran status"
+  },
+  {
+   "text": "i served on a destroyer for four years",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "military service detail"
+  },
+  {
+   "text": "i keep bees in the back yard",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "navy veteran who served on a destroyer from 1961 for four years",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "veteran status and service detail"
+  },
+  {
+   "text": "keeps bees in her backyard",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  }
+ ],
+ "scenario": {
+  "specialty": "gynecology",
+  "visit": "new",
+  "length": "medium",
+  "focus": [
+   "OTHER_QUASI",
+   "OTHER_PERSON_NAME"
+  ]
+ }
+}

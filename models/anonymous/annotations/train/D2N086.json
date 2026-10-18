@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N086",
+  "phi": [
+    {"text": "nicholas", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "dog", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pet"},
+    {"text": "barbara", "field": "dialogue", "type": "NAME_RELATIVE", "tier": 1, "generalized": ""},
+    {"text": "hikes", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "long walks"},
+    {"text": "hiking", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "walking"},
+    {"text": "behind the park", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "nearby"},
+    {"text": "hiked", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "walked"},
+    {"text": "charlie's bunion", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a mountain summit"},
+    {"text": "hike", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "walk"},
+    {"text": "Nicholas Gutierrez", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "45-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "hiking", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "walking outdoors"}
+  ],
+  "medical_concepts": []
+}

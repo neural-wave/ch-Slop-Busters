@@ -1,0 +1,768 @@
+{
+ "id": "S025",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S70.02XA",
+   "description": "Contusion of left hip, initial encounter"
+  },
+  {
+   "code": "V03.00XA",
+   "description": "Pedestrian on foot injured in collision with car, pick-up truck or van in nontraffic accident, initial encounter"
+  },
+  {
+   "code": "Y92.481",
+   "description": "Parking lot as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.01",
+   "description": "Activity, walking, marching and hiking"
+  },
+  {
+   "code": "I48.91",
+   "description": "Unspecified atrial fibrillation"
+  }
+ ],
+ "dialogue": "[doctor] mr. {PATIENT_LAST} , good afternoon . how are you doing ?\n[patient] oh , i've had better weeks , doctor .\n[doctor] i heard . your grandson {OTHER_FIRST} called the office and said you got hit by a car ?\n[patient] well , sort of . it was tuesday . i'd parked at the grocery store , and i was walking across the parking lot to go in . and this lady was backing out of her spot , and she did n't see me , and she backed right into me .\n[doctor] goodness . how fast was she going ?\n[patient] not fast , thank god . but the bumper caught me right on the left hip and knocked me down . i landed on that same side , on the asphalt .\n[doctor] so you were on foot , walking , and the car backed into you in the lot .\n[patient] that's right . i was just walking in to get my groceries like i do every week .\n[doctor] okay . did you hit your head when you fell ?\n[patient] no , i caught myself with my hands , and my hip took the rest .\n[doctor] okay . were you able to get up afterwards ?\n[patient] yeah , the lady and a young fella helped me up . i was able to walk , but i was limping . they wanted to call an ambulance , but i said no .\n[doctor] okay . and how has the hip been since then ?\n[patient] it's sore . it's bruised up , big purple bruise , and it's tender when i lie on that side at night . walking hurts some , maybe a four or five out of 10 . i've been using my cane , which i usually do n't need .\n[doctor] any pain in the groin ?\n[patient] no , it's more on the outside .\n[doctor] okay . any pain in your back , your neck , your wrists ?\n[patient] my hands were a little scraped up but they're fine now .\n[doctor] okay . now , the big thing i'm thinking about is you're on a blood thinner for your atrial fibrillation , right ? the eliquis ?\n[patient] yes , 5 milligrams twice a day .\n[doctor] okay . and have you noticed the bruise getting bigger ? any swelling that keeps spreading ?\n[patient] it got bigger the first day , but it seems about the same now .\n[doctor] okay . any blood in your urine , black stools , nosebleeds ?\n[patient] no .\n[doctor] any lightheadedness , dizziness ?\n[patient] no .\n[doctor] okay . and how's your heart been ? any palpitations , racing , fluttering ?\n[patient] no , i feel fine with that . i take the metoprolol every day too .\n[doctor] okay , good . metoprolol 25 milligrams twice a day ?\n[patient] yes .\n[doctor] okay . let's take a look . go ahead and stand up for me . so there's a large bruise over the outside of the left hip , about the size of my hand , and it's tender right over the bone here . there's no hard knot underneath , nothing that feels like a big collection of blood . i'm gonna move your leg around . does this hurt ? bending it up ?\n[patient] a little bit .\n[doctor] and rolling it in and out ?\n[patient] no , that's okay .\n[doctor] okay . no pain with log roll , which is reassuring . can you lift your leg straight up off the table ?\n[patient] yeah .\n[doctor] good . your leg is not shortened or turned out . your heart is irregular , which is what we expect with your afib , and the rate is good at about 72 .\n[doctor] so we did an x-ray of your hip and your pelvis here today . there's no fracture , the hip joint looks good . you have some arthritis , which is normal at your age . and your blood count is stable , your hemoglobin is 13.1 , which is the same as it was in the spring .\n[patient] oh , good .\n[doctor] so what you have is a contusion , a deep bruise , of the left hip from being struck by the car . because you're on eliquis , these bruises can look really dramatic , but your blood count is stable and the bruise is n't expanding .\n[patient] okay .\n[doctor] so i want you to continue the eliquis 5 milligrams twice a day . the risk of stroke if we stop it is higher than the risk from this bruise . you can ice the hip 20 minutes at a time , and take tylenol for pain , up to 3000 milligrams a day . please do n't take advil or aleve while you're on the eliquis .\n[patient] okay .\n[doctor] keep using your cane for the next couple of weeks until you're steady . and if the bruise starts getting bigger , or the hip gets very swollen or hard , or you feel lightheaded , i want you to call right away or go to the emergency room .\n[patient] i will .\n[doctor] and for the afib , continue the metoprolol 25 milligrams twice a day . your heart rate is well controlled .\n[patient] okay . thank you , doctor .\n[doctor] let's see you back in two weeks .",
+ "note": "CHIEF COMPLAINT\n\nLeft hip pain after being struck by a car.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with a history of atrial fibrillation on apixaban who presents with left hip pain after a pedestrian accident on {DATE_NUM}.\n\nThe patient was walking across a grocery store parking lot when a car backing out of a parking space struck him on the left hip at low speed. He was knocked down onto the asphalt, landing on his left side. He denies head strike. He was able to ambulate afterwards with a limp. Emergency services were not called. He reports lateral left hip pain rated 4-5/10, worse when lying on the left side and with walking, with a large bruise. He has needed his cane since the incident. He denies groin pain. He had minor abrasions to the hands which have healed. He denies hematuria, melena, epistaxis, lightheadedness, or dizziness.\n\nRegarding his atrial fibrillation, he takes Eliquis 5 mg twice daily and metoprolol 25 mg twice daily. He denies palpitations.\n\nPHYSICAL EXAM\n\nCardiovascular: Irregularly irregular rhythm, rate 72.\nLeft hip: Large ecchymosis over the lateral hip, approximately hand-sized. Tender over the greater trochanter. No palpable hematoma. Mild pain with hip flexion. No pain with log roll. Able to perform straight leg raise. No limb shortening or external rotation.\n\nRESULTS\n\nX-ray of the left hip and pelvis: No fracture. Mild degenerative changes of the hip joint.\n\nHemoglobin 13.1, stable compared to prior.\n\nASSESSMENT AND PLAN\n\n1. Contusion of the left hip.\n- Pedestrian struck by a car in a parking lot while walking.\n- No fracture on imaging. Hemoglobin stable and no expanding hematoma.\n- Ice 20 minutes at a time. Tylenol up to 3000 mg daily. Avoid NSAIDs.\n- Continue cane for ambulation.\n- Return precautions for expanding bruising, swelling, firmness, or lightheadedness.\n\n2. Atrial fibrillation.\n- Rate controlled.\n- Continue Eliquis 5 mg twice daily; benefit of stroke prevention outweighs bleeding risk.\n- Continue metoprolol 25 mg twice daily.\n\nFollow up in 2 weeks.",
+ "medical_concepts": [
+  {
+   "text": "you got hit by a car",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was walking across the parking lot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "this lady was backing out of her spot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "she backed right into me",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the bumper caught me right on the left hip and knocked me down",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "you were on foot , walking , and the car backed into you in the lot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was just walking in",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "being struck by the car",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a large bruise over the outside of the left hip",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's tender right over the bone here",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "landed on that same side , on the asphalt",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no hard knot underneath",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no pain with log roll",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your leg is not shortened or turned out",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your heart is irregular",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no fracture",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "some arthritis",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "my hands were a little scraped up",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "big purple bruise",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's tender when i lie on that side at night",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "walking hurts some",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "limping",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain in the groin",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood in your urine",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "black stools",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nosebleeds",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lightheadedness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dizziness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "palpitations",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lightheaded",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "contusion , a deep bruise , of the left hip",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "atrial fibrillation",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "afib",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "stroke",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "left hip",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "back",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "neck",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "wrists",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "pelvis",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "hip joint",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-ray of your hip and your pelvis",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood count",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "hemoglobin is 13.1",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "the rate is good at about 72",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood thinner",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "eliquis",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "metoprolol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "metoprolol 25 milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "eliquis 5 milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "advil",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "aleve",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cane",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice the hip",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "pedestrian accident",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "walking across a grocery store parking lot",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a car backing out of a parking space struck him on the left hip",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Pedestrian struck by a car in a parking lot while walking",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Large ecchymosis over the lateral hip",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tender over the greater trochanter",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Irregularly irregular rhythm, rate 72",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Rate controlled",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "knocked down onto the asphalt",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No palpable hematoma",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild pain with hip flexion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No pain with log roll",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Able to perform straight leg raise",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No limb shortening or external rotation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Mild degenerative changes of the hip joint",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no expanding hematoma",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Left hip pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "left hip pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lateral left hip pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "head strike",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "limp",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "groin pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "minor abrasions to the hands",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hematuria",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "melena",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "epistaxis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "lightheadedness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dizziness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "palpitations",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Contusion of the left hip",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "atrial fibrillation",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Atrial fibrillation",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "X-ray of the left hip and pelvis",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hemoglobin 13.1",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "apixaban",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Eliquis 5 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "metoprolol 25 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "NSAIDs",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cane",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ice",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "eliquis",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand-name anticoagulant"
+  },
+  {
+   "text": "aleve",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand-name medication"
+  },
+  {
+   "text": "Eliquis",
+   "field": "note",
+   "is_pii": false,
+   "comment": "brand-name anticoagulant"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S70.02XA",
+   "spans": [
+    {
+     "text": "contusion , a deep bruise , of the left hip",
+     "field": "dialogue"
+    },
+    {
+     "text": "a large bruise over the outside of the left hip",
+     "field": "dialogue"
+    },
+    {
+     "text": "big purple bruise",
+     "field": "dialogue"
+    },
+    {
+     "text": "Contusion of the left hip",
+     "field": "note"
+    },
+    {
+     "text": "Large ecchymosis over the lateral hip",
+     "field": "note"
+    },
+    {
+     "text": "Tender over the greater trochanter",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V03.00XA",
+   "spans": [
+    {
+     "text": "you got hit by a car",
+     "field": "dialogue"
+    },
+    {
+     "text": "she backed right into me",
+     "field": "dialogue"
+    },
+    {
+     "text": "you were on foot , walking , and the car backed into you in the lot",
+     "field": "dialogue"
+    },
+    {
+     "text": "a car backing out of a parking space struck him on the left hip",
+     "field": "note"
+    },
+    {
+     "text": "Pedestrian struck by a car in a parking lot while walking",
+     "field": "note"
+    },
+    {
+     "text": "pedestrian accident",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.481",
+   "spans": [
+    {
+     "text": "i was walking across the parking lot",
+     "field": "dialogue"
+    },
+    {
+     "text": "walking across a grocery store parking lot",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.01",
+   "spans": [
+    {
+     "text": "i was walking across the parking lot",
+     "field": "dialogue"
+    },
+    {
+     "text": "i was just walking in",
+     "field": "dialogue"
+    },
+    {
+     "text": "walking across a grocery store parking lot",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I48.91",
+   "spans": [
+    {
+     "text": "atrial fibrillation",
+     "field": "dialogue"
+    },
+    {
+     "text": "afib",
+     "field": "dialogue"
+    },
+    {
+     "text": "eliquis 5 milligrams twice a day",
+     "field": "dialogue"
+    },
+    {
+     "text": "metoprolol 25 milligrams twice a day",
+     "field": "dialogue"
+    },
+    {
+     "text": "Atrial fibrillation",
+     "field": "note"
+    },
+    {
+     "text": "atrial fibrillation",
+     "field": "note"
+    },
+    {
+     "text": "Eliquis 5 mg twice daily",
+     "field": "note"
+    },
+    {
+     "text": "metoprolol 25 mg twice daily",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "like i do every week",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive routine (weekly grocery trip)"
+  }
+ ]
+}

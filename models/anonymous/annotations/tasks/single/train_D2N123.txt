@@ -1,0 +1,111 @@
+########## ENCOUNTER D2N123
+=== FIELD: dialogue
+[doctor] so tyler is a 56 -year-old male who presents today complaining of difficulty swallowing and has a past medical history of diabetes and high blood pressure so tyler tell me what's going on with your swallowing problem
+[patient] well it's just been something that i have noticed over the last you know four to five weeks it seems like something is always stuck in my throat and you know just i kinda go about my day and it kinda bothers me you know a little bit sometimes a little painful and when i try to eat it just seems like i have to i do n't know when it's something solid i kinda have to wash it down on occasion i i've never really fully choked but i have to admit that i've thought about potentially choking
+[doctor] okay and is it seem to be stuck in your throat or does it seem to go in your lungs area or are you coughing with this at all or just mostly when you're swallowing
+[patient] no coughing just kinda when i swallow it's all okay with liquids but when i kinda swallow you know like a bite of a sandwich sometimes it just feels like like i just need a little help pushing it down
+[doctor] okay and is it more kind of a like heart like steaks or heart like larger solid like things that are that you have to chew more or is it even soft stuff like you know to eat yogurt and stuff like that
+[patient] i'm not a hundred percent sure but i think it's probably more with solids
+[doctor] okay how about have you noticed anything different with when you're swallowing cold or or or hot liquids is there is there a temperature change any modification to that
+[patient] it's really just about solids
+[doctor] okay alright so have you noticed any blood in any place or blood in your stools or are you vomiting anything up at all
+[patient] no
+[doctor] okay that so no vomiting blood no coughing up blood or anything like that any weight loss or changes in your weight at all
+[patient] not that i want
+[doctor] okay yeah i mean i think we all like to lose a little bit of weight but yeah it's a it says it's a struggle so no no chest pain or shortness of breath with this
+[patient] no
+[doctor] okay so i i'm gon na you know we'll talk about that in a second i'll look at your throat as well and see what we need to do but it sounds like we may have to send you to a specialist to take a look at that and see if there is something causing this how about how are you doing with your diabetes by the way since i have n't seen you in a while i know we have you on metformin five hundred milligrams twice a day we checked your hemoglobin a1c last time was seven . four we talked about improving your diet and exercise how are things going
+[patient] i think they're going great i mean i'm taking my meds i'm sticking to them and i feel pretty good otherwise
+[doctor] okay are you checking your blood sugars in the morning or are you checking those at all
+[patient] yeah i do i mean once in a while i i'm in a hurry and i skip it but i have to say i probably do so about eighty percent of the time
+[doctor] and how are the numbers looking
+[patient] they're looking you know okay they are all within you know the range that we are targeting
+[doctor] okay alright and any any no nausea vomiting or diarrhea or any other side effects from the metformin or anything like that
+[patient] no
+[doctor] okay good so i think we should probably repeat your hemoglobin a1c it sounds like you've you know you've improved your diet and it sounds like you've you're following the regimen so maybe the numbers will be better this time and we do n't have to change your medication so that will be awesome how are you doing with your blood pressure i know we have you on norvasc we asked that you check it like you know once a week or more than that if you have time blood pressure looks good today in the office it's about one fifty i'm sorry one twenty over fifty right now so no nothing here in the office how are things at home
+[patient] i get there now every once in a while you know the lower numbers a little bit you know higher but it's not you know usually it's either close or or on on range
+[doctor] okay alright good so let me examine you now so tyler i'm examining you now i'm gon na just verbalize some of my findings your neck is fine i do n't see any swelling in your neck your thyroid feels normal i do n't feel any masses in your neck there's no lymph nodes i'm looking at your throat and that looks okay there is no masses or any swelling that i can see there is no redness yeah there is no carotid bruit your lung exam is clear your heart exam is normal no murmurs on your belly exam you have some epigastric tenderness right here in the right here where i'm pressing but i do n't feel any masses or any significant swelling back there no normal back exam your extremity exam looks normal your neurological exam's fine so for this difficulty swallowing i'm concerned that you may have a narrowing in your throat that's causing this and sometimes it can be from a stricture where some narrowing of the esophagus and sometimes i need to go in and dilate that so i'm gon na go ahead and send you give you a referral for gastroenterology and have them do a scope and take a look down there i'm gon na recommend we put you on some prilosec sometimes also reflux medicine can if you have reflux sometimes that can also exacerbate this sometimes so i'm gon na put you on some prilosec twenty milligrams once a day again i'm gon na recommend that you chew your foods frequently and make sure you have a you know especially if you're eating something hard like steak or meat chew them really well so they do n't get tend to get stuck some people have sometimes things get stuck and they do n't go down and if that happens as an emergency you do have to go to the emergency department but seems like you know things are going down they just seem to sometimes slow down or get stuck temporarily so why do n't i get you a referral for gi we will start you on the prilosec and then we will have you you know if you you know if you have any other symptoms or worsenings give my office a call we will get you in or get you referred to the er if needed any questions about that
+[patient] no that sounds great
+[doctor] okay and for the diabetes i'm gon na order another hemoglobin a1c i'm gon na order some more blood work today we'll check a kidney function and i notice that you have not had an eye referral so i'm gon na also give you an eye referral to ophthalmology to check your eyes for your diabetic for your for any retinopathy continue the metformin i'll have you come back in about a month and that way we'll have the results back for the blood test if we need to make any adjustments we can but i i wan na see you back in about a month and i think that's it for that any questions about that
+[patient] no
+[doctor] okay and the high blood pressure i think you're doing great continue with the norvasc if you have any issues certainly call me but otherwise there is really nothing else to add for that did we forget anything or do you need refills for anything
+[patient] you know i think i'm low on the norvasc so if you could send something to my pharmacy that would be great
+[doctor] okay sure i'll get you a refill for norvasc we'll get that sent over to the pharmacy okay
+[patient] thank you
+[doctor] alright thanks good seeing you thanks for coming in to them
+=== FIELD: note
+SUBJECTIVE
+
+Difficulty swallowing. Tyler Green is a 56-year-old male who presents today complaining of difficulty swallowing.
+
+The patient noticed the difficulty swallowing approximately 4 to 5 weeks ago. He describes it as something stuck in his throat. He states that it bothers him a little bit throughout the day as sometimes it becomes painful. The patient states that occasionally when he tries to eat something relatively solid it seems to get stuck and he will have to wash it down with a drink. He states that he has never fully choked before, but has recently thought about potentially choking. He denies having to cough. Denies having this issue with liquids, hot or cold. Denies hematochezia, vomiting blood, coughing up blood, any weight changes, chest pain, or shortness of breath.
+
+Regarding his diabetes, the patient states he is doing well. He states that he checks his blood sugars most of the time, but sometimes he is in a hurry and will forget. However, he does note that when he checks his blood sugar, they are within range. He is compliant with his metformin 500 mg twice a day. He denies any side effects of the metformin such as nausea, vomiting, or diarrhea. His last hemoglobin A1c was 7.4.
+
+In regards to his blood pressure, the patient states that he is doing okay. He notes that occasionally he will have a lower blood pressure and then other days it will be elevated. However, he states they usually close in range. He is still taking Norvasc.
+
+MEDICAL HISTORY
+
+Patient reports a history of diabetes and hypertension.
+
+MEDICATIONS
+
+Patient reports that he take metformin 500 mg twice a day and Norvasc.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Denies weight changes.
+HENT: Reports dysphagia.
+Cardiovascular: Denies chest pain.
+Respiratory: Denies cough, shortness of breath, or hemoptysis.
+Gastrointestinal: Denies hematochezia, hematemesis, vomiting, nausea, or diarrhea.
+
+VITALS
+
+Blood pressure in office today is 120/50.
+
+PHYSICAL EXAM
+
+Neck
+- General Examination: Neck is supple without thyromegaly or lymphadenopathy. No swelling. No masses noted. No carotid bruits. No redness noted.
+
+Respiratory
+- Assessment of Respiratory Effort: Normal respiratory effort.
+- Auscultation of Lungs: Clear bilaterally. No wheezes, rales, or rhonchi.
+
+Cardiovascular
+- Auscultation of Heart: Regular rate and rhythm. No murmurs, gallops or rubs.
+
+Gastrointestinal
+- Examination of Abdomen: No masses or swelling. Epigastric tenderness noted.
+
+Musculoskeletal
+- Normal back examination.
+- Normal capillary refill and perfusion.
+
+Hematology/Lymphatic/Immunology
+- Palpation: No enlarged lymph nodes.
+
+ASSESSMENT AND PLAN
+
+1. Difficulty swallowing.
+- Medical Reasoning: The patient describes difficulty swallowing when he eats solid foods.
+- Patient Education and Counseling: We discussed that I am concerned he has a narrowing in his throat that is causing this. I advised the patient the gastroenterology will do a scope. I recommended Prilosec as he might be experiencing reflux. We discussed that he should eat his food slowly and chew his food frequently. I advised the patient to call our office if his symptoms worsen.
+- Medical Treatment: I referred the patient to gastroenterology. I prescribed Prilosec 20 mg once a day.
+
+2. Diabetes.
+- Medical Reasoning: This seems well-controlled.
+- Patient Education and Counseling: The patient will continue with his metformin as he seems to be doing well. I advised the patient to follow up in 1 month for results and any adjustments that may be needed.
+- Medical Treatment: Continue metformin 500 mg twice a day. I ordered another hemoglobin A1c, as well as a kidney function test. I referred the patient to ophthalmology for retinopathy.
+
+3. High blood pressure.
+- Medical Reasoning: This seems well-controlled.
+- Patient Education and Counseling: I advised the patient to continue his current medication, Norvasc.
+- Medical Treatment: I refilled the Norvasc.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+The patient will follow-up in 1 month for his diabetic lab results and any modifications needed.
+

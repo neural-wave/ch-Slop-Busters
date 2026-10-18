@@ -1,0 +1,19 @@
+{
+  "encounter_id": "D2N180",
+  "phi": [
+    {"text": "shirley taylor", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "taylor", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "5/4/1961", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "0000123", "field": "dialogue", "type": "ID", "tier": 1, "generalized": ""},
+    {"text": "60 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "jacob ward", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "2/5/21", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "lopez", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "this weekend", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the past while"},
+    {"text": "december", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "60-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "December", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "02/05/2021", "field": "note", "type": "DATE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

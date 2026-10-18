@@ -1,0 +1,675 @@
+{
+ "id": "G0012",
+ "dataset": "synthetic_acute",
+ "sex": "female",
+ "age_range": [
+  30,
+  45
+ ],
+ "icd10_codes": [
+  {
+   "code": "O23.41",
+   "description": "Unspecified infection of urinary tract in pregnancy, first trimester"
+  },
+  {
+   "code": "N39.0",
+   "description": "Urinary tract infection, site not specified"
+  },
+  {
+   "code": "R30.0",
+   "description": "Dysuria"
+  },
+  {
+   "code": "Z3A.24",
+   "description": "24 weeks gestation of pregnancy"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . the nurse said it's been burning when you pee . how are you feeling ?\n[patient] hi , doctor {DOCTOR_LAST} . yes , since monday . it burns so much i was scared to go to the bathroom at work .\n[doctor] where do you work ?\n[patient] i'm at {ORG} , i do their payroll . i'm usually at my desk all day , which is why i ca n't stand the urge .\n[doctor] okay . is anyone with you today ?\n[patient] yes , {OTHER_FIRST} drove me over . she's in the waiting room with my bag .\n[doctor] tell her hi from me . how far along are you now ?\n[patient] twenty four weeks on tuesday . this is my second pregnancy , and my first one went totally smooth , so i was not expecting this .\n[doctor] okay , that's helpful . any fever or chills ?\n[patient] i had a low fever last night , maybe one hundred point two , and i got the chills around midnight . it passed by morning .\n[doctor] any pain in your back or your side ?\n[patient] a little ache in my lower back on the right . it's not bad though . i'd say it's a three out of ten at most .\n[doctor] any vomiting , or trouble keeping fluids down ?\n[patient] no vomiting . i'm just peeing every twenty minutes , which is the worst part .\n[doctor] okay . any bleeding , or leaking of fluid ?\n[patient] no bleeding . no leaking . the baby has been moving like crazy , which is probably the only good news .\n[doctor] that's great to hear . how has your blood pressure been at your prenatal visits ?\n[patient] it's been good , around one ten over seventy . my last appointment was normal , and the sugar test was fine too .\n[doctor] good . any allergies to medicines ?\n[patient] penicillin , when i was a kid . i got hives all over my arms .\n[doctor] thank you . let's take a look at you . the nurse is going to get your urine sample and check your vitals .\n[patient] okay . the nurse already took my blood pressure , i think it was one twelve over seventy four .\n[doctor] okay . your temperature is ninety nine point eight , which is nearly normal . heart rate is ninety six . let me do the exam . does it hurt when i press here ?\n[patient] yes , on the right side . a bit more than on the left .\n[doctor] okay . no rebound tenderness . the fundal height matches your dates , and the baby's heart rate looks reassuring on the monitor .\n[patient] that's a relief . is it an infection ?\n[doctor] i think so . the urine dipstick shows white cells and nitrites , so it looks like a urinary tract infection . we'll send a culture to see which bacteria it is .\n[patient] will it hurt the baby ?\n[doctor] an infection that's left alone is more risky than one that's treated . that's why we're starting treatment today , without waiting for the culture .\n[patient] okay .\n[doctor] i'd like to start you on cephalexin five hundred milligrams twice a day for seven days . it's considered safe in pregnancy . finish the whole course , even if you feel better after two days .\n[patient] okay . i'll stop at the pharmacy on the way home . the riverside pharmacy on dunmore road is closest to us .\n[doctor] good , they'll have it ready . now , you mentioned a trip . where did you go recently ?\n[patient] we drove down to the lake house in north carolina for a long weekend two weeks ago . i was fine there . it was the nine hour drive back that started the burning .\n[doctor] okay . did you drink enough water on the trip ?\n[patient] honestly , no . i was in the car forever and barely drank anything . i know , i know .\n[doctor] that's very common . any history of kidney stones or urinary infections before ?\n[patient] i had one in my twenties , when i was in college . i took the antibiotics for a week and it cleared right up .\n[doctor] okay . any blood in your urine ?\n[patient] no , it's just cloudy and it smells bad .\n[doctor] alright . let me ask about the rest of your life for a minute , so i know what's going on . where did you grow up ?\n[patient] {CITY} . my parents are still there , which is why {OTHER_FIRST} is here so much . she's basically my second set of hands right now .\n[doctor] that's wonderful . and you still work full time ?\n[patient] yes , until the end of next month . then i'm going on leave . i'm excited and terrified about that .\n[doctor] that's a normal feeling . how is your sleep these days ?\n[patient] bad . i get up to pee three times a night and the baby kicks like a soccer player .\n[doctor] i can imagine . any headaches , vision changes , or swelling in your face or hands ?\n[patient] no headaches . my ankles are a little puffy by the end of the day , but that's been happening for a while .\n[doctor] okay . we'll keep an eye on the blood pressure as well . i'd like you to check it at home twice a day this week .\n[patient] i have a cuff at home , my husband bought it when we started trying .\n[doctor] perfect . now , let's go over the plan again . we'll treat the infection , and i want you back in the clinic in two days to review the culture . go straight to labor and delivery if you have a fever over one hundred point five , vomiting , bleeding , or back pain that keeps getting worse .\n[patient] got it . should i drink more water ?\n[doctor] yes , aim for about ten cups a day , and empty your bladder every few hours . avoid caffeine for now , because it irritates the bladder .\n[patient] i do like my morning coffee . that's going to be hard .\n[doctor] i know . half a cup might be a reasonable compromise . the nurse will go over the rest of the instructions with you .\n[patient] thank you . i'm also going to ask my church group to cover my choir practice this month , i can't stand for that long .\n[doctor] that's a good idea . take care of yourself , and don't lift anything heavy .\n[patient] okay . thank you , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nDysuria and urinary frequency for four days.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old G2P1 female at 24 weeks' gestation who presents with dysuria, urinary frequency, and low-grade fever. Symptoms began on Monday, roughly two weeks after a long car trip to the lake house in north carolina. She reports a low-grade fever to 100.2 F last night with chills that resolved by morning. She reports a dull ache in the right lower back. She denies vomiting, nausea, vaginal bleeding, or leakage of fluid. She reports nocturia three times nightly. Fetal movement is active. She reports ankle swelling by evening, unchanged. She denies headache, visual changes, or gross hematuria. Urine is cloudy and malodorous. Prior history notable for a urinary tract infection in her twenties treated with a week of antibiotics. During the nine-hour drive she did not drink much fluid.\n\nSOCIAL HISTORY\n\nShe works full time for {ORG}, doing payroll, and plans to begin leave at the end of next month. She grew up in {CITY}, where her parents still live. Her mother, {OTHER_FIRST}, accompanied her today and is helping at home. She drinks caffeinated coffee each morning.\n\nALLERGIES\n\nPenicillin (urticaria).\n\nPHYSICAL EXAM\n\nTemperature 99.8 F. Heart rate 96. Blood pressure 112/74. Mild right costovertebral angle tenderness. Abdomen soft and nontender with no rebound tenderness. Fundal height consistent with dates. Fetal heart rate reassuring on monitoring. Mild ankle edema.\n\nRESULTS\n\nUrine dipstick positive for leukocytes and nitrites. Urine culture sent.\n\nASSESSMENT AND PLAN\n\n1. Urinary tract infection in pregnancy, second trimester, at 24 weeks' gestation. Start cephalexin 500 mg twice daily for 7 days. Follow up in 2 days to review culture.\n2. Dysuria secondary to the infection. Increase oral fluids. Caffeine reduction counseled.\n3. Home blood pressure monitoring twice daily this week. Preeclampsia precautions reviewed.\n4. Return precautions reviewed: fever over 100.4 F, vomiting, bleeding, or worsening back pain should prompt presentation to labor and delivery.\n\nThe prescription will be filled at the riverside pharmacy on dunmore road.",
+ "medical_concepts": [
+  {
+   "text": "burning when you pee",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it burns so much",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the urge",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "low fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "chills",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ache in my lower back",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "vomiting",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "peeing every twenty minutes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bleeding",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "leaking of fluid",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "moving like crazy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "one ten over seventy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sugar test",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "penicillin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "hives",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "urine sample",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "one twelve over seventy four",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ninety nine point eight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart rate is ninety six",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "right side",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "rebound tenderness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fundal height",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart rate looks reassuring",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "urine dipstick",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "white cells and nitrites",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "urinary tract infection",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "culture",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "infection",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "cephalexin five hundred milligrams twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "second pregnancy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "twenty four weeks on tuesday",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "urinary infections",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "kidney stones",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "antibiotics",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood in your urine",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "cloudy and it smells bad",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "up to pee three times a night",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "headaches",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vision changes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "swelling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ankles are a little puffy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever over one hundred point five",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "back pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "bladder",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "caffeine",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Urinary tract infection in pregnancy",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "urinary tract infection",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Dysuria",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dysuria",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "urinary frequency",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "low-grade fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "100.2 F",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "chills",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dull ache in the right lower back",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vomiting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nausea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vaginal bleeding",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "leakage of fluid",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "nocturia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Fetal movement is active",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ankle swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "visual changes",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "gross hematuria",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "cloudy and malodorous",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "24 weeks' gestation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Penicillin",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "99.8 F",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Heart rate 96",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Blood pressure 112/74",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "costovertebral angle tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Fundal height consistent with dates",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no rebound tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Urine dipstick",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "leukocytes and nitrites",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Urine culture",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "cephalexin 500 mg twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Preeclampsia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever over 100.4 F",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "worsening back pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Home blood pressure monitoring",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Caffeine reduction",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "cephalexin",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "antibiotic name, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "O23.41",
+   "spans": [
+    {
+     "text": "urinary tract infection",
+     "field": "dialogue"
+    },
+    {
+     "text": "white cells and nitrites",
+     "field": "dialogue"
+    },
+    {
+     "text": "Urinary tract infection in pregnancy",
+     "field": "note"
+    },
+    {
+     "text": "leukocytes and nitrites",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "N39.0",
+   "spans": [
+    {
+     "text": "burning when you pee",
+     "field": "dialogue"
+    },
+    {
+     "text": "peeing every twenty minutes",
+     "field": "dialogue"
+    },
+    {
+     "text": "urinary tract infection",
+     "field": "note"
+    },
+    {
+     "text": "cloudy and malodorous",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "R30.0",
+   "spans": [
+    {
+     "text": "it burns so much",
+     "field": "dialogue"
+    },
+    {
+     "text": "dysuria",
+     "field": "note"
+    },
+    {
+     "text": "Dysuria",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z3A.24",
+   "spans": [
+    {
+     "text": "twenty four weeks on tuesday",
+     "field": "dialogue"
+    },
+    {
+     "text": "second pregnancy",
+     "field": "dialogue"
+    },
+    {
+     "text": "24 weeks' gestation",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i do their payroll",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "riverside pharmacy",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "named pharmacy"
+  },
+  {
+   "text": "dunmore road",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "street near home"
+  },
+  {
+   "text": "lake house in north carolina",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "recent trip destination"
+  },
+  {
+   "text": "doing payroll",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "riverside pharmacy",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "comment": "named pharmacy"
+  },
+  {
+   "text": "dunmore road",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "street near home"
+  },
+  {
+   "text": "lake house in north carolina",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "recent trip destination"
+  }
+ ],
+ "scenario": {
+  "specialty": "obstetrics",
+  "visit": "acute",
+  "length": "long",
+  "focus": [
+   "ORGANIZATION",
+   "OTHER_PERSON_NAME",
+   "LOCATION"
+  ]
+ }
+}

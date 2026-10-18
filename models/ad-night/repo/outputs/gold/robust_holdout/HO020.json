@@ -1,0 +1,439 @@
+{
+ "encounter_id": "HO020",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "marie-thérèse",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "lindsay",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "rémi",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "code 1964",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "our wedding year",
+   "category": "OTHER_QI",
+   "risk": "low"
+  },
+  {
+   "field": "dialogue",
+   "text": "mr . walker",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "gord",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "tess",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "kevin",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "prairie home respiratory",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "(204) 555-0187",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "christmas",
+   "category": "OTHER_QI",
+   "risk": "low"
+  },
+  {
+   "field": "dialogue",
+   "text": "canada post",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "archibald street",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "2009",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "dr . rao",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "june 14 1944",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "106 442 873",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "st. boniface hospital",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "jayden",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "école taché-nord",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "moustache",
+   "category": "OTHER_QI",
+   "risk": "low"
+  },
+  {
+   "field": "note",
+   "text": "WINNIPEG REGIONAL HOME CARE",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "LAVALLÉE",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Marie-Thérèse",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Tess",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "1944-06-14",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "82 y",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "106 442 873",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "SBGH-0048812",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "HC-77-30914",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "218 rue Lacombe",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "St. Boniface",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Winnipeg",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "MB",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "R2H 3Z9",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "code 1964",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Rémi",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "204-555-0143",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Anand",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Rao",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "41187",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "204-555-0199",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Prairie Home Respiratory",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Kevin",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Szymański",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "https://portal.prairiehomeresp.ca/c/77-30914",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "October 13, 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "03/2025",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Retired mail sorter",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Canada Post",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "2009",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Jayden",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Oct 14",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Mr. Walker",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2026-10-15",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Thibodeaux",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "L. Thibodeaux",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "(204) 555-0100",
+   "category": "ID",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "dialogue",
+   "text": "my walker",
+   "category": "NOT_A_NAME",
+   "why": "mobility device, not Mr. Walker"
+  },
+  {
+   "field": "note",
+   "text": "4-wheeled walker",
+   "category": "NOT_A_NAME",
+   "why": "mobility device, not Mr. Walker"
+  },
+  {
+   "field": "dialogue",
+   "text": "16/6",
+   "category": "CLINICAL_NUMBER",
+   "why": "BiPAP IPAP/EPAP setting"
+  },
+  {
+   "field": "note",
+   "text": "16/6",
+   "category": "CLINICAL_NUMBER",
+   "why": "BiPAP IPAP/EPAP setting"
+  },
+  {
+   "field": "dialogue",
+   "text": "142/86",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure"
+  },
+  {
+   "field": "note",
+   "text": "142/86",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure"
+  },
+  {
+   "field": "note",
+   "text": "24/40",
+   "category": "CLINICAL_NUMBER",
+   "why": "CAT score"
+  },
+  {
+   "field": "note",
+   "text": "17/40",
+   "category": "CLINICAL_NUMBER",
+   "why": "CAT score"
+  },
+  {
+   "field": "note",
+   "text": "875/125",
+   "category": "CLINICAL_NUMBER",
+   "why": "amoxicillin-clavulanate strength"
+  },
+  {
+   "field": "note",
+   "text": "Acute exacerbation of COPD",
+   "category": "CODE_EVIDENCE",
+   "why": "supports J44.1"
+  },
+  {
+   "field": "note",
+   "text": "Chronic hypoxic respiratory failure",
+   "category": "CODE_EVIDENCE",
+   "why": "supports J96.11"
+  },
+  {
+   "field": "note",
+   "text": "continuous O2 2 L/min",
+   "category": "CODE_EVIDENCE",
+   "why": "supports Z99.81"
+  },
+  {
+   "field": "dialogue",
+   "text": "two litres",
+   "category": "CODE_EVIDENCE",
+   "why": "home oxygen, supports Z99.81"
+  }
+ ]
+}

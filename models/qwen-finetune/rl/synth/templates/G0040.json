@@ -1,0 +1,767 @@
+{
+ "id": "G0040",
+ "dataset": "synthetic_acute",
+ "sex": "female",
+ "age_range": [
+  19,
+  30
+ ],
+ "icd10_codes": [
+  {
+   "code": "F41.0",
+   "description": "Panic disorder [episodic paroxysmal anxiety]"
+  },
+  {
+   "code": "F32.1",
+   "description": "Major depressive disorder, single episode, moderate"
+  },
+  {
+   "code": "G47.00",
+   "description": "Insomnia, unspecified"
+  },
+  {
+   "code": "Z56.6",
+   "description": "Other physical and mental strain related to work"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i 'm doctor {DOCTOR_LAST} . you were referred for panic attacks , is that right ? how are you doing today ?\n[patient] hi , doctor {DOCTOR_LAST} . honestly , not great . i had another one on the bus this morning , and i got off and sat on the curb for half an hour .\n[doctor] i 'm sorry , that sounds frightening . tell me what a panic attack feels like for you .\n[patient] my heart starts pounding like it wants to come out , my hands go numb and tingly , and i feel like i ca n't get enough air . then i get sure i 'm dying .\n[doctor] that is a very typical description . how often are they happening ?\n[patient] about three times a week now . they used to be once a month , but since the summer they 've gotten worse .\n[doctor] what happened in the summer ?\n[patient] i started working nights at the dispatch center for the county . i 'm a 911 dispatcher , twelve hour shifts , and i hear the worst calls you can imagine .\n[doctor] that is a very stressful job . how are you sleeping on those shifts ?\n[patient] badly . i get home at eight in the morning and i ca n't fall asleep until noon . then i wake up at four and i 'm already anxious about going back .\n[doctor] okay . do you have any thoughts of harming yourself ?\n[patient] no . no , i would never . i just want the panic to stop .\n[doctor] i believe you . i still need to ask every time . has anyone in your family had panic attacks or depression ?\n[patient] my mom had depression after my dad left . she took a medicine for a few years . my aunt had panic attacks , and she still takes something for them .\n[doctor] thank you . and what about your own history ? were you ever treated before ?\n[patient] i saw a counselor in {YEAR} for a few months , after my first breakup . it helped a little . then i stopped going when i moved for the job .\n[doctor] okay . what about alcohol or any other substances ?\n[patient] i have a glass of wine with dinner sometimes . no drugs . i do n't smoke either . i tried to quit caffeine and that made it worse , so i drink a lot of coffee again .\n[doctor] that 's helpful to know . let me ask about your mood . how has your mood been over the last two weeks ?\n[patient] low . i 'm tired all the time , i lost interest in things i used to love , like painting , and i cry in the car after shifts .\n[doctor] when you say low , is it most of the day , nearly every day ?\n[patient] most of the day , yes . it feels heavy .\n[doctor] have you had any thoughts of being worthless or guilty ?\n[patient] i feel like i 'm failing everyone . i keep thinking i should be able to handle it , and then i feel worse .\n[doctor] okay . let 's do a quick screen . on a scale of zero to three , how much have you had little interest or pleasure in doing things ?\n[patient] probably a two . and feeling down , maybe a two too .\n[doctor] okay , that adds up to a moderate level of symptoms . are you able to work right now ?\n[patient] i 'm still going in , but my supervisor noticed i make mistakes on the calls . i 'm scared i 'll get written up or lose the job .\n[doctor] that 's an important concern . the stress at work could be feeding the panic .\n[patient] yes . when i feel one coming on at the console , i have to take off my headset and go to the bathroom .\n[doctor] i 'd like to start an antidepressant , sertraline , at a low dose , and increase it slowly . it can take four to six weeks to work , and early on it can cause some nausea .\n[patient] i 'm nervous about the side effects . my sister had a bad reaction to one of those , and she was up all night .\n[doctor] that 's possible with any medicine . we will check in with you by phone after one week . is this the best number to reach you ?\n[patient] yes , that 's my cell .\n[doctor] okay , i 'll note it . the crisis line is on the card i 'm giving you . if things get worse , call that number or go to the emergency room .\n[patient] okay . i wrote it down .\n[doctor] i also want you to see a therapist , ideally one who does cognitive behavioral therapy for panic . do you want me to make the referral ?\n[patient] yes , please . the last counselor was nice , but i never felt like i was getting better .\n[doctor] that happens . we can try a different approach . would you consider talking to your employer about a short leave ?\n[patient] maybe . i do n't want to lose my insurance .\n[doctor] understood . i 'll put in a note about reduced hours for two weeks , and we can revisit it .\n[patient] okay .\n[doctor] let me check a few things physically . your blood pressure is one twenty four over seventy eight , and your heart rate is ninety eight . your thyroid feels normal . no tremor on the outstretched hands .\n[patient] okay . that 's good .\n[doctor] we 'll also check blood work for thyroid function and a complete blood count today , because panic can mimic other problems .\n[patient] okay .\n[doctor] for sleep , i 'd like you to use a simple routine : same bedtime , a dark room , and no screens for an hour before bed .\n[patient] i 'll try . i ca n't sleep in the daytime with the sun coming in , though .\n[doctor] then we 'll add blackout curtains . if the sleep is still poor at the next visit , we can talk about a short-term sleep aid .\n[patient] okay . my grandma is over the age of 65 , and she takes a sleep pill every night . i do n't want to end up like that .\n[doctor] that 's a fair concern . we only use sleep medicine for a short time .\n[patient] okay .\n[doctor] before you go , let me tell you about the warning signs . if you have chest pain , fainting , or thoughts of hurting yourself , call the crisis number right away or come in .\n[patient] okay . i 'll keep the card in my wallet .\n[doctor] good . your last visit with us was {DATE_SPOKEN} , and today is our starting point . let 's meet again in one week by phone , and in person in four weeks .\n[patient] thank you , doctor {DOCTOR_LAST} . honestly , this helped more than i expected .\n[doctor] i 'm glad . take care , {PATIENT_FIRST} .",
+ "note": "CHIEF COMPLAINT\n\nRecurrent panic attacks, low mood, and insomnia for several months, with work-related stress.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female referred for evaluation of recurrent panic attacks. She reports attacks about three times per week, previously about monthly, with palpitations, paresthesias of the hands, dyspnea, and a sense of impending doom. An episode this morning on public transit required her to sit on a curb for about thirty minutes.\n\nSymptoms have worsened since she began night shifts on {DATE_NUM}. She reports sleep onset insomnia after shifts, sleeping from about 8 AM to noon and awakening around 4 PM, with anxiety about returning to work. She reports two weeks of depressed mood most of the day, nearly every day, with anhedonia, fatigue, tearfulness, and feelings of failure. Item scores for anhedonia and depressed mood are approximately 2 each. She denies suicidal ideation and self-harm.\n\nFamily history is notable for a mother with depression and an aunt with panic disorder on maintenance medication.\n\nPast psychiatric history: counseling for several months in {YEAR} after her first breakup, not continued after relocation. No prior psychiatric medication.\n\nSUBSTANCE USE\n\nOccasional wine with dinner. Denies illicit drug use and tobacco. Recently increased coffee intake after an attempt to reduce caffeine.\n\nSOCIAL HISTORY\n\nWorks as a 911 dispatcher on twelve-hour overnight shifts at the dispatch center for the county. Reports mistakes on calls noted by her supervisor and fear of disciplinary action. Enjoys painting but has not been engaging in it recently.\n\nMEDICATIONS\n\nNone currently.\n\nVITAL SIGNS AND EXAM\n\nBP 124/78, HR 98. Thyroid without enlargement. No tremor of the outstretched hands. Mental status: alert and cooperative, anxious affect, depressed mood, linear thought process, no suicidal ideation, no hallucinations.\n\nRESULTS\n\nTSH and complete blood count ordered.\n\nSAFETY\n\nCrisis line number provided on a card. Callback number documented as {PHONE}.\n\nASSESSMENT AND PLAN\n\n1. Panic disorder without agoraphobia. Start sertraline at a low dose with slow titration. Refer to CBT-focused therapist. Counseled about side effects, including nausea in the first weeks.\n\n2. Major depressive disorder, single episode, moderate. Monitor mood and safety. Repeat PHQ-9 at follow-up.\n\n3. Insomnia, likely secondary to shift work and anxiety. Sleep hygiene and blackout curtains. Reassess need for a short-term hypnotic if sleep remains poor.\n\n4. Occupational stress related to night shift work and performance concerns. Work note for reduced hours for two weeks; discuss leave options.\n\n5. Labs: TSH and CBC to rule out medical contributors.\n\nReturn and emergency precautions reviewed, including chest pain, syncope, and suicidal thoughts. Telephone follow-up in one week and in-person follow-up in four weeks. Last visit {DATE_SPOKEN}.",
+ "medical_concepts": [
+  {
+   "text": "panic attacks",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "my heart starts pounding",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my hands go numb and tingly",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i ca n't get enough air",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sure i 'm dying",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "three times a week",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the worst calls you can imagine",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "that is a very stressful job",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ca n't fall asleep",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "wake up at four",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "anxious about going back",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "thoughts of harming yourself",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "panic attacks or depression",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "had depression",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "took a medicine for a few years",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "still takes something for them",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "saw a counselor",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a glass of wine with dinner",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no drugs",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "drink a lot of coffee",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tired all the time",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "lost interest in things i used to love",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "cry in the car after shifts",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it feels heavy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "failing everyone",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "little interest or pleasure in doing things",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "feeling down",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a moderate level of symptoms",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "make mistakes on the calls",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sertraline",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "some nausea",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "had a bad reaction to one of those",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "crisis line",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "cognitive behavioral therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "one twenty four over seventy eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your heart rate is ninety eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your thyroid feels normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no tremor on the outstretched hands",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood work for thyroid function",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "complete blood count",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "panic can mimic other problems",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a short-term sleep aid",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Recurrent panic attacks",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "low mood",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "insomnia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "work-related stress",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "evaluation of recurrent panic attacks",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "palpitations",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "paresthesias of the hands",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dyspnea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "a sense of impending doom",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "sit on a curb",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "night shifts",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "twelve-hour overnight shifts",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "sleep onset insomnia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "anxiety about returning to work",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "depressed mood",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "anhedonia",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fatigue",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tearfulness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "feelings of failure",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "approximately 2 each",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "suicidal ideation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "self-harm",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "mother with depression",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "aunt with panic disorder",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "counseling for several months",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "No prior psychiatric medication",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Occasional wine with dinner",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "illicit drug use",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tobacco",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "increased coffee intake",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mistakes on calls",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fear of disciplinary action",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "None currently",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 124/78",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "HR 98",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Thyroid without enlargement",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No tremor of the outstretched hands",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "anxious affect",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no suicidal ideation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "TSH",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Panic disorder without agoraphobia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Start sertraline",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "CBT-focused therapist",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "nausea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Major depressive disorder, single episode, moderate",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "PHQ-9",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Insomnia, likely secondary to shift work and anxiety",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "blackout curtains",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "short-term hypnotic",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Occupational stress related to night shift work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "performance concerns",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "CBC",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "syncope",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "suicidal thoughts",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "911",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "emergency number used as a job title, not an identifier"
+  },
+  {
+   "text": "911",
+   "field": "note",
+   "is_pii": false,
+   "comment": "emergency number used as a job title, not an identifier"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "F41.0",
+   "spans": [
+    {
+     "text": "panic attacks",
+     "field": "dialogue"
+    },
+    {
+     "text": "my heart starts pounding",
+     "field": "dialogue"
+    },
+    {
+     "text": "Panic disorder without agoraphobia",
+     "field": "note"
+    },
+    {
+     "text": "palpitations",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "F32.1",
+   "spans": [
+    {
+     "text": "little interest or pleasure in doing things",
+     "field": "dialogue"
+    },
+    {
+     "text": "feeling down",
+     "field": "dialogue"
+    },
+    {
+     "text": "Major depressive disorder, single episode, moderate",
+     "field": "note"
+    },
+    {
+     "text": "anhedonia",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "G47.00",
+   "spans": [
+    {
+     "text": "ca n't fall asleep",
+     "field": "dialogue"
+    },
+    {
+     "text": "wake up at four",
+     "field": "dialogue"
+    },
+    {
+     "text": "Insomnia, likely secondary to shift work and anxiety",
+     "field": "note"
+    },
+    {
+     "text": "sleep onset insomnia",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z56.6",
+   "spans": [
+    {
+     "text": "the worst calls you can imagine",
+     "field": "dialogue"
+    },
+    {
+     "text": "that is a very stressful job",
+     "field": "dialogue"
+    },
+    {
+     "text": "Occupational stress related to night shift work",
+     "field": "note"
+    },
+    {
+     "text": "twelve-hour overnight shifts",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i 'm a 911 dispatcher",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "the dispatch center for the county",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "employer"
+  },
+  {
+   "text": "after my first breakup",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "life event"
+  },
+  {
+   "text": "911 dispatcher",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "dispatch center for the county",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "comment": "employer"
+  },
+  {
+   "text": "after her first breakup",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "life event"
+  }
+ ],
+ "scenario": {
+  "specialty": "psychiatry",
+  "visit": "acute",
+  "length": "long",
+  "focus": [
+   "CONTACT",
+   "DATE",
+   "OCCUPATION"
+  ]
+ }
+}

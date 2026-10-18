@@ -1,0 +1,18 @@
+{
+  "encounter_id": "D2N005",
+  "pii": [
+    {"field": "dialogue", "text": "hill", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "james", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "41-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Hill", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "41-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "motor vehicle accident", "category": "CODE_EVIDENCE", "why": "supports V89.2XXA (motor-vehicle accident)"},
+    {"field": "dialogue", "text": "vehicle accident", "category": "CODE_EVIDENCE", "why": "supports V89.2XXA (motor-vehicle accident)"},
+    {"field": "dialogue", "text": "rear-ended", "category": "CODE_EVIDENCE", "why": "supports V89.2XXA (traffic accident mechanism)"},
+    {"field": "dialogue", "text": "dragon", "category": "NOT_A_NAME", "why": "dictation software, not a person"},
+    {"field": "note", "text": "motor vehicle accident", "category": "CODE_EVIDENCE", "why": "supports V89.2XXA (motor-vehicle accident)"},
+    {"field": "note", "text": "rear-ended", "category": "CODE_EVIDENCE", "why": "supports V89.2XXA (traffic accident mechanism)"}
+  ]
+}

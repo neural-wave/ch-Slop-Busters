@@ -1,0 +1,601 @@
+########## ENCOUNTER D2N050
+ICD-10 codes: N20.0 Calculus of kidney
+=== FIELD: dialogue
+[doctor] hey mason good to see you today so let's see you here in my notes for evaluation of kidney stones your your pcp said you had some kidney stones so you got a referral over so can you tell me a little bit about that you know what happened when did you first notice them
+[patient] yeah it was about you know about a week ago and i was working down in the the barn with the horses and you know i was moving some hay but i developed this real sudden onset of pain in my right back and i thought it initially it was from throwing hay but it i broke out into a sweat i got real nauseated and that's when i went and saw my doctor and he ordered a cat scan and said that i had a kidney stone but you know that's i i've never had that before my father's had them in the past but yeah so that's that's how that all happened
+[doctor] okay so you said you had the pain on the right hand side does it move anywhere or radiate
+[patient] well when i had it it would it radiated almost down to my groin
+[doctor] okay
+[patient] not the whole way down but almost to the groin and since then i have n't had any more pain and it's just been right about there
+[doctor] okay and is the pain constant or does it come and go
+[patient] well when i you know after i found out i had a disk a kidney stone it came a couple times but it did n't last as long no i've been i've been straining my urine they told me to pee in this little cup
+[doctor] mm-hmm
+[patient] and i've been straining my urine and you know i do n't see anything in there
+[doctor] okay have you noticed any blood in your urine i know you've been draining probably take a good look at it has it been darker than usual
+[patient] no not really not really darker
+[doctor] okay so have you had kidney stones before and then you said your father had them but
+[patient] i've never had a kidney stone my dad had them a lot but i've never had one
+[doctor] okay alright so let me do a quick exam of you your vital signs look good i do n't see any fever or your blood pressure and heart rate are fine so let me do a quick physical exam let me press here on your belly so on your examination of your abdomen there is no tenderness to to pain to palpation of the abdomen there is no rebound or guarding there is cva there is tenderness on the right side so that means
+[patient] i have a stroke
+[doctor] can you repeat that
+[patient] i did i have a stroke
+[doctor] no no no no no so that means like everything is normal right but i feel like you you you have some tenderness and inflammation over your kidney so that has to be expected because you do have a kidney stone so i did review the results of your ct and it does show a stone that's measuring point five centimeters located in the proximal right ureter and that's that duct that classes from your your kidney to down to your bladder there is no evidence of hydronephrosis that would mean that the stone is obstruct obstructing the ureter causing swelling in the kidney so there is there is no evidence of that so let's talk a little bit about my assessment and plan so you do have that kidney stone so right now i'm gon na recommend that we we have you push fluids just to help facilitate you urinating and passing the stone i'm gon na prescribe you some oxycodone five milligrams every six to eight hours for pain and you can continue to take tylenol between that for any breakthrough pain and you already have a strainer so that's good continue to use that and we can see continue that until the stone hasses and i'm also gon na order a bmp and your urinalysis and urine culture just to make sure that everything else is okay with you and based on urinalysis we can see if we need to prescribe you antibiotics see if you have any type of infection i do want to see you back in about one to two weeks and hopefully by that time you you passed the stone but if not we can discuss further treatment lithotripsy it's like a shock wave kinda breaks up that stone it's not it's not that invasive procedure but we can just we can discuss that if it has n't passed in that one to two weeks that sound good
+[patient] that sounds perfect dear too
+[doctor] alright
+[patient] thank you document
+[doctor] so i will see you in a week or so and hopefully you've passed that stone and i'll send my nurse in with that prescription
+[patient] okay thank you
+[doctor] thanks
+=== FIELD: note
+CHIEF COMPLAINT
+
+Kidney stones.
+
+HISTORY OF PRESENT ILLNESS
+
+Mason Ward is a pleasant 80-year-old male who presents to the clinic today for the evaluation of kidney stones. The patient was referred from his primary care physician. The onset of his pain began 1 week ago when he was in his barn moving hay when he had a sudden onset of right back pain. The patient initially thought his pain was due to throwing hay; however, he broke out into a sweat and became nauseated. He was seen by his primary care physician, who ordered a CT scan and told him that he had a kidney stone. He denies having kidney stones before, but states that his father has a history of kidney stones in the past. He explains that when he had pain, which has now resolved, it would radiate almost to his groin. The patient describes the pain as intermittent after he found out it was a kidney stone. He explains that he has been straining his urine, but has not seen anything. He denies any hematuria.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports right back pain.
+
+VITALS
+
+Vitals look good, blood pressure and hear rate are within normal limits. Temperature is within normal limits.
+
+PHYSICAL EXAM
+
+MSK: Examination of the abdomen: No pain with palpation of the abdomen. No rebound or guarding. There is CVA tenderness on the right side.
+
+RESULTS
+
+The CT scan of the abdomen revealed a stone that is measuring 0.5 cm located in the proximal right ureter. There is no evidence of hydronephrosis.
+
+ASSESSMENT
+
+Right kidney stone.
+
+PLAN
+
+We reviewed the patient's CT results in detail today. I have recommended that we treat the patient conservatively. I have prescribed the patient oxycodone 5 mg every 6 to 8 hours for pain. He may continue to take Tylenol between the oxycodone doses for any breakthrough pain. The patient should continue to use the strainer when he urinates until the stone passes. I have also recommended that we obtain a BMP, urinalysis, and urine culture to evaluate for any signs of infection.
+
+INSTRUCTIONS
+
+The patient will follow up with me in 1 to 2 weeks to check on his progress. If his symptoms have not improved, we will discuss further treatment options including lithotripsy.
+
+########## ENCOUNTER D2N051
+ICD-10 codes: E11.621 Type 2 diabetes mellitus with foot ulcer; L97.519 Non-pressure chronic ulcer of other part of right foot with unspecified severity; I25.10 Atherosclerotic heart disease of native coronary artery without angina pectoris
+=== FIELD: dialogue
+[doctor] hi jeremy how are you
+[patient] i'm really good thank you how are you
+[doctor] i'm okay the the medical assistant told me that you had this ulcer on your foot that's been there for a couple of weeks
+[patient] yes
+[doctor] going away
+[patient] yeah it's been there gosh it's like six or so weeks right now and it's and it's on my right foot and it's just yeah it's just not going away i'm not sure if it maybe even gotten a little worse from when i first noticed it
+[doctor] okay and how long did you say it's going on for
+[patient] probably about
+[doctor] six eight weeks maybe
+[patient] okay and do you have any pain in your foot no no no pain at all okay now i know that you're a diabetic and you are on some insulin have your sugars been running okay yeah they have been running
+[doctor] okay
+[patient] you know on the most part they seem to be running a little higher than normal
+[doctor] your sugars are running higher than normal okay do you recall what your last hemoglobin a1c was was it above nine
+[patient] yes it it it definitely was higher than nine
+[doctor] okay alright now what do you think caused this ulcer were you wearing some tight fitting shoes or did you have some trauma to your foot or
+[patient] yeah i was you know i think initially i'm you know i was out in the backyard you know kind of you know doing some work and you know i know i you know i could've stepped on a nail or you know there was some other work but you know i'm always outside so i do n't know if that kind of led to anything or caused anything
+[doctor] okay alright and have you had any fever or chills
+[patient] no no no fever or chills you know i kinda you know get headaches pretty often i do n't know if that you know i do n't know if that's a stress or but you know always have like the tension headaches in the front
+[doctor] okay and do you have do you have neuropathy where you get like numbing and tingling in your feet
+[patient] occasionally yeah occasionally especially when it's like colder outside
+[doctor] mm-hmm kinda feels like it takes a little longer to
+[patient] warm up but yeah i kinda have some sensation in in all my extremities
+[doctor] okay alright and then are you are you a smoker or did you smoke
+[patient] i did back you know kind of years ago i did but yeah i have n't smoked anything in in good number of years
+[doctor] okay alright when did you stop smoking
+[patient] couple years ago maybe four or so years ago
+[doctor] okay alright and how many packs a day would you smoke
+[patient] gosh back then yeah was at least two
+[doctor] okay alright how many years did you smoke for like twenty
+[patient] yeah at least twenty yeah twenty plus years
+[doctor] okay alright now any other symptoms do you have any problems when you walk down the street do you get any pain in your calves at all when you walk
+[patient] no no no no pain you know just kind of you know it's just i know that it's there
+[doctor] okay and you said you're active you're out in the yard and things like that do you go on long walks at all or no
+[patient] no no you know it's you know i just kinda feel like i've been just trying to take it easy lately
+[doctor] mm-hmm
+[patient] but yeah most most of the stuff i've been doing is just kind of hanging around the house
+[doctor] okay alright so we talked a little bit about your diabetes let's talk about your heart disease now your heart disease you had a heart attack in twenty eighteen we put a stent into your right coronary artery you're still taking your medications for that you're still on your aspirin
+[patient] i am yes yeah i do the baby aspirin every day
+[doctor] okay alright and any chest pain or shortness of breath or anything like that no no yeah no nothing more than yeah i would n't attribute anything
+[patient] okay and do you have a podiatrist for your yearly foot exams
+[doctor] no i i i do n't okay alright alright well let's go ahead i wan na just do a quick physical exam i'm just gon na be calling out some of my exam findings so your vital signs here in the office you do n't have any fever so that's good your blood pressure is great it's like one twenty seven over eighty and your heart rate is nice and slow in the sixties on your neck exam i do n't appreciate any jugular venous distention or any carotid bruits on your lung exam your lungs are clear to auscultation bilaterally on your heart exam you do have a two out of six systolic ejection murmur heard at the left base and on your lower extremity exam i do n't appreciate any palpable dorsalis pedis or posterior tibial pulses there is a two by three centimeter ulcerated lesion on the right lateral foot near the fifth metacarpal metatarsophalangeal joint there is no associated cellulitis does it hurt when i press here
+[patient] no
+[doctor] there is no pain to palpation of the right foot there is associated granulation tissue and some slight purulent discharge from the wound okay so what does all that mean that just means that you have this ulcer that's you know fairly sizable with i think we need to do some good wound care on it let's talk a little bit about my assessment and plan so you know i you have a nonhealing ulcer of your right foot so we need to do some studies on you to see if you have an adequate blood supply to heal this foot wound and since you since you probably do n't because of your diabetes you're here in a vascular surgeon's office we may have to go ahead and talk about being able to open up some of your arteries to improve the blood supply to your foot so that might mean getting a stent to one of your arteries in your legs to open up the blood supply it might mean mean that we might have to do some bypass surgery to to improve the blood supply to your foot in order to heal that that wound i do think that you'll be able to heal it i do n't think that we need to do anything drastic i want you to continue with your aspirin because that will help
+[patient] any questions
+[doctor] yeah i mean is this do we have to do any more tests or anything what are you we're gon na do an arterial ultrasound i'm going to go ahead and order an arterial ultrasound of your lower extremities to see what the blood supply is like and then i'm gon na go ahead and order a podiatry consult because i want them to see this wound and improve the wound care that you're doing and then for your next problem your diabetes i wan na go ahead and talk to your primary care physician we need to get your diabetes better controlled because that impacts your wound healing as well okay
+[patient] sure
+[doctor] sure understood alright and for your last issue your coronary artery disease continue with your statin and i will talk to your cardiologist in case you need a procedure to see if you're cleared from a medical standpoint okay
+[patient] okay perfect
+[doctor] alright
+[patient] perfect thank you so much
+[doctor] okay bye
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right foot ulcer.
+
+HISTORY OF PRESENT ILLNESS
+
+Jeremy Roberts is a 79-year-old male who presents today for evaluation of a right foot ulcer. He reports an ulcer on his right foot has been present for approximately 6 to 8 weeks. He first noticed the ulcer after working outside. There is no associated pain, however, he feels the ulcer may have worsened from when he first noticed it. He denies experiencing any fevers or chills. He does however experience tension headaches quite frequently. He denies any pain in his calves when he walks. At this time the patient does not have a podiatrist for yearly foot exams.
+
+He is a diabetic and takes insulin. His blood sugar has been running higher than normal and his last hemoglobin A1c was higher than 9. Occasionally he will also experience numbness and tingling in his feet, especially with colder weather.
+
+In terms of his heart disease, the patient sustained a heart attack in 2018 and underwent stent placement at the right coronary artery. He is currently taking aspirin 81 mg daily. He denies chest pain or shortness of breath.
+
+MEDICAL HISTORY
+
+Patient reports history of diabetes and heart disease. He sustained a heart attack in 2018.
+
+SURGICAL HISTORY
+
+Patient reports undergoing stent placement at the right coronary artery.
+
+SOCIAL HISTORY
+
+Patient reports he is a former smoker. He previously smoked 2 packs a day for 20 years and was able to stop smoking approximately 4 years ago. Currently he is not very active but he does work around the house.
+
+MEDICATIONS
+
+Patient reports taking aspirin 81 mg daily and insulin.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Denies fevers and chills.
+Cardiovascular: Denies chest pain.
+Respiratory: Denies dyspnea.
+Skin: Patient reports right foot ulcer.
+Neurological: Patient reports headaches and numbness and tingling in feet.
+
+VITALS
+
+No fever.
+Blood pressure: 127/80
+Heart rate: 60s
+
+PHYSICAL EXAM
+
+CV: 2/6 systolic ejection murmur heard at the left base.
+RESPIRATORY: Clear to auscultation bilaterally
+NECK: No jugular venous distention or carotid bruits
+MSK: Examination of the right lower extremity: No palpable dorsalis pedis or posterior tibial pulses. There is a 2 x 3 cm ulcerated lesion on the right lateral foot near the 5th metacarpal metatarsophalangeal joint. No associated cellulitis. No pain to palpation of the right foot. There is associated granulation tissue and some slight purulent discharge from the wound.
+
+ASSESSMENT
+
+1. Non-healing ulcer, right foot
+2. Diabetes
+3. Coronary artery disease
+
+PLAN
+
+After reviewing the patient's examination findings today, I have had a lengthy discussion with the patient in regards to his current symptoms. We discussed that his right foot ulcer is fairly sizable and will require wound care. I advised him that the ulcer does not appear to be healing and that further studies will be needed to assess if he has adequate blood supply to heal his foot wound. He was advised that due to his diabetes it is possible surgical intervention such as stent placement or bypass surgery may be required to improve his blood supply. I also advised him that I believe we will be able to heal his wound. At this time, I have recommended continued wound care and for him to also continue taking aspirin 81 mg daily. We will order an arterial ultrasound of the lower extremities. He will also be referred to podiatry for a consult.
+
+Regarding his diabetes, this appears to be unstable as the patient reports his last hemoglobin a1c was greater than 9 and is now experiencing a non-healing right foot ulcer. We discussed the importance of blood sugar control as this will impact his wound healing. At this time, I have recommended that he follow-up with his primary care physician for further care.
+
+The patient's coronary artery disease is currently stable. It is recommended that he continue to take his statin as prescribed. I will contact his cardiologist for medical clearance should surgical intervention be required for his non-healing right foot ulcer.
+
+########## ENCOUNTER D2N052
+ICD-10 codes: N20.0 Calculus of kidney
+=== FIELD: dialogue
+[doctor] so anna good to see you today so reading here in your appointment notes you were you were diagnosed with kidney stones from your your pcp and you currently have one and so they they had you come in so can you tell me what happened how's all that going for you
+[patient] sure i've been having some back pain on my right side it's been lasting for about a week now
+[doctor] okay
+[patient] and i also started to see some blood in my urine
+[doctor] okay so on the right side so does that pain does it move anywhere or is it just kinda stay in that that one area
+[patient] yeah it's moved down a little bit on to my right lower side a little bit
+[doctor] side okay so how would you describe the pain is it constant or is does it come and go
+[patient] it's pretty constant
+[doctor] okay did you notice any pain when you're urinating i know i know you say you you saw you see blood but any pain with that
+[patient] no no real pain when i'm when i'm peeing at all
+[doctor] okay so have you taken anything i know have you tried like azo or any of that to
+[patient] i took some ibuprofen that helped a little bit
+[doctor] okay
+[patient] but it still hurts even with ibuprofen
+[doctor] alright have you noticed any nausea vomiting fever chills
+[patient] i have n't thrown up but i felt a little bit nauseated
+[doctor] little nauseated yeah that's we expected so have you do you have a family history of kidney stones i know some people when they have them like their parents have them stuff but
+[patient] yeah my my dad had kidney stones i think he has passed a couple of them i'm not quite sure
+[doctor] alright and have you had any in the past or is this your first one
+[patient] this is my first time i've never had this before
+[doctor] okay alright so we'll do we'll do an exam on you just to check you out so i guess you were in pain and stuff over the over the easter easter break there that
+[patient] yeah yeah i had some pain over the weekend i saw my pediatrician this morning so they sent me over here they were concerned that i might have a kidney stone
+[doctor] okay so i'm guessing you did n't get to go find the eggs on the easter egg hunt because of the you were in pain
+[patient] not so much but i i got to participate a little bit i opened some eggs i just did n't go run around and find them
+[doctor] okay well i i'm lucky enough my friends had an adult easter hag hunt for me and so i was able to find a couple eggs yesterday myself so i i'm glad you were able to get a few of them alright so let's do that that physical exam on you so your vitals look good you do n't have any fever your blood pressure heart rate is fine so when i press here on your belly does that hurt
+[patient] a little bit yeah
+[doctor] a little bit alright so on your exam of your abdomen there is mild pain and tenderness to palpation of the abdomen there's no rebound or guarding there is cva located near your flank tenderness on the right so that means that everything looks good but you do have what seems to be some inflammation of your kidney okay so we we were able to get a ct of your your side and it showed that you do have a stone measuring point five centimeters in size and it's located in the proximal right ureter and so that's that duck that passes from your kidney to your bladder alright i do n't see any evidence of hydronephrosis so that means that there's not obstructing ureter causing swelling in your kidney which is which is pretty good so let's talk a little bit about my assessment and plan so you do have that kidney stone on the right so what i'm recommending is i want you to push fluids just to help facilitate you passing that stone alright have you been taking in have you been drinking enough water do you think so far
+[patient] probably not enough i drink some but
+[doctor] okay yeah i i want you to to drink try drink as much as possible just to see if we can get you hydrated and pass the stone what i'm gon na do is i'm gon na prescribe you ibuprofen eight hundred milligrams you can take that as needed for pain i know you said you were in that much pain just in case it does start to move you're in pain i want you to take the ibuprofen i'm also gon na give you a strainer for you to strain your pee so we can see you wan na know when that that stone does pass gon na order a bmp and a urinalysis and a urine culture and based on what the urinalysis shows we can decide if i can decide if i need to put you on antibiotics if you do have an infection of some kind and i wan na see you back in about a week to two weeks and if you're still having symptoms we can discuss further treatment such as a lithotripsy and it's it's a mainly minimally invasive procedure where we use shock waves to try to break up that stone but otherwise do you have any other questions for me
+[patient] no i do n't think so
+[doctor] alright so we will see you back in a week or two and i'll have my nurse come in with that prescription and hopefully with all the treatment you'll be able to pass the stone okay alright
+=== FIELD: note
+HISTORY OF PRESENT ILLNESS
+
+Anna Diaz is a pleasant 29-year-old female who presents to the clinic today for the evaluation of right-sided back pain.
+
+For approximately 1 week, the patient has been experiencing constant right-sided back pain that radiates down to her lower right side, as well as hematuria and nausea. Her primary care physician was concerned for possible kidney stones and subsequently referred her here for further evaluation. She denies any pain with urination or vomiting, but admits that she has likely not been drinking enough water. The only treatment she has tried so far is ibuprofen with minimal pain relief. Although she denies any personal history of kidney stones prior to this occurrence, she explains that her father has had kidney stones in the past.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Negative for fever.
+Gastrointestinal: Positive for nausea. Negative for vomiting.
+Genitourinary: Positive for hematuria
+
+VITALS
+
+Vitals are normal.
+Blood pressure is normal.
+Heart rate is normal.
+
+PHYSICAL EXAM
+
+GI/GU: Mild pain and tenderness to palpation of the abdomen. No rebound or guarding. There is CVA located near her flank with tenderness on the right.
+
+RESULTS
+
+CT scan of the abdomen was reviewed today and revealed a kidney stone measuring 0.5 cm in size, located in the proximal right ureter. There is no evidence of hydronephrosis.
+
+ASSESSMENT
+
+Kidney stone, right side.
+
+PLAN
+
+After reviewing the patient's examination and CT results, I discussed the findings with the patient. The CT scan revealed a 0.5 cm kidney stone in the proximal right ureter. I advised her to drink plenty of fluids, as much as possible, to help facilitate passing of the stone. She was provided with a urine strainer so she can see if and when the stone passes. Given that over-the-counter ibuprofen is not providing significant relief, we will send in a prescription for ibuprofen 800 mg to help with her pain. I'm also going to order a BMP, urinalysis, and a urine culture for further evaluation. Depending on the results of the urinalysis, we may need to start her on antibiotics. I want to see her back in 2 weeks. If she is still symptomatic at that time, we may need to consider further treatment such as a lithotripsy. This procedure was explained to the patient.
+
+INSTRUCTIONS
+
+Follow up in 2 weeks.
+
+########## ENCOUNTER D2N053
+ICD-10 codes: L40.0 Psoriasis vulgaris
+=== FIELD: dialogue
+[doctor] so barbara i i know you are here for some itchy scalp pain can you tell me a little bit about how you're doing
+[patient] yeah it's still quite a problem you know something i've been suffering with for so long now it's still quite itchy and it's really embarrassing too because i'll have dandruff so much like all over me but but i just ca n't stop itching
+[doctor] okay when did you first notice this
+[patient] i wan na say it's been a while but probably worsening in the past like six months or so
+[doctor] okay okay and have you seen ever noticed any rashes either when it first started or intermittently anywhere else
+[patient] on my body no not really
+[doctor] okay okay just mainly up underneath your on your scalp there uh and i can i can see that man that looks really itchy and scaly have you died your hair recently or used any other chemicals you you know like a new hair spray or gel
+[patient] nothing new i mean i do dye my hair but i've been doing that for years now but otherwise i do n't really use a lot of products in my hair
+[doctor] yeah i you know it's funny you say that because i keep saying i earned this gray hair and i'm gon na keep it so yeah have you tried any over the counter treatments i know there is a lot out of there something you know like a t gel or any of those other have those helped
+[patient] yeah i did that i did head and shoulders i even tried some castor oil and but none of them really seemed to be helping
+[doctor] okay okay let's talk about some other symptoms any joint pain fever weight loss
+[patient] not that i can recall i've been pretty good otherwise
+[doctor] okay good and going back you know to your grandparents has anybody else in the family had similar symptoms that you're aware of
+[patient] no well maybe my sister
+[doctor] maybe your sister okay
+[patient] yeah maybe my sister i mean i know she'll is no one has as bad as i do but she does report like just having a dry scalp
+[doctor] okay okay now you know a lot of times we can see this with you know high levels of stress has there been any new mental or emotional stressors at work or at home
+[patient] not really i mean it's basically the same things
+[doctor] okay yeah i yeah we have a lot of that yes so let me go ahead and and look at this a little closer here the first off i wan na tell you the the vital signs that the my assistant took when you came in your blood pressure is one thirty over sixty eight your heart rate was ninety eight and your respiratory rate was eighteen so those all look good and appear normal and your temperature was ninety seven . seven and that is all normal now when i look at your scalp here i do notice that you have demarcated scaly erythematous plaques and that's just kind of explaining technically what's going on those patches and they're they're in a patchy format they're diffusely present across the back of your skull and that's probably why you you see all that that that white dander you know on your on your your clothes as you go through the day now lem me talk a little bit about my impression and plan i think that you have a scalp psoriasis and let's and here is my thoughts on that what i would like you to use is to use clobetasol that's a zero . zero five percent solution and i want you to use that twice daily on the the affected areas of your scalp so you're just gon na put this on and just kinda gently rub it in now i know to do it twice daily is going to be difficult but if you can do it first thing in the morning when you get up and then before you go to bed you know get a shower and before you go to bed that will be great i want you to continue to use t-gel shampoo that you listed when you first came in that's a very good solution shampoo for that and that will help with controlling a lot of this now there is no cure for this unfortunately and flareups can be unpredictable but we see that you know not a we do n't have a great finger on what causes the flare ups but i'm gon na give you some steroids that will help and we're gon na have to manage that on a ongoing basis but when you get do get a flare up i want you to be using these flare steroid that i give you as we go through that and then i wan na see you back here in three months or sooner if it gets significantly worse do you have any questions for me
+[patient] no okay so i'll just use that steroid solution and then just as needed if it's really bad but then otherwise just use the t gel
+[doctor] yeah i want it's exactly what i want you to do i want you to use that that solution twice daily when you get that flare but then other than that just continue to use that t-gel shampoo
+[patient] alright
+[doctor] okay i'm gon na have my nurse come in and get you discharged but i the we will see you again in three months or and again please if it gets worse please do n't hesitate to call me and come in sooner
+[patient] alright perfect thank you
+[doctor] thank you
+[patient] okay bye
+=== FIELD: note
+CHIEF COMPLAINT
+
+Itchy scalp pain.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Denies fever or weight loss.
+HENT: Reports scalp pain Musculoskeletal: Denies joint pain.
+Skin: Reports itchy scalp Denies any rashes.
+
+VITALS
+
+BP: 130/68.
+HR: 98.
+RR:18.
+Temperature is 97.7 today.
+
+PHYSICAL EXAM
+
+Integumentary
+- Examination: Scalp reveals demarcated scaly, erythematous plaques. They are patchy in format and diffusely present across the back of the skull.
+
+ASSESSMENT AND PLAN
+
+1. Scalp psoriasis.
+- Medical Reasoning: The patient presents today with symptoms similar to scalp psoriasis.
+- Patient Education and Counseling: Nature of the diagnosis was discussed as well as treatment options. Patient was advised there is no cure for this. Patient was counseled on how to apply clobetasol 0.05%.
+- Medical Treatment: Prescription for clobetasol 0.05% solution twice daily provided. Continuing using T/Gel shampoo. Prescription for steroids provided to be used for flare ups.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+
+INSTRUCTIONS
+
+The patient will follow-up in 3 months or sooner if her conditions worsen.
+
+########## ENCOUNTER D2N054
+ICD-10 codes: S93.324A Dislocation of tarsometatarsal joint of right foot, initial encounter; W20.8XXA Other cause of strike by thrown, projected or falling object, initial encounter
+=== FIELD: dialogue
+[doctor] hey elijah how are you
+[patient] i'm doing okay
+[doctor] so i see here that your primary care provider sent you over it looks like you were doing some yard work yesterday and dropped a landscape brick on your foot can what so what's going on with your right foot today
+[patient] it's a little sore today but you know i hurt my foot before but this is the first time where i'm actually being seen for it
+[doctor] okay so you say you've injured your right foot before tell me a little bit about that injury
+[patient] twenty years ago i broke my ankle i had to put in a cast but that seems to be okay but you know sometimes it'll give me trouble once in a while it feels a little sore it swells up at times
+[doctor] okay
+[patient] and my other ankle too is sore sometimes and i've had surgery for that too and you know one of those things where you know it might give out once in a while but i'm not sure that's related to what the you know break dropping on my foot but you know either way my foot's a little sore
+[doctor] okay alright so when you dropped that brick on your foot were you able to get up and keep working or did you have to get off your you know not stop weightbearing and and get off that foot can you tell me a little bit about after the traumatic incident
+[patient] i you know it was a little sore i called a few names you know god damn why is this in my foot but you know i kept working putting it around a little bit but now it's got swollen so i got to see my doctor he told me i had to go see you here i am so tell me what's going on with it
+[doctor] so what have you been doing for the pain since the initial insult
+[patient] lucken it up
+[doctor] okay have you taken any medications safe for example tylenol or ibuprofen for the pain
+[patient] no i feel like taking the medicine
+[doctor] okay and then just out of curiosity you said you were doing some landscaping have you been over to landscapes warehouse new here in town my wife and i were just over there this last weekend and picked up a whole bunch of stuff you had a chance to make it over there yet
+[patient] no not yet i heard about it though i might have to make a trip once my foot heals
+[doctor] alright that sounds good now just out of curiosity can you rate your pain for me right now zero being none ten being the worst pain you've ever been in your life
+[patient] eleven out of ten
+[doctor] okay and then have you experienced any numbness or tingling of that foot since the incident
+[patient] yeah the whole foot is numb
+[doctor] okay
+[patient] but been now for a long time
+[doctor] okay i'm gon na do a quick physical exam now your vitals look good and i would like to do a focused exam of your right foot the there is some bruising on the bottom part of your foot and on the top part as well and i do appreciate the associated swelling and i also recognize that you do have tenderness to palpation for midfoot now for your neurovascular exam of your right foot your capillary refill is brisk in less than three seconds i do note a strong bounding dorsalis pedis pulse with motor and sensation is intact for that foot i also like to call out the fact that it matches bilaterally which is important i'm gon na go ahead and review the diagnostic imaging results so we did a x-ray of that right foot and i do notice dorsal displacement of the base of the second metatarsal with a three millimeter separation of the first and second metatarsal bases and presence of bony fragments so let me tell you a little bit about my assessment and plan now your right foot pain is due to a lisfranc fracture which is a fracture to your second metatarsal bone and the top of your foot this is where the metatarsals meet those cuboids okay so it where the bones come together in your foot now there are a lot of ligaments in your foot so i do want to order an mri just to assess if there is any injuries to those ligaments now based on your exam and looking at the x-ray you're most likely going to need surgery now the reason why this is important is if we have poor bone alignment or ligament healing you can this can lead to losing the arch in your foot you could becoming flat-footed and also developing arthritis now what's gon na be key here is the surgery is going to allow those bones and ligaments to heal properly we are going to put them back into place using plates and screws now the key thing is going to be it's going to be outpatient surgery so it's going to be same day i'll see you in the morning and then you'll be discharged home that evening and we will do a follow-up i wan na see you in twenty four hours post procedure but then i'll see you again in two weeks you're gon na be in a cast and i'm gon na have you use crutches you're not gon na be able to weight-bear on that foot for six to eight weeks what we'll do is we'll advance your ambulating gradually based on how you heal and based on how you tolerate the procedure i know i have covered a lot of material quickly but this is really gon na be the best course of action for you to have a good outcome now do you have any questions come answers concerns before i have the nurse come in finish the paperwork and get you set up for your procedure which we are going to do tomorrow if you're agreeable to that
+[patient] what about putting in a cast can i just stay in the cast
+[doctor] you could but what we found is the best outcome is aligning those bones with plates and screws to make sure that they heal properly so you have the best outcome possible
+[patient] so if the surgery is going to be tomorrow when am i going to get my mri
+[doctor] so what what we will do is the good news is we have an outpatient mri facility downstairs and i'm going to send the order down and we'll get you your mri this afternoon
+[patient] can i think about it and we have some time
+[doctor] sure
+[patient] okay
+[doctor] alright thanks elijah
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right foot pain.
+
+HISTORY OF PRESENT ILLNESS
+
+Elijah Reyes is a pleasant 45-year-old male who presents to the clinic today for the evaluation of right foot pain. The patient was referred by his primary care physician. He sustained an injury yesterday when he dropped a landscape brick on his right foot while doing yard work. He was able to get up and continue working after the injury. He rates his pain level as an 11 out of 10. The patient also reports numbness in his entire right foot, which has been present for a long time. The patient denies taking any medication for pain.
+
+The patient reports he fractured his right ankle 20 years ago. He received non-operative treatment with casting. He has experienced intermittent soreness and swelling in his right ankle since then.
+
+The patient reports surgical history of his left ankle. He continues to experience soreness and occasional giving way of the left ankle.
+
+MEDICAL HISTORY
+
+Patient reports history of a right ankle fracture 20 years ago.
+
+SURGICAL HISTORY
+
+Patient reports history of left ankle surgery.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports right foot pain, right ankle soreness and swelling, and left ankle soreness and instability.
+Neurological: Reports right foot numbness.
+
+VITALS
+
+All vital signs are within the normal limits.
+
+PHYSICAL EXAM
+
+CV: Capillary refill is brisk in less than 3 seconds in the right foot. Strong bounding dorsalis pedis pulse.
+NEURO: Normal sensation. Right foot motor and sensation are intact and equal to the contralateral side.
+MSK: Examination of the right foot: Bruising on the plantar and dorsal aspects of the foot. I do appreciate associated swelling. Tenderness to palpation over the midfoot.
+
+RESULTS
+
+An x-ray of the right foot was obtained and reviewed today. It demonstrates dorsal displacement of the base of the 2nd metatarsal with a 3 mm separation of the 1st and 2nd metatarsal bases and presence of bony fragments.
+
+ASSESSMENT
+
+Right foot pain, due to a Lisfranc fracture.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with him regarding his current symptoms. We discussed treatment options and I have recommended that we proceed with a right foot ORIF and all indicated procedures. We reviewed the risks, benefits, and alternatives of the surgery. I advised him that this procedure will be performed in an outpatient setting and he will be discharged home that same evening. He will then follow up with me 24 hours post procedure, and again 2 weeks later. I explained that he will be placed in a cast and will remain non-weight-bearing for 6 to 8 weeks. He will use crutches while ambulating and we will advance his weight-bearing gradually based on how he tolerates the procedure.
+
+I have also recommended that we obtain an MRI of the right foot to further assess the ligaments. I explained to him that if he has poor bone alignment or ligament healing, this can lead to losing the arch in his foot causing pes planus and developing arthritis. I will send an order to the outpatient MRI facility downstairs for him to obtain the MRI this afternoon.
+
+The patient wishes to think over his options before proceeding with the operation.
+
+########## ENCOUNTER D2N055
+ICD-10 codes: F95.0 Transient tic disorder
+=== FIELD: dialogue
+[doctor] karen nelson is a 3 -year-old female with no significant past medical history who comes in for evaluation of a new right eye twitch karen is accompanied by her father hi karen how are you
+[patient] i'm okay i guess
+[doctor] hey dad how are you doing
+[patient] hey doc i am okay yeah karen has been having this eye twitch i noticed a couple of weeks ago when i talked to her pediatrician and they told me to come see you
+[doctor] okay alright so karen have you felt the twitch
+[patient] yeah well i mean i feel my face sometimes
+[doctor] yeah and do you have any pain when it happens
+[patient] no it it does n't really hurt but i noticed that dad looks real nervous when it happens
+[doctor] yeah i i i can understand that's because he loves you do you feel the urge to move your face
+[patient] sometimes and then it moves and then i feel better
+[doctor] okay okay and so so dad how often are you seeing the twitch on karen
+[patient] i do n't know i mean it varies sometimes i see it several times an hour and there is other days we do n't see it at all until sometimes late afternoon but we definitely notice it you know everyday for the last several weeks
+[doctor] okay so karen how is how is how is soccer
+[patient] i like soccer
+[doctor] yeah
+[patient] yeah dad dad takes me to play every saturday
+[doctor] okay
+[patient] it's it's pretty fun but there's this girl named isabella she she plays rough
+[doctor] does she
+[patient] she yeah she tries to kick me and she pulls my hair and
+[doctor] oh
+[patient] sometimes she's not very nice
+[doctor] that is n't very nice you gon na have to show her that that's not very nice you're gon na have to teach her a lesson
+[patient] yeah and and then sometimes after soccer we we go and i get mcdugge's and it and it's it makes for a nice day with dad
+[doctor] is that your favorite at mcdonald's in the the mcnuggates
+[patient] not not really but they are cheap so
+[doctor] okay alright well you you made dad happy at least right
+[patient] yeah that's what he says because i'm expensive because i want dresses and dogs and stuff all the time
+[doctor] yeah well yeah who does n't well okay well hopefully we will get you you know squared away here so you can you know play your soccer and go shopping for dresses with dad so so dad tell me does the karen seem bothered or any other and have any other issues when this happens
+[patient] no i mean when it happens she just continues playing or doing whatever she was doing when it happens
+[doctor] okay alright has she has she otherwise been feeling okay since this started has she been acting normally
+[patient] i i'd say she seems fine i mean she has been eating well and playing with her friends and she goes about her normal activities really
+[doctor] okay good
+[patient] never even though anything was going on
+[doctor] okay alright good so has has karen had any seizures in the past
+[patient] no
+[doctor] no okay and then so tell me when the twitch occurs do you ever notice any you know parts of her like moving or twitching
+[patient] well no uh it's just her face
+[doctor] okay
+[patient] i mean the whole side of her face moves when it happens it seems like it several seconds and then it finally stops and she just seems to be blinking frequently and and and you know wait a minute i i did make a video so you can see just in case it does n't do it during the visit
+[doctor] okay okay yeah that would be great to see that because i wan na see what's going on so thank you for that tell me is there any family history of seizures or like tourette's syndrome
+[patient] well no history of seizures but i i i never heard of that tourette thing
+[doctor] yeah so so toret is that it's a nervous system disorder that you know involves like repetitive movements or like unwanted sounds and it typically begins in childhood and i do n't know have you noticed anything like that with her when she was younger
+[patient] really i had nobody in our family got anything like that
+[doctor] okay now tell me have you noticed any other symptoms how about like fever or chills
+[patient] no
+[doctor] okay coughing headache
+[patient] ma'am
+[doctor] okay how about any problems with karen's sleep
+[patient] nope
+[doctor] okay okay good let's go ahead and do physical exam on karen here alright karen i'm just gon na take a look at you and and ask you to follow some commands okay
+[patient] okay
+[doctor] alright can you follow my finger with your eyes good now can you do me a favor walk across the room for me great job okay now i want you to close your eyes and reach out your arms in front of you good now keep your eyes closed can you feel me touch you here how about okay how about there
+[patient] mm-hmm
+[doctor] does that feel the same
+[patient] yeah
+[doctor] okay alright so i'm just gon na check your reflexes okay alright now on your on the neurological exam the patient is awake alert and oriented times three speech is clear and fluent gait is steady heel toe walking is normal and the cranial nerves are intact without focal neurologic findings there is no pronator drift sensation is intact reflexes are two plus and symmetric at the biceps triceps knees and ankles so this means everything looks good karen
+[patient] that's great
+[doctor] good alright so i'm gon na go ahead and tell you what we're gon na do so i'm gon na tell you my assessment and plan here so dad so for the first problem i do believe that karen does have a tick eye tics are very common in children and as many as you know one in five children have a tick during their school years and tics can also include things like shoulder shrugging facial grimacing sniffling excessive throat clearing and uncontrolled vocalization i can say that essentially they're brief sudden and involuntary motor movements now we do n't have a full understanding of the cause of the tics but they typically occur around five to ten years of age but most ticks go away on their own and they disappear within a year so these are what we call transient tics and the best thing to do is ignore the tics so it does n't seem to be bothering karen and she seems to be doing well in school and activities so it may wax and wane over time but you might notice it more towards the end of the day when the child is tired so you may also you know see it if they're stressed so that's why it's important to just ignore it now when you draw attention to the tick it does make the child conscious so that can make the tic worse so we want to be careful again just to to kind of not to draw too much attention on it and do you have any questions for me
+[patient] so you mean you're telling me you do n't think he had a seizure or a bit or nothing
+[doctor] yeah i do n't think it's i do n't think so because it's it is the same part of her body that's moving every time that and she reports that it's somewhat of an there is an urge to blink her eye and some relief afterwards
+[patient] so you're not recommending any kind of treatment there is no pill or cream or nothing
+[doctor] not at this time because she seems to be doing well overall and the tic has n't impacted her school or her activities but if it worsens then we can consider some treatment okay
+[patient] alright alright sounds good
+[doctor] alright thank you you guys have a good day
+[patient] doctor
+[doctor] bye karen
+=== FIELD: note
+CHIEF COMPLAINT
+
+Right eye twitch.
+
+SOCIAL HISTORY
+
+The patient plays soccer every Saturday, however she has noted that there is a girl that tries to kick her and pulls her hair.
+
+FAMILY HISTORY
+
+Patient's father reports that they do not have a family history of seizures or Tourette's syndrome.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Denies fever, chills, or changes in appetite.
+Eyes: Reports right eye twitch. Denies right eye pain.
+Respiratory: Denies cough.
+Neurological: Denies headaches or sleep disturbances.
+
+PHYSICAL EXAM
+
+Neurological
+- Orientation: Alert and oriented x3. Speech is clear and fluent. Gait is steady. Heel toe walking is normal. Cranial nerves grossly intact without focal neurologic findings. No pronator drift. Sensation is intact. Reflexes are 2+ and symmetric at the biceps, triceps, knees, and ankles.
+
+ASSESSMENT AND PLAN
+
+1. Transient tics.
+- Medical Reasoning: The patient's father provided a video today as she did not have a twitch in office. It appears the patient is experiencing a tic.
+- Patient Education and Counseling: Nature of the diagnosis was discussed today with the patient and her father. I advised eye tics are very common in children and as many as 1 in 5 children have a tick during their school years. We discussed tics can also include things like shoulder shrugging, facial grimacing, sniffling, excessive throat clearing, and uncontrolled vocalization. I explained that essentially they are brief, sudden and involuntary motor movements and that we do not have a full understanding of the cause. We also discussed that they typically occur around 5 to 10 years of age and mostly resolve on their own within a year. Dad was advised that treatment is not recommended as they do not appear to be bothering Karen and she continues to do well in school and activities. Additionally, we discussed avoiding drawing attention to the tic as it may cause Karen to feel self-conscious and increase the severity of the tic.
+- Medical Treatment: None at this time.
+
+Patient Agreements: The patient's parent understands and agrees with the recommended medical treatment plan. 
+All questions were answered.
+
+########## ENCOUNTER D2N056
+ICD-10 codes: J67.9 Hypersensitivity pneumonitis due to unspecified organic dust
+=== FIELD: dialogue
+[patient] alright thanks for coming in today i see on my chart here that you had a bunch of lower respiratory infections so first tell me how are you what's going on
+[doctor] you know i'm doing better now but you know last week i was really sick and i just have had enough like i was coughing a lot a lot of mucus even had some shortness of breath and even a low-grade fever
+[patient] wow that is a lot so what did you do for some of those symptoms
+[doctor] you know i ended up drinking a lot of fluid and taking some robitussin and i actually got better over the weekend and now i'm feeling much better but what concerns me is that i i tend to get pneumonia a lot
+[patient] okay so when you say a lot like how frequently does it occur i would say it seem honestly it seems like it's every month or every other month especially over the past six six months that i just keep getting sick and i usually will end up having to go to my primary care doctor or
+[doctor] urgent care and i'll get prescribed some antibiotics and one time i actually ended up in the emergency room
+[patient] wow and how long do your symptoms normally last for
+[doctor] you know it could be as few as like a couple of days but sometimes it could go even up to a week
+[patient] mm-hmm you mentioned that you are a farmer did you do you notice that your symptoms occur while doing certain things on the farm
+[doctor] you know i was trying to think about that and i've been working on the farm for some time but the only thing i can think about is that i've been helping my brother out and i've been started like unloading a lot of hay which i do n't usually do and i wan na say that my symptoms actually start the days that i'm unloading hay
+[patient] alright do you wear a mask when you're unloading hay
+[doctor] no i do n't do that
+[patient] okay
+[doctor] none of us do
+[patient] okay yeah so like that your brother does n't either
+[doctor] no i'm the only one who seems to be getting sick
+[patient] alright so i know you said you were trying to like help out your brother like what's going on with him
+[doctor] you know we've just been getting really busy and so he has been working around doing other things so i've just been helping him just cover the extra load
+[patient] mm-hmm okay alright do you have any other siblings
+[doctor] yeah there is actually ten of us
+[patient] wow okay that's that's a lot of siblings
+[doctor] yeah i'm okay
+[patient] maybe maybe we could we could always stick them in they could get some work done the holidays must be fun at your place
+[doctor] yeah we do n't need to hire any i mean have anyone else this is our family
+[patient] you're right keep it in the family okay so speaking of family do you have do you or anyone have a history of seasonal allergies
+[doctor] no no i have never had any problems with allergies
+[patient] okay and do you smoke
+[doctor] i do n't smoke
+[patient] do you live with anybody who does
+[doctor] i do not
+[patient] okay alright so okay so now i i wan na go ahead and do my physical exam i'm gon na call out some of my findings just to make sure that i'm documenting everything and if you have any questions about what it is that i'm saying please feel free to ask okay
+[doctor] okay
+[patient] so i reviewed your vitals and you appear to be breathing a little fast your respiratory rate is twenty but but your oxygen is you're satting kind of fine at ninety nine percent on room air so i'm not too worried about that on for on your heart exam i do you have a regular rate and regular rhythm i do not appreciate any murmurs rubs or gallops on your lung exam you know i do you do have some fine rales on your lung exam but no wheezes and on your musculoskeletal exam i do not appreciate any clubbing of your fingers so for your results i did review the results of your chest x-ray and i noticed some round glass opacities so let me tell you a little bit about like my assessment and plan for your first problem of recurrent lung infections your symptoms seem consistent with a condition we call hypersensitivity pneumonitis in your case another name is farmer's lung which you know is appropriate considering your job this could be caused by bacteria and or mold that is found in the hay when you inhale it it leads to an allergic reaction in your lungs this is why your symptoms occur every time you move hay for your current symptoms i'm gon na prescribe you a a course of an oral steroid this will help to decrease the inflammation that is occurring in your lungs i will also be ordering a cat scan of your lungs which will help confirm the diagnosis as as well a pulmonary function test to assess how severe your respiratory impairment is it would be best if you could eliminate your exposure to the hay or prevent further to prevent further damage to your lungs however if you are unable it's very important that you wear a respirator when moving hay around i know that that was a lot of information i think it boils down to pull in more of your siblings to help work around but do you have any questions
+[doctor] yeah so is this gon na help so i do n't keep getting sick
+[patient] so ideally what we are doing i think this is the best course of action to deal with the deeper problem right of these infections and to kind of like clear up the pneumonia everything seems to hint on so what we're gon na do is treat your current infection we're going to either prevent you from being around hay or make it so that it's safe for you to be with hay and then we're gon na see like what we need to do moving forward does that help
+[doctor] okay it does
+[patient] alright
+[doctor] thank you
+[patient] okay no problem
+[doctor] alright
+=== FIELD: note
+CHIEF COMPLAINT
+
+Recurrent lung infections.
+
+SOCIAL HISTORY
+
+Patient reports he is a farmer. He denies smoking or living with anyone who smokes.
+
+ALLERGIES
+
+Patient denies history of seasonal allergies.
+
+REVIEW OF SYSTEMS
+
+Constitutional: Reports low-grade fever.
+Respiratory: Reports shortness of breath and productive cough.
+
+VITALS
+
+Respiratory rate: 20 breaths per minute.
+Pulse oxygenation: 99 percent on room air.
+
+PHYSICAL EXAM
+
+Respiratory
+- Auscultation of Lungs: Some fine rales were noted.
+
+Cardiovascular
+- Auscultation of Heart: Regular rate and rhythm. No murmurs, gallops or rubs.
+
+Musculoskeletal
+- Examination: No clubbing.
+
+RESULTS
+
+X-ray of the chest was reviewed today and shows some round glass opacities.
+
+ASSESSMENT AND PLAN
+
+1. Recurrent lung infections.
+- Medical Reasoning: The patient's symptoms seem consistent with hypersensitivity pneumonitis. He is a farmer and has been moving hay quite frequently recently.
+- Patient Education and Counseling: The nature of the diagnosis was discussed with the patient. I explained that hypersensitivity pneumonitis could be caused by bacteria and/or mold that is found in the hay. We discussed that when inhaling this, it leads to an allergic reaction in the lungs, which would explain why symptoms occur every time he moves hay. He was advised that it would be best to eliminate his exposure to hay in order to prevent further damage to his lungs, however, if he is unable to do this then it would be recommended that he wear a respirator when working. Questions were invited and answered today.
+- Medical Treatment: A course of oral steroids were prescribed today to help decrease his lung inflammation. CT of the lungs will also be ordered today to confirm the diagnosis. A pulmonary function test was also ordered to assess the severity of his respiratory impairment.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.

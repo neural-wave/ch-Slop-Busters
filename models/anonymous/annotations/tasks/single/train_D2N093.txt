@@ -1,0 +1,136 @@
+########## ENCOUNTER D2N093
+=== FIELD: dialogue
+[doctor] hey lawrence . how are you ?
+[patient] hey , good to see you .
+[doctor] it's good to see you too . so , i know the nurse told you about dax .
+[patient] mm-hmm .
+[doctor] i'd like to tell dax a little bit about you .
+[patient] sure .
+[doctor] so , lawrence is a 62-year-old male , with a past medical history significant for type i diabetes , congestive heart failure , depression , and reflux , who presents with complaints of shortness of breath . so lawrence , what's been going on ? wh- what's wrong with your breathing ?
+[patient] uh , i , i've noticed that i've been swelling up a little bit . i think a lot of it has to do with going to some house parties , eating some salty foods . i feel really lethargic .
+[doctor] okay . all right . and when you get short of breath , are you short of breath when you're just sitting here ? do you feel short of breath when you're walking ?
+[patient] it's something like walking up a flight of stairs i'll actually feel it .
+[doctor] okay . all right . now , um , how long has this been going on for ?
+[patient] probably about 10 days .
+[doctor] okay . all right . and you said you're noticed some swelling in your legs ?
+[patient] a little bit .
+[doctor] okay . do you have problems lying flat in bed ?
+[patient] um , i'm a little uncomfortable when i wake up in the morning and i feel pretty stiff . and , and , like , it takes me a little while to adjust to walking when i get up .
+[doctor] okay . all right . do you ever wake up acutely short of breath at night ?
+[patient] um , it happened once , probably about a week ago , but it has n't happened since . so i have n't been that concerned about it .
+[doctor] okay . all right . in terms of your , your diabetes , how are you doing with that ? i know you're on the insulin pump .
+[patient] mm-hmm .
+[doctor] um , are your blood sugars okay ? have you noticed a spike in them recently ?
+[patient] um , i have n't . i've been pretty good about monitoring it so i ... during the working week , i stay on top of that . but on saturdays or sundays we're so busy i forget to monitor it . but i have n't seen anything spike .
+[doctor] okay . and i remember your affinity for chocolate bars , so ...
+[patient] guilty as charged . i love chocolate bars .
+[doctor] okay . all right . so , in terms of your depression , how are you doing with that ?
+[patient] uh , it's been a crazy year and a half . um , i've tried some natural solutions . in the summer i did stretches outdoors every morning , which was great , but now the weather changed and , uh , you know , i've got ta find some alternatives . i'm not ready to try any medications just yet , so-
+[doctor] okay .
+[patient] . i'm open to some suggestions .
+[doctor] okay . we'll talk about that .
+[patient] sure .
+[doctor] and then in terms of your reflux , how are you doing ? i know we had you on the omeprazole .
+[patient] mm-hmm .
+[doctor] you were making some lifestyle modifications , cutting back on your red bull and caffeine .
+[patient] yeah .
+[doctor] alcohol intake has been ... how's that been ?
+[patient] tough during the holiday season , but i'm , i'm better .
+[doctor] okay . all right . and no issues with your depression ? you do n't want to hurt yourself or anyone else ?
+[patient] no . no . absolutely not .
+[doctor] okay , all right . well , let's go ahead . i know you did a review of system sheet when you checked in and you endorsed the shortness of breath .
+[patient] mm-hmm .
+[doctor] any other symptoms ? chest pain , fever , chills , cough ?
+[patient] no .
+[doctor] um , belly pain ?
+[patient] no .
+[doctor] okay . let's go ahead . i want to move on to a physical exam .
+[patient] mm-hmm .
+[doctor] hey , dragon ? show me the vital signs . so here in the office , you know , your vital signs look good . your , your pulse ox ... that's your oxygenation level ... looks good . so i'm encouraged by that with you just sitting here , okay ? i'm gon na go ahead and do another , uh , just check you over . i'll let you know what i find .
+[patient] mm-hmm .
+[doctor] okay . all right . so , on your exam things look okay . so , i do n't appreciate any jugular venous distension or any carotid bruits on your neck exam . on your heart exam , i do appreciate a slight 3 out of 6 systolic ejection murmur . on your lung exam , i do appreciate some crackles , bilaterally , at the bases . and on your lower extremity exam i do appreciate 1+ pitting edema . so what does all that mean ? so , i do think that you're retaining some fluid . it's probably from some of the dietary indiscretion .
+[patient] mm-hmm .
+[doctor] but i wan na go ahead and look at some of the results , okay ? i had the nurse do a chest x-ray on you before we came in , okay ? hey , dragon ? show me the test x-ray . so i reviewed the results of your chest x-ray and it looks good . there's no e- evidence of any airspace disease , but that does n't mean that you still ca n't be retaining some fluid , okay ?
+[patient] okay .
+[doctor] hey , dragon ? show me the labs . and your labs look okay . you know , you do n't have an elevated white blood cell count so i'm not really concerned about infection . we saw the chest x-ray , there's no pneumonia , so that's good .
+[patient] mm-hmm .
+[doctor] so , let's talk a little bit about , you know , my assessment and my plan for you . okay ? so , for your first problem of your shortness of breath i think that you are in an acute heart failure exacerbation . i want to go ahead and , uh , put you on some lasix , 40 milligrams a day . i want you to weigh yourself every day .
+[patient] mm-hmm .
+[doctor] if your weight is n't going down , uh , or if it's going up i want you to call me . certainly , if you get more short of breath at rest i want you to go ahead and call me or call 911-
+[patient] mm-hmm .
+[doctor] . and go into the emergency room . you might need some intravenous diuretics .
+[patient] mm-hmm .
+[doctor] okay ? for your second problem of your type i diabetes , um , let's go ahead ... i wan na order a hemoglobin a1c for , um , uh , just in a , like a month or so , just to see if we have to make any adjustments . and i want you to follow up with your endocrinologist . okay ? and i also want to make sure that you have a recent eye exam . all right ? uh , for your third problem of your depression , let's go ahead and refer you to psychiatry , just for some , um , like , talk therapy to help you through that . okay ?
+[patient] sure .
+[doctor] no medications . and for your fourth problem of your reflux , let's go ahead and continue you on the omeprazole , 20 milligrams a day . do you have any questions , lawrence ?
+[patient] not at this point .
+[doctor] okay . um , uh , again , i want you to call me if you have any problems with your breathing , okay ?
+[patient] you got it .
+[doctor] hey , dragon ? finalize the notes ...
+=== FIELD: note
+CHIEF COMPLAINT
+
+Shortness of breath.
+
+HISTORY OF PRESENT ILLNESS
+
+Lawrence Walker is a 62-year-old male with a past medical history significant for type 1 diabetes, congestive heart failure, depression, and reflux, who presents with complaints of shortness of breath.
+
+The patient states he has had some shortness of breath and mild leg swelling which he thinks has to do with eating some salty foods at some house parties recently. His shortness of breath is primarily with exertion such as walking up the stairs. This has been going on for about 10 days now. He woke from sleep once with shortness of breath about a week ago. He also notes discomfort lying flat in bed and musculoskeletal stiffness in the morning. He states that it takes him a little while to get up.
+
+Regarding his type 1 diabetes, he is using his insulin pump. He has been consistently monitoring his blood sugars during the working week, but notes that he checks less on the weekends, due to being busy. He is trying to avoid sugar but admits to an affinity for chocolate bars.
+
+Regarding his depression, he states that it has been a crazy year and a half. He has tried some natural solutions. In the summer, he did daily outdoor stretching, which was great; but now that the weather has changed, he needs to find some alternatives. He is not ready to try any medications. He denies suicidal and homicidal ideation.
+
+Regarding his GERD, he is taking his omeprazole. He has made some lifestyle modifications like cutting back on his red bull intake and other caffeine. Reducing his alcohol intake has been tough during the holiday season, but he is getting better about this.
+
+The patient denies chest pain, fever, chills, cough, and abdominal pain.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: Denies fevers, chills.  Endorses fatigue.
+• Cardiovascular: Denies chest pain. Endorses dyspnea on exertion.
+• Respiratory: Denies coughor wheezing. Endorses shortness of breath..
+• Musculoskeletal: Endorses lower extremity edema.
+• Psychiatric: Endorses depression.
+
+PHYSICAL EXAMINATION
+
+• Neck: No carotid bruits appreciable. No jugular venous distention.
+• Respiratory: Rales are heard bilaterally at lung bases.
+• Cardiovascular: 3/6 systolic ejection murmur.
+• Musculoskeletal: 1+ pitting bilateral lower extremity edema.
+
+RESULTS
+
+Chest x-ray did not show any evidence of airspace disease.
+
+Labs were all within normal limits, including the WBC.
+
+ASSESSMENT
+
+Lawrence Walker is a 62-year-old male with a past medical history significant for type 1 diabetes, congestive heart failure, depression, and reflux, who presents with complaints of shortness of breath.
+
+PLAN
+
+Acute heart failure exacerbation.
+• Medical Reasoning: The patient is retaining fluid. He has noticed increased fluid retention following dietary indiscretion. He has experienced dyspnea on exertion for the past 10 days.
+• Medical Treatment: Initiate Lasix 40 mg a day.
+• Patient Education and Counseling: I advised the patient to monitor and log his daily weights. He will contact me if these continue to increase. He was instructed to call me or 911 if he experiences dyspnea at rest.
+
+Type 1 diabetes.
+• Medical Treatment: This is currently stable with use of an insulin pump.
+• Additional Testing: I will order a hemoglobin A1c in 1 month.
+• Medical Treatment: He will continue the insulin pump. The patient will follow up with his endocrinologist.
+• Patient Education and Counseling: I encouraged the patient to have an eye exam.
+
+Depression.
+• Medical Reasoning: The patient has been doing well with outdoor stretching. He continues to decline the use of medications for this issue.
+• Medical Treatment: I will refer him to psychiatry as his current management strategy is unsustainable due to the change in season.
+• Patient Education and Counseling: We will defer initiating medication at this time.
+
+Acid reflux.
+• Medical Reasoning: His symptoms are stable with medication.
+• Medical Treatment: Continue omeprazole 20 mg a day.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan. his endo

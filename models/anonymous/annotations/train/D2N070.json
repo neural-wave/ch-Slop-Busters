@@ -1,0 +1,28 @@
+{
+  "encounter_id": "D2N070",
+  "phi": [
+    {"text": "logan", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "58 year old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "helping my daughter", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "helping a family member"},
+    {"text": "tuesday", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a weekday"},
+    {"text": "saturday morning", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "a weekend morning"},
+    {"text": "sunday afternoon", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the next afternoon"},
+    {"text": "vacations", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "time off"},
+    {"text": "summer", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "warmer months"},
+    {"text": "long weekends", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "short trips"},
+    {"text": "three day weekends", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "short breaks"},
+    {"text": "peanut butter cups", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "sweets"},
+    {"text": "at home working", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "at home"},
+    {"text": "run too much", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercise too much"},
+    {"text": "Logan Walker", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Walker", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "58-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "helping his daughter move", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "helping a family member move"},
+    {"text": "Saturday", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "a weekend day"},
+    {"text": "Sunday afternoon", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "the next afternoon"},
+    {"text": "Sunday", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "the next day"},
+    {"text": "travel", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "a busy schedule"},
+    {"text": "runs too much", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercises too much"}
+  ],
+  "medical_concepts": []
+}

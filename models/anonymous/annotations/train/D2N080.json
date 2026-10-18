@@ -1,0 +1,19 @@
+{
+  "encounter_id": "D2N080",
+  "phi": [
+    {"text": "andrea", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "travel", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "outings"},
+    {"text": "trip", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "visit"},
+    {"text": "columbus georgia", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "another state"},
+    {"text": "lion's club", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "community club"},
+    {"text": "line dances", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "group activities"},
+    {"text": "line dancing", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "this activity"},
+    {"text": "Andrea Barnes", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "34-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "travel", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "go on outings"},
+    {"text": "trip", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "visit"},
+    {"text": "Columbus, Georgia", "field": "note", "type": "LOCATION", "tier": 1, "generalized": "another state"},
+    {"text": "Lion's Club", "field": "note", "type": "ORGANIZATION", "tier": 1, "generalized": "community club"}
+  ],
+  "medical_concepts": []
+}

@@ -1,0 +1,15 @@
+{
+  "encounter_id": "D2N202",
+  "phi": [
+    {"text": "sharon", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "remodeling your house", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "working on your house"},
+    {"text": "painting", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "working"},
+    {"text": "the remodel", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "the project"},
+    {"text": "lowe's", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "hardware store"},
+    {"text": "remodeled project", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "project"},
+    {"text": "Sharon Wright", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "36-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "painting", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "working"}
+  ],
+  "medical_concepts": []
+}

@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N102",
+  "phi": [
+    {"text": "kelly wood", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "wood", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "february 15th , 1979", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "mountain dew", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "soda"},
+    {"text": "Kelly Wood", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Wood", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "41-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

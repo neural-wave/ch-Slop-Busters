@@ -1,0 +1,16 @@
+{
+  "encounter_id": "D2N183",
+  "phi": [
+    {"text": "matthew rogers", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "5/24/2007", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "3/3/21", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "summer", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "warmer months"},
+    {"text": "walgreens", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "the usual pharmacy"},
+    {"text": "broad", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a local street"},
+    {"text": "Matthew Rogers", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Matthew", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "14-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "03/03/2021", "field": "note", "type": "DATE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

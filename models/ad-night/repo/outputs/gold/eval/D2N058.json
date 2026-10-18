@@ -1,0 +1,91 @@
+{
+  "encounter_id": "D2N058",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "russell",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "ramirez",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "45 -year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "twenty eighteen",
+      "category": "YEAR",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "two thousand eighteen",
+      "category": "YEAR",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "rex center",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "through the plant",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "dawn knots",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "dialogue",
+      "text": "photography",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "dialogue",
+      "text": "gardening",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "2018",
+      "category": "YEAR",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "photography",
+      "category": "OTHER_QI",
+      "risk": "low"
+    },
+    {
+      "field": "note",
+      "text": "gardening",
+      "category": "OTHER_QI",
+      "risk": "low"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "3/6",
+      "category": "CLINICAL_NUMBER",
+      "why": "murmur grade, not a date"
+    }
+  ]
+}

@@ -1,0 +1,810 @@
+{
+ "id": "S034",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "T23.251A",
+   "description": "Burn of second degree of right palm, initial encounter"
+  },
+  {
+   "code": "X15.3XXA",
+   "description": "Contact with hot saucepan or skillet, initial encounter"
+  },
+  {
+   "code": "Y92.511",
+   "description": "Restaurant or cafe as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.G3",
+   "description": "Activity, cooking and baking"
+  },
+  {
+   "code": "Y99.0",
+   "description": "Civilian activity done for income or pay"
+  }
+ ],
+ "dialogue": "[doctor] hey , {PATIENT_FIRST} , how's it going ? i'm doctor {DOCTOR_LAST} .\n[patient] hey . it's going , i guess . my hand is killing me .\n[doctor] yeah , let's talk about that . i see it's your right hand . what happened ?\n[patient] so i'm a line cook at {ORG} , the restaurant downtown . last night during the dinner rush i was working the saute station , cooking , and i had a cast iron skillet in the oven for a steak . i pulled it out with a towel , set it on the stove , and then like an idiot i grabbed the handle with my bare hand to move it .\n[doctor] oh , no .\n[patient] yeah . it had been in a five hundred degree oven . i let go right away but it was too late .\n[doctor] okay . so the skillet handle was right across your palm ?\n[patient] yeah , right across the palm , kind of from here to here .\n[doctor] okay . what did you do right after ?\n[patient] i ran it under cold water in the prep sink for like ten , fifteen minutes . my chef put some burn gel from the first aid kit on it and wrapped it . i finished the shift , which was probably dumb .\n[doctor] it happens a lot in kitchens . and how does it look today compared to last night ?\n[patient] it blistered overnight . there's a couple big blisters now , and one of them popped this morning .\n[doctor] okay . how's the pain ?\n[patient] it's like an eight when it's uncovered . the air hitting it really hurts .\n[doctor] okay , that actually tells me the nerve endings are still there , which is a good thing . any burns anywhere else ? your fingers , your wrist , your forearm ?\n[patient] no , just the palm . my fingers are okay .\n[doctor] okay . any trouble moving your fingers ?\n[patient] it hurts to make a fist because it stretches the skin , but i can move them .\n[doctor] okay . any fevers or chills ?\n[patient] no .\n[doctor] do you have any medical problems ? diabetes , anything ?\n[patient] no , i'm healthy . i do n't take any meds .\n[doctor] any allergies ?\n[patient] no .\n[doctor] tetanus up to date ?\n[patient] yeah , i got one last year .\n[doctor] okay , good . let me take a look . go ahead and open your hand for me . so , on your right palm there's a burn that runs across the palm , about six centimeters by two centimeters . there are two large blisters , one intact and one ruptured with a moist pink wound bed underneath . it blanches when i press , and you can feel me touching it ?\n[patient] yeah , definitely .\n[doctor] okay . so this is a superficial partial thickness burn , what we call a second degree burn , of the right palm . the fingers and the back of your hand are spared . i'd estimate it at less than one percent of your body surface area .\n[patient] okay . is it gonna scar ?\n[doctor] these usually heal in about two weeks without much scarring , as long as we keep it clean and it does n't get infected . the palm is a high function area , so we want to keep it moving and keep it from getting tight .\n[patient] okay .\n[doctor] so what i'm going to do today is debride the broken blister , clean it up , and leave the intact one alone for now . i'll put on silver sulfadiazine cream and a non-stick dressing with a bulky wrap . you'll change the dressing once a day .\n[patient] okay .\n[doctor] for pain , ibuprofen six hundred milligrams every six hours with food , and you can add tylenol in between . i'll give you a short course of something stronger for nighttime if you need it .\n[patient] the ibuprofen should be fine .\n[doctor] okay . for work , you ca n't be in the kitchen with an open burn on your hand . it's a food safety issue and it's an infection risk for you . so i'm writing you off work for one week , and then we'll recheck it .\n[patient] my chef is not gonna be happy , but okay .\n[doctor] i'll fill out the workers' comp form , since it happened at work . do you know the date it happened ?\n[patient] last night , so {DATE_SPOKEN} .\n[doctor] perfect . watch for spreading redness , pus , fever , or if the pain gets worse instead of better . and keep your fingers moving several times a day .\n[patient] will do . thanks , doc .\n[doctor] see you in a week .",
+ "note": "CHIEF COMPLAINT\n\nBurn to the right palm.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male with no significant past medical history who presents with a burn to the right palm sustained at work on {DATE_SPOKEN}.\n\nThe patient is employed at {ORG}. While cooking at the saute station in the restaurant kitchen during the dinner service, he grasped the handle of a cast iron skillet that had just been removed from a 500 degree oven with his bare right hand. He immediately released it and cooled the hand under running cold water for 10 to 15 minutes. Burn gel and a wrap were applied at work. Blisters developed overnight, one of which ruptured this morning. Pain is 8/10 when uncovered. He reports pain with fist formation due to skin stretch but full finger motion. No other burns. Denies fever or chills. Tetanus immunization within the past year. No medications. No known drug allergies.\n\nPHYSICAL EXAM\n\nSkin: Right palm with a 6 x 2 cm transverse burn. Two large bullae, one intact and one ruptured, with a moist pink blanching wound bed. Sensation intact to light touch. Digits, dorsal hand, and wrist spared. Less than 1% TBSA.\nMusculoskeletal: Full active range of motion of all digits with discomfort at end flexion.\n\nASSESSMENT AND PLAN\n\n1. Second degree burn of the right palm.\n• Medical Reasoning: Superficial partial thickness contact burn from a hot skillet handle while working in a restaurant kitchen. Small TBSA but functionally important location.\n• Medical Treatment: Ruptured bulla debrided and wound cleansed; intact bulla left in place. Silver sulfadiazine cream with non-adherent dressing and bulky wrap, changed daily. Ibuprofen 600 mg every 6 hours with food; Tylenol as needed.\n• Patient Education and Counseling: Finger range of motion exercises several times daily. Return precautions for signs of infection reviewed.\n• Work: Off work for 1 week given food handling and infection risk. Workers' compensation form completed.\n\nPatient Agreements: The patient understands and agrees with the recommended medical treatment plan.\n\nFollow up in 1 week for wound check.\n\n{DOCTOR_FIRST} {DOCTOR_LAST}, MD",
+ "medical_concepts": [
+  {
+   "text": "my hand is killing me",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "right hand",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "the restaurant",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "during the dinner rush i was working the saute station , cooking",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "cast iron skillet",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "in the oven",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "stove",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i grabbed the handle with my bare hand",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "five hundred degree oven",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "right across the palm",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "ran it under cold water",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "prep sink",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "burn gel",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "i finished the shift",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "kitchens",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it blistered overnight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "big blisters",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "one of them popped",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "like an eight",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "the air hitting it really hurts",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "nerve endings are still there",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "burns anywhere else",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fingers",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "wrist",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "forearm",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "just the palm",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "it hurts to make a fist",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fevers",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chills",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "diabetes",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "allergies",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "right palm",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "a burn that runs across the palm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "six centimeters by two centimeters",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "two large blisters , one intact and one ruptured",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "moist pink wound bed",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it blanches",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "superficial partial thickness burn",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "second degree burn , of the right palm",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "back of your hand are spared",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "less than one percent of your body surface area",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "scar",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "infected",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "debride the broken blister",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "silver sulfadiazine cream",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "non-stick dressing",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "bulky wrap",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen six hundred milligrams every six hours",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "off work",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "open burn",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "infection risk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "workers' comp",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it happened at work",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "spreading redness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pus",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "keep your fingers moving",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Burn to the right palm",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "burn to the right palm sustained at work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "While cooking at the saute station in the restaurant kitchen during the dinner service",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "he grasped the handle of a cast iron skillet",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "500 degree oven",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bare right hand",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "cooled the hand under running cold water",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Burn gel",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "applied at work",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Blisters developed overnight",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ruptured this morning",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Pain is 8/10",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain with fist formation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "full finger motion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No other burns",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chills",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tetanus immunization",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "No known drug allergies",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right palm",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "6 x 2 cm transverse burn",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Two large bullae, one intact and one ruptured",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "moist pink blanching wound bed",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Sensation intact to light touch",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Digits, dorsal hand, and wrist spared",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Less than 1% TBSA",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Full active range of motion of all digits",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "discomfort at end flexion",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Second degree burn of the right palm",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Superficial partial thickness contact burn",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "from a hot skillet handle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "while working in a restaurant kitchen",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Ruptured bulla debrided",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "wound cleansed",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Silver sulfadiazine cream",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "non-adherent dressing",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "bulky wrap",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen 600 mg every 6 hours",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Finger range of motion exercises",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "infection",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Off work",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "food handling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Workers' compensation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "wound check",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "my chef",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic workplace role (head chef), not a named person"
+  },
+  {
+   "text": "saute station",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "kitchen station; activity evidence for Y93.G3, not personal"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "T23.251A",
+   "spans": [
+    {
+     "text": "second degree burn , of the right palm",
+     "field": "dialogue"
+    },
+    {
+     "text": "superficial partial thickness burn",
+     "field": "dialogue"
+    },
+    {
+     "text": "two large blisters , one intact and one ruptured",
+     "field": "dialogue"
+    },
+    {
+     "text": "right palm",
+     "field": "dialogue"
+    },
+    {
+     "text": "Second degree burn of the right palm",
+     "field": "note"
+    },
+    {
+     "text": "Superficial partial thickness contact burn",
+     "field": "note"
+    },
+    {
+     "text": "Two large bullae, one intact and one ruptured",
+     "field": "note"
+    },
+    {
+     "text": "Right palm",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "X15.3XXA",
+   "spans": [
+    {
+     "text": "cast iron skillet",
+     "field": "dialogue"
+    },
+    {
+     "text": "i grabbed the handle with my bare hand",
+     "field": "dialogue"
+    },
+    {
+     "text": "five hundred degree oven",
+     "field": "dialogue"
+    },
+    {
+     "text": "he grasped the handle of a cast iron skillet",
+     "field": "note"
+    },
+    {
+     "text": "from a hot skillet handle",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.511",
+   "spans": [
+    {
+     "text": "the restaurant",
+     "field": "dialogue"
+    },
+    {
+     "text": "kitchens",
+     "field": "dialogue"
+    },
+    {
+     "text": "While cooking at the saute station in the restaurant kitchen during the dinner service",
+     "field": "note"
+    },
+    {
+     "text": "while working in a restaurant kitchen",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.G3",
+   "spans": [
+    {
+     "text": "during the dinner rush i was working the saute station , cooking",
+     "field": "dialogue"
+    },
+    {
+     "text": "While cooking at the saute station in the restaurant kitchen during the dinner service",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.0",
+   "spans": [
+    {
+     "text": "it happened at work",
+     "field": "dialogue"
+    },
+    {
+     "text": "i finished the shift",
+     "field": "dialogue"
+    },
+    {
+     "text": "workers' comp",
+     "field": "dialogue"
+    },
+    {
+     "text": "burn to the right palm sustained at work",
+     "field": "note"
+    },
+    {
+     "text": "while working in a restaurant kitchen",
+     "field": "note"
+    },
+    {
+     "text": "Workers' compensation",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm a line cook",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient's job; work status and place are supported by other spans"
+  },
+  {
+   "text": "downtown",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "part of town of the employer"
+  }
+ ]
+}

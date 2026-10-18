@@ -1,0 +1,567 @@
+{
+ "id": "G0037",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "age_range": [
+  45,
+  60
+ ],
+ "icd10_codes": [
+  {
+   "code": "S93.401A",
+   "description": "Sprain of unspecified ligament of right ankle, initial encounter"
+  },
+  {
+   "code": "W10.9XXA",
+   "description": "Fall (on) (from) unspecified stairs and steps, initial encounter"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i 'm doctor {DOCTOR_LAST} . what happened to your ankle ?\n[patient] hi , doctor {DOCTOR_LAST} . i fell down the basement stairs last night . i was carrying a box of old bottles and missed the last step . i rolled my right ankle .\n[doctor] oh no . did you hit your head or lose consciousness ?\n[patient] no , i grabbed the railing . i did n't hit anything else . just the ankle .\n[doctor] okay . are you able to put weight on it ?\n[patient] barely . it hurts to stand on it for more than a minute . i hobbled up here on the crutches the nurse gave me .\n[doctor] let me see . the ankle is swollen on the outside , and there is bruising along the side . does it hurt right here ?\n[patient] yes , right there , the outside bone . and a little bit up the back near the achilles tendon .\n[doctor] okay . i 'm pressing on the bone and it 's tender . no tenderness on the top of the foot . can you wiggle your toes ?\n[patient] yes . my toes are fine , i just ca n't push off .\n[doctor] your pulse is good and your toes are warm . let 's get an x-ray to rule out a fracture .\n[patient] okay .\n[doctor] what do you do for a living ? i want to know how much standing you do .\n[patient] i 'm a hairdresser . i 'm on my feet for ten hours a day at the salon , and i wear heels for the clients . i 'm going to be out of work at least two weeks .\n[doctor] that 's a real problem . i 'll write you a work note .\n[patient] thank you . my boss will not be happy , but i ca n't stand for the cut and color right now .\n[doctor] how about the basement stairs ? are they steep , and do they have a light ?\n[patient] they 're steep , and the light bulb is out . i keep meaning to fix it . that 's on me .\n[doctor] okay . we 'll talk about the stairs . do you take any medicines ?\n[patient] just my blood pressure pill , the lisinopril , and the ibuprofen when my back acts up .\n[doctor] okay . do you have a history of ankle injuries ?\n[patient] i twisted it playing volleyball in my church league years ago . it healed fine .\n[doctor] good . your x-ray is back . no fracture , just the soft tissue . the ligaments on the outside of the ankle are stretched . that is a sprain .\n[patient] so no cast ?\n[doctor] right , no cast . we 'll put you in a brace , use crutches for a few days , ice for twenty minutes at a time , and elevate it above your heart .\n[patient] okay . for how long ?\n[doctor] two to three weeks , then physical therapy if it is still swollen . come back if the toes turn blue or numb .\n[patient] okay . thank you , doctor {DOCTOR_LAST} .",
+ "note": "MRN: {MRN}\n\nCHIEF COMPLAINT\n\nRight ankle pain and swelling after a fall down basement stairs.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female who presents with right ankle pain after falling down the basement stairs the previous evening. While carrying a box, she missed the last step and rolled her right ankle, grabbing the railing to avoid a full fall. She denies head strike or loss of consciousness. She reports pain localized to the lateral malleolus and posterior ankle near the Achilles tendon. She is able to bear weight only briefly and ambulated with crutches provided by nursing staff. She reports a prior right ankle sprain from volleyball.\n\nSOCIAL HISTORY\n\nWorks as a hairdresser, standing about ten hours per day at a salon. Expects to miss at least two weeks of work. Plays volleyball in a church league. The basement stairs are steep and the light is nonfunctional.\n\nMEDICATIONS\n\nLisinopril daily. Ibuprofen as needed for back pain.\n\nPHYSICAL EXAM\n\nRight ankle with lateral swelling and ecchymosis. Tenderness over the distal fibula and the anterior talofibular ligament. Tenderness over the Achilles tendon insertion, with the posterior ankle otherwise nontender. No tenderness over the midfoot or fifth metatarsal base. Distal pulses intact. Capillary refill brisk. Toe movement intact. Able to dorsiflex and plantarflex with pain.\n\nRESULTS\n\nRight ankle radiographs: no fracture. Lateral ligamentous soft-tissue swelling.\n\nASSESSMENT AND PLAN\n\n1. Right ankle sprain of the lateral ligaments, initial encounter.\n\n2. Fall down stairs, initial encounter. Counseled on stair lighting and handrail use.\n\n3. Lace-up brace, crutches for several days, weight-bearing as tolerated. RICE protocol with acetaminophen as needed.\n\n4. Work restriction for two to three weeks. Physical therapy referral if swelling persists.\n\nReturn precautions reviewed, including toe numbness, color change, or inability to bear weight.",
+ "medical_concepts": [
+  {
+   "text": "fell down the basement stairs",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "missed the last step",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "rolled my right ankle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lose consciousness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "grabbed the railing",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "put weight on it",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "hurts to stand on it",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "crutches",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "swollen on the outside",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "bruising along the side",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the outside bone",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "achilles tendon",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "no tenderness on the top of the foot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i just ca n't push off",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "your pulse is good",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "toes are warm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "an x-ray",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "on my feet for ten hours a day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "wear heels",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "they 're steep",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the light bulb is out",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "my back acts up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "ankle injuries",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "twisted it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "soft tissue",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the ligaments on the outside of the ankle are stretched",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a sprain",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "a brace",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice for twenty minutes",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "elevate it above your heart",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "the toes turn blue or numb",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right ankle pain and swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fall down basement stairs",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "falling down the basement stairs",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "missed the last step",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "rolled her right ankle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "head strike",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "lateral malleolus",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Achilles tendon",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "bear weight only briefly",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "prior right ankle sprain",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "stairs are steep",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the light is nonfunctional",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lisinopril",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "lateral swelling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "ecchymosis",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness over the distal fibula",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "anterior talofibular ligament",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness over the Achilles tendon insertion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "midfoot",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "fifth metatarsal base",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "Distal pulses intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Capillary refill brisk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Toe movement intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "dorsiflex and plantarflex with pain",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right ankle radiographs",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "no fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Lateral ligamentous soft-tissue swelling",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right ankle sprain of the lateral ligaments",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Fall down stairs",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lace-up brace",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "crutches",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "RICE protocol",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Physical therapy referral",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "toe numbness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "inability to bear weight",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "achilles tendon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "anatomical structure named after a mythological figure, not a person"
+  },
+  {
+   "text": "Achilles tendon",
+   "field": "note",
+   "is_pii": false,
+   "comment": "anatomical structure named after a mythological figure, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S93.401A",
+   "spans": [
+    {
+     "text": "rolled my right ankle",
+     "field": "dialogue"
+    },
+    {
+     "text": "swollen on the outside",
+     "field": "dialogue"
+    },
+    {
+     "text": "Right ankle sprain of the lateral ligaments",
+     "field": "note"
+    },
+    {
+     "text": "Lateral ligamentous soft-tissue swelling",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W10.9XXA",
+   "spans": [
+    {
+     "text": "fell down the basement stairs",
+     "field": "dialogue"
+    },
+    {
+     "text": "missed the last step",
+     "field": "dialogue"
+    },
+    {
+     "text": "falling down the basement stairs",
+     "field": "note"
+    },
+    {
+     "text": "Fall down stairs",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i 'm a hairdresser",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "cut and color",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "specific service performed at work"
+  },
+  {
+   "text": "i twisted it playing volleyball in my church league years ago",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive recreational activity"
+  },
+  {
+   "text": "hairdresser",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "specific job"
+  },
+  {
+   "text": "Plays volleyball in a church league",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive recreational activity"
+  }
+ ],
+ "scenario": {
+  "specialty": "internal medicine",
+  "visit": "injury",
+  "length": "short",
+  "focus": [
+   "OCCUPATION",
+   "OTHER_QUASI",
+   "ID"
+  ]
+ }
+}

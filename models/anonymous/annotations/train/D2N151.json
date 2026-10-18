@@ -1,0 +1,21 @@
+{
+  "encounter_id": "D2N151",
+  "phi": [
+    {"text": "teresa", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "pottery", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "crafts"},
+    {"text": "pottery wheel", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "craft equipment"},
+    {"text": "parttery", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "crafts"},
+    {"text": "birthday", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "special occasion"},
+    {"text": "bak", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "cook"},
+    {"text": "baking", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "cooking"},
+    {"text": "ceramics", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "crafts"},
+    {"text": "southern living", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "lifestyle"},
+    {"text": "Teresa Sullivan", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "33-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "pottery wheel", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "craft equipment"},
+    {"text": "pottery", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "crafts"},
+    {"text": "ceramics", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "crafts"},
+    {"text": "baking", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "cooking"}
+  ],
+  "medical_concepts": []
+}

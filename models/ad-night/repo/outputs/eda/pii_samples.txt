@@ -1,0 +1,509 @@
+
+##### patient_first_name_greeting  (164 hits)
+  D2N129 virt dial L0 [-]: [doctor] «good afternoon , beverly» . good to see you . ⏎ [patient] nice to see yo
+  D2N138 virt dial L1 [-]: oday to use dax for documentation . ⏎ [doctor] «hi emily» , how are you ? ⏎ [patient] i'm pretty good , 
+  D2N010 virt dial L0 [-]: [doctor] «hi keith» , how are you ? ⏎ [patient] ah , not too good 
+  D2N085 aci dial L0 [-]: [doctor] «hi russell» how are you what's been going on ⏎ [patient] w
+  D2N171 virt dial L0 [-]: [doctor] «hi evelyn» , how are you ? ⏎ [patient] i'm good , how are
+  D2N163 aci dial L0 [-]: holesterolemia patient is here at the clinic «hi julie» how're you doing ⏎ [patient] i'm okay ⏎ [doctor]
+  D2N134 virt dial L0 [-]: ight to the front- . so when you touch that- «hi , michelle» , how are you ? ⏎ [patient] i'm good . how are
+  D2N095 virt dial L0 [-]: [doctor] «hi , cheryl» . how are you ? ⏎ [patient] i'm doing well . h
+  D2N161 aci dial L15 [-]:  trouble and no problem sleeping i do have a «good afternoon nap» ⏎ [doctor] good that's good you need to rest e
+  D2N120 aci dial L0 [-]: [doctor] «hello larry» how are you doing today ⏎ [patient] i've been 
+  D2N187 aci dial L0 [-]: [doctor] well «good morning emily» how are you ⏎ [patient] good morning ⏎ [doctor] 
+  D2N070 virt dial L0 [-]: [doctor] «hi logan» . how are you ? ⏎ [patient] hey , good to see 
+  D2N170 virt dial L0 [-]: [doctor] «hi joyce» , how are you ? ⏎ [patient] i'm good . how are
+  D2N039 aci note L- [ASSESSMENT A]: artery ultrasound ordered. Urine collection, «morning aldosterone» levels, renal levels, and a 24-hour urine we
+  D2N091 virt dial L0 [-]: [doctor] «hi jerry» , how are you doing ? ⏎ [patient] hi , good to
+  D2N027 virt dial L2 [-]: s at the high end of normal at 94 . ⏎ [doctor] «good morning , mr. walker» . how are you doing ? i mean , it's been a c
+  D2N202 aci dial L0 [-]: [doctor] «good morning sharon» how you doing ⏎ [patient] hi i'm i'm okay toda
+  D2N082 aci dial L3 [-]: ] you're ready just ⏎ [doctor] ready ⏎ [patient] «hi kyle» how are you today ⏎ [doctor] i'm doing well i'
+  D2N177 virt dial L0 [-]: [doctor] «hi bruce» , how are you ? ⏎ [patient] hey , good to see 
+  D2N194 aci dial L0 [-]: [doctor] «hey betty» how're you ⏎ [patient] i'm doing okay aside fr
+
+##### patient_name_intro  (314 hits)
+  D2N032 virt note L- [HISTORY OF P]: Right hip pain. ⏎  ⏎ HISTORY OF PRESENT ILLNESS ⏎  ⏎ «Elizabeth Reyes is a 56-year-old» female who presents for the evaluation of pa
+  D2N099 virt note L- [HISTORY OF P]: and rhinorrhea. ⏎  ⏎ HISTORY OF PRESENT ILLNESS ⏎  ⏎ «Randy Gutierrez is a 9-month-old» male who is being evaluated today for a coug
+  D2N022 virt dial L0 [-]: [doctor] «this is philip gutierrez» , date of birth 1/12/71 . he is a 50-year-ol
+  D2N016 virt dial L6 [-]:  about you . ⏎ [patient] absolutely . ⏎ [doctor] «edward is a 59 year old» male with a past medical history significant
+  D2N103 virt note L- [HISTORY OF P]: l valve repair. ⏎  ⏎ HISTORY OF PRESENT ILLNESS ⏎  ⏎ «Mrs. Melissa Sanchez is a 58-year»-old female being seen today for a status pos
+  D2N154 aci note L- [HISTORY OF P]: HISTORY OF PRESENT ILLNESS ⏎  ⏎ «Dennis Martin is a pleasant 46-year-old» male who presents to the clinic today for th
+  D2N182 virt dial L0 [-]: [doctor] . «next patient is michelle king» . date of birth : 05/07/1982 . please use to
+  D2N022 virt note L- [HISTORY OF P]: tension injury. ⏎  ⏎ HISTORY OF PRESENT ILLNESS ⏎  ⏎ «Ms. Philip Gutierrez is a pleasant 50-year»-old right-hand-dominant male here today for 
+  D2N109 aci dial L0 [-]: [doctor] so «stephanie morales is a 36 -year-old» female today complaining of her ankle pain a
+  D2N140 virt note L- [ASSESSMENT]: ds. ⏎  ⏎ ASSESSMENT ⏎  ⏎ • Irritable bowel syndrome ⏎  ⏎ «Brittany Edwards is a 32-year-old» established patient who returned today to di
+  D2N100 virt note L- [ASSESSMENT]: i of upper and lower extremities and trunk. ⏎  ⏎ «Kayla Ward is a 15-year-old» female seen today for new acne evaluation. F
+  D2N204 aci note L- [HISTORY OF P]: ht knee injury. ⏎  ⏎ HISTORY OF PRESENT ILLNESS ⏎  ⏎ «Joe Reed is a pleasant 42-year-old» male who presents to the clinic today for th
+  D2N069 virt note L- [HPI]: CC: ⏎  ⏎ Right knee pain. ⏎  ⏎ HPI: ⏎  ⏎ «Ms. Thompson is a 43-year»-old female who presents today for an evaluat
+  D2N178 virt note L- [HISTORY OF P]: scular disease. ⏎  ⏎ HISTORY OF PRESENT ILLNESS ⏎  ⏎ «Maria Martin is a 75-year-old» female who presents today for follow-up for 
+  D2N158 aci dial L0 [-]: [doctor] yeah so sorry «so barbara is a 31 -year-old» female and she has history of diabetes type 
+  D2N142 virt note L- [HISTORY OF P]: l use disorder. ⏎  ⏎ HISTORY OF PRESENT ILLNESS ⏎  ⏎ «Amanda Taylor is an 72-year-old» woman who presents for a follow-up for hyper
+  D2N173 virt dial L4 [-]: about you . okay ? ⏎ [patient] sure . ⏎ [doctor] «so logan is a 57-year-old» male , with a past medical history significa
+  D2N088 virt note L- [ASSESSMENT A]:  A1c is elevated at 8. ⏎  ⏎ ASSESSMENT AND PLAN ⏎  ⏎ «Andrew Campbell is a 59-year-old» male with a past medical history significant
+  D2N013 virt note L- [HISTORY OF P]:  ⏎ Abnormal labs. ⏎  ⏎ HISTORY OF PRESENT ILLNESS ⏎  ⏎ «John Brooks is a 55-year-old» male with a past medical history significant
+  D2N177 virt note L- [ASSESSMENT]: n elevated hemoglobin A1c of 8. ⏎  ⏎ ASSESSMENT ⏎  ⏎ «Bruce Howard is a 60-year-old» male with a past medical history significant
+
+##### title_plus_name  (288 hits)
+  D2N005 virt note L- [HPI]: CC: ⏎  ⏎ Right middle finger pain. ⏎  ⏎ HPI: ⏎  ⏎ «Ms. Hill» is a 41-year-old female who presents today f
+  D2N026 virt dial L2 [-]: rning . ⏎ [doctor] it's nice to meet you . i'm «dr. miller» . ⏎ [patient] it's nice to meet you as well . ⏎ 
+  D2N138 virt note L- [HISTORY OF P]: tory infections and as a child a few times. ⏎  ⏎ «Mrs. Hernandez» uses Zyrtec during the spring and fall but d
+  D2N002 virt dial L26 [-]: e you doing with that ? i know that you told «dr. gutierrez»- ⏎ [patient] mm . ⏎ [doctor] . a couple of weeks
+  D2N168 virt note L- [ASSESSMENT]:  fraction. Stable heart murmur. ⏎  ⏎ ASSESSMENT ⏎  ⏎ «Ms. Diane» Baker is a 28-year-old female with a past me
+  D2N103 virt note L- [ASSESSMENT]: SESSMENT ⏎  ⏎ • Status post mitral valve repair ⏎  ⏎ «Mrs. Melissa» Sanchez is a 58-year-old female being seen t
+  D2N076 virt dial L2 [-]: r] hello . ⏎ [patient_guest] hi . ⏎ [doctor] i'm «dr. evelyn» , one of the kidney doctors . it's good to m
+  D2N103 virt dial L44 [-]: t , thank you . it was good to see you again «dr. hughes» . ⏎ [doctor] you as well ms. sanchez , do take
+  D2N021 virt note L- [HISTORY OF P]: ried filling both prescriptions at Walmart. ⏎  ⏎ «Mrs. Hernandez» still presents with abnormal weight gain. Sh
+  D2N070 virt note L- [HISTORY OF P]: he most part. ⏎  ⏎ Regarding his osteoarthritis, «Mr. Walker» reports occasional aggravation of his knee w
+  D2N074 virt dial L2 [-]: alities are lo- are noted . ⏎ [doctor] hello , «mr . ward» . nice to meet you . i'm dr. flores . ⏎ [patie
+  D2N075 virt dial L0 [-]: o go in and see her now . good morning . you «miss hill» ? ⏎ [patient] good morning . yes . that's me .
+  D2N030 virt note L- [HISTORY OF P]: ot manage her symptoms and sought treatment. «Dr. Brown» started the patient on Buspar, which has suc
+  D2N189 aci dial L31 [-]: atient] do you think that i can swim again i «miss swimming» ⏎ [doctor] yeah so at this point you're you kn
+  D2N141 virt note L- [ASSESSMENT]: inence and urgency. ⏎ • Cognitive impairment. ⏎  ⏎ «Mr. Watson» has made some improvement with his hydroceph
+  D2N025 virt dial L60 [-]:  or for the colonoscopy . we can send you to «dr. martin» for the surgery who is at county surgical se
+  D2N023 virt note L- [HISTORY OF P]:  ⏎  ⏎ Hypogonadism. ⏎  ⏎ HISTORY OF PRESENT ILLNESS ⏎  ⏎ «Mr. Paul» Edwards is a 59-year-old male, an establishe
+  D2N103 virt dial L2 [-]:  . ⏎ [patient] yeah , it's good seeing you too «dr. hughes» . you look like you're doing well . ⏎ [doctor]
+  D2N179 virt dial L2 [-]:  are you doing this morning ? ⏎ [patient] hi , «dr. martinez» . this weekend was a bit rough . i've had th
+  D2N157 aci note L- [ASSESSMENT A]: nt: He will follow up with his nephrologist, «Dr. Miller». ⏎  ⏎ 3. Diabetes. ⏎ - Medical Reasoning: Patient 
+
+##### doctor_staff_name  (85 hits)
+  D2N027 virt note L- [HISTORY OF P]: -op, he has requested an echocardiogram from «Dr. Lewis» to review how he is doing currently. His las
+  D2N075 virt dial L2 [-]: rning . yes . that's me . ⏎ [doctor] hey , i'm «dr. sanders» . it's nice to meet you . ⏎ [patient] nice to 
+  D2N178 virt note L- [HISTORY OF P]: ye exams are up to date and she follows with «Dr. Sanchez» at Optimum Optometrists. She recently underw
+  D2N074 virt note L- [HISTORY OF P]: ient presented to his primary care provider, «Dr. Howard», on 03/01/2021 complaining of worsening head
+  D2N028 virt dial L3 [-]: tient] yes , i am . ⏎ [doctor] hi . my name is «dr. edwards» . nice to meet you . ⏎ [patient] nice to meet 
+  D2N198 aci dial L41 [-]: doctor] okay ⏎ [patient] sometimes you know my «doctor knows» what he is doing strep everyday strep everyd
+  D2N090 virt note L- [HISTORY OF P]: n and following orders. The last time he saw «Dr. Reyes» was about 3 weeks ago and everything seemed 
+  D2N178 virt dial L35 [-]: i used to see a year ago . ⏎ [doctor] was that «dr. sanchez» ? ⏎ [patient] yeah . ⏎ [doctor] okay . and you s
+  D2N069 virt dial L0 [-]: [doctor] hi , ms. thompson . i'm «dr. moore» . how are you ? ⏎ [patient] hi , dr. moore . ⏎ [
+  D2N197 aci dial L32 [-]: t you to actually come in and and be seen by «doctor ruth» so first off your headache i think taking ty
+  D2N074 virt note L- [HISTORY OF P]: nt is seen in consultation at the request of «Dr. Henry» Howard for possible surgical intervention. ⏎  ⏎ 
+  D2N117 aci dial L42 [-]: dder out what about ten years ago i think by «doctor nelson» correct ⏎ [patient] yes that's right ⏎ [doctor] 
+  D2N027 virt dial L15 [-]: year , so i just want to make sure . i asked «dr. lewis» for an echocardiogram to see how i'm doing .
+  D2N101 virt dial L0 [-]: sult . hello , how are you doing today ? i'm «dr. gonzalez» . it's nice to meet you . ⏎ [patient] nice to 
+  D2N090 virt dial L30 [-]: nd , and y- the last time i saw that you saw «dr. reyes» , was about three weeks ago , and everything
+  D2N073 virt dial L57 [-]: olonoscopy . uh , we will send a referral to «dr. flores» who is is the hematologist , so schedule tha
+  D2N197 aci note L- [INSTRUCTIONS]: t will return for follow-up to see myself or «Dr. Ruth» to review her lab work and further treatment
+  D2N047 aci dial L20 [-]: th your heart when was the last time you saw «doctor moore» the cardiologist i know that you had the the
+  D2N047 aci note L- [SURGICAL HIS]: ht coronary arter stent placement in 2018 by «Dr. Moore». ⏎  ⏎ SOCIAL HISTORY ⏎  ⏎ Patient reports that he tr
+  D2N157 aci dial L48 [-]: onic kidney disease i am gon na reach out to «doctor miller» and make an appointment for you to be seen j
+
+##### relative_or_friend  (462 hits)
+  D2N027 virt dial L11 [-]: ah , i understand . ⏎ [patient] and tyler's my «buddy» . he's always nice and waits for me , but i 
+  D2N143 virt note L- [PLAN]:  past and the recent discovery of her sexual «partner» having multiple partners for some period of 
+  D2N161 aci dial L5 [-]: good and i want to eat them when i'm with my «friends» ⏎ [doctor] man i know i i totally understand i
+  D2N056 aci dial L16 [-]: u said you were trying to like help out your «brother» like what's going on with him ⏎ [doctor] you k
+  D2N101 virt dial L34 [-]: ou had any mammograms ? and how old was your «mother» when she had it ? ⏎ [patient] mom was 40 . and
+  D2N029 virt note L- [HISTORY OF P]: esion was initially noticed by the patient’s «mother» when she was visiting her last month. Mrs. J
+  D2N030 virt dial L70 [-]: 'm just worried because i'm almost 40 and my «mom» was almost 45 when she was diagnosed with br
+  D2N163 aci dial L40 [-]:  my apartment ⏎ [doctor] okay you know if your «friends» come over if they smoke too or what okay ⏎ [pa
+  D2N181 virt note L- [FAMILY HISTO]: ks as a paralegal. ⏎  ⏎ FAMILY HISTORY ⏎  ⏎ Maternal «grandmother» with esophageal cancer. ⏎  ⏎ CURRENT MEDICATIONS
+  D2N037 aci note L- [SOCIAL HISTO]: ll, and football. ⏎  ⏎ He is expecting a newborn «baby» in the near future. ⏎  ⏎ MEDICATIONS ⏎  ⏎ The patien
+  D2N201 aci note L- [FAMILY HISTO]: ly. ⏎  ⏎ FAMILY HISTORY ⏎  ⏎ Patient reports his 4th «cousin» has scoliosis. ⏎  ⏎ REVIEW OF SYSTEMS ⏎  ⏎ Genitouri
+  D2N041 aci dial L43 [-]:  to be sure i was okay because of the little «kids» ⏎ [doctor] sure now for your next problem of y
+  D2N027 virt dial L24 [-]: o bike 30 miles and mostly keep up with your «friend» , tyler , correct ? ⏎ [patient] yeah . the onl
+  D2N198 aci dial L38 [-]:  might have to have a conversation with your «brother» and anybody else but it's good to know that 
+  D2N030 virt dial L44 [-]: e vaccine fight every day at home because my «husband» is n't ready to get it . same with my daught
+  D2N205 aci note L- [SOCIAL HISTO]: long walks with her doberman. She states her «husband» is her support system and has been helpful w
+  D2N166 aci note L- [FAMILY HISTO]:  ⏎ FAMILY HISTORY ⏎  ⏎ The patient states that his «father» has back pain. ⏎  ⏎ REVIEW OF SYSTEMS ⏎  ⏎ Musculosk
+  D2N193 aci dial L40 [-]: her than that other than being sick for your «sister» how is everyone going ⏎ [patient] everyone's d
+  D2N119 aci dial L30 [-]: ou you have trouble when you go over to your «aunt»'s house because of your cat now i see here t
+  D2N163 aci dial L45 [-]: my my grandparents told me that that i had a «cousin» that died and and he was only like forty fou
+
+##### named_relative_or_friend  (9 hits)
+  D2N141 virt note L- [HISTORY OF P]: unt surgery 08/01/2020. He is accompanied by «his daughter, Theresa», together they give his history. ⏎  ⏎ I have fol
+  D2N141 virt dial L3 [-]: ith you today ? ⏎ [patient] hi , doc . this is «my daughter , theresa» . she is the one who helps me keep things st
+  D2N182 virt dial L80 [-]: the virus can do . i also have gotten all of «my kids vaccinated» . ⏎ [patient] okay . ⏎ [doctor] so i'm not conce
+  D2N035 aci dial L1 [-]: so i just really got to feeling bad i called «my friend diane» and she said i probably ought to call nine o
+  D2N141 virt dial L17 [-]: ymore . ⏎ [patient_guest] dad and i both think «my sister , hannah» , summarized it best . she said " i feel lik
+  D2N124 aci dial L1 [-]: appened ⏎ [patient] hey doctor michael yeah so «my son sean» i think you met in the past he he started pl
+  D2N076 virt note L- [HISTORY OF P]: nd water mixed with a small amount of juice. «Her twin sister» is approximately the same size, and their we
+  D2N185 virt dial L37 [-]: nal disease does run in my family , though . «my dad , aunt» , and my cousins all have issues with their 
+  D2N027 virt dial L24 [-]: ble to bike 30 miles and mostly keep up with «your friend , tyler» , correct ? ⏎ [patient] yeah . the only other 
+
+##### dob  (33 hits)
+  D2N183 virt dial L0 [-]: doctor] all right . this is matthew rogers . «date of birth» 5/24/2007 . i would like to use the acne fol
+  D2N141 virt dial L0 [-]:  so our next patient is christopher watson . «date of birth» 04/12/1934 . mr . watson is- is an 86-year-o
+  D2N023 virt dial L0 [-]: [doctor] next patient is paul edwards , «date of birth» is january 15th 1962 . so he's a 59 year old
+  D2N074 virt dial L0 [-]: [doctor] patient , bruce ward . «date of birth» 5/21/1969 . please use my neuro consult temp
+  D2N105 virt dial L0 [-]: [doctor] patient's name is diana scott . «date of birth» , 12/8/1920 . the date of service is 7/9/202
+  D2N025 virt dial L0 [-]: [doctor] next patient is nicole miller . «date of birth» is 09/18/1949 . patient was called for a fol
+  D2N101 virt dial L0 [-]: [doctor] patient is julia jones , «date of birth» 5/16/1996 . she is a new breast reduction co
+  D2N104 virt dial L0 [-]: [doctor] judy gomez , mrn 869723 . «date of birth» , 5 , 7 , 1961 . she's in office today for o
+  D2N138 virt dial L0 [-]: [doctor] next patient is emily hernandez . «date of birth» , march 26 2001 . this is a 20 year old fema
+  D2N181 virt dial L0 [-]: [doctor] michelle king , «date of birth» 01/05/1986 , mrnq27631 . new patient visit f
+  D2N028 virt dial L0 [-]: [doctor] patrick allen . «date of birth» : 7/7/1977 . new patient visit . past medica
+  D2N030 virt dial L0 [-]: [doctor] donna torres , «date of birth» , 08/01/1980 . ⏎ [doctor] hi donna ! how are y
+  D2N021 virt dial L0 [-]: ] next patient is christine hernandez , uh , «date of birth» is january 13th , 1982 . ⏎ [doctor] hey , miss
+  D2N031 virt dial L0 [-]: [doctor] sophia brown . «date of birth» , 3/17/1946 . this is a new patient visit . 
+  D2N179 virt dial L0 [-]: [doctor] patient mrn : abc123 . «date of birth» : january 1st , 1960 . patient is a 60 year 
+  D2N139 virt dial L0 [-]: ] all right , new patient , jordan roberts . «date of birth» : 3/2/1972 . he's a 49 year old , uh hm , wi
+  D2N075 virt dial L0 [-]: [doctor] next is betty hill , uh , «date of birth» is 2/21/1968 . she has a past medical histor
+  D2N027 virt dial L0 [-]: [doctor] eugene walker , n- «date of birth» 4/14/1960 . he's a 61-year-old male who pres
+  D2N178 virt dial L0 [-]: [doctor] okay . maria martin , «date of birth» 03/05/1946 , has been informed and consents 
+  D2N185 virt dial L0 [-]: octor] okay . next patient is ashley james , «date of birth» 12/27/2006 . ashley is a 14-year-old female 
+
+##### birthday_mention  (9 hits)
+  D2N043 aci dial L23 [-]: nt] yeah you know next monday is actually my «birthday» so i think that's a good day ⏎ [doctor] that's
+  D2N043 aci dial L24 [-]: ay ⏎ [doctor] that's a fantastic day and happy «birthday» coming up on monday ⏎ [patient] thank you ⏎ [doc
+  D2N132 virt dial L30 [-]: y to your back when you were twisting at the «birthday» party . you do n't really have any pain or n
+  D2N132 virt note L- [HPI]: uation of back pain. She states she was at a «birthday» party and she ran her back into the railing 
+  D2N132 virt dial L3 [-]: happened to you ? ⏎ [patient] yes . i was at a «birthday» party and it was surprise party . so we were
+  D2N151 aci dial L3 [-]: i've been i love my pottery and for my son's «birthday» i've been making a a ceramic bowl and i'm go
+  D2N043 aci note L- [ASSESSMENT A]: edical Treatment: The patient has chosen his «birthday», as a quit date. On that day, I am going to 
+  D2N097 virt dial L7 [-]:  able to see my grandkids again , go to more «birthday» parties , it's been fantastic . ⏎ [doctor] yea
+  D2N097 virt note L- [HISTORY OF P]: le to see her grandchildren again and attend «birthday» parties. ⏎  ⏎ Regarding her depression, she has 
+
+##### exact_age  (343 hits)
+  D2N024 virt note L- [ASSESSMENT]: ral reduction mammoplasty. ⏎  ⏎ Pamela Cook is a «36-year-old» female who is status post bilateral reductio
+  D2N185 virt dial L92 [-]: ote earlier . ⏎ [doctor] okay . yeah . he died «in his 40s» , but i thought it was from a massive heart 
+  D2N064 aci note L- [HISTORY OF P]: RESENT ILLNESS ⏎  ⏎ Matthew Murphy is a pleasant «20-year-old» male who presents to the clinic today for th
+  D2N180 virt dial L0 [-]:  birth 5/4/1961 . mrn 0000123 . patient is a «60 year old» right-handed female new patient referred by 
+  D2N174 virt dial L4 [-]: t you . ⏎ [patient] sure . ⏎ [doctor] james is a «57 year old» male with a past medical history significant
+  D2N024 virt dial L0 [-]:  . medical record number is 123546 . she's a «36-year-old» female post bilateral reduction mammoplasty 
+  D2N120 aci note L- [HISTORY OF P]:  PRESENT ILLNESS ⏎  ⏎ Larry Garcia is a pleasant «41-year-old» male who presents to the clinic today for th
+  D2N017 virt dial L4 [-]: . i'm seeing mrs . peterson , here , she's a «43-year-old» patient . she's here for left leg pain . rig
+  D2N108 aci note L- [HISTORY OF P]: ENT ILLNESS ⏎  ⏎ Gregory Hernandez is a pleasant «40-year-old» male who presents to the clinic today for th
+  D2N023 virt dial L0 [-]: te of birth is january 15th 1962 . so he's a «59 year old» hiv positive gentleman here for hypogonadism
+  D2N007 virt note L- [HISTORY OF P]: HISTORY OF PRESENT ILLNESS ⏎  ⏎ The patient is a «27-year-old» female who presents for her annual visit. Th
+  D2N004 virt note L- [ASSESSMENT A]: at 8. ⏎  ⏎ ASSESSMENT AND PLAN ⏎  ⏎ James Allen is a «57-year-old» male with a past medical history significant
+  D2N066 aci dial L2 [-]: [patient] sure ⏎ [doctor] okay so gabriel is a «43 -year-old» male today here for back pain evaluation and
+  D2N062 aci note L- [HISTORY OF P]: RESENT ILLNESS ⏎  ⏎ Raymond Taylor is a pleasant «67-year-old» male who presents to the clinic today for di
+  D2N140 virt note L- [ASSESSMENT]: itable bowel syndrome ⏎  ⏎ Brittany Edwards is a «32-year-old» established patient who returned today to di
+  D2N069 virt note L- [HPI]: : ⏎  ⏎ Right knee pain. ⏎  ⏎ HPI: ⏎  ⏎ Ms. Thompson is a «43-year-old» female who presents today for an evaluation 
+  D2N011 virt note L- [ASSESSMENT A]: tion. ⏎  ⏎ ASSESSMENT AND PLAN ⏎  ⏎ The patient is a «62-year-old» male who presents for emergency room follow-
+  D2N168 virt note L- [ASSESSMENT]: rt murmur. ⏎  ⏎ ASSESSMENT ⏎  ⏎ Ms. Diane Baker is a «28-year-old» female with a past medical history significa
+  D2N130 virt note L- [HISTORY OF P]: HISTORY OF PRESENT ILLNESS ⏎  ⏎ The patient is a «26-year-old» female with a past medical history significa
+  D2N184 virt dial L0 [-]: nie morales , medical record number 113322 . «44-year-old» female that presents today six weeks status 
+
+##### absolute_date  (202 hits)
+  D2N025 virt note L- [RESULTS]:  WNL, potassium 3.9, creatinine 0.7, BUN 23. ⏎ «03/2020» Hgb A1c 5.5. ⏎  ⏎ ASSESSMENT ⏎  ⏎ • Chronic congesti
+  D2N031 virt note L- [HISTORY OF P]: e patient underwent a screening mammogram in «10/2019» and was found to have a calcification in the
+  D2N025 virt dial L5 [-]: ot be good . ⏎ [doctor] i see you're scheduled «on the 24th» for surgery . ⏎ [patient] yeah , that's right 
+  D2N031 virt dial L0 [-]: [doctor] sophia brown . date of birth , «3/17/1946» . this is a new patient visit . she's here t
+  D2N025 virt note L- [HISTORY OF P]: stolic dysfunction. Her BNP had been 3000 in «03/2021», up to 6000 in 04/2021. She was increasingly
+  D2N142 virt note L- [ASSESSMENT]:  mild hypercholesterolemia. At last visit on «April 16», BP was 130/90. After presenting at 150/100 
+  D2N032 virt dial L100 [-]: graphs , mr arthrogram of the right hip done «june 3rd 2021» show high grade condromalacia involving the 
+  D2N073 virt dial L0 [-]: eing christina cooper . her date of birth is «07/01/1954» . uh , ms. cooper is a new patient who was r
+  D2N077 aci note L- [HISTORY OF P]: ent sustained this injury yesterday morning, «05/12/2022», when she slipped on the stairs while carryi
+  D2N029 virt dial L7 [-]: ee . and so you went to the dermatologist on «april 10th» to get it checked out , right ? ⏎ [patient] ye
+  D2N024 virt note L- [ASSESSMENT]: atus post bilateral reduction mammaplasty on «10/10/2020». There is some widening of the scar tissue b
+  D2N105 virt dial L0 [-]: ient's name is diana scott . date of birth , «12/8/1920» . the date of service is 7/9/2021 . this is 
+  D2N103 virt dial L0 [-]: patient is melissa sanchez . date of birth , «9/23/1962» . mrn : 5484367 . she is being seen in offic
+  D2N023 virt dial L30 [-]: and i took my first dose of the testosterone «on the 28th» . ⏎ [doctor] right . ⏎ [patient] now 5 months la
+  D2N141 virt note L- [HISTORY OF P]: ephalus with the spinal catheter protocol in «June 2020» and he underwent shunt surgery on 08/01/2020
+  D2N180 virt note L- [RESULTS]: RESULTS ⏎  ⏎ CT brain with and without contrast, «02/05/2021» ⏎ Impression: No metastatic disease. No acute 
+  D2N074 virt dial L1 [-]: vered . i personally reviewed the labs dated «3/3/21» including cbc , unes , uh , coagulation , an
+  D2N030 virt note L- [HISTORY OF P]:  results. She did have an abnormal pap smear «in 2009», which resulted in repeat pap smears per 6 m
+  D2N073 virt dial L61 [-]:  diagnosed with iron deficiency anemia in 12-«2019» , and w- and was unable to donate blood . um
+  D2N183 virt dial L0 [-]: for an acne follow-up . at the last visit on «3/3/21» he was prescribed the following : clindamyci
+
+##### month_or_season_or_holiday  (212 hits)
+  D2N129 virt note L- [HISTORY OF P]:  has recently began working at a bakery this «summer». ⏎  ⏎ The patient states her diabetes is uncontr
+  D2N139 virt note L- [HISTORY OF P]: on and an acute episode of palpitations. ⏎  ⏎ In «March», Mr. Roberts went to the emergency room for 
+  D2N025 virt note L- [PLAN]: edule a preop check the first week or two of «June» prior to the surgery. She will discontinue c
+  D2N177 virt dial L16 [-]: t do you have to look forward for like , the «new year» and that type of thing . are you- more gathe
+  D2N172 virt dial L6 [-]:  it's been a , a pretty stressful winter and «spring» . and , uh , we've been onboarding a couple 
+  D2N030 virt dial L16 [-]: patient] yeah . and before , in november and «december» , i noticed that the week before my period ,
+  D2N190 aci dial L92 [-]: y rarely is this gon na need surgery okay so «this may» be something we wan na get you into a brace 
+  D2N021 virt dial L76 [-]: out 128 . ⏎ [patient] okay , and , and back in «october» was 254 . ⏎ [doctor] yeah , this is much bette
+  D2N193 aci dial L17 [-]: ny seasonal allergies ⏎ [patient] right around «spring» time i get a little bit of sneezing and the 
+  D2N172 virt dial L8 [-]:  , and on ... you know , at the beach in the «summer» , so the diet is off the charts . ⏎ [doctor] o
+  D2N025 virt dial L70 [-]: she's having a right knee replacement end of «june» . also , she would like to have a colonoscop
+  D2N025 virt note L- [HISTORY OF P]: ested in having her right knee replaced this «summer» at East Metropolitan Hospital, so it was rec
+  D2N071 virt note L- [HISTORY OF P]: tle stressful and chaotic in the heat of the «summer». ⏎  ⏎ Regarding his depression, he reports that 
+  D2N138 virt dial L45 [-]: ay recently since you're right in the mix of «spring» ? ⏎ [patient] not every day , but i do take it
+  D2N031 virt dial L68 [-]: r , but you should have another mammogram in «april» of 2022 before you come back to see me . ⏎ [pa
+  D2N025 virt dial L0 [-]: aily in march . also did when i saw her last «april» . she reported being interested in having he
+  D2N141 virt note L- [HISTORY OF P]: ive his history. ⏎  ⏎ I have followed Mr. Watson «since May» 2020. He presented with 8-10 years of progre
+  D2N124 aci dial L1 [-]:  ready for the next season that starts in in «april» and we were at the courts plan and i went up
+  D2N165 aci dial L15 [-]:  you know i will do the treadmill during the «winter» but i just love being outdoors and running ⏎ [
+  D2N025 virt note L- [INSTRUCTIONS]:  Schedule a preop checkup 1st or 2nd week of «June». Start magnesium supplement. Call the clinic
+
+##### weekday  (59 hits)
+  D2N002 virt dial L15 [-]: cising and things like that ? ⏎ [patient] uh , «saturday» night it actually kept me up for a bit . the
+  D2N070 virt dial L19 [-]: ling in my toes on my right foot until about «sunday» afternoon . and then that seemed to go away 
+  D2N093 virt dial L21 [-]:  i stay on top of that . but on saturdays or «sundays» we're so busy i forget to monitor it . but i
+  D2N060 aci dial L22 [-]: on your paperwork and then i will see you on «monday» morning and we will get your foot taken care
+  D2N088 virt dial L23 [-]:  during the week . uh , not so , uh , if its «saturday» or sunday i usually don't remember . uh , th
+  D2N070 virt note L- [HISTORY OF P]: n his toes on his right foot, which resolved «Sunday» afternoon. He finds it difficult to find a c
+  D2N036 aci dial L21 [-]: drink usually a a beer or two on fridays and «saturdays» on the weekends ⏎ [doctor] okay and do you hav
+  D2N088 virt note L- [HISTORY OF P]: k, but is not as consistent on Saturdays and «Sundays». His diet has been pretty good for the most 
+  D2N043 aci dial L26 [-]:  i i think it's fantastic you've chosen next «monday» as a quit date and on that day i'm gon na st
+  D2N055 aci dial L15 [-]: patient] yeah dad dad takes me to play every «saturday» ⏎ [doctor] okay ⏎ [patient] it's it's pretty fun
+  D2N093 virt dial L21 [-]: orking week , i stay on top of that . but on «saturdays» or sundays we're so busy i forget to monitor
+  D2N027 virt note L- [HISTORY OF P]: ntal procedures and vitamin D3 (50,000 IU on «Sundays» and 2000 IU the other 6 days). ⏎  ⏎ From a preve
+  D2N014 virt dial L15 [-]: fine ? ⏎ [patient] that was three months ago , «thursday» , and everything's been fine ever since . ⏎ [d
+  D2N072 virt note L- [HPI]: ht finger pain. She states she was skiing on «Sunday» and hyperextended her finger when it became 
+  D2N094 virt dial L6 [-]: what . ⏎ [doctor] okay . so this happened last «saturday» , you said ? ⏎ [patient] it was saturday , yes
+  D2N204 aci dial L5 [-]: [patient] it it occurred over the weekend on «saturday» ⏎ [doctor] and have you been able to to walk a
+  D2N070 virt dial L12 [-]: is was- what , so today's tuesday . this was «saturday» morning . ⏎ [doctor] okay , all right . ⏎ [docto
+  D2N005 virt dial L8 [-]: when did this happen ? ⏎ [patient] uh , it was «saturday» , so about four , five days ago . ⏎ [doctor] f
+  D2N043 aci dial L24 [-]: antastic day and happy birthday coming up on «monday» ⏎ [patient] thank you ⏎ [doctor] so let's talk a
+  D2N004 virt dial L13 [-]: ong ago did this happen ? ⏎ [patient] this was «saturday» morning . ⏎ [doctor] okay . so , about four da
+
+##### relative_date  (1519 hits)
+  D2N150 aci dial L1 [-]:  to go out and play some pickup soccer games «over the weekend» and went to go plank kick the ball and and j
+  D2N081 aci dial L32 [-]: doctor] okay alright so i'll see you at your «next visit» ⏎ [patient] great thank you ⏎ [doctor] you're we
+  D2N040 aci dial L11 [-]: at ⏎ [patient] i've been under a lot of stress «lately» so maybe about when some stress started occu
+  D2N069 virt note L- [HPI]: she stumbled and caught herself from falling «yesterday». She has been applying ice and taking Ibupro
+  D2N135 virt dial L23 [-]: n . have you felt your heart racing at all , «recently» ? ⏎ [patient] only when i'm really anxious . i
+  D2N100 virt note L- [HISTORY OF P]: mother today. ⏎  ⏎ Kayla states her acne started «approximately 2 years ago» and it is present almost every day. The pati
+  D2N169 virt dial L10 [-]: ut , uh , it , it eventually went away after «about an hour» . ⏎ [doctor] okay , um , and anyone else sick 
+  D2N083 aci note L- [PLAN]:  with food for a full week and ice the elbow «for 20 minutes», 3 times daily. Finally, I advised the patie
+  D2N190 aci dial L43 [-]: about a dime size little abrasions dry looks «about a week» week old right over the medial patella every
+  D2N101 virt note L- [HISTORY OF P]: neck pain has been managed by a chiropractor «for a few years». She reports weight loss of 10 pounds over t
+  D2N163 aci dial L31 [-]: sure that that i i feel okay and i i decided «about two years ago» that i i do n't feel much like a girl i it's
+  D2N174 virt dial L28 [-]: [patient] no , nothing , not at least in the «last year» or so . ⏎ [doctor] okay . i think we , we migh
+  D2N171 virt dial L17 [-]: th , nausea or vomiting ? ⏎ [patient] over the «last month» i've been having a bit of chest pain , but i
+  D2N039 aci note L- [SOCIAL HISTO]:  during the week and approximately 1 to 2 on «the weekend». She is employed. ⏎  ⏎ FAMILY HISTORY ⏎  ⏎ Patient r
+  D2N200 aci dial L22 [-]: olic ejection murmur now that was also there «last year» so it has n't changed any so we'll just keep
+  D2N089 virt note L- [HISTORY OF P]: ave not been helpful. The patient had called «last month» and had an event monitor done. ⏎  ⏎ Regarding he
+  D2N108 aci dial L28 [-]: t you a shoe where you can wear that for the «next month» you know we just wan na make sure that it do
+  D2N114 aci note L- [HISTORY OF P]: rts intermittent ringing in her ears for the «last few months». Additionally, she reports intermittent blur
+  D2N180 virt dial L1 [-]: doctor] hello ms. taylor . how are you doing «this morning» ? ⏎ [patient] hi dr . lopez . this weekend was
+  D2N024 virt note L- [HISTORY OF P]: . The left breast lower incisional lump from «last visit» has resolved with massaging and use of scar 
+
+##### clock_time  (6 hits)
+  D2N026 virt note L- [HISTORY OF P]: an approximately 2 weeks ago. He woke around «2:00 am» with intense pain in his left arm and hand. 
+  D2N172 virt dial L20 [-]: but, uh, i'll, i'll usually wake up at about «5:00 »in the morning . ⏎ [doctor] okay . ⏎ [patient] wh
+  D2N027 virt dial L31 [-]:  i get out of bed some days to be at work by «7:00» , lecture , and i try to work out in the mor
+  D2N027 virt dial L31 [-]: i- i do make reservations twice a week for a «5:45 »swim in the morning . ⏎ [doctor] okay , so you'
+  D2N138 virt dial L88 [-]: ou found out that you're getting ⏎ [ inaudible «00:09:25» ] sick having issues every month , then that
+  D2N172 virt note L- [HISTORY OF P]: ing okay at night, occasionally waking up at «5 a.m». Denies thoughts of self-harm or suicidal id
+
+##### time_of_day_phrase  (187 hits)
+  D2N074 virt dial L9 [-]: severity . the headaches do tend to be worse «in the morning» and it feels like a dull ache behind the eye
+  D2N073 virt dial L28 [-]: te ? ⏎ [patient] yeah , that's it . i take one «in the morning» and one in the evening . ⏎ [doctor] okay . any
+  D2N178 virt dial L85 [-]: m-hmm . how many times do you have to get up «at night» ? ⏎ [patient] not too bad , just once in a whi
+  D2N140 virt note L- [PLAN]: rting a neuromodulator, such as Elavil 25 mg «at bedtime» for IBS. She can use Bentyl 20 mg as needed 
+  D2N118 aci dial L98 [-]: proper sleep hygiene so you can get to sleep «at night» and and feel pretty rested ⏎ [patient] okay ⏎ [d
+  D2N207 aci dial L48 [-]: ernoon that you can take around four o'clock «in the afternoon» i do n't want you to take it too late at nig
+  D2N190 aci dial L104 [-]: okay ⏎ [doctor] okay you can just take it with «breakfast» and dinner ⏎ [patient] mm-hmm ⏎ [doctor] we'll t
+  D2N158 aci dial L32 [-]: o we'll go metformin one thousand milligrams «in the morning» and five hundred milligrams in the evening p
+  D2N138 virt dial L30 [-]:  . ⏎ [doctor] okay . ⏎ [patient] and it's either «in the morning» or at night that i'm taking it . ⏎ [doctor] ok
+  D2N021 virt dial L111 [-]: ou want to make sure to take it and apply it «at night» , so you do n't have a reaction from the sun
+  D2N138 virt dial L8 [-]: 't had any issues with it and i take it once «in the morning» and once at night . ⏎ [doctor] and that's one 
+  D2N207 aci dial L48 [-]: bout you start taking the the increased dose «in the morning» and then we'll see how you do and if necessa
+  D2N138 virt dial L30 [-]:  ⏎ [patient] and it's either in the morning or «at night» that i'm taking it . ⏎ [doctor] okay , and do 
+  D2N183 virt note L- [CURRENT MEDI]:  wash twice daily. ⏎ Tretinoin cream topically «at night». ⏎  ⏎ PHYSICAL EXAM ⏎  ⏎ Integumentary ⏎ Examination o
+  D2N026 virt dial L25 [-]:  ⏎ [patient] um , some days . if it bothers me «at night» , then the day following , it usually will b
+  D2N057 aci note L- [HISTORY OF P]: ightest of pressure, which he notes is worse «at night» when his sheet is touching his right toe. He
+  D2N027 virt dial L31 [-]: ke reservations twice a week for a 5:45 swim «in the morning» . ⏎ [doctor] okay , so you're getting six to s
+  D2N080 aci dial L35 [-]: eight thirty in the morning and eight thirty «at night» ⏎ [doctor] and what is the medication and the 
+  D2N057 aci dial L16 [-]: oes even light pressure to it bother it like «at night» when you're laying in bed do the sheets both
+  D2N154 aci dial L3 [-]: cally after a workout or when i first get up «in the morning» it will really hurt in the back of my heel a
+
+##### location  (107 hits)
+  D2N146 aci dial L29 [-]:  nature of photography and with the with the «the woods» going from you know that dark barron look to
+  D2N154 aci dial L50 [-]: own but not so much anymore ⏎ [doctor] no yeah «detroit» is a hockey town yeah the red wings okay wel
+  D2N161 aci dial L6 [-]: i love chicken minks but i do love them with «dallas» cowboys not so much the cheese but everybody
+  D2N189 aci dial L24 [-]: might cause you some anxiety were the denver «denver» nuggets swept or did they end up winning are
+  D2N008 virt dial L19 [-]: y . i've been traveling a lot . i went up to «vermont» , um , to go , um , explore the mountains . 
+  D2N025 virt note L- [PLAN]: for a colonoscopy, which we will try to have «done at County» Hospital in the next month, prior to a chang
+  D2N146 aci dial L30 [-]: ake nature hikes through the new park behind «the rex center» that just opened up have you ever been over 
+  D2N102 virt dial L13 [-]: k near the amount of water that i should . i «drink more mountain» dew than anything . ⏎ [doctor] you should drin
+  D2N087 aci note L- [SOCIAL HISTO]: t reports he enjoys spending time outside in «the woods» and working in the yard. He went hunting wit
+  D2N134 virt note L- [HISTORY OF P]: nsect bite at her last visit after hiking in «the woods». We drew a Lyme titer which came back positi
+  D2N039 aci dial L14 [-]: ] okay okay yeah i i thought the one down on «main street» they i thought they just brought that one ba
+  D2N192 aci note L- [SOCIAL HISTO]: she has not had any big trips since visiting «Europe» last summer. ⏎  ⏎ MEDICATIONS ⏎  ⏎ Patient reports u
+  D2N203 aci dial L8 [-]:  the new the new italium place over there on «main street» ⏎ [patient] my gosh yes we were just there the
+  D2N121 aci dial L11 [-]:  was the first time okay where do you have a «boat what lake» do you have it on lake ⏎ [patient] lake martin
+  D2N062 aci note L- [HISTORY OF P]: ths as they moved from the West Coast to the «East Coast», so he has been drinking more, and having pi
+  D2N154 aci dial L47 [-]:  town here ⏎ [patient] used to when i lived in «detroit» ⏎ [doctor] oh ⏎ [patient] hockey town but not so
+  D2N172 virt dial L8 [-]: nds over vacation , and on ... you know , at «the beach» in the summer , so the diet is off the chart
+  D2N047 aci dial L30 [-]: e can do friends anymore ⏎ [doctor] are you in «alabama» fan ⏎ [patient] maybe i'm actually originally 
+  D2N188 aci dial L46 [-]: know ⏎ [doctor] do you or do you like going to «colorado» ⏎ [patient] hmmm kind of a time ⏎ [doctor] okay 
+  D2N058 aci dial L34 [-]: walk you know walk take those walks again at «the park» and then you know do your photography so in 
+
+##### employer_occupation_school  (137 hits)
+  D2N007 virt note L- [HISTORY OF P]:  stands for long periods of time at her desk «at work». She reports that it helps when she gets up 
+  D2N138 virt dial L46 [-]: oing to be outside a lot . um , i do tend to «work outside» about three days a week so i'll definitely t
+  D2N138 virt note L- [HISTORY OF P]:  past year. ⏎  ⏎ She hopes to be enlisted in the «military» in early spring of 2022. She is currently un
+  D2N117 aci note L- [SOCIAL HISTO]: ent reports he has been playing tennis since «high school». ⏎  ⏎ ALLERGIES ⏎  ⏎ Patient reports that he has an 
+  D2N003 virt dial L23 [-]: o i have been ordering a lot of take-out and «fast food» that can be delivered to my door so i don't 
+  D2N068 virt dial L9 [-]: jects around the house and , and some , some «construction» on our own . i'm just feeling out of it . la
+  D2N199 aci note L- [SOCIAL HISTO]: SOCIAL HISTORY ⏎  ⏎ Patient reports that he is a «teacher». ⏎  ⏎ MEDICATIONS ⏎  ⏎ Patient reports taking lisino
+  D2N040 aci dial L36 [-]: nd your neck and your shoulders and you know «working at the computer» i think is contributing to this and also pro
+  D2N060 aci dial L19 [-]:  throughout school ⏎ [doctor] that's ⏎ [patient] «high school» teams ⏎ [doctor] that's awesome so just out of
+  D2N042 aci note L- [SOCIAL HISTO]: tory of playing sports. She played soccer in «college» and is now in an intramural soccer league. ⏎  ⏎ 
+  D2N065 aci dial L30 [-]: octor's note ⏎ [doctor] no because you need to «go back to work» because you work on the computer not running
+  D2N101 virt note L- [HISTORY OF P]: endorses back and neck pain since she was in «high school». Her back and neck pain has been managed by 
+  D2N098 virt dial L10 [-]:  . we have done this since i retired from my «office job» last year . ⏎ [doctor] i do not blame you , mr
+  D2N058 aci dial L25 [-]: ne i got pretty good insurance there through «the plant» and and so the co-pay is n't too bad ⏎ [doctor
+  D2N172 virt note L- [HISTORY OF P]: spring, as they have been very short-staffed «at work». The patient admits to recent weight gain. H
+  D2N138 virt dial L38 [-]: s ? ⏎ [patient] so , hopefully i'm going to be «enlisted» early spring of 2022 . so that gives me abou
+  D2N036 aci dial L40 [-]: at kind of what do what do you specialize in «landscaping» is your company do ⏎ [patient] mostly like yar
+  D2N008 virt note L- [HISTORY OF P]: reports these symptoms while walking a mile, «going to work», and performing daily tasks. She denies any 
+  D2N098 virt dial L10 [-]: almost every day . we have done this since i «retired» from my office job last year . ⏎ [doctor] i do
+  D2N165 aci dial L7 [-]: om like a seated position to standing so i i «work from home» so i'm at my desk a lot so anytime i get up 
+
+##### hobby  (457 hits)
+  D2N188 aci dial L6 [-]: ng messenger ⏎ [doctor] you were in a mountain «biking» lesson and you fell off your bike and twiste
+  D2N185 virt note L- [SOCIAL HISTO]: juice. ⏎  ⏎ SOCIAL HISTORY ⏎  ⏎ The patient plays on «softball» team and is interested in joining a drill te
+  D2N037 aci note L- [SOCIAL HISTO]: ive in sports when he was younger, primarily «playing basketball», baseball, and football. ⏎  ⏎ He is expecting a 
+  D2N200 aci dial L16 [-]:  mcdonald's i eat it all the time ⏎ [doctor] i «love mcdonald's too my» favorite is big mac i do n't know about you 
+  D2N060 aci note L- [SOCIAL HISTO]:  past. ⏎  ⏎ SOCIAL HISTORY ⏎  ⏎ The patient has been «playing soccer since she» was 4 or 5 years old. She is currently playi
+  D2N041 aci note L- [SOCIAL HISTO]: s working as a cashier in a supermarket. She «enjoys drinking wine». ⏎  ⏎ MEDICATIONS ⏎  ⏎ Patient reports taking lisino
+  D2N151 aci dial L3 [-]: have a pottery wheel and i've been i love my «pottery» and for my son's birthday i've been making a
+  D2N121 aci dial L37 [-]:  i i think that my concern is that if you go «skiing» again and you fall that you might injure you
+  D2N189 aci note L- [SOCIAL HISTO]:  the Denver Nuggets basketball team. He also «enjoys swimming». ⏎  ⏎ MEDICATIONS ⏎  ⏎ Patient reports taking Brilin
+  D2N151 aci dial L3 [-]: pottery i've been creating you know i have a «pottery» wheel and i've been i love my pottery and fo
+  D2N150 aci note L- [HISTORY OF P]:  The injury occurred 3 days ago, when he was «playing pickup soccer games» and felt a pop in his right knee. He reports
+  D2N086 aci dial L5 [-]: e throbbing it's almost like there is a fire «poker» in the bottom of my foot now and then the in
+  D2N037 aci note L- [HISTORY OF P]:  primarily playing basketball, baseball, and «football», but he denies having any pain at that time.
+  D2N201 aci note L- [SOCIAL HISTO]:  ⏎  ⏎ SOCIAL HISTORY ⏎  ⏎ Patient reports previously «playing basketball», but he is now not very active and sits at h
+  D2N044 aci note L- [SOCIAL HISTO]: nee pain. ⏎  ⏎ SOCIAL HISTORY ⏎  ⏎ The patient is an «avid runner». She also works from home. ⏎  ⏎ REVIEW OF SYSTEM
+  D2N061 aci note L- [SOCIAL HISTO]: g. ⏎  ⏎ SOCIAL HISTORY ⏎  ⏎ Patient reports that she «plays basketball at the» Y for fun. ⏎  ⏎ MEDICATIONS ⏎  ⏎ Patient reports tha
+  D2N196 aci dial L32 [-]: r do it but walking and you know getting out «golfing» when you can that's great you can take tylen
+  D2N006 virt dial L61 [-]: ght knee is doing and i want you to continue «pilates» and using the knee and let me know if you ha
+  D2N015 virt note L- [HISTORY OF P]: much rest as she can. She is no longer doing «yoga» as she has not made it a habit. ⏎  ⏎ REVIEW OF S
+  D2N015 virt dial L56 [-]: 're gon na keep taking the effexor . um , do «yoga» for depression and your back pain , so for y
+
+##### event  (102 hits)
+  D2N077 aci dial L72 [-]:  in a month so ⏎ [doctor] okay how long is the «vacation» ⏎ [patient] it's only for like a couple weeks ⏎ 
+  D2N192 aci dial L25 [-]: atient] well once the packers are out of the «playoffs» i do n't watch the super bowl so nothing i h
+  D2N082 aci note L- [SOCIAL HISTO]: Y ⏎  ⏎ He recently traveled internationally on a «trip» to Zambia. His family owns a local doughnut 
+  D2N172 virt dial L8 [-]: or so , we've been hosting some friends over «vacation» , and on ... you know , at the beach in the 
+  D2N093 virt note L- [HISTORY OF P]: his alcohol intake has been tough during the «holiday» season, but he is getting better about this.
+  D2N117 aci dial L22 [-]: eah that was that was crazy that was a great «tournament» what a what a finish unbelievable ⏎ [patient] 
+  D2N172 virt note L- [HISTORY OF P]: eight gain. He has been hosting friends over «vacation» and at the beach this summer so the diet is 
+  D2N038 aci dial L5 [-]: any hep c partners ⏎ [doctor] i mean i used to «party» a lot and even did use iv drugs but i have b
+  D2N199 aci dial L28 [-]: that the that cincinnati bangel has lost the «super bowl» do you follow baseball or anything like that
+  D2N192 aci dial L26 [-]: ou know i remember you telling me about your «trip» to europe last summer that sounded amazing h
+  D2N177 virt dial L30 [-]: are you doing , you know especially with the «holidays» managing your- your sugar intake and that ty
+  D2N185 virt dial L15 [-]: hich we did . um , but he was heading out on «vacation» , so he only saw her for a brief 10 minutes 
+  D2N151 aci dial L3 [-]: i've been i love my pottery and for my son's «birthday» i've been making a a ceramic bowl and i'm go
+  D2N193 aci dial L44 [-]: n vacation last week and a lot of people had «vacation» last week ⏎ [patient] yes i was on vacation la
+  D2N177 virt note L- [HISTORY OF P]: tes. He notes some dietary indiscretion with «Thanksgiving» but he is doing better with this now. ⏎  ⏎ In te
+  D2N135 virt dial L6 [-]: vailable. whether i am at work and there are «holiday» gift baskets or clients bringing in treats o
+  D2N177 virt note L- [HISTORY OF P]: ced a lot of anxiety while getting ready for «Thanksgiving» but it is starting to resolve now. He denies
+  D2N132 virt note L- [HPI]: uation of back pain. She states she was at a «birthday» party and she ran her back into the railing 
+  D2N117 aci dial L33 [-]: ike one fifty one sixty you know we just had «easter» and my kids got a whole bunch of candies so 
+  D2N161 aci dial L5 [-]: man i love me some football and and we go to «parties» on the weekends and i mean i i ca n't help i
+
+##### sports_team  (10 hits)
+  D2N161 aci dial L6 [-]: chicken minks but i do love them with dallas «cowboys» not so much the cheese but everybody's got y
+  D2N161 aci dial L7 [-]: [patient] yeah i mean you're wrong about the «cowboys» but yeah i guess you're right about everythi
+  D2N189 aci dial L24 [-]: ayoffs i forget i know that you are a denver «nuggets» fan ⏎ [patient] i am yeah they they are not sw
+  D2N161 aci dial L12 [-]:  to be well and be at home and watching your «chiefs» play now have you bought a blood pressure cu
+  D2N192 aci dial L25 [-]: s anything like mine ⏎ [patient] well once the «packers» are out of the playoffs i do n't watch the s
+  D2N154 aci dial L50 [-]: r] no yeah detroit is a hockey town yeah the «red wings» okay well i'm gon na go ahead and i'll send 
+  D2N157 aci note L- [SOCIAL HISTO]: s from the west coast and is a San Francisco «49ers» fan. He lives with his dog. ⏎  ⏎ MEDICATIONS ⏎  ⏎ Pa
+  D2N189 aci note L- [SOCIAL HISTO]: CIAL HISTORY ⏎  ⏎ Patient is a fan of the Denver «Nuggets» basketball team. He also enjoys swimming. ⏎  ⏎ M
+  D2N190 aci dial L125 [-]: lem though you have not do you not watch the «bulls» ⏎ [doctor] no no ⏎ [patient] my gosh alright we'
+  D2N189 aci dial L24 [-]: ause you some anxiety were the denver denver «nuggets» swept or did they end up winning are they st
+
+##### religion_ethnicity_nationality  (3 hits)
+  D2N057 aci dial L51 [-]: oblems with my stomach i love the i love the «mexican»'s food the hotter the better so i hope i nev
+  D2N125 aci note L- [ASSESSMENT A]:  of dermatologic reactions in people of East «Asian» descent. We also briefly discussed surgical 
+  D2N026 virt note L- [PHYSICAL EXA]: blet. ⏎  ⏎ PHYSICAL EXAM ⏎  ⏎ Constitutional ⏎ Elderly «Caucasian male» in no apparent distress. Presents in wheelch
+
+##### phone_email_mrn_id_insurance  (65 hits)
+  D2N138 virt dial L87 [-]:  . ⏎ [patient] mm-hmm ⏎ [doctor] so the one that «kaiser» covers is alvesco . the thing about alvesco 
+  D2N025 virt dial L54 [-]: . we can do it here locally because you have «medicare» . do you have private insurance also ? ⏎ [pati
+  D2N024 virt dial L0 [-]: [doctor] patient is pamela cook . «medical record» number is 123546 . she's a 36-year-old femal
+  D2N100 virt note L- [PLAN]: t. If it is very expensive or not covered by «insurance», you can try Differin gel over the counter. 
+  D2N025 virt note L- [PLAN]:  in the next month, prior to a change in her «insurance». This is just a screening colonoscopy that s
+  D2N025 virt note L- [HISTORY OF P]: tly double covered with Medicare and private «insurance». ⏎  ⏎ PAST HISTORY ⏎  ⏎ Medical ⏎ Chronic Congestive H
+  D2N114 aci dial L32 [-]: mri i'll have to get a preapproval from your «insurance» company i will work on that my my my team in
+  D2N101 virt dial L12 [-]: ils . and , um , at this point , who is your «insurance» provider ? ⏎ [patient] i have blue cross blue 
+  D2N101 virt dial L73 [-]: ient] okay . well , i am ready as soon as my «insurance» is switched over . ⏎ [doctor] okay . well , i 
+  D2N101 virt dial L75 [-]: will notify the office as soon as i have the «insurance» information . ⏎ [doctor] that sounds great . a
+  D2N104 virt dial L0 [-]: [doctor] judy gomez , mrn «869723» . date of birth , 5 , 7 , 1961 . she's in of
+  D2N025 virt note L- [HISTORY OF P]: oscopy. She is currently double covered with «Medicare» and private insurance. ⏎  ⏎ PAST HISTORY ⏎  ⏎ Medica
+  D2N179 virt dial L0 [-]: [doctor] patient «mrn» : abc123 . date of birth : january 1st , 196
+  D2N025 virt dial L70 [-]: e next month , uh , prior to a change in her «insurance» . this is just a screening colonoscopy that 
+  D2N101 virt note L- [PLAN]: rance policy in 07/2021. Once we get the new «insurance» information from the patient, we will submit
+  D2N144 virt dial L0 [-]: yler nelson , date of birth : 3 , 6 , 1949 , «mrn» , 385729 . he is here today for ongoing mana
+  D2N100 virt dial L0 [-]: ] kayla ward , date of birth , 4/28/07 . mrn «3-8-4-9-2-0» . she's here for a new visit with her mother
+  D2N024 virt dial L0 [-]: nt is pamela cook . medical record number is «123546» . she's a 36-year-old female post bilateral 
+  D2N101 virt dial L13 [-]: s your insurance provider ? ⏎ [patient] i have «blue cross blue shield» . well , actually , my husband just accepted
+  D2N029 virt dial L0 [-]: [doctor] next patient is sophia jackson , «mrnr472348» . she's a 57 year old female who is here for
+
+##### vehicle  (60 hits)
+  D2N179 virt dial L34 [-]: however , your symptom presentation suggests «car»- bilateral carpal syndrome , as the nerve in
+  D2N127 aci dial L12 [-]: n february ⏎ [doctor] okay alright so we had a «car» crash in february ⏎ [patient] what year it was
+  D2N163 aci dial L17 [-]: getting warm out ⏎ [patient] yeah i went for a «bike ride» over the weekend and some friends have morni
+  D2N019 virt dial L7 [-]: ient] and i was , um , moving boxes from the «truck» into the house and i lifted a box up and the
+  D2N061 aci dial L40 [-]: sh i could play basketball but i do a lot of «bike riding» so i'm always looking for anything that's go
+  D2N121 aci dial L5 [-]: know that it sounds like you were on a motor «boat» as you were you know water skiing but did yo
+  D2N179 virt dial L4 [-]: f your hands ? ⏎ [patient] yes , ever since my «car» wreck last december when i broke them ... we
+  D2N115 aci dial L1 [-]: what happened ⏎ [patient] yeah so i was in a a «car» accident ⏎ [doctor] mm-hmm ⏎ [patient] and i hit
+  D2N179 virt note L- [HISTORY OF P]: He notes that he did hit his head during the «car» accident and was diagnosed with a contusion.
+  D2N121 aci dial L11 [-]:  was the first time okay where do you have a «boat» what lake do you have it on lake ⏎ [patient] l
+  D2N020 virt dial L21 [-]: okay . ⏎ [patient] i- sitting at the back of a «car» , that makes me nauseous at times . ⏎ [doctor]
+  D2N167 aci dial L1 [-]: ning how to take off the training wheels for «her bike» ⏎ [doctor] mm-hmm ⏎ [patient] and i fell and i t
+  D2N127 aci dial L18 [-]: o we're gon na say hope maybe that you had a «car» crash and we can verify this in february of 
+  D2N127 aci dial L3 [-]:  wow okay when was that ⏎ [patient] well which «car» crash ⏎ [doctor] okay so multiple car crashes 
+  D2N190 aci dial L58 [-]: ll getting up from a chair in and out of the «car» what what do n't you like ⏎ [doctor] walking u
+  D2N169 virt note L- [HISTORY OF P]: s that over the weekend, he took a very long «bike ride» for approximately 3 hours, and when he retur
+  D2N154 aci note L- [HISTORY OF P]:  he alternates between a long run and a long «bike ride» on weekends. He currently takes one day off 
+  D2N020 virt note L- [HISTORY OF P]: nausea when he is sitting in the back of the «car». He denies any abdominal pain, fever, chills
+  D2N163 aci dial L5 [-]: ] well i really like to go outside i ride my «bicycle» a lot ⏎ [doctor] okay ⏎ [patient] which is it's 
+  D2N150 aci note L- [HISTORY OF P]: ury occurred 3 days ago, when he was playing «pickup» soccer games and felt a pop in his right kne
+
+##### pet  (33 hits)
+  D2N205 aci dial L3 [-]: red myself pretty active before this i would «walk my dog» around the block and now i i ca n't even wal
+  D2N157 aci note L- [SOCIAL HISTO]:  is a San Francisco 49ers fan. He lives with «his dog». ⏎  ⏎ MEDICATIONS ⏎  ⏎ Patient reports taking aspiri
+  D2N050 aci dial L1 [-]: when i went and saw my doctor and he ordered «a cat» scan and said that i had a kidney stone but 
+  D2N089 virt note L- [HISTORY OF P]: n. She has tried meditation and running with «her dog for» stress relief, however these have not been h
+  D2N100 virt dial L0 [-]: ives with her parents and sister . they have «a dog» , bird , and bunnies . she is in 7th grade .
+  D2N152 aci dial L70 [-]: ontinues i'm gon na go ahead and maybe order «a cat» scan and then at that point in time we can r
+  D2N150 aci dial L29 [-]: ore this incident ⏎ [patient] how's just how's «my dog or» how is my job ⏎ [doctor] your your dog ⏎ [patien
+  D2N062 aci dial L9 [-]: r] uh uh ⏎ [patient] because i do n't know how «my dog is» gon na handle the travel but i do n't wan na
+  D2N067 aci dial L31 [-]: t ski ⏎ [doctor] okay ⏎ [patient] usually when i «walk my dog» ⏎ [doctor] okay does it hurt more when you wal
+  D2N149 aci dial L36 [-]: over that way they can get a chest x-ray and «a cat» scan and some blood work as well and then we
+  D2N147 aci dial L42 [-]:  once a day i wan na go ahead and just order «a cat» scan of your right shoulder just to kinda ge
+  D2N106 aci dial L27 [-]: ay ⏎ [doctor] mostly could be ⏎ [patient] i have «a dog» that eyes water like that she always gets ey
+  D2N205 aci dial L5 [-]:  of the street i had to have my husband take «the dog» fit walk ⏎ [doctor] man okay what kind of dog 
+  D2N056 aci dial L32 [-]: urring in your lungs i will also be ordering «a cat» scan of your lungs which will help confirm t
+  D2N149 aci dial L36 [-]: t or something else going on so i wan na get «a cat» scan of your chest as well so i'm gon na go 
+  D2N150 aci dial L31 [-]: y job ⏎ [doctor] your your dog ⏎ [patient] my my «my dog is» okay ⏎ [doctor] good ⏎ [patient] is doing really
+  D2N085 aci dial L2 [-]: ys ⏎ [doctor] i saw my doctor and they ordered «a cat» scan and said i had a kidney stone and sent 
+  D2N086 aci dial L1 [-]:  something to me the other day and i noticed «my dog was» also smelling my socks a lot and so we looke
+  D2N046 aci dial L1 [-]: ou say batcher so when i start talking about «my dog and» my three cats and all that those sort of thi
+  D2N124 aci dial L25 [-]: is stuff that's rest of my family refuses to «walk my dog» so we'll figure it out ⏎ [doctor] yeah i i'm a
+
+##### product_brand  (429 hits)
+  D2N001 virt dial L26 [-]:  show me the blood pressure readings . hey , «dragon» , show me the blood pressure readings . here
+  D2N007 virt dial L34 [-]: now , okay ? ⏎ [patient] okay . ⏎ [doctor] hey , «dragon» , order an echocardiogram . hey , dragon , o
+  D2N090 virt dial L61 [-]: lts . okay ? ⏎ [patient] sure . ⏎ [doctor] hey , «dragon» . show me the glucose . ⏎ [doctor] so , right 
+  D2N130 virt dial L55 [-]: ragon , show me the left elbow x-ray . hey , «dragon» , show me the elbow x-ray . hey , dragon , s
+  D2N114 aci note L- [HISTORY OF P]: joys running and wears either New Balance or «Asics» shoes. ⏎  ⏎ REVIEW OF SYSTEMS ⏎  ⏎ Neurological: Rep
+  D2N068 virt dial L48 [-]: cal exam . ⏎ [patient] mm-hmm . ⏎ [doctor] hey , «dragon» ? show me the vital signs . so , looking at 
+  D2N095 virt dial L33 [-]: you . ⏎ [patient] okay . ⏎ [doctor] okay ? hey , «dragon» , show me the vital signs . so good- you kno
+  D2N099 virt dial L90 [-]: ther head & shoulder's , or selsun blue , or «nizoral» ad . now , do n't get the extra strength stu
+  D2N176 virt dial L31 [-]: na do a quick physical exam . ⏎ [doctor] hey , «dragon» . show me the vital signs . ⏎ [doctor] so , yo
+  D2N132 virt dial L20 [-]: -ray . hey . or let's look at an x-ray . hey «dragon» , show me the latest x-ray . okay , we can s
+  D2N170 virt dial L36 [-]: s , okay ? ⏎ [patient] mm-hmm . ⏎ [doctor] hey , «dragon» , show me the hemoglobin . so , here , looki
+  D2N158 aci dial L12 [-]: that starbucks i love those nitrocolbrus and «starbucks» we ever had those those are incredible ⏎ [pati
+  D2N016 virt dial L70 [-]: no questions . ⏎ [doctor] okay , great . hey , «dragon» ? finalize the note .
+  D2N093 virt dial L4 [-]: [patient] mm-hmm . ⏎ [doctor] i'd like to tell «dax» a little bit about you . ⏎ [patient] sure . ⏎ [d
+  D2N006 virt dial L52 [-]: to be fine . ⏎ [patient] okay . ⏎ [doctor] hey , «dragon» , show me the right knee x-ray . ⏎ [doctor] so
+  D2N088 virt dial L74 [-]: ent] actually , i do . ⏎ [doctor] okay . hey , «dragon» . order lisinopril , 20 milligrams daily . ⏎ [
+  D2N016 virt note L- [HISTORY OF P]:  states that he checks his blood pressure at «CVS» about once weekly. He does admit to occasion
+  D2N023 virt dial L78 [-]: t or anything ? ⏎ [patient] no changes , i use «walmart» pharmacy . i do need more cialis and finaste
+  D2N175 virt dial L28 [-]: view , uh , some of your vital signs . hey , «dragon» , show me the vitals . all right . blood pre
+  D2N013 virt dial L35 [-]: ours ago . ⏎ [doctor] okay , all right . hey , «dragon» , show me the diabetes labs . yeah , so your
+
+##### other_quasi_identifier  (64 hits)
+  D2N163 aci dial L37 [-]:  at home smoke ⏎ [patient] well when i used to «live with» my parents they did but i live on my own now
+  D2N034 aci note L- [HISTORY OF P]:  injury; however, he has been renovating his «basement» and putting in a new ceiling. He does not re
+  D2N056 aci dial L28 [-]: oke ⏎ [doctor] i do n't smoke ⏎ [patient] do you «live with» anybody who does ⏎ [doctor] i do not ⏎ [patient]
+  D2N032 virt dial L48 [-]:  at . ⏎ [doctor] okay . and you live with your «roommate» , no history of tobacco and you limit alcoho
+  D2N017 virt dial L18 [-]: s . it's very sore . ⏎ [doctor] um , and going «upstairs» or downstairs , does that bother you at all 
+  D2N147 aci dial L15 [-]: had a chipment command so i had a box in the «driveway» the other day and reaching down and picking 
+  D2N203 aci dial L12 [-]:  over there the other day and when we walked «downstairs» it was like i was walking into a scene out o
+  D2N157 aci note L- [SOCIAL HISTO]: t coast and is a San Francisco 49ers fan. He «lives with» his dog. ⏎  ⏎ MEDICATIONS ⏎  ⏎ Patient reports takin
+  D2N100 virt note L- [SOCIAL HISTO]: creen in the summer SPF 30. ⏎  ⏎ SOCIAL HISTORY ⏎  ⏎ «Lives with» parents and sister. They have a dog, bird, a
+  D2N003 virt dial L17 [-]: e climbing the three flights of stairs to my «apartment» or running to catch the bus , i feel a littl
+  D2N076 virt dial L78 [-]: is a 22-month-old former 34 and 3-week-old , «twin» with smith magenis syndrome . several organ 
+  D2N076 virt dial L9 [-]:  you start at the beginning ? i know she's a «twin» , so are these your first two babies ? ⏎ [pati
+  D2N105 virt note L- [HISTORY OF P]: k around her cul-de-sac or to the end of the «driveway» without shortness of breath. Compared to 6 m
+  D2N100 virt dial L0 [-]: n . no additional past medical history . she «lives with» her parents and sister . they have a dog , b
+  D2N203 aci dial L9 [-]: the other night down in the it's down in the «basement» of that big building yeah we went there the 
+  D2N194 aci note L- [HISTORY OF P]:  very active and is currently renovating her «basement». She denies any associated numbness or tingl
+  D2N076 virt dial L42 [-]:  mo- two next month . ⏎ [doctor] okay . is her «twin» a boy or a girl ? ⏎ [patient_guest] she's a gi
+  D2N074 virt dial L17 [-]: ve any history of diseases ? ⏎ [patient] i was «adopted» so i really have no idea . ⏎ [doctor] okay . u
+  D2N046 aci dial L25 [-]: of any gynecological cancers ⏎ [patient] i was «adopted» ⏎ [doctor] okay okay so i'm just gon na do a q
+  D2N044 aci dial L14 [-]: a lot of desk setting at home is your office «upstairs» or is it i mean do you have to go up or down

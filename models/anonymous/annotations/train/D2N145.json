@@ -1,0 +1,13 @@
+{
+  "encounter_id": "D2N145",
+  "phi": [
+    {"text": "mrn49282721", "field": "dialogue", "type": "ID", "tier": 1, "generalized": ""},
+    {"text": "jacqueline miller", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "jacqueline", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "pick'n save", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "a local pharmacy"},
+    {"text": "metro market", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "another pharmacy"},
+    {"text": "Jacqueline Miller", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "40-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""}
+  ],
+  "medical_concepts": []
+}

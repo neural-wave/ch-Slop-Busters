@@ -1,0 +1,17 @@
+{
+  "encounter_id": "D2N082",
+  "phi": [
+    {"text": "kyle", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "donut shop", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "food business"},
+    {"text": "down at the end of the street", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "nearby"},
+    {"text": "traveled internationally", "field": "dialogue", "type": "LIFE_EVENT", "tier": 2, "generalized": "traveled"},
+    {"text": "zambia", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "another country"},
+    {"text": "Kyle Lee", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "46-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "traveled internationally", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "traveled"},
+    {"text": "trip", "field": "note", "type": "LIFE_EVENT", "tier": 2, "generalized": "visit"},
+    {"text": "Zambia", "field": "note", "type": "LOCATION", "tier": 1, "generalized": "another country"},
+    {"text": "doughnut shop", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "food business"}
+  ],
+  "medical_concepts": []
+}

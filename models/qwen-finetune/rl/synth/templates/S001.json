@@ -1,0 +1,808 @@
+{
+ "id": "S001",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "S52.531A",
+   "description": "Colles' fracture of right radius, initial encounter for closed fracture"
+  },
+  {
+   "code": "W00.0XXA",
+   "description": "Fall on same level due to ice and snow, initial encounter"
+  },
+  {
+   "code": "Y92.481",
+   "description": "Parking lot as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.01",
+   "description": "Activity, walking, marching and hiking"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . how are you doing today ?\n[patient] oh , i've been better , doctor {DOCTOR_LAST} . my wrist is killing me .\n[doctor] i'm sorry to hear that . i see you brought your daughter with you .\n[patient] yes , this is {OTHER_FIRST} . she drove me over because i ca n't really use my right hand right now .\n[doctor] hi , {OTHER_FIRST} , nice to meet you . so tell me what happened .\n[patient] well , yesterday morning i was walking back to my car after getting groceries , and i slipped on the ice in the parking lot at {ORG} . it was one of those patches you ca n't see , you know , black ice . my feet just went right out from under me .\n[doctor] oh no . and how did you land ?\n[patient] i put my right hand out to catch myself , and i landed right on it . i heard kind of a crunch .\n[doctor] okay . did you hit your head at all when you fell ?\n[patient] no , no , i did n't hit my head . my bottom hurt a little but that's fine now . it's really the wrist .\n[doctor] okay , good . did you pass out or feel dizzy before you slipped ?\n[patient] no , it was just the ice . i felt fine before .\n[doctor] alright . and what did you do after you fell ?\n[patient] a young man helped me up and put my groceries in the car . i drove home with my left hand , which was probably not smart . and then i put ice on it and took some tylenol .\n[doctor] did the tylenol help ?\n[patient] a little bit . it's still throbbing though . i'd say it's about a seven out of ten .\n[doctor] okay . any numbness or tingling in your fingers ?\n[patient] a little tingling in my thumb and first finger last night , but it seems better this morning .\n[doctor] okay . and the swelling , has that gotten worse ?\n[patient] it's pretty puffy . my daughter said it looks like a fork .\n[patient] yeah , mom , it kind of bends funny at the wrist .\n[doctor] okay , we'll take a good look at that . now , before we go further , i see that you have a history of high blood pressure . how has that been going ?\n[patient] it's been okay . i take my lisinopril every morning , ten milligrams . i check it at home sometimes and it's usually around one thirty over eighty .\n[doctor] good . any headaches , chest pain , shortness of breath ?\n[patient] no , none of that .\n[doctor] okay . and are you still working at the library ?\n[patient] oh no , i'm a retired librarian now . but i still volunteer to read to the kids on saturdays . that's what i'm worried about , i want to be able to turn the pages .\n[doctor] we'll get you back to that . any history of osteoporosis or any bone density scan ?\n[patient] i had one a long time ago , i do n't remember what it said .\n[doctor] okay . let's go ahead and do a physical exam . your blood pressure today is one forty two over eighty four , which is a little up , but you're in pain , so i'm not too worried about it . heart rate is eighty eight .\n[patient] okay .\n[doctor] let me look at your right wrist . i can see there's significant swelling over the distal forearm and there is a dorsal angulation , what we call a dinner fork deformity . does it hurt when i press here ?\n[patient] ouch , yes , that hurts a lot .\n[doctor] okay , there's tenderness over the distal radius . how about here on the ulnar side ?\n[patient] a little , not as much .\n[doctor] can you wiggle your fingers for me ?\n[patient] yes , it hurts but i can .\n[doctor] good . can you feel me touching each finger ?\n[patient] yes .\n[doctor] okay , sensation is intact . your fingers are pink and the capillary refill is brisk . i can feel your radial pulse . your elbow and your shoulder move fine without pain ?\n[patient] yes , those are fine .\n[doctor] okay . we got an x-ray of the right wrist before i came in . let me pull that up . so the x-ray shows a fracture of the distal radius , right about an inch above the wrist joint , and the broken piece is tilted backwards . this is what we call a colles fracture . it does not go into the joint , and the ulna looks okay .\n[patient] so it's broken .\n[doctor] it is broken , yes . the good news is it's a closed fracture , the skin is n't broken , and your nerves and blood flow look good .\n[patient] okay . what do we do about it ?\n[doctor] so , because it's angulated , i'd like to do a closed reduction , which means we numb the area and gently put the bone back into a better position , and then we put you in a splint . we'll get another x-ray after that to make sure it's lined up .\n[patient] will i need surgery ?\n[doctor] possibly not . if the bone stays in good position , we can treat it in a cast for about six weeks . if it slips , we'd talk to the orthopedic surgeon about a plate . i'm going to refer you to orthopedics to see you within a week either way .\n[patient] okay .\n[doctor] for pain you can continue tylenol , up to one thousand milligrams three times a day . i'd avoid ibuprofen for now with your blood pressure . keep the arm elevated above your heart and ice it twenty minutes at a time .\n[patient] okay .\n[doctor] and because you broke your wrist from a simple fall , i'd like to order a dexa scan to check your bone density .\n[patient] that makes sense .\n[doctor] for the high blood pressure , let's continue the lisinopril ten milligrams daily , and i want you to keep checking it at home . if it stays above one forty once the pain settles , let me know .\n[patient] i will .\n[doctor] and please , be careful on the ice . wear shoes with good grips , and maybe have {OTHER_FIRST} do the grocery runs for a while .\n[patient] she's already offered .\n[doctor] perfect . any questions for me ?\n[patient] no , i think that's it . thank you , doctor .\n[doctor] you're welcome . the nurse will be in to get you ready for the reduction .",
+ "note": "CHIEF COMPLAINT\n\nRight wrist pain after a fall.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with a history of hypertension who presents for evaluation of right wrist pain. She is accompanied today by her daughter, {OTHER_FIRST}.\n\nYesterday morning, the patient was walking to her car when she slipped on black ice in a parking lot and fell onto her outstretched right hand. She heard a crunch at the time of injury. She denies head strike, loss of consciousness, or presyncope. She has been using ice and Tylenol with minimal relief and rates her pain as 7/10. She reports transient tingling in the thumb and index finger overnight, which has improved. Her daughter notes a deformity of the wrist.\n\nRegarding her hypertension, she takes lisinopril 10 mg daily. Home blood pressure readings are around 130/80. She denies headaches, chest pain, or shortness of breath.\n\nSOCIAL HISTORY\n\nRetired librarian.\n\nPHYSICAL EXAM\n\nVitals: BP 142/84, HR 88.\nRight Wrist: Significant swelling of the distal forearm with dorsal angulation (dinner fork deformity). Tenderness to palpation over the distal radius. Mild tenderness over the ulnar side. Finger motion intact but painful. Sensation intact in all digits. Capillary refill brisk. Radial pulse palpable. Elbow and shoulder with full painless range of motion.\n\nRESULTS\n\nX-ray of the right wrist demonstrates an extra-articular fracture of the distal radius with dorsal angulation, consistent with a Colles fracture. The ulna is intact.\n\nASSESSMENT AND PLAN\n\n1. Closed Colles fracture of the right distal radius.\n- Closed reduction under local anesthesia and placement of a sugar-tong splint today, followed by post-reduction x-ray.\n- Referral to orthopedics within 1 week.\n- Tylenol 1000 mg three times daily as needed for pain. Avoid NSAIDs.\n- Elevation and ice.\n- DEXA scan ordered to evaluate bone density given fracture after a low-energy fall.\n\n2. Hypertension.\n- Mildly elevated today in the setting of pain.\n- Continue lisinopril 10 mg daily and home blood pressure monitoring.\n\nThe patient was counseled on fall prevention in icy conditions. She understands and agrees with the plan.\n",
+ "medical_concepts": [
+  {
+   "text": "my wrist is killing me",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "walking back to my car",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "slipped on the ice",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "parking lot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "black ice",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "put my right hand out to catch myself",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pass out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dizzy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "throbbing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "numbness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "tingling in my thumb and first finger",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "swelling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "puffy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "high blood pressure",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "headaches",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shortness of breath",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "osteoporosis",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "bone density scan",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart rate",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "right wrist",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "distal forearm",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "dorsal angulation",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dinner fork deformity",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tenderness over the distal radius",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ulnar side",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "capillary refill is brisk",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "radial pulse",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "elbow",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "shoulder",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-ray of the right wrist",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "fracture of the distal radius",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "colles fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ulna",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "closed fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "closed reduction",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "splint",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "cast",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "plate",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "orthopedics",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "one thousand milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "dexa scan",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "lisinopril ten milligrams daily",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Right wrist pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "fall",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "right wrist pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "walking to her car",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "slipped on black ice",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "parking lot",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "fell onto her outstretched right hand",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "head strike",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of consciousness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "presyncope",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "transient tingling in the thumb and index finger",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "deformity of the wrist",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril 10 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Home blood pressure readings",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "headaches",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shortness of breath",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "BP 142/84",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "HR 88",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right Wrist",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "Significant swelling of the distal forearm",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dorsal angulation",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dinner fork deformity",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tenderness to palpation over the distal radius",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild tenderness over the ulnar side",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sensation intact in all digits",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Capillary refill brisk",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Radial pulse palpable",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Elbow",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "shoulder",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "X-ray of the right wrist",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "extra-articular fracture of the distal radius",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Colles fracture",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ulna is intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Closed Colles fracture of the right distal radius",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Closed reduction",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "local anesthesia",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "sugar-tong splint",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "post-reduction x-ray",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "orthopedics",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tylenol 1000 mg",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "NSAIDs",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Elevation",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "DEXA scan",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "bone density",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "low-energy fall",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "home blood pressure monitoring",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "icy conditions",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "colles fracture",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "eponym for distal radius fracture, not a person"
+  },
+  {
+   "text": "Colles fracture",
+   "field": "note",
+   "is_pii": false,
+   "comment": "eponym for distal radius fracture, not a person"
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name of acetaminophen"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S52.531A",
+   "spans": [
+    {
+     "text": "fracture of the distal radius",
+     "field": "dialogue"
+    },
+    {
+     "text": "colles fracture",
+     "field": "dialogue"
+    },
+    {
+     "text": "closed fracture",
+     "field": "dialogue"
+    },
+    {
+     "text": "right wrist",
+     "field": "dialogue"
+    },
+    {
+     "text": "dinner fork deformity",
+     "field": "dialogue"
+    },
+    {
+     "text": "x-ray of the right wrist",
+     "field": "dialogue"
+    },
+    {
+     "text": "Closed Colles fracture of the right distal radius",
+     "field": "note"
+    },
+    {
+     "text": "Colles fracture",
+     "field": "note"
+    },
+    {
+     "text": "extra-articular fracture of the distal radius",
+     "field": "note"
+    },
+    {
+     "text": "X-ray of the right wrist",
+     "field": "note"
+    },
+    {
+     "text": "dinner fork deformity",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W00.0XXA",
+   "spans": [
+    {
+     "text": "slipped on the ice",
+     "field": "dialogue"
+    },
+    {
+     "text": "black ice",
+     "field": "dialogue"
+    },
+    {
+     "text": "slipped on black ice",
+     "field": "note"
+    },
+    {
+     "text": "fell onto her outstretched right hand",
+     "field": "note"
+    },
+    {
+     "text": "icy conditions",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.481",
+   "spans": [
+    {
+     "text": "parking lot",
+     "field": "dialogue"
+    },
+    {
+     "text": "parking lot",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.01",
+   "spans": [
+    {
+     "text": "walking back to my car",
+     "field": "dialogue"
+    },
+    {
+     "text": "walking to her car",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "high blood pressure",
+     "field": "dialogue"
+    },
+    {
+     "text": "lisinopril ten milligrams daily",
+     "field": "dialogue"
+    },
+    {
+     "text": "hypertension",
+     "field": "note"
+    },
+    {
+     "text": "Hypertension",
+     "field": "note"
+    },
+    {
+     "text": "lisinopril 10 mg daily",
+     "field": "note"
+    },
+    {
+     "text": "BP 142/84",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "retired librarian",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "former occupation"
+  },
+  {
+   "text": "i still volunteer to read to the kids on saturdays",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "distinctive personal routine"
+  },
+  {
+   "text": "working at the library",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "workplace / former job"
+  },
+  {
+   "text": "Retired librarian",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "former occupation"
+  }
+ ]
+}

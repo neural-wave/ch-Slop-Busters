@@ -1,0 +1,22 @@
+{
+  "encounter_id": "D2N154",
+  "phi": [
+    {"text": "dennis", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "triathlon", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "an endurance event"},
+    {"text": "aquatic center", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "local pool"},
+    {"text": "pittsburgh pang one", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "local"},
+    {"text": "pang ones", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "home team"},
+    {"text": "new york", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "another team"},
+    {"text": "seven to two", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "decisively"},
+    {"text": "hockey", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "track meet", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "sports event"},
+    {"text": "detroit", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "another city"},
+    {"text": "hockey town", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a sports town"},
+    {"text": "red wings", "field": "dialogue", "type": "ORGANIZATION", "tier": 1, "generalized": "local team"},
+    {"text": "Dennis Martin", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "46-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "triathlon", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "an endurance event"},
+    {"text": "aquatic center", "field": "note", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "local pool"}
+  ],
+  "medical_concepts": []
+}

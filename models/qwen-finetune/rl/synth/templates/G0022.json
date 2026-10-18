@@ -1,0 +1,648 @@
+{
+ "id": "G0022",
+ "dataset": "synthetic_acute",
+ "sex": "male",
+ "age_range": [
+  30,
+  45
+ ],
+ "icd10_codes": [
+  {
+   "code": "K43.2",
+   "description": "Incisional hernia without obstruction or gangrene"
+  },
+  {
+   "code": "Z90.49",
+   "description": "Acquired absence of other specified parts of digestive tract"
+  },
+  {
+   "code": "R10.84",
+   "description": "Generalized abdominal pain"
+  },
+  {
+   "code": "Z48.815",
+   "description": "Encounter for surgical aftercare following surgery on the digestive system"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . how have you been since your gallbladder surgery ?\n[patient] honestly , it's been a weird three weeks . the incisions healed fine , but i've got this bulge right above my belly button that wasn't there before .\n[doctor] okay . tell me when you first noticed it .\n[patient] about ten days after surgery . i was doing my usual routine and i felt a pop , and then this lump showed up . it's soft when i lie down and it pushes out when i stand up .\n[doctor] does it hurt ?\n[patient] it's sore . i'd say about a four out of ten most of the time , but when i cough or strain it gets like a seven out of ten .\n[doctor] okay . where exactly is it ? is it at one of the old port sites or in the middle ?\n[patient] it's right at the top edge of the big incision , the one under my ribs .\n[doctor] what were you doing when you felt the pop ?\n[patient] i was trying to lift a heavy engine block in my garage . i restore vintage motorcycles in my garage , and i was hauling a cylinder head onto the bench . my wife was yelling at me to get help , and of course i did n't .\n[doctor] that's the kind of thing we tell people to avoid for a while . how much does the bulge change ?\n[patient] it comes and goes . sometimes i can push it back in , sometimes it stays out . it's bigger when i'm on my feet all day .\n[doctor] okay . are you working right now ?\n[patient] i'm on leave from work right now , so i'm mostly at home . but last weekend i went out and played pickleball with my brother {OTHER_FIRST} , and i think that was too much too soon .\n[doctor] okay . did anything change after the pickleball ?\n[patient] the bulge got bigger that night . it hurt more when i got up from the couch .\n[doctor] any nausea , vomiting , or trouble passing gas ?\n[patient] no , i'm eating fine . i had some constipation from the pain medicine but that cleared up with some prune juice .\n[doctor] good . any fever or redness over the bulge ?\n[patient] no fever . the skin looks normal . it's just a little warm when i press it .\n[doctor] okay . let's look . can you lie back for me ? i'm going to press gently here on the bulge and ask you to cough .\n[patient] okay . ow , that's sore . it's pushing out more now .\n[doctor] i can feel a soft defect in the fascia right under the old incision . when you cough , it bulges . the skin is intact and there's no redness . it's reducible , so i can push it back in .\n[patient] oh , that's better .\n[doctor] the bowel does not seem to be trapped . your abdomen is soft and not tender everywhere . your temperature is ninety eight point six and your pulse is seventy six .\n[patient] okay , that's good . what is it ?\n[doctor] it sounds like an incisional hernia . that means some tissue has pushed through the muscle wall where the incision was closed . it happens in a small number of people after gallbladder surgery , especially after heavy lifting or straining .\n[patient] so it's not from the surgery itself ?\n[doctor] it's a complication of healing , but it's not your fault . what matters now is we keep it from getting stuck or strangled .\n[patient] okay . so what do we do ?\n[doctor] we'll start with a ct scan of your abdomen to see how big the defect is and what's inside . then i'd like you to see the hernia clinic for a repair decision . in the meantime no lifting more than ten pounds .\n[patient] ten pounds , that's nothing . my motorcycle projects are going to sit for a while .\n[doctor] i know it's frustrating . you could wear an abdominal binder when you're up and moving .\n[patient] my wife bought one already . she's been on me to take it easy . yes , we just adopted twins in may , they're eighteen months now . so i'm chasing two toddlers all day . it's hard to sit still .\n[doctor] how are you managing the pain ? are you taking anything ?\n[patient] just tylenol at night and some ibuprofen when the pain is bad . i'm trying not to take too much .\n[doctor] that's reasonable . i'd avoid ibuprofen for now if you're still having the pain . keep taking tylenol as needed , up to three grams a day .\n[patient] okay . how long until i can go back to the gym ?\n[doctor] probably not until the repair is planned . we'll revisit that after your scan .\n[patient] that's a bummer . my brother keeps telling me i'm getting soft .\n[doctor] tell him to be patient . and the gallbladder pathology report came back . it showed chronic cholecystitis with gallstones and no cancer .\n[patient] good . so that's done .\n[doctor] yes . i'll see you back in two weeks after the ct . if the bulge becomes hard , red , or painful , or you have vomiting , go to the emergency room right away .\n[patient] got it . thanks , doctor {DOCTOR_LAST} .",
+ "note": "CHIEF COMPLAINT\n\nBulge at the upper incision three weeks after cholecystectomy.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male who is three weeks status post laparoscopic cholecystectomy for symptomatic cholelithiasis and presents with a new bulge at the superior edge of the subcostal incision. He first noticed the bulge approximately ten days after surgery, after lifting a heavy cylinder head in his garage. He restores vintage motorcycles in his garage. The bulge is soft when recumbent and protrudes with standing and coughing. He describes discomfort as 4/10 at rest and 7/10 with coughing or straining.\n\nHe played pickleball last weekend, after which the bulge enlarged and became more painful when rising from a seated position. He denies nausea, vomiting, fever, or obstipation. He reports transient constipation related to pain medication, now resolved. He has been taking acetaminophen nightly and occasional ibuprofen. He is on leave from work. He recently adopted twins in May and is caring for two toddlers daily. His wife has been encouraging restriction of activity.\n\nPHYSICAL EXAM\n\nTemp 98.6 F, pulse 76. Abdomen soft, nontender except over the bulge. A soft reducible defect is palpated in the fascia beneath the superior incision that expands with cough. Skin over the defect is intact without erythema. No signs of incarceration or strangulation.\n\nRESULTS\n\nSurgical pathology from the cholecystectomy: chronic cholecystitis with cholelithiasis; no malignancy.\n\nASSESSMENT AND PLAN\n\n1. Incisional hernia at the subcostal port site following laparoscopic cholecystectomy, reducible, without obstruction or strangulation. Activity restriction with no lifting more than 10 pounds and use of an abdominal binder for activity. CT abdomen and pelvis ordered to define defect size and contents. Referral to hernia clinic for repair planning. Return precautions reviewed for a firm, red, or painful bulge, vomiting, or fever, with emergency department evaluation if these occur.\n\n2. Postoperative pain. Acetaminophen up to 3 grams daily. Avoid NSAIDs for now.\n\n3. Status post cholecystectomy with pathology reviewed and benign.\n\n4. Constipation, resolved.",
+ "medical_concepts": [
+  {
+   "text": "gallbladder surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "this bulge right above my belly button",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's soft when i lie down",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "pushes out when i stand up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's sore",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "when i cough or strain it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the big incision",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "lift a heavy engine block",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "hauling a cylinder head",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "felt a pop",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's bigger when i'm on my feet all day",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "played pickleball",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the bulge got bigger that night",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it hurt more when i got up from the couch",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "nausea",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vomiting",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "trouble passing gas",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "constipation",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "pain medicine",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "no fever",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little warm when i press it",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "soft defect in the fascia",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it bulges",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the skin is intact",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no redness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "it's reducible",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the bowel does not seem to be trapped",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "abdomen is soft and not tender everywhere",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "temperature is ninety eight point six",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse is seventy six",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "incisional hernia",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "heavy lifting",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "straining",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ct scan of your abdomen",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "hernia clinic",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "no lifting more than ten pounds",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "abdominal binder",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "chasing two toddlers all day",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "gallbladder pathology report",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "chronic cholecystitis with gallstones",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "no cancer",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "the bulge becomes hard",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "new bulge",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "laparoscopic cholecystectomy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "symptomatic cholelithiasis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "subcostal incision",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "lifting a heavy cylinder head",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "protrudes with standing and coughing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "discomfort",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "played pickleball",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the bulge enlarged",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "more painful when rising from a seated position",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "nausea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vomiting",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "fever",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "obstipation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "transient constipation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "caring for two toddlers daily",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Temp 98.6 F",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse 76",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "nontender except over the bulge",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "soft reducible defect",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "expands with cough",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "without erythema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "incarceration",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "strangulation",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "Surgical pathology",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "chronic cholecystitis with cholelithiasis",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "no malignancy",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Incisional hernia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "subcostal port site",
+   "field": "note",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "CT abdomen and pelvis",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "hernia clinic",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "no lifting more than 10 pounds",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "abdominal binder",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Acetaminophen up to 3 grams daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "NSAIDs",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Postoperative pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Status post cholecystectomy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Constipation",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for acetaminophen, not a person"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "K43.2",
+   "spans": [
+    {
+     "text": "this bulge right above my belly button",
+     "field": "dialogue"
+    },
+    {
+     "text": "soft defect in the fascia",
+     "field": "dialogue"
+    },
+    {
+     "text": "soft reducible defect",
+     "field": "note"
+    },
+    {
+     "text": "protrudes with standing and coughing",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z90.49",
+   "spans": [
+    {
+     "text": "gallbladder surgery",
+     "field": "dialogue"
+    },
+    {
+     "text": "laparoscopic cholecystectomy",
+     "field": "note"
+    },
+    {
+     "text": "Status post cholecystectomy",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "R10.84",
+   "spans": [
+    {
+     "text": "it's sore",
+     "field": "dialogue"
+    },
+    {
+     "text": "when i cough or strain it",
+     "field": "dialogue"
+    },
+    {
+     "text": "discomfort",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z48.815",
+   "spans": [
+    {
+     "text": "gallbladder surgery",
+     "field": "dialogue"
+    },
+    {
+     "text": "Postoperative pain",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i restore vintage motorcycles in my garage",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "yes , we just adopted twins in may",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "recent life event, family size"
+  },
+  {
+   "text": "restores vintage motorcycles in his garage",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "unusual hobby with specifics"
+  },
+  {
+   "text": "recently adopted twins in May",
+   "field": "note",
+   "category": "OTHER_QUASI",
+   "comment": "recent life event, family size"
+  }
+ ],
+ "scenario": {
+  "specialty": "general surgery follow-up",
+  "visit": "acute",
+  "length": "medium",
+  "focus": [
+   "OTHER_QUASI",
+   "OTHER_PERSON_NAME"
+  ]
+ }
+}

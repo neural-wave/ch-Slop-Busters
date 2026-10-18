@@ -1,0 +1,19 @@
+{
+  "encounter_id": "D2N146",
+  "phi": [
+    {"text": "bobby", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "miller", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "pork grinds", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "fatty snacks"},
+    {"text": "pork rinses", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "fatty snacks"},
+    {"text": "springs", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "the nice weather's"},
+    {"text": "photography", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "outdoor hobbies"},
+    {"text": "foot photographs", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "pictures"},
+    {"text": "nature hikes", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "walks"},
+    {"text": "rex center", "field": "dialogue", "type": "LOCATION", "tier": 1, "generalized": "a community center"},
+    {"text": "spring time", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "certain seasons"},
+    {"text": "hiking", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "doing strenuous activity"},
+    {"text": "nature photography", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "outdoor hobbies"},
+    {"text": "hiking", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "strenuous activity"}
+  ],
+  "medical_concepts": []
+}

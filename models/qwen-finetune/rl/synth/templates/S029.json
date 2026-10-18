@@ -1,0 +1,658 @@
+{
+ "id": "S029",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S43.111A",
+   "description": "Subluxation of right acromioclavicular joint, initial encounter"
+  },
+  {
+   "code": "V91.23XA",
+   "description": "Fall due to collision between other powered watercraft and other watercraft or other object, initial encounter"
+  },
+  {
+   "code": "Y92.828",
+   "description": "Other wilderness area as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.19",
+   "description": "Activity, other involving water and watercraft"
+  },
+  {
+   "code": "Y99.8",
+   "description": "Other external cause status"
+  }
+ ],
+ "dialogue": "[doctor] hey {PATIENT_FIRST} , i'm doctor {DOCTOR_LAST} . what's going on with the shoulder ?\n[patient] hey doc . so , i had a little accident on a jet ski last weekend .\n[doctor] okay , let's hear it .\n[patient] so a bunch of us rented a cabin up at {PLACE} for my buddy {OTHER_FIRST}'s bachelor party , and we rented a couple of jet skis . and we were out on the lake , just cruising around , jumping some wakes , having fun .\n[doctor] okay .\n[patient] and i was kind of looking back at my buddies and not paying attention , and i ran right into one of those big orange marker buoys . like full speed .\n[doctor] oh boy . so the jet ski hit the buoy ?\n[patient] yeah , the front of it hit the buoy , and the jet ski stopped dead , and i got launched over the handlebars . i hit the buoy with my right shoulder on the way over , and then i went in the water .\n[doctor] okay . were you wearing a life jacket ?\n[patient] yes , they make you wear one when you rent them . that's probably a good thing , because my arm was pretty useless .\n[doctor] okay . did you hit your head ?\n[patient] no , just the shoulder .\n[doctor] did you swallow a lot of water , any trouble breathing afterwards ?\n[patient] no , i swallowed a little , but i was fine . my buddies pulled me up onto their jet ski and we went back to the dock .\n[doctor] okay . had you been drinking at all ?\n[patient] no , not then . it was like ten in the morning .\n[doctor] okay , fair enough . so tell me about the pain .\n[patient] it's right on the top of my shoulder , like at the end of my collarbone . there's a bump there that was n't there before . and when i try to reach across my body , or lift my arm over my head , it really hurts .\n[doctor] okay . how would you rate it ?\n[patient] when i'm resting it's like a three . reaching across , a seven .\n[doctor] any numbness or tingling in your arm ?\n[patient] no .\n[doctor] any weakness ?\n[patient] it feels weak , but i think that's because it hurts .\n[doctor] okay . what have you been doing for it ?\n[patient] ice , and ibuprofen . i've been wearing my arm in a sling that the urgent care up there gave me .\n[doctor] okay . any other medical problems ?\n[patient] no , i'm pretty healthy .\n[doctor] okay . what do you do for work ?\n[patient] i'm a high school chemistry teacher , so mostly i'm writing on the board .\n[doctor] okay . let me take a look . so , looking at both shoulders , there's a visible bump at the top of your right shoulder , where the collarbone meets the shoulder blade . that's your ac joint . i'm gonna press here .\n[patient] yeah , ow , that's the spot .\n[doctor] okay . tender right over the ac joint . i'm gonna bring your arm across your body .\n[patient] oh , yeah , that hurts .\n[doctor] okay , positive cross arm test . the collarbone moves a little up and down when i push on it . your rotator cuff strength is good when i test it , though it's a little painful . sensation is normal , pulse is normal .\n[doctor] so we got x-rays of both shoulders to compare . on the right side , the end of the collarbone is sitting a little higher than the shoulder blade , compared to the left . it's not completely separated , it's partly out of place . there's no fracture .\n[patient] okay , so what is it ?\n[doctor] so , you have what's called a shoulder separation , or an ac joint subluxation , on the right side . it's a grade two injury , which means the ligaments are stretched and partly torn , but not completely .\n[patient] does that need surgery ?\n[doctor] no . grade two injuries do really well without surgery . the bump may not go away completely , but it usually does n't affect function .\n[patient] okay , good .\n[doctor] so , use the sling for comfort for about one to two weeks . then you can start moving it as the pain allows . i'm gonna send you to physical therapy to work on range of motion and strength . ibuprofen 600 milligrams up to three times a day with food , and ice for 20 minutes a few times a day .\n[patient] can i still go to the gym ?\n[doctor] lower body , sure . no bench press , no pushups , no overhead lifting for about six weeks .\n[patient] and the jet skis ?\n[doctor] maybe give those a rest for the summer . and keep your eyes forward next time .\n[patient] yeah , lesson learned .\n[doctor] see you in three weeks .",
+ "note": "CHIEF COMPLAINT\n\nRight shoulder pain.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male who presents with right shoulder pain after a personal watercraft accident on {DATE_NUM}.\n\nThe patient was riding a rented jet ski recreationally on a lake when he collided at full speed with a marker buoy. The jet ski stopped abruptly and he was thrown over the handlebars, striking his right shoulder on the buoy before falling into the water. He was wearing a life jacket. He denies head injury, aspiration symptoms, or difficulty breathing. He denies alcohol use at the time of injury. He reports pain over the top of the right shoulder with a new bump, rated 3/10 at rest and 7/10 with cross-body adduction and overhead reaching. He reports subjective weakness due to pain. He denies numbness or tingling. He was seen at an urgent care, given a sling, and has used ice and ibuprofen.\n\nSOCIAL HISTORY\n\nHe works as a high school chemistry teacher.\n\nPHYSICAL EXAM\n\nRight shoulder: Visible prominence of the distal clavicle at the acromioclavicular joint. Tender to palpation over the AC joint. Positive cross-arm adduction test. Mild vertical instability of the distal clavicle. Rotator cuff strength 5/5 with pain. Neurovascularly intact.\n\nRESULTS\n\nBilateral shoulder x-rays: Elevation of the right distal clavicle relative to the acromion compared to the contralateral side, consistent with partial displacement. No fracture.\n\nASSESSMENT AND PLAN\n\n1. Subluxation of the right acromioclavicular joint (grade II AC separation).\n- Jet ski collision with a buoy on a lake with fall from the watercraft.\n- Nonoperative management. Sling for comfort for 1 to 2 weeks, then range of motion as tolerated.\n- Physical therapy referral for range of motion and strengthening.\n- Ibuprofen 600 mg up to three times daily with food. Ice 20 minutes several times daily.\n- No bench press, pushups, or overhead lifting for 6 weeks.\n\nFollow up in 3 weeks.",
+ "medical_concepts": [
+  {
+   "text": "i had a little accident on a jet ski",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "we rented a couple of jet skis",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "out on the lake",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "just cruising around , jumping some wakes , having fun",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i ran right into one of those big orange marker buoys",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the jet ski hit the buoy",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the jet ski stopped dead , and i got launched over the handlebars",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i hit the buoy with my right shoulder on the way over",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i went in the water",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a visible bump at the top of your right shoulder",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tender right over the ac joint",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "positive cross arm test",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the collarbone moves a little up and down",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the end of the collarbone is sitting a little higher than the shoulder blade",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's partly out of place",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's not completely separated",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the ligaments are stretched and partly torn",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "life jacket",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "rotator cuff strength is good",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "sensation is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "pulse is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "there's no fracture",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "it's right on the top of my shoulder",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "there's a bump there",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "when i try to reach across my body , or lift my arm over my head , it really hurts",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "hit your head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "swallowed a little",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "trouble breathing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "weakness",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shoulder separation",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ac joint subluxation , on the right side",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "grade two injury",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ac joint",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "collarbone",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "right shoulder",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "shoulder blade",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "rotator cuff",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "x-rays of both shoulders",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen 600 milligrams up to three times a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "sling",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "surgery",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ice",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "personal watercraft accident",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "riding a rented jet ski recreationally on a lake",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "collided at full speed with a marker buoy",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "The jet ski stopped abruptly and he was thrown over the handlebars",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "striking his right shoulder on the buoy",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "falling into the water",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Jet ski collision with a buoy on a lake with fall from the watercraft",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Visible prominence of the distal clavicle at the acromioclavicular joint",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tender to palpation over the AC joint",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Positive cross-arm adduction test",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild vertical instability of the distal clavicle",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Elevation of the right distal clavicle relative to the acromion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "consistent with partial displacement",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "life jacket",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Rotator cuff strength 5/5 with pain",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Neurovascularly intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No fracture",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "alcohol use",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Right shoulder pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "right shoulder pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pain over the top of the right shoulder with a new bump",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "head injury",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "aspiration symptoms",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "difficulty breathing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "subjective weakness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness or tingling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Subluxation of the right acromioclavicular joint",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "grade II AC separation",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Bilateral shoulder x-rays",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen 600 mg up to three times daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "sling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sling",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Nonoperative management",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Physical therapy",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ice",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "ac joint",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "abbreviation for acromioclavicular joint"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S43.111A",
+   "spans": [
+    {
+     "text": "ac joint subluxation , on the right side",
+     "field": "dialogue"
+    },
+    {
+     "text": "shoulder separation",
+     "field": "dialogue"
+    },
+    {
+     "text": "grade two injury",
+     "field": "dialogue"
+    },
+    {
+     "text": "it's partly out of place",
+     "field": "dialogue"
+    },
+    {
+     "text": "Subluxation of the right acromioclavicular joint",
+     "field": "note"
+    },
+    {
+     "text": "grade II AC separation",
+     "field": "note"
+    },
+    {
+     "text": "consistent with partial displacement",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "V91.23XA",
+   "spans": [
+    {
+     "text": "i ran right into one of those big orange marker buoys",
+     "field": "dialogue"
+    },
+    {
+     "text": "the jet ski hit the buoy",
+     "field": "dialogue"
+    },
+    {
+     "text": "the jet ski stopped dead , and i got launched over the handlebars",
+     "field": "dialogue"
+    },
+    {
+     "text": "personal watercraft accident",
+     "field": "note"
+    },
+    {
+     "text": "collided at full speed with a marker buoy",
+     "field": "note"
+    },
+    {
+     "text": "Jet ski collision with a buoy on a lake with fall from the watercraft",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.828",
+   "spans": [
+    {
+     "text": "out on the lake",
+     "field": "dialogue"
+    },
+    {
+     "text": "riding a rented jet ski recreationally on a lake",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.19",
+   "spans": [
+    {
+     "text": "we rented a couple of jet skis",
+     "field": "dialogue"
+    },
+    {
+     "text": "just cruising around , jumping some wakes , having fun",
+     "field": "dialogue"
+    },
+    {
+     "text": "riding a rented jet ski recreationally on a lake",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.8",
+   "spans": [
+    {
+     "text": "just cruising around , jumping some wakes , having fun",
+     "field": "dialogue"
+    },
+    {
+     "text": "riding a rented jet ski recreationally on a lake",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "bachelor party",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "specific life event"
+  },
+  {
+   "text": "i'm a high school chemistry teacher",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "patient job"
+  },
+  {
+   "text": "high school chemistry teacher",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "patient job"
+  },
+  {
+   "text": "rented a cabin",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "trip detail"
+  }
+ ]
+}

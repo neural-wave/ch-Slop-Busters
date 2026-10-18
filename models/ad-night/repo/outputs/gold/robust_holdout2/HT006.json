@@ -1,0 +1,439 @@
+{
+ "encounter_id": "HT006",
+ "pii": [
+  {
+   "field": "dialogue",
+   "text": "Brückner-Ottmann",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Ludwig",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Sigrun",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Leeds",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Hanni",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Kranz",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "At 91",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "taught Latin",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "Gymnasium Feldmoching",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "dialogue",
+   "text": "s.ottmann-hale@leedsmail.co.uk",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "dialogue",
+   "text": "Ayşe",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Zahnarztpraxis am Nordbad",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Jörg",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Ludwig, M.Sc.",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Dr. Ludwig",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Schleißheimer Str. 214",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "80809 München",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "+49 89 3087 5521",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "praxis@zahnarzt-nordbad.de",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "www.zahnarzt-nordbad.de",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Munich",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "7 October 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Brückner-Ottmann",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Hannelore",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "14.02.1935",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "aged 91",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "91-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Seniorenstift St. Benno",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Pelkovenstraße 58",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "80992 München",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Vereinigte Isartal BKK",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "H482117093",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "IK 103 772 418",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Rheinland Zahn-Plus",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "ZP-22-0084137",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "06.10.2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Annette",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Kranz",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Dachauer Str. 41",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "80335 München",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Ottmann-Hale",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "03/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "02.10.2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "05.10.2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "9 Oct 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Ayşe",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Demirtaş",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "16/10",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Lukas",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Wörle",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "089 1460 7738",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Sigrun",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "12 Ashgrove Terrace",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Leeds LS6 3DN",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "UK",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "+44 7700 900417",
+   "category": "ID",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "dialogue",
+   "text": "root rest at 45",
+   "category": "CLINICAL_NUMBER",
+   "why": "FDI tooth number, not an age"
+  },
+  {
+   "field": "dialogue",
+   "text": "abscess on 36",
+   "category": "CLINICAL_NUMBER",
+   "why": "FDI tooth number"
+  },
+  {
+   "field": "dialogue",
+   "text": "37 is loose",
+   "category": "CLINICAL_NUMBER",
+   "why": "FDI tooth number"
+  },
+  {
+   "field": "note",
+   "text": "Ludwig's angina",
+   "category": "EPONYM",
+   "why": "disease eponym, not the dentist"
+  },
+  {
+   "field": "note",
+   "text": "Kennedy Class II",
+   "category": "EPONYM",
+   "why": "Kennedy partial-denture classification"
+  },
+  {
+   "field": "note",
+   "text": "1:200,000",
+   "category": "CLINICAL_NUMBER",
+   "why": "epinephrine concentration"
+  },
+  {
+   "field": "note",
+   "text": "25/30",
+   "category": "CLINICAL_NUMBER",
+   "why": "MMSE score"
+  },
+  {
+   "field": "note",
+   "text": "1-0-1",
+   "category": "CLINICAL_NUMBER",
+   "why": "German dosing schedule"
+  },
+  {
+   "field": "note",
+   "text": "1-1-1",
+   "category": "CLINICAL_NUMBER",
+   "why": "German dosing schedule"
+  },
+  {
+   "field": "note",
+   "text": "4-0",
+   "category": "CLINICAL_NUMBER",
+   "why": "suture size"
+  },
+  {
+   "field": "note",
+   "text": "36/37",
+   "category": "CLINICAL_NUMBER",
+   "why": "FDI tooth numbers"
+  },
+  {
+   "field": "note",
+   "text": "6x5 mm",
+   "category": "CLINICAL_NUMBER",
+   "why": "lesion size"
+  },
+  {
+   "field": "note",
+   "text": "retained root 45",
+   "category": "CLINICAL_NUMBER",
+   "why": "FDI tooth number, not an age"
+  },
+  {
+   "field": "note",
+   "text": "34 and 47",
+   "category": "CLINICAL_NUMBER",
+   "why": "FDI tooth numbers, not ages"
+  },
+  {
+   "field": "note",
+   "text": "tooth 37",
+   "category": "CLINICAL_NUMBER",
+   "why": "FDI tooth number"
+  },
+  {
+   "field": "dialogue",
+   "text": "Eliquis",
+   "category": "CODE_EVIDENCE",
+   "why": "apixaban brand supporting Z79.01 long-term anticoagulant use; drug name, not a person"
+  }
+ ]
+}

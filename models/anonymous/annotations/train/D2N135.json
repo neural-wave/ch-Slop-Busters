@@ -1,0 +1,15 @@
+{
+  "encounter_id": "D2N135",
+  "phi": [
+    {"text": "hannah", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "52-year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "holidays", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "festivities"},
+    {"text": "holiday gift baskets", "field": "dialogue", "type": "TEMPORAL", "tier": 2, "generalized": "gift baskets"},
+    {"text": "big bakers", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "fond of baking"},
+    {"text": "Hannah Phillips", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "Phillips", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "52-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "holidays", "field": "note", "type": "TEMPORAL", "tier": 2, "generalized": "festivities"}
+  ],
+  "medical_concepts": []
+}

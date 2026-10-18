@@ -1,0 +1,103 @@
+########## ENCOUNTER D2N186
+=== FIELD: dialogue
+[doctor] hey sean nice to see you i heard you that you have some back pain
+[patient] yeah it's nice to see you too it's been a while
+[doctor] yeah
+[patient] yeah yeah you know i had some back surgery and for some reason i always had lower
+[doctor] left back pain when was your back surgery
+[patient] it was in november of two thousand twenty
+[doctor] was that long ago
+[patient] yes
+[doctor] wow what happened what did they do microdiscectomy my disk broke off and just wrapped around and connected to my spinal thecal sac sounds horrible it's not the poop sac though
+[patient] that's good to know what kind of symptoms did you have with that horrible pain down my leg in my back just horrible awful things that you can think of
+[doctor] horrible nerve pain it sounds like
+[patient] i think so
+[doctor] okay did they give you any meds for that they did i was highly highly dosed up on gabapentin
+[patient] was that hard to withdraw from
+[doctor] yeah it was terrible sounds like yeah there is certainly take too much of that and then stop suddenly you can definitely have some some issues okay so you have left side low back pain
+[patient] mm-hmm
+[doctor] does anything make it better or worse so my beautiful significant other always tells me to stretch and it always works
+[patient] she sounds smart
+[doctor] yeah she is so stretching helps okay what about any physical activities do they make it worse
+[patient] a lot of bending over
+[doctor] okay
+[patient] and
+[doctor] honestly it it just happens
+[patient] you know randomly
+[doctor] randomly okay so it hurt on the right side as well or just the left
+[patient] depends on the day
+[doctor] is it right around where you had surgery
+[patient] generally
+[doctor] okay did you try icing
+[patient] no
+[doctor] hmmm did you try any pain meds
+[patient] yep
+[doctor] what kind of pain meds did you
+[patient] ibuprofen eight hundred milligrams a day
+[doctor] it's quite a high dose okay let me do a quick physical exam on your back here if you bend forward does that hurt
+[patient] not right now but normally it would
+[doctor] okay so no pain with flexion how about if you stand back up
+[patient] no
+[doctor] okay no pain with extension either does it hurt while you're just standing here
+[patient] yes
+[doctor] okay so pain when you're weightbearing does it hurt when i push right here on the left side
+[patient] yes
+[doctor] pain with palpation to the left side around the l5 how about on the right side
+[patient] no
+[doctor] no pain with palpation to the right side okay i'm just gon na push down on your feet can you push back up on my hands
+[patient] yes
+[doctor] alright dorsiflexion is normal looks like that you have normal range of motion so that's good any pain down your legs
+[patient] no
+[doctor] great no nerve pain alright so we took an x-ray when you came in it looks like you do n't have any fractures or anything on the spinal bone that's good you can see where you had surgery it looks like everything has healed properly there so that's good news so what i think you did is you have a a muscle pull there from having a misalignment in your spine so what i'm gon na do is i'll prescribe some physical therapy for you you have great physical therapy here at the va so you can just come right to our physical therapist and that should help have you have you been there before
+[patient] yes
+[doctor] how do you feel about it
+[patient] i really go to the dentist
+[doctor] got it okay so i'm also gon na prescribe you some meloxicam instead of the ibuprofen that might help a little bit more with some of the pain management
+[patient] is there any chance i can get some vicodin
+[doctor] lem me check your record quick for for pain management it's kind of a strong drug for vicodin and we do n't really like to prescribe that unless it's totally necessary so why do n't we start with the meloxicam and i also write a referral to pain management and they can talk to you a little bit about some of your pain and maybe not using narcotics to manage it
+[patient] how about some demerol
+[doctor] hmmm sure i'll prescribe demerol
+[patient] thank you
+[doctor] yeah you're welcome any other problems going on today you want to talk about
+[patient] no
+[doctor] alright well it was nice to see you today
+[patient] it's always nice to see you as well
+[doctor] alright
+=== FIELD: note
+CHIEF COMPLAINT
+
+Low back pain, left side.
+
+HISTORY OF PRESENT ILLNESS
+
+Sean Phillips is a pleasant 35-year-old male who presents to the clinic today for the evaluation of left-sided low back pain.
+
+The patient has been experiencing pain in the left side of his low back, generally localized around the surgical site of his microdiscectomy performed in 11/2020, but occasionally into the right side as well. Other than spontaneous flare-ups, his pain is worsened with excessive spinal flexion. Stretching and ibuprofen 800 mg daily are helpful, but he denies having tried icing the area.
+
+SURGICAL HISTORY
+
+The patient is status post lumbar microdiscectomy performed in 11/2020.
+
+MEDICATIONS
+
+The patient reports that, prior to his microdiscectomy in 2020, he was taking high-dose gabapentin for severe nerve pain through his back and lower extremities. He is currently taking ibuprofen 800 mg daily.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports left-sided low back pain.
+
+PHYSICAL EXAM
+
+MSK: Examination of the lumbar spine: No pain with flexion or extension. Pain with weight-bearing. Pain with palpation on the left side around L5. No pain with palpation on the right side. Dorsiflexion is normal. Normal range of motion. No nerve pain in his lower extremities.
+
+RESULTS
+
+X-ray images of the lumbar spine were obtained and reviewed in office today. These reveal no evidence of fracture or other abnormalities in the spine or vertebrae. His previous surgical site is visible and appears to have healed properly.
+
+ASSESSMENT
+
+Low back pain, left side.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, I believe his symptoms are related to a muscle strain due to spinal misalignment. I recommend that we treat the patient conservatively with formal physical therapy and meloxicam. The patient requested a prescription for Vicodin and Demerol. I explained that Vicodin is a strong medication for this issue and that I would need to refer him to pain management for that, but I did provide him with a prescription for Demerol.

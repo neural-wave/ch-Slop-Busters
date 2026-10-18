@@ -1,0 +1,692 @@
+{
+ "id": "S017",
+ "dataset": "synthetic_injury",
+ "sex": "male",
+ "icd10_codes": [
+  {
+   "code": "S13.4XXA",
+   "description": "Sprain of ligaments of cervical spine, initial encounter"
+  },
+  {
+   "code": "S01.01XA",
+   "description": "Laceration without foreign body of scalp, initial encounter"
+  },
+  {
+   "code": "W16.522A",
+   "description": "Jumping or diving into swimming pool striking bottom causing other injury, initial encounter"
+  },
+  {
+   "code": "Y92.34",
+   "description": "Swimming pool (public) as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y93.11",
+   "description": "Activity, swimming"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} ? i'm doctor {DOCTOR_LAST} , i'm the emergency physician today . i know you've got that collar on , so please do n't try to turn your head . just look at me and answer with words .\n[patient] okay . hi .\n[doctor] so the paramedics told me a little bit , but tell me in your own words what happened .\n[patient] so we were at the {CITY} community pool for my nephew's graduation party . and i was swimming with the kids , and i got out and i dove off the side , and i did n't realize i was at the shallow end . it was only like four feet deep .\n[doctor] okay .\n[patient] and i went in head first and my head hit the bottom of the pool . like the top of my head scraped right along the concrete .\n[doctor] okay . did you lose consciousness at all ?\n[patient] no , i do n't think so . i kind of saw white for a second , but i came right up . my buddy {OTHER_FIRST} grabbed me and the lifeguard came over , and they saw i was bleeding from my head .\n[doctor] okay . did you swallow a lot of water ? any trouble breathing ?\n[patient] no , i swallowed a little , but i'm breathing fine .\n[doctor] okay . and after you hit , did you have any numbness , tingling , or weakness in your arms or legs ? even for a second ?\n[patient] no . my neck hurt right away , and my head was bleeding , but my arms and legs felt normal the whole time .\n[doctor] okay , good . any electric shock feelings going down your arms ?\n[patient] no .\n[doctor] okay . the lifeguard put you on a backboard and called the ambulance ?\n[patient] yeah , they did the whole thing , the board and the collar .\n[doctor] okay , that's exactly what they should do . so where does your neck hurt ?\n[patient] in the back , in the middle , and kind of down into my shoulders . it's stiff .\n[doctor] okay . on a scale of one to ten ?\n[patient] maybe a five .\n[doctor] okay . any headache ?\n[patient] a little bit , where i cut it .\n[doctor] any nausea or vomiting ? any vision changes ?\n[patient] no .\n[doctor] have you had any alcohol today ?\n[patient] i had one beer , like two hours before .\n[doctor] okay . any medical problems ? any medicines ?\n[patient] no , nothing .\n[doctor] okay . and when was your last tetanus shot ?\n[patient] i have no idea . probably high school .\n[doctor] okay , we'll update that . what do you do for work ?\n[patient] i'm a line cook .\n[doctor] okay . so let me examine you . i'm going to keep your neck still . so you have a laceration on the top of your scalp , about three centimeters long . it's not deep , i do n't see any bone , and there's no debris or foreign body in it . i'm going to feel along the back of your neck . tell me where it hurts .\n[patient] there , and there . kind of in the middle .\n[doctor] okay . you have midline tenderness in the lower part of your neck , and you're tender in the muscles on both sides . now squeeze my fingers , push up , push down . good . your strength is five out of five in all four extremities . your sensation is normal and your reflexes are normal . your pupils are equal and reactive , and you're alert and answering everything appropriately .\n[patient] okay .\n[doctor] so because of how you hit your head and because you have midline tenderness , we got a ct scan of your neck and your head . hey dragon , show me the ct cervical spine . so looking at the ct of your neck , there is no fracture and no malalignment . the ct of your head shows no bleeding and no skull fracture .\n[patient] okay , good .\n[doctor] so for my assessment and plan . first , you have a cervical strain or sprain , which is an injury to the ligaments of the neck , from diving into the shallow end of the pool and striking the bottom . you were very lucky , because this is a classic way that people break their necks . the ct does not show a fracture . i'm going to clear the collar , but i'd like you to wear a soft collar for comfort for a few days only if you need it .\n[patient] okay .\n[doctor] for pain , ibuprofen six hundred milligrams every eight hours with food , and a muscle relaxer at night , cyclobenzaprine five milligrams . no driving on the muscle relaxer .\n[patient] okay .\n[doctor] second , the scalp laceration . we're going to clean it and close it with staples . those come out in seven to ten days . keep it dry for a day , and then you can wash your hair gently . we'll give you a tetanus booster today .\n[patient] okay .\n[doctor] i want you to follow up with your primary care doctor in one week , and if your neck pain is not better , we may get an mri . but if you get any numbness , tingling , weakness , trouble walking , or loss of bladder control , you need to come right back .\n[patient] got it .\n[doctor] and please , no diving into pools , especially if you do n't know the depth .\n[patient] believe me , never again .",
+ "note": "CHIEF COMPLAINT\n\nNeck pain and scalp laceration after a diving injury.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male brought in by EMS with spinal motion restriction on {DATE_SPOKEN} after a diving injury at a public swimming pool. He was swimming and dove head first off the side into the shallow end, approximately 4 feet deep, striking the top of his head on the bottom of the pool. He reports a brief moment of seeing white but no loss of consciousness. He was assisted from the water and immobilized by the lifeguard. He reports immediate posterior neck pain, 5/10, radiating to the trapezius, and a mild headache at the laceration site. He denies numbness, tingling, weakness or electric shock sensations at any time. He denies nausea, vomiting, visual change or dyspnea. One alcoholic beverage 2 hours prior. No past medical history. No medications. Tetanus status unknown.\n\nSOCIAL HISTORY\n\nLine cook.\n\nPHYSICAL EXAM\n\nNeurological: Alert and oriented. Pupils equal and reactive. Strength 5/5 in all extremities. Sensation intact. Reflexes normal.\nHead: 3 cm linear laceration of the vertex of the scalp, superficial, no foreign body, no exposed bone.\nNeck: Lower cervical midline tenderness and bilateral paraspinal tenderness.\n\nRESULTS\n\nCT cervical spine: No fracture or malalignment.\nCT head: No intracranial hemorrhage or skull fracture.\n\nPROCEDURE\n\nScalp laceration irrigated and repaired with 4 staples. Tdap administered.\n\nASSESSMENT AND PLAN\n\n1. Cervical sprain, after diving into a swimming pool and striking the bottom.\n- Medical Reasoning: Midline tenderness with normal CT and normal neurologic exam. Cervical collar cleared clinically.\n- Medical Treatment: Soft collar for comfort as needed. Ibuprofen 600 mg every 8 hours with food. Cyclobenzaprine 5 mg at bedtime.\n- Follow up with primary care in 1 week; MRI if persistent pain.\n\n2. Laceration of the scalp without foreign body.\n- Medical Treatment: Staple removal in 7 to 10 days. Wound care reviewed. Tetanus updated.\n\nReturn precautions reviewed for any numbness, weakness, gait change or bladder dysfunction.",
+ "medical_concepts": [
+  {
+   "text": "collar",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "community pool",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was swimming with the kids",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i dove off the side",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the shallow end",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "it was only like four feet deep",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i went in head first and my head hit the bottom of the pool",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the top of my head scraped right along the concrete",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i kind of saw white for a second",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "i was bleeding from my head",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "trouble breathing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness , tingling , or weakness in your arms or legs",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my neck hurt right away",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "electric shock feelings going down your arms",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "backboard",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "in the back , in the middle , and kind of down into my shoulders",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's stiff",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "headache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nausea or vomiting",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "vision changes",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "one beer",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus shot",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "laceration on the top of your scalp , about three centimeters long",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "it's not deep , i do n't see any bone",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "there's no debris or foreign body in it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "midline tenderness in the lower part of your neck",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "tender in the muscles on both sides",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your strength is five out of five in all four extremities",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your sensation is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your reflexes are normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your pupils are equal and reactive",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "ct cervical spine",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "ct of your neck",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "there is no fracture and no malalignment",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ct of your head",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "no skull fracture",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "cervical strain or sprain",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "ligaments of the neck",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": true
+  },
+  {
+   "text": "diving into the shallow end of the pool and striking the bottom",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "soft collar",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ibuprofen six hundred milligrams every eight hours",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "cyclobenzaprine five milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "scalp laceration",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "staples",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "tetanus booster",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "mri",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "loss of bladder control",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Neck pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "scalp laceration",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "diving injury",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "spinal motion restriction",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "public swimming pool",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "He was swimming",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "dove head first off the side into the shallow end, approximately 4 feet deep, striking the top of his head on the bottom of the pool",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no loss of consciousness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "immediate posterior neck pain, 5/10, radiating to the trapezius",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild headache at the laceration site",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "numbness, tingling, weakness or electric shock sensations",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "nausea, vomiting, visual change or dyspnea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "One alcoholic beverage",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tetanus status unknown",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Alert and oriented",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Pupils equal and reactive",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Strength 5/5 in all extremities",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Sensation intact",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Reflexes normal",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "3 cm linear laceration of the vertex of the scalp",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "superficial, no foreign body, no exposed bone",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lower cervical midline tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "bilateral paraspinal tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "CT cervical spine: No fracture or malalignment",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "CT head: No intracranial hemorrhage or skull fracture",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Scalp laceration irrigated and repaired with 4 staples",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Tdap",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cervical sprain",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "diving into a swimming pool and striking the bottom",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "normal neurologic exam",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Soft collar",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Ibuprofen 600 mg every 8 hours",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cyclobenzaprine 5 mg at bedtime",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "MRI",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Laceration of the scalp without foreign body",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Staple removal",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Tetanus updated",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "dragon",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "dictation software"
+  },
+  {
+   "text": "community pool",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic place type supporting Y92.34; the city name is a separate slot"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "S13.4XXA",
+   "spans": [
+    {
+     "text": "cervical strain or sprain",
+     "field": "dialogue"
+    },
+    {
+     "text": "ligaments of the neck",
+     "field": "dialogue"
+    },
+    {
+     "text": "midline tenderness in the lower part of your neck",
+     "field": "dialogue"
+    },
+    {
+     "text": "there is no fracture and no malalignment",
+     "field": "dialogue"
+    },
+    {
+     "text": "your strength is five out of five in all four extremities",
+     "field": "dialogue"
+    },
+    {
+     "text": "Cervical sprain",
+     "field": "note"
+    },
+    {
+     "text": "CT cervical spine: No fracture or malalignment",
+     "field": "note"
+    },
+    {
+     "text": "Lower cervical midline tenderness",
+     "field": "note"
+    },
+    {
+     "text": "normal neurologic exam",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "S01.01XA",
+   "spans": [
+    {
+     "text": "laceration on the top of your scalp , about three centimeters long",
+     "field": "dialogue"
+    },
+    {
+     "text": "there's no debris or foreign body in it",
+     "field": "dialogue"
+    },
+    {
+     "text": "scalp laceration",
+     "field": "dialogue"
+    },
+    {
+     "text": "Laceration of the scalp without foreign body",
+     "field": "note"
+    },
+    {
+     "text": "3 cm linear laceration of the vertex of the scalp",
+     "field": "note"
+    },
+    {
+     "text": "superficial, no foreign body, no exposed bone",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "W16.522A",
+   "spans": [
+    {
+     "text": "i dove off the side",
+     "field": "dialogue"
+    },
+    {
+     "text": "i went in head first and my head hit the bottom of the pool",
+     "field": "dialogue"
+    },
+    {
+     "text": "diving into the shallow end of the pool and striking the bottom",
+     "field": "dialogue"
+    },
+    {
+     "text": "dove head first off the side into the shallow end, approximately 4 feet deep, striking the top of his head on the bottom of the pool",
+     "field": "note"
+    },
+    {
+     "text": "diving into a swimming pool and striking the bottom",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.34",
+   "spans": [
+    {
+     "text": "community pool",
+     "field": "dialogue"
+    },
+    {
+     "text": "public swimming pool",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y93.11",
+   "spans": [
+    {
+     "text": "i was swimming with the kids",
+     "field": "dialogue"
+    },
+    {
+     "text": "He was swimming",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "i'm a line cook",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  },
+  {
+   "text": "my nephew's graduation party",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "family life event that narrows the date and gathering"
+  },
+  {
+   "text": "Line cook",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "occupation"
+  }
+ ]
+}

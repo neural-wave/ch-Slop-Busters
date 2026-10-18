@@ -1,0 +1,30 @@
+{
+  "encounter_id": "D2N124",
+  "phi": [
+    {"text": "jerry", "field": "dialogue", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "45 -year-old", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "michael", "field": "dialogue", "type": "NAME_CLINICIAN", "tier": 1, "generalized": ""},
+    {"text": "sean", "field": "dialogue", "type": "NAME_RELATIVE", "tier": 1, "generalized": ""},
+    {"text": "basketball", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "april", "field": "dialogue", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "working out", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"},
+    {"text": "gym", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a fitness center"},
+    {"text": "step kurry", "field": "dialogue", "type": "NAME_OTHER", "tier": 1, "generalized": ""},
+    {"text": "only ten", "field": "dialogue", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "coach", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "help out"},
+    {"text": "coaching", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "volunteering"},
+    {"text": "work from home", "field": "dialogue", "type": "OCCUPATION", "tier": 2, "generalized": "have a flexible job"},
+    {"text": "dogs", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pets"},
+    {"text": "dog", "field": "dialogue", "type": "PERSONAL_DETAIL", "tier": 2, "generalized": "pet"},
+    {"text": "dog walker", "field": "dialogue", "type": "ACTIVITY", "tier": 2, "generalized": "a pet owner"},
+    {"text": "Jerry Cook", "field": "note", "type": "NAME_PATIENT", "tier": 1, "generalized": ""},
+    {"text": "45-year-old", "field": "note", "type": "AGE", "tier": 1, "generalized": ""},
+    {"text": "basketball", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "sports"},
+    {"text": "works from home", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "has a flexible job"},
+    {"text": "coach", "field": "note", "type": "OCCUPATION", "tier": 2, "generalized": "help with"},
+    {"text": "04/2022", "field": "note", "type": "DATE", "tier": 1, "generalized": ""},
+    {"text": "working out", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercising"},
+    {"text": "gym", "field": "note", "type": "ACTIVITY", "tier": 2, "generalized": "exercise"}
+  ],
+  "medical_concepts": []
+}

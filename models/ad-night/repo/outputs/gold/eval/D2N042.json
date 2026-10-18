@@ -1,0 +1,22 @@
+{
+  "encounter_id": "D2N042",
+  "pii": [
+    {"field": "dialogue", "text": "carolyn", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "played soccer in college", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "inner marrow soccer", "category": "OTHER_QI", "risk": "low"},
+    {"field": "dialogue", "text": "new major league soccer stadium", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Carolyn", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Jones", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "38-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "intramural soccer league", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "played soccer in college", "category": "OTHER_QI", "risk": "low"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "it was quite icy", "category": "CODE_EVIDENCE", "why": "W00.9XXA fall due to ice and snow"},
+    {"field": "dialogue", "text": "i just slipped and and fell", "category": "CODE_EVIDENCE", "why": "W00.9XXA fall due to ice and snow"},
+    {"field": "note", "text": "slipped and fell on ice", "category": "CODE_EVIDENCE", "why": "W00.9XXA fall due to ice and snow"},
+    {"field": "note", "text": "4/10", "category": "CLINICAL_NUMBER", "why": "pain score"},
+    {"field": "note", "text": "6/10", "category": "CLINICAL_NUMBER", "why": "pain score"},
+    {"field": "note", "text": "1/10", "category": "CLINICAL_NUMBER", "why": "pain score"}
+  ]
+}

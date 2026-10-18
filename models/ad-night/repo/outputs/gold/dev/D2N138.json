@@ -1,0 +1,151 @@
+{
+  "encounter_id": "D2N138",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "emily",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "hernandez",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "march 26 2001",
+      "category": "DOB",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "20 year old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "april 2020",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "2022",
+      "category": "YEAR",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "2019",
+      "category": "YEAR",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "military",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "enterprise rent-a-car",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "kaiser",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "broadway",
+      "category": "LOCATION",
+      "risk": "medium"
+    },
+    {
+      "field": "dialogue",
+      "text": "helen",
+      "category": "PERSON_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Emily",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "Hernandez",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "20-year-old",
+      "category": "AGE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "04/2020",
+      "category": "DATE",
+      "risk": "high"
+    },
+    {
+      "field": "note",
+      "text": "2022",
+      "category": "YEAR",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "2019",
+      "category": "YEAR",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "military",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "army",
+      "category": "OCCUPATION",
+      "risk": "medium"
+    },
+    {
+      "field": "note",
+      "text": "Enterprise",
+      "category": "ORGANIZATION",
+      "risk": "medium"
+    }
+  ],
+  "keep": [
+    {
+      "field": "dialogue",
+      "text": "250/50",
+      "category": "CLINICAL_NUMBER",
+      "why": "Wixela dose, not a date"
+    },
+    {
+      "field": "dialogue",
+      "text": "peanuts",
+      "category": "CODE_EVIDENCE",
+      "why": "exposure supporting T78.01XA anaphylaxis due to peanuts"
+    },
+    {
+      "field": "note",
+      "text": "peanuts",
+      "category": "CODE_EVIDENCE",
+      "why": "exposure supporting T78.01XA anaphylaxis due to peanuts"
+    }
+  ]
+}

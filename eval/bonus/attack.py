@@ -66,7 +66,7 @@ from pathlib import Path
 
 from eval import metrics as M
 from eval import suites as S
-from eval.common import (CACHE_DIR, CONTAINER, DATA, FIELDS, OUT, RUNS_DIR, SUITES_DIR, count, load_jsonl, pattern, ratio, sha1_file, sha1_text,
+from eval.common import (CACHE_DIR, REPO, DATA, FIELDS, OUT, RUNS_DIR, SUITES_DIR, count, load_jsonl, pattern, ratio, sha1_file, sha1_text,
                          words, write_json, write_jsonl)  # fmt: skip
 
 ATTACKS_DIR = OUT / "attacks"
@@ -75,8 +75,8 @@ NAMES = {"A1": "NER residual scan", "A2": "roster dictionary", "A3": "rare words
          "A6": "LLM agent adversary"}  # fmt: skip
 AUTOMATED = ["A1", "A2", "A3", "A4", "A5"]  # A6 comes from `eval adversary import`, never from this command, which keeps it
 DEFAULT_ATTACKS = ["A2", "A3", "A5"]
-ANONYMOUS_PYTHON = CONTAINER / "models" / "anonymous-deps" / ".venv" / "bin" / "python"
-VM_ROOT = CONTAINER / "vm-backup" / "neuralwave"
+ANONYMOUS_PYTHON = REPO / "models" / "anonymous" / ".venv" / "bin" / "python"
+VM_ROOT = REPO / "models" / "anonymous"
 WORKER = Path(__file__).with_name("_ner_worker.py")
 CLAUDE_WORKER = Path(__file__).with_name("_claude_worker.py")
 DEFAULT_LLM = "qwen3.5:2b-q4_K_M"  # the coders' Ollama model; `--llm claude-sonnet-5-5` sends the records to the API instead

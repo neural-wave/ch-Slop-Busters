@@ -1,0 +1,20 @@
+{
+  "encounter_id": "D2N062",
+  "pii": [
+    {"field": "dialogue", "text": "raymond", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "west coast", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "east coast", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "west goes", "category": "LOCATION", "risk": "medium"},
+    {"field": "dialogue", "text": "my dog", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Raymond", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Taylor", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "67-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "West Coast", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "East Coast", "category": "LOCATION", "risk": "medium"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "murphy's sign", "category": "EPONYM", "why": "abdominal exam sign, not a person"},
+    {"field": "note", "text": "McMurphy's Sign", "category": "EPONYM", "why": "typo of Murphy's sign, abdominal exam sign"},
+    {"field": "note", "text": "133/70", "category": "CLINICAL_NUMBER", "why": "blood pressure, not a date"}
+  ]
+}

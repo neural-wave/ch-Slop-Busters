@@ -1,0 +1,37 @@
+{
+  "encounter_id": "D2N109",
+  "pii": [
+    {
+      "field": "dialogue",
+      "text": "stephanie",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "morales",
+      "category": "PATIENT_NAME",
+      "risk": "high"
+    },
+    {
+      "field": "dialogue",
+      "text": "36 -year-old",
+      "category": "AGE",
+      "risk": "high"
+    }
+  ],
+  "keep": [
+    {
+      "field": "note",
+      "text": "120/70",
+      "category": "CLINICAL_NUMBER",
+      "why": "blood pressure, not a date"
+    },
+    {
+      "field": "note",
+      "text": "2/6",
+      "category": "CLINICAL_NUMBER",
+      "why": "murmur grade, not a date"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "encounter_id": "SYN003",
+  "pii": [
+    {"field": "note", "text": "KESTREL BAY GENERAL HOSPITAL", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "21/02/2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "O'DONNELL", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Margaret", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Peggy", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "09.08.1967", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "KBG-0049921", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "Jamie", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Jamie Bell", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "RN Bell", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "58 y/o", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "58F", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Kwame", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Mensah", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "primary school teacher", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "Ashgrove Primary School", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "Hannah", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Lindqvist", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Ashgrove Medical Practice", "category": "LOCATION", "risk": "medium"}
+  ],
+  "keep": [
+    {"field": "note", "text": "Bell's palsy", "category": "EPONYM", "why": "diagnosis, not the triage nurse"},
+    {"field": "note", "text": "Bell's phenomenon", "category": "EPONYM", "why": "clinical sign"},
+    {"field": "note", "text": "House-Brackmann", "category": "EPONYM", "why": "facial palsy grading scale"},
+    {"field": "note", "text": "Ramsay Hunt", "category": "EPONYM", "why": "syndrome excluded"},
+    {"field": "note", "text": "148/90", "category": "CLINICAL_NUMBER", "why": "blood pressure"},
+    {"field": "note", "text": "IV/VI", "category": "CLINICAL_NUMBER", "why": "House-Brackmann grade"},
+    {"field": "note", "text": "5/5", "category": "CLINICAL_NUMBER", "why": "power"}
+  ]
+}

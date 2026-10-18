@@ -1,0 +1,367 @@
+{
+ "encounter_id": "HO021",
+ "pii": [
+  {
+   "field": "note",
+   "text": "Govan & Linthouse Team",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "BELL,",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Rose Ann",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Ann",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Mrs Bell",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Rosie",
+   "category": "PATIENT_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "121148 2364",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "GG7731902",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "12.11.1948",
+   "category": "DOB",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "77 yrs",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "77-year-old",
+   "category": "AGE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "3/2",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "27 Ardbeg Terrace",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Govan",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Glasgow",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "G51 4QX",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "1357#",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "0141 445 2290",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Callum",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "07821 330 617",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Priya",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Nandakumar",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Linthouse Health Centre",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "0141 445 8810",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "linthouse.hc@nhs-ggc.example.scot",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "12th October 2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "02/09/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "05/10/26",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Tyson",
+   "category": "OTHER_QI",
+   "risk": "low"
+  },
+  {
+   "field": "note",
+   "text": "Duncan",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Mr Moss",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Moss & Kerr Lettings",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "0141 332 6045",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Clydeside Minor Injuries Unit",
+   "category": "LOCATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "MB26-0418833",
+   "category": "ID",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "school dinner lady",
+   "category": "OCCUPATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "St Saviour's Primary",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "2008",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Fairfield shipyard",
+   "category": "ORGANIZATION",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "Agnieszka",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Aggie",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Wójcik",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "07/10/26",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "2015",
+   "category": "YEAR",
+   "risk": "medium"
+  },
+  {
+   "field": "note",
+   "text": "15/10/2026",
+   "category": "DATE",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "Siobhán",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  },
+  {
+   "field": "note",
+   "text": "MacLeòid",
+   "category": "PERSON_NAME",
+   "risk": "high"
+  }
+ ],
+ "keep": [
+  {
+   "field": "note",
+   "text": "bitten by a dog",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism for W54.0XXD"
+  },
+  {
+   "field": "note",
+   "text": "dog bite",
+   "category": "CODE_EVIDENCE",
+   "why": "mechanism for W54.0XXD / S81.851D"
+  },
+  {
+   "field": "note",
+   "text": "Staffordshire bull terrier",
+   "category": "CODE_EVIDENCE",
+   "why": "the biting animal (dog), W54.0XXD"
+  },
+  {
+   "field": "note",
+   "text": "right shin",
+   "category": "CODE_EVIDENCE",
+   "why": "site for S81.851D"
+  },
+  {
+   "field": "note",
+   "text": "puncture wounds",
+   "category": "CODE_EVIDENCE",
+   "why": "open bite wound, S81.851D"
+  },
+  {
+   "field": "note",
+   "text": "type 2 diabetes",
+   "category": "CODE_EVIDENCE",
+   "why": "supports E11.9"
+  },
+  {
+   "field": "note",
+   "text": "Bell's palsy",
+   "category": "EPONYM",
+   "why": "facial nerve palsy, not the patient's surname"
+  },
+  {
+   "field": "note",
+   "text": "sugars rose",
+   "category": "NOT_A_NAME",
+   "why": "verb, not the patient's first name"
+  },
+  {
+   "field": "note",
+   "text": "2/52",
+   "category": "CLINICAL_NUMBER",
+   "why": "two-week care plan, not a date"
+  },
+  {
+   "field": "note",
+   "text": "7/7",
+   "category": "CLINICAL_NUMBER",
+   "why": "seven-day antibiotic course"
+  },
+  {
+   "field": "note",
+   "text": "10/10",
+   "category": "CLINICAL_NUMBER",
+   "why": "monofilament sites"
+  },
+  {
+   "field": "note",
+   "text": "146/82",
+   "category": "CLINICAL_NUMBER",
+   "why": "blood pressure"
+  },
+  {
+   "field": "note",
+   "text": "Pasteurella multocida",
+   "category": "EPONYM",
+   "why": "organism named after Pasteur, not a person here"
+  }
+ ]
+}

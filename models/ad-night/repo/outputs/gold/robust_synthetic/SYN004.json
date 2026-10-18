@@ -1,0 +1,35 @@
+{
+  "encounter_id": "SYN004",
+  "pii": [
+    {"field": "note", "text": "PINE HOLLOW MEDICAL CENTER", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "E26-0412-0388", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "12-Apr-2026", "category": "DATE", "risk": "high"},
+    {"field": "note", "text": "RIVERA-KAHN", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Tomás", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "1992-06-15", "category": "DOB", "risk": "high"},
+    {"field": "note", "text": "6610-2284", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "Keisha", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Barnwell", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "33 y/o", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "33M", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "Old Mill Trail", "category": "LOCATION", "risk": "medium"},
+    {"field": "note", "text": "Priya", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Natarajan", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "warehouse supervisor", "category": "OCCUPATION", "risk": "medium"},
+    {"field": "note", "text": "Cascade Freight Solutions", "category": "ORGANIZATION", "risk": "medium"},
+    {"field": "note", "text": "Marcus", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "Feld", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "503-555-0119", "category": "ID", "risk": "high"},
+    {"field": "note", "text": "Tommy", "category": "PATIENT_NAME", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "note", "text": "road bike", "category": "CODE_EVIDENCE", "why": "Y93.55 bike riding"},
+    {"field": "note", "text": "cycling", "category": "CODE_EVIDENCE", "why": "Y93.55 bike riding"},
+    {"field": "note", "text": "bike riding", "category": "CODE_EVIDENCE", "why": "Y93.55 bike riding"},
+    {"field": "note", "text": "132/78", "category": "CLINICAL_NUMBER", "why": "blood pressure"},
+    {"field": "note", "text": "6/10", "category": "CLINICAL_NUMBER", "why": "pain score"},
+    {"field": "note", "text": "14/15", "category": "CLINICAL_NUMBER", "why": "GCS"},
+    {"field": "note", "text": "15/15", "category": "CLINICAL_NUMBER", "why": "GCS"},
+    {"field": "note", "text": "5-0", "category": "CLINICAL_NUMBER", "why": "suture size"}
+  ]
+}

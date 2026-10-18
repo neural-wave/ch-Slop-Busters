@@ -1,0 +1,15 @@
+{
+  "encounter_id": "D2N150",
+  "pii": [
+    {"field": "dialogue", "text": "scott", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "dog", "category": "OTHER_QI", "risk": "low"},
+    {"field": "note", "text": "Scott", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "Miller", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "note", "text": "36-year-old", "category": "AGE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "lachman", "category": "EPONYM", "why": "knee ligament test, not a person"},
+    {"field": "note", "text": "Lachman's", "category": "EPONYM", "why": "knee ligament test, not a person"},
+    {"field": "note", "text": "5/5", "category": "CLINICAL_NUMBER", "why": "muscle strength grade, not a date"}
+  ]
+}

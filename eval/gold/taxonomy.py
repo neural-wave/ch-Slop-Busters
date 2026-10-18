@@ -1,6 +1,6 @@
 """Label harmonization of the three ACI-eval golds into the harness's categories, and the gold levels.
 
-The harness gold (`harness`, data/converted/aci_bench), the VM teacher gold (`vm`, vm-backup/neuralwave/annotations)
+The harness gold (`harness`, data/converted/aci_bench), the VM teacher gold (`vm`, models/anonymous/annotations)
 and ketai's reference gold (`ketai`, ketai-eval/gold) use different label sets. Every source label maps to one of
 the harness's 11 categories plus `CONTACT` (common.CATEGORY_RISK); the source label stays in the item's `label`.
 `direct` follows the paper's 4-type PHI schema (PERSON, DATE, CONTACT, ADDRESS without the quasi part) and the task's

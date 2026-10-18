@@ -4,7 +4,7 @@ Usage: python3 -I eval/gold/audit_gold.py
        python3 -I eval gold --audit
 
 Needs no model; reads merged.jsonl (run `python3 -I eval gold` first) and the source golds. It joins the checks of
-ketai-eval/gold/audit_gold.py and vm-backup/neuralwave/evaluation/check_annotations.py:
+ketai-eval/gold/audit_gold.py and models/anonymous/evaluation/check_annotations.py:
 
     verbatim         per source gold, strings with no case-insensitive whole-word occurrence in their field (and
                      those that are not even a substring)

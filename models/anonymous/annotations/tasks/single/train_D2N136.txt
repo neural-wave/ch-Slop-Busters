@@ -1,0 +1,111 @@
+########## ENCOUNTER D2N136
+=== FIELD: dialogue
+[doctor] hi janet , how are you ?
+[patient] good , how are you ?
+[doctor] i'm good . uh , are you ready to get started ?
+[patient] yes .
+[doctor] okay . so , janet is a 33-year-old female , here for some , some joint paint . what , what joint's been bothering you , janet ?
+[patient] it's been mostly , um , my knees , actually . i've been doing more stair type workouts , which i thought was , you know , building muscle , uh , on my knees and supposed to help .
+[doctor] mm-hmm .
+[patient] but in turn it , it really has n't , so my knees have been really bothering me .
+[doctor] okay . all right . and is it one knee versus the other ? or both equally ?
+[patient] it's both equally .
+[doctor] okay . and have you been having any other joint pain like , elbows or shoulder , or anything like that ?
+[patient] no , but i , i should mention that like , i had a rotator cuff repair about two years ago .
+[doctor] mm-hmm .
+[patient] um , but i have n't had any problems since that point .
+[doctor] okay , and what shoulder was that ?
+[patient] that was my right shoulder .
+[doctor] okay , all right . and , um , any pins and needles in your feet at all ? any swelling in your legs ?
+[patient] uh , no , nothing like that .
+[doctor] okay .
+[patient] um , but it would be something though i look out for often , just because i have diabetes .
+[doctor] okay , and your blood sugars have been under control ?
+[patient] yes , they have been .
+[doctor] okay . and have you had any fever or chills ?
+[patient] no , nothing like that .
+[doctor] okay . any nausea or vomiting , chest pains , shortness of breath ?
+[patient] no , but i do have high blood pressure , um , but i , i monitor that and i've been taking medication for that , and that has n't elevated , um , in any way since the joint pain .
+[doctor] okay . all right . so , yeah , i see on here that you do take norvasc , five mg a day and you've been taking that every day-
+[patient] yes .
+[doctor] okay . um , and , um , so let's go ahead and do a quick physical exam on you . so , hey dragon , show me the blood pressure . your blood pressure's actually pretty high today , so you might be a little nervous here , which is not uncommon .
+[patient] yeah .
+[doctor] um , so , looking at you , your , your neck is nice and soft , there's no enlarged thyroid . your heart has a regular rate and rhythm . your lungs are clear . your abdomen is nice and soft , but looking at your knees , on your left knee you do have a slight erythema and edema . there is a small efusion present over your left knee . um , you have some decrease flexion and extension of your knee , but your strength in your lower extremities is good . uh , so let's go ahead and look at some of your results . i know that we did some x-rays when you came in .
+[patient] yeah .
+[doctor] hey dragon , show me the left knee x-ray . okay , so looking at this , this is an , this is a normal x-ray of your left knee , so you may just have a little bit of a strain going on in your , in your knees there .
+[patient] okay .
+[doctor] uh , let's look at some of your labs , 'cause i know that you have the diabetes . hey dragon , show me the labs . so , here your white blood cell count is not elevated , so i'm not concerned about an infection or anything like that . um , hey dragon , show me the diabetes' labs . okay and , and your a1c is a little elevated , but it's not , it's not terrible , so i think for right now we'll just continue you on the current regimen . um , so my plan from you , for you in terms of the joint pain , um , i'd like to go ahead and , you know , we'll just send some autoimmune labs to work , work up your left knee pain and , uh , we'll work for you to do some physical therapy and i'd like to go ahead and give you anti-inflammatory medication to help with the pain . does that sound okay ?
+[patient] that sounds great .
+[doctor] okay . hey dragon , order meloxicam 15 mg once a day . hey dragon , order a physical therapy referral . hey dragon , order an autoimmune profile . and then from a hypertension standpoint you , because your blood pressure is a little elevated today , i'd like you to continue to monitor it at home and , you know , send me a report in the next couple of weeks sh- , you know , giving me the , the blood pressure reportings . do you have a blood pressure cuff at home ?
+[patient] yes , i do .
+[doctor] okay . and then , um , we'll go ahead and order a lipid profile for you . hey dragon , order a lipid profile . and then for , from a diabetes standpoint let's go ahead and , uh , continue you on your metformin 500 mg twice a day . okay ?
+[patient] okay .
+[doctor] do you have any questions ?
+[patient] no , that's it .
+[doctor] okay . the nurse will be in soon . it was good to see you .
+[patient] nice seeing you too .
+[doctor] hey dragon , finalize the note .
+
+=== FIELD: note
+CHIEF COMPLAINT
+
+Joint pain.
+
+HISTORY OF PRESENT ILLNESS
+
+Ms. Janet Sullivan is a 33-year-old female who presents to the clinic today for evaluation of joint pain.
+
+She localizes the joint pain to her bilateral knees. The patient reports she has been doing stair workouts, which she thought was building muscle on her knees. She denies any pins and needles in her feet or swelling in her legs. The patient notes that she would look out for those symptoms because she has diabetes. She denies any fever or chills. She denies any nausea or vomiting. The patient denies any chest pain or shortness of breath.
+
+She notes she had a right shoulder rotator cuff repair about 2 years ago, but she has not had any problems since that point.
+
+She reports that her diabetes are well-controlled.
+
+The patient does have high blood pressure but she monitors it and takes Norvasc 5 mg a day. She notes her blood pressure has not been elevated since her joint pain started.
+
+REVIEW OF SYSTEMS
+
+• Constitutional: Negative for fever, chills
+• Cardiovascular: Negative for chest pain or lower leg swelling.
+• Respiratory: Negative for shortness of breath.
+• Gastrointestinal: Negative for nausea, vomiting.
+• Musculoskeletal: Positive for Arthralgias
+
+PHYSICAL EXAMINATION
+
+Neck
+• General Examination: Neck is supple without thyromegaly.
+
+Respiratory
+• Auscultation of Lungs: Clear bilaterally. No wheezes, rales, or rhonchi.
+
+Cardiovascular
+• Auscultation of Heart: Regular rate and rhythm.
+
+Musculoskeletal
+• Left knee: Slight erythema and edema. Small effusion present. Decreased flexion and extension. Strength in lower extremities is good.
+
+RESULTS
+
+Views: Four views left knee.
+Indication: Knee pain.
+Interpretation: There are no fractures, dislocations, or other abnormalities.
+
+PLAN
+
+Ms. Janet Sullivan is a 33-year-old female who presents to the clinic today for evaluation of joint pain.
+
+Left knee strain.
+• Medical Treatment: We will order an autoimmune panel for further workup. I am going to refer her to physical therapy and prescribe meloxicam 15 mg once daily to help with pain.
+• Specialist Referrals: Physical therapy.
+
+Hypertension.
+• Medical Reasoning: Her blood pressure is elevated in office today, but has been well-controlled on Norvasc 5 mg daily based on home monitoring.
+• Medical Treatment: Continue current regimen and home monitoring. She will send me a report in the next couple of weeks. We will also order a lipid profile.
+
+Diabetes type II.
+• Medical Reasoning: Her hemoglobin a1C is slightly elevated, but her blood glucose levels have been well-controlled.
+• Medical Treatment: Continue metformin 500 mg twice a day.
+
+Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+

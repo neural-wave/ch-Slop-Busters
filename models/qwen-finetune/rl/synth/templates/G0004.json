@@ -1,0 +1,803 @@
+{
+ "id": "G0004",
+ "dataset": "synthetic_annual",
+ "sex": "male",
+ "age_range": [
+  60,
+  75
+ ],
+ "icd10_codes": [
+  {
+   "code": "M17.11",
+   "description": "Unilateral primary osteoarthritis, right knee"
+  },
+  {
+   "code": "I10",
+   "description": "Essential (primary) hypertension"
+  },
+  {
+   "code": "E78.5",
+   "description": "Hyperlipidemia, unspecified"
+  },
+  {
+   "code": "Z00.01",
+   "description": "Encounter for general adult medical examination with abnormal findings"
+  }
+ ],
+ "dialogue": "[doctor] good morning , {PATIENT_FIRST} . i see you brought {OTHER_FIRST} with you again . how are you doing ?\n[patient] morning , doctor {DOCTOR_LAST} . i'm doing fine , i guess . my knee is the usual , and my wife wants me to get the checkup done .\n[patient] he's right . he's terrible about it , doctor .\n[doctor] i'm glad you're here . let's go through the annual checkup , and then we'll talk about the knee . how's the knee been ?\n[patient] it's been stiff in the mornings . i can walk to the mailbox fine , but the stairs are a chore now .\n[patient] he won't take the cane . i've been telling him for a year .\n[doctor] okay , we'll get to the cane . how long has the stiffness been going on ?\n[patient] probably three or four years , getting worse slowly . the right one is worse than the left .\n[doctor] any locking or buckling ?\n[patient] no buckling . it catches sometimes when i get up from the couch .\n[doctor] what's your activity like ?\n[patient] i still garden , i do the tomatoes and the beans , and i walk the dog around the block . i can't kneel anymore though .\n[patient] he hasn't knelt since the spring . he has to use a stool now .\n[doctor] that makes sense . any swelling in the knee ?\n[patient] a little after a long day , but it goes down overnight .\n[doctor] okay . now your blood pressure . how has it been at home ?\n[patient] i check it every morning . it's usually around one thirty five over eighty five . the pills aren't doing what they used to .\n[doctor] how long have you been on the same medicine ?\n[patient] the amlodipine and the lisinopril , both for about six years . i take them every morning with coffee . my wife checks that i took them .\n[doctor] good . any headaches , chest pain , or shortness of breath ?\n[patient] no , none of that . i get a little dizzy when i stand up too fast sometimes .\n[doctor] okay . let's check your cholesterol as well . your last ldl was one sixty , and you're on a statin , correct ?\n[patient] atorvastatin , ten milligrams . i keep forgetting to refill it .\n[doctor] that's important . the washington guidelines suggest a lower target for someone with your history , so we'll talk about increasing it .\n[patient] whatever you think is best . the pharmacy has been slow with my refills lately .\n[doctor] i'll send the new prescription to the pharmacy on your side of town . now , your work history . you were at the plant for a long time , right ?\n[patient] thirty one years at {ORG} , machinist , mostly on the lathes . before that i was at harmon tool and die , which closed in ninety eight .\n[doctor] where did you live back then ?\n[patient] cedar falls , about forty minutes north . we moved down here when the plant closed , and we've been here ever since .\n[doctor] okay . and your hearing and eyes ? any trouble ?\n[patient] my hearing is going , i turn the tv up too loud . my eyes are fine , i got new glasses last spring .\n[doctor] are you still smoking ?\n[patient] quit twenty years ago . i was a pack a day for thirty years .\n[doctor] that's a big accomplishment . how about alcohol ?\n[patient] two beers on friday , and that's the limit . my wife would kill me .\n[doctor] good . let me check your vitals . your blood pressure is one forty over eighty two today . heart rate is seventy six . your weight is two hundred and nine pounds , which is up about six pounds since last year .\n[patient] the holidays . the cookies at the church bake sale .\n[doctor] mm . i'll pull up your chart , your number is {MRN} . let me examine your knee . does this hurt when i press here ?\n[patient] yeah , on the inside of the knee .\n[doctor] there's crepitus when you bend it , and mild tenderness along the joint line . no warmth or redness . your range of motion is about one twenty degrees on the right and one thirty five on the left .\n[patient] that sounds about right .\n[doctor] your lungs sound clear , and your heart is regular without murmurs . no leg swelling .\n[doctor] okay . we got your labs from last week . your a one c is five point eight , which is in the prediabetes range .\n[patient] prediabetes , that's the one before sugar diabetes ?\n[doctor] right . so we want to focus on diet and walking .\n[patient] i can do the walking . the wife says i need to lay off the bread .\n[doctor] for the knee , i'd like to refer you to physical therapy for strengthening and a home exercise program . your x-ray from two years ago showed moderate narrowing , so a repeat film is reasonable .\n[patient] i'll go to the therapy , but i don't want shots in the knee .\n[doctor] we can talk about injections later . for pain , you can use acetaminophen , up to three thousand milligrams a day , and topical diclofenac on the knee twice a day .\n[patient] the cream , yes . the tylenol , i can handle that .\n[doctor] good . and for the blood pressure , let's increase the amlodipine to ten milligrams daily . come back in four weeks with your home readings .\n[patient] okay . should i get the shingles shot ?\n[doctor] yes , the shingles vaccine is recommended at your age , and the pneumonia vaccine too . your record shows you're behind on both .\n[patient] my wife will make sure i do it . she's always been the one who knows the schedule , doctor .\n[doctor] that's wonderful . any questions for me ?\n[patient] just the cane question . are you going to tell him ?\n[doctor] yes , i'll tell him again . a cane in the left hand helps take weight off the right knee .\n[patient] see , the doctor agrees with me .\n[doctor] okay . see you in four weeks . keep up the walking and the garden .",
+ "note": "MRN: {MRN}\n\nCHIEF COMPLAINT\n\nAnnual physical examination. Right knee stiffness and hypertension follow-up.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old male who presents for annual physical examination accompanied by his wife, {OTHER_FIRST}, who contributes to the history. He reports three to four years of progressive right knee stiffness, worse in the morning, with difficulty on stairs and inability to kneel. He denies locking or buckling; the knee catches occasionally on rising from a seated position. Swelling after long days resolves overnight. He continues gardening and walking his dog around the block.\n\nHome blood pressure readings are approximately 135/85 on amlodipine and lisinopril, both taken for about six years. He reports occasional dizziness on rapid standing. He denies headache, chest pain, or shortness of breath. He acknowledges missed atorvastatin refills.\n\nHe reports mild hearing loss and has updated his eyeglasses within the past year.\n\nSOCIAL HISTORY\n\nRetired machinist with 31 years at {ORG}, primarily operating lathes, and earlier employment at Harmon Tool and Die, which closed in 1998. He relocated to {CITY} from Cedar Falls when the plant closed. Former smoker, one pack per day for 30 years, quit 20 years ago. Drinks two beers on Fridays.\n\nPAST MEDICAL HISTORY\n\nEssential hypertension. Hyperlipidemia. Primary osteoarthritis of the right knee. Prediabetes.\n\nMEDICATIONS\n\nAmlodipine 5 mg daily, lisinopril daily, atorvastatin 10 mg daily.\n\nPHYSICAL EXAM\n\nVitals: BP 140/82, heart rate 76, weight 209 lb, up approximately 6 lb from last year.\nRight knee: crepitus with flexion, medial joint line tenderness, no warmth or erythema. Range of motion approximately 120 degrees on the right and 135 degrees on the left.\nLungs clear. Heart regular without murmur. No lower extremity edema.\n\nRESULTS\n\nHemoglobin A1c 5.8%. LDL cholesterol 160 mg/dL. Knee radiograph from two years ago showed moderate joint space narrowing.\n\nASSESSMENT AND PLAN\n\n1. Primary osteoarthritis of the right knee with functional limitation. Physical therapy referral for quadriceps strengthening and home exercise program. Topical diclofenac twice daily; acetaminophen up to 3 g daily. Repeat knee radiograph. Intra-articular injection deferred per patient preference. Cane use in the left hand recommended.\n2. Essential hypertension, not at goal. Increase amlodipine to 10 mg daily. Continue lisinopril. Home blood pressure log for four weeks.\n3. Hyperlipidemia with LDL 160 mg/dL on atorvastatin 10 mg, with adherence gaps. Increase atorvastatin intensity; pharmacy refill synchronization.\n4. Annual examination with abnormal findings. Prediabetes with A1c 5.8%: dietary counseling and walking program. Shingles and pneumococcal vaccines recommended.",
+ "medical_concepts": [
+  {
+   "text": "the checkup",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "annual checkup",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "my knee",
+   "field": "dialogue",
+   "type": "anatomy",
+   "icd_relevant": false
+  },
+  {
+   "text": "it's been stiff in the mornings",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the stairs are a chore now",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the cane",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "three or four years",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "getting worse slowly",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "no buckling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "it catches sometimes when i get up from the couch",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i can't kneel anymore",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "he has to use a stool now",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a little after a long day",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "the pills aren't doing what they used to",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "the amlodipine and the lisinopril",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "one thirty five over eighty five",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "i get a little dizzy when i stand up too fast",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "your last ldl was one sixty",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "atorvastatin , ten milligrams",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "a statin",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "i keep forgetting to refill it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "a lower target",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "machinist",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mostly on the lathes",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "my hearing is going",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "i turn the tv up too loud",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "new glasses last spring",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "quit twenty years ago",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "a pack a day for thirty years",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "two beers on friday",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your blood pressure is one forty over eighty two today",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart rate is seventy six",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "your weight is two hundred and nine pounds",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "the cookies at the church bake sale",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "crepitus when you bend it",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild tenderness along the joint line",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no warmth or redness",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your range of motion is about one twenty degrees",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "your lungs sound clear",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your heart is regular without murmurs",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "no leg swelling",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "your a one c is five point eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "the prediabetes range",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "diet and walking",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "physical therapy",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "your x-ray from two years ago showed moderate narrowing",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "shots in the knee",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "injections",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "acetaminophen , up to three thousand milligrams a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "topical diclofenac on the knee twice a day",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "increase the amlodipine to ten milligrams daily",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "the shingles vaccine",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "the pneumonia vaccine",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "a cane in the left hand",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Annual physical examination",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "progressive right knee stiffness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "difficulty on stairs",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "inability to kneel",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "locking or buckling",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Swelling after long days resolves overnight",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "Home blood pressure readings are approximately 135/85",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "amlodipine and lisinopril",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "occasional dizziness on rapid standing",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "chest pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "shortness of breath",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "missed atorvastatin refills",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "mild hearing loss",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Former smoker, one pack per day for 30 years",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Drinks two beers on Fridays",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Essential hypertension",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hyperlipidemia",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Primary osteoarthritis of the right knee",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Prediabetes",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Amlodipine 5 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "lisinopril daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "atorvastatin 10 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "BP 140/82",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart rate 76",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "weight 209 lb",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "crepitus with flexion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "medial joint line tenderness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no warmth or erythema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Range of motion approximately 120 degrees on the right",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Lungs clear",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Heart regular without murmur",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "No lower extremity edema",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Hemoglobin A1c 5.8%",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "LDL cholesterol 160 mg/dL",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Knee radiograph from two years ago showed moderate joint space narrowing",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Physical therapy referral",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Topical diclofenac twice daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "acetaminophen up to 3 g daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "Repeat knee radiograph",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Intra-articular injection deferred",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Cane use in the left hand recommended",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Increase amlodipine to 10 mg daily",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Continue lisinopril",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Hyperlipidemia with LDL 160 mg/dL",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Increase atorvastatin intensity",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "Annual examination with abnormal findings",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "Prediabetes with A1c 5.8%",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Shingles and pneumococcal vaccines",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "washington guidelines",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "clinical guideline name; washington is a surname and a place but not identifying here"
+  },
+  {
+   "text": "tylenol",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "brand name for acetaminophen"
+  },
+  {
+   "text": "Harmon Tool and Die",
+   "field": "note",
+   "is_pii": true,
+   "comment": "former employer name"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "M17.11",
+   "spans": [
+    {
+     "text": "it's been stiff in the mornings",
+     "field": "dialogue"
+    },
+    {
+     "text": "crepitus when you bend it",
+     "field": "dialogue"
+    },
+    {
+     "text": "Primary osteoarthritis of the right knee",
+     "field": "note"
+    },
+    {
+     "text": "Knee radiograph from two years ago showed moderate joint space narrowing",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "I10",
+   "spans": [
+    {
+     "text": "the amlodipine and the lisinopril",
+     "field": "dialogue"
+    },
+    {
+     "text": "your blood pressure is one forty over eighty two today",
+     "field": "dialogue"
+    },
+    {
+     "text": "Essential hypertension",
+     "field": "note"
+    },
+    {
+     "text": "Home blood pressure readings are approximately 135/85",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "E78.5",
+   "spans": [
+    {
+     "text": "your last ldl was one sixty",
+     "field": "dialogue"
+    },
+    {
+     "text": "atorvastatin , ten milligrams",
+     "field": "dialogue"
+    },
+    {
+     "text": "Hyperlipidemia",
+     "field": "note"
+    },
+    {
+     "text": "LDL cholesterol 160 mg/dL",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z00.01",
+   "spans": [
+    {
+     "text": "annual checkup",
+     "field": "dialogue"
+    },
+    {
+     "text": "Annual physical examination",
+     "field": "note"
+    },
+    {
+     "text": "Annual examination with abnormal findings",
+     "field": "note"
+    },
+    {
+     "text": "Prediabetes with A1c 5.8%",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "machinist",
+   "field": "dialogue",
+   "category": "OCCUPATION",
+   "comment": "former machinist job"
+  },
+  {
+   "text": "harmon tool and die",
+   "field": "dialogue",
+   "category": "ORGANIZATION",
+   "comment": "former employer that closed"
+  },
+  {
+   "text": "cedar falls",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "former hometown"
+  },
+  {
+   "text": "machinist",
+   "field": "note",
+   "category": "OCCUPATION",
+   "comment": "former machinist job"
+  },
+  {
+   "text": "Harmon Tool and Die",
+   "field": "note",
+   "category": "ORGANIZATION",
+   "comment": "former employer that closed"
+  },
+  {
+   "text": "Cedar Falls",
+   "field": "note",
+   "category": "LOCATION",
+   "comment": "former hometown"
+  }
+ ],
+ "scenario": {
+  "specialty": "physical medicine and rehabilitation",
+  "visit": "annual",
+  "length": "medium",
+  "focus": [
+   "ORGANIZATION",
+   "LOCATION",
+   "ID"
+  ]
+ }
+}

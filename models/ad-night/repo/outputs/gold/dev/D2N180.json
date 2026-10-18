@@ -1,0 +1,22 @@
+{
+  "encounter_id": "D2N180",
+  "pii": [
+    {"field": "dialogue", "text": "shirley", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "taylor", "category": "PATIENT_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "5/4/1961", "category": "DOB", "risk": "high"},
+    {"field": "dialogue", "text": "0000123", "category": "ID", "risk": "high"},
+    {"field": "dialogue", "text": "60 year old", "category": "AGE", "risk": "high"},
+    {"field": "dialogue", "text": "jacob", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "ward", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "dialogue", "text": "2/5/21", "category": "DATE", "risk": "high"},
+    {"field": "dialogue", "text": "lopez", "category": "PERSON_NAME", "risk": "high"},
+    {"field": "note", "text": "60-year-old", "category": "AGE", "risk": "high"},
+    {"field": "note", "text": "02/05/2021", "category": "DATE", "risk": "high"}
+  ],
+  "keep": [
+    {"field": "dialogue", "text": "tinel's sign", "category": "EPONYM", "why": "clinical sign, not a person"},
+    {"field": "note", "text": "Tinel's sign", "category": "EPONYM", "why": "clinical sign, not a person"},
+    {"field": "dialogue", "text": "carpal tunnel syndrome", "category": "CODE_EVIDENCE", "why": "diagnosis for G56.03"},
+    {"field": "note", "text": "Bilateral carpal tunnel syndrome", "category": "CODE_EVIDENCE", "why": "diagnosis for G56.03"}
+  ]
+}

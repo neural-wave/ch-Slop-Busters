@@ -1,0 +1,81 @@
+########## ENCOUNTER D2N079
+=== FIELD: dialogue
+[doctor] hi wayne how're you today
+[patient] i'm doing okay aside from this left shoulder pain that i've been having
+[doctor] okay and how long have you had this pain
+[patient] about i want to say a few weeks i think it's been about three weeks now
+[doctor] okay and do you remember what you were doing when the pain started
+[patient] honestly i've been trying to recall if i had any specific injury and i ca n't think of that
+[doctor] okay
+[patient] of anything the only thing i can think of is that i you know i am active and we've just been doing a lot of work in our basement so if i do n't know if i did something while doing that
+[doctor] okay alright tell me have you ever had pain in that shoulder before
+[patient] you know i i'm really active and so i i will get some aches and pains here and there but nothing that tylenol ca n't take care of
+[doctor] okay good but now are you able to move your arm
+[patient] you know i have trouble when i'm trying to reach for something or lift any objects and i do n't even try to reach it for anything over my head because then it'll really hurt
+[doctor] okay alright and and now are you having the pain all the time or does it come and go
+[patient] the pain is always there and then it gets worse like if i try to put any pressure on it it gets worse so if i'm laying at night if i try to even lay on that shoulder it's unbearable
+[doctor] okay and then tell me what have you taken for your pain
+[patient] i've been taking two extra strength tylenol every six to eight hours
+[doctor] alright and and did that help
+[patient] it does take the edge off but i still have some pain
+[doctor] okay well i'm sorry to hear that you know you know renovating the basement it can be quite a task and it can take a toll on you
+[patient] yeah i mean it's been fun but yeah i think it really did take a toll on me
+[doctor] yeah what what are you doing with your basement are you are you doing like a a man cave or
+[patient] yeah yeah that's exactly right
+[doctor] that is awesome great well that sounds like fun i hope you get to set it up just the way you you would like for your man cave to be so congratulations to you there so tell me have you experienced any kind of numbness in your arms or in your hands
+[patient] no no numbness or tingling
+[doctor] okay alright so let's just go ahead and do a quick physical exam on you here i did review your vitals everything here looks good now lem me take a look at your shoulder alright now on your left shoulder exam you have limited active and passive range of motion and how does that feel here
+[patient] that hurts
+[doctor] okay sorry there is tenderness of the greater tuberosity of the humerus but there is no tenderness at the sternoclavicular or acromioclavicular joints you have good hand grips alright and then now on your neurovascular exam of your left arm your capillary refill is less than three seconds and your sensation is intact to light touch alright so what does that all mean well firstly lem me go ahead and take a look at your results of your shoulder x-ray here now i reviewed the results and there are no fractures so that's good so let's go ahead and talk about my assessment and plan here wayne so for your problem of left shoulder pain your symptoms are most likely due to a rotator cuff tendinopathy so this means that you injured the tendons of the muscles that help make up your shoulder muscles so i will be ordering an mri for your left shoulder to be sure that there is nothing else going on with your shoulder okay
+[patient] okay
+[doctor] now i'm also going to refer you to physical therapy for approximately six to eight weeks and during that time you may also continue to take tylenol now if your symptoms do n't improve we can consider a steroid injection for your shoulder which can provide some relief do you have any questions about your plan at all
+[patient] so do you think this pain will ever go away
+[doctor] now well many patients are very successful with the physical therapy those will those help strengthen you know they do a lot of strengthening exercises with you to help strengthen you know your muscles so that it's not your movements not always relying on those joints predominantly so we're gon na go ahead and start with that and then see how you do okay
+[patient] okay okay
+[doctor] alright okay well do you have any other questions for me
+[patient] no i think that's it
+[doctor] okay well i'm gon na have the nurse check you out and she's also gon na give you some educational materials on the physical therapy and what to expect and and then go ahead and schedule a follow-up visit with me as well after you you do your physical therapy okay
+[patient] okay
+[doctor] alright well have a good day
+[patient] okay you too
+[doctor] thanks
+[patient] okay bye
+=== FIELD: note
+CHIEF COMPLAINT
+
+Left shoulder pain.
+
+HISTORY OF PRESENT ILLNESS
+
+Wayne Taylor is a pleasant 66-year-old male who presents to the clinic today for the evaluation of left shoulder pain. The onset of his pain began 3 weeks ago. He denies any specific injury. The patient states he is active and has been renovating his basement. He reports a history of intermittent aches and pains in his left shoulder. He has difficulty reaching for or lifting any objects. He adds that he avoids reaching overhead secondary to the pain. The patient describes his pain as constant and worsening. He notes his pain is unbearable when lying on his left shoulder at night. He denies any numbness or tingling in the bilateral upper extremities. He has been taking 2 Extra Strength Tylenol every 6 to 8 hours, which provides some relief.
+
+REVIEW OF SYSTEMS
+
+Musculoskeletal: Reports left shoulder pain. Neurological: Denies numbness or tingling in the bilateral upper extremities.
+
+VITALS
+
+All vital signs are within the normal limits.
+
+PHYSICAL EXAM
+
+Capillary refill is less than 3 seconds.
+
+NEURO: Normal sensation. Sensation is intact to light touch in the left upper extremity.
+MSK: Examination of the left shoulder: Limited active and passive ROM. Tenderness over the greater tuberosity of the humerus. No tenderness at the sternoclavicular or acromioclavicular joints. Good hand grip.
+
+RESULTS
+
+X-rays of the left shoulder were obtained and are reviewed today. These reveal there are no fractures.
+
+ASSESSMENT
+
+Left shoulder pain, most likely due to rotator cuff tendinopathy.
+
+PLAN
+
+After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with the patient in regard to his current symptoms. I have explained to him that his symptoms are most likely due to rotator cuff tendinopathy. I recommend obtaining an MRI of the left shoulder to further assess the rotator cuff. I will also refer him to formal physical therapy to strengthen his left shoulder for approximately 6 to 8 weeks. The patient was provided with educational materials regarding expectations related to his physical therapy. He may continue to take Tylenol as needed. If his symptoms do not improve with physical therapy, we will consider a steroid injection to the left shoulder. All questions were answered.
+
+INSTRUCTIONS
+
+The patient will follow up with me after he has completed his course of physical therapy.

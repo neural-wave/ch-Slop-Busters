@@ -1,0 +1,1012 @@
+{
+ "id": "S040",
+ "dataset": "synthetic_injury",
+ "sex": "female",
+ "icd10_codes": [
+  {
+   "code": "T67.5XXA",
+   "description": "Heat exhaustion, unspecified, initial encounter"
+  },
+  {
+   "code": "X30.XXXA",
+   "description": "Exposure to excessive natural heat, initial encounter"
+  },
+  {
+   "code": "Y92.73",
+   "description": "Farm field as the place of occurrence of the external cause"
+  },
+  {
+   "code": "Y99.0",
+   "description": "Civilian activity done for income or pay"
+  },
+  {
+   "code": "Z57.6",
+   "description": "Occupational exposure to extreme temperature"
+  }
+ ],
+ "dialogue": "[doctor] hi , {PATIENT_FIRST} . i'm doctor {DOCTOR_LAST} . how are you feeling now that you've had some fluids ?\n[patient] better . a lot better than when i came in . i still feel kind of weak .\n[doctor] okay . that's expected . can you tell me what happened today ?\n[patient] so i work for {ORG} , picking strawberries . we start at six in the morning . today it was really hot , they said it was going to be ninety eight , and there's no shade out in the field at all , it's just rows and rows .\n[doctor] okay .\n[patient] i was bent over picking all morning , and around one o'clock i started getting a really bad headache and i felt dizzy . i was sweating like crazy , my shirt was soaked . and then i felt like i was going to throw up . and my legs started cramping .\n[doctor] okay . did you pass out ?\n[patient] no , i did n't pass out . i felt like i was going to , everything kind of went gray , so i sat down in the dirt between the rows . my crew leader {OTHER_FIRST} saw me and brought me over to the truck and put the air conditioning on and gave me water . and then they called the ambulance because i threw up the water .\n[doctor] okay . how much water were you drinking during the morning ?\n[patient] not enough . i had one bottle . the water cooler is at the end of the rows and we get paid by the box , so you do n't want to stop .\n[doctor] i understand . did you take any breaks ?\n[patient] one break , at like nine thirty .\n[doctor] okay . were you confused at all ? did anybody say you were acting strange or not making sense ?\n[patient] no , i knew where i was the whole time . i was just really tired and sick .\n[doctor] okay , that's important . any chest pain or trouble breathing ?\n[patient] my heart was pounding , but no chest pain .\n[doctor] okay . any medical problems ?\n[patient] no . i'm usually really healthy . i came up from california for the season with my two sisters , and this is my third year doing this .\n[doctor] do you take any medicines ? water pills , anything for allergies ?\n[patient] no , nothing .\n[doctor] any alcohol or drugs ?\n[patient] no .\n[doctor] okay . and have you had this happen before ?\n[patient] last summer i got a little dizzy once , but i just sat in the shade and it went away .\n[doctor] okay . so when you came in , the paramedics measured your temperature at one hundred and one point two , your heart rate was one twenty two , and your blood pressure was ninety eight over sixty . you were sweaty and flushed , but you were awake and talking normally .\n[patient] okay .\n[doctor] we gave you two liters of iv fluid , and some ondansetron for the nausea , and cooled you down with ice packs and the fan . now your temperature is ninety nine point one , your heart rate is eighty eight , and your blood pressure is one twelve over seventy . on exam , your skin is still a little warm , your mouth is a little dry , and your neurological exam is completely normal , you're alert and oriented , no confusion , strength is normal .\n[patient] that's good .\n[doctor] it is . so we checked some labs . your sodium was a little low at one thirty three , your kidney function is normal , and your muscle enzyme , the ck , was normal , so there's no sign of muscle breakdown . your urine was concentrated , which tells me you were very dehydrated .\n[patient] okay .\n[doctor] so what you had is heat exhaustion . it's from working hard for a long time out in the heat and the sun without enough water and rest . the important part is that you did n't have any confusion and your temperature never got really high , so this was not heat stroke , which is much more dangerous .\n[patient] okay .\n[doctor] but heat exhaustion can turn into heat stroke if you keep pushing , so we need to take it seriously .\n[patient] okay . can i go back to work tomorrow ?\n[doctor] i'd like you to take tomorrow off and rest , drink plenty of fluids , and you can use an electrolyte drink . then when you go back , you need to take a break in the shade every hour , and drink a cup of water every fifteen to twenty minutes , even if you're not thirsty . i'm going to write a note for your employer saying that , and that you need access to water and shade .\n[patient] thank you . that will help .\n[doctor] wear a wide brim hat and light loose clothes , and try to do the hardest work early in the morning . if you start getting a headache , dizziness , cramps , or nausea again , stop , go to the shade , and drink water . and if you get confused , stop sweating , or faint , that's an emergency , call nine one one .\n[patient] okay .\n[doctor] we'll keep you here for another hour to finish the fluids and make sure you can drink without throwing up . then you can go home . if you need anything , our clinic number is {PHONE} .\n[patient] okay , thank you so much .",
+ "note": "CHIEF COMPLAINT\n\nHeat-related illness.\n\nHISTORY OF PRESENT ILLNESS\n\n{PATIENT_FIRST} {PATIENT_LAST} is a {AGE}-year-old female with no significant past medical history who presents by ambulance from her workplace on {DATE_NUM} with heat-related illness.\n\nThe patient is employed by {ORG} as a strawberry harvester. She began work at 6:00 AM in an open farm field without shade, with ambient temperature reportedly 98 degrees Fahrenheit. She had one bottle of water and one break during the morning. At approximately 1:00 PM, she developed severe headache, dizziness, profuse sweating, nausea, and leg cramps, followed by near-syncope. She did not lose consciousness. She was placed in an air-conditioned vehicle and given water, which she vomited. She reports palpitations but denies chest pain or dyspnea. She denies confusion; she was oriented throughout. No medications, diuretics, alcohol, or drug use. Prior mild heat-related dizziness last summer.\n\nPHYSICAL EXAM\n\nVital Signs: On EMS arrival, temperature 101.2 F, heart rate 122, blood pressure 98/60. After treatment, temperature 99.1 F, heart rate 88, blood pressure 112/70.\nSkin: Warm, mildly flushed. Dry mucous membranes.\nNeurological: Alert and oriented x3. No confusion. Strength normal throughout.\n\nRESULTS\n\nSodium 133 (mildly low). Creatinine within normal limits. Creatine kinase within normal limits. Urinalysis: concentrated urine, elevated specific gravity.\n\nASSESSMENT AND PLAN\n\n1. Heat exhaustion.\n• Medical Reasoning: Prolonged strenuous agricultural work in a farm field in excessive natural heat with inadequate hydration and rest. Core temperature below 104 F and normal mental status; no evidence of heat stroke. No rhabdomyolysis. Mild hyponatremia consistent with volume depletion.\n• Medical Treatment: Normal saline 2 L IV, ondansetron 4 mg IV, active cooling with ice packs and fan. Observe for tolerance of oral intake prior to discharge.\n• Patient Education and Counseling: Oral hydration with electrolyte solution. Warning signs of heat stroke reviewed.\n\n2. Occupational exposure to extreme heat.\n• Work: Off work for 1 day. On return, hourly rest breaks in the shade, water every 15 to 20 minutes, access to water and shade; work note provided to employer.\n\nPatient Agreements: The patient understands and agrees with the recommended medical treatment plan.",
+ "medical_concepts": [
+  {
+   "text": "fluids",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "weak",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i work for",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "picking strawberries",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "today it was really hot",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ninety eight",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "there's no shade out in the field at all",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "rows and rows",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was bent over picking all morning",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "really bad headache",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dizzy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i was sweating like crazy",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i felt like i was going to throw up",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "my legs started cramping",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "pass out",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "everything kind of went gray",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "air conditioning",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "ambulance",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "i threw up the water",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i had one bottle",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "we get paid by the box",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "one break",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "confused",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "acting strange or not making sense",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "i knew where i was the whole time",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "really tired and sick",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "chest pain",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "trouble breathing",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "my heart was pounding",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "water pills",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "allergies",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": false
+  },
+  {
+   "text": "alcohol or drugs",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "last summer i got a little dizzy once",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "temperature at one hundred and one point two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart rate was one twenty two",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood pressure was ninety eight over sixty",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "sweaty and flushed",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "awake and talking normally",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "two liters of iv fluid",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "ondansetron",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "nausea",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "cooled you down with ice packs and the fan",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "temperature is ninety nine point one",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart rate is eighty eight",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure is one twelve over seventy",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "skin is still a little warm",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "mouth is a little dry",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "neurological exam is completely normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "alert and oriented",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no confusion",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "strength is normal",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "labs",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "sodium was a little low at one thirty three",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "kidney function is normal",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "ck , was normal",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "no sign of muscle breakdown",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "urine was concentrated",
+   "field": "dialogue",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "very dehydrated",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "heat exhaustion",
+   "field": "dialogue",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "working hard for a long time out in the heat and the sun",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "without enough water and rest",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "your temperature never got really high",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "not heat stroke",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "electrolyte drink",
+   "field": "dialogue",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "take a break in the shade every hour",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "drink a cup of water every fifteen to twenty minutes",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "a note for your employer",
+   "field": "dialogue",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "access to water and shade",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "wide brim hat and light loose clothes",
+   "field": "dialogue",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "cramps",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "stop sweating",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "faint",
+   "field": "dialogue",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "Heat-related illness",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "heat-related illness",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "from her workplace",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "strawberry harvester",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "She began work at 6:00 AM in an open farm field without shade",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "ambient temperature reportedly 98 degrees Fahrenheit",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "one bottle of water and one break",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "severe headache",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "dizziness",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "profuse sweating",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "nausea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "leg cramps",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "near-syncope",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "did not lose consciousness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "air-conditioned vehicle",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "vomited",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "palpitations",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": true
+  },
+  {
+   "text": "chest pain",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "dyspnea",
+   "field": "note",
+   "type": "symptom",
+   "icd_relevant": false
+  },
+  {
+   "text": "denies confusion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "oriented throughout",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "diuretics",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "alcohol, or drug use",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Prior mild heat-related dizziness",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "temperature 101.2 F",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "heart rate 122",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "blood pressure 98/60",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "temperature 99.1 F",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "heart rate 88",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "blood pressure 112/70",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Warm, mildly flushed",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Dry mucous membranes",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Alert and oriented x3",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No confusion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Strength normal throughout",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Sodium 133",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Creatinine within normal limits",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": false
+  },
+  {
+   "text": "Creatine kinase within normal limits",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "Urinalysis",
+   "field": "note",
+   "type": "lab_or_test",
+   "icd_relevant": true
+  },
+  {
+   "text": "concentrated urine, elevated specific gravity",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Heat exhaustion",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "Prolonged strenuous agricultural work in a farm field in excessive natural heat",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "inadequate hydration and rest",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Core temperature below 104 F",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "normal mental status",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "no evidence of heat stroke",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "No rhabdomyolysis",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Mild hyponatremia",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "volume depletion",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  },
+  {
+   "text": "Normal saline 2 L IV",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": true
+  },
+  {
+   "text": "ondansetron 4 mg IV",
+   "field": "note",
+   "type": "medication",
+   "icd_relevant": false
+  },
+  {
+   "text": "active cooling with ice packs and fan",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "tolerance of oral intake",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Oral hydration with electrolyte solution",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": false
+  },
+  {
+   "text": "Warning signs of heat stroke",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": false
+  },
+  {
+   "text": "Occupational exposure to extreme heat",
+   "field": "note",
+   "type": "diagnosis",
+   "icd_relevant": true
+  },
+  {
+   "text": "hourly rest breaks in the shade",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "water every 15 to 20 minutes",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "access to water and shade",
+   "field": "note",
+   "type": "procedure",
+   "icd_relevant": true
+  },
+  {
+   "text": "work note provided to employer",
+   "field": "note",
+   "type": "finding",
+   "icd_relevant": true
+  }
+ ],
+ "ambiguous_terms": [
+  {
+   "text": "my crew leader",
+   "field": "dialogue",
+   "is_pii": false,
+   "comment": "generic workplace role; the name is the {OTHER_FIRST} slot"
+  },
+  {
+   "text": "strawberry harvester",
+   "field": "note",
+   "is_pii": false,
+   "comment": "occupation, but here it is evidence for farm-field place, work status and occupational heat exposure (Y92.73, Y99.0, Z57.6), so medical context per SPEC"
+  }
+ ],
+ "evidence": [
+  {
+   "code": "T67.5XXA",
+   "spans": [
+    {
+     "text": "heat exhaustion",
+     "field": "dialogue"
+    },
+    {
+     "text": "really bad headache",
+     "field": "dialogue"
+    },
+    {
+     "text": "dizzy",
+     "field": "dialogue"
+    },
+    {
+     "text": "i was sweating like crazy",
+     "field": "dialogue"
+    },
+    {
+     "text": "not heat stroke",
+     "field": "dialogue"
+    },
+    {
+     "text": "temperature at one hundred and one point two",
+     "field": "dialogue"
+    },
+    {
+     "text": "Heat exhaustion",
+     "field": "note"
+    },
+    {
+     "text": "Heat-related illness",
+     "field": "note"
+    },
+    {
+     "text": "near-syncope",
+     "field": "note"
+    },
+    {
+     "text": "no evidence of heat stroke",
+     "field": "note"
+    },
+    {
+     "text": "temperature 101.2 F",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "X30.XXXA",
+   "spans": [
+    {
+     "text": "today it was really hot",
+     "field": "dialogue"
+    },
+    {
+     "text": "ninety eight",
+     "field": "dialogue"
+    },
+    {
+     "text": "working hard for a long time out in the heat and the sun",
+     "field": "dialogue"
+    },
+    {
+     "text": "ambient temperature reportedly 98 degrees Fahrenheit",
+     "field": "note"
+    },
+    {
+     "text": "Prolonged strenuous agricultural work in a farm field in excessive natural heat",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y92.73",
+   "spans": [
+    {
+     "text": "there's no shade out in the field at all",
+     "field": "dialogue"
+    },
+    {
+     "text": "picking strawberries",
+     "field": "dialogue"
+    },
+    {
+     "text": "rows and rows",
+     "field": "dialogue"
+    },
+    {
+     "text": "She began work at 6:00 AM in an open farm field without shade",
+     "field": "note"
+    },
+    {
+     "text": "Prolonged strenuous agricultural work in a farm field in excessive natural heat",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Y99.0",
+   "spans": [
+    {
+     "text": "i work for",
+     "field": "dialogue"
+    },
+    {
+     "text": "we get paid by the box",
+     "field": "dialogue"
+    },
+    {
+     "text": "a note for your employer",
+     "field": "dialogue"
+    },
+    {
+     "text": "from her workplace",
+     "field": "note"
+    },
+    {
+     "text": "strawberry harvester",
+     "field": "note"
+    },
+    {
+     "text": "work note provided to employer",
+     "field": "note"
+    }
+   ]
+  },
+  {
+   "code": "Z57.6",
+   "spans": [
+    {
+     "text": "working hard for a long time out in the heat and the sun",
+     "field": "dialogue"
+    },
+    {
+     "text": "access to water and shade",
+     "field": "dialogue"
+    },
+    {
+     "text": "Occupational exposure to extreme heat",
+     "field": "note"
+    },
+    {
+     "text": "Prolonged strenuous agricultural work in a farm field in excessive natural heat",
+     "field": "note"
+    },
+    {
+     "text": "hourly rest breaks in the shade",
+     "field": "note"
+    }
+   ]
+  }
+ ],
+ "pii_fixed": [
+  {
+   "text": "california",
+   "field": "dialogue",
+   "category": "LOCATION",
+   "comment": "state the patient came from"
+  },
+  {
+   "text": "with my two sisters",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "family detail"
+  },
+  {
+   "text": "we start at six in the morning",
+   "field": "dialogue",
+   "category": "OTHER_QUASI",
+   "comment": "work routine"
+  }
+ ]
+}

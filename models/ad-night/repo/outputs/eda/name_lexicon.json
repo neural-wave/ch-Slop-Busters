@@ -1,0 +1,6771 @@
+{
+ "per_encounter": {
+  "D2N088": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Andrew": 2
+    },
+    "patient_last": {
+     "Campbell": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "andrew": 1
+    },
+    "title_name": {
+     "andrew": 1
+    },
+    "patient_first_gaz": {
+     "andrew": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Andrew",
+    "patient_last_note": "Campbell",
+    "patient_first_dialogue": "andrew",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N089": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Andrea": 2
+    },
+    "patient_last": {
+     "Roberts": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "andrea": 1
+    },
+    "title_name": {
+     "andrea": 1
+    },
+    "patient_first_gaz": {
+     "andrea": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Andrea",
+    "patient_last_note": "Roberts",
+    "patient_first_dialogue": "andrea",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N090": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Albert": 2
+    },
+    "patient_last": {
+     "Powell": 2
+    },
+    "doctor": {
+     "Reyes": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "albert": 2
+    },
+    "doctor": {
+     "reyes": 2
+    },
+    "patient_first_gaz": {
+     "albert": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Albert",
+    "patient_last_note": "Powell",
+    "patient_first_dialogue": "albert",
+    "patient_last_dialogue": null,
+    "doctor_note": [
+     "Reyes"
+    ],
+    "doctor_dialogue": [
+     "reyes"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N091": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Jerry": 2
+    },
+    "patient_last": {
+     "Nguyen": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "jerry": 2
+    },
+    "patient_first_gaz": {
+     "jerry": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Jerry",
+    "patient_last_note": "Nguyen",
+    "patient_first_dialogue": "jerry",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N092": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_last": {
+     "Martinez": 1
+    },
+    "patient_title_last": {
+     "Martinez": 1
+    }
+   },
+   "dialogue": {
+    "title_name": {
+     "martinez": 3,
+     "gomez": 1
+    },
+    "doctor": {
+     "gomez": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Martinez",
+    "patient_first_dialogue": null,
+    "patient_last_dialogue": "martinez",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "gomez"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N093": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Lawrence": 2
+    },
+    "patient_last": {
+     "Walker": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "lawrence": 2
+    },
+    "patient_first_gaz": {
+     "lawrence": 4
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Lawrence",
+    "patient_last_note": "Walker",
+    "patient_first_dialogue": "lawrence",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N094": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_last": {
+     "James": 1
+    },
+    "patient_title_last": {
+     "James": 1
+    }
+   },
+   "dialogue": {
+    "title_name": {
+     "james": 3
+    },
+    "doctor": {
+     "cooper": 1
+    },
+    "patient_first_gaz": {
+     "james": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "James",
+    "patient_first_dialogue": "james",
+    "patient_last_dialogue": "james",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "cooper"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N095": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_last": {
+     "Ramirez": 2
+    },
+    "patient_title_last": {
+     "Ramirez": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "cheryl": 2
+    },
+    "patient_first_gaz": {
+     "cheryl": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Ramirez",
+    "patient_first_dialogue": "cheryl",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N096": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_last": {
+     "Anderson": 1
+    },
+    "patient_title_last": {
+     "Anderson": 1
+    }
+   },
+   "dialogue": {
+    "title_name": {
+     "anderson": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Anderson",
+    "patient_first_dialogue": null,
+    "patient_last_dialogue": "anderson",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N097": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Elizabeth": 2
+    },
+    "patient_last": {
+     "Peterson": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "elizabeth": 1
+    },
+    "patient_first_gaz": {
+     "elizabeth": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Elizabeth",
+    "patient_last_note": "Peterson",
+    "patient_first_dialogue": "elizabeth",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N098": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Jose": 2
+    },
+    "patient_last": {
+     "James": 1
+    },
+    "patient_title_last": {
+     "Jose": 1,
+     "James": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "jose": 1
+    },
+    "patient_last": {
+     "james": 1
+    },
+    "title_name": {
+     "james": 6
+    },
+    "doctor": {
+     "isabella": 1,
+     "martha": 1
+    },
+    "patient_first_gaz": {
+     "jose": 1,
+     "james": 3,
+     "isabella": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Jose",
+    "patient_last_note": "James",
+    "patient_first_dialogue": "jose",
+    "patient_last_dialogue": "james",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "isabella",
+     "martha"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N099": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Randy": 1
+    },
+    "patient_last": {
+     "Gutierrez": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "randy": 1
+    },
+    "patient_last": {
+     "gutierrez": 1
+    },
+    "patient_first_gaz": {
+     "randy": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Randy",
+    "patient_last_note": "Gutierrez",
+    "patient_first_dialogue": "randy",
+    "patient_last_dialogue": "gutierrez",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N100": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Kayla": 2
+    },
+    "patient_last": {
+     "Ward": 2
+    },
+    "patient_first_bare": {
+     "Kayla": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "kayla": 2
+    },
+    "patient_last": {
+     "ward": 1
+    },
+    "doctor": {
+     "juan": 1
+    },
+    "title_name": {
+     "ward": 1
+    },
+    "patient_first_gaz": {
+     "kayla": 2,
+     "summer": 1,
+     "juan": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Kayla",
+    "patient_last_note": "Ward",
+    "patient_first_dialogue": "kayla",
+    "patient_last_dialogue": "ward",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "juan"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N101": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Julia": 2
+    },
+    "patient_last": {
+     "Jones": 2
+    },
+    "patient_title_last": {
+     "Jones": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "julia": 2
+    },
+    "patient_last": {
+     "jones": 2
+    },
+    "doctor": {
+     "gonzalez": 1
+    },
+    "patient_first_gaz": {
+     "julia": 1
+    },
+    "staff": {
+     "catherine": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Julia",
+    "patient_last_note": "Jones",
+    "patient_first_dialogue": "julia",
+    "patient_last_dialogue": "jones",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "gonzalez"
+    ],
+    "staff_dialogue": [
+     "catherine"
+    ],
+    "relative": []
+   }
+  },
+  "D2N102": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Kelly": 1
+    },
+    "patient_last": {
+     "Wood": 1
+    },
+    "patient_title_last": {
+     "Kelly": 1,
+     "Wood": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "kelly": 1
+    },
+    "patient_last": {
+     "wood": 1
+    },
+    "title_name": {
+     "wood": 4
+    },
+    "patient_first_gaz": {
+     "kelly": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Kelly",
+    "patient_last_note": "Wood",
+    "patient_first_dialogue": "kelly",
+    "patient_last_dialogue": "wood",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N103": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Melissa": 2
+    },
+    "patient_last": {
+     "Sanchez": 2
+    },
+    "patient_title_last": {
+     "Melissa": 2,
+     "Sanchez": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "melissa": 1
+    },
+    "patient_last": {
+     "sanchez": 1
+    },
+    "title_name": {
+     "sanchez": 4
+    },
+    "doctor": {
+     "hughes": 2
+    },
+    "patient_first_gaz": {
+     "melissa": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Melissa",
+    "patient_last_note": "Sanchez",
+    "patient_first_dialogue": "melissa",
+    "patient_last_dialogue": "sanchez",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "hughes"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N104": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Judy": 1
+    },
+    "patient_last": {
+     "Gomez": 1
+    },
+    "patient_title_last": {
+     "Gomez": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "judy": 2
+    },
+    "patient_last": {
+     "gomez": 1
+    },
+    "title_name": {
+     "gomez": 1
+    },
+    "patient_first_gaz": {
+     "judy": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Judy",
+    "patient_last_note": "Gomez",
+    "patient_first_dialogue": "judy",
+    "patient_last_dialogue": "gomez",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N105": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Diana": 1
+    },
+    "patient_last": {
+     "Scott": 1
+    },
+    "patient_title_last": {
+     "Scott": 1
+    },
+    "patient_first_bare": {
+     "Diana": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "diana": 1
+    },
+    "patient_last": {
+     "scott": 1
+    },
+    "doctor": {
+     "says": 1
+    },
+    "patient_first_gaz": {
+     "diana": 1,
+     "scott": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Diana",
+    "patient_last_note": "Scott",
+    "patient_first_dialogue": "diana",
+    "patient_last_dialogue": "scott",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "says"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N106": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Charles": 1
+    },
+    "patient_last": {
+     "Sullivan": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "charles": 1
+    },
+    "patient_first_gaz": {
+     "charles": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Charles",
+    "patient_last_note": "Sullivan",
+    "patient_first_dialogue": "charles",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N107": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Bryan": 1
+    },
+    "patient_last": {
+     "Brooks": 1
+    }
+   },
+   "dialogue": {
+    "patient_first_gaz": {
+     "bryan": 2,
+     "hope": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Bryan",
+    "patient_last_note": "Brooks",
+    "patient_first_dialogue": "bryan",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N108": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Gregory": 1
+    },
+    "patient_last": {
+     "Hernandez": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "gregory": 1
+    },
+    "patient_first_gaz": {
+     "gregory": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Gregory",
+    "patient_last_note": "Hernandez",
+    "patient_first_dialogue": "gregory",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N109": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "stephanie": 1
+    },
+    "patient_last": {
+     "morales": 1
+    },
+    "patient_first_gaz": {
+     "stephanie": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "stephanie",
+    "patient_last_dialogue": "morales",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N110": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Wayne": 1
+    },
+    "patient_last": {
+     "Jenkins": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "wayne": 1
+    },
+    "patient_first_gaz": {
+     "wayne": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Wayne",
+    "patient_last_note": "Jenkins",
+    "patient_first_dialogue": "wayne",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N111": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "William": 1
+    },
+    "patient_last": {
+     "Russell": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "william": 1
+    },
+    "patient_first_gaz": {
+     "william": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "William",
+    "patient_last_note": "Russell",
+    "patient_first_dialogue": "william",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N112": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Matthew": 1
+    },
+    "patient_last": {
+     "Hill": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "matthew": 1
+    },
+    "patient_first_gaz": {
+     "matthew": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Matthew",
+    "patient_last_note": "Hill",
+    "patient_first_dialogue": "matthew",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N113": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "jacqueline": 1
+    },
+    "patient_first_gaz": {
+     "jacqueline": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "jacqueline",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N114": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Julie": 1
+    },
+    "patient_last": {
+     "Jenkins": 1
+    },
+    "doctor": {
+     "White": 2
+    }
+   },
+   "dialogue": {
+    "doctor": {
+     "white": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Julie",
+    "patient_last_note": "Jenkins",
+    "patient_first_dialogue": null,
+    "patient_last_dialogue": null,
+    "doctor_note": [
+     "White"
+    ],
+    "doctor_dialogue": [
+     "white"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N115": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Jack": 1
+    },
+    "patient_last": {
+     "Torres": 1
+    }
+   },
+   "dialogue": {
+    "patient_first_gaz": {
+     "jack": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Jack",
+    "patient_last_note": "Torres",
+    "patient_first_dialogue": "jack",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N116": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Bobby": 1
+    },
+    "patient_last": {
+     "Flores": 1
+    }
+   },
+   "dialogue": {
+    "patient_first_gaz": {
+     "bobby": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Bobby",
+    "patient_last_note": "Flores",
+    "patient_first_dialogue": "bobby",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N117": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "doctor": {
+     "Nelson": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "mister": 1
+    },
+    "patient_last": {
+     "jackson": 1
+    },
+    "title_name": {
+     "jackson": 1
+    },
+    "doctor": {
+     "nelson": 1
+    },
+    "patient_first_gaz": {
+     "mark": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "mister",
+    "patient_last_dialogue": "jackson",
+    "doctor_note": [
+     "Nelson"
+    ],
+    "doctor_dialogue": [
+     "nelson"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N118": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "doctor": {
+     "Harris": 1
+    }
+   },
+   "dialogue": {
+    "doctor": {
+     "harris": 2
+    },
+    "patient_first_gaz": {
+     "angela": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "angela",
+    "patient_last_dialogue": null,
+    "doctor_note": [
+     "Harris"
+    ],
+    "doctor_dialogue": [
+     "harris"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N119": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "betty": 1
+    },
+    "patient_first_gaz": {
+     "betty": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "betty",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N120": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Larry": 1
+    },
+    "patient_last": {
+     "Garcia": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "larry": 1
+    },
+    "patient_first_gaz": {
+     "larry": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Larry",
+    "patient_last_note": "Garcia",
+    "patient_first_dialogue": "larry",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N121": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "kenneth": 1
+    },
+    "patient_first_gaz": {
+     "kenneth": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "kenneth",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N122": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "kyle": 1
+    },
+    "patient_first_gaz": {
+     "kyle": 2,
+     "ray": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "kyle",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N123": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Tyler": 1
+    },
+    "patient_last": {
+     "Green": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "tyler": 1
+    },
+    "patient_first_gaz": {
+     "tyler": 5
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Tyler",
+    "patient_last_note": "Green",
+    "patient_first_dialogue": "tyler",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N124": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Jerry": 1
+    },
+    "patient_last": {
+     "Cook": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "jerry": 1
+    },
+    "title_name": {
+     "michael": 1
+    },
+    "doctor": {
+     "michael": 1
+    },
+    "patient_first_gaz": {
+     "jerry": 3,
+     "michael": 1,
+     "sean": 1,
+     "april": 1
+    },
+    "relative": {
+     "sean": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Jerry",
+    "patient_last_note": "Cook",
+    "patient_first_dialogue": "jerry",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "michael"
+    ],
+    "staff_dialogue": [],
+    "relative": [
+     "sean"
+    ]
+   }
+  },
+  "D2N125": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "title_name": {
+     "edwards": 2
+    },
+    "doctor": {
+     "cruz": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": null,
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "cruz"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N126": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Michelle": 1
+    },
+    "patient_last": {
+     "King": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "michelle": 1
+    },
+    "patient_first_gaz": {
+     "michelle": 1,
+     "sandra": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Michelle",
+    "patient_last_note": "King",
+    "patient_first_dialogue": "michelle",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N127": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Brandon": 1
+    },
+    "patient_last": {
+     "Green": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "brandon": 1
+    },
+    "doctor": {
+     "collins": 1
+    },
+    "patient_first_gaz": {
+     "brandon": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Brandon",
+    "patient_last_note": "Green",
+    "patient_first_dialogue": "brandon",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "collins"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N128": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Carolyn": 1
+    },
+    "patient_last": {
+     "Garcia": 1
+    },
+    "patient_title_last": {
+     "Carolyn": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "carolyn": 2
+    },
+    "patient_first_gaz": {
+     "carolyn": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Carolyn",
+    "patient_last_note": "Garcia",
+    "patient_first_dialogue": "carolyn",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N129": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Beverly": 2
+    },
+    "patient_last": {
+     "Ortiz": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "related": 1,
+     "beverly": 1
+    },
+    "patient_first_gaz": {
+     "beverly": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Beverly",
+    "patient_last_note": "Ortiz",
+    "patient_first_dialogue": "related",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N130": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Anna": 1
+    },
+    "patient_last": {
+     "Morris": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "anna": 2
+    },
+    "patient_first_gaz": {
+     "anna": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Anna",
+    "patient_last_note": "Morris",
+    "patient_first_dialogue": "anna",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N131": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Susan": 2
+    },
+    "patient_last": {
+     "Watson": 2
+    },
+    "patient_title_last": {
+     "Susan": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "susan": 2
+    },
+    "patient_first_gaz": {
+     "susan": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Susan",
+    "patient_last_note": "Watson",
+    "patient_first_dialogue": "susan",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N132": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_last": {
+     "Lee": 1
+    },
+    "patient_title_last": {
+     "Lee": 1
+    }
+   },
+   "dialogue": {
+    "title_name": {
+     "lee": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Lee",
+    "patient_first_dialogue": null,
+    "patient_last_dialogue": "lee",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N133": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_title_last": {
+     "Thompson": 3
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "rebecca": 2
+    },
+    "patient_first_gaz": {
+     "rebecca": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Thompson",
+    "patient_first_dialogue": "rebecca",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N134": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "michelle": 2
+    },
+    "patient_first_gaz": {
+     "michelle": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "michelle",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N135": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Hannah": 2
+    },
+    "patient_last": {
+     "Phillips": 2
+    },
+    "patient_title_last": {
+     "Hannah": 2,
+     "Phillips": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "hannah": 1
+    },
+    "patient_first_gaz": {
+     "hannah": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Hannah",
+    "patient_last_note": "Phillips",
+    "patient_first_dialogue": "hannah",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N136": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Janet": 2
+    },
+    "patient_last": {
+     "Sullivan": 2
+    },
+    "patient_title_last": {
+     "Janet": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "janet": 2
+    },
+    "patient_first_gaz": {
+     "janet": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Janet",
+    "patient_last_note": "Sullivan",
+    "patient_first_dialogue": "janet",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N137": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Christine": 2
+    },
+    "patient_last": {
+     "Flores": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "christine": 1
+    },
+    "patient_first_gaz": {
+     "christine": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Christine",
+    "patient_last_note": "Flores",
+    "patient_first_dialogue": "christine",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N138": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Emily": 2
+    },
+    "patient_last": {
+     "Hernandez": 2
+    },
+    "patient_title_last": {
+     "Hernandez": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "emily": 2
+    },
+    "patient_last": {
+     "hernandez": 1
+    },
+    "patient_first_gaz": {
+     "emily": 2,
+     "april": 1,
+     "summer": 1
+    },
+    "staff": {
+     "helen": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Emily",
+    "patient_last_note": "Hernandez",
+    "patient_first_dialogue": "emily",
+    "patient_last_dialogue": "hernandez",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [
+     "helen"
+    ],
+    "relative": []
+   }
+  },
+  "D2N139": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Jordan": 1
+    },
+    "patient_last": {
+     "Roberts": 1
+    },
+    "patient_title_last": {
+     "Roberts": 3
+    }
+   },
+   "dialogue": {
+    "title_name": {
+     "roberts": 4
+    },
+    "patient_first_gaz": {
+     "jordan": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Jordan",
+    "patient_last_note": "Roberts",
+    "patient_first_dialogue": "jordan",
+    "patient_last_dialogue": "roberts",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N140": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Brittany": 2
+    },
+    "patient_last": {
+     "Edwards": 2
+    },
+    "patient_title_last": {
+     "Brittany": 1,
+     "Edwards": 2
+    }
+   },
+   "dialogue": {
+    "title_name": {
+     "edwards": 1
+    },
+    "patient_first_gaz": {
+     "brittany": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Brittany",
+    "patient_last_note": "Edwards",
+    "patient_first_dialogue": "brittany",
+    "patient_last_dialogue": "edwards",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N141": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Christopher": 1
+    },
+    "patient_last": {
+     "Watson": 1
+    },
+    "patient_title_last": {
+     "Christopher": 1,
+     "Watson": 6
+    },
+    "relative": {
+     "Theresa": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "christopher": 1,
+     "daughter": 1
+    },
+    "patient_last": {
+     "watson": 1
+    },
+    "title_name": {
+     "watson": 10
+    },
+    "patient_first_gaz": {
+     "christopher": 1,
+     "june": 1
+    },
+    "relative": {
+     "theresa": 1,
+     "hannah": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Christopher",
+    "patient_last_note": "Watson",
+    "patient_first_dialogue": "christopher",
+    "patient_last_dialogue": "watson",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": [
+     "Theresa",
+     "hannah",
+     "theresa"
+    ]
+   }
+  },
+  "D2N142": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Amanda": 1
+    },
+    "patient_last": {
+     "Taylor": 1
+    },
+    "patient_title_last": {
+     "Taylor": 2
+    }
+   },
+   "dialogue": {
+    "title_name": {
+     "taylor": 4
+    },
+    "patient_first_gaz": {
+     "amanda": 1,
+     "april": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Amanda",
+    "patient_last_note": "Taylor",
+    "patient_first_dialogue": "amanda",
+    "patient_last_dialogue": "taylor",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N143": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_last": {
+     "Ross": 2
+    },
+    "patient_title_last": {
+     "Ross": 3
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "grace": 1
+    },
+    "patient_last": {
+     "ross": 1
+    },
+    "title_name": {
+     "ross": 5
+    },
+    "doctor": {
+     "diaz": 1
+    },
+    "patient_first_gaz": {
+     "grace": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Ross",
+    "patient_first_dialogue": "grace",
+    "patient_last_dialogue": "ross",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "diaz"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N144": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_last": {
+     "Nelson": 1
+    },
+    "patient_title_last": {
+     "Nelson": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "tyler": 1
+    },
+    "patient_last": {
+     "nelson": 1
+    },
+    "title_name": {
+     "nelson": 2
+    },
+    "patient_first_gaz": {
+     "tyler": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Nelson",
+    "patient_first_dialogue": "tyler",
+    "patient_last_dialogue": "nelson",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N145": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Jacqueline": 2
+    },
+    "patient_last": {
+     "Miller": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "jacqueline": 1
+    },
+    "patient_last": {
+     "miller": 1
+    },
+    "patient_first_gaz": {
+     "jacqueline": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Jacqueline",
+    "patient_last_note": "Miller",
+    "patient_first_dialogue": "jacqueline",
+    "patient_last_dialogue": "miller",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N146": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "bobby": 1
+    },
+    "doctor": {
+     "miller": 1
+    },
+    "patient_first_gaz": {
+     "bobby": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "bobby",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "miller"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N147": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Matthew": 1
+    },
+    "patient_last": {
+     "Allen": 1
+    },
+    "patient_title_last": {
+     "Allen": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "matthew": 1
+    },
+    "patient_first_gaz": {
+     "matthew": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Matthew",
+    "patient_last_note": "Allen",
+    "patient_first_dialogue": "matthew",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N148": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Jeremy": 1
+    },
+    "patient_last": {
+     "Adams": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "jeremy": 1
+    },
+    "patient_first_gaz": {
+     "jeremy": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Jeremy",
+    "patient_last_note": "Adams",
+    "patient_first_dialogue": "jeremy",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N149": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "dennis": 1
+    },
+    "patient_first_gaz": {
+     "dennis": 4
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "dennis",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N150": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Scott": 1
+    },
+    "patient_last": {
+     "Miller": 1
+    }
+   },
+   "dialogue": {
+    "patient_first_gaz": {
+     "scott": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Scott",
+    "patient_last_note": "Miller",
+    "patient_first_dialogue": "scott",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N151": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Teresa": 1
+    },
+    "patient_last": {
+     "Sullivan": 1
+    }
+   },
+   "dialogue": {
+    "patient_first_gaz": {
+     "teresa": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Teresa",
+    "patient_last_note": "Sullivan",
+    "patient_first_dialogue": "teresa",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N152": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "noah": 1
+    },
+    "patient_first_gaz": {
+     "noah": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "noah",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N153": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Gregory": 1
+    },
+    "patient_last": {
+     "Price": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "gregory": 1
+    },
+    "patient_first_gaz": {
+     "hope": 1,
+     "gregory": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Gregory",
+    "patient_last_note": "Price",
+    "patient_first_dialogue": "gregory",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N154": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Dennis": 1
+    },
+    "patient_last": {
+     "Martin": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "dennis": 1
+    },
+    "patient_first_gaz": {
+     "dennis": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Dennis",
+    "patient_last_note": "Martin",
+    "patient_first_dialogue": "dennis",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N155": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Christina": 1
+    },
+    "patient_last": {
+     "Cooper": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "christina": 1
+    },
+    "doctor": {
+     "wants": 1
+    },
+    "patient_first_gaz": {
+     "christina": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Christina",
+    "patient_last_note": "Cooper",
+    "patient_first_dialogue": "christina",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "wants"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N156": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first_gaz": {
+     "julia": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "julia",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N157": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "doctor": {
+     "Miller": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "jose": 1
+    },
+    "doctor": {
+     "miller": 1
+    },
+    "patient_first_gaz": {
+     "jose": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "jose",
+    "patient_last_dialogue": null,
+    "doctor_note": [
+     "Miller"
+    ],
+    "doctor_dialogue": [
+     "miller"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N158": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "barbara": 1
+    },
+    "patient_first_gaz": {
+     "barbara": 4
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "barbara",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N159": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Alexis": 1
+    },
+    "patient_last": {
+     "Gutierrez": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "alexis": 1
+    },
+    "patient_first_gaz": {
+     "alexis": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Alexis",
+    "patient_last_note": "Gutierrez",
+    "patient_first_dialogue": "alexis",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N160": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first_gaz": {
+     "philip": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "philip",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N161": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "nap": 1
+    },
+    "patient_first_gaz": {
+     "kevin": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "nap",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N162": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Gregory": 1
+    },
+    "patient_last": {
+     "Hernandez": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "gregory": 1
+    },
+    "patient_first_gaz": {
+     "gregory": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Gregory",
+    "patient_last_note": "Hernandez",
+    "patient_first_dialogue": "gregory",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N163": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "julie": 2
+    },
+    "patient_last": {
+     "cruz": 1
+    },
+    "patient_first_gaz": {
+     "julie": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "julie",
+    "patient_last_dialogue": "cruz",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N164": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "elizabeth": 1
+    },
+    "patient_first_gaz": {
+     "elizabeth": 4
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "elizabeth",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N165": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Sophia": 1
+    },
+    "patient_last": {
+     "Jackson": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "sophia": 1
+    },
+    "patient_first_gaz": {
+     "sophia": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Sophia",
+    "patient_last_note": "Jackson",
+    "patient_first_dialogue": "sophia",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N166": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Kyle": 1
+    },
+    "patient_last": {
+     "Morales": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "kyle": 1
+    },
+    "patient_first_gaz": {
+     "kyle": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Kyle",
+    "patient_last_note": "Morales",
+    "patient_first_dialogue": "kyle",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N167": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Angela": 1
+    },
+    "patient_last": {
+     "Powell": 1
+    }
+   },
+   "dialogue": {
+    "patient_first_gaz": {
+     "angela": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Angela",
+    "patient_last_note": "Powell",
+    "patient_first_dialogue": "angela",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N168": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Diane": 2
+    },
+    "patient_last": {
+     "Baker": 2
+    },
+    "patient_title_last": {
+     "Diane": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "diane": 2
+    },
+    "patient_first_gaz": {
+     "diane": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Diane",
+    "patient_last_note": "Baker",
+    "patient_first_dialogue": "diane",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N169": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Alan": 1
+    },
+    "patient_last": {
+     "Butler": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "alan": 2
+    },
+    "patient_first_gaz": {
+     "alan": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Alan",
+    "patient_last_note": "Butler",
+    "patient_first_dialogue": "alan",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N170": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Joyce": 2
+    },
+    "patient_last": {
+     "Price": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "joyce": 2
+    },
+    "patient_first_gaz": {
+     "joyce": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Joyce",
+    "patient_last_note": "Price",
+    "patient_first_dialogue": "joyce",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N171": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Evelyn": 2
+    },
+    "patient_last": {
+     "Morris": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "evelyn": 2
+    },
+    "patient_first_gaz": {
+     "evelyn": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Evelyn",
+    "patient_last_note": "Morris",
+    "patient_first_dialogue": "evelyn",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N172": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Roy": 2
+    },
+    "patient_last": {
+     "Sanchez": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "roy": 2
+    },
+    "patient_first_gaz": {
+     "roy": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Roy",
+    "patient_last_note": "Sanchez",
+    "patient_first_dialogue": "roy",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N173": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Logan": 2
+    },
+    "patient_last": {
+     "Harris": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "logan": 2
+    },
+    "patient_first_gaz": {
+     "logan": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Logan",
+    "patient_last_note": "Harris",
+    "patient_first_dialogue": "logan",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N174": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "James": 2
+    },
+    "patient_last": {
+     "Moore": 2
+    },
+    "patient_title_last": {
+     "James": 2,
+     "Moore": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "james": 2
+    },
+    "patient_first_gaz": {
+     "james": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "James",
+    "patient_last_note": "Moore",
+    "patient_first_dialogue": "james",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N175": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Natalie": 2
+    },
+    "patient_last": {
+     "Price": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "natalie": 2
+    },
+    "patient_first_gaz": {
+     "natalie": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Natalie",
+    "patient_last_note": "Price",
+    "patient_first_dialogue": "natalie",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N176": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Alexander": 2
+    },
+    "patient_last": {
+     "Myers": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "alexander": 2
+    },
+    "patient_first_gaz": {
+     "alexander": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Alexander",
+    "patient_last_note": "Myers",
+    "patient_first_dialogue": "alexander",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N177": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Bruce": 2
+    },
+    "patient_last": {
+     "Howard": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "bruce": 2
+    },
+    "patient_first_gaz": {
+     "bruce": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Bruce",
+    "patient_last_note": "Howard",
+    "patient_first_dialogue": "bruce",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N178": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Maria": 1
+    },
+    "patient_last": {
+     "Martin": 1
+    },
+    "patient_title_last": {
+     "Martin": 1
+    },
+    "doctor": {
+     "Sanchez": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "maria": 2
+    },
+    "patient_last": {
+     "martin": 1
+    },
+    "doctor": {
+     "sanchez": 1
+    },
+    "patient_first_gaz": {
+     "maria": 2,
+     "martin": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Maria",
+    "patient_last_note": "Martin",
+    "patient_first_dialogue": "maria",
+    "patient_last_dialogue": "martin",
+    "doctor_note": [
+     "Sanchez"
+    ],
+    "doctor_dialogue": [
+     "sanchez"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N179": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Elijah": 1
+    },
+    "patient_last": {
+     "Cook": 2
+    },
+    "patient_title_last": {
+     "Cook": 1
+    }
+   },
+   "dialogue": {
+    "title_name": {
+     "cook": 3,
+     "martinez": 1
+    },
+    "doctor": {
+     "martinez": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Elijah",
+    "patient_last_note": "Cook",
+    "patient_first_dialogue": null,
+    "patient_last_dialogue": "cook",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "martinez"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N180": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "title_name": {
+     "taylor": 3,
+     "lopez": 1
+    },
+    "doctor": {
+     "jacob": 1,
+     "lopez": 1
+    },
+    "patient_first_gaz": {
+     "shirley": 1,
+     "jacob": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "shirley",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "jacob",
+     "lopez"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N181": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_title_last": {
+     "King": 1
+    },
+    "doctor": {
+     "Scott": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "michelle": 1
+    },
+    "patient_last": {
+     "king": 1
+    },
+    "title_name": {
+     "king": 1
+    },
+    "doctor": {
+     "phillips": 1,
+     "scott": 1
+    },
+    "patient_first_gaz": {
+     "michelle": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "King",
+    "patient_first_dialogue": "michelle",
+    "patient_last_dialogue": "king",
+    "doctor_note": [
+     "Scott"
+    ],
+    "doctor_dialogue": [
+     "phillips",
+     "scott"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N182": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Michelle": 1
+    },
+    "patient_last": {
+     "King": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "michelle": 2
+    },
+    "patient_last": {
+     "king": 1
+    },
+    "patient_first_gaz": {
+     "michelle": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Michelle",
+    "patient_last_note": "King",
+    "patient_first_dialogue": "michelle",
+    "patient_last_dialogue": "king",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N183": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Matthew": 2
+    },
+    "patient_last": {
+     "Rogers": 1
+    },
+    "patient_first_bare": {
+     "Matthew": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "matthew": 1
+    },
+    "patient_last": {
+     "rogers": 1
+    },
+    "patient_first_gaz": {
+     "matthew": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Matthew",
+    "patient_last_note": "Rogers",
+    "patient_first_dialogue": "matthew",
+    "patient_last_dialogue": "rogers",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N184": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Stephanie": 2
+    },
+    "patient_last": {
+     "Morales": 2
+    },
+    "patient_title_last": {
+     "Stephanie": 2,
+     "Morales": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "stephanie": 1
+    },
+    "patient_last": {
+     "morales": 1
+    },
+    "patient_first_gaz": {
+     "stephanie": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Stephanie",
+    "patient_last_note": "Morales",
+    "patient_first_dialogue": "stephanie",
+    "patient_last_dialogue": "morales",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N185": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Ashley": 2
+    },
+    "patient_last": {
+     "James": 1
+    },
+    "patient_first_bare": {
+     "Ashley": 3
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "ashley": 3
+    },
+    "patient_last": {
+     "james": 1
+    },
+    "doctor": {
+     "rogers": 1,
+     "suspects": 1
+    },
+    "patient_first_gaz": {
+     "ashley": 7,
+     "james": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Ashley",
+    "patient_last_note": "James",
+    "patient_first_dialogue": "ashley",
+    "patient_last_dialogue": "james",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "rogers",
+     "suspects"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N186": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Sean": 1
+    },
+    "patient_last": {
+     "Phillips": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "sean": 1
+    },
+    "patient_first_gaz": {
+     "sean": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Sean",
+    "patient_last_note": "Phillips",
+    "patient_first_dialogue": "sean",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N187": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "advanced": 1,
+     "emily": 1
+    },
+    "patient_first_gaz": {
+     "emily": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "advanced",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N188": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Jacqueline": 1
+    },
+    "patient_last": {
+     "Price": 1
+    },
+    "patient_title_last": {
+     "Price": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "jaqueline": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Jacqueline",
+    "patient_last_note": "Price",
+    "patient_first_dialogue": "jaqueline",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N189": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "betty": 1
+    },
+    "title_name": {
+     "swimming": 1
+    },
+    "patient_first_gaz": {
+     "betty": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "betty",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N190": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Beverly": 1
+    },
+    "patient_last": {
+     "Howard": 1
+    }
+   },
+   "dialogue": {
+    "patient_first_gaz": {
+     "beverly": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Beverly",
+    "patient_last_note": "Howard",
+    "patient_first_dialogue": "beverly",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N191": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Zachary": 1
+    },
+    "patient_last": {
+     "Wood": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "zachary": 1
+    },
+    "patient_first_gaz": {
+     "zachary": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Zachary",
+    "patient_last_note": "Wood",
+    "patient_first_dialogue": "zachary",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N192": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "karen": 1
+    },
+    "patient_first_gaz": {
+     "karen": 6
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "karen",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N193": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "hannah": 1
+    },
+    "patient_first_gaz": {
+     "hannah": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "hannah",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N194": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Betty": 1
+    },
+    "patient_last": {
+     "Rogers": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "betty": 1
+    },
+    "patient_first_gaz": {
+     "betty": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Betty",
+    "patient_last_note": "Rogers",
+    "patient_first_dialogue": "betty",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N195": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Matthew": 1
+    },
+    "patient_last": {
+     "Allen": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "matthew": 1
+    },
+    "patient_first_gaz": {
+     "matthew": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Matthew",
+    "patient_last_note": "Allen",
+    "patient_first_dialogue": "matthew",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N196": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "mister": 1
+    },
+    "patient_last": {
+     "thompson": 1
+    },
+    "title_name": {
+     "thompson": 3
+    },
+    "patient_first_gaz": {
+     "jerry": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "mister",
+    "patient_last_dialogue": "thompson",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N197": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "doctor": {
+     "Ruth": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "complaint": 1,
+     "donna": 1
+    },
+    "doctor": {
+     "ruth": 2
+    },
+    "patient_first_gaz": {
+     "donna": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "complaint",
+    "patient_last_dialogue": null,
+    "doctor_note": [
+     "Ruth"
+    ],
+    "doctor_dialogue": [
+     "ruth"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N198": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "doctor": {
+     "knows": 1
+    },
+    "patient_first_gaz": {
+     "michael": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "michael",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "knows"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N199": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "billy": 1
+    },
+    "patient_first_gaz": {
+     "billy": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "billy",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N200": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first_gaz": {
+     "theresa": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "theresa",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N201": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Steven": 1
+    },
+    "patient_last": {
+     "Reed": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "steven": 1
+    },
+    "patient_first_gaz": {
+     "steven": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Steven",
+    "patient_last_note": "Reed",
+    "patient_first_dialogue": "steven",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N202": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Sharon": 1
+    },
+    "patient_last": {
+     "Wright": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "sharon": 1
+    },
+    "patient_first_gaz": {
+     "sharon": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Sharon",
+    "patient_last_note": "Wright",
+    "patient_first_dialogue": "sharon",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N203": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "matthew": 1
+    },
+    "patient_first_gaz": {
+     "matthew": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "matthew",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N204": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Joe": 1
+    },
+    "patient_last": {
+     "Reed": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "joe": 1
+    },
+    "patient_first_gaz": {
+     "joe": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Joe",
+    "patient_last_note": "Reed",
+    "patient_first_dialogue": "joe",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N205": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "angela": 1
+    },
+    "patient_first_gaz": {
+     "angela": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "angela",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N206": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Joshua": 1
+    },
+    "patient_last": {
+     "Reyes": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "joshua": 1
+    },
+    "patient_first_gaz": {
+     "joshua": 2,
+     "brenda": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Joshua",
+    "patient_last_note": "Reyes",
+    "patient_first_dialogue": "joshua",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N207": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "doctor": {
+     "White": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "frank": 1
+    },
+    "doctor": {
+     "white": 1
+    },
+    "patient_first_gaz": {
+     "frank": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "frank",
+    "patient_last_dialogue": null,
+    "doctor_note": [
+     "White"
+    ],
+    "doctor_dialogue": [
+     "white"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N068": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Brian": 2
+    },
+    "patient_last": {
+     "White": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "brian": 2
+    },
+    "patient_first_gaz": {
+     "brian": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Brian",
+    "patient_last_note": "White",
+    "patient_first_dialogue": "brian",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N069": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_last": {
+     "Thompson": 1
+    },
+    "patient_title_last": {
+     "Thompson": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "thompson": 1
+    },
+    "title_name": {
+     "thompson": 3,
+     "moore": 1
+    },
+    "doctor": {
+     "moore": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Thompson",
+    "patient_first_dialogue": "thompson",
+    "patient_last_dialogue": "thompson",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "moore"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N070": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Logan": 2
+    },
+    "patient_last": {
+     "Walker": 2
+    },
+    "patient_title_last": {
+     "Logan": 2,
+     "Walker": 3
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "logan": 2
+    },
+    "patient_first_gaz": {
+     "logan": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Logan",
+    "patient_last_note": "Walker",
+    "patient_first_dialogue": "logan",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N071": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Ralph": 1
+    },
+    "patient_last": {
+     "Barnes": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "ralph": 1
+    },
+    "patient_first_gaz": {
+     "ralph": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Ralph",
+    "patient_last_note": "Barnes",
+    "patient_first_dialogue": "ralph",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N072": {
+   "dataset": "virtassist",
+   "split": "train",
+   "note": {
+    "patient_last": {
+     "Brooks": 1
+    },
+    "patient_title_last": {
+     "Brooks": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "sharon": 1
+    },
+    "patient_last": {
+     "brooks": 1
+    },
+    "title_name": {
+     "brooks": 2,
+     "baker": 1
+    },
+    "doctor": {
+     "baker": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Brooks",
+    "patient_first_dialogue": "sharon",
+    "patient_last_dialogue": "brooks",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "baker"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N073": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Christina": 1
+    },
+    "patient_last": {
+     "Cooper": 2
+    },
+    "patient_title_last": {
+     "Christina": 1,
+     "Cooper": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "christina": 2
+    },
+    "patient_last": {
+     "cooper": 2
+    },
+    "title_name": {
+     "cooper": 3
+    },
+    "doctor": {
+     "flores": 1
+    },
+    "patient_first_gaz": {
+     "christina": 1,
+     "diane": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Christina",
+    "patient_last_note": "Cooper",
+    "patient_first_dialogue": "christina",
+    "patient_last_dialogue": "cooper",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "flores"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N074": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Bruce": 1
+    },
+    "patient_last": {
+     "Ward": 2
+    },
+    "patient_title_last": {
+     "Ward": 2
+    },
+    "doctor": {
+     "Henry": 1,
+     "Howard": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "ward": 1
+    },
+    "title_name": {
+     "ward": 5
+    },
+    "doctor": {
+     "henry": 1,
+     "howard": 2,
+     "flores": 1
+    },
+    "patient_first_gaz": {
+     "bruce": 1,
+     "henry": 1,
+     "howard": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Bruce",
+    "patient_last_note": "Ward",
+    "patient_first_dialogue": "ward",
+    "patient_last_dialogue": "ward",
+    "doctor_note": [
+     "Henry",
+     "Howard"
+    ],
+    "doctor_dialogue": [
+     "flores",
+     "henry",
+     "howard"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N075": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "title_name": {
+     "hill": 1
+    },
+    "doctor": {
+     "sanders": 1
+    },
+    "patient_first_gaz": {
+     "betty": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "betty",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "sanders"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N076": {
+   "dataset": "virtscribe",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Katherine": 2
+    },
+    "patient_last": {
+     "Lopez": 1
+    },
+    "patient_first_bare": {
+     "Katherine": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "katherine": 1
+    },
+    "doctor": {
+     "evelyn": 1
+    },
+    "patient_first_gaz": {
+     "evelyn": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Katherine",
+    "patient_last_note": "Lopez",
+    "patient_first_dialogue": "katherine",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "evelyn"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N077": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Diana": 1
+    },
+    "patient_last": {
+     "Scott": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "diana": 1
+    },
+    "patient_first_gaz": {
+     "diana": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Diana",
+    "patient_last_note": "Scott",
+    "patient_first_dialogue": "diana",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N078": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "philip": 1
+    },
+    "patient_first_gaz": {
+     "philip": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "philip",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N079": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Wayne": 1
+    },
+    "patient_last": {
+     "Taylor": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "wayne": 1
+    },
+    "patient_first_gaz": {
+     "wayne": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Wayne",
+    "patient_last_note": "Taylor",
+    "patient_first_dialogue": "wayne",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N080": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Andrea": 1
+    },
+    "patient_last": {
+     "Barnes": 1
+    }
+   },
+   "dialogue": {
+    "title_name": {
+     "andrea": 1
+    },
+    "patient_first_gaz": {
+     "andrea": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Andrea",
+    "patient_last_note": "Barnes",
+    "patient_first_dialogue": "andrea",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N081": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "beverly": 2
+    },
+    "patient_first_gaz": {
+     "beverly": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "beverly",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N082": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Kyle": 1
+    },
+    "patient_last": {
+     "Lee": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "kyle": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Kyle",
+    "patient_last_note": "Lee",
+    "patient_first_dialogue": "kyle",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N083": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Lawrence": 1
+    },
+    "patient_last": {
+     "Butler": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "lawrence": 1
+    },
+    "patient_first_gaz": {
+     "lawrence": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Lawrence",
+    "patient_last_note": "Butler",
+    "patient_first_dialogue": "lawrence",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N084": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first_gaz": {
+     "david": 3,
+     "hope": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "david",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N085": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "russell": 1
+    },
+    "doctor": {
+     "ordered": 1
+    },
+    "patient_first_gaz": {
+     "russell": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "russell",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "ordered"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N086": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {
+    "patient_first": {
+     "Nicholas": 1
+    },
+    "patient_last": {
+     "Gutierrez": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "nicholas": 1
+    },
+    "patient_first_gaz": {
+     "nicholas": 2,
+     "barbara": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Nicholas",
+    "patient_last_note": "Gutierrez",
+    "patient_first_dialogue": "nicholas",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N087": {
+   "dataset": "aci",
+   "split": "train",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "richard": 1
+    },
+    "patient_first_gaz": {
+     "richard": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "richard",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N001": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Martha": 2
+    },
+    "patient_last": {
+     "Collins": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "martha": 2
+    },
+    "patient_first_gaz": {
+     "martha": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Martha",
+    "patient_last_note": "Collins",
+    "patient_first_dialogue": "martha",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N002": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Andrew": 2
+    },
+    "patient_last": {
+     "Perez": 2
+    },
+    "doctor": {
+     "Gutierrez": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "andrew": 1
+    },
+    "title_name": {
+     "andrew": 1
+    },
+    "doctor": {
+     "gutierrez": 1
+    },
+    "patient_first_gaz": {
+     "andrew": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Andrew",
+    "patient_last_note": "Perez",
+    "patient_first_dialogue": "andrew",
+    "patient_last_dialogue": null,
+    "doctor_note": [
+     "Gutierrez"
+    ],
+    "doctor_dialogue": [
+     "gutierrez"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N003": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "John": 2
+    },
+    "patient_last": {
+     "Perry": 2
+    },
+    "patient_title_last": {
+     "John": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "john": 2
+    },
+    "patient_first_gaz": {
+     "john": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "John",
+    "patient_last_note": "Perry",
+    "patient_first_dialogue": "john",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N004": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "James": 2
+    },
+    "patient_last": {
+     "Allen": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "james": 2
+    },
+    "patient_first_gaz": {
+     "james": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "James",
+    "patient_last_note": "Allen",
+    "patient_first_dialogue": "james",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N005": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_last": {
+     "Hill": 1
+    },
+    "patient_title_last": {
+     "Hill": 1
+    }
+   },
+   "dialogue": {
+    "title_name": {
+     "hill": 3,
+     "james": 1
+    },
+    "doctor": {
+     "james": 1
+    },
+    "patient_first_gaz": {
+     "james": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Hill",
+    "patient_first_dialogue": null,
+    "patient_last_dialogue": "hill",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "james"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N006": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Anna": 2
+    },
+    "patient_last": {
+     "Mitchell": 2
+    },
+    "patient_title_last": {
+     "Mitchell": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "anna": 2
+    },
+    "patient_first_gaz": {
+     "anna": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Anna",
+    "patient_last_note": "Mitchell",
+    "patient_first_dialogue": "anna",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N007": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "sarah": 2
+    },
+    "patient_first_gaz": {
+     "sarah": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "sarah",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N008": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Stephanie": 2
+    },
+    "patient_last": {
+     "Diaz": 2
+    },
+    "patient_title_last": {
+     "Stephanie": 2,
+     "Diaz": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "stephanie": 2
+    },
+    "patient_first_gaz": {
+     "stephanie": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Stephanie",
+    "patient_last_note": "Diaz",
+    "patient_first_dialogue": "stephanie",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N009": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Bryan": 2
+    },
+    "patient_last": {
+     "Smith": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "bryan": 2
+    },
+    "patient_first_gaz": {
+     "bryan": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Bryan",
+    "patient_last_note": "Smith",
+    "patient_first_dialogue": "bryan",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N010": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "keith": 2
+    },
+    "patient_first_gaz": {
+     "keith": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "keith",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N011": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Roger": 1
+    },
+    "patient_last": {
+     "Nelson": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "roger": 2
+    },
+    "patient_first_gaz": {
+     "roger": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Roger",
+    "patient_last_note": "Nelson",
+    "patient_first_dialogue": "roger",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N012": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_last": {
+     "Fisher": 2
+    },
+    "patient_first": {
+     "Joseph": 1
+    },
+    "patient_title_last": {
+     "Fisher": 3,
+     "Joseph": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "joseph": 2
+    },
+    "patient_first_gaz": {
+     "joseph": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Joseph",
+    "patient_last_note": "Fisher",
+    "patient_first_dialogue": "joseph",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N013": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "John": 2
+    },
+    "patient_last": {
+     "Brooks": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "john": 2
+    },
+    "patient_first_gaz": {
+     "john": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "John",
+    "patient_last_note": "Brooks",
+    "patient_first_dialogue": "john",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N014": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Louis": 1
+    },
+    "patient_last": {
+     "Williams": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "louis": 2
+    },
+    "patient_first_gaz": {
+     "louis": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Louis",
+    "patient_last_note": "Williams",
+    "patient_first_dialogue": "louis",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N015": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "rachel": 1
+    },
+    "patient_first_gaz": {
+     "rachel": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "rachel",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N016": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Edward": 2
+    },
+    "patient_last": {
+     "Butler": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "edward": 2
+    },
+    "patient_first_gaz": {
+     "edward": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Edward",
+    "patient_last_note": "Butler",
+    "patient_first_dialogue": "edward",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N017": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_last": {
+     "Peterson": 1
+    },
+    "patient_title_last": {
+     "Peterson": 1
+    }
+   },
+   "dialogue": {
+    "title_name": {
+     "peterson": 3,
+     "taylor": 1
+    },
+    "doctor": {
+     "taylor": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Peterson",
+    "patient_first_dialogue": null,
+    "patient_last_dialogue": "peterson",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "taylor"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N018": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_last": {
+     "Russell": 1
+    },
+    "patient_title_last": {
+     "Russell": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "russell": 1
+    },
+    "title_name": {
+     "russell": 3
+    },
+    "doctor": {
+     "gutierrez": 1
+    },
+    "patient_first_gaz": {
+     "russell": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Russell",
+    "patient_first_dialogue": "russell",
+    "patient_last_dialogue": "russell",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "gutierrez"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N019": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_last": {
+     "Hernandez": 1
+    },
+    "patient_title_last": {
+     "Hernandez": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "hernandez": 1
+    },
+    "title_name": {
+     "hernandez": 3,
+     "fisher": 1
+    },
+    "doctor": {
+     "fisher": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Hernandez",
+    "patient_first_dialogue": "hernandez",
+    "patient_last_dialogue": "hernandez",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "fisher"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N020": {
+   "dataset": "virtassist",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Vincent": 2
+    },
+    "patient_last": {
+     "Young": 2
+    },
+    "patient_title_last": {
+     "Vincent": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "vincent": 2
+    },
+    "patient_first_gaz": {
+     "vincent": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Vincent",
+    "patient_last_note": "Young",
+    "patient_first_dialogue": "vincent",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N021": {
+   "dataset": "virtscribe",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Christine": 1
+    },
+    "patient_last": {
+     "Hernandez": 1
+    },
+    "patient_title_last": {
+     "Hernandez": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "christine": 1
+    },
+    "patient_last": {
+     "hernandez": 1
+    },
+    "title_name": {
+     "christine": 2
+    },
+    "patient_first_gaz": {
+     "christine": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Christine",
+    "patient_last_note": "Hernandez",
+    "patient_first_dialogue": "christine",
+    "patient_last_dialogue": "hernandez",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N022": {
+   "dataset": "virtscribe",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Philip": 2
+    },
+    "patient_last": {
+     "Gutierrez": 2
+    },
+    "patient_title_last": {
+     "Philip": 2,
+     "Gutierrez": 1
+    },
+    "doctor": {
+     "Alice": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "philip": 1
+    },
+    "patient_last": {
+     "gutierrez": 1
+    },
+    "doctor": {
+     "alice": 1
+    },
+    "title_name": {
+     "gutierrez": 3
+    },
+    "patient_first_gaz": {
+     "philip": 1,
+     "alice": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Philip",
+    "patient_last_note": "Gutierrez",
+    "patient_first_dialogue": "philip",
+    "patient_last_dialogue": "gutierrez",
+    "doctor_note": [
+     "Alice"
+    ],
+    "doctor_dialogue": [
+     "alice"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N023": {
+   "dataset": "virtscribe",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Paul": 1
+    },
+    "patient_last": {
+     "Edwards": 1
+    },
+    "patient_title_last": {
+     "Paul": 1,
+     "Edwards": 2
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "paul": 1
+    },
+    "patient_last": {
+     "edwards": 1
+    },
+    "patient_first_gaz": {
+     "paul": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Paul",
+    "patient_last_note": "Edwards",
+    "patient_first_dialogue": "paul",
+    "patient_last_dialogue": "edwards",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N024": {
+   "dataset": "virtscribe",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Pamela": 2
+    },
+    "patient_last": {
+     "Cook": 2
+    },
+    "patient_title_last": {
+     "Cook": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "pamela": 1
+    },
+    "patient_last": {
+     "cook": 1
+    },
+    "patient_first_gaz": {
+     "pamela": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Pamela",
+    "patient_last_note": "Cook",
+    "patient_first_dialogue": "pamela",
+    "patient_last_dialogue": "cook",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N025": {
+   "dataset": "virtscribe",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Nicole": 1
+    },
+    "patient_last": {
+     "Miller": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "nicole": 1
+    },
+    "patient_last": {
+     "miller": 1
+    },
+    "title_name": {
+     "miller": 2
+    },
+    "doctor": {
+     "martin": 1
+    },
+    "patient_first_gaz": {
+     "nicole": 1,
+     "april": 2,
+     "summer": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Nicole",
+    "patient_last_note": "Miller",
+    "patient_first_dialogue": "nicole",
+    "patient_last_dialogue": "miller",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "martin"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N026": {
+   "dataset": "virtscribe",
+   "split": "eval",
+   "note": {
+    "patient_title_last": {
+     "Clark": 1
+    }
+   },
+   "dialogue": {
+    "doctor": {
+     "miller": 1
+    },
+    "patient_first_gaz": {
+     "donald": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Clark",
+    "patient_first_dialogue": "donald",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "miller"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N027": {
+   "dataset": "virtscribe",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Eugene": 2
+    },
+    "patient_last": {
+     "Walker": 2
+    },
+    "patient_title_last": {
+     "Eugene": 2,
+     "Walker": 1
+    },
+    "doctor": {
+     "Lewis": 1,
+     "Tyler": 1
+    }
+   },
+   "dialogue": {
+    "title_name": {
+     "walker": 3
+    },
+    "doctor": {
+     "lewis": 1,
+     "vincent": 1
+    },
+    "patient_first_gaz": {
+     "eugene": 1
+    },
+    "relative": {
+     "tyler": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Eugene",
+    "patient_last_note": "Walker",
+    "patient_first_dialogue": "eugene",
+    "patient_last_dialogue": "walker",
+    "doctor_note": [
+     "Lewis",
+     "Tyler"
+    ],
+    "doctor_dialogue": [
+     "lewis",
+     "vincent"
+    ],
+    "staff_dialogue": [],
+    "relative": [
+     "tyler"
+    ]
+   }
+  },
+  "D2N028": {
+   "dataset": "virtscribe",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Patrick": 2
+    },
+    "patient_last": {
+     "Allen": 2
+    },
+    "patient_title_last": {
+     "Allen": 5
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "patrick": 1
+    },
+    "patient_last": {
+     "allen": 1
+    },
+    "title_name": {
+     "allen": 2
+    },
+    "doctor": {
+     "edwards": 2
+    },
+    "patient_first_gaz": {
+     "patrick": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Patrick",
+    "patient_last_note": "Allen",
+    "patient_first_dialogue": "patrick",
+    "patient_last_dialogue": "allen",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "edwards"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N029": {
+   "dataset": "virtscribe",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Sophia": 1
+    },
+    "patient_last": {
+     "Jackson": 1
+    },
+    "patient_title_last": {
+     "Jackson": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "sophia": 1
+    },
+    "patient_last": {
+     "jackson": 1
+    },
+    "title_name": {
+     "jackson": 1
+    },
+    "patient_first_gaz": {
+     "sophia": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Sophia",
+    "patient_last_note": "Jackson",
+    "patient_first_dialogue": "sophia",
+    "patient_last_dialogue": "jackson",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N030": {
+   "dataset": "virtscribe",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Donna": 1
+    },
+    "patient_last": {
+     "Torres": 1
+    },
+    "patient_title_last": {
+     "Torres": 1
+    },
+    "doctor": {
+     "Brown": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "donna": 2
+    },
+    "patient_last": {
+     "torres": 1
+    },
+    "doctor": {
+     "brown": 1,
+     "ward": 1
+    },
+    "patient_first_gaz": {
+     "donna": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Donna",
+    "patient_last_note": "Torres",
+    "patient_first_dialogue": "donna",
+    "patient_last_dialogue": "torres",
+    "doctor_note": [
+     "Brown"
+    ],
+    "doctor_dialogue": [
+     "brown",
+     "ward"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N031": {
+   "dataset": "virtscribe",
+   "split": "eval",
+   "note": {
+    "patient_title_last": {
+     "Brown": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "sophia": 1
+    },
+    "patient_last": {
+     "brown": 1
+    },
+    "title_name": {
+     "brown": 2
+    },
+    "doctor": {
+     "stewart": 1,
+     "gave": 1
+    },
+    "patient_first_gaz": {
+     "sophia": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": "Brown",
+    "patient_first_dialogue": "sophia",
+    "patient_last_dialogue": "brown",
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "gave",
+     "stewart"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N032": {
+   "dataset": "virtscribe",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Elizabeth": 1
+    },
+    "patient_last": {
+     "Reyes": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "reyes": 1
+    },
+    "title_name": {
+     "reyes": 4
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Elizabeth",
+    "patient_last_note": "Reyes",
+    "patient_first_dialogue": "reyes",
+    "patient_last_dialogue": "reyes",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N033": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first_gaz": {
+     "sophia": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "sophia",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N034": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Alan": 1
+    },
+    "patient_last": {
+     "Mitchell": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "alan": 1
+    },
+    "patient_first_gaz": {
+     "alan": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Alan",
+    "patient_last_note": "Mitchell",
+    "patient_first_dialogue": "alan",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N035": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "christina": 1
+    },
+    "patient_first_gaz": {
+     "christina": 1,
+     "diane": 1
+    },
+    "relative": {
+     "diane": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "christina",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": [
+     "diane"
+    ]
+   }
+  },
+  "D2N036": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "George": 1
+    },
+    "patient_last": {
+     "Lewis": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "george": 1
+    },
+    "patient_first_gaz": {
+     "george": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "George",
+    "patient_last_note": "Lewis",
+    "patient_first_dialogue": "george",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N037": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Dylan": 1
+    },
+    "patient_last": {
+     "Bennett": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "dylan": 1
+    },
+    "patient_first_gaz": {
+     "dylan": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Dylan",
+    "patient_last_note": "Bennett",
+    "patient_first_dialogue": "dylan",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N038": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Bruce": 1
+    },
+    "patient_last": {
+     "Ward": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "bruce": 1
+    },
+    "patient_first_gaz": {
+     "bruce": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Bruce",
+    "patient_last_note": "Ward",
+    "patient_first_dialogue": "bruce",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N039": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "virginia": 1,
+     "aldosterone": 1
+    },
+    "patient_first_gaz": {
+     "virginia": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "virginia",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N040": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "carolyn": 1
+    },
+    "patient_first_gaz": {
+     "carolyn": 4
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "carolyn",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N041": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "teresa": 1
+    },
+    "patient_first_gaz": {
+     "teresa": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "teresa",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N042": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Carolyn": 1
+    },
+    "patient_last": {
+     "Jones": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "carolyn": 1
+    },
+    "patient_first_gaz": {
+     "carolyn": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Carolyn",
+    "patient_last_note": "Jones",
+    "patient_first_dialogue": "carolyn",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N043": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {},
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": null,
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N044": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "julie": 1
+    },
+    "patient_first_gaz": {
+     "julie": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "julie",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N045": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "abigail": 1
+    },
+    "doctor": {
+     "sanchez": 1,
+     "wood": 1
+    },
+    "patient_first_gaz": {
+     "abigail": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "abigail",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "sanchez",
+     "wood"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N046": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {},
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": null,
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N047": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "doctor": {
+     "Moore": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "billy": 1
+    },
+    "doctor": {
+     "moore": 1
+    },
+    "patient_first_gaz": {
+     "billy": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "billy",
+    "patient_last_dialogue": null,
+    "doctor_note": [
+     "Moore"
+    ],
+    "doctor_dialogue": [
+     "moore"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N048": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Brittany": 1
+    },
+    "patient_last": {
+     "Edwards": 1
+    }
+   },
+   "dialogue": {
+    "patient_first_gaz": {
+     "brittany": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Brittany",
+    "patient_last_note": "Edwards",
+    "patient_first_dialogue": "brittany",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N049": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "linda": 1
+    },
+    "patient_first_gaz": {
+     "linda": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "linda",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N050": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Mason": 1
+    },
+    "patient_last": {
+     "Ward": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "mason": 1
+    },
+    "patient_first_gaz": {
+     "mason": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Mason",
+    "patient_last_note": "Ward",
+    "patient_first_dialogue": "mason",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N051": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Jeremy": 1
+    },
+    "patient_last": {
+     "Roberts": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "jeremy": 1
+    },
+    "patient_first_gaz": {
+     "jeremy": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Jeremy",
+    "patient_last_note": "Roberts",
+    "patient_first_dialogue": "jeremy",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N052": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Anna": 1
+    },
+    "patient_last": {
+     "Diaz": 1
+    }
+   },
+   "dialogue": {
+    "patient_first_gaz": {
+     "anna": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Anna",
+    "patient_last_note": "Diaz",
+    "patient_first_dialogue": "anna",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N053": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first_gaz": {
+     "barbara": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "barbara",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N054": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Elijah": 1
+    },
+    "patient_last": {
+     "Reyes": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "elijah": 1
+    },
+    "patient_first_gaz": {
+     "elijah": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Elijah",
+    "patient_last_note": "Reyes",
+    "patient_first_dialogue": "elijah",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N055": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "karen": 2
+    },
+    "patient_last": {
+     "nelson": 1
+    },
+    "patient_first_gaz": {
+     "karen": 5
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "karen",
+    "patient_last_dialogue": "nelson",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N056": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {},
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": null,
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N057": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Joseph": 1
+    },
+    "patient_last": {
+     "Walker": 1
+    }
+   },
+   "dialogue": {
+    "patient_first_gaz": {
+     "joseph": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Joseph",
+    "patient_last_note": "Walker",
+    "patient_first_dialogue": "joseph",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N058": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "russell": 1
+    },
+    "patient_last": {
+     "ramirez": 1
+    },
+    "patient_first_gaz": {
+     "russell": 3
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "russell",
+    "patient_last_dialogue": "ramirez",
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N059": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {},
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": null,
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N060": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Jean": 1
+    },
+    "patient_last": {
+     "Martinez": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "jean": 1
+    },
+    "patient_first_gaz": {
+     "jean": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Jean",
+    "patient_last_note": "Martinez",
+    "patient_first_dialogue": "jean",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N061": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Virginia": 1
+    },
+    "patient_last": {
+     "Phillips": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "virginia": 1
+    },
+    "patient_first_gaz": {
+     "virginia": 1,
+     "ray": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Virginia",
+    "patient_last_note": "Phillips",
+    "patient_first_dialogue": "virginia",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N062": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Raymond": 1
+    },
+    "patient_last": {
+     "Taylor": 1
+    },
+    "patient_title_last": {
+     "Taylor": 1
+    }
+   },
+   "dialogue": {
+    "patient_first_gaz": {
+     "raymond": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Raymond",
+    "patient_last_note": "Taylor",
+    "patient_first_dialogue": "raymond",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N063": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "gloria": 1
+    },
+    "patient_first_gaz": {
+     "gloria": 5
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "gloria",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N064": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Matthew": 1
+    },
+    "patient_last": {
+     "Murphy": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "matthew": 1
+    },
+    "patient_first_gaz": {
+     "matthew": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Matthew",
+    "patient_last_note": "Murphy",
+    "patient_first_dialogue": "matthew",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N065": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Anna": 1
+    },
+    "patient_last": {
+     "Diaz": 1
+    },
+    "patient_title_last": {
+     "Diaz": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "anna": 1
+    },
+    "patient_first_gaz": {
+     "anna": 2
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Anna",
+    "patient_last_note": "Diaz",
+    "patient_first_dialogue": "anna",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N066": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {},
+   "dialogue": {
+    "patient_first": {
+     "gabriel": 2
+    },
+    "doctor": {
+     "scott": 1
+    },
+    "patient_first_gaz": {
+     "gabriel": 7,
+     "scott": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": null,
+    "patient_last_note": null,
+    "patient_first_dialogue": "gabriel",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [
+     "scott"
+    ],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  },
+  "D2N067": {
+   "dataset": "aci",
+   "split": "eval",
+   "note": {
+    "patient_first": {
+     "Elizabeth": 1
+    },
+    "patient_last": {
+     "Ross": 1
+    }
+   },
+   "dialogue": {
+    "patient_first": {
+     "elizabeth": 1
+    },
+    "patient_first_gaz": {
+     "elizabeth": 1
+    }
+   },
+   "resolved": {
+    "patient_first_note": "Elizabeth",
+    "patient_last_note": "Ross",
+    "patient_first_dialogue": "elizabeth",
+    "patient_last_dialogue": null,
+    "doctor_note": [],
+    "doctor_dialogue": [],
+    "staff_dialogue": [],
+    "relative": []
+   }
+  }
+ },
+ "patient_first_names": {
+  "andrew": 2,
+  "andrea": 2,
+  "albert": 1,
+  "jerry": 2,
+  "lawrence": 2,
+  "james": 3,
+  "cheryl": 1,
+  "elizabeth": 4,
+  "jose": 2,
+  "randy": 1,
+  "kayla": 1,
+  "julia": 2,
+  "kelly": 1,
+  "melissa": 1,
+  "judy": 1,
+  "diana": 2,
+  "charles": 1,
+  "bryan": 2,
+  "gregory": 3,
+  "stephanie": 3,
+  "wayne": 2,
+  "william": 1,
+  "matthew": 6,
+  "jacqueline": 3,
+  "julie": 3,
+  "jack": 1,
+  "bobby": 2,
+  "mister": 2,
+  "angela": 3,
+  "betty": 4,
+  "larry": 1,
+  "kenneth": 1,
+  "kyle": 3,
+  "tyler": 2,
+  "michelle": 4,
+  "brandon": 1,
+  "carolyn": 3,
+  "beverly": 3,
+  "anna": 4,
+  "susan": 1,
+  "rebecca": 1,
+  "hannah": 2,
+  "janet": 1,
+  "christine": 2,
+  "emily": 1,
+  "jordan": 1,
+  "brittany": 2,
+  "christopher": 1,
+  "amanda": 1,
+  "grace": 1,
+  "jeremy": 2,
+  "dennis": 2,
+  "scott": 1,
+  "teresa": 2,
+  "noah": 1,
+  "christina": 3,
+  "barbara": 2,
+  "alexis": 1,
+  "philip": 3,
+  "nap": 1,
+  "sophia": 4,
+  "diane": 1,
+  "alan": 2,
+  "joyce": 1,
+  "evelyn": 1,
+  "roy": 1,
+  "logan": 2,
+  "natalie": 1,
+  "alexander": 1,
+  "bruce": 3,
+  "maria": 1,
+  "elijah": 2,
+  "shirley": 1,
+  "ashley": 1,
+  "sean": 1,
+  "advanced": 1,
+  "zachary": 1,
+  "karen": 2,
+  "complaint": 1,
+  "michael": 1,
+  "billy": 2,
+  "theresa": 1,
+  "steven": 1,
+  "sharon": 2,
+  "joe": 1,
+  "joshua": 1,
+  "frank": 1,
+  "brian": 1,
+  "thompson": 1,
+  "ralph": 1,
+  "katherine": 1,
+  "david": 1,
+  "russell": 3,
+  "nicholas": 1,
+  "richard": 1,
+  "martha": 1,
+  "john": 2,
+  "sarah": 1,
+  "keith": 1,
+  "roger": 1,
+  "joseph": 2,
+  "louis": 1,
+  "rachel": 1,
+  "edward": 1,
+  "hernandez": 1,
+  "vincent": 1,
+  "paul": 1,
+  "pamela": 1,
+  "nicole": 1,
+  "donald": 1,
+  "eugene": 1,
+  "patrick": 1,
+  "donna": 1,
+  "george": 1,
+  "dylan": 1,
+  "virginia": 2,
+  "abigail": 1,
+  "linda": 1,
+  "mason": 1,
+  "jean": 1,
+  "raymond": 1,
+  "gloria": 1,
+  "gabriel": 1
+ },
+ "patient_last_names": {
+  "campbell": 1,
+  "roberts": 3,
+  "powell": 2,
+  "nguyen": 1,
+  "martinez": 2,
+  "walker": 4,
+  "james": 3,
+  "ramirez": 1,
+  "anderson": 1,
+  "peterson": 2,
+  "gutierrez": 4,
+  "ward": 4,
+  "jones": 2,
+  "wood": 2,
+  "sanchez": 2,
+  "gomez": 1,
+  "scott": 2,
+  "sullivan": 3,
+  "brooks": 3,
+  "hernandez": 5,
+  "jenkins": 2,
+  "russell": 2,
+  "hill": 2,
+  "torres": 2,
+  "flores": 2,
+  "garcia": 2,
+  "green": 2,
+  "cook": 3,
+  "king": 3,
+  "ortiz": 1,
+  "morris": 2,
+  "watson": 2,
+  "lee": 2,
+  "thompson": 2,
+  "phillips": 3,
+  "edwards": 3,
+  "taylor": 3,
+  "ross": 2,
+  "nelson": 2,
+  "miller": 3,
+  "allen": 4,
+  "adams": 1,
+  "price": 4,
+  "martin": 2,
+  "cooper": 2,
+  "jackson": 2,
+  "morales": 2,
+  "baker": 1,
+  "butler": 3,
+  "harris": 1,
+  "moore": 1,
+  "myers": 1,
+  "howard": 2,
+  "rogers": 2,
+  "reed": 2,
+  "wright": 1,
+  "reyes": 3,
+  "white": 1,
+  "barnes": 2,
+  "lopez": 1,
+  "collins": 1,
+  "perez": 1,
+  "perry": 1,
+  "mitchell": 2,
+  "diaz": 3,
+  "smith": 1,
+  "fisher": 1,
+  "williams": 1,
+  "young": 1,
+  "clark": 1,
+  "brown": 1,
+  "lewis": 1,
+  "bennett": 1,
+  "murphy": 1
+ },
+ "doctor_names_dialogue": {
+  "reyes": 2,
+  "gomez": 1,
+  "cooper": 1,
+  "isabella": 1,
+  "martha": 1,
+  "juan": 1,
+  "gonzalez": 1,
+  "hughes": 2,
+  "says": 1,
+  "white": 2,
+  "nelson": 1,
+  "harris": 2,
+  "michael": 1,
+  "cruz": 1,
+  "collins": 1,
+  "diaz": 1,
+  "miller": 3,
+  "wants": 1,
+  "sanchez": 2,
+  "martinez": 1,
+  "jacob": 1,
+  "lopez": 1,
+  "phillips": 1,
+  "scott": 2,
+  "rogers": 1,
+  "suspects": 1,
+  "ruth": 2,
+  "knows": 1,
+  "moore": 3,
+  "baker": 2,
+  "flores": 2,
+  "henry": 1,
+  "howard": 2,
+  "sanders": 1,
+  "evelyn": 1,
+  "ordered": 1,
+  "gutierrez": 2,
+  "james": 1,
+  "taylor": 1,
+  "fisher": 2,
+  "alice": 1,
+  "martin": 1,
+  "lewis": 1,
+  "vincent": 1,
+  "edwards": 2,
+  "brown": 1,
+  "ward": 1,
+  "stewart": 1,
+  "gave": 1,
+  "wood": 1
+ },
+ "doctor_names_note": {
+  "Reyes": 2,
+  "White": 3,
+  "Nelson": 1,
+  "Harris": 1,
+  "Miller": 1,
+  "Sanchez": 1,
+  "Scott": 1,
+  "Ruth": 1,
+  "Henry": 1,
+  "Howard": 1,
+  "Gutierrez": 1,
+  "Alice": 1,
+  "Lewis": 1,
+  "Tyler": 1,
+  "Brown": 1,
+  "Moore": 1
+ },
+ "staff_first_names": {
+  "catherine": 1,
+  "helen": 1
+ },
+ "named_relatives": {
+  "sean": 1,
+  "theresa": 1,
+  "hannah": 1,
+  "Theresa": 1,
+  "tyler": 1,
+  "diane": 1
+ },
+ "consistency": {
+  "first: same": 125,
+  "last: note only": 102,
+  "first: neither": 10,
+  "last: both": 46,
+  "first: dialogue only": 66,
+  "last: dialogue only": 6,
+  "last: neither": 53,
+  "first: note only": 2,
+  "first: different": 4
+ },
+ "title_usage": {
+  "title+FIRST": 6,
+  "title+LAST": 100,
+  "title+unknown": 20
+ },
+ "shared_full_names": {
+  "diana scott": [
+   "D2N105",
+   "D2N077"
+  ],
+  "gregory hernandez": [
+   "D2N108",
+   "D2N162"
+  ],
+  "stephanie morales": [
+   "D2N109",
+   "D2N184"
+  ],
+  "michelle king": [
+   "D2N126",
+   "D2N181",
+   "D2N182"
+  ],
+  "brittany edwards": [
+   "D2N140",
+   "D2N048"
+  ],
+  "matthew allen": [
+   "D2N147",
+   "D2N195"
+  ],
+  "christina cooper": [
+   "D2N155",
+   "D2N073"
+  ],
+  "sophia jackson": [
+   "D2N165",
+   "D2N029"
+  ],
+  "bruce ward": [
+   "D2N074",
+   "D2N038"
+  ],
+  "anna diaz": [
+   "D2N052",
+   "D2N065"
+  ]
+ }
+}
