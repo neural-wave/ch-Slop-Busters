@@ -28,3 +28,4 @@ docker compose down
 
 - [`anonymized_eval_patient_doctor_encounters.jsonl`](anonymized_eval_patient_doctor_encounters.jsonl): the 67 encounters of the evaluation dataset anonymized by unified-harness in its default configuration (rules + local LLM, privacy preset)
 - [`report`](./Slop%20Busters%20Report.pdf)
+- [`2-minutes video presentation`](https://www.swisstransfer.com/dl/01a14db5-c1bd-70d3-8331-16470295c63a)
