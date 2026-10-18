@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slop Busters Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap">
+<style>
+:root{
+  --night:#030015; --violet:#160D2F; --violet-grey:#231F34;
+  --paper:#FFFFFF; --ink:#14112A; --ink-2:rgba(20,17,42,.72); --ink-3:rgba(20,17,42,.52);
+  --teal:#2F7A6B; --indigo:#3E3A8C; --grad:linear-gradient(90deg,#2F7A6B,#3E3A8C);
+  --teal-tint:#EAF4F1; --indigo-tint:#EEEDF8; --line:rgba(22,13,47,.14); --card:#FAF9FD;
+  --ok:#2F7A6B; --no:#A23B4B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:#d9d7e3}
+body{font-family:"DM Sans",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:#d9d7e3;font-size:8.6pt;line-height:1.42;-webkit-print-color-adjust:exact;print-color-adjust:exact;font-variant-numeric:tabular-nums}
+@page{size:A4;margin:0}
+.page{width:210mm;height:297mm;margin:8mm auto;background:var(--paper);position:relative;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 14px rgba(3,0,21,.25)}
+@media print{html,body{background:#fff}.page{margin:0;box-shadow:none;break-after:page}.page:last-child{break-after:auto}}
+
+/* header band */
+.band{flex:none;background:var(--night);color:#fff;position:relative;overflow:hidden;padding:7mm 13mm 6mm}
+.band::before{content:"";position:absolute;right:-30mm;top:-40mm;width:140mm;height:110mm;background:radial-gradient(closest-side,rgba(47,122,107,.55),rgba(47,122,107,0));pointer-events:none}
+.band::after{content:"";position:absolute;left:-30mm;bottom:-60mm;width:120mm;height:100mm;background:radial-gradient(closest-side,rgba(62,58,140,.55),rgba(62,58,140,0));pointer-events:none}
+.band>*{position:relative;z-index:1}
+.brand{display:flex;align-items:center;gap:3mm;font-weight:500;font-size:10.5pt}
+.glyph{width:8mm;height:8mm;border-radius:2.2mm;background:var(--violet);border:1px solid rgba(255,255,255,.12);display:grid;place-items:center}
+.glyph svg{width:5mm;height:5mm}
+.brand .meta{font-weight:400;color:rgba(255,255,255,.65);font-size:7.8pt;margin-left:auto;text-align:right;line-height:1.3}
+.bosch{background:#fff;border-radius:1.8mm;padding:1.3mm 2.4mm;display:flex;align-items:center}
+.bosch svg{height:4.6mm;width:auto;display:block}
+.chips{display:flex;gap:2mm;flex-wrap:wrap;margin-top:4mm}
+.chip{border:1px solid rgba(255,255,255,.18);background:rgba(22,13,47,.55);border-radius:99px;padding:.7mm 3mm;font-size:7.6pt;color:rgba(255,255,255,.85)}
+h1{font-weight:500;font-size:21pt;line-height:1.12;letter-spacing:-.01em;margin-top:4.5mm}
+.lede{color:rgba(255,255,255,.74);max-width:165mm;margin-top:2.5mm;font-size:9pt}
+.team{margin-top:3mm;font-size:7.8pt;color:rgba(255,255,255,.62)}
+.team b{color:#fff;font-weight:500}
+.band.slim{padding:4.5mm 13mm 4mm}
+.band.slim h1{font-size:15pt;margin-top:2mm}
+
+/* body */
+.body{padding:5mm 13mm 0;flex:1;display:flex;flex-direction:column;gap:3.6mm}
+.p3 .body{gap:2.2mm;padding-top:3.6mm}
+h2{font-weight:500;font-size:11pt;letter-spacing:-.005em;display:flex;align-items:center;gap:2.4mm;margin-bottom:1.4mm;line-height:1.2}
+h3{font-weight:500;font-size:9.2pt;margin-bottom:1mm}
+.num{display:inline-grid;place-items:center;width:5.6mm;height:5.6mm;border-radius:99px;background:var(--grad);color:#fff;font-size:7.6pt;font-weight:700;flex:none}
+p+p{margin-top:1.4mm}
+.small{font-size:7.6pt;color:var(--ink-2)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:2.2mm}
+.card{border:1px solid var(--line);border-radius:3mm;background:var(--card);padding:3mm 3.4mm}
+.card.ev{padding:2mm 2.6mm}
+.card.teal{background:var(--teal-tint);border-color:rgba(47,122,107,.25)}
+.card.indigo{background:var(--indigo-tint);border-color:rgba(62,58,140,.22)}
+.card.dark{background:var(--night);color:#fff;border-color:var(--violet-grey)}
+.hlbox{border:1px solid rgba(47,122,107,.3);border-radius:3mm;background:var(--teal-tint);padding:2.4mm 3mm}
+.hlbox svg{display:block;background:#fff;border-radius:2mm}
+.card.dark .muted{color:rgba(255,255,255,.72)}
+ul{padding-left:3.6mm}
+li{margin-top:.6mm}
+li::marker{color:var(--teal)}
+b,strong{font-weight:700}
+em{font-style:italic}
+
+table{width:100%;border-collapse:collapse;font-size:7.9pt}
+th{font-weight:500;text-align:left;color:var(--ink-2);border-bottom:1px solid var(--line);padding:1mm 1.4mm}
+td{padding:1mm 1.4mm;border-bottom:1px solid rgba(22,13,47,.07)}
+td.r,th.r{text-align:right}
+tr.hl td{background:var(--teal-tint);font-weight:500}
+.yes{color:var(--ok);font-weight:700}.no{color:var(--no);font-weight:700}
+
+/* timeline */
+.timeline{position:relative;display:grid;grid-template-columns:repeat(7,1fr);gap:2mm;padding-top:2mm}
+.timeline::before{content:"";position:absolute;left:4%;right:4%;top:5.3mm;height:.8mm;border-radius:1mm;background:var(--grad)}
+.step{position:relative;text-align:center}
+.dot{width:7mm;height:7mm;border-radius:99px;margin:0 auto;background:#fff;border:.8mm solid var(--indigo);display:grid;place-items:center;font-weight:700;font-size:7.6pt;color:var(--indigo)}
+.step:nth-child(-n+3) .dot{border-color:var(--teal);color:var(--teal)}
+.step .t{font-weight:500;font-size:8pt;margin-top:1.6mm;line-height:1.2}
+.step .d{font-size:7pt;color:var(--ink-3);margin-top:.6mm;line-height:1.25}
+.days{display:grid;grid-template-columns:3fr 1fr 3fr;font-size:7pt;color:var(--ink-3);margin-top:1.2mm;text-align:center;letter-spacing:.06em;text-transform:uppercase}
+
+/* kpi */
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5mm;margin-top:2mm}
+.kpi{border-radius:2.4mm;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);padding:2mm 2.4mm}
+.kpi .v{font-size:15pt;font-weight:500;letter-spacing:-.01em}
+.kpi .l{font-size:7pt;color:rgba(255,255,255,.7)}
+
+/* pipeline */
+.pipe{display:grid;grid-template-columns:repeat(4,1fr);gap:2.6mm}
+.stage{border:1px solid var(--line);border-radius:3mm;padding:2.6mm 2.8mm;background:var(--card)}
+.stage .n{font-size:7pt;font-weight:700;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.06em}
+.stage .h{font-weight:500;font-size:9.4pt;margin:.3mm 0 .8mm}
+.stage .w{font-size:7.6pt;color:var(--ink-2);line-height:1.35}
+.stage .why{font-size:7.6pt;margin-top:1.2mm;padding-top:1.2mm;border-top:1px dashed var(--line);line-height:1.35}
+.stage .why b{color:var(--teal)}
+.stage.key{background:var(--teal-tint);border-color:rgba(47,122,107,.3)}
+
+/* chart */
+.chartwrap{display:grid;grid-template-columns:1.25fr 1fr;gap:4mm;align-items:start}
+.legend{display:flex;gap:3.5mm;font-size:7.4pt;color:var(--ink-2);margin:.5mm 0 1mm}
+.legend i{display:inline-block;width:2.6mm;height:2.6mm;border-radius:.7mm;margin-right:1.2mm;vertical-align:-.3mm}
+svg text{font-family:"DM Sans",-apple-system,Helvetica,Arial,sans-serif}
+
+.foot{flex:none;margin-top:auto;padding:2.6mm 13mm 3.6mm;display:flex;justify-content:space-between;font-size:7pt;color:var(--ink-3);border-top:1px solid var(--line)}
+.foot b{font-weight:500;color:var(--ink-2)}
+
+.subtitle{font-size:13pt;font-weight:400;color:#8FD3C3;margin-top:1.2mm;letter-spacing:-.005em}
+/* density override */
+body{font-size:8pt;line-height:1.38}
+.small,.stage .w,.stage .why{font-size:7.15pt}
+table{font-size:7.4pt}
+h2{font-size:10.4pt}
+.lede{font-size:8.6pt}
+.p4 table{font-size:6.9pt}.p4 th{font-size:6.5pt;line-height:1.2;padding:.8mm 1.1mm}.p4 td{padding:.8mm 1.1mm}.p4 td:first-child,.p4 td.nw{white-space:nowrap}.p4 .small{font-size:6.8pt}.p4 h2{font-size:9.6pt;margin-bottom:1mm}.p4 table.wrap td:first-child{white-space:normal;width:34%}.p4 .card table td{vertical-align:top}.p4 td.r{white-space:nowrap}
+
+/* 3-page additions */
+.kpis.light{grid-template-columns:repeat(4,1fr);margin-top:0;gap:2.2mm}
+.kpis.light .kpi{background:var(--card);border:1px solid var(--line);color:var(--ink)}
+.kpis.light .kpi.teal{background:var(--teal-tint);border-color:rgba(47,122,107,.25)}
+.kpis.light .kpi.indigo{background:var(--indigo-tint);border-color:rgba(62,58,140,.22)}
+.kpis.light .kpi .v{font-size:14pt}.kpis.light .kpi .v.txt{font-size:10.5pt;padding:1.6mm 0 .9mm}
+.kpis.light .kpi .h{font-size:7.4pt;font-weight:500;margin-top:.3mm}
+.kpis.light .kpi .l{color:var(--ink-3);font-size:6.6pt;line-height:1.3;margin-top:.4mm}
+.pipe.compact{gap:2mm}.pipe.compact .stage{padding:1.8mm 2.2mm}.pipe.compact .stage .h{font-size:8.6pt;margin:0 0 .5mm}
+.pipe.compact .stage .why{margin-top:.8mm;padding-top:.8mm}
+.fw{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6mm 4mm}
+.fw p{font-size:6.9pt;color:var(--ink-2);line-height:1.33}.fw b{color:var(--ink)}
+.p3 .card{padding:2.2mm 2.8mm}
+.find li{margin-top:.5mm}
+.fw.flow{display:block;column-count:3;column-gap:4mm}.fw.flow p{break-inside:avoid;margin:0 0 1mm}
+p,li,.stage .w,.stage .why{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h3.nh{display:flex;align-items:center;gap:1.6mm;line-height:1.2}
+.pend{display:inline-block;font-size:6.2pt;font-weight:700;color:#8a5a00;background:#fff4d6;border:1px solid #eda100;border-radius:1mm;padding:0 1mm;vertical-align:.2mm}
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1 ============================ -->
+<section class="page">
+  <header class="band">
+    <div class="brand">
+      <span class="glyph"><svg viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 8c2.3-2 4.7-2 7 0s4.7 2 7 0" stroke="#5FC3AE"/><path d="M3 13c2.3-2 4.7-2 7 0s4.7 2 7 0" stroke="#8C86E6"/></svg></span>
+      Slop Busters <span class="meta">Neural Wave Hackathon 2026<br>Challenge report</span><span class="bosch"><svg role="img" aria-label="Bosch" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.102 11.647"><g transform="translate(0 11.647) scale(1 -1)"><path fill="#ed0007" fill-rule="evenodd" d="M22.325 5.9811C22.965 6.2287 23.384 6.8481 23.376 7.5346C23.376 8.9328 22.384 9.6259 21.022 9.6259L17.449 9.6259L17.449 2.0256L21.333 2.0256C22.528 2.0256 23.699 2.8621 23.699 4.1408C23.699 5.6584 22.325 5.9691 22.325 5.9811ZM19.313 8.0485L20.699 8.0485C21.073 8.071 21.394 7.7865 21.416 7.413C21.418 7.3859 21.418 7.3586 21.416 7.3315C21.409 6.9404 21.086 6.6295 20.695 6.6371C20.684 6.6373 20.674 6.6377 20.664 6.6384L19.313 6.6384ZM20.711 3.615L19.313 3.615L19.313 5.1087L20.676 5.1087C21.357 5.1087 21.679 4.81 21.679 4.3678C21.679 3.8181 21.273 3.615 20.711 3.615Z"/><path fill="#ed0007" fill-rule="evenodd" d="M27.81 9.8171C25.611 9.8171 24.32 8.0604 24.32 5.8377C24.32 3.603 25.611 1.8583 27.81 1.8583C30.021 1.8583 31.299 3.603 31.299 5.8377C31.299 8.0604 30.021 9.8171 27.81 9.8171ZM27.81 3.6747C26.734 3.6747 26.197 4.6427 26.197 5.8377C26.197 7.0327 26.734 7.9887 27.81 7.9887C28.885 7.9887 29.435 7.0208 29.435 5.8377C29.435 4.6307 28.885 3.6747 27.81 3.6747Z"/><path fill="#ed0007" fill-rule="evenodd" d="M35.35 6.6384L35.088 6.6981C34.442 6.8296 33.928 6.9969 33.928 7.4629C33.928 7.9648 34.418 8.168 34.849 8.168C35.442 8.1587 36.004 7.9033 36.402 7.4629L37.585 8.634C37.047 9.2435 36.175 9.8291 34.813 9.8291C33.211 9.8291 31.992 8.9328 31.992 7.439C31.992 6.0767 32.972 5.4075 34.167 5.1565L34.43 5.0968C35.422 4.8936 35.793 4.7383 35.793 4.2603C35.793 3.8062 35.386 3.5074 34.765 3.5074C34.024 3.5074 33.355 3.8301 32.841 4.4873L31.634 3.2923C32.303 2.4916 33.152 1.8702 34.789 1.8702C36.211 1.8702 37.729 2.6828 37.729 4.3439C37.752 6.0767 36.438 6.4113 35.35 6.6384Z"/><path fill="#ed0007" fill-rule="evenodd" d="M41.983 3.6747C41.146 3.6747 40.274 4.3678 40.274 5.8855C40.274 7.2359 41.087 7.9887 41.935 7.9887C42.604 7.9887 42.999 7.678 43.309 7.1403L44.839 8.156C44.074 9.3152 43.166 9.8052 41.911 9.8052C39.617 9.8052 38.374 8.0246 38.374 5.8735C38.374 3.615 39.748 1.8463 41.887 1.8463C43.393 1.8463 44.11 2.3721 44.887 3.4955L43.345 4.5351C43.034 4.0332 42.7 3.6747 41.983 3.6747Z"/><path fill="#ed0007" fill-rule="evenodd" d="M47.635 2.0256L47.635 5.0251L49.942 5.0251L49.942 2.0256L51.937 2.0256L51.937 9.6259L49.942 9.6259L49.942 6.8296L47.635 6.8296L47.635 9.6259L45.64 9.6259L45.64 2.0256Z"/><path fill="#000000" d="M5.9529 11.562C2.7718 11.562 0.19292 8.983 0.19292 5.8018C0.19292 2.6207 2.7718 0.041842 5.9529 0.041842C9.1341 0.041842 11.713 2.6207 11.713 5.8018C11.711 8.9823 9.1334 11.56 5.9529 11.562ZM5.9529 0.5796C3.0688 0.5796 0.73068 2.9177 0.73068 5.8018C0.73068 8.686 3.0688 11.024 5.9529 11.024C8.8371 11.024 11.175 8.686 11.175 5.8018C11.172 2.9189 8.8359 0.58256 5.9529 0.5796Z"/><path fill="#000000" d="M8.331 9.3989L7.9367 9.3989L7.9367 7.4271L3.9811 7.4271L3.9811 9.3989L3.5748 9.3989C1.5883 8.0879 1.0405 5.4148 2.3515 3.4282C2.6724 2.9419 3.0885 2.5257 3.5748 2.2048L3.9811 2.2048L3.9811 4.1766L7.9367 4.1766L7.9367 2.2048L8.331 2.2048C10.318 3.5158 10.865 6.1889 9.5544 8.1755C9.2335 8.6618 8.8173 9.078 8.331 9.3989ZM3.4314 2.9816C1.8739 4.3657 1.7333 6.7505 3.1174 8.3081C3.2158 8.4188 3.3207 8.5237 3.4314 8.6221ZM7.9367 4.7263L3.9811 4.7263L3.9811 6.8893L7.9367 6.8893ZM8.4744 2.9935L8.4744 4.1886L8.4744 4.1886L8.4744 7.4271L8.4744 7.4271L8.4744 8.6221C10.029 7.2255 10.157 4.8334 8.76 3.2791C8.67 3.1789 8.5746 3.0836 8.4744 2.9935Z"/></g></svg></span>
+    </div>
+    <div class="chips"><span class="chip">Lugano, CH</span><span class="chip">16–18 October 2026</span><span class="chip">Challenge by Bosch</span></div>
+    <h1>Anonymization for Patient data</h1>
+    <p class="subtitle">@ Neural Wave Hackathon</p>
+    <p class="lede">This report describes an iterative, evaluation-driven development process. Several detection strategies were built, measured against a common evaluation framework and progressively consolidated into a single offline anonymizer.</p>
+    <p class="team"><b>Team</b> · Cristiano Colangelo · Ketai Qiu · Daniel Travaglia · Alind Xhyra · Davide Molinelli</p>
+  </header>
+
+  <div class="body">
+    <div class="grid2">
+      <div class="card">
+        <h3>Problem statement</h3>
+        <p>Recorded doctor–patient dialogues and clinical notes must be stripped of identifying information before any use with cloud-based language models, while preserving the information required to assign the original ICD-10 codes. Inference must run on-premises within 4&nbsp;GB of VRAM, and the codes themselves must remain unchanged. The central difficulty is ambiguity: <em>Parkinson</em> may denote a disease or a surname, and <em>golfing</em> may be a personal detail or the documented cause of an injury. Privacy protection, preservation of medical information, and originality and scalability are weighted equally.</p>
+      </div>
+      <div class="card indigo">
+        <h3>Methodology: evaluation before integration</h3>
+        <p>Before committing to any technique, the team established a shared evaluation framework that tracks the challenge's metrics: silver-standard labels, fixed data splits, a single scorer and an acceptance gate. Design choices were tuned on one split and progress measured on another, while a held-out test set of unseen formats was scored only once. Every technique discussed in this report, whether regular expressions, named-entity recognition, language models, fine-tuning or learned classifiers, was retained or discarded on the basis of measured results rather than expected benefit.</p>
+      </div>
+    </div>
+
+    <div>
+      <h2>Development process at a glance</h2>
+      <div class="timeline">
+        <div class="step"><div class="dot">1</div><div class="t">Zero-shot baseline</div><div class="d">small language model</div></div>
+        <div class="step"><div class="dot">2</div><div class="t">Rule-based detection and NER</div><div class="d">regex, dictionaries, GLiNER2</div></div>
+        <div class="step"><div class="dot">3</div><div class="t">Parallel prototypes</div><div class="d">LLM-first and shield-first</div></div>
+        <div class="step"><div class="dot">4</div><div class="t">Mid-term evaluation</div><div class="d">scored by the organizers</div></div>
+        <div class="step"><div class="dot">5</div><div class="t">Unified pipeline</div><div class="d">gated optimization, fine-tuning</div></div>
+        <div class="step"><div class="dot">6</div><div class="t">Learned medical shield</div><div class="d">"System 1" classifier</div></div>
+        <div class="step"><div class="dot">7</div><div class="t">Held-out validation</div><div class="d">unseen formats, final run</div></div>
+      </div>
+      <div class="days"><span>16–17 October · exploration</span><span>17 October</span><span>17–18 October · consolidation</span></div>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <h2><span class="num">1</span>Zero-shot baseline with a small language model</h2>
+        <p>The first experiment assessed whether a small model could perform the task end to end. <b>Qwen3.5-2B</b> was run zero-shot through Ollama and vLLM (temperature 0) on segments of about 2,000 characters. It returned personal information as structured JSON spans, which were then replaced deterministically with category tags. Additional components generalized ages and dates (for example "forty-something" or "mid 2020s"), retained terms occurring in the encounter's own ICD-10 descriptions, and logged each response so that policy changes could be re-evaluated without further model calls. With FP8 weights, peak memory remained within 4,000&nbsp;MiB.</p>
+        <p><b>Findings.</b> The model handled dates well (91% removed), but because it processes each segment independently it showed systematic weaknesses:</p>
+        <ul>
+          <li>names were not linked across turns and fields, so only 85.7% of patient names were removed;</li>
+          <li>clinical terms were misclassified as organizations or locations ("diabetes" was tagged as an organization; 326 organization tags against 37 actual organizations);</li>
+          <li>188 of 292 predicted dates were in fact doses or durations, and 8–13 of 400 responses produced malformed JSON.</li>
+        </ul>
+        <p class="small">Baseline: 75.2% of privacy-related information removed; medical concept recall 94.3%.</p>
+      </div>
+      <div>
+        <h2><span class="num">2</span>Rule-based detection extended with NER</h2>
+        <p>The second phase inverted the approach on the premise that <b>regular identifiers are best handled by deterministic rules</b>. These comprised context-aware regular expressions (dates of birth in more than six formats, record numbers, spoken ages, titles followed by names) and dictionary lookups against public reference lists (ICD-10-CM terms, drug names, census name lists, GeoNames place names).</p>
+        <p>Named-entity recognition was then layered on top of the rules:</p>
+        <ul>
+          <li><b>GLiNER2</b>, with additional "medication" and "medical concept" labels, so that drugs and diseases no longer compete with organization labels;</li>
+          <li><b>deid-RoBERTa</b> and <b>GLiNER-PII</b> as alternative recognizers.</li>
+        </ul>
+        <table style="margin-top:2mm">
+          <tr><th>Holdout, 30 encounters</th><th class="r">Direct identifiers removed</th><th class="r">Quasi-identifiers removed</th><th class="r">Clinical spans kept</th><th class="r">Runtime / enc.</th></tr>
+          <tr><td>Rules only</td><td class="r">97.1%</td><td class="r">67.2%</td><td class="r">100%</td><td class="r">0.04 s</td></tr>
+          <tr class="hl"><td>Rules + GLiNER2</td><td class="r">98.5%</td><td class="r">75.0%</td><td class="r">100%</td><td class="r">~1.9 s</td></tr>
+        </table>
+        <p class="small" style="margin-top:1.6mm">Rules alone accounted for most of the removal at a fraction of the cost. Learned models added value chiefly on quasi-identifiers, which rules cannot capture.</p>
+      </div>
+    </div>
+  </div>
+  <footer class="foot"><span><b>Slop Busters</b> · Neural Wave Hackathon 2026 · Anonymization for Patient data</span><span>1 / 3</span></footer>
+</section>
+
+<!-- ============================ PAGE 2 ============================ -->
+<section class="page p3">
+  <header class="band slim">
+    <div class="brand"><span class="glyph"><svg viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 8c2.3-2 4.7-2 7 0s4.7 2 7 0" stroke="#5FC3AE"/><path d="M3 13c2.3-2 4.7-2 7 0s4.7 2 7 0" stroke="#8C86E6"/></svg></span>Slop Busters <span class="meta">Neural Wave Hackathon 2026</span><span class="bosch"><svg role="img" aria-label="Bosch" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.102 11.647"><g transform="translate(0 11.647) scale(1 -1)"><path fill="#ed0007" fill-rule="evenodd" d="M22.325 5.9811C22.965 6.2287 23.384 6.8481 23.376 7.5346C23.376 8.9328 22.384 9.6259 21.022 9.6259L17.449 9.6259L17.449 2.0256L21.333 2.0256C22.528 2.0256 23.699 2.8621 23.699 4.1408C23.699 5.6584 22.325 5.9691 22.325 5.9811ZM19.313 8.0485L20.699 8.0485C21.073 8.071 21.394 7.7865 21.416 7.413C21.418 7.3859 21.418 7.3586 21.416 7.3315C21.409 6.9404 21.086 6.6295 20.695 6.6371C20.684 6.6373 20.674 6.6377 20.664 6.6384L19.313 6.6384ZM20.711 3.615L19.313 3.615L19.313 5.1087L20.676 5.1087C21.357 5.1087 21.679 4.81 21.679 4.3678C21.679 3.8181 21.273 3.615 20.711 3.615Z"/><path fill="#ed0007" fill-rule="evenodd" d="M27.81 9.8171C25.611 9.8171 24.32 8.0604 24.32 5.8377C24.32 3.603 25.611 1.8583 27.81 1.8583C30.021 1.8583 31.299 3.603 31.299 5.8377C31.299 8.0604 30.021 9.8171 27.81 9.8171ZM27.81 3.6747C26.734 3.6747 26.197 4.6427 26.197 5.8377C26.197 7.0327 26.734 7.9887 27.81 7.9887C28.885 7.9887 29.435 7.0208 29.435 5.8377C29.435 4.6307 28.885 3.6747 27.81 3.6747Z"/><path fill="#ed0007" fill-rule="evenodd" d="M35.35 6.6384L35.088 6.6981C34.442 6.8296 33.928 6.9969 33.928 7.4629C33.928 7.9648 34.418 8.168 34.849 8.168C35.442 8.1587 36.004 7.9033 36.402 7.4629L37.585 8.634C37.047 9.2435 36.175 9.8291 34.813 9.8291C33.211 9.8291 31.992 8.9328 31.992 7.439C31.992 6.0767 32.972 5.4075 34.167 5.1565L34.43 5.0968C35.422 4.8936 35.793 4.7383 35.793 4.2603C35.793 3.8062 35.386 3.5074 34.765 3.5074C34.024 3.5074 33.355 3.8301 32.841 4.4873L31.634 3.2923C32.303 2.4916 33.152 1.8702 34.789 1.8702C36.211 1.8702 37.729 2.6828 37.729 4.3439C37.752 6.0767 36.438 6.4113 35.35 6.6384Z"/><path fill="#ed0007" fill-rule="evenodd" d="M41.983 3.6747C41.146 3.6747 40.274 4.3678 40.274 5.8855C40.274 7.2359 41.087 7.9887 41.935 7.9887C42.604 7.9887 42.999 7.678 43.309 7.1403L44.839 8.156C44.074 9.3152 43.166 9.8052 41.911 9.8052C39.617 9.8052 38.374 8.0246 38.374 5.8735C38.374 3.615 39.748 1.8463 41.887 1.8463C43.393 1.8463 44.11 2.3721 44.887 3.4955L43.345 4.5351C43.034 4.0332 42.7 3.6747 41.983 3.6747Z"/><path fill="#ed0007" fill-rule="evenodd" d="M47.635 2.0256L47.635 5.0251L49.942 5.0251L49.942 2.0256L51.937 2.0256L51.937 9.6259L49.942 9.6259L49.942 6.8296L47.635 6.8296L47.635 9.6259L45.64 9.6259L45.64 2.0256Z"/><path fill="#000000" d="M5.9529 11.562C2.7718 11.562 0.19292 8.983 0.19292 5.8018C0.19292 2.6207 2.7718 0.041842 5.9529 0.041842C9.1341 0.041842 11.713 2.6207 11.713 5.8018C11.711 8.9823 9.1334 11.56 5.9529 11.562ZM5.9529 0.5796C3.0688 0.5796 0.73068 2.9177 0.73068 5.8018C0.73068 8.686 3.0688 11.024 5.9529 11.024C8.8371 11.024 11.175 8.686 11.175 5.8018C11.172 2.9189 8.8359 0.58256 5.9529 0.5796Z"/><path fill="#000000" d="M8.331 9.3989L7.9367 9.3989L7.9367 7.4271L3.9811 7.4271L3.9811 9.3989L3.5748 9.3989C1.5883 8.0879 1.0405 5.4148 2.3515 3.4282C2.6724 2.9419 3.0885 2.5257 3.5748 2.2048L3.9811 2.2048L3.9811 4.1766L7.9367 4.1766L7.9367 2.2048L8.331 2.2048C10.318 3.5158 10.865 6.1889 9.5544 8.1755C9.2335 8.6618 8.8173 9.078 8.331 9.3989ZM3.4314 2.9816C1.8739 4.3657 1.7333 6.7505 3.1174 8.3081C3.2158 8.4188 3.3207 8.5237 3.4314 8.6221ZM7.9367 4.7263L3.9811 4.7263L3.9811 6.8893L7.9367 6.8893ZM8.4744 2.9935L8.4744 4.1886L8.4744 4.1886L8.4744 7.4271L8.4744 7.4271L8.4744 8.6221C10.029 7.2255 10.157 4.8334 8.76 3.2791C8.67 3.1789 8.5746 3.0836 8.4744 2.9935Z"/></g></svg></span></div>
+    <h1>From Parallel Prototypes to a Unified Pipeline</h1>
+  </header>
+
+  <div class="body">
+    <div class="grid2" style="grid-template-columns:1.12fr 1fr">
+      <div>
+        <h2><span class="num">3</span>Parallel prototypes and comparative assessment</h2>
+        <p>Four prototypes tackled the same problem: an <b>LLM-first</b> harness (extraction, then generalization), a <b>shield-first</b> rule-based harness (clinical content protected before identifiers are removed), a <b>GLiNER2</b> pipeline with cross-field entity resolution, and a fully AI-generated implementation. Merged labels and a <b>single scorer</b> (reproducing both originals to four decimals) made them comparable:</p>
+        <table style="margin-top:1.2mm">
+          <tr><th>Approach (validation, 67 encounters)</th><th class="r">Privacy-related info removed</th><th class="r">Clinical traps kept</th></tr>
+          <tr class="hl"><td>Unified pipeline (final)</td><td class="r">84.6%</td><td class="r">99.1%</td></tr>
+          <tr><td>LLM-first harness</td><td class="r">77.1%</td><td class="r">79.6%</td></tr>
+          <tr><td>Shield-first harness with NER</td><td class="r">81.5%</td><td class="r">99.4%</td></tr>
+        </table>
+        <p class="small" style="margin-top:1mm">Rules plus an identity graph won on names (100% of name tokens removed); the language model won on occupations and life events. The two were complementary.</p>
+      </div>
+      <div>
+        <h2><span class="num">4</span>Mid-term evaluation</h2>
+        <div class="card dark">
+          <p class="muted">A <b style="color:#fff">simple harness</b>, scored by the organizers on their non-public dataset:</p>
+          <div class="kpis">
+            <div class="kpi"><div class="v">0.734</div><div class="l">i.a proportion of removed privacy-related information</div></div>
+            <div class="kpi"><div class="v">0.0018</div><div class="l">ii.a F1-Score ICD-10 code prediction, Δ (orig. − anon.)</div></div>
+            <div class="kpi"><div class="v">0.997</div><div class="l">ii.b medical concept recall</div></div>
+          </div>
+        </div>
+        <p style="margin-top:1.6mm">Medical information was almost fully preserved, so <b>privacy had the most headroom</b>: occupations (17 of 33 remained), organizations, low-risk details, unseen formats.</p>
+        <p class="small">Organizers' metrics on their data; all other figures are internal and not directly comparable.</p>
+      </div>
+    </div>
+
+    <div>
+      <h2><span class="num">5</span>Unified architecture: eight stages, one audit trail</h2>
+      <div class="pipe compact">
+        <div class="stage"><div class="n">01</div><div class="h">Input</div><div class="w">Strict JSONL, one encounter per line, validated against the output contract.</div><div class="why"><b>Why:</b> fails closed; no record is skipped silently.</div></div>
+        <div class="stage"><div class="n">02</div><div class="h">Normalize</div><div class="w">One-to-one character view, same length, speaker tags masked.</div><div class="why"><b>Why:</b> rules, NER and LLM spans merge without offset drift.</div></div>
+        <div class="stage key"><div class="n">03</div><div class="h">Shield</div><div class="w">Locks clinical values, drugs, medical eponyms, terms supporting the ICD-10 codes and injury mechanisms.</div><div class="why"><b>Why:</b> utility protected <em>by construction</em>.</div></div>
+        <div class="stage key"><div class="n">04</div><div class="h">Detect</div><div class="w">Rules first (~50&nbsp;ms); the local LLM sees only privacy-dense segments (work, home, family, travel).</div><div class="why"><b>Why:</b> detectors ordered by cost; LLM where rules are blind.</div></div>
+        <div class="stage"><div class="n">05</div><div class="h">Link</div><div class="w">Per-encounter identity graph across turns and fields, incl. typos, possessives, titles.</div><div class="why"><b>Why:</b> closes segment-level leaks.</div></div>
+        <div class="stage"><div class="n">06</div><div class="h">Policy</div><div class="w">Replace, generalize (ages to decade bands, dates to [DATE]) or keep, per category and preset.</div><div class="why"><b>Why:</b> the trade-off is an explicit configuration.</div></div>
+        <div class="stage"><div class="n">07</div><div class="h">Verify</div><div class="w">Leak scan for every removed string, two repair rounds, contract re-checked.</div><div class="why"><b>Why:</b> independent second pass; repairs only remove.</div></div>
+        <div class="stage"><div class="n">08</div><div class="h">Publish</div><div class="w">Atomic dated outputs plus a decision log (category, action, detector, reason).</div><div class="why"><b>Why:</b> explains each decision (iv.b), stores no source text.</div></div>
+      </div>
+      <p class="small" style="margin-top:1.2mm">Shield-first backbone (shield, rules, identity graph, leak repair) plus the LLM-first strengths (targeted extraction, age generalization, response cache). Two modes: <b>rules</b> (CPU only) and <b>llm</b> (default: rules + qwen3.5:2b via Ollama, preset <i>privacy</i>). A 147&nbsp;MB container runs fully offline.</p>
+    </div>
+
+    <div class="grid2" style="grid-template-columns:1fr 1fr">
+      <div>
+        <h2>Gated optimization</h2>
+        <p class="small">A gate on the tune split ensures privacy never regresses: high-risk removal may not drop, quasi or low-risk removal must rise, traps and concept recall stay <b>≥ 99.5%</b>, ICD-10 agreement stays within noise, codes byte-identical.</p>
+        <table style="margin-top:1mm">
+          <tr><th>Feature (tune split)</th><th>Measured effect</th><th class="r">Default preset</th></tr>
+          <tr><td>F0: code-evidence guard</td><td>low-risk removal 0.23 → 0.37; traps 100%</td><td class="r yes">enabled</td></tr>
+          <tr><td>F2: targeted LLM detector</td><td>occupations still present 17 → 11 of 33</td><td class="r yes">enabled</td></tr>
+          <tr><td><i>privacy</i> preset</td><td>i.a 90.1% removed (rules), traps 100%</td><td class="r yes">default</td></tr>
+          <tr><td>F4: two-signal agreement</td><td>low-risk removal 0.52 → 0.38</td><td class="r">opt-in only</td></tr>
+        </table>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1.8mm">
+        <div class="card">
+          <h3>Fine-tuning a decision policy (SFT + PPO)</h3>
+          <p class="small">Qwen3.5-2B was trained to <b>decide what to remove, not to rewrite the text</b>. It returns its decisions as JSON and ordinary code applies them, so the ICD-10 codes are never altered. Training used about 1,000 labelled examples; PPO rewarded each correct decision and penalized removing too much. The model passed the gate, but its gains were within measurement noise, so it was <b>not used</b>.</p>
+        </div>
+        <div class="grid2" style="gap:1.8mm">
+          <div class="card">
+            <h3 class="nh"><span class="num">6</span>Learned shield</h3>
+            <p class="small">A "System 1" classifier to protect medical text the rules don't know. More memory, <b>no measured gain</b>: excluded.</p>
+          </div>
+          <div class="card teal">
+            <h3 class="nh"><span class="num">7</span>Unseen formats</h3>
+            <p class="small">ICU-note postcodes and dates clashed with numeric shields; fixed, then scored once. Traps kept 95.3%, below the 99.5% floor: <b>the main open gap</b>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card indigo" style="padding:2.2mm 3mm">
+      <h3>Internal evaluation framework</h3>
+      <div class="fw">
+        <p><b>Reference labels.</b> 231 files, three sources, 26 disagreements resolved; never seen by the pipeline.</p>
+        <p><b>Splits.</b> Tune (140) for design decisions, validation (67 ACI-Bench encounters), test (24 unseen hospital documents, scored once).</p>
+        <p><b>Main metrics (i.a, ii.b).</b> Proportion of removed privacy-related information, by risk tier; medical concept recall; clinical traps kept.</p>
+        <p><b>F1-Score ICD-10 code prediction (ii.a).</b> LLM judge (majority of 3 Claude Sonnet 5.5 agents) and a decision tree, original vs anonymized.</p>
+        <p><b>Adversarial privacy attacks (iv.a).</b> Six attacks, from NER rescan to an LLM red-team agent; proportion of recovered information.</p>
+        <p><b>Robustness (iv.e).</b> Same metrics as the main task on 192 variants, 8 held-out hospital formats, 8 Kaggle suites.</p>
+      </div>
+    </div>
+  </div>
+  <footer class="foot"><span><b>Slop Busters</b> · Neural Wave Hackathon 2026 · Anonymization for Patient data</span><span>2 / 3</span></footer>
+</section>
+<!-- ============================ PAGE 3 ============================ -->
+<section class="page p3 p4">
+  <header class="band slim">
+    <div class="brand"><span class="glyph"><svg viewBox="0 0 20 20" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 8c2.3-2 4.7-2 7 0s4.7 2 7 0" stroke="#5FC3AE"/><path d="M3 13c2.3-2 4.7-2 7 0s4.7 2 7 0" stroke="#8C86E6"/></svg></span>Slop Busters <span class="meta">Neural Wave Hackathon 2026</span><span class="bosch"><svg role="img" aria-label="Bosch" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.102 11.647"><g transform="translate(0 11.647) scale(1 -1)"><path fill="#ed0007" fill-rule="evenodd" d="M22.325 5.9811C22.965 6.2287 23.384 6.8481 23.376 7.5346C23.376 8.9328 22.384 9.6259 21.022 9.6259L17.449 9.6259L17.449 2.0256L21.333 2.0256C22.528 2.0256 23.699 2.8621 23.699 4.1408C23.699 5.6584 22.325 5.9691 22.325 5.9811ZM19.313 8.0485L20.699 8.0485C21.073 8.071 21.394 7.7865 21.416 7.413C21.418 7.3859 21.418 7.3586 21.416 7.3315C21.409 6.9404 21.086 6.6295 20.695 6.6371C20.684 6.6373 20.674 6.6377 20.664 6.6384L19.313 6.6384ZM20.711 3.615L19.313 3.615L19.313 5.1087L20.676 5.1087C21.357 5.1087 21.679 4.81 21.679 4.3678C21.679 3.8181 21.273 3.615 20.711 3.615Z"/><path fill="#ed0007" fill-rule="evenodd" d="M27.81 9.8171C25.611 9.8171 24.32 8.0604 24.32 5.8377C24.32 3.603 25.611 1.8583 27.81 1.8583C30.021 1.8583 31.299 3.603 31.299 5.8377C31.299 8.0604 30.021 9.8171 27.81 9.8171ZM27.81 3.6747C26.734 3.6747 26.197 4.6427 26.197 5.8377C26.197 7.0327 26.734 7.9887 27.81 7.9887C28.885 7.9887 29.435 7.0208 29.435 5.8377C29.435 4.6307 28.885 3.6747 27.81 3.6747Z"/><path fill="#ed0007" fill-rule="evenodd" d="M35.35 6.6384L35.088 6.6981C34.442 6.8296 33.928 6.9969 33.928 7.4629C33.928 7.9648 34.418 8.168 34.849 8.168C35.442 8.1587 36.004 7.9033 36.402 7.4629L37.585 8.634C37.047 9.2435 36.175 9.8291 34.813 9.8291C33.211 9.8291 31.992 8.9328 31.992 7.439C31.992 6.0767 32.972 5.4075 34.167 5.1565L34.43 5.0968C35.422 4.8936 35.793 4.7383 35.793 4.2603C35.793 3.8062 35.386 3.5074 34.765 3.5074C34.024 3.5074 33.355 3.8301 32.841 4.4873L31.634 3.2923C32.303 2.4916 33.152 1.8702 34.789 1.8702C36.211 1.8702 37.729 2.6828 37.729 4.3439C37.752 6.0767 36.438 6.4113 35.35 6.6384Z"/><path fill="#ed0007" fill-rule="evenodd" d="M41.983 3.6747C41.146 3.6747 40.274 4.3678 40.274 5.8855C40.274 7.2359 41.087 7.9887 41.935 7.9887C42.604 7.9887 42.999 7.678 43.309 7.1403L44.839 8.156C44.074 9.3152 43.166 9.8052 41.911 9.8052C39.617 9.8052 38.374 8.0246 38.374 5.8735C38.374 3.615 39.748 1.8463 41.887 1.8463C43.393 1.8463 44.11 2.3721 44.887 3.4955L43.345 4.5351C43.034 4.0332 42.7 3.6747 41.983 3.6747Z"/><path fill="#ed0007" fill-rule="evenodd" d="M47.635 2.0256L47.635 5.0251L49.942 5.0251L49.942 2.0256L51.937 2.0256L51.937 9.6259L49.942 9.6259L49.942 6.8296L47.635 6.8296L47.635 9.6259L45.64 9.6259L45.64 2.0256Z"/><path fill="#000000" d="M5.9529 11.562C2.7718 11.562 0.19292 8.983 0.19292 5.8018C0.19292 2.6207 2.7718 0.041842 5.9529 0.041842C9.1341 0.041842 11.713 2.6207 11.713 5.8018C11.711 8.9823 9.1334 11.56 5.9529 11.562ZM5.9529 0.5796C3.0688 0.5796 0.73068 2.9177 0.73068 5.8018C0.73068 8.686 3.0688 11.024 5.9529 11.024C8.8371 11.024 11.175 8.686 11.175 5.8018C11.172 2.9189 8.8359 0.58256 5.9529 0.5796Z"/><path fill="#000000" d="M8.331 9.3989L7.9367 9.3989L7.9367 7.4271L3.9811 7.4271L3.9811 9.3989L3.5748 9.3989C1.5883 8.0879 1.0405 5.4148 2.3515 3.4282C2.6724 2.9419 3.0885 2.5257 3.5748 2.2048L3.9811 2.2048L3.9811 4.1766L7.9367 4.1766L7.9367 2.2048L8.331 2.2048C10.318 3.5158 10.865 6.1889 9.5544 8.1755C9.2335 8.6618 8.8173 9.078 8.331 9.3989ZM3.4314 2.9816C1.8739 4.3657 1.7333 6.7505 3.1174 8.3081C3.2158 8.4188 3.3207 8.5237 3.4314 8.6221ZM7.9367 4.7263L3.9811 4.7263L3.9811 6.8893L7.9367 6.8893ZM8.4744 2.9935L8.4744 4.1886L8.4744 4.1886L8.4744 7.4271L8.4744 7.4271L8.4744 8.6221C10.029 7.2255 10.157 4.8334 8.76 3.2791C8.67 3.1789 8.5746 3.0836 8.4744 2.9935Z"/></g></svg></span></div>
+    <h1>Evaluation Results: ACI-Bench and Kaggle Datasets</h1>
+  </header>
+
+  <div class="body">
+    <div class="card" style="padding:2mm 2.8mm">
+      <h3>Datasets and metrics</h3>
+      <p class="small"><b>ACI-Bench</b>: the evaluation split given by the hackathon challenge, 67 doctor–patient dialogues and notes with ICD-10 codes. <b>Kaggle</b>: open-source medical and synthetic data the team collected (discharge summaries, scribe transcripts in five languages, long dialogues, NBME notes, PMC case reports, essays), without ICD-10 codes and with partial privacy labels.</p>
+      <div class="fw flow" style="margin-top:1mm">
+        <p><b>i.a Privacy-related information removed.</b> Input: original and anonymized text, 538 labelled private items. Share of their occurrences with no distinctive part left. Direct identifiers: names, dates, IDs, contacts.</p>
+        <p><b>ii.b Medical concept recall.</b> Input: original and anonymized text, 6,607 labelled medical terms. Share of their occurrences still present.</p>
+        <p><b>ii.a F1-Score ICD-10 code prediction.</b> Codes predicted from the original and the anonymized note, scored against the ACI-Bench gold codes: F1 = 2TP / (2TP + FP + FN); Δ = anonymized − original.</p>
+        <p><b>ii.a coders.</b> <b>LLM as a judge</b>: Claude Sonnet 5.5, three passes, majority vote per note. <b>Decision tree</b>: trained on the challenge's ACI-Bench training encounters and their codes; predicts 3-character categories.</p>
+        <p><b>Same codes.</b> Codes from anonymized text scored against codes from the original; 1 = identical. Used for Kaggle (no gold codes).</p>
+        <p><b>iv.a.ii Recovered information.</b> A blinded LLM agent reads the anonymized text and guesses name, age, place and job; share of correct guesses. <b>iv.c</b>: first 10 encounters; VRAM incl. Ollama.</p>
+      </div>
+    </div>
+
+    <div>
+      <h2>Main results on the ACI-Bench evaluation split (67 encounters)</h2>
+      <table>
+        <tr><th>Approach</th><th class="r">i.a Privacy-related<br>information removed</th><th class="r">i.a Direct identifiers<br>removed</th><th class="r">ii.b Medical<br>concept recall</th><th class="r">ii.a F1-Score ICD-10<br>code (LLM judge)</th><th class="r">Δ vs. original<br>(LLM judge)</th><th class="r">ii.a F1-Score ICD-10<br>category (tree)</th><th class="r">Δ vs. original<br>(tree)</th><th class="r">iv.a.ii Proportion of<br>recovered information</th></tr>
+        <tr class="hl"><td>Ensemble + Generalizer</td><td class="r">0.814</td><td class="r">0.926</td><td class="r">0.998</td><td class="r">0.554</td><td class="r">+0.023</td><td class="r">0.689</td><td class="r">+0.000</td><td class="r">0.125</td></tr>
+        <tr><td>Replace-All Ensemble</td><td class="r">0.931</td><td class="r">0.982</td><td class="r">0.946</td><td class="r">0.536</td><td class="r">+0.005</td><td class="r">0.689</td><td class="r">+0.000</td><td class="r">0.092</td></tr>
+        <tr><td>LLM Generalizer</td><td class="r">0.794</td><td class="r">0.944</td><td class="r">0.989</td><td class="r">0.551</td><td class="r">+0.020</td><td class="r">0.689</td><td class="r">+0.000</td><td class="r">0.178</td></tr>
+        <tr><td>Shielded Rules + GLiNER</td><td class="r">0.774</td><td class="r">0.926</td><td class="r">0.999</td><td class="r">0.573</td><td class="r">+0.042</td><td class="r">0.689</td><td class="r">+0.000</td><td class="r">0.138</td></tr>
+        <tr><td>Zero-shot Qwen3.5-2B</td><td class="r">0.572</td><td class="r">0.705</td><td class="r">0.965</td><td class="r">0.540</td><td class="r">+0.008</td><td class="r">0.689</td><td class="r">+0.000</td><td class="r">0.441</td></tr>
+      </table>
+      <p class="small" style="margin-top:.8mm"><b>Ensemble + Generalizer</b> = the final pipeline, combining the next two (LLM mode, privacy preset); <b>Replace-All Ensemble</b> = regular expressions, name lists, deid-RoBERTa and GLiNER, replacing every detected span; <b>LLM Generalizer</b> = turns private details into general ones (exact age → age range); <b>Shielded Rules + GLiNER</b> = regular expressions and rule-based shields with GLiNER; <b>Zero-shot Qwen3.5-2B</b> = the model alone, prompted to output the anonymized text. Original text: judge F1 0.531, tree F1 0.689, recovered 0.822.</p>
+    </div>
+
+    <div class="grid2 hlbox" style="grid-template-columns:1.45fr 1fr;gap:4mm;align-items:center">
+      <div>
+        <h2>Trade-off between privacy (i.a) and medical concept recall (ii.b)</h2>
+        <svg viewBox="0 0 400 170" width="100%" role="img" aria-label="Privacy versus medical concept recall, ACI evaluation split">
+<line x1="34.0" x2="34.0" y1="16" y2="140" stroke="rgba(22,13,47,.08)" stroke-width=".6"/><text x="34.0" y="148" font-size="7" text-anchor="middle" fill="rgba(20,17,42,.52)">0.0</text>
+<line x1="105.6" x2="105.6" y1="16" y2="140" stroke="rgba(22,13,47,.08)" stroke-width=".6"/><text x="105.6" y="148" font-size="7" text-anchor="middle" fill="rgba(20,17,42,.52)">0.2</text>
+<line x1="177.2" x2="177.2" y1="16" y2="140" stroke="rgba(22,13,47,.08)" stroke-width=".6"/><text x="177.2" y="148" font-size="7" text-anchor="middle" fill="rgba(20,17,42,.52)">0.4</text>
+<line x1="248.8" x2="248.8" y1="16" y2="140" stroke="rgba(22,13,47,.08)" stroke-width=".6"/><text x="248.8" y="148" font-size="7" text-anchor="middle" fill="rgba(20,17,42,.52)">0.6</text>
+<line x1="320.4" x2="320.4" y1="16" y2="140" stroke="rgba(22,13,47,.08)" stroke-width=".6"/><text x="320.4" y="148" font-size="7" text-anchor="middle" fill="rgba(20,17,42,.52)">0.8</text>
+<line x1="392.0" x2="392.0" y1="16" y2="140" stroke="rgba(22,13,47,.08)" stroke-width=".6"/><text x="392.0" y="148" font-size="7" text-anchor="middle" fill="rgba(20,17,42,.52)">1.0</text>
+<line x1="34" x2="392" y1="140.0" y2="140.0" stroke="rgba(22,13,47,.08)" stroke-width=".6"/><text x="31" y="142.2" font-size="7" text-anchor="end" fill="rgba(20,17,42,.52)">0.93</text>
+<line x1="34" x2="392" y1="104.6" y2="104.6" stroke="rgba(22,13,47,.08)" stroke-width=".6"/><text x="31" y="106.8" font-size="7" text-anchor="end" fill="rgba(20,17,42,.52)">0.95</text>
+<line x1="34" x2="392" y1="69.1" y2="69.1" stroke="rgba(22,13,47,.08)" stroke-width=".6"/><text x="31" y="71.3" font-size="7" text-anchor="end" fill="rgba(20,17,42,.52)">0.97</text>
+<line x1="34" x2="392" y1="33.7" y2="33.7" stroke="rgba(22,13,47,.08)" stroke-width=".6"/><text x="31" y="35.9" font-size="7" text-anchor="end" fill="rgba(20,17,42,.52)">0.99</text>
+<line x1="34" x2="392" y1="16.0" y2="16.0" stroke="rgba(22,13,47,.08)" stroke-width=".6"/><text x="31" y="18.2" font-size="7" text-anchor="end" fill="rgba(20,17,42,.52)">1.00</text>
+<line x1="34" x2="392" y1="16.0" y2="16.0" stroke="rgba(22,13,47,.4)" stroke-width=".7"/><text x="46" y="23.5" font-size="6.6" text-anchor="start" fill="rgba(20,17,42,.52)">original text (nothing removed, recall 1.00)</text>
+<path d="M 311.1 17.8 L 325.4 17.8 L 325.4 19.5 L 367.3 19.5 L 367.3 111.7" fill="none" stroke="rgba(20,17,42,.45)" stroke-width=".8" stroke-dasharray="2.5 2"/>
+<circle cx="367.3" cy="111.7" r="3.8" fill="#A23B4B" stroke="#fff" stroke-width="1"/><text x="362.3" y="107.7" font-size="7.4" text-anchor="end" fill="#14112A">Replace-All Ensemble</text>
+<circle cx="325.4" cy="19.5" r="3.8" fill="#2F7A6B" stroke="#fff" stroke-width="1"/><text x="329.4" y="26.5" font-size="7.4" text-anchor="start" fill="#14112A"><tspan x="329.4">Ensemble +</tspan><tspan x="329.4" dy="8">Generalizer</tspan></text>
+<circle cx="318.3" cy="35.5" r="3.8" fill="#3E3A8C" stroke="#fff" stroke-width="1"/><text x="313.3" y="41.5" font-size="7.4" text-anchor="end" fill="#14112A">LLM Generalizer</text>
+<circle cx="311.1" cy="17.8" r="3.8" fill="#6F8FD8" stroke="#fff" stroke-width="1"/><text x="306.1" y="11.5" font-size="7.4" text-anchor="end" fill="#14112A">Shielded Rules + GLiNER</text>
+<circle cx="238.8" cy="78.0" r="3.8" fill="#C98A2E" stroke="#fff" stroke-width="1"/><text x="243.8" y="80.5" font-size="7.4" text-anchor="start" fill="#14112A">Zero-shot Qwen3.5-2B</text>
+<rect x="31.5" y="13.5" width="5" height="5" fill="#8a8984" stroke="#fff" stroke-width="1"/>
+<text x="213.0" y="161" font-size="7.4" text-anchor="middle" fill="rgba(20,17,42,.72)">i.a Proportion of removed privacy-related information →</text>
+<text transform="translate(7 78.0) rotate(-90)" font-size="7.4" text-anchor="middle" fill="rgba(20,17,42,.72)">ii.b Medical concept recall →</text>
+<text x="34" y="169" font-size="6.4" fill="rgba(20,17,42,.52)">Dashed line: approaches that no other approach beats on both axes. Vertical axis starts at 0.93.</text></svg>
+      </div>
+      <div>
+        <h2>What the trade-off shows</h2>
+        <p class="small">Each point is one approach: further right means more privacy-related information removed, higher means more medical concepts kept. <b>Ensemble + Generalizer</b> sits at the top right: it keeps almost every medical concept (0.998) while removing 0.814 of the private information.</p>
+        <p class="small" style="margin-top:1.4mm"><b>Replace-All Ensemble</b> removes the most (0.931), especially occupations and organization names, but replacing every detected span also removes medical terms, so its concept recall drops to 0.946.</p>
+      </div>
+    </div>
+
+    <div class="grid2" style="grid-template-columns:1fr 1fr;gap:3mm;align-items:start">
+      <div>
+        <h2>Efficiency optimization (bonus iv.c)</h2>
+        <table><tr><th>Approach</th><th class="r">iii Peak VRAM</th><th class="r">Within 4 GB</th><th class="r">i Runtime per encounter</th><th class="r">Load time</th></tr>
+          <tr class="hl"><td>Ensemble + Generalizer</td><td class="r">2,850 MB</td><td class="r yes">yes</td><td class="r">4,131 ms</td><td class="r">9.0 s</td></tr>
+          <tr><td>Replace-All Ensemble</td><td class="r">3,334 MB</td><td class="r yes">yes</td><td class="r">1,801 ms</td><td class="r">34.3 s</td></tr>
+          <tr><td>Shielded Rules + GLiNER</td><td class="r">1,966 MB</td><td class="r yes">yes</td><td class="r">629 ms</td><td class="r">23.3 s</td></tr>
+          <tr><td>Zero-shot Qwen3.5-2B</td><td class="r">2,960 MB</td><td class="r yes">yes</td><td class="r">1,882 ms</td><td class="r">7.9 s</td></tr>
+        </table>
+        <p class="small" style="margin-top:.8mm">NVIDIA RTX PRO 6000 Blackwell. <b>Without ICD-10 codes at inference (bonus iv.d):</b> Ensemble + Generalizer removes more privacy-related information (0.829 vs 0.814) with the same F1-Score ICD-10 code prediction (0.554).</p>
+      </div>
+      <div>
+        <h2>Robustness on external Kaggle datasets (bonus iv.e)</h2>
+        <table><tr><th>Approach (i.a removed)</th><th class="r">Disch.</th><th class="r">Scribe EN</th><th class="r">Scribe non-EN</th><th class="r">Long dial.</th><th class="r">NBME</th><th class="r">PMC</th><th class="r">Essays names</th><th class="r">Essays IDs</th></tr>
+          <tr class="hl"><td>Ensemble + Generalizer</td><td class="r">0.89</td><td class="r">1.00</td><td class="r">0.98</td><td class="r">1.00</td><td class="r">0.81</td><td class="r">0.96</td><td class="r">0.84</td><td class="r">0.78</td></tr>
+          <tr><td>Replace-All Ensemble</td><td class="r">0.84</td><td class="r">1.00</td><td class="r">0.98</td><td class="r">1.00</td><td class="r">0.95</td><td class="r">1.00</td><td class="r">1.00</td><td class="r">0.92</td></tr>
+          <tr><td>Shielded Rules + GLiNER</td><td class="r">1.00</td><td class="r">1.00</td><td class="r">1.00</td><td class="r">1.00</td><td class="r">0.81</td><td class="r">0.96</td><td class="r">0.99</td><td class="r">0.94</td></tr>
+          <tr><td class="small">records per dataset</td><td class="r small">50</td><td class="r small">42</td><td class="r small">60</td><td class="r small">4</td><td class="r small">100</td><td class="r small">100</td><td class="r small">100</td><td class="r small">100</td></tr>
+        </table>
+        <p class="small" style="margin-top:.8mm">Labels are partial (NBME, PMC: age only), so scores show misses, not exact rates. Same codes (decision tree): <b>1.00 on every dataset for Ensemble + Generalizer</b>; Shielded Rules + GLiNER 0.98, Replace-All Ensemble 0.86 at worst.</p>
+      </div>
+    </div>
+
+    <div class="card dark">
+      <h3>Conclusions and limitations</h3>
+      <ul class="small find" style="color:rgba(255,255,255,.82)">
+        <li>Protecting clinical content before detection proved more reliable than repairing it afterwards; small LLMs work best where rules are blind, not as the whole pipeline.</li>
+        <li>We chose <b>Ensemble + Generalizer</b> as the final approach: it keeps far more medical concepts than Replace-All Ensemble (ii.b 0.998 vs 0.946) with a slightly higher F1-Score ICD-10 code prediction (ii.a 0.554 vs 0.536, within judge noise), at the cost of removing less privacy-related information (i.a 0.814 vs 0.931).</li>
+        <li>Differences of about 0.10 in the proportion of recovered information (iv.a.ii) are within the variation of a single LLM adversary per set. Record linkage through the ICD-10 codes, which must be kept, makes k-anonymity unattainable.</li>
+        <li>Limitations: all three ACI-Bench label sources were produced with LLM assistance; unseen formats score lower; some date forms are missed.</li>
+      </ul>
+    </div>
+  </div>
+  <footer class="foot"><span><b>Slop Busters</b> · Neural Wave Hackathon 2026 · Anonymization for Patient data</span><span>3 / 3</span></footer>
+</section>
+
+</body>
+</html>
