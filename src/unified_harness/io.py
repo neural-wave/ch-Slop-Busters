@@ -150,14 +150,16 @@ def publish_run(
     paths: OutputPaths,
     *,
     overwrite: bool = False,
+    strict: bool = True,
 ) -> OutputPaths:
     """Validate, then publish the three output files atomically.
 
-    Raises ContractError (nothing written) when the result breaks the contract, and FileExistsError when
-    an output already exists and `overwrite` is False.
+    Raises ContractError (nothing written) when the result breaks the contract and `strict` is set (the CLI
+    publishes anyway and reports the violations in the summary), and FileExistsError when an output already
+    exists and `overwrite` is False.
     """
     errors = validate_output(original, anonymized)
-    if errors:
+    if errors and strict:
         raise ContractError(errors)
     existing = [p for p in paths.all() if p.exists()]
     if existing and not overwrite:

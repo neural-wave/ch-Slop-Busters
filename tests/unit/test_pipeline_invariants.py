@@ -80,6 +80,53 @@ def test_code_evidence_kept_with_codes():
     assert "golfing" in out["dialogue"]
 
 
+BAKER = [{"code": "M71.21", "description": "Synovial cyst of popliteal space [Baker], right knee"}]
+HODGKIN = [{"code": "C81.11", "description": "Nodular sclerosis Hodgkin lymphoma, lymph nodes of head, face, and neck"}]
+HORNER = [{"code": "G90.2", "description": "Horner's syndrome"}]
+
+
+@pytest.mark.parametrize(
+    ("note", "codes", "gone", "kept", "overrides"),
+    [
+        # the surname is a code word: the linked first + last name wins, the eponym in medical syntax stays
+        (
+            "Referrer: Dr. Nathan Baker, Moorside Medical Centre.\n?ruptured Baker's cyst.\nReport sent to Dr. Baker.",
+            BAKER,
+            ["Nathan", "Baker,", "Dr. Baker"],
+            ["Baker's cyst"],
+            0,  # [Baker] is a bracketed qualifier: no code-evidence shield is built, nothing to override
+        ),
+        # without a title: the bracketed [Baker] of the description is not evidence, the name is still a name
+        ("Referrer: Nathan Baker.\nConsistent with a Baker's cyst.", BAKER, ["Nathan", "Baker."], ["Baker's cyst"], 0),
+        # an eponym the name rules do not know, written beside a titled first name, and alone after a title
+        (
+            "Clinician: Dr. Oliver Hodgkin, Consultant.\nClassic Hodgkin lymphoma.\nDiscussed with Dr. Hodgkin.",
+            HODGKIN,
+            ["Oliver", "Hodgkin,", "Dr. Hodgkin"],
+            ["Hodgkin lymphoma"],
+            1,  # `Hodgkin` is description text: its shield at `Oliver Hodgkin` is overridden and reported
+        ),
+        # surname in capitals beside the first name, in both orders
+        (
+            "MDT outcome - HORNER, Dennis.\nPatient: Dennis HORNER    CHI: 1234.\nLeft Horner's syndrome noted.",
+            HORNER,
+            ["HORNER", "Dennis"],
+            ["Horner's syndrome"],
+            2,
+        ),
+    ],
+)
+def test_names_win_over_code_evidence_but_not_eponyms(note, codes, gone, kept, overrides):
+    rec = {"encounter_id": "T1", "dataset": "test", "dialogue": "", "note": note, "icd10_codes": codes}
+    out, _, stats = Anonymizer(make_config("privacy")).anonymize(rec)
+    for g in gone:
+        assert g not in out["note"], (g, out["note"])
+    for k in kept:
+        assert k in out["note"], (k, out["note"])
+    # the overridden shields are reported, never counted as violations (which would refuse the whole run)
+    assert (stats["shield"]["edit_overlaps"], stats["shield"]["overridden_by_name"]) == (0, overrides)
+
+
 def test_ages_banded_never_exact():
     out = _anon("[doctor] so felix is a 56 -year-old male and you are 100 .", "Felix Brandt is a 56-year-old male.")
     assert "56" not in out["dialogue"] + out["note"] and "100" not in out["dialogue"]
