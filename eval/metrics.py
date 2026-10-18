@@ -21,7 +21,7 @@ import difflib
 import json
 import re
 from collections import defaultdict
-from functools import cache
+from functools import cache, lru_cache
 from pathlib import Path
 
 from eval.common import CACHE_DIR, CONTAINER, DATA, ENCOUNTER_KEYS, FIELDS, count, occurrences, ratio, words
@@ -98,15 +98,23 @@ def _distinctive(item: str, category: str) -> list[str]:
     return toks
 
 
+@lru_cache(maxsize=256)
+def _kept_tokens(orig: str, anon: str) -> tuple[tuple[str, int, int], ...]:
+    """The original's word tokens that survive in the output, by original position (`align`, cached per field)."""
+    return tuple((t, s, e) for t, s, e, kept in align(orig, anon) if kept)
+
+
 def leaked(item: str, category: str, orig: str, anon: str, n0: int) -> int:
-    """Leaked occurrences of a gold string: the whole string still present, or a distinctive token of it surviving
-    where the original had that token only inside this item."""
+    """Leaked occurrences of a gold string: the whole string still present, or an occurrence in which a distinctive
+    token survives at its own position. Counting the token's survivors elsewhere in the field would credit them to
+    its other uses (`HORNER, Dennis` is leaked even when `Horner's syndrome` is rightly kept), so the check is
+    positional: the token alignment of `align` says which original tokens the output kept."""
     worst = min(count(anon, item), n0)
     toks = _distinctive(item, category)
     if len(toks) > 1 or (toks and toks[0] != item.lower()):
-        for tok in toks:
-            outside = count(orig, tok) - n0 * count(item, tok)
-            worst = max(worst, min(n0, count(anon, tok) - max(0, outside)))
+        kept = [(s, e) for t, s, e in _kept_tokens(orig, anon) if t in toks]
+        hit = sum(any(s0 <= s and e <= e0 for s, e in kept) for s0, e0 in occurrences(orig, item))
+        worst = max(worst, min(n0, hit))
     return max(0, worst)
 
 

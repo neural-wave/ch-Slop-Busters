@@ -69,6 +69,30 @@ cmd = ["{container}/models/anonymous-deps/.venv/bin/python", "-I", "{here}/anony
 fingerprint = ["{here}/anonymous_vm.py", "{container}/vm-backup/neuralwave/detect/**/*.py", "{container}/vm-backup/neuralwave/common.py",
                "{container}/models/anonymous-deps/american-english-large"]
 
+[unified_harness_rules]
+description = "unified-harness (this repo, src/unified_harness), privacy preset, rules only (CPU, no LLM)"
+cmd = ["{python}", "-I", "{here}/unified_harness.py", "{input}", "{output}", "--mode", "rules", "--preset", "privacy"]
+fingerprint = ["{here}/unified_harness.py", "{repo}/src/unified_harness/**/*.py", "{repo}/src/unified_harness/**/*.gz",
+               "{repo}/src/unified_harness/**/*.toml"]
+
+[unified_harness]
+description = "unified-harness, its default config: llm mode (rules + qwen3.5:2b-q4_K_M via Ollama), privacy preset (F0 + F2), cold LLM cache per run"
+cmd = ["{python}", "-I", "{here}/unified_harness.py", "{input}", "{output}", "--mode", "llm", "--preset", "privacy"]
+fingerprint = ["{here}/unified_harness.py", "{repo}/src/unified_harness/**/*.py", "{repo}/src/unified_harness/**/*.gz",
+               "{repo}/src/unified_harness/**/*.toml"]
+
+[unified_harness_nocodes]
+description = "unified-harness default config without ICD-10 codes at inference (bonus task)"
+blind_codes = true
+cmd = ["{python}", "-I", "{here}/unified_harness.py", "{input}", "{output}", "--mode", "llm", "--preset", "privacy", "--no-codes"]
+fingerprint = ["{here}/unified_harness.py", "{repo}/src/unified_harness/**/*.py", "{repo}/src/unified_harness/**/*.gz",
+               "{repo}/src/unified_harness/**/*.toml"]
+
+[unified_harness_submitted]
+description = "unified-harness's delivered aci_eval file (2026-10-18): checks our unified_harness run against it"
+suites = ["aci_eval"]
+precomputed = "{container}/anonymized-2026-10-18-unified-harness.jsonl"
+
 [term_generalizer]
 description = "Term-generalizer: PPO pilot of the zero-shot LLM, generalize mode (ages and dates as ranges), vLLM in 4 GB; delivered JSONL"
 suites = ["aci_eval"]
