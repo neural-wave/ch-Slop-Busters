@@ -15,7 +15,6 @@
 # models/: code, data and outputs are tracked; venvs, weights and caches come from models/download.sh.
 /models/*/.venv/
 /models/anonymous/models/base/
-/models/ad-night/repo.git/
 /models/ad-night/repo/resources/external/kaggle_*/
 
 # Local working notes: never published
