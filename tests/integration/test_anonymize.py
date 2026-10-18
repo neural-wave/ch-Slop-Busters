@@ -58,7 +58,8 @@ def test_full_mode_fails_closed_when_not_ready(tmp_path, monkeypatch, capsys):
     assert not (tmp_path / DAY).exists()
 
 
-def test_a_failing_record_stops_the_run_and_publishes_nothing(tmp_path, monkeypatch, capsys):
+def test_a_failing_record_is_passed_through_and_the_run_still_publishes(tmp_path, monkeypatch, capsys):
+    """Fail open: a record every pipeline crashes on is published unchanged and listed in the summary."""
     real = pipeline.Anonymizer.anonymize
 
     def flaky(self, rec):
@@ -67,9 +68,39 @@ def test_a_failing_record_stops_the_run_and_publishes_nothing(tmp_path, monkeypa
         return real(self, rec)
 
     monkeypatch.setattr(pipeline.Anonymizer, "anonymize", flaky)
-    assert _anonymize(tmp_path, "--mode", "rules") == 1
-    assert "SYN0002" in capsys.readouterr().err
-    assert not (tmp_path / DAY).exists()
+    assert _anonymize(tmp_path, "--mode", "rules") == 0
+    assert "warning: SYN0002: RuntimeError: simulated detector crash" in capsys.readouterr().err
+    out = output_paths(tmp_path, date.fromisoformat(DAY))
+    original, anonymized = read_jsonl(FIXTURE), read_jsonl(out.records)
+    assert validate_output(original, anonymized) == [] and len(anonymized) == len(original)
+    by_id = {r["encounter_id"]: r for r in anonymized}
+    assert by_id["SYN0002"] == next(r for r in original if r["encounter_id"] == "SYN0002")  # unchanged
+    assert by_id["SYN0001"] != next(r for r in original if r["encounter_id"] == "SYN0001")  # the others anonymized
+    summary = json.loads(out.summary.read_text(encoding="utf-8"))
+    assert [f["encounter_id"] for f in summary["failed_records"]] == ["SYN0002"]
+    assert summary["failed_records"][0]["outcome"].startswith("passed through")
+
+
+def test_a_record_the_llm_fails_on_falls_back_to_the_rules(tmp_path, monkeypatch, capsys):
+    """Only the configured pipeline fails: the record is anonymized by the rules alone and the run publishes."""
+    real = pipeline.Anonymizer.anonymize
+
+    def flaky(self, rec):
+        if rec["encounter_id"] == "SYN0002" and "llm" in self.cfg.detectors:
+            raise RuntimeError("simulated LLM outage")
+        return real(self, rec)
+
+    monkeypatch.setattr(pipeline.Anonymizer, "anonymize", flaky)
+    monkeypatch.setattr(pipeline.Anonymizer, "_model_spans", lambda self, docs: [])  # no Ollama in the tests
+    assert _anonymize(tmp_path, "--detectors", "rules,llm") == 0
+    assert "anonymized with the rules alone" in capsys.readouterr().err
+    out = output_paths(tmp_path, date.fromisoformat(DAY))
+    summary = json.loads(out.summary.read_text(encoding="utf-8"))
+    assert [(f["encounter_id"], f["outcome"]) for f in summary["failed_records"]] == [
+        ("SYN0002", "anonymized with the rules alone")
+    ]
+    text = next(r for r in read_jsonl(out.records) if r["encounter_id"] == "SYN0002")
+    assert text != next(r for r in read_jsonl(FIXTURE) if r["encounter_id"] == "SYN0002")
 
 
 @pytest.mark.parametrize("preset", ["conservative", "balanced", "aggressive", "privacy"])
@@ -77,12 +108,17 @@ def test_every_preset_keeps_the_contract(tmp_path, preset):
     assert _anonymize(tmp_path, "--mode", "rules", "--preset", preset) == 0
 
 
-def test_llm_detector_unreachable_stops_the_run(tmp_path, monkeypatch, capsys):
-    # explicit detectors skip the doctor check: the run itself must still fail closed
+def test_llm_detector_unreachable_falls_back_to_the_rules(tmp_path, monkeypatch, capsys):
+    # explicit detectors skip the doctor check: every record then fails in the LLM and is done by the rules alone
     monkeypatch.setenv("UNIFIED_HARNESS_OLLAMA_URL", "http://127.0.0.1:9")
-    assert _anonymize(tmp_path, "--detectors", "rules,llm") == 1
-    assert "nothing was published" in capsys.readouterr().err
-    assert not (tmp_path / DAY).exists()
+    assert _anonymize(tmp_path, "--detectors", "rules,llm") == 0
+    assert "anonymized with the rules alone" in capsys.readouterr().err
+    out = output_paths(tmp_path, date.fromisoformat(DAY))
+    summary = json.loads(out.summary.read_text(encoding="utf-8"))
+    assert (
+        len(summary["failed_records"]) == summary["n_records"]
+        and validate_output(read_jsonl(FIXTURE), read_jsonl(out.records)) == []
+    )
 
 
 @pytest.mark.parametrize(

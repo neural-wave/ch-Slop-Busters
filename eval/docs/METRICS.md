@@ -35,8 +35,9 @@ Gold: the suite's `pii` items. On `aci_eval` that is the merged gold of three an
 each item with `votes` (how many golds list it) and `direct` (a direct identifier). On other suites, single-source gold.
 
 **Occurrence leak rule** (`metrics.leaked`). For a gold item with `n0` occurrences in the original field, the leaked
-count `n1` is the larger of: the whole string's occurrences still in the output, and, for each *distinctive token* of
-the item, its occurrences in the output minus those it has outside the item in the original. Distinctive tokens are
+count `n1` is the larger of: the whole string's occurrences still in the output, and the item's occurrences in which a
+*distinctive token* survives at its own position (the token alignment of `metrics.align`; a survivor of the same word
+elsewhere in the field, such as `Horner's syndrome` next to `HORNER, Dennis`, is neither credited nor blamed). Distinctive tokens are
 digit runs of 3+ digits, and words of 4+ characters that are not cue words (`patient`, `hospital`, `street`, ...) and,
 outside name categories, not ordinary English words (Debian `wamerican-large`). So `[PATIENT] Campbell` leaks
 `Andrew Campbell`; `[PATIENT] Li` does not leak `Wei Li` (tokens under 4 characters never count).

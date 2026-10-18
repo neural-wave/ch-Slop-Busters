@@ -1,5 +1,22 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+- `anonymize` fails open. A record the pipeline cannot process is anonymized by the rules alone or, failing that,
+  passed through unchanged (`failed_records` in the summary, a warning on stderr); shield overlaps and output
+  contract violations are reported in the summary instead of withholding the run. The previous fail-closed
+  behaviour (one failed record, nothing published) lost a whole evaluation over one record.
+
+### Fixed
+- A person whose surname is an eponym among the encounter's codes (`Dr. Nathan Baker` with a Baker's cyst
+  code, `Dennis HORNER`, `Dr. Oliver Hodgkin`) is anonymized: a name mention that follows a title, belongs
+  to an entity linked from a first and a last name, or stands beside another name wins over a code-evidence
+  shield (never over an eponym shield, never in medical syntax such as `Baker's cyst`). The overridden
+  shields are reported in the summary (`shields_overridden_by_name`) instead of refusing the whole run.
+- A bracketed eponym qualifier in a code description (`Synovial cyst of popliteal space [Baker]`) no longer
+  shields the bare word.
+
 ## 1.0.0 (18 October 2026)
 
 ### Changed

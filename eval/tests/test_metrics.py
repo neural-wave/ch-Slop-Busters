@@ -80,6 +80,15 @@ def test_token_also_outside_the_item_is_not_a_leak():
     assert M.leaked("Andrew Campbell", "PATIENT_NAME", orig, anon, 1) == 0
 
 
+def test_leak_is_positional_when_the_token_has_other_uses():
+    """`HORNER` surviving in the names leaks them even though `Horner's syndrome` (rightly kept) uses the same word; and
+    the kept eponym alone is not blamed on the names once they are removed."""
+    orig = "MDT outcome - HORNER, Dennis.\nPatient: Dennis HORNER.\nLeft Horner's syndrome noted."
+    assert M.leaked("Dennis HORNER", "PATIENT_NAME", orig, "MDT outcome - HORNER, [PATIENT].\nPatient: [PATIENT] HORNER.\nLeft Horner's syndrome noted.", 1) == 1
+    assert M.leaked("HORNER, Dennis", "PATIENT_NAME", orig, "MDT outcome - HORNER, [PATIENT].\nPatient: [PATIENT] HORNER.\nLeft Horner's syndrome noted.", 1) == 1
+    assert M.leaked("Dennis HORNER", "PATIENT_NAME", orig, "MDT outcome - [PATIENT], [PATIENT].\nPatient: [PATIENT] [PATIENT].\nLeft Horner's syndrome noted.", 1) == 0
+
+
 def test_no_gold_for_key(original, clean, labels):
     assert M.privacy(original, clean, labels, "pii_alt") is None
 
