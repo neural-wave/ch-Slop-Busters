@@ -6,73 +6,75 @@ This repository holds **unified-harness**, an offline, diagnosis-aware anonymize
 encounters, together with its evaluation harness. The anonymizer
 removes or generalizes what identifies a person in the `dialogue` and `note` of each encounter and keeps
 what a clinical coder needs for the ICD-10 codes. It runs on a laptop: rules plus one small local
-language model through Ollama, about 1.6 GB of GPU memory, no cloud service.
+language model through Ollama, about 2.8 GB of GPU memory on an NVIDIA card (measured), no cloud service.
 
 > The full description of the design, the pipeline and every measured result is
 > [`docs/solution.html`](docs/solution.html) (open it in a browser). Labels, splits and metrics are in
 > [`docs/evaluation.md`](docs/evaluation.md).
 
-## Contents
-
-- [Results at a glance](#results-at-a-glance)
-- [Repository layout](#repository-layout)
-- [Requirements](#requirements)
-- [Quickstart](#quickstart)
-- [Running the anonymizer](#running-the-anonymizer)
-- [Output files](#output-files)
-- [Evaluating a run](#evaluating-a-run)
-- [Docker](#docker)
-- [How it works](#how-it-works)
-- [Data and privacy rules](#data-and-privacy-rules)
-- [Development](#development)
-- [Troubleshooting](#troubleshooting)
-- [Limitations](#limitations)
-- [Credits and license](#credits-and-license)
 
 ## Results at a glance
 
 Default configuration (mode `llm`, preset `privacy`). Silver labels: shares of labeled occurrences that
 were removed (privacy) or kept (keep traps, medical concepts).
 
-| Split | All PII removed | High-risk removed | Keep traps kept | Medical concepts kept | Peak VRAM |
-|---|---|---|---|---|---|
-| tune (140 train encounters, used for design decisions) | 92.1% | 99.2% | 100.0% | 99.7% | 1.6 GB |
-| validation (the 67 eval encounters) | 84.6% | 95.1% | 99.1% | 99.8% | 1.6 GB |
-| test (24 held-out ICU notes, unseen format, scored once) | 85.7% | 89.7% | 95.3% | 95.6% | 1.6 GB |
+| Split | All PII removed | High-risk removed | Keep traps kept | Medical concepts kept |
+|---|---|---|---|---|
+| tune (140 train encounters, used for design decisions) | 92.1% | 99.2% | 100.0% | 99.7% |
+| validation (the 67 eval encounters) | 84.6% | 95.1% | 99.1% | 99.8% |
+| test (24 held-out ICU notes, unseen format, scored once) | 85.7% | 89.7% | 95.3% | 95.6% |
+
+**GPU memory**, default model `qwen3.5:2b-q4_K_M`, context window 4096 tokens, Ollama 0.40.6:
+
+| Hardware | Peak GPU memory | How it was measured |
+|---|---|---|
+| NVIDIA RTX PRO 6000 (CUDA) | 2.82–2.86 GB | `nvidia-smi`, the Ollama runner process: weights, CUDA context, KV cache and buffers |
+| Apple M-series (unified memory) | 1.56 GB | Ollama's own report (weights and KV cache only; there is no `nvidia-smi`) |
+
+The 4 GB guard uses `nvidia-smi` whenever it is available, so on NVIDIA it checks the real footprint.
 
 On the validation split, with the same labels and scorer, the two earlier team harnesses reach 77.1%
 (Ketai) and 81.5% (Alind and Davide) of PII removed, and keep 79.6% and 99.4% of keep traps. The
 `icd10_codes` and every field other than `dialogue` and `note` are byte-identical in every output.
 
-## Repository layout
-
-| Path | Contents |
-|---|---|
-| `data/patient_doctor_encounters.jsonl` | 140 training encounters (tracked) |
-| `data/eval_patient_doctor_encounters.jsonl` | 67 evaluation encounters (tracked) |
-| `src/unified_harness/` | The anonymizer and the evaluation code (Python package, CLI `unified-harness`) |
-| `src/unified_harness/models.toml` | Pinned models: the Ollama detector models (by digest) and, for `full` mode, the encoder weights |
-| `src/unified_harness/data/` | Public lexicons (ICD-10-CM, drugs, names, places, word frequencies), compressed |
-| `tests/` | Unit and integration tests on synthetic fixtures; data tests that run when `data/` and `labels/` exist |
-| `docs/` | `solution.html` (the solution page), `evaluation.md`, `error_analysis.md`, `labeling_guidelines.md`, `docker.md` |
-| `configs/` | `splits.json` (split ids) and the release-guard allowlist |
-| `scripts/` | Model download, solution-page builder, release guard, scorer cross-check, error analysis, label tools (`labels/`) |
-| `Dockerfile`, `compose.yaml`, `compose.gpu.yaml` | Container images and the offline Compose setup |
-| Local only (git-ignored) | `labels/` (silver labels), `outputs/` (results, LLM cache), `models/` (encoder weights), `data/robustness/` (held-out sets) |
-
 ## Requirements
 
 - **Python 3.12+** and [**uv**](https://docs.astral.sh/uv/).
-- [**Ollama**](https://ollama.com) running locally with the detector model:
-  `ollama pull qwen3.5:2b-q4_K_M` (1.9 GB download, about 1.6 GB of VRAM in use).
-- Optional: `bge-m3` in Ollama (`ollama pull bge-m3`) for the ICD utility proxy in evaluations.
+- [**Ollama**](https://ollama.com) installed and running. The harness downloads the models it needs
+  through Ollama on first use, with progress shown: the detector `qwen3.5:2b-q4_K_M` (1.9 GB, about
+  2.8 GB of GPU memory on CUDA) and, for evaluations, `bge-m3` (1.2 GB). `--no-pull` turns this off.
 - Optional: **Docker Desktop** for the container run.
 - No GPU is required; Ollama uses the GPU when one is available, within the 4 GB budget.
 
 ## Quickstart
 
+### Docker
+
+The harness image is small (147 MB, no PyTorch); Ollama runs in its own container. The containers that read
+the data sit on an internal network without internet access. A one-shot `ollama-pull` service, the only one
+with internet access, downloads the model weights into a Docker volume; it runs automatically before Ollama
+starts and skips models that are already there.
+
 ```bash
-ollama pull qwen3.5:2b-q4_K_M
+docker compose build harness
+docker compose up ollama-pull          # first time: downloads the model with progress (later: a few seconds)
+docker compose run --rm harness doctor
+docker compose run --rm -e TZ=Europe/Zurich harness anonymize \
+    --input /data/eval_patient_doctor_encounters.jsonl --out-root /outputs/docker
+docker compose run --rm harness validate --original /data/eval_patient_doctor_encounters.jsonl \
+    --anonymized /outputs/docker/<date>/anonymized-<date>-unified-harness.jsonl
+docker compose down
+```
+
+Another model: set `DETECTOR_MODEL` for every command, for example
+`DETECTOR_MODEL=llama3.2:3b docker compose up ollama-pull`, then
+`DETECTOR_MODEL=llama3.2:3b docker compose run --rm harness anonymize --allow-unpinned ...`.
+
+Inside the container `/data` is `./data` (read-only) and `/outputs` is `./outputs`. Pass `TZ`, or the
+date in the output names is UTC. `docker compose down -v` also deletes the downloaded models. More,
+including the GPU override and the `full` image: [`docs/docker.md`](docs/docker.md).
+
+```bash
 uv sync
 uv run unified-harness doctor
 uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl
@@ -80,8 +82,9 @@ uv run unified-harness validate --original data/eval_patient_doctor_encounters.j
     --anonymized outputs/<date>/anonymized-<date>-unified-harness.jsonl
 ```
 
-`doctor` must end with `mode llm: ready`. The anonymized file appears in `outputs/<date>/`; `validate`
-must report `0 contract violation(s)`.
+The first `anonymize` downloads the detector model if it is missing (shown with progress), so `doctor`
+may report it as not pulled before that. The anonymized file appears in `outputs/<date>/`; `validate` must
+report `0 contract violation(s)`.
 
 ## Running the anonymizer
 
@@ -99,7 +102,8 @@ The input is JSONL with one encounter per line: `encounter_id`, `dataset`, `dial
 | `--features` | from the preset | Extra feature flags, comma list: `F0`, `F2`, `F4` (see below) |
 | `--detector-model` | `qwen3.5:2b-q4_K_M` | Another Ollama model for the detector; pinned by digest in `models.toml`, or use `--allow-unpinned` |
 | `--allow-unpinned` | off | Experiments only: accept a detector model that is not pinned (recorded as unpinned in the summary) |
-| `--progress` | off | Print one line per encounter (time, decisions, LLM calls and cache hits) |
+| `--no-pull` | off | Never download a missing model; stop with an error instead |
+| `--quiet` | off | No progress messages (by default every step and every encounter is reported on stderr) |
 | `--llm-log` | none | Append one JSON line per LLM call to this file (no record text) |
 | `--no-codes` | off | Do not read `icd10_codes` at inference (bonus task) |
 | `--out-root` | `outputs` | Results go to `<out-root>/<date>/` |
@@ -125,19 +129,23 @@ The input is JSONL with one encounter per line: `encounter_id`, `dataset`, `dial
 | `F4` | Low-risk details are removed only when two independent signals agree (higher precision, lower privacy) | no |
 
 **Using another Ollama model.** Any model can replace the default detector if it fits the 4 GB budget
-(the run measures its VRAM at load and stops above 4 GB). Small candidates in the Ollama library:
-`llama3.2:3b` (2.0 GB), `granite4:3b` (2.1 GB), `phi4-mini` (2.5 GB), `ministral-3:3b` (3.0 GB),
-`qwen3.5:4b` (3.3 GB), `gemma3:4b` (3.4 GB download, 2.2 GB measured VRAM). Larger models such as
-`gemma4:latest` exceed the budget.
+(the run measures its GPU memory at load and stops above 4 GB). Measured on an NVIDIA GPU with
+`nvidia-smi` (context window 4096 tokens, Ollama 0.40.6):
 
-For a quick experiment, pass `--allow-unpinned`:
+| Model | Download | Peak GPU memory (CUDA) | Fits 4 GB |
+|---|---|---|---|
+| `qwen3.5:2b-q4_K_M` (default) | 1.9 GB | 2.82–2.86 GB | yes |
+
+Other small candidates in the Ollama library, not measured yet: `granite4:3b` (2.1 GB download),
+`phi4-mini` (2.5 GB), `ministral-3:3b` (3.0 GB), `qwen3.5:4b` (3.3 GB). On CUDA a model needs roughly
+0.9–1.1 GB more than its download size. Larger models such as `gemma4:latest` exceed the budget.
+
+For a quick experiment, pass `--allow-unpinned`; the model is downloaded on first use:
 
 ```bash
-ollama pull gemma3:4b
-uv run unified-harness doctor --detector-model gemma3:4b --allow-unpinned
 uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl \
-    --detector-model gemma3:4b --allow-unpinned \
-    --out-root outputs/gemma3 --progress --llm-log outputs/gemma3/calls.jsonl
+    --detector-model llama3.2:3b --allow-unpinned \
+    --out-root outputs/llama3.2 --llm-log outputs/llama3.2/calls.jsonl
 ```
 
 Why models are pinned: an Ollama tag such as `gemma3:4b` is only a name, and a later `ollama pull` can
@@ -150,14 +158,18 @@ including the VRAM limit, stay active. To make a model official, pin it:
 ```bash
 curl -s http://127.0.0.1:11434/api/tags      # copy the model's "digest"
 # then add under [detector_models] in src/unified_harness/models.toml:
-#   "gemma3:4b" = "<digest>"
+#   "llama3.2:3b" = "<digest>"
 ```
 
 Each model keeps its own entries in the reply cache (the key includes the model digest). Compare models by
 evaluating each output with `evaluate` and comparing the rows, or with `gate`.
 
-**Monitoring a run.** `--progress` prints one line per encounter (time, decisions, LLM calls and cache
-hits). `--llm-log <file>` appends one JSON line per LLM call: time, encounter id, field, segment offsets,
+**Monitoring a run.** Every command reports what it is doing on stderr, with a timestamp: the environment
+check, reading the input, loading the model into Ollama (the first load can take up to a minute), one line
+per encounter (time, decisions, LLM calls and cache hits, time left), the output checks and publishing.
+`evaluate` reports each scoring stage, including the bge-m3 embeddings. `--quiet` silences these messages.
+A missing model is downloaded through Ollama first, with progress; with
+`--no-pull` the run stops instead and names the `ollama pull` command. `--llm-log <file>` appends one JSON line per LLM call: time, encounter id, field, segment offsets,
 length, seconds, whether it came from the cache, and how many names, places, organizations and jobs the
 model returned. It contains no text from the records. Follow it live with `tail -f <file>`.
 
@@ -229,25 +241,6 @@ Splits for `--split`: `tune` (140 train encounters), `validation` (the 67 eval e
 (24 held-out documents in `data/robustness/`). Any other set can be scored with `--gold <folder>`, one
 `<encounter_id>.json` per encounter in the label format of [`docs/labeling_guidelines.md`](docs/labeling_guidelines.md).
 
-## Docker
-
-The harness image is small (147 MB, no PyTorch); Ollama runs in its own container. Both sit on an
-internal network without internet access, and the host's Ollama models are mounted read-only.
-
-```bash
-docker compose build harness
-docker compose run --rm harness doctor
-docker compose run --rm -e TZ=Europe/Zurich harness anonymize \
-    --input /data/eval_patient_doctor_encounters.jsonl --out-root /outputs/docker
-docker compose run --rm harness validate --original /data/eval_patient_doctor_encounters.jsonl \
-    --anonymized /outputs/docker/<date>/anonymized-<date>-unified-harness.jsonl
-docker compose down
-```
-
-Inside the container `/data` is `./data` (read-only) and `/outputs` is `./outputs`. Pass `TZ`, or the
-date in the output names is UTC. More, including the GPU override and the `full` image:
-[`docs/docker.md`](docs/docker.md).
-
 ## How it works
 
 1. **Normalize** the text with a one-to-one character view, so every detector reports positions in the
@@ -288,11 +281,11 @@ uv run python scripts/build_solution_page.py   # rebuild docs/solution.html from
 | Symptom | Fix |
 |---|---|
 | `doctor`: `Ollama is not reachable` | Start Ollama (`ollama serve` or the app), or set `UNIFIED_HARNESS_OLLAMA_URL` |
-| `doctor`: `not pulled` | `ollama pull qwen3.5:2b-q4_K_M` |
+| `doctor`: `not pulled` | Run `anonymize` (it downloads the model), or `ollama pull <model>` |
+| Download fails in Docker | Run `docker compose up ollama-pull` (with `DETECTOR_MODEL` for another model) |
 | `doctor`: `not pinned in models.toml` | Pass `--allow-unpinned` for an experiment, or add the model and its digest under `[detector_models]` |
-| `uses ... MB VRAM > budget` | The model is too large for 4 GB; choose a smaller one from the list above |
 | `... already exists` | Use another `--out-root` or `--date`, or `--overwrite` |
-| ICD columns empty in `evaluate` | `ollama pull bge-m3`, or pass `--icd none` |
+| ICD columns empty in `evaluate` | The bge-m3 download failed (see the messages), or pass `--icd none` |
 | Privacy columns missing in `evaluate` | The `labels/` folder is missing |
 | A run on new text is slow | Expected: about 10–14 s per encounter for the LLM; reruns of the same text read `outputs/cache/` |
 
@@ -302,7 +295,24 @@ uv run python scripts/build_solution_page.py   # rebuild docs/solution.html from
 - The unseen ICU-note format scores clearly lower than the training format (see the test row above).
 - Some date forms are not targeted yet; they are the main high-risk gap on validation.
 - A relative or clinician sometimes gets the `[PATIENT]` tag; the name itself is removed.
-- VRAM was measured on Apple unified memory; a 4 GB CUDA card was not tested.
+- GPU memory was measured on a large NVIDIA card (2.8 GB used) and on Apple unified memory; a card with exactly 4 GB was not tested.
+
+
+## Repository layout
+
+| Path | Contents |
+|---|---|
+| `data/patient_doctor_encounters.jsonl` | 140 training encounters (tracked) |
+| `data/eval_patient_doctor_encounters.jsonl` | 67 evaluation encounters (tracked) |
+| `src/unified_harness/` | The anonymizer and the evaluation code (Python package, CLI `unified-harness`) |
+| `src/unified_harness/models.toml` | Pinned models: the Ollama detector models (by digest) and, for `full` mode, the encoder weights |
+| `src/unified_harness/data/` | Public lexicons (ICD-10-CM, drugs, names, places, word frequencies), compressed |
+| `tests/` | Unit and integration tests on synthetic fixtures; data tests that run when `data/` and `labels/` exist |
+| `docs/` | `solution.html` (the solution page), `evaluation.md`, `error_analysis.md`, `labeling_guidelines.md`, `docker.md` |
+| `configs/` | `splits.json` (split ids) and the release-guard allowlist |
+| `scripts/` | Model download, solution-page builder, release guard, scorer cross-check, error analysis, label tools (`labels/`) |
+| `Dockerfile`, `compose.yaml`, `compose.gpu.yaml` | Container images and the offline Compose setup |
+| Local only (git-ignored) | `labels/` (silver labels), `outputs/` (results, LLM cache), `models/` (encoder weights), `data/robustness/` (held-out sets) |
 
 ## Credits and license
 
