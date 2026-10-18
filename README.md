@@ -1,4 +1,7 @@
 # ch-Slop-Busters: Anonymization for Patient data
+<p align="center">
+  <img src="image.png" alt="Slop Busters logo" width="200">
+</p>
 
 - **Hackathon:** Neural Wave 2026, challenge “Anonymization for Patient data”
 - **Team:** ch-Slop-Busters — Cristiano Colangelo · Ketai Qiu · Daniel Travaglia · Alind Xhyra · Davide Molinelli
