@@ -1,6 +1,8 @@
 # ch-Slop-Busters: unified-harness
 
-![alt text](image.png)
+<p align="center">
+  <img src="image.png" alt="Slop Busters logo" width="200">
+</p>
 
 - **Hackathon:** Neural Wave 2026, challenge “Anonymization of patient data”
 - **Team:** ch-Slop-Busters — Cristiano Colangelo, Alind Xhyra, Davide Molinelli, Ketai, Travaz
