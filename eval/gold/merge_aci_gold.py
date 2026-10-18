@@ -4,7 +4,7 @@ Usage: python3 -I eval gold [--audit]
        python3 -I eval/gold/merge_aci_gold.py [--audit]
 
 Reads (never writes) the harness gold data/converted/aci_bench/labels.jsonl (eval split), the VM teacher gold
-vm-backup/neuralwave/annotations/eval/<id>.json and ketai's gold ketai-eval/gold/eval_gold.jsonl. A missing VM or
+models/anonymous/annotations/eval/<id>.json and ketai's gold ketai-eval/gold/eval_gold.jsonl. A missing VM or
 ketai gold is left out with a warning; without data/converted/aci_bench nothing is written.
 
 Writes data/eval/gold/aci_eval/:

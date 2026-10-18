@@ -27,47 +27,47 @@ fingerprint = ["{here}/baselines.py", "{here}/../common.py"]
 
 [ad_rules]
 description = "A+D night model (neural_wave 93b5eea), balanced preset, rules only (CPU, no ML dependencies)"
-cwd = "{container}/models/ad-night/repo"
+cwd = "{repo}/models/ad-night/repo"
 env = { HF_HUB_OFFLINE = "1" }
-cmd = ["{container}/models/ad-night/repo/.venv/bin/neural-wave", "anonymize", "-i", "{input}", "-o", "{output}", "--preset", "balanced", "--detectors", "rules"]
-fingerprint = ["{container}/models/ad-night/repo/src/**/*.py", "{container}/models/ad-night/repo/src/**/*.gz"]
+cmd = ["{repo}/models/ad-night/repo/.venv/bin/neural-wave", "anonymize", "-i", "{input}", "-o", "{output}", "--preset", "balanced", "--detectors", "rules"]
+fingerprint = ["{repo}/models/ad-night/repo/src/**/*.py", "{repo}/models/ad-night/repo/src/**/*.gz"]
 
 [ad_night]
 description = "A+D night model, their submission config: balanced, rules + deid_roberta + GLiNER"
-cwd = "{container}/models/ad-night/repo"
+cwd = "{repo}/models/ad-night/repo"
 env = { HF_HUB_OFFLINE = "1" }
-cmd = ["{container}/models/ad-night/repo/.venv/bin/neural-wave", "anonymize", "-i", "{input}", "-o", "{output}", "--preset", "balanced", "--detectors", "rules,deid,gliner"]
-fingerprint = ["{container}/models/ad-night/repo/src/**/*.py", "{container}/models/ad-night/repo/src/**/*.gz"]
+cmd = ["{repo}/models/ad-night/repo/.venv/bin/neural-wave", "anonymize", "-i", "{input}", "-o", "{output}", "--preset", "balanced", "--detectors", "rules,deid,gliner"]
+fingerprint = ["{repo}/models/ad-night/repo/src/**/*.py", "{repo}/models/ad-night/repo/src/**/*.gz"]
 
 [ad_night_nocodes]
 description = "A+D submission config without ICD-10 codes at inference (bonus task)"
-cwd = "{container}/models/ad-night/repo"
+cwd = "{repo}/models/ad-night/repo"
 env = { HF_HUB_OFFLINE = "1" }
 blind_codes = true
-cmd = ["{container}/models/ad-night/repo/.venv/bin/neural-wave", "anonymize", "-i", "{input}", "-o", "{output}", "--preset", "balanced", "--detectors", "rules,deid,gliner", "--no-codes"]
-fingerprint = ["{container}/models/ad-night/repo/src/**/*.py", "{container}/models/ad-night/repo/src/**/*.gz"]
+cmd = ["{repo}/models/ad-night/repo/.venv/bin/neural-wave", "anonymize", "-i", "{input}", "-o", "{output}", "--preset", "balanced", "--detectors", "rules,deid,gliner", "--no-codes"]
+fingerprint = ["{repo}/models/ad-night/repo/src/**/*.py", "{repo}/models/ad-night/repo/src/**/*.gz"]
 
 [ad_night_submitted]
 description = "A+D's own submission file (made on their Mac): checks our scorer against their 0.839 and our ad_night run against theirs"
 suites = ["aci_eval"]
-precomputed = "{container}/models/ad-night/repo/outputs/anonymized_eval_patient_doctor_encounters.jsonl"
+precomputed = "{repo}/models/ad-night/repo/outputs/anonymized_eval_patient_doctor_encounters.jsonl"
 
 [anonymous_rules]
 reads_codes = false
-description = "Anonymous model (VM backup): regex + structural name layers, every detected span -> [TYPE]"
-cwd = "{container}/vm-backup/neuralwave"
-cmd = ["{container}/models/anonymous-deps/.venv/bin/python", "-I", "{here}/anonymous_vm.py", "{input}", "{output}", "--layers", "regex,names", "--words", "{container}/models/anonymous-deps/american-english-large"]
-fingerprint = ["{here}/anonymous_vm.py", "{container}/vm-backup/neuralwave/detect/**/*.py", "{container}/vm-backup/neuralwave/common.py",
-               "{container}/models/anonymous-deps/american-english-large"]
+description = "Anonymous model (models/anonymous, the VM backup): regex + structural name layers, every detected span -> [TYPE]"
+cwd = "{repo}/models/anonymous"
+cmd = ["{repo}/models/anonymous/.venv/bin/python", "-I", "{here}/anonymous_vm.py", "{input}", "{output}", "--layers", "regex,names", "--words", "{repo}/models/anonymous/american-english-large"]
+fingerprint = ["{here}/anonymous_vm.py", "{repo}/models/anonymous/detect/**/*.py", "{repo}/models/anonymous/common.py",
+               "{repo}/models/anonymous/american-english-large"]
 
 [anonymous]
 reads_codes = false
-description = "Anonymous model (VM backup): regex + names + deid_roberta + GLiNER, every detected span -> [TYPE]"
-cwd = "{container}/vm-backup/neuralwave"
+description = "Anonymous model (models/anonymous, the VM backup): regex + names + deid_roberta + GLiNER, every detected span -> [TYPE]"
+cwd = "{repo}/models/anonymous"
 env = { HF_HUB_OFFLINE = "1" }
-cmd = ["{container}/models/anonymous-deps/.venv/bin/python", "-I", "{here}/anonymous_vm.py", "{input}", "{output}", "--layers", "regex,names,deid,gliner", "--words", "{container}/models/anonymous-deps/american-english-large"]
-fingerprint = ["{here}/anonymous_vm.py", "{container}/vm-backup/neuralwave/detect/**/*.py", "{container}/vm-backup/neuralwave/common.py",
-               "{container}/models/anonymous-deps/american-english-large"]
+cmd = ["{repo}/models/anonymous/.venv/bin/python", "-I", "{here}/anonymous_vm.py", "{input}", "{output}", "--layers", "regex,names,deid,gliner", "--words", "{repo}/models/anonymous/american-english-large"]
+fingerprint = ["{here}/anonymous_vm.py", "{repo}/models/anonymous/detect/**/*.py", "{repo}/models/anonymous/common.py",
+               "{repo}/models/anonymous/american-english-large"]
 
 [unified_harness_rules]
 description = "unified-harness (this repo, src/unified_harness), privacy preset, rules only (CPU, no LLM)"
@@ -93,18 +93,18 @@ fingerprint = ["{here}/unified_harness.py", "{repo}/src/unified_harness/**/*.py"
 [unified_harness_submitted]
 description = "unified-harness's delivered aci_eval file (2026-10-18): checks our unified_harness run against it"
 suites = ["aci_eval"]
-precomputed = "{container}/anonymized-2026-10-18-unified-harness.jsonl"
+precomputed = "{repo}/data/delivered/anonymized-2026-10-18-unified-harness.jsonl"
 
 [term_generalizer]
 description = "Term-generalizer: PPO pilot of the zero-shot LLM, generalize mode (ages and dates as ranges), vLLM in 4 GB; delivered JSONL"
 suites = ["aci_eval"]
-precomputed = "{container}/vllm4gb-pilot-ppo_generalize.jsonl"
+precomputed = "{repo}/data/delivered/vllm4gb-pilot-ppo_generalize.jsonl"
 
 [term_generalizer_nocodes]
 description = "Term-generalizer without ICD-10 codes at inference (bonus task); delivered JSONL"
 suites = ["aci_eval"]
 blind_codes = true
-precomputed = "{container}/vllm4gb-pilot-ppo_generalize_noicd_ablation.jsonl"
+precomputed = "{repo}/data/delivered/vllm4gb-pilot-ppo_generalize_noicd_ablation.jsonl"
 
 [zeroshot]
 reads_codes = false
@@ -112,9 +112,9 @@ description = "Zero-shot baseline: qwen3.5:2b (Ollama) returns the PII spans of 
 suites = ["aci_eval"]
 timeout = 14400
 cmd = ["{python}", "-I", "{here}/zeroshot_llm.py", "{input}", "{output}", "--mode", "extract", "--model", "qwen3.5:2b-q4_K_M", "--workers", "1"]
-fingerprint = ["{here}/zeroshot_llm.py", "{container}/zeroshot/anonymize.py", "{container}/zeroshot/common.py"]
+fingerprint = ["{here}/zeroshot_llm.py", "{repo}/models/zeroshot/anonymize.py", "{repo}/models/zeroshot/common.py"]
 
 [ketai]
 description = "Ketai's model (work in progress). Point cmd or precomputed at it when it lands"
 enabled = false
-precomputed = "{container}/models/ketai/outputs/{suite}.jsonl"
+precomputed = "{repo}/models/ketai/outputs/{suite}.jsonl"

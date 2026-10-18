@@ -23,6 +23,7 @@ docker run --rm --network none -v "$PWD/data:/data:ro" -v "$PWD/outputs:/outputs
 ## Default (llm mode) with Compose
 
 ```bash
+mkdir -p outputs                   # a folder Docker creates for the mount would belong to root
 docker compose build harness
 docker compose up ollama-pull      # downloads the detector model into the `ollama-models` volume
 docker compose run --rm harness doctor
@@ -47,6 +48,12 @@ Full mode (PyTorch encoders) uses the `full` image: build it with `docker build 
 unified-harness:full .`, download the encoder weights with `scripts/download_models.py`, set the harness
 service's image to `unified-harness:full`, mount `./models:/models:ro` and pass `--mode full`.
 
+On Linux a container writes a host folder with its own uid. The `harness` service therefore runs as
+`${HARNESS_UID:-1000}:${HARNESS_GID:-1000}`: the usual first user, who owns `./outputs` after `mkdir -p outputs`,
+so the container can write there and the results stay that user's. Another user prefixes the commands with
+`HARNESS_UID=$(id -u) HARNESS_GID=$(id -g)`. Output files are created 0644 (by the umask), so they are readable
+on the host whichever uid wrote them. Docker Desktop (macOS, Windows) maps ownership itself.
+
 The output folder and file names use the container's date, which is UTC unless you pass `TZ`
 (`docker compose run --rm -e TZ=Europe/Zurich harness ...`).
 
@@ -59,3 +66,14 @@ The output folder and file names use the container's date, which is UTC unless y
 | Full-mode anonymize in Compose (`privacy`, `F2`), synthetic fixture | published, contract valid |
 | HTTP request to the internet from the harness container | fails (no name resolution) |
 | Fresh volume: `ollama-pull` downloads the default model, `doctor` ready (digest matches the pin) | done |
+
+Linux (18 October 2026, Docker 29.7.2, Compose v5.6.0, x86_64, no NVIDIA container runtime):
+
+| Check | Result |
+|---|---|
+| `rules` image | 122 MB |
+| Rules output on the 67 eval encounters, local vs `rules` container (`--network none`) | byte-identical (records and decisions); `validate`: 0 contract violations |
+| Fresh volume: `ollama-pull`, then `doctor` | ready, digest matches the pin |
+| Compose before the fix: `./outputs` missing (Docker creates it as root) or owned by the user | anonymize fails with `PermissionError` on `/outputs`; files the image's uid 10001 wrote were 0600, unreadable on the host |
+| Compose after the fix (`mkdir -p outputs`, harness as uid 1000, files 0644), `anonymize --limit 2` in llm mode | published, owned by the user, 0 contract violations; about 70 s per encounter with Ollama on the CPU |
+| `compose.gpu.yaml` | not tested (needs the NVIDIA container toolkit) |

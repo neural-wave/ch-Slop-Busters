@@ -82,7 +82,7 @@ direction of a difference.
 ## Metrics not implemented (TODO)
 
 These metrics need a neural model. The harness is standard library only, so each one would run as a worker script
-with a model venv's interpreter (for example `models/anonymous-deps/.venv`, which has torch and transformers), the way
+with a model venv's interpreter (for example `models/anonymous/.venv`, which has torch and transformers), the way
 the anonymizers do.
 
 | Metric | Family | Definition (p. 10) | Model it needs | r with ΔF1 (main / ablation) |

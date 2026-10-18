@@ -24,7 +24,7 @@ from collections import defaultdict
 from functools import cache, lru_cache
 from pathlib import Path
 
-from eval.common import CACHE_DIR, CONTAINER, DATA, ENCOUNTER_KEYS, FIELDS, count, occurrences, ratio, words
+from eval.common import CACHE_DIR, DATA, ENCOUNTER_KEYS, FIELDS, REPO, count, occurrences, ratio, words
 from eval.gold.taxonomy import LEVELS, SOURCES, in_level
 
 # Tokens that occur in placeholders and generalizations, so their survival says nothing about a leak.
@@ -71,7 +71,7 @@ def validity(original: list[dict], anonymized: list[dict]) -> dict:
 
 
 NAME_CATS = {"PATIENT_NAME", "PERSON_NAME"}
-WORDLISTS = (CONTAINER / "models" / "anonymous-deps" / "american-english-large", Path("/usr/share/dict/american-english-large"), Path("/usr/share/dict/words"))
+WORDLISTS = (REPO / "models" / "anonymous" / "american-english-large", Path("/usr/share/dict/american-english-large"), Path("/usr/share/dict/words"))
 
 
 @cache

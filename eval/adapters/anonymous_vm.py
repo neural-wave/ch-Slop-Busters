@@ -1,4 +1,4 @@
-"""Adapter for the anonymous model (vm-backup/neuralwave): run its detection layers and replace what they find.
+"""Adapter for the anonymous model (models/anonymous): run its detection layers and replace what they find.
 
 Usage: python -I eval/adapters/anonymous_vm.py INPUT OUTPUT [--layers regex,names,deid,gliner] [--tiers 1,2] [--device auto]
                                                       [--root VM_DIR] [--words FILE]
@@ -27,7 +27,7 @@ import os
 import sys
 from pathlib import Path
 
-DEFAULT_ROOT = Path(__file__).resolve().parents[3] / "vm-backup" / "neuralwave"  # <container>/neuralwave/eval/adapters/
+DEFAULT_ROOT = Path(__file__).resolve().parents[2] / "models" / "anonymous"  # <repo>/eval/adapters/
 FIELDS = ("dialogue", "note")
 
 

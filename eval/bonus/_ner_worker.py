@@ -1,10 +1,10 @@
 """Worker of attack A1: run independent PII detectors on texts and print the spans they find.
 
-Usage: <container>/models/anonymous-deps/.venv/bin/python -I -B eval/bonus/_ner_worker.py INPUT OUTPUT [--layers regex,deid,gliner]
+Usage: <repo>/models/anonymous/.venv/bin/python -I -B eval/bonus/_ner_worker.py INPUT OUTPUT [--layers regex,deid,gliner]
                                                                                     [--device cpu|cuda] [--threads N] [--root VM_DIR]
 
 INPUT is JSONL `{"key", "text"}`; OUTPUT gets one JSONL line per input line, written as it goes:
-`{"key", "spans": [[start, end, text, type, layer, confidence], ...]}`. The detectors are the VM's (vm-backup/
+`{"key", "spans": [[start, end, text, type, layer, confidence], ...]}`. The detectors are the VM's (models/anonymous, the VM backup;
 neuralwave/detect): obi/deid_roberta_i2b2, GLiNER urchade/gliner_multi_pii-v1 and the regex layer (dates, ages, IDs,
 contacts), loaded once, offline. It needs torch, transformers, gliner and regex, so the harness (standard library only)
 runs it with the anonymous venv's interpreter and `-B`, which keeps the VM folder free of bytecode files.
@@ -18,7 +18,7 @@ import os
 import sys
 from pathlib import Path
 
-DEFAULT_ROOT = Path(__file__).resolve().parents[3] / "vm-backup" / "neuralwave"  # <container>/neuralwave/eval/bonus/
+DEFAULT_ROOT = Path(__file__).resolve().parents[2] / "models" / "anonymous"  # <repo>/eval/bonus/
 
 
 def main(argv: list[str] | None = None) -> int:

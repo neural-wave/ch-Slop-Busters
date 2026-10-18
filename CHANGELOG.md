@@ -2,7 +2,17 @@
 
 ## Unreleased
 
+### Fixed (Docker on Linux)
+- Output files are created with the mode `open()` gives (0644 under the usual umask) instead of `mkstemp`'s 0600:
+  files the container's user wrote into a host folder were unreadable on the host.
+- The Compose `harness` service runs as `${HARNESS_UID:-1000}:${HARNESS_GID:-1000}`, so it can write `./outputs`
+  (as the image's uid 10001 it failed with `PermissionError`). The docs say to create `./outputs` first.
+
 ### Changed
+- The evaluated models live in the repository: `models/ad-night` (A+D night, their own git checkout and venv),
+  `models/anonymous` (the VM backup, with the venv and word list the adapter uses), `models/zeroshot`, and the delivered
+  JSONL files in `data/delivered/`. `eval/models.toml` and the adapters resolve them under `{repo}` instead of the
+  parent folder (`{container}` remains for `daniel-eval/`, `judge/` and `adversary/`).
 - `anonymize` fails open. A record the pipeline cannot process is anonymized by the rules alone or, failing that,
   passed through unchanged (`failed_records` in the summary, a warning on stderr); shield overlaps and output
   contract violations are reported in the summary instead of withholding the run. The previous fail-closed

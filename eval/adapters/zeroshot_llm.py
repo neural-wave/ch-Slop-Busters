@@ -1,4 +1,4 @@
-"""Adapter for the zero-shot LLM baseline (<container>/zeroshot/anonymize.py): run it, check it finished, copy its output.
+"""Adapter for the zero-shot LLM baseline (<repo>/models/zeroshot/anonymize.py): run it, check it finished, copy its output.
 
 Usage: python3 -I eval/adapters/zeroshot_llm.py INPUT OUTPUT [--root ZEROSHOT_DIR] [anonymize.py options ...]
 
@@ -19,7 +19,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-DEFAULT_ROOT = Path(__file__).resolve().parents[3] / "zeroshot"  # <container>/neuralwave/eval/adapters/
+DEFAULT_ROOT = Path(__file__).resolve().parents[2] / "models" / "zeroshot"  # <repo>/eval/adapters/
 
 
 def main(argv: list[str] | None = None) -> int:
