@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Unified Anonymization Harness</title>
+<style>
+:root{--bg:#f7f6f2;--fg:#1d2321;--muted:#5d6763;--line:#d9dcd6;--card:#ffffff;--accent:#0f766e;--accent-soft:#d6efeb;
+--hl:#fff6d6;--code:#eef0ec;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141816;--fg:#e6ebe8;--muted:#9aa6a1;
+--line:#2c3431;--card:#1b201e;--accent:#4fd1c0;--accent-soft:#16332f;--hl:#3a3418;--code:#232a27;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141816;--fg:#e6ebe8;--muted:#9aa6a1;--line:#2c3431;--card:#1b201e;--accent:#4fd1c0;
+--accent-soft:#16332f;--hl:#3a3418;--code:#232a27;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-sans-serif,-apple-system,"Segoe UI",Roboto,
+"Helvetica Neue",Arial,sans-serif;padding-left:max(16px,env(safe-area-inset-left,0px));
+padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:1000px;margin:0 auto;padding-block:40px 80px}
+h1{font-size:2rem;line-height:1.2;margin:0 0 .4rem;text-wrap:balance}
+h2{font-size:1.35rem;margin:2.6rem 0 .6rem;padding-top:.6rem;border-top:1px solid var(--line);text-wrap:balance}
+h3{font-size:1.05rem;margin:1.6rem 0 .4rem}
+p,li{max-width:70ch}
+.lede{font-size:1.1rem;color:var(--muted);max-width:70ch}
+.meta{font-size:.85rem;color:var(--muted)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:1.4rem 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.kpi b{display:block;font-size:1.6rem;color:var(--accent);font-variant-numeric:tabular-nums}
+.kpi span{font-size:.85rem;color:var(--muted)}
+.scroll{overflow-x:auto;margin:.8rem 0}
+table{border-collapse:collapse;font-size:.85rem;font-variant-numeric:tabular-nums;min-width:100%}
+th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+thead th{color:var(--muted);font-weight:600;font-size:.75rem;text-transform:uppercase;letter-spacing:.03em}
+tbody th,thead th:first-child{text-align:left;font-weight:500;white-space:normal;min-width:220px}
+tr.hl{background:var(--hl)}
+td.na{color:var(--muted)}
+.policy td,.policy th{text-align:left;white-space:normal}
+svg{width:100%;min-width:640px;height:auto}
+.box{fill:var(--card);stroke:var(--line);stroke-width:1.5}
+.box.accent{fill:var(--accent-soft);stroke:var(--accent)}
+.bt{font:600 15px ui-sans-serif,-apple-system,sans-serif;fill:var(--fg)}
+.bs{font:12px ui-sans-serif,-apple-system,sans-serif;fill:var(--muted)}
+.ar{stroke:var(--muted);stroke-width:1.6;marker-end:url(#ah)}
+.ah{fill:var(--muted)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:720px){.pair{grid-template-columns:1fr}}
+pre{background:var(--code);border-radius:10px;padding:12px 14px;overflow-x:auto;font-size:.82rem;line-height:1.5;
+white-space:pre-wrap;margin:0}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em}
+.label{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:.2rem 0 .3rem}
+.note{font-size:.88rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<h1>Unified anonymization harness</h1>
+<p class="lede">An offline, diagnosis-aware anonymizer for patient–doctor encounters. It removes what identifies a
+person and keeps what a clinical coder needs, on a laptop, with less than 2 GB of GPU memory.</p>
+<p class="meta">Version 1.0.0. Built from saved evaluation results by <code>scripts/build_solution_page.py</code>.
+All labels are silver (LLM-made, script-checked, not human-reviewed); numbers are shares of labeled
+occurrences on the named split.</p>
+
+<div class="kpis">
+<div class="kpi"><b>99.2%</b><span>high-risk identifiers removed (tune)</span></div>
+<div class="kpi"><b>92.1%</b><span>all labeled PII removed (tune)</span></div>
+<div class="kpi"><b>100.0%</b><span>clinical keep traps preserved (tune)</span></div>
+<div class="kpi"><b>1,556 MB</b><span>peak VRAM, no PyTorch</span></div>
+</div>
+
+<h2 id="problem">1. The problem and the constraints</h2>
+<p>Encounter transcripts and notes carry names, dates, places, jobs and small personal details next to the
+clinical facts that support the ICD-10 codes. The task is to remove the first without damaging the second.
+Every field except <code>dialogue</code> and <code>note</code> stays byte-identical, including the codes. Inference must run
+offline, on premises, within 4 GB of VRAM, with a CPU path. A failure must stop the run, never fall back
+to a weaker mode or skip a record.</p>
+
+<h2 id="idea">2. The central idea</h2>
+<p><b>Shield first, then remove.</b> Before any detector runs, a medical shield locks the words a coder needs:
+clinical numbers, drug names, eponyms such as Parkinson’s, and words that are evidence for the encounter’s
+own codes. Detectors may then be as eager as they like; nothing they find can cut into the shield.</p>
+<p><b>Use the language model only where it adds privacy.</b> Rules and gazetteers catch the regular cases.
+A small local model (<code>qwen3.5:2b-q4_K_M</code> via Ollama) reads only the
+privacy-dense parts of the text (turns and sentences about work, home, family, travel or rare names) and
+finds what rules miss, such as occupations and employers.</p>
+<p>The design merges two earlier team harnesses. From Alind and Davide it takes the shield-first rules
+backbone, the identity graph and the leak repair. From Ketai it takes LLM extraction, word-level
+generalization of ages and the replay cache.</p>
+
+<h2 id="pipeline">3. The pipeline</h2>
+<div class="scroll"><svg viewBox="0 0 898 238" role="img" aria-label="Pipeline: eight stages from input to publish"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker></defs><line x1="210" y1="53.0" x2="232" y2="53.0" class="ar"/><line x1="432" y1="53.0" x2="454" y2="53.0" class="ar"/><line x1="654" y1="53.0" x2="676" y2="53.0" class="ar"/><line x1="776.0" y1="96" x2="776.0" y2="142" class="ar"/><line x1="676" y1="185.0" x2="654" y2="185.0" class="ar"/><line x1="454" y1="185.0" x2="432" y2="185.0" class="ar"/><line x1="232" y1="185.0" x2="210" y2="185.0" class="ar"/><g><rect x="10" y="10" width="200" height="86" rx="10" class="box"/><text x="24" y="38" class="bt">1. Input</text><text x="24" y="62" class="bs">JSONL, one encounter</text><text x="24" y="80" class="bs">per line</text></g><g><rect x="232" y="10" width="200" height="86" rx="10" class="box"/><text x="246" y="38" class="bt">2. Normalize</text><text x="246" y="62" class="bs">1:1 offsets,</text><text x="246" y="80" class="bs">speaker tags masked</text></g><g><rect x="454" y="10" width="200" height="86" rx="10" class="box accent"/><text x="468" y="38" class="bt">3. Shield</text><text x="468" y="62" class="bs">numbers, drugs, eponyms,</text><text x="468" y="80" class="bs">code evidence locked</text></g><g><rect x="676" y="10" width="200" height="86" rx="10" class="box accent"/><text x="690" y="38" class="bt">4. Detect</text><text x="690" y="62" class="bs">rules + gazetteers; LLM</text><text x="690" y="80" class="bs">on personal segments</text></g><g><rect x="676" y="142" width="200" height="86" rx="10" class="box"/><text x="690" y="170" class="bt">5. Link</text><text x="690" y="194" class="bs">identity graph across</text><text x="690" y="212" class="bs">turns and fields</text></g><g><rect x="454" y="142" width="200" height="86" rx="10" class="box"/><text x="468" y="170" class="bt">6. Policy</text><text x="468" y="194" class="bs">remove, generalize or</text><text x="468" y="212" class="bs">keep, per category</text></g><g><rect x="232" y="142" width="200" height="86" rx="10" class="box"/><text x="246" y="170" class="bt">7. Verify</text><text x="246" y="194" class="bs">leak scan and repair,</text><text x="246" y="212" class="bs">contract check</text></g><g><rect x="10" y="142" width="200" height="86" rx="10" class="box"/><text x="24" y="170" class="bt">8. Publish</text><text x="24" y="194" class="bs">atomic, dated output</text><text x="24" y="212" class="bs">+ audit sidecar</text></g></svg></div>
+<ol>
+<li><b>Normalize.</b> A one-to-one character view (same offsets) masks speaker tags and folds case, so every
+detector reports positions in the original text.</li>
+<li><b>Shield.</b> Clinical numbers with units, drugs, eponyms in medical syntax, code-evidence words and
+activities told as an injury mechanism are locked.</li>
+<li><b>Detect.</b> Rules for names after titles, ages, dates, IDs and contact data; gazetteers for places,
+employers, brands and activities; the local LLM on personal segments (feature F2), with replies cached by
+model digest, prompt version and segment.</li>
+<li><b>Link.</b> An identity graph joins the mentions of each person across turns and fields, including
+typos and possessives, so a surname cannot survive in another sentence.</li>
+<li><b>Policy.</b> Each category is removed, generalized or kept according to the preset.</li>
+<li><b>Verify.</b> A leak scan looks for any removed string left in the text and repairs it (two rounds);
+the output contract is checked record by record.</li>
+<li><b>Publish.</b> Files are written atomically under a dated name, with a decisions sidecar that explains
+every edit without copying original text.</li>
+</ol>
+
+<h3>Worked example (synthetic encounter, rules stage of the privacy preset)</h3>
+<div class="pair">
+<div><div class="label">Original note</div><pre>CHIEF COMPLAINT
+
+Right knee pain.
+
+HISTORY OF PRESENT ILLNESS
+
+Marta Lindqvist is a 52-year-old female mail carrier from Oakridge who presents with right knee pain after a fall on ice on 01/14/2026. Pain is 6/10 with mild swelling.
+
+VITALS
+
+Blood pressure: 140/90 mmHg.
+
+RESULTS
+
+Hemoglobin A1c: 7.2%.
+
+ASSESSMENT AND PLAN
+
+1. Right knee pain after a fall. Order right knee x-ray.
+2. Type 2 diabetes mellitus. Continue metformin 500 mg twice daily.
+
+Dr. Ana Varga</pre></div>
+<div><div class="label">Anonymized note</div><pre>CHIEF COMPLAINT
+
+Right knee pain.
+
+HISTORY OF PRESENT ILLNESS
+
+[PATIENT] is a [50s]-year-old female [OCCUPATION] from [LOCATION] who presents with right knee pain after a fall on ice on [DATE]. Pain is 6/10 with mild swelling.
+
+VITALS
+
+Blood pressure: 140/90 mmHg.
+
+RESULTS
+
+Hemoglobin A1c: 7.2%.
+
+ASSESSMENT AND PLAN
+
+1. Right knee pain after a fall. Order right knee x-ray.
+2. Type 2 diabetes mellitus. Continue metformin 500 mg twice daily.
+
+Dr. [CLINICIAN]</pre></div>
+</div>
+<p class="note">The name, age, occupation, town, date and the clinician’s name are removed or generalized;
+the blood pressure, HbA1c, metformin dose and “right knee” are shielded and kept.</p>
+
+<h2 id="policy">4. The policy</h2>
+<div class="scroll"><table class="policy"><thead><tr><th>What</th><th>Action</th><th>Why</th></tr></thead>
+<tbody><tr><td>Names of patients, clinicians, relatives</td><td>Replaced by a role tag ([PATIENT], [CLINICIAN], …)</td><td>Direct identifiers</td></tr><tr><td>Dates of birth, IDs, phone, e-mail, addresses</td><td>Replaced by a type tag</td><td>Direct identifiers</td></tr><tr><td>Absolute dates, calendar years, holidays</td><td>Replaced; relative timing (“two weeks ago”) kept</td><td>Date the visit</td></tr><tr><td>Exact ages</td><td>Generalized to a decade band ([50s])</td><td>Age-dependent coding still works</td></tr><tr><td>Places, facilities, employers, occupations, teams</td><td>Generalized to a category tag</td><td>Quasi-identifiers</td></tr><tr><td>Rare personal details (events, family size, pets, brands)</td><td>Generalized ([DETAIL]) in the privacy preset</td><td>Low-risk quasi-identifiers</td></tr><tr><td>Hobbies and activities</td><td>Generalized, unless the sentence tells an injury mechanism (F0)</td><td>Kept when they are code evidence</td></tr><tr><td>Clinical numbers, drugs, eponyms, ICD evidence words</td><td>Always kept (shield)</td><td>Utility for ICD-10 coding</td></tr></tbody></table></div>
+<p>Presets trace the privacy–utility curve: <code>conservative</code>, <code>balanced</code>, <code>aggressive</code>,
+and <code>privacy</code>, the shipped default. <code>privacy</code> uses balanced settings for names and ages, removes
+low-risk details too, and turns on the code-evidence guard (F0).</p>
+
+<h2 id="evaluation">5. How it was evaluated</h2>
+<ul>
+<li><b>Labels.</b> Silver labels from both teams were merged for the 67 evaluation encounters, with 26
+conflicts adjudicated. 100 previously unlabeled training encounters were annotated by LLM agents and
+validated by script. No label was reviewed by a human.</li>
+<li><b>Splits.</b> Tune: 140 training encounters, used for every design decision. Validation: the 67
+evaluation encounters, checked once per finalist. Test: 24 held-out documents in an unseen format, scored
+once.</li>
+<li><b>Metrics.</b> One scorer computes both teams’ definitions and reproduces both original scorers exactly
+on nine saved runs. It reports removal by risk tier, direct versus quasi identifiers, name tokens, keep traps,
+medical concepts and edit precision. A local ICD-10 retrieval proxy measures coding agreement between
+original and anonymized text.</li>
+<li><b>Acceptance gate.</b> A change is kept only if high-risk removal does not drop, quasi or low-risk
+removal rises, keep traps and concepts stay at or above 99.5%, and ICD agreement stays within noise.</li>
+</ul>
+
+<h2 id="results">6. Results</h2>
+<h3>Tune split: how each feature moved the numbers</h3>
+<div class="scroll"><table><thead><tr><th>Configuration</th><th>All PII</th><th>High risk</th><th>Quasi</th><th>Low risk</th><th>Name tokens</th><th>Keep traps</th><th>Concepts</th><th>Edit precision</th><th>ICD agreement</th><th>ms / enc</th><th>VRAM MB</th><th>n</th></tr></thead><tbody><tr><th scope="row">Upstream baseline: balanced, rules</th><td>87.1</td><td>99.0</td><td>67.7</td><td>23.1</td><td>99.6</td><td>99.5</td><td>99.8</td><td>94.2</td><td>96.1</td><td>58</td><td>0</td><td>140</td></tr><tr><th scope="row">Upstream baseline: balanced, full (PyTorch encoders + LLM)</th><td>90.0</td><td>99.4</td><td>74.5</td><td>34.7</td><td>99.9</td><td>99.5</td><td>99.8</td><td>91.0</td><td>96.5</td><td>5,520</td><td>3,703</td><td>140</td></tr><tr><th scope="row">+ F0 code-evidence guard (rules)</th><td>88.5</td><td>99.0</td><td>71.4</td><td>36.7</td><td>99.6</td><td>100.0</td><td>99.8</td><td>93.1</td><td>96.1</td><td>58</td><td>0</td><td>140</td></tr><tr><th scope="row">+ F0 (full)</th><td>91.4</td><td>99.4</td><td>78.2</td><td>48.3</td><td>99.9</td><td>100.0</td><td>99.8</td><td>90.0</td><td>96.5</td><td>5,510</td><td>3,703</td><td>140</td></tr><tr><th scope="row">+ F0 + F2 targeted LLM (full)</th><td>91.8</td><td>99.4</td><td>79.3</td><td>49.0</td><td>99.9</td><td>100.0</td><td>99.8</td><td>90.7</td><td>96.1</td><td>10,225</td><td>3,703</td><td>140</td></tr><tr><th scope="row">privacy preset (rules)</th><td>90.1</td><td>99.0</td><td>75.6</td><td>51.7</td><td>99.6</td><td>100.0</td><td>99.7</td><td>89.4</td><td>96.1</td><td>61</td><td>0</td><td>140</td></tr><tr><th scope="row">privacy preset + F4 agreement rule (rules)</th><td>88.7</td><td>99.0</td><td>71.9</td><td>38.1</td><td>99.6</td><td>100.0</td><td>99.8</td><td>92.3</td><td>96.1</td><td>61</td><td>0</td><td>140</td></tr><tr><th scope="row">privacy + F2, full (PyTorch encoders)</th><td>93.3</td><td>99.4</td><td>83.4</td><td>63.9</td><td>99.9</td><td>100.0</td><td>99.7</td><td>87.4</td><td>96.1</td><td>1,804</td><td>3,703</td><td>140</td></tr><tr class="hl"><th scope="row">privacy + F2, llm mode: shipped default</th><td>92.1</td><td>99.2</td><td>80.4</td><td>59.2</td><td>99.9</td><td>100.0</td><td>99.7</td><td>88.9</td><td>96.1</td><td>94</td><td>1,556</td><td>140</td></tr></tbody></table></div>
+<p class="note">F0 raised keep-trap survival to 100% and low-risk removal at the same time. F4 (two
+independent signals before removing a low-risk detail) lowered privacy and was left off. Dropping the
+PyTorch encoders costs about one point of overall removal and halves the VRAM.</p>
+
+<h3>Validation: compared with the two original harnesses</h3>
+<div class="scroll"><table><thead><tr><th>Configuration</th><th>All PII</th><th>High risk</th><th>Quasi</th><th>Low risk</th><th>Name tokens</th><th>Keep traps</th><th>Concepts</th><th>Edit precision</th><th>ICD agreement</th><th>ms / enc</th><th>VRAM MB</th><th>n</th></tr></thead><tbody><tr><th scope="row">Ketai harness (delivered output)</th><td>77.1</td><td>89.8</td><td>61.4</td><td>19.1</td><td>86.6</td><td>79.6</td><td>97.2</td><td class="na">–</td><td>89.5</td><td class="na">–</td><td class="na">–</td><td>67</td></tr><tr><th scope="row">Alind+Davide harness (balanced, full)</th><td>81.5</td><td>95.1</td><td>62.7</td><td>24.7</td><td>100.0</td><td>99.4</td><td>99.9</td><td>95.4</td><td>92.8</td><td>5,636</td><td>3,679</td><td>67</td></tr><tr><th scope="row">Unified: privacy, rules</th><td>83.1</td><td>95.1</td><td>66.7</td><td>39.3</td><td>100.0</td><td>99.7</td><td>99.8</td><td>91.5</td><td>92.8</td><td>61</td><td>0</td><td>67</td></tr><tr><th scope="row">Unified: privacy + F2, full (PyTorch)</th><td>85.3</td><td>95.2</td><td>71.9</td><td>42.7</td><td>100.0</td><td>99.1</td><td>99.8</td><td>90.0</td><td>92.8</td><td>14,194</td><td>3,677</td><td>67</td></tr><tr class="hl"><th scope="row">Unified: shipped default (llm mode)</th><td>84.6</td><td>95.1</td><td>70.6</td><td>41.6</td><td>100.0</td><td>99.1</td><td>99.8</td><td>90.3</td><td>92.8</td><td>79</td><td>1,556</td><td>67</td></tr></tbody></table></div>
+<p class="note">On the same merged labels, the shipped default removes 84.6% of labeled PII
+against 77.1% (Ketai) and 81.5% (Alind+Davide), and keeps
+99.1% of clinical keep traps against 79.6% (Ketai). High-risk
+removal is lower on validation than on tune because Ketai’s annotators labeled date forms that no
+detector targets yet (the temporal pass, F1, was deferred).</p>
+
+<h3>Held-out test set (scored once)</h3>
+<div class="scroll"><table><thead><tr><th>Configuration</th><th>All PII</th><th>High risk</th><th>Quasi</th><th>Low risk</th><th>Name tokens</th><th>Keep traps</th><th>Concepts</th><th>Edit precision</th><th>ICD agreement</th><th>ms / enc</th><th>VRAM MB</th><th>n</th></tr></thead><tbody><tr><th scope="row">Unified: shipped default (llm mode)</th><td>85.7</td><td>89.8</td><td>79.8</td><td>32.5</td><td>79.8</td><td>95.3</td><td>95.6</td><td>92.8</td><td class="na">–</td><td>67</td><td>1,556</td><td>24</td></tr></tbody></table></div>
+<p class="note">The test set holds 24 ICU progress notes in a format no design decision saw. Scores drop:
+high-risk removal 89.8%, name tokens 79.8% and keep traps
+95.3%, below the 99.5% floor. This is the main open gap: the rules and the identity graph
+were tuned on dialogue-plus-note encounters. The first test attempt stopped without output because
+identifiers such as postcodes cut through false number shields; the fix records those shields as overridden
+instead of failing, and this table is the single scored run after it.</p>
+
+<h3>Attacks on the tune output</h3>
+<ul>
+<li>Dictionary attack with every patient name of the corpus plus census names:
+5 of 440 labeled names found (1.1%).</li>
+<li>Rare-word attack: 10 of 47 rare identifier-like tokens
+survive (78.7% removed).</li>
+<li>Record linkage by an attacker who already holds the original records: 140 of 140
+re-linked. Clinical content is kept by design, so this bounds the threat model: the tool protects against
+identifying the person, not against matching a record someone already has.</li>
+</ul>
+
+<h2 id="run">7. Running it</h2>
+<pre>ollama pull qwen3.5:2b-q4_K_M
+uv sync
+uv run unified-harness doctor
+uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl</pre>
+<p>Or with Docker: <code>docker compose run --rm harness anonymize --input /data/…jsonl</code>; the harness
+(147 MB image) and Ollama run on an internal network without internet access. Evaluation:
+<code>unified-harness evaluate</code>, <code>run</code>, <code>gate</code> and <code>attack</code>.</p>
+
+<h3>Limitations</h3>
+<ul>
+<li>All labels are silver; no human review.</li>
+<li>Some date forms are not targeted (F1 deferred); this is the main high-risk gap on validation.</li>
+<li>A relative or clinician sometimes receives the [PATIENT] tag; the name itself is removed.</li>
+<li>VRAM was measured on Apple unified memory; a 4 GB CUDA card was not available.</li>
+<li>On new text the local LLM costs about 10–14 s per encounter; reruns read the cache.</li>
+</ul>
+
+<h3>Credits</h3>
+<p>Built on the harnesses of Ketai and of Alind and Davide, whose code, labels and ideas are reused here.</p>
+</main>
+</body>
+</html>
