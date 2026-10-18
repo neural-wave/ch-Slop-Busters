@@ -80,6 +80,32 @@ On the validation split, with the same labels and scorer, the two earlier team h
 
 ## Quickstart
 
+### Docker
+
+The harness image is small (147 MB, no PyTorch); Ollama runs in its own container. The containers that read
+the data sit on an internal network without internet access. A one-shot `ollama-pull` service, the only one
+with internet access, downloads the model weights into a Docker volume; it runs automatically before Ollama
+starts and skips models that are already there.
+
+```bash
+docker compose build harness
+docker compose up ollama-pull          # first time: downloads the model with progress (later: a few seconds)
+docker compose run --rm harness doctor
+docker compose run --rm -e TZ=Europe/Zurich harness anonymize \
+    --input /data/eval_patient_doctor_encounters.jsonl --out-root /outputs/docker
+docker compose run --rm harness validate --original /data/eval_patient_doctor_encounters.jsonl \
+    --anonymized /outputs/docker/<date>/anonymized-<date>-unified-harness.jsonl
+docker compose down
+```
+
+Another model: set `DETECTOR_MODEL` for every command, for example
+`DETECTOR_MODEL=llama3.2:3b docker compose up ollama-pull`, then
+`DETECTOR_MODEL=llama3.2:3b docker compose run --rm harness anonymize --allow-unpinned ...`.
+
+Inside the container `/data` is `./data` (read-only) and `/outputs` is `./outputs`. Pass `TZ`, or the
+date in the output names is UTC. `docker compose down -v` also deletes the downloaded models. More,
+including the GPU override and the `full` image: [`docs/docker.md`](docs/docker.md).
+
 ```bash
 uv sync
 uv run unified-harness doctor
@@ -246,32 +272,6 @@ Splits for `--split`: `tune` (140 train encounters), `validation` (the 67 eval e
 (24 held-out documents in `data/robustness/`). Any other set can be scored with `--gold <folder>`, one
 `<encounter_id>.json` per encounter in the label format of [`docs/labeling_guidelines.md`](docs/labeling_guidelines.md).
 
-## Docker
-
-The harness image is small (147 MB, no PyTorch); Ollama runs in its own container. The containers that read
-the data sit on an internal network without internet access. A one-shot `ollama-pull` service, the only one
-with internet access, downloads the model weights into a Docker volume; it runs automatically before Ollama
-starts and skips models that are already there.
-
-```bash
-docker compose build harness
-docker compose up ollama-pull          # first time: downloads the model with progress (later: a few seconds)
-docker compose run --rm harness doctor
-docker compose run --rm -e TZ=Europe/Zurich harness anonymize \
-    --input /data/eval_patient_doctor_encounters.jsonl --out-root /outputs/docker
-docker compose run --rm harness validate --original /data/eval_patient_doctor_encounters.jsonl \
-    --anonymized /outputs/docker/<date>/anonymized-<date>-unified-harness.jsonl
-docker compose down
-```
-
-Another model: set `DETECTOR_MODEL` for every command, for example
-`DETECTOR_MODEL=llama3.2:3b docker compose up ollama-pull`, then
-`DETECTOR_MODEL=llama3.2:3b docker compose run --rm harness anonymize --allow-unpinned ...`.
-
-Inside the container `/data` is `./data` (read-only) and `/outputs` is `./outputs`. Pass `TZ`, or the
-date in the output names is UTC. `docker compose down -v` also deletes the downloaded models. More,
-including the GPU override and the `full` image: [`docs/docker.md`](docs/docker.md).
-
 ## How it works
 
 1. **Normalize** the text with a one-to-one character view, so every detector reports positions in the
@@ -315,7 +315,6 @@ uv run python scripts/build_solution_page.py   # rebuild docs/solution.html from
 | `doctor`: `not pulled` | Run `anonymize` (it downloads the model), or `ollama pull <model>` |
 | Download fails in Docker | Run `docker compose up ollama-pull` (with `DETECTOR_MODEL` for another model) |
 | `doctor`: `not pinned in models.toml` | Pass `--allow-unpinned` for an experiment, or add the model and its digest under `[detector_models]` |
-| `uses ... MB VRAM > budget` | The model is too large for 4 GB; choose a smaller one from the list above |
 | `... already exists` | Use another `--out-root` or `--date`, or `--overwrite` |
 | ICD columns empty in `evaluate` | The bge-m3 download failed (see the messages), or pass `--icd none` |
 | Privacy columns missing in `evaluate` | The `labels/` folder is missing |
