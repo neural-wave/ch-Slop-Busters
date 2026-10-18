@@ -120,6 +120,12 @@ COLUMNS: dict[str, Column] = {
     "peak_ram_mb": Column("Peak RAM (MB)", "Peak summed RSS of the model's process tree", "iv.c.ii"),
     "peak_vram_mb": Column("Peak VRAM (MB)", "Peak summed nvidia-smi memory of the process tree, CUDA context included", "iv.c.iii"),
     "vram_ok": Column(f"Peak VRAM ≤ {VRAM_BUDGET_MB} MB", "Whether peak VRAM stays within the challenge's 4 GB budget", "iv.c.iii"),
+    "probe_vram": Column("Peak VRAM incl. Ollama (MB)", "Probe (`eval probe`): peak nvidia-smi memory of the model's processes plus the Ollama "
+                         "server's while it anonymizes the first records of the suite, CUDA context included; counts the LLM of a model that "
+                         "runs it in Ollama, which the run's own VRAM column cannot see", "iv.c.iii"),
+    "probe_latency": Column("Latency (ms/encounter)", "Probe: the time one record adds once the model is loaded, (wall time on the first N "
+                            "records − on the first record) / (N − 1)", "iv.c.i"),
+    "probe_startup": Column("Startup (s)", "Probe: process start and model loading, wall time on one record minus one latency", "iv.c.i"),
     "pareto": Column("Pareto", "No other real model is at least as good on both axes and better on one (identity, the unchanged input, is a reference)", ""),
     "phi_before": Column("PII before (Phi)", "PII entities the fine-tuned Phi-3 PII model (ab-ai/PII-Model-Phi3-Mini) finds in the original "
                          "text, an independent detector", "i.a"),
@@ -163,6 +169,8 @@ HEADLINE = (
     Col("ms_per_encounter", "efficiency", "ms_per_encounter", digits=1),
     Col("peak_ram_mb", "efficiency", "peak_ram_mb", digits=1),
     Col("vram_ok", "efficiency", "within_vram_budget", digits="bool"),
+    Col("probe_latency", "efficiency", "probe.latency_ms_per_encounter", digits=1),
+    Col("probe_vram", "efficiency", "probe.total_peak_vram_mb", digits=1),
 )
 
 
@@ -240,6 +248,7 @@ class Data:
         gold = read_json(OUT / "gold" / "aci_eval" / "merged_stats.json")
         self.gold: dict = gold if isinstance(gold, dict) else {}
         self.phi = load_tree(OUT / "phi")  # bonus/phi_privacy.py: PII found by an independent detector before and after
+        self.probe = load_tree(OUT / "probe")  # bonus/probe.py: VRAM with the Ollama server, and latency, on a few records
         self.manifest: dict[str, dict] = {}  # the converter manifest behind each suite (its origin, for the sources)
         for s_, i in self.info.items():
             if i.get("source") and isinstance(mf := read_json(DATA / "converted" / i["source"] / "manifest.json"), dict):
@@ -397,6 +406,8 @@ def score_rows(R: Results, m: str, s: str, sc: dict) -> None:
 
 
 RUN_KEYS = ("ms_per_encounter", "peak_ram_mb", "peak_vram_mb", "within_vram_budget", "wall_s", "n_records")
+PROBE_KEYS = ("latency_ms_per_encounter", "startup_s", "peak_vram_mb", "ollama_peak_vram_mb", "total_peak_vram_mb", "within_vram_budget", "peak_ram_mb",
+              "ollama_peak_ram_mb", "records")  # fmt: skip
 
 
 def attack_rows(R: Results, m: str, s: str, at: dict) -> None:
@@ -440,6 +451,10 @@ def collect(d: Data) -> tuple[Results, list[dict]]:
                     R.add(m, s, "efficiency", k, r.get(k), n=r.get("n_records") if k == "ms_per_encounter" else None)
             if at := d.attacks.get(m, {}).get(s):
                 attack_rows(R, m, s, at)
+            if pr := d.probe.get(m, {}).get(s):
+                for k in PROBE_KEYS:
+                    R.add(m, s, "efficiency", f"probe.{k}", pr.get(k), n=pr.get("records") if k == "latency_ms_per_encounter" else None,
+                          notes="probe (eval probe): " + ", ".join(f"{e}={v}" for e, v in (pr.get("ollama_env") or {}).items()) if k == "total_peak_vram_mb" else "")
         runs = [r for s in d.suites if (r := d.run(m, s))]
         if runs:
             n = sum(num(r.get("n_records")) or 0 for r in runs)
@@ -788,7 +803,8 @@ def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[st
     section(md, "Headline")
     md += table(["model"] + [c.header for c in HEADLINE], [[name(m)] + [headline_cell(d, m, c, heads[m][c.key]) for c in HEADLINE] for m in models])
     md += ["Shares: 1 = everything removed, kept or recovered. LLM judge = the primary coder `" + (prim or DASH) + "`; the decision tree is "
-           "scored at its own 3-character category level. Runtime, RAM and VRAM are from the `" + HEAD + "` run (– for a delivered JSONL). "
+           "scored at its own 3-character category level. Runtime, RAM and VRAM are from the `" + HEAD + "` run (– for a delivered JSONL); latency and "
+           "peak VRAM incl. Ollama are from the probe (`eval probe`, see VRAM and latency probe), which also counts the LLM a model runs in Ollama. "
            "`identity` (input unchanged) is a reference, not a competitor.", ""]  # fmt: skip
 
     t = tradeoff(d, R)
@@ -1058,6 +1074,22 @@ def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[st
         section(md, "Efficiency over all suites run (bonus iv.c)")
         md += table(["model", "suites", "records", "wall s", H("ms_per_encounter"), H("peak_ram_mb"), H("peak_vram_mb"), H("vram_ok")], rows)
 
+    probed = [m for m in models if d.probe.get(m, {}).get(HEAD)]
+    if probed:
+        pr0 = d.probe[probed[0]][HEAD]
+        env = ", ".join(f"`{k}={v}`" for k, v in (pr0.get("ollama_env") or {}).items())
+        section(md, "VRAM and latency probe (bonus iv.c)",
+                f"`python3 -I eval probe`: every runnable model on the first {pr0.get('records')} records of `{HEAD}` and on the first record alone, "
+                f"after every Ollama model is unloaded, on {pr0.get('gpu') or 'no GPU'}" + (f" (Ollama server: {env})" if env else "") + ". VRAM and RAM "
+                "are sampled every 0.2 s for the model's processes and, apart, for the Ollama server's, so a model whose LLM runs in Ollama "
+                "(the run's own VRAM column shows 0 for it) pays for it here. Latency = (wall time on N records − on 1) / (N − 1); startup = "
+                "wall time on 1 record − one latency. A delivered JSONL has nothing to run.")  # fmt: skip
+        rows = [[name(m)] + [fmt(R.get(m, HEAD, "efficiency", f"probe.{k}"), dg) for k, dg in
+                             (("peak_vram_mb", 1), ("ollama_peak_vram_mb", 1), ("total_peak_vram_mb", 1), ("within_vram_budget", "bool"), ("peak_ram_mb", 1),
+                              ("ollama_peak_ram_mb", 1), ("latency_ms_per_encounter", 1), ("startup_s", 2))] for m in probed]  # fmt: skip
+        md += table(["model", "VRAM, model (MB)", "VRAM, Ollama (MB)", H("probe_vram"), H("vram_ok"), "RAM, model (MB)", "RAM, Ollama (MB)", H("probe_latency"),
+                     H("probe_startup")], rows)  # fmt: skip
+
     md += glossary(d) + sources(d)
 
     icd_suites = [s for s in d.suites if any(g(d.score(m, s), "icd") for m in models)]
@@ -1076,6 +1108,7 @@ def render(d: Data, R: Results, nc: list[dict], generated: str) -> tuple[list[st
                             **{k: {"anonymized": R.get(m, s, "attack", f"{k}.anonymized.recovered"), "control": R.get(m, s, "attack", f"{k}.control.recovered")}
                                for k in (g(d.attacks.get(m, {}).get(s), "attacks") or {})}} for m in models if s in d.attacks.get(m, {})} for s in at_suites},
         "phi": {s: {m: d.phi[m][s].get("total") for m in models if s in d.phi.get(m, {})} for s in d.suites if any(s in d.phi.get(m, {}) for m in models)},
+        "probe": {m: {k: R.get(m, HEAD, "efficiency", f"probe.{k}") for k in PROBE_KEYS} for m in models if d.probe.get(m, {}).get(HEAD)},
         "robustness": {s: {"complexity_rank": ranks.get(s), "models": {m: {k: R.get(m, s, "robustness", k) for k in ("privacy", "high_risk", "terms")} for m in models}}
                        for s in robust},
         "complexity_rank": ranks,
@@ -1133,7 +1166,7 @@ def discord(d: Data, heads: dict, t: dict, generated: str) -> list[str]:
     prim, models = d.primary, d.models
     cols = [("privacy", "privacy"), ("direct", "direct"), ("privacy_harness", "harness gold"), ("icd_concepts", "ICD concepts"),
             ("icd_f1_anon", "F1 (LLM judge)"), ("icd_f1_delta", "Δ F1 (LLM judge)"), ("tree_f1_anon", "F1 (tree)"), ("recovered_llm", "recovered (LLM adv.)"),
-            ("ms_per_encounter", "ms/enc"), ("vram_ok", "VRAM ≤ 4 GB")]  # fmt: skip
+            ("ms_per_encounter", "ms/enc"), ("probe_vram", "VRAM MB"), ("vram_ok", "VRAM ≤ 4 GB")]  # fmt: skip
     digits = {c.key: c.digits for c in HEADLINE}
     rows = [[name(m)] + [fmt(heads[m][k], digits[k]) for k, _ in cols] for m in models]
     md = [f"**Anonymization eval, `{HEAD}`, same pipeline for every model** ({generated})", ""]

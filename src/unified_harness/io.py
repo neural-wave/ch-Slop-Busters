@@ -132,8 +132,17 @@ def output_paths(out_root: str | Path, run_date: date) -> OutputPaths:
     return OutputPaths(folder / f"{stem}.jsonl", folder / f"{stem}.decisions.jsonl", folder / f"{stem}.summary.json")
 
 
+def _umask() -> int:
+    mask = os.umask(0)
+    os.umask(mask)
+    return mask
+
+
 def _write_temp(folder: Path, lines: Iterable[str]) -> Path:
     fd, tmp = tempfile.mkstemp(dir=folder, prefix=".tmp-", suffix=".part")
+    # mkstemp creates the file 0600; publish it with the mode open() would give it (0644 under the usual umask), so the
+    # outputs stay readable when a container user (uid 10001 in the image) writes them into a host folder.
+    os.fchmod(fd, 0o666 & ~_umask())
     with os.fdopen(fd, "w", encoding="utf-8") as fh:
         for line in lines:
             fh.write(line)

@@ -110,6 +110,9 @@ From `data/eval/runs/<model>/<suite>/run.json`, one fresh process per (model, su
 | peak RAM MB | `run.peak_ram_mb` | Peak of the summed RSS of the process and all its children, sampled every 0.2 s, at least the kernel's `ru_maxrss`. Overcounts shared pages | MB |
 | peak VRAM MB | `run.peak_vram_mb` | Peak of the summed `nvidia-smi` memory of the tree's processes, sampled every 0.5 s, CUDA context included | MB |
 | VRAM ≤ 4096 MB | `run.within_vram_budget` | peak VRAM ≤ 4,096 MB, the challenge budget | yes/no |
+| probe latency | `probe.latency_ms_per_encounter` | `eval probe`: (wall s on the suite's first N records − on its first record) / (N − 1), after every Ollama model is unloaded: the time a record adds once the model is loaded | ms |
+| probe startup | `probe.startup_s` | Probe: wall s on one record − one latency (process start, model loading) | s |
+| probe VRAM incl. Ollama | `probe.total_peak_vram_mb` | Probe: peak of the model tree's plus the Ollama server tree's `nvidia-smi` memory, summed per 0.2 s sample (`probe.peak_vram_mb` and `probe.ollama_peak_vram_mb` apart), CUDA context included; `probe.within_vram_budget` = ≤ 4,096 MB | MB |
 | timed out | `run.timed_out` | The model exceeded its `timeout` (default 3,600 s) and its process tree was killed (exit code 124) | bool |
 
 ## Explainability (bonus)

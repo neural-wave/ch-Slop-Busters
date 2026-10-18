@@ -121,6 +121,10 @@ def tree(tmp_path, monkeypatch):
     write(out / "runs" / "alpha_nocodes" / "aci_eval" / "run.json", run(700.0, 2000.0, 1000.0))  # a run.json without a run block in the score
     write(out / "runs" / "beta" / "pmc_patients" / "run.json", {**run(10.0, 10.0, 0.0), "exit_code": None})  # still running: ignored
     write(out / "attacks" / "alpha" / "aci_eval.json", attack(0.1, 0.2, a4_error=True))
+    write(out / "probe" / "alpha" / "aci_eval.json", {"model": "alpha", "suite": "aci_eval", "records": 10, "gpu": "Toy GPU", "ollama_env": {"LLAMA_ARG_THREADS": "2"},
+                                                      "latency_ms_per_encounter": 812.4, "startup_s": 3.21, "peak_vram_mb": 0.0, "ollama_peak_vram_mb": 2850.0,
+                                                      "total_peak_vram_mb": 2850.0, "within_vram_budget": True, "peak_ram_mb": 95.0,
+                                                      "ollama_peak_ram_mb": 1100.0})  # fmt: skip
     write(out / "attacks" / "beta" / "aci_eval.json", attack(0.3, 0.05, a4=0.2))
     write(out / "attacks" / "gamma" / "aci_eval.json", attack(0.3, 0.05, a4=0.1))
     write(out / "attacks" / "identity" / "aci_eval.json", attack(1.0, 1.0, a4=0.8))
@@ -176,10 +180,12 @@ def test_every_headline_cell_is_a_csv_row(tree):
     assert checked >= 60
     # spot values: full precision in the CSV, 3 decimals (thousands separator) in the markdown
     alpha = dict(zip([c.key for c in R.HEADLINE], next(r for r in rows if model_of(r[0]) == "alpha")[1:], strict=True))
+    beta = next(r for r in rows if model_of(r[0]) == "beta")
     assert alpha["privacy"] == "0.900" and alpha["privacy_harness"] == "0.912" and alpha["ms_per_encounter"] == "512.2"
     assert alpha["peak_ram_mb"] == "1,234" and alpha["vram_ok"] == "yes" and alpha["attack_max"] == "0.200"
+    assert alpha["probe_vram"] == "2,850" and alpha["probe_latency"] == "812.4"  # the probe, Ollama's VRAM included
+    assert beta[[c.key for c in R.HEADLINE].index("probe_vram") + 1] == R.DASH  # no probe: –
     assert index[("alpha", "aci_eval", "privacy", "removed", "", "gold:harness")]["value"] == "0.9123"
-    beta = next(r for r in rows if model_of(r[0]) == "beta")
     assert beta[[c.key for c in R.HEADLINE].index("vram_ok") + 1] == "**no**"
     wide = {r["model"]: r for r in read_csv(tree / "results_headline.csv")}
     assert float(wide["alpha"]["icd_f1_delta"]) == -0.02 and wide["beta"]["vram_ok"] == "0" and wide["identity"]["reference"] == "1"

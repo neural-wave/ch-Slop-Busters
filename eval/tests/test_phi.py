@@ -71,3 +71,20 @@ def test_before_after_counts(harness):
     broken = P.evaluate(P.Scanner("phi", "d2", lambda m, p: "garbage"), "clean", "toy")
     assert broken["errors"] == 12 and broken["total"]["before"] == 0 and broken["total"]["removed"] is None  # 6 fields before, 6 after
     assert P.evaluate(scanner, "missing", "toy") == "no output"
+
+
+def test_truncated_answers_are_salvaged_and_failed_chunks_not_asked_twice(harness):
+    loop = "\n{'firstname': ['Andrew'], 'city': ['Boston'], 'firstname': ['Andrew', 'Wei'], 'jobtype': ['doc"  # cut by the output limit
+    assert P.salvage(loop) == {"firstname": ["Andrew", "Wei"], "city": ["Boston"]}
+    with pytest.raises(ValueError):
+        P.salvage("{'jobtype': ['doc")
+    cut = P.evaluate(P.Scanner("phi", "d3", lambda m, p: fake_detector(m, p)[:-1]), "identity", "toy")  # every answer loses its closing brace
+    assert cut["salvaged"] == 6 and cut["errors"] == 0 and cut["total"]["before"] == cut["total"]["after"] == 8
+    asked: list[str] = []
+
+    def flaky(model: str, prompt: str) -> str:  # unreadable the first time a chunk is asked, fine the next time
+        asked.append(prompt)
+        return "garbage" if asked.count(prompt) == 1 else fake_detector(model, prompt)
+
+    ident = P.evaluate(P.Scanner("phi", "d4", flaky), "identity", "toy")
+    assert len(asked) == 6 and ident["errors"] == 12 and ident["total"]["before"] == ident["total"]["after"] == 0  # same count before and after

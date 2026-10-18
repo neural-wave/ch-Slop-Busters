@@ -20,8 +20,11 @@ before / after = distinct (category, value) mentions the detector lists per chun
 removed = 1 − after / before, clipped at 0 when it finds more after than before; None without any mention before. A
 generalized value (`fifty-something`) still counts after when the detector reads it as an age. The detector is noisy
 (it reads `Chief Complaint` as a job, an age as a DOB): a false positive in text no model touches counts both before
-and after, so `removed` is a lower bound and best compared between models. A chunk whose answer cannot be parsed
-counts in `errors` and as no mention.
+and after, so `removed` is a lower bound and best compared between models. On some chunks it loops, repeating labels
+until the output limit, and the object never closes: its complete `label: [values]` pairs are kept (`salvage`, repeats
+merged), cached like any answer and counted in `salvaged`. A chunk whose answer still cannot be read counts in
+`errors` and as no mention, and is not asked again in the same run, so an unchanged chunk counts the same before and
+after.
 
 Run it LAST and alone: it unloads every other Ollama model first, keeps only the detector loaded, and unloads it at
 the end. Answers are cached by chunk text under data/eval/cache/phi/ (atomic writes, so a killed run resumes): the
@@ -127,6 +130,24 @@ def parse(answer: str) -> dict[str, list[str]]:
     return out
 
 
+PAIR = re.compile(r"""['"]([A-Za-z_]+)['"]\s*:\s*(\[[^\[\]]*\])""")
+
+
+def salvage(answer: str) -> dict[str, list[str]]:
+    """The complete `label: [values]` pairs of an answer cut off by the output limit (a repetition loop), repeats merged."""
+    out: dict[str, list[str]] = {}
+    for k, vals in PAIR.findall(answer[answer.find("{") :]):
+        try:
+            items = ast.literal_eval(vals)
+        except (ValueError, SyntaxError):
+            continue
+        bucket = out.setdefault(k.lower(), [])
+        bucket += [s for x in items if isinstance(x, (str, int, float)) and (s := str(x)).strip() and s not in bucket]
+    if not out:
+        raise ValueError("unclosed object, nothing to salvage")
+    return out
+
+
 def mentions(entities: dict[str, list[str]]) -> Counter:
     """Distinct (category, value) mentions of one chunk per gold category: `Martha` listed as both first and last name
     counts once. Unmapped labels, dropped labels and placeholder values are not counted."""
@@ -150,7 +171,8 @@ class Scanner:
 
     def __init__(self, model: str, digest: str, generate: Callable[[str, str], str] | None = None):
         self.model, self.digest, self.generate = model, digest, generate or ollama_generate
-        self.calls, self.errors = 0, 0
+        self.calls, self.errors, self.salvaged = 0, 0, 0
+        self.failed: set[str] = set()  # chunks unreadable in this run: not asked again, so they count the same before and after
 
     def chunk(self, text: str) -> dict[str, list[str]] | None:
         path = PCACHE / f"{sha1_text(self.model, self.digest, PROMPT, text)}.json"
@@ -158,10 +180,21 @@ class Scanner:
             return json.loads(path.read_text(encoding="utf-8"))
         except (OSError, ValueError):
             pass
+        if path.name in self.failed:
+            self.errors += 1
+            return None
         try:
-            ents = parse(self.generate(self.model, PROMPT.format(text=text)))
+            answer = self.generate(self.model, PROMPT.format(text=text))
+            try:
+                ents = parse(answer)
+            except ValueError as e:
+                if not str(e).startswith("unclosed object"):
+                    raise
+                ents = salvage(answer)
+                self.salvaged += 1
         except (OSError, ValueError, SyntaxError):
             self.errors += 1
+            self.failed.add(path.name)
             return None
         self.calls += 1
         if self.calls % 25 == 0:
@@ -201,10 +234,10 @@ def evaluate(scanner: Scanner, model: str, suite: str, limit: int = 0) -> dict |
     original = load_jsonl(SUITES_DIR / suite / "encounters.jsonl")[: limit or None]
     out = {r.get("encounter_id"): r for r in load_jsonl(rdir / "output.jsonl")}
     pairs = [(o, out[o["encounter_id"]]) for o in original if isinstance(out.get(o["encounter_id"]), dict)]
-    errors0, calls0 = scanner.errors, scanner.calls
+    errors0, calls0, salvaged0 = scanner.errors, scanner.calls, scanner.salvaged
     before, after = scanner.count([o for o, _ in pairs]), scanner.count([a for _, a in pairs])
     return {"model": model, "suite": suite, "n_records": len(pairs), "phi_model": scanner.model, "digest": scanner.digest, **summary(before, after),
-            "errors": scanner.errors - errors0, "new_calls": scanner.calls - calls0, "limit": limit}  # fmt: skip
+            "errors": scanner.errors - errors0, "salvaged": scanner.salvaged - salvaged0, "new_calls": scanner.calls - calls0, "limit": limit}  # fmt: skip
 
 
 def main(argv: list[str] | None = None) -> int:
