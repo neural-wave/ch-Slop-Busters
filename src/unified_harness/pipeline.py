@@ -42,8 +42,9 @@ def _worth(sp: Span, text: str) -> bool:
 class Anonymizer:
     """Holds configuration and (lazily) the optional local models."""
 
-    def __init__(self, cfg: Config):
+    def __init__(self, cfg: Config, status=None):
         self.cfg = cfg
+        self.status = status or (lambda message: None)  # progress messages for the user (CLI: stderr)
         self._models: dict = {}
         self.vram_peak_mb = 0.0
         self.vram_events: list[str] = []
@@ -59,7 +60,15 @@ class Anonymizer:
             if det is None:
                 from .detect import encoders as models
 
+                what = {"llm": f"{self.cfg.llm_model} in Ollama", "deid": "deid_roberta_i2b2", "gliner": "GLiNER-PII"}
+                self.status(f"loading {what.get(name, name)} (the first load can take up to a minute)...")
+                t_load = time.perf_counter()
                 det = models.load(name, self.cfg)
+                vram = getattr(det, "vram_mb", None)
+                self.status(
+                    f"{what.get(name, name)} ready in {time.perf_counter() - t_load:.1f} s"
+                    + (f", {vram:,.0f} MB VRAM" if isinstance(vram, (int, float)) and vram == vram else "")
+                )
                 self._models[name] = det
             if hasattr(det, "encounter_id"):
                 det.encounter_id = getattr(self, "current_id", "")
