@@ -21,3 +21,9 @@ docker compose down
 ```
 
 `./data` is mounted at `/data` and `./outputs` at `/outputs`.
+
+## Deliverables
+
+- [`anonymized_eval_patient_doctor_encounters.jsonl`](anonymized_eval_patient_doctor_encounters.jsonl): the 67
+  encounters of [`data/eval_patient_doctor_encounters.jsonl`](data/eval_patient_doctor_encounters.jsonl) anonymized
+  by unified-harness in its default configuration (rules + local LLM, privacy preset)
