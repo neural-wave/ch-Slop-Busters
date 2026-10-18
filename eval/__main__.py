@@ -51,6 +51,7 @@ COMMANDS: dict[str, tuple[str | None, str]] = {
     "robustness": ("eval.bonus.robustness", "robustness on unseen document formats (bonus)"),
     "drift": ("eval.bonus.drift", "corpus drift of every suite from ACI train"),
     "phi": ("eval.bonus.phi_privacy", "privacy before/after by an independent PII detector (Phi-3); run last, alone in memory"),
+    "probe": ("eval.bonus.probe", "VRAM (Ollama server included) and latency of every runnable model on a few records; run alone on the GPU"),
     "gold": ("eval.gold.merge_aci_gold", "merge the three ACI golds into data/eval/gold/"),
     "all": (None, "every step in order: " + " ".join(f"[{c}]" if opt else c for c, _, opt in STEPS) + " ([ ] = optional)"),
 }  # fmt: skip

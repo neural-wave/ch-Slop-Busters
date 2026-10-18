@@ -54,6 +54,7 @@ third ACI gold and the VM gold and tools were vendored or merged from them, and 
 | `judge` | `coders/agent.py` | runs, suites | `<container>/judge/<suite>/` (export), `data/eval/judge/<suite>/key.json`, the `llm_judge` ICD cache (import) | The LLM judge by agents: `export` writes the notes in batches with a coding prompt, `import` caches the agents' codes. See [LLM judge by agents](#llm-judge-by-agents) |
 | `adversary` | `bonus/adversary.py` | runs, suites | `<container>/adversary/<suite>/` (export), `data/eval/adversary/<suite>/key.json`, attack A6 (import) | The LLM agent adversary: `export` writes blinded sets and one prompt per set for agents, `import` scores their answers as attack A6. See [Agent adversary](#agent-adversary-a6) |
 | `phi` | `bonus/phi_privacy.py` | runs, suites | `data/eval/phi/<model>/<suite>.json` | Privacy before/after by an independent PII detector (Phi-3 PII), per category. Not part of `all`: run it last, alone in memory. See [Independent privacy check](#independent-privacy-check-phi) |
+| `probe` | `bonus/probe.py` | `models.toml`, a suite | `data/eval/probe/<model>/<suite>.json` | VRAM with the Ollama server included, and latency, of every runnable model on a few records. Not part of `all`: run it alone on the GPU. See [VRAM and latency probe](#vram-and-latency-probe) |
 
 `run` and `all` default to every enabled model and every suite. `all` hands `--models`, `--suites`, `--icd` and
 `--force` to the steps that take them (and `--if-stale` to `suites`), keeps going when a step fails or crashes, and
@@ -376,8 +377,21 @@ model's output (**after**) in chunks of 2,000 characters with the model card's p
 categories (`LABELS`; sex, gender, height, amounts and title prefixes are dropped, placeholders ignored), and
 `removed` = 1 − after / before, in total and per category. It is evaluation only, never a model row. It unloads every
 other Ollama model first and the detector at the end, so it runs alone in memory: run it **last**. Answers are cached
-by chunk text (`data/eval/cache/phi/`), so the originals are scanned once. About 400 calls for the `aci_eval`
+by chunk text (`data/eval/cache/phi/`), so the originals are scanned once. On some chunks the detector loops (the same labels repeated up to its output limit, so the answer never closes): its complete `label: [values]` pairs are kept and counted in `salvaged`; a chunk that still cannot be read is an `error`, never asked twice in a run, so an unchanged chunk counts the same before and after. About 400 calls for the `aci_eval`
 originals and up to 400 per model.
+
+### VRAM and latency probe
+
+`python3 -I eval probe [--models ...] [--suite aci_eval] [--records 10]` (`bonus/probe.py`) answers what `run` cannot:
+`run` measures a model's own process tree over a whole suite, so a model whose LLM runs in the shared Ollama server
+(`zeroshot`, `unified_harness`) shows 0 MB of VRAM, and its wall time includes loading. The probe runs every model
+with a command twice, on the suite's first record and on its first N records (blinded for a `blind_codes` model), each
+time after every Ollama model is unloaded, and samples every 0.2 s the RSS and nvidia-smi memory of the model's tree
+and, apart, of the Ollama server's tree. `latency_ms_per_encounter` = (wall(N) − wall(1)) / (N − 1), the time a record
+adds once the model is loaded; `startup_s` = wall(1) − latency; `total_peak_vram_mb` = the peak of the two VRAMs summed
+per sample, against the 4 GB budget. It takes a few minutes for every model. Run it alone on the GPU, with only the
+Ollama server the models use (the probe counts every `ollama serve`): another process's load would slow the models
+down. The report shows it in the headline (latency, peak VRAM incl. Ollama) and in its own table.
 
 ### Robustness (bonus)
 
@@ -451,7 +465,7 @@ pytest is the one development dependency (the harness itself is standard library
 root, without installing anything into the system Python:
 
 ```bash
-uv run --no-project --with pytest python3 -I -m pytest eval/tests -q                  # all 307, about 10 s
+uv run --no-project --with pytest python3 -I -m pytest eval/tests -q                  # all 311, about 25 s
 uv run --no-project --with pytest python3 -I -m pytest eval/tests/test_gold.py -q     # one file
 uv run --no-project --with pytest python3 -I -m pytest eval/tests -q -k privacy       # by name
 ```
@@ -478,7 +492,8 @@ vocabulary with fixed ones. A few tests use real data and skip when it is missin
 | `test_report.py` | 9 | Report on a synthetic `data/eval` tree: every headline cell is also a row in `results.csv` (the tree at its category level), Pareto flags of both fronts, missing data and errors shown as `–`/markers without crashing, the ablation table, CSV BOM and header, well-formed SVG, the Discord summary, the glossary (every column) and the sources |
 | `test_judge.py` | 6 | The LLM judge by agents: the export (each distinct note once, never two versions of an encounter in a batch, failed runs ignored, the key kept outside the package, each agent's file = reading protocol + prompt), nothing imported = a coder error, the import into the cache scored by `icd.score`, a missing answer = a failed prediction, cached notes not exported again; repeat passes (every note re-exported in new batches, majority of 3, both of 2, pass agreement in `passes.json`); `--new-only` passes for notes that came later (only those exported, the earlier votes kept) |
 | `test_adversary.py` | 4 | The agent adversary: the blinded export (only record ids and text, shared sets, the key kept outside the package, filled prompts), the refusal to overwrite answers, the import scored like A4 with the original-text set as control (missing and malformed answers), A6 kept by automated attack runs, a changed output skipped |
-| `test_phi.py` | 8 | The Phi check: chunking at line breaks, the detector's dict answers (JSON or Python literal), the label map, before/after counts with a fake detector, the cache, unparseable answers counted as errors |
+| `test_probe.py` | 3 | The VRAM and latency probe: latency and startup from the one-record and N-record runs (a failed run or noise leaves them empty), the budget flag, the Ollama server's processes counted apart from the model's, a probe end to end with a fake model (blinded input, the per-model file) |
+| `test_phi.py` | 9 | The Phi check: chunking at line breaks, the detector's dict answers (JSON or Python literal), the label map, before/after counts with a fake detector, the cache, unparseable answers counted as errors, answers cut by a repetition loop salvaged, a failed chunk never asked twice in a run (identity stays at removed = 0) |
 | `test_adapters.py` | 3 | The zero-shot runner (copies a complete output, refuses a partial one), the decision-tree coder's output contract (skipped without `../decision-models` or numpy) and the unified-harness runner in rules mode (records, sidecar and summary copied, every change explained by the sidecar, no work folder left, nothing published for an input the model refuses) |
 | `test_run.py` | 15 | The run cache's code fingerprint (globs, renames, location independence, relative paths) and the process runner: timeout and SIGTERM/SIGHUP to the harness kill the model's whole process tree, a command that cannot start is a failed run, an exit at the deadline is not a timeout, wall time ends at the model's exit, an interrupted run is never cached |
 | `test_suites.py` | 9 | Suite caching: built once and reused, rebuilt when the source, the definition, the build code or a suite file changes, byte-identical rebuilds, a missing source keeps the old suite, `--if-stale`, the VM annotation dir kept across rebuilds |
