@@ -244,7 +244,10 @@ codes against the other's, code and category level), a direct measure of the age
 
 A note without an answer is a failed prediction (`no_agent_answer`, counted in `errors`, never cached); while nothing
 is imported the coder's entry is an error. The next `export` skips notes already cached, so a new model only adds its
-own new notes. A new export refuses to run over existing answers unless `--force`. Keep every pass's folder and key:
+own new notes. To give those notes repeat passes too, export them as new passes with `--new-only` (only the notes not
+cached yet), all of them before importing: `judge export --pass 4 --new-only`, then `--pass 5` and `--pass 6` likewise,
+one agent per batch, then `import`. Each new note gets the majority of its 3 passes; the notes passes 1-3 coded keep
+their vote, and `passes.json` compares only passes that coded the same notes. A new export refuses to run over existing answers unless `--force`. Keep every pass's folder and key:
 `import` recomputes the vote from all of them.
 
 ### Explainability and no-codes (bonus)
@@ -448,7 +451,7 @@ pytest is the one development dependency (the harness itself is standard library
 root, without installing anything into the system Python:
 
 ```bash
-uv run --no-project --with pytest python3 -I -m pytest eval/tests -q                  # all 306, about 10 s
+uv run --no-project --with pytest python3 -I -m pytest eval/tests -q                  # all 307, about 10 s
 uv run --no-project --with pytest python3 -I -m pytest eval/tests/test_gold.py -q     # one file
 uv run --no-project --with pytest python3 -I -m pytest eval/tests -q -k privacy       # by name
 ```
@@ -473,7 +476,7 @@ vocabulary with fixed ones. A few tests use real data and skip when it is missin
 | `test_explain.py` | 18 | Explainability: token alignment, full and partial coverage of changed tokens, decisions with an empty reason not counted, keep decisions, no sidecar vs inline `explanations`, A+D sidecar normalization and scores, offsets checked against the original text, a sidecar with a bad encoding, the anonymous adapter's decisions, the sidecar copied for precomputed models |
 | `test_nocodes.py` | 3 | No-codes pairing (by `_nocodes` suffix or `base` key) and the paired values and deltas |
 | `test_report.py` | 9 | Report on a synthetic `data/eval` tree: every headline cell is also a row in `results.csv` (the tree at its category level), Pareto flags of both fronts, missing data and errors shown as `–`/markers without crashing, the ablation table, CSV BOM and header, well-formed SVG, the Discord summary, the glossary (every column) and the sources |
-| `test_judge.py` | 5 | The LLM judge by agents: the export (each distinct note once, never two versions of an encounter in a batch, failed runs ignored, the key kept outside the package, each agent's file = reading protocol + prompt), nothing imported = a coder error, the import into the cache scored by `icd.score`, a missing answer = a failed prediction, cached notes not exported again; repeat passes (every note re-exported in new batches, majority of 3, both of 2, pass agreement in `passes.json`) |
+| `test_judge.py` | 6 | The LLM judge by agents: the export (each distinct note once, never two versions of an encounter in a batch, failed runs ignored, the key kept outside the package, each agent's file = reading protocol + prompt), nothing imported = a coder error, the import into the cache scored by `icd.score`, a missing answer = a failed prediction, cached notes not exported again; repeat passes (every note re-exported in new batches, majority of 3, both of 2, pass agreement in `passes.json`); `--new-only` passes for notes that came later (only those exported, the earlier votes kept) |
 | `test_adversary.py` | 4 | The agent adversary: the blinded export (only record ids and text, shared sets, the key kept outside the package, filled prompts), the refusal to overwrite answers, the import scored like A4 with the original-text set as control (missing and malformed answers), A6 kept by automated attack runs, a changed output skipped |
 | `test_phi.py` | 8 | The Phi check: chunking at line breaks, the detector's dict answers (JSON or Python literal), the label map, before/after counts with a fake detector, the cache, unparseable answers counted as errors |
 | `test_adapters.py` | 3 | The zero-shot runner (copies a complete output, refuses a partial one), the decision-tree coder's output contract (skipped without `../decision-models` or numpy) and the unified-harness runner in rules mode (records, sidecar and summary copied, every change explained by the sidecar, no work folder left, nothing published for an input the model refuses) |

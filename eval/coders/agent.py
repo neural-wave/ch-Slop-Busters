@@ -1,6 +1,6 @@
 """Agent coder: ICD-10-CM codes written by LLM agents from a prompt (the LLM judge), fed to the harness through its cache.
 
-Usage: python3 -I eval judge export [--coder llm_judge] [--suite aci_eval] [--pass N] [--batch-size 40] [--out DIR] [--force]
+Usage: python3 -I eval judge export [--coder llm_judge] [--suite aci_eval] [--pass N [--new-only]] [--batch-size 40] [--out DIR] [--force]
        python3 -I eval judge import [--coder llm_judge] [--suite aci_eval]
        python3 -I eval judge status [--coder llm_judge] [--suite aci_eval]
 
@@ -24,6 +24,10 @@ new batches (seed N - 1 unless given) in <container>/judge/<suite>_passN/, key k
 each note. `import` reads every pass it finds and caches, per note, the codes that more than half of the passes that
 answered it gave (majority vote: 2 of 3 passes, both of 2). It also writes passes.json beside the keys: the code- and
 category-level agreement of every two passes over the notes both answered, a direct measure of the agent variance.
+
+New notes after the passes (a new model, a rerun that changed an output) get passes of their own: `export --pass N
+--new-only` writes only the notes not cached yet. Export all of them first, e.g. passes 4, 5 and 6, then import: each
+new note gets the majority of its 3 new passes and every cached note keeps the vote of the passes that answered it.
 """
 
 from __future__ import annotations
@@ -183,8 +187,10 @@ def batches(todo: dict[str, dict], size: int, seed: int) -> list[list[str]]:
     return [b for b in out if b]
 
 
-def export(suite: str, coder: AgentCoder, out: Path, size: int = 40, seed: int | None = None, force: bool = False, pass_: int = 1) -> dict:
-    """Pass 1 writes the notes not cached yet; a repeat pass (pass_ >= 2) every note, in new batches."""
+def export(suite: str, coder: AgentCoder, out: Path, size: int = 40, seed: int | None = None, force: bool = False, pass_: int = 1,
+           new_only: bool = False) -> dict:
+    """Pass 1 writes the notes not cached yet; a repeat pass (pass_ >= 2) every note, in new batches, or with `new_only`
+    the notes not cached yet (the passes of notes that came after the others)."""
     from eval import icd
 
     answers = out / "answers"
@@ -192,7 +198,7 @@ def export(suite: str, coder: AgentCoder, out: Path, size: int = 40, seed: int |
         raise SystemExit(f"judge: {answers} holds answers of an earlier export; import them first, or --force to delete them")
     seed = pass_ - 1 if seed is None else seed
     every = notes(suite)
-    todo = every if pass_ > 1 else {sha: n for sha, n in every.items()
+    todo = every if pass_ > 1 and not new_only else {sha: n for sha, n in every.items()
                                     if not all(icd._cache_path(coder, {"encounter_id": eid, "note": n["note"]}).exists() for _, eid in n["uses"])}  # fmt: skip
     if out.exists():
         shutil.rmtree(out)
@@ -212,7 +218,8 @@ def export(suite: str, coder: AgentCoder, out: Path, size: int = 40, seed: int |
         (out / "agents" / f"{name}.md").write_text(AGENT.format(DIR=out.resolve(), BATCH=name) + prompt, encoding="utf-8")
         key_batches[name] = rids
     key = {"suite": suite, "coder": coder.name, "config": coder.config, "pass": pass_, "seed": seed, "batch_size": size,
-           "created": time.strftime("%Y-%m-%d %H:%M:%S"), "package": str(out), "notes_total": len(every), "notes_cached": len(every) - len(todo),
+           "created": time.strftime("%Y-%m-%d %H:%M:%S"), "package": str(out), "new_only": new_only, "notes_total": len(every),
+           "notes_cached": len(every) - len(todo),
            "batches": key_batches, "texts": {sha: todo[sha] for sha in todo}}  # fmt: skip
     write_json(key_path(suite, pass_), key)
     return key
@@ -335,6 +342,7 @@ def main(argv: list[str] | None = None) -> int:
     e.add_argument("--out", type=Path, help="package folder (default <container>/judge/<suite>, <suite>_passN for a repeat pass)")
     e.add_argument("--seed", type=int, help="batching seed (default: pass number - 1)")
     e.add_argument("--force", action="store_true", help="delete answers of an earlier export")
+    e.add_argument("--new-only", action="store_true", help="with --pass N >= 2: only the notes not cached yet (export every such pass before importing)")
     i = sub.add_parser("import", help="cache the agents' codes as the coder's predictions")
     st = sub.add_parser("status", help="answers found per batch")
     for q in (e, i, st):
@@ -346,7 +354,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     coder = coder_of(a.coder)
     if a.cmd == "export":
-        key = export(a.suite, coder, a.out or package_dir(a.suite, a.pass_), a.batch_size, a.seed, a.force, a.pass_)
+        key = export(a.suite, coder, a.out or package_dir(a.suite, a.pass_), a.batch_size, a.seed, a.force, a.pass_, a.new_only)
         n = sum(len(r) for r in key["batches"].values())
         print(f"wrote {key['package']} (pass {key['pass']}): {n} notes to code in {len(key['batches'])} batches ({key['notes_cached']} of {key['notes_total']} already cached)")
         for name, rids in key["batches"].items():
