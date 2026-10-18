@@ -58,12 +58,15 @@ def evaluate(
     icd: str = "embed",
     name: str = "run",
     llm_model: str | None = None,
+    status=None,
 ) -> dict:
+    say = status or (lambda message: None)
     t0 = time.perf_counter()
     res: dict = {"name": name, "n_records": len(original)}
     res["schema_errors"] = validate_output(original, anonymized)
     if gold_dir and Path(gold_dir).exists():
         gold = privacy.load_gold(gold_dir)
+        say(f"scoring privacy against the labels in {gold_dir} ({len(gold)} encounters)...")
         p = privacy.score(original, anonymized, gold, decisions)
         res["privacy"] = p
         res["privacy_removed"] = p["removed"].get("ALL")
@@ -76,6 +79,7 @@ def evaluate(
         res["labeled_concept_recall"] = p["labeled_concept_recall"].get("ALL")
         res["keep_survival"] = p["keep_survival"].get("ALL")
         res["edit_precision"] = p.get("edit_precision")
+    say("measuring medical concept recall and ICD evidence retention...")
     cr = utility.concept_recall(original, anonymized)
     res["concepts"] = cr
     res["concept_recall"] = cr["concept_recall"]
@@ -87,10 +91,15 @@ def evaluate(
             if icd == "llm":
                 from . import icd_llm
 
+                say("ICD proxy: a local LLM selects codes for every text (this takes a while)...")
                 ip = icd_llm.icd_llm_proxy(
                     original, anonymized, space, paths.cache_dir() / "emb.sqlite", model=llm_model
                 )
             else:
+                say(
+                    f"ICD proxy: embedding {len(space)} code descriptions and {2 * len(original)} texts with bge-m3 "
+                    "in Ollama (cached after the first run; use --icd none to skip)..."
+                )
                 ip = utility.icd_proxy(original, anonymized, space, paths.cache_dir() / "emb.sqlite")
             res["icd"] = ip
             for k in ("icd_f1_original", "icd_f1_anonymized", "icd_agreement_f1"):

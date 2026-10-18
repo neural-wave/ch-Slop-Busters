@@ -99,7 +99,7 @@ The input is JSONL with one encounter per line: `encounter_id`, `dataset`, `dial
 | `--features` | from the preset | Extra feature flags, comma list: `F0`, `F2`, `F4` (see below) |
 | `--detector-model` | `qwen3.5:2b-q4_K_M` | Another Ollama model for the detector; pinned by digest in `models.toml`, or use `--allow-unpinned` |
 | `--allow-unpinned` | off | Experiments only: accept a detector model that is not pinned (recorded as unpinned in the summary) |
-| `--progress` | off | Print one line per encounter (time, decisions, LLM calls and cache hits) |
+| `--quiet` | off | No progress messages (by default every step and every encounter is reported on stderr) |
 | `--llm-log` | none | Append one JSON line per LLM call to this file (no record text) |
 | `--no-codes` | off | Do not read `icd10_codes` at inference (bonus task) |
 | `--out-root` | `outputs` | Results go to `<out-root>/<date>/` |
@@ -137,7 +137,7 @@ ollama pull gemma3:4b
 uv run unified-harness doctor --detector-model gemma3:4b --allow-unpinned
 uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl \
     --detector-model gemma3:4b --allow-unpinned \
-    --out-root outputs/gemma3 --progress --llm-log outputs/gemma3/calls.jsonl
+    --out-root outputs/gemma3 --llm-log outputs/gemma3/calls.jsonl
 ```
 
 Why models are pinned: an Ollama tag such as `gemma3:4b` is only a name, and a later `ollama pull` can
@@ -156,8 +156,12 @@ curl -s http://127.0.0.1:11434/api/tags      # copy the model's "digest"
 Each model keeps its own entries in the reply cache (the key includes the model digest). Compare models by
 evaluating each output with `evaluate` and comparing the rows, or with `gate`.
 
-**Monitoring a run.** `--progress` prints one line per encounter (time, decisions, LLM calls and cache
-hits). `--llm-log <file>` appends one JSON line per LLM call: time, encounter id, field, segment offsets,
+**Monitoring a run.** Every command reports what it is doing on stderr, with a timestamp: the environment
+check, reading the input, loading the model into Ollama (the first load can take up to a minute), one line
+per encounter (time, decisions, LLM calls and cache hits, time left), the output checks and publishing.
+`evaluate` reports each scoring stage, including the bge-m3 embeddings. `--quiet` silences these messages.
+The harness never downloads a model: a missing model stops the run at the first step and names the
+`ollama pull` command to run. `--llm-log <file>` appends one JSON line per LLM call: time, encounter id, field, segment offsets,
 length, seconds, whether it came from the cache, and how many names, places, organizations and jobs the
 model returned. It contains no text from the records. Follow it live with `tail -f <file>`.
 

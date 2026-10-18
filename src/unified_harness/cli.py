@@ -52,6 +52,16 @@ def _sha256(path: str | Path) -> str:
     return h.hexdigest()
 
 
+def _status_printer(quiet: bool):
+    """Progress messages for the user on stderr (stdout stays for results); silent with --quiet."""
+
+    def say(message: str) -> None:
+        if not quiet:
+            print(f"[{time.strftime('%H:%M:%S')}] {message}", file=sys.stderr, flush=True)
+
+    return say
+
+
 def _fail(message: str) -> int:
     print(f"error: {message}", file=sys.stderr)
     return 1
@@ -63,17 +73,24 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
     from .eval.resources import ollama_vram_mb, peak_rss_mb, torch_vram_mb
     from .pipeline import Anonymizer
 
+    say = _status_printer(a.quiet)
     detectors = _detectors(a.detectors) or MODE_DETECTORS[a.mode]
     if a.mode != "rules" and not a.detectors:
+        say(f"checking the environment for mode {a.mode} (Ollama, detector model, installed packages)...")
         report = doctor(a.mode, detector_model=a.detector_model, allow_unpinned=a.allow_unpinned)
+        for c in report.checks:
+            if c.ok and c.name != "python":
+                say(f"  ok  {c.name}: {c.detail}")
         if not report.ok:
             for c in report.checks:
                 if not c.ok:
                     print(f"error: {c.name}: {c.detail}", file=sys.stderr)
             return _fail(
-                f"{a.mode} mode is not ready (see `unified-harness doctor --mode {a.mode}`); nothing was anonymized"
+                f"{a.mode} mode is not ready (see `unified-harness doctor --mode {a.mode}`); nothing was anonymized. "
+                "The harness never downloads models: pull them with `ollama pull <model>` first"
             )
 
+    say(f"reading {a.input}...")
     try:
         records = read_jsonl(a.input)
     except InputError as exc:
@@ -102,8 +119,13 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
         llm_model=a.detector_model,
         llm_log=a.llm_log,
     )
+    say(
+        f"anonymizing {len(records)} encounters: mode {a.mode}, detectors {'+'.join(cfg.detectors)}, "
+        f"preset {cfg.preset}, features {','.join(sorted(cfg.features)) or 'none'}"
+        + (f", LLM {cfg.llm_model}" if "llm" in cfg.detectors else "")
+    )
     t0 = time.perf_counter()
-    an = Anonymizer(cfg)
+    an = Anonymizer(cfg, status=say)
     outs, stats, decisions = [], [], []
     expl = {"action": Counter(), "category": Counter(), "layer": Counter(), "keep_reason": Counter(), "with_reason": 0}
     vram_peak = 0.0
@@ -127,15 +149,16 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
             if d["action"] == "KEEP":
                 expl["keep_reason"][d["policy_reason"].split(" (")[0]] += 1
         decisions += dec
-        if a.progress:
+        if not a.quiet:
             llm = an._models.get("llm")
             calls = getattr(llm, "calls", 0) - llm_before[0]
             hits = getattr(llm, "hits", 0) - llm_before[1]
-            print(
+            eta = (time.perf_counter() - t0) / i * (len(records) - i)
+            say(
                 f"[{i}/{len(records)}] {rec['encounter_id']}: {time.perf_counter() - t_rec:.1f} s, "
-                f"{len(dec)} decisions, LLM {calls} calls + {hits} cached",
-                file=sys.stderr,
-                flush=True,
+                f"{len(dec)} decisions"
+                + (f", LLM {calls} calls + {hits} cached" if llm is not None else "")
+                + (f", about {eta / 60:.1f} min left" if i < len(records) else "")
             )
         outs.append(anon)
         stats.append(st)
@@ -175,9 +198,11 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
         "shield_spans": sum(s["shield"]["shield_spans"] for s in stats),
         "per_encounter": stats,
     }
+    say("checking the output contract and the medical shield...")
     if summary["shield_edit_overlaps"]:
         return _fail(f"{summary['shield_edit_overlaps']} edit(s) overlap the medical shield; nothing was published")
     try:
+        say(f"publishing to {out.records.parent} (written atomically)...")
         publish_run(records, outs, decisions, summary, out, overwrite=a.overwrite)
     except (ContractError, FileExistsError) as exc:
         return _fail(str(exc))
@@ -194,14 +219,25 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
 def cmd_evaluate(a: argparse.Namespace) -> int:
     from .eval import report
 
+    say = _status_printer(getattr(a, "quiet", False))
+    say(f"reading {a.anonymized} and {a.original}...")
     anon = read_jsonl(a.anonymized)
     ids = {r["encounter_id"] for r in anon}
     orig = [r for r in read_jsonl(a.original) if r["encounter_id"] in ids]
     dec = read_jsonl(a.decisions) if a.decisions and Path(a.decisions).exists() else None
     summ = json.loads(Path(a.summary).read_text()) if a.summary and Path(a.summary).exists() else None
     res = report.evaluate(
-        orig, anon, Path(a.gold) if a.gold else None, dec, summ, icd=a.icd, name=a.name, llm_model=a.llm_model
+        orig,
+        anon,
+        Path(a.gold) if a.gold else None,
+        dec,
+        summ,
+        icd=a.icd,
+        name=a.name,
+        llm_model=a.llm_model,
+        status=say,
     )
+    say(f"saving {Path(a.out_dir) / (a.name + '.json')}")
     report.save(res, Path(a.out_dir))
     print(report.table([res]))
     if res.get("schema_errors"):
@@ -286,6 +322,7 @@ def run_one(
         name=name,
         out_dir=str(paths.eval_dir()),
         llm_model=llm_model,
+        quiet=False,
     )
     cmd_evaluate(ns)
     return json.loads((paths.eval_dir() / f"{name}.json").read_text())
@@ -458,7 +495,8 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--device", default="auto", help="encoders: auto (GPU within the 4 GB budget) | cpu | mps | cuda")
     p.add_argument("--overwrite", action="store_true", help="replace existing outputs of the same date")
     p.add_argument("--llm-log", help="append one JSONL line per LLM call (timing, cache, counts; no text) to this file")
-    p.add_argument("--progress", action="store_true", help="print one line per encounter to stderr")
+    p.add_argument("--progress", action="store_true", help="kept for compatibility: progress is shown by default")
+    p.add_argument("--quiet", action="store_true", help="no progress messages (errors and the result are still shown)")
     p.add_argument(
         "--explain-text", action="store_true", help="debug only: copy original text into the sidecar (contains PII)"
     )
@@ -474,6 +512,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--llm-model")
     p.add_argument("--name", default="run")
     p.add_argument("--out-dir", default=str(paths.eval_dir()))
+    p.add_argument("--quiet", action="store_true", help="no progress messages")
     p.set_defaults(func=cmd_evaluate)
 
     p = sub.add_parser("run", help="anonymize a split and evaluate it (one row in outputs/eval/results.md)")
