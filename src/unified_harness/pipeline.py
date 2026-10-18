@@ -92,6 +92,7 @@ class Anonymizer:
                 "call_seconds": round(llm.call_seconds, 2),
                 "cache_hits": getattr(llm, "hits", 0),
                 "vram_mb": llm.vram_mb,
+                "vram_source": getattr(llm, "vram_source", None),
             }
         return out
 

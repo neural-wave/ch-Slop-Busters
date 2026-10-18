@@ -6,7 +6,7 @@ This repository holds **unified-harness**, an offline, diagnosis-aware anonymize
 encounters, together with its evaluation harness. The anonymizer
 removes or generalizes what identifies a person in the `dialogue` and `note` of each encounter and keeps
 what a clinical coder needs for the ICD-10 codes. It runs on a laptop: rules plus one small local
-language model through Ollama, about 1.6 GB of GPU memory, no cloud service.
+language model through Ollama, about 2.8 GB of GPU memory on an NVIDIA card (measured), no cloud service.
 
 > The full description of the design, the pipeline and every measured result is
 > [`docs/solution.html`](docs/solution.html) (open it in a browser). Labels, splits and metrics are in
@@ -34,11 +34,20 @@ language model through Ollama, about 1.6 GB of GPU memory, no cloud service.
 Default configuration (mode `llm`, preset `privacy`). Silver labels: shares of labeled occurrences that
 were removed (privacy) or kept (keep traps, medical concepts).
 
-| Split | All PII removed | High-risk removed | Keep traps kept | Medical concepts kept | Peak VRAM |
-|---|---|---|---|---|---|
-| tune (140 train encounters, used for design decisions) | 92.1% | 99.2% | 100.0% | 99.7% | 1.6 GB |
-| validation (the 67 eval encounters) | 84.6% | 95.1% | 99.1% | 99.8% | 1.6 GB |
-| test (24 held-out ICU notes, unseen format, scored once) | 85.7% | 89.7% | 95.3% | 95.6% | 1.6 GB |
+| Split | All PII removed | High-risk removed | Keep traps kept | Medical concepts kept |
+|---|---|---|---|---|
+| tune (140 train encounters, used for design decisions) | 92.1% | 99.2% | 100.0% | 99.7% |
+| validation (the 67 eval encounters) | 84.6% | 95.1% | 99.1% | 99.8% |
+| test (24 held-out ICU notes, unseen format, scored once) | 85.7% | 89.7% | 95.3% | 95.6% |
+
+**GPU memory**, default model `qwen3.5:2b-q4_K_M`, context window 4096 tokens, Ollama 0.40.6:
+
+| Hardware | Peak GPU memory | How it was measured |
+|---|---|---|
+| NVIDIA RTX PRO 6000 (CUDA) | 2.82–2.86 GB | `nvidia-smi`, the Ollama runner process: weights, CUDA context, KV cache and buffers |
+| Apple M-series (unified memory) | 1.56 GB | Ollama's own report (weights and KV cache only; there is no `nvidia-smi`) |
+
+The 4 GB guard uses `nvidia-smi` whenever it is available, so on NVIDIA it checks the real footprint.
 
 On the validation split, with the same labels and scorer, the two earlier team harnesses reach 77.1%
 (Ketai) and 81.5% (Alind and Davide) of PII removed, and keep 79.6% and 99.4% of keep traps. The
@@ -65,7 +74,7 @@ On the validation split, with the same labels and scorer, the two earlier team h
 - **Python 3.12+** and [**uv**](https://docs.astral.sh/uv/).
 - [**Ollama**](https://ollama.com) installed and running. The harness downloads the models it needs
   through Ollama on first use, with progress shown: the detector `qwen3.5:2b-q4_K_M` (1.9 GB, about
-  1.6 GB of VRAM in use) and, for evaluations, `bge-m3` (1.2 GB). `--no-pull` turns this off.
+  2.8 GB of GPU memory on CUDA) and, for evaluations, `bge-m3` (1.2 GB). `--no-pull` turns this off.
 - Optional: **Docker Desktop** for the container run.
 - No GPU is required; Ollama uses the GPU when one is available, within the 4 GB budget.
 
@@ -126,17 +135,25 @@ The input is JSONL with one encounter per line: `encounter_id`, `dataset`, `dial
 | `F4` | Low-risk details are removed only when two independent signals agree (higher precision, lower privacy) | no |
 
 **Using another Ollama model.** Any model can replace the default detector if it fits the 4 GB budget
-(the run measures its VRAM at load and stops above 4 GB). Small candidates in the Ollama library:
-`llama3.2:3b` (2.0 GB), `granite4:3b` (2.1 GB), `phi4-mini` (2.5 GB), `ministral-3:3b` (3.0 GB),
-`qwen3.5:4b` (3.3 GB), `gemma3:4b` (3.4 GB download, 2.2 GB measured VRAM). Larger models such as
-`gemma4:latest` exceed the budget.
+(the run measures its GPU memory at load and stops above 4 GB). Measured on an NVIDIA GPU with
+`nvidia-smi` (context window 4096 tokens, Ollama 0.40.6):
+
+| Model | Download | Peak GPU memory (CUDA) | Fits 4 GB |
+|---|---|---|---|
+| `qwen3.5:2b-q4_K_M` (default) | 1.9 GB | 2.82–2.86 GB | yes |
+| `llama3.2:3b` | 2.0 GB | 3.10 GB | yes |
+| `gemma3:4b` | 3.4 GB | 4.27–4.30 GB | **no**: the run stops |
+
+Other small candidates in the Ollama library, not measured yet: `granite4:3b` (2.1 GB download),
+`phi4-mini` (2.5 GB), `ministral-3:3b` (3.0 GB), `qwen3.5:4b` (3.3 GB). On CUDA a model needs roughly
+0.9–1.1 GB more than its download size. Larger models such as `gemma4:latest` exceed the budget.
 
 For a quick experiment, pass `--allow-unpinned`; the model is downloaded on first use:
 
 ```bash
 uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jsonl \
-    --detector-model gemma3:4b --allow-unpinned \
-    --out-root outputs/gemma3 --llm-log outputs/gemma3/calls.jsonl
+    --detector-model llama3.2:3b --allow-unpinned \
+    --out-root outputs/llama3.2 --llm-log outputs/llama3.2/calls.jsonl
 ```
 
 Why models are pinned: an Ollama tag such as `gemma3:4b` is only a name, and a later `ollama pull` can
@@ -149,7 +166,7 @@ including the VRAM limit, stay active. To make a model official, pin it:
 ```bash
 curl -s http://127.0.0.1:11434/api/tags      # copy the model's "digest"
 # then add under [detector_models] in src/unified_harness/models.toml:
-#   "gemma3:4b" = "<digest>"
+#   "llama3.2:3b" = "<digest>"
 ```
 
 Each model keeps its own entries in the reply cache (the key includes the model digest). Compare models by
@@ -310,7 +327,7 @@ uv run python scripts/build_solution_page.py   # rebuild docs/solution.html from
 - The unseen ICU-note format scores clearly lower than the training format (see the test row above).
 - Some date forms are not targeted yet; they are the main high-risk gap on validation.
 - A relative or clinician sometimes gets the `[PATIENT]` tag; the name itself is removed.
-- VRAM was measured on Apple unified memory; a 4 GB CUDA card was not tested.
+- GPU memory was measured on a large NVIDIA card (2.8 GB used) and on Apple unified memory; a card with exactly 4 GB was not tested.
 
 ## Credits and license
 

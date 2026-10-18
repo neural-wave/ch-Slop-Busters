@@ -118,3 +118,26 @@ def test_failed_download_explains_what_to_do():
             ensure_model("new:1b", url, lambda m: None)
     finally:
         server.shutdown()
+
+
+def test_vram_is_read_from_nvidia_smi_when_available(monkeypatch):
+    import subprocess
+
+    from unified_harness.eval import resources
+
+    out = "/usr/local/lib/ollama/llama-server, 2848\n/usr/bin/python3, 512\n"
+    monkeypatch.setattr(resources.shutil, "which", lambda name: "/usr/bin/nvidia-smi")
+    monkeypatch.setattr(
+        resources.subprocess, "run", lambda *a, **k: subprocess.CompletedProcess(a, 0, stdout=out, stderr="")
+    )
+    assert resources.nvidia_ollama_vram_mb() == 2848.0  # only the Ollama runner, not other GPU processes
+    assert resources.vram_source() == "nvidia-smi"
+    assert resources.ollama_vram_mb("any-model") == 2848.0
+
+
+def test_vram_falls_back_to_ollama_without_nvidia(monkeypatch):
+    from unified_harness.eval import resources
+
+    monkeypatch.setattr(resources.shutil, "which", lambda name: None)
+    assert resources.nvidia_ollama_vram_mb() is None
+    assert resources.vram_source() == "ollama"
