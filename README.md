@@ -1,5 +1,7 @@
 # ch-Slop-Busters: unified-harness
 
+![alt text](image.png)
+
 - **Hackathon:** Neural Wave 2026, challenge “Anonymization of patient data”
 - **Team:** ch-Slop-Busters — Cristiano Colangelo, Alind Xhyra, Davide Molinelli, Ketai, Travaz
 - **Project:** unified-harness, an offline anonymizer for patient–doctor encounters (rules + a small local
