@@ -243,7 +243,7 @@ def page() -> str:
 <main>
 <h1>Unified anonymization harness</h1>
 <p class="lede">An offline, diagnosis-aware anonymizer for patient–doctor encounters. It removes what identifies a
-person and keeps what a clinical coder needs, on a laptop, with less than 2 GB of GPU memory.</p>
+person and keeps what a clinical coder needs, on a laptop, with about 2.8 GB of GPU memory on an NVIDIA card.</p>
 <p class="meta">Version {__version__}. Built from saved evaluation results by <code>scripts/build_solution_page.py</code>.
 All labels are silver (LLM-made, script-checked, not human-reviewed); numbers are shares of labeled
 occurrences on the named split.</p>
@@ -252,7 +252,7 @@ occurrences on the named split.</p>
 <div class="kpi"><b>{pct(best_tune["privacy_high"])}</b><span>high-risk identifiers removed (tune)</span></div>
 <div class="kpi"><b>{pct(best_tune["privacy_removed"])}</b><span>all labeled PII removed (tune)</span></div>
 <div class="kpi"><b>{pct(best_tune["keep_survival"])}</b><span>clinical keep traps preserved (tune)</span></div>
-<div class="kpi"><b>{best_tune["peak_vram_mb"]:,.0f} MB</b><span>peak VRAM, no PyTorch</span></div>
+<div class="kpi"><b>2.8 GB</b><span>peak GPU memory on CUDA (nvidia-smi), no PyTorch</span></div>
 </div>
 
 <h2 id="problem">1. The problem and the constraints</h2>
@@ -373,7 +373,7 @@ uv run unified-harness anonymize --input data/eval_patient_doctor_encounters.jso
 <li>All labels are silver; no human review.</li>
 <li>Some date forms are not targeted (F1 deferred); this is the main high-risk gap on validation.</li>
 <li>A relative or clinician sometimes receives the [PATIENT] tag; the name itself is removed.</li>
-<li>VRAM was measured on Apple unified memory; a 4 GB CUDA card was not available.</li>
+<li>GPU memory: 2.82–2.86 GB on an NVIDIA RTX PRO 6000 (nvidia-smi, Ollama runner process), 1.56 GB on Apple unified memory (Ollama's report, weights and cache only). The VRAM column in the tables shows the figure of the machine each run was made on (Apple). A card with exactly 4 GB was not tested.</li>
 <li>On new text the local LLM costs about 10–14 s per encounter; reruns read the cache.</li>
 </ul>
 
