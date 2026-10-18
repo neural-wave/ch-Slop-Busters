@@ -1,0 +1,10 @@
+# Reviewed exceptions for scripts/check_no_patient_text.py: "<tracked file>: word, word".
+# Each word below is generic (a medical eponym, a word-sense example or a synthetic generator name)
+# and only coincides with a name in the challenge data; none is an encounter excerpt.
+src/unified_harness/lexicons.py: allen, bennett, brooks, clark, harris, john, jones, joseph, murphy, patrick, reed, smith, thompson, wright
+src/unified_harness/shield/medical.py: clark, murphy, reed, smith, thompson
+src/unified_harness/eval/robustness.py: brooks, jack, jordan, madison, nguyen, noah, rivera, sophia
+docs/labeling_guidelines.md: murphy, smith, thompson, doctor white, dr. white
+src/unified_harness/detect/rules.py: doctor white
+src/unified_harness/link/identity.py: dr. white
+tests/unit/test_pipeline_invariants.py: doctor white

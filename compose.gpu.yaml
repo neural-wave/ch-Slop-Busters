@@ -1,0 +1,12 @@
+# Optional NVIDIA GPU for Ollama (Linux with the NVIDIA container toolkit). The encoders stay on CPU in the
+# full image; the 4 GB VRAM budget applies to the LLM:
+#   docker compose -f compose.yaml -f compose.gpu.yaml run --rm harness ...
+services:
+  ollama:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
