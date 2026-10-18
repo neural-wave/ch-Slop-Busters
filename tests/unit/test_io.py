@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import copy
 import json
+import os
+import stat
 from datetime import date
 
 import pytest
@@ -91,3 +93,13 @@ def test_publish_never_overwrites_by_default(tmp_path, encounters, redacted):
         publish_run(encounters, redacted, [], {"run": 2}, paths)
     publish_run(encounters, redacted, [], {"run": 2}, paths, overwrite=True)
     assert json.loads(paths.summary.read_text(encoding="utf-8")) == {"run": 2}
+
+
+def test_published_files_follow_the_umask(tmp_path, encounters, redacted):
+    """Not mkstemp's 0600: what a container user (uid 10001) writes into a host folder stays readable on the host."""
+    old = os.umask(0o022)
+    try:
+        paths = publish_run(encounters, redacted, [], {}, output_paths(tmp_path, date(2026, 10, 17)))
+    finally:
+        os.umask(old)
+    assert {stat.S_IMODE(p.stat().st_mode) for p in paths.all()} == {0o644}
