@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import subprocess
 import sys
@@ -75,6 +76,13 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
 
     say = _status_printer(a.quiet)
     detectors = _detectors(a.detectors) or MODE_DETECTORS[a.mode]
+    if "llm" in detectors and not a.no_pull:
+        from .environment import default_detector_model, ensure_model, ollama_url
+
+        try:
+            ensure_model(a.detector_model or default_detector_model(), ollama_url(), say)
+        except RuntimeError as exc:
+            return _fail(f"{exc}; nothing was anonymized")
     if a.mode != "rules" and not a.detectors:
         say(f"checking the environment for mode {a.mode} (Ollama, detector model, installed packages)...")
         report = doctor(a.mode, detector_model=a.detector_model, allow_unpinned=a.allow_unpinned)
@@ -86,8 +94,7 @@ def cmd_anonymize(a: argparse.Namespace) -> int:
                 if not c.ok:
                     print(f"error: {c.name}: {c.detail}", file=sys.stderr)
             return _fail(
-                f"{a.mode} mode is not ready (see `unified-harness doctor --mode {a.mode}`); nothing was anonymized. "
-                "The harness never downloads models: pull them with `ollama pull <model>` first"
+                f"{a.mode} mode is not ready (see `unified-harness doctor --mode {a.mode}`); nothing was anonymized"
             )
 
     say(f"reading {a.input}...")
@@ -220,6 +227,13 @@ def cmd_evaluate(a: argparse.Namespace) -> int:
     from .eval import report
 
     say = _status_printer(getattr(a, "quiet", False))
+    if a.icd == "embed" and not getattr(a, "no_pull", False):
+        from .environment import ensure_model, load_manifest, ollama_url
+
+        try:
+            ensure_model(load_manifest()["ollama"]["icd_proxy"]["name"], ollama_url(), say)
+        except RuntimeError as exc:
+            say(f"ICD proxy model unavailable ({exc}); the ICD columns will be empty")
     say(f"reading {a.anonymized} and {a.original}...")
     anon = read_jsonl(a.anonymized)
     ids = {r["encounter_id"] for r in anon}
@@ -323,6 +337,7 @@ def run_one(
         out_dir=str(paths.eval_dir()),
         llm_model=llm_model,
         quiet=False,
+        no_pull=False,
     )
     cmd_evaluate(ns)
     return json.loads((paths.eval_dir() / f"{name}.json").read_text())
@@ -484,7 +499,11 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--no-codes", action="store_true", help="do not use icd10_codes at inference (bonus mode)")
     p.add_argument("--detectors", help="ablation only: comma list of rules, deid, gliner, llm (overrides --mode)")
     p.add_argument("--features", help="M5 feature flags, comma list: " + ", ".join(FEATURES))
-    p.add_argument("--detector-model", help="Ollama model for the LLM detector (pinned in models.toml)")
+    p.add_argument(
+        "--detector-model",
+        default=os.environ.get("UNIFIED_HARNESS_DETECTOR_MODEL"),
+        help="Ollama model for the LLM detector (pinned in models.toml; env UNIFIED_HARNESS_DETECTOR_MODEL)",
+    )
     p.add_argument(
         "--allow-unpinned",
         action="store_true",
@@ -497,6 +516,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--llm-log", help="append one JSONL line per LLM call (timing, cache, counts; no text) to this file")
     p.add_argument("--progress", action="store_true", help="kept for compatibility: progress is shown by default")
     p.add_argument("--quiet", action="store_true", help="no progress messages (errors and the result are still shown)")
+    p.add_argument("--no-pull", action="store_true", help="never download a missing Ollama model (fail instead)")
     p.add_argument(
         "--explain-text", action="store_true", help="debug only: copy original text into the sidecar (contains PII)"
     )
@@ -513,6 +533,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--name", default="run")
     p.add_argument("--out-dir", default=str(paths.eval_dir()))
     p.add_argument("--quiet", action="store_true", help="no progress messages")
+    p.add_argument("--no-pull", action="store_true", help="never download a missing Ollama model (fail instead)")
     p.set_defaults(func=cmd_evaluate)
 
     p = sub.add_parser("run", help="anonymize a split and evaluate it (one row in outputs/eval/results.md)")
@@ -522,7 +543,11 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--no-codes", action="store_true")
     p.add_argument("--detectors", help="ablation only (overrides --mode)")
     p.add_argument("--features", help="M5 feature flags, comma list: " + ", ".join(FEATURES))
-    p.add_argument("--detector-model", help="Ollama model for the LLM detector (pinned in models.toml)")
+    p.add_argument(
+        "--detector-model",
+        default=os.environ.get("UNIFIED_HARNESS_DETECTOR_MODEL"),
+        help="Ollama model for the LLM detector (pinned in models.toml; env UNIFIED_HARNESS_DETECTOR_MODEL)",
+    )
     p.add_argument(
         "--allow-unpinned",
         action="store_true",
@@ -570,7 +595,11 @@ def build_parser() -> argparse.ArgumentParser:
     p = sub.add_parser("doctor", help="check the environment for a run mode")
     p.add_argument("--mode", choices=MODES, default="llm")
     p.add_argument("--json", action="store_true", help="machine-readable report")
-    p.add_argument("--detector-model", help="Ollama model for the LLM detector (pinned in models.toml)")
+    p.add_argument(
+        "--detector-model",
+        default=os.environ.get("UNIFIED_HARNESS_DETECTOR_MODEL"),
+        help="Ollama model for the LLM detector (pinned in models.toml; env UNIFIED_HARNESS_DETECTOR_MODEL)",
+    )
     p.add_argument(
         "--allow-unpinned",
         action="store_true",
