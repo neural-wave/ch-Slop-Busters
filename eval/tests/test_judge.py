@@ -99,3 +99,26 @@ def test_repeat_passes_recode_every_note_and_vote(toy):
     stats = json.loads((J.KEY_DIR / "toy" / "passes.json").read_text())
     assert stats["votes_per_note"] == {"3": 6} and [p["passes"] for p in stats["agreement"]] == [[1, 2], [1, 3], [2, 3]]
     assert stats["agreement"][1]["code"] == 1.0 and sum(ln.startswith("pass ") for ln in J.status("toy")) == 3
+
+
+def test_new_only_passes_code_the_new_notes_and_keep_the_old_votes(toy):
+    """A model that finishes after passes 1-3: passes 4-6 with --new-only code its notes alone; the cached notes keep the
+    vote of passes 1-3, the new ones get the majority of 4-6, and no agreement pair mixes the two sets."""
+    coder = J.AgentCoder("llm_judge", "sonnet")
+    clean_run = toy / "runs" / "clean" / "toy" / "run.json"
+    clean_run.write_text(json.dumps({"exit_code": 1}))  # not finished yet: only the originals are coded
+    for n, codes in ((1, ["R05.9", "J20.9"]), (2, ["R05.9"]), (3, ["R05.9", "J20.9"])):
+        k = J.export("toy", coder, J.package_dir("toy", n), pass_=n)
+        answer_all(J.package_dir("toy", n), k, lambda note, c=codes: c if "Cough" in note else [])
+    J.import_("toy", coder)
+    clean_run.write_text(json.dumps({"exit_code": 0}))
+    for n, codes in ((4, ["R05.9"]), (5, ["R05.9", "R07.9"]), (6, ["R07.9"])):
+        k = J.export("toy", coder, J.package_dir("toy", n), pass_=n, new_only=True)
+        assert len(k["texts"]) == 3 and k["notes_cached"] == 3 and k["new_only"]  # the 3 cleaned notes; the originals are cached
+        assert all([m for m, _ in t["uses"]] == ["clean"] for t in k["texts"].values())
+        answer_all(J.package_dir("toy", n), k, lambda note, c=codes: c if "Cough" in note else [])
+    J.import_("toy", coder)
+    assert icd._load(icd._cache_path(coder, ORIGINAL[0])).codes == ["R05.9", "J20.9"]  # passes 1-3 unchanged
+    assert icd._load(icd._cache_path(coder, CLEAN[0])).codes == ["R05.9", "R07.9"]  # each in 2 of passes 4-6
+    stats = json.loads((J.KEY_DIR / "toy" / "passes.json").read_text())
+    assert stats["votes_per_note"] == {"3": 6} and [p["passes"] for p in stats["agreement"]] == [[1, 2], [1, 3], [2, 3], [4, 5], [4, 6], [5, 6]]
