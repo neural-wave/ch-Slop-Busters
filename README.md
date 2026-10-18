@@ -1,12 +1,13 @@
-# ch-Slop-Busters: unified-harness
+# ch-Slop-Busters: Anonymization for Patient data
 
-- **Hackathon:** Neural Wave 2026, challenge “Anonymization of patient data”
-- **Team:** ch-Slop-Busters — Cristiano Colangelo, Alind Xhyra, Davide Molinelli, Ketai, Travaz
-- **Project:** unified-harness, an offline anonymizer for patient–doctor encounters (rules + a small local
-  LLM through Ollama, under 4 GB of GPU memory, no cloud)
+- **Hackathon:** Neural Wave 2026, challenge “Anonymization for Patient data”
+- **Team:** ch-Slop-Busters — Cristiano Colangelo · Ketai Qiu · Daniel Travaglia · Alind Xhyra · Davide Molinelli
+- **Project:** Ensemble + Generalizer, an offline anonymizer for patient–doctor encounters (rules + a small local LLM through Ollama, under 4 GB of GPU memory, no cloud)
 - **License:** Apache 2.0
 
 ## Quickstart (Docker)
+
+Install Docker[link](https://docs.docker.com/engine/install/)
 
 ```bash
 mkdir -p outputs
@@ -24,6 +25,5 @@ docker compose down
 
 ## Deliverables
 
-- [`anonymized_eval_patient_doctor_encounters.jsonl`](anonymized_eval_patient_doctor_encounters.jsonl): the 67
-  encounters of [`data/eval_patient_doctor_encounters.jsonl`](data/eval_patient_doctor_encounters.jsonl) anonymized
-  by unified-harness in its default configuration (rules + local LLM, privacy preset)
+- [`anonymized_eval_patient_doctor_encounters.jsonl`](anonymized_eval_patient_doctor_encounters.jsonl): the 67 encounters of the evaluation dataset anonymized by unified-harness in its default configuration (rules + local LLM, privacy preset)
+- [`report`](Slop%20Busters%20Report.pdf")
