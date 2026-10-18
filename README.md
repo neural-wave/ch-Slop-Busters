@@ -19,8 +19,6 @@ docker compose up ollama-pull
 docker compose run --rm harness doctor
 docker compose run --rm harness anonymize \
     --input /data/eval_patient_doctor_encounters.jsonl --out-root /outputs/docker
-docker compose run --rm harness validate --original /data/eval_patient_doctor_encounters.jsonl \
-    --anonymized /outputs/docker/<date>/anonymized-<date>-unified-harness.jsonl
 docker compose down
 ```
 
